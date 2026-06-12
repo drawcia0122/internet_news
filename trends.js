@@ -4,7 +4,7 @@ const updatedElement = document.querySelector('#news-updated');
 const queryElement = document.querySelector('#news-query');
 const searchButtonElement = document.querySelector('.news-search-button');
 const paginationElement = document.querySelector('#trend-pagination');
-const PAGE_SIZE = 24;
+const PAGE_SIZE = 16;
 const RANGE_CONFIG = {
   '24h': { minHours: 0, maxHours: 24, label: '24時間以内', searchWindowDays: 1 },
   '24-3d': { minHours: 24, maxHours: 72, label: '24時間〜3日以内', searchWindowDays: 3 },
@@ -20,6 +20,7 @@ let activeRange = '24h';
 let currentPage = 1;
 let archiveLoaded = false;
 let archiveLoadingPromise = null;
+let queryDebounceTimer = null;
 
 document.addEventListener('error', (event) => {
   const image = event.target;
@@ -36,10 +37,18 @@ document.addEventListener('error', (event) => {
 init();
 
 async function init() {
+  const cachedTopics = readTopicCache();
+  if (cachedTopics.length) {
+    trendItems = cachedTopics;
+    currentTrendItems = cachedTopics;
+    updatedElement.textContent = 'キャッシュを表示中';
+    void renderTrendIndex();
+  }
+
   try {
     const currentPayload = await fetchJson('./data/trend-topics.json').catch(() => null);
     currentTrendItems = (currentPayload?.items ?? []).map(normalizeTopic);
-    trendItems = dedupeTopics(currentTrendItems).sort((left, right) => Number(right.score ?? 0) - Number(left.score ?? 0));
+    trendItems = [...currentTrendItems].sort((left, right) => Number(right.score ?? 0) - Number(left.score ?? 0));
     updatedElement.textContent = currentPayload?.generatedAt
       ? formatDate(currentPayload.generatedAt) + ' 更新'
       : '更新時刻不明';
@@ -162,7 +171,6 @@ function renderInsightList(item) {
   return '<dl class="trend-reason-list">' +
     '<div><dt>何が起きた？</dt><dd>' + escapeHtml(item.whatHappened ?? shortEventFromTitle(item.title)) + '</dd></div>' +
     '<div><dt>なぜ話題？</dt><dd>' + escapeHtml(item.whyHot ?? buildWhyHotLabel(item)) + '</dd></div>' +
-    '<div><dt>なぜ重要？</dt><dd>' + escapeHtml(item.importantPoint ?? buildImportantPoint(item)) + '</dd></div>' +
     '<div><dt>誰向け？</dt><dd>' + escapeHtml(audience) + '</dd></div>' +
   '</dl>';
 }
@@ -566,7 +574,7 @@ function escapeHtml(value) {
 }
 
 async function fetchJson(endpoint) {
-  const response = await fetch(endpoint, { cache: 'no-store' });
+  const response = await fetch(endpoint, { cache: 'default' });
   if (!response.ok) throw new Error('Failed to fetch ' + endpoint);
   return await response.json();
 }
@@ -578,6 +586,15 @@ function mergeReports(...reportGroups) {
 
 function saveTopicCache(topics) {
   try { localStorage.setItem('internet-news-browse-topic-cache', JSON.stringify(topics ?? [])); } catch {}
+}
+
+function readTopicCache() {
+  try {
+    const cached = JSON.parse(localStorage.getItem('internet-news-browse-topic-cache') ?? '[]');
+    return Array.isArray(cached) ? cached : [];
+  } catch {
+    return [];
+  }
 }
 
 document.querySelectorAll('.news-category-tabs button').forEach((button) => {
@@ -602,5 +619,8 @@ document.querySelectorAll('.news-range-tabs button').forEach((button) => {
 
 queryElement.addEventListener('input', () => {
   currentPage = 1;
-  void renderTrendIndex();
+  clearTimeout(queryDebounceTimer);
+  queryDebounceTimer = window.setTimeout(() => {
+    void renderTrendIndex();
+  }, 180);
 });

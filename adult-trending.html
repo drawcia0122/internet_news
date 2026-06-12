@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="アダルト急上昇。作品、ジャンル、タグ、サークルの伸び筋を確認。" />
+    <title>INTERNET NEWS | アダルト急上昇</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-adult-page="trending">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="INTERNET NEWS ホーム">
+        <span class="brand-mark"><span></span></span>
+        <span><strong>INTERNET NEWS</strong><small>今日のネット見出し</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="メインナビゲーション">
+        <a href="./index.html#trends">記事一覧</a>
+        <a class="active" href="./adult-trends.html">アダルトポータル</a>
+        <a href="./index.html#ranking">注目ランキング</a>
+        <a href="./trends.html">全件</a>
+        <a href="./news.html">アーカイブ</a>
+      </nav>
+      <button class="menu-button" id="mobile-menu-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-nav-drawer"><span></span><span></span></button>
+    </header>
+    <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="モバイルナビゲーション" hidden>
+      <a href="./index.html#trends">記事一覧</a>
+      <a href="./adult-trends.html">アダルトポータル</a>
+      <a href="./index.html#ranking">注目ランキング</a>
+      <a href="./trends.html">全件</a>
+      <a href="./news.html">アーカイブ</a>
+    </nav>
+    <main>
+      <section class="adult-section adult-portal-shell" aria-labelledby="adult-page-title">
+        <div class="section-heading adult-heading">
+          <div><p class="section-kicker">ADULT TRENDING</p><h1 id="adult-page-title">急上昇</h1></div>
+          <p class="adult-description" id="adult-page-description"></p>
+        </div>
+        <nav class="adult-page-nav" aria-label="アダルトページナビゲーション">
+          <a href="./adult-trends.html">トップ</a>
+          <a href="./adult-ranking.html">ランキング</a>
+          <a class="active" href="./adult-trending.html">急上昇</a>
+          <a href="./adult-magazine.html">マガジン</a>
+          <a href="./adult-campaign.html">キャンペーン</a>
+          <a href="./adult-sale.html">セール注目作品</a>
+        </nav>
+        <div class="adult-toolbar"><p class="adult-description" id="adult-refresh-status"></p><div id="adult-sort-controls"></div></div>
+        <div class="adult-trend-list adult-portal-content" id="adult-page-content"></div>
+      </section>
+    </main>
+    <script src="./adult-trends.js?v=3"></script>
+  </body>
+</html>

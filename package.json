@@ -1,0 +1,19 @@
+{
+  "name": "internet-news",
+  "version": "1.0.0",
+  "description": "雑多なネットニュースをカテゴリ別に見やすくまとめる Web メディアの MVP です。",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "refresh": "node scripts/refresh-data.mjs",
+    "refresh:news": "node scripts/fetch-trend-topics.mjs",
+    "refresh:adult": "node scripts/fetch-adult-trends.mjs",
+    "refresh:stale": "node scripts/refresh-trend-topics-if-stale.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "playwright": "^1.60.0"
+  }
+}

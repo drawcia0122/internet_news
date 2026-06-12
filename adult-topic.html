@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="INTERNET NEWS のアダルトトレンド詳細ページ。" />
+    <title>INTERNET NEWS | アダルトトレンド詳細</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <main class="topic-page adult-topic-page">
+      <a class="topic-back-link" href="./adult-trends.html">← アダルトトレンドに戻る</a>
+      <section class="topic-hero adult-topic-hero">
+        <p class="section-kicker" id="adult-topic-kicker">ADULT TREND DETAIL</p>
+        <h1 id="adult-topic-title">トレンドを読み込み中です</h1>
+        <p class="topic-summary" id="adult-topic-summary">最新データを確認しています。</p>
+        <figure class="adult-topic-thumb-wrap" id="adult-topic-thumb-wrap" hidden>
+          <img id="adult-topic-thumb" alt="" loading="lazy" referrerpolicy="no-referrer" />
+        </figure>
+        <div class="topic-meta-bar">
+          <span id="adult-topic-score">--</span>
+          <span id="adult-topic-source">--</span>
+          <span id="adult-topic-rank">--</span>
+        </div>
+        <div class="topic-meta-grid">
+          <div class="topic-meta-card">
+            <strong>ジャンル</strong>
+            <div class="topic-category-list" id="adult-topic-categories"></div>
+          </div>
+          <div class="topic-meta-card">
+            <strong>サークル / メーカー</strong>
+            <p class="topic-signal-summary" id="adult-topic-maker">情報を整理中です。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-panel topic-insights-panel">
+        <div class="topic-panel-heading">
+          <p class="section-kicker">TREND VALUE</p>
+          <h2>トレンドの見方</h2>
+        </div>
+        <div class="topic-insight-grid" id="adult-topic-insights"></div>
+      </section>
+
+      <section class="topic-layout">
+        <article class="topic-panel">
+          <div class="topic-panel-heading">
+            <p class="section-kicker">WHY HOT</p>
+            <h2>急上昇理由</h2>
+          </div>
+          <div class="adult-reason-list" id="adult-topic-reasons"></div>
+        </article>
+        <aside class="topic-sidebar">
+          <section class="topic-panel">
+            <div class="topic-panel-heading">
+              <p class="section-kicker">SOURCE</p>
+              <h2>ソースリンク</h2>
+            </div>
+            <div class="dialog-action-links topic-action-links" id="adult-topic-links"></div>
+          </section>
+          <section class="topic-panel">
+            <div class="topic-panel-heading">
+              <p class="section-kicker">TAGS</p>
+              <h2>関連タグ</h2>
+            </div>
+            <div class="topic-keyword-list" id="adult-topic-tags"></div>
+          </section>
+        </aside>
+      </section>
+
+      <section class="topic-panel adult-related-panel">
+        <div class="topic-panel-heading">
+          <p class="section-kicker">RELATED</p>
+          <h2>関連作品</h2>
+        </div>
+        <div class="adult-related-list" id="adult-topic-related"></div>
+      </section>
+    </main>
+    <script src="./adult-topic.js?v=2"></script>
+  </body>
+</html>

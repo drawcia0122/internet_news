@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="INTERNET NEWS のニュースアーカイブ。24時間・3日・7日・14日で主要ニュースを追えます。" />
+    <title>INTERNET NEWS | ニュースアーカイブ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <main class="topic-page news-page">
+      <a class="topic-back-link" href="./index.html#trends">← トップに戻る</a>
+      <section class="topic-hero news-hero">
+        <p class="section-kicker">NEWS ARCHIVE</p>
+        <h1>ネットニュースを<br />もう少し深く追う。</h1>
+        <p class="topic-summary">トップでは24時間分の重要ニュースを優先表示し、このページでは24時間・3日・7日・14日で切り替えながら時事ネタを追えます。</p>
+        <div class="topic-meta-bar">
+          <span id="news-count">-- 件</span>
+          <span id="news-updated">更新確認中</span>
+        </div>
+      </section>
+      <section class="topic-layout news-layout">
+        <article class="topic-panel">
+          <div class="section-heading news-controls-heading">
+            <div>
+              <p class="section-kicker">FILTER</p>
+              <h2>さらにニュースを検索</h2>
+            </div>
+            <a class="outline-button news-search-button" href="https://news.google.com/" target="_blank" rel="noreferrer">Googleニュースで探す ↗</a>
+          </div>
+          <div class="news-toolbar">
+            <div class="featured-tabs news-range-tabs" role="group" aria-label="期間選択">
+              <button class="active" data-range="24h">24時間</button>
+              <button data-range="3d">3日</button>
+              <button data-range="7d">7日間</button>
+              <button data-range="14d">14日間</button>
+            </div>
+            <div class="featured-tabs news-category-tabs" role="group" aria-label="カテゴリ選択">
+              <button class="active" data-category="all">総合</button>
+              <button data-category="tech">テック</button>
+              <button data-category="business">経済</button>
+              <button data-category="politics">政治</button>
+              <button data-category="entertainment">エンタメ</button>
+              <button data-category="games">ゲーム</button>
+              <button data-category="manga">漫画</button>
+              <button data-category="books">本</button>
+              <button data-category="sports">スポーツ</button>
+              <button data-category="sns">SNS</button>
+              <button data-category="net-culture">ネットカルチャー</button>
+              <button data-category="matome">2chまとめ系</button>
+              <button data-category="crime">犯罪・事件</button>
+              <button data-category="adult">アダルト系</button>
+              <button data-category="world">国際</button>
+              <button data-category="general">その他</button>
+            </div>
+            <label class="news-search-field">
+              <span class="sr-only">ニュースを検索</span>
+              <input id="news-query" type="search" placeholder="キーワードで絞り込み" />
+            </label>
+          </div>
+          <div class="news-archive-list" id="news-archive-list"></div>
+        </article>
+      </section>
+    </main>
+    <script src="./news.js?v=4"></script>
+  </body>
+</html>

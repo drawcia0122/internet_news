@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="今日知るべき Topic を5分で把握するための、編集型ニュースダッシュボード。" />
+    <title>INTERNET NEWS | 今日知るべきことを5分で</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=35" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="INTERNET NEWS ホーム">
+        <span class="brand-mark"><span></span></span>
+        <span>
+          <strong>INTERNET NEWS</strong>
+          <small>Topic / Trend / Magazine</small>
+        </span>
+      </a>
+      <nav class="desktop-nav" aria-label="メインナビゲーション">
+        <a class="active" href="#must-read-news">今日絶対知っとけ</a>
+        <a href="#topic-channels">カテゴリ別Topic</a>
+        <a href="#trends">カテゴリ別ニュース</a>
+        <a href="./adult-trends.html">アダルトトレンド</a>
+        <a href="#ranking">注目ランキング</a>
+        <a href="./trends.html">全件</a>
+        <a href="./news.html">アーカイブ</a>
+      </nav>
+      <button class="menu-button" id="mobile-menu-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="モバイルナビゲーション" hidden>
+      <a href="#must-read-news">今日絶対知っとけ</a>
+      <a href="#topic-channels">カテゴリ別Topic</a>
+      <a href="#trends">カテゴリ別ニュース</a>
+      <a href="./adult-trends.html">アダルトトレンド</a>
+      <a href="#ranking">注目ランキング</a>
+      <a href="./trends.html">全件</a>
+      <a href="./news.html">アーカイブ</a>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> 10分ごとにニュースを観測中</p>
+          <h1>今日の<span>「知るべきこと」</span>が<br />5分でわかる。</h1>
+          <p class="hero-description">
+            INTERNET NEWS は記事置き場ではなく、情報フィルターです。ニュース、SNS、まとめ系、セール情報を Topic 単位で整理して、何が起きていて、なぜ重要かを先に届けます。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#must-read-news">今日の話題を見る <span>→</span></a>
+            <p><strong>Topic / Trend / Magazine</strong> を横断して編集表示</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="refresh-strip" aria-label="更新状態">
+        <p id="refresh-status">最新データを自動で確認中</p>
+      </section>
+
+      <section class="focus-section" id="must-read-news" aria-labelledby="must-read-news-heading">
+        <div class="section-heading section-heading-stack">
+          <div>
+            <p class="section-kicker">DON'T MISS</p>
+            <h2 id="must-read-news-heading">🔥 今日絶対知っとけ</h2>
+          </div>
+          <p class="brief-description">記事を読む前に、今日いちばん重要な Topic を5件だけ先に把握するためのエリアです。</p>
+        </div>
+        <div class="topic-cluster-grid topic-cluster-grid-featured" id="must-read-news-list">
+          <article class="topic-cluster-card topic-cluster-card-empty">
+            <strong>最重要トピックを整理中です</strong>
+            <p>最新データを読み込んでいます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="focus-section" id="topic-channels" aria-labelledby="topic-channels-heading">
+        <div class="section-heading section-heading-stack">
+          <div>
+            <p class="section-kicker">TOPIC CHANNELS</p>
+            <h2 id="topic-channels-heading">カテゴリ別に Topic を追う</h2>
+          </div>
+          <p class="brief-description">ゲーム、AI、お得情報、SNS・ネット、アダルト、世の中を Topic 単位で整理します。既存のカテゴリ別ニュース一覧もこの下に残します。</p>
+        </div>
+        <div class="topic-channel-stack">
+          <div class="topic-channel-grid" id="topic-channel-primary-list"></div>
+          <div class="topic-channel-grid" id="topic-channel-deferred-list">
+            <article class="topic-channel-panel topic-channel-panel-placeholder">
+              <div class="topic-channel-head">
+                <div>
+                  <p class="section-kicker">LATER</p>
+                  <h3>追加カテゴリを遅延ロードします</h3>
+                </div>
+              </div>
+              <p>初回表示を軽くするため、お得情報・SNS・ネット・アダルト・世の中はスクロール時に描画します。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="focus-section" id="personal-news" aria-labelledby="personal-news-heading">
+        <div class="section-heading section-heading-stack">
+          <div>
+            <p class="section-kicker">FOR YOU</p>
+            <h2 id="personal-news-heading">今日の自分向けニュース</h2>
+          </div>
+          <p class="brief-description">既存のパーソナル寄りレコメンドも残します。ゲーム、AI、ガジェット、セール、ネット文化などを優先表示します。</p>
+        </div>
+        <div class="priority-list" id="personal-news-list">
+          <article class="priority-card priority-card-empty">
+            <strong>自分向けニュースを整理中です</strong>
+            <p>最新データを読み込んでいます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="brief-section" id="daily-brief" aria-labelledby="daily-brief-heading">
+        <div class="section-heading brief-heading section-heading-stack">
+          <div>
+            <p class="section-kicker">3 MINUTE BRIEF</p>
+            <h2 id="daily-brief-heading">3分でわかる今日のニュース</h2>
+          </div>
+          <div class="brief-controls">
+            <p class="brief-description">過去24時間を中心に、重要度の高い話題だけを短時間で把握するための要約ダッシュボードです。</p>
+            <button class="section-toggle-button" id="daily-brief-toggle" type="button" aria-expanded="true" aria-controls="daily-brief-body">畳む</button>
+          </div>
+        </div>
+        <div id="daily-brief-body">
+          <div class="brief-list" id="daily-brief-list">
+            <article class="brief-card brief-card-empty">
+              <strong>重要ニュースを整理中です</strong>
+              <p>最新の要約ダッシュボードを準備しています。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="hot-section" id="hot-network" aria-label="ネットで急上昇">
+        <aside class="hot-card">
+          <div class="hot-card-top">
+            <span class="live-badge">LIVE</span>
+            <span>🔥ネットで急上昇</span>
+          </div>
+          <div class="hot-groups">
+            <div class="hot-group">
+              <div class="hot-group-heading">
+                <strong>主要トピック</strong>
+                <small>速報 / 注目 / 拡散</small>
+              </div>
+              <ol id="hot-battle-keywords"></ol>
+            </div>
+            <div class="hot-group">
+              <div class="hot-group-heading">
+                <strong>カテゴリ別</strong>
+                <small>各ジャンルの新着 / 重要トピック</small>
+              </div>
+              <ol id="hot-general-keywords"></ol>
+            </div>
+          </div>
+          <div class="scan-line"></div>
+        </aside>
+      </section>
+
+      <section class="adult-section" id="adult-trends-entry" aria-labelledby="adult-trends-entry-heading">
+        <div class="section-heading adult-heading">
+          <div>
+            <p class="section-kicker">ADULT TREND DASHBOARD</p>
+            <h2 id="adult-trends-entry-heading">今日のアダルトトレンド</h2>
+          </div>
+          <p class="adult-description">FANZA、DLsite、Ci-en 周辺のランキング、急上昇、セール情報を一般ニュースとは分けて表示します。</p>
+        </div>
+        <a class="primary-button" href="./adult-trends.html">アダルトトレンドを見る →</a>
+      </section>
+
+      <div class="content-grid">
+        <section class="trend-section" id="trends">
+          <div class="section-heading trend-section-title">
+            <div>
+              <p class="section-kicker">TREND DIGEST</p>
+              <h2>カテゴリ別ニュース</h2>
+            </div>
+          </div>
+          <div class="trend-filters-row">
+            <div class="filter-pills" role="group" aria-label="カテゴリ選択">
+              <button class="active" data-filter="all">総合</button>
+              <button data-filter="tech">テック</button>
+              <button data-filter="business">経済</button>
+              <button data-filter="politics">政治</button>
+              <button data-filter="entertainment">エンタメ</button>
+              <button data-filter="games">ゲーム</button>
+              <button data-filter="manga">漫画</button>
+              <button data-filter="books">本</button>
+              <button data-filter="sports">スポーツ</button>
+              <button data-filter="sns">SNS</button>
+              <button data-filter="net-culture">ネットカルチャー</button>
+              <button data-filter="matome">2chまとめ系</button>
+              <button data-filter="crime">犯罪・事件</button>
+              <button data-filter="adult">アダルト系</button>
+              <button data-filter="world">国際</button>
+              <button data-filter="general">その他</button>
+            </div>
+          </div>
+          <div class="trend-controls">
+            <button class="section-toggle-button" id="trend-section-toggle" type="button" aria-expanded="true" aria-controls="trend-section-body">畳む</button>
+            <a class="outline-button trend-more-button" href="./trends.html">さらに表示する ↗</a>
+          </div>
+          <h3 class="trend-list-heading">記事・話題一覧</h3>
+          <div id="trend-section-body">
+            <div class="trend-list" id="trend-list"></div>
+          </div>
+        </section>
+
+        <aside class="sidebar">
+          <section class="ranking-card" id="ranking">
+            <div class="side-heading">
+              <div>
+                <p class="section-kicker">MOST TALKED</p>
+                <h3>注目ランキング</h3>
+              </div>
+              <span>24H</span>
+            </div>
+            <div class="ranking-groups">
+              <div class="ranking-group">
+                <div class="ranking-group-heading">
+                  <strong>主要トピック</strong>
+                  <small>熱量順</small>
+                </div>
+                <ol id="ranking-battle-list"></ol>
+              </div>
+              <div class="ranking-group">
+                <div class="ranking-group-heading">
+                  <strong>カテゴリ別</strong>
+                  <small>視点ごと</small>
+                </div>
+                <ol id="ranking-general-list"></ol>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#">
+        <span class="brand-mark"><span></span></span>
+        <span><strong>INTERNET NEWS</strong><small>今日のネット見出し</small></span>
+      </a>
+      <p>本サイトは主要ニュースを見やすく整理する非公式のまとめです。</p>
+    </footer>
+
+    <script src="./app.js?v=22"></script>
+  </body>
+</html>

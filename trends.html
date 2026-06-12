@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="INTERNET NEWS のトレンド全件一覧。いま熱い話題をカテゴリ別にまとめて確認できます。" />
+    <title>INTERNET NEWS | トレンド全件</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <main class="topic-page news-page">
+      <a class="topic-back-link" href="./index.html#trends">← トップに戻る</a>
+      <section class="topic-hero news-hero">
+        <p class="section-kicker">TREND INDEX</p>
+        <h1>いま熱い話題を<br />まとめて追う。</h1>
+        <p class="topic-summary">ホームでは20件に絞って表示し、このページでは全件をカテゴリやキーワードで追えます。</p>
+        <div class="topic-meta-bar">
+          <span id="news-count">-- 件</span>
+          <span id="news-updated">更新確認中</span>
+        </div>
+      </section>
+      <section class="topic-layout news-layout">
+        <article class="topic-panel">
+          <div class="section-heading news-controls-heading">
+            <div>
+              <p class="section-kicker">FILTER</p>
+              <h2>トレンド全件</h2>
+            </div>
+            <a class="outline-button news-search-button" href="https://news.google.com/" target="_blank" rel="noreferrer">Googleニュースで探す ↗</a>
+          </div>
+          <div class="news-toolbar">
+            <div class="featured-tabs news-range-tabs" role="group" aria-label="期間選択">
+              <button class="active" data-range="24h">24時間以内</button>
+              <button data-range="24-3d">24時間〜3日以内</button>
+              <button data-range="3-7d">3日〜7日以内</button>
+              <button data-range="7-14d">7日〜14日</button>
+            </div>
+            <div class="featured-tabs news-category-tabs" role="group" aria-label="カテゴリ選択">
+              <button class="active" data-category="all">総合</button>
+              <button data-category="tech">テック</button>
+              <button data-category="business">経済</button>
+              <button data-category="politics">政治</button>
+              <button data-category="entertainment">エンタメ</button>
+              <button data-category="games">ゲーム</button>
+              <button data-category="manga">漫画</button>
+              <button data-category="books">本</button>
+              <button data-category="sports">スポーツ</button>
+              <button data-category="sns">SNS</button>
+              <button data-category="net-culture">ネットカルチャー</button>
+              <button data-category="matome">2chまとめ系</button>
+              <button data-category="crime">犯罪・事件</button>
+              <button data-category="adult">アダルト系</button>
+              <button data-category="world">国際</button>
+              <button data-category="general">その他</button>
+            </div>
+            <label class="news-search-field">
+              <span class="sr-only">トレンドを検索</span>
+              <input id="news-query" type="search" placeholder="キーワードで絞り込み" />
+            </label>
+          </div>
+          <div class="news-archive-list" id="news-archive-list"></div>
+          <div class="pagination-row" id="trend-pagination"></div>
+        </article>
+      </section>
+    </main>
+    <script src="./trends.js?v=4"></script>
+  </body>
+</html>

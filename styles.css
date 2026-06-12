@@ -185,6 +185,10 @@
   gap: 18px;
 }
 
+.topic-channel-grid[hidden] {
+  display: none !important;
+}
+
 .topic-channel-panel,
 .topic-cluster-card {
   background:
@@ -198,6 +202,13 @@
 .topic-channel-panel {
   padding: 20px;
   overflow: hidden;
+}
+
+.topic-topic-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
 }
 
 .topic-channel-panel-placeholder {
@@ -271,18 +282,20 @@
 }
 
 .topic-cluster-card-compact {
-  grid-template-columns: minmax(96px, 112px) minmax(0, 1fr);
+  grid-template-columns: 1fr;
 }
 
 .topic-cluster-card-channel {
-  gap: 14px;
-  align-items: start;
+  gap: 12px;
+  align-items: stretch;
   min-width: 0;
+  min-height: 100%;
 }
 
 .topic-cluster-card-channel .trend-thumb-wrap,
 .topic-cluster-card-channel .trend-thumb-placeholder {
-  height: 88px;
+  width: 100%;
+  height: 148px;
   border-radius: 14px;
   min-width: 0;
 }
@@ -290,6 +303,7 @@
 .topic-cluster-body-channel {
   gap: 8px;
   min-width: 0;
+  grid-template-rows: auto auto auto auto 1fr auto;
 }
 
 .topic-cluster-body-channel .topic-cluster-summary {
@@ -301,6 +315,10 @@
 .topic-cluster-card-channel .trend-footer {
   flex-wrap: wrap;
   min-width: 0;
+}
+
+.topic-cluster-card-channel .trend-meta {
+  gap: 6px 10px;
 }
 
 .topic-cluster-card-channel .trend-footer > * {
@@ -324,12 +342,12 @@
 }
 
 .trend-reason-list-compact div {
-  grid-template-columns: 72px 1fr;
+  grid-template-columns: 76px 1fr;
 }
 
 .trend-reason-list-compact dd {
-  font-size: 10px;
-  line-height: 1.55;
+  font-size: 11px;
+  line-height: 1.65;
 }
 
 .topic-cluster-card-empty {
@@ -424,6 +442,17 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
+}
+
+#topic-channel-primary-list,
+#topic-channel-deferred-list {
+  overflow-x: clip;
+}
+
+@media (max-width: 1120px) {
+  .topic-topic-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .topic-related-link {
@@ -3407,6 +3436,10 @@ footer p {
 
   .topic-channel-grid,
   .topic-channel-panel .topic-cluster-grid-compact {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-topic-card-grid {
     grid-template-columns: 1fr;
   }
 

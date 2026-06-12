@@ -458,9 +458,11 @@ function renderTopicChannels(topics, { deferred = false } = {}) {
 
   if (!selectedSections.length) {
     targetElement.innerHTML = '';
+    if (deferred) targetElement.hidden = true;
     return;
   }
 
+  if (deferred) targetElement.hidden = false;
   replaceChildrenFromHtml(targetElement, selectedSections.map((section) => renderTopicChannelPanel(section)));
 }
 
@@ -519,7 +521,7 @@ function buildTopicChannelDefinitions(topics) {
 
 function renderTopicChannelPanel(section) {
   const body = section.items.length
-    ? '<div class="topic-cluster-grid topic-cluster-grid-compact">' + section.items.map((topic) => renderTopicClusterCard(topic, {
+    ? '<div class="topic-topic-card-grid">' + section.items.map((topic) => renderTopicClusterCard(topic, {
       badge: section.icon + ' ' + section.title,
       scoreMode: 'hot',
       compact: true,
@@ -589,7 +591,7 @@ function renderTopicClusterCard(topic, options = {}) {
         '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
         '<dl class="trend-reason-list trend-reason-list-compact">' +
           '<div><dt>なぜ話題？</dt><dd>' + escapeHtml(topic.whyHot ?? buildWhyHotLabel(topic)) + '</dd></div>' +
-          '<div><dt>誰向け？</dt><dd>' + escapeHtml(audience) + '</dd></div>' +
+          '<div><dt>代表トピック</dt><dd>' + escapeHtml(topic.importantPoint ?? buildImportantPoint(topic)) + '</dd></div>' +
         '</dl>' +
         '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span><span class="detail-link">もっと見る →</span></div>' +
       '</div>' +

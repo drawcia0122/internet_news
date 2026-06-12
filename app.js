@@ -5,6 +5,7 @@ let adultTrendItems = [];
 let lastRefreshStartedAt = 0;
 let visibleTrendTopics = [];
 let deferredTopicChannelsRendered = false;
+let activeTopicChannelKey = null;
 
 const hotPrimaryElement = document.querySelector('#hot-battle-keywords');
 const hotCategoryElement = document.querySelector('#hot-general-keywords');
@@ -15,8 +16,8 @@ const hotSectionElement = document.querySelector('#hot-network');
 const trendSectionElement = document.querySelector('#trends');
 const personalNewsListElement = document.querySelector('#personal-news-list');
 const mustReadNewsListElement = document.querySelector('#must-read-news-list');
-const topicChannelPrimaryListElement = document.querySelector('#topic-channel-primary-list');
-const topicChannelDeferredListElement = document.querySelector('#topic-channel-deferred-list');
+const topicChannelTabsElement = document.querySelector('#topic-channel-tabs');
+const topicChannelStageElement = document.querySelector('#topic-channel-stage');
 const topicChannelsSectionElement = document.querySelector('#topic-channels');
 const dailyBriefListElement = document.querySelector('#daily-brief-list');
 const mobileMenuButton = document.querySelector('#mobile-menu-button');
@@ -387,7 +388,7 @@ function renderDiscoverySections() {
     scoreMode: 'hot',
     featured: true,
   });
-  renderTopicChannels(topics, { deferred: false });
+  renderTopicChannels(topics);
   renderPriorityList(personalNewsListElement, selectPersonalNews(topics), {
     emptyTitle: '自分向けニュースを整理中です',
     emptyText: 'ゲーム、AI、セール、ネット文化などの話題を探しています。',
@@ -450,20 +451,25 @@ function renderPriorityList(element, topics, options) {
   replaceChildrenFromHtml(element, cards);
 }
 
-function renderTopicChannels(topics, { deferred = false } = {}) {
+function renderTopicChannels(topics) {
+  if (!topicChannelTabsElement || !topicChannelStageElement) return;
   const definitions = buildTopicChannelDefinitions(topics);
-  const targetElement = deferred ? topicChannelDeferredListElement : topicChannelPrimaryListElement;
-  const selectedSections = definitions.filter((section) => section.deferred === deferred);
-  if (!targetElement) return;
-
-  if (!selectedSections.length) {
-    targetElement.innerHTML = '';
-    if (deferred) targetElement.hidden = true;
+  const availableSections = definitions.filter((section) => section.items.length);
+  const sections = availableSections.length ? availableSections : definitions;
+  if (!sections.length) {
+    topicChannelTabsElement.innerHTML = '';
+    topicChannelStageElement.innerHTML = '';
     return;
   }
 
-  if (deferred) targetElement.hidden = false;
-  replaceChildrenFromHtml(targetElement, selectedSections.map((section) => renderTopicChannelPanel(section)));
+  const sectionKeys = new Set(sections.map((section) => section.key));
+  if (!activeTopicChannelKey || !sectionKeys.has(activeTopicChannelKey)) {
+    activeTopicChannelKey = selectDefaultTopicChannelKey(sections);
+  }
+
+  const activeSection = sections.find((section) => section.key === activeTopicChannelKey) ?? sections[0];
+  replaceChildrenFromHtml(topicChannelTabsElement, sections.map((section) => renderTopicChannelTab(section, section.key === activeSection.key)));
+  topicChannelStageElement.innerHTML = renderTopicChannelPanel(activeSection);
 }
 
 function buildTopicChannelDefinitions(topics) {
@@ -474,7 +480,6 @@ function buildTopicChannelDefinitions(topics) {
       title: 'ゲーム',
       description: '予約、抽選、発売、アップデートなど、ゲーム周辺の大きな動きを先に整理します。',
       items: selectCategoryTopics(topics, (topic) => hasCategory(topic, 'games')),
-      deferred: false,
     },
     {
       key: 'ai',
@@ -482,7 +487,6 @@ function buildTopicChannelDefinitions(topics) {
       title: 'AI',
       description: '生成AI、主要モデル、企業発表、利用条件変更などを Topic 単位でまとめます。',
       items: selectCategoryTopics(topics, (topic) => isAiTopic(topic)),
-      deferred: false,
     },
     {
       key: 'deals',
@@ -490,7 +494,6 @@ function buildTopicChannelDefinitions(topics) {
       title: 'お得情報',
       description: 'セール、割引、キャンペーン、ポイント還元系を、後追いしやすい形でまとめます。',
       items: selectCategoryTopics(topics, (topic) => isDealsTopic(topic)),
-      deferred: true,
     },
     {
       key: 'sns-net',
@@ -498,7 +501,6 @@ function buildTopicChannelDefinitions(topics) {
       title: 'SNS・ネット',
       description: 'SNS、ネットカルチャー、2chまとめ系を残したまま、話題単位で横断整理します。',
       items: selectCategoryTopics(topics, (topic) => isSnsOrNetTopic(topic)),
-      deferred: true,
     },
     {
       key: 'adult',
@@ -506,7 +508,6 @@ function buildTopicChannelDefinitions(topics) {
       title: 'アダルト',
       description: '一般ニュース一覧とは切り分けつつ、ホームでも主要トレンドだけ把握できるようにします。',
       items: selectCategoryTopics(topics, (topic) => hasCategory(topic, 'adult')),
-      deferred: true,
     },
     {
       key: 'world',
@@ -514,21 +515,37 @@ function buildTopicChannelDefinitions(topics) {
       title: '世の中',
       description: '政治、経済、国際、事件など、生活や判断に関わる Topic をまとめます。',
       items: selectCategoryTopics(topics, (topic) => isWorldTopic(topic)),
-      deferred: true,
     },
   ];
 }
 
+function selectDefaultTopicChannelKey(sections) {
+  const preferredOrder = ['games', 'ai', 'deals', 'sns-net', 'adult', 'world'];
+  const available = new Map(sections.map((section) => [section.key, section]));
+  const preferred = preferredOrder
+    .map((key) => available.get(key))
+    .filter(Boolean)
+    .sort((left, right) => right.items.length - left.items.length);
+  return preferred[0]?.key ?? sections.sort((left, right) => right.items.length - left.items.length)[0]?.key ?? sections[0]?.key ?? null;
+}
+
+function renderTopicChannelTab(section, isActive) {
+  return '<button class="' + escapeHtml('topic-tab-button' + (isActive ? ' active' : '')) + '" type="button" role="tab" aria-selected="' + escapeHtml(String(isActive)) + '" data-topic-tab="' + escapeHtml(section.key) + '">' +
+    '<span>' + escapeHtml(section.icon + ' ' + section.title) + '</span>' +
+    '<strong>' + escapeHtml(String(section.items.length)) + '</strong>' +
+  '</button>';
+}
+
 function renderTopicChannelPanel(section) {
   const body = section.items.length
-    ? '<div class="topic-topic-card-grid">' + section.items.map((topic) => renderTopicClusterCard(topic, {
+    ? '<div class="topic-channel-carousel">' + section.items.map((topic) => renderTopicClusterCard(topic, {
       badge: section.icon + ' ' + section.title,
       scoreMode: 'hot',
-      compact: true,
+      featured: true,
     })).join('') + '</div>'
     : '<article class="topic-cluster-card topic-cluster-card-empty"><strong>' + escapeHtml(section.title) + 'の話題を整理中です</strong><p>最新の Topic Cluster がまとまり次第ここに表示します。</p></article>';
 
-  return '<section class="topic-channel-panel">' +
+  return '<section class="topic-channel-panel topic-channel-panel-active">' +
     '<div class="topic-channel-head"><div><p class="section-kicker">' + escapeHtml(section.key.toUpperCase()) + '</p><h3>' + escapeHtml(section.icon + ' ' + section.title) + '</h3></div><p>' + escapeHtml(section.description) + '</p></div>' +
     body +
   '</section>';
@@ -635,7 +652,7 @@ function renderTopicRelatedLink(signal) {
   '</a>';
 }
 
-function selectCategoryTopics(topics, predicate, limit = 3) {
+function selectCategoryTopics(topics, predicate, limit = 6) {
   return [...topics]
     .filter((topic) => predicate(topic))
     .filter((topic) => !isLowPriorityTopic(topic))
@@ -882,7 +899,7 @@ function revealTrendSection() {
 function revealDeferredTopicChannels() {
   if (deferredTopicChannelsRendered) return;
   deferredTopicChannelsRendered = true;
-  renderTopicChannels(visibleTrendTopics.length ? visibleTrendTopics : trendTopics, { deferred: true });
+  renderTopicChannels(visibleTrendTopics.length ? visibleTrendTopics : trendTopics);
   recordPerfCount('after-topic-channels');
 }
 
@@ -1501,6 +1518,17 @@ document.querySelectorAll('.filter-pills button').forEach((button) => {
     renderTrends(button.dataset.filter);
   });
 });
+
+if (topicChannelTabsElement) {
+  topicChannelTabsElement.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-topic-tab]');
+    if (!(button instanceof HTMLButtonElement)) return;
+    const nextKey = button.dataset.topicTab;
+    if (!nextKey || nextKey === activeTopicChannelKey) return;
+    activeTopicChannelKey = nextKey;
+    renderTopicChannels(visibleTrendTopics.length ? visibleTrendTopics : trendTopics);
+  });
+}
 
 if (adultFilterPillsElement) {
   adultFilterPillsElement.querySelectorAll('button').forEach((button) => {

@@ -89,9 +89,9 @@
           </div>
           <p class="brief-description">ゲーム、AI、お得情報、SNS・ネット、アダルト、世の中を Topic 単位で整理します。既存のカテゴリ別ニュース一覧もこの下に残します。</p>
         </div>
-        <div class="topic-channel-stack">
-          <div class="topic-channel-grid" id="topic-channel-primary-list"></div>
-          <div class="topic-channel-grid" id="topic-channel-deferred-list" hidden></div>
+        <div class="topic-channel-hub">
+          <div class="topic-channel-tabs" id="topic-channel-tabs" role="tablist" aria-label="Topicカテゴリ"></div>
+          <div class="topic-channel-stage" id="topic-channel-stage"></div>
         </div>
       </section>
 
@@ -130,32 +130,6 @@
             </article>
           </div>
         </div>
-      </section>
-
-      <section class="hot-section" id="hot-network" aria-label="ネットで急上昇">
-        <aside class="hot-card">
-          <div class="hot-card-top">
-            <span class="live-badge">LIVE</span>
-            <span>🔥ネットで急上昇</span>
-          </div>
-          <div class="hot-groups">
-            <div class="hot-group">
-              <div class="hot-group-heading">
-                <strong>主要トピック</strong>
-                <small>速報 / 注目 / 拡散</small>
-              </div>
-              <ol id="hot-battle-keywords"></ol>
-            </div>
-            <div class="hot-group">
-              <div class="hot-group-heading">
-                <strong>カテゴリ別</strong>
-                <small>各ジャンルの新着 / 重要トピック</small>
-              </div>
-              <ol id="hot-general-keywords"></ol>
-            </div>
-          </div>
-          <div class="scan-line"></div>
-        </aside>
       </section>
 
       <section class="adult-section" id="adult-trends-entry" aria-labelledby="adult-trends-entry-heading">
@@ -208,6 +182,32 @@
         </section>
 
         <aside class="sidebar">
+          <section class="hot-section" id="hot-network" aria-label="ネットで急上昇">
+            <div class="hot-card">
+              <div class="hot-card-top">
+                <span class="live-badge">LIVE</span>
+                <span>🔥ネットで急上昇</span>
+              </div>
+              <div class="hot-groups">
+                <div class="hot-group">
+                  <div class="hot-group-heading">
+                    <strong>主要トピック</strong>
+                    <small>速報 / 注目 / 拡散</small>
+                  </div>
+                  <ol id="hot-battle-keywords"></ol>
+                </div>
+                <div class="hot-group">
+                  <div class="hot-group-heading">
+                    <strong>カテゴリ別</strong>
+                    <small>各ジャンルの新着 / 重要トピック</small>
+                  </div>
+                  <ol id="hot-general-keywords"></ol>
+                </div>
+              </div>
+              <div class="scan-line"></div>
+            </div>
+          </section>
+
           <section class="ranking-card" id="ranking">
             <div class="side-heading">
               <div>

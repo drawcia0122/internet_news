@@ -13,9 +13,13 @@ const RANGE_CONFIG = {
 };
 
 let trendItems = [];
+let currentTrendItems = [];
+let archiveTrendItems = [];
 let activeCategory = 'all';
 let activeRange = '24h';
 let currentPage = 1;
+let archiveLoaded = false;
+let archiveLoadingPromise = null;
 
 document.addEventListener('error', (event) => {
   const image = event.target;
@@ -33,26 +37,20 @@ init();
 
 async function init() {
   try {
-    const [archivePayload, currentPayload] = await Promise.all([
-      fetchJson('./data/trend-topics-archive.json').catch(() => null),
-      fetchJson('./data/trend-topics.json').catch(() => null),
-    ]);
-    trendItems = dedupeTopics(
-      mergeReports(
-        (currentPayload?.items ?? []).map(normalizeTopic),
-        (archivePayload?.items ?? []).map(normalizeTopic),
-      ),
-    ).sort((left, right) => Number(right.score ?? 0) - Number(left.score ?? 0));
-    updatedElement.textContent = currentPayload?.generatedAt || archivePayload?.generatedAt
-      ? formatDate(currentPayload?.generatedAt ?? archivePayload?.generatedAt) + ' 更新'
+    const currentPayload = await fetchJson('./data/trend-topics.json').catch(() => null);
+    currentTrendItems = (currentPayload?.items ?? []).map(normalizeTopic);
+    trendItems = dedupeTopics(currentTrendItems).sort((left, right) => Number(right.score ?? 0) - Number(left.score ?? 0));
+    updatedElement.textContent = currentPayload?.generatedAt
+      ? formatDate(currentPayload.generatedAt) + ' 更新'
       : '更新時刻不明';
   } catch {
     trendItems = [];
+    currentTrendItems = [];
     updatedElement.textContent = '読み込み失敗';
   }
 
   saveTopicCache(trendItems);
-  renderTrendIndex();
+  await renderTrendIndex();
 }
 
 function normalizeTopic(topic) {
@@ -81,7 +79,8 @@ function normalizeLegacyCategoryLabel(value, fallbackCategory) {
   return value ?? categoryLabelFor(fallbackCategory ?? 'general');
 }
 
-function renderTrendIndex() {
+async function renderTrendIndex() {
+  await ensureArchiveLoadedIfNeeded();
   const query = queryElement.value.trim().toLowerCase();
   const range = RANGE_CONFIG[activeRange] || RANGE_CONFIG['24h'];
   const filtered = trendItems
@@ -107,6 +106,41 @@ function renderTrendIndex() {
   const pageItems = filtered.slice(startIndex, startIndex + PAGE_SIZE);
   listElement.innerHTML = pageItems.map((item) => renderTrendCard(item)).join('');
   renderPagination(totalPages, filtered.length);
+}
+
+async function ensureArchiveLoadedIfNeeded() {
+  if (activeRange === '24h' || archiveLoaded) return;
+  if (archiveLoadingPromise) {
+    await archiveLoadingPromise;
+    return;
+  }
+
+  const previousUpdatedText = updatedElement?.textContent ?? '';
+  if (updatedElement) updatedElement.textContent = 'アーカイブを読み込み中…';
+  if (listElement && !listElement.children.length) {
+    listElement.innerHTML = '<div class="empty-tweets trend-empty"><strong>古い話題を読み込み中です</strong><p>一覧表示のためにアーカイブデータを追加しています。</p></div>';
+  }
+
+  archiveLoadingPromise = (async () => {
+    const archivePayload = await fetchJson('./data/trend-topics-archive.json').catch(() => null);
+    archiveTrendItems = (archivePayload?.items ?? []).map(normalizeTopic);
+    trendItems = dedupeTopics(
+      mergeReports(currentTrendItems, archiveTrendItems),
+    ).sort((left, right) => Number(right.score ?? 0) - Number(left.score ?? 0));
+    archiveLoaded = true;
+    saveTopicCache(trendItems);
+    if (updatedElement) {
+      updatedElement.textContent = archivePayload?.generatedAt
+        ? formatDate(archivePayload.generatedAt) + ' 更新'
+        : (previousUpdatedText || '更新時刻不明');
+    }
+  })();
+
+  try {
+    await archiveLoadingPromise;
+  } finally {
+    archiveLoadingPromise = null;
+  }
 }
 
 function renderTrendCard(item) {
@@ -513,7 +547,7 @@ function renderPagination(totalPages, totalItems) {
   paginationElement.querySelectorAll('[data-page]').forEach((button) => {
     button.addEventListener('click', () => {
       currentPage = Number(button.getAttribute('data-page')) || 1;
-      renderTrendIndex();
+      void renderTrendIndex();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
@@ -552,7 +586,7 @@ document.querySelectorAll('.news-category-tabs button').forEach((button) => {
     button.classList.add('active');
     activeCategory = button.dataset.category;
     currentPage = 1;
-    renderTrendIndex();
+    void renderTrendIndex();
   });
 });
 
@@ -562,11 +596,11 @@ document.querySelectorAll('.news-range-tabs button').forEach((button) => {
     button.classList.add('active');
     activeRange = button.dataset.range || '24h';
     currentPage = 1;
-    renderTrendIndex();
+    void renderTrendIndex();
   });
 });
 
 queryElement.addEventListener('input', () => {
   currentPage = 1;
-  renderTrendIndex();
+  void renderTrendIndex();
 });

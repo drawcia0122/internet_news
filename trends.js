@@ -131,11 +131,10 @@ async function ensureArchiveLoadedIfNeeded() {
   }
 
   archiveLoadingPromise = (async () => {
-    const archivePayload = await fetchJson('./data/trend-topics-archive.json').catch(() => null);
+    const archivePayload = await fetchJson('./data/trend-topics-browse.json').catch(() => null);
     archiveTrendItems = (archivePayload?.items ?? []).map(normalizeTopic);
-    trendItems = dedupeTopics(
-      mergeReports(currentTrendItems, archiveTrendItems),
-    ).sort((left, right) => Number(right.score ?? 0) - Number(left.score ?? 0));
+    trendItems = [...currentTrendItems, ...archiveTrendItems]
+      .sort((left, right) => Number(right.score ?? 0) - Number(left.score ?? 0));
     archiveLoaded = true;
     saveTopicCache(trendItems);
     if (updatedElement) {
@@ -210,6 +209,7 @@ function pickCardImageUrl(item) {
 function sanitizeCardImageUrl(value) {
   const url = String(value ?? '').trim();
   if (!url || !/^https?:\/\//i.test(url)) return null;
+  if (/^https?:\/\/lh3\.googleusercontent\.com\/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc(?:=|$)/i.test(url)) return null;
   if (/(?:^|\/)(?:favicon(?:-\d+x\d+)?|apple-touch-icon|android-chrome-\d+x\d+|mstile-\d+x\d+)(?:\.[a-z0-9]+)?(?:$|[?#])/i.test(url)) return null;
   if (/\/favicon\.ico(?:$|[?#])/i.test(url)) return null;
   if (/(?:google|gstatic)\.[^/]+\/.*(?:favicon|logo|icon)/i.test(url)) return null;

@@ -60,6 +60,10 @@ const dailyBriefPayload = buildDailyBrief({
   archiveItems: mergedArchiveItems,
   generatedAt: capturedAt,
 });
+const browseTopicsPayload = buildBrowseTopicsPayload({
+  archiveItems: mergedArchiveItems,
+  generatedAt: capturedAt,
+});
 const homeTopicsPayload = buildHomeTopicsPayload({
   currentItems: currentPayload.items,
   archiveItems: mergedArchiveItems,
@@ -80,6 +84,11 @@ await writeFile(
 await writeFile(
   "data/daily-brief.json",
   `${JSON.stringify(dailyBriefPayload, null, 2)}\n`,
+  "utf8",
+);
+await writeFile(
+  "data/trend-topics-browse.json",
+  `${JSON.stringify(browseTopicsPayload, null, 2)}\n`,
   "utf8",
 );
 await writeFile(
@@ -172,6 +181,50 @@ function buildHomeTopicsPayload({ currentItems = [], archiveItems = [], generate
       whyHot: item.whyHot ?? null,
       importantPoint: item.importantPoint ?? null,
       futureOutlook: item.futureOutlook ?? null,
+      targetAudience: Array.isArray(item.targetAudience) ? item.targetAudience.slice(0, 4) : [],
+    })),
+  };
+}
+
+function buildBrowseTopicsPayload({ archiveItems = [], generatedAt = new Date().toISOString() }) {
+  const rankedItems = [...archiveItems]
+    .filter((item) => {
+      const ageHours = (Date.now() - archiveTimestamp(item)) / (1000 * 60 * 60);
+      return ageHours > 24 && ageHours <= 14 * 24;
+    })
+    .sort((left, right) => Number(right.score ?? 0) - Number(left.score ?? 0) || archiveTimestamp(right) - archiveTimestamp(left))
+    .slice(0, 4200);
+
+  return {
+    generatedAt,
+    items: rankedItems.map((item) => ({
+      id: item.id,
+      title: item.title,
+      summary: item.summary ?? "",
+      category: item.category,
+      categories: Array.isArray(item.categories) ? item.categories : [],
+      categoryLabel: item.categoryLabel ?? null,
+      categoryLabels: Array.isArray(item.categoryLabels) ? item.categoryLabels : [],
+      score: Number(item.score ?? 0),
+      posts: Number(item.posts ?? 1),
+      metricLabel: item.metricLabel ?? "source",
+      thumbnailUrl: sanitizeThumbnailUrl(item.thumbnailUrl),
+      thumbnail: sanitizeThumbnailUrl(item.thumbnail ?? item.thumbnailUrl),
+      publishedAt: item.publishedAt ?? item.sourceSignals?.[0]?.publishedAt ?? null,
+      capturedAt: item.capturedAt ?? generatedAt,
+      time: item.time ?? item.sourceSignals?.[0]?.publishedLabel ?? null,
+      hotReasons: Array.isArray(item.hotReasons) ? item.hotReasons.slice(0, 2) : [],
+      sourceSignals: sanitizeSourceSignals(item.sourceSignals).slice(0, 1).map((signal) => ({
+        source: signal.source ?? null,
+        sourceName: signal.sourceName ?? null,
+        title: signal.title ?? null,
+        url: signal.url ?? null,
+        publishedAt: signal.publishedAt ?? null,
+        publishedLabel: signal.publishedLabel ?? null,
+      })),
+      whatHappened: item.whatHappened ?? null,
+      whyHot: item.whyHot ?? null,
+      importantPoint: item.importantPoint ?? null,
       targetAudience: Array.isArray(item.targetAudience) ? item.targetAudience.slice(0, 4) : [],
     })),
   };

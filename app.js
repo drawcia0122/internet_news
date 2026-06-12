@@ -592,7 +592,7 @@ function renderTopicClusterCard(topic, options = {}) {
     : Math.round(Number(topic.personalScore ?? hotTopicScore(topic) ?? 0));
   const cardClasses = [
     'topic-cluster-card',
-    'topic-cluster-link',
+    'topic-cluster-shell',
     isCompact ? 'topic-cluster-card-compact topic-cluster-card-channel' : '',
     options.featured ? 'topic-cluster-card-featured' : '',
     topic.thumbnailUrl ? 'has-thumb' : 'trend-card-no-thumb',
@@ -616,28 +616,28 @@ function renderTopicClusterCard(topic, options = {}) {
   }
 
   if (isCompact) {
-    return '<a class="' + escapeHtml(cardClasses) + '" href="' + escapeHtml(href) + '">' +
+    return '<article class="' + escapeHtml(cardClasses) + '">' +
       thumbnail +
       '<div class="topic-cluster-body topic-cluster-body-channel">' +
         '<div class="topic-cluster-top"><span>' + escapeHtml(options.badge ?? 'TOPIC') + '</span><strong>' + escapeHtml(String(scoreValue)) + '</strong></div>' +
         '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(topic.time ?? '直近') + '</time></div>' +
-        '<h3>' + escapeHtml(topic.title ?? '話題') + '</h3>' +
+        '<h3><a class="topic-card-primary-link" href="' + escapeHtml(href) + '">' + escapeHtml(topic.title ?? '話題') + '</a></h3>' +
         '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
         '<dl class="trend-reason-list trend-reason-list-compact">' +
           '<div><dt>なぜ話題？</dt><dd>' + escapeHtml(topic.whyHot ?? buildWhyHotLabel(topic)) + '</dd></div>' +
           '<div><dt>代表トピック</dt><dd>' + escapeHtml(topic.importantPoint ?? buildImportantPoint(topic)) + '</dd></div>' +
         '</dl>' +
-        '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span><span class="detail-link">もっと見る →</span></div>' +
+        '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span><a class="detail-link" href="' + escapeHtml(href) + '">もっと見る →</a></div>' +
       '</div>' +
-    '</a>';
+    '</article>';
   }
 
-  return '<a class="' + escapeHtml(cardClasses) + '" href="' + escapeHtml(href) + '">' +
+  return '<article class="' + escapeHtml(cardClasses) + '">' +
     thumbnail +
     '<div class="topic-cluster-body">' +
       '<div class="topic-cluster-top"><span>' + escapeHtml(options.badge ?? 'TOPIC') + '</span><strong>' + escapeHtml(String(scoreValue)) + '</strong></div>' +
       '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(topic.time ?? '直近') + '</time></div>' +
-      '<h3>' + escapeHtml(topic.title ?? '話題') + '</h3>' +
+      '<h3><a class="topic-card-primary-link" href="' + escapeHtml(href) + '">' + escapeHtml(topic.title ?? '話題') + '</a></h3>' +
       '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
       '<dl class="trend-reason-list">' +
         '<div><dt>なぜ話題？</dt><dd>' + escapeHtml(topic.whyHot ?? buildWhyHotLabel(topic)) + '</dd></div>' +
@@ -645,9 +645,9 @@ function renderTopicClusterCard(topic, options = {}) {
         '<div><dt>誰に関係ある？</dt><dd>' + escapeHtml(audience) + '</dd></div>' +
       '</dl>' +
       relatedHtml +
-      '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span><span class="detail-link">もっと見る →</span></div>' +
+      '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span><a class="detail-link" href="' + escapeHtml(href) + '">もっと見る →</a></div>' +
     '</div>' +
-  '</a>';
+  '</article>';
 }
 
 function buildTopicCardSummary(topic) {

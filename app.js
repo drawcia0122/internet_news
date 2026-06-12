@@ -135,10 +135,19 @@ async function loadTrendTopics() {
   try {
     console.time('home:fetch-topics');
     const currentPayload = await fetchHomeTopicsPayload().catch(() => null);
-    console.timeEnd('home:fetch-topics');
     const currentTopics = Array.isArray(currentPayload?.items) ? currentPayload.items : [];
-    latestTrendGeneratedAt = currentPayload?.generatedAt ?? null;
-    trendTopics = selectTopTrendTopics(currentTopics.map(normalizeTrendTopic));
+    const shouldSupplementTopics = currentTopics.length < TOPIC_WORKING_SET_LIMIT;
+    const supplementalPayload = shouldSupplementTopics
+      ? await fetchTrendTopicsPayload().catch(() => null)
+      : null;
+    console.timeEnd('home:fetch-topics');
+    const supplementalTopics = Array.isArray(supplementalPayload?.items) ? supplementalPayload.items : [];
+    latestTrendGeneratedAt = currentPayload?.generatedAt ?? supplementalPayload?.generatedAt ?? null;
+    const mergedTopics = dedupeTopics([
+      ...currentTopics.map(normalizeTrendTopic),
+      ...supplementalTopics.map(normalizeTrendTopic),
+    ]);
+    trendTopics = selectTopTrendTopics(mergedTopics).slice(0, TOPIC_WORKING_SET_LIMIT);
   } catch (error) {
     errorMessage = error?.message || '取得エラー';
     latestTrendGeneratedAt = null;
@@ -215,6 +224,14 @@ async function fetchTrendArchivePayload() {
     cacheKey: 'trend-topics-archive',
     endpoints: ['./data/trend-topics-archive.json', './data/trend-topics.json'],
     ttlMs: ARCHIVE_CACHE_TTL_MS,
+  });
+}
+
+async function fetchTrendTopicsPayload() {
+  return await fetchJsonWithCache({
+    cacheKey: 'trend-topics-full',
+    endpoints: ['./data/trend-topics.json'],
+    ttlMs: HOME_TOPIC_CACHE_TTL_MS,
   });
 }
 

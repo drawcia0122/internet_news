@@ -360,6 +360,7 @@ function isLowPriorityText(value) {
     || /(地域対応|エリア対応|正式スタート|サービス開始|提供開始|販売開始|導入開始|参加者募集|受講者募集|開催のお知らせ|来場者募集|観光イベント|ワークショップ|講習会|地域おこし|セミナー|講演会|説明会|体験会|初級クラス)/.test(value)
     || /(地元の魅力をアピール|観光pr|地域pr|やってみた|首長と○○やってみた)/.test(value)
     || /(トークセッションを開催|対談しました|本学の学生|meijo-u\.ac\.jp|大学公式サイト)/i.test(value)
+    || /(映画レビュー|の映画レビュー|高市首相の動静|首相の動静|｜エンタメ|エキスパート\b)/.test(value)
     || (/(累計動画|累計導入|導入実績|掲載実績|利用者数|満足度|受賞歴|フォロワー数)/.test(value) && !/(逮捕|事件|決算|法案|選挙|抽選|値上げ|事故)/.test(value));
 }
 
@@ -1002,20 +1003,20 @@ function isNearDuplicateItem(left, right) {
   const rightTitle = normalizeContentFingerprint(right.title);
   if (leftTitle && rightTitle) {
     if (leftTitle === rightTitle) return true;
-    if ((leftTitle.includes(rightTitle) || rightTitle.includes(leftTitle)) && Math.min(leftTitle.length, rightTitle.length) >= 18) {
+  if ((leftTitle.includes(rightTitle) || rightTitle.includes(leftTitle)) && Math.min(leftTitle.length, rightTitle.length) >= 24) {
       return true;
     }
   }
 
   const leftTitleTokens = fingerprintTokens(left.title);
   const rightTitleTokens = fingerprintTokens(right.title);
-  if (tokenOverlapRatio(leftTitleTokens, rightTitleTokens) >= 0.82 && Math.min(leftTitleTokens.length, rightTitleTokens.length) >= 4) {
+  if (tokenOverlapRatio(leftTitleTokens, rightTitleTokens) >= 0.9 && Math.min(leftTitleTokens.length, rightTitleTokens.length) >= 5) {
     return true;
   }
 
   const leftContentTokens = fingerprintTokens(`${left.title ?? ""} ${left.summary ?? ""}`);
   const rightContentTokens = fingerprintTokens(`${right.title ?? ""} ${right.summary ?? ""}`);
-  return tokenOverlapRatio(leftContentTokens, rightContentTokens) >= 0.88 && Math.min(leftContentTokens.length, rightContentTokens.length) >= 6;
+  return tokenOverlapRatio(leftContentTokens, rightContentTokens) >= 0.94 && Math.min(leftContentTokens.length, rightContentTokens.length) >= 7;
 }
 
 function itemPrimaryUrl(item) {
@@ -1043,17 +1044,17 @@ function isLikelySameTopicItem(left, right) {
     const leftTime = itemPrimaryAt(left);
     const rightTime = itemPrimaryAt(right);
     if (leftTime == null || rightTime == null) return true;
-    return Math.abs(leftTime - rightTime) <= 36 * 60 * 60 * 1000;
+    return Math.abs(leftTime - rightTime) <= 24 * 60 * 60 * 1000;
   }
 
   const leftTokens = fingerprintTokens(leftTitle);
   const rightTokens = fingerprintTokens(rightTitle);
   const overlap = tokenOverlapRatio(leftTokens, rightTokens);
-  if (overlap < 0.9) return false;
+  if (overlap < 0.95) return false;
   const leftTime = itemPrimaryAt(left);
   const rightTime = itemPrimaryAt(right);
   if (leftTime == null || rightTime == null) return false;
-  return Math.abs(leftTime - rightTime) <= 36 * 60 * 60 * 1000;
+  return Math.abs(leftTime - rightTime) <= 24 * 60 * 60 * 1000;
 }
 
 function itemPrimaryAt(item) {

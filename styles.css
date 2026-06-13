@@ -872,6 +872,31 @@ h1 span {
   text-shadow: 0 8px 30px rgba(33, 102, 255, 0.14);
 }
 
+.hero-title-row {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-title-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 999px;
+  color: #0f5a4f;
+  background: linear-gradient(135deg, rgba(116, 231, 211, 0.92), rgba(187, 248, 152, 0.92));
+  box-shadow: 0 16px 28px rgba(42, 173, 146, 0.18);
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-shadow: none;
+  vertical-align: middle;
+}
+
 .hero-description {
   max-width: 640px;
   color: var(--muted);

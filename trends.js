@@ -315,15 +315,33 @@ function isWithinRange(item, range) {
   if (!range) return true;
   const time = archiveTimestamp(item);
   if (!time) return true;
-  const ageHours = (Date.now() - time) / (60 * 60 * 1000);
-  return ageHours > range.minHours && ageHours <= range.maxHours;
+  const ageMs = Date.now() - time;
+  const minMs = range.minHours * 60 * 60 * 1000;
+  const maxMs = range.maxHours * 60 * 60 * 1000;
+
+  if (ageMs < 0) return range.minHours === 0;
+  if (range.minHours === 0) return ageMs < maxMs;
+  if (range.maxHours === RANGE_CONFIG['7-14d'].maxHours) return ageMs >= minMs && ageMs <= maxMs;
+  return ageMs >= minMs && ageMs < maxMs;
 }
 
 function archiveTimestamp(item) {
-  const dateValue = item.sourceSignals?.[0]?.publishedAt ?? item.publishedAt ?? item.capturedAt ?? item.generatedAt;
-  if (!dateValue) return null;
-  const time = new Date(dateValue).getTime();
-  return Number.isNaN(time) ? null : time;
+  const publishedCandidates = [
+    ...(Array.isArray(item.sourceSignals) ? item.sourceSignals.map((signal) => signal?.publishedAt) : []),
+    item.publishedAt,
+  ]
+    .map((value) => new Date(value).getTime())
+    .filter((value) => Number.isFinite(value));
+
+  if (publishedCandidates.length) {
+    return Math.max(...publishedCandidates);
+  }
+
+  const fallbackCandidates = [item.capturedAt, item.generatedAt]
+    .map((value) => new Date(value).getTime())
+    .filter((value) => Number.isFinite(value));
+
+  return fallbackCandidates.length ? Math.max(...fallbackCandidates) : null;
 }
 
 function dedupeTopics(topics) {

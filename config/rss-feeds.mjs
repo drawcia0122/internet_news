@@ -72,7 +72,7 @@ export const RSS_FEEDS = [
   {
     source: "Google News",
     sourceName: "Google News / 2chまとめ",
-    url: buildGoogleNewsRssUrl("2ch OR 5ch OR なんJ OR まとめサイト OR まとめブログ OR オタコム OR はちま OR 痛いニュース OR 暇人速報 OR アルファルファモザイク"),
+    url: buildGoogleNewsRssUrl("\"2chまとめ\" OR \"5chまとめ\" OR \"2chスレ\" OR \"5chスレ\" OR \"なんJ\" OR \"なんG\" OR \"なんJ反応\" OR \"なんG反応\" OR \"まとめサイト\" OR \"まとめブログ\" OR \"オタコム\" OR \"はちま\" OR \"痛いニュース\" OR \"暇人速報\" OR \"アルファルファモザイク\" -サウンドバー -スピーカー -ホームシアター -オーディオ -放送 -テレビ"),
     categoryHint: "matome",
   },
   {

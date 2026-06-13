@@ -379,15 +379,44 @@ function normalizeCategory(category) {
 }
 
 function selectCuratedTrendItems(items, maxItems) {
-  const withThumbnail = items.filter((item) => sanitizeThumbnailUrl(item.thumbnailUrl ?? item.thumbnail));
-  const withoutThumbnail = items.filter((item) => !sanitizeThumbnailUrl(item.thumbnailUrl ?? item.thumbnail));
-  const selectedWithThumbnail = withThumbnail.slice(0, maxItems);
-  const maxWithoutThumbnail = Math.min(withoutThumbnail.length, selectedWithThumbnail.length, Math.max(0, maxItems - selectedWithThumbnail.length));
+  const seededMatome = items
+    .filter(isCuratableMatomeItem)
+    .slice(0, Math.min(3, maxItems));
+  const seededIds = new Set(seededMatome.map((item) => item.id));
+  const remainingItems = items.filter((item) => !seededIds.has(item.id));
+  const withThumbnail = remainingItems.filter((item) => sanitizeThumbnailUrl(item.thumbnailUrl ?? item.thumbnail));
+  const withoutThumbnail = remainingItems.filter((item) => !sanitizeThumbnailUrl(item.thumbnailUrl ?? item.thumbnail));
+  const selectedWithThumbnail = withThumbnail.slice(0, Math.max(0, maxItems - seededMatome.length));
+  const maxWithoutThumbnail = Math.min(
+    withoutThumbnail.length,
+    selectedWithThumbnail.length,
+    Math.max(0, maxItems - seededMatome.length - selectedWithThumbnail.length),
+  );
   const selectedWithoutThumbnail = withoutThumbnail.slice(0, maxWithoutThumbnail);
 
-  return [...selectedWithThumbnail, ...selectedWithoutThumbnail]
+  return [...seededMatome, ...selectedWithThumbnail, ...selectedWithoutThumbnail]
     .sort((left, right) => Number(right.score ?? 0) - Number(left.score ?? 0) || archiveTimestamp(right) - archiveTimestamp(left))
     .slice(0, maxItems);
+}
+
+function isCuratableMatomeItem(item) {
+  const categories = Array.isArray(item?.categories) ? item.categories : [];
+  if (item?.category !== "matome" && !categories.includes("matome")) return false;
+
+  const value = [
+    item?.title,
+    item?.summary,
+    ...(item?.sourceSignals ?? []).flatMap((signal) => [signal?.title, signal?.summary, signal?.sourceName]),
+  ].filter(Boolean).join(" ").toLowerCase();
+
+  if (isFalsePositiveMatomeTopic(value)) return false;
+  if (/【pr】|\bpr\b|広告|タイアップ|スポンサー/.test(value)) return false;
+  return /なんj|なんg|2chまとめ|5chまとめ|2chスレ|5chスレ|反応集|ネットの反応|まとめサイト|まとめブログ|はちま|オタコム|痛いニュース|暇人速報|アルファルファモザイク/.test(value);
+}
+
+function isFalsePositiveMatomeTopic(value) {
+  const text = String(value ?? "").toLowerCase();
+  return /(サウンドバー|スピーカー|ホームシアター|オーディオ|アンプ|テレビ|tv|番組|放送|5ch「|5ch\\b[^まス反]|2chのデジタル・ミキサー|1泊家族|まとめ売り)/.test(text);
 }
 
 async function enrichItemsWithMetadata(items) {

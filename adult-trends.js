@@ -143,7 +143,10 @@ async function loadAdultData() {
     ]);
     adultArchiveItems = payloadItems(archivePayload);
     const archiveMap = buildArchiveMap(adultArchiveItems);
-    adultTrendItems = payloadItems(trendsPayload).map((item) => normalizeAdultTrendItem(item, archiveMap.get(item.id)));
+    adultTrendItems = payloadItems(trendsPayload).map((item) => normalizeAdultTrendItem(
+      item,
+      archiveMap.get(item.id) ?? archiveMap.get(item.historyKey) ?? archiveMap.get(item.sourceUrl),
+    ));
     adultFeatureItems = payloadItems(featuresPayload).map((item) => normalizeAdultFeatureItem(item));
   } catch (error) {
     errorMessage = error?.message || '取得エラー';
@@ -194,11 +197,11 @@ function renderAdultPage() {
 function buildPortalModel() {
   const rawRankingItems = attachRelatedTrendItems(adultTrendItems.filter((item) => item.ranking));
   const visibleTrendItems = attachRelatedTrendItems(adultTrendItems.filter(isVisibleAdultTrendItem));
-  const visibleFeatureItems = adultFeatureItems.filter(isVisibleAdultFeatureItem);
+  const visibleFeatureItems = prepareFeatureItems(adultFeatureItems.filter(isVisibleAdultFeatureItem), visibleTrendItems);
   const rankingItems = rawRankingItems;
-  const saleItems = visibleTrendItems.filter((item) => item.adultDisplayType === 'sale' || item.discountRate !== null || item.price !== null || item.originalPrice !== null);
+  const saleItems = visibleTrendItems.filter(hasRealSaleEvidence);
   const campaignItems = visibleTrendItems.filter((item) => item.adultDisplayType === 'campaign');
-  const trendingWorks = visibleTrendItems.filter((item) => item.rankChange > 0 || item.adultDisplayType === 'trending');
+  const trendingWorks = visibleTrendItems.filter((item) => isDlsiteTrendingItem(item) && (Number(item.rankDelta ?? item.rankChange ?? 0) > 0 || Number(item.adultTrendScore ?? 0) > 0 || item.adultDisplayType === 'trending'));
   const magazineFeatures = [...visibleFeatureItems].sort(compareFeatureItemsForMagazine);
   const campaignPool = dedupeById([
     ...campaignItems,
@@ -223,6 +226,7 @@ function buildPortalModel() {
       items: sortItems(rankingItems.filter((item) => item.adultPrimaryGenre === genre), activeSort).slice(0, 20),
     })),
     trendingTop: sortItems([...trendingWorks], 'rise').slice(0, 3),
+    trendingRanking: sortItems([...trendingWorks], 'rise').slice(0, 10),
     trendingWorks: sortItems([...trendingWorks], activeSort || 'rise').slice(0, 30),
     trendingGenres: aggregateTrendBuckets(trendingWorks, (item) => item.adultPrimaryGenre || '未分類'),
     trendingTags: aggregateTrendBuckets(trendingWorks, (item) => item.tags || []),
@@ -243,6 +247,21 @@ function buildPortalModel() {
 
 function isVisibleAdultTrendItem(item) {
   return !EXCLUDED_ADULT_GENRES.has(contentGenreLabel(item));
+}
+
+function isDlsiteTrendingItem(item) {
+  const sourceGroup = normalizeSourceGroupKey(item?.adultSourceGroup ?? item?.sourceGroup ?? item?.sourceName ?? item?.source);
+  if (sourceGroup !== 'dlsite') return false;
+  const rankingType = String(item?.rankingType ?? item?.trendType ?? item?.type ?? '').toLowerCase();
+  const sourceKey = String(item?.sourceKey ?? '').toLowerCase();
+  return /ranking|new/.test(rankingType) || /ranking|new/.test(sourceKey);
+}
+
+function hasRealSaleEvidence(item) {
+  const hasDiscountRate = Number(item?.discountRate ?? 0) > 0;
+  const hasPriceDrop = Number.isFinite(Number(item?.price)) && Number.isFinite(Number(item?.originalPrice)) && Number(item.originalPrice) > Number(item.price);
+  const saleText = [item?.title, item?.summary, ...(item?.tags ?? [])].join(' ');
+  return hasDiscountRate || hasPriceDrop || ((item?.adultDisplayType === 'sale' || /セール|割引|OFF/i.test(saleText)) && (hasDiscountRate || hasPriceDrop));
 }
 
 function isVisibleAdultFeatureItem(item) {
@@ -280,6 +299,8 @@ function renderTopPage(model) {
     renderTopSummary('📈 急上昇TOP3', model.trendingTop, 'trending'),
     renderTopSummary('🏆 人気ランキングTOP3', model.rankingTop, 'ranking'),
     '</div>',
+    renderSectionIntro('📈 急上昇ランキング', '前回順位との差分から、今どの作品が一気に伸びているかを確認できます。'),
+    renderWorkGrid(model.trendingRanking, 'trending'),
     '</section>',
   ].join('');
 }
@@ -362,17 +383,6 @@ function renderTopSummary(title, items, mode) {
   ].join('');
 }
 
-function renderMagazineSummary(title, items) {
-  return [
-    '<section class="adult-panel">',
-    `<div class="adult-panel-head"><h2>${escapeHtml(title)}</h2><p>${escapeHtml(items.length ? `${items.length}本の特集` : '特集データ整理中')}</p></div>`,
-    items.length
-      ? '<div class="adult-feature-grid">' + items.map((item, index) => renderMagazineFeature(item, index, true)).join('') + '</div>'
-      : renderEmptyPanel('今週の特集を準備中です', 'テーマがまとまり次第、ここにおすすめ特集を表示します。'),
-    '</section>',
-  ].join('');
-}
-
 function renderEditorLead(lead, compact = false) {
   if (!lead) {
     return '<section class="adult-panel adult-editorial-lead"><div class="adult-panel-head"><h2>編集サマリー</h2><p>トレンド集計後にここへ要約を表示します。</p></div></section>';
@@ -380,9 +390,16 @@ function renderEditorLead(lead, compact = false) {
   return [
     `<section class="adult-panel adult-editorial-lead${compact ? ' adult-editorial-lead-compact' : ''}">`,
     '<div class="adult-editorial-eyebrow">EDITORIAL LEAD</div>',
+    '<div class="adult-editorial-main">',
     `<div class="adult-editorial-head"><div><p class="adult-editorial-kicker">${escapeHtml(lead.kicker)}</p><h2>${escapeHtml(lead.title)}</h2></div><p>${escapeHtml(lead.summary)}</p></div>`,
     lead.points?.length ? '<div class="adult-editorial-points">' + lead.points.map((point) => `<span>${escapeHtml(point)}</span>`).join('') + '</div>' : '',
+    lead.tags?.length ? `<div class="adult-chip-row">${lead.tags.slice(0, 6).map((tag) => `<span>${escapeHtml(tag)}</span>`).join('')}</div>` : '',
     lead.recommendations?.length ? '<div class="adult-editorial-picks">' + lead.recommendations.map((item) => renderEditorPick(item)).join('') + '</div>' : '',
+    '<div class="adult-feature-actions adult-editorial-actions">' +
+      (lead.detailUrl ? `<a href="${escapeHtml(lead.detailUrl)}">詳細を見る</a>` : '') +
+      (lead.externalUrl ? `<a href="${escapeHtml(lead.externalUrl)}" target="_blank" rel="noreferrer">外部で見る ↗</a>` : '') +
+    '</div>',
+    '</div>',
     '</section>',
   ].join('');
 }
@@ -390,7 +407,7 @@ function renderEditorLead(lead, compact = false) {
 function renderEditorPick(item) {
   const href = item.detailUrl || item.url || '#';
   const external = /^https?:\/\//i.test(href);
-  const thumb = item.thumbnail ? `<div class="adult-editor-pick-thumb"><img class="adult-related-thumb" src="${escapeHtml(item.thumbnail)}" alt="${escapeHtml(item.title)}" loading="lazy" referrerpolicy="no-referrer" /></div>` : '';
+  const thumb = item.thumbnailUrl ? `<div class="adult-editor-pick-thumb"><img class="adult-related-thumb" src="${escapeHtml(item.thumbnailUrl)}" alt="${escapeHtml(item.title)}" loading="lazy" referrerpolicy="no-referrer" /></div>` : '';
   return [
     `<a class="adult-editor-pick" href="${escapeHtml(href)}"${external ? ' target="_blank" rel="noreferrer"' : ''}>`,
     thumb,
@@ -429,8 +446,13 @@ function renderWorkCard(item, mode, compact = false, { displayRank = null } = {}
   const href = './adult-topic.html?id=' + encodeURIComponent(item.routeId ?? item.id ?? '');
   const title = item.title || 'アダルトトレンド';
   const makerLabel = item.adultSourceGroup === 'dlsite' ? 'サークル' : 'メーカー';
+  const genreLabel = displayGenreLabel(item);
   const priceBlock = renderPriceBlock(item, mode);
   const changeBlock = mode === 'trending' ? renderRankChange(item) : '';
+  const hasComparablePreviousRank = Boolean(item.previousRank && item.ranking);
+  const trendScoreBlock = mode === 'trending'
+    ? `<div class="adult-trend-score-row"><strong>TREND ${escapeHtml(String(item.adultTrendScore ?? 0))}</strong>${item.previousRank ? `<span>前回 ${escapeHtml(String(item.previousRank))}位</span>` : '<span>前回順位なし</span>'}${hasComparablePreviousRank ? (Number(item.rankDelta ?? item.rankChange ?? 0) > 0 ? `<em>+${escapeHtml(String(item.rankDelta ?? item.rankChange ?? 0))}</em>` : (Number(item.rankDelta ?? item.rankChange ?? 0) < 0 ? `<em>${escapeHtml(String(item.rankDelta ?? item.rankChange ?? 0))}</em>` : '<em>±0</em>')) : '<em>新規</em>'}</div>`
+    : '';
   const deadline = renderDeadline(item);
   const badges = renderBadgeRow(item.badges);
   const thumb = item.thumbnailUrl ? `<a class="adult-thumb-wrap" href="${escapeHtml(href)}"><img class="adult-thumb" src="${escapeHtml(item.thumbnailUrl)}" alt="${escapeHtml(title)}" loading="lazy" referrerpolicy="no-referrer" /></a>` : '';
@@ -441,27 +463,28 @@ function renderWorkCard(item, mode, compact = false, { displayRank = null } = {}
     mode === 'sale' && item.discountRate !== null ? `<div class="adult-sale-badge">🔥 ${escapeHtml(String(item.discountRate))}%OFF</div>` : '',
     thumb,
     '<div class="adult-card-body">',
-    `<div class="adult-card-meta"><span>${escapeHtml(sourceGroupLabel(item.adultSourceGroup))} · ${escapeHtml(item.adultPrimaryGenre || '未分類')}</span><strong>VS ${escapeHtml(String(item.valueScore ?? 0))}</strong></div>`,
+    `<div class="adult-card-meta"><span>${escapeHtml(sourceGroupLabel(item.adultSourceGroup))} · ${escapeHtml(genreLabel || '未分類')}</span><strong>VS ${escapeHtml(String(item.valueScore ?? 0))}</strong></div>`,
     badges,
+    trendScoreBlock,
     `<h3><a href="${escapeHtml(href)}">${escapeHtml(title)}</a></h3>`,
     `<p>${escapeHtml(item.summary || '注目作品を整理中です。')}</p>`,
     '<dl class="adult-card-points">',
     `<div><dt>${escapeHtml(makerLabel)}</dt><dd>${escapeHtml(item.maker || '未取得')}</dd></div>`,
-    `<div><dt>ジャンル</dt><dd>${escapeHtml(item.adultPrimaryGenre || item.genre || '未分類')}</dd></div>`,
+    `<div><dt>ジャンル</dt><dd>${escapeHtml(genreLabel || '未分類')}</dd></div>`,
     mode !== 'campaign' ? `<div><dt>順位</dt><dd>${escapeHtml(displayRank ? `${displayRank}位` : (item.ranking ? `${item.ranking}位` : '順位未取得'))}${displayRank && item.ranking && displayRank !== item.ranking ? `<small class="adult-rank-origin">元 ${escapeHtml(String(item.ranking))}位</small>` : ''}</dd></div>` : '',
     '</dl>',
     changeBlock,
     priceBlock,
     renderInlineRelatedWorks(item.relatedItems),
     deadline,
-    `<div class="adult-card-footer"><span>${escapeHtml(item.sourceName || sourceGroupLabel(item.adultSourceGroup))}</span><div class="adult-card-actions">${item.sourceUrl ? `<a class="adult-source-link" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noreferrer">公式を見る ↗</a>` : ''}<a href="${escapeHtml(href)}">詳細を見る</a></div></div>`,
+    `<div class="adult-card-footer"><span>${escapeHtml(item.sourceName)}</span><div class="adult-card-actions">${item.sourceUrl ? `<a class="adult-source-link" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noreferrer">公式を見る ↗</a>` : ''}<a href="${escapeHtml(href)}">詳細を見る</a></div></div>`,
     '</div>',
     '</article>',
   ].join('');
 }
 
 function renderMagazineFeature(feature, index, compact = false) {
-  const href = feature.primaryItemId ? './adult-topic.html?id=' + encodeURIComponent(feature.primaryItemId) : feature.sourceUrl || '#';
+  const href = feature.detailUrl || (feature.primaryItemId ? './adult-topic.html?id=' + encodeURIComponent(feature.primaryItemId) : feature.sourceUrl || '#');
   const thumb = feature.thumbnailUrl ? `<a class="adult-thumb-wrap adult-feature-thumb" href="${escapeHtml(href)}"><img class="adult-thumb" src="${escapeHtml(feature.thumbnailUrl)}" alt="${escapeHtml(feature.title)}" loading="lazy" referrerpolicy="no-referrer" /></a>` : '';
   return [
     `<article class="adult-feature-card ${compact ? 'adult-feature-card-compact' : ''}" style="animation-delay:${index * 45}ms">`,
@@ -470,9 +493,12 @@ function renderMagazineFeature(feature, index, compact = false) {
     '<div class="adult-feature-body">',
     `<h3><a href="${escapeHtml(href)}">${escapeHtml(feature.title)}</a></h3>`,
     `<p class="adult-feature-summary">${escapeHtml(feature.summary || '特集情報を整理中です。')}</p>`,
-    `<dl class="adult-feature-points"><div><dt>注目理由</dt><dd>${escapeHtml(feature.whyHot || '話題が集中しているため注目しています。')}</dd></div><div><dt>更新</dt><dd>${escapeHtml(formatAdultDate(feature.updatedAt))}</dd></div></dl>`,
-    feature.tags?.length ? `<div class="adult-chip-row">${feature.tags.slice(0, 6).map((tag) => `<span>${escapeHtml(tag)}</span>`).join('')}</div>` : '',
-    '<div class="adult-related-strip"><div class="adult-related-strip-head"><strong>おすすめ作品</strong><a href="' + escapeHtml(href) + '">特集を見る</a></div><div class="adult-related-row">' + renderRelatedItems(feature.relatedItems) + '</div></div>',
+    `<dl class="adult-feature-points"><div><dt>注目理由</dt><dd>${escapeHtml(feature.whyHot || '話題が集中しているため注目しています。')}</dd></div><div><dt>ジャンル</dt><dd>${escapeHtml(feature.primaryGenreLabel || contentGenreLabel(feature))}</dd></div><div><dt>更新</dt><dd>${escapeHtml(formatAdultDate(feature.updatedAt))}</dd></div></dl>`,
+    feature.cardTags?.length ? `<div class="adult-chip-row">${feature.cardTags.slice(0, 6).map((tag) => `<span>${escapeHtml(tag)}</span>`).join('')}</div>` : '',
+    '<div class="adult-feature-actions">' +
+      (feature.detailUrl ? `<a href="${escapeHtml(feature.detailUrl)}">詳細を見る</a>` : '') +
+      (feature.externalUrl ? `<a href="${escapeHtml(feature.externalUrl)}" target="_blank" rel="noreferrer">外部で見る ↗</a>` : '') +
+    '</div>',
     '</div>',
     '</article>',
   ].join('');
@@ -480,12 +506,17 @@ function renderMagazineFeature(feature, index, compact = false) {
 
 function renderMagazineStory(section, index, { featured = false } = {}) {
   return [
-    `<article class="adult-story-card${featured ? ' adult-story-card-featured' : ''}" style="animation-delay:${index * 45}ms">`,
+    `<article class="adult-story-card adult-feature-story-card${featured ? ' adult-story-card-featured' : ''}" style="animation-delay:${index * 45}ms">`,
+    '<div class="adult-feature-story-body">',
     `<div class="adult-story-head"><div><p class="adult-story-kicker">${escapeHtml(section.kicker || 'FEATURE')}</p><h3>${escapeHtml(section.title)}</h3></div><strong>${escapeHtml(section.scoreLabel || '')}</strong></div>`,
     `<p class="adult-story-summary">${escapeHtml(section.summary || '特集情報を整理中です。')}</p>`,
     section.keyPoints?.length ? '<ul class="adult-story-points">' + section.keyPoints.map((point) => `<li>${escapeHtml(point)}</li>`).join('') + '</ul>' : '',
-    section.recommendedWorks?.length ? '<div class="adult-story-recommend-grid">' + section.recommendedWorks.map((item) => renderMagazineRecommendation(item)).join('') + '</div>' : '',
-    section.relatedWorks?.length ? '<div class="adult-story-related"><strong>関連作品</strong><div class="adult-story-related-row">' + section.relatedWorks.map((item) => renderStoryRelatedItem(item)).join('') + '</div></div>' : '',
+    section.tags?.length ? `<div class="adult-chip-row">${section.tags.slice(0, 6).map((tag) => `<span>${escapeHtml(tag)}</span>`).join('')}</div>` : '',
+    '<div class="adult-feature-actions">' +
+      (section.detailUrl ? `<a href="${escapeHtml(section.detailUrl)}">詳細を見る</a>` : '') +
+      (section.externalUrl ? `<a href="${escapeHtml(section.externalUrl)}" target="_blank" rel="noreferrer">外部で見る ↗</a>` : '') +
+    '</div>',
+    '</div>',
     '</article>',
   ].join('');
 }
@@ -493,7 +524,7 @@ function renderMagazineStory(section, index, { featured = false } = {}) {
 function renderMagazineRecommendation(item) {
   const href = item.detailUrl || item.url || '#';
   const external = /^https?:\/\//i.test(href);
-  const thumb = item.thumbnail ? `<div class="adult-story-rec-thumb"><img class="adult-thumb" src="${escapeHtml(item.thumbnail)}" alt="${escapeHtml(item.title)}" loading="lazy" referrerpolicy="no-referrer" /></div>` : '';
+  const thumb = item.thumbnailUrl ? `<div class="adult-story-rec-thumb"><img class="adult-thumb" src="${escapeHtml(item.thumbnailUrl)}" alt="${escapeHtml(item.title)}" loading="lazy" referrerpolicy="no-referrer" /></div>` : '';
   return [
     `<a class="adult-story-recommendation" href="${escapeHtml(href)}"${external ? ' target="_blank" rel="noreferrer"' : ''}>`,
     thumb,
@@ -570,14 +601,26 @@ function renderHorizontalRankingTrack(items) {
 }
 
 function renderRankChange(item) {
-  if (!item.previousRank || !item.ranking || item.rankChange <= 0) return '';
+  const rankDelta = Number(item.rankDelta ?? item.rankChange ?? 0);
+  if (!item.previousRank && item.ranking) {
+    return [
+      '<div class="adult-rank-change">',
+      '<strong>🆕 新規</strong>',
+      '<span>前回順位なし</span>',
+      '<span>↓</span>',
+      `<span>今日 ${escapeHtml(String(item.ranking))}位</span>`,
+      '<em>今回初掲載</em>',
+      '</div>',
+    ].join('');
+  }
+  if (!item.previousRank || !item.ranking || rankDelta <= 0) return '';
   return [
     '<div class="adult-rank-change">',
     '<strong>📈 急上昇</strong>',
     `<span>前回 ${escapeHtml(String(item.previousRank))}位</span>`,
     '<span>↓</span>',
     `<span>今日 ${escapeHtml(String(item.ranking))}位</span>`,
-    `<em>上昇幅 +${escapeHtml(String(item.rankChange))}</em>`,
+    `<em>上昇幅 +${escapeHtml(String(rankDelta))}</em>`,
     '</div>',
   ].join('');
 }
@@ -618,7 +661,12 @@ function renderInlineRelatedWorks(items) {
     items.slice(0, 3).map((item) => {
       const href = item.url || item.detailUrl || '#';
       const external = /^https?:\/\//i.test(href);
-      return `<a class="adult-inline-related-link" href="${escapeHtml(href)}"${external ? ' target="_blank" rel="noreferrer"' : ''}>${escapeHtml(item.title || '関連作品')}</a>`;
+      return [
+        `<a class="adult-inline-related-link" href="${escapeHtml(href)}"${external ? ' target="_blank" rel="noreferrer"' : ''}>`,
+        `<span>${escapeHtml(item.title || '関連作品')}</span>`,
+        item.relationBasis ? `<small>${escapeHtml(item.relationBasis)}</small>` : '',
+        '</a>',
+      ].join('');
     }).join(''),
     '</div>',
     '</div>',
@@ -627,11 +675,24 @@ function renderInlineRelatedWorks(items) {
 
 function renderRelatedItems(items) {
   if (!Array.isArray(items) || !items.length) return '<div class="adult-related-empty">関連作品を整理中です。</div>';
-  return items.slice(0, 8).map((item) => {
-    const href = item.url || item.detailUrl || '#';
-    const external = /^https?:\/\//i.test(href);
-    const thumb = item.thumbnail ? `<div class="adult-related-thumb-wrap"><img class="adult-related-thumb" src="${escapeHtml(item.thumbnail)}" alt="${escapeHtml(item.title)}" loading="lazy" referrerpolicy="no-referrer" /></div>` : '';
-    return `<a class="adult-related-mini" href="${escapeHtml(href)}"${external ? ' target="_blank" rel="noreferrer"' : ''}>${thumb}<span>${escapeHtml(item.title || '関連作品')}</span></a>`;
+  return items.slice(0, 6).map((item) => {
+    const thumb = item.thumbnailUrl ? `<div class="adult-related-thumb-wrap"><img class="adult-related-thumb" src="${escapeHtml(item.thumbnailUrl)}" alt="${escapeHtml(item.title)}" loading="lazy" referrerpolicy="no-referrer" /></div>` : '';
+    return [
+      '<article class="adult-related-mini">',
+      thumb,
+      '<div class="adult-related-mini-body">',
+      `<strong class="adult-related-mini-title">${escapeHtml(item.title || '関連作品')}</strong>`,
+      item.maker ? `<span class="adult-related-mini-meta">${escapeHtml(item.maker)}</span>` : '',
+      item.genre ? `<span class="adult-related-mini-meta">${escapeHtml(item.genre)}</span>` : '',
+      item.sourceName ? `<span class="adult-related-mini-meta">${escapeHtml(item.sourceName)}</span>` : '',
+      item.relationBasis ? `<span class="adult-related-mini-reason">関連根拠: ${escapeHtml(item.relationBasis)}</span>` : '',
+      '</div>',
+      '<div class="adult-related-mini-actions">' +
+        (item.detailUrl ? `<a href="${escapeHtml(item.detailUrl)}">詳細</a>` : '') +
+        (item.url ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">外部 ↗</a>` : '') +
+      '</div>',
+      '</article>',
+    ].join('');
   }).join('');
 }
 
@@ -640,49 +701,60 @@ function renderEmptyPanel(title, description) {
 }
 
 function buildEditorLead({ sections, saleItems, campaignItems, trendItems }) {
-  const topSection = sections[0];
+  const topSection = selectEditorLeadSection(sections);
   if (!topSection) return null;
   const activeSource = topSection.sourceLabel || 'DLsite';
-  const hotTheme = topSection.themeLabel || 'セール';
+  const hotTheme = topSection.themeLabel || '特集';
   const deepDiscountCount = saleItems.filter((item) => Number(item.discountRate ?? 0) >= 50).length;
   const topRankCount = trendItems.filter((item) => Number(item.ranking ?? 0) > 0 && Number(item.ranking ?? 0) <= 10).length;
   const campaignCount = campaignItems.length;
   return {
     kicker: `今週の${activeSource}`,
-    title: `${activeSource}は「${hotTheme}」が主戦場です`,
+    title: `${activeSource}は『${hotTheme}』が主戦場です`,
     summary: `${activeSource}の上位作と値引き対象が重なっており、先に特集を読んでから個別作品へ入る方が判断しやすい状態です。順位だけでなく、割引、残り期間、関連テーマをまとめて確認できます。`,
     points: [
       `${deepDiscountCount}件が50%OFF以上`,
       `TOP10圏内が${topRankCount}件`,
       `開催中のお得情報を${campaignCount}件整理`,
     ].filter(Boolean),
+    tags: topSection.tags ?? [],
+    thumbnailUrl: topSection.thumbnailUrl ?? null,
+    detailUrl: topSection.detailUrl ?? '',
+    externalUrl: topSection.externalUrl ?? '',
+    relatedItems: topSection.relatedItems?.slice(0, 6) ?? [],
     recommendations: topSection.recommendedWorks?.slice(0, 3) ?? [],
   };
 }
 
 function buildMagazineSections({ features, trendItems }) {
   const sections = features.map((feature) => buildMagazineSection(feature, trendItems)).filter(Boolean);
-  return sections.sort((left, right) => compareNumber(right.score, left.score) || compareDate(right.updatedAt, left.updatedAt));
+  return sections.sort(compareMagazineSectionPriority);
 }
 
 function buildMagazineSection(feature, trendItems) {
   const related = resolveFeatureTrendItems(feature, trendItems);
-  if (!related.length && !feature.relatedItems?.length) return null;
+  const effectiveRelated = related.length ? related : (feature.relatedItems ?? []);
+  if (!effectiveRelated.length) return null;
   const sourceLabel = feature.sourceGroup || sourceGroupLabel(feature.sourceGroupKey);
-  const discounts = related.filter((item) => Number(item.discountRate ?? 0) > 0);
-  const topRanks = related.filter((item) => Number(item.ranking ?? 0) > 0 && Number(item.ranking ?? 0) <= 10);
-  const rising = related.filter((item) => Number(item.rankChange ?? 0) > 0);
-  const genre = contentGenreLabel(related[0] || feature);
+  const discounts = effectiveRelated.filter((item) => Number(item.discountRate ?? 0) > 0);
+  const topRanks = effectiveRelated.filter((item) => Number(item.ranking ?? 0) > 0 && Number(item.ranking ?? 0) <= 10);
+  const rising = effectiveRelated.filter((item) => Number(item.rankChange ?? 0) > 0);
+  const genre = displayGenreLabel(effectiveRelated[0] || feature);
   return {
     id: feature.id,
     kicker: `${sourceLabel} MAGAZINE`,
     title: feature.title,
     sourceLabel,
-    themeLabel: genre === '未分類' ? 'セール' : genre,
-    summary: buildMagazineStorySummary(feature, { related, discounts, topRanks, rising, sourceLabel }),
-    keyPoints: buildMagazineKeyPoints({ feature, related, discounts, topRanks, rising }),
-    recommendedWorks: buildMagazineRecommendations(related, feature.relatedItems),
-    relatedWorks: buildStoryRelatedWorks(related, feature.relatedItems),
+    themeLabel: genre === '未分類' ? '特集' : genre,
+    summary: buildMagazineStorySummary(feature, { related: effectiveRelated, discounts, topRanks, rising, sourceLabel }),
+    keyPoints: buildMagazineKeyPoints({ feature, related: effectiveRelated, discounts, topRanks, rising }),
+    recommendedWorks: buildMagazineRecommendations(effectiveRelated, feature.relatedItems),
+    relatedWorks: buildStoryRelatedWorks(effectiveRelated, feature.relatedItems),
+    relatedItems: effectiveRelated.slice(0, 6),
+    tags: feature.cardTags ?? feature.tags ?? [],
+    thumbnailUrl: feature.thumbnailUrl ?? null,
+    detailUrl: feature.detailUrl ?? '',
+    externalUrl: feature.externalUrl ?? '',
     score: Number(feature.importance ?? 0),
     scoreLabel: `HOT ${Number(feature.importance ?? 0)}`,
     updatedAt: feature.updatedAt,
@@ -699,6 +771,45 @@ function buildMagazineStorySummary(feature, { related, discounts, topRanks, risi
     return `${sourceLabel}では制作進捗や新作告知が連続しており、作品を買う前にクリエイターの動きをまとめて追える状態です。`;
   }
   return `${lead}を中心に、${topRanks.length}件の上位作と${discounts.length}件の値引き対象が重なっています。何が流行り、なぜ強いかを短時間で把握するための特集です。`;
+}
+
+function selectEditorLeadSection(sections) {
+  const sorted = [...(sections ?? [])].sort(compareMagazineSectionPriority);
+  const focused = sorted.filter((section) => isFocusedMagazineSection(section));
+  return focused[0] ?? sorted[0] ?? null;
+}
+
+function compareMagazineSectionPriority(left, right) {
+  return sectionEditorialPriority(right) - sectionEditorialPriority(left)
+    || Number(right.score ?? 0) - Number(left.score ?? 0)
+    || compareDate(right.updatedAt, left.updatedAt);
+}
+
+function sectionEditorialPriority(section) {
+  const theme = String(section?.themeLabel ?? '');
+  const text = [section?.title, ...(section?.tags ?? []), theme].join(' ');
+  let score = 0;
+  if (theme && !/^(未分類|セール|業界ニュース)$/.test(theme)) score += 35;
+  if (/エロ漫画|漫画|コミック/.test(text)) score += 30;
+  if (/同人音声|ASMR|音声/.test(text)) score += 18;
+  if (/同人ゲーム|RPG|ADV|ゲーム/.test(text)) score += 18;
+  if (Array.isArray(section?.relatedItems)) {
+    score += Math.min(12, section.relatedItems.length * 2);
+    if (theme && theme !== '未分類') {
+      const sameGenreCount = section.relatedItems.filter((item) => contentGenreLabel(item) === theme).length;
+      score += sameGenreCount * 6;
+    }
+  }
+  if (/大型セール|セール開催中/.test(String(section?.title ?? ''))) score -= 12;
+  return score;
+}
+
+function isFocusedMagazineSection(section) {
+  const theme = String(section?.themeLabel ?? '');
+  const text = [section?.title, ...(section?.tags ?? []), theme].join(' ');
+  return !/大型セール|セール開催中/.test(String(section?.title ?? ''))
+    && (/エロ漫画|漫画|コミック|同人音声|ASMR|同人ゲーム|RPG|ADV|AV/.test(text)
+      || (theme && !/^(未分類|セール|業界ニュース)$/.test(theme)));
 }
 
 function buildMagazineKeyPoints({ feature, related, discounts, topRanks, rising }) {
@@ -722,18 +833,18 @@ function buildMagazineKeyPoints({ feature, related, discounts, topRanks, rising 
 function buildMagazineRecommendations(related, fallbackItems) {
   const seeds = related.length ? related : (fallbackItems ?? []);
   return seeds.slice(0, 3).map((item) => {
-    const resolved = item.routeId || item.sourceUrl ? item : null;
     const thumb = pickCardImageUrl(item);
+    const ranking = item.ranking ?? item.rank ?? null;
     return {
       title: item.title || '注目作品',
-      thumbnail: thumb,
+      thumbnailUrl: thumb,
       url: item.sourceUrl || item.url || '',
       detailUrl: item.routeId ? './adult-topic.html?id=' + encodeURIComponent(item.routeId) : item.detailUrl || '',
       priceLabel: item.price !== null && item.price !== undefined ? `現在 ${formatYen(item.price)}` : '',
       discountLabel: item.discountRate !== null && item.discountRate !== undefined ? `${item.discountRate}%OFF` : '',
-      rankLabel: item.ranking ? `${item.ranking}位` : item.rank ? `${item.rank}位` : '',
+      rankLabel: ranking ? `${ranking}位` : '',
       remainingLabel: item.saleEndDate ? formatRemainingTime(item.saleEndDate) : '',
-      reason: recommendationReason(item, resolved),
+      reason: recommendationReason(item),
     };
   });
 }
@@ -799,17 +910,53 @@ function buildCampaignStoryModel(kicker, title, items) {
 }
 
 function resolveFeatureTrendItems(feature, trendItems) {
-  const candidates = [];
-  const seen = new Set();
-  for (const related of feature.relatedItems ?? []) {
-    const match = trendItems.find((item) => item.id === related.id || item.routeId === related.id || item.title === related.title);
-    const resolved = match || related;
-    const key = resolved.id || resolved.title;
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
-    candidates.push(resolved);
+  const profile = buildFeatureRelationProfile(feature);
+  const seedKeys = new Set((feature.relatedItems ?? []).map((item) => canonicalRelatedKey(item)).filter(Boolean));
+  const merged = dedupeRelatedDisplayItems(
+    [...(feature.relatedItems ?? []), ...trendItems]
+      .map((candidate) => resolveFeatureCandidate(candidate, trendItems))
+      .filter(Boolean),
+    feature,
+  );
+  const scored = merged
+    .map((candidate) => {
+      const scoreResult = calculateFeatureRelatedScore(profile, candidate, seedKeys.has(canonicalRelatedKey(candidate)));
+      return { candidate: { ...candidate, relationBasis: scoreResult.relationBasis || candidate.relationBasis || '' }, ...scoreResult };
+    })
+    .filter((entry) => entry.allowed && entry.score > 0)
+    .sort((left, right) =>
+      right.score - left.score
+      || compareNumber(Boolean(right.candidate.thumbnailUrl), Boolean(left.candidate.thumbnailUrl))
+      || compareByRanking(left.candidate, right.candidate)
+      || compareByHot(left.candidate, right.candidate)
+      || String(left.candidate.title ?? '').localeCompare(String(right.candidate.title ?? ''), 'ja'));
+  const selected = scored.slice(0, 6).map((entry) => entry.candidate);
+  if (selected.length >= 3) return selected;
+  const seen = new Set(selected.map((item) => canonicalRelatedKey(item)).filter(Boolean));
+  const supplements = trendItems
+    .map((item) => normalizeRelatedDisplayItem(item))
+    .filter((item) => {
+      const key = canonicalRelatedKey(item);
+      if (!key || seen.has(key)) return false;
+      if (profile.sourceGroup && item.adultSourceGroup !== profile.sourceGroup) return false;
+      if (profile.genre && profile.genre !== '未分類' && contentGenreLabel(item) !== profile.genre) return false;
+      return true;
+    })
+    .sort((left, right) =>
+      compareByRanking(left, right)
+      || compareByHot(left, right)
+      || compareNumber(right.adultTrendScore, left.adultTrendScore));
+  for (const item of supplements) {
+    selected.push({
+      ...item,
+      relationBasis: profile.genre && profile.genre !== '未分類'
+        ? `同一ジャンル / 同一ソース`
+        : '同一ソース',
+    });
+    seen.add(canonicalRelatedKey(item));
+    if (selected.length >= 6) break;
   }
-  return candidates;
+  return selected;
 }
 
 function recommendationReason(item) {
@@ -821,6 +968,32 @@ function recommendationReason(item) {
 
 function formatRecommendationMeta(item) {
   return [item.discountLabel, item.priceLabel, item.rankLabel, item.remainingLabel].filter(Boolean).join(' / ');
+}
+
+function prepareFeatureItems(features, trendItems) {
+  return features
+    .map((feature) => enrichFeatureItem(feature, trendItems))
+    .filter((feature) => Array.isArray(feature.relatedItems) && feature.relatedItems.length);
+}
+
+function enrichFeatureItem(feature, trendItems) {
+  const resolvedItems = resolveFeatureTrendItems(feature, trendItems);
+  const fallbackItems = dedupeRelatedDisplayItems(
+    (feature.relatedItems ?? []).map((item) => normalizeRelatedDisplayItem(item)).filter(Boolean),
+    feature,
+  ).slice(0, 6);
+  const relatedItems = resolvedItems.length ? resolvedItems : fallbackItems;
+  const detailUrl = feature.primaryItemId ? './adult-topic.html?id=' + encodeURIComponent(feature.primaryItemId) : '';
+  const primaryGenreLabel = resolveFeatureGenreLabel(feature, relatedItems);
+  return {
+    ...feature,
+    detailUrl,
+    externalUrl: feature.sourceUrl || relatedItems[0]?.url || '',
+    thumbnailUrl: pickFeatureThumbnailUrl(feature, relatedItems),
+    relatedItems,
+    primaryGenreLabel,
+    cardTags: buildFeatureCardTags(feature, relatedItems, primaryGenreLabel),
+  };
 }
 
 function dedupeById(items) {
@@ -837,19 +1010,24 @@ function normalizeAdultFeatureItem(item) {
   const relatedItems = Array.isArray(item.relatedItems) ? item.relatedItems.map((related) => ({
     ...related,
     title: String(related?.title ?? '関連作品'),
+    id: related?.id ?? '',
     thumbnail: pickCardImageUrl(related),
+    thumbnailUrl: pickCardImageUrl(related),
+    sourceName: String(related?.sourceName ?? related?.source ?? 'Source'),
+    sourceUrl: related?.url ?? related?.sourceUrl ?? '',
     url: related?.url ?? '',
     detailUrl: related?.detailUrl ?? (related?.id ? './adult-topic.html?id=' + encodeURIComponent(related.id) : related?.url ?? '#'),
   })) : [];
+  const sourceGroupKey = item.sourceGroupKey ?? normalizeSourceGroupKey(item.sourceGroup);
   return {
     ...item,
-    sourceGroup: item.sourceGroup ?? sourceGroupLabel(item.sourceGroupKey),
-    sourceGroupKey: item.sourceGroupKey ?? normalizeSourceGroupKey(item.sourceGroup),
+    sourceGroup: item.sourceGroup ?? sourceGroupLabel(sourceGroupKey),
+    sourceGroupKey,
     importance: Number(item.importance ?? 0),
     title: String(item.title ?? 'アダルト特集'),
     summary: String(item.summary ?? '').trim(),
     whyHot: String(item.whyHot ?? item.reason ?? '').trim(),
-    thumbnailUrl: pickCardImageUrl(item) ?? pickCardImageUrl(relatedItems[0]),
+    thumbnailUrl: pickFeatureThumbnailUrl(item, relatedItems),
     relatedItems,
     tags: Array.isArray(item.tags) ? item.tags : [],
     updatedAt: item.updatedAt ?? null,
@@ -864,31 +1042,42 @@ function normalizeAdultTrendItem(item, archivedItem) {
   const discountRate = normalizeDiscountRate(item.discountRate ?? extractDiscountFromText(item.summary ?? item.title), price, originalPrice);
   const adultSourceGroup = normalizeSourceGroupKey(item.adultSourceGroup ?? item.sourceGroup ?? item.sourceName ?? item.source);
   const adultDisplayType = normalizeDisplayType(item, discountRate);
-  const previousRank = findPreviousRank(mergedHistory, ranking);
-  const rankChange = previousRank && ranking ? previousRank - ranking : 0;
-  const adultPrimaryGenre = item.adultPrimaryGenre ?? item.genre ?? inferPrimaryGenre(item);
+  const previousRank = normalizeNullableNumber(item.previousRank) ?? findPreviousRank(mergedHistory, ranking);
+  const rankDelta = normalizeNullableNumber(item.rankDelta) ?? normalizeNullableNumber(item.rankChange) ?? (previousRank && ranking ? previousRank - ranking : 0);
+  const adultTrendScore = normalizeNullableNumber(item.adultTrendScore) ?? Math.max(0, rankDelta || 0);
+  const inferredGenre = inferPrimaryGenre(item);
+  const sourceGenre = item.adultPrimaryGenre ?? item.genre ?? inferredGenre;
+  const adultPrimaryGenre = sourceGenre === 'セール' ? inferredGenre : sourceGenre;
   const adultHotScore = Number(item.adultHotScore ?? item.score ?? 0);
   const saleEndDate = normalizeDateValue(item.saleEndDate ?? item.campaignEndDate ?? item.endDate ?? item.endsAt);
+  const trendReasons = Array.isArray(item.trendReasons) ? item.trendReasons : Array.isArray(item.hotReasons) ? item.hotReasons : [];
+  const sourceName = item.sourceName ?? item.source ?? sourceGroupLabel(adultSourceGroup);
+  const thumbnailUrl = pickCardImageUrl(item);
   const valueScore = calculateValueScore({
     valueScore: item.valueScore,
     discountRate,
     ranking,
     adultHotScore,
-    rankChange,
+    rankChange: rankDelta,
     adultDisplayType,
   });
 
   return {
     ...item,
     routeId: buildAdultRouteId(item),
-    sourceName: item.sourceName ?? item.source ?? sourceGroupLabel(adultSourceGroup),
-    thumbnailUrl: pickCardImageUrl(item),
-    trendReasons: Array.isArray(item.trendReasons) ? item.trendReasons : Array.isArray(item.hotReasons) ? item.hotReasons : [],
+    source: sourceName,
+    sourceName,
+    historyKey: item.historyKey ?? archivedItem?.historyKey ?? item.sourceUrl ?? item.id,
+    thumbnail: thumbnailUrl,
+    thumbnailUrl,
+    hotReasons: trendReasons,
+    trendReasons,
     tags: Array.isArray(item.tags) ? item.tags : [],
     categoryLabels: Array.isArray(item.categoryLabels) ? item.categoryLabels : [],
     maker: String(item.maker ?? item.circle ?? item.brand ?? '').trim(),
     adultSourceGroup,
     adultDisplayType,
+    genre: displayGenreLabel({ ...item, adultPrimaryGenre }),
     adultPrimaryGenre,
     adultHotScore,
     price,
@@ -896,12 +1085,17 @@ function normalizeAdultTrendItem(item, archivedItem) {
     discountRate,
     currency: item.currency ?? 'JPY',
     saleEndDate,
+    rank: ranking,
     ranking,
+    rankLabel: ranking ? `${ranking}位` : (item.rankLabel ?? '注目候補'),
+    rankingType: item.rankingType ?? item.sourceKey ?? item.trendType ?? 'trend',
+    adultTrendScore,
     valueScore,
     history: mergedHistory,
     previousRank,
-    rankChange,
-    badges: buildBadges({ ranking, discountRate, rankChange, adultDisplayType, featured: false }),
+    rankDelta,
+    rankChange: rankDelta,
+    badges: buildBadges({ ranking, discountRate, rankChange: rankDelta, adultDisplayType, featured: false }),
     relatedItems: Array.isArray(item.relatedItems) ? item.relatedItems : [],
   };
 }
@@ -924,12 +1118,25 @@ function attachRelatedTrendItems(items) {
         title: related.title,
         url: related.sourceUrl,
         detailUrl: './adult-topic.html?id=' + encodeURIComponent(related.routeId ?? related.id ?? ''),
+        relationBasis: buildInlineRelatedBasis(item, related),
       }));
     return {
       ...item,
       relatedItems,
     };
   });
+}
+
+function buildInlineRelatedBasis(baseItem, relatedItem) {
+  const reasons = [];
+  if (contentGenreLabel(baseItem) === contentGenreLabel(relatedItem)) reasons.push('同一ジャンル');
+  if (normalizeSourceGroupKey(baseItem?.adultSourceGroup ?? baseItem?.sourceGroup ?? baseItem?.sourceName ?? baseItem?.source) === normalizeSourceGroupKey(relatedItem?.adultSourceGroup ?? relatedItem?.sourceGroup ?? relatedItem?.sourceName ?? relatedItem?.source)) {
+    reasons.push('同一ソース');
+  }
+  if (rankingContextLabel(baseItem?.sourceKey, baseItem?.sourceName || sourceGroupLabel(baseItem?.adultSourceGroup)) === rankingContextLabel(relatedItem?.sourceKey, relatedItem?.sourceName || sourceGroupLabel(relatedItem?.adultSourceGroup))) {
+    reasons.push('同ランキング帯');
+  }
+  return reasons.join(' / ') || '近い傾向';
 }
 
 function aggregateTrendBuckets(items, selector) {
@@ -1020,6 +1227,9 @@ function contentGenreLabel(item) {
   const candidates = [
     item.adultPrimaryGenre,
     item.genre,
+    item.sourceKey,
+    item.sourceUrl,
+    item.url,
     ...(Array.isArray(item.categoryLabels) ? item.categoryLabels : []),
     ...(Array.isArray(item.tags) ? item.tags : []),
   ].filter(Boolean).map((value) => String(value));
@@ -1027,10 +1237,258 @@ function contentGenreLabel(item) {
     if (/同人音声|ASMR|ボイス|音声/.test(candidate)) return '同人音声';
     if (/AI|生成AI/.test(candidate)) return 'AI作品';
     if (/同人ゲーム|RPG|ADV|SLG|ゲーム/.test(candidate)) return '同人ゲーム';
-    if (/エロ漫画|漫画|コミック/.test(candidate)) return 'エロ漫画';
+    if (/エロ漫画|漫画|コミック|\/books\/|book/i.test(candidate)) return 'エロ漫画';
     if (/AV|女優|ビデオ|動画/.test(candidate)) return 'AV';
   }
   return item.adultPrimaryGenre === 'セール' ? '未分類' : (item.adultPrimaryGenre || '未分類');
+}
+
+function displayGenreLabel(item) {
+  const contentGenre = contentGenreLabel(item);
+  if (contentGenre && contentGenre !== '未分類') return contentGenre;
+  const fallback = String(item?.adultPrimaryGenre ?? item?.genre ?? '').trim();
+  if (fallback && fallback !== 'セール') return fallback;
+  const inferred = inferPrimaryGenre(item);
+  return inferred === '業界ニュース' ? '未分類' : inferred;
+}
+
+function buildFeatureRelationProfile(feature) {
+  const genre = resolveFeatureGenreLabel(feature, feature.relatedItems ?? []);
+  const tags = buildComparableTagSet([
+    ...(feature.tags ?? []),
+    ...(feature.trendReasons ?? []),
+    feature.primaryGenre,
+    feature.adultPrimaryGenre,
+    feature.title,
+  ]);
+  return {
+    sourceGroup: normalizeSourceGroupKey(feature.sourceGroupKey ?? feature.sourceGroup ?? feature.sourceName ?? feature.source),
+    genre,
+    tags,
+    entities: collectComparableEntities(feature),
+    isMangaFocus: /エロ漫画|漫画|コミック/.test([feature.title, feature.summary, ...(feature.tags ?? [])].join(' ')),
+    isMagazineFocus: /マガジン|雑誌|コミック/.test([feature.title, feature.summary, ...(feature.tags ?? [])].join(' ')),
+  };
+}
+
+function resolveFeatureGenreLabel(feature, relatedItems = []) {
+  const explicit = contentGenreLabel(feature);
+  if (explicit && explicit !== '未分類') return explicit;
+  const firstRelatedGenre = relatedItems
+    .map((item) => contentGenreLabel(item))
+    .find((genre) => genre && genre !== '未分類');
+  return firstRelatedGenre || '未分類';
+}
+
+function buildFeatureCardTags(feature, relatedItems, primaryGenreLabel) {
+  const values = [
+    primaryGenreLabel && primaryGenreLabel !== '未分類' ? primaryGenreLabel : '',
+    ...(feature.tags ?? []),
+    ...(feature.trendReasons ?? []),
+    feature.sourceGroup,
+  ].filter(Boolean);
+  if (!values.length && relatedItems.length) {
+    values.push(...(relatedItems[0].tags ?? []));
+  }
+  return dedupeSimpleValues(values).slice(0, 8);
+}
+
+function pickFeatureThumbnailUrl(feature, relatedItems = []) {
+  const candidates = [
+    feature?.thumbnailUrl,
+    feature?.thumbnail,
+    relatedItems[0]?.thumbnailUrl,
+    relatedItems[0]?.thumbnail,
+    ...relatedItems.map((item) => item?.thumbnailUrl).filter(Boolean),
+  ];
+  for (const candidate of candidates) {
+    const normalized = sanitizeCardImageUrl(candidate);
+    if (normalized) return normalized;
+  }
+  return null;
+}
+
+function resolveFeatureCandidate(candidate, trendItems) {
+  const matched = trendItems.find((item) => itemsMatch(item, candidate));
+  return normalizeRelatedDisplayItem(matched || candidate);
+}
+
+function normalizeRelatedDisplayItem(item) {
+  if (!item) return null;
+  const routeId = item.routeId ?? item.id ?? '';
+  return {
+    ...item,
+    id: item.id ?? '',
+    routeId,
+    title: String(item.title ?? '関連作品'),
+    sourceName: String(item.sourceName ?? item.source ?? sourceGroupLabel(normalizeSourceGroupKey(item.adultSourceGroup ?? item.sourceGroup))) || 'Source',
+    sourceUrl: item.sourceUrl ?? item.url ?? '',
+    url: item.url ?? item.sourceUrl ?? '',
+    detailUrl: item.detailUrl ?? (routeId ? './adult-topic.html?id=' + encodeURIComponent(routeId) : ''),
+    thumbnailUrl: pickCardImageUrl(item),
+    maker: extractRelatedMaker(item),
+    genre: displayGenreLabel(item),
+    productId: item.productId ?? extractProductId(item.url ?? item.sourceUrl ?? ''),
+    adultSourceGroup: normalizeSourceGroupKey(item.adultSourceGroup ?? item.sourceGroup ?? item.sourceName ?? item.source),
+    tags: dedupeSimpleValues(item.tags ?? []),
+  };
+}
+
+function dedupeRelatedDisplayItems(items, feature) {
+  const map = new Map();
+  const featureKey = canonicalRelatedKey({
+    id: feature?.primaryItemId,
+    url: feature?.sourceUrl,
+    title: feature?.primaryItemTitle ?? feature?.title,
+  });
+  for (const item of items) {
+    const key = canonicalRelatedKey(item);
+    if (!key || key === featureKey) continue;
+    const existing = map.get(key);
+    if (!existing || relatedCandidateRichness(item) > relatedCandidateRichness(existing)) {
+      map.set(key, item);
+    }
+  }
+  return [...map.values()];
+}
+
+function relatedCandidateRichness(item) {
+  return [
+    Boolean(item.thumbnailUrl),
+    Boolean(item.detailUrl),
+    Boolean(item.url),
+    Boolean(item.maker),
+    Boolean(item.genre && item.genre !== '未分類'),
+    Array.isArray(item.tags) ? item.tags.length : 0,
+  ].reduce((sum, value) => sum + Number(value), 0);
+}
+
+function calculateFeatureRelatedScore(profile, candidate, seeded) {
+  const candidateGenre = displayGenreLabel(candidate);
+  const candidateTags = buildComparableTagSet(candidate.tags ?? []);
+  const candidateEntities = collectComparableEntities(candidate);
+  const sharedTagsCount = countSharedValues(profile.tags, candidateTags);
+  const sameSource = profile.sourceGroup && candidate.adultSourceGroup === profile.sourceGroup;
+  const sameGenre = profile.genre && candidateGenre === profile.genre && candidateGenre !== '未分類';
+  const sharedEntityCount = countSharedValues(profile.entities, candidateEntities);
+  const sameCircleOrMaker = sharedEntityCount > 0;
+  const sameSeriesOrLabel = countSharedValues(profile.entities, candidateEntities, /series:|label:|publisher:/) > 0;
+  if (!sameCircleOrMaker && !sameGenre && !sameSource && sharedTagsCount === 0) {
+    return { allowed: false, score: 0 };
+  }
+  if (profile.isMangaFocus && candidateGenre !== 'エロ漫画' && !sameCircleOrMaker && sharedTagsCount < 2) {
+    return { allowed: false, score: 0, relationBasis: '' };
+  }
+  let score =
+    (sameCircleOrMaker ? 100 : 0) +
+    (sameGenre ? 50 : 0) +
+    (sharedTagsCount * 10) +
+    (sameSource ? 15 : 0) +
+    (Number(candidate.adultHotScore ?? 0) * 0.1) +
+    (Number(candidate.adultTrendScore ?? 0) * 0.1);
+  if (seeded) score += 35;
+  if (sameSeriesOrLabel) score += 40;
+  if (profile.isMangaFocus && candidateGenre === 'エロ漫画') score += 30;
+  if (profile.isMagazineFocus && sameSeriesOrLabel) score += 25;
+  if (Number(candidate.discountRate ?? 0) > 0) score += 5;
+  if (Number(candidate.ranking ?? 0) > 0 && Number(candidate.ranking ?? 0) <= 10) score += 6;
+  return { allowed: true, score, relationBasis: buildRelationBasisLabel({ sameCircleOrMaker, sameGenre, sharedTagsCount, sameSource, seeded, sameSeriesOrLabel }) };
+}
+
+function buildRelationBasisLabel({ sameCircleOrMaker, sameGenre, sharedTagsCount, sameSource, seeded, sameSeriesOrLabel }) {
+  const reasons = [];
+  if (sameCircleOrMaker) reasons.push('同一サークル/メーカー');
+  if (sameSeriesOrLabel) reasons.push('同一シリーズ/レーベル');
+  if (sameGenre) reasons.push('同一ジャンル');
+  if (sharedTagsCount > 0) reasons.push(`共通タグ${sharedTagsCount}件`);
+  if (sameSource) reasons.push('同一ソース');
+  if (seeded) reasons.push('特集元データ一致');
+  return reasons.join(' / ') || '特集テーマ一致';
+}
+
+function extractRelatedMaker(item) {
+  return String(item.maker ?? item.circle ?? item.brand ?? item.author ?? item.publisher ?? item.label ?? '').trim();
+}
+
+function collectComparableEntities(item) {
+  const entries = [
+    ['maker', item.maker],
+    ['circle', item.circle],
+    ['brand', item.brand],
+    ['author', item.author],
+    ['publisher', item.publisher],
+    ['label', item.label],
+    ['series', item.series],
+  ];
+  return new Set(entries
+    .map(([kind, value]) => `${kind}:${normalizeComparableText(value)}`)
+    .filter((value) => !value.endsWith(':')));
+}
+
+function buildComparableTagSet(values) {
+  return new Set(dedupeSimpleValues(values).map((value) => normalizeComparableText(value)).filter(Boolean));
+}
+
+function countSharedValues(left, right, matcher) {
+  let count = 0;
+  for (const value of left ?? []) {
+    if (matcher && !matcher.test(value)) continue;
+    if (right?.has(value)) count += 1;
+  }
+  return count;
+}
+
+function itemsMatch(left, right) {
+  const leftUrl = String(left?.sourceUrl ?? left?.url ?? '').trim();
+  const rightUrl = String(right?.sourceUrl ?? right?.url ?? '').trim();
+  if (leftUrl && rightUrl && leftUrl === rightUrl) return true;
+  const leftProductId = extractProductId(leftUrl);
+  const rightProductId = extractProductId(rightUrl);
+  if (leftProductId && rightProductId && leftProductId === rightProductId) return true;
+  const leftTitle = normalizeTitleForMatch(left?.title);
+  const rightTitle = normalizeTitleForMatch(right?.title);
+  if (leftTitle && rightTitle && leftTitle === rightTitle) return true;
+  const leftId = String(left?.id ?? left?.routeId ?? '').trim();
+  const rightId = String(right?.id ?? right?.routeId ?? '').trim();
+  return Boolean(leftId && rightId && leftId === rightId);
+}
+
+function canonicalRelatedKey(item) {
+  const url = String(item?.sourceUrl ?? item?.url ?? '').trim();
+  if (url) return `url:${url}`;
+  const id = String(item?.id ?? item?.routeId ?? '').trim();
+  if (id) return `id:${id}`;
+  const productId = extractProductId(url);
+  if (productId) return `product:${productId}`;
+  const title = normalizeTitleForMatch(item?.title);
+  return title ? `title:${title}` : '';
+}
+
+function extractProductId(value) {
+  const text = String(value ?? '');
+  const match = text.match(/(?:product_id\/|product_id=)([A-Z]{2}\d+|BJ\d+|VJ\d+)/i);
+  return match ? match[1].toUpperCase() : '';
+}
+
+function normalizeTitleForMatch(value) {
+  return normalizeComparableText(value).replace(/[^\p{L}\p{N}]+/gu, '');
+}
+
+function normalizeComparableText(value) {
+  return String(value ?? '').trim().toLowerCase();
+}
+
+function dedupeSimpleValues(values) {
+  const seen = new Set();
+  const results = [];
+  for (const rawValue of values ?? []) {
+    const value = String(rawValue ?? '').trim();
+    const normalized = normalizeComparableText(value);
+    if (!normalized || seen.has(normalized)) continue;
+    seen.add(normalized);
+    results.push(value);
+  }
+  return results;
 }
 
 function sortItems(items, sortKey) {
@@ -1047,7 +1505,7 @@ function sortItems(items, sortKey) {
     return items.sort((left, right) => compareByHot(left, right) || compareByRanking(left, right));
   }
   if (sortKey === 'rise') {
-    return items.sort((left, right) => compareNumber(right.rankChange, left.rankChange) || compareByRanking(left, right) || compareByHot(left, right));
+    return items.sort((left, right) => compareNumber(right.adultTrendScore, left.adultTrendScore) || compareNumber(right.rankDelta ?? right.rankChange, left.rankDelta ?? left.rankChange) || compareByRanking(left, right) || compareByHot(left, right));
   }
   if (sortKey === 'endSoon') {
     return items.sort((left, right) => compareDate(left.saleEndDate, right.saleEndDate) || compareNumber(right.valueScore, left.valueScore) || compareByHot(left, right));
@@ -1104,6 +1562,7 @@ function buildBadges({ ranking, discountRate, rankChange, adultDisplayType, feat
 function normalizeDisplayType(item, discountRate) {
   const explicit = String(item.adultDisplayType ?? item.displayType ?? '').toLowerCase();
   const text = [item.title, item.summary, ...(item.tags ?? [])].join(' ');
+  const ranking = item.ranking ?? item.rank ?? null;
   if (explicit === 'ranking') return 'ranking';
   if (explicit === 'campaign') return 'campaign';
   if (explicit === 'sale') return 'sale';
@@ -1111,12 +1570,12 @@ function normalizeDisplayType(item, discountRate) {
   if (explicit === 'trending' || explicit === 'article') return 'trending';
   if (/キャンペーン|クーポン|ポイント|還元/i.test(text)) return 'campaign';
   if (discountRate !== null || /セール|割引|OFF/i.test(text)) return 'sale';
-  if (item.rank) return 'ranking';
+  if (ranking) return 'ranking';
   return 'trending';
 }
 
 function inferPrimaryGenre(item) {
-  const text = [item.genre, item.title, ...(item.tags ?? []), ...(item.categories ?? []), ...(item.categoryLabels ?? [])].join(' ');
+  const text = [item.adultPrimaryGenre, item.genre, item.title, ...(item.tags ?? []), ...(item.categories ?? []), ...(item.categoryLabels ?? [])].join(' ');
   if (/同人音声|ASMR|ボイス|音声/i.test(text)) return '同人音声';
   if (/AI|生成AI/i.test(text)) return 'AI作品';
   if (/漫画|コミック|book/i.test(text)) return 'エロ漫画';
@@ -1126,7 +1585,13 @@ function inferPrimaryGenre(item) {
 }
 
 function buildArchiveMap(items) {
-  return new Map((Array.isArray(items) ? items : []).map((item) => [item.id, item]));
+  const map = new Map();
+  for (const item of Array.isArray(items) ? items : []) {
+    if (item?.id) map.set(item.id, item);
+    if (item?.historyKey) map.set(item.historyKey, item);
+    if (item?.sourceUrl) map.set(item.sourceUrl, item);
+  }
+  return map;
 }
 
 function dedupeHistory(history) {
@@ -1311,7 +1776,13 @@ function normalizeNullableNumber(value) {
 
 function normalizeDiscountRate(value, price, originalPrice) {
   const normalized = normalizeNullableNumber(value);
-  if (normalized !== null && normalized >= 0) return Math.max(0, Math.min(100, Math.round(normalized)));
+  if (normalized !== null && normalized >= 0) {
+    if (price !== null && originalPrice !== null) {
+      if (originalPrice <= price) return null;
+      return Math.max(0, Math.min(100, Math.round((1 - price / originalPrice) * 100)));
+    }
+    return Math.max(0, Math.min(100, Math.round(normalized)));
+  }
   if (price !== null && originalPrice !== null && originalPrice > price) {
     return Math.max(0, Math.min(100, Math.round((1 - price / originalPrice) * 100)));
   }

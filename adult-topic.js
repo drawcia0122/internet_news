@@ -62,7 +62,7 @@ function renderTopic(topic) {
   sourceElement.textContent = topic.sourceName ?? 'Source';
   rankElement.textContent = topic.rankLabel ?? '注目候補';
   categoriesElement.innerHTML = renderCategoryChips(topic);
-  makerElement.textContent = topic.maker || topic.genre || '取得でき次第表示します。';
+  makerElement.textContent = topic.maker || topic.adultPrimaryGenre || '取得でき次第表示します。';
   reasonsElement.innerHTML = renderReasons(topic.trendReasons);
   linksElement.innerHTML = renderSourceLinks(topic);
   tagsElement.innerHTML = renderTags(topic.tags, topic);
@@ -104,7 +104,7 @@ function renderAdultTopicInsights(topic) {
   const reasons = Array.isArray(topic.trendReasons) && topic.trendReasons.length ? topic.trendReasons : ['ランキングやセール情報をもとに抽出'];
   const tags = Array.isArray(topic.tags) && topic.tags.length ? topic.tags.slice(0, 4).join(' / ') : categoryDisplayLabel(topic);
   const values = [
-    ['何が起きた？', `${topic.sourceName ?? topic.source ?? 'ソース'}で「${topic.title}」がトレンド候補として検出されています。`],
+    ['何が起きた？', `${topic.sourceName ?? 'ソース'}で「${topic.title}」がトレンド候補として検出されています。`],
     ['なぜ話題？', reasons.slice(0, 3).join('、')],
     ['何が重要？', buildAdultImportantPoint(topic)],
     ['今後どうなる？', buildAdultFuturePoint(topic)],
@@ -173,17 +173,31 @@ function categoryDisplayLabel(topic) {
 
 function normalizeAdultTrendItem(item) {
   const categories = Array.isArray(item.categories) && item.categories.length ? item.categories : normalizeCategoryLabels(item.category);
+  const categoryLabels = Array.isArray(item.categoryLabels) && item.categoryLabels.length
+    ? item.categoryLabels
+    : Array.isArray(item.category) && item.category.length ? item.category : categories.map(adultCategoryLabelFor);
+  const sourceName = item.sourceName ?? item.source ?? 'Source';
+  const thumbnailUrl = item.thumbnailUrl ?? item.thumbnail ?? null;
+  const ranking = Number(item.ranking ?? item.rank ?? 0) || null;
+  const trendReasons = Array.isArray(item.trendReasons) ? item.trendReasons : Array.isArray(item.hotReasons) ? item.hotReasons : [];
+  const adultPrimaryGenre = item.adultPrimaryGenre ?? item.genre ?? '';
   return {
     ...item,
     routeId: buildAdultRouteId(item),
+    source: sourceName,
+    sourceName,
     categories,
-    categoryLabels: Array.isArray(item.categoryLabels) && item.categoryLabels.length
-      ? item.categoryLabels
-      : Array.isArray(item.category) && item.category.length ? item.category : categories.map(adultCategoryLabelFor),
-    sourceName: item.sourceName ?? item.source ?? 'Source',
-    thumbnailUrl: item.thumbnailUrl ?? item.thumbnail ?? null,
+    categoryLabels,
+    thumbnail: thumbnailUrl,
+    thumbnailUrl,
+    genre: adultPrimaryGenre,
+    adultPrimaryGenre,
+    rank: ranking,
+    ranking,
+    rankLabel: ranking ? `${ranking}位` : (item.rankLabel ?? '注目候補'),
     adultHotScore: Number(item.adultHotScore ?? item.score ?? 0),
-    trendReasons: Array.isArray(item.trendReasons) ? item.trendReasons : Array.isArray(item.hotReasons) ? item.hotReasons : [],
+    hotReasons: trendReasons,
+    trendReasons,
     tags: Array.isArray(item.tags) ? item.tags : [],
     relatedWorks: Array.isArray(item.relatedWorks) ? item.relatedWorks : [],
   };

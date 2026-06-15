@@ -1,3 +1,16 @@
+const {
+  categoryDisplayLabel,
+  categoryLabelFor,
+  dedupeTopics,
+  escapeHtml,
+  getPrimarySourceLabel,
+  getPrimarySourceUrl,
+  hasCategory,
+  hasVisibleSummary,
+  mergeReports,
+  pickCardImageUrl,
+} = window.TopicClientUtils;
+
 let trendTopics = [];
 let latestTrendGeneratedAt = null;
 let dailyBriefItems = [];
@@ -27,32 +40,42 @@ const dailyBriefBody = document.querySelector('#daily-brief-body');
 const trendSectionToggleButton = document.querySelector('#trend-section-toggle');
 const trendSectionBody = document.querySelector('#trend-section-body');
 const adultTrendListElement = document.querySelector('#adult-trend-list');
-const adultFilterPillsElement = document.querySelector('#adult-filter-pills');
 const hasAdultTrendSection = Boolean(adultTrendListElement);
 
 const TREND_FRESHNESS_HOURS = 24;
 const TREND_TOPUP_DAYS = 3;
 const TREND_MIN_ITEMS = 8;
 const TREND_HOME_LIMIT = 10;
-const PERSONAL_NEWS_LIMIT = 10;
-const MUST_READ_LIMIT = 6;
+const PERSONAL_NEWS_LIMIT = 12;
+const MUST_READ_LIMIT = 10;
 const TOPIC_WORKING_SET_LIMIT = 48;
 const REFRESH_INTERVAL_MS = 3 * 60 * 1000;
 const HOME_TOPIC_CACHE_TTL_MS = 90 * 1000;
-const ARCHIVE_CACHE_TTL_MS = 5 * 60 * 1000;
 const DAILY_BRIEF_CACHE_TTL_MS = 90 * 1000;
 const ADULT_TREND_CACHE_TTL_MS = 90 * 1000;
 const ADULT_HOME_LIMIT = 20;
-const GENERIC_TOPIC_TOKENS = new Set(['速報', '公開', '発表', '開始', '決定', '話題', '最新', '本日', 'きょう', '今日', '判明', '疑惑', '意見']);
 const PERSONAL_INTEREST_RULES = [
-  { label: 'ポケモン関連', pattern: /ポケモン|pokemon|ポケカ|pokémon/i, score: 26 },
-  { label: 'ゲーム関連', pattern: /ゲーム|任天堂|nintendo|switch|steam|ps5|xbox|モンハン|マリオ|ゼルダ/i, score: 22 },
-  { label: 'AI関連', pattern: /ai|生成ai|chatgpt|openai|claude|gemini|llm/i, score: 24 },
-  { label: 'ガジェット関連', pattern: /iphone|android|スマホ|ガジェット|pc|gpu|nvidia|apple|google/i, score: 18 },
-  { label: 'セール情報', pattern: /セール|割引|キャンペーン|クーポン|ポイント還元|steamセール|fanza|dlsite/i, score: 22 },
-  { label: 'ネット文化', pattern: /sns|xで話題|twitter|炎上|バズ|ミーム|ネット文化|reddit|bluesky/i, score: 18 },
-  { label: '漫画・アニメ', pattern: /漫画|マンガ|アニメ|ジャンプ|コミック|声優|映画化|アニメ化/i, score: 16 },
-  { label: '個人開発・収益化', pattern: /個人開発|副業|収益化|アフィリエイト|広告収入|saas|開発者/i, score: 20 },
+  { label: 'ポケモン', pattern: /ポケモン|pokemon|pokémon|ポケカ|pokemon go|pokémon home/i, score: 60 },
+  { label: 'ゲーム', pattern: /ゲーム|モンハン|マリオ|ゼルダ|スプラトゥーン|apex|valorant|eスポーツ/i, score: 45 },
+  { label: 'Nintendo / Switch', pattern: /任天堂|nintendo|switch\s?2?|switch/i, score: 40 },
+  { label: 'Steam', pattern: /steam|steam deck/i, score: 35 },
+  { label: '漫画・アニメ', pattern: /漫画|マンガ|コミック|アニメ|声優|映画化|アニメ化|pv公開/i, score: 35 },
+  { label: 'ネット文化', pattern: /sns|xで話題|twitter|bluesky|reddit|炎上|バズ|ミーム|ネット文化|togetter|はてブ/i, score: 30 },
+  { label: 'セール', pattern: /セール|割引|キャンペーン|クーポン|ポイント還元|無料配布|期間限定/i, score: 30 },
+  { label: 'オタク系イベント', pattern: /イベント|コラボカフェ|展示会|即売会|コミケ|ポップアップ|ライブイベント|配布会/i, score: 25 },
+  { label: '同人', pattern: /同人|dlsite|メロンブックス|booth/i, score: 25 },
+];
+const PERSONAL_NEGATIVE_RULES = [
+  { pattern: /スポーツ|野球|サッカー|mlb|jリーグ|試合|移籍/i, score: 80 },
+  { pattern: /政治|国会|首相|与党|野党|選挙/i, score: 50 },
+  { pattern: /経済|株価|投資|決算|日銀|金利|市況/i, score: 50 },
+  { pattern: /国際|外交|戦況|米軍|中東|ウクライナ|ロシア/i, score: 50 },
+  { pattern: /事件|逮捕|送検|起訴|判決|強盗|詐欺/i, score: 50 },
+  { pattern: /地方ニュース|県内|市内|町内|観光協会|地域おこし/i, score: 40 },
+  { pattern: /ai|生成ai|chatgpt|openai|claude|gemini|llm/i, score: 50 },
+  { pattern: /ガジェット|スマホ|iphone|android|gpu|pcパーツ|nvidia/i, score: 40 },
+  { pattern: /ビジネス|副業|収益化|個人開発|アフィリエイト|saas/i, score: 40 },
+  { pattern: /芸能|熱愛|ゴシップ|スキャンダル/i, score: 30 },
 ];
 let activeTrendFilter = 'all';
 let activeAdultFilter = 'all';
@@ -219,14 +242,6 @@ async function fetchHomeTopicsPayload() {
   });
 }
 
-async function fetchTrendArchivePayload() {
-  return await fetchJsonWithCache({
-    cacheKey: 'trend-topics-archive',
-    endpoints: ['./data/trend-topics-archive.json', './data/trend-topics.json'],
-    ttlMs: ARCHIVE_CACHE_TTL_MS,
-  });
-}
-
 async function fetchTrendTopicsPayload() {
   return await fetchJsonWithCache({
     cacheKey: 'trend-topics-full',
@@ -297,36 +312,33 @@ function normalizeLegacyCategoryLabel(value, fallbackCategory) {
   return value ?? categoryLabelFor(fallbackCategory ?? 'general');
 }
 
-function categoryLabelFor(category) {
-  if (category === 'general') return 'その他';
-  if (category === 'tech') return 'テック';
-  if (category === 'business') return '経済';
-  if (category === 'politics') return '政治';
-  if (category === 'entertainment') return 'エンタメ';
-  if (category === 'games') return 'ゲーム';
-  if (category === 'manga') return '漫画';
-  if (category === 'books') return '本';
-  if (category === 'sports') return 'スポーツ';
-  if (category === 'sns') return 'SNS';
-  if (category === 'net-culture') return 'ネットカルチャー';
-  if (category === 'matome') return '2chまとめ系';
-  if (category === 'crime') return '犯罪・事件';
-  if (category === 'adult') return 'アダルト系';
-  if (category === 'world') return '国際';
-  return '総合';
-}
-
 function normalizeAdultTrendItem(item) {
   const categories = Array.isArray(item.categories) && item.categories.length ? item.categories : [item.category ?? 'industry'];
+  const categoryLabels = Array.isArray(item.categoryLabels) && item.categoryLabels.length ? item.categoryLabels : categories.map(adultCategoryLabelFor);
+  const sourceName = item.sourceName ?? item.source ?? 'Source';
+  const thumbnailUrl = pickCardImageUrl(item);
+  const trendReasons = Array.isArray(item.trendReasons) && item.trendReasons.length
+    ? item.trendReasons
+    : Array.isArray(item.hotReasons) ? item.hotReasons : [];
+  const ranking = Number(item.ranking ?? item.rank ?? 0) || null;
+  const adultPrimaryGenre = item.adultPrimaryGenre ?? item.genre ?? '';
   return {
     ...item,
     routeId: buildAdultRouteId(item),
     categories: [...new Set(categories.filter(Boolean))],
-    categoryLabels: Array.isArray(item.categoryLabels) && item.categoryLabels.length ? item.categoryLabels : categories.map(adultCategoryLabelFor),
-    sourceName: item.sourceName ?? item.source ?? 'Source',
+    categoryLabels,
+    source: sourceName,
+    sourceName,
     adultHotScore: Number(item.adultHotScore ?? item.score ?? 0),
-    thumbnailUrl: pickCardImageUrl(item),
-    trendReasons: Array.isArray(item.trendReasons) ? item.trendReasons : [],
+    thumbnail: thumbnailUrl,
+    thumbnailUrl,
+    hotReasons: trendReasons,
+    trendReasons,
+    genre: adultPrimaryGenre,
+    adultPrimaryGenre,
+    rank: ranking,
+    ranking,
+    rankLabel: ranking ? `${ranking}位` : (item.rankLabel ?? '注目候補'),
     tags: Array.isArray(item.tags) ? item.tags : [],
     relatedWorks: Array.isArray(item.relatedWorks) ? item.relatedWorks : [],
   };
@@ -361,21 +373,22 @@ function renderTrends(filter = 'all') {
   const limited = filtered.slice(0, TREND_HOME_LIMIT);
   const cards = limited.map((trend, index) => {
     const href = getTrendPrimaryUrl(trend, index);
-    const target = /^https?:/i.test(href) ? ' target="_blank" rel="noreferrer"' : '';
+    const sourceUrl = getPrimarySourceUrl(trend);
+    const sourceLabel = getPrimarySourceLabel(trend);
     const hasThumbnail = Boolean(trend.thumbnailUrl);
     const thumb = hasThumbnail ? buildTrendCardThumb(trend.thumbnailUrl) : '';
     const scoreSummary = trend.scoreSummary ? '<div class="trend-score-summary">' + escapeHtml(trend.scoreSummary) + '</div>' : '';
     const summaryHtml = hasVisibleSummary(trend.summary) ? '<p>' + escapeHtml(trend.summary ?? '') + '</p>' : '';
     const insightHtml = renderTrendReasonList(trend);
-    return '<a class="' + escapeHtml('trend-card trend-card-rich trend-card-link ' + (hasThumbnail ? 'has-thumb' : 'trend-card-no-thumb')) + '" href="' + escapeHtml(href) + '"' + target + ' style="animation-delay:' + (index * 70) + 'ms">' +
+    return '<article class="' + escapeHtml('trend-card trend-card-rich ' + (hasThumbnail ? 'has-thumb' : 'trend-card-no-thumb')) + '" style="animation-delay:' + (index * 70) + 'ms">' +
       thumb +
       '<div><div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(trend)) + '</span><time>' + escapeHtml(trend.time ?? '直近') + '</time></div>' +
-      '<h3>' + escapeHtml(trend.title ?? 'ニュース') + '</h3>' +
+      '<h3><a class="topic-card-primary-link" href="' + escapeHtml(href) + '">' + escapeHtml(trend.title ?? 'ニュース') + '</a></h3>' +
       summaryHtml +
       insightHtml +
       scoreSummary +
       '<div class="trend-footer"><span><strong>' + escapeHtml(String(trend.posts ?? 1)) + '</strong> ' + escapeHtml(trend.metricLabel ?? 'source') + '</span>' +
-      '<span class="detail-link">記事を開く ↗</span></div></div></a>';
+      (sourceUrl ? '<a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a>' : '<span class="detail-link">元記事なし</span>') + '</div></div></article>';
   });
   replaceChildrenFromHtml(trendListElement, cards);
   console.timeEnd('home:render-trends');
@@ -398,20 +411,39 @@ function buildTrendCardThumb(thumbnailUrl) {
 function renderDiscoverySections() {
   console.time('home:render-discovery');
   const topics = visibleTrendTopics;
-  renderTopicClusterList(mustReadNewsListElement, selectMustReadNews(topics).slice(0, 5), {
-    emptyTitle: '見逃したくない話題を整理中です',
-    emptyText: '直近24時間の重要トピックを確認しています。',
-    badge: "DON'T MISS",
-    scoreMode: 'hot',
-    featured: true,
-  });
-  renderTopicChannels(topics);
-  renderPriorityList(personalNewsListElement, selectPersonalNews(topics), {
+  const personalNews = selectPersonalNews(topics);
+  renderMustReadNews();
+  renderPriorityList(personalNewsListElement, personalNews, {
     emptyTitle: '自分向けニュースを整理中です',
-    emptyText: 'ゲーム、AI、セール、ネット文化などの話題を探しています。',
+    emptyText: 'ゲーム、ポケモン、漫画・アニメ、セール、ネット文化系の話題を探しています。',
     badge: 'FOR YOU',
   });
+  renderTopicChannels(topics);
   console.timeEnd('home:render-discovery');
+}
+
+function renderMustReadNews() {
+  if (!mustReadNewsListElement) return;
+  const items = Array.isArray(dailyBriefItems) ? dailyBriefItems.slice(0, MUST_READ_LIMIT) : [];
+  if (!items.length) {
+    mustReadNewsListElement.innerHTML = '<article class="topic-cluster-card topic-cluster-card-empty"><strong>見逃したくない話題を整理中です</strong><p>直近24時間の重要トピックを確認しています。</p></article>';
+    return;
+  }
+
+  replaceChildrenFromHtml(mustReadNewsListElement, items.map((item, index) => {
+    const thumbnail = item.thumbnailUrl ? buildTrendCardThumb(item.thumbnailUrl) : '';
+    const sourceUrl = item.primaryLink?.url ?? '';
+    const sourceLabel = item.primaryLink?.label ?? item.categoryLabel ?? '元記事';
+    const summary = sanitizeBriefSummaryText(item.thirtySecondSummary ?? item.watchpoints ?? '重要ニュースを整理中です。');
+    return '<article class="must-read-card-shell" style="animation-delay:' + (index * 60) + 'ms">' +
+      thumbnail +
+      '<div class="topic-cluster-top"><span>' + escapeHtml('3 MINUTE') + '</span><strong>' + escapeHtml(item.categoryLabel ?? 'その他') + '</strong></div>' +
+      '<div class="trend-meta"><span>' + escapeHtml(item.categoryLabel ?? 'その他') + '</span><time>' + escapeHtml(item.publishedLabel ?? formatBriefTimelineTime(item.publishedAt)) + '</time></div>' +
+      '<h3>' + escapeHtml(item.title ?? 'ニュース') + '</h3>' +
+      '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
+      '<div class="trend-footer"><span><strong>' + escapeHtml(sourceLabel) + '</strong></span>' + (sourceUrl ? '<a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">元記事を見る ↗</a>' : '<span class="detail-link">リンクなし</span>') + '</div>' +
+    '</article>';
+  }));
 }
 
 function prepareVisibleTrendTopics(topics) {
@@ -422,25 +454,11 @@ function prepareVisibleTrendTopics(topics) {
 
 function selectPersonalNews(topics) {
   return [...topics]
-    .filter((topic) => Number(topic.personalScore ?? 0) >= 18)
-    .sort((left, right) => Number(right.personalScore ?? 0) - Number(left.personalScore ?? 0) || hotTopicScore(right) - hotTopicScore(left))
+    .filter((topic) => hasPersonalInterestSignal(topic))
+    .filter((topic) => Number(topic.personalScore ?? 0) >= 30)
+    .filter((topic) => !isPersonalExcludedTopic(topic) || isStrongOtakuTopic(topic))
+    .sort((left, right) => personalTopicRank(right) - personalTopicRank(left) || hotTopicScore(right) - hotTopicScore(left))
     .slice(0, PERSONAL_NEWS_LIMIT);
-}
-
-function selectMustReadNews(topics) {
-  return [...topics]
-    .filter((topic) => isTrendTopicFresh(topic))
-    .filter((topic) => !isLowPriorityTopic(topic))
-    .filter((topic) => hotTopicScore(topic) >= 45 || Number(topic.personalScore ?? 0) >= 35 || Number(topic.posts ?? 1) >= 2)
-    .sort((left, right) => mustReadScore(right) - mustReadScore(left))
-    .slice(0, MUST_READ_LIMIT);
-}
-
-function mustReadScore(topic) {
-  const sourceBonus = Number(topic.posts ?? 1) >= 2 ? 18 : 0;
-  const importanceBonus = isHighImportanceTopic(topic) ? 28 : 0;
-  const penalty = isLowPriorityTopic(topic) ? 40 : 0;
-  return hotTopicScore(topic) + Number(topic.personalScore ?? 0) + sourceBonus + topicRecencyScore(topic) + importanceBonus - penalty;
 }
 
 function renderPriorityList(element, topics, options) {
@@ -452,18 +470,23 @@ function renderPriorityList(element, topics, options) {
 
   const cards = topics.map((topic, index) => {
     const href = './topic.html?id=' + encodeURIComponent(topic.id ?? '');
+    const sourceUrl = getPrimarySourceUrl(topic);
+    const sourceLabel = getPrimarySourceLabel(topic);
     const reasons = (topic.personalReasons ?? topic.hotReasons ?? []).slice(0, 3);
     const audience = Array.isArray(topic.targetAudience) && topic.targetAudience.length ? topic.targetAudience.slice(0, 3).join(' / ') : '関心のある人';
-    return '<a class="priority-card" href="' + escapeHtml(href) + '" style="animation-delay:' + (index * 55) + 'ms">' +
+    const thumb = topic.thumbnailUrl ? buildTrendCardThumb(topic.thumbnailUrl) : '';
+    return '<article class="priority-card" style="animation-delay:' + (index * 55) + 'ms">' +
+      thumb +
       '<div class="priority-card-top"><span>' + escapeHtml(options.badge) + '</span><strong>' + escapeHtml(String(Math.round(Number(topic.personalScore ?? hotTopicScore(topic) ?? 0)))) + '</strong></div>' +
-      '<h3>' + escapeHtml(topic.title ?? 'ニュース') + '</h3>' +
+      '<h3><a class="topic-card-primary-link" href="' + escapeHtml(href) + '">' + escapeHtml(topic.title ?? 'ニュース') + '</a></h3>' +
       '<p>' + escapeHtml(topic.whatHappened ?? shortEventFromTitle(topic.title)) + '</p>' +
       '<dl class="trend-reason-list priority-reasons">' +
       '<div><dt>なぜ見る？</dt><dd>' + escapeHtml(topic.importantPoint ?? buildImportantPoint(topic)) + '</dd></div>' +
       '<div><dt>関係ある人</dt><dd>' + escapeHtml(audience) + '</dd></div>' +
       '</dl>' +
+      '<div class="priority-chip-row">' + (sourceUrl ? '<a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a>' : '<a class="detail-link" href="' + escapeHtml(href) + '">詳しく見る →</a>') + '</div>' +
       '<div class="priority-chip-row">' + reasons.map((reason) => '<span>' + escapeHtml(reason) + '</span>').join('') + '</div>' +
-      '</a>';
+      '</article>';
   });
   replaceChildrenFromHtml(element, cards);
 }
@@ -579,6 +602,8 @@ function renderTopicClusterList(element, topics, options = {}) {
 
 function renderTopicClusterCard(topic, options = {}) {
   const href = './topic.html?id=' + encodeURIComponent(topic.id ?? '');
+  const sourceUrl = getPrimarySourceUrl(topic);
+  const sourceLabel = getPrimarySourceLabel(topic);
   const thumbnail = topic.thumbnailUrl ? buildTrendCardThumb(topic.thumbnailUrl) : '';
   const audience = Array.isArray(topic.targetAudience) && topic.targetAudience.length ? topic.targetAudience.slice(0, 3).join(' / ') : '関連分野を追う人';
   const summary = buildTopicCardSummary(topic);
@@ -612,6 +637,7 @@ function renderTopicClusterCard(topic, options = {}) {
         '</dl>' +
         relatedHtml +
         '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span><a class="detail-link" href="' + escapeHtml(href) + '">もっと見る →</a></div>' +
+        (sourceUrl ? '<div class="trend-footer"><span></span><a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a></div>' : '') +
       '</article>';
   }
 
@@ -628,6 +654,7 @@ function renderTopicClusterCard(topic, options = {}) {
           '<div><dt>代表トピック</dt><dd>' + escapeHtml(topic.importantPoint ?? buildImportantPoint(topic)) + '</dd></div>' +
         '</dl>' +
         '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span><a class="detail-link" href="' + escapeHtml(href) + '">もっと見る →</a></div>' +
+        (sourceUrl ? '<div class="trend-footer"><span></span><a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a></div>' : '') +
       '</div>' +
     '</article>';
   }
@@ -646,6 +673,7 @@ function renderTopicClusterCard(topic, options = {}) {
       '</dl>' +
       relatedHtml +
       '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span><a class="detail-link" href="' + escapeHtml(href) + '">もっと見る →</a></div>' +
+      (sourceUrl ? '<div class="trend-footer"><span></span><a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a></div>' : '') +
     '</div>' +
   '</article>';
 }
@@ -704,14 +732,61 @@ function calculatePersonalFit(topic) {
     reasons.push(rule.label);
   }
 
+  for (const rule of PERSONAL_NEGATIVE_RULES) {
+    if (!rule.pattern.test(text)) continue;
+    score -= rule.score;
+  }
+
+  score += personalSourceAffinityScore(topic);
+  if (topic.thumbnailUrl) score += 8;
   if (Number(topic.posts ?? 1) >= 2) score += 8;
   if (isTrendTopicFresh(topic)) score += 8;
   if (hotTopicScore(topic) >= 55) score += 8;
 
   return {
-    score: Math.min(100, score),
+    score: Math.max(0, Math.min(100, score)),
     reasons: [...new Set(reasons)].slice(0, 4),
   };
+}
+
+function hasPersonalInterestSignal(topic) {
+  const text = topicText(topic);
+  return PERSONAL_INTEREST_RULES.some((rule) => rule.pattern.test(text)) || personalSourceAffinityScore(topic) >= 10;
+}
+
+function isPersonalExcludedTopic(topic) {
+  const text = topicText(topic);
+  return PERSONAL_NEGATIVE_RULES.some((rule) => rule.pattern.test(text));
+}
+
+function isStrongOtakuTopic(topic) {
+  const text = topicText(topic);
+  const matchedRules = PERSONAL_INTEREST_RULES.filter((rule) => rule.pattern.test(text));
+  return matchedRules.length >= 2 || matchedRules.some((rule) => rule.score >= 40);
+}
+
+function personalSourceAffinityScore(topic) {
+  const signals = Array.isArray(topic.sourceSignals) ? topic.sourceSignals : [];
+  let score = 0;
+
+  for (const signal of signals.slice(0, 4)) {
+    const priority = Number(signal?.sourcePriority ?? 0);
+    score = Math.max(score, Math.max(0, Math.round((priority - 40) / 5)));
+
+    if (signal?.forPersonal) score += 4;
+    if (signal?.specialist) score += 6;
+    if (signal?.official) score += 4;
+
+    const sourceGroup = String(signal?.sourceGroup ?? '');
+    if (/games|anime|net-culture|sales|steam/.test(sourceGroup)) score += 6;
+    if (sourceGroup === 'google-news') score -= 6;
+  }
+
+  return Math.max(-8, Math.min(22, score));
+}
+
+function personalTopicRank(topic) {
+  return Number(topic.personalScore ?? 0) + personalSourceAffinityScore(topic) + topicRecencyScore(topic);
 }
 
 function buildTrendInsights(topic, personal = calculatePersonalFit(topic)) {
@@ -732,7 +807,13 @@ function topicText(topic) {
     ...(topic.categoryLabels ?? []),
     ...(topic.hotReasons ?? []),
     ...(topic.relatedKeywords ?? []),
-    ...(topic.sourceSignals ?? []).flatMap((signal) => [signal.title, signal.summary, signal.sourceName]),
+    ...(topic.sourceSignals ?? []).flatMap((signal) => [
+      signal.title,
+      signal.summary,
+      signal.sourceName,
+      signal.sourceGroup,
+      ...(Array.isArray(signal.sourceTags) ? signal.sourceTags : []),
+    ]),
   ].filter(Boolean).join(' ').toLowerCase();
 }
 
@@ -790,40 +871,61 @@ function renderDailyBrief() {
   if (!dailyBriefListElement) return;
 
   if (!dailyBriefItems.length) {
-    dailyBriefListElement.innerHTML = '<article class="brief-card brief-card-empty"><strong>重要ニュースを整理中です</strong><p>要約データの生成が終わり次第ここに表示されます。</p></article>';
+    dailyBriefListElement.innerHTML = '<article class="brief-timeline-item brief-timeline-item-empty"><strong>重要ニュースを整理中です</strong><p>要約データの生成が終わり次第ここに表示されます。</p></article>';
     console.timeEnd('home:render-brief');
     return;
   }
 
-  const cards = dailyBriefItems.slice(0, 5).map((item, index) => {
-    const thumbnailUrl = pickCardImageUrl(item);
-    const thumb = thumbnailUrl ? buildTrendCardThumb(thumbnailUrl) : '';
+  const items = [...dailyBriefItems]
+    .slice(0, 10)
+    .sort((left, right) => briefPublishedAt(left) - briefPublishedAt(right));
+
+  const cards = items.map((item, index) => {
     const primaryLink = item.primaryLink?.url
       ? '<a class="brief-primary-link" href="' + escapeHtml(item.primaryLink.url) + '" target="_blank" rel="noreferrer">' + escapeHtml(item.primaryLink.label ?? '元記事') + ' ↗</a>'
-      : '';
-    const relatedLinks = Array.isArray(item.relatedLinks) && item.relatedLinks.length
-      ? '<div class="brief-related-links">' + item.relatedLinks.map((link) => '<a href="' + escapeHtml(link.url ?? '#') + '" target="_blank" rel="noreferrer">' + escapeHtml(link.label ?? '関連記事') + ' ↗</a>').join('') + '</div>'
-      : '<div class="brief-related-links brief-related-empty"><span>関連記事リンクなし</span></div>';
+      : '<span class="brief-primary-link brief-primary-link-muted">リンクなし</span>';
+    const summary = sanitizeBriefSummaryText(item.thirtySecondSummary ?? item.watchpoints ?? '情報を整理中です。');
+    const timeLabel = item.publishedLabel ?? formatBriefTimelineTime(item.publishedAt);
+    const relativeLabel = formatRelativeTime(item.publishedAt);
+    const sourceLabel = item.primaryLink?.label ?? item.categoryLabel ?? 'ニュース';
 
-    return '<article class="' + escapeHtml('brief-card ' + (thumbnailUrl ? 'has-thumb' : 'trend-card-no-thumb')) + '" style="animation-delay:' + (index * 80) + 'ms">' +
-      thumb +
-      '<div>' +
-      '<div class="brief-card-top"><span class="brief-tone">' + escapeHtml(item.tone ?? '注目ニュース') + '</span></div>' +
-      '<div class="brief-meta"><span>' + escapeHtml(item.categoryLabel ?? 'その他') + '</span><time>' + escapeHtml(item.publishedLabel ?? '時刻不明') + '</time></div>' +
+    return '<article class="brief-timeline-item" style="animation-delay:' + (index * 70) + 'ms">' +
+      '<div class="brief-timeline-dot" aria-hidden="true"></div>' +
+      '<div class="brief-timeline-content">' +
+      '<div class="brief-timeline-time"><time>' + escapeHtml(timeLabel || '時刻不明') + '</time><span>' + escapeHtml(item.categoryLabel ?? 'その他') + '</span></div>' +
       '<h3>' + escapeHtml(item.title ?? 'ニュース') + '</h3>' +
-      '<dl class="brief-points">' +
-      renderBriefPoint('30秒要約', item.thirtySecondSummary) +
-      renderBriefPoint('今後の注目点', item.watchpoints) +
-      '</dl>' +
-      '<div class="brief-links">' +
-      primaryLink +
-      relatedLinks +
-      '</div>' +
+      '<p class="brief-timeline-summary">' + escapeHtml(summary) + '</p>' +
+      '<div class="brief-meta brief-meta-timeline"><span>' + escapeHtml(sourceLabel) + ' ・ ' + escapeHtml(relativeLabel) + '</span>' + primaryLink + '</div>' +
       '</div>' +
     '</article>';
   });
   replaceChildrenFromHtml(dailyBriefListElement, cards);
   console.timeEnd('home:render-brief');
+}
+
+function briefPublishedAt(item) {
+  const timestamp = new Date(item?.publishedAt ?? 0).getTime();
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+}
+
+function formatBriefTimelineTime(value) {
+  const date = new Date(value ?? '');
+  if (Number.isNaN(date.getTime())) return '時刻不明';
+  return new Intl.DateTimeFormat('ja-JP', {
+    hour: '2-digit',
+    minute: '2-digit',
+  }).format(date);
+}
+
+function formatRelativeTime(value) {
+  const timestamp = new Date(value ?? '').getTime();
+  if (Number.isNaN(timestamp)) return '時刻不明';
+  const diffMinutes = Math.max(0, Math.round((Date.now() - timestamp) / (1000 * 60)));
+  if (diffMinutes < 60) return diffMinutes + '分前';
+  const diffHours = Math.floor(diffMinutes / 60);
+  if (diffHours < 24) return diffHours + '時間前';
+  const diffDays = Math.floor(diffHours / 24);
+  return diffDays + '日前';
 }
 
 function renderAdultTrends(filter = 'all') {
@@ -920,13 +1022,6 @@ function revealDeferredTopicChannels() {
   recordPerfCount('after-topic-channels');
 }
 
-function renderBriefPoint(label, value) {
-  const normalized = label === '30秒要約'
-    ? sanitizeBriefSummaryText(value ?? '情報を整理中です。')
-    : (value ?? '情報を整理中です。');
-  return '<div><dt>' + escapeHtml(label) + '</dt><dd>' + escapeHtml(normalized) + '</dd></div>';
-}
-
 function sanitizeBriefSummaryText(value) {
   const text = String(value ?? "").trim();
   if (!text) return '';
@@ -959,7 +1054,7 @@ function replaceChildrenFromHtml(element, htmlItems) {
 function recordPerfCount(label) {
   perfMetrics.counts[label] = {
     priorityCards: document.querySelectorAll('.priority-card').length,
-    briefCards: document.querySelectorAll('.brief-card').length,
+    briefTimelineItems: document.querySelectorAll('.brief-timeline-item').length,
     trendCards: document.querySelectorAll('.trend-card').length,
     rankingItems: document.querySelectorAll('#ranking-battle-list li, #ranking-general-list li').length,
     hotItems: document.querySelectorAll('#hot-battle-keywords li, #hot-general-keywords li').length,
@@ -1013,12 +1108,6 @@ function hotTopicScore(topic) {
 
 function getTrendPrimaryUrl(trend, index) {
   return './topic.html?id=' + encodeURIComponent(trend.id ?? (trend.category + '-' + index));
-}
-
-function hasVisibleSummary(summary) {
-  const text = String(summary ?? '').replace(/\s+/g, ' ').trim();
-  if (!text) return false;
-  return !/に関する話題。?$|が明らかになり、?話題になっている。?$|がきょうの注目話題として取り上げられている。?$|を伝える話題。?$/.test(text);
 }
 
 function pickPrimaryHotTopics(topics, limit = 3) {
@@ -1077,9 +1166,10 @@ function categoryShowcaseScore(topic) {
   const freshnessBonus = topicRecencyScore(topic);
   const sourceBonus = Math.min(8, Number(topic.posts ?? 1) * 2);
   const baseScore = Number(topic.score ?? 0);
+  const personalSourceBonus = Math.max(0, personalSourceAffinityScore(topic));
   const importanceBonus = isHighImportanceTopic(topic) ? 18 : 0;
   const penalty = isLowPriorityTopic(topic) ? 36 : 0;
-  return baseScore + freshnessBonus + sourceBonus + importanceBonus - penalty;
+  return baseScore + freshnessBonus + sourceBonus + personalSourceBonus + importanceBonus - penalty;
 }
 
 function isHighImportanceTopic(topic) {
@@ -1114,10 +1204,6 @@ function topicRecencyScore(topic) {
   return 0;
 }
 
-function shouldLoadArchiveTopics(currentTopics) {
-  return currentTopics.length < TREND_MIN_ITEMS;
-}
-
 function isTrendTopicFresh(topic) {
   const dateValue = topic.sourceSignals?.[0]?.publishedAt ?? topic.publishedAt ?? topic.capturedAt ?? latestTrendGeneratedAt;
   if (!dateValue) return true;
@@ -1142,212 +1228,10 @@ function selectTopTrendTopics(topics) {
   return [...new Map([...freshItems, ...fallbackItems].map((topic) => [topic.id, topic])).values()].slice(0, TREND_MIN_ITEMS);
 }
 
-function mergeReports(...reportGroups) {
-  const reports = reportGroups.flat();
-  return [...new Map(reports.map((report) => [report.id, report])).values()];
-}
-
-function dedupeTopics(topics) {
-  const map = new Map();
-
-  for (const topic of topics) {
-    const key = canonicalTopicKey(topic);
-    const current = map.get(key);
-    if (!current) {
-      map.set(key, topic);
-      continue;
-    }
-
-    const nextSignals = [...new Map([...(current.sourceSignals ?? []), ...(topic.sourceSignals ?? [])].map((signal) => [signal.url, signal])).values()];
-    if (Number(topic.score ?? 0) >= Number(current.score ?? 0)) {
-      const categories = normalizeCategories(mergeCategories(current.categories, topic.categories), topic.category ?? current.category);
-      map.set(key, {
-        ...current,
-        ...topic,
-        category: topic.category ?? current.category,
-        categories,
-        categoryLabels: categories.map(categoryLabelFor),
-        sourceSignals: nextSignals,
-        posts: String(Math.max(Number(current.posts ?? 1), Number(topic.posts ?? 1), nextSignals.length || 1)),
-        metricLabel: nextSignals.length > 1 ? 'sources' : (topic.metricLabel ?? current.metricLabel ?? 'source'),
-        thumbnailUrl: topic.thumbnailUrl ?? current.thumbnailUrl ?? nextSignals.find((signal) => signal.thumbnailUrl)?.thumbnailUrl ?? null,
-      });
-    } else {
-      const categories = normalizeCategories(mergeCategories(current.categories, topic.categories), current.category ?? topic.category);
-      map.set(key, {
-        ...current,
-        categories,
-        categoryLabels: categories.map(categoryLabelFor),
-        sourceSignals: nextSignals,
-        posts: String(Math.max(Number(current.posts ?? 1), Number(topic.posts ?? 1), nextSignals.length || 1)),
-        metricLabel: nextSignals.length > 1 ? 'sources' : (current.metricLabel ?? 'source'),
-        thumbnailUrl: current.thumbnailUrl ?? topic.thumbnailUrl ?? nextSignals.find((signal) => signal.thumbnailUrl)?.thumbnailUrl ?? null,
-      });
-    }
-  }
-
-  return dedupeTopicsFuzzy([...map.values()]);
-}
-
-function canonicalTopicKey(topic) {
-  const urlSignature = canonicalTopicSourceSignature(topic);
-  const titleSignature = normalizeTopicFingerprint(topic.title ?? '');
-  return `${titleSignature}::${urlSignature}`;
-}
-
-function canonicalTopicSourceSignature(topic) {
-  const firstSignalUrl = Array.isArray(topic.sourceSignals) ? topic.sourceSignals[0]?.url : null;
-  const fromSearchLinks = Array.isArray(topic.searchLinks) ? topic.searchLinks[0]?.url : null;
-  const normalizedUrl = canonicalUrlForDedup(firstSignalUrl || fromSearchLinks);
-  return normalizedUrl ? `url:${normalizedUrl}` : '';
-}
-
-function canonicalUrlForDedup(rawUrl) {
-  const value = String(rawUrl ?? '').trim();
-  if (!value) return '';
-  try {
-    const parsed = new URL(value);
-    const params = new URLSearchParams(parsed.search);
-    const keysToDrop = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_id', 'ref', 'src', 'from'];
-    keysToDrop.forEach((key) => params.delete(key));
-    parsed.search = params.toString();
-    return `${parsed.hostname.replace(/^www\./, '').toLowerCase()}${parsed.pathname.toLowerCase()}`.replace(/\/$/, '');
-  } catch {
-    return value.toLowerCase().replace(/^https?:\/\//, '').replace(/[#?].*$/i, '');
-  }
-}
-
-function normalizeTopicFingerprint(value) {
-  return String(value ?? '')
-    .toLowerCase()
-    .replace(/\b(速報|動画|写真|news|ニュース)\b/g, ' ')
-    .replace(/\([^)]*\)/g, ' ')
-    .replace(/（[^）]*）/g, ' ')
-    .replace(/[【】「」『』]/g, ' ')
-    .replace(/（[^）]*?新聞[^）]*?）/g, ' ')
-    .replace(/（[^）]*?ニュース[^）]*?）/g, ' ')
-    .replace(/https?:\/\/\S+/g, ' ')
-    .replace(/\b[a-z0-9]{8,}\b/g, ' ')
-    .replace(/\b([a-z0-9-]+\.)+[a-z]{2,}\b/g, ' ')
-    .replace(/[^a-z0-9\u3040-\u30ff\u4e00-\u9fff]+/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
-
 function normalizeCategories(categories, fallbackCategory) {
   const values = Array.isArray(categories) ? categories : [];
   const merged = [...new Set([fallbackCategory, ...values].filter(Boolean))];
   return merged.length ? merged : ['general'];
-}
-
-function mergeCategories(...groups) {
-  return [...new Set(groups.flatMap((group) => Array.isArray(group) ? group : [group]).filter(Boolean))];
-}
-
-function hasCategory(topic, category) {
-  return normalizeCategories(topic.categories, topic.category).includes(category);
-}
-
-function categoryDisplayLabel(topic) {
-  const labels = Array.isArray(topic.categoryLabels) && topic.categoryLabels.length
-    ? topic.categoryLabels
-    : normalizeCategories(topic.categories, topic.category).map(categoryLabelFor);
-  return labels.slice(0, 2).join(' / ');
-}
-
-function dedupeTopicsFuzzy(topics) {
-  const kept = [];
-  for (const topic of topics) {
-    const currentKey = canonicalTopicKey(topic);
-    const duplicateIndex = kept.findIndex((item) => isNearDuplicateTopic(item, topic, currentKey));
-    if (duplicateIndex === -1) {
-      kept.push(topic);
-      continue;
-    }
-    kept[duplicateIndex] = mergeDuplicateTopics(kept[duplicateIndex], topic);
-  }
-  return kept;
-}
-
-function isNearDuplicateTopic(current, next, nextKey = canonicalTopicKey(next)) {
-  if (!current || !next) return false;
-  const currentUrl = canonicalTopicSourceSignature(current);
-  const nextUrl = canonicalTopicSourceSignature(next);
-  if (currentUrl && nextUrl && currentUrl === nextUrl) return true;
-  if (isLikelySameStory(current, next)) return true;
-  if (!shareAnyCategory(current, next)) return false;
-  const currentKey = canonicalTopicKey(current);
-  if (!currentKey || !nextKey) return false;
-
-  if (currentKey.includes(nextKey) || nextKey.includes(currentKey)) {
-    return Math.min(currentKey.length, nextKey.length) >= 18;
-  }
-
-  const currentTokens = distinctiveTokens(currentKey);
-  const nextTokens = distinctiveTokens(nextKey);
-  if (currentTokens.length < 3 || nextTokens.length < 3) return false;
-  const overlap = currentTokens.filter((token) => nextTokens.includes(token)).length;
-  return overlap >= 3 && overlap / Math.min(currentTokens.length, nextTokens.length) >= 0.78;
-}
-
-function distinctiveTokens(value) {
-  return [...new Set(String(value ?? '').split(' ').filter((token) => token.length >= 2 && !GENERIC_TOPIC_TOKENS.has(token)))];
-}
-
-function shareAnyCategory(left, right) {
-  const leftCategories = normalizeCategories(left.categories, left.category);
-  const rightCategories = normalizeCategories(right.categories, right.category);
-  return leftCategories.some((category) => rightCategories.includes(category));
-}
-
-function isLikelySameStory(current, next) {
-  if (!current || !next) return false;
-
-  const currentTitle = normalizeTopicFingerprint(current.title ?? "");
-  const nextTitle = normalizeTopicFingerprint(next.title ?? "");
-  if (!currentTitle || !nextTitle) return false;
-
-  const sameTitle = currentTitle === nextTitle || currentTitle.includes(nextTitle) || nextTitle.includes(currentTitle);
-  const currentPublishedAt = topicPublishedAt(current);
-  const nextPublishedAt = topicPublishedAt(next);
-  if (sameTitle) {
-    if (currentPublishedAt == null || nextPublishedAt == null) return true;
-    return Math.abs(currentPublishedAt - nextPublishedAt) <= 36 * 60 * 60 * 1000;
-  }
-
-  const currentTokens = distinctiveTokens(currentTitle);
-  const nextTokens = distinctiveTokens(nextTitle);
-  if (currentTokens.length < 4 || nextTokens.length < 4) return false;
-  if (!currentPublishedAt || !nextPublishedAt) return false;
-  const overlap = currentTokens.filter((token) => nextTokens.includes(token)).length;
-  const overlapRatio = overlap / Math.min(currentTokens.length, nextTokens.length);
-  return overlap >= 3 && overlapRatio >= 0.8 && Math.abs(currentPublishedAt - nextPublishedAt) <= 36 * 60 * 60 * 1000;
-}
-
-function topicPublishedAt(topic) {
-  const value = topic?.sourceSignals?.[0]?.publishedAt ?? topic?.publishedAt ?? topic?.capturedAt ?? topic?.generatedAt;
-  const time = new Date(value ?? "").getTime();
-  return Number.isNaN(time) ? null : time;
-}
-
-function mergeDuplicateTopics(current, next) {
-  const currentSignals = Array.isArray(current.sourceSignals) ? current.sourceSignals : [];
-  const nextSignals = Array.isArray(next.sourceSignals) ? next.sourceSignals : [];
-  const mergedSignals = [...new Map([...currentSignals, ...nextSignals].map((signal) => [signal.url, signal])).values()];
-  const winner = Number(next.score ?? 0) >= Number(current.score ?? 0) ? next : current;
-  const loser = winner === next ? current : next;
-  const categories = normalizeCategories(mergeCategories(current.categories, next.categories), winner.category ?? loser.category);
-  return {
-    ...loser,
-    ...winner,
-    category: winner.category ?? loser.category,
-    categories,
-    categoryLabels: categories.map(categoryLabelFor),
-    sourceSignals: mergedSignals,
-    posts: String(Math.max(Number(current.posts ?? 1), Number(next.posts ?? 1), mergedSignals.length || 1)),
-    metricLabel: mergedSignals.length > 1 ? 'sources' : (winner.metricLabel ?? loser.metricLabel ?? 'source'),
-    thumbnailUrl: winner.thumbnailUrl ?? loser.thumbnailUrl ?? mergedSignals.find((signal) => signal.thumbnailUrl)?.thumbnailUrl ?? null,
-  };
 }
 
 function showRefreshStatus(message) {
@@ -1364,48 +1248,6 @@ function formatAbsoluteDate(dateString) {
   const date = new Date(dateString);
   if (Number.isNaN(date.getTime())) return '不明';
   return new Intl.DateTimeFormat('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(date);
-}
-
-function escapeHtml(value) {
-  const element = document.createElement('div');
-  element.textContent = String(value ?? '');
-  return element.innerHTML;
-}
-
-function pickCardImageUrl(item) {
-  const candidates = [
-    item?.thumbnailUrl,
-    item?.thumbnail,
-    item?.imageUrl,
-    item?.image,
-    item?.ogImage,
-    item?.twitterImage,
-    item?.sourceImage,
-    ...(Array.isArray(item?.sourceSignals) ? item.sourceSignals.flatMap((signal) => [
-      signal?.thumbnailUrl,
-      signal?.thumbnail,
-      signal?.imageUrl,
-      signal?.image,
-      signal?.ogImage,
-      signal?.twitterImage,
-      signal?.sourceImage,
-    ]) : []),
-  ];
-  for (const candidate of candidates) {
-    const normalized = sanitizeCardImageUrl(candidate);
-    if (normalized) return normalized;
-  }
-  return null;
-}
-
-function sanitizeCardImageUrl(value) {
-  const url = String(value ?? '').trim();
-  if (!url || !/^https?:\/\//i.test(url)) return null;
-  if (/^https?:\/\/lh3\.googleusercontent\.com\/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc(?:=|$)/i.test(url)) return null;
-  if (/(?:^|\/)(?:favicon(?:-\d+x\d+)?|apple-touch-icon|android-chrome-\d+x\d+|mstile-\d+x\d+)(?:\.[a-z0-9]+)?(?:$|[?#])/i.test(url)) return null;
-  if (/\/favicon\.ico(?:$|[?#])/i.test(url)) return null;
-  if (/(?:google|gstatic)\.[^/]+\/.*(?:favicon|logo|icon)/i.test(url)) return null;
-  return url;
 }
 
 function buildAdultRouteId(item) {
@@ -1545,16 +1387,6 @@ if (topicChannelTabsElement) {
     if (!nextKey || nextKey === activeTopicChannelKey) return;
     activeTopicChannelKey = nextKey;
     renderTopicChannels(visibleTrendTopics.length ? visibleTrendTopics : trendTopics);
-  });
-}
-
-if (adultFilterPillsElement) {
-  adultFilterPillsElement.querySelectorAll('button').forEach((button) => {
-    button.addEventListener('click', () => {
-      adultFilterPillsElement.querySelectorAll('button').forEach((item) => item.classList.remove('active'));
-      button.classList.add('active');
-      renderAdultTrends(button.dataset.adultFilter);
-    });
   });
 }
 

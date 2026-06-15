@@ -21,6 +21,137 @@ const CATEGORY_LABELS = {
   world: "国際",
 };
 
+const NEWS_ARCHIVE_ALLOW_SOURCE_PATTERNS = [
+  /yahoo!?ニュース/i,
+  /nhk/i,
+  /日本経済新聞|nikkei/i,
+  /朝日新聞|asahi/i,
+  /読売新聞|yomiuri/i,
+  /毎日新聞|mainichi/i,
+  /産経/i,
+  /時事/i,
+  /共同通信/i,
+  /itmedia/i,
+  /ねとらぼ/i,
+  /j-cast/i,
+  /テレ朝news/i,
+  /tbs news/i,
+  /fnn/i,
+  /日テレnews/i,
+  /東京新聞/i,
+  /神戸新聞/i,
+  /中日新聞/i,
+  /北海道新聞/i,
+  /西日本新聞/i,
+  /沖縄タイムス/i,
+  /琉球新報/i,
+  /bbc news japan|bbc japan/i,
+  /reuters japan/i,
+  /automaton/i,
+  /4gamer/i,
+  /gamespark/i,
+  /inside/i,
+  /ファミ通/i,
+  /電ファミ/i,
+  /コミックナタリー|comic natalie/i,
+  /アニメ！アニメ！|animeanime/i,
+  /mantanweb/i,
+  /kai-you/i,
+  /togetter/i,
+  /oricon/i,
+  /impress/i,
+  /watch/i,
+];
+
+const NEWS_ARCHIVE_EXCLUDE_SOURCE_PATTERNS = [
+  /associated press|ap news/i,
+  /cnn(?!.*japan)/i,
+  /fox news/i,
+  /the guardian/i,
+  /new york times|nytimes/i,
+  /washington post/i,
+  /bloomberg(?!.*japan)/i,
+  /financial times/i,
+  /al jazeera/i,
+  /abc news/i,
+  /nbc news/i,
+  /cbs news/i,
+  /forbes(?!.*japan)/i,
+  /techcrunch(?!.*japan)/i,
+  /the verge/i,
+  /engadget(?!.*japan)/i,
+  /gizmodo(?!.*jp)/i,
+  /polygon/i,
+  /eurogamer/i,
+  /ign(?!.*japan)/i,
+  /kotaku/i,
+  /variety/i,
+  /deadline/i,
+  /hollywood reporter/i,
+  /hypebeast/i,
+  /rolling stone(?!.*japan)/i,
+  /people\.com/i,
+  /tmz/i,
+  /\bbbc\b(?!.*japan)/i,
+];
+
+const NEWS_ARCHIVE_ALLOW_HOST_PATTERNS = [
+  /(?:^|\.)co\.jp$/i,
+  /(?:^|\.)or\.jp$/i,
+  /(?:^|\.)ne\.jp$/i,
+  /(?:^|\.)go\.jp$/i,
+  /(?:^|\.)ac\.jp$/i,
+  /(?:^|\.)jp$/i,
+  /yahoo\.co\.jp$/i,
+  /nhk\.or\.jp$/i,
+  /gamespark\.jp$/i,
+  /inside-games\.jp$/i,
+  /automaton-media\.com$/i,
+  /animeanime\.jp$/i,
+  /kai-you\.net$/i,
+  /togetter\.com$/i,
+  /itmedia\.co\.jp$/i,
+  /j-cast\.com$/i,
+  /natalie\.mu$/i,
+  /famitsu\.com$/i,
+  /4gamer\.net$/i,
+  /denfaminicogamer\.jp$/i,
+  /mantan-web\.jp$/i,
+];
+
+const NEWS_ARCHIVE_EXCLUDE_HOST_PATTERNS = [
+  /news\.google\.com$/i,
+  /apnews\.com$/i,
+  /cnn\.com$/i,
+  /foxnews\.com$/i,
+  /theguardian\.com$/i,
+  /nytimes\.com$/i,
+  /washingtonpost\.com$/i,
+  /bloomberg\.com$/i,
+  /ft\.com$/i,
+  /aljazeera\.com$/i,
+  /abcnews\.go\.com$/i,
+  /nbcnews\.com$/i,
+  /cbsnews\.com$/i,
+  /forbes\.com$/i,
+  /techcrunch\.com$/i,
+  /theverge\.com$/i,
+  /engadget\.com$/i,
+  /gizmodo\.com$/i,
+  /polygon\.com$/i,
+  /eurogamer\.net$/i,
+  /ign\.com$/i,
+  /kotaku\.com$/i,
+  /variety\.com$/i,
+  /deadline\.com$/i,
+  /hollywoodreporter\.com$/i,
+  /hypebeast\.com$/i,
+  /rollingstone\.com$/i,
+  /people\.com$/i,
+  /tmz\.com$/i,
+  /espn\.com$/i,
+];
+
 const FALLBACK_SUMMARY_PATTERNS = [
   /^今日の主要ニュースのひとつです。?$/,
   /分野の注目ニュース。?$/,
@@ -34,6 +165,18 @@ const FALLBACK_SUMMARY_PATTERNS = [
 
 const GENERIC_TOKENS = new Set(["速報", "公開", "発表", "開始", "決定", "話題", "最新", "本日", "今日", "きょう", "判明", "登場", "配信", "発売", "開催", "疑惑"]);
 const MAX_CURRENT_ITEMS = 180;
+const MAX_ARCHIVE_ITEMS = 5200;
+const DEDUPE_BUCKET_SCAN_LIMIT = 80;
+const METADATA_ENRICH_LIMIT = 24;
+const METADATA_ENRICH_CONCURRENCY = 4;
+const HOME_TOPIC_LIMIT = 30;
+const HOME_SOURCE_MAX = 2;
+const HOME_SOURCE_GROUP_MAX = 5;
+const HOME_PERSONAL_MIN = 18;
+const NEWS_ARCHIVE_MAX_ITEMS = 1500;
+const BROWSE_24_TO_3D_LIMIT = 360;
+const BROWSE_3_TO_7D_LIMIT = 120;
+const BROWSE_7_TO_14D_LIMIT = 30;
 
 const payload = await collectTrendTopics();
 await enrichItemsWithMetadata(payload.items ?? []);
@@ -47,13 +190,15 @@ const currentPayload = {
 
 const archivePath = "data/trend-topics-archive.json";
 const archivePayload = await readArchivePayload(archivePath);
-const mergedArchiveItems = mergeArchiveItems(
-  (archivePayload.items ?? []).map(normalizeArchiveItem),
-  dedupedItems.map(normalizeArchiveItem),
-).filter((item) => isWithinArchiveWindow(item, capturedAt) && shouldKeepArchiveItem(item));
+const mergedArchiveItems = dedupeNearDuplicateItems(
+  mergeArchiveItems(
+    (archivePayload.items ?? []).map(normalizeArchiveItem),
+    dedupedItems.map(normalizeArchiveItem),
+  ).filter((item) => isWithinArchiveWindow(item, capturedAt) && shouldKeepArchiveItem(item)),
+);
 const nextArchivePayload = {
   generatedAt: capturedAt,
-  items: mergedArchiveItems,
+  items: limitArchiveItems(mergedArchiveItems, MAX_ARCHIVE_ITEMS),
 };
 const dailyBriefPayload = buildDailyBrief({
   currentItems: currentPayload.items,
@@ -61,6 +206,10 @@ const dailyBriefPayload = buildDailyBrief({
   generatedAt: capturedAt,
 });
 const browseTopicsPayload = buildBrowseTopicsPayload({
+  archiveItems: mergedArchiveItems,
+  generatedAt: capturedAt,
+});
+const newsArchivePayload = buildNewsArchivePayload({
   archiveItems: mergedArchiveItems,
   generatedAt: capturedAt,
 });
@@ -92,6 +241,11 @@ await writeFile(
   "utf8",
 );
 await writeFile(
+  "data/news-archive.json",
+  `${JSON.stringify(newsArchivePayload, null, 2)}\n`,
+  "utf8",
+);
+await writeFile(
   "data/home-topics.json",
   `${JSON.stringify(homeTopicsPayload, null, 2)}\n`,
   "utf8",
@@ -101,6 +255,7 @@ logThumbnailCoverage(currentPayload.items);
 console.log(`Saved ${currentPayload.items.length} trend topic(s).`);
 
 function normalizeStoredTopic(item) {
+  const { thumbnail: _thumbnail, ...baseItem } = item;
   const categories = normalizeCategoryList(item.categories);
   const category = categories[0] ?? "general";
 
@@ -117,15 +272,32 @@ function normalizeStoredTopic(item) {
   });
 
   return {
-    ...item,
+    ...baseItem,
     category,
     categories,
     categoryLabel,
     categoryLabels,
     capturedAt: item.capturedAt ?? item.generatedAt ?? capturedAt,
     thumbnailUrl: sanitizeThumbnailUrl(item.thumbnailUrl),
-    thumbnail: sanitizeThumbnailUrl(item.thumbnail ?? item.thumbnailUrl),
-    sourceSignals: sanitizeSourceSignals(item.sourceSignals),
+    sourceSignals: sanitizeSourceSignals(item.sourceSignals).map((signal) => ({
+      sourceId: signal.sourceId ?? null,
+      source: signal.source ?? null,
+      sourceName: signal.sourceName ?? null,
+      sourceGroup: signal.sourceGroup ?? null,
+      sourcePriority: Number(signal.sourcePriority ?? 0),
+      official: Boolean(signal.official),
+      specialist: Boolean(signal.specialist),
+      forPersonal: Boolean(signal.forPersonal),
+      sourceTags: Array.isArray(signal.sourceTags) ? signal.sourceTags.slice(0, 6) : [],
+      title: signal.title ?? null,
+      url: signal.url ?? null,
+      canonicalUrl: signal.canonicalUrl ?? signal.url ?? null,
+      publishedAt: signal.publishedAt ?? null,
+      publishedLabel: signal.publishedLabel ?? null,
+      thumbnailUrl: sanitizeThumbnailUrl(signal.thumbnailUrl),
+      briefSummary: normalizeBriefSummaryText(signal.briefSummary),
+      summary: normalizeSummaryText(signal.summary),
+    })),
     briefSummary: normalizeBriefSummaryText(item.briefSummary) || buildStoredBriefSummary(item),
     summary: normalizeSummaryText(item.summary),
     whatHappened: normalizeSummaryText(item.whatHappened) || insights.whatHappened,
@@ -137,18 +309,26 @@ function normalizeStoredTopic(item) {
 }
 
 function buildHomeTopicsPayload({ currentItems = [], archiveItems = [], generatedAt = new Date().toISOString() }) {
-  const sourceItems = currentItems.length ? currentItems : archiveItems;
+  const sourceItems = dedupeNearDuplicateItems([
+    ...currentItems,
+    ...archiveItems
+      .filter((item) => {
+        const ageHours = (Date.now() - archiveTimestamp(item)) / (1000 * 60 * 60);
+        return ageHours <= 14 * 24;
+      })
+      .slice(0, 1200),
+  ]);
   const rankedItems = [...sourceItems]
     .sort((left, right) => {
       return homeTopicPriority(right) - homeTopicPriority(left)
         || Number(right.score ?? 0) - Number(left.score ?? 0)
         || archiveTimestamp(right) - archiveTimestamp(left);
-    })
-    .slice(0, 30);
+    });
+  const selectedItems = selectDiverseHomeTopics(rankedItems, HOME_TOPIC_LIMIT);
 
   return {
     generatedAt,
-    items: rankedItems.map((item) => ({
+    items: selectedItems.map((item) => ({
       id: item.id,
       title: item.title,
       summary: item.summary ?? "",
@@ -160,20 +340,26 @@ function buildHomeTopicsPayload({ currentItems = [], archiveItems = [], generate
       posts: Number(item.posts ?? 1),
       metricLabel: item.metricLabel ?? "source",
       thumbnailUrl: sanitizeThumbnailUrl(item.thumbnailUrl),
-      thumbnail: sanitizeThumbnailUrl(item.thumbnail ?? item.thumbnailUrl),
       publishedAt: item.publishedAt ?? item.sourceSignals?.[0]?.publishedAt ?? null,
       capturedAt: item.capturedAt ?? generatedAt,
       time: item.time ?? item.sourceSignals?.[0]?.publishedLabel ?? null,
       hotReasons: Array.isArray(item.hotReasons) ? item.hotReasons.slice(0, 4) : [],
       sourceSignals: sanitizeSourceSignals(item.sourceSignals).slice(0, 3).map((signal) => ({
+        sourceId: signal.sourceId ?? null,
         source: signal.source ?? null,
         sourceName: signal.sourceName ?? null,
+        sourceGroup: signal.sourceGroup ?? null,
+        sourcePriority: Number(signal.sourcePriority ?? 0),
+        official: Boolean(signal.official),
+        specialist: Boolean(signal.specialist),
+        forPersonal: Boolean(signal.forPersonal),
+        sourceTags: Array.isArray(signal.sourceTags) ? signal.sourceTags.slice(0, 6) : [],
         title: signal.title ?? null,
         url: signal.url ?? null,
+        canonicalUrl: signal.canonicalUrl ?? signal.url ?? null,
         publishedAt: signal.publishedAt ?? null,
         publishedLabel: signal.publishedLabel ?? null,
         thumbnailUrl: sanitizeThumbnailUrl(signal.thumbnailUrl),
-        thumbnail: sanitizeThumbnailUrl(signal.thumbnail ?? signal.thumbnailUrl),
         summary: normalizeSummaryText(signal.summary ?? ''),
       })),
       searchLinks: Array.isArray(item.searchLinks) ? item.searchLinks.slice(0, 1) : [],
@@ -186,18 +372,144 @@ function buildHomeTopicsPayload({ currentItems = [], archiveItems = [], generate
   };
 }
 
+function selectDiverseHomeTopics(items, limit = HOME_TOPIC_LIMIT) {
+  const primaryPool = items.filter(isHomeDiscoveryFriendly);
+  const secondaryPool = items.filter((item) => !isHomeDiscoveryFriendly(item));
+  const selected = [];
+  const state = createHomeSelectionState();
+
+  fillHomeSelection(selected, state, primaryPool, Math.min(limit, HOME_PERSONAL_MIN), {
+    allowSourceOverflow: false,
+    allowGroupOverflow: false,
+    allowCategoryOverflow: false,
+  });
+
+  fillHomeSelection(selected, state, primaryPool, limit, {
+    allowSourceOverflow: true,
+    allowGroupOverflow: false,
+    allowCategoryOverflow: true,
+  });
+
+  fillHomeSelection(selected, state, secondaryPool, limit, {
+    allowSourceOverflow: false,
+    allowGroupOverflow: false,
+    allowCategoryOverflow: false,
+  });
+
+  fillHomeSelection(selected, state, secondaryPool, limit, {
+    allowSourceOverflow: true,
+    allowGroupOverflow: true,
+    allowCategoryOverflow: true,
+  });
+
+  return selected.slice(0, limit);
+}
+
+function createHomeSelectionState() {
+  return {
+    sourceCounts: new Map(),
+    sourceGroupCounts: new Map(),
+    categoryCounts: new Map(),
+    selectedIds: new Set(),
+  };
+}
+
+function fillHomeSelection(selected, state, items, limit, options = {}) {
+  for (const item of items) {
+    if (selected.length >= limit) break;
+    if (state.selectedIds.has(item.id)) continue;
+    if (!canSelectHomeTopic(item, state, options)) continue;
+
+    selected.push(item);
+    registerHomeTopicSelection(item, state);
+  }
+}
+
+function canSelectHomeTopic(item, state, options = {}) {
+  const sourceKey = homeTopicPrimarySourceKey(item);
+  const groupKey = homeTopicPrimarySourceGroup(item);
+  const categoryKey = homeTopicPrimaryCategory(item);
+  const sourceCount = state.sourceCounts.get(sourceKey) ?? 0;
+  const groupCount = state.sourceGroupCounts.get(groupKey) ?? 0;
+  const categoryCount = state.categoryCounts.get(categoryKey) ?? 0;
+  const hasStrongScore = homeTopicPriority(item) >= 92;
+  const sourceLimit = options.allowSourceOverflow && hasStrongScore ? HOME_SOURCE_MAX + 1 : HOME_SOURCE_MAX;
+  const groupLimit = options.allowGroupOverflow ? HOME_SOURCE_GROUP_MAX + 1 : HOME_SOURCE_GROUP_MAX;
+  const categoryLimit = options.allowCategoryOverflow ? 10 : 6;
+
+  if (sourceCount >= sourceLimit) return false;
+  if (groupCount >= groupLimit) return false;
+  if (categoryCount >= categoryLimit && !hasStrongScore) return false;
+  return true;
+}
+
+function registerHomeTopicSelection(item, state) {
+  state.selectedIds.add(item.id);
+  const sourceKey = homeTopicPrimarySourceKey(item);
+  const groupKey = homeTopicPrimarySourceGroup(item);
+  const categoryKey = homeTopicPrimaryCategory(item);
+  state.sourceCounts.set(sourceKey, (state.sourceCounts.get(sourceKey) ?? 0) + 1);
+  state.sourceGroupCounts.set(groupKey, (state.sourceGroupCounts.get(groupKey) ?? 0) + 1);
+  state.categoryCounts.set(categoryKey, (state.categoryCounts.get(categoryKey) ?? 0) + 1);
+}
+
+function isHomeDiscoveryFriendly(item) {
+  const text = topicText(item);
+  const category = homeTopicPrimaryCategory(item);
+  const signal = sanitizeSourceSignals(item.sourceSignals).find(Boolean);
+  const sourceGroup = String(signal?.sourceGroup ?? "");
+  const sourceName = String(signal?.sourceName ?? signal?.source ?? "");
+
+  if (/Google News \/ (スポーツ|政治|経済|国際|犯罪・事件|地域|国内)|Yahoo!ニュース \/ (スポーツ|地域|国内|経済|国際)/.test(sourceName)) {
+    return false;
+  }
+  if (signal?.forPersonal || signal?.specialist) return true;
+  if (/games|anime|net-culture|steam/.test(sourceGroup)) return true;
+  if (/AUTOMATON|Game\*Spark|INSIDE|アニメ！アニメ！|MANTANWEB|KAI-YOU|ITmedia|Steam/i.test(sourceName)) return true;
+  if (["games", "manga", "entertainment", "sns", "net-culture"].includes(category)) return true;
+  if (/ポケモン|pokemon|任天堂|nintendo|switch|steam|ゲーム|漫画|マンガ|アニメ|炎上|バズ|ミーム|セール|割引/.test(text)) return true;
+  return false;
+}
+
+function homeTopicPrimarySourceKey(item) {
+  const signal = sanitizeSourceSignals(item.sourceSignals).find(Boolean);
+  return signal?.sourceName ?? signal?.source ?? "unknown-source";
+}
+
+function homeTopicPrimarySourceGroup(item) {
+  const signal = sanitizeSourceSignals(item.sourceSignals).find(Boolean);
+  return signal?.sourceGroup ?? "unknown-group";
+}
+
+function homeTopicPrimaryCategory(item) {
+  return item?.category ?? item?.categories?.[0] ?? "general";
+}
+
 function buildBrowseTopicsPayload({ archiveItems = [], generatedAt = new Date().toISOString() }) {
-  const rankedItems = [...archiveItems]
-    .filter((item) => {
-      const ageHours = (Date.now() - archiveTimestamp(item)) / (1000 * 60 * 60);
-      return ageHours > 24 && ageHours <= 14 * 24;
-    })
-    .sort((left, right) => Number(right.score ?? 0) - Number(left.score ?? 0) || archiveTimestamp(right) - archiveTimestamp(left))
-    .slice(0, 4200);
+  const rankedItems = rankBrowseItems(archiveItems);
+  const bucket24to3d = [];
+  const bucket3to7d = [];
+  const bucket7to14d = [];
+
+  for (const item of rankedItems) {
+    const ageHours = (Date.now() - archiveTimestamp(item)) / (1000 * 60 * 60);
+    if (ageHours <= 24 || ageHours > 14 * 24) continue;
+    if (ageHours < 72) {
+      if (bucket24to3d.length < BROWSE_24_TO_3D_LIMIT) bucket24to3d.push(item);
+      continue;
+    }
+    if (ageHours < 168) {
+      if (bucket3to7d.length < BROWSE_3_TO_7D_LIMIT) bucket3to7d.push(item);
+      continue;
+    }
+    if (bucket7to14d.length < BROWSE_7_TO_14D_LIMIT) bucket7to14d.push(item);
+  }
+
+  const limitedItems = [...bucket24to3d, ...bucket3to7d, ...bucket7to14d];
 
   return {
     generatedAt,
-    items: rankedItems.map((item) => ({
+    items: limitedItems.map((item) => ({
       id: item.id,
       title: item.title,
       summary: item.summary ?? "",
@@ -209,16 +521,23 @@ function buildBrowseTopicsPayload({ archiveItems = [], generatedAt = new Date().
       posts: Number(item.posts ?? 1),
       metricLabel: item.metricLabel ?? "source",
       thumbnailUrl: sanitizeThumbnailUrl(item.thumbnailUrl),
-      thumbnail: sanitizeThumbnailUrl(item.thumbnail ?? item.thumbnailUrl),
       publishedAt: item.publishedAt ?? item.sourceSignals?.[0]?.publishedAt ?? null,
       capturedAt: item.capturedAt ?? generatedAt,
       time: item.time ?? item.sourceSignals?.[0]?.publishedLabel ?? null,
       hotReasons: Array.isArray(item.hotReasons) ? item.hotReasons.slice(0, 2) : [],
       sourceSignals: sanitizeSourceSignals(item.sourceSignals).slice(0, 1).map((signal) => ({
+        sourceId: signal.sourceId ?? null,
         source: signal.source ?? null,
         sourceName: signal.sourceName ?? null,
+        sourceGroup: signal.sourceGroup ?? null,
+        sourcePriority: Number(signal.sourcePriority ?? 0),
+        official: Boolean(signal.official),
+        specialist: Boolean(signal.specialist),
+        forPersonal: Boolean(signal.forPersonal),
+        sourceTags: Array.isArray(signal.sourceTags) ? signal.sourceTags.slice(0, 6) : [],
         title: signal.title ?? null,
         url: signal.url ?? null,
+        canonicalUrl: signal.canonicalUrl ?? signal.url ?? null,
         publishedAt: signal.publishedAt ?? null,
         publishedLabel: signal.publishedLabel ?? null,
       })),
@@ -230,13 +549,168 @@ function buildBrowseTopicsPayload({ archiveItems = [], generatedAt = new Date().
   };
 }
 
+function buildNewsArchivePayload({ archiveItems = [], generatedAt = new Date().toISOString() }) {
+  const domesticItems = archiveItems
+    .filter((item) => isWithinArchiveWindow(item, generatedAt))
+    .filter((item) => isDomesticNewsArchiveItem(item));
+
+  const sortedItems = [...domesticItems].sort((left, right) => {
+    const timeDiff = archiveTimestamp(right) - archiveTimestamp(left);
+    if (timeDiff !== 0) return timeDiff;
+    return Number(right.score ?? 0) - Number(left.score ?? 0);
+  });
+
+  return {
+    generatedAt,
+    items: sortedItems.slice(0, NEWS_ARCHIVE_MAX_ITEMS).map((item) => ({
+      id: item.id,
+      title: item.title,
+      summary: item.summary ?? "",
+      briefSummary: item.briefSummary ?? "",
+      category: item.category,
+      categories: Array.isArray(item.categories) ? item.categories : [],
+      categoryLabel: item.categoryLabel ?? null,
+      categoryLabels: Array.isArray(item.categoryLabels) ? item.categoryLabels : [],
+      score: Number(item.score ?? 0),
+      posts: Number(item.posts ?? 1),
+      metricLabel: item.metricLabel ?? "source",
+      thumbnailUrl: sanitizeThumbnailUrl(item.thumbnailUrl),
+      publishedAt: item.publishedAt ?? item.sourceSignals?.[0]?.publishedAt ?? null,
+      capturedAt: item.capturedAt ?? generatedAt,
+      time: item.time ?? item.sourceSignals?.[0]?.publishedLabel ?? null,
+      sourceName: item.sourceName ?? item.sourceSignals?.[0]?.sourceName ?? item.sourceSignals?.[0]?.source ?? null,
+      sourceUrl: item.sourceUrl ?? item.sourceSignals?.find((signal) => !isGoogleNewsUrl(signal?.url))?.url ?? item.sourceSignals?.[0]?.url ?? null,
+      hotReasons: Array.isArray(item.hotReasons) ? item.hotReasons.slice(0, 2) : [],
+      sourceSignals: sanitizeSourceSignals(item.sourceSignals).slice(0, 3).map((signal) => ({
+        sourceId: signal.sourceId ?? null,
+        source: signal.source ?? null,
+        sourceName: signal.sourceName ?? null,
+        sourceGroup: signal.sourceGroup ?? null,
+        sourcePriority: Number(signal.sourcePriority ?? 0),
+        official: Boolean(signal.official),
+        specialist: Boolean(signal.specialist),
+        forPersonal: Boolean(signal.forPersonal),
+        sourceTags: Array.isArray(signal.sourceTags) ? signal.sourceTags.slice(0, 6) : [],
+        title: signal.title ?? null,
+        url: signal.url ?? null,
+        canonicalUrl: signal.canonicalUrl ?? signal.url ?? null,
+        publishedAt: signal.publishedAt ?? null,
+        publishedLabel: signal.publishedLabel ?? null,
+        thumbnailUrl: sanitizeThumbnailUrl(signal.thumbnailUrl),
+      })),
+      whatHappened: item.whatHappened ?? null,
+      whyHot: item.whyHot ?? null,
+      importantPoint: item.importantPoint ?? null,
+      targetAudience: Array.isArray(item.targetAudience) ? item.targetAudience.slice(0, 4) : [],
+    })),
+  };
+}
+
+function rankBrowseItems(items) {
+  return [...items].sort((left, right) => {
+    const rightThumb = sanitizeThumbnailUrl(right.thumbnailUrl) ? 1 : 0;
+    const leftThumb = sanitizeThumbnailUrl(left.thumbnailUrl) ? 1 : 0;
+    const rightDiscovery = isHomeDiscoveryFriendly(right) ? 1 : 0;
+    const leftDiscovery = isHomeDiscoveryFriendly(left) ? 1 : 0;
+    return rightThumb - leftThumb
+      || rightDiscovery - leftDiscovery
+      || Number(right.score ?? 0) - Number(left.score ?? 0)
+      || archiveTimestamp(right) - archiveTimestamp(left);
+  });
+}
+
+function isDomesticNewsArchiveItem(item) {
+  const sourceName = newsArchiveSourceName(item);
+  if (NEWS_ARCHIVE_ALLOW_SOURCE_PATTERNS.some((pattern) => pattern.test(sourceName))) return true;
+  if (NEWS_ARCHIVE_EXCLUDE_SOURCE_PATTERNS.some((pattern) => pattern.test(sourceName))) return false;
+
+  const host = newsArchiveSourceHost(item);
+  if (host) {
+    if (NEWS_ARCHIVE_EXCLUDE_HOST_PATTERNS.some((pattern) => pattern.test(host))) return false;
+    if (NEWS_ARCHIVE_ALLOW_HOST_PATTERNS.some((pattern) => pattern.test(host))) return true;
+  }
+
+  const locale = String(
+    item?.language
+      ?? item?.lang
+      ?? item?.locale
+      ?? item?.sourceSignals?.[0]?.language
+      ?? item?.sourceSignals?.[0]?.locale
+      ?? ""
+  ).toLowerCase();
+  if (locale && !/(^ja\b|japan|ja-jp)/.test(locale)) return false;
+
+  return hasJapaneseNewsText(`${item?.title ?? ""} ${item?.summary ?? ""} ${item?.briefSummary ?? ""}`);
+}
+
+function newsArchiveSourceName(item) {
+  return [
+    item?.sourceName,
+    item?.source,
+    item?.sourceSignals?.[0]?.sourceName,
+    item?.sourceSignals?.[0]?.source,
+  ].filter(Boolean).join(" / ");
+}
+
+function newsArchiveSourceHost(item) {
+  const candidates = [
+    item?.sourceUrl,
+    item?.url,
+    item?.link,
+    ...(Array.isArray(item?.sourceSignals) ? item.sourceSignals.map((signal) => signal?.url) : []),
+  ];
+
+  for (const candidate of candidates) {
+    const value = String(candidate ?? "").trim();
+    if (!value) continue;
+    try {
+      return new URL(value).hostname.replace(/^www\./, "").toLowerCase();
+    } catch {}
+  }
+
+  return "";
+}
+
+function hasJapaneseNewsText(value) {
+  const text = String(value ?? "").replace(/\s+/g, "");
+  if (!text) return true;
+  const japaneseCount = (text.match(/[\u3040-\u30ff\u4e00-\u9fff]/g) ?? []).length;
+  const latinCount = (text.match(/[A-Za-z]/g) ?? []).length;
+  return japaneseCount >= Math.max(8, Math.floor(latinCount * 0.35));
+}
+
 function homeTopicPriority(item) {
   const baseScore = Number(item.score ?? 0);
   const freshness = isFreshTopic(item) ? 12 : 0;
   const sourceBonus = Math.min(12, Math.max(0, Number(item.posts ?? 1) - 1) * 4);
   const importance = isHighImportanceText(topicText(item), item.categories ?? [], item.category) ? 24 : 0;
+  const discoveryBonus = isHomeDiscoveryFriendly(item) ? 18 : 0;
+  const suppressionPenalty = homeTopicSuppressionPenalty(item);
   const penalty = isLowPriorityText(topicText(item)) ? 60 : 0;
-  return baseScore + freshness + sourceBonus + importance - penalty;
+  return baseScore + freshness + sourceBonus + importance + discoveryBonus - suppressionPenalty - penalty;
+}
+
+function homeTopicSuppressionPenalty(item) {
+  const text = topicText(item);
+  const category = homeTopicPrimaryCategory(item);
+  const sourceName = homeTopicPrimarySourceKey(item);
+  let penalty = 0;
+
+  if (category === "sports") penalty += 48;
+  if (category === "politics") penalty += 26;
+  if (category === "business" && !isHomeDiscoveryFriendly(item)) penalty += 18;
+  if (category === "world" && !isHomeDiscoveryFriendly(item)) penalty += 18;
+  if (category === "general" && /県内|市内|町内|小学生|中学生|高校生|海水浴場|商店街|観光協会|地域/.test(text)) penalty += 34;
+  if (category === "world" && !/ゲーム|アニメ|漫画|sns|ネット|ミーム|ポケモン|switch|steam/.test(text)) penalty += 10;
+  if (/Yahoo!ニュース \/ 地域/.test(sourceName)) penalty += 32;
+  if (/Yahoo!ニュース \/ スポーツ/.test(sourceName)) penalty += 40;
+  if (/Google News \/ スポーツ/.test(sourceName)) penalty += 42;
+  if (/Google News \/ 政治/.test(sourceName)) penalty += 26;
+  if (/Google News \/ 経済/.test(sourceName)) penalty += 22;
+  if (/Google News \/ 国際/.test(sourceName) && !isHomeDiscoveryFriendly(item)) penalty += 18;
+  if (/BBC World|BBC Business/.test(sourceName) && !isHomeDiscoveryFriendly(item)) penalty += 12;
+
+  return penalty;
 }
 
 function buildStoredTopicInsights(item) {
@@ -258,7 +732,13 @@ function topicText(item) {
     ...(item.categories ?? []),
     ...(item.categoryLabels ?? []),
     ...(item.hotReasons ?? []),
-    ...(item.sourceSignals ?? []).flatMap((signal) => [signal.title, signal.summary, signal.sourceName]),
+    ...(item.sourceSignals ?? []).flatMap((signal) => [
+      signal.title,
+      signal.summary,
+      signal.sourceName,
+      signal.sourceGroup,
+      ...(Array.isArray(signal.sourceTags) ? signal.sourceTags : []),
+    ]),
   ].filter(Boolean).join(" ").toLowerCase();
 }
 
@@ -422,8 +902,12 @@ function isFalsePositiveMatomeTopic(value) {
 
 async function enrichItemsWithMetadata(items) {
   const prioritizedItems = [...items]
-    .sort((left, right) => metadataPriority(right) - metadataPriority(left));
-  await Promise.all(prioritizedItems.map((item) => enrichItemMetadata(item)));
+    .filter((item) => !hasUsefulSummary(item.summary) || !sanitizeThumbnailUrl(item.thumbnailUrl))
+    .sort((left, right) => metadataPriority(right) - metadataPriority(left))
+    .slice(0, METADATA_ENRICH_LIMIT);
+  await mapWithConcurrency(prioritizedItems, METADATA_ENRICH_CONCURRENCY, async (item) => {
+    await enrichItemMetadata(item);
+  });
 }
 
 function metadataPriority(item) {
@@ -488,6 +972,7 @@ async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()
   visited.add(normalizedUrl);
 
   const response = await fetch(normalizedUrl, {
+    signal: typeof AbortSignal !== "undefined" && typeof AbortSignal.timeout === "function" ? AbortSignal.timeout(8000) : undefined,
     headers: {
       "user-agent": "INTERNET NEWS/1.0",
       accept: "text/html,application/xhtml+xml",
@@ -497,7 +982,18 @@ async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()
   if (!response.ok) return null;
   const html = await response.text();
   const responseUrl = normalizeFetchUrl(response.url) ?? normalizedUrl;
-  const thumbnailMeta = await resolveThumbnail({ pageHtml: html, sourceUrl: responseUrl });
+  const thumbnailMeta = await resolveThumbnail({
+    pageHtml: html,
+    sourceUrl: responseUrl,
+    item: {
+      ogImage: html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)?.[1]
+        ?? html.match(/<meta[^>]+name=["']og:image["'][^>]+content=["']([^"']+)["']/i)?.[1]
+        ?? "",
+      twitterImage: html.match(/<meta[^>]+name=["']twitter:image["'][^>]+content=["']([^"']+)["']/i)?.[1]
+        ?? html.match(/<meta[^>]+property=["']twitter:image["'][^>]+content=["']([^"']+)["']/i)?.[1]
+        ?? "",
+    },
+  });
 
   const articleCandidates = extractArticleTextCandidates(html);
   const jsonLdSummary = extractJsonLdSummary(html);
@@ -539,6 +1035,18 @@ async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()
   return metadata;
 }
 
+async function mapWithConcurrency(items, concurrency, worker) {
+  const queue = [...items];
+  const runners = Array.from({ length: Math.max(1, concurrency) }, async () => {
+    while (queue.length) {
+      const item = queue.shift();
+      if (!item) continue;
+      await worker(item);
+    }
+  });
+  await Promise.all(runners);
+}
+
 async function readArchivePayload(path) {
   try {
     return JSON.parse(await readFile(path, "utf8"));
@@ -574,6 +1082,16 @@ function mergeArchiveItems(previousItems, nextItems) {
     if (timeDiff !== 0) return timeDiff;
     return Number(right.score ?? 0) - Number(left.score ?? 0);
   });
+}
+
+function limitArchiveItems(items, limit = MAX_ARCHIVE_ITEMS) {
+  return [...items]
+    .sort((left, right) => {
+      const timeDiff = archiveTimestamp(right) - archiveTimestamp(left);
+      if (timeDiff !== 0) return timeDiff;
+      return Number(right.score ?? 0) - Number(left.score ?? 0);
+    })
+    .slice(0, limit);
 }
 
 function normalizeArchiveItem(item) {
@@ -615,9 +1133,14 @@ function shouldKeepArchiveItem(item) {
 }
 
 function archiveKeyFor(item) {
+  const stableId = String(item?.id ?? "").trim();
+  if (stableId) return stableId;
+
+  const primaryUrl = itemPrimaryUrl(item);
+  if (primaryUrl) return primaryUrl;
+
   return (
-    item.sourceSignals?.[0]?.url ??
-    item.id ??
+    canonicalSignalUrl(item.sourceSignals?.[0]?.url ?? "") ||
     `${item.category ?? "topic"}:${item.title ?? "untitled"}`
   );
 }
@@ -641,36 +1164,107 @@ function isWithinArchiveWindow(item, nowValue) {
 
 function sanitizeSourceSignals(signals) {
   if (!Array.isArray(signals)) return [];
-  const sanitized = signals.map((signal) => ({
-    ...signal,
-    thumbnailUrl: sanitizeThumbnailUrl(signal?.thumbnailUrl),
-    thumbnail: sanitizeThumbnailUrl(signal?.thumbnail ?? signal?.thumbnailUrl),
-    briefSummary: normalizeBriefSummaryText(signal?.briefSummary),
-    summary: normalizeSummaryText(signal?.summary),
-  }));
-  const deduped = new Map();
+  const sanitized = signals
+    .map((signal) => ({
+      ...signal,
+      thumbnailUrl: sanitizeThumbnailUrl(signal?.thumbnailUrl),
+      thumbnail: sanitizeThumbnailUrl(signal?.thumbnail ?? signal?.thumbnailUrl),
+      briefSummary: normalizeBriefSummaryText(signal?.briefSummary),
+      summary: normalizeSummaryText(signal?.summary),
+    }))
+    .sort((left, right) => sourceSignalQualityScore(right) - sourceSignalQualityScore(left) || signalPublishedAt(right) - signalPublishedAt(left));
+  const deduped = [];
 
   for (const signal of sanitized) {
-    const key = signalIdentityKey(signal);
-    const current = deduped.get(key);
-    if (!current || signalPublishedAt(signal) > signalPublishedAt(current)) {
-      deduped.set(key, signal);
+    const duplicateIndex = deduped.findIndex((current) => sourceSignalDuplicateReason(current, signal));
+    if (duplicateIndex === -1) {
+      deduped.push(signal);
+      continue;
     }
+    deduped[duplicateIndex] = mergeSourceSignals(deduped[duplicateIndex], signal);
   }
 
-  return [...deduped.values()].sort((left, right) => signalPublishedAt(right) - signalPublishedAt(left));
-}
-
-function signalIdentityKey(signal) {
-  const source = String(signal?.sourceName ?? signal?.source ?? "").toLowerCase().trim();
-  const title = normalizeSignalIdentityFingerprint(signal?.title);
-  const summary = normalizeSignalIdentityFingerprint(signal?.summary);
-  return `${source}::${title || summary || String(signal?.url ?? "").toLowerCase().trim()}`;
+  return deduped.sort((left, right) => signalPublishedAt(right) - signalPublishedAt(left));
 }
 
 function signalPublishedAt(signal) {
   const time = new Date(signal?.publishedAt ?? 0).getTime();
   return Number.isNaN(time) ? 0 : time;
+}
+
+function sourceSignalDuplicateReason(current, next) {
+  if (!current || !next) return "";
+
+  const currentUrl = canonicalSignalUrl(current?.url);
+  const nextUrl = canonicalSignalUrl(next?.url);
+  if (currentUrl && nextUrl && currentUrl === nextUrl) return "url";
+
+  const currentTitle = normalizeSignalIdentityFingerprint(current?.title);
+  const nextTitle = normalizeSignalIdentityFingerprint(next?.title);
+  if (!currentTitle || !nextTitle) return "";
+
+  const sameTitle = currentTitle === nextTitle || currentTitle.includes(nextTitle) || nextTitle.includes(currentTitle);
+  if (sameTitle && isSourceSignalTimeClose(current, next, 72)) return "title";
+
+  const currentTokens = currentTitle.split(/\s+/).filter((token) => token.length >= 2);
+  const nextTokens = nextTitle.split(/\s+/).filter((token) => token.length >= 2);
+  if (currentTokens.length < 3 || nextTokens.length < 3) return "";
+
+  const overlap = currentTokens.filter((token) => nextTokens.includes(token)).length;
+  const overlapRatio = overlap / Math.min(currentTokens.length, nextTokens.length);
+  if (overlap >= 3 && overlapRatio >= 0.82 && isSourceSignalTimeClose(current, next, 36)) return "similarity";
+
+  return "";
+}
+
+function canonicalSignalUrl(rawUrl) {
+  const value = String(rawUrl ?? "").trim();
+  if (!value) return "";
+  try {
+    const parsed = new URL(value);
+    const params = new URLSearchParams(parsed.search);
+    ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "utm_id", "ref", "src", "from"].forEach((key) => params.delete(key));
+    parsed.search = params.toString();
+    parsed.hash = "";
+    return `${parsed.hostname.replace(/^www\./, "")}${parsed.pathname}`.toLowerCase();
+  } catch {
+    return value.toLowerCase();
+  }
+}
+
+function isSourceSignalTimeClose(current, next, hours = 36) {
+  const currentAt = signalPublishedAt(current);
+  const nextAt = signalPublishedAt(next);
+  if (!currentAt || !nextAt) return true;
+  return Math.abs(currentAt - nextAt) <= hours * 60 * 60 * 1000;
+}
+
+function sourceSignalQualityScore(signal) {
+  let score = 0;
+  if (!isGoogleNewsUrl(signal?.url) && !String(signal?.sourceName ?? signal?.source ?? "").toLowerCase().includes("google news")) score += 20;
+  if (String(signal?.sourceName ?? "").includes("/")) score += 8;
+  if (signal?.summary || signal?.briefSummary) score += 5;
+  if (signal?.thumbnailUrl || signal?.thumbnail) score += 2;
+  return score;
+}
+
+function mergeSourceSignals(current, next) {
+  const currentScore = sourceSignalQualityScore(current);
+  const nextScore = sourceSignalQualityScore(next);
+  const preferred = nextScore > currentScore || (nextScore === currentScore && signalPublishedAt(next) > signalPublishedAt(current))
+    ? next
+    : current;
+  const fallback = preferred === current ? next : current;
+
+  return {
+    ...fallback,
+    ...preferred,
+    sourceName: preferred.sourceName ?? fallback.sourceName ?? preferred.source ?? fallback.source ?? null,
+    briefSummary: preferred.briefSummary || fallback.briefSummary || "",
+    summary: preferred.summary || fallback.summary || "",
+    thumbnailUrl: preferred.thumbnailUrl || fallback.thumbnailUrl || null,
+    thumbnail: preferred.thumbnail || fallback.thumbnail || null,
+  };
 }
 
 function normalizeSignalIdentityFingerprint(value) {
@@ -895,71 +1489,6 @@ function isTitleRewrite(summary, title) {
   return summaryFp.startsWith(titleFp) && summaryFp.length - titleFp.length < 18;
 }
 
-function synthesizeStoredBriefSummary(item) {
-  const title = String(item.title ?? "").replace(/^【[^】]+】\s*/u, "").trim();
-  const value = `${title} ${item.summary ?? ""}`.toLowerCase();
-  const categories = item.categories ?? [item.category];
-
-  if (categories.includes("crime") || item.category === "crime") {
-    if (/遺体|死亡/.test(title)) return "遺体が見つかり、警察が事件と事故の両面から状況確認を進めている。";
-    if (/逮捕|送検|起訴/.test(title)) return "警察の捜査が進み、逮捕や送検など新しい動きが出ている。";
-    if (/詐欺|投資詐欺|ロマンス詐欺/.test(value)) return "詐欺被害や捜査の進展が報じられており、被害の実態や手口に関心が集まっている。";
-    if (/事故|火災|強盗|殺人|不明/.test(value)) return "重大事件や事故に関する新しい情報が出ており、被害状況や経緯の確認が進められている。";
-    return "事件や捜査に関する新しい情報が出ており、事実関係の確認が進められている。";
-  }
-
-  if (categories.includes("politics") || item.category === "politics") {
-    if (/法案|制度|規制|改正/.test(value)) return "制度やルールに関わる新しい動きがあり、施行時期や影響範囲に注目が集まっている。";
-    if (/首相|与党|野党|国会|選挙/.test(value)) return "政権や国会をめぐる新しい動きがあり、今後の説明や判断に注目が集まっている。";
-    return "政府や与野党の動きに新しい展開があり、今後の説明や判断に注目が集まっている。";
-  }
-
-  if (categories.includes("business") || item.category === "business") {
-    if (/決算|株価|市況/.test(value)) return "企業業績や市場動向に新しい材料が出ており、相場への影響が注目されている。";
-    if (/上場|ipo|ロックアップ/.test(value)) return "上場や資金調達に関する新しい情報が出ており、市場の反応が注目されている。";
-    if (/値上げ|価格|物価|関税|補助金/.test(value)) return "価格や政策コストに関わる新しい動きがあり、家計や企業活動への影響が注目されている。";
-    if (/詐欺|被害/.test(value)) return "金銭被害や投資トラブルに関する情報が出ており、被害の広がりや手口に関心が集まっている。";
-    return "企業や経済に関する新しい発表があり、今後の影響が注目されている。";
-  }
-
-  if (categories.includes("tech") || item.category === "tech") {
-    if (/半導体|ai|生成ai|gpu|データセンター/.test(value)) return "AIや半導体をめぐる新しい動きがあり、関連業界や競争環境への影響が注目されている。";
-    if (/iphone|android|スマホ|アプリ|アップデート/.test(value)) return "製品やサービスの新しい動きがあり、利用者への影響や使い勝手の変化が注目されている。";
-    return "技術開発や製品動向に新しい進展があり、関連業界や利用者への影響が注目されている。";
-  }
-
-  if (categories.includes("games") || item.category === "games") {
-    if (/switch|ps5|steam|任天堂|抽選|倍率|発売/.test(value)) return "人気ゲーム機やタイトルに新しい情報が出ており、入手難易度や発売動向に関心が集まっている。";
-    return "ゲームや関連サービスをめぐる新しい発表があり、ユーザーの反応が広がっている。";
-  }
-
-  if (categories.includes("sports") || item.category === "sports") {
-    if (/大谷|ドジャース|mlb|代表|w杯|日本代表/.test(value)) return "注目選手や代表をめぐる新しい動きがあり、試合結果や起用判断への関心が高まっている。";
-    if (/優勝|敗戦|逆転|炎上/.test(value)) return "試合結果やプレー内容が大きな反響を呼び、ファンの間で議論が広がっている。";
-    return "試合結果や選手・代表をめぐる新しい動きがあり、ファンの関心が集まっている。";
-  }
-
-  if (categories.includes("entertainment") || categories.includes("manga") || categories.includes("books")) {
-    if (/アニメ化|映画化|ドラマ化|キャスト発表|放送/.test(value)) return "作品の映像化や出演情報に新しい発表があり、ファンの期待が高まっている。";
-    if (/新刊|連載|受賞|ランキング/.test(value)) return "作品や出版動向に新しい情報が出ており、読者やファンの反応が広がっている。";
-    return "作品や出演者をめぐる新しい発表があり、ファンや読者の反応が広がっている。";
-  }
-
-  if (categories.includes("sns") || categories.includes("net-culture") || item.category === "sns") {
-    if (/炎上|拡散|バズ|トレンド入り/.test(value)) return "SNSでの拡散や反響が大きく、ネット上で一気に注目が集まっている。";
-    if (/話題|反応|コメント/.test(value)) return "SNSやネット上で反応が広がっており、共感や驚きの声が集まっている。";
-    return "ネット上で反応が広がっており、短時間で注目を集めている話題だ。";
-  }
-
-  if (categories.includes("adult") || item.category === "adult") {
-    if (/セール|キャンペーン|割引|クーポン/.test(value)) return "大型セールや割引情報が出ており、対象作品や条件に関心が集まっている。";
-    if (/逮捕|摘発|送検/.test(value)) return "関連業界や配信をめぐる事件性のある話題として、ネット上で大きく注目されている。";
-    return "関連コンテンツや人物をめぐる話題が広がっており、ネット上で反応が集まっている。";
-  }
-
-  return "新しい発表や動きがあり、詳細確認のために注目されている。";
-}
-
 function stripHtml(value) {
   return String(value ?? "")
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
@@ -976,17 +1505,74 @@ function dedupeNearDuplicateItems(items) {
     return archiveTimestamp(right) - archiveTimestamp(left);
   });
   const kept = [];
+  const bucketMap = new Map();
 
   for (const item of sortedItems) {
-    const duplicateIndex = kept.findIndex((current) => isNearDuplicateItem(current, item));
+    const candidateIndexes = candidateDuplicateIndexes(item, bucketMap);
+    const duplicateIndex = candidateIndexes.find((index) => isNearDuplicateItem(kept[index], item)) ?? -1;
     if (duplicateIndex === -1) {
-      kept.push(item);
+      const newIndex = kept.push(item) - 1;
+      registerDuplicateBuckets(item, newIndex, bucketMap);
       continue;
     }
     kept[duplicateIndex] = mergeDuplicateItems(kept[duplicateIndex], item);
+    registerDuplicateBuckets(kept[duplicateIndex], duplicateIndex, bucketMap);
   }
 
   return kept;
+}
+
+function candidateDuplicateIndexes(item, bucketMap) {
+  const indexes = [];
+  const seen = new Set();
+  for (const key of duplicateBucketKeys(item)) {
+    const values = bucketMap.get(key);
+    if (!values?.length) continue;
+    for (const index of values) {
+      if (seen.has(index)) continue;
+      seen.add(index);
+      indexes.push(index);
+      if (indexes.length >= DEDUPE_BUCKET_SCAN_LIMIT) return indexes;
+    }
+  }
+  return indexes;
+}
+
+function registerDuplicateBuckets(item, index, bucketMap) {
+  for (const key of duplicateBucketKeys(item)) {
+    const current = bucketMap.get(key);
+    if (!current) {
+      bucketMap.set(key, [index]);
+      continue;
+    }
+    if (!current.includes(index)) current.unshift(index);
+    if (current.length > DEDUPE_BUCKET_SCAN_LIMIT) current.length = DEDUPE_BUCKET_SCAN_LIMIT;
+  }
+}
+
+function duplicateBucketKeys(item) {
+  const keys = new Set();
+  const url = itemPrimaryUrl(item);
+  if (url) keys.add(`url:${url}`);
+
+  const title = normalizeContentFingerprint(item?.title ?? "");
+  if (title) {
+    keys.add(`title:${title.slice(0, 64)}`);
+    const tokens = fingerprintTokens(title);
+    if (tokens.length) {
+      keys.add(`token:${tokens.slice(0, 3).join("|")}`);
+      keys.add(`token:${tokens.slice(-3).join("|")}`);
+    }
+  }
+
+  const categories = Array.isArray(item?.categories) && item.categories.length
+    ? item.categories
+    : [item?.category].filter(Boolean);
+  for (const category of categories.slice(0, 3)) {
+    keys.add(`category:${category}`);
+  }
+
+  return [...keys];
 }
 
 function isNearDuplicateItem(left, right) {
@@ -1020,19 +1606,17 @@ function isNearDuplicateItem(left, right) {
 }
 
 function itemPrimaryUrl(item) {
-  const signalUrl = item?.sourceSignals?.[0]?.url;
-  const searchUrl = item?.searchLinks?.[0]?.url;
-  const rawUrl = String(signalUrl || searchUrl || "").trim();
-  if (!rawUrl) return "";
-  try {
-    const parsed = new URL(rawUrl);
-    const params = new URLSearchParams(parsed.search);
-    ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "utm_id", "ref", "src", "from"].forEach((key) => params.delete(key));
-    parsed.search = params.toString();
-    return `${parsed.hostname.replace(/^www\./, "").toLowerCase()}${parsed.pathname.toLowerCase()}`.replace(/\/$/, "");
-  } catch {
-    return rawUrl.toLowerCase().replace(/^https?:\/\//, "").replace(/[#?].*$/i, "");
-  }
+  const sourceSignals = Array.isArray(item?.sourceSignals) ? item.sourceSignals : [];
+  const directSignalUrl = sourceSignals
+    .map((signal) => String(signal?.url ?? "").trim())
+    .find((url) => url && !isGoogleNewsUrl(url));
+
+  const googleSignalUrl = sourceSignals
+    .map((signal) => String(signal?.url ?? "").trim())
+    .find(Boolean);
+
+  const searchUrl = String(item?.searchLinks?.[0]?.url ?? "").trim();
+  return canonicalSignalUrl(directSignalUrl || googleSignalUrl || searchUrl);
 }
 
 function isLikelySameTopicItem(left, right) {

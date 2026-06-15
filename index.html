@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=35" />
+    <link rel="stylesheet" href="./styles.css?v=36" />
   </head>
   <body>
     <div class="ambient ambient-one"></div>
@@ -23,8 +23,9 @@
         </span>
       </a>
       <nav class="desktop-nav" aria-label="メインナビゲーション">
-        <a class="active" href="#must-read-news">今日絶対知っとけ</a>
-        <a href="#topic-channels">カテゴリ別Topic</a>
+        <a class="active" href="#must-read-news">3分でわかる今日のニュース</a>
+        <a href="#personal-news">自分向けニュース</a>
+        <a href="#topic-channels">Topicを追う</a>
         <a href="#trends">カテゴリ別ニュース</a>
         <a href="./adult-trends.html">アダルトトレンド</a>
         <a href="#ranking">注目ランキング</a>
@@ -37,8 +38,9 @@
     </header>
 
     <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="モバイルナビゲーション" hidden>
-      <a href="#must-read-news">今日絶対知っとけ</a>
-      <a href="#topic-channels">カテゴリ別Topic</a>
+      <a href="#must-read-news">3分でわかる今日のニュース</a>
+      <a href="#personal-news">自分向けニュース</a>
+      <a href="#topic-channels">Topicを追う</a>
       <a href="#trends">カテゴリ別ニュース</a>
       <a href="./adult-trends.html">アダルトトレンド</a>
       <a href="#ranking">注目ランキング</a>
@@ -55,7 +57,7 @@
             INTERNET NEWS は記事置き場ではなく、情報フィルターです。ニュース、SNS、まとめ系、セール情報を Topic 単位で整理して、何が起きていて、なぜ重要かを先に届けます。
           </p>
           <div class="hero-actions">
-            <a class="primary-button" href="#must-read-news">今日の話題を見る <span>→</span></a>
+            <a class="primary-button" href="#must-read-news">3分ニュースを見る <span>→</span></a>
             <p><strong>Topic / Trend / Magazine</strong> を横断して編集表示</p>
           </div>
         </div>
@@ -68,30 +70,16 @@
       <section class="focus-section" id="must-read-news" aria-labelledby="must-read-news-heading">
         <div class="section-heading section-heading-stack">
           <div>
-            <p class="section-kicker">DON'T MISS</p>
-            <h2 id="must-read-news-heading">🔥 今日絶対知っとけ</h2>
+            <p class="section-kicker">3 MINUTE BRIEF</p>
+            <h2 id="must-read-news-heading">3分でわかる今日のニュース</h2>
           </div>
-          <p class="brief-description">記事を読む前に、今日勢いのある Topic を5件だけ先に把握するためのエリアです。</p>
+          <p class="brief-description">災害、事件、政治、経済、国際など、今日まず把握しておきたい重要ニュースを先にまとめます。</p>
         </div>
         <div class="topic-cluster-grid topic-cluster-grid-featured" id="must-read-news-list">
           <article class="topic-cluster-card topic-cluster-card-empty">
             <strong>最重要トピックを整理中です</strong>
             <p>最新データを読み込んでいます。</p>
           </article>
-        </div>
-      </section>
-
-      <section class="focus-section" id="topic-channels" aria-labelledby="topic-channels-heading">
-        <div class="section-heading section-heading-stack">
-          <div>
-            <p class="section-kicker">TOPIC CHANNELS</p>
-            <h2 id="topic-channels-heading">カテゴリ別に Topic を追う</h2>
-          </div>
-          <p class="brief-description">ゲーム、AI、お得情報、SNS・ネット、アダルト、世の中を Topic 単位で整理します。既存のカテゴリ別ニュース一覧もこの下に残します。</p>
-        </div>
-        <div class="topic-channel-hub">
-          <div class="topic-channel-tabs" id="topic-channel-tabs" role="tablist" aria-label="Topicカテゴリ"></div>
-          <div class="topic-channel-stage" id="topic-channel-stage"></div>
         </div>
       </section>
 
@@ -111,20 +99,34 @@
         </div>
       </section>
 
+      <section class="focus-section" id="topic-channels" aria-labelledby="topic-channels-heading">
+        <div class="section-heading section-heading-stack">
+          <div>
+            <p class="section-kicker">TOPIC CHANNELS</p>
+            <h2 id="topic-channels-heading">Topicを追う</h2>
+          </div>
+          <p class="brief-description">ゲーム、AI、お得情報、SNS・ネット、アダルト、世の中を Topic 単位で整理します。既存のカテゴリ別ニュース一覧もこの下に残します。</p>
+        </div>
+        <div class="topic-channel-hub">
+          <div class="topic-channel-tabs" id="topic-channel-tabs" role="tablist" aria-label="Topicカテゴリ"></div>
+          <div class="topic-channel-stage" id="topic-channel-stage"></div>
+        </div>
+      </section>
+
       <section class="brief-section" id="daily-brief" aria-labelledby="daily-brief-heading">
         <div class="section-heading brief-heading section-heading-stack">
           <div>
-            <p class="section-kicker">3 MINUTE BRIEF</p>
-            <h2 id="daily-brief-heading">3分でわかる今日のニュース</h2>
+            <p class="section-kicker">TODAY'S TIMELINE</p>
+            <h2 id="daily-brief-heading">今日のニュースタイムライン</h2>
           </div>
           <div class="brief-controls">
-            <p class="brief-description">過去24時間を中心に、重要度の高い話題だけを短時間で把握するための要約ダッシュボードです。</p>
+            <p class="brief-description">今日の流れを時間順に追いやすくするための要約ダッシュボードです。</p>
             <button class="section-toggle-button" id="daily-brief-toggle" type="button" aria-expanded="true" aria-controls="daily-brief-body">畳む</button>
           </div>
         </div>
         <div id="daily-brief-body">
           <div class="brief-list" id="daily-brief-list">
-            <article class="brief-card brief-card-empty">
+            <article class="brief-timeline-item brief-timeline-item-empty">
               <strong>重要ニュースを整理中です</strong>
               <p>最新の要約ダッシュボードを準備しています。</p>
             </article>
@@ -245,6 +247,7 @@
       <p>本サイトは主要ニュースを見やすく整理する非公式のまとめです。</p>
     </footer>
 
-    <script src="./app.js?v=22"></script>
+    <script src="./shared-topic-utils.js?v=1"></script>
+    <script src="./app.js?v=24"></script>
   </body>
 </html>

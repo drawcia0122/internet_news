@@ -1,7 +1,8 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-import { resolveThumbnail, sanitizeThumbnailUrl, extractEncodedUrlsFromHtml, isWeakThumbnailUrl } from "../lib/thumbnail-utils.mjs";
+import { resolveThumbnail, sanitizeThumbnailUrl, extractEncodedUrlsFromHtml, isWeakThumbnailUrl, hasSuspiciousThumbnailMismatch } from "../lib/thumbnail-utils.mjs";
 
 const DEFAULT_DATA_FILES = [
   "data/news-archive.json",
@@ -18,6 +19,10 @@ const FETCH_TIMEOUT_MS = 15000;
 
 async function main() {
   const selectedFiles = process.argv.slice(2);
+  return repairThumbnails(selectedFiles);
+}
+
+export async function repairThumbnails(selectedFiles = []) {
   const dataFiles = selectedFiles.length ? selectedFiles : DEFAULT_DATA_FILES;
   for (const relativeFile of dataFiles) {
     const absoluteFile = path.resolve(relativeFile);
@@ -175,34 +180,6 @@ function applyThumbnail(item, thumbnailUrl) {
   }
 }
 
-function hasSuspiciousThumbnailMismatch(thumbnailUrl, ...contexts) {
-  const thumbnailHost = hostnameFor(thumbnailUrl);
-  if (!thumbnailHost) return false;
-  if (!/(?:^|\.)yimg\.jp$|newsatcl-pctr\.c\.yimg\.jp$/i.test(thumbnailHost)) return false;
-
-  const articleHosts = contexts
-    .flatMap((context) => [
-      context?.url,
-      context?.canonicalUrl,
-      context?.sourceUrl,
-      context?.primaryLink?.url,
-      context?.link,
-    ])
-    .map((value) => hostnameFor(value))
-    .filter(Boolean)
-    .filter((host) => !/news\.yahoo\.co\.jp$|news\.google\.com$|(?:^|\.)yimg\.jp$/i.test(host));
-
-  return articleHosts.length > 0;
-}
-
-function hostnameFor(value) {
-  try {
-    return new URL(String(value ?? "").trim()).hostname.toLowerCase();
-  } catch {
-    return "";
-  }
-}
-
 async function mapWithConcurrency(items, concurrency, worker) {
   const queue = [...items];
   const runners = Array.from({ length: Math.min(concurrency, queue.length) }, async () => {
@@ -215,4 +192,7 @@ async function mapWithConcurrency(items, concurrency, worker) {
   await Promise.all(runners);
 }
 
-await main();
+const isDirectRun = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isDirectRun) {
+  await main();
+}

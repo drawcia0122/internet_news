@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 import { buildDailyBrief } from "../lib/daily-brief.mjs";
-import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, extractEncodedUrlsFromHtml } from "../lib/thumbnail-utils.mjs";
+import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, extractEncodedUrlsFromHtml, hasSuspiciousThumbnailMismatch } from "../lib/thumbnail-utils.mjs";
 import { collectTrendTopics } from "../lib/trend-aggregator.mjs";
 
 const CATEGORY_LABELS = {
@@ -999,7 +999,13 @@ function isFalsePositiveMatomeTopic(value) {
 
 async function enrichItemsWithMetadata(items) {
   const prioritizedItems = [...items]
-    .filter((item) => !hasUsefulSummary(item.summary) || !sanitizeThumbnailUrl(item.thumbnailUrl) || isWeakThumbnailUrl(item.thumbnailUrl))
+    .filter((item) => {
+      const thumbnailUrl = sanitizeThumbnailUrl(item.thumbnailUrl);
+      return !hasUsefulSummary(item.summary)
+        || !thumbnailUrl
+        || isWeakThumbnailUrl(thumbnailUrl)
+        || hasSuspiciousThumbnailMismatch(thumbnailUrl, item, ...(item.sourceSignals ?? []));
+    })
     .sort((left, right) => metadataPriority(right) - metadataPriority(left))
     .slice(0, METADATA_ENRICH_LIMIT);
   await mapWithConcurrency(prioritizedItems, METADATA_ENRICH_CONCURRENCY, async (item) => {
@@ -1008,11 +1014,13 @@ async function enrichItemsWithMetadata(items) {
 }
 
 function metadataPriority(item) {
+  const thumbnailUrl = sanitizeThumbnailUrl(item.thumbnailUrl);
   let priority = Number(item.score ?? 0);
   if (item.category === "adult" || item.categories?.includes("adult")) priority += 80;
   if (!hasUsefulSummary(item.summary)) priority += 50;
-  if (!sanitizeThumbnailUrl(item.thumbnailUrl)) priority += 20;
-  if (isWeakThumbnailUrl(item.thumbnailUrl)) priority += 35;
+  if (!thumbnailUrl) priority += 20;
+  if (isWeakThumbnailUrl(thumbnailUrl)) priority += 35;
+  if (hasSuspiciousThumbnailMismatch(thumbnailUrl, item, ...(item.sourceSignals ?? []))) priority += 45;
   return priority;
 }
 
@@ -1051,7 +1059,11 @@ async function enrichItemMetadata(item) {
   }
   if (!bestMetadata) return;
 
-  if ((!item.thumbnailUrl || isWeakThumbnailUrl(item.thumbnailUrl)) && bestMetadata.thumbnailUrl) {
+  const currentThumbnail = sanitizeThumbnailUrl(item.thumbnailUrl);
+  const shouldReplaceItemThumbnail = !currentThumbnail
+    || isWeakThumbnailUrl(currentThumbnail)
+    || hasSuspiciousThumbnailMismatch(currentThumbnail, item, ...(item.sourceSignals ?? []));
+  if (shouldReplaceItemThumbnail && bestMetadata.thumbnailUrl) {
     item.thumbnailUrl = bestMetadata.thumbnailUrl;
     item.thumbnail = bestMetadata.thumbnailUrl;
   }
@@ -1068,7 +1080,9 @@ async function enrichItemMetadata(item) {
     item.sourceSignals = item.sourceSignals.map((entry, index) => {
       if (index !== 0) return entry;
       const entryThumbnail = sanitizeThumbnailUrl(entry.thumbnailUrl ?? entry.thumbnail);
-      const shouldReplaceEntryThumbnail = !entryThumbnail || isWeakThumbnailUrl(entryThumbnail);
+      const shouldReplaceEntryThumbnail = !entryThumbnail
+        || isWeakThumbnailUrl(entryThumbnail)
+        || hasSuspiciousThumbnailMismatch(entryThumbnail, entry, item);
       return {
         ...entry,
         thumbnailUrl: shouldReplaceEntryThumbnail ? (bestMetadata.thumbnailUrl || entryThumbnail || null) : entryThumbnail,
@@ -1091,6 +1105,9 @@ function mergeFetchedMetadata(current, next, title = "") {
   const merged = { ...current };
   const nextThumb = sanitizeThumbnailUrl(next?.thumbnailUrl ?? next?.thumbnail);
   if ((!merged.thumbnailUrl || isWeakThumbnailUrl(merged.thumbnailUrl)) && nextThumb) merged.thumbnailUrl = nextThumb;
+  if (merged.thumbnailUrl && hasSuspiciousThumbnailMismatch(merged.thumbnailUrl, next) && nextThumb && !hasSuspiciousThumbnailMismatch(nextThumb, next)) {
+    merged.thumbnailUrl = nextThumb;
+  }
   if (shouldReplaceSummary(merged.summary, next?.summary)) merged.summary = next.summary;
   if (shouldReplaceBriefSummary(merged.briefSummary, next?.briefSummary, title)) merged.briefSummary = next.briefSummary;
   return merged;

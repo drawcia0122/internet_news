@@ -183,6 +183,7 @@ function normalizeAdultTrendItem(item) {
   const adultPrimaryGenre = item.adultPrimaryGenre ?? item.genre ?? '';
   return {
     ...item,
+    summary: sanitizeAdultSummary(item.summary ?? item.briefSummary ?? ''),
     routeId: buildAdultRouteId(item),
     source: sourceName,
     sourceName,
@@ -201,6 +202,15 @@ function normalizeAdultTrendItem(item) {
     tags: Array.isArray(item.tags) ? item.tags : [],
     relatedWorks: Array.isArray(item.relatedWorks) ? item.relatedWorks : [],
   };
+}
+
+function sanitizeAdultSummary(value) {
+  const text = String(value ?? '').trim();
+  if (!text) return '';
+  if (/が(?:DLsite|FANZA|Ci-en|Source)のランキング\d+位として検出されています。.*今日の売れ筋候補として扱っています。?$/u.test(text)) return '';
+  if (/が(?:DLsite|FANZA|Ci-en|Source)の公開情報から検出されています。.*アダルトトレンド候補として整理しています。?$/u.test(text)) return '';
+  if (/が(?:同人音声系|AI作品関連)の注目候補として検出されています。/u.test(text)) return '';
+  return text;
 }
 
 function normalizeCategoryLabels(values) {

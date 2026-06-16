@@ -25,6 +25,14 @@ npm run refresh
 
 Yahoo!ニュース RSS / NHK RSS / カテゴリ別 Google News RSS をもとにニュースを再取得し、`data/trend-topics.json` と `data/trend-topics-archive.json` を更新します。
 
+イベント用のソースレジストリを更新したい場合は次を使います。
+
+```bash
+npm run refresh:events
+```
+
+これは `data/events.json` の `sourceCandidates` を更新し、イベント取得元の候補を広げます。ニュース取得ロジックとは分離されています。
+
 10 分未満ならスキップしたい場合は次を使います。
 
 ```bash

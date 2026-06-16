@@ -157,9 +157,18 @@
     return null;
   }
 
+  function isWeakThumbnailUrl(url) {
+    const value = String(url ?? '').trim();
+    if (!value) return true;
+    return /^https?:\/\/(?:[^/]+\.)?yimg\.jp\/?$/i.test(value)
+      || /^https?:\/\/img\.youtube\.com\/?$/i.test(value)
+      || /s\.yimg\.jp\/images\/top\/ogp\/fb_y_1500px\.png|s\.yimg\.jp\/images\/news-web\/versions\/[^/]+\/all\/images\/ogp_default\.png|s\.yimg\.jp\/images\/advertising\/common\/img\/ico_jiaa\.png|news-pctr\.c\.yimg\.jp\/uUzvQ3lM|news-topics\/images\/tpc|news-topics\/pickups|\/t\/news-topics\//i.test(value);
+  }
+
   function sanitizeCardImageUrl(value) {
     const url = String(value ?? '').trim();
     if (!url || !/^https?:\/\//i.test(url)) return null;
+    if (isWeakThumbnailUrl(url)) return null;
     if (/^https?:\/\/lh3\.googleusercontent\.com\/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc(?:=|$)/i.test(url)) return null;
     if (/(?:^|\/)(?:favicon(?:-\d+x\d+)?|apple-touch-icon|android-chrome-\d+x\d+|mstile-\d+x\d+)(?:\.[a-z0-9]+)?(?:$|[?#])/i.test(url)) return null;
     if (/\/favicon\.ico(?:$|[?#])/i.test(url)) return null;
@@ -445,6 +454,7 @@
     getPrimarySourceLabel,
     getPrimarySourceSignal,
     getPrimarySourceUrl,
+    isWeakThumbnailUrl,
     pickCardImageUrl,
     shortEventFromTitle,
     topicText,

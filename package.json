@@ -7,6 +7,7 @@
     "dev": "python3 -m http.server 8000",
     "refresh": "node scripts/refresh-data.mjs",
     "refresh:news": "node scripts/fetch-trend-topics.mjs",
+    "refresh:events": "node scripts/fetch-events.mjs",
     "refresh:adult": "node scripts/fetch-adult-trends.mjs",
     "refresh:stale": "node scripts/refresh-trend-topics-if-stale.mjs"
   },

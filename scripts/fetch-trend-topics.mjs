@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 import { buildDailyBrief } from "../lib/daily-brief.mjs";
-import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl } from "../lib/thumbnail-utils.mjs";
+import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, extractEncodedUrlsFromHtml } from "../lib/thumbnail-utils.mjs";
 import { collectTrendTopics } from "../lib/trend-aggregator.mjs";
 
 const CATEGORY_LABELS = {
@@ -53,9 +53,14 @@ const NEWS_ARCHIVE_ALLOW_SOURCE_PATTERNS = [
   /inside/i,
   /ファミ通/i,
   /電ファミ/i,
+  /ポケモン公式|pokemon/i,
   /コミックナタリー|comic natalie/i,
   /アニメ！アニメ！|animeanime/i,
+  /アニメイトタイムズ/i,
   /mantanweb/i,
+  /scrap|リアル脱出ゲーム/i,
+  /event checker|イベントチェッカー/i,
+  /コラボカフェ/i,
   /kai-you/i,
   /togetter/i,
   /oricon/i,
@@ -117,6 +122,12 @@ const NEWS_ARCHIVE_ALLOW_HOST_PATTERNS = [
   /4gamer\.net$/i,
   /denfaminicogamer\.jp$/i,
   /mantan-web\.jp$/i,
+  /pokemon\.co\.jp$/i,
+  /animatetimes\.com$/i,
+  /scrapmagazine\.com$/i,
+  /realdgame\.jp$/i,
+  /event-checker\.info$/i,
+  /collabo-cafe\.com$/i,
 ];
 
 const NEWS_ARCHIVE_EXCLUDE_HOST_PATTERNS = [
@@ -167,13 +178,14 @@ const GENERIC_TOKENS = new Set(["速報", "公開", "発表", "開始", "決定"
 const MAX_CURRENT_ITEMS = 180;
 const MAX_ARCHIVE_ITEMS = 5200;
 const DEDUPE_BUCKET_SCAN_LIMIT = 80;
-const METADATA_ENRICH_LIMIT = 24;
-const METADATA_ENRICH_CONCURRENCY = 4;
+const METADATA_ENRICH_LIMIT = MAX_ARCHIVE_ITEMS;
+const METADATA_ENRICH_CONCURRENCY = 8;
 const HOME_TOPIC_LIMIT = 30;
 const HOME_SOURCE_MAX = 2;
 const HOME_SOURCE_GROUP_MAX = 5;
 const HOME_PERSONAL_MIN = 18;
 const NEWS_ARCHIVE_MAX_ITEMS = 1500;
+const ADULT_NEWS_MAX_ITEMS = 80;
 const BROWSE_24_TO_3D_LIMIT = 360;
 const BROWSE_3_TO_7D_LIMIT = 120;
 const BROWSE_7_TO_14D_LIMIT = 30;
@@ -196,6 +208,7 @@ const mergedArchiveItems = dedupeNearDuplicateItems(
     dedupedItems.map(normalizeArchiveItem),
   ).filter((item) => isWithinArchiveWindow(item, capturedAt) && shouldKeepArchiveItem(item)),
 );
+await enrichItemsWithMetadata(mergedArchiveItems);
 const nextArchivePayload = {
   generatedAt: capturedAt,
   items: limitArchiveItems(mergedArchiveItems, MAX_ARCHIVE_ITEMS),
@@ -210,6 +223,10 @@ const browseTopicsPayload = buildBrowseTopicsPayload({
   generatedAt: capturedAt,
 });
 const newsArchivePayload = buildNewsArchivePayload({
+  archiveItems: mergedArchiveItems,
+  generatedAt: capturedAt,
+});
+const adultNewsPayload = buildAdultNewsPayload({
   archiveItems: mergedArchiveItems,
   generatedAt: capturedAt,
 });
@@ -243,6 +260,11 @@ await writeFile(
 await writeFile(
   "data/news-archive.json",
   `${JSON.stringify(newsArchivePayload, null, 2)}\n`,
+  "utf8",
+);
+await writeFile(
+  "data/adult-news.json",
+  `${JSON.stringify(adultNewsPayload, null, 2)}\n`,
   "utf8",
 );
 await writeFile(
@@ -464,10 +486,10 @@ function isHomeDiscoveryFriendly(item) {
     return false;
   }
   if (signal?.forPersonal || signal?.specialist) return true;
-  if (/games|anime|net-culture|steam/.test(sourceGroup)) return true;
-  if (/AUTOMATON|Game\*Spark|INSIDE|アニメ！アニメ！|MANTANWEB|KAI-YOU|ITmedia|Steam/i.test(sourceName)) return true;
+  if (/games|anime|net-culture|steam|events|pokemon/.test(sourceGroup)) return true;
+  if (/AUTOMATON|Game\*Spark|INSIDE|ファミ通|4Gamer|電ファミ|ポケモン公式|アニメ！アニメ！|アニメイトタイムズ|MANTANWEB|コミックナタリー|KAI-YOU|ねとらぼ|Togetter|ITmedia|Steam|SCRAP|リアル脱出ゲーム|Event Checker|コラボカフェ/i.test(sourceName)) return true;
   if (["games", "manga", "entertainment", "sns", "net-culture"].includes(category)) return true;
-  if (/ポケモン|pokemon|任天堂|nintendo|switch|steam|ゲーム|漫画|マンガ|アニメ|炎上|バズ|ミーム|セール|割引/.test(text)) return true;
+  if (/ポケモン|pokemon|任天堂|nintendo|switch|steam|ゲーム|漫画|マンガ|アニメ|炎上|バズ|ミーム|セール|割引|脱出ゲーム|リアル脱出ゲーム|scrap|謎解き|イマーシブ|展示会|ポップアップ|コラボカフェ|体験型/.test(text)) return true;
   return false;
 }
 
@@ -606,6 +628,45 @@ function buildNewsArchivePayload({ archiveItems = [], generatedAt = new Date().t
   };
 }
 
+function buildAdultNewsPayload({ archiveItems = [], generatedAt = new Date().toISOString() }) {
+  const items = archiveItems
+    .filter((item) => isWithinArchiveWindow(item, generatedAt))
+    .filter((item) => isAdultNewsArchiveItem(item))
+    .filter((item) => Boolean(sanitizeThumbnailUrl(item?.thumbnailUrl ?? item?.thumbnail)))
+    .sort((left, right) => {
+      const timeDiff = archiveTimestamp(right) - archiveTimestamp(left);
+      if (timeDiff !== 0) return timeDiff;
+      return Number(right.score ?? 0) - Number(left.score ?? 0);
+    })
+    .slice(0, ADULT_NEWS_MAX_ITEMS);
+
+  return {
+    generatedAt,
+    items: items.map((item) => ({
+      id: item.id,
+      title: item.title,
+      summary: item.summary ?? "",
+      briefSummary: item.briefSummary ?? "",
+      category: item.category,
+      categories: Array.isArray(item.categories) ? item.categories : [],
+      categoryLabel: item.categoryLabel ?? null,
+      categoryLabels: Array.isArray(item.categoryLabels) ? item.categoryLabels : [],
+      score: Number(item.score ?? 0),
+      hotScore: Number(item.hotScore ?? item.score ?? 0),
+      posts: Number(item.posts ?? 1),
+      metricLabel: item.metricLabel ?? "source",
+      thumbnailUrl: sanitizeThumbnailUrl(item.thumbnailUrl),
+      publishedAt: item.publishedAt ?? item.sourceSignals?.[0]?.publishedAt ?? null,
+      capturedAt: item.capturedAt ?? generatedAt,
+      time: item.time ?? item.sourceSignals?.[0]?.publishedLabel ?? null,
+      sourceName: item.sourceName ?? item.sourceSignals?.[0]?.sourceName ?? item.sourceSignals?.[0]?.source ?? null,
+      sourceUrl: item.sourceUrl ?? item.sourceSignals?.find((signal) => !isGoogleNewsUrl(signal?.url))?.url ?? item.sourceSignals?.[0]?.url ?? null,
+      hotReasons: Array.isArray(item.hotReasons) ? item.hotReasons.slice(0, 3) : [],
+      targetAudience: Array.isArray(item.targetAudience) ? item.targetAudience.slice(0, 4) : [],
+    })),
+  };
+}
+
 function rankBrowseItems(items) {
   return [...items].sort((left, right) => {
     const rightThumb = sanitizeThumbnailUrl(right.thumbnailUrl) ? 1 : 0;
@@ -641,6 +702,38 @@ function isDomesticNewsArchiveItem(item) {
   if (locale && !/(^ja\b|japan|ja-jp)/.test(locale)) return false;
 
   return hasJapaneseNewsText(`${item?.title ?? ""} ${item?.summary ?? ""} ${item?.briefSummary ?? ""}`);
+}
+
+function isAdultNewsArchiveItem(item) {
+  const text = adultNewsText(item);
+  if (!text) return false;
+  if (/詐欺|被害|未納料金|架空請求|注意喚起|摘発|逮捕|相談急増/.test(text)) return false;
+  if (/ランキング|売れ筋|セール開催中|%off|ポイント還元|クーポン/.test(text) && !/セクシー女優|av女優|アダルトビデオ|成人向け|18禁|r-?18/.test(text)) return false;
+
+  const explicitAdult = /fanza|dlsite|dmm|同人音声|エロ漫画|アダルトビデオ|av女優|セクシー女優|成人向け|18禁|r-?18|アダルト作品|アダルト業界/.test(text);
+  const gravureAdult = /グラビア|写真集|ランジェリー|水着姿|セクシーショット/.test(text);
+  const hasAdultCategory = normalizeCategoryList(item?.categories ?? [item?.category]).includes("adult");
+  return explicitAdult || (hasAdultCategory && gravureAdult);
+}
+
+function adultNewsText(item) {
+  return [
+    item?.title,
+    item?.summary,
+    item?.briefSummary,
+    item?.category,
+    ...(item?.categories ?? []),
+    ...(item?.categoryLabels ?? []),
+    item?.sourceName,
+    item?.sourceUrl,
+    ...(Array.isArray(item?.sourceSignals) ? item.sourceSignals.flatMap((signal) => [
+      signal?.sourceName,
+      signal?.sourceGroup,
+      signal?.title,
+      signal?.summary,
+      signal?.url,
+    ]) : []),
+  ].filter(Boolean).join(" ").toLowerCase();
 }
 
 function newsArchiveSourceName(item) {
@@ -762,6 +855,9 @@ function buildImportantPoint(item) {
   if (/セール|割引|キャンペーン|クーポン|ポイント還元|無料配布/.test(text)) {
     return "終了前の条件確認や購入判断に直結しやすい情報です。";
   }
+  if (/脱出ゲーム|リアル脱出ゲーム|scrap|謎解き|イマーシブ|展示会|ポップアップ|コラボカフェ|体験型/.test(text)) {
+    return "開催期間、会場、予約条件を早めに押さえたいイベント系の話題です。";
+  }
   if (/ゲーム|任天堂|nintendo|switch|steam|ps5|xbox|発売|抽選|予約/.test(text)) {
     return "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。";
   }
@@ -807,6 +903,7 @@ function buildTargetAudience(item) {
   if (/セール|割引|キャンペーン|クーポン|ポイント還元|fanza|dlsite/.test(text)) values.push("セール好き");
   if (/漫画|マンガ|アニメ|声優|コミック/.test(text)) values.push("漫画・アニメ好き");
   if (/sns|炎上|バズ|ミーム|ネット文化|2ch|5ch|まとめ/.test(text)) values.push("ネット文化を追う人");
+  if (/脱出ゲーム|リアル脱出ゲーム|scrap|謎解き|イマーシブ|展示会|ポップアップ|コラボカフェ|体験型/.test(text)) values.push("体験型イベント好き");
   if (/株|投資|決算|金利|物価/.test(text)) values.push("投資家");
   if (/政治|事件|国際|外交|裁判/.test(text)) values.push("時事ニュースを追う人");
   return [...new Set(values)].slice(0, 4);
@@ -902,7 +999,7 @@ function isFalsePositiveMatomeTopic(value) {
 
 async function enrichItemsWithMetadata(items) {
   const prioritizedItems = [...items]
-    .filter((item) => !hasUsefulSummary(item.summary) || !sanitizeThumbnailUrl(item.thumbnailUrl))
+    .filter((item) => !hasUsefulSummary(item.summary) || !sanitizeThumbnailUrl(item.thumbnailUrl) || isWeakThumbnailUrl(item.thumbnailUrl))
     .sort((left, right) => metadataPriority(right) - metadataPriority(left))
     .slice(0, METADATA_ENRICH_LIMIT);
   await mapWithConcurrency(prioritizedItems, METADATA_ENRICH_CONCURRENCY, async (item) => {
@@ -915,6 +1012,7 @@ function metadataPriority(item) {
   if (item.category === "adult" || item.categories?.includes("adult")) priority += 80;
   if (!hasUsefulSummary(item.summary)) priority += 50;
   if (!sanitizeThumbnailUrl(item.thumbnailUrl)) priority += 20;
+  if (isWeakThumbnailUrl(item.thumbnailUrl)) priority += 35;
   return priority;
 }
 
@@ -924,46 +1022,110 @@ async function enrichItemMetadata(item) {
   item.thumbnail = directThumbnail.thumbnail;
   item.sourceSignals = sanitizeSourceSignals(item.sourceSignals);
 
+  const searchUrls = (item.searchLinks ?? []).map((entry) => entry?.url).filter(Boolean);
+  const sourceSignalCanonicalUrls = (item.sourceSignals ?? []).map((entry) => entry?.canonicalUrl).filter(Boolean);
+  const sourceSignalUrls = (item.sourceSignals ?? []).map((entry) => entry?.url).filter(Boolean);
+  const preferSearchFirst = itemLooksLikeGoogleNews(item);
   const candidateUrls = [
+    item.sourceUrl,
+    item.url,
+    item.link,
+    ...(preferSearchFirst ? searchUrls : []),
     item.sourceSignals?.find((entry) => entry?.url)?.url,
-    ...(item.sourceSignals ?? []).map((entry) => entry?.url).filter(Boolean),
+    ...sourceSignalCanonicalUrls,
+    ...sourceSignalUrls,
+    ...(!preferSearchFirst ? searchUrls : []),
   ];
-  const uniqueUrls = [...new Set(candidateUrls)].slice(0, 4);
+  const uniqueUrls = [...new Set(candidateUrls)].slice(0, 6);
   if (!uniqueUrls.length) return;
 
   let metadata = null;
+  let bestMetadata = null;
   for (const candidateUrl of uniqueUrls) {
     metadata = await fetchPageMetadata(candidateUrl, item.title).catch(() => null);
-    if (metadata?.thumbnailUrl || metadata?.summary || metadata?.briefSummary) break;
+    if (!metadata) continue;
+    bestMetadata = mergeFetchedMetadata(bestMetadata, metadata, item.title);
+    const hasThumb = Boolean(bestMetadata?.thumbnailUrl);
+    const hasSummary = hasUsefulSummary(bestMetadata?.summary) || Boolean(bestMetadata?.briefSummary) || hasUsefulSummary(item.summary);
+    if (hasThumb && hasSummary) break;
   }
-  if (!metadata) return;
+  if (!bestMetadata) return;
 
-  if (!item.thumbnailUrl && metadata.thumbnailUrl) {
-    item.thumbnailUrl = metadata.thumbnailUrl;
-    item.thumbnail = metadata.thumbnailUrl;
-  }
-
-  if (shouldReplaceSummary(item.summary, metadata.summary)) {
-    item.summary = metadata.summary;
-  }
-
-  if (shouldReplaceBriefSummary(item.briefSummary, metadata.briefSummary, item.title)) {
-    item.briefSummary = metadata.briefSummary;
+  if ((!item.thumbnailUrl || isWeakThumbnailUrl(item.thumbnailUrl)) && bestMetadata.thumbnailUrl) {
+    item.thumbnailUrl = bestMetadata.thumbnailUrl;
+    item.thumbnail = bestMetadata.thumbnailUrl;
   }
 
-  if (Array.isArray(item.sourceSignals) && (metadata.thumbnailUrl || metadata.summary || metadata.briefSummary)) {
+  if (shouldReplaceSummary(item.summary, bestMetadata.summary)) {
+    item.summary = bestMetadata.summary;
+  }
+
+  if (shouldReplaceBriefSummary(item.briefSummary, bestMetadata.briefSummary, item.title)) {
+    item.briefSummary = bestMetadata.briefSummary;
+  }
+
+  if (Array.isArray(item.sourceSignals) && (bestMetadata.thumbnailUrl || bestMetadata.summary || bestMetadata.briefSummary)) {
     item.sourceSignals = item.sourceSignals.map((entry, index) => {
       if (index !== 0) return entry;
       const entryThumbnail = sanitizeThumbnailUrl(entry.thumbnailUrl ?? entry.thumbnail);
+      const shouldReplaceEntryThumbnail = !entryThumbnail || isWeakThumbnailUrl(entryThumbnail);
       return {
         ...entry,
-        thumbnailUrl: entryThumbnail || metadata.thumbnailUrl || null,
-        thumbnail: entryThumbnail || metadata.thumbnailUrl || null,
-        summary: entry.summary ?? metadata.summary ?? null,
-        briefSummary: entry.briefSummary ?? metadata.briefSummary ?? null,
+        thumbnailUrl: shouldReplaceEntryThumbnail ? (bestMetadata.thumbnailUrl || entryThumbnail || null) : entryThumbnail,
+        thumbnail: shouldReplaceEntryThumbnail ? (bestMetadata.thumbnailUrl || entryThumbnail || null) : entryThumbnail,
+        summary: entry.summary ?? bestMetadata.summary ?? null,
+        briefSummary: entry.briefSummary ?? bestMetadata.briefSummary ?? null,
       };
     });
   }
+}
+
+function mergeFetchedMetadata(current, next, title = "") {
+  if (!current) {
+    return {
+      thumbnailUrl: sanitizeThumbnailUrl(next?.thumbnailUrl ?? next?.thumbnail) ?? null,
+      summary: next?.summary ?? null,
+      briefSummary: next?.briefSummary ?? null,
+    };
+  }
+  const merged = { ...current };
+  const nextThumb = sanitizeThumbnailUrl(next?.thumbnailUrl ?? next?.thumbnail);
+  if ((!merged.thumbnailUrl || isWeakThumbnailUrl(merged.thumbnailUrl)) && nextThumb) merged.thumbnailUrl = nextThumb;
+  if (shouldReplaceSummary(merged.summary, next?.summary)) merged.summary = next.summary;
+  if (shouldReplaceBriefSummary(merged.briefSummary, next?.briefSummary, title)) merged.briefSummary = next.briefSummary;
+  return merged;
+}
+
+function itemLooksLikeGoogleNews(item) {
+  const values = [
+    item?.source,
+    item?.sourceName,
+    item?.sourceId,
+    ...(item?.sourceSignals ?? []).flatMap((entry) => [entry?.source, entry?.sourceName, entry?.url, entry?.canonicalUrl]),
+    ...(item?.searchLinks ?? []).map((entry) => entry?.url),
+  ].filter(Boolean).join(" ");
+  return /google news|news\.google\.com/i.test(values);
+}
+
+function isYahooPickupUrl(value) {
+  try {
+    const parsed = new URL(value);
+    return parsed.hostname.toLowerCase() === "news.yahoo.co.jp" && /^\/pickup\//.test(parsed.pathname);
+  } catch {
+    return false;
+  }
+}
+
+function isWeakThumbnailUrl(value) {
+  const url = sanitizeThumbnailUrl(value);
+  if (!url) return true;
+  return /news-pctr\.c\.yimg\.jp\/t\/news-topics\/images\/tpc\/|news-topics\/images\/tpc|news-topics\/pickups|\/t\/news-topics\//i.test(url);
+}
+
+function shouldFollowNestedArticle(responseUrl, metadata) {
+  if (isGoogleNewsUrl(responseUrl)) return !metadata?.thumbnailUrl || isWeakThumbnailUrl(metadata.thumbnailUrl);
+  if (isYahooPickupUrl(responseUrl)) return true;
+  return false;
 }
 
 async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()) {
@@ -1022,12 +1184,12 @@ async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()
     briefSummary,
   };
 
-  if (!metadata.thumbnailUrl && isGoogleNewsUrl(responseUrl)) {
+  if (shouldFollowNestedArticle(responseUrl, metadata)) {
     const outboundUrls = extractOutboundArticleUrls(html, responseUrl);
-    for (const outboundUrl of outboundUrls.slice(0, 3)) {
+    for (const outboundUrl of outboundUrls.slice(0, 8)) {
       const nested = await fetchPageMetadata(outboundUrl, title, depth + 1, visited).catch(() => null);
       if (nested?.thumbnailUrl || nested?.summary || nested?.briefSummary) {
-        return nested;
+        return mergeFetchedMetadata(metadata, nested, title);
       }
     }
   }
@@ -1451,21 +1613,75 @@ function extractOutboundArticleUrls(html, baseUrl) {
   for (const match of html.matchAll(/<a\b[^>]*href=["']([^"']+)["']/gi)) {
     const candidate = absolutizeUrl(match[1], baseUrl);
     if (!candidate) continue;
-    try {
-      const parsed = new URL(candidate);
-      const hostname = parsed.hostname.toLowerCase();
-      if (!/^https?:$/.test(parsed.protocol)) continue;
-      if (hostname === "news.google.com") continue;
-      if (hostname.endsWith(".google.com")) continue;
-      if (hostname.endsWith("googleusercontent.com")) continue;
-      if (/\/search$|\/preferences$/.test(parsed.pathname)) continue;
-      urls.push(parsed.toString());
-    } catch {
-      continue;
-    }
+    if (pushOutboundUrl(urls, candidate)) continue;
   }
 
-  return [...new Set(urls)];
+  for (const match of html.matchAll(/https?:\/\/[^"'\\\s<>()]+/g)) {
+    const candidate = absolutizeUrl(normalizeEmbeddedUrlString(match[0]), baseUrl);
+    if (!candidate) continue;
+    pushOutboundUrl(urls, candidate);
+  }
+
+  for (const raw of extractEncodedUrlsFromHtml(html)) {
+    const candidate = absolutizeUrl(normalizeEmbeddedUrlString(raw), baseUrl);
+    if (!candidate) continue;
+    pushOutboundUrl(urls, candidate);
+  }
+
+  return [...new Set(urls)].sort((left, right) => scoreOutboundArticleUrl(right) - scoreOutboundArticleUrl(left));
+}
+
+function pushOutboundUrl(urls, candidate) {
+  try {
+    const parsed = new URL(candidate);
+    const hostname = parsed.hostname.toLowerCase();
+    if (!/^https?:$/.test(parsed.protocol)) return false;
+    if (hostname === "news.google.com") return false;
+    if (hostname.endsWith(".google.com")) return false;
+    if (hostname.endsWith("googleusercontent.com")) return false;
+    if (hostname.endsWith("gstatic.com")) return false;
+    if (hostname.endsWith("google-analytics.com")) return false;
+    if (hostname.endsWith("googletagmanager.com")) return false;
+    if (hostname.endsWith("fonts.googleapis.com")) return false;
+    if (hostname.endsWith("fonts.gstatic.com")) return false;
+    if (hostname.endsWith("newsstand.google.com")) return false;
+    if (hostname.endsWith("w3.org")) return false;
+    if (hostname.endsWith("angular.dev")) return false;
+    if (/\/search$|\/preferences$/.test(parsed.pathname)) return false;
+    urls.push(parsed.toString());
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function normalizeEmbeddedUrlString(value) {
+  return String(value ?? "")
+    .replace(/\\u003d/gi, "=")
+    .replace(/\\u0026/gi, "&")
+    .replace(/\\u002f/gi, "/")
+    .replace(/\\x3d/gi, "=")
+    .replace(/\\x26/gi, "&")
+    .replace(/\\\//g, "/")
+    .replace(/&amp;/gi, "&");
+}
+
+function scoreOutboundArticleUrl(value) {
+  try {
+    const parsed = new URL(value);
+    const host = parsed.hostname.toLowerCase();
+    const combined = `${host}${parsed.pathname}${parsed.search}`.toLowerCase();
+    let score = 0;
+    if (/\.(?:co\.jp|or\.jp|ne\.jp|go\.jp|ac\.jp|jp)$/.test(host) || host.endsWith(".jp")) score += 40;
+    if (/\/articles?\//.test(parsed.pathname)) score += 60;
+    if (/\/\d{4}\/\d{2}\/\d{2}\//.test(parsed.pathname)) score += 50;
+    if (/\d{6,}|\d{4,}\.html|news\d+|article/i.test(combined)) score += 35;
+    if (/yahoo|asahi|nhk|mainichi|nikkei|itmedia|j-cast|4gamer|gamespark|inside|animeanime|oricon|natalie|mantan|reuters|fnn|tbs|tv-asahi|nikkansports|sponichi/i.test(combined)) score += 45;
+    if (/rss|feed|manifest|license|logo|favicon|svg|css|js/.test(combined)) score -= 120;
+    return score;
+  } catch {
+    return -1;
+  }
 }
 
 function buildStoredBriefSummary(item) {

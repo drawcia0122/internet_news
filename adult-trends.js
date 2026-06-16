@@ -35,12 +35,12 @@ const PAGE_CONFIG = {
     description: '今伸びている作品、ジャンル、タグ、サークルを別軸で追います。',
     refreshDefault: '前回順位との差分から急上昇を抽出します。',
     sorts: [
+      { value: 'ranking', label: '現在順位順' },
       { value: 'rise', label: '上昇幅順' },
       { value: 'popular', label: '人気順' },
-      { value: 'ranking', label: '現在順位順' },
       { value: 'priceLow', label: '価格が安い順' },
     ],
-    defaultSort: 'rise',
+    defaultSort: 'ranking',
   },
   magazine: {
     title: 'マガジン',
@@ -82,6 +82,7 @@ const PAGE_CONFIG = {
 let adultFeatureItems = [];
 let adultTrendItems = [];
 let adultArchiveItems = [];
+let adultNewsItems = [];
 let refreshStatusTimer;
 let lastRefreshStartedAt = 0;
 let activeSort = PAGE_CONFIG[pageType]?.defaultSort || '';
@@ -97,6 +98,7 @@ function init() {
   adultFeatureItems = loadAdultFeatureCache();
   adultTrendItems = loadAdultTrendCache();
   adultArchiveItems = loadAdultArchiveCache();
+  adultNewsItems = loadAdultNewsCache();
   renderAdultPage();
   refreshLiveData({ silent: true });
   window.setInterval(() => {
@@ -136,10 +138,11 @@ async function refreshLiveData({ silent = false } = {}) {
 async function loadAdultData() {
   let errorMessage = null;
   try {
-    const [featuresPayload, trendsPayload, archivePayload] = await Promise.all([
+    const [featuresPayload, trendsPayload, archivePayload, newsPayload] = await Promise.all([
       fetchJsonWithCache({ cacheKey: 'adult-features', endpoints: ['./data/adult-features.json'], ttlMs: ADULT_CACHE_TTL_MS }),
       fetchJsonWithCache({ cacheKey: 'adult-trends', endpoints: ['./data/adult-trends.json'], ttlMs: ADULT_CACHE_TTL_MS }),
       fetchJsonWithCache({ cacheKey: 'adult-trends-archive', endpoints: ['./data/adult-trends-archive.json'], ttlMs: ADULT_CACHE_TTL_MS }),
+      fetchJsonWithCache({ cacheKey: 'adult-news', endpoints: ['./data/adult-news.json'], ttlMs: ADULT_CACHE_TTL_MS }).catch(() => null),
     ]);
     adultArchiveItems = payloadItems(archivePayload);
     const archiveMap = buildArchiveMap(adultArchiveItems);
@@ -148,6 +151,7 @@ async function loadAdultData() {
       archiveMap.get(item.id) ?? archiveMap.get(item.historyKey) ?? archiveMap.get(item.sourceUrl),
     ));
     adultFeatureItems = payloadItems(featuresPayload).map((item) => normalizeAdultFeatureItem(item));
+    adultNewsItems = payloadItems(newsPayload).map((item) => normalizeAdultNewsItem(item));
   } catch (error) {
     errorMessage = error?.message || '取得エラー';
   }
@@ -155,11 +159,12 @@ async function loadAdultData() {
   saveAdultFeatureCache(adultFeatureItems);
   saveAdultTrendCache(adultTrendItems);
   saveAdultArchiveCache(adultArchiveItems);
+  saveAdultNewsCache(adultNewsItems);
   renderAdultPage();
 
   return {
-    ok: adultFeatureItems.length > 0 || adultTrendItems.length > 0,
-    count: adultFeatureItems.length + adultTrendItems.length,
+    ok: adultFeatureItems.length > 0 || adultTrendItems.length > 0 || adultNewsItems.length > 0,
+    count: adultFeatureItems.length + adultTrendItems.length + adultNewsItems.length,
     error: errorMessage,
   };
 }
@@ -213,6 +218,8 @@ function buildPortalModel() {
 
   return {
     editorLead,
+    adultNewsTop: sortAdultNewsItems([...adultNewsItems]).slice(0, 3),
+    adultNewsItems: sortAdultNewsItems([...adultNewsItems]).slice(0, 24),
     rankingTop: sortItems([...rankingItems], 'ranking').slice(0, 3),
     rankingFanza: sortItems(rankingItems.filter((item) => item.adultSourceGroup === 'fanza'), activeSort).slice(0, 50),
     rankingDlsite: sortItems(rankingItems.filter((item) => item.adultSourceGroup === 'dlsite'), activeSort).slice(0, 50),
@@ -228,6 +235,7 @@ function buildPortalModel() {
     trendingTop: sortItems([...trendingWorks], 'rise').slice(0, 3),
     trendingRanking: sortItems([...trendingWorks], 'rise').slice(0, 10),
     trendingWorks: sortItems([...trendingWorks], activeSort || 'rise').slice(0, 30),
+    trendingByContext: groupTrendingItemsByContext(trendingWorks),
     trendingGenres: aggregateTrendBuckets(trendingWorks, (item) => item.adultPrimaryGenre || '未分類'),
     trendingTags: aggregateTrendBuckets(trendingWorks, (item) => item.tags || []),
     trendingMakers: aggregateTrendBuckets(trendingWorks, (item) => item.maker || ''),
@@ -287,6 +295,7 @@ function renderTopPage(model) {
       : renderEmptyPanel('今週の特集を準備中です', 'テーマがまとまり次第、要約とおすすめ作品をここへ表示します。'),
     '</section>',
     '<div class="adult-entry-grid">',
+    renderEntryCard('🔞', '成人向けニュース', '#adult-news', 'R18 / AV / FANZA周辺のニュースを読む'),
     renderEntryCard('📰', 'マガジン', './adult-magazine.html', '要約・分析・おすすめを読む'),
     renderEntryCard('🎁', 'キャンペーン', './adult-campaign.html', '開催中イベントと期限を確認'),
     renderEntryCard('💰', 'セール注目作品', './adult-sale.html', '割引率と価格でお得作品を探す'),
@@ -299,6 +308,7 @@ function renderTopPage(model) {
     renderTopSummary('📈 急上昇TOP3', model.trendingTop, 'trending'),
     renderTopSummary('🏆 人気ランキングTOP3', model.rankingTop, 'ranking'),
     '</div>',
+    renderAdultNewsSection(model.adultNewsItems),
     renderSectionIntro('📈 急上昇ランキング', '前回順位との差分から、今どの作品が一気に伸びているかを確認できます。'),
     renderWorkGrid(model.trendingRanking, 'trending'),
     '</section>',
@@ -322,8 +332,8 @@ function renderRankingPage(model) {
 
 function renderTrendingPage(model) {
   return [
-    renderSectionIntro('急上昇作品', '前回順位からどれだけ伸びたかを表示します。'),
-    renderWorkGrid(model.trendingWorks, 'trending'),
+    renderSectionIntro('ランキング別に整理した急上昇作品', '同じ順位でも別ランキングの作品は分離し、各ランキング内は現在順位順で固定しています。'),
+    renderTrendContextSections(model.trendingByContext),
     '<div class="adult-metric-grid">',
     renderMetricPanel('急上昇ジャンル', model.trendingGenres),
     renderMetricPanel('急上昇タグ', model.trendingTags),
@@ -380,6 +390,40 @@ function renderTopSummary(title, items, mode) {
     `<div class="adult-panel-head"><h2>${escapeHtml(title)}</h2><p>${escapeHtml(items.length ? `${items.length}件を表示` : 'データ整理中')}</p></div>`,
     renderWorkGrid(items, mode, true),
     '</section>',
+  ].join('');
+}
+
+function renderAdultNewsSection(items) {
+  return [
+    '<section class="adult-panel" id="adult-news">',
+    '<div class="adult-panel-head"><h2>成人向けニュース</h2><p>R18、AV、FANZA、DLsite、セクシー女優、成人向けサービス周辺の記事だけを独立表示します。ランキングやセールとは分離しています。</p></div>',
+    renderAdultNewsGrid(items),
+    '</section>',
+  ].join('');
+}
+
+function renderAdultNewsGrid(items) {
+  if (!Array.isArray(items) || !items.length) {
+    return renderEmptyPanel('成人向けニュースを整理中です', '総合アーカイブから成人向け記事を分離して、ここに表示します。');
+  }
+  return `<div class="adult-list-grid">${items.map((item) => renderAdultNewsCard(item)).join('')}</div>`;
+}
+
+function renderAdultNewsCard(item) {
+  const href = item.sourceUrl || item.url || '#';
+  const thumb = item.thumbnailUrl ? `<a class="adult-thumb-wrap" href="${escapeHtml(href)}" target="_blank" rel="noreferrer"><img class="adult-thumb" src="${escapeHtml(item.thumbnailUrl)}" alt="${escapeHtml(item.title)}" loading="lazy" referrerpolicy="no-referrer" /></a>` : '';
+  const chips = Array.isArray(item.categoryLabels) && item.categoryLabels.length ? item.categoryLabels.slice(0, 3) : [];
+  return [
+    '<article class="adult-card adult-portal-card adult-news-card">',
+    thumb,
+    '<div class="adult-card-body">',
+    `<div class="adult-card-meta"><span>${escapeHtml(item.sourceName || '成人向けニュース')}</span><strong>${escapeHtml(item.time || formatAdultDate(item.publishedAt || item.capturedAt))}</strong></div>`,
+    `<h3><a href="${escapeHtml(href)}" target="_blank" rel="noreferrer">${escapeHtml(item.title || '成人向けニュース')}</a></h3>`,
+    `<p>${escapeHtml(item.summary || item.briefSummary || '成人向けニュースを整理中です。')}</p>`,
+    chips.length ? `<div class="adult-chip-row">${chips.map((chip) => `<span>${escapeHtml(chip)}</span>`).join('')}</div>` : '',
+    `<div class="adult-card-footer"><span>${escapeHtml(item.hotReasons?.[0] || '成人向け記事')}</span><div class="adult-card-actions"><a class="adult-source-link" href="${escapeHtml(href)}" target="_blank" rel="noreferrer">元記事を見る ↗</a></div></div>`,
+    '</div>',
+    '</article>',
   ].join('');
 }
 
@@ -447,6 +491,7 @@ function renderWorkCard(item, mode, compact = false, { displayRank = null } = {}
   const title = item.title || 'アダルトトレンド';
   const makerLabel = item.adultSourceGroup === 'dlsite' ? 'サークル' : 'メーカー';
   const genreLabel = displayGenreLabel(item);
+  const rankingContext = rankingContextLabel(item.sourceKey, item.sourceName || sourceGroupLabel(item.adultSourceGroup));
   const priceBlock = renderPriceBlock(item, mode);
   const changeBlock = mode === 'trending' ? renderRankChange(item) : '';
   const hasComparablePreviousRank = Boolean(item.previousRank && item.ranking);
@@ -464,6 +509,7 @@ function renderWorkCard(item, mode, compact = false, { displayRank = null } = {}
     thumb,
     '<div class="adult-card-body">',
     `<div class="adult-card-meta"><span>${escapeHtml(sourceGroupLabel(item.adultSourceGroup))} · ${escapeHtml(genreLabel || '未分類')}</span><strong>VS ${escapeHtml(String(item.valueScore ?? 0))}</strong></div>`,
+    mode === 'trending' ? `<div class="adult-card-submeta"><span>${escapeHtml(rankingContext)}</span><strong>${escapeHtml(item.ranking ? `${item.ranking}位` : '順位未取得')}</strong></div>` : '',
     badges,
     trendScoreBlock,
     `<h3><a href="${escapeHtml(href)}">${escapeHtml(title)}</a></h3>`,
@@ -471,7 +517,7 @@ function renderWorkCard(item, mode, compact = false, { displayRank = null } = {}
     '<dl class="adult-card-points">',
     `<div><dt>${escapeHtml(makerLabel)}</dt><dd>${escapeHtml(item.maker || '未取得')}</dd></div>`,
     `<div><dt>ジャンル</dt><dd>${escapeHtml(genreLabel || '未分類')}</dd></div>`,
-    mode !== 'campaign' ? `<div><dt>順位</dt><dd>${escapeHtml(displayRank ? `${displayRank}位` : (item.ranking ? `${item.ranking}位` : '順位未取得'))}${displayRank && item.ranking && displayRank !== item.ranking ? `<small class="adult-rank-origin">元 ${escapeHtml(String(item.ranking))}位</small>` : ''}</dd></div>` : '',
+    mode !== 'campaign' ? `<div><dt>順位</dt><dd>${escapeHtml(displayRank ? `${displayRank}位` : (item.ranking ? `${item.ranking}位` : '順位未取得'))}${displayRank && item.ranking && displayRank !== item.ranking ? `<small class="adult-rank-origin">元 ${escapeHtml(String(item.ranking))}位</small>` : ''}${mode === 'trending' ? `<small class="adult-rank-origin">${escapeHtml(rankingContext)}</small>` : ''}</dd></div>` : '',
     '</dl>',
     changeBlock,
     priceBlock,
@@ -598,6 +644,18 @@ function renderHorizontalRankingTrack(items) {
     return renderEmptyPanel('対象データがまだありません', 'ランキングデータ取得後に表示します。');
   }
   return `<div class="adult-ranking-track">${items.map((item) => renderWorkCard(item, 'ranking', true)).join('')}</div>`;
+}
+
+function renderTrendContextSections(groups) {
+  if (!Array.isArray(groups) || !groups.length) {
+    return renderEmptyPanel('急上昇データを整理中です', '履歴がたまるとランキング別の伸び筋をここへ表示します。');
+  }
+  return groups.map((group) => [
+    '<section class="adult-panel adult-genre-ranking-panel">',
+    `<div class="adult-panel-head"><h3>${escapeHtml(group.label)}</h3><p>${escapeHtml(group.description)}</p></div>`,
+    renderWorkGrid(group.items, 'trending'),
+    '</section>',
+  ].join('')).join('');
 }
 
 function renderRankChange(item) {
@@ -1053,6 +1111,7 @@ function normalizeAdultTrendItem(item, archivedItem) {
   const trendReasons = Array.isArray(item.trendReasons) ? item.trendReasons : Array.isArray(item.hotReasons) ? item.hotReasons : [];
   const sourceName = item.sourceName ?? item.source ?? sourceGroupLabel(adultSourceGroup);
   const thumbnailUrl = pickCardImageUrl(item);
+  const summary = sanitizeAdultSummary(item.summary ?? item.briefSummary ?? '');
   const valueScore = calculateValueScore({
     valueScore: item.valueScore,
     discountRate,
@@ -1067,6 +1126,7 @@ function normalizeAdultTrendItem(item, archivedItem) {
     routeId: buildAdultRouteId(item),
     source: sourceName,
     sourceName,
+    summary,
     historyKey: item.historyKey ?? archivedItem?.historyKey ?? item.sourceUrl ?? item.id,
     thumbnail: thumbnailUrl,
     thumbnailUrl,
@@ -1184,6 +1244,39 @@ function groupRankingItemsByContext(items, sourceName) {
     });
 }
 
+function groupTrendingItemsByContext(items) {
+  const map = new Map();
+  for (const item of items) {
+    const label = rankingContextLabel(item.sourceKey, item.sourceName || sourceGroupLabel(item.adultSourceGroup));
+    const current = map.get(label) ?? [];
+    current.push(item);
+    map.set(label, current);
+  }
+  return [...map.entries()]
+    .map(([label, groupedItems]) => {
+      const sortedItems = [...groupedItems].sort((left, right) =>
+        compareByRanking(left, right)
+        || compareNumber(right.rankDelta ?? right.rankChange, left.rankDelta ?? left.rankChange)
+        || compareNumber(right.adultTrendScore, left.adultTrendScore)
+        || compareByHot(left, right)
+        || String(left.title ?? '').localeCompare(String(right.title ?? ''), 'ja')
+      );
+      const bestRank = extractContextBestRank(sortedItems);
+      const bestRise = sortedItems.reduce((max, item) => Math.max(max, Number(item.rankDelta ?? item.rankChange ?? 0)), 0);
+      return {
+        label,
+        description: `${sortedItems.length}件 / 最高 ${Number.isFinite(bestRank) && bestRank !== Number.MAX_SAFE_INTEGER ? `${bestRank}位` : '順位未取得'} / 最大上昇 +${bestRise}`,
+        items: sortedItems,
+      };
+    })
+    .sort((left, right) =>
+      compareTrendingContextLabel(left.label, right.label)
+      || compareNumber(extractContextBestRank(left.items), extractContextBestRank(right.items))
+      || right.items.length - left.items.length
+      || String(left.label).localeCompare(String(right.label), 'ja')
+    );
+}
+
 function normalizeStandaloneGenreGroups(groups) {
   return (groups ?? []).map((group) => ({
     ...group,
@@ -1205,6 +1298,19 @@ function compareRankingContextLabel(left, right) {
   const leftIndex = order.indexOf(left);
   const rightIndex = order.indexOf(right);
   return (leftIndex === -1 ? 999 : leftIndex) - (rightIndex === -1 ? 999 : rightIndex);
+}
+
+function compareTrendingContextLabel(left, right) {
+  const normalizeContext = (value) => String(value ?? '').replace(/^(DLsite|FANZA|Ci-en)\s+/, '');
+  return compareRankingContextLabel(normalizeContext(left), normalizeContext(right))
+    || String(left).localeCompare(String(right), 'ja');
+}
+
+function extractContextBestRank(items) {
+  return (items ?? []).reduce((min, item) => {
+    const ranking = normalizeNullableNumber(item.ranking);
+    return ranking && ranking < min ? ranking : min;
+  }, Number.MAX_SAFE_INTEGER);
 }
 
 function compareGenreLabel(left, right) {
@@ -1665,6 +1771,24 @@ function payloadItems(payload) {
   return Array.isArray(payload?.items) ? payload.items : [];
 }
 
+function sanitizeAdultSummary(value) {
+  const text = String(value ?? '').trim();
+  if (!text) return '';
+  if (/が(?:DLsite|FANZA|Ci-en|Source)のランキング\d+位として検出されています。.*今日の売れ筋候補として扱っています。?$/u.test(text)) return '';
+  if (/が(?:DLsite|FANZA|Ci-en|Source)の公開情報から検出されています。.*アダルトトレンド候補として整理しています。?$/u.test(text)) return '';
+  if (/が(?:同人音声系|AI作品関連)の注目候補として検出されています。/u.test(text)) return '';
+  return text;
+}
+
+function sortAdultNewsItems(items) {
+  return [...items].sort((left, right) => {
+    const rightTime = new Date(right.publishedAt ?? right.capturedAt ?? 0).getTime();
+    const leftTime = new Date(left.publishedAt ?? left.capturedAt ?? 0).getTime();
+    if (rightTime !== leftTime) return rightTime - leftTime;
+    return Number(right.hotScore ?? right.score ?? 0) - Number(left.hotScore ?? left.score ?? 0);
+  });
+}
+
 function sourceGroupLabel(key) {
   if (key === 'fanza') return 'FANZA';
   if (key === 'dlsite') return 'DLsite';
@@ -1795,6 +1919,23 @@ function normalizeDateValue(value) {
   return Number.isNaN(time) ? null : new Date(time).toISOString();
 }
 
+function normalizeAdultNewsItem(item) {
+  return {
+    ...item,
+    thumbnailUrl: pickCardImageUrl(item),
+    sourceName: String(item.sourceName ?? item.source ?? '成人向けニュース'),
+    sourceUrl: String(item.sourceUrl ?? item.url ?? item.searchLinks?.[0]?.url ?? '').trim(),
+    summary: String(item.summary ?? item.briefSummary ?? '').trim(),
+    briefSummary: String(item.briefSummary ?? item.summary ?? '').trim(),
+    hotReasons: Array.isArray(item.hotReasons) ? item.hotReasons.filter(Boolean) : [],
+    categoryLabels: Array.isArray(item.categoryLabels) ? item.categoryLabels.filter(Boolean) : [],
+    publishedAt: normalizeDateValue(item.publishedAt) ?? normalizeDateValue(item.capturedAt),
+    capturedAt: normalizeDateValue(item.capturedAt) ?? normalizeDateValue(item.publishedAt),
+    hotScore: Number(item.hotScore ?? item.score ?? 0),
+    score: Number(item.score ?? item.hotScore ?? 0),
+  };
+}
+
 function saveAdultFeatureCache(items) {
   try { sessionStorage.setItem('internet-news-adult-feature-cache', JSON.stringify(items ?? [])); } catch {}
 }
@@ -1829,6 +1970,19 @@ function loadAdultArchiveCache() {
   try {
     const cached = JSON.parse(sessionStorage.getItem('internet-news-adult-archive-cache') ?? '[]');
     return Array.isArray(cached) ? cached : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveAdultNewsCache(items) {
+  try { sessionStorage.setItem('internet-news-adult-news-cache', JSON.stringify(items ?? [])); } catch {}
+}
+
+function loadAdultNewsCache() {
+  try {
+    const cached = JSON.parse(sessionStorage.getItem('internet-news-adult-news-cache') ?? '[]');
+    return Array.isArray(cached) ? cached.map(normalizeAdultNewsItem) : [];
   } catch {
     return [];
   }

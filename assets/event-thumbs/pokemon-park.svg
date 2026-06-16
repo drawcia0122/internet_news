@@ -1,0 +1,37 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" rx="36" fill="url(#bg)"/>
+  <circle cx="930" cy="170" r="120" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="220" cy="520" r="170" fill="rgba(255,255,255,0.10)"/>
+  <path d="M85 530C170 452 289 412 420 420C541 427 629 468 760 458C882 449 1006 386 1115 288V675H85V530Z" fill="rgba(7,55,89,0.24)"/>
+  <path d="M0 468C141 372 246 343 381 365C501 384 605 447 730 448C857 450 997 382 1200 257V675H0V468Z" fill="rgba(12,92,124,0.34)"/>
+  <g filter="url(#shadow)">
+    <rect x="118" y="92" width="326" height="158" rx="26" fill="rgba(255,255,255,0.16)"/>
+    <text x="152" y="152" fill="#FFF8D6" font-size="44" font-family="DM Sans, Arial, sans-serif" font-weight="700">POKEMON</text>
+    <text x="152" y="204" fill="white" font-size="56" font-family="DM Sans, Arial, sans-serif" font-weight="800">PARK</text>
+  </g>
+  <g>
+    <circle cx="834" cy="338" r="110" fill="#FFE066"/>
+    <circle cx="834" cy="338" r="48" fill="#F8FAFF"/>
+    <path d="M724 338H944" stroke="#213244" stroke-width="26" stroke-linecap="round"/>
+    <circle cx="834" cy="338" r="18" fill="#213244"/>
+  </g>
+  <text x="118" y="590" fill="white" font-size="72" font-family="Zen Kaku Gothic New, Arial, sans-serif" font-weight="900">PokéPark KANTO</text>
+  <text x="118" y="636" fill="#DDF4FF" font-size="30" font-family="Zen Kaku Gothic New, Arial, sans-serif" font-weight="700">Tokyo Pokemon destination</text>
+  <defs>
+    <linearGradient id="bg" x1="90" y1="46" x2="1088" y2="642" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0EA5B7"/>
+      <stop offset="0.42" stop-color="#2166FF"/>
+      <stop offset="1" stop-color="#163D82"/>
+    </linearGradient>
+    <filter id="shadow" x="98" y="80" width="366" height="198" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="8"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0352941 0 0 0 0 0.176471 0 0 0 0 0.305882 0 0 0 0.26 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+</svg>

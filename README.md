@@ -17,6 +17,14 @@ npm run dev
 
 `http://localhost:8000` を開きます。
 
+## Production
+
+GitHub Pages で公開する前提です。
+
+- 本番 URL: `https://drawcia0122.github.io/internet_news/`
+- `main` へ push すると `.github/workflows/deploy-pages.yml` から自動で再公開されます
+- GitHub 側で最初に `Settings > Pages > Source` を `GitHub Actions` にしておく必要があります
+
 ## Refresh data
 
 ```bash

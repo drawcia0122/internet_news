@@ -38,12 +38,11 @@ export async function repairThumbnails(selectedFiles = []) {
     let repaired = 0;
     let failed = 0;
     await mapWithConcurrency(targets, CONCURRENCY, async (item) => {
-      const thumbnailUrl = await resolveBestThumbnail(item);
-      if (!thumbnailUrl) {
+      const repairedItem = await repairItemThumbnail(item);
+      if (!repairedItem) {
         failed += 1;
         return;
       }
-      applyThumbnail(item, thumbnailUrl);
       repaired += 1;
     });
 
@@ -51,6 +50,13 @@ export async function repairThumbnails(selectedFiles = []) {
     await fs.writeFile(absoluteFile, `${JSON.stringify(payload, null, 2)}\n`);
     console.log(`${relativeFile}: repaired=${repaired} failed=${failed} total=${targets.length}`);
   }
+}
+
+export async function repairItemThumbnail(item) {
+  const thumbnailUrl = await resolveBestThumbnail(item);
+  if (!thumbnailUrl) return null;
+  applyThumbnail(item, thumbnailUrl);
+  return thumbnailUrl;
 }
 
 function needsThumbnailRepair(item) {

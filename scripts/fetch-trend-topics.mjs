@@ -3,6 +3,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { buildDailyBrief } from "../lib/daily-brief.mjs";
 import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, extractEncodedUrlsFromHtml, hasSuspiciousThumbnailMismatch } from "../lib/thumbnail-utils.mjs";
 import { collectTrendTopics } from "../lib/trend-aggregator.mjs";
+import { repairItemThumbnail } from "./repair-thumbnails.mjs";
 
 const CATEGORY_LABELS = {
   general: "その他",
@@ -189,9 +190,12 @@ const ADULT_NEWS_MAX_ITEMS = 80;
 const BROWSE_24_TO_3D_LIMIT = 360;
 const BROWSE_3_TO_7D_LIMIT = 120;
 const BROWSE_7_TO_14D_LIMIT = 30;
+const FETCH_STAGE_MIN_THUMBNAIL_RATE = 95;
+const FETCH_STAGE_REPAIR_CONCURRENCY = 6;
 
 const payload = await collectTrendTopics();
 await enrichItemsWithMetadata(payload.items ?? []);
+await ensureFetchStageThumbnailCoverage(payload.items ?? [], "fetched trend topics");
 const dedupedItems = dedupeNearDuplicateItems(payload.items ?? []);
 const capturedAt = payload.generatedAt ?? new Date().toISOString();
 const curatedItems = selectCuratedTrendItems(dedupedItems, MAX_CURRENT_ITEMS);
@@ -1013,6 +1017,50 @@ async function enrichItemsWithMetadata(items) {
   });
 }
 
+async function ensureFetchStageThumbnailCoverage(items, label) {
+  const initial = thumbnailCoverageStats(items);
+  console.log(`[thumbnail:fetch] ${label} initial=${initial.found}/${initial.total} (${initial.rate.toFixed(1)}%)`);
+  if (initial.rate >= FETCH_STAGE_MIN_THUMBNAIL_RATE) return;
+
+  const repairTargets = [...items]
+    .filter((item) => !hasAcceptableThumbnail(item))
+    .sort((left, right) => metadataPriority(right) - metadataPriority(left));
+
+  await mapWithConcurrency(repairTargets, FETCH_STAGE_REPAIR_CONCURRENCY, async (item) => {
+    await enrichItemMetadata(item, { force: true });
+    if (!hasAcceptableThumbnail(item)) {
+      await repairItemThumbnail(item);
+    }
+  });
+
+  const finalStats = thumbnailCoverageStats(items);
+  console.log(`[thumbnail:fetch] ${label} repaired=${finalStats.found}/${finalStats.total} (${finalStats.rate.toFixed(1)}%)`);
+  if (finalStats.rate < FETCH_STAGE_MIN_THUMBNAIL_RATE) {
+    const missingTitles = items
+      .filter((item) => !hasAcceptableThumbnail(item))
+      .slice(0, 10)
+      .map((item) => item?.title ?? "(no title)");
+    throw new Error(
+      `[thumbnail:fetch] ${label} coverage ${finalStats.rate.toFixed(1)}% below ${FETCH_STAGE_MIN_THUMBNAIL_RATE}%: ${missingTitles.join(" / ")}`
+    );
+  }
+}
+
+function thumbnailCoverageStats(items) {
+  const total = items.length;
+  const found = items.filter(hasAcceptableThumbnail).length;
+  const rate = total ? (found / total) * 100 : 100;
+  return { total, found, rate };
+}
+
+function hasAcceptableThumbnail(item) {
+  const thumbnailUrl = sanitizeThumbnailUrl(item?.thumbnailUrl ?? item?.thumbnail);
+  if (!thumbnailUrl) return false;
+  if (isWeakThumbnailUrl(thumbnailUrl)) return false;
+  if (hasSuspiciousThumbnailMismatch(thumbnailUrl, item, ...(item?.sourceSignals ?? []))) return false;
+  return true;
+}
+
 function metadataPriority(item) {
   const thumbnailUrl = sanitizeThumbnailUrl(item.thumbnailUrl);
   let priority = Number(item.score ?? 0);
@@ -1024,7 +1072,7 @@ function metadataPriority(item) {
   return priority;
 }
 
-async function enrichItemMetadata(item) {
+async function enrichItemMetadata(item, { force = false } = {}) {
   const directThumbnail = await resolveThumbnail({ item, sourceUrl: item.sourceSignals?.[0]?.url ?? item.searchLinks?.[0]?.url ?? "" });
   item.thumbnailUrl = directThumbnail.thumbnailUrl;
   item.thumbnail = directThumbnail.thumbnail;
@@ -1055,7 +1103,7 @@ async function enrichItemMetadata(item) {
     bestMetadata = mergeFetchedMetadata(bestMetadata, metadata, item.title);
     const hasThumb = Boolean(bestMetadata?.thumbnailUrl);
     const hasSummary = hasUsefulSummary(bestMetadata?.summary) || Boolean(bestMetadata?.briefSummary) || hasUsefulSummary(item.summary);
-    if (hasThumb && hasSummary) break;
+    if (hasThumb && (hasSummary || force)) break;
   }
   if (!bestMetadata) return;
 

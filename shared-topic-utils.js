@@ -6,14 +6,30 @@
     const normalizedCategories = categories.map(normalizeLegacyCategory);
     const category = normalizedCategories[0] ?? 'general';
     const labelSource = topic.categoryLabels;
+    const sourceSignals = Array.isArray(topic.sourceSignals)
+      ? topic.sourceSignals.map((signal) => ({
+        ...signal,
+        title: decodeHtmlEntities(signal?.title ?? ''),
+        summary: decodeHtmlEntities(signal?.summary ?? ''),
+        sourceName: decodeHtmlEntities(signal?.sourceName ?? ''),
+        source: decodeHtmlEntities(signal?.source ?? ''),
+      }))
+      : [];
 
     return {
       ...topic,
+      title: decodeHtmlEntities(topic.title ?? ''),
+      summary: decodeHtmlEntities(topic.summary ?? ''),
+      briefSummary: decodeHtmlEntities(topic.briefSummary ?? ''),
+      whatHappened: decodeHtmlEntities(topic.whatHappened ?? ''),
+      whyHot: decodeHtmlEntities(topic.whyHot ?? ''),
+      importantPoint: decodeHtmlEntities(topic.importantPoint ?? ''),
+      futureOutlook: decodeHtmlEntities(topic.futureOutlook ?? ''),
       category,
       categories: [...new Set(normalizedCategories)],
       categoryLabel: normalizeLegacyCategoryLabel(topic.categoryLabel, category),
       categoryLabels: Array.isArray(labelSource) && labelSource.length ? labelSource.filter((label) => label !== 'ネタ') : [categoryLabelFor(category)],
-      sourceSignals: Array.isArray(topic.sourceSignals) ? topic.sourceSignals : [],
+      sourceSignals,
       searchLinks: includeSearchLinks && Array.isArray(topic.searchLinks) ? topic.searchLinks : [],
       thumbnailUrl: pickCardImageUrl(topic),
     };
@@ -51,6 +67,14 @@
     const value = String(title ?? '').replace(/^【[^】]+】\s*/u, '').trim();
     if (!value) return '新しい動きが出ています。';
     return value.replace(/[。！？!?].*$/u, '').slice(0, 42);
+  }
+
+  function decodeHtmlEntities(value) {
+    const text = String(value ?? '');
+    if (!/[&][#a-zA-Z0-9]+;/.test(text)) return text;
+    const element = document.createElement('textarea');
+    element.innerHTML = text;
+    return element.value;
   }
 
   function topicText(topic) {
@@ -162,7 +186,9 @@
     if (!value) return true;
     return /^https?:\/\/(?:[^/]+\.)?yimg\.jp\/?$/i.test(value)
       || /^https?:\/\/img\.youtube\.com\/?$/i.test(value)
-      || /s\.yimg\.jp\/images\/top\/ogp\/fb_y_1500px\.png|s\.yimg\.jp\/images\/news-web\/versions\/[^/]+\/all\/images\/ogp_default\.png|s\.yimg\.jp\/images\/advertising\/common\/img\/ico_jiaa\.png|news-pctr\.c\.yimg\.jp\/uUzvQ3lM|news-topics\/images\/tpc|news-topics\/pickups|\/t\/news-topics\//i.test(value);
+      || /^https?:\/\/b\.hatena\.ne\.jp\/entry\/image\//i.test(value)
+      || /s\.yimg\.jp\/images\/top\/ogp\/fb_y_1500px\.png|s\.yimg\.jp\/images\/news-web\/versions\/[^/]+\/all\/images\/ogp_default\.png|s\.yimg\.jp\/images\/advertising\/common\/img\/ico_jiaa\.png|news-pctr\.c\.yimg\.jp\/uUzvQ3lM|news-topics\/images\/tpc|news-topics\/pickups|\/t\/news-topics\/|support\.x\.com\/articles\/|gstatic\.com\/_\/mss\/boq-dots\/.*dotssplashui/i.test(value)
+      || looksLikeArticlePageThumbnailUrl(value);
   }
 
   function sanitizeCardImageUrl(value) {
@@ -170,10 +196,26 @@
     if (!url || !/^https?:\/\//i.test(url)) return null;
     if (isWeakThumbnailUrl(url)) return null;
     if (/^https?:\/\/lh3\.googleusercontent\.com\/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc(?:=|$)/i.test(url)) return null;
+    if (/^https?:\/\/lh3\.googleusercontent\.com\/zpUAWPoFO8BgmXeHZna-q2AFE1ss9PWr2E16kntkjD5pyjVWfWEhzza9qBxRpMypBCYTnINVLw(?:=|$)/i.test(url)) return null;
     if (/(?:^|\/)(?:favicon(?:-\d+x\d+)?|apple-touch-icon|android-chrome-\d+x\d+|mstile-\d+x\d+)(?:\.[a-z0-9]+)?(?:$|[?#])/i.test(url)) return null;
     if (/\/favicon\.ico(?:$|[?#])/i.test(url)) return null;
     if (/(?:google|gstatic)\.[^/]+\/.*(?:favicon|logo|icon)/i.test(url)) return null;
     return url;
+  }
+
+  function looksLikeArticlePageThumbnailUrl(value) {
+    try {
+      const parsed = new URL(String(value ?? '').trim());
+      const pathname = parsed.pathname.toLowerCase();
+      const full = `${parsed.hostname.toLowerCase()}${pathname}${parsed.search.toLowerCase()}`;
+      if (/\.(?:avif|bmp|gif|heic|heif|jpeg|jpg|png|svg|webp)(?:$|[?#])/i.test(pathname)) return false;
+      if (/(?:\/|^)(?:images?|img|media|photo|photos|thumbnail|thumb|banner|ogp|avatar|icon|logos?)(?:\/|$)/i.test(pathname)) return false;
+      if (/[?&](?:format|fm|ext|image|img|photo)=.*(?:jpe?g|png|webp|gif|avif)/i.test(parsed.search)) return false;
+      return /(?:\/|^)(?:article|articles|pickup|expert|entry|news|kiji|detail|read|story|stories)\//i.test(pathname)
+        || /support\.x\.com\/articles\//i.test(full);
+    } catch {
+      return false;
+    }
   }
 
   function hasVisibleSummary(summary) {
@@ -442,6 +484,7 @@
     buildWhyHotLabel,
     categoryDisplayLabel,
     categoryLabelFor,
+    decodeHtmlEntities,
     dedupeTopics,
     defaultSearchQueryForCategory,
     escapeHtml,

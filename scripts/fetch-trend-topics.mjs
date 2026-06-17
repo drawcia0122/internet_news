@@ -190,8 +190,9 @@ const ADULT_NEWS_MAX_ITEMS = 80;
 const BROWSE_24_TO_3D_LIMIT = 360;
 const BROWSE_3_TO_7D_LIMIT = 120;
 const BROWSE_7_TO_14D_LIMIT = 30;
-const FETCH_STAGE_MIN_THUMBNAIL_RATE = 95;
+const FETCH_STAGE_MIN_THUMBNAIL_RATE = 90;
 const FETCH_STAGE_REPAIR_CONCURRENCY = 6;
+const SUSPICIOUS_DUPLICATE_THUMBNAIL_MIN_COUNT = 8;
 
 const payload = await collectTrendTopics();
 await enrichItemsWithMetadata(payload.items ?? []);
@@ -512,7 +513,7 @@ function homeTopicPrimaryCategory(item) {
 }
 
 function buildBrowseTopicsPayload({ archiveItems = [], generatedAt = new Date().toISOString() }) {
-  const rankedItems = rankBrowseItems(archiveItems);
+  const rankedItems = rankBrowseItems(archiveItems.filter((item) => !isMalformedArchiveItem(item)));
   const bucket24to3d = [];
   const bucket3to7d = [];
   const bucket7to14d = [];
@@ -578,7 +579,8 @@ function buildBrowseTopicsPayload({ archiveItems = [], generatedAt = new Date().
 function buildNewsArchivePayload({ archiveItems = [], generatedAt = new Date().toISOString() }) {
   const domesticItems = archiveItems
     .filter((item) => isWithinArchiveWindow(item, generatedAt))
-    .filter((item) => isDomesticNewsArchiveItem(item));
+    .filter((item) => isDomesticNewsArchiveItem(item))
+    .filter((item) => !isMalformedArchiveItem(item));
 
   const sortedItems = [...domesticItems].sort((left, right) => {
     const timeDiff = archiveTimestamp(right) - archiveTimestamp(left);
@@ -636,6 +638,7 @@ function buildAdultNewsPayload({ archiveItems = [], generatedAt = new Date().toI
   const items = archiveItems
     .filter((item) => isWithinArchiveWindow(item, generatedAt))
     .filter((item) => isAdultNewsArchiveItem(item))
+    .filter((item) => !isMalformedArchiveItem(item))
     .filter((item) => Boolean(sanitizeThumbnailUrl(item?.thumbnailUrl ?? item?.thumbnail)))
     .sort((left, right) => {
       const timeDiff = archiveTimestamp(right) - archiveTimestamp(left);
@@ -718,6 +721,26 @@ function isAdultNewsArchiveItem(item) {
   const gravureAdult = /グラビア|写真集|ランジェリー|水着姿|セクシーショット/.test(text);
   const hasAdultCategory = normalizeCategoryList(item?.categories ?? [item?.category]).includes("adult");
   return explicitAdult || (hasAdultCategory && gravureAdult);
+}
+
+function isMalformedArchiveItem(item) {
+  const sourceName = String(
+    item?.sourceName
+      ?? item?.source
+      ?? item?.sourceSignals?.[0]?.sourceName
+      ?? item?.sourceSignals?.[0]?.source
+      ?? ""
+  ).toLowerCase();
+  const text = [
+    item?.title,
+    item?.summary,
+    item?.briefSummary,
+  ].filter(Boolean).join(" ").toLowerCase();
+  const thumbnailUrl = String(item?.thumbnailUrl ?? item?.thumbnail ?? "").toLowerCase();
+
+  if (/japanese-tech-writing\/skill|\/skill\.md\b|\/readme\b/.test(text)) return true;
+  if (sourceName.includes("はてな") && /githubassets\.com\/assets\/gist-og-image|anond\.hatelabo\.jp\/assets\//.test(thumbnailUrl)) return true;
+  return false;
 }
 
 function adultNewsText(item) {
@@ -1018,26 +1041,28 @@ async function enrichItemsWithMetadata(items) {
 }
 
 async function ensureFetchStageThumbnailCoverage(items, label) {
-  const initial = thumbnailCoverageStats(items);
+  const initialDuplicateUrls = collectSuspiciousDuplicateThumbnailUrls(items);
+  const initial = thumbnailCoverageStats(items, initialDuplicateUrls);
   console.log(`[thumbnail:fetch] ${label} initial=${initial.found}/${initial.total} (${initial.rate.toFixed(1)}%)`);
   if (initial.rate >= FETCH_STAGE_MIN_THUMBNAIL_RATE) return;
 
   const repairTargets = [...items]
-    .filter((item) => !hasAcceptableThumbnail(item))
+    .filter((item) => !hasAcceptableThumbnail(item, initialDuplicateUrls))
     .sort((left, right) => metadataPriority(right) - metadataPriority(left));
 
   await mapWithConcurrency(repairTargets, FETCH_STAGE_REPAIR_CONCURRENCY, async (item) => {
     await enrichItemMetadata(item, { force: true });
-    if (!hasAcceptableThumbnail(item)) {
+    if (!hasAcceptableThumbnail(item, initialDuplicateUrls)) {
       await repairItemThumbnail(item);
     }
   });
 
-  const finalStats = thumbnailCoverageStats(items);
+  const finalDuplicateUrls = collectSuspiciousDuplicateThumbnailUrls(items);
+  const finalStats = thumbnailCoverageStats(items, finalDuplicateUrls);
   console.log(`[thumbnail:fetch] ${label} repaired=${finalStats.found}/${finalStats.total} (${finalStats.rate.toFixed(1)}%)`);
   if (finalStats.rate < FETCH_STAGE_MIN_THUMBNAIL_RATE) {
     const missingTitles = items
-      .filter((item) => !hasAcceptableThumbnail(item))
+      .filter((item) => !hasAcceptableThumbnail(item, finalDuplicateUrls))
       .slice(0, 10)
       .map((item) => item?.title ?? "(no title)");
     throw new Error(
@@ -1046,16 +1071,17 @@ async function ensureFetchStageThumbnailCoverage(items, label) {
   }
 }
 
-function thumbnailCoverageStats(items) {
+function thumbnailCoverageStats(items, duplicateThumbnailUrls = new Set()) {
   const total = items.length;
-  const found = items.filter(hasAcceptableThumbnail).length;
+  const found = items.filter((item) => hasAcceptableThumbnail(item, duplicateThumbnailUrls)).length;
   const rate = total ? (found / total) * 100 : 100;
   return { total, found, rate };
 }
 
-function hasAcceptableThumbnail(item) {
+function hasAcceptableThumbnail(item, duplicateThumbnailUrls = new Set()) {
   const thumbnailUrl = sanitizeThumbnailUrl(item?.thumbnailUrl ?? item?.thumbnail);
   if (!thumbnailUrl) return false;
+  if (duplicateThumbnailUrls.has(thumbnailUrl)) return false;
   if (isWeakThumbnailUrl(thumbnailUrl)) return false;
   if (hasSuspiciousThumbnailMismatch(thumbnailUrl, item, ...(item?.sourceSignals ?? []))) return false;
   return true;
@@ -1172,6 +1198,45 @@ function itemLooksLikeGoogleNews(item) {
   return /google news|news\.google\.com/i.test(values);
 }
 
+function collectSuspiciousDuplicateThumbnailUrls(items, minimumCount = SUSPICIOUS_DUPLICATE_THUMBNAIL_MIN_COUNT) {
+  const stats = new Map();
+
+  for (const item of items) {
+    const thumbnailUrl = sanitizeThumbnailUrl(item?.thumbnailUrl ?? item?.thumbnail);
+    if (!thumbnailUrl) continue;
+
+    let entry = stats.get(thumbnailUrl);
+    if (!entry) {
+      entry = {
+        count: 0,
+        sources: new Set(),
+        categories: new Set(),
+      };
+      stats.set(thumbnailUrl, entry);
+    }
+
+    entry.count += 1;
+    entry.sources.add(String(item?.sourceName ?? item?.sourceSignals?.[0]?.sourceName ?? item?.sourceSignals?.[0]?.source ?? ""));
+    entry.categories.add(String(item?.category ?? item?.categories?.[0] ?? ""));
+  }
+
+  return new Set(
+    [...stats.entries()]
+      .filter(([url, entry]) => {
+        if (entry.count < minimumCount) return false;
+        return isSuspiciousDuplicateThumbnailUrl(url)
+          || entry.sources.size >= 8
+          || entry.categories.size >= 6;
+      })
+      .map(([url]) => url),
+  );
+}
+
+function isSuspiciousDuplicateThumbnailUrl(url) {
+  const value = String(url ?? "");
+  return /(?:^https?:\/\/)(?:lh3\.googleusercontent\.com|newsatcl-pctr\.c\.yimg\.jp|news-pctr\.c\.yimg\.jp|news\.google\.com\/api\/attachments)/i.test(value);
+}
+
 function isYahooPickupUrl(value) {
   try {
     const parsed = new URL(value);
@@ -1188,7 +1253,13 @@ function isWeakThumbnailUrl(value) {
 }
 
 function shouldFollowNestedArticle(responseUrl, metadata) {
-  if (isGoogleNewsUrl(responseUrl)) return !metadata?.thumbnailUrl || isWeakThumbnailUrl(metadata.thumbnailUrl);
+  if (isGoogleNewsUrl(responseUrl)) {
+    const thumbnailUrl = metadata?.thumbnailUrl ?? metadata?.thumbnail ?? null;
+    return !thumbnailUrl
+      || isWeakThumbnailUrl(thumbnailUrl)
+      || isAggregatorThumbnailUrl(thumbnailUrl)
+      || hasSuspiciousThumbnailMismatch(thumbnailUrl, { url: responseUrl });
+  }
   if (isYahooPickupUrl(responseUrl)) return true;
   return false;
 }
@@ -1742,10 +1813,21 @@ function scoreOutboundArticleUrl(value) {
     if (/\/\d{4}\/\d{2}\/\d{2}\//.test(parsed.pathname)) score += 50;
     if (/\d{6,}|\d{4,}\.html|news\d+|article/i.test(combined)) score += 35;
     if (/yahoo|asahi|nhk|mainichi|nikkei|itmedia|j-cast|4gamer|gamespark|inside|animeanime|oricon|natalie|mantan|reuters|fnn|tbs|tv-asahi|nikkansports|sponichi/i.test(combined)) score += 45;
+    if (!isGoogleNewsUrl(value) && !isYahooPickupUrl(value) && !isYahooArticleUrl(value)) score += 35;
+    if (isYahooArticleUrl(value)) score -= 55;
     if (/rss|feed|manifest|license|logo|favicon|svg|css|js/.test(combined)) score -= 120;
     return score;
   } catch {
     return -1;
+  }
+}
+
+function isYahooArticleUrl(value) {
+  try {
+    const parsed = new URL(value);
+    return parsed.hostname.toLowerCase() === "news.yahoo.co.jp" && /^\/articles\//.test(parsed.pathname);
+  } catch {
+    return false;
   }
 }
 

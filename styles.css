@@ -2757,6 +2757,12 @@ h1 span {
   border-radius: 14px;
 }
 
+.news-range-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
 .trend-filters-row {
   display: flex;
   flex-direction: column;
@@ -2774,6 +2780,15 @@ h1 span {
   font-size: 10px;
   font-weight: 800;
   white-space: nowrap;
+}
+
+.news-range-tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  text-align: center;
 }
 
 .filter-pills button.active,
@@ -3700,6 +3715,10 @@ footer p {
     scrollbar-width: auto;
   }
 
+  .news-range-tabs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .filter-pills::-webkit-scrollbar,
   .featured-tabs::-webkit-scrollbar {
     display: initial;
@@ -3709,6 +3728,10 @@ footer p {
   .featured-tabs button {
     flex: 0 0 auto;
     max-width: 100%;
+  }
+
+  .news-range-tabs button {
+    flex: initial;
   }
 
   .adult-heading {

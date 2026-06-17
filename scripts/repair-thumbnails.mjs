@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { resolveThumbnail, sanitizeThumbnailUrl, extractEncodedUrlsFromHtml, isWeakThumbnailUrl, hasSuspiciousThumbnailMismatch } from "../lib/thumbnail-utils.mjs";
+import { resolveThumbnail, sanitizeThumbnailUrl, extractEncodedUrlsFromHtml, isWeakThumbnailUrl, hasSuspiciousThumbnailMismatch, isAggregatorThumbnailUrl } from "../lib/thumbnail-utils.mjs";
 
 const DEFAULT_DATA_FILES = [
   "data/news-archive.json",
@@ -29,7 +29,8 @@ export async function repairThumbnails(selectedFiles = []) {
     const raw = await fs.readFile(absoluteFile, "utf8");
     const payload = JSON.parse(raw);
     const items = Array.isArray(payload?.items) ? payload.items : [];
-    const targets = items.filter(needsThumbnailRepair);
+    const duplicateThumbnailUrls = collectOverusedThumbnailUrls(items);
+    const targets = items.filter((item) => needsThumbnailRepair(item, duplicateThumbnailUrls));
     if (!targets.length) {
       console.log(`${relativeFile}: no repair needed`);
       continue;
@@ -40,6 +41,7 @@ export async function repairThumbnails(selectedFiles = []) {
     await mapWithConcurrency(targets, CONCURRENCY, async (item) => {
       const repairedItem = await repairItemThumbnail(item);
       if (!repairedItem) {
+        clearInvalidThumbnail(item);
         failed += 1;
         return;
       }
@@ -59,13 +61,17 @@ export async function repairItemThumbnail(item) {
   return thumbnailUrl;
 }
 
-function needsThumbnailRepair(item) {
+function needsThumbnailRepair(item, duplicateThumbnailUrls = new Set()) {
+  if (duplicateThumbnailUrls.has(String(item?.thumbnailUrl ?? "").trim())) return true;
   if (!sanitizeThumbnailUrl(item?.thumbnailUrl)) return true;
   if (isWeakThumbnailUrl(item?.thumbnailUrl)) return true;
   if (hasSuspiciousThumbnailMismatch(item?.thumbnailUrl, item)) return true;
   return Array.isArray(item?.sourceSignals) && item.sourceSignals.some((signal) => {
     const value = signal?.thumbnailUrl;
-    return !sanitizeThumbnailUrl(value) || isWeakThumbnailUrl(value) || hasSuspiciousThumbnailMismatch(value, signal, item);
+    return duplicateThumbnailUrls.has(String(value ?? "").trim())
+      || !sanitizeThumbnailUrl(value)
+      || isWeakThumbnailUrl(value)
+      || hasSuspiciousThumbnailMismatch(value, signal, item);
   });
 }
 
@@ -96,7 +102,7 @@ async function resolveThumbnailFromHtml(html, sourceUrl) {
     sourceUrl,
   });
   const thumbnailUrl = sanitizeThumbnailUrl(resolved?.thumbnailUrl || resolved?.thumbnail, sourceUrl);
-  if (thumbnailUrl && !isWeakThumbnailUrl(thumbnailUrl)) return thumbnailUrl;
+  if (thumbnailUrl && !isWeakThumbnailUrl(thumbnailUrl) && !isAggregatorThumbnailUrl(thumbnailUrl)) return thumbnailUrl;
   return null;
 }
 
@@ -116,7 +122,7 @@ function candidateSourceUrls(item) {
 }
 
 function isAggregatorUrl(value) {
-  return /news\.yahoo\.co\.jp|news\.google\.com/i.test(String(value ?? ""));
+  return /news\.yahoo\.co\.jp|news\.google\.com|b\.hatena\.ne\.jp/i.test(String(value ?? ""));
 }
 
 function extractNestedArticleUrls(html, baseUrl) {
@@ -138,6 +144,7 @@ function extractNestedArticleUrls(html, baseUrl) {
     })
     .filter(Boolean)
     .filter((value) => !isAggregatorUrl(value))
+    .filter((value) => !/support\.x\.com\/articles\/|anond\.hatelabo\.jp\/assets\/|b\.st-hatena\.com\/images\/entry-button\/|(?:img\.cf\.)?47news\.jp\/static\/|tagger\.opecloud\.com\/mediaconsortium\//i.test(value))
     .filter((value) => !/\.(?:png|jpe?g|webp|gif|svg)(?:$|[?#])/i.test(value))
     .sort((left, right) => scoreArticleUrl(right) - scoreArticleUrl(left))
     .slice(0, 12);
@@ -182,8 +189,48 @@ function applyThumbnail(item, thumbnailUrl) {
     if (!signal) continue;
     if (!sanitizeThumbnailUrl(signal.thumbnailUrl) || isWeakThumbnailUrl(signal.thumbnailUrl) || hasSuspiciousThumbnailMismatch(signal.thumbnailUrl, signal, item)) {
       signal.thumbnailUrl = thumbnailUrl;
+      signal.thumbnail = thumbnailUrl;
     }
   }
+}
+
+function clearInvalidThumbnail(item) {
+  item.thumbnail = null;
+  item.thumbnailUrl = null;
+  if (!Array.isArray(item.sourceSignals)) return;
+  for (const signal of item.sourceSignals) {
+    if (!signal) continue;
+    signal.thumbnail = null;
+    signal.thumbnailUrl = null;
+  }
+}
+
+function collectOverusedThumbnailUrls(items) {
+  const counts = new Map();
+  for (const item of items) {
+    const value = String(item?.thumbnailUrl ?? "").trim();
+    if (!value) continue;
+    let entry = counts.get(value);
+    if (!entry) {
+      entry = { count: 0, sources: new Set(), categories: new Set() };
+      counts.set(value, entry);
+    }
+    entry.count += 1;
+    entry.sources.add(String(item?.sourceName ?? item?.sourceSignals?.[0]?.sourceName ?? item?.sourceSignals?.[0]?.source ?? ""));
+    entry.categories.add(String(item?.category ?? item?.categories?.[0] ?? ""));
+  }
+
+  return new Set(
+    [...counts.entries()]
+      .filter(([url, entry]) => {
+        if (entry.count < 3) return false;
+        return isWeakThumbnailUrl(url)
+          || /(?:^https?:\/\/lh3\.googleusercontent\.com\/|newsatcl-pctr\.c\.yimg\.jp\/t\/amd-img\/|news-pctr\.c\.yimg\.jp\/|news\.google\.com\/api\/attachments)/i.test(url)
+          || entry.sources.size >= 8
+          || entry.categories.size >= 6;
+      })
+      .map(([url]) => url),
+  );
 }
 
 async function mapWithConcurrency(items, concurrency, worker) {

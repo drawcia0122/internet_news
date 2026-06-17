@@ -14,6 +14,7 @@ const {
   hasCategory,
   hasVisibleSummary,
   normalizeTopic,
+  pickCardImageUrl,
   shortEventFromTitle,
 } = window.TopicClientUtils;
 
@@ -25,7 +26,9 @@ const searchButtonElement = document.querySelector('.news-search-button');
 const paginationElement = document.querySelector('#trend-pagination');
 
 const PAGE_SIZE = 16;
+const RENDER_BATCH_SIZE = 4;
 const NEWS_ARCHIVE_ENDPOINT = './data/news-archive.json';
+const TOPIC_CACHE_KEY = 'internet-news-browse-topic-cache-v2';
 const RANGE_CONFIG = {
   '24h': { minHours: 0, maxHours: 24, label: '24時間以内', searchWindowDays: 1 },
   '24-3d': { minHours: 24, maxHours: 72, label: '24時間〜3日', searchWindowDays: 3 },
@@ -39,10 +42,10 @@ let dedupedTrendItems = [];
 let activeCategory = 'all';
 let activeRange = '24h';
 let currentPage = 1;
-let archiveLoaded = false;
-let archiveLoadingPromise = null;
 let queryDebounceTimer = null;
+let renderPassId = 0;
 const rangeItemsCache = new Map();
+const normalizedTopicCache = new Map();
 
 document.addEventListener('error', (event) => {
   const image = event.target;
@@ -64,19 +67,23 @@ async function init() {
     trendItems = cachedTopics;
     currentTrendItems = cachedTopics.filter((item) => isWithinNewsRange(item, RANGE_CONFIG['24h']));
     archiveTrendItems = cachedTopics.filter((item) => !isWithinNewsRange(item, RANGE_CONFIG['24h']));
-    archiveLoaded = archiveTrendItems.length > 0;
     rebuildDerivedItems();
     updatedElement.textContent = 'キャッシュを表示中';
     void renderArchive();
   }
 
   try {
-    const archivePayload = await fetchJson(NEWS_ARCHIVE_ENDPOINT).catch(() => null);
-    const archiveItems = (archivePayload?.items ?? []).map((topic) => normalizeTopic(topic));
-    trendItems = [...archiveItems].sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
+    updatedElement.textContent = 'ニュースを読み込み中…';
+    const [archivePayload, browsePayload] = await Promise.all([
+      fetchJson(NEWS_ARCHIVE_ENDPOINT).catch(() => null),
+      fetchJson('./data/trend-topics-browse.json').catch(() => null),
+    ]);
+    const preparedArchive = await preparePrimaryArchiveItems(archivePayload?.items ?? []);
+    const browseItems = await normalizeTopicsInBatches(browsePayload?.items ?? []);
+    trendItems = [...preparedArchive.allItems, ...browseItems]
+      .sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
     currentTrendItems = trendItems.filter((item) => isWithinNewsRange(item, RANGE_CONFIG['24h']));
     archiveTrendItems = trendItems.filter((item) => !isWithinNewsRange(item, RANGE_CONFIG['24h']));
-    archiveLoaded = true;
     rebuildDerivedItems();
     updatedElement.textContent = archivePayload?.generatedAt
       ? formatDate(archivePayload.generatedAt) + ' 更新'
@@ -85,7 +92,6 @@ async function init() {
     trendItems = [];
     currentTrendItems = [];
     archiveTrendItems = [];
-    archiveLoaded = false;
     rebuildDerivedItems();
     updatedElement.textContent = '読み込み失敗';
   }
@@ -96,8 +102,6 @@ async function init() {
 }
 
 async function renderArchive() {
-  await ensureArchiveLoadedIfNeeded();
-
   const query = queryElement.value.trim().toLowerCase();
   const filtered = getRangeItems(activeRange)
     .filter((item) => activeCategory === 'all' || hasCategory(item, activeCategory))
@@ -120,42 +124,59 @@ async function renderArchive() {
 
   const startIndex = (currentPage - 1) * PAGE_SIZE;
   const pageItems = filtered.slice(startIndex, startIndex + PAGE_SIZE);
-  listElement.innerHTML = pageItems.map((item) => renderArchiveCard(item)).join('');
+  await renderArchivePageItems(pageItems);
   renderPagination(totalPages, filtered.length);
 }
 
-async function ensureArchiveLoadedIfNeeded() {
-  if (activeRange === '24h' || archiveLoaded) return;
-  if (archiveLoadingPromise) {
-    await archiveLoadingPromise;
-    return;
+async function preparePrimaryArchiveItems(rawItems) {
+  const inputItems = Array.isArray(rawItems) ? rawItems : [];
+  const allItems = [];
+  const currentItems = [];
+  const archiveItems = [];
+
+  for (const item of inputItems) {
+    if (!isRenderableArchiveItemRaw(item)) continue;
+    allItems.push(item);
+    if (isWithinNewsRange(item, RANGE_CONFIG['24h'])) currentItems.push(item);
+    else archiveItems.push(item);
   }
 
-  const previousUpdatedText = updatedElement?.textContent ?? '';
-  if (updatedElement) updatedElement.textContent = 'アーカイブを読み込み中…';
-  if (listElement && !listElement.children.length) {
-    listElement.innerHTML = '<div class="empty-tweets trend-empty"><strong>古いニュースを読み込み中です</strong><p>一覧表示のためにアーカイブデータを追加しています。</p></div>';
-  }
+  allItems.sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
+  currentItems.sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
+  archiveItems.sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
 
-  archiveLoadingPromise = (async () => {
-    const archivePayload = await fetchJson('./data/trend-topics-browse.json').catch(() => null);
-    archiveTrendItems = (archivePayload?.items ?? []).map((topic) => normalizeTopic(topic));
-    trendItems = [...currentTrendItems, ...archiveTrendItems]
-      .sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
-    rebuildDerivedItems();
-    archiveLoaded = true;
-    if (updatedElement) {
-      updatedElement.textContent = archivePayload?.generatedAt
-        ? formatDate(archivePayload.generatedAt) + ' 更新'
-        : (previousUpdatedText || '更新時刻不明');
+  return { allItems, currentItems, archiveItems };
+}
+
+async function normalizeTopicsInBatches(rawItems) {
+  return (Array.isArray(rawItems) ? rawItems : [])
+    .filter((item) => isRenderableArchiveItemRaw(item))
+    .sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
+}
+
+async function renderArchivePageItems(items) {
+  const passId = ++renderPassId;
+  listElement.innerHTML = '';
+
+  for (let index = 0; index < items.length; index += RENDER_BATCH_SIZE) {
+    if (passId !== renderPassId) return;
+    const chunkHtml = items
+      .slice(index, index + RENDER_BATCH_SIZE)
+      .map((item) => getNormalizedTopicForUi(item))
+      .filter((item) => isRenderableArchiveItem(item))
+      .map((item) => renderArchiveCard(item))
+      .join('');
+    listElement.insertAdjacentHTML('beforeend', chunkHtml);
+    if (index + RENDER_BATCH_SIZE < items.length) {
+      await waitForNextPaint();
     }
-  })();
-
-  try {
-    await archiveLoadingPromise;
-  } finally {
-    archiveLoadingPromise = null;
   }
+}
+
+function waitForNextPaint() {
+  return new Promise((resolve) => {
+    requestAnimationFrame(() => resolve());
+  });
 }
 
 function renderArchiveCard(item) {
@@ -298,12 +319,13 @@ async function fetchJson(endpoint) {
 }
 
 function saveTopicCache(topics) {
-  try { localStorage.setItem('internet-news-browse-topic-cache', JSON.stringify(topics ?? [])); } catch {}
+  try { localStorage.setItem(TOPIC_CACHE_KEY, JSON.stringify(topics ?? [])); } catch {}
 }
 
 function readTopicCache() {
   try {
-    const cached = JSON.parse(localStorage.getItem('internet-news-browse-topic-cache') ?? '[]');
+    localStorage.removeItem('internet-news-browse-topic-cache');
+    const cached = JSON.parse(localStorage.getItem(TOPIC_CACHE_KEY) ?? '[]');
     return Array.isArray(cached) ? cached : [];
   } catch {
     return [];
@@ -311,20 +333,7 @@ function readTopicCache() {
 }
 
 function getArchiveThumbnailUrl(item) {
-  const candidates = [
-    item?.thumbnailUrl,
-    item?.thumbnail,
-    item?.image,
-    item?.ogImage,
-    item?.twitterImage,
-    item?.sourceImage,
-  ];
-
-  for (const candidate of candidates) {
-    const normalized = sanitizeArchiveImageUrl(candidate);
-    if (normalized) return normalized;
-  }
-  return null;
+  return pickCardImageUrl(item);
 }
 
 function sanitizeArchiveImageUrl(value) {
@@ -367,6 +376,66 @@ function getArchiveSourceLabel(item) {
     ?? item?.sourceSignals?.[0]?.source
     ?? getPrimarySourceLabel(item)
     ?? '元記事';
+}
+
+function getNormalizedTopicForUi(item) {
+  const cacheKey = topicCacheKey(item);
+  if (normalizedTopicCache.has(cacheKey)) return normalizedTopicCache.get(cacheKey);
+  const normalized = normalizeTopic(item);
+  normalizedTopicCache.set(cacheKey, normalized);
+  return normalized;
+}
+
+function topicCacheKey(item) {
+  return item?.id
+    ?? [
+      item?.title ?? '',
+      item?.publishedAt ?? '',
+      item?.capturedAt ?? '',
+      item?.sourceUrl ?? '',
+      item?.sourceSignals?.[0]?.url ?? '',
+    ].join('::');
+}
+
+function isRenderableArchiveItem(item) {
+  const topic = getNormalizedTopicForUi(item);
+  const title = String(topic?.title ?? '').trim();
+  if (!title) return false;
+
+  const sourceLabel = String(
+    topic?.sourceName
+      ?? topic?.source
+      ?? topic?.sourceSignals?.[0]?.sourceName
+      ?? topic?.sourceSignals?.[0]?.source
+      ?? ''
+  ).toLowerCase();
+  const text = `${title} ${String(topic?.summary ?? '')} ${String(topic?.briefSummary ?? '')}`.toLowerCase();
+  const thumbnailUrl = String(topic?.thumbnailUrl ?? topic?.thumbnail ?? '');
+
+  if (/japanese-tech-writing\/skill|\/skill\.md\b|\/readme\b/.test(text)) return false;
+  if (sourceLabel.includes('はてな') && /githubassets\.com\/assets\/gist-og-image|anond\.hatelabo\.jp\/assets\//.test(thumbnailUrl)) return false;
+
+  return true;
+}
+
+function isRenderableArchiveItemRaw(item) {
+  const title = String(item?.title ?? '').trim();
+  if (!title) return false;
+
+  const sourceLabel = String(
+    item?.sourceName
+      ?? item?.source
+      ?? item?.sourceSignals?.[0]?.sourceName
+      ?? item?.sourceSignals?.[0]?.source
+      ?? ''
+  ).toLowerCase();
+  const text = `${title} ${String(item?.summary ?? '')} ${String(item?.briefSummary ?? '')}`.toLowerCase();
+  const thumbnailUrl = String(item?.thumbnailUrl ?? item?.thumbnail ?? '');
+
+  if (/japanese-tech-writing\/skill|\/skill\.md\b|\/readme\b/.test(text)) return false;
+  if (sourceLabel.includes('はてな') && /githubassets\.com\/assets\/gist-og-image|anond\.hatelabo\.jp\/assets\//.test(thumbnailUrl)) return false;
+
+  return true;
 }
 
 document.querySelectorAll('.news-range-tabs button').forEach((button) => {

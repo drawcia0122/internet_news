@@ -49,4 +49,4 @@ npm run refresh:stale
 
 ## Auto refresh
 
-`.github/workflows/refresh-news.yml` で 10 分ごとに自動更新します。前回の `generatedAt` から 10 分未満なら `scripts/refresh-trend-topics-if-stale.mjs` がスキップし、差分が出たときだけ JSON をコミットします。
+`.github/workflows/refresh-news.yml` で 30 分ごとに自動更新します。GitHub Actions の混雑しやすい毎時ちょうどを避けるため、実行時刻は `:07` と `:37` にしています。差分が出たときだけ JSON をコミットします。

@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile, readdir, unlink } from "node:fs/promises";
 
 import { buildDailyBrief } from "../lib/daily-brief.mjs";
 import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, extractEncodedUrlsFromHtml, hasSuspiciousThumbnailMismatch } from "../lib/thumbnail-utils.mjs";
@@ -186,6 +186,9 @@ const HOME_SOURCE_MAX = 2;
 const HOME_SOURCE_GROUP_MAX = 5;
 const HOME_PERSONAL_MIN = 18;
 const NEWS_ARCHIVE_MAX_ITEMS = 1500;
+const HOME_NEWS_MAX_ITEMS = 200;
+const HOME_NEWS_INITIAL_COUNT = 20;
+const HOME_NEWS_PAGE_SIZE = 10;
 const ADULT_NEWS_MAX_ITEMS = 80;
 const BROWSE_24_TO_3D_LIMIT = 360;
 const BROWSE_3_TO_7D_LIMIT = 120;
@@ -231,6 +234,10 @@ const newsArchivePayload = buildNewsArchivePayload({
   archiveItems: mergedArchiveItems,
   generatedAt: capturedAt,
 });
+const homeNewsPayloads = buildHomeNewsPayloads({
+  newsArchivePayload,
+  generatedAt: capturedAt,
+});
 const adultNewsPayload = buildAdultNewsPayload({
   archiveItems: mergedArchiveItems,
   generatedAt: capturedAt,
@@ -267,6 +274,19 @@ await writeFile(
   `${JSON.stringify(newsArchivePayload, null, 2)}\n`,
   "utf8",
 );
+await writeFile(
+  "data/home-news.json",
+  `${JSON.stringify(homeNewsPayloads.initial, null, 2)}\n`,
+  "utf8",
+);
+for (const page of homeNewsPayloads.pages) {
+  await writeFile(
+    `data/home-news-page-${page.page}.json`,
+    `${JSON.stringify(page.payload, null, 2)}\n`,
+    "utf8",
+  );
+}
+await removeStaleHomeNewsPages(homeNewsPayloads.pages.map((page) => page.page));
 await writeFile(
   "data/adult-news.json",
   `${JSON.stringify(adultNewsPayload, null, 2)}\n`,
@@ -632,6 +652,53 @@ function buildNewsArchivePayload({ archiveItems = [], generatedAt = new Date().t
       targetAudience: Array.isArray(item.targetAudience) ? item.targetAudience.slice(0, 4) : [],
     })),
   };
+}
+
+function buildHomeNewsPayloads({ newsArchivePayload, generatedAt = new Date().toISOString() }) {
+  const items = (Array.isArray(newsArchivePayload?.items) ? newsArchivePayload.items : []).slice(0, HOME_NEWS_MAX_ITEMS);
+  const totalCount = items.length;
+  const initialItems = items.slice(0, HOME_NEWS_INITIAL_COUNT);
+  const remainingItems = items.slice(HOME_NEWS_INITIAL_COUNT);
+  const pages = [];
+
+  for (let offset = 0; offset < remainingItems.length; offset += HOME_NEWS_PAGE_SIZE) {
+    const pageNumber = pages.length + 2;
+    const pageItems = remainingItems.slice(offset, offset + HOME_NEWS_PAGE_SIZE);
+    const deliveredCount = HOME_NEWS_INITIAL_COUNT + offset + pageItems.length;
+    const hasMore = deliveredCount < totalCount;
+    pages.push({
+      page: pageNumber,
+      payload: {
+        generatedAt,
+        totalCount,
+        hasMore,
+        nextPage: hasMore ? pageNumber + 1 : 0,
+        items: pageItems,
+      },
+    });
+  }
+
+  return {
+    initial: {
+      generatedAt,
+      totalCount,
+      hasMore: totalCount > HOME_NEWS_INITIAL_COUNT,
+      nextPage: totalCount > HOME_NEWS_INITIAL_COUNT ? 2 : 0,
+      items: initialItems,
+    },
+    pages,
+  };
+}
+
+async function removeStaleHomeNewsPages(activePages = []) {
+  const activeSet = new Set(activePages.map((value) => Number(value)).filter((value) => Number.isFinite(value)));
+  const entries = await readdir("data").catch(() => []);
+  const staleFiles = entries.filter((entry) => {
+    const match = entry.match(/^home-news-page-(\d+)\.json$/);
+    if (!match) return false;
+    return !activeSet.has(Number(match[1]));
+  });
+  await Promise.all(staleFiles.map((file) => unlink(`data/${file}`).catch(() => {})));
 }
 
 function buildAdultNewsPayload({ archiveItems = [], generatedAt = new Date().toISOString() }) {

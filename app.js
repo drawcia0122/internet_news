@@ -128,7 +128,7 @@ const PERSONAL_NEWS_LIMIT = 10;
 const MUST_READ_LIMIT = 10;
 const TODAY_NEWS_LIMIT = 10;
 const TOPIC_WORKING_SET_LIMIT = 96;
-const REFRESH_INTERVAL_MS = 3 * 60 * 1000;
+const REFRESH_INTERVAL_MS = 30 * 60 * 1000;
 const ADULT_HOME_LIMIT = 20;
 const EVENT_TAB_DEFINITIONS = [
   { key: 'closingSoon', label: '🔥もうすぐ終了', emptyTitle: '終了間近のイベントを整理中です', emptyText: '終了まで14日以内の開催中イベントをここに表示します。' },
@@ -210,6 +210,7 @@ renderDeferredPlaceholders();
 setupDeferredRenderObservers();
 recordPerfCount('initial');
 console.timeEnd('home:init');
+setRefreshStatusIdle();
 window.setTimeout(() => refreshLiveData({ silent: true }), 250);
 window.setInterval(() => {
   if (document.hidden) return;
@@ -285,6 +286,8 @@ async function loadTrendTopics() {
     setLatestTrendGeneratedAt(latestTrendGeneratedAt);
     trendTopics = [];
   }
+
+  setRefreshStatusIdle();
 
   homeTopicCacheStore.save(trendTopics);
   visibleTrendTopics = prepareVisibleTrendTopics(trendTopics);
@@ -1331,8 +1334,22 @@ function showRefreshStatus(message) {
   element.textContent = message;
   clearTimeout(refreshStatusTimer);
   refreshStatusTimer = window.setTimeout(() => {
-    element.textContent = '最新データを自動で確認中';
+    element.textContent = getRefreshStatusIdleText();
   }, 2200);
+}
+
+function setRefreshStatusIdle() {
+  const element = document.querySelector('#refresh-status');
+  if (!element) return;
+  clearTimeout(refreshStatusTimer);
+  element.textContent = getRefreshStatusIdleText();
+}
+
+function getRefreshStatusIdleText() {
+  if (latestTrendGeneratedAt) {
+    return '最終更新: ' + formatAbsoluteDate(latestTrendGeneratedAt) + ' / 30分ごとに自動確認中';
+  }
+  return '最新データを30分ごとに自動確認中';
 }
 
 function formatAbsoluteDate(dateString) {

@@ -197,15 +197,25 @@ const FETCH_STAGE_MIN_THUMBNAIL_RATE = 90;
 const FETCH_STAGE_REPAIR_CONCURRENCY = 6;
 const SUSPICIOUS_DUPLICATE_THUMBNAIL_MIN_COUNT = 8;
 
+const previousCurrentPayload = await readArchivePayload("data/trend-topics.json");
 const payload = await collectTrendTopics();
 await enrichItemsWithMetadata(payload.items ?? []);
 await ensureFetchStageThumbnailCoverage(payload.items ?? [], "fetched trend topics");
 const dedupedItems = dedupeNearDuplicateItems(payload.items ?? []);
 const capturedAt = payload.generatedAt ?? new Date().toISOString();
 const curatedItems = selectCuratedTrendItems(dedupedItems, MAX_CURRENT_ITEMS);
+const normalizedCuratedItems = curatedItems.map(normalizeStoredTopic);
+const fallbackCurrentItems = Array.isArray(previousCurrentPayload.items)
+  ? previousCurrentPayload.items.map(normalizeStoredTopic)
+  : [];
+const currentItems = normalizedCuratedItems.length ? normalizedCuratedItems : fallbackCurrentItems;
+const currentGeneratedAt = normalizedCuratedItems.length
+  ? capturedAt
+  : previousCurrentPayload.generatedAt ?? capturedAt;
 const currentPayload = {
   ...payload,
-  items: curatedItems.map(normalizeStoredTopic),
+  generatedAt: currentGeneratedAt,
+  items: currentItems,
 };
 
 const archivePath = "data/trend-topics-archive.json";

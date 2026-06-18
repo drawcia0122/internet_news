@@ -449,26 +449,84 @@ function getArchiveSourceLabel(item) {
 function matchesArchiveCategory(item, category) {
   if (!category || category === 'all') return true;
   if (!hasCategory(item, category)) return false;
-  if (category !== 'crime') return true;
-  return hasMeaningfulCrimeContext(item);
+  return hasMeaningfulCategoryContext(item, category);
 }
 
-function hasMeaningfulCrimeContext(item) {
-  const text = [
+function getCategoryContextText(item) {
+  return [
     item?.title,
     item?.summary,
     item?.briefSummary,
-    ...(Array.isArray(item?.sourceSignals) ? item.sourceSignals.flatMap((signal) => [
-      signal?.title,
-      signal?.summary,
-      signal?.sourceName,
-    ]) : []),
+    item?.sourceName,
+    item?.source,
+    item?.sourceSignals?.[0]?.sourceName,
+    item?.sourceSignals?.[0]?.source,
   ].filter(Boolean).join(' ').toLowerCase();
+}
 
+function hasMeaningfulCategoryContext(item, category) {
+  if (!category || category === 'all') return true;
+  const text = getCategoryContextText(item);
+  switch (category) {
+    case 'crime':
+      return hasMeaningfulCrimeContext(text);
+    case 'politics':
+      return hasMeaningfulPoliticsContext(text);
+    case 'business':
+      return hasMeaningfulBusinessContext(text);
+    case 'world':
+      return hasMeaningfulWorldContext(text);
+    case 'sports':
+      return hasMeaningfulSportsContext(text);
+    case 'adult':
+      return hasMeaningfulAdultContext(text);
+    default:
+      return true;
+  }
+}
+
+function hasMeaningfulCrimeContext(text) {
+  const value = String(text || '').toLowerCase();
   const strongCrimePattern = /逮捕|送検|起訴|判決|容疑|家宅捜索|県警|警視庁|詐欺|強盗|殺人|暴行|窃盗|横領|盗撮|放火|覚醒剤|大麻|わいせつ|書類送検|懲役|実刑|不起訴|保釈|死亡事故|特殊詐欺/;
   const falsePositivePattern = /事件簿|裁判ゲーム|裁判もの|魔女裁判|探偵|ミステリーadv|ミステリー|推理|逆転裁判|グランド・セフト・オート|gta|怪盗|名探偵|コナン|金田一/;
 
-  return strongCrimePattern.test(text) && !falsePositivePattern.test(text);
+  return strongCrimePattern.test(value) && !falsePositivePattern.test(value);
+}
+
+function hasMeaningfulPoliticsContext(text) {
+  const value = String(text || '').toLowerCase();
+  const strongPoliticsPattern = /政治|首相|政権|国会|選挙|与党|野党|議員|大統領|党派|官房長官|知事|憲法|法案|閣議|自民|立憲|維新|共産|公明|れいわ|国民民主|参院選|衆院選/;
+  const falsePositivePattern = /タカ派の大統領|選挙シム|総選挙シミュレーション|大統領シム/;
+  return strongPoliticsPattern.test(value) && !falsePositivePattern.test(value);
+}
+
+function hasMeaningfulBusinessContext(text) {
+  const value = String(text || '').toLowerCase();
+  const strongBusinessPattern = /株価|株式|日経平均|ダウ平均|株主総会|決算|企業|日銀|金利|経済|市場|投資|ipo|上場|円安|円高|物価|生産|業界|工場|売上|利益|為替|インフレ|関税|景気|賃上げ|買収|合併/;
+  const falsePositivePattern = /経済思想|ゲーム経済|book\s*1位|写真集|アニメ映画|ゲーム内経済/;
+  return strongBusinessPattern.test(value) && !falsePositivePattern.test(value);
+}
+
+function hasMeaningfulWorldContext(text) {
+  const value = String(text || '').toLowerCase();
+  const strongWorldPattern = /中国|米国|アメリカ|ウクライナ|ロシア|イラン|イスラエル|中東|外交|国際|米軍|戦況|フィリピン|カンボジア|トランプ|中央軍|nato|eu|国連|首脳会談|停戦|外相会談|大使館|領事館/;
+  const falsePositivePattern = /海外メジャー|海外男子|海外版|海外配信|海外アニメイベント|国際アニメ|世界観|ワールドプレミア|グローバルアプリ|国際建設・測量展/;
+  return strongWorldPattern.test(value) && !falsePositivePattern.test(value);
+}
+
+function hasMeaningfulSportsContext(text) {
+  const value = String(text || '').toLowerCase();
+  const strongSportsPattern = /野球|サッカー|フットサル|フットボール|jリーグ|w杯|ワールドカップ|日本代表|メジャーリーグ|mlb|npb|ドジャース|大谷|久保建英|三笘|阪神タイガース|巨人軍|巨人入り|読売ジャイアンツ|ジャイアンツ|バドミントン|テニス|ゴルフ|ラグビー|バレーボール|フィギュアスケート|柔道|剣道|相撲|高校野球|都市対抗|自転車ロードレース|自転車道路競走|ロードレース|甲子園|fifa|uefa|チャンピオンズリーグ|プレミアリーグ|リーガ|セリエa|nba|bリーグ|nhl|f1|motogp|箱根駅伝|マラソン|駅伝|soccer|dazn/;
+  const falsePositivePattern = /進撃の巨人|監督官|花火大会|献血運動推進全国大会|作品展|展示会|内覧会|同人イベント|アニメイベント|上映会|発売記念|コラボカフェ|写真集|グラビア|コスプレ/;
+
+  return strongSportsPattern.test(value) && !falsePositivePattern.test(value);
+}
+
+function hasMeaningfulAdultContext(text) {
+  const value = String(text || '').toLowerCase();
+  const strongAdultPattern = /av女優|セクシー女優|グラビア(?:アイドル)?|水着グラビア|写真集|デジタル写真集|グラドル|ランジェリー|ビキニ|下着姿|水着姿|水着|セクシーショット|美ボディ|豊満ボディ|美バスト|美尻|谷間|艶姿|くびれ|ボディライン|肌見せ|大胆カット|悩殺|抜群スタイル|r18|porn|adult|fanza|dlsite|dmm|gカップ|セクシー/;
+  const falsePositivePattern = /book\s*1位|写真集の夜飯沢|ジャパン写真集|大会で成長してる|サッカーユニフォーム|試合速報|大谷翔平|キャスト解禁|アニメ出演決定|トークイベント/;
+  return strongAdultPattern.test(value) && !falsePositivePattern.test(value);
 }
 
 function getNormalizedTopicForUi(item) {

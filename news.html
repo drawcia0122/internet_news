@@ -14,7 +14,7 @@
     <div class="ambient ambient-one"></div>
     <div class="ambient ambient-two"></div>
     <main class="topic-page news-page">
-      <a class="topic-back-link" href="./index.html#trends">← トップに戻る</a>
+      <a class="topic-back-link" id="news-back-link" href="./index.html#trends">← トップに戻る</a>
       <section class="topic-hero news-hero">
         <p class="section-kicker">NEWS ARCHIVE</p>
         <h1>ネットニュースを<br />もう少し深く追う。</h1>
@@ -68,6 +68,27 @@
       </section>
     </main>
     <script src="./shared-topic-utils.js?v=6"></script>
-    <script src="./news.js?v=14"></script>
+    <script src="./news.js?v=16"></script>
+    <script>
+      (function () {
+        const backLink = document.getElementById('news-back-link');
+        if (!backLink) return;
+
+        backLink.addEventListener('click', (event) => {
+          try {
+            const referrer = document.referrer ? new URL(document.referrer) : null;
+            const sameOrigin = referrer && referrer.origin === window.location.origin;
+            const fromHome = sameOrigin && /\/index\.html(?:[?#]|$)|\/$/.test(referrer.pathname + referrer.search + referrer.hash);
+
+            if (fromHome && window.history.length > 1) {
+              event.preventDefault();
+              window.history.back();
+            }
+          } catch {
+            // Fall back to the href navigation when referrer parsing fails.
+          }
+        });
+      }());
+    </script>
   </body>
 </html>

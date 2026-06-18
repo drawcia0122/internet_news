@@ -627,7 +627,7 @@ function buildNewsArchivePayload({ archiveItems = [], generatedAt = new Date().t
       capturedAt: item.capturedAt ?? generatedAt,
       time: item.time ?? item.sourceSignals?.[0]?.publishedLabel ?? null,
       sourceName: item.sourceName ?? item.sourceSignals?.[0]?.sourceName ?? item.sourceSignals?.[0]?.source ?? null,
-      sourceUrl: item.sourceUrl ?? item.sourceSignals?.find((signal) => !isGoogleNewsUrl(signal?.url))?.url ?? item.sourceSignals?.[0]?.url ?? null,
+      sourceUrl: chooseBestSourceUrl(item),
       hotReasons: Array.isArray(item.hotReasons) ? item.hotReasons.slice(0, 2) : [],
       sourceSignals: sanitizeSourceSignals(item.sourceSignals).slice(0, 3).map((signal) => ({
         sourceId: signal.sourceId ?? null,
@@ -734,7 +734,7 @@ function buildAdultNewsPayload({ archiveItems = [], generatedAt = new Date().toI
       capturedAt: item.capturedAt ?? generatedAt,
       time: item.time ?? item.sourceSignals?.[0]?.publishedLabel ?? null,
       sourceName: item.sourceName ?? item.sourceSignals?.[0]?.sourceName ?? item.sourceSignals?.[0]?.source ?? null,
-      sourceUrl: item.sourceUrl ?? item.sourceSignals?.find((signal) => !isGoogleNewsUrl(signal?.url))?.url ?? item.sourceSignals?.[0]?.url ?? null,
+      sourceUrl: chooseBestSourceUrl(item),
       hotReasons: Array.isArray(item.hotReasons) ? item.hotReasons.slice(0, 3) : [],
       targetAudience: Array.isArray(item.targetAudience) ? item.targetAudience.slice(0, 4) : [],
     })),
@@ -1595,6 +1595,77 @@ function canonicalSignalUrl(rawUrl) {
   } catch {
     return value.toLowerCase();
   }
+}
+
+function isLikelyHomepageUrl(rawUrl) {
+  const value = String(rawUrl ?? "").trim();
+  if (!value) return true;
+  try {
+    const parsed = new URL(value);
+    const path = parsed.pathname.replace(/\/+$/, "") || "/";
+    return (path === "/" || /^\/(?:index\.(?:html?|php)|home)?$/i.test(path)) && !parsed.search;
+  } catch {
+    return false;
+  }
+}
+
+function scoreSourceUrlCandidate(rawUrl, { canonical = false, sourceName = "" } = {}) {
+  const value = String(rawUrl ?? "").trim();
+  if (!value) return -1000;
+
+  try {
+    const parsed = new URL(value);
+    const path = parsed.pathname.replace(/\/+$/, "") || "/";
+    let score = 0;
+
+    if (isGoogleNewsUrl(value)) score -= 120;
+    if (isYahooPickupUrl(value)) score -= 90;
+    if (isLikelyHomepageUrl(value)) score -= 80;
+    else score += 40;
+
+    if (path.split("/").filter(Boolean).length >= 2) score += 18;
+    if (/\d{4}\/\d{2}\/\d{2}|\/article\/|\/articles\/|\/news\/|\/entry\/|\/story\/|\/topics?\//i.test(path)) score += 18;
+    if (/\.(?:html?|amp)$/i.test(path)) score += 8;
+    if (parsed.search) score += 3;
+    if (canonical) score += 5;
+    if (!String(sourceName ?? "").toLowerCase().includes("google news")) score += 4;
+
+    return score;
+  } catch {
+    return -1000;
+  }
+}
+
+function chooseBestSourceUrl(item) {
+  const candidates = [];
+  const pushCandidate = (url, meta = {}) => {
+    const value = String(url ?? "").trim();
+    if (!value) return;
+    candidates.push({
+      url: value,
+      score: scoreSourceUrlCandidate(value, meta),
+    });
+  };
+
+  pushCandidate(item?.sourceUrl, { sourceName: item?.sourceName });
+  pushCandidate(item?.url, { sourceName: item?.sourceName });
+  pushCandidate(item?.link, { sourceName: item?.sourceName });
+
+  const signals = sanitizeSourceSignals(item?.sourceSignals);
+  for (const signal of signals) {
+    pushCandidate(signal?.canonicalUrl, { canonical: true, sourceName: signal?.sourceName ?? signal?.source });
+    pushCandidate(signal?.url, { sourceName: signal?.sourceName ?? signal?.source });
+  }
+
+  const ranked = candidates
+    .filter((candidate) => candidate.score > -1000)
+    .sort((left, right) => right.score - left.score);
+
+  const direct = ranked.find((candidate) => !isLikelyHomepageUrl(candidate.url) && !isGoogleNewsUrl(candidate.url));
+  if (direct) return direct.url;
+
+  const fallback = ranked.find((candidate) => !isGoogleNewsUrl(candidate.url) && !isLikelyHomepageUrl(candidate.url));
+  return fallback?.url ?? null;
 }
 
 function isSourceSignalTimeClose(current, next, hours = 36) {

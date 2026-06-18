@@ -786,8 +786,8 @@ function renderEventCard(item, index) {
   const officialHost = item.sourceName ?? '公式サイト';
   const closingSoonBadge = buildClosingSoonBadge(item);
   const detailLink = item.detailUrl
-    ? '<a class="detail-link" href="' + escapeHtml(item.detailUrl) + '" target="_blank" rel="noreferrer">詳細ページ ↗</a>'
-    : '<span class="detail-link detail-link-muted">詳細準備中</span>';
+    ? '<a class="event-sub-link event-sub-link-primary" href="' + escapeHtml(item.detailUrl) + '" target="_blank" rel="noreferrer">参照元記事 ↗</a>'
+    : '<span class="event-sub-link event-sub-link-muted">参照元記事準備中</span>';
   const officialLink = item.officialUrl
     ? '<a class="event-sub-link" href="' + escapeHtml(item.officialUrl) + '" target="_blank" rel="noreferrer">公式サイト ↗</a>'
     : '<span class="event-sub-link event-sub-link-muted">公式サイト準備中</span>';

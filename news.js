@@ -28,7 +28,8 @@ const paginationElement = document.querySelector('#trend-pagination');
 const PAGE_SIZE = 16;
 const RENDER_BATCH_SIZE = 4;
 const NEWS_ARCHIVE_ENDPOINT = './data/news-archive.json';
-const TOPIC_CACHE_KEY = 'internet-news-browse-topic-cache-v2';
+const BROWSE_TOPICS_ENDPOINT = './data/trend-topics-browse.json';
+const TOPIC_CACHE_KEY = 'internet-news-browse-archive-cache-v3';
 const RANGE_CONFIG = {
   '24h': { minHours: 0, maxHours: 24, label: '24時間以内', searchWindowDays: 1 },
   '24-3d': { minHours: 24, maxHours: 72, label: '24時間〜3日', searchWindowDays: 3 },
@@ -42,6 +43,9 @@ let activeRange = '24h';
 let currentPage = 1;
 let queryDebounceTimer = null;
 let renderPassId = 0;
+let latestUpdatedLabel = '更新時刻不明';
+let browseItemsLoaded = false;
+let browseItemsPromise = null;
 const rangeItemsCache = new Map();
 const normalizedTopicCache = new Map();
 
@@ -64,39 +68,42 @@ async function init() {
   if (cachedTopics.length) {
     trendItems = cachedTopics;
     rebuildDerivedItems();
-    updatedElement.textContent = 'キャッシュを表示中';
+    latestUpdatedLabel = 'キャッシュを表示中';
+    updatedElement.textContent = latestUpdatedLabel;
     void renderArchive();
   }
 
   try {
     updatedElement.textContent = 'ニュースを読み込み中…';
-    const [archivePayload, browsePayload] = await Promise.all([
-      fetchJson(NEWS_ARCHIVE_ENDPOINT).catch(() => null),
-      fetchJson('./data/trend-topics-browse.json').catch(() => null),
-    ]);
+    const archivePayload = await fetchJson(NEWS_ARCHIVE_ENDPOINT).catch(() => null);
     const preparedArchive = await preparePrimaryArchiveItems(archivePayload?.items ?? []);
-    const browseItems = await normalizeTopicsInBatches(browsePayload?.items ?? []);
-    trendItems = [...preparedArchive.allItems, ...browseItems]
-      .sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
+    trendItems = preparedArchive.allItems;
     rebuildDerivedItems();
-    updatedElement.textContent = archivePayload?.generatedAt
+    latestUpdatedLabel = archivePayload?.generatedAt
       ? formatDate(archivePayload.generatedAt) + ' 更新'
       : '更新時刻不明';
+    updatedElement.textContent = latestUpdatedLabel;
   } catch {
     trendItems = [];
     rebuildDerivedItems();
-    updatedElement.textContent = '読み込み失敗';
+    latestUpdatedLabel = '読み込み失敗';
+    updatedElement.textContent = latestUpdatedLabel;
   }
 
   saveTopicCache(trendItems);
   updateRangeTabLabels();
   await renderArchive();
+  void warmBrowseItems();
 }
 
 async function renderArchive() {
+  if (activeRange !== '24h') {
+    await ensureBrowseItemsLoaded({ announce: true });
+  }
+
   const query = queryElement.value.trim().toLowerCase();
   const filtered = getRangeItems(activeRange)
-    .filter((item) => activeCategory === 'all' || hasCategory(item, activeCategory))
+    .filter((item) => activeCategory === 'all' || matchesArchiveCategory(item, activeCategory))
     .filter((item) => {
       if (!query) return true;
       return (String(item.title ?? '') + ' ' + String(item.summary ?? '')).toLowerCase().includes(query);
@@ -207,7 +214,10 @@ function updateRangeTabLabels() {
     const range = RANGE_CONFIG[button.dataset.range];
     if (!range) return;
     const count = getRangeItems(button.dataset.range).length;
-    button.textContent = range.label + ' (' + count + ')';
+    const isDeferredRange = button.dataset.range !== '24h' && !browseItemsLoaded;
+    button.textContent = isDeferredRange
+      ? range.label + ' (…)'
+      : range.label + ' (' + count + ')';
   });
 }
 
@@ -311,16 +321,55 @@ async function fetchJson(endpoint) {
 }
 
 function saveTopicCache(topics) {
-  try { localStorage.setItem(TOPIC_CACHE_KEY, JSON.stringify(topics ?? [])); } catch {}
+  try {
+    localStorage.setItem(TOPIC_CACHE_KEY, JSON.stringify({
+      items: Array.isArray(topics) ? topics : [],
+      cachedAt: new Date().toISOString(),
+    }));
+  } catch {}
 }
 
 function readTopicCache() {
   try {
     localStorage.removeItem('internet-news-browse-topic-cache');
-    const cached = JSON.parse(localStorage.getItem(TOPIC_CACHE_KEY) ?? '[]');
-    return Array.isArray(cached) ? cached : [];
+    const cached = JSON.parse(localStorage.getItem(TOPIC_CACHE_KEY) ?? 'null');
+    return Array.isArray(cached?.items) ? cached.items : [];
   } catch {
     return [];
+  }
+}
+
+async function warmBrowseItems() {
+  await ensureBrowseItemsLoaded({ announce: false });
+}
+
+async function ensureBrowseItemsLoaded({ announce = false } = {}) {
+  if (browseItemsLoaded) return;
+  if (!browseItemsPromise) {
+    browseItemsPromise = (async () => {
+      const browsePayload = await fetchJson(BROWSE_TOPICS_ENDPOINT).catch(() => null);
+      const browseItems = await normalizeTopicsInBatches(browsePayload?.items ?? []);
+      if (!browseItems.length) {
+        browseItemsLoaded = true;
+        return;
+      }
+
+      trendItems = [...trendItems, ...browseItems]
+        .sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
+      browseItemsLoaded = true;
+      rebuildDerivedItems();
+      updateRangeTabLabels();
+    })().finally(() => {
+      browseItemsPromise = null;
+    });
+  }
+
+  if (announce) {
+    updatedElement.textContent = '古いニュースを読み込み中…';
+  }
+  await browseItemsPromise;
+  if (announce) {
+    updatedElement.textContent = latestUpdatedLabel;
   }
 }
 
@@ -333,21 +382,59 @@ function getArchiveSourceUrl(item) {
     item?.sourceUrl,
     item?.url,
     item?.link,
+    item?.sourceSignals?.[0]?.canonicalUrl,
     item?.sourceSignals?.[0]?.url,
+    item?.sourceSignals?.[1]?.canonicalUrl,
+    item?.sourceSignals?.[1]?.url,
     item?.relatedArticles?.[0]?.url,
   ];
 
-  for (const candidate of candidates) {
-    const normalized = sanitizeArchiveSourceUrl(candidate);
-    if (normalized) return normalized;
-  }
-  return null;
+  const ranked = candidates
+    .map((candidate) => ({
+      url: sanitizeArchiveSourceUrl(candidate),
+      score: scoreArchiveSourceUrl(candidate),
+    }))
+    .filter((candidate) => candidate.url)
+    .sort((left, right) => right.score - left.score);
+
+  return ranked[0]?.url ?? null;
 }
 
 function sanitizeArchiveSourceUrl(value) {
   const url = String(value ?? '').trim();
   if (!url || !/^https?:\/\//i.test(url)) return null;
+  if (isLikelyHomepageArchiveUrl(url)) return null;
   return url;
+}
+
+function scoreArchiveSourceUrl(value) {
+  const url = String(value ?? '').trim();
+  if (!url || !/^https?:\/\//i.test(url)) return -1000;
+  try {
+    const parsed = new URL(url);
+    const path = parsed.pathname.replace(/\/+$/, '') || '/';
+    let score = 0;
+    if (isLikelyHomepageArchiveUrl(url)) score -= 100;
+    else score += 40;
+    if (parsed.hostname.toLowerCase() === 'news.google.com') score -= 120;
+    if (path.split('/').filter(Boolean).length >= 2) score += 16;
+    if (/\d{4}\/\d{2}\/\d{2}|\/article\/|\/articles\/|\/news\/|\/entry\/|\/story\/|\/topics?\//i.test(path)) score += 16;
+    if (/\.(?:html?|amp)$/i.test(path)) score += 8;
+    if (parsed.search) score += 3;
+    return score;
+  } catch {
+    return -1000;
+  }
+}
+
+function isLikelyHomepageArchiveUrl(value) {
+  try {
+    const parsed = new URL(String(value ?? '').trim());
+    const path = parsed.pathname.replace(/\/+$/, '') || '/';
+    return (path === '/' || /^\/(?:index\.(?:html?|php)|home)?$/i.test(path)) && !parsed.search;
+  } catch {
+    return false;
+  }
 }
 
 function getArchiveSourceLabel(item) {
@@ -357,6 +444,31 @@ function getArchiveSourceLabel(item) {
     ?? item?.sourceSignals?.[0]?.source
     ?? getPrimarySourceLabel(item)
     ?? '元記事';
+}
+
+function matchesArchiveCategory(item, category) {
+  if (!category || category === 'all') return true;
+  if (!hasCategory(item, category)) return false;
+  if (category !== 'crime') return true;
+  return hasMeaningfulCrimeContext(item);
+}
+
+function hasMeaningfulCrimeContext(item) {
+  const text = [
+    item?.title,
+    item?.summary,
+    item?.briefSummary,
+    ...(Array.isArray(item?.sourceSignals) ? item.sourceSignals.flatMap((signal) => [
+      signal?.title,
+      signal?.summary,
+      signal?.sourceName,
+    ]) : []),
+  ].filter(Boolean).join(' ').toLowerCase();
+
+  const strongCrimePattern = /逮捕|送検|起訴|判決|容疑|家宅捜索|県警|警視庁|詐欺|強盗|殺人|暴行|窃盗|横領|盗撮|放火|覚醒剤|大麻|わいせつ|書類送検|懲役|実刑|不起訴|保釈|死亡事故|特殊詐欺/;
+  const falsePositivePattern = /事件簿|裁判ゲーム|裁判もの|魔女裁判|探偵|ミステリーadv|ミステリー|推理|逆転裁判|グランド・セフト・オート|gta|怪盗|名探偵|コナン|金田一/;
+
+  return strongCrimePattern.test(text) && !falsePositivePattern.test(text);
 }
 
 function getNormalizedTopicForUi(item) {

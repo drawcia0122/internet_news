@@ -44,7 +44,6 @@
       shortEventFromTitle,
       trimMetaText,
     } = deps;
-    const href = './topic.html?id=' + encodeURIComponent(topic.id ?? '');
     const sourceUrl = getPrimarySourceUrl(topic);
     const sourceLabel = getPrimarySourceLabel(topic);
     const thumbnail = topic.thumbnailUrl ? buildTrendCardThumb(topic.thumbnailUrl, deps) : '';
@@ -79,7 +78,7 @@
             '<div><dt>誰に関係ある？</dt><dd>' + escapeHtml(audience) + '</dd></div>' +
           '</dl>' +
           relatedHtml +
-          '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span><a class="detail-link" href="' + escapeHtml(href) + '">もっと見る →</a></div>' +
+          '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span></div>' +
           (sourceUrl ? '<div class="trend-footer"><span></span><a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a></div>' : '') +
         '</article>';
     }
@@ -90,13 +89,13 @@
         '<div class="topic-cluster-body topic-cluster-body-channel">' +
           '<div class="topic-cluster-top"><span>' + escapeHtml(options.badge ?? 'TOPIC') + '</span><strong>' + escapeHtml(String(scoreValue)) + '</strong></div>' +
           '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(topic.time ?? '直近') + '</time></div>' +
-          '<h3><a class="topic-card-primary-link" href="' + escapeHtml(href) + '">' + escapeHtml(topic.title ?? '話題') + '</a></h3>' +
+          '<h3>' + escapeHtml(topic.title ?? '話題') + '</h3>' +
           '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
           '<dl class="trend-reason-list trend-reason-list-compact">' +
             '<div><dt>なぜ話題？</dt><dd>' + escapeHtml(topic.whyHot ?? buildWhyHotLabel(topic)) + '</dd></div>' +
             '<div><dt>代表トピック</dt><dd>' + escapeHtml(topic.importantPoint ?? buildImportantPoint(topic)) + '</dd></div>' +
           '</dl>' +
-          '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span><a class="detail-link" href="' + escapeHtml(href) + '">もっと見る →</a></div>' +
+          '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span></div>' +
           (sourceUrl ? '<div class="trend-footer"><span></span><a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a></div>' : '') +
         '</div>' +
       '</article>';
@@ -107,7 +106,7 @@
       '<div class="topic-cluster-body">' +
         '<div class="topic-cluster-top"><span>' + escapeHtml(options.badge ?? 'TOPIC') + '</span><strong>' + escapeHtml(String(scoreValue)) + '</strong></div>' +
         '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(topic.time ?? '直近') + '</time></div>' +
-        '<h3><a class="topic-card-primary-link" href="' + escapeHtml(href) + '">' + escapeHtml(topic.title ?? '話題') + '</a></h3>' +
+        '<h3>' + escapeHtml(topic.title ?? '話題') + '</h3>' +
         '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
         '<dl class="trend-reason-list">' +
           '<div><dt>なぜ話題？</dt><dd>' + escapeHtml(topic.whyHot ?? buildWhyHotLabel(topic)) + '</dd></div>' +
@@ -115,7 +114,7 @@
           '<div><dt>誰に関係ある？</dt><dd>' + escapeHtml(audience) + '</dd></div>' +
         '</dl>' +
         relatedHtml +
-        '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span><a class="detail-link" href="' + escapeHtml(href) + '">もっと見る →</a></div>' +
+        '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span></div>' +
         (sourceUrl ? '<div class="trend-footer"><span></span><a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a></div>' : '') +
       '</div>' +
     '</article>';
@@ -139,7 +138,6 @@
 
   function renderPriorityCard(topic, index, options = {}, deps = {}) {
     const { escapeHtml, getPrimarySourceUrl, getPrimarySourceLabel, hotTopicScore, shortEventFromTitle, buildImportantPoint } = deps;
-    const href = './topic.html?id=' + encodeURIComponent(topic.id ?? '');
     const sourceUrl = getPrimarySourceUrl(topic);
     const sourceLabel = getPrimarySourceLabel(topic);
     const reasons = (topic.personalReasons ?? topic.hotReasons ?? []).slice(0, 3);
@@ -148,13 +146,13 @@
     return '<article class="priority-card" style="animation-delay:' + (index * 55) + 'ms">' +
       thumb +
       '<div class="priority-card-top"><span>' + escapeHtml(options.badge) + '</span><strong>' + escapeHtml(String(Math.round(Number(topic.personalScore ?? hotTopicScore(topic) ?? 0)))) + '</strong></div>' +
-      '<h3><a class="topic-card-primary-link" href="' + escapeHtml(href) + '">' + escapeHtml(topic.title ?? 'ニュース') + '</a></h3>' +
+      '<h3>' + escapeHtml(topic.title ?? 'ニュース') + '</h3>' +
       '<p>' + escapeHtml(topic.whatHappened ?? shortEventFromTitle(topic.title)) + '</p>' +
       '<dl class="trend-reason-list priority-reasons">' +
       '<div><dt>なぜ見る？</dt><dd>' + escapeHtml(topic.importantPoint ?? buildImportantPoint(topic)) + '</dd></div>' +
       '<div><dt>関係ある人</dt><dd>' + escapeHtml(audience) + '</dd></div>' +
       '</dl>' +
-      '<div class="priority-chip-row">' + (sourceUrl ? '<a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a>' : '<a class="detail-link" href="' + escapeHtml(href) + '">詳しく見る →</a>') + '</div>' +
+      '<div class="priority-chip-row">' + (sourceUrl ? '<a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a>' : '<span class="detail-link">リンクなし</span>') + '</div>' +
       '<div class="priority-chip-row">' + reasons.map((reason) => '<span>' + escapeHtml(reason) + '</span>').join('') + '</div>' +
       '</article>';
   }

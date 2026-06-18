@@ -642,7 +642,6 @@ function renderTrends(filter = 'all', { preserveCount = false } = {}) {
 
   const limited = filtered.slice(0, trendVisibleCount);
   const cards = limited.map((trend, index) => {
-    const href = getTrendPrimaryUrl(trend, index);
     const sourceUrl = getPrimarySourceUrl(trend);
     const sourceLabel = getPrimarySourceLabel(trend);
     const hasThumbnail = Boolean(trend.thumbnailUrl);
@@ -653,7 +652,7 @@ function renderTrends(filter = 'all', { preserveCount = false } = {}) {
     return '<article class="' + escapeHtml('trend-card trend-card-rich ' + (hasThumbnail ? 'has-thumb' : 'trend-card-no-thumb')) + '" style="animation-delay:' + (index * 70) + 'ms">' +
       thumb +
       '<div><div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(trend)) + '</span><time>' + escapeHtml(trend.time ?? '直近') + '</time></div>' +
-      '<h3><a class="topic-card-primary-link" href="' + escapeHtml(href) + '">' + escapeHtml(trend.title ?? 'ニュース') + '</a></h3>' +
+      '<h3>' + escapeHtml(trend.title ?? 'ニュース') + '</h3>' +
       summaryHtml +
       insightHtml +
       scoreSummary +
@@ -1171,10 +1170,6 @@ function renderRankingGroup(topics) {
     return ['<li class="side-empty"><span>--</span><span>話題なし</span><small>24h</small></li>'];
   }
   return topics.map((topic, index) => '<li><a class="ranking-link" href="./topic.html?id=' + encodeURIComponent(topic.id ?? '') + '"><span>0' + (index + 1) + '</span><span>' + escapeHtml(topic.title) + '</span><small>' + escapeHtml(topic.time ?? '直近') + '</small></a></li>');
-}
-
-function getTrendPrimaryUrl(trend, index) {
-  return './topic.html?id=' + encodeURIComponent(trend.id ?? (trend.category + '-' + index));
 }
 
 function pickPrimaryHotTopics(topics, limit = 3) {

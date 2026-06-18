@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T23:04:44.287Z",
+  "generatedAt": "2026-06-18T00:24:22.701Z",
   "sourceCandidates": [
     {
       "name": "SCRAP / リアル脱出ゲーム",
@@ -210,6 +210,34 @@
       "sourceName": "アニメイト Gratte",
       "sourceUrl": "https://www.animate.co.jp/gratte/",
       "thumbnailUrl": "https://www.animate.co.jp/assets/uploads/2026/05/1778660859-a42f2f9b29ced186e6ee1d1b77393243-1920x1356.jpg",
+      "tags": [
+        "tokyo",
+        "collab-cafe",
+        "gratte",
+        "upcoming",
+        "anime"
+      ],
+      "recommendationReasons": [
+        "東京開催",
+        "開催予定",
+        "コラボカフェ好き向け",
+        "アニメ・漫画好き向け"
+      ]
+    },
+    {
+      "id": "www-animate-co-jp-gratte-44221",
+      "title": "トリッカル×Gratte",
+      "startDate": "2026-06-18",
+      "endDate": "2026-07-05",
+      "venue": "アニメイトアニメイト池袋本店",
+      "location": "東京都",
+      "category": "アニメ / コラボカフェ",
+      "description": "アニメイトアニメイト池袋本店 を中心に展開される トリッカル×Gratte のコラボカフェ系イベントです。開催予定を確認しやすい一覧から取得しています。",
+      "detailUrl": "https://www.animate.co.jp/gratte/44221/",
+      "officialUrl": "https://www.animate.co.jp/gratte/",
+      "sourceName": "アニメイト Gratte",
+      "sourceUrl": "https://www.animate.co.jp/gratte/",
+      "thumbnailUrl": "https://www.animate.co.jp/assets/uploads/2026/06/1780984915-cdaf34e5dd090df71b358adeb218623b-1920x1356.jpg",
       "tags": [
         "tokyo",
         "collab-cafe",
@@ -737,34 +765,6 @@
       ]
     },
     {
-      "id": "www-animate-co-jp-gratte-44221",
-      "title": "トリッカル×Gratte",
-      "startDate": "2026-06-18",
-      "endDate": "2026-07-05",
-      "venue": "アニメイトアニメイト池袋本店",
-      "location": "東京都",
-      "category": "アニメ / コラボカフェ",
-      "description": "アニメイトアニメイト池袋本店 を中心に展開される トリッカル×Gratte のコラボカフェ系イベントです。開催予定を確認しやすい一覧から取得しています。",
-      "detailUrl": "https://www.animate.co.jp/gratte/44221/",
-      "officialUrl": "https://www.animate.co.jp/gratte/",
-      "sourceName": "アニメイト Gratte",
-      "sourceUrl": "https://www.animate.co.jp/gratte/",
-      "thumbnailUrl": "https://www.animate.co.jp/assets/uploads/2026/06/1780984915-cdaf34e5dd090df71b358adeb218623b-1920x1356.jpg",
-      "tags": [
-        "tokyo",
-        "collab-cafe",
-        "gratte",
-        "upcoming",
-        "anime"
-      ],
-      "recommendationReasons": [
-        "東京開催",
-        "開催予定",
-        "コラボカフェ好き向け",
-        "アニメ・漫画好き向け"
-      ]
-    },
-    {
       "id": "www-animate-co-jp-onlyshop-45352",
       "title": "ときめきメモリアル アニメイトオンリーショップ2026",
       "startDate": "2026-06-06",
@@ -815,6 +815,60 @@
       "recommendationReasons": [
         "脱出ゲーム好き向け",
         "東京開催",
+        "コラボ系"
+      ]
+    },
+    {
+      "id": "mysterycircus-jp-topics-13853",
+      "title": "リアル脱出ゲーム『仕立て屋シャルロッテの秘密』（リバイバル）",
+      "startDate": "2026-06-25",
+      "endDate": "2026-08-30",
+      "venue": "東京ミステリーサーカス",
+      "location": "東京都",
+      "category": "体験型 / リアル脱出ゲーム",
+      "description": "東京都 の 東京ミステリーサーカス を中心に展開される リアル脱出ゲーム『仕立て屋シャルロッテの秘密』（リバイバル）。SCRAP公式の公開イベントAPIから取得しています。",
+      "detailUrl": "https://mysterycircus.jp/topics/13853",
+      "officialUrl": "https://realdgame.jp/",
+      "sourceName": "SCRAP / リアル脱出ゲーム",
+      "sourceUrl": "https://api.scrapmagazine.com/public/api/2/events",
+      "thumbnailUrl": "https://dttj1kl1hn9zl.cloudfront.net/images/detailed/2/%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%AD%E3%83%83%E3%83%86%E3%81%AE%E7%A7%98%E5%AF%86%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%92%E3%82%99%E3%82%B7%E3%82%99%E3%83%A5%E3%82%A2%E3%83%AB.jpg",
+      "tags": [
+        "escape",
+        "scrap",
+        "tokyo",
+        "collaboration",
+        "game"
+      ],
+      "recommendationReasons": [
+        "脱出ゲーム好き向け",
+        "東京開催",
+        "コラボ系"
+      ]
+    },
+    {
+      "id": "realdgame-jp-ajito-yokohama-event-orionre-html",
+      "title": "リアル脱出ゲーム『惑星オリオンからの脱出』（リバイバル）",
+      "startDate": "2026-06-18",
+      "endDate": "2026-07-05",
+      "venue": "リアル脱出ゲーム横浜店",
+      "location": "神奈川県",
+      "category": "体験型 / リアル脱出ゲーム",
+      "description": "神奈川県 の リアル脱出ゲーム横浜店 を中心に展開される リアル脱出ゲーム『惑星オリオンからの脱出』（リバイバル）。SCRAP公式の公開イベントAPIから取得しています。",
+      "detailUrl": "http://realdgame.jp/ajito/yokohama/event/orionre.html",
+      "officialUrl": "https://realdgame.jp/",
+      "sourceName": "SCRAP / リアル脱出ゲーム",
+      "sourceUrl": "https://api.scrapmagazine.com/public/api/2/events",
+      "thumbnailUrl": "https://scrapticket.jp/content_logo/85599f53408a4612d478d9aa034976cc.jpg",
+      "tags": [
+        "escape",
+        "scrap",
+        "kanto",
+        "collaboration",
+        "game"
+      ],
+      "recommendationReasons": [
+        "脱出ゲーム好き向け",
+        "関東で行きやすい",
         "コラボ系"
       ]
     },
@@ -1014,33 +1068,6 @@
       ]
     },
     {
-      "id": "realdgame-jp-ajito-yokohama-event-orionre-html",
-      "title": "リアル脱出ゲーム『惑星オリオンからの脱出』（リバイバル）",
-      "startDate": "2026-06-18",
-      "endDate": "2026-07-05",
-      "venue": "リアル脱出ゲーム横浜店",
-      "location": "神奈川県",
-      "category": "体験型 / リアル脱出ゲーム",
-      "description": "神奈川県 の リアル脱出ゲーム横浜店 を中心に展開される リアル脱出ゲーム『惑星オリオンからの脱出』（リバイバル）。SCRAP公式の公開イベントAPIから取得しています。",
-      "detailUrl": "http://realdgame.jp/ajito/yokohama/event/orionre.html",
-      "officialUrl": "https://realdgame.jp/",
-      "sourceName": "SCRAP / リアル脱出ゲーム",
-      "sourceUrl": "https://api.scrapmagazine.com/public/api/2/events",
-      "thumbnailUrl": "https://scrapticket.jp/content_logo/85599f53408a4612d478d9aa034976cc.jpg",
-      "tags": [
-        "escape",
-        "scrap",
-        "kanto",
-        "collaboration",
-        "game"
-      ],
-      "recommendationReasons": [
-        "脱出ゲーム好き向け",
-        "関東で行きやすい",
-        "コラボ系"
-      ]
-    },
-    {
       "id": "www-animate-co-jp-gratte-45300",
       "title": "「BUSTAFELLOWS」Happy SHU day × Gratte",
       "startDate": "2026-06-26",
@@ -1094,31 +1121,6 @@
         "開催予定",
         "コラボカフェ好き向け",
         "アニメ・漫画好き向け"
-      ]
-    },
-    {
-      "id": "realdgame-jp-ajito-okayama-event-magnolia-html",
-      "title": "リアル脱出ゲーム『マグノリア銀行からの脱出』（リバイバル）",
-      "startDate": "2026-01-09",
-      "endDate": "2026-06-28",
-      "venue": "リアル脱出ゲーム岡山店",
-      "location": "岡山県",
-      "category": "体験型 / リアル脱出ゲーム",
-      "description": "岡山県 の リアル脱出ゲーム岡山店 を中心に展開される リアル脱出ゲーム『マグノリア銀行からの脱出』（リバイバル）。SCRAP公式の公開イベントAPIから取得しています。",
-      "detailUrl": "https://realdgame.jp/ajito/okayama/event/magnolia.html",
-      "officialUrl": "https://realdgame.jp/",
-      "sourceName": "SCRAP / リアル脱出ゲーム",
-      "sourceUrl": "https://api.scrapmagazine.com/public/api/2/events",
-      "thumbnailUrl": "https://scrapticket.jp/content_logo/e93b5bdc966fec3c3e935673a6afd1db.jpg",
-      "tags": [
-        "escape",
-        "scrap",
-        "collaboration",
-        "game"
-      ],
-      "recommendationReasons": [
-        "脱出ゲーム好き向け",
-        "コラボ系"
       ]
     },
     {

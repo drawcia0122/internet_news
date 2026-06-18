@@ -405,14 +405,6 @@ async function fetchTrendTopicsPayload() {
   });
 }
 
-async function fetchNewsArchivePayload() {
-  return await fetchJsonWithCache({
-    cacheKey: 'news-archive-current',
-    endpoints: ['./data/news-archive.json'],
-    onFetchMetric: (metric) => perfMetrics.fetches.push(metric),
-  });
-}
-
 async function fetchHomeNewsInitialPayload() {
   return await fetchJsonWithCache({
     cacheKey: 'home-news-initial',

@@ -36,8 +36,6 @@ const RANGE_CONFIG = {
 };
 
 let trendItems = [];
-let currentTrendItems = [];
-let archiveTrendItems = [];
 let dedupedTrendItems = [];
 let activeCategory = 'all';
 let activeRange = '24h';
@@ -65,8 +63,6 @@ async function init() {
   const cachedTopics = readTopicCache();
   if (cachedTopics.length) {
     trendItems = cachedTopics;
-    currentTrendItems = cachedTopics.filter((item) => isWithinNewsRange(item, RANGE_CONFIG['24h']));
-    archiveTrendItems = cachedTopics.filter((item) => !isWithinNewsRange(item, RANGE_CONFIG['24h']));
     rebuildDerivedItems();
     updatedElement.textContent = 'キャッシュを表示中';
     void renderArchive();
@@ -82,16 +78,12 @@ async function init() {
     const browseItems = await normalizeTopicsInBatches(browsePayload?.items ?? []);
     trendItems = [...preparedArchive.allItems, ...browseItems]
       .sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
-    currentTrendItems = trendItems.filter((item) => isWithinNewsRange(item, RANGE_CONFIG['24h']));
-    archiveTrendItems = trendItems.filter((item) => !isWithinNewsRange(item, RANGE_CONFIG['24h']));
     rebuildDerivedItems();
     updatedElement.textContent = archivePayload?.generatedAt
       ? formatDate(archivePayload.generatedAt) + ' 更新'
       : '更新時刻不明';
   } catch {
     trendItems = [];
-    currentTrendItems = [];
-    archiveTrendItems = [];
     rebuildDerivedItems();
     updatedElement.textContent = '読み込み失敗';
   }
@@ -334,17 +326,6 @@ function readTopicCache() {
 
 function getArchiveThumbnailUrl(item) {
   return pickCardImageUrl(item);
-}
-
-function sanitizeArchiveImageUrl(value) {
-  const url = String(value ?? '').trim();
-  if (!url || !/^https?:\/\//i.test(url)) return null;
-  if (/^https?:\/\/lh3\.googleusercontent\.com\/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc(?:=|$)/i.test(url)) return null;
-  if (/(?:^|\/)(?:favicon(?:-\d+x\d+)?|apple-touch-icon|android-chrome-\d+x\d+|mstile-\d+x\d+)(?:\.[a-z0-9]+)?(?:$|[?#])/i.test(url)) return null;
-  if (/\/favicon\.ico(?:$|[?#])/i.test(url)) return null;
-  if (/(?:google|gstatic)\.[^/]+\/.*(?:favicon|logo|icon)/i.test(url)) return null;
-  if (/logo|icon/i.test(url) && !/\.(?:jpe?g|png|webp)(?:$|[?#])/i.test(url)) return null;
-  return url;
 }
 
 function getArchiveSourceUrl(item) {

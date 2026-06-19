@@ -179,7 +179,8 @@ const GENERIC_TOKENS = new Set(["速報", "公開", "発表", "開始", "決定"
 const MAX_CURRENT_ITEMS = 180;
 const MAX_ARCHIVE_ITEMS = 5200;
 const DEDUPE_BUCKET_SCAN_LIMIT = 80;
-const METADATA_ENRICH_LIMIT = MAX_ARCHIVE_ITEMS;
+const CURRENT_METADATA_ENRICH_LIMIT = MAX_CURRENT_ITEMS;
+const ARCHIVE_METADATA_ENRICH_LIMIT = 320;
 const METADATA_ENRICH_CONCURRENCY = 8;
 const HOME_TOPIC_LIMIT = 30;
 const HOME_SOURCE_MAX = 2;
@@ -195,16 +196,17 @@ const BROWSE_3_TO_7D_LIMIT = 120;
 const BROWSE_7_TO_14D_LIMIT = 30;
 const FETCH_STAGE_MIN_THUMBNAIL_RATE = 90;
 const FETCH_STAGE_REPAIR_CONCURRENCY = 6;
+const FETCH_STAGE_REPAIR_LIMIT = 120;
 const SUSPICIOUS_DUPLICATE_THUMBNAIL_MIN_COUNT = 8;
 const FETCH_STAGE_THUMBNAIL_STRICT = process.env.FETCH_STAGE_THUMBNAIL_STRICT === "1";
 
 const previousCurrentPayload = await readArchivePayload("data/trend-topics.json");
 const payload = await collectTrendTopics();
-await enrichItemsWithMetadata(payload.items ?? []);
-await ensureFetchStageThumbnailCoverage(payload.items ?? [], "fetched trend topics");
 const dedupedItems = dedupeNearDuplicateItems(payload.items ?? []);
 const capturedAt = payload.generatedAt ?? new Date().toISOString();
 const curatedItems = selectCuratedTrendItems(dedupedItems, MAX_CURRENT_ITEMS);
+await enrichItemsWithMetadata(curatedItems, { limit: CURRENT_METADATA_ENRICH_LIMIT });
+await ensureFetchStageThumbnailCoverage(curatedItems, "current trend topics", { repairLimit: FETCH_STAGE_REPAIR_LIMIT });
 const normalizedCuratedItems = curatedItems.map(normalizeStoredTopic);
 const fallbackCurrentItems = Array.isArray(previousCurrentPayload.items)
   ? previousCurrentPayload.items.map(normalizeStoredTopic)
@@ -233,7 +235,7 @@ const mergedArchiveItems = dedupeNearDuplicateItems(
     dedupedItems.map(normalizeArchiveItem),
   ).filter((item) => isWithinArchiveWindow(item, capturedAt) && shouldKeepArchiveItem(item)),
 );
-await enrichItemsWithMetadata(mergedArchiveItems);
+await enrichItemsWithMetadata(mergedArchiveItems, { limit: ARCHIVE_METADATA_ENRICH_LIMIT });
 const archiveGeneratedAt = hasFreshArchiveItems
   ? capturedAt
   : pickLatestGeneratedAt([
@@ -1166,7 +1168,7 @@ function isFalsePositiveMatomeTopic(value) {
   return /(サウンドバー|スピーカー|ホームシアター|オーディオ|アンプ|テレビ|tv|番組|放送|5ch「|5ch\\b[^まス反]|2chのデジタル・ミキサー|1泊家族|まとめ売り)/.test(text);
 }
 
-async function enrichItemsWithMetadata(items) {
+async function enrichItemsWithMetadata(items, { limit = ARCHIVE_METADATA_ENRICH_LIMIT } = {}) {
   const prioritizedItems = [...items]
     .filter((item) => {
       const thumbnailUrl = sanitizeThumbnailUrl(item.thumbnailUrl);
@@ -1176,13 +1178,13 @@ async function enrichItemsWithMetadata(items) {
         || hasSuspiciousThumbnailMismatch(thumbnailUrl, item, ...(item.sourceSignals ?? []));
     })
     .sort((left, right) => metadataPriority(right) - metadataPriority(left))
-    .slice(0, METADATA_ENRICH_LIMIT);
+    .slice(0, Math.max(0, limit));
   await mapWithConcurrency(prioritizedItems, METADATA_ENRICH_CONCURRENCY, async (item) => {
     await enrichItemMetadata(item);
   });
 }
 
-async function ensureFetchStageThumbnailCoverage(items, label) {
+async function ensureFetchStageThumbnailCoverage(items, label, { repairLimit = FETCH_STAGE_REPAIR_LIMIT } = {}) {
   const initialDuplicateUrls = collectSuspiciousDuplicateThumbnailUrls(items);
   const initial = thumbnailCoverageStats(items, initialDuplicateUrls);
   console.log(`[thumbnail:fetch] ${label} initial=${initial.found}/${initial.total} (${initial.rate.toFixed(1)}%)`);
@@ -1191,8 +1193,9 @@ async function ensureFetchStageThumbnailCoverage(items, label) {
   const repairTargets = [...items]
     .filter((item) => !hasAcceptableThumbnail(item, initialDuplicateUrls))
     .sort((left, right) => metadataPriority(right) - metadataPriority(left));
+  const limitedRepairTargets = repairTargets.slice(0, Math.max(0, repairLimit));
 
-  await mapWithConcurrency(repairTargets, FETCH_STAGE_REPAIR_CONCURRENCY, async (item) => {
+  await mapWithConcurrency(limitedRepairTargets, FETCH_STAGE_REPAIR_CONCURRENCY, async (item) => {
     await enrichItemMetadata(item, { force: true });
     if (!hasAcceptableThumbnail(item, initialDuplicateUrls)) {
       await repairItemThumbnail(item);

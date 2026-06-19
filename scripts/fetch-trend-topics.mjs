@@ -209,10 +209,16 @@ const normalizedCuratedItems = curatedItems.map(normalizeStoredTopic);
 const fallbackCurrentItems = Array.isArray(previousCurrentPayload.items)
   ? previousCurrentPayload.items.map(normalizeStoredTopic)
   : [];
+const hasFreshCurrentItems = normalizedCuratedItems.length > 0;
+const hasFreshArchiveItems = dedupedItems.length > 0;
+const previousStableGeneratedAt = pickLatestGeneratedAt([
+  previousCurrentPayload.generatedAt,
+  payload.generatedAt,
+]);
 const currentItems = normalizedCuratedItems.length ? normalizedCuratedItems : fallbackCurrentItems;
-const currentGeneratedAt = normalizedCuratedItems.length
+const currentGeneratedAt = hasFreshCurrentItems
   ? capturedAt
-  : previousCurrentPayload.generatedAt ?? capturedAt;
+  : previousStableGeneratedAt ?? capturedAt;
 const currentPayload = {
   ...payload,
   generatedAt: currentGeneratedAt,
@@ -228,36 +234,55 @@ const mergedArchiveItems = dedupeNearDuplicateItems(
   ).filter((item) => isWithinArchiveWindow(item, capturedAt) && shouldKeepArchiveItem(item)),
 );
 await enrichItemsWithMetadata(mergedArchiveItems);
+const archiveGeneratedAt = hasFreshArchiveItems
+  ? capturedAt
+  : pickLatestGeneratedAt([
+    archivePayload.generatedAt,
+    previousCurrentPayload.generatedAt,
+  ]) ?? currentGeneratedAt;
 const nextArchivePayload = {
-  generatedAt: capturedAt,
+  generatedAt: archiveGeneratedAt,
   items: limitArchiveItems(mergedArchiveItems, MAX_ARCHIVE_ITEMS),
 };
+const derivedGeneratedAt = hasFreshCurrentItems || hasFreshArchiveItems
+  ? capturedAt
+  : pickLatestGeneratedAt([
+    previousCurrentPayload.generatedAt,
+    archivePayload.generatedAt,
+  ]) ?? currentGeneratedAt;
 const dailyBriefPayload = buildDailyBrief({
   currentItems: currentPayload.items,
   archiveItems: mergedArchiveItems,
-  generatedAt: capturedAt,
+  generatedAt: derivedGeneratedAt,
 });
 const browseTopicsPayload = buildBrowseTopicsPayload({
   archiveItems: mergedArchiveItems,
-  generatedAt: capturedAt,
+  generatedAt: derivedGeneratedAt,
 });
 const newsArchivePayload = buildNewsArchivePayload({
   archiveItems: mergedArchiveItems,
-  generatedAt: capturedAt,
+  generatedAt: derivedGeneratedAt,
 });
 const homeNewsPayloads = buildHomeNewsPayloads({
   newsArchivePayload,
-  generatedAt: capturedAt,
+  generatedAt: derivedGeneratedAt,
 });
 const adultNewsPayload = buildAdultNewsPayload({
   archiveItems: mergedArchiveItems,
-  generatedAt: capturedAt,
+  generatedAt: derivedGeneratedAt,
 });
 const homeTopicsPayload = buildHomeTopicsPayload({
   currentItems: currentPayload.items,
   archiveItems: mergedArchiveItems,
-  generatedAt: capturedAt,
+  generatedAt: derivedGeneratedAt,
 });
+
+if (!hasFreshCurrentItems) {
+  console.warn("[trend-topics] no fresh current topics fetched; preserving previous current snapshot timestamp.");
+}
+if (!hasFreshArchiveItems) {
+  console.warn("[trend-topics] no fresh archive topics fetched; preserving previous archive-derived timestamps.");
+}
 
 await mkdir("data", { recursive: true });
 await writeFile(
@@ -311,6 +336,19 @@ await writeFile(
 
 logThumbnailCoverage(currentPayload.items);
 console.log(`Saved ${currentPayload.items.length} trend topic(s).`);
+
+function pickLatestGeneratedAt(values = []) {
+  const timestamps = values
+    .map((value) => {
+      if (!value) return null;
+      const time = new Date(value).getTime();
+      if (!Number.isFinite(time) || time <= 0) return null;
+      return { value, time };
+    })
+    .filter(Boolean)
+    .sort((left, right) => right.time - left.time);
+  return timestamps[0]?.value ?? null;
+}
 
 function normalizeStoredTopic(item) {
   const { thumbnail: _thumbnail, ...baseItem } = item;

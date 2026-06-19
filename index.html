@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=39" />
+    <link rel="stylesheet" href="./styles.css?v=40" />
   </head>
   <body>
     <div class="ambient ambient-one"></div>
@@ -24,6 +24,7 @@
       </a>
       <nav class="desktop-nav" aria-label="メインナビゲーション">
         <a class="active" href="#must-read-news">今日のインターネット</a>
+        <a href="./game.html">ゲーム</a>
         <a href="#personal-news">自分向けニュース</a>
         <a href="#featured-events">注目イベント</a>
         <a href="#today-news">今日のニュース</a>
@@ -40,6 +41,7 @@
 
     <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="モバイルナビゲーション" hidden>
       <a href="#must-read-news">今日のインターネット</a>
+      <a href="./game.html">ゲーム</a>
       <a href="#personal-news">自分向けニュース</a>
       <a href="#featured-events">注目イベント</a>
       <a href="#today-news">今日のニュース</a>
@@ -67,6 +69,22 @@
 
       <section class="refresh-strip" aria-label="更新状態">
         <p id="refresh-status">最新データを自動で確認中</p>
+      </section>
+
+      <section class="focus-section game-entry-section" id="game-hub-entry" aria-labelledby="game-hub-entry-heading">
+        <div class="game-entry-card">
+          <div class="section-heading section-heading-stack">
+            <div>
+              <p class="section-kicker">GAME HUB</p>
+              <h2 id="game-hub-entry-heading">ゲーム</h2>
+            </div>
+            <p class="brief-description">ニュース一覧ではなく、話題量ランキング、急上昇ワード、Steamセール、無料配布、大会、発売予定をまとめて見て、今ゲーム業界で何が起きているかを3分で把握する専用ページです。</p>
+          </div>
+          <div class="game-entry-actions">
+            <a class="primary-button" href="./game.html">ゲームページへ <span>→</span></a>
+            <p>タイトル別の話題量、前日比、セール、無料配布、イベント、発売カレンダーを集計表示</p>
+          </div>
+        </div>
       </section>
 
       <section class="focus-section" id="must-read-news" aria-labelledby="must-read-news-heading">
@@ -283,6 +301,7 @@
     <script src="./home-brief-utils.js?v=4"></script>
     <script src="./home-render-utils.js?v=4"></script>
     <script src="./home-data-utils.js?v=4"></script>
+    <script src="./adult-age-gate.js?v=1"></script>
     <script src="./app.js?v=30"></script>
   </body>
 </html>

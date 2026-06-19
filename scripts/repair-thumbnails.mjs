@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { resolveThumbnail, sanitizeThumbnailUrl, extractEncodedUrlsFromHtml, isWeakThumbnailUrl, hasSuspiciousThumbnailMismatch, isAggregatorThumbnailUrl } from "../lib/thumbnail-utils.mjs";
+import { resolveThumbnail, sanitizeThumbnailUrl, extractEncodedUrlsFromHtml, isWeakThumbnailUrl, hasSuspiciousThumbnailMismatch, isAggregatorThumbnailUrl, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
 
 const DEFAULT_DATA_FILES = [
   "data/news-archive.json",
@@ -14,7 +14,7 @@ const DEFAULT_DATA_FILES = [
   "data/adult-news.json",
 ];
 
-const CONCURRENCY = 10;
+const CONCURRENCY = 1;
 const FETCH_TIMEOUT_MS = 15000;
 
 async function main() {
@@ -65,12 +65,14 @@ function needsThumbnailRepair(item, duplicateThumbnailUrls = new Set()) {
   if (duplicateThumbnailUrls.has(String(item?.thumbnailUrl ?? "").trim())) return true;
   if (!sanitizeThumbnailUrl(item?.thumbnailUrl)) return true;
   if (isWeakThumbnailUrl(item?.thumbnailUrl)) return true;
+  if (isLowResolutionThumbnailUrl(item?.thumbnailUrl)) return true;
   if (hasSuspiciousThumbnailMismatch(item?.thumbnailUrl, item)) return true;
   return Array.isArray(item?.sourceSignals) && item.sourceSignals.some((signal) => {
     const value = signal?.thumbnailUrl;
     return duplicateThumbnailUrls.has(String(value ?? "").trim())
       || !sanitizeThumbnailUrl(value)
       || isWeakThumbnailUrl(value)
+      || isLowResolutionThumbnailUrl(value)
       || hasSuspiciousThumbnailMismatch(value, signal, item);
   });
 }
@@ -102,7 +104,7 @@ async function resolveThumbnailFromHtml(html, sourceUrl) {
     sourceUrl,
   });
   const thumbnailUrl = sanitizeThumbnailUrl(resolved?.thumbnailUrl || resolved?.thumbnail, sourceUrl);
-  if (thumbnailUrl && !isWeakThumbnailUrl(thumbnailUrl) && !isAggregatorThumbnailUrl(thumbnailUrl)) return thumbnailUrl;
+  if (thumbnailUrl && !isWeakThumbnailUrl(thumbnailUrl) && !isLowResolutionThumbnailUrl(thumbnailUrl) && !isAggregatorThumbnailUrl(thumbnailUrl)) return thumbnailUrl;
   return null;
 }
 
@@ -187,7 +189,7 @@ function applyThumbnail(item, thumbnailUrl) {
   if (!Array.isArray(item.sourceSignals)) return;
   for (const signal of item.sourceSignals) {
     if (!signal) continue;
-    if (!sanitizeThumbnailUrl(signal.thumbnailUrl) || isWeakThumbnailUrl(signal.thumbnailUrl) || hasSuspiciousThumbnailMismatch(signal.thumbnailUrl, signal, item)) {
+    if (!sanitizeThumbnailUrl(signal.thumbnailUrl) || isWeakThumbnailUrl(signal.thumbnailUrl) || isLowResolutionThumbnailUrl(signal.thumbnailUrl) || hasSuspiciousThumbnailMismatch(signal.thumbnailUrl, signal, item)) {
       signal.thumbnailUrl = thumbnailUrl;
       signal.thumbnail = thumbnailUrl;
     }

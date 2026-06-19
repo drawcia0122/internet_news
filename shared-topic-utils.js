@@ -181,9 +181,17 @@
     return null;
   }
 
+  function isProxyThumbnailUrl(url) {
+    const value = String(url ?? '').trim();
+    return /(?:^https?:\/\/)(?:newsatcl-pctr\.c\.yimg\.jp|news-pctr\.c\.yimg\.jp)\//i.test(value)
+      || /^https?:\/\/news\.google\.com\/api\/attachments\//i.test(value)
+      || /^https?:\/\/lh3\.googleusercontent\.com\//i.test(value);
+  }
+
   function isWeakThumbnailUrl(url) {
     const value = String(url ?? '').trim();
     if (!value) return true;
+    if (isProxyThumbnailUrl(value)) return true;
     return /^https?:\/\/(?:[^/]+\.)?yimg\.jp\/?$/i.test(value)
       || /^https?:\/\/img\.youtube\.com\/?$/i.test(value)
       || /^https?:\/\/b\.hatena\.ne\.jp\/entry\/image\//i.test(value)
@@ -194,12 +202,26 @@
   function sanitizeCardImageUrl(value) {
     const url = String(value ?? '').trim();
     if (!url || !/^https?:\/\//i.test(url)) return null;
+    try {
+      const parsed = new URL(url);
+      const pathname = parsed.pathname.toLowerCase();
+      const search = parsed.search.toLowerCase();
+      const hasImageExtension = /\.(?:avif|bmp|gif|heic|heif|jpeg|jpg|png|svg|webp)(?:$|[?#])/i.test(pathname);
+      const looksLikeImageAsset = /(?:\/|^)(?:images?|img|media|photo|photos|thumbnail|thumb|banner|ogp|avatar|icons?)(?:\/|$)/i.test(pathname)
+        || /[?&](?:format|fm|ext|image|img|photo|thumbnail|thumb|width|height)=/i.test(search)
+        || /\/_next\/image$/i.test(pathname);
+      if (!hasImageExtension && !looksLikeImageAsset) return null;
+    } catch {
+      return null;
+    }
     if (isWeakThumbnailUrl(url)) return null;
     if (/^https?:\/\/lh3\.googleusercontent\.com\/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc(?:=|$)/i.test(url)) return null;
     if (/^https?:\/\/lh3\.googleusercontent\.com\/zpUAWPoFO8BgmXeHZna-q2AFE1ss9PWr2E16kntkjD5pyjVWfWEhzza9qBxRpMypBCYTnINVLw(?:=|$)/i.test(url)) return null;
     if (/(?:^|\/)(?:favicon(?:-\d+x\d+)?|apple-touch-icon|android-chrome-\d+x\d+|mstile-\d+x\d+)(?:\.[a-z0-9]+)?(?:$|[?#])/i.test(url)) return null;
     if (/\/favicon\.ico(?:$|[?#])/i.test(url)) return null;
     if (/(?:google|gstatic)\.[^/]+\/.*(?:favicon|logo|icon)/i.test(url)) return null;
+    if (/(?:^|[/?#&=_-])(logo|icon|menu|nav|sns-share|share-icon|social-icon|site-logo|header-logo|brand-logo)(?:[/?#&=._-]|$)/i.test(url)) return null;
+    if (/(?:btng?menu|thumbnail-default|ogp(?:[-_]?default|logo)|siteLogo|squarelogo|townlogo|yamashin_ogplogo|[a-z0-9_-]*logo)(?:\.[a-z0-9]+)?(?:$|[?#])/i.test(url)) return null;
     return url;
   }
 

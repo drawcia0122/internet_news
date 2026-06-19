@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile, readdir, unlink } from "node:fs/promises";
 
 import { buildDailyBrief } from "../lib/daily-brief.mjs";
-import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, extractEncodedUrlsFromHtml, hasSuspiciousThumbnailMismatch } from "../lib/thumbnail-utils.mjs";
+import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, extractEncodedUrlsFromHtml, hasSuspiciousThumbnailMismatch, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
 import { collectTrendTopics } from "../lib/trend-aggregator.mjs";
 import { repairItemThumbnail } from "./repair-thumbnails.mjs";
 
@@ -180,7 +180,7 @@ const MAX_CURRENT_ITEMS = 180;
 const MAX_ARCHIVE_ITEMS = 5200;
 const DEDUPE_BUCKET_SCAN_LIMIT = 80;
 const CURRENT_METADATA_ENRICH_LIMIT = MAX_CURRENT_ITEMS;
-const ARCHIVE_METADATA_ENRICH_LIMIT = 320;
+const ARCHIVE_METADATA_ENRICH_LIMIT = 900;
 const METADATA_ENRICH_CONCURRENCY = 8;
 const HOME_TOPIC_LIMIT = 30;
 const HOME_SOURCE_MAX = 2;
@@ -197,6 +197,8 @@ const BROWSE_7_TO_14D_LIMIT = 30;
 const FETCH_STAGE_MIN_THUMBNAIL_RATE = 90;
 const FETCH_STAGE_REPAIR_CONCURRENCY = 6;
 const FETCH_STAGE_REPAIR_LIMIT = 120;
+const ARCHIVE_FETCH_STAGE_REPAIR_LIMIT = 900;
+const ARCHIVE_THUMBNAIL_COVERAGE_LIMIT = NEWS_ARCHIVE_MAX_ITEMS;
 const SUSPICIOUS_DUPLICATE_THUMBNAIL_MIN_COUNT = 8;
 const FETCH_STAGE_THUMBNAIL_STRICT = process.env.FETCH_STAGE_THUMBNAIL_STRICT === "1";
 
@@ -236,6 +238,11 @@ const mergedArchiveItems = dedupeNearDuplicateItems(
   ).filter((item) => isWithinArchiveWindow(item, capturedAt) && shouldKeepArchiveItem(item)),
 );
 await enrichItemsWithMetadata(mergedArchiveItems, { limit: ARCHIVE_METADATA_ENRICH_LIMIT });
+await ensureFetchStageThumbnailCoverage(
+  selectItemsForArchiveThumbnailCoverage(mergedArchiveItems, ARCHIVE_THUMBNAIL_COVERAGE_LIMIT),
+  "news archive",
+  { repairLimit: ARCHIVE_FETCH_STAGE_REPAIR_LIMIT },
+);
 const archiveGeneratedAt = hasFreshArchiveItems
   ? capturedAt
   : pickLatestGeneratedAt([
@@ -1175,6 +1182,7 @@ async function enrichItemsWithMetadata(items, { limit = ARCHIVE_METADATA_ENRICH_
       return !hasUsefulSummary(item.summary)
         || !thumbnailUrl
         || isWeakThumbnailUrl(thumbnailUrl)
+        || isLowResolutionThumbnailUrl(thumbnailUrl)
         || hasSuspiciousThumbnailMismatch(thumbnailUrl, item, ...(item.sourceSignals ?? []));
     })
     .sort((left, right) => metadataPriority(right) - metadataPriority(left))
@@ -1230,8 +1238,15 @@ function hasAcceptableThumbnail(item, duplicateThumbnailUrls = new Set()) {
   if (!thumbnailUrl) return false;
   if (duplicateThumbnailUrls.has(thumbnailUrl)) return false;
   if (isWeakThumbnailUrl(thumbnailUrl)) return false;
+  if (isLowResolutionThumbnailUrl(thumbnailUrl)) return false;
   if (hasSuspiciousThumbnailMismatch(thumbnailUrl, item, ...(item?.sourceSignals ?? []))) return false;
   return true;
+}
+
+function selectItemsForArchiveThumbnailCoverage(items, limit = ARCHIVE_THUMBNAIL_COVERAGE_LIMIT) {
+  return [...items]
+    .sort((left, right) => archiveTimestamp(right) - archiveTimestamp(left))
+    .slice(0, Math.max(0, limit));
 }
 
 function metadataPriority(item) {
@@ -1241,6 +1256,7 @@ function metadataPriority(item) {
   if (!hasUsefulSummary(item.summary)) priority += 50;
   if (!thumbnailUrl) priority += 20;
   if (isWeakThumbnailUrl(thumbnailUrl)) priority += 35;
+  if (isLowResolutionThumbnailUrl(thumbnailUrl)) priority += 18;
   if (hasSuspiciousThumbnailMismatch(thumbnailUrl, item, ...(item.sourceSignals ?? []))) priority += 45;
   return priority;
 }
@@ -1283,6 +1299,7 @@ async function enrichItemMetadata(item, { force = false } = {}) {
   const currentThumbnail = sanitizeThumbnailUrl(item.thumbnailUrl);
   const shouldReplaceItemThumbnail = !currentThumbnail
     || isWeakThumbnailUrl(currentThumbnail)
+    || isLowResolutionThumbnailUrl(currentThumbnail)
     || hasSuspiciousThumbnailMismatch(currentThumbnail, item, ...(item.sourceSignals ?? []));
   if (shouldReplaceItemThumbnail && bestMetadata.thumbnailUrl) {
     item.thumbnailUrl = bestMetadata.thumbnailUrl;
@@ -1303,6 +1320,7 @@ async function enrichItemMetadata(item, { force = false } = {}) {
       const entryThumbnail = sanitizeThumbnailUrl(entry.thumbnailUrl ?? entry.thumbnail);
       const shouldReplaceEntryThumbnail = !entryThumbnail
         || isWeakThumbnailUrl(entryThumbnail)
+        || isLowResolutionThumbnailUrl(entryThumbnail)
         || hasSuspiciousThumbnailMismatch(entryThumbnail, entry, item);
       return {
         ...entry,
@@ -1325,7 +1343,7 @@ function mergeFetchedMetadata(current, next, title = "") {
   }
   const merged = { ...current };
   const nextThumb = sanitizeThumbnailUrl(next?.thumbnailUrl ?? next?.thumbnail);
-  if ((!merged.thumbnailUrl || isWeakThumbnailUrl(merged.thumbnailUrl)) && nextThumb) merged.thumbnailUrl = nextThumb;
+  if ((!merged.thumbnailUrl || isWeakThumbnailUrl(merged.thumbnailUrl) || isLowResolutionThumbnailUrl(merged.thumbnailUrl)) && nextThumb) merged.thumbnailUrl = nextThumb;
   if (merged.thumbnailUrl && hasSuspiciousThumbnailMismatch(merged.thumbnailUrl, next) && nextThumb && !hasSuspiciousThumbnailMismatch(nextThumb, next)) {
     merged.thumbnailUrl = nextThumb;
   }

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "python3 -m http.server 8000",
     "refresh": "node scripts/refresh-data.mjs",
+    "refresh:strict": "FETCH_STAGE_THUMBNAIL_STRICT=1 node scripts/refresh-data.mjs",
     "refresh:full": "REPAIR_THUMBNAILS=1 node scripts/refresh-data.mjs",
     "refresh:news": "node scripts/fetch-trend-topics.mjs",
     "refresh:events": "node scripts/fetch-events.mjs",

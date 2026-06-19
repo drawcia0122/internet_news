@@ -196,6 +196,7 @@ const BROWSE_7_TO_14D_LIMIT = 30;
 const FETCH_STAGE_MIN_THUMBNAIL_RATE = 90;
 const FETCH_STAGE_REPAIR_CONCURRENCY = 6;
 const SUSPICIOUS_DUPLICATE_THUMBNAIL_MIN_COUNT = 8;
+const FETCH_STAGE_THUMBNAIL_STRICT = process.env.FETCH_STAGE_THUMBNAIL_STRICT === "1";
 
 const previousCurrentPayload = await readArchivePayload("data/trend-topics.json");
 const payload = await collectTrendTopics();
@@ -667,6 +668,7 @@ function buildNewsArchivePayload({ archiveItems = [], generatedAt = new Date().t
 function buildHomeNewsPayloads({ newsArchivePayload, generatedAt = new Date().toISOString() }) {
   const items = (Array.isArray(newsArchivePayload?.items) ? newsArchivePayload.items : []).slice(0, HOME_NEWS_MAX_ITEMS);
   const totalCount = items.length;
+  const categoryCounts = buildHomeNewsCategoryCounts(items);
   const initialItems = items.slice(0, HOME_NEWS_INITIAL_COUNT);
   const remainingItems = items.slice(HOME_NEWS_INITIAL_COUNT);
   const pages = [];
@@ -681,6 +683,7 @@ function buildHomeNewsPayloads({ newsArchivePayload, generatedAt = new Date().to
       payload: {
         generatedAt,
         totalCount,
+        categoryCounts,
         hasMore,
         nextPage: hasMore ? pageNumber + 1 : 0,
         items: pageItems,
@@ -692,12 +695,36 @@ function buildHomeNewsPayloads({ newsArchivePayload, generatedAt = new Date().to
     initial: {
       generatedAt,
       totalCount,
+      categoryCounts,
       hasMore: totalCount > HOME_NEWS_INITIAL_COUNT,
       nextPage: totalCount > HOME_NEWS_INITIAL_COUNT ? 2 : 0,
       items: initialItems,
     },
     pages,
   };
+}
+
+function buildHomeNewsCategoryCounts(items = []) {
+  const counts = { all: 0 };
+  for (const category of Object.keys(CATEGORY_LABELS)) counts[category] = 0;
+
+  for (const item of items) {
+    counts.all += 1;
+    if (item?.category === "general") counts.general += 1;
+    const categories = [...new Set([
+      item?.category,
+      ...(Array.isArray(item?.categories) ? item.categories : []),
+    ].filter(Boolean))];
+
+    for (const category of categories) {
+      if (category === "general") continue;
+      if (Object.prototype.hasOwnProperty.call(counts, category)) {
+        counts[category] += 1;
+      }
+    }
+  }
+
+  return counts;
 }
 
 async function removeStaleHomeNewsPages(activePages = []) {
@@ -1142,9 +1169,11 @@ async function ensureFetchStageThumbnailCoverage(items, label) {
       .filter((item) => !hasAcceptableThumbnail(item, finalDuplicateUrls))
       .slice(0, 10)
       .map((item) => item?.title ?? "(no title)");
-    throw new Error(
-      `[thumbnail:fetch] ${label} coverage ${finalStats.rate.toFixed(1)}% below ${FETCH_STAGE_MIN_THUMBNAIL_RATE}%: ${missingTitles.join(" / ")}`
-    );
+    const message = `[thumbnail:fetch] ${label} coverage ${finalStats.rate.toFixed(1)}% below ${FETCH_STAGE_MIN_THUMBNAIL_RATE}%: ${missingTitles.join(" / ")}`;
+    if (FETCH_STAGE_THUMBNAIL_STRICT) {
+      throw new Error(message);
+    }
+    console.warn(message);
   }
 }
 

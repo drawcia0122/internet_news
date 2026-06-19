@@ -2830,6 +2830,11 @@ h1 span {
   margin-top: 22px;
 }
 
+.pagination-row-top {
+  justify-content: flex-end;
+  margin: 0 0 14px;
+}
+
 .pagination-button {
   min-width: 42px;
   min-height: 42px;
@@ -2841,6 +2846,11 @@ h1 span {
   cursor: pointer;
   font-size: 10px;
   font-weight: 900;
+}
+
+.pagination-button-wide {
+  min-width: 132px;
+  padding: 0 18px;
 }
 
 .pagination-button.active {
@@ -3281,6 +3291,10 @@ h1 span {
   display: grid;
   gap: 12px;
   margin-bottom: 20px;
+}
+
+.news-archive-actions {
+  min-height: 42px;
 }
 
 .news-search-field input {

@@ -38,6 +38,7 @@
       getPrimarySourceUrl,
       getPrimarySourceLabel,
       categoryDisplayLabel,
+      formatTopicDisplayTime,
       hotTopicScore,
       buildWhyHotLabel,
       buildImportantPoint,
@@ -69,7 +70,7 @@
       return '<article class="must-read-card-shell">' +
           thumbnail +
           '<div class="topic-cluster-top"><span>' + escapeHtml(options.badge ?? 'TOPIC') + '</span><strong>' + escapeHtml(String(scoreValue)) + '</strong></div>' +
-          '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(topic.time ?? '直近') + '</time></div>' +
+          '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(formatTopicDisplayTime(topic)) + '</time></div>' +
           '<h3>' + escapeHtml(topic.title ?? '話題') + '</h3>' +
           '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
           '<dl class="trend-reason-list">' +
@@ -88,7 +89,7 @@
         thumbnail +
         '<div class="topic-cluster-body topic-cluster-body-channel">' +
           '<div class="topic-cluster-top"><span>' + escapeHtml(options.badge ?? 'TOPIC') + '</span><strong>' + escapeHtml(String(scoreValue)) + '</strong></div>' +
-          '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(topic.time ?? '直近') + '</time></div>' +
+          '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(formatTopicDisplayTime(topic)) + '</time></div>' +
           '<h3>' + escapeHtml(topic.title ?? '話題') + '</h3>' +
           '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
           '<dl class="trend-reason-list trend-reason-list-compact">' +
@@ -105,7 +106,7 @@
       thumbnail +
       '<div class="topic-cluster-body">' +
         '<div class="topic-cluster-top"><span>' + escapeHtml(options.badge ?? 'TOPIC') + '</span><strong>' + escapeHtml(String(scoreValue)) + '</strong></div>' +
-        '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(topic.time ?? '直近') + '</time></div>' +
+        '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(formatTopicDisplayTime(topic)) + '</time></div>' +
         '<h3>' + escapeHtml(topic.title ?? '話題') + '</h3>' +
         '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
         '<dl class="trend-reason-list">' +

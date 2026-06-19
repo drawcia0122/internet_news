@@ -5,6 +5,7 @@ const {
   categoryDisplayLabel,
   categoryLabelFor,
   escapeHtml,
+  formatTopicDisplayTime,
   mergeReports,
   normalizeTopic,
   shortEventFromTitle,
@@ -73,7 +74,7 @@ function renderTopic(topic) {
   titleElement.textContent = topic.title;
   summaryElement.textContent = buildTopicHeroSummary(topic);
   metricElement.textContent = String(topic.posts ?? 1) + ' ' + (topic.metricLabel ?? 'signals');
-  timeElement.textContent = topic.time ?? '直近';
+  timeElement.textContent = formatTopicDisplayTime(topic);
   categoriesElement.innerHTML = renderCategoryChips(topic);
   signalSummaryElement.textContent = buildSignalSummary(topic);
   if (heroElement && topic.thumbnailUrl) {

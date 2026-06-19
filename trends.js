@@ -10,6 +10,7 @@ const {
   defaultSearchQueryForCategory,
   escapeHtml,
   formatDate,
+  formatTopicDisplayTime,
   getPrimarySourceLabel,
   getPrimarySourceUrl,
   hasCategory,
@@ -157,7 +158,7 @@ function renderTrendCard(item) {
   const insightHtml = renderInsightList(item);
   const cardClass = 'trend-card trend-card-rich trend-card-link' + (hasThumbnail ? ' has-thumb' : ' trend-card-no-thumb');
   const bodyHtml =
-    '<div><div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(item)) + '</span><time>' + escapeHtml(item.time ?? formatDate(item.capturedAt)) + '</time></div>' +
+    '<div><div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(item)) + '</span><time>' + escapeHtml(formatTopicDisplayTime(item)) + '</time></div>' +
     '<h3>' + escapeHtml(item.title ?? 'ニュース') + '</h3>' + summaryHtml +
     insightHtml +
     '<div class="trend-footer"><span><strong>' + escapeHtml(String(item.posts ?? 1)) + '</strong> ' + escapeHtml(item.metricLabel ?? 'source') + '</span>' +

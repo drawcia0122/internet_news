@@ -9,6 +9,7 @@ const {
   defaultSearchQueryForCategory,
   escapeHtml,
   formatDate,
+  formatTopicDisplayTime,
   getPrimarySourceLabel,
   getPrimarySourceUrl,
   hasCategory,
@@ -24,12 +25,15 @@ const updatedElement = document.querySelector('#news-updated');
 const queryElement = document.querySelector('#news-query');
 const searchButtonElement = document.querySelector('.news-search-button');
 const paginationElement = document.querySelector('#trend-pagination');
+const archiveActionsElement = document.querySelector('#news-archive-actions');
 
-const PAGE_SIZE = 16;
+const PAGE_SIZE = 20;
 const RENDER_BATCH_SIZE = 4;
+const HOME_NEWS_ENDPOINT = './data/home-news.json';
 const NEWS_ARCHIVE_ENDPOINT = './data/news-archive.json';
 const BROWSE_TOPICS_ENDPOINT = './data/trend-topics-browse.json';
-const TOPIC_CACHE_KEY = 'internet-news-browse-archive-cache-v3';
+const TOPIC_CACHE_KEY = 'internet-news-browse-archive-cache-v5';
+const MAX_CACHED_HOME_ITEMS = 80;
 const RANGE_CONFIG = {
   '24h': { minHours: 0, maxHours: 24, label: '24時間以内', searchWindowDays: 1 },
   '24-3d': { minHours: 24, maxHours: 72, label: '24時間〜3日', searchWindowDays: 3 },
@@ -46,6 +50,11 @@ let renderPassId = 0;
 let latestUpdatedLabel = '更新時刻不明';
 let browseItemsLoaded = false;
 let browseItemsPromise = null;
+let fullArchiveLoaded = false;
+let fullArchivePromise = null;
+let showAllResults = false;
+let homeNewsTotalCount = null;
+let homeNewsCategoryCounts = {};
 const rangeItemsCache = new Map();
 const normalizedTopicCache = new Map();
 
@@ -75,9 +84,13 @@ async function init() {
 
   try {
     updatedElement.textContent = 'ニュースを読み込み中…';
-    const archivePayload = await fetchJson(NEWS_ARCHIVE_ENDPOINT).catch(() => null);
+    const archivePayload = await fetchJson(HOME_NEWS_ENDPOINT).catch(() => null);
     const preparedArchive = await preparePrimaryArchiveItems(archivePayload?.items ?? []);
-    trendItems = preparedArchive.allItems;
+    trendItems = preparedArchive;
+    homeNewsTotalCount = Number.isFinite(Number(archivePayload?.totalCount)) ? Number(archivePayload.totalCount) : preparedArchive.length;
+    homeNewsCategoryCounts = archivePayload?.categoryCounts && typeof archivePayload.categoryCounts === 'object'
+      ? archivePayload.categoryCounts
+      : {};
     rebuildDerivedItems();
     latestUpdatedLabel = archivePayload?.generatedAt
       ? formatDate(archivePayload.generatedAt) + ' 更新'
@@ -90,10 +103,9 @@ async function init() {
     updatedElement.textContent = latestUpdatedLabel;
   }
 
-  saveTopicCache(trendItems);
+  saveTopicCache(trendItems, { scope: 'home' });
   updateRangeTabLabels();
   await renderArchive();
-  void warmBrowseItems();
 }
 
 async function renderArchive() {
@@ -111,40 +123,39 @@ async function renderArchive() {
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   currentPage = Math.min(currentPage, totalPages);
-  countElement.textContent = filtered.length + ' 件';
+  const displayTotalCount = getDisplayTotalForCurrentState(filtered.length);
+  countElement.textContent = displayTotalCount + ' 件';
   updateRangeTabLabels();
   updateSearchButton();
 
+  const pageItems = showAllResults
+    ? filtered
+    : filtered.slice((currentPage - 1) * PAGE_SIZE, (currentPage - 1) * PAGE_SIZE + PAGE_SIZE);
+
   if (!filtered.length) {
-    listElement.innerHTML = '<div class="empty-tweets trend-empty"><strong>該当するニュースはありません</strong><p>期間・カテゴリ・キーワードを変えてもう一度探してみてください。</p></div>';
-    renderPagination(0, 0);
+    const emptyMessage = displayTotalCount > 0 && !fullArchiveLoaded && activeRange === '24h' && !query
+      ? '<div class="empty-tweets trend-empty"><strong>この条件の記事は全体にはあります</strong><p>初期表示20件には含まれていないため、必要なら全件表示で続きを読み込んでください。</p></div>'
+      : '<div class="empty-tweets trend-empty"><strong>該当するニュースはありません</strong><p>期間・カテゴリ・キーワードを変えてもう一度探してみてください。</p></div>';
+    listElement.innerHTML = emptyMessage;
+    renderPagination(0, filtered.length, pageItems.length, displayTotalCount);
     return;
   }
 
-  const startIndex = (currentPage - 1) * PAGE_SIZE;
-  const pageItems = filtered.slice(startIndex, startIndex + PAGE_SIZE);
   await renderArchivePageItems(pageItems);
-  renderPagination(totalPages, filtered.length);
+  renderPagination(totalPages, filtered.length, pageItems.length, displayTotalCount);
 }
 
 async function preparePrimaryArchiveItems(rawItems) {
   const inputItems = Array.isArray(rawItems) ? rawItems : [];
   const allItems = [];
-  const currentItems = [];
-  const archiveItems = [];
 
   for (const item of inputItems) {
     if (!isRenderableArchiveItemRaw(item)) continue;
     allItems.push(item);
-    if (isWithinNewsRange(item, RANGE_CONFIG['24h'])) currentItems.push(item);
-    else archiveItems.push(item);
   }
 
   allItems.sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
-  currentItems.sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
-  archiveItems.sort((left, right) => (getNewsRangeTimestamp(right) ?? 0) - (getNewsRangeTimestamp(left) ?? 0));
-
-  return { allItems, currentItems, archiveItems };
+  return allItems;
 }
 
 async function normalizeTopicsInBatches(rawItems) {
@@ -189,7 +200,7 @@ function renderArchiveCard(item) {
   const footerHtml = sourceUrl
     ? '<div class="trend-footer"><span><strong>' + escapeHtml(sourceLabel) + '</strong></span><span class="detail-link">元記事を見る ↗</span></div>'
     : '<div class="trend-footer"><span><strong>元記事リンクなし</strong></span><span class="detail-link">リンクなし</span></div>';
-  const bodyHtml = '<div><div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(item)) + '</span><time>' + escapeHtml(item.time ?? formatDate(item.capturedAt)) + '</time></div><h3>' + escapeHtml(item.title ?? 'ニュース') + '</h3>' + summaryHtml + insightHtml + footerHtml + '</div>';
+  const bodyHtml = '<div><div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(item)) + '</span><time>' + escapeHtml(formatTopicDisplayTime(item)) + '</time></div><h3>' + escapeHtml(item.title ?? 'ニュース') + '</h3>' + summaryHtml + insightHtml + footerHtml + '</div>';
   const cardClass = 'trend-card trend-card-rich trend-card-link' + (hasThumbnail ? ' has-thumb' : ' trend-card-no-thumb');
 
   if (!sourceUrl) {
@@ -213,12 +224,44 @@ function updateRangeTabLabels() {
   document.querySelectorAll('.news-range-tabs button').forEach((button) => {
     const range = RANGE_CONFIG[button.dataset.range];
     if (!range) return;
-    const count = getRangeItems(button.dataset.range).length;
+    const count = getRangeDisplayCount(button.dataset.range);
     const isDeferredRange = button.dataset.range !== '24h' && !browseItemsLoaded;
     button.textContent = isDeferredRange
       ? range.label + ' (…)'
       : range.label + ' (' + count + ')';
   });
+}
+
+function getDisplayTotalForCurrentState(fallbackCount) {
+  if (
+    activeRange === '24h'
+    && !queryElement.value.trim()
+    && !fullArchiveLoaded
+  ) {
+    const categoryTotal = getHomeNewsCategoryCount(activeCategory);
+    if (categoryTotal != null) return categoryTotal;
+  }
+  return fallbackCount;
+}
+
+function getRangeDisplayCount(rangeKey) {
+  if (
+    rangeKey === '24h'
+    && !fullArchiveLoaded
+  ) {
+    const categoryTotal = getHomeNewsCategoryCount('all');
+    if (categoryTotal != null) return categoryTotal;
+  }
+  return getRangeItems(rangeKey).length;
+}
+
+function getHomeNewsCategoryCount(category) {
+  const key = category || 'all';
+  const value = key === 'all'
+    ? (homeNewsCategoryCounts?.all ?? homeNewsTotalCount)
+    : homeNewsCategoryCounts?.[key];
+  if (!Number.isFinite(Number(value))) return null;
+  return Number(value);
 }
 
 function rebuildDerivedItems() {
@@ -285,45 +328,93 @@ function updateSearchButton() {
   });
 }
 
-function renderPagination(totalPages, totalItems) {
+function renderPagination(totalPages, totalItems, visibleCount = totalItems, displayTotalCount = totalItems) {
   if (!paginationElement) return;
-  if (!totalItems || totalPages <= 1) {
+  const effectiveTotalCount = Math.max(displayTotalCount, totalItems, 0);
+  if (!effectiveTotalCount) {
     paginationElement.innerHTML = '';
+    if (archiveActionsElement) archiveActionsElement.innerHTML = '';
     return;
   }
 
+  const showPager = !showAllResults && totalPages > 1;
+
   const pages = [];
-  const start = Math.max(1, currentPage - 2);
-  const end = Math.min(totalPages, currentPage + 2);
-  for (let page = start; page <= end; page += 1) {
-    pages.push('<button class="pagination-button' + (page === currentPage ? ' active' : '') + '" type="button" data-page="' + page + '">' + page + '</button>');
+  if (showPager) {
+    const start = Math.max(1, currentPage - 2);
+    const end = Math.min(totalPages, currentPage + 2);
+    for (let page = start; page <= end; page += 1) {
+      pages.push('<button class="pagination-button' + (page === currentPage ? ' active' : '') + '" type="button" data-page="' + page + '">' + page + '</button>');
+    }
   }
 
-  paginationElement.innerHTML =
-    '<button class="pagination-button" type="button" data-page="' + Math.max(1, currentPage - 1) + '"' + (currentPage === 1 ? ' disabled' : '') + '>前へ</button>' +
-    '<span class="pagination-status">' + currentPage + ' / ' + totalPages + ' ページ</span>' +
-    pages.join('') +
-    '<button class="pagination-button" type="button" data-page="' + Math.min(totalPages, currentPage + 1) + '"' + (currentPage === totalPages ? ' disabled' : '') + '>次へ</button>';
+  const canExpandToFullArchive = !fullArchiveLoaded && activeRange === '24h';
+  const canShowAllToggle = showAllResults || effectiveTotalCount > visibleCount || (canExpandToFullArchive && effectiveTotalCount > 0);
+  const allToggle = canShowAllToggle
+    ? '<button class="pagination-button pagination-button-wide" type="button" data-toggle-all="true">' + (showAllResults ? '20件表示に戻す' : '全件表示') + '</button>'
+    : '';
+  const displayStatusText = showAllResults
+    ? effectiveTotalCount + '/' + effectiveTotalCount + '件表示中'
+    : visibleCount + '/' + effectiveTotalCount + '件表示中';
+
+  if (archiveActionsElement) {
+    archiveActionsElement.innerHTML = allToggle
+      ? '<div class="pagination-row pagination-row-top"><span class="pagination-status">' + displayStatusText + '</span>' + allToggle + '</div>'
+      : '<div class="pagination-row pagination-row-top"><span class="pagination-status">' + displayStatusText + '</span></div>';
+  }
+
+  paginationElement.innerHTML = showPager
+    ? '<button class="pagination-button" type="button" data-page="' + Math.max(1, currentPage - 1) + '"' + (currentPage === 1 ? ' disabled' : '') + '>前へ</button>' +
+      '<span class="pagination-status">' + currentPage + ' / ' + totalPages + ' ページ</span>' +
+      pages.join('') +
+      '<button class="pagination-button" type="button" data-page="' + Math.min(totalPages, currentPage + 1) + '"' + (currentPage === totalPages ? ' disabled' : '') + '>次へ</button>' +
+      allToggle
+    : '<span class="pagination-status">' + displayStatusText + '</span>' + allToggle;
 
   paginationElement.querySelectorAll('[data-page]').forEach((button) => {
     button.addEventListener('click', () => {
+      showAllResults = false;
       currentPage = Number(button.getAttribute('data-page')) || 1;
       void renderArchive();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
+
+  paginationElement.querySelectorAll('[data-toggle-all]').forEach((button) => {
+    button.addEventListener('click', async () => {
+      if (!fullArchiveLoaded) {
+        await ensureFullArchiveLoaded({ announce: true });
+      }
+      showAllResults = !showAllResults;
+      currentPage = 1;
+      void renderArchive();
+    });
+  });
+
+  archiveActionsElement?.querySelectorAll('[data-toggle-all]').forEach((button) => {
+    button.addEventListener('click', async () => {
+      if (!fullArchiveLoaded) {
+        await ensureFullArchiveLoaded({ announce: true });
+      }
+      showAllResults = !showAllResults;
+      currentPage = 1;
+      void renderArchive();
+    });
+  });
 }
 
 async function fetchJson(endpoint) {
-  const response = await fetch(endpoint, { cache: 'default' });
+  const response = await fetch(endpoint, { cache: 'no-store' });
   if (!response.ok) throw new Error('Failed to fetch ' + endpoint);
   return await response.json();
 }
 
-function saveTopicCache(topics) {
+function saveTopicCache(topics, { scope = 'home' } = {}) {
   try {
+    const items = Array.isArray(topics) ? topics.slice(0, MAX_CACHED_HOME_ITEMS) : [];
     localStorage.setItem(TOPIC_CACHE_KEY, JSON.stringify({
-      items: Array.isArray(topics) ? topics : [],
+      scope,
+      items,
       cachedAt: new Date().toISOString(),
     }));
   } catch {}
@@ -332,15 +423,45 @@ function saveTopicCache(topics) {
 function readTopicCache() {
   try {
     localStorage.removeItem('internet-news-browse-topic-cache');
+    localStorage.removeItem('internet-news-browse-archive-cache-v4');
     const cached = JSON.parse(localStorage.getItem(TOPIC_CACHE_KEY) ?? 'null');
-    return Array.isArray(cached?.items) ? cached.items : [];
+    if (cached?.scope !== 'home') return [];
+    if (!Array.isArray(cached?.items)) return [];
+    return cached.items.slice(0, MAX_CACHED_HOME_ITEMS);
   } catch {
     return [];
   }
 }
 
-async function warmBrowseItems() {
-  await ensureBrowseItemsLoaded({ announce: false });
+async function ensureFullArchiveLoaded({ announce = false } = {}) {
+  if (fullArchiveLoaded) return;
+  if (!fullArchivePromise) {
+    fullArchivePromise = (async () => {
+      const archivePayload = await fetchJson(NEWS_ARCHIVE_ENDPOINT).catch(() => null);
+      const fullItems = await preparePrimaryArchiveItems(archivePayload?.items ?? []);
+      if (fullItems.length) {
+        trendItems = fullItems;
+        fullArchiveLoaded = true;
+        latestUpdatedLabel = archivePayload?.generatedAt
+          ? formatDate(archivePayload.generatedAt) + ' 更新'
+          : latestUpdatedLabel;
+        rebuildDerivedItems();
+      }
+    })().finally(() => {
+      fullArchivePromise = null;
+    });
+  }
+
+  if (announce) {
+    updatedElement.textContent = 'ニュース一覧を拡張中…';
+  }
+  await fullArchivePromise;
+  if (announce) {
+    updatedElement.textContent = latestUpdatedLabel;
+  }
+  if (fullArchiveLoaded) {
+    await renderArchive();
+  }
 }
 
 async function ensureBrowseItemsLoaded({ announce = false } = {}) {
@@ -448,6 +569,7 @@ function getArchiveSourceLabel(item) {
 
 function matchesArchiveCategory(item, category) {
   if (!category || category === 'all') return true;
+  if (category === 'general') return String(item?.category ?? '') === 'general';
   if (!hasCategory(item, category)) return false;
   return hasMeaningfulCategoryContext(item, category);
 }
@@ -595,6 +717,7 @@ document.querySelectorAll('.news-range-tabs button').forEach((button) => {
     button.classList.add('active');
     activeRange = button.dataset.range || '24h';
     currentPage = 1;
+    showAllResults = false;
     void renderArchive();
   });
 });
@@ -605,12 +728,14 @@ document.querySelectorAll('.news-category-tabs button').forEach((button) => {
     button.classList.add('active');
     activeCategory = button.dataset.category;
     currentPage = 1;
+    showAllResults = false;
     void renderArchive();
   });
 });
 
 queryElement.addEventListener('input', () => {
   currentPage = 1;
+  showAllResults = false;
   clearTimeout(queryDebounceTimer);
   queryDebounceTimer = window.setTimeout(() => {
     void renderArchive();

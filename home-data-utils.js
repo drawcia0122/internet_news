@@ -22,7 +22,7 @@
     for (const endpoint of endpoints) {
       try {
         const fetchStartedAt = performance.now();
-        const response = await fetch(endpoint, { cache: 'default' });
+        const response = await fetch(endpoint, { cache: 'no-store' });
         if (!response.ok) continue;
         const payload = await response.json();
         onFetchMetric?.({

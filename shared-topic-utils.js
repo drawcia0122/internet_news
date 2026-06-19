@@ -228,23 +228,36 @@
     const publishedCandidates = [
       ...(Array.isArray(item.sourceSignals) ? item.sourceSignals.map((signal) => signal?.publishedAt) : []),
       item.publishedAt,
-    ]
-      .map((value) => new Date(value).getTime())
-      .filter((value) => Number.isFinite(value));
+    ].map(parseTimestamp).filter((value) => value != null);
 
     if (publishedCandidates.length) return Math.max(...publishedCandidates);
 
     const fallbackCandidates = [item.capturedAt, item.generatedAt]
-      .map((value) => new Date(value).getTime())
-      .filter((value) => Number.isFinite(value));
+      .map(parseTimestamp)
+      .filter((value) => value != null);
 
     return fallbackCandidates.length ? Math.max(...fallbackCandidates) : null;
+  }
+
+  function parseTimestamp(value) {
+    if (value == null || value === '') return null;
+    const time = new Date(value).getTime();
+    if (!Number.isFinite(time) || time <= 0) return null;
+    return time;
   }
 
   function formatDate(value) {
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return '不明';
     return new Intl.DateTimeFormat('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(date);
+  }
+
+  function formatTopicDisplayTime(topic) {
+    const timestamp = archiveTimestamp(topic);
+    if (timestamp != null) return formatDate(timestamp);
+
+    const explicit = String(topic?.time ?? '').trim();
+    return explicit || '時刻不明';
   }
 
   function escapeHtml(value) {
@@ -489,6 +502,7 @@
     defaultSearchQueryForCategory,
     escapeHtml,
     formatDate,
+    formatTopicDisplayTime,
     hasCategory,
     hasVisibleSummary,
     isWithinRange,

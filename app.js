@@ -4,6 +4,7 @@ const {
   decodeHtmlEntities,
   dedupeTopics,
   escapeHtml,
+  formatTopicDisplayTime,
   getPrimarySourceLabel,
   getPrimarySourceUrl,
   hasCategory,
@@ -84,6 +85,7 @@ let archiveHasMorePages = false;
 let archiveNextPage = 0;
 let archivePageLoadPromise = null;
 let latestTrendGeneratedAt = null;
+let latestHomeDataGeneratedAt = null;
 let dailyBriefItems = [];
 let eventItems = [];
 let adultTrendItems = [];
@@ -156,6 +158,7 @@ const renderHelperDeps = {
   getPrimarySourceUrl,
   getPrimarySourceLabel,
   categoryDisplayLabel,
+  formatTopicDisplayTime,
   hotTopicScore,
   buildImportantPoint,
   trimMetaText,
@@ -199,6 +202,7 @@ console.time('home:init');
 trendTopics = homeTopicCacheStore.load();
 visibleTrendTopics = prepareVisibleTrendTopics(trendTopics);
 setLatestTrendGeneratedAt(latestTrendGeneratedAt);
+updateLatestHomeGeneratedAt(latestTrendGeneratedAt);
 dailyBriefItems = briefCacheStore.load();
 eventItems = eventCacheStore.load();
 renderDailyBrief();
@@ -272,8 +276,9 @@ async function loadTrendTopics() {
       : null;
     console.timeEnd('home:fetch-topics');
     const supplementalTopics = Array.isArray(supplementalPayload?.items) ? supplementalPayload.items : [];
-    latestTrendGeneratedAt = currentPayload?.generatedAt ?? supplementalPayload?.generatedAt ?? null;
+    latestTrendGeneratedAt = pickLatestGeneratedAt(currentPayload?.generatedAt, supplementalPayload?.generatedAt);
     setLatestTrendGeneratedAt(latestTrendGeneratedAt);
+    updateLatestHomeGeneratedAt(latestTrendGeneratedAt);
     const mergedTopics = dedupeTopics([
       ...currentTopics.map(normalizeTrendTopic),
       ...supplementalTopics.map(normalizeTrendTopic),
@@ -284,6 +289,7 @@ async function loadTrendTopics() {
     errorMessage = error?.message || '取得エラー';
     latestTrendGeneratedAt = null;
     setLatestTrendGeneratedAt(latestTrendGeneratedAt);
+    updateLatestHomeGeneratedAt(latestTrendGeneratedAt);
     trendTopics = [];
   }
 
@@ -310,6 +316,7 @@ async function loadDailyBrief() {
     const payload = await fetchDailyBriefPayload();
     console.timeEnd('home:fetch-brief');
     dailyBriefItems = Array.isArray(payload?.items) ? payload.items : [];
+    updateLatestHomeGeneratedAt(payload?.generatedAt);
   } catch (error) {
     errorMessage = error?.message || '取得エラー';
     dailyBriefItems = [];
@@ -331,6 +338,7 @@ async function loadNewsArchive() {
   try {
     const payload = await fetchHomeNewsInitialPayload();
     applyArchivePayload(payload, { append: false });
+    updateLatestHomeGeneratedAt(payload?.generatedAt);
   } catch (error) {
     errorMessage = error?.message || '取得エラー';
     archiveTopics = [];
@@ -354,6 +362,7 @@ async function loadEventItems() {
   try {
     const payload = await fetchEventsPayload();
     eventItems = Array.isArray(payload?.items) ? payload.items.map(normalizeEventItem) : [];
+    updateLatestHomeGeneratedAt(payload?.generatedAt);
   } catch (error) {
     errorMessage = error?.message || '取得エラー';
     eventItems = [];
@@ -377,6 +386,7 @@ async function loadAdultTrends() {
       ? payload
       : Array.isArray(payload?.items) ? payload.items : [];
     adultTrendItems = rawItems.map(normalizeAdultTrendItem);
+    updateLatestHomeGeneratedAt(payload?.generatedAt);
   } catch (error) {
     errorMessage = error?.message || '取得エラー';
     adultTrendItems = [];
@@ -654,7 +664,7 @@ function renderTrends(filter = 'all', { preserveCount = false } = {}) {
     const insightHtml = renderTrendReasonList(trend, renderHelperDeps);
     return '<article class="' + escapeHtml('trend-card trend-card-rich ' + (hasThumbnail ? 'has-thumb' : 'trend-card-no-thumb')) + '" style="animation-delay:' + (index * 70) + 'ms">' +
       thumb +
-      '<div><div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(trend)) + '</span><time>' + escapeHtml(trend.time ?? '直近') + '</time></div>' +
+      '<div><div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(trend)) + '</span><time>' + escapeHtml(formatTopicDisplayTime(trend)) + '</time></div>' +
       '<h3>' + escapeHtml(trend.title ?? 'ニュース') + '</h3>' +
       summaryHtml +
       insightHtml +
@@ -1164,7 +1174,7 @@ function renderHotKeywordGroup(topics, mode = 'primary') {
     const meta = mode === 'primary'
       ? buildPrimaryHotMeta(topic)
       : buildCategoryHotMeta(topic);
-    return '<li><a class="hot-link" href="./topic.html?id=' + encodeURIComponent(topic.id ?? '') + '"><span class="hot-rank">0' + (index + 1) + '</span><span><strong>' + escapeHtml(topic.title) + '</strong><small>' + escapeHtml(meta) + '</small></span><span class="hot-change">' + escapeHtml(topic.time ?? '直近') + '</span></a></li>';
+    return '<li><a class="hot-link" href="./topic.html?id=' + encodeURIComponent(topic.id ?? '') + '"><span class="hot-rank">0' + (index + 1) + '</span><span><strong>' + escapeHtml(topic.title) + '</strong><small>' + escapeHtml(meta) + '</small></span><span class="hot-change">' + escapeHtml(formatTopicDisplayTime(topic)) + '</span></a></li>';
   });
 }
 
@@ -1172,7 +1182,7 @@ function renderRankingGroup(topics) {
   if (!topics.length) {
     return ['<li class="side-empty"><span>--</span><span>話題なし</span><small>24h</small></li>'];
   }
-  return topics.map((topic, index) => '<li><a class="ranking-link" href="./topic.html?id=' + encodeURIComponent(topic.id ?? '') + '"><span>0' + (index + 1) + '</span><span>' + escapeHtml(topic.title) + '</span><small>' + escapeHtml(topic.time ?? '直近') + '</small></a></li>');
+  return topics.map((topic, index) => '<li><a class="ranking-link" href="./topic.html?id=' + encodeURIComponent(topic.id ?? '') + '"><span>0' + (index + 1) + '</span><span>' + escapeHtml(topic.title) + '</span><small>' + escapeHtml(formatTopicDisplayTime(topic)) + '</small></a></li>');
 }
 
 function pickPrimaryHotTopics(topics, limit = 3) {
@@ -1346,10 +1356,25 @@ function setRefreshStatusIdle() {
 }
 
 function getRefreshStatusIdleText() {
-  if (latestTrendGeneratedAt) {
-    return '最終更新: ' + formatAbsoluteDate(latestTrendGeneratedAt) + ' / 30分ごとに自動確認中';
+  if (latestHomeDataGeneratedAt) {
+    return '最終更新: ' + formatAbsoluteDate(latestHomeDataGeneratedAt) + ' / 30分ごとに自動確認中';
   }
   return '最新データを30分ごとに自動確認中';
+}
+
+function pickLatestGeneratedAt(...values) {
+  const timestamps = values
+    .map((value) => {
+      const time = new Date(value ?? '').getTime();
+      return Number.isFinite(time) ? time : null;
+    })
+    .filter((value) => value !== null);
+  if (!timestamps.length) return null;
+  return new Date(Math.max(...timestamps)).toISOString();
+}
+
+function updateLatestHomeGeneratedAt(...values) {
+  latestHomeDataGeneratedAt = pickLatestGeneratedAt(latestHomeDataGeneratedAt, ...values);
 }
 
 function formatAbsoluteDate(dateString) {

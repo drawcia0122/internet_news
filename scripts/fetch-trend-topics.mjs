@@ -383,7 +383,7 @@ function normalizeStoredTopic(item) {
     categoryLabel,
     categoryLabels,
     capturedAt: item.capturedAt ?? item.generatedAt ?? capturedAt,
-    thumbnailUrl: sanitizeThumbnailUrl(item.thumbnailUrl),
+      thumbnailUrl: resolvePersistedThumbnailUrl(item),
     sourceSignals: sanitizeSourceSignals(item.sourceSignals).map((signal) => ({
       sourceId: signal.sourceId ?? null,
       source: signal.source ?? null,
@@ -444,7 +444,7 @@ function buildHomeTopicsPayload({ currentItems = [], archiveItems = [], generate
       score: Number(item.score ?? 0),
       posts: Number(item.posts ?? 1),
       metricLabel: item.metricLabel ?? "source",
-      thumbnailUrl: sanitizeThumbnailUrl(item.thumbnailUrl),
+      thumbnailUrl: resolvePersistedThumbnailUrl(item),
       publishedAt: item.publishedAt ?? item.sourceSignals?.[0]?.publishedAt ?? null,
       capturedAt: item.capturedAt ?? generatedAt,
       time: item.time ?? item.sourceSignals?.[0]?.publishedLabel ?? null,
@@ -625,7 +625,7 @@ function buildBrowseTopicsPayload({ archiveItems = [], generatedAt = new Date().
       score: Number(item.score ?? 0),
       posts: Number(item.posts ?? 1),
       metricLabel: item.metricLabel ?? "source",
-      thumbnailUrl: sanitizeThumbnailUrl(item.thumbnailUrl),
+      thumbnailUrl: resolvePersistedThumbnailUrl(item),
       publishedAt: item.publishedAt ?? item.sourceSignals?.[0]?.publishedAt ?? null,
       capturedAt: item.capturedAt ?? generatedAt,
       time: item.time ?? item.sourceSignals?.[0]?.publishedLabel ?? null,
@@ -680,7 +680,7 @@ function buildNewsArchivePayload({ archiveItems = [], generatedAt = new Date().t
       score: Number(item.score ?? 0),
       posts: Number(item.posts ?? 1),
       metricLabel: item.metricLabel ?? "source",
-      thumbnailUrl: sanitizeThumbnailUrl(item.thumbnailUrl),
+      thumbnailUrl: resolvePersistedThumbnailUrl(item),
       publishedAt: item.publishedAt ?? item.sourceSignals?.[0]?.publishedAt ?? null,
       capturedAt: item.capturedAt ?? generatedAt,
       time: item.time ?? item.sourceSignals?.[0]?.publishedLabel ?? null,
@@ -790,7 +790,7 @@ function buildAdultNewsPayload({ archiveItems = [], generatedAt = new Date().toI
     .filter((item) => isWithinArchiveWindow(item, generatedAt))
     .filter((item) => isAdultNewsArchiveItem(item))
     .filter((item) => !isMalformedArchiveItem(item))
-    .filter((item) => Boolean(sanitizeThumbnailUrl(item?.thumbnailUrl ?? item?.thumbnail)))
+    .filter((item) => Boolean(resolvePersistedThumbnailUrl(item)))
     .sort((left, right) => {
       const timeDiff = archiveTimestamp(right) - archiveTimestamp(left);
       if (timeDiff !== 0) return timeDiff;
@@ -813,7 +813,7 @@ function buildAdultNewsPayload({ archiveItems = [], generatedAt = new Date().toI
       hotScore: Number(item.hotScore ?? item.score ?? 0),
       posts: Number(item.posts ?? 1),
       metricLabel: item.metricLabel ?? "source",
-      thumbnailUrl: sanitizeThumbnailUrl(item.thumbnailUrl),
+      thumbnailUrl: resolvePersistedThumbnailUrl(item),
       publishedAt: item.publishedAt ?? item.sourceSignals?.[0]?.publishedAt ?? null,
       capturedAt: item.capturedAt ?? generatedAt,
       time: item.time ?? item.sourceSignals?.[0]?.publishedLabel ?? null,
@@ -827,8 +827,8 @@ function buildAdultNewsPayload({ archiveItems = [], generatedAt = new Date().toI
 
 function rankBrowseItems(items) {
   return [...items].sort((left, right) => {
-    const rightThumb = sanitizeThumbnailUrl(right.thumbnailUrl) ? 1 : 0;
-    const leftThumb = sanitizeThumbnailUrl(left.thumbnailUrl) ? 1 : 0;
+    const rightThumb = resolvePersistedThumbnailUrl(right) ? 1 : 0;
+    const leftThumb = resolvePersistedThumbnailUrl(left) ? 1 : 0;
     const rightDiscovery = isHomeDiscoveryFriendly(right) ? 1 : 0;
     const leftDiscovery = isHomeDiscoveryFriendly(left) ? 1 : 0;
     return rightThumb - leftThumb
@@ -1648,6 +1648,23 @@ function sanitizeSourceSignals(signals) {
   }
 
   return deduped.sort((left, right) => signalPublishedAt(right) - signalPublishedAt(left));
+}
+
+function resolvePersistedThumbnailUrl(item) {
+  const candidates = [
+    item?.thumbnailUrl,
+    item?.thumbnail,
+    ...(Array.isArray(item?.sourceSignals)
+      ? item.sourceSignals.flatMap((signal) => [signal?.thumbnailUrl, signal?.thumbnail])
+      : []),
+  ];
+
+  for (const candidate of candidates) {
+    const normalized = sanitizeThumbnailUrl(candidate);
+    if (normalized) return normalized;
+  }
+
+  return null;
 }
 
 function signalPublishedAt(signal) {

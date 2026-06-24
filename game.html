@@ -45,38 +45,20 @@
         </div>
       </section>
 
-      <section class="game-layout">
-        <article class="topic-panel game-panel">
-          <div class="section-heading topic-panel-heading">
-            <div>
-              <p class="section-kicker">HOT TITLES</p>
-              <h2>🔥 今話題のゲーム</h2>
-            </div>
-            <p class="brief-description">過去24時間の話題量、関連記事数、SNS反応シグナルを合算したランキングです。</p>
+      <section class="topic-panel game-panel game-surging-panel">
+        <div class="section-heading topic-panel-heading">
+          <div>
+            <p class="section-kicker">SURGING GAMES</p>
+            <h2>🔥 急上昇ゲーム</h2>
           </div>
-          <div class="game-ranking-list" id="game-ranking-list">
-            <article class="game-empty-card">
-              <strong>ランキングを集計中です</strong>
-              <p>ゲーム関連ニュースの話題量を計算しています。</p>
-            </article>
-          </div>
-        </article>
-
-        <article class="topic-panel game-panel">
-          <div class="section-heading topic-panel-heading">
-            <div>
-              <p class="section-kicker">SURGING TERMS</p>
-              <h2>📈 急上昇ワード</h2>
-            </div>
-            <p class="brief-description">前日比で急増したキーワードを抽出しています。</p>
-          </div>
-          <div class="game-word-list" id="game-word-list">
-            <article class="game-empty-card">
-              <strong>急上昇ワードを集計中です</strong>
-              <p>前日との差分を計算しています。</p>
-            </article>
-          </div>
-        </article>
+          <p class="brief-description">固有タイトルだけを抽出し、前日比と直近数日比の伸び、関連記事数、SNS・ストア文脈を合わせて今まさに伸びているゲームを優先表示します。</p>
+        </div>
+        <div class="game-card-grid game-surging-grid" id="surging-game-list">
+          <article class="game-empty-card">
+            <strong>急上昇ゲームを集計中です</strong>
+            <p>ゲーム名の正規化と前日比較を計算しています。</p>
+          </article>
+        </div>
       </section>
 
       <section class="game-section-grid">

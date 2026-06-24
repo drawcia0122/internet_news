@@ -13,8 +13,7 @@
 
   const heroStatsElement = document.querySelector('#game-hero-stats');
   const sourceGridElement = document.querySelector('#game-source-grid');
-  const rankingListElement = document.querySelector('#game-ranking-list');
-  const wordListElement = document.querySelector('#game-word-list');
+  const surgingGameListElement = document.querySelector('#surging-game-list');
   const steamSaleListElement = document.querySelector('#steam-sale-list');
   const freeGameListElement = document.querySelector('#free-game-list');
   const eventListElement = document.querySelector('#game-event-list');
@@ -24,13 +23,19 @@
   const trendChartGridElement = document.querySelector('#trend-chart-grid');
 
   const GAME_HINT_PATTERN = /ゲーム|switch|steam|ps5|xbox|nintendo|任天堂|playstation|pcゲーム|eスポーツ|esports|valorant|apex|pokemon|ポケモン|モンハン|mario|マリオ|gta|原神|スト6|street fighter|lol|league of legends/i;
-  const INVALID_GAME_NAME_PATTERN = /^(ゲーム|セール|アップデート|デモ版|体験版|発売日|予約|配信|リリース|イベント|大会|無料配布|公式番組|最終アップデート|今週のすべり込みセール情報|steamos|switch2\/ios\/android版|switch 2|steam next fest|summer game fest|nintendo direct|state of play|valorant masters|ndc26)$/i;
+  const INVALID_GAME_NAME_PATTERN = /^(ゲーム|セール|アップデート|デモ版|体験版|発売日|予約|配信|リリース|イベント|大会|無料配布|公式番組|最終アップデート|今週のすべり込みセール情報|steamos|switch2\/ios\/android版|switch 2|steam next fest|summer game fest|nintendo direct|state of play|valorant masters|ndc26|steam|switch|ps5|xbox|dlc|コラボ|メンテ|ガチャ)$/i;
   const QUOTED_TITLE_PATTERN = /[『「]([^『』「」]{2,42})[』」]/gu;
   const PERCENT_PATTERN = /(\d{1,3})\s*(?:％|%)\s*(?:オフ|OFF)/i;
   const PRICE_PATTERN = /([0-9]{1,3}(?:,[0-9]{3})*|[0-9]+)\s*円/g;
   const JAPANESE_DATE_PATTERN = /(\d{1,2})月(\d{1,2})日(?:[^\d]{0,6}(\d{1,2})[:：](\d{2}))?/g;
+  const GENERIC_GAME_NAME_PATTERN = /steam|switch(?:\s?2)?|ps[45]|xbox|pc(?:\s*\/\s*steam)?|dlc|イベント|コラボ|メンテ|ガチャ|アップデート|大型アップデート|無料配布|セール|予約開始|予約受付|配信開始|発売予定|体験版|デモ版|festival|fest|showcase|direct|state of play|game pass|worlds|masters|championship|cup/i;
+  const STORE_SIGNAL_PATTERN = /steam|eshop|playstation store|ps store|xbox store|app store|google play|store page|ストアページ|公式サイト|公式x|公式発表/i;
+  const OFFICIAL_SIGNAL_PATTERN = /公式|official|メーカー|開発元|パブリッシャー/i;
+  const STRONG_GAME_TOPIC_PATTERN = /steam|switch|ps5|xbox|pc|ios|android|ゲーム|アプリ|アップデート|dlc|セール|発売|配信|早期アクセス|体験版|デモ版|store|eスポーツ|大会/i;
+  const NON_GAME_TOPIC_PATTERN = /フィギュア|ぬいぐるみ|グッズ|シール|一番くじ|ポップアップ|popup|カフェ|tvアニメ|アニメ化|映画化|舞台化|漫画|コミック|blu-ray|dvd|主題歌|コスメ|アパレル|カード|トレカ/i;
   const KNOWN_GAME_TERMS = [
     ['Monster Hunter Wilds', /monster hunter wilds|モンスターハンターワイルズ|モンハンワイルズ/i],
+    ['Monster Hunter Wilds', /\bモンハン\b/i],
     ['Pokemon Champions', /pokemon champions|ポケモンチャンピオンズ/i],
     ['Mario Kart World', /mario kart world|マリオカートワールド/i],
     ['Street Fighter 6', /street fighter 6|ストリートファイター6|スト6/i],
@@ -43,24 +48,8 @@
     ['シチズン・スリーパー', /シチズン・スリーパー|citizen sleeper/i],
     ['ROBOBEAT', /robobeat/i],
     ['World War Z', /world war z/i],
-  ];
-  const KNOWN_WORD_TERMS = [
-    ['Switch 2', /switch\s?2|switch2/i],
-    ['Steam Next Fest', /steam next fest/i],
-    ['Summer Game Fest', /summer game fest/i],
-    ['Nintendo Direct', /nintendo direct/i],
-    ['State of Play', /state of play/i],
-    ['Game Pass', /game pass/i],
-    ['VALORANT Masters', /valorant masters/i],
-    ['EVO', /\bevo\b/i],
-    ['Worlds', /\bworlds\b|世界大会/i],
-    ['Steam', /\bsteam\b/i],
-    ['Epic Games', /epic games/i],
-    ['itch.io', /itch\.io/i],
-    ['GOG', /\bgog\b/i],
-    ['無料配布', /無料配布|0円|無料で取得/i],
-    ['予約開始', /予約受付|予約開始|事前登録/i],
-    ['大型アップデート', /大型アップデート|無料アップデート/i],
+    ['theHunter: Call of the Wild', /thehunter:\s*call of the wild|thehunter call of the wild/i],
+    ['ひぐらしのなく頃に', /ひぐらしのなく頃に/i],
   ];
   const EVENT_KEYWORD_PATTERN = /大会|トーナメント|予選|決勝|masters|cup|championship|worlds|world championship|festival|fest|showcase|direct|bitsummit|イベント/i;
 
@@ -114,8 +103,7 @@
     if (!dashboardState) return;
     renderHeroStats();
     renderSourceStatus();
-    renderRanking();
-    renderRisingWords();
+    renderSurgingGames();
     renderSteamSales();
     renderFreeGames();
     renderEvents();
@@ -124,9 +112,10 @@
   }
 
   function buildDashboardState(topics, events, meta) {
-    const dayKeys = buildRelativeDayKeys();
-    const ranking = buildGameRanking(topics, dayKeys);
-    const topGameNames = ranking.slice(0, 5).map((item) => item.name);
+    const anchorDate = determineObservationAnchor(topics, meta.generatedAt);
+    const dayKeys = buildRelativeDayKeys(anchorDate);
+    const surgingGames = buildSurgingGames(topics, dayKeys);
+    const topGameNames = surgingGames.slice(0, 5).map((item) => item.name);
 
     const steamSales = buildSteamSales(topics);
     const freeGames = buildFreeGames(topics);
@@ -136,13 +125,13 @@
     return {
       generatedAt: meta.generatedAt,
       topics,
-      ranking,
-      risingWords: buildRisingWords(topics, dayKeys),
+      surgingGames,
       steamSales,
       freeGames,
       events: eventRadar,
       releases: releaseCalendar,
       trendSeries: buildTrendSeries(topics, topGameNames),
+      anchorDate,
       sourceStatus: buildSourceStatus({ topics, events, steamSales, freeGames, eventRadar, releaseCalendar }),
       totals: {
         gameTopics24h: topics.filter((topic) => isInRelativeDay(topic, 0, dayKeys)).length,
@@ -173,25 +162,35 @@
     `;
   }
 
-  function renderRanking() {
-    const items = dashboardState.ranking.slice(0, 10);
+  function renderSurgingGames() {
+    const items = dashboardState.surgingGames.slice(0, 9);
     if (!items.length) {
-      rankingListElement.innerHTML = renderEmptyCard('ランキング対象のゲームがまだ少ないです', 'ゲーム関連ニュースの蓄積が増えるとここに表示します。');
+      surgingGameListElement.innerHTML = renderEmptyCard('急上昇ゲームがまだ抽出できていません', '複数の補強シグナルを満たすゲームが見つかるとここに表示します。');
       return;
     }
-    rankingListElement.innerHTML = items.map((item, index) => {
-      const metrics = `${item.topicCount24h}話題 / ${item.articleCount24h}記事 / SNS ${item.socialCount24h}`;
+    surgingGameListElement.innerHTML = items.map((item) => {
+      const thumbnail = item.thumbnailUrl
+        ? `<img src="${escapeHtml(item.thumbnailUrl)}" alt="${escapeHtml(item.name)} のサムネイル" loading="lazy" />`
+        : '<div class="game-surging-thumb-fallback">🔥</div>';
+      const surgeLabel = item.surgeRate != null ? `急上昇 +${item.surgeRate}%` : '急上昇中';
       return `
-        <article class="game-rank-item">
-          <div class="game-rank-order">${index + 1}</div>
-          <div class="game-rank-body">
-            <div class="game-rank-head">
-              <h3>${escapeHtml(item.name)}</h3>
-              <span class="game-score">${item.score}</span>
-            </div>
-            <p class="game-rank-metrics">${escapeHtml(metrics)}</p>
+        <article class="game-signal-card game-surging-card">
+          <div class="game-surging-thumb">
+            ${thumbnail}
           </div>
-          <div class="game-rank-change ${escapeHtml(item.changeDirection)}">${escapeHtml(item.changeLabel)}</div>
+          <div class="game-surging-body">
+            <div class="game-card-top">
+              <span class="game-card-badge">${escapeHtml(item.evidenceLabel)}</span>
+              <span class="game-card-meta">${escapeHtml(surgeLabel)}</span>
+            </div>
+            <h3>${escapeHtml(item.name)}</h3>
+            <p class="game-card-summary">${escapeHtml(item.summary)}</p>
+            <dl class="game-fact-list">
+              <div><dt>関連記事</dt><dd>${escapeHtml(`${item.articleCount}件`)}</dd></div>
+              <div><dt>比較</dt><dd>${escapeHtml(`前日 ${item.yesterdayCount}件 / 直近平均 ${item.baselineLabel}件`)}</dd></div>
+            </dl>
+            <a class="game-card-link" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">詳細を見る ↗</a>
+          </div>
         </article>
       `;
     }).join('');
@@ -208,23 +207,6 @@
         <h3>${escapeHtml(item.title)}</h3>
         <p class="game-card-summary">${escapeHtml(item.summary)}</p>
         ${item.proposal ? `<p class="game-source-proposal"><strong>取得方法:</strong> ${escapeHtml(item.proposal)}</p>` : ''}
-      </article>
-    `).join('');
-  }
-
-  function renderRisingWords() {
-    const items = dashboardState.risingWords.slice(0, 10);
-    if (!items.length) {
-      wordListElement.innerHTML = renderEmptyCard('急上昇ワードはまだ抽出できていません', '前日との差分が出るとここに表示します。');
-      return;
-    }
-    wordListElement.innerHTML = items.map((item) => `
-      <article class="game-word-item">
-        <div>
-          <strong>${escapeHtml(item.term)}</strong>
-          <p>${escapeHtml(`${item.todayCount}件観測 / 前日比 +${item.delta}`)}</p>
-        </div>
-        <a class="game-mini-link" href="${escapeHtml(buildGoogleNewsUrl(item.term, { rangeDays: 7 }))}" target="_blank" rel="noreferrer">探す ↗</a>
       </article>
     `).join('');
   }
@@ -327,11 +309,11 @@
       trendChartGridElement.innerHTML = renderEmptyCard('推移グラフの対象タイトルがまだ足りません', '複数日の観測データが増えるとここに表示します。');
       return;
     }
-    trendChartGridElement.innerHTML = charts.map((series) => renderTrendChart(series, trendRange)).join('');
+    trendChartGridElement.innerHTML = charts.map((series) => renderTrendChart(series, trendRange, dashboardState.anchorDate)).join('');
   }
 
-  function renderTrendChart(series, rangeDays) {
-    const points = buildRangeSeries(series, rangeDays);
+  function renderTrendChart(series, rangeDays, anchorDate) {
+    const points = buildRangeSeries(series, rangeDays, anchorDate);
     const maxValue = Math.max(1, ...points.map((point) => point.value));
     const width = 460;
     const height = 170;
@@ -378,72 +360,46 @@
     `;
   }
 
-  function buildGameRanking(topics, dayKeys) {
-    const todayKey = dayKeys.today;
-    const yesterdayKey = dayKeys.yesterday;
-    const aggregates = new Map();
+  function buildSurgingGames(topics, dayKeys) {
+    const buckets = new Map();
+    const recentKeys = [dayKeys.today, dayKeys.yesterday, relativeDayKey(2), relativeDayKey(3), relativeDayKey(4)];
 
     for (const topic of topics) {
+      if (!isDiscoveryGameTopic(topic)) continue;
       const names = extractGameNames(topic);
       if (!names.length) continue;
       const dayKey = dayKeyFromTopic(topic);
+      const articleCount = Math.max(1, Number(topic.posts ?? topic.sourceSignals?.length ?? 1));
+      const socialCount = estimateSocialMentions(topic);
+      const socialLinksCount = Array.isArray(topic.socialLinks) ? topic.socialLinks.length : 0;
+      const sourceNames = new Set((topic.sourceSignals || []).map((signal) => signal.sourceName).filter(Boolean));
+      const evidenceTypes = new Set(['news']);
+      if (socialLinksCount > 0 || /sns/i.test((topic.hotReasons || []).join(' '))) evidenceTypes.add('social');
+      if (STORE_SIGNAL_PATTERN.test(topicText(topic))) evidenceTypes.add('store');
+      if (OFFICIAL_SIGNAL_PATTERN.test(topicText(topic))) evidenceTypes.add('official');
+
       for (const name of names) {
-        const bucket = aggregates.get(name) || createGameAggregate(name);
-        const articleCount = Math.max(1, Number(topic.posts ?? topic.sourceSignals?.length ?? 1));
-        const socialCount = estimateSocialMentions(topic);
-        const topicScore = Number(topic.score ?? topic.hotScore ?? 0);
-        if (dayKey === todayKey) {
-          bucket.topicCount24h += 1;
-          bucket.articleCount24h += articleCount;
-          bucket.socialCount24h += socialCount;
-          bucket.score24h += topicScore + articleCount * 8 + socialCount * 6;
+        const bucket = buckets.get(name) || createSurgingGameAggregate(name);
+        bucket.days.set(dayKey, (bucket.days.get(dayKey) || 0) + 1);
+        bucket.articleDays.set(dayKey, (bucket.articleDays.get(dayKey) || 0) + articleCount);
+        bucket.socialDays.set(dayKey, (bucket.socialDays.get(dayKey) || 0) + socialCount);
+        sourceNames.forEach((sourceName) => bucket.sourceNames.add(sourceName));
+        evidenceTypes.forEach((type) => bucket.evidenceTypes.add(type));
+        bucket.totalScore += Number(topic.score ?? topic.hotScore ?? 0) + articleCount * 10 + socialCount * 6;
+
+        const topicFit = scoreTopicFitness(topic, name);
+        if (!bucket.primaryTopic || topicFit > bucket.primaryTopicScore) {
+          bucket.primaryTopic = topic;
+          bucket.primaryTopicScore = topicFit;
         }
-        if (dayKey === yesterdayKey) {
-          bucket.scoreYesterday += topicScore + articleCount * 8 + socialCount * 6;
-        }
-        bucket.totalScore += topicScore;
-        aggregates.set(name, bucket);
+        buckets.set(name, bucket);
       }
     }
 
-    const todayRanked = [...aggregates.values()]
-      .filter((item) => item.topicCount24h > 0)
-      .map((item) => ({ ...item, score: Math.round(item.score24h) }))
-      .sort((a, b) => b.score - a.score || b.articleCount24h - a.articleCount24h || a.name.localeCompare(b.name, 'ja'));
-
-    const yesterdayRanked = [...aggregates.values()]
-      .filter((item) => item.scoreYesterday > 0)
-      .sort((a, b) => b.scoreYesterday - a.scoreYesterday || a.name.localeCompare(b.name, 'ja'));
-    const yesterdayRanks = new Map(yesterdayRanked.map((item, index) => [item.name, index + 1]));
-
-    return todayRanked.map((item, index) => {
-      const currentRank = index + 1;
-      const previousRank = yesterdayRanks.get(item.name);
-      const change = previousRank ? previousRank - currentRank : null;
-      return {
-        ...item,
-        changeLabel: previousRank == null ? 'NEW' : change > 0 ? `↑${change}` : change < 0 ? `↓${Math.abs(change)}` : '→',
-        changeDirection: previousRank == null ? 'new' : change > 0 ? 'up' : change < 0 ? 'down' : 'flat',
-      };
-    });
-  }
-
-  function buildRisingWords(topics, dayKeys) {
-    const counts = new Map();
-    for (const topic of topics) {
-      const dayKey = dayKeyFromTopic(topic);
-      if (dayKey !== dayKeys.today && dayKey !== dayKeys.yesterday) continue;
-      for (const term of extractRisingTerms(topic)) {
-        const bucket = counts.get(term) || { term, todayCount: 0, yesterdayCount: 0 };
-        if (dayKey === dayKeys.today) bucket.todayCount += 1;
-        if (dayKey === dayKeys.yesterday) bucket.yesterdayCount += 1;
-        counts.set(term, bucket);
-      }
-    }
-    return [...counts.values()]
-      .map((item) => ({ ...item, delta: item.todayCount - item.yesterdayCount }))
-      .filter((item) => item.todayCount > 0 && item.delta > 0)
-      .sort((a, b) => b.delta - a.delta || b.todayCount - a.todayCount || a.term.localeCompare(b.term, 'ja'));
+    return [...buckets.values()]
+      .map((bucket) => finalizeSurgingGame(bucket, recentKeys))
+      .filter(Boolean)
+      .sort((a, b) => b.sortScore - a.sortScore || b.articleCount - a.articleCount || a.name.localeCompare(b.name, 'ja'));
   }
 
   function buildSteamSales(topics) {
@@ -606,8 +562,8 @@
         statusLabel: '接続済み',
         statusClass: 'ok',
         scope: 'ニュース集計',
-        title: '話題量ランキング / 急上昇ワード / トレンド推移',
-        summary: `${topics.length}件のゲーム関連ニュースを集計し、24時間比較と日別推移を計算しています。`,
+        title: '急上昇ゲーム / トレンド推移',
+        summary: `${topics.length}件のゲーム関連ニュースから固有タイトルを抽出し、前日比較と日別推移を計算しています。`,
         proposal: '',
       },
       {
@@ -653,10 +609,10 @@
     ];
   }
 
-  function buildRangeSeries(series, rangeDays) {
+  function buildRangeSeries(series, rangeDays, anchorDate) {
     const labels = [];
     for (let offset = rangeDays - 1; offset >= 0; offset -= 1) {
-      const key = relativeDayKey(offset);
+      const key = relativeDayKey(offset, anchorDate);
       labels.push({
         label: key,
         value: series.days.get(key) || 0,
@@ -670,13 +626,24 @@
   }
 
   function extractGameNames(topic) {
-    const text = [topic.title, topic.whatHappened, topic.summary, topic.briefSummary, ...(topic.relatedKeywords || [])].filter(Boolean).join(' ');
+    const text = [
+      topic.title,
+      topic.whatHappened,
+      topic.summary,
+      topic.briefSummary,
+      ...(topic.relatedKeywords || []),
+      ...(topic.sourceSignals || []).flatMap((signal) => [signal.title, signal.summary]),
+    ].filter(Boolean).join(' ');
     const found = [];
     for (const [label, pattern] of KNOWN_GAME_TERMS) {
       if (pattern.test(text)) found.push(label);
     }
     found.push(...extractQuotedNames(text));
-    return [...new Set(found.map(normalizeGameName).filter(isValidGameName))].slice(0, 3);
+    const ranked = [...new Set(found.map(canonicalizeGameName).filter(isValidGameName))]
+      .map((name) => ({ name, score: scoreGameNameCandidate(name, topic, text) }))
+      .filter((item) => item.score > 0)
+      .sort((a, b) => b.score - a.score || b.name.length - a.name.length);
+    return ranked.slice(0, 2).map((item) => item.name);
   }
 
   function extractQuotedNames(text) {
@@ -690,37 +657,59 @@
   function normalizeGameName(value) {
     return String(value ?? '')
       .replace(/^[『「]|[』」]$/g, '')
+      .replace(/^【[^】]+】/u, '')
+      .replace(/^[0-9０-９]+[%％]オフ/u, '')
+      .replace(/^(?:大型|無料)?アップデート.*/u, '')
+      .replace(/^(?:ゲーム|新作ゲーム|協力プレイ対応・|マルチ対応・)/u, '')
+      .replace(/(?:体験版|デモ版|発売日|予約開始|予約受付|配信開始|セール開催中).*/u, '')
       .replace(/[，,。！!？?].*$/u, '')
+      .replace(/\s*[:：]\s*(?:Call of the Wild)$/u, ': Call of the Wild')
       .replace(/\s+/g, ' ')
       .trim();
   }
 
-  function isValidGameName(value) {
+  function canonicalizeGameName(value) {
     const normalized = normalizeGameName(value);
-    return normalized.length >= 2
-      && normalized.length <= 36
-      && !INVALID_GAME_NAME_PATTERN.test(normalized)
-      && !/(conference|fest|festival|showcase|direct|masters|worlds|championship|cup|ndc\d+|state of play|game pass|switch 2|steam next fest)/i.test(normalized)
-      && !/^(発売|配信|セール|無料配布|アップデート|デモ版|体験版|大型アップデート)/.test(normalized);
+    for (const [label, pattern] of KNOWN_GAME_TERMS) {
+      if (pattern.test(normalized)) return label;
+    }
+    return normalized;
   }
 
-  function extractRisingTerms(topic) {
-    const text = [topic.title, topic.summary, topic.briefSummary, ...(topic.relatedKeywords || [])].filter(Boolean).join(' ');
-    const terms = [];
-    for (const [label, pattern] of KNOWN_WORD_TERMS) {
-      if (pattern.test(text)) terms.push(label);
-    }
-    terms.push(...extractGameNames(topic));
-    for (const keyword of topic.relatedKeywords || []) {
-      const normalized = String(keyword ?? '').trim();
-      if (!normalized || normalized.length < 2 || normalized.length > 28) continue;
-      if (/^(ゲーム|エンタメ|ネットカルチャー|総合|一般|source|sources)$/i.test(normalized)) continue;
-      if (/^[A-Z]{1,3}$/.test(normalized)) continue;
-      if (!/[\s0-9:：・/+-]/.test(normalized) && normalized.length < 8) continue;
-      if (/^[\u30a0-\u30ff]{2,7}$/.test(normalized)) continue;
-      terms.push(normalized);
-    }
-    return [...new Set(terms)];
+  function isValidGameName(value) {
+    const normalized = canonicalizeGameName(value);
+    const isKnownAlias = KNOWN_GAME_TERMS.some(([label]) => label === normalized);
+    const englishWordCount = normalized.split(/\s+/).filter(Boolean).length;
+    return normalized.length >= 2
+      && normalized.length <= 48
+      && !INVALID_GAME_NAME_PATTERN.test(normalized)
+      && !GENERIC_GAME_NAME_PATTERN.test(normalized)
+      && !/フェス|チャプター|シーズン|episode|エピソード|パック|セット|エディション|シール|サウンドトラック|サントラ/i.test(normalized)
+      && !/(conference|fest|festival|showcase|direct|masters|worlds|championship|cup|ndc\d+|state of play|game pass|switch 2|steam next fest)/i.test(normalized)
+      && !/^(発売|配信|セール|無料配布|アップデート|デモ版|体験版|大型アップデート)/.test(normalized)
+      && !/^[A-Z]{1,4}$/.test(normalized)
+      && !/^[\u30a0-\u30ff]{2,5}$/.test(normalized)
+      && !(englishWordCount === 1 && /^[A-Za-z]+$/.test(normalized) && !isKnownAlias)
+      && !(/[\u3040-\u309f].*\s+[\u3040-\u309f]/u.test(normalized))
+      && !(/^[\u3040-\u309fー]{3,}$/u.test(normalized) && !isKnownAlias);
+  }
+
+  function scoreGameNameCandidate(name, topic, text) {
+    let score = 0;
+    if (KNOWN_GAME_TERMS.some(([label]) => label === name)) score += 50;
+    if (String(topic.title || '').includes(name)) score += 20;
+    if ((topic.sourceSignals || []).some((signal) => String(signal.title || '').includes(name))) score += 16;
+    if (new RegExp(`[『「]${escapeRegExp(name)}[』」]`, 'u').test(text)) score += 12;
+    if (/[A-Za-z]/.test(name) || /[:：]/.test(name) || name.length >= 6) score += 8;
+    if (/^[\u30a0-\u30ff]{2,5}$/.test(name) && !KNOWN_GAME_TERMS.some(([label]) => label === name)) score -= 18;
+    if (/^[\u4e00-\u9fff]{1,3}$/.test(name) && !KNOWN_GAME_TERMS.some(([label]) => label === name)) score -= 12;
+    if (/フェス|チャプター|シーズン|episode|エピソード/i.test(name)) score -= 30;
+    return score;
+  }
+
+  function isDiscoveryGameTopic(topic) {
+    const text = [topic.title, topic.whatHappened, topic.summary, topic.briefSummary, ...(topic.relatedKeywords || [])].filter(Boolean).join(' ');
+    return isGameTopic(topic) && (!NON_GAME_TOPIC_PATTERN.test(text) || STRONG_GAME_TOPIC_PATTERN.test(text));
   }
 
   function inferStore(text) {
@@ -748,6 +737,83 @@
     const socialLinks = Array.isArray(topic.socialLinks) ? topic.socialLinks.length : 0;
     const buzz = Math.round(Number(topic.hotScore ?? 0) / 25);
     return Math.max(1, socialLinks + buzz);
+  }
+
+  function createSurgingGameAggregate(name) {
+    return {
+      name,
+      days: new Map(),
+      articleDays: new Map(),
+      socialDays: new Map(),
+      sourceNames: new Set(),
+      evidenceTypes: new Set(),
+      totalScore: 0,
+      primaryTopic: null,
+      primaryTopicScore: -1,
+    };
+  }
+
+  function finalizeSurgingGame(bucket, recentKeys) {
+    const [todayKey, yesterdayKey, ...baselineKeys] = recentKeys;
+    const todayCount = bucket.days.get(todayKey) || 0;
+    const yesterdayCount = bucket.days.get(yesterdayKey) || 0;
+    const articleCount = bucket.articleDays.get(todayKey) || 0;
+    const socialCount = bucket.socialDays.get(todayKey) || 0;
+    const baselineCounts = baselineKeys.map((key) => bucket.days.get(key) || 0);
+    const baselineAverage = baselineCounts.length
+      ? baselineCounts.reduce((sum, value) => sum + value, 0) / baselineCounts.length
+      : 0;
+    const baselineFloor = Math.max(yesterdayCount, baselineAverage, 0.5);
+    const surgeRate = todayCount > baselineFloor
+      ? Math.round(((todayCount - baselineFloor) / baselineFloor) * 100)
+      : null;
+    const evidenceCount = bucket.evidenceTypes.size;
+    const sourceCount = bucket.sourceNames.size;
+    const primaryTopic = bucket.primaryTopic;
+
+    if (!primaryTopic || todayCount === 0) return null;
+    if (surgeRate == null || surgeRate <= 0) return null;
+    if (articleCount < 1) return null;
+    if (evidenceCount < 2 && sourceCount < 2) return null;
+
+    return {
+      name: bucket.name,
+      summary: summarizeGameTopic(primaryTopic),
+      thumbnailUrl: primaryTopic.thumbnailUrl || primaryTopic.sourceSignals?.find((signal) => signal.thumbnailUrl)?.thumbnailUrl || null,
+      articleCount,
+      yesterdayCount,
+      baselineLabel: baselineAverage ? baselineAverage.toFixed(baselineAverage >= 10 ? 0 : 1) : '0',
+      socialCount,
+      surgeRate,
+      evidenceLabel: buildEvidenceLabel(bucket),
+      sortScore: surgeRate * 100 + articleCount * 18 + socialCount * 10 + sourceCount * 14 + bucket.totalScore,
+      url: primaryTopic.sourceSignals?.[0]?.url || buildGoogleNewsUrl(bucket.name, { rangeDays: 7 }),
+    };
+  }
+
+  function buildEvidenceLabel(bucket) {
+    const labels = [];
+    if (bucket.sourceNames.size >= 2) labels.push(`${bucket.sourceNames.size}媒体`);
+    else labels.push('ニュース');
+    if (bucket.evidenceTypes.has('social')) labels.push('SNS');
+    if (bucket.evidenceTypes.has('store')) labels.push('ストア');
+    if (bucket.evidenceTypes.has('official')) labels.push('公式');
+    return labels.slice(0, 2).join(' + ');
+  }
+
+  function summarizeGameTopic(topic) {
+    const summary = String(topic.briefSummary || topic.whatHappened || topic.summary || topic.title || '').replace(/\s+/g, ' ').trim();
+    if (summary.length <= 52) return summary;
+    return `${summary.slice(0, 52).trim()}…`;
+  }
+
+  function scoreTopicFitness(topic, gameName) {
+    const text = [topic.title, topic.whatHappened, topic.summary, topic.briefSummary].filter(Boolean).join(' ');
+    const exactTitle = text.includes(gameName) ? 20 : 0;
+    const hasThumbnail = topic.thumbnailUrl ? 6 : 0;
+    const sourceCount = Math.max(1, Number(topic.posts ?? topic.sourceSignals?.length ?? 1)) * 5;
+    const score = Number(topic.score ?? topic.hotScore ?? 0);
+    return exactTitle + hasThumbnail + sourceCount + score;
   }
 
   function extractDiscount(text) {
@@ -793,8 +859,7 @@
     const html = renderEmptyCard('ゲームページの読み込みに失敗しました', 'ローカルHTTPサーバーで開いているか確認してください。');
     heroStatsElement.innerHTML = html;
     sourceGridElement.innerHTML = html;
-    rankingListElement.innerHTML = html;
-    wordListElement.innerHTML = html;
+    surgingGameListElement.innerHTML = html;
     steamSaleListElement.innerHTML = html;
     freeGameListElement.innerHTML = html;
     eventListElement.innerHTML = html;
@@ -811,29 +876,23 @@
     `;
   }
 
-  function createGameAggregate(name) {
+  function buildRelativeDayKeys(anchorDate) {
     return {
-      name,
-      topicCount24h: 0,
-      articleCount24h: 0,
-      socialCount24h: 0,
-      score24h: 0,
-      scoreYesterday: 0,
-      totalScore: 0,
+      today: relativeDayKey(0, anchorDate),
+      yesterday: relativeDayKey(1, anchorDate),
     };
   }
 
-  function buildRelativeDayKeys() {
-    return {
-      today: relativeDayKey(0),
-      yesterday: relativeDayKey(1),
-    };
-  }
-
-  function relativeDayKey(offset) {
-    const now = new Date();
-    const date = new Date(now.getTime() - offset * 24 * 60 * 60 * 1000);
+  function relativeDayKey(offset, anchorDate = new Date()) {
+    const date = new Date(anchorDate.getTime() - offset * 24 * 60 * 60 * 1000);
     return formatDayKey(date);
+  }
+
+  function determineObservationAnchor(topics, generatedAt) {
+    const values = topics.map((topic) => archiveTimestamp(topic)).filter(Boolean);
+    if (generatedAt) values.push(new Date(generatedAt).getTime());
+    const latest = values.length ? Math.max(...values) : Date.now();
+    return new Date(latest);
   }
 
   function dayKeyFromTopic(topic) {
@@ -916,6 +975,10 @@
 
   function sameMonth(a, b) {
     return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth();
+  }
+
+  function escapeRegExp(value) {
+    return String(value ?? '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
 
   function isGameEvent(event) {

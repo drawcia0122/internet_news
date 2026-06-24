@@ -3881,6 +3881,10 @@ h1 span {
   margin-top: 24px;
 }
 
+.game-surging-panel {
+  margin-top: 24px;
+}
+
 .game-panel {
   overflow: hidden;
 }
@@ -4040,6 +4044,46 @@ h1 span {
 
 .game-card-grid {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.game-surging-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.game-surging-card {
+  display: grid;
+  grid-template-columns: 124px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.game-surging-thumb {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(33, 102, 255, 0.12), rgba(14, 165, 183, 0.16));
+}
+
+.game-surging-thumb img,
+.game-surging-thumb-fallback {
+  width: 100%;
+  height: 100%;
+}
+
+.game-surging-thumb img {
+  display: block;
+  object-fit: cover;
+}
+
+.game-surging-thumb-fallback {
+  display: grid;
+  place-items: center;
+  color: var(--blue);
+  font-size: 34px;
+}
+
+.game-surging-body {
+  min-width: 0;
 }
 
 .game-card-badge {
@@ -4273,6 +4317,10 @@ footer p {
   .game-hero-stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .game-surging-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 620px) {
@@ -4375,6 +4423,10 @@ footer p {
 
   .game-hero-stats,
   .game-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-surging-card {
     grid-template-columns: 1fr;
   }
 

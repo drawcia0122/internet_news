@@ -866,12 +866,14 @@ function isAdultNewsArchiveItem(item) {
   const text = adultNewsText(item);
   if (!text) return false;
   if (/詐欺|被害|未納料金|架空請求|注意喚起|摘発|逮捕|相談急増/.test(text)) return false;
-  if (/ランキング|売れ筋|セール開催中|%off|ポイント還元|クーポン/.test(text) && !/セクシー女優|av女優|アダルトビデオ|成人向け|18禁|r-?18/.test(text)) return false;
+  if (/ランキング|売れ筋|セール開催中|%off|ポイント還元|クーポン/.test(text) && !/アダルトビデオ|av女優|成人向け|18禁|r-?18|同人音声|エロ漫画|エロゲ/.test(text)) return false;
 
-  const explicitAdult = /fanza|dlsite|dmm|同人音声|エロ漫画|アダルトビデオ|av女優|セクシー女優|成人向け|18禁|r-?18|アダルト作品|アダルト業界/.test(text);
-  const gravureAdult = /グラビア|写真集|ランジェリー|水着姿|セクシーショット/.test(text);
+  const hardR18Signal = /18禁|r-?18|成人向け|アダルトビデオ|av女優|同人音声|同人ゲーム|エロ漫画|エロゲ|美少女ゲーム|アダルト作品|アダルト業界/.test(text);
+  const adultPlatformSignal = /(fanza|dlsite)/.test(text) && /(18禁|r-?18|成人向け|アダルト|同人音声|同人ゲーム|エロ漫画|エロゲ|av)/.test(text);
+  const softAdultOnly = /グラビア|写真集|ランジェリー|水着姿|セクシーショット|セクシー女優/.test(text);
   const hasAdultCategory = normalizeCategoryList(item?.categories ?? [item?.category]).includes("adult");
-  return explicitAdult || (hasAdultCategory && gravureAdult);
+  if (softAdultOnly && !hardR18Signal && !adultPlatformSignal) return false;
+  return hardR18Signal || adultPlatformSignal || (hasAdultCategory && !softAdultOnly && /アダルト|成人向け|18禁|r-?18|av|同人/.test(text));
 }
 
 function isMalformedArchiveItem(item) {

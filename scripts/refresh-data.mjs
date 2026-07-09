@@ -1,6 +1,7 @@
 import './fetch-trend-topics.mjs';
 import './fetch-events.mjs';
 import './fetch-adult-trends.mjs';
+import './build-today-internet.mjs';
 import { repairThumbnails } from './repair-thumbnails.mjs';
 
 const DEFAULT_REPAIR_TARGETS = [

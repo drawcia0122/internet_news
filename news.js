@@ -596,6 +596,8 @@ function hasMeaningfulCategoryContext(item, category) {
       return hasMeaningfulPoliticsContext(text);
     case 'business':
       return hasMeaningfulBusinessContext(text);
+    case 'anime':
+      return hasMeaningfulAnimeContext(text);
     case 'world':
       return hasMeaningfulWorldContext(text);
     case 'sports':
@@ -646,9 +648,16 @@ function hasMeaningfulSportsContext(text) {
 
 function hasMeaningfulAdultContext(text) {
   const value = String(text || '').toLowerCase();
-  const strongAdultPattern = /av女優|セクシー女優|グラビア(?:アイドル)?|水着グラビア|写真集|デジタル写真集|グラドル|ランジェリー|ビキニ|下着姿|水着姿|水着|セクシーショット|美ボディ|豊満ボディ|美バスト|美尻|谷間|艶姿|くびれ|ボディライン|肌見せ|大胆カット|悩殺|抜群スタイル|r18|porn|adult|fanza|dlsite|dmm|gカップ|セクシー/;
-  const falsePositivePattern = /book\s*1位|写真集の夜飯沢|ジャパン写真集|大会で成長してる|サッカーユニフォーム|試合速報|大谷翔平|キャスト解禁|アニメ出演決定|トークイベント/;
+  const strongAdultPattern = /成人向け|18禁|r-?18|porn|adult|fanza|dlsite|dmm|av女優|アダルトビデオ|同人音声|同人ゲーム|エロ漫画|エロゲ|美少女ゲーム|成人向けcg集|成人向け動画/;
+  const falsePositivePattern = /book\s*1位|写真集の夜飯沢|ジャパン写真集|大会で成長してる|サッカーユニフォーム|試合速報|大谷翔平|キャスト解禁|アニメ出演決定|トークイベント|グラビア|水着|コスプレ|ランジェリー|写真集/;
   return strongAdultPattern.test(value) && !falsePositivePattern.test(value);
+}
+
+function hasMeaningfulAnimeContext(text) {
+  const value = String(text || '').toLowerCase();
+  const strongAnimePattern = /アニメ|アニメ化|劇場版|テレビアニメ|tvアニメ|放送開始|放送日決定|続編制作決定|pv公開|キービジュアル|キャスト発表|スタッフ発表|配信サービス|主題歌|声優|anime/;
+  const falsePositivePattern = /アニメーション技術|アニメーション制作ソフト|ゲーム内アニメ|アニメ調グラフィック/;
+  return strongAnimePattern.test(value) && !falsePositivePattern.test(value);
 }
 
 function getNormalizedTopicForUi(item) {
@@ -722,6 +731,39 @@ document.querySelectorAll('.news-range-tabs button').forEach((button) => {
   });
 });
 
+function hasMeaningfulCategoryContext(item, category) {
+  if (!category || category === 'all') return true;
+  const text = getCategoryContextText(item);
+  switch (category) {
+    case 'crime':
+      return hasMeaningfulCrimeContext(text);
+    case 'politics':
+      return hasMeaningfulPoliticsContext(text);
+    case 'business':
+      return hasMeaningfulBusinessContext(text);
+    case 'world':
+      return hasMeaningfulWorldContext(text);
+    case 'sports':
+      return hasMeaningfulSportsContext(text);
+    case 'anime':
+      return /アニメ|劇場版|tvアニメ|アニメ化|放送開始|放送日決定|続編制作|pv公開|キービジュアル|キャスト発表|スタッフ発表|主題歌|声優/.test(text);
+    case 'game-features':
+      return /(インタビュー|開発秘話|制作裏話|コラム|特集|プレイレポート|レビュー|技術解説|先行プレイ|ハンズオン)/.test(text)
+        && /(ゲーム|任天堂|nintendo|switch|playstation|ps5|xbox|steam)/.test(text);
+    case 'adult':
+      return hasMeaningfulAdultContext(text);
+    default:
+      return true;
+  }
+}
+
+function hasMeaningfulAdultContext(text) {
+  const value = String(text || '').toLowerCase();
+  const explicitAdultPattern = /18禁|r-?18|成人向け|av女優|アダルトビデオ|同人音声|同人ゲーム|エロ漫画|エロゲ|cg集|fanza|dlsite|dmm|adult/;
+  const falsePositivePattern = /book\\s*1位|写真集の夜飯沢|ジャパン写真集|大会で成長してる|サッカーユニフォーム|試合速報|大谷翔平|キャスト解禁|アニメ出演決定|トークイベント|コスプレイベント/;
+  return explicitAdultPattern.test(value) && !falsePositivePattern.test(value);
+}
+
 document.querySelectorAll('.news-category-tabs button').forEach((button) => {
   button.addEventListener('click', () => {
     document.querySelectorAll('.news-category-tabs button').forEach((item) => item.classList.remove('active'));
@@ -741,3 +783,35 @@ queryElement.addEventListener('input', () => {
     void renderArchive();
   }, 180);
 });
+hasMeaningfulCategoryContext = function (item, category) {
+  if (!category || category === 'all') return true;
+  const text = getCategoryContextText(item);
+  switch (category) {
+    case 'crime':
+      return hasMeaningfulCrimeContext(text);
+    case 'politics':
+      return hasMeaningfulPoliticsContext(text);
+    case 'business':
+      return hasMeaningfulBusinessContext(text);
+    case 'world':
+      return hasMeaningfulWorldContext(text);
+    case 'sports':
+      return hasMeaningfulSportsContext(text);
+    case 'anime':
+      return /アニメ|劇場版|tvアニメ|アニメ化|放送開始|放送日決定|続編制作|pv公開|キービジュアル|キャスト発表|スタッフ発表|主題歌|声優/.test(text);
+    case 'game-features':
+      return /(インタビュー|開発秘話|制作裏話|コラム|特集|プレイレポート|レビュー|技術解説|先行プレイ|ハンズオン)/.test(text)
+        && /(ゲーム|任天堂|nintendo|switch|playstation|ps5|xbox|steam)/.test(text);
+    case 'adult':
+      return hasMeaningfulAdultContext(text);
+    default:
+      return true;
+  }
+};
+
+hasMeaningfulAdultContext = function (text) {
+  const value = String(text || '').toLowerCase();
+  const explicitAdultPattern = /18禁|r-?18|成人向け|av女優|アダルトビデオ|同人音声|同人ゲーム|エロ漫画|エロゲ|cg集|fanza|dlsite|dmm|adult/;
+  const falsePositivePattern = /book\s*1位|写真集の夜飯沢|ジャパン写真集|大会で成長してる|サッカーユニフォーム|試合速報|大谷翔平|キャスト解禁|アニメ出演決定|トークイベント|コスプレイベント/;
+  return explicitAdultPattern.test(value) && !falsePositivePattern.test(value);
+};

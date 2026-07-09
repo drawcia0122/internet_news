@@ -25,6 +25,13 @@
   --thumb-height-related: 70px;
 }
 
+@media (max-width: 620px) {
+  #must-read-news-list,
+  #today-news-list {
+    grid-auto-columns: minmax(82vw, 82vw) !important;
+  }
+}
+
 .focus-section,
 .hot-section {
   margin-bottom: 34px;
@@ -4540,25 +4547,39 @@ footer p {
   }
 
   .topic-channel-carousel {
-    grid-auto-columns: minmax(88vw, 88vw);
+    grid-auto-columns: minmax(80vw, 80vw);
     gap: 14px;
   }
 
   .event-list {
-    grid-auto-columns: minmax(88vw, 88vw);
+    grid-auto-columns: minmax(80vw, 80vw);
     gap: 14px;
   }
 
   #must-read-news-list,
   #today-news-list {
-    grid-auto-columns: minmax(88vw, 88vw) !important;
+    grid-auto-columns: minmax(78vw, 78vw) !important;
     gap: 14px;
     overflow-x: auto !important;
+  }
+
+  .priority-list,
+  .priority-list-compact {
+    grid-template-columns: 1fr;
+  }
+
+  .priority-list > .priority-card,
+  .priority-list > article,
+  .priority-list-compact > .priority-card,
+  .priority-list-compact > article {
+    width: min(78vw, 100%);
+    justify-self: center;
   }
 
   .must-read-card-shell {
     padding: 14px;
     border-radius: 18px;
+    gap: 8px;
   }
 
   .event-card {
@@ -4578,7 +4599,70 @@ footer p {
   .must-read-card-shell .trend-thumb-wrap,
   .must-read-card-shell .trend-thumb {
     height: auto;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 8;
+  }
+
+  .must-read-card-shell h3,
+  .topic-cluster-card-featured h3 {
+    font-size: 16px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .must-read-card-shell .topic-cluster-summary,
+  .topic-cluster-card-featured .topic-cluster-summary {
+    font-size: 11px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .must-read-card-shell .trend-reason-list,
+  .topic-cluster-card-featured .trend-reason-list {
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .must-read-card-shell .trend-reason-list div,
+  .topic-cluster-card-featured .trend-reason-list div {
+    grid-template-columns: 72px 1fr;
+    gap: 8px;
+  }
+
+  .must-read-card-shell .trend-reason-list dd,
+  .topic-cluster-card-featured .trend-reason-list dd {
+    font-size: 10px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+
+  .must-read-card-shell .topic-related-strip,
+  .topic-cluster-card-featured .topic-related-strip {
+    gap: 6px;
+  }
+
+  .must-read-card-shell .topic-related-link,
+  .topic-cluster-card-featured .topic-related-link {
+    padding: 8px 10px;
+  }
+
+  .must-read-card-shell .topic-related-link:nth-child(n + 3),
+  .topic-cluster-card-featured .topic-related-link:nth-child(n + 3) {
+    display: none;
+  }
+
+  .must-read-card-shell .trend-footer + .trend-footer,
+  .topic-cluster-card-featured .trend-footer + .trend-footer {
+    padding-top: 0;
+    border-top: 0;
   }
 
   .priority-card .trend-thumb-wrap {

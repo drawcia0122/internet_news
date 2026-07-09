@@ -5,11 +5,9 @@
   }
 
   function renderTrendReasonList(trend, { escapeHtml, shortEventFromTitle, buildWhyHotLabel } = {}) {
-    const audience = Array.isArray(trend.targetAudience) && trend.targetAudience.length ? trend.targetAudience.slice(0, 3).join(' / ') : '関心のある人';
     return '<dl class="trend-reason-list">' +
       '<div><dt>何が起きた？</dt><dd>' + escapeHtml(trend.whatHappened ?? shortEventFromTitle(trend.title)) + '</dd></div>' +
       '<div><dt>なぜ話題？</dt><dd>' + escapeHtml(trend.whyHot ?? buildWhyHotLabel(trend)) + '</dd></div>' +
-      '<div><dt>誰に関係ある？</dt><dd>' + escapeHtml(audience) + '</dd></div>' +
     '</dl>';
   }
 
@@ -48,7 +46,6 @@
     const sourceUrl = getPrimarySourceUrl(topic);
     const sourceLabel = getPrimarySourceLabel(topic);
     const thumbnail = topic.thumbnailUrl ? buildTrendCardThumb(topic.thumbnailUrl, deps) : '';
-    const audience = Array.isArray(topic.targetAudience) && topic.targetAudience.length ? topic.targetAudience.slice(0, 3).join(' / ') : '関連分野を追う人';
     const summary = buildTopicCardSummary(topic, { shortEventFromTitle, trimMetaText });
     const relatedSignals = collectRelatedSignals(topic, 3);
     const isCompact = Boolean(options.compact);
@@ -57,7 +54,9 @@
       : '<div class="topic-related-strip topic-related-strip-empty"><strong>参照記事</strong><span>参照元の整理中です</span></div>';
     const scoreValue = options.scoreMode === 'hot'
       ? Math.round(hotTopicScore(topic))
-      : Math.round(Number(topic.personalScore ?? hotTopicScore(topic) ?? 0));
+      : options.scoreMode === 'buzz'
+        ? Math.round(Number(topic.buzzScore ?? topic.hotScore ?? hotTopicScore(topic) ?? 0))
+        : Math.round(Number(topic.personalScore ?? hotTopicScore(topic) ?? 0));
     const cardClasses = [
       'topic-cluster-card',
       'topic-cluster-shell',
@@ -76,7 +75,6 @@
           '<dl class="trend-reason-list">' +
             '<div><dt>なぜ話題？</dt><dd>' + escapeHtml(topic.whyHot ?? buildWhyHotLabel(topic)) + '</dd></div>' +
             '<div><dt>なぜ重要？</dt><dd>' + escapeHtml(topic.importantPoint ?? buildImportantPoint(topic)) + '</dd></div>' +
-            '<div><dt>誰に関係ある？</dt><dd>' + escapeHtml(audience) + '</dd></div>' +
           '</dl>' +
           relatedHtml +
           '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span></div>' +
@@ -112,7 +110,6 @@
         '<dl class="trend-reason-list">' +
           '<div><dt>なぜ話題？</dt><dd>' + escapeHtml(topic.whyHot ?? buildWhyHotLabel(topic)) + '</dd></div>' +
           '<div><dt>なぜ重要？</dt><dd>' + escapeHtml(topic.importantPoint ?? buildImportantPoint(topic)) + '</dd></div>' +
-          '<div><dt>誰に関係ある？</dt><dd>' + escapeHtml(audience) + '</dd></div>' +
         '</dl>' +
         relatedHtml +
         '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span></div>' +
@@ -142,7 +139,6 @@
     const sourceUrl = getPrimarySourceUrl(topic);
     const sourceLabel = getPrimarySourceLabel(topic);
     const reasons = (topic.personalReasons ?? topic.hotReasons ?? []).slice(0, 3);
-    const audience = Array.isArray(topic.targetAudience) && topic.targetAudience.length ? topic.targetAudience.slice(0, 3).join(' / ') : '関心のある人';
     const thumb = topic.thumbnailUrl ? buildTrendCardThumb(topic.thumbnailUrl, deps) : '';
     return '<article class="priority-card" style="animation-delay:' + (index * 55) + 'ms">' +
       thumb +
@@ -151,7 +147,6 @@
       '<p>' + escapeHtml(topic.whatHappened ?? shortEventFromTitle(topic.title)) + '</p>' +
       '<dl class="trend-reason-list priority-reasons">' +
       '<div><dt>なぜ見る？</dt><dd>' + escapeHtml(topic.importantPoint ?? buildImportantPoint(topic)) + '</dd></div>' +
-      '<div><dt>関係ある人</dt><dd>' + escapeHtml(audience) + '</dd></div>' +
       '</dl>' +
       '<div class="priority-chip-row">' + (sourceUrl ? '<a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a>' : '<span class="detail-link">リンクなし</span>') + '</div>' +
       '<div class="priority-chip-row">' + reasons.map((reason) => '<span>' + escapeHtml(reason) + '</span>').join('') + '</div>' +

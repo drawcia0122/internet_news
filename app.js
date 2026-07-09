@@ -87,11 +87,14 @@ let archivePageLoadPromise = null;
 let latestTrendGeneratedAt = null;
 let latestHomeDataGeneratedAt = null;
 let dailyBriefItems = [];
+let todayInternetPayload = null;
 let eventItems = [];
 let adultTrendItems = [];
 let lastRefreshStartedAt = 0;
 let visibleTrendTopics = [];
 let pickedTopicIds = new Set();
+let featuredArticleKeys = new Set();
+let hiddenTrendIdentityKeys = new Set();
 let deferredTopicChannelsRendered = false;
 let activeTopicChannelKey = null;
 let activeEventTab = 'closingSoon';
@@ -234,7 +237,7 @@ async function refreshLiveData({ silent = false } = {}) {
     showRefreshStatus('ニュース情報を取得中...');
   }
 
-  const tasks = [loadTrendTopics(), loadDailyBrief(), loadEventItems(), loadNewsArchive()];
+  const tasks = [loadTrendTopics(), loadDailyBrief(), loadTodayInternet(), loadEventItems(), loadNewsArchive()];
   const shouldRefreshArchive = true;
   if (hasAdultTrendSection) {
     tasks.push(loadAdultTrends());
@@ -242,21 +245,22 @@ async function refreshLiveData({ silent = false } = {}) {
   const results = await Promise.all(tasks);
   const trendStatus = results[0];
   const briefStatus = results[1];
-  const eventStatus = results[2];
+  const todayInternetStatus = results[2];
+  const eventStatus = results[3];
   const archiveStatus = shouldRefreshArchive
-    ? results[3]
+    ? results[4]
     : { ok: true, count: archiveTopics.length, error: null };
   const adultStatus = hasAdultTrendSection
-    ? results[shouldRefreshArchive ? 4 : 3]
+    ? results[shouldRefreshArchive ? 5 : 4]
     : { ok: true, count: 0, error: null };
   if (silent) return;
 
-  if (!trendStatus.ok && !archiveStatus.ok && !briefStatus.ok && !eventStatus.ok && !adultStatus.ok) {
+  if (!trendStatus.ok && !archiveStatus.ok && !briefStatus.ok && !todayInternetStatus.ok && !eventStatus.ok && !adultStatus.ok) {
     if (isFileProtocol) {
       showRefreshStatus('取得失敗: file:// では起動すると JSON が読めません。必ず http://localhost:8000 で開いてください');
       return;
     }
-    const reason = `${trendStatus.error ?? 'trend'} / ${archiveStatus.error ?? 'archive'} / ${briefStatus.error ?? 'brief'} / ${eventStatus.error ?? 'events'}${hasAdultTrendSection ? ` / ${adultStatus.error ?? 'adult'}` : ''}`;
+    const reason = `${trendStatus.error ?? 'trend'} / ${archiveStatus.error ?? 'archive'} / ${briefStatus.error ?? 'brief'} / ${todayInternetStatus.error ?? 'today'} / ${eventStatus.error ?? 'events'}${hasAdultTrendSection ? ` / ${adultStatus.error ?? 'adult'}` : ''}`;
     showRefreshStatus(`取得失敗: ${reason}`);
     return;
   }
@@ -329,6 +333,26 @@ async function loadDailyBrief() {
   return {
     ok: dailyBriefItems.length > 0,
     count: dailyBriefItems.length,
+    error: errorMessage,
+  };
+}
+
+async function loadTodayInternet() {
+  let errorMessage = null;
+  try {
+    const payload = await fetchTodayInternetPayload();
+    todayInternetPayload = normalizeTodayInternetPayload(payload);
+    updateLatestHomeGeneratedAt(payload?.generatedAt);
+  } catch (error) {
+    errorMessage = error?.message || '取得エラー';
+    todayInternetPayload = null;
+  }
+
+  renderDiscoverySections();
+
+  return {
+    ok: Boolean(todayInternetPayload?.selectedTopic),
+    count: todayInternetPayload?.runnerUps?.length ?? 0,
     error: errorMessage,
   };
 }
@@ -494,6 +518,14 @@ async function fetchEventsPayload() {
   });
 }
 
+async function fetchTodayInternetPayload() {
+  return await fetchJsonWithCache({
+    cacheKey: 'today-internet',
+    endpoints: ['./data/today-internet.json'],
+    onFetchMetric: (metric) => perfMetrics.fetches.push(metric),
+  });
+}
+
 async function fetchAdultTrendsPayload() {
   return await fetchJsonWithCache({
     cacheKey: 'adult-trends',
@@ -558,6 +590,39 @@ function normalizeLegacyCategory(category) {
 function normalizeLegacyCategoryLabel(value, fallbackCategory) {
   if (value === 'ネタ') return categoryLabelFor(fallbackCategory ?? 'general');
   return value ?? categoryLabelFor(fallbackCategory ?? 'general');
+}
+
+function normalizeTodayInternetPayload(payload) {
+  if (!payload || !payload.selectedTopic) return null;
+  return {
+    ...payload,
+    selectedTopic: normalizeTodayInternetTopic(payload.selectedTopic),
+    runnerUps: Array.isArray(payload.runnerUps) ? payload.runnerUps.map((topic) => normalizeTodayInternetTopic(topic)) : [],
+  };
+}
+
+function normalizeTodayInternetTopic(topic) {
+  return {
+    ...topic,
+    title: decodeHtmlEntities(topic?.title ?? ''),
+    summary: decodeHtmlEntities(topic?.summary ?? topic?.summaryPayload?.threeMinuteSummary ?? ''),
+    briefSummary: decodeHtmlEntities(topic?.briefSummary ?? topic?.summaryPayload?.whatHappened ?? ''),
+    whatHappened: decodeHtmlEntities(topic?.whatHappened ?? topic?.summaryPayload?.whatHappened ?? ''),
+    whyHot: decodeHtmlEntities(topic?.whyHot ?? topic?.summaryPayload?.whyBuzzing ?? ''),
+    importantPoint: decodeHtmlEntities(topic?.importantPoint ?? topic?.summaryPayload?.keyPoints?.[0] ?? ''),
+    futureOutlook: decodeHtmlEntities(topic?.futureOutlook ?? topic?.summaryPayload?.watchpoints?.[0] ?? ''),
+    thumbnailUrl: pickCardImageUrl(topic),
+    category: normalizeLegacyCategory(topic?.category ?? topic?.categories?.[0] ?? 'general'),
+    categories: normalizeCategories(topic?.categories, topic?.category),
+    categoryLabel: decodeHtmlEntities(normalizeLegacyCategoryLabel(topic?.categoryLabel, topic?.category ?? topic?.categories?.[0] ?? 'general')),
+    categoryLabels: Array.isArray(topic?.categoryLabels) && topic.categoryLabels.length ? topic.categoryLabels : [categoryLabelFor(topic?.category ?? topic?.categories?.[0] ?? 'general')],
+    metricLabel: topic?.metricLabel ?? 'signals',
+    posts: String(topic?.posts ?? topic?.clusterStats?.articleCount ?? topic?.sourceSignals?.length ?? 1),
+    sourceSignals: Array.isArray(topic?.sourceSignals) ? topic.sourceSignals : [],
+    buzzScore: Number(topic?.buzzScore ?? topic?.hotScore ?? 0),
+    hotScore: Number(topic?.hotScore ?? topic?.buzzScore ?? 0),
+    time: topic?.time ?? formatTopicDisplayTime(topic),
+  };
 }
 
 function normalizeAdultTrendItem(item) {
@@ -640,7 +705,7 @@ function renderTrends(filter = 'all', { preserveCount = false } = {}) {
     trendVisibleCount = TREND_HOME_LIMIT;
   }
 
-  const filtered = getFilteredTrendItems(filter);
+  const filtered = getFilteredTrendItems(filter).filter((trend) => !isFeaturedTrendListDuplicate(trend));
 
   if (!filtered.length) {
     if (archiveHasMorePages && archiveTopics.length) {
@@ -679,11 +744,14 @@ function renderTrends(filter = 'all', { preserveCount = false } = {}) {
 
 function getTrendListItems() {
   const sourceItems = archiveTopics.length ? archiveTopics : trendTopics;
-  return sourceItems.filter((topic) => isTrendListEligibleTopic(topic));
+  return sourceItems
+    .filter((topic) => isTrendListEligibleTopic(topic))
+    .filter((topic) => !isHiddenFromTrendList(topic));
 }
 
 function getFilteredTrendItems(filter = activeTrendFilter) {
   return getTrendListItems()
+    .filter((trend) => !isFeaturedTrendListDuplicate(trend))
     .filter((trend) => {
       if (filter === 'all') return true;
       if (filter === 'adult') return hasCategory(trend, 'adult') && !isDoujinEventOnlyTopic(trend);
@@ -694,6 +762,29 @@ function getFilteredTrendItems(filter = activeTrendFilter) {
       || Number(pickedTopicIds.has(left.id ?? '')) - Number(pickedTopicIds.has(right.id ?? ''))
       || hotTopicScore(right) - hotTopicScore(left)
     );
+}
+
+function topicArticleKeys(topic) {
+  const values = new Set();
+  if (topic?.id) values.add(`id:${topic.id}`);
+  const directUrls = [
+    topic?.url,
+    topic?.sourceUrl,
+    topic?.primaryLink?.url,
+    ...(Array.isArray(topic?.representativeArticles) ? topic.representativeArticles.map((item) => item?.url) : []),
+    ...(Array.isArray(topic?.sourceSignals) ? topic.sourceSignals.flatMap((signal) => [signal?.canonicalUrl, signal?.url]) : []),
+  ];
+  for (const value of directUrls.filter(Boolean)) {
+    values.add(`url:${String(value).replace(/#.*$/, '').replace(/\/$/, '')}`);
+  }
+  return values;
+}
+
+function isFeaturedTrendListDuplicate(topic) {
+  for (const key of topicArticleKeys(topic)) {
+    if (featuredArticleKeys.has(key)) return true;
+  }
+  return false;
 }
 
 function updateTrendLoadMoreButtons(visibleCount, totalCount) {
@@ -722,7 +813,12 @@ function renderDiscoverySections() {
   pickedTopicIds = new Set([...internetNews, ...personalNews].map((topic) => topic.id).filter(Boolean));
   const todayNewsFallback = buildTodayNewsFallbackItems(topics);
   const todayNews = selectTodayNews([...dailyBriefItems, ...todayNewsFallback], { limit: TODAY_NEWS_LIMIT });
-  renderMustReadNews(internetNews);
+  featuredArticleKeys = new Set([
+    ...personalNews.flatMap((topic) => [...topicArticleKeys(topic)]),
+    ...todayNews.flatMap((topic) => [...topicArticleKeys(topic)]),
+  ]);
+  hiddenTrendIdentityKeys = buildHiddenTrendIdentityKeys({ internetNews, personalNews, todayNews });
+  renderMustReadNews(internetNews, todayInternetPayload);
   renderPriorityList(personalNewsListElement, personalNews, {
     emptyTitle: '自分向けニュースを整理中です',
     emptyText: 'ゲーム、ポケモン、漫画・アニメ、セール、ネット文化系の話題を探しています。',
@@ -762,6 +858,65 @@ function buildTodayNewsFallbackItems(topics) {
         label: getPrimarySourceLabel(topic),
       },
     }));
+}
+
+function buildHiddenTrendIdentityKeys({ internetNews = [], personalNews = [], todayNews = [] } = {}) {
+  const keys = new Set();
+  [...internetNews, ...personalNews].forEach((topic) => {
+    topicIdentityKeys(topic).forEach((key) => keys.add(key));
+  });
+  todayNews.forEach((item) => {
+    briefIdentityKeys(item).forEach((key) => keys.add(key));
+  });
+  return keys;
+}
+
+function isHiddenFromTrendList(topic) {
+  if (!hiddenTrendIdentityKeys.size) return false;
+  return topicIdentityKeys(topic).some((key) => hiddenTrendIdentityKeys.has(key));
+}
+
+function topicIdentityKeys(topic) {
+  const keys = new Set();
+  const topicId = normalizeIdentityToken(topic?.id);
+  if (topicId) keys.add(`id:${topicId}`);
+  const directUrl = normalizeIdentityUrl(getPrimarySourceUrl(topic));
+  if (directUrl) keys.add(`url:${directUrl}`);
+  const sourceSignals = Array.isArray(topic?.sourceSignals) ? topic.sourceSignals : [];
+  for (const signal of sourceSignals.slice(0, 3)) {
+    const signalUrl = normalizeIdentityUrl(signal?.canonicalUrl ?? signal?.url);
+    if (signalUrl) keys.add(`url:${signalUrl}`);
+  }
+  return [...keys];
+}
+
+function briefIdentityKeys(item) {
+  const keys = new Set();
+  const itemId = normalizeIdentityToken(item?.id);
+  if (itemId) keys.add(`id:${itemId}`);
+  const linkUrl = normalizeIdentityUrl(item?.primaryLink?.url);
+  if (linkUrl) keys.add(`url:${linkUrl}`);
+  return [...keys];
+}
+
+function normalizeIdentityToken(value) {
+  const token = String(value ?? '').trim().toLowerCase();
+  return token || '';
+}
+
+function normalizeIdentityUrl(value) {
+  const url = String(value ?? '').trim();
+  if (!url) return '';
+  try {
+    const parsed = new URL(url);
+    parsed.hash = '';
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid', 'ref', 'ref_src', 'output', 's'].forEach((key) => parsed.searchParams.delete(key));
+    parsed.search = parsed.searchParams.toString() ? `?${parsed.searchParams.toString()}` : '';
+    parsed.pathname = parsed.pathname.replace(/\/+$/, '') || '/';
+    return parsed.toString().toLowerCase();
+  } catch {
+    return url.toLowerCase();
+  }
 }
 
 function renderFeaturedEvents() {
@@ -828,16 +983,20 @@ function buildClosingSoonBadge(item) {
   return '<span class="event-closing-badge">' + escapeHtml(label) + '</span>';
 }
 
-function renderMustReadNews(items = []) {
+function renderMustReadNews(items = [], featuredPayload = null) {
   if (!mustReadNewsListElement) return;
-  if (!items.length) {
+  const featuredItems = featuredPayload?.selectedTopic
+    ? [featuredPayload.selectedTopic, ...(Array.isArray(featuredPayload.runnerUps) ? featuredPayload.runnerUps : [])].filter(Boolean)
+    : [];
+  const renderItems = featuredItems.length ? featuredItems : items;
+  if (!renderItems.length) {
     mustReadNewsListElement.innerHTML = '<article class="topic-cluster-card topic-cluster-card-empty"><strong>今日のインターネットを整理中です</strong><p>直近24時間のネット話題を確認しています。</p></article>';
     return;
   }
 
-  replaceChildrenFromHtml(mustReadNewsListElement, items.map((topic) => renderTopicClusterCard(topic, {
-    badge: 'INTERNET',
-    scoreMode: 'hot',
+  replaceChildrenFromHtml(mustReadNewsListElement, renderItems.map((topic, index) => renderTopicClusterCard(topic, {
+    badge: featuredItems.length ? (index === 0 ? 'TODAY INTERNET' : 'RUNNER UP') : 'INTERNET',
+    scoreMode: featuredItems.length ? 'buzz' : 'hot',
     featured: true,
   })));
 }
@@ -892,7 +1051,21 @@ function buildTopicChannelDefinitions(topics) {
       icon: '🎮',
       title: 'ゲーム',
       description: '予約、抽選、発売、アップデートなど、ゲーム周辺の大きな動きを先に整理します。',
-      items: selectCategoryTopics(topics, (topic) => hasCategory(topic, 'games')),
+      items: selectCategoryTopics(topics, (topic) => hasCategory(topic, 'games') && !hasCategory(topic, 'game-features')),
+    },
+    {
+      key: 'anime',
+      icon: '📺',
+      title: 'アニメ',
+      description: '新作発表、放送開始、PV、キービジュアル、キャスト情報などをまとまりで追えます。',
+      items: selectCategoryTopics(topics, (topic) => hasCategory(topic, 'anime')),
+    },
+    {
+      key: 'game-features',
+      icon: '📝',
+      title: 'ゲーム特集',
+      description: 'レビュー、プレイレポート、開発秘話、インタビューなど読み物系を分けて並べます。',
+      items: selectCategoryTopics(topics, (topic) => hasCategory(topic, 'game-features')),
     },
     {
       key: 'ai',
@@ -926,7 +1099,7 @@ function buildTopicChannelDefinitions(topics) {
 }
 
 function selectDefaultTopicChannelKey(sections) {
-  const preferredOrder = ['games', 'ai', 'deals', 'sns-net', 'world'];
+  const preferredOrder = ['games', 'anime', 'game-features', 'ai', 'deals', 'sns-net', 'world'];
   const available = new Map(sections.map((section) => [section.key, section]));
   const preferred = preferredOrder
     .map((key) => available.get(key))

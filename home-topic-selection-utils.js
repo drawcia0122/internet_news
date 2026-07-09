@@ -27,8 +27,9 @@
     { pattern: /ビジネス|副業|収益化|個人開発|アフィリエイト|saas/i, score: 40 },
     { pattern: /芸能|熱愛|ゴシップ|スキャンダル/i, score: 30 },
   ];
-  const ADULT_CONTENT_PATTERN = /dlsite|fanza|dmm|同人音声|エロ漫画|\bav\b|成人向け|18禁|r-?18|adult[-\s]?trend|adult[-\s]?feature/i;
+  const ADULT_CONTENT_PATTERN = /dlsite|fanza|dmm|同人音声|同人ゲーム|エロ漫画|エロゲ|\bav\b|成人向け|18禁|r-?18|adult[-\s]?trend|adult[-\s]?feature/i;
 
+  const SOFT_ADULT_PATTERN = /グラビア|水着|写真集|ランジェリー|ビキニ|コスプレ|セクシーショット|美ボディ|美バスト|美尻|谷間/i;
   let latestTrendGeneratedAt = null;
 
   function setLatestTrendGeneratedAt(value) {
@@ -119,6 +120,7 @@
 
   function calculatePersonalFit(topic) {
     const text = topicText(topic);
+    if (SOFT_ADULT_PATTERN.test(text) && !ADULT_CONTENT_PATTERN.test(text)) return false;
     const reasons = [];
     let score = 0;
 
@@ -159,10 +161,10 @@
 
   function isPersonalTopicCandidate(topic) {
     const text = topicText(topic);
-    if (hasCategory(topic, 'games') || hasCategory(topic, 'manga') || hasCategory(topic, 'entertainment') || hasCategory(topic, 'sns') || hasCategory(topic, 'net-culture') || hasCategory(topic, 'matome')) {
+    if (hasCategory(topic, 'games') || hasCategory(topic, 'game-features') || hasCategory(topic, 'anime') || hasCategory(topic, 'manga') || hasCategory(topic, 'entertainment') || hasCategory(topic, 'sns') || hasCategory(topic, 'net-culture') || hasCategory(topic, 'matome')) {
       return true;
     }
-    return /ポケモン|pokemon|任天堂|nintendo|switch|steam|漫画|マンガ|アニメ|同人|脱出ゲーム|scrap|謎解き|イマーシブ|展示会|ポップアップ|コラボカフェ|セール|割引|無料配布|キャンペーン/.test(text);
+    return /ポケモン|pokemon|任天堂|nintendo|switch|steam|漫画|マンガ|アニメ|声優|同人|脱出ゲーム|scrap|謎解き|イマーシブ|展示会|ポップアップ|コラボカフェ|セール|割引|無料配布|キャンペーン/.test(text);
   }
 
   function isPersonalHardExcludedTopic(topic) {
@@ -188,7 +190,7 @@
     const text = topicText(topic);
     const hot = hotTopicScore(topic);
     const primaryCategory = topic.category ?? topic.categories?.[0] ?? 'general';
-    const preferredCategory = ['games', 'manga', 'entertainment', 'sns', 'net-culture', 'matome'].includes(primaryCategory);
+    const preferredCategory = ['games', 'game-features', 'anime', 'manga', 'entertainment', 'sns', 'net-culture', 'matome'].includes(primaryCategory);
     const preferredKeywords = /ポケモン|pokemon|任天堂|nintendo|switch|steam|ゲーム|漫画|マンガ|アニメ|同人|コミケ|コラボカフェ|炎上|バズ|ミーム|トレンド入り|togetter|はてブ|セール|割引|無料配布|オタク|声優|配信者/.test(text);
     const networkBuzz = /sns|xで話題|twitter|bluesky|reddit|炎上|バズ|ミーム|まとめ|ネットの反応|話題/.test(text)
       || (Array.isArray(topic.hotReasons) && topic.hotReasons.some((reason) => /話題|拡散|複数媒体|専門媒体/.test(reason)));
@@ -205,7 +207,7 @@
     const text = topicText(topic);
     let score = hotTopicScore(topic) + topicRecencyScore(topic);
     if (['sns', 'net-culture', 'matome'].includes(topic.category)) score += 28;
-    if (['games', 'manga', 'entertainment'].includes(topic.category)) score += 20;
+    if (['games', 'game-features', 'anime', 'manga', 'entertainment'].includes(topic.category)) score += 20;
     if (/ポケモン|pokemon|任天堂|nintendo|switch|steam|ゲーム|漫画|マンガ|アニメ|同人/.test(text)) score += 18;
     if (/炎上|バズ|ミーム|xで話題|トレンド入り|togetter|はてブ|ネットの反応/.test(text)) score += 22;
     if (/セール|割引|無料配布|キャンペーン/.test(text)) score += 12;
@@ -243,7 +245,7 @@
     const text = topicText(topic);
     const hasStrongBuzz = /sns|xで話題|twitter|bluesky|reddit|炎上|バズ|ミーム|トレンド入り|togetter|はてブ|ネットの反応/.test(text);
     if (['sns', 'net-culture', 'matome'].includes(category)) return 4;
-    if (['games', 'manga', 'entertainment'].includes(category)) return hasStrongBuzz ? 3 : 2;
+    if (['games', 'game-features', 'anime', 'manga', 'entertainment'].includes(category)) return hasStrongBuzz ? 3 : 2;
     if (['politics', 'business', 'world'].includes(category)) return 2;
     return 3;
   }
@@ -373,7 +375,13 @@
 
   function isAdultContentTopic(topic) {
     if (!topic) return false;
-    if (hasCategory(topic, 'adult')) return true;
+    if (hasCategory(topic, 'adult')) {
+      const text = topicText(topic);
+      if (/(グラビア|水着|コスプレ|ランジェリー|写真集)/.test(text) && !/(成人向け|18禁|r-?18|dlsite|fanza|dmm|同人音声|同人ゲーム|エロ漫画|エロゲ|\bav\b)/i.test(text)) {
+        return false;
+      }
+      return true;
+    }
     const text = topicText(topic);
     if (ADULT_CONTENT_PATTERN.test(text)) return true;
     const sourceSignals = Array.isArray(topic.sourceSignals) ? topic.sourceSignals : [];
@@ -447,6 +455,49 @@
     return Number.isFinite(timestamp) ? timestamp : 0;
   }
 
+  isAdultContentTopic = function (topic) {
+    if (!topic) return false;
+    const text = topicText(topic);
+    if (SOFT_ADULT_PATTERN.test(text) && !ADULT_CONTENT_PATTERN.test(text)) return false;
+    if (hasCategory(topic, 'adult')) {
+      return ADULT_CONTENT_PATTERN.test(text) && !SOFT_ADULT_PATTERN.test(text);
+    }
+    if (ADULT_CONTENT_PATTERN.test(text)) return true;
+    const sourceSignals = Array.isArray(topic.sourceSignals) ? topic.sourceSignals : [];
+    return sourceSignals.some((signal) => ADULT_CONTENT_PATTERN.test([
+      signal?.sourceName,
+      signal?.sourceGroup,
+      signal?.url,
+      signal?.canonicalUrl,
+    ].filter(Boolean).join(' ')));
+  };
+
+  isPersonalTopicCandidate = function (topic) {
+    const text = topicText(topic);
+    if (hasCategory(topic, 'games') || hasCategory(topic, 'game-features') || hasCategory(topic, 'anime') || hasCategory(topic, 'manga') || hasCategory(topic, 'entertainment') || hasCategory(topic, 'sns') || hasCategory(topic, 'net-culture') || hasCategory(topic, 'matome')) {
+      return true;
+    }
+    return /ポケモン|pokemon|任天堂|nintendo|switch|steam|漫画|マンガ|アニメ|同人|脱出ゲーム|scrap|謎解き|イマーシブ|展示会|ポップアップ|コラボカフェ|セール|割引|無料配布|キャンペーン/.test(text);
+  };
+
+  isInternetMainTopic = function (topic) {
+    if (!topic || isAdultContentTopic(topic) || isLowPriorityTopic(topic)) return false;
+    const text = topicText(topic);
+    const hot = hotTopicScore(topic);
+    const primaryCategory = topic.category ?? topic.categories?.[0] ?? 'general';
+    const preferredCategory = ['games', 'game-features', 'anime', 'manga', 'entertainment', 'sns', 'net-culture', 'matome'].includes(primaryCategory);
+    const preferredKeywords = /ポケモン|pokemon|任天堂|nintendo|switch|steam|ゲーム|漫画|マンガ|アニメ|同人|コミケ|コラボカフェ|炎上|バズ|ミーム|トレンド入り|togetter|はてブ|セール|割引|無料配布|オタク|声優|配信者/.test(text);
+    const networkBuzz = /sns|xで話題|twitter|bluesky|reddit|炎上|バズ|ミーム|まとめ|ネットの反応|話題/.test(text)
+      || (Array.isArray(topic.hotReasons) && topic.hotReasons.some((reason) => /話題|拡散|複数媒体|専門媒体/.test(reason)));
+    const secondaryCategory = ['sports', 'crime', 'general'].includes(primaryCategory);
+    const lowPriorityDomain = /(政治|国会|選挙|与党|野党|経済|株価|決算|金利|国際|外交|ai|生成ai|openai|claude|gemini|個人開発|副業|収益化)/i.test(text);
+
+    if ((preferredCategory || preferredKeywords) && !lowPriorityDomain) return true;
+    if (networkBuzz && hot >= 54 && !lowPriorityDomain) return true;
+    if (secondaryCategory && networkBuzz && hot >= 60) return true;
+    return hot >= 90 && !/(地域おこし|観光協会|セミナー|説明会)/.test(text);
+  };
+
   window.HomeTopicSelectionUtils = {
     setLatestTrendGeneratedAt,
     prepareVisibleTrendTopics,
@@ -483,4 +534,47 @@
     isTrendTopicWithinDays,
     topicTimestamp,
   };
+
+  function isAdultContentTopic(topic) {
+    if (!topic) return false;
+    const text = topicText(topic);
+    if (SOFT_ADULT_PATTERN.test(text) && !ADULT_CONTENT_PATTERN.test(text)) return false;
+    if (hasCategory(topic, 'adult')) {
+      return ADULT_CONTENT_PATTERN.test(text) && !SOFT_ADULT_PATTERN.test(text);
+    }
+    if (ADULT_CONTENT_PATTERN.test(text)) return true;
+    const sourceSignals = Array.isArray(topic.sourceSignals) ? topic.sourceSignals : [];
+    return sourceSignals.some((signal) => ADULT_CONTENT_PATTERN.test([
+      signal?.sourceName,
+      signal?.sourceGroup,
+      signal?.url,
+      signal?.canonicalUrl,
+    ].filter(Boolean).join(' ')));
+  }
+
+  function isPersonalTopicCandidate(topic) {
+    const text = topicText(topic);
+    if (hasCategory(topic, 'games') || hasCategory(topic, 'game-features') || hasCategory(topic, 'anime') || hasCategory(topic, 'manga') || hasCategory(topic, 'entertainment') || hasCategory(topic, 'sns') || hasCategory(topic, 'net-culture') || hasCategory(topic, 'matome')) {
+      return true;
+    }
+    return /ポケモン|pokemon|任天堂|nintendo|switch|steam|漫画|マンガ|アニメ|同人|脱出ゲーム|scrap|謎解き|イマーシブ|展示会|ポップアップ|コラボカフェ|セール|割引|無料配布|キャンペーン/.test(text);
+  }
+
+  function isInternetMainTopic(topic) {
+    if (!topic || isAdultContentTopic(topic) || isLowPriorityTopic(topic)) return false;
+    const text = topicText(topic);
+    const hot = hotTopicScore(topic);
+    const primaryCategory = topic.category ?? topic.categories?.[0] ?? 'general';
+    const preferredCategory = ['games', 'game-features', 'anime', 'manga', 'entertainment', 'sns', 'net-culture', 'matome'].includes(primaryCategory);
+    const preferredKeywords = /ポケモン|pokemon|任天堂|nintendo|switch|steam|ゲーム|漫画|マンガ|アニメ|同人|コミケ|コラボカフェ|炎上|バズ|ミーム|トレンド入り|togetter|はてブ|セール|割引|無料配布|オタク|声優|配信者/.test(text);
+    const networkBuzz = /sns|xで話題|twitter|bluesky|reddit|炎上|バズ|ミーム|まとめ|ネットの反応|話題/.test(text)
+      || (Array.isArray(topic.hotReasons) && topic.hotReasons.some((reason) => /話題|拡散|複数媒体|専門媒体/.test(reason)));
+    const secondaryCategory = ['sports', 'crime', 'general'].includes(primaryCategory);
+    const lowPriorityDomain = /(政治|国会|選挙|与党|野党|経済|株価|決算|金利|国際|外交|ai|生成ai|openai|claude|gemini|個人開発|副業|収益化)/i.test(text);
+
+    if ((preferredCategory || preferredKeywords) && !lowPriorityDomain) return true;
+    if (networkBuzz && hot >= 54 && !lowPriorityDomain) return true;
+    if (secondaryCategory && networkBuzz && hot >= 60) return true;
+    return hot >= 90 && !/(地域おこし|観光協会|セミナー|説明会)/.test(text);
+  }
 })();

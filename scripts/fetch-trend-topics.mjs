@@ -11,7 +11,10 @@ const CATEGORY_LABELS = {
   business: "経済",
   politics: "政治",
   entertainment: "エンタメ",
+  anime: "アニメ",
   games: "ゲーム",
+  "game-features": "ゲーム特集",
+  "anime-features": "アニメ特集",
   manga: "漫画",
   books: "本",
   sports: "スポーツ",
@@ -180,7 +183,7 @@ const MAX_CURRENT_ITEMS = 180;
 const MAX_ARCHIVE_ITEMS = 5200;
 const DEDUPE_BUCKET_SCAN_LIMIT = 80;
 const CURRENT_METADATA_ENRICH_LIMIT = MAX_CURRENT_ITEMS;
-const ARCHIVE_METADATA_ENRICH_LIMIT = 900;
+const ARCHIVE_METADATA_ENRICH_LIMIT = 240;
 const METADATA_ENRICH_CONCURRENCY = 8;
 const HOME_TOPIC_LIMIT = 30;
 const HOME_SOURCE_MAX = 2;
@@ -197,8 +200,8 @@ const BROWSE_7_TO_14D_LIMIT = 30;
 const FETCH_STAGE_MIN_THUMBNAIL_RATE = 90;
 const FETCH_STAGE_REPAIR_CONCURRENCY = 6;
 const FETCH_STAGE_REPAIR_LIMIT = 120;
-const ARCHIVE_FETCH_STAGE_REPAIR_LIMIT = 900;
-const ARCHIVE_THUMBNAIL_COVERAGE_LIMIT = NEWS_ARCHIVE_MAX_ITEMS;
+const ARCHIVE_FETCH_STAGE_REPAIR_LIMIT = 180;
+const ARCHIVE_THUMBNAIL_COVERAGE_LIMIT = 240;
 const SUSPICIOUS_DUPLICATE_THUMBNAIL_MIN_COUNT = 8;
 const FETCH_STAGE_THUMBNAIL_STRICT = process.env.FETCH_STAGE_THUMBNAIL_STRICT === "1";
 
@@ -206,7 +209,7 @@ const previousCurrentPayload = await readArchivePayload("data/trend-topics.json"
 const payload = await collectTrendTopics();
 const dedupedItems = dedupeNearDuplicateItems(payload.items ?? []);
 const capturedAt = payload.generatedAt ?? new Date().toISOString();
-const curatedItems = selectCuratedTrendItems(dedupedItems, MAX_CURRENT_ITEMS);
+const curatedItems = selectCuratedTrendItems(dedupedItems, MAX_CURRENT_ITEMS, payload.items ?? []);
 await enrichItemsWithMetadata(curatedItems, { limit: CURRENT_METADATA_ENRICH_LIMIT });
 await ensureFetchStageThumbnailCoverage(curatedItems, "current trend topics", { repairLimit: FETCH_STAGE_REPAIR_LIMIT });
 const normalizedCuratedItems = curatedItems.map(normalizeStoredTopic);
@@ -272,16 +275,19 @@ const newsArchivePayload = buildNewsArchivePayload({
   archiveItems: mergedArchiveItems,
   generatedAt: derivedGeneratedAt,
 });
-const homeNewsPayloads = buildHomeNewsPayloads({
-  newsArchivePayload,
-  generatedAt: derivedGeneratedAt,
-});
-const adultNewsPayload = buildAdultNewsPayload({
+const homeTopicsPayload = buildHomeTopicsPayload({
+  currentItems: currentPayload.items,
   archiveItems: mergedArchiveItems,
   generatedAt: derivedGeneratedAt,
 });
-const homeTopicsPayload = buildHomeTopicsPayload({
+const homeNewsPayloads = buildHomeNewsPayloads({
+  newsArchivePayload,
   currentItems: currentPayload.items,
+  dailyBriefPayload,
+  homeTopicsPayload,
+  generatedAt: derivedGeneratedAt,
+});
+const adultNewsPayload = buildAdultNewsPayload({
   archiveItems: mergedArchiveItems,
   generatedAt: derivedGeneratedAt,
 });
@@ -400,11 +406,11 @@ function normalizeStoredTopic(item) {
       publishedAt: signal.publishedAt ?? null,
       publishedLabel: signal.publishedLabel ?? null,
       thumbnailUrl: sanitizeThumbnailUrl(signal.thumbnailUrl),
-      briefSummary: normalizeBriefSummaryText(signal.briefSummary),
-      summary: normalizeSummaryText(signal.summary),
+      briefSummary: normalizeAlignedBriefSummary(signal.briefSummary, signal.title ?? item.title),
+      summary: normalizeAlignedSummary(signal.summary, signal.title ?? item.title),
     })),
-    briefSummary: normalizeBriefSummaryText(item.briefSummary) || buildStoredBriefSummary(item),
-    summary: normalizeSummaryText(item.summary),
+    briefSummary: normalizeAlignedBriefSummary(item.briefSummary, item.title) || buildStoredBriefSummary(item),
+    summary: normalizeAlignedSummary(item.summary, item.title),
     whatHappened: normalizeSummaryText(item.whatHappened) || insights.whatHappened,
     whyHot: normalizeSummaryText(item.whyHot) || insights.whyHot,
     importantPoint: normalizeSummaryText(item.importantPoint) || insights.importantPoint,
@@ -569,9 +575,9 @@ function isHomeDiscoveryFriendly(item) {
     return false;
   }
   if (signal?.forPersonal || signal?.specialist) return true;
-  if (/games|anime|net-culture|steam|events|pokemon/.test(sourceGroup)) return true;
+  if (/games|anime|net-culture|matome|steam|events|pokemon/.test(sourceGroup)) return true;
   if (/AUTOMATON|Game\*Spark|INSIDE|ファミ通|4Gamer|電ファミ|ポケモン公式|アニメ！アニメ！|アニメイトタイムズ|MANTANWEB|コミックナタリー|KAI-YOU|ねとらぼ|Togetter|ITmedia|Steam|SCRAP|リアル脱出ゲーム|Event Checker|コラボカフェ/i.test(sourceName)) return true;
-  if (["games", "manga", "entertainment", "sns", "net-culture"].includes(category)) return true;
+  if (["games", "game-features", "anime", "manga", "entertainment", "sns", "net-culture", "matome"].includes(category)) return true;
   if (/ポケモン|pokemon|任天堂|nintendo|switch|steam|ゲーム|漫画|マンガ|アニメ|炎上|バズ|ミーム|セール|割引|脱出ゲーム|リアル脱出ゲーム|scrap|謎解き|イマーシブ|展示会|ポップアップ|コラボカフェ|体験型/.test(text)) return true;
   return false;
 }
@@ -712,8 +718,11 @@ function buildNewsArchivePayload({ archiveItems = [], generatedAt = new Date().t
   };
 }
 
-function buildHomeNewsPayloads({ newsArchivePayload, generatedAt = new Date().toISOString() }) {
-  const items = (Array.isArray(newsArchivePayload?.items) ? newsArchivePayload.items : []).slice(0, HOME_NEWS_MAX_ITEMS);
+function buildHomeNewsPayloads({ newsArchivePayload, currentItems = [], dailyBriefPayload = null, homeTopicsPayload = null, generatedAt = new Date().toISOString() }) {
+  const excludedKeys = buildFeaturedNewsExclusionKeys({ currentItems, dailyBriefPayload, homeTopicsPayload });
+  const items = (Array.isArray(newsArchivePayload?.items) ? newsArchivePayload.items : [])
+    .filter((item) => !matchesFeaturedNewsExclusion(item, excludedKeys))
+    .slice(0, HOME_NEWS_MAX_ITEMS);
   const totalCount = items.length;
   const categoryCounts = buildHomeNewsCategoryCounts(items);
   const initialItems = items.slice(0, HOME_NEWS_INITIAL_COUNT);
@@ -772,6 +781,42 @@ function buildHomeNewsCategoryCounts(items = []) {
   }
 
   return counts;
+}
+
+function buildFeaturedNewsExclusionKeys({ currentItems = [], dailyBriefPayload = null, homeTopicsPayload = null } = {}) {
+  const keys = new Set();
+  const pushItem = (item) => {
+    for (const key of itemDeduplicationKeys(item)) keys.add(key);
+  };
+
+  for (const item of currentItems.slice(0, 10)) pushItem(item);
+  for (const item of (Array.isArray(homeTopicsPayload?.items) ? homeTopicsPayload.items : []).slice(0, 12)) pushItem(item);
+  for (const item of (Array.isArray(dailyBriefPayload?.items) ? dailyBriefPayload.items : []).slice(0, 10)) pushItem(item);
+  return keys;
+}
+
+function matchesFeaturedNewsExclusion(item, excludedKeys = new Set()) {
+  for (const key of itemDeduplicationKeys(item)) {
+    if (excludedKeys.has(key)) return true;
+  }
+  return false;
+}
+
+function itemDeduplicationKeys(item) {
+  const keys = new Set();
+  if (item?.id) keys.add(`id:${item.id}`);
+
+  const urls = [
+    item?.url,
+    item?.sourceUrl,
+    item?.primaryLink?.url,
+    ...(Array.isArray(item?.sourceSignals) ? item.sourceSignals.flatMap((signal) => [signal?.canonicalUrl, signal?.url]) : []),
+  ].filter(Boolean);
+
+  for (const value of urls) {
+    keys.add(`url:${String(value).replace(/#.*$/, '').replace(/\/$/, '')}`);
+  }
+  return keys;
 }
 
 async function removeStaleHomeNewsPages(activePages = []) {
@@ -865,15 +910,23 @@ function isDomesticNewsArchiveItem(item) {
 function isAdultNewsArchiveItem(item) {
   const text = adultNewsText(item);
   if (!text) return false;
+  if (/dmm tv|dmm英会話|dmmブックス|dmm books|dmmプレミアム/.test(text)) return false;
   if (/詐欺|被害|未納料金|架空請求|注意喚起|摘発|逮捕|相談急増/.test(text)) return false;
   if (/ランキング|売れ筋|セール開催中|%off|ポイント還元|クーポン/.test(text) && !/アダルトビデオ|av女優|成人向け|18禁|r-?18|同人音声|エロ漫画|エロゲ/.test(text)) return false;
+  if (/(グラビア|水着|コスプレ|写真集|フィギュア|ボディライン|太もも|プライズ)/.test(text) && !/(成人向け|18禁|r-?18|av女優|アダルトビデオ|同人音声|同人ゲーム|エロ漫画|エロゲ|fanza|dlsite|dmm|cg集)/.test(text)) return false;
 
-  const hardR18Signal = /18禁|r-?18|成人向け|アダルトビデオ|av女優|同人音声|同人ゲーム|エロ漫画|エロゲ|美少女ゲーム|アダルト作品|アダルト業界/.test(text);
-  const adultPlatformSignal = /(fanza|dlsite)/.test(text) && /(18禁|r-?18|成人向け|アダルト|同人音声|同人ゲーム|エロ漫画|エロゲ|av)/.test(text);
-  const softAdultOnly = /グラビア|写真集|ランジェリー|水着姿|セクシーショット|セクシー女優/.test(text);
+  const hardR18Signal = /18禁|r-?18|成人向け|アダルトビデオ|av女優|同人音声|同人ゲーム|エロ漫画|エロゲ|アダルトゲーム|成人向けゲーム|エロ同人|成人向けcg|cg集|hentai|ポルノ/.test(text);
+  const adultPlatformSignal = /(fanza|fanza動画|fanza同人|dlsite|dlsite\s*comipo)/.test(text)
+    && /(18禁|r-?18|成人向け|アダルト|同人音声|同人ゲーム|エロ漫画|エロゲ|av|cg集)/.test(text);
+  const softAdultOnly = /グラビア|写真集|ランジェリー|水着姿|水着|コスプレ|セクシーショット|セクシー女優/.test(text);
+  const gravureOnly = /グラドル|グラビアアイドル|写真集|ビキニ|水着/.test(text)
+    && !/av女優|アダルトビデオ|成人向け|18禁|r-?18|fanza動画/.test(text);
   const hasAdultCategory = normalizeCategoryList(item?.categories ?? [item?.category]).includes("adult");
   if (softAdultOnly && !hardR18Signal && !adultPlatformSignal) return false;
-  return hardR18Signal || adultPlatformSignal || (hasAdultCategory && !softAdultOnly && /アダルト|成人向け|18禁|r-?18|av|同人/.test(text));
+  if (gravureOnly) return false;
+  return hardR18Signal
+    || adultPlatformSignal
+    || (hasAdultCategory && !softAdultOnly && /成人向け|18禁|r-?18|アダルトゲーム|アダルトビデオ|av女優|同人音声|同人ゲーム|エロ漫画|エロゲ|cg集/.test(text));
 }
 
 function isMalformedArchiveItem(item) {
@@ -1136,9 +1189,10 @@ function normalizeCategory(category) {
   return category;
 }
 
-function selectCuratedTrendItems(items, maxItems) {
-  const seededMatome = items
+function selectCuratedTrendItems(items, maxItems, seedCandidates = items) {
+  const seededMatome = seedCandidates
     .filter(isCuratableMatomeItem)
+    .map((item) => items.find((candidate) => candidate.id === item.id) ?? item)
     .slice(0, Math.min(3, maxItems));
   const seededIds = new Set(seededMatome.map((item) => item.id));
   const remainingItems = items.filter((item) => !seededIds.has(item.id));
@@ -1153,8 +1207,7 @@ function selectCuratedTrendItems(items, maxItems) {
   const selectedWithoutThumbnail = withoutThumbnail.slice(0, maxWithoutThumbnail);
 
   return [...seededMatome, ...selectedWithThumbnail, ...selectedWithoutThumbnail]
-    .sort((left, right) => Number(right.score ?? 0) - Number(left.score ?? 0) || archiveTimestamp(right) - archiveTimestamp(left))
-    .slice(0, maxItems);
+    .sort((left, right) => Number(right.score ?? 0) - Number(left.score ?? 0) || archiveTimestamp(right) - archiveTimestamp(left));
 }
 
 function isCuratableMatomeItem(item) {
@@ -1572,6 +1625,14 @@ function normalizeArchiveItem(item) {
 function normalizeSummaryText(value) {
   return String(value ?? "")
     .replace(/&nbsp;|&#160;/g, " ")
+    .replace(/^現在JavaScriptが無効になっています.*$/iu, " ")
+    .replace(/^Googleの「Google ニュース」をApp Storeでダウンロードしてください。?.*$/iu, " ")
+    .replace(/^Google ニュースが世界中のニュース提供元から集約した広範囲にわたる最新情報.*$/iu, " ")
+    .replace(/^何度興味がないと選択してもしつこくしつこく何度も出てきます。?.*$/iu, " ")
+    .replace(/^「?.+?」?の検索結果。?Yahoo!ニュースでは、新聞・通信社が配信するニュースのほか、映像、雑誌や個人の書き手が執筆する記事などを掲載しています。?$/iu, " ")
+    .replace(/^Yahoo!ニュースでは、新聞・通信社が配信するニュースのほか、映像、雑誌や個人の書き手が執筆する記事などを掲載しています。?$/iu, " ")
+    .replace(/^Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News\.?$/iu, " ")
+    .replace(/^View the latest[^.]+from Google News\.?$/iu, " ")
     .replace(/\s*続きを読む.*$/u, " ")
     .replace(/\s*詳細はこちら.*$/u, " ")
     .replace(/\s+/g, " ")
@@ -1634,8 +1695,8 @@ function sanitizeSourceSignals(signals) {
       ...signal,
       thumbnailUrl: sanitizeThumbnailUrl(signal?.thumbnailUrl),
       thumbnail: sanitizeThumbnailUrl(signal?.thumbnail ?? signal?.thumbnailUrl),
-      briefSummary: normalizeBriefSummaryText(signal?.briefSummary),
-      summary: normalizeSummaryText(signal?.summary),
+      briefSummary: normalizeAlignedBriefSummary(signal?.briefSummary, signal?.title),
+      summary: normalizeAlignedSummary(signal?.summary, signal?.title),
     }))
     .sort((left, right) => sourceSignalQualityScore(right) - sourceSignalQualityScore(left) || signalPublishedAt(right) - signalPublishedAt(left));
   const deduped = [];
@@ -1842,6 +1903,22 @@ function normalizeFetchUrl(value) {
   }
 }
 
+function isAppDistributionUrl(value) {
+  try {
+    const parsed = new URL(String(value ?? "").trim());
+    const host = parsed.hostname.toLowerCase();
+    const combined = `${host}${parsed.pathname}${parsed.search}`.toLowerCase();
+    return /(?:^|\.)apps\.apple\.com$/.test(host)
+      || /(?:^|\.)itunes\.apple\.com$/.test(host)
+      || /(?:^|\.)play\.google\.com$/.test(host)
+      || /(?:^|\.)appgallery\.cloud\.huawei\.com$/.test(host)
+      || (/amazon\./.test(host) && /\/gp\/product\//.test(parsed.pathname))
+      || /\/app\/google-news\b|\/store\/apps\/details\b|\/app\/id\d+/.test(combined);
+  } catch {
+    return false;
+  }
+}
+
 function isGoogleNewsUrl(value) {
   try {
     return new URL(value).hostname.toLowerCase() === "news.google.com";
@@ -1874,6 +1951,9 @@ function normalizeExtractedSummary(value) {
   if (text.length < 40) return null;
   if (/^comprehensive up-to-date news coverage/i.test(text)) return null;
   if (/^view the latest/i.test(text)) return null;
+  if (/googleの「google ニュース」をapp storeでダウンロードしてください/i.test(text)) return null;
+  if (/google ニュースが世界中のニュース提供元から集約した広範囲にわたる最新情報/i.test(text)) return null;
+  if (/スクリーンショット、評価とレビュー、ユーザのヒント/i.test(text)) return null;
   if (/^(copyright|advertisement|広告|この記事を|この記事では|このページでは)/i.test(text)) return null;
   return text.slice(0, 150) + (text.length > 150 ? "…" : "");
 }
@@ -1908,6 +1988,9 @@ function normalizeBriefSummaryText(value) {
   const text = normalizeSummaryText(value)
     .replace(/^Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News\.?$/iu, "")
     .replace(/^View the latest[^.]+from Google News\.?$/iu, "")
+    .replace(/^Googleの「Google ニュース」をApp Storeでダウンロードしてください。?.*$/iu, "")
+    .replace(/^Google ニュースが世界中のニュース提供元から集約した広範囲にわたる最新情報.*$/iu, "")
+    .replace(/^何度興味がないと選択してもしつこくしつこく何度も出てきます。?.*$/iu, "")
     .replace(/(日本経済新聞|毎日新聞|読売新聞|朝日新聞|産経新聞|共同通信|時事通信|Reuters|ロイター|Yahoo!ニュース|Yahoo!ファイナンス|日経BP|長崎新聞ホームページ)\s*$/u, "")
     .replace(/\s*続きを読む.*$/u, "")
     .replace(/\s*詳細はこちら.*$/u, "")
@@ -1916,6 +1999,28 @@ function normalizeBriefSummaryText(value) {
   if (!text) return "";
   if (text.length < 28) return "";
   return text.slice(0, 180) + (text.length > 180 ? "…" : "");
+}
+
+function normalizeAlignedSummary(value, title = "") {
+  const text = normalizeSummaryText(value);
+  if (!text) return "";
+  if (!hasSummaryTitleAlignment(text, title)) return "";
+  return text;
+}
+
+function normalizeAlignedBriefSummary(value, title = "") {
+  const text = normalizeBriefSummaryText(value);
+  if (!text) return "";
+  if (!hasSummaryTitleAlignment(text, title)) return "";
+  return text;
+}
+
+function hasSummaryTitleAlignment(summary, title = "") {
+  const text = normalizeBriefSummaryText(summary);
+  if (!text) return false;
+  if (/に一致する記事は見つかりませんでした/.test(text)) return false;
+  if (/現在javascriptが無効になっています/i.test(text)) return false;
+  return titleKeywordOverlapScore(title, text) > 0 || isTitleRewrite(text, title);
 }
 
 function scoreBriefCandidate(candidate, title = "") {
@@ -1933,10 +2038,46 @@ function scoreBriefCandidate(candidate, title = "") {
 
   if (/(警察|政府|発表|確認|捜査|公表|判明|会見|見通し|計画|開始|終了|抽選|発売|配信|影響|被害)/.test(text)) score += 14;
   if (/(ため|ことから|として|受け|により|一方で)/.test(text)) score += 6;
+  const overlap = titleKeywordOverlapScore(title, text);
+  score += overlap;
+  if (overlap <= 0) score -= 45;
   if (isTitleRewrite(text, title)) score -= 30;
   if (/^(広告|pr|タイアップ|スポンサー)/i.test(text)) score -= 20;
   if (/\b(keidanren\.or\.jp|yahoo!ファイナンス|dream news|pr times)\b/i.test(text)) score -= 16;
   return score;
+}
+
+function titleKeywordOverlapScore(title, candidate) {
+  const titleTokens = extractMeaningfulKeywords(title);
+  if (!titleTokens.length) return 0;
+  const candidateTokens = new Set(extractMeaningfulKeywords(candidate));
+  const overlapCount = titleTokens.filter((token) => candidateTokens.has(token)).length;
+  if (overlapCount >= 3) return 18;
+  if (overlapCount === 2) return 12;
+  if (overlapCount === 1) return 4;
+  return -8;
+}
+
+function extractMeaningfulKeywords(value) {
+  return [...new Set(
+    String(value ?? "")
+      .toLowerCase()
+      .replace(/[【】「」『』（）()［］\[\]!?！？:：,，。…]/g, " ")
+      .split(/\s+/)
+      .flatMap((token) => {
+        const values = [];
+        if (token.length >= 3) values.push(token);
+        const cjkMatches = token.match(/[\u3040-\u30ff\u4e00-\u9fff]{2,}/g) ?? [];
+        values.push(...cjkMatches);
+        const latinMatches = token.match(/[a-z0-9][a-z0-9+\-]{2,}/g) ?? [];
+        values.push(...latinMatches);
+        return values;
+      })
+      .map((token) => token.trim())
+      .filter((token) => token.length >= 2)
+      .filter((token) => !GENERIC_TOKENS.has(token))
+      .filter((token) => !/^(アニメ|ゲーム|ニュース|公開|発表|開始|決定|放送|配信|発売|特集|第\d+話|tv)$/.test(token))
+  )];
 }
 
 function extractArticleTextCandidates(html) {
@@ -1997,7 +2138,7 @@ function extractOutboundArticleUrls(html, baseUrl) {
       ?? html.match(/<meta[^>]+property=["']og:url["'][^>]+content=["']([^"']+)["']/i)?.[1],
     baseUrl,
   );
-  if (canonicalUrl && !isGoogleNewsUrl(canonicalUrl)) {
+  if (canonicalUrl && !isGoogleNewsUrl(canonicalUrl) && !isAppDistributionUrl(canonicalUrl)) {
     urls.push(canonicalUrl);
   }
 
@@ -2027,6 +2168,7 @@ function pushOutboundUrl(urls, candidate) {
     const parsed = new URL(candidate);
     const hostname = parsed.hostname.toLowerCase();
     if (!/^https?:$/.test(parsed.protocol)) return false;
+    if (isAppDistributionUrl(parsed.toString())) return false;
     if (hostname === "news.google.com") return false;
     if (hostname.endsWith(".google.com")) return false;
     if (hostname.endsWith("googleusercontent.com")) return false;
@@ -2059,6 +2201,7 @@ function normalizeEmbeddedUrlString(value) {
 
 function scoreOutboundArticleUrl(value) {
   try {
+    if (isAppDistributionUrl(value)) return -999;
     const parsed = new URL(value);
     const host = parsed.hostname.toLowerCase();
     const combined = `${host}${parsed.pathname}${parsed.search}`.toLowerCase();

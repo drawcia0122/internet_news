@@ -463,6 +463,17 @@ export const RSS_FEEDS = [
     sourceTags: ["sns", "net-culture", "buzz", "meme"],
   }),
   source({
+    id: "google-news-matome",
+    source: "Google News",
+    sourceName: "Google News / まとめ系",
+    url: buildGoogleNewsRssUrl("2chまとめ OR 5chまとめ OR なんJ OR なんG OR ネットの反応 OR 反応集 OR 痛いニュース OR はちま OR オタコム OR アルファルファモザイク OR 暇人速報"),
+    categoryHints: ["matome", "net-culture"],
+    priority: 33,
+    sourceGroup: "matome",
+    forPersonal: true,
+    sourceTags: ["matome", "2ch", "5ch", "buzz", "reaction"],
+  }),
+  source({
     id: "google-news-sales",
     source: "Google News",
     sourceName: "Google News / セール",

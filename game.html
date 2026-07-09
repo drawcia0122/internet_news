@@ -3,153 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ゲーム業界で今何が起きているかを3分で把握するための、集計型ゲームダッシュボード。" />
+    <meta name="description" content="今日まず見るべきゲームの動きだけを先に整理する、ゲームを始める前のためのホーム画面。" />
     <title>INTERNET NEWS | ゲーム</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=40" />
+    <link rel="stylesheet" href="./styles.css?v=49" />
   </head>
   <body>
     <div class="ambient ambient-one"></div>
     <div class="ambient ambient-two"></div>
 
-    <main class="topic-page game-page">
+    <main class="topic-page game-page game-home-page">
       <a class="topic-back-link" href="./index.html">← トップに戻る</a>
 
-      <section class="topic-hero game-hero">
-        <p class="section-kicker">GAME INTEL</p>
-        <h1>ゲーム業界の今を、<br />3分で把握する。</h1>
-        <p class="topic-summary">このページはニュースを並べる場所ではなく、ゲーム関連ニュースを集計して、何が伸びているのか、どこにお得情報があるのか、何が近づいているのかを一目で確認するための情報ハブです。</p>
-        <div class="topic-meta-grid game-hero-stats" id="game-hero-stats">
+      <section class="topic-hero game-home-hero">
+        <p class="section-kicker">GAME HOME</p>
+        <h1>今日のゲーム状況</h1>
+        <p class="topic-summary">ニュース一覧ではなく、今日の判断材料だけを先に整理するページです。確認・受け取り・購入・起動に直結するものを上から順に置きます。</p>
+
+        <div class="game-home-command" id="game-hero-command">
+          <article class="game-home-command-card">
+            <strong>今すぐ確認</strong>
+            <p>今日の優先項目を整理しています。</p>
+          </article>
+        </div>
+
+        <form class="game-search-form" id="game-search-form">
+          <label class="sr-only" for="game-search-input">ゲーム名で検索</label>
+          <input id="game-search-input" type="search" name="q" placeholder="ゲーム名でページ内検索" autocomplete="off" />
+          <button type="submit">探す ↗</button>
+        </form>
+
+        <ul class="game-home-brief" id="game-hero-brief">
+          <li>今日の判断材料を整理しています。</li>
+        </ul>
+
+        <div class="topic-meta-grid game-home-stats" id="game-hero-stats">
           <article class="topic-meta-card">
             <strong>観測中</strong>
-            <p class="topic-signal-summary">ゲーム関連データを集計しています。</p>
+            <p class="topic-signal-summary">ゲーム側で起きた変化を優先的に集約しています。</p>
           </article>
         </div>
       </section>
 
-      <section class="topic-panel game-panel game-source-panel">
+      <section class="topic-panel game-panel game-home-section" id="important-section">
         <div class="section-heading topic-panel-heading">
           <div>
-            <p class="section-kicker">SOURCE STATUS</p>
-            <h2>データソース状況</h2>
+            <p class="section-kicker">TODAY FIRST</p>
+            <h2>🚨 今日まず見ること</h2>
           </div>
-          <p class="brief-description">直接取得できているもの、ニュース由来で推定しているもの、未接続で取得方法の追加が必要なものを分けて表示します。</p>
+          <p class="brief-description">終了間近のセール、本日発売、大型アップデートなど、今日の行動が変わる情報だけを最上段に置きます。</p>
         </div>
-        <div class="game-source-grid" id="game-source-grid">
+        <div class="game-home-list game-home-important-list" id="important-list">
           <article class="game-empty-card">
-            <strong>ソース状況を整理中です</strong>
-            <p>接続済みソースと不足ソースを判定しています。</p>
+            <strong>今日の重要情報を整理中です</strong>
+            <p>先に確認すべき項目を抽出しています。</p>
           </article>
         </div>
       </section>
 
-      <section class="topic-panel game-panel game-surging-panel">
+      <section class="topic-panel game-panel game-home-section" id="game-hub-section">
         <div class="section-heading topic-panel-heading">
           <div>
-            <p class="section-kicker">SURGING GAMES</p>
-            <h2>🔥 急上昇ゲーム</h2>
+            <p class="section-kicker">MOVING NOW</p>
+            <h2>🔥 今動いているゲーム</h2>
           </div>
-          <p class="brief-description">固有タイトルだけを抽出し、前日比と直近数日比の伸び、関連記事数、SNS・ストア文脈を合わせて今まさに伸びているゲームを優先表示します。</p>
+          <p class="brief-description">媒体数ではなく、発売・大型更新・無料配布・大型セールなど、ゲーム側で起きた変化を主語にして並べます。</p>
         </div>
-        <div class="game-card-grid game-surging-grid" id="surging-game-list">
+        <div class="game-home-list game-home-hub-list" id="game-hub-list">
           <article class="game-empty-card">
-            <strong>急上昇ゲームを集計中です</strong>
-            <p>ゲーム名の正規化と前日比較を計算しています。</p>
+            <strong>ゲームごとの動きを整理中です</strong>
+            <p>何が起きたかをゲーム単位で束ねています。</p>
           </article>
         </div>
       </section>
 
-      <section class="game-section-grid">
-        <article class="topic-panel game-panel">
-          <div class="section-heading topic-panel-heading">
-            <div>
-              <p class="section-kicker">STEAM DEALS</p>
-              <h2>💰 Steamセール情報</h2>
-            </div>
-            <p class="brief-description">大幅値引き、過去最安値、人気作、終了間近を優先表示します。</p>
-          </div>
-          <div class="game-card-grid" id="steam-sale-list">
-            <article class="game-empty-card">
-              <strong>Steamセールを整理中です</strong>
-              <p>関連ニュースから割引情報を抽出しています。</p>
-            </article>
-          </div>
-        </article>
-
-        <article class="topic-panel game-panel">
-          <div class="section-heading topic-panel-heading">
-            <div>
-              <p class="section-kicker">FREE CLAIMS</p>
-              <h2>🎁 今日の無料配布</h2>
-            </div>
-            <p class="brief-description">Steam / Epic Games / GOG / itch.io の無料取得情報をまとめます。</p>
-          </div>
-          <div class="game-card-grid" id="free-game-list">
-            <article class="game-empty-card">
-              <strong>無料配布を整理中です</strong>
-              <p>ストア別の無料取得情報を集めています。</p>
-            </article>
-          </div>
-        </article>
-      </section>
-
-      <section class="game-section-grid">
-        <article class="topic-panel game-panel">
-          <div class="section-heading topic-panel-heading">
-            <div>
-              <p class="section-kicker">EVENT RADAR</p>
-              <h2>🏆 大会・イベント</h2>
-            </div>
-            <p class="brief-description">エントリー締切が近いもの、今週開催、開催中を優先表示します。</p>
-          </div>
-          <div class="game-card-grid" id="game-event-list">
-            <article class="game-empty-card">
-              <strong>大会・イベントを整理中です</strong>
-              <p>開催時期と優先度を計算しています。</p>
-            </article>
-          </div>
-        </article>
-
-        <article class="topic-panel game-panel">
-          <div class="section-heading topic-panel-heading">
-            <div>
-              <p class="section-kicker">RELEASE CALENDAR</p>
-              <h2>📅 発売カレンダー</h2>
-            </div>
-            <p class="brief-description">今週発売、今月発売、予約受付中を切り替えて確認できます。</p>
-          </div>
-          <div class="featured-tabs game-release-tabs" id="release-tabs" role="tablist" aria-label="発売カレンダータブ">
-            <button class="active" type="button" data-release-tab="week">今週発売</button>
-            <button type="button" data-release-tab="month">今月発売</button>
-            <button type="button" data-release-tab="reserve">予約受付中</button>
-          </div>
-          <div class="game-card-grid" id="release-list">
-            <article class="game-empty-card">
-              <strong>発売予定を整理中です</strong>
-              <p>発売日とプラットフォームを抽出しています。</p>
-            </article>
-          </div>
-        </article>
-      </section>
-
-      <section class="topic-panel game-panel">
+      <section class="topic-panel game-panel game-home-section" id="free-section">
         <div class="section-heading topic-panel-heading">
           <div>
-            <p class="section-kicker">TREND CURVES</p>
-            <h2>📊 トレンド推移</h2>
+            <p class="section-kicker">FREE CLAIMS</p>
+            <h2>🎁 今受け取るべき無料配布</h2>
           </div>
-          <p class="brief-description">上位ゲームの観測件数を7日・30日で日別に集計して表示します。</p>
+          <p class="brief-description">基本プレイ無料ではなく、今だけ無料で取得できるものだけを残します。</p>
         </div>
-        <div class="featured-tabs game-trend-tabs" id="trend-range-tabs" role="tablist" aria-label="トレンド推移期間タブ">
-          <button class="active" type="button" data-trend-range="7">過去7日</button>
-          <button type="button" data-trend-range="30">過去30日</button>
-        </div>
-        <div class="game-trend-chart-grid" id="trend-chart-grid">
+        <div class="game-home-list game-home-compact-list" id="free-game-list">
           <article class="game-empty-card">
-            <strong>推移グラフを集計中です</strong>
-            <p>日別の話題量を集計しています。</p>
+            <strong>無料配布を整理中です</strong>
+            <p>期間限定で取得できる案件だけを確認しています。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="topic-panel game-panel game-home-section" id="sale-section">
+        <div class="section-heading topic-panel-heading">
+          <div>
+            <p class="section-kicker">SALE PICKS</p>
+            <h2>💸 今見る価値があるセール</h2>
+          </div>
+          <p class="brief-description">セールしているもの全部ではなく、割引率や終了時刻の観点で今日見る意味があるものだけを出します。</p>
+        </div>
+        <div class="game-home-list game-home-compact-list" id="steam-sale-list">
+          <article class="game-empty-card">
+            <strong>セール対象のゲームを整理中です</strong>
+            <p>価格変化が確認できた案件だけを残しています。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="topic-panel game-panel game-home-section" id="steam-section">
+        <div class="section-heading topic-panel-heading">
+          <div>
+            <p class="section-kicker">STEAM WATCH</p>
+            <h2>🖥 Steamで今拾うべき記事</h2>
+          </div>
+          <p class="brief-description">新作、早期アクセス、体験版、大型更新など、Steam文脈で見る価値がある記事だけをまとめます。</p>
+        </div>
+        <div class="game-home-list game-home-compact-list" id="steam-story-list">
+          <article class="game-empty-card">
+            <strong>Steam向けの記事を整理中です</strong>
+            <p>Steamで見ておく意味がある話題だけを抽出しています。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="topic-panel game-panel game-home-section game-news-panel" id="news-section">
+        <div class="section-heading topic-panel-heading">
+          <div>
+            <p class="section-kicker">NEWS BACKUP</p>
+            <h2>📰 補完ニュース</h2>
+          </div>
+          <p class="brief-description">このページの主役ではありません。上の判断材料に入らなかった記事だけを、最後に最小限だけ置きます。</p>
+        </div>
+        <div class="game-news-list" id="news-list">
+          <article class="game-empty-card">
+            <strong>補完ニュースを整理中です</strong>
+            <p>重要セクションに入らなかった記事だけを最後に残します。</p>
           </article>
         </div>
       </section>
@@ -157,6 +146,6 @@
 
     <script src="./shared-topic-utils.js?v=1"></script>
     <script src="./home-data-utils.js?v=1"></script>
-    <script src="./game.js?v=1"></script>
+    <script src="./game.js?v=11"></script>
   </body>
 </html>

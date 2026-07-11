@@ -205,8 +205,31 @@ const ARCHIVE_THUMBNAIL_COVERAGE_LIMIT = 240;
 const SUSPICIOUS_DUPLICATE_THUMBNAIL_MIN_COUNT = 8;
 const FETCH_STAGE_THUMBNAIL_STRICT = process.env.FETCH_STAGE_THUMBNAIL_STRICT === "1";
 
+const GENERATED_TREND_DATA_PATHS = [
+  "data/trend-topics.json",
+  "data/trend-topics-archive.json",
+  "data/trend-topics-browse.json",
+  "data/news-archive.json",
+  "data/home-topics.json",
+  "data/home-news.json",
+  "data/daily-brief.json",
+  "data/adult-news.json",
+];
+
+async function main() {
+
 const previousCurrentPayload = await readArchivePayload("data/trend-topics.json");
-const payload = await collectTrendTopics();
+let payload;
+try {
+  payload = await collectTrendTopics();
+} catch (error) {
+  if (!isNoRssEntriesError(error)) throw error;
+  if (!(await hasPreviousGeneratedTrendData())) throw error;
+
+  console.warn("[trend-aggregator] all RSS feeds failed; preserving previous generated data");
+  console.warn("::warning::All RSS feeds failed. Previous trend data was preserved.");
+  return;
+}
 const dedupedItems = dedupeNearDuplicateItems(payload.items ?? []);
 const capturedAt = payload.generatedAt ?? new Date().toISOString();
 const curatedItems = selectCuratedTrendItems(dedupedItems, MAX_CURRENT_ITEMS, payload.items ?? []);
@@ -351,6 +374,21 @@ await writeFile(
 
 logThumbnailCoverage(currentPayload.items);
 console.log(`Saved ${currentPayload.items.length} trend topic(s).`);
+}
+
+await main();
+
+function isNoRssEntriesError(error) {
+  return error?.code === "ERR_NO_RSS_ENTRIES"
+    || error?.message === "No RSS entries fetched from configured feeds.";
+}
+
+async function hasPreviousGeneratedTrendData() {
+  const results = await Promise.allSettled(
+    GENERATED_TREND_DATA_PATHS.map((path) => readFile(path, "utf8")),
+  );
+  return results.some((result) => result.status === "fulfilled" && result.value.trim().length > 0);
+}
 
 function pickLatestGeneratedAt(values = []) {
   const timestamps = values

@@ -1,42 +1,43 @@
 {
-  "generatedAt": "2026-07-13T16:06:21.994Z",
+  "generatedAt": "2026-07-13T18:03:50.132Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-439",
+  "selectedClusterId": "today-cluster-548",
   "selectedTitle": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
   "candidates": [
     {
-      "clusterId": "today-cluster-439",
-      "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-      "category": "business",
+      "clusterId": "today-cluster-398",
+      "title": "EUも子のSNS制限へ 13歳未満対象",
+      "category": "net-culture",
       "categories": [
-        "business",
-        "games",
+        "net-culture",
+        "tech",
+        "sns",
         "general"
       ],
-      "buzzScore": 64,
-      "confidence": 0.46,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 67,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
+        "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 22,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 4.6,
+        "search": 8,
+        "social": 6,
         "velocity": 0,
         "freshness": 7,
-        "authority": 5.5,
-        "categoryBias": 1,
-        "penalty": 0
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 36.666666666666664,
+        "searchScore": 50,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -45,10 +46,61 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-548",
+      "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+      "category": "business",
+      "categories": [
+        "business",
+        "games",
+        "general"
+      ],
+      "buzzScore": 64.5,
+      "confidence": 0.48,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.1,
+        "social": 4.5,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 5.5,
+        "categoryBias": 1,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 38.333333333333336,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 60,
         "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 35.7
+        "internalSearchScore": 38.3,
+        "internalSocialScore": 35.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -57,6 +109,58 @@
     },
     {
       "clusterId": "today-cluster-11",
+      "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版が本日配信決定！両タイトルのセットをお得に購入できるバンドルも登場",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64,
+      "confidence": 0.43,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 15.6,
+        "internetNativeBoost": 0,
+        "search": 5.7,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 16.666666666666664,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 30,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 71,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 57.5
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-15",
       "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
       "category": "games",
       "categories": [
@@ -65,7 +169,7 @@
         "matome",
         "general"
       ],
-      "buzzScore": 60.4,
+      "buzzScore": 58.9,
       "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
@@ -81,7 +185,7 @@
         "search": 5.7,
         "social": 7,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -7
@@ -107,7 +211,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-709",
+      "clusterId": "today-cluster-857",
       "title": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」　8月の抽選販売に導入　事前登録を呼び掛け",
       "category": "tech",
       "categories": [
@@ -117,7 +221,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 59.7,
+      "buzzScore": 58.7,
       "confidence": 0.33,
       "articleCount": 1,
       "sourceCount": 1,
@@ -128,9 +232,9 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 17.2,
         "internetNativeBoost": 8,
-        "search": 4.2,
+        "search": 4,
         "social": 7.4,
         "velocity": 0,
         "freshness": 5.5,
@@ -139,7 +243,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -149,114 +253,9 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
         "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-315",
-      "title": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可　国内AIベンチャーAIdeaLab",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "anime",
-        "entertainment",
-        "manga",
-        "sns",
-        "net-culture",
-        "business",
-        "general"
-      ],
-      "buzzScore": 56.9,
-      "confidence": 0.34,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1001",
-      "title": "料理研究家・リュウジ氏、名古屋の飲食店めぐり「炎上」で謝罪　「私の物言いが非常に悪く、誤解させてしまいました」",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 54.8,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.5,
-        "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 4.6,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 93,
-        "internalSearchScore": 36.4,
-        "internalSocialScore": 35.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

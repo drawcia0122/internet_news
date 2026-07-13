@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T16:06:21.994Z",
+  "generatedAt": "2026-07-13T18:03:50.132Z",
   "topicVersion": 1,
   "selectedTopic": {
     "id": "auto-business-lineヤフー-ゲーム利用者に関する情報約710万件流出-www3.nhk.or.jp/news/html/20260713/k10015176021000.html",
@@ -19,7 +19,8 @@
     "categoryLabel": "経済",
     "categoryLabels": [
       "経済",
-      "ゲーム"
+      "ゲーム",
+      "その他"
     ],
     "thumbnailUrl": "",
     "sourceSignals": [
@@ -41,6 +42,29 @@
         "thumbnailUrl": null,
         "briefSummary": "",
         "summary": "LINEヤフーは、スマートフォン向けゲームの利用者に関する情報、およそ710万件が外部の企業に流出したと発表しました。流出したのは利用者を識別するためのランダムな文字列の情報で、氏名や住所などは含まれておらず、現在のところ不正利用は確認され…"
+      },
+      {
+        "sourceId": "google-news-games",
+        "source": "Google News",
+        "sourceName": "Google News / ゲーム",
+        "sourceGroup": "google-news",
+        "sourcePriority": 34,
+        "official": false,
+        "specialist": false,
+        "forPersonal": true,
+        "sourceTags": [
+          "games",
+          "switch",
+          "steam"
+        ],
+        "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3SktyVDNYcU9zUVRNazVyakh0aFJaa2NPN2x0N2c4cU1CdFpPN2I4RGY2dVBIYl9LbWE5R3NqaUpuOEd0S0ZqNHhjRUxYNXh0ZWEtdlRiUzl5SWZPR01J?oc=5",
+        "canonicalUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3SktyVDNYcU9zUVRNazVyakh0aFJaa2NPN2x0N2c4cU1CdFpPN2I4RGY2dVBIYl9LbWE5R3NqaUpuOEd0S0ZqNHhjRUxYNXh0ZWEtdlRiUzl5SWZPR01J?oc=5",
+        "publishedAt": "2026-07-13T11:55:52.000Z",
+        "publishedLabel": "7/13 11:55",
+        "thumbnailUrl": null,
+        "briefSummary": "",
+        "summary": "LINEヤフー ゲーム利用者に関する情報約710万件流出 NHKニュース"
       },
       {
         "sourceId": "google-news-games",
@@ -89,21 +113,21 @@
         "summary": ""
       }
     ],
-    "hotScore": 64,
-    "posts": "3",
+    "hotScore": 64.5,
+    "posts": "4",
     "metricLabel": "signals",
     "time": "1時間前",
     "publishedAt": "2026-07-13T11:55:52.000Z",
-    "buzzScore": 64,
+    "buzzScore": 64.5,
     "scoreBreakdown": {
-      "coverage": 5.4,
+      "coverage": 7.2,
       "sourceDiversity": 4.7,
       "trend": 22,
       "internetNativeBoost": 8,
-      "search": 5.9,
-      "social": 4.6,
+      "search": 6.1,
+      "social": 4.5,
       "velocity": 0,
-      "freshness": 7,
+      "freshness": 5.5,
       "authority": 5.5,
       "categoryBias": 1,
       "penalty": 0
@@ -137,6 +161,12 @@
         "publishedAt": "2026-07-13T11:55:52.000Z"
       },
       {
+        "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3SktyVDNYcU9zUVRNazVyakh0aFJaa2NPN2x0N2c4cU1CdFpPN2I4RGY2dVBIYl9LbWE5R3NqaUpuOEd0S0ZqNHhjRUxYNXh0ZWEtdlRiUzl5SWZPR01J?oc=5",
+        "sourceName": "Google News / ゲーム",
+        "publishedAt": "2026-07-13T11:55:52.000Z"
+      },
+      {
         "title": "利用者識別情報が710万件流出 LINEのゲーム",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1UamtadHBJakNmOFNNdjRpN0ZsRFZXU0djalVueHl6YnlqQUViNGRjY0J0bnZqS2ViUjJkU0RneC1mVzU2WmZ6VFpjdw?oc=5",
         "sourceName": "Google News / ゲーム",
@@ -152,8 +182,8 @@
     "externalSignals": {
       "query": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
       "search": {
-        "count": 22,
-        "score": 36.666666666666664,
+        "count": 23,
+        "score": 38.333333333333336,
         "available": true
       },
       "reddit": {
@@ -172,7 +202,7 @@
       ]
     },
     "externalSignalStats": {
-      "searchScore": 36.666666666666664,
+      "searchScore": 38.333333333333336,
       "socialScore": 0,
       "searchAvailable": true,
       "socialAvailable": false
@@ -184,14 +214,14 @@
     "internalSignalStats": {
       "browseMatchCount": 0,
       "archiveMatchCount": 1,
-      "repeatedAppearanceScore": 6,
+      "repeatedAppearanceScore": 5.1,
       "crossCategoryScore": 60,
       "archiveHeatScore": 100,
-      "internalSearchScore": 38.9,
-      "internalSocialScore": 35.7
+      "internalSearchScore": 38.3,
+      "internalSocialScore": 35.3
     },
     "clusterStats": {
-      "articleCount": 3,
+      "articleCount": 4,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "officialSourceCount": 1,
@@ -199,6 +229,465 @@
     }
   },
   "runnerUps": [
+    {
+      "id": "auto-business-lineヤフー-ゲーム利用者に関する情報約710万件流出-www3.nhk.or.jp/news/html/20260713/k10015176021000.html",
+      "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+      "summary": "LINEヤフー ゲーム利用者に関する情報約710万件流出 既存トレンド指標でも反応が強い。報道元はNHK、Google News / ゲームです。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+      "briefSummary": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+      "whatHappened": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+      "whyHot": "既存トレンド指標でも反応が強い。報道元はNHK、Google News / ゲームです。",
+      "importantPoint": "2媒体・2ドメインで確認されたトピックです。",
+      "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
+      "category": "business",
+      "categories": [
+        "business",
+        "games",
+        "general"
+      ],
+      "categoryLabel": "経済",
+      "categoryLabels": [
+        "経済",
+        "ゲーム",
+        "その他"
+      ],
+      "thumbnailUrl": "",
+      "sourceSignals": [
+        {
+          "sourceId": "nhk-top",
+          "source": "NHK RSS",
+          "sourceName": "NHK",
+          "sourceGroup": "important-news",
+          "sourcePriority": 92,
+          "official": true,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+          "url": "http://www3.nhk.or.jp/news/html/20260713/k10015176021000.html",
+          "canonicalUrl": "http://www3.nhk.or.jp/news/html/20260713/k10015176021000.html",
+          "publishedAt": "2026-07-13T11:55:52.000Z",
+          "publishedLabel": "7/13 11:55",
+          "thumbnailUrl": null,
+          "briefSummary": "",
+          "summary": "LINEヤフーは、スマートフォン向けゲームの利用者に関する情報、およそ710万件が外部の企業に流出したと発表しました。流出したのは利用者を識別するためのランダムな文字列の情報で、氏名や住所などは含まれておらず、現在のところ不正利用は確認され…"
+        },
+        {
+          "sourceId": "google-news-games",
+          "source": "Google News",
+          "sourceName": "Google News / ゲーム",
+          "sourceGroup": "google-news",
+          "sourcePriority": 34,
+          "official": false,
+          "specialist": false,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "switch",
+            "steam"
+          ],
+          "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3SktyVDNYcU9zUVRNazVyakh0aFJaa2NPN2x0N2c4cU1CdFpPN2I4RGY2dVBIYl9LbWE5R3NqaUpuOEd0S0ZqNHhjRUxYNXh0ZWEtdlRiUzl5SWZPR01J?oc=5",
+          "canonicalUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3SktyVDNYcU9zUVRNazVyakh0aFJaa2NPN2x0N2c4cU1CdFpPN2I4RGY2dVBIYl9LbWE5R3NqaUpuOEd0S0ZqNHhjRUxYNXh0ZWEtdlRiUzl5SWZPR01J?oc=5",
+          "publishedAt": "2026-07-13T11:55:52.000Z",
+          "publishedLabel": "7/13 11:55",
+          "thumbnailUrl": null,
+          "briefSummary": "",
+          "summary": "LINEヤフー ゲーム利用者に関する情報約710万件流出 NHKニュース"
+        },
+        {
+          "sourceId": "google-news-games",
+          "source": "Google News",
+          "sourceName": "Google News / ゲーム",
+          "sourceGroup": "google-news",
+          "sourcePriority": 34,
+          "official": false,
+          "specialist": false,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "switch",
+            "steam"
+          ],
+          "title": "利用者識別情報が710万件流出 LINEのゲーム",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1UamtadHBJakNmOFNNdjRpN0ZsRFZXU0djalVueHl6YnlqQUViNGRjY0J0bnZqS2ViUjJkU0RneC1mVzU2WmZ6VFpjdw?oc=5",
+          "canonicalUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1UamtadHBJakNmOFNNdjRpN0ZsRFZXU0djalVueHl6YnlqQUViNGRjY0J0bnZqS2ViUjJkU0RneC1mVzU2WmZ6VFpjdw?oc=5",
+          "publishedAt": "2026-07-13T10:08:17.000Z",
+          "publishedLabel": "7/13 10:08",
+          "thumbnailUrl": null,
+          "briefSummary": "",
+          "summary": "利用者識別情報が710万件流出 LINEのゲーム 47NEWS"
+        },
+        {
+          "sourceId": "google-news-games",
+          "source": "Google News",
+          "sourceName": "Google News / ゲーム",
+          "sourceGroup": "google-news",
+          "sourcePriority": 34,
+          "official": false,
+          "specialist": false,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "switch",
+            "steam"
+          ],
+          "title": "LINEのゲーム利用者情報710万件流出",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9sM3pIN3B0Tm9nVGdfeTVaa3FpVTFoYjVsQno3ZWwzbGpsdHJlY1BadEVodkZHSDRJcVVfNm50Y2N1cnlVUFpVM1A4bVJhLVpoa0FuT3Y1QnJmbEtaVm5GaXNoT3AwZDQyTnFEeDd4TnVXUDFPcjVvOU14dTBYX1k?oc=5",
+          "canonicalUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9sM3pIN3B0Tm9nVGdfeTVaa3FpVTFoYjVsQno3ZWwzbGpsdHJlY1BadEVodkZHSDRJcVVfNm50Y2N1cnlVUFpVM1A4bVJhLVpoa0FuT3Y1QnJmbEtaVm5GaXNoT3AwZDQyTnFEeDd4TnVXUDFPcjVvOU14dTBYX1k?oc=5",
+          "publishedAt": "2026-07-13T09:51:48.000Z",
+          "publishedLabel": "7/13 09:51",
+          "thumbnailUrl": null,
+          "briefSummary": "",
+          "summary": ""
+        }
+      ],
+      "hotScore": 64.5,
+      "posts": "4",
+      "metricLabel": "signals",
+      "time": "1時間前",
+      "publishedAt": "2026-07-13T11:55:52.000Z",
+      "buzzScore": 64.5,
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.1,
+        "social": 4.5,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 5.5,
+        "categoryBias": 1,
+        "penalty": 0
+      },
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
+      ],
+      "rank": 2,
+      "summaryPayload": {
+        "headline": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+        "whatHappened": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+        "whyBuzzing": "既存トレンド指標でも反応が強い。報道元はNHK、Google News / ゲームです。",
+        "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+        "keyPoints": [
+          "2媒体・2ドメインで確認されたトピックです。",
+          "最新更新は2026/7/13 11:55:52です。",
+          "一次情報を含むため、事実確認の軸を置きやすい話題です。"
+        ],
+        "watchpoints": [
+          "続報で事実関係や影響範囲が更新される可能性があります。",
+          "一次情報や公式コメントが追加されたら優先して確認してください。"
+        ],
+        "threeMinuteSummary": "LINEヤフー ゲーム利用者に関する情報約710万件流出 既存トレンド指標でも反応が強い。報道元はNHK、Google News / ゲームです。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
+      },
+      "representativeArticles": [
+        {
+          "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+          "url": "http://www3.nhk.or.jp/news/html/20260713/k10015176021000.html",
+          "sourceName": "NHK",
+          "publishedAt": "2026-07-13T11:55:52.000Z"
+        },
+        {
+          "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3SktyVDNYcU9zUVRNazVyakh0aFJaa2NPN2x0N2c4cU1CdFpPN2I4RGY2dVBIYl9LbWE5R3NqaUpuOEd0S0ZqNHhjRUxYNXh0ZWEtdlRiUzl5SWZPR01J?oc=5",
+          "sourceName": "Google News / ゲーム",
+          "publishedAt": "2026-07-13T11:55:52.000Z"
+        },
+        {
+          "title": "利用者識別情報が710万件流出 LINEのゲーム",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1UamtadHBJakNmOFNNdjRpN0ZsRFZXU0djalVueHl6YnlqQUViNGRjY0J0bnZqS2ViUjJkU0RneC1mVzU2WmZ6VFpjdw?oc=5",
+          "sourceName": "Google News / ゲーム",
+          "publishedAt": "2026-07-13T10:08:17.000Z"
+        },
+        {
+          "title": "LINEのゲーム利用者情報710万件流出",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9sM3pIN3B0Tm9nVGdfeTVaa3FpVTFoYjVsQno3ZWwzbGpsdHJlY1BadEVodkZHSDRJcVVfNm50Y2N1cnlVUFpVM1A4bVJhLVpoa0FuT3Y1QnJmbEtaVm5GaXNoT3AwZDQyTnFEeDd4TnVXUDFPcjVvOU14dTBYX1k?oc=5",
+          "sourceName": "Google News / ゲーム",
+          "publishedAt": "2026-07-13T09:51:48.000Z"
+        }
+      ],
+      "externalSignals": {
+        "query": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+        "search": {
+          "count": 23,
+          "score": 38.333333333333336,
+          "available": true
+        },
+        "reddit": {
+          "available": false,
+          "score": 0,
+          "count": 0
+        },
+        "bluesky": {
+          "available": false,
+          "score": 0,
+          "count": 0
+        },
+        "errors": [
+          "reddit:http 403 Blocked",
+          "bluesky:http 403 Forbidden"
+        ]
+      },
+      "externalSignalStats": {
+        "searchScore": 38.333333333333336,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ],
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.3,
+        "internalSocialScore": 35.3
+      },
+      "clusterStats": {
+        "articleCount": 4,
+        "sourceCount": 2,
+        "uniqueDomainCount": 2,
+        "officialSourceCount": 1,
+        "latestSourceCount1h": 0
+      }
+    },
+    {
+      "id": "auto-games-オクトパストラベラー-オクトパストラベラーii-nintendo-switch-2-ダウンロード版が本日配信決定-両タイトルのセットをお得に購入できるバンドルも-news.denfaminicogamer.jp/news/2607132v",
+      "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版が本日配信決定！両タイトルのセットをお得に購入できるバンドルも登場",
+      "summary": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウ… 既存トレンド指標でも反応が強い。報道元は電ファミニコゲーマー、Google News / ゲームです。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+      "briefSummary": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウ…",
+      "whatHappened": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウ…",
+      "whyHot": "既存トレンド指標でも反応が強い。報道元は電ファミニコゲーマー、Google News / ゲームです。",
+      "importantPoint": "2媒体・2ドメインで確認されたトピックです。",
+      "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ",
+        "ネットカルチャー"
+      ],
+      "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/07/WS006433.jpg",
+      "sourceSignals": [
+        {
+          "sourceId": "denfami",
+          "source": "電ファミニコゲーマー",
+          "sourceName": "電ファミニコゲーマー",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "net-culture",
+            "otaku"
+          ],
+          "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版が本日配信決定！両タイトルのセットをお得に購入できるバンドルも登場",
+          "url": "https://news.denfaminicogamer.jp/news/2607132v",
+          "canonicalUrl": "https://news.denfaminicogamer.jp/news/2607132v",
+          "publishedAt": "2026-07-13T11:11:27.000Z",
+          "publishedLabel": "7/13 11:11",
+          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/07/WS006433.jpg",
+          "briefSummary": "",
+          "summary": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版が本日配信決定！"
+        },
+        {
+          "sourceId": "google-news-games",
+          "source": "Google News",
+          "sourceName": "Google News / ゲーム",
+          "sourceGroup": "google-news",
+          "sourcePriority": 34,
+          "official": false,
+          "specialist": false,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "switch",
+            "steam"
+          ],
+          "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版 本日配信開始！",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4yUkFRRjFoZ0JTUHAxUHBfN05ZZkFoWHhGMHpUbGd3X01WQlhJOHhVemp3dktwZEYxcnV0OUhoekZCWWo0ckJFM3Vnc3lPLTRsZUt3R0ZFeWdZY05yR0Zr?oc=5",
+          "canonicalUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4yUkFRRjFoZ0JTUHAxUHBfN05ZZkFoWHhGMHpUbGd3X01WQlhJOHhVemp3dktwZEYxcnV0OUhoekZCWWo0ckJFM3Vnc3lPLTRsZUt3R0ZFeWdZY05yR0Zr?oc=5",
+          "publishedAt": "2026-07-13T13:47:41.000Z",
+          "publishedLabel": "7/13 13:47",
+          "thumbnailUrl": null,
+          "briefSummary": "",
+          "summary": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版 本日配信開始！ Square Enix, Ltd."
+        },
+        {
+          "sourceId": "denfami",
+          "source": "電ファミニコゲーマー",
+          "sourceName": "電ファミニコゲーマー",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "net-culture",
+            "otaku"
+          ],
+          "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版が本日配信決定！両タイトルのセットをお得に購入できるバンドルも登場",
+          "url": "https://news.denfaminicogamer.jp/news/2607132v",
+          "canonicalUrl": "https://news.denfaminicogamer.jp/news/2607132v",
+          "publishedAt": "2026-07-13T11:11:27.000Z",
+          "publishedLabel": "7/13 11:11",
+          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/07/WS006433.jpg",
+          "briefSummary": "",
+          "summary": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版が本日配信決定！"
+        },
+        {
+          "sourceId": "google-news-games",
+          "source": "Google News",
+          "sourceName": "Google News / ゲーム",
+          "sourceGroup": "google-news",
+          "sourcePriority": 34,
+          "official": false,
+          "specialist": false,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "switch",
+            "steam"
+          ],
+          "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2ダウンロード版が本日配信決定",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE95RXJTSmYzTmxtdWhPN2l1UmFBcmdKRlowbGV3S1hsWG42ZG1rUDF5ZUFwTHVGRzNWN3BkQlc5YWhpZWQ1a05FN0p4cm5PUGxRVzdISGZrc2ttZw?oc=5",
+          "canonicalUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE95RXJTSmYzTmxtdWhPN2l1UmFBcmdKRlowbGV3S1hsWG42ZG1rUDF5ZUFwTHVGRzNWN3BkQlc5YWhpZWQ1a05FN0p4cm5PUGxRVzdISGZrc2ttZw?oc=5",
+          "publishedAt": "2026-07-13T11:11:00.000Z",
+          "publishedLabel": "7/13 11:11",
+          "thumbnailUrl": null,
+          "briefSummary": "",
+          "summary": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2ダウンロード版が本日配信決定 電ファミニコゲーマー"
+        }
+      ],
+      "hotScore": 64,
+      "posts": "4",
+      "metricLabel": "signals",
+      "time": "4時間前",
+      "publishedAt": "2026-07-13T13:47:41.000Z",
+      "buzzScore": 64,
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 15.6,
+        "internetNativeBoost": 0,
+        "search": 5.7,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "rank": 3,
+      "summaryPayload": {
+        "headline": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版が本日配信決定！両タイトルのセットをお得に購入できるバンドルも登場",
+        "whatHappened": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウ…",
+        "whyBuzzing": "既存トレンド指標でも反応が強い。報道元は電ファミニコゲーマー、Google News / ゲームです。",
+        "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+        "keyPoints": [
+          "2媒体・2ドメインで確認されたトピックです。",
+          "最新更新は2026/7/13 13:47:41です。",
+          "現時点では報道の出そろい方と勢いを優先して選出しています。"
+        ],
+        "watchpoints": [
+          "続報で事実関係や影響範囲が更新される可能性があります。",
+          "一次情報や公式コメントが追加されたら優先して確認してください。"
+        ],
+        "threeMinuteSummary": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウ… 既存トレンド指標でも反応が強い。報道元は電ファミニコゲーマー、Google News / ゲームです。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
+      },
+      "representativeArticles": [
+        {
+          "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版が本日配信決定！両タイトルのセットをお得に購入できるバンドルも登場",
+          "url": "https://news.denfaminicogamer.jp/news/2607132v",
+          "sourceName": "電ファミニコゲーマー",
+          "publishedAt": "2026-07-13T11:11:27.000Z"
+        },
+        {
+          "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版 本日配信開始！",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4yUkFRRjFoZ0JTUHAxUHBfN05ZZkFoWHhGMHpUbGd3X01WQlhJOHhVemp3dktwZEYxcnV0OUhoekZCWWo0ckJFM3Vnc3lPLTRsZUt3R0ZFeWdZY05yR0Zr?oc=5",
+          "sourceName": "Google News / ゲーム",
+          "publishedAt": "2026-07-13T13:47:41.000Z"
+        },
+        {
+          "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版が本日配信決定！両タイトルのセットをお得に購入できるバンドルも登場",
+          "url": "https://news.denfaminicogamer.jp/news/2607132v",
+          "sourceName": "電ファミニコゲーマー",
+          "publishedAt": "2026-07-13T11:11:27.000Z"
+        },
+        {
+          "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2ダウンロード版が本日配信決定",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE95RXJTSmYzTmxtdWhPN2l1UmFBcmdKRlowbGV3S1hsWG42ZG1rUDF5ZUFwTHVGRzNWN3BkQlc5YWhpZWQ1a05FN0p4cm5PUGxRVzdISGZrc2ttZw?oc=5",
+          "sourceName": "Google News / ゲーム",
+          "publishedAt": "2026-07-13T11:11:00.000Z"
+        }
+      ],
+      "externalSignals": {
+        "query": "オクトパストラベラー オクトパストラベラーII Nintendo Switch 2 ダウンロード版が本日配信決定！両タイトルのセットをお得に購入できるバンドルも登場",
+        "search": {
+          "count": 10,
+          "score": 16.666666666666664,
+          "available": true
+        },
+        "reddit": {
+          "available": false,
+          "score": 0,
+          "count": 0
+        },
+        "bluesky": {
+          "available": false,
+          "score": 0,
+          "count": 0
+        },
+        "errors": [
+          "reddit:http 403 Blocked",
+          "bluesky:http 403 Forbidden"
+        ]
+      },
+      "externalSignalStats": {
+        "searchScore": 16.666666666666664,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ],
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 30,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 71,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 57.5
+      },
+      "clusterStats": {
+        "articleCount": 4,
+        "sourceCount": 2,
+        "uniqueDomainCount": 2,
+        "officialSourceCount": 0,
+        "latestSourceCount1h": 0
+      }
+    },
     {
       "id": "auto-games-銀河特急-ミルキー-サブウェイ-キャラの地球年齢が改めて紹介されファンの間で話題に-リョーコちゃん29才なの最高-カナタが成人しててびっくり-捗る-など反応集ま-news.denfaminicogamer.jp/news/2607132t",
       "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
@@ -270,12 +759,12 @@
           "summary": ""
         }
       ],
-      "hotScore": 60.4,
+      "hotScore": 58.9,
       "posts": "2",
       "metricLabel": "signals",
-      "time": "2時間前",
+      "time": "5時間前",
       "publishedAt": "2026-07-13T10:43:56.000Z",
-      "buzzScore": 60.4,
+      "buzzScore": 58.9,
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
@@ -284,7 +773,7 @@
         "search": 5.7,
         "social": 7,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -7
@@ -292,7 +781,7 @@
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
-      "rank": 2,
+      "rank": 4,
       "summaryPayload": {
         "headline": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
         "whatHappened": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に",
@@ -371,348 +860,49 @@
         "officialSourceCount": 0,
         "latestSourceCount1h": 0
       }
-    },
-    {
-      "id": "auto-tech-itmedia-news-ポケカ-本人確認にマイナカード-デジタル認証アプリ-8月の抽選販売に導入-事前登録を呼び掛け-itmedia.co.jp/news/articles/2607/13/news122.html",
-      "title": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」　8月の抽選販売に導入　事前登録を呼び掛け",
-      "summary": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」 8月の抽… 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-      "briefSummary": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」 8月の抽…",
-      "whatHappened": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」 8月の抽…",
-      "whyHot": "既存トレンド指標でも反応が強い。",
-      "importantPoint": "1媒体・1ドメインで確認されたトピックです。",
-      "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "ゲーム",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "thumbnailUrl": "",
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-all",
-          "source": "ITmedia",
-          "sourceName": "ITmedia",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 68,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」　8月の抽選販売に導入　事前登録を呼び掛け",
-          "url": "https://www.itmedia.co.jp/news/articles/2607/13/news122.html",
-          "canonicalUrl": "https://www.itmedia.co.jp/news/articles/2607/13/news122.html",
-          "publishedAt": "2026-07-13T09:00:00.000Z",
-          "publishedLabel": "7/13 09:00",
-          "thumbnailUrl": null,
-          "briefSummary": "",
-          "summary": "ポケモン社は7月13日、ポケモンカードゲームの本人認証で使う「デジタル認証アプリ」の事前登録を呼びかけた。公式通販サイト「ポケモンセンターオンライン」で8月に始める抽選販売を前に、アクセス集中を見込んで早めの手続きを促している。"
-        }
-      ],
-      "hotScore": 59.7,
-      "posts": "1",
-      "metricLabel": "signals",
-      "time": "4時間前",
-      "publishedAt": "2026-07-13T09:00:00.000Z",
-      "buzzScore": 59.7,
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "rank": 3,
-      "summaryPayload": {
-        "headline": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」　8月の抽選販売に導入　事前登録を呼び掛け",
-        "whatHappened": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」 8月の抽…",
-        "whyBuzzing": "既存トレンド指標でも反応が強い。",
-        "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-        "keyPoints": [
-          "1媒体・1ドメインで確認されたトピックです。",
-          "最新更新は2026/7/13 9:00:00です。",
-          "現時点では報道の出そろい方と勢いを優先して選出しています。"
-        ],
-        "watchpoints": [
-          "続報で事実関係や影響範囲が更新される可能性があります。",
-          "一次情報や公式コメントが追加されたら優先して確認してください。"
-        ],
-        "threeMinuteSummary": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」 8月の抽… 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
-      },
-      "representativeArticles": [
-        {
-          "title": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」　8月の抽選販売に導入　事前登録を呼び掛け",
-          "url": "https://www.itmedia.co.jp/news/articles/2607/13/news122.html",
-          "sourceName": "ITmedia",
-          "publishedAt": "2026-07-13T09:00:00.000Z"
-        }
-      ],
-      "externalSignals": {
-        "query": "[ITmedia News] ポケカ、本人確認にマイナカード デジタル認証アプリ 8月の抽選販売に導入 事前登録を呼び掛け",
-        "search": {
-          "count": 1,
-          "score": 1.6666666666666667,
-          "available": true
-        },
-        "reddit": {
-          "available": false,
-          "score": 0,
-          "count": 0
-        },
-        "bluesky": {
-          "available": false,
-          "score": 0,
-          "count": 0
-        },
-        "errors": [
-          "reddit:http 403 Blocked",
-          "bluesky:http 403 Forbidden"
-        ]
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ],
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 57.7
-      },
-      "clusterStats": {
-        "articleCount": 1,
-        "sourceCount": 1,
-        "uniqueDomainCount": 1,
-        "officialSourceCount": 0,
-        "latestSourceCount1h": 0
-      }
-    },
-    {
-      "id": "auto-tech-アニメ特化動画生成ai-animegen-無償公開-商用利用も可-国内aiベンチャーaidealab-itmedia.co.jp/aiplus/article/2607/13/2000000187",
-      "title": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可　国内AIベンチャーAIdeaLab",
-      "summary": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可 国内AIベンチャーAIde… 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-      "briefSummary": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可 国内AIベンチャーAIde…",
-      "whatHappened": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可 国内AIベンチャーAIde…",
-      "whyHot": "既存トレンド指標でも反応が強い。",
-      "importantPoint": "1媒体・1ドメインで確認されたトピックです。",
-      "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "anime",
-        "entertainment",
-        "manga",
-        "sns",
-        "net-culture",
-        "business",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "アニメ",
-        "エンタメ",
-        "漫画",
-        "SNS",
-        "ネットカルチャー",
-        "経済"
-      ],
-      "thumbnailUrl": "https://www.itmedia.co.jp/aiplus/article/ogp/2607/13/2000000187/10000886/2048",
-      "sourceSignals": [
-        {
-          "sourceId": "hatena-hotentry",
-          "source": "はてなブックマーク",
-          "sourceName": "はてなブックマーク人気",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "trend",
-            "buzz"
-          ],
-          "title": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可　国内AIベンチャーAIdeaLab",
-          "url": "https://www.itmedia.co.jp/aiplus/article/2607/13/2000000187/",
-          "canonicalUrl": "https://www.itmedia.co.jp/aiplus/article/2607/13/2000000187/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.itmedia.co.jp/aiplus/article/ogp/2607/13/2000000187/10000886/2048",
-          "briefSummary": "",
-          "summary": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可 国内AIベンチャーAIdeaLab（1/2 ページ） AI開発企業のAIdeaLab（東京都千代田区）は7月13日、アニメに特化した動画生成AIモデル「AnimeGen」（ア…",
-          "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2607/13/2000000187/10000886/2048"
-        }
-      ],
-      "hotScore": 56.9,
-      "posts": "1",
-      "metricLabel": "signals",
-      "time": "直近",
-      "publishedAt": "2026-07-13T13:31:55.778Z",
-      "buzzScore": 56.9,
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "rank": 4,
-      "summaryPayload": {
-        "headline": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可　国内AIベンチャーAIdeaLab",
-        "whatHappened": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可 国内AIベンチャーAIde…",
-        "whyBuzzing": "既存トレンド指標でも反応が強い。",
-        "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-        "keyPoints": [
-          "1媒体・1ドメインで確認されたトピックです。",
-          "最新更新は2026/7/13 13:31:55です。",
-          "現時点では報道の出そろい方と勢いを優先して選出しています。"
-        ],
-        "watchpoints": [
-          "続報で事実関係や影響範囲が更新される可能性があります。",
-          "一次情報や公式コメントが追加されたら優先して確認してください。"
-        ],
-        "threeMinuteSummary": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可 国内AIベンチャーAIde… 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
-      },
-      "representativeArticles": [
-        {
-          "title": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可　国内AIベンチャーAIdeaLab",
-          "url": "https://www.itmedia.co.jp/aiplus/article/2607/13/2000000187/",
-          "sourceName": "はてなブックマーク人気",
-          "publishedAt": null
-        }
-      ],
-      "externalSignals": {
-        "query": "アニメ特化動画生成AI AnimeGen 無償公開、商用利用も可 国内AIベンチャーAIdeaLab",
-        "search": {
-          "count": 5,
-          "score": 8.333333333333332,
-          "available": true
-        },
-        "reddit": {
-          "available": false,
-          "score": 0,
-          "count": 0
-        },
-        "bluesky": {
-          "available": false,
-          "score": 0,
-          "count": 0
-        },
-        "errors": [
-          "reddit:http 403 Blocked",
-          "bluesky:http 403 Forbidden"
-        ]
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ],
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 57.7
-      },
-      "clusterStats": {
-        "articleCount": 1,
-        "sourceCount": 1,
-        "uniqueDomainCount": 1,
-        "officialSourceCount": 0,
-        "latestSourceCount1h": 0
-      }
     }
   ],
   "fallbackUsed": false,
   "debug": {
-    "generatedAt": "2026-07-13T16:06:21.994Z",
+    "generatedAt": "2026-07-13T18:03:50.132Z",
     "fallbackUsed": false,
-    "selectedClusterId": "today-cluster-439",
+    "selectedClusterId": "today-cluster-548",
     "selectedTitle": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
     "candidates": [
       {
-        "clusterId": "today-cluster-439",
-        "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-        "category": "business",
+        "clusterId": "today-cluster-398",
+        "title": "EUも子のSNS制限へ 13歳未満対象",
+        "category": "net-culture",
         "categories": [
-          "business",
-          "games",
+          "net-culture",
+          "tech",
+          "sns",
           "general"
         ],
-        "buzzScore": 64,
-        "confidence": 0.46,
-        "articleCount": 3,
-        "sourceCount": 2,
-        "uniqueDomainCount": 2,
+        "buzzScore": 67,
+        "confidence": 0.37,
+        "articleCount": 1,
+        "sourceCount": 1,
+        "uniqueDomainCount": 1,
         "whyRanked": [
           "既存トレンド指標でも反応が強い",
-          "公式または一次情報を含む"
+          "検索面でも関連話題の広がりを確認"
         ],
         "scoreBreakdown": {
-          "coverage": 5.4,
-          "sourceDiversity": 4.7,
-          "trend": 22,
+          "coverage": 1.8,
+          "sourceDiversity": 2.3,
+          "trend": 21.3,
           "internetNativeBoost": 8,
-          "search": 5.9,
-          "social": 4.6,
+          "search": 8,
+          "social": 6,
           "velocity": 0,
           "freshness": 7,
-          "authority": 5.5,
-          "categoryBias": 1,
-          "penalty": 0
+          "authority": 1.5,
+          "categoryBias": 14,
+          "penalty": -3
         },
         "externalSignalStats": {
-          "searchScore": 36.666666666666664,
+          "searchScore": 50,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -721,10 +911,61 @@
           "browseMatchCount": 0,
           "archiveMatchCount": 1,
           "repeatedAppearanceScore": 6,
+          "crossCategoryScore": 80,
+          "archiveHeatScore": 97,
+          "internalSearchScore": 37.8,
+          "internalSocialScore": 46.7
+        },
+        "externalSignalErrors": [
+          "reddit:http 403 Blocked",
+          "bluesky:http 403 Forbidden"
+        ]
+      },
+      {
+        "clusterId": "today-cluster-548",
+        "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+        "category": "business",
+        "categories": [
+          "business",
+          "games",
+          "general"
+        ],
+        "buzzScore": 64.5,
+        "confidence": 0.48,
+        "articleCount": 4,
+        "sourceCount": 2,
+        "uniqueDomainCount": 2,
+        "whyRanked": [
+          "既存トレンド指標でも反応が強い",
+          "公式または一次情報を含む"
+        ],
+        "scoreBreakdown": {
+          "coverage": 7.2,
+          "sourceDiversity": 4.7,
+          "trend": 22,
+          "internetNativeBoost": 8,
+          "search": 6.1,
+          "social": 4.5,
+          "velocity": 0,
+          "freshness": 5.5,
+          "authority": 5.5,
+          "categoryBias": 1,
+          "penalty": 0
+        },
+        "externalSignalStats": {
+          "searchScore": 38.333333333333336,
+          "socialScore": 0,
+          "searchAvailable": true,
+          "socialAvailable": false
+        },
+        "internalSignalStats": {
+          "browseMatchCount": 0,
+          "archiveMatchCount": 1,
+          "repeatedAppearanceScore": 5.1,
           "crossCategoryScore": 60,
           "archiveHeatScore": 100,
-          "internalSearchScore": 38.9,
-          "internalSocialScore": 35.7
+          "internalSearchScore": 38.3,
+          "internalSocialScore": 35.3
         },
         "externalSignalErrors": [
           "reddit:http 403 Blocked",
@@ -733,6 +974,58 @@
       },
       {
         "clusterId": "today-cluster-11",
+        "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版が本日配信決定！両タイトルのセットをお得に購入できるバンドルも登場",
+        "category": "games",
+        "categories": [
+          "games",
+          "entertainment",
+          "net-culture",
+          "general"
+        ],
+        "buzzScore": 64,
+        "confidence": 0.43,
+        "articleCount": 4,
+        "sourceCount": 2,
+        "uniqueDomainCount": 2,
+        "whyRanked": [
+          "既存トレンド指標でも反応が強い",
+          "アーカイブ上でも近い話題が連続出現"
+        ],
+        "scoreBreakdown": {
+          "coverage": 7.2,
+          "sourceDiversity": 4.7,
+          "trend": 15.6,
+          "internetNativeBoost": 0,
+          "search": 5.7,
+          "social": 7.4,
+          "velocity": 0,
+          "freshness": 7,
+          "authority": 2.5,
+          "categoryBias": 14,
+          "penalty": 0
+        },
+        "externalSignalStats": {
+          "searchScore": 16.666666666666664,
+          "socialScore": 0,
+          "searchAvailable": true,
+          "socialAvailable": false
+        },
+        "internalSignalStats": {
+          "browseMatchCount": 1,
+          "archiveMatchCount": 2,
+          "repeatedAppearanceScore": 30,
+          "crossCategoryScore": 80,
+          "archiveHeatScore": 71,
+          "internalSearchScore": 44.3,
+          "internalSocialScore": 57.5
+        },
+        "externalSignalErrors": [
+          "reddit:http 403 Blocked",
+          "bluesky:http 403 Forbidden"
+        ]
+      },
+      {
+        "clusterId": "today-cluster-15",
         "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
         "category": "games",
         "categories": [
@@ -741,7 +1034,7 @@
           "matome",
           "general"
         ],
-        "buzzScore": 60.4,
+        "buzzScore": 58.9,
         "confidence": 0.36,
         "articleCount": 2,
         "sourceCount": 1,
@@ -757,7 +1050,7 @@
           "search": 5.7,
           "social": 7,
           "velocity": 0,
-          "freshness": 7,
+          "freshness": 5.5,
           "authority": 1.5,
           "categoryBias": 14,
           "penalty": -7
@@ -783,7 +1076,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-709",
+        "clusterId": "today-cluster-857",
         "title": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」　8月の抽選販売に導入　事前登録を呼び掛け",
         "category": "tech",
         "categories": [
@@ -793,7 +1086,7 @@
           "net-culture",
           "general"
         ],
-        "buzzScore": 59.7,
+        "buzzScore": 58.7,
         "confidence": 0.33,
         "articleCount": 1,
         "sourceCount": 1,
@@ -804,9 +1097,9 @@
         "scoreBreakdown": {
           "coverage": 1.8,
           "sourceDiversity": 2.3,
-          "trend": 18,
+          "trend": 17.2,
           "internetNativeBoost": 8,
-          "search": 4.2,
+          "search": 4,
           "social": 7.4,
           "velocity": 0,
           "freshness": 5.5,
@@ -815,7 +1108,7 @@
           "penalty": -3
         },
         "externalSignalStats": {
-          "searchScore": 1.6666666666666667,
+          "searchScore": 3.3333333333333335,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -825,114 +1118,9 @@
           "archiveMatchCount": 1,
           "repeatedAppearanceScore": 6,
           "crossCategoryScore": 100,
-          "archiveHeatScore": 82,
-          "internalSearchScore": 32.6,
+          "archiveHeatScore": 78,
+          "internalSearchScore": 31.2,
           "internalSocialScore": 57.7
-        },
-        "externalSignalErrors": [
-          "reddit:http 403 Blocked",
-          "bluesky:http 403 Forbidden"
-        ]
-      },
-      {
-        "clusterId": "today-cluster-315",
-        "title": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可　国内AIベンチャーAIdeaLab",
-        "category": "tech",
-        "categories": [
-          "tech",
-          "anime",
-          "entertainment",
-          "manga",
-          "sns",
-          "net-culture",
-          "business",
-          "general"
-        ],
-        "buzzScore": 56.9,
-        "confidence": 0.34,
-        "articleCount": 1,
-        "sourceCount": 1,
-        "uniqueDomainCount": 1,
-        "whyRanked": [
-          "既存トレンド指標でも反応が強い"
-        ],
-        "scoreBreakdown": {
-          "coverage": 1.8,
-          "sourceDiversity": 2.3,
-          "trend": 17.4,
-          "internetNativeBoost": 8,
-          "search": 4,
-          "social": 7.4,
-          "velocity": 0,
-          "freshness": 8.5,
-          "authority": 1.5,
-          "categoryBias": 9,
-          "penalty": -3
-        },
-        "externalSignalStats": {
-          "searchScore": 8.333333333333332,
-          "socialScore": 0,
-          "searchAvailable": true,
-          "socialAvailable": false
-        },
-        "internalSignalStats": {
-          "browseMatchCount": 0,
-          "archiveMatchCount": 1,
-          "repeatedAppearanceScore": 6,
-          "crossCategoryScore": 100,
-          "archiveHeatScore": 79,
-          "internalSearchScore": 31.6,
-          "internalSocialScore": 57.7
-        },
-        "externalSignalErrors": [
-          "reddit:http 403 Blocked",
-          "bluesky:http 403 Forbidden"
-        ]
-      },
-      {
-        "clusterId": "today-cluster-1001",
-        "title": "料理研究家・リュウジ氏、名古屋の飲食店めぐり「炎上」で謝罪　「私の物言いが非常に悪く、誤解させてしまいました」",
-        "category": "net-culture",
-        "categories": [
-          "net-culture",
-          "sns",
-          "general"
-        ],
-        "buzzScore": 54.8,
-        "confidence": 0.36,
-        "articleCount": 1,
-        "sourceCount": 1,
-        "uniqueDomainCount": 1,
-        "whyRanked": [
-          "既存トレンド指標でも反応が強い"
-        ],
-        "scoreBreakdown": {
-          "coverage": 1.8,
-          "sourceDiversity": 2.3,
-          "trend": 20.5,
-          "internetNativeBoost": 8,
-          "search": 4.7,
-          "social": 4.6,
-          "velocity": 0,
-          "freshness": 5.5,
-          "authority": 1.5,
-          "categoryBias": 9,
-          "penalty": -3
-        },
-        "externalSignalStats": {
-          "searchScore": 8.333333333333332,
-          "socialScore": 0,
-          "searchAvailable": true,
-          "socialAvailable": false
-        },
-        "internalSignalStats": {
-          "browseMatchCount": 0,
-          "archiveMatchCount": 1,
-          "repeatedAppearanceScore": 6,
-          "crossCategoryScore": 60,
-          "archiveHeatScore": 93,
-          "internalSearchScore": 36.4,
-          "internalSocialScore": 35.7
         },
         "externalSignalErrors": [
           "reddit:http 403 Blocked",
@@ -950,6 +1138,6 @@
       "reddit:http 403 Blocked",
       "bluesky:http 403 Forbidden"
     ],
-    "confidence": 0.46
+    "confidence": 0.48
   }
 }

@@ -1,11 +1,63 @@
 {
-  "generatedAt": "2026-07-13T18:03:50.132Z",
+  "generatedAt": "2026-07-13T19:41:59.806Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-548",
+  "selectedClusterId": "today-cluster-363",
   "selectedTitle": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
   "candidates": [
     {
-      "clusterId": "today-cluster-398",
+      "clusterId": "today-cluster-363",
+      "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+      "category": "business",
+      "categories": [
+        "business",
+        "games",
+        "general"
+      ],
+      "buzzScore": 73.5,
+      "confidence": 0.58,
+      "articleCount": 6,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 10.8,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 4.5,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 5.5,
+        "categoryBias": 1,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 36.666666666666664,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 37.7,
+        "internalSocialScore": 34.9
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-455",
       "title": "EUも子のSNS制限へ 13歳未満対象",
       "category": "net-culture",
       "categories": [
@@ -14,7 +66,7 @@
         "sns",
         "general"
       ],
-      "buzzScore": 67,
+      "buzzScore": 67.1,
       "confidence": 0.37,
       "articleCount": 1,
       "sourceCount": 1,
@@ -26,9 +78,9 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "trend": 20.7,
         "internetNativeBoost": 8,
-        "search": 8,
+        "search": 8.8,
         "social": 6,
         "velocity": 0,
         "freshness": 7,
@@ -37,7 +89,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 50,
+        "searchScore": 55.00000000000001,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -47,8 +99,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 36.8,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -57,58 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-548",
-      "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-      "category": "business",
-      "categories": [
-        "business",
-        "games",
-        "general"
-      ],
-      "buzzScore": 64.5,
-      "confidence": 0.48,
-      "articleCount": 4,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 4.5,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 5.5,
-        "categoryBias": 1,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 38.333333333333336,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.3,
-        "internalSocialScore": 35.3
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-11",
+      "clusterId": "today-cluster-15",
       "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版が本日配信決定！両タイトルのセットをお得に購入できるバンドルも登場",
       "category": "games",
       "categories": [
@@ -117,8 +118,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 64,
-      "confidence": 0.43,
+      "buzzScore": 61.5,
+      "confidence": 0.42,
       "articleCount": 4,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -129,13 +130,13 @@
       "scoreBreakdown": {
         "coverage": 7.2,
         "sourceDiversity": 4.7,
-        "trend": 15.6,
+        "trend": 14.7,
         "internetNativeBoost": 0,
-        "search": 5.7,
+        "search": 5.5,
         "social": 7.4,
         "velocity": 0,
         "freshness": 7,
-        "authority": 2.5,
+        "authority": 1,
         "categoryBias": 14,
         "penalty": 0
       },
@@ -150,8 +151,8 @@
         "archiveMatchCount": 2,
         "repeatedAppearanceScore": 30,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 71,
-        "internalSearchScore": 44.3,
+        "archiveHeatScore": 67,
+        "internalSearchScore": 43,
         "internalSocialScore": 57.5
       },
       "externalSignalErrors": [
@@ -160,58 +161,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-15",
-      "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "matome",
-        "general"
-      ],
-      "buzzScore": 58.9,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -7
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-857",
+      "clusterId": "today-cluster-930",
       "title": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」　8月の抽選販売に導入　事前登録を呼び掛け",
       "category": "tech",
       "categories": [
@@ -243,7 +193,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -256,6 +206,57 @@
         "archiveHeatScore": 78,
         "internalSearchScore": 31.2,
         "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-18",
+      "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "matome",
+        "general"
+      ],
+      "buzzScore": 57.9,
+      "confidence": 0.35,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 5.5,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -7
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

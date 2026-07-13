@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-13T18:03:50.132Z",
+  "generatedAt": "2026-07-13T19:41:59.806Z",
   "topicVersion": 1,
   "selectedTopic": {
     "id": "auto-business-lineヤフー-ゲーム利用者に関する情報約710万件流出-www3.nhk.or.jp/news/html/20260713/k10015176021000.html",
     "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-    "summary": "LINEヤフー ゲーム利用者に関する情報約710万件流出 既存トレンド指標でも反応が強い。報道元はNHK、Google News / ゲームです。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+    "summary": "LINEヤフー ゲーム利用者に関する情報約710万件流出 直近数時間で関連記事が増加。報道元はGoogle News / ゲーム、NHKです。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
     "briefSummary": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
     "whatHappened": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-    "whyHot": "既存トレンド指標でも反応が強い。報道元はNHK、Google News / ゲームです。",
+    "whyHot": "直近数時間で関連記事が増加。報道元はGoogle News / ゲーム、NHKです。",
     "importantPoint": "2媒体・2ドメインで確認されたトピックです。",
     "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
     "category": "business",
@@ -24,6 +24,29 @@
     ],
     "thumbnailUrl": "",
     "sourceSignals": [
+      {
+        "sourceId": "google-news-games",
+        "source": "Google News",
+        "sourceName": "Google News / ゲーム",
+        "sourceGroup": "google-news",
+        "sourcePriority": 34,
+        "official": false,
+        "specialist": false,
+        "forPersonal": true,
+        "sourceTags": [
+          "games",
+          "switch",
+          "steam"
+        ],
+        "title": "LINEヤフー、ゲーム顧客情報710万件流出",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMWl2VjBiaWtvRTdYWW5SY2tyTnJOVThCcUxXSi16TmV5akNmMHh1X3U5YkNMT3NNTFpEejhZeXFRTUtwU2w1aF9teTZlT0F3OUpiOURJRU5yQ21VSmRGU0xOMDlNc0g5T1huZUlEbWJ2VnkwMkl5ZmpsN3o4WE9iSE1OWFRFZ3JQQzhxd0gxWWxtYkQwRVA3RG1MdHkyWFAwSlV3VU5B?oc=5",
+        "canonicalUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMWl2VjBiaWtvRTdYWW5SY2tyTnJOVThCcUxXSi16TmV5akNmMHh1X3U5YkNMT3NNTFpEejhZeXFRTUtwU2w1aF9teTZlT0F3OUpiOURJRU5yQ21VSmRGU0xOMDlNc0g5T1huZUlEbWJ2VnkwMkl5ZmpsN3o4WE9iSE1OWFRFZ3JQQzhxd0gxWWxtYkQwRVA3RG1MdHkyWFAwSlV3VU5B?oc=5",
+        "publishedAt": "2026-07-13T17:23:34.000Z",
+        "publishedLabel": "7/13 17:23",
+        "thumbnailUrl": null,
+        "briefSummary": "",
+        "summary": ""
+      },
       {
         "sourceId": "nhk-top",
         "source": "NHK RSS",
@@ -111,28 +134,52 @@
         "thumbnailUrl": null,
         "briefSummary": "",
         "summary": ""
+      },
+      {
+        "sourceId": "google-news-games",
+        "source": "Google News",
+        "sourceName": "Google News / ゲーム",
+        "sourceGroup": "google-news",
+        "sourcePriority": 34,
+        "official": false,
+        "specialist": false,
+        "forPersonal": true,
+        "sourceTags": [
+          "games",
+          "switch",
+          "steam"
+        ],
+        "title": "LINEヤフー、ゲームの顧客情報710万件が流出 識別子を誤送信",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE16RUVlS1Y3REFCRDhrZ2JKdEZsZF9yM3RPbUpROE52alFtZ2MwYlFIelhmdk1NaGc5TEh2a3pFb2VRbThLSW44TUtkYkh2UXRPZjQ1N3VxSm4xNWJNeG81Yjh4TWRFNlR3Q1hPTA?oc=5",
+        "canonicalUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE16RUVlS1Y3REFCRDhrZ2JKdEZsZF9yM3RPbUpROE52alFtZ2MwYlFIelhmdk1NaGc5TEh2a3pFb2VRbThLSW44TUtkYkh2UXRPZjQ1N3VxSm4xNWJNeG81Yjh4TWRFNlR3Q1hPTA?oc=5",
+        "publishedAt": "2026-07-13T07:56:14.000Z",
+        "publishedLabel": "7/13 07:56",
+        "thumbnailUrl": null,
+        "briefSummary": "",
+        "summary": "LINEヤフー、ゲームの顧客情報710万件が流出 識別子を誤送信 日本経済新聞"
       }
     ],
-    "hotScore": 64.5,
-    "posts": "4",
+    "hotScore": 73.5,
+    "posts": "6",
     "metricLabel": "signals",
     "time": "1時間前",
-    "publishedAt": "2026-07-13T11:55:52.000Z",
-    "buzzScore": 64.5,
+    "publishedAt": "2026-07-13T17:23:34.000Z",
+    "buzzScore": 73.5,
     "scoreBreakdown": {
-      "coverage": 7.2,
+      "coverage": 10.8,
       "sourceDiversity": 4.7,
       "trend": 22,
       "internetNativeBoost": 8,
-      "search": 6.1,
+      "search": 5.9,
       "social": 4.5,
-      "velocity": 0,
-      "freshness": 5.5,
+      "velocity": 2.7,
+      "freshness": 8.5,
       "authority": 5.5,
       "categoryBias": 1,
       "penalty": 0
     },
     "whyRanked": [
+      "直近数時間で関連記事が増加",
       "既存トレンド指標でも反応が強い",
       "公式または一次情報を含む"
     ],
@@ -140,20 +187,26 @@
     "summaryPayload": {
       "headline": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
       "whatHappened": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-      "whyBuzzing": "既存トレンド指標でも反応が強い。報道元はNHK、Google News / ゲームです。",
+      "whyBuzzing": "直近数時間で関連記事が増加。報道元はGoogle News / ゲーム、NHKです。",
       "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
       "keyPoints": [
         "2媒体・2ドメインで確認されたトピックです。",
-        "最新更新は2026/7/13 11:55:52です。",
+        "最新更新は2026/7/13 17:23:34です。",
         "一次情報を含むため、事実確認の軸を置きやすい話題です。"
       ],
       "watchpoints": [
         "続報で事実関係や影響範囲が更新される可能性があります。",
         "一次情報や公式コメントが追加されたら優先して確認してください。"
       ],
-      "threeMinuteSummary": "LINEヤフー ゲーム利用者に関する情報約710万件流出 既存トレンド指標でも反応が強い。報道元はNHK、Google News / ゲームです。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
+      "threeMinuteSummary": "LINEヤフー ゲーム利用者に関する情報約710万件流出 直近数時間で関連記事が増加。報道元はGoogle News / ゲーム、NHKです。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
     },
     "representativeArticles": [
+      {
+        "title": "LINEヤフー、ゲーム顧客情報710万件流出",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMWl2VjBiaWtvRTdYWW5SY2tyTnJOVThCcUxXSi16TmV5akNmMHh1X3U5YkNMT3NNTFpEejhZeXFRTUtwU2w1aF9teTZlT0F3OUpiOURJRU5yQ21VSmRGU0xOMDlNc0g5T1huZUlEbWJ2VnkwMkl5ZmpsN3o4WE9iSE1OWFRFZ3JQQzhxd0gxWWxtYkQwRVA3RG1MdHkyWFAwSlV3VU5B?oc=5",
+        "sourceName": "Google News / ゲーム",
+        "publishedAt": "2026-07-13T17:23:34.000Z"
+      },
       {
         "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
         "url": "http://www3.nhk.or.jp/news/html/20260713/k10015176021000.html",
@@ -182,8 +235,8 @@
     "externalSignals": {
       "query": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
       "search": {
-        "count": 23,
-        "score": 38.333333333333336,
+        "count": 22,
+        "score": 36.666666666666664,
         "available": true
       },
       "reddit": {
@@ -202,7 +255,7 @@
       ]
     },
     "externalSignalStats": {
-      "searchScore": 38.333333333333336,
+      "searchScore": 36.666666666666664,
       "socialScore": 0,
       "searchAvailable": true,
       "socialAvailable": false
@@ -214,14 +267,14 @@
     "internalSignalStats": {
       "browseMatchCount": 0,
       "archiveMatchCount": 1,
-      "repeatedAppearanceScore": 5.1,
+      "repeatedAppearanceScore": 4.2,
       "crossCategoryScore": 60,
       "archiveHeatScore": 100,
-      "internalSearchScore": 38.3,
-      "internalSocialScore": 35.3
+      "internalSearchScore": 37.7,
+      "internalSocialScore": 34.9
     },
     "clusterStats": {
-      "articleCount": 4,
+      "articleCount": 6,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "officialSourceCount": 1,
@@ -230,188 +283,102 @@
   },
   "runnerUps": [
     {
-      "id": "auto-business-lineヤフー-ゲーム利用者に関する情報約710万件流出-www3.nhk.or.jp/news/html/20260713/k10015176021000.html",
-      "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-      "summary": "LINEヤフー ゲーム利用者に関する情報約710万件流出 既存トレンド指標でも反応が強い。報道元はNHK、Google News / ゲームです。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-      "briefSummary": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-      "whatHappened": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-      "whyHot": "既存トレンド指標でも反応が強い。報道元はNHK、Google News / ゲームです。",
-      "importantPoint": "2媒体・2ドメインで確認されたトピックです。",
+      "id": "auto-net-culture-euも子のsns制限へ-13歳未満対象-news.yahoo.co.jp/pickup/6587832",
+      "title": "EUも子のSNS制限へ 13歳未満対象",
+      "summary": "EUも子のSNS制限へ 13歳未満対象 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+      "briefSummary": "EUも子のSNS制限へ 13歳未満対象",
+      "whatHappened": "EUも子のSNS制限へ 13歳未満対象",
+      "whyHot": "既存トレンド指標でも反応が強い。",
+      "importantPoint": "1媒体・1ドメインで確認されたトピックです。",
       "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
-      "category": "business",
+      "category": "net-culture",
       "categories": [
-        "business",
-        "games",
+        "net-culture",
+        "tech",
+        "sns",
         "general"
       ],
-      "categoryLabel": "経済",
+      "categoryLabel": "ネットカルチャー",
       "categoryLabels": [
-        "経済",
-        "ゲーム",
-        "その他"
+        "ネットカルチャー",
+        "テック",
+        "SNS"
       ],
       "thumbnailUrl": "",
       "sourceSignals": [
         {
-          "sourceId": "nhk-top",
-          "source": "NHK RSS",
-          "sourceName": "NHK",
-          "sourceGroup": "important-news",
-          "sourcePriority": 92,
-          "official": true,
+          "sourceId": "yahoo-it",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / IT",
+          "sourceGroup": "general-tech",
+          "sourcePriority": 62,
+          "official": false,
           "specialist": false,
           "forPersonal": false,
           "sourceTags": [],
-          "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-          "url": "http://www3.nhk.or.jp/news/html/20260713/k10015176021000.html",
-          "canonicalUrl": "http://www3.nhk.or.jp/news/html/20260713/k10015176021000.html",
-          "publishedAt": "2026-07-13T11:55:52.000Z",
-          "publishedLabel": "7/13 11:55",
-          "thumbnailUrl": null,
-          "briefSummary": "",
-          "summary": "LINEヤフーは、スマートフォン向けゲームの利用者に関する情報、およそ710万件が外部の企業に流出したと発表しました。流出したのは利用者を識別するためのランダムな文字列の情報で、氏名や住所などは含まれておらず、現在のところ不正利用は確認され…"
-        },
-        {
-          "sourceId": "google-news-games",
-          "source": "Google News",
-          "sourceName": "Google News / ゲーム",
-          "sourceGroup": "google-news",
-          "sourcePriority": 34,
-          "official": false,
-          "specialist": false,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "switch",
-            "steam"
-          ],
-          "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3SktyVDNYcU9zUVRNazVyakh0aFJaa2NPN2x0N2c4cU1CdFpPN2I4RGY2dVBIYl9LbWE5R3NqaUpuOEd0S0ZqNHhjRUxYNXh0ZWEtdlRiUzl5SWZPR01J?oc=5",
-          "canonicalUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3SktyVDNYcU9zUVRNazVyakh0aFJaa2NPN2x0N2c4cU1CdFpPN2I4RGY2dVBIYl9LbWE5R3NqaUpuOEd0S0ZqNHhjRUxYNXh0ZWEtdlRiUzl5SWZPR01J?oc=5",
-          "publishedAt": "2026-07-13T11:55:52.000Z",
-          "publishedLabel": "7/13 11:55",
-          "thumbnailUrl": null,
-          "briefSummary": "",
-          "summary": "LINEヤフー ゲーム利用者に関する情報約710万件流出 NHKニュース"
-        },
-        {
-          "sourceId": "google-news-games",
-          "source": "Google News",
-          "sourceName": "Google News / ゲーム",
-          "sourceGroup": "google-news",
-          "sourcePriority": 34,
-          "official": false,
-          "specialist": false,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "switch",
-            "steam"
-          ],
-          "title": "利用者識別情報が710万件流出 LINEのゲーム",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1UamtadHBJakNmOFNNdjRpN0ZsRFZXU0djalVueHl6YnlqQUViNGRjY0J0bnZqS2ViUjJkU0RneC1mVzU2WmZ6VFpjdw?oc=5",
-          "canonicalUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1UamtadHBJakNmOFNNdjRpN0ZsRFZXU0djalVueHl6YnlqQUViNGRjY0J0bnZqS2ViUjJkU0RneC1mVzU2WmZ6VFpjdw?oc=5",
-          "publishedAt": "2026-07-13T10:08:17.000Z",
-          "publishedLabel": "7/13 10:08",
-          "thumbnailUrl": null,
-          "briefSummary": "",
-          "summary": "利用者識別情報が710万件流出 LINEのゲーム 47NEWS"
-        },
-        {
-          "sourceId": "google-news-games",
-          "source": "Google News",
-          "sourceName": "Google News / ゲーム",
-          "sourceGroup": "google-news",
-          "sourcePriority": 34,
-          "official": false,
-          "specialist": false,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "switch",
-            "steam"
-          ],
-          "title": "LINEのゲーム利用者情報710万件流出",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9sM3pIN3B0Tm9nVGdfeTVaa3FpVTFoYjVsQno3ZWwzbGpsdHJlY1BadEVodkZHSDRJcVVfNm50Y2N1cnlVUFpVM1A4bVJhLVpoa0FuT3Y1QnJmbEtaVm5GaXNoT3AwZDQyTnFEeDd4TnVXUDFPcjVvOU14dTBYX1k?oc=5",
-          "canonicalUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9sM3pIN3B0Tm9nVGdfeTVaa3FpVTFoYjVsQno3ZWwzbGpsdHJlY1BadEVodkZHSDRJcVVfNm50Y2N1cnlVUFpVM1A4bVJhLVpoa0FuT3Y1QnJmbEtaVm5GaXNoT3AwZDQyTnFEeDd4TnVXUDFPcjVvOU14dTBYX1k?oc=5",
-          "publishedAt": "2026-07-13T09:51:48.000Z",
-          "publishedLabel": "7/13 09:51",
+          "title": "EUも子のSNS制限へ 13歳未満対象",
+          "url": "https://news.yahoo.co.jp/pickup/6587832?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6587832?source=rss",
+          "publishedAt": "2026-07-13T14:09:06.000Z",
+          "publishedLabel": "7/13 14:09",
           "thumbnailUrl": null,
           "briefSummary": "",
           "summary": ""
         }
       ],
-      "hotScore": 64.5,
-      "posts": "4",
+      "hotScore": 67.1,
+      "posts": "1",
       "metricLabel": "signals",
-      "time": "1時間前",
-      "publishedAt": "2026-07-13T11:55:52.000Z",
-      "buzzScore": 64.5,
+      "time": "3時間前",
+      "publishedAt": "2026-07-13T14:09:06.000Z",
+      "buzzScore": 67.1,
       "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 4.7,
-        "trend": 22,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20.7,
         "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 4.5,
+        "search": 8.8,
+        "social": 6,
         "velocity": 0,
-        "freshness": 5.5,
-        "authority": 5.5,
-        "categoryBias": 1,
-        "penalty": 0
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
       },
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
+        "検索面でも関連話題の広がりを確認"
       ],
       "rank": 2,
       "summaryPayload": {
-        "headline": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-        "whatHappened": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-        "whyBuzzing": "既存トレンド指標でも反応が強い。報道元はNHK、Google News / ゲームです。",
+        "headline": "EUも子のSNS制限へ 13歳未満対象",
+        "whatHappened": "EUも子のSNS制限へ 13歳未満対象",
+        "whyBuzzing": "既存トレンド指標でも反応が強い。",
         "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
         "keyPoints": [
-          "2媒体・2ドメインで確認されたトピックです。",
-          "最新更新は2026/7/13 11:55:52です。",
-          "一次情報を含むため、事実確認の軸を置きやすい話題です。"
+          "1媒体・1ドメインで確認されたトピックです。",
+          "最新更新は2026/7/13 14:09:06です。",
+          "現時点では報道の出そろい方と勢いを優先して選出しています。"
         ],
         "watchpoints": [
           "続報で事実関係や影響範囲が更新される可能性があります。",
           "一次情報や公式コメントが追加されたら優先して確認してください。"
         ],
-        "threeMinuteSummary": "LINEヤフー ゲーム利用者に関する情報約710万件流出 既存トレンド指標でも反応が強い。報道元はNHK、Google News / ゲームです。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
+        "threeMinuteSummary": "EUも子のSNS制限へ 13歳未満対象 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
       },
       "representativeArticles": [
         {
-          "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-          "url": "http://www3.nhk.or.jp/news/html/20260713/k10015176021000.html",
-          "sourceName": "NHK",
-          "publishedAt": "2026-07-13T11:55:52.000Z"
-        },
-        {
-          "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3SktyVDNYcU9zUVRNazVyakh0aFJaa2NPN2x0N2c4cU1CdFpPN2I4RGY2dVBIYl9LbWE5R3NqaUpuOEd0S0ZqNHhjRUxYNXh0ZWEtdlRiUzl5SWZPR01J?oc=5",
-          "sourceName": "Google News / ゲーム",
-          "publishedAt": "2026-07-13T11:55:52.000Z"
-        },
-        {
-          "title": "利用者識別情報が710万件流出 LINEのゲーム",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1UamtadHBJakNmOFNNdjRpN0ZsRFZXU0djalVueHl6YnlqQUViNGRjY0J0bnZqS2ViUjJkU0RneC1mVzU2WmZ6VFpjdw?oc=5",
-          "sourceName": "Google News / ゲーム",
-          "publishedAt": "2026-07-13T10:08:17.000Z"
-        },
-        {
-          "title": "LINEのゲーム利用者情報710万件流出",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9sM3pIN3B0Tm9nVGdfeTVaa3FpVTFoYjVsQno3ZWwzbGpsdHJlY1BadEVodkZHSDRJcVVfNm50Y2N1cnlVUFpVM1A4bVJhLVpoa0FuT3Y1QnJmbEtaVm5GaXNoT3AwZDQyTnFEeDd4TnVXUDFPcjVvOU14dTBYX1k?oc=5",
-          "sourceName": "Google News / ゲーム",
-          "publishedAt": "2026-07-13T09:51:48.000Z"
+          "title": "EUも子のSNS制限へ 13歳未満対象",
+          "url": "https://news.yahoo.co.jp/pickup/6587832?source=rss",
+          "sourceName": "Yahoo!ニュース / IT",
+          "publishedAt": "2026-07-13T14:09:06.000Z"
         }
       ],
       "externalSignals": {
-        "query": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+        "query": "EUも子のSNS制限へ 13歳未満対象",
         "search": {
-          "count": 23,
-          "score": 38.333333333333336,
+          "count": 33,
+          "score": 55.00000000000001,
           "available": true
         },
         "reddit": {
@@ -430,7 +397,7 @@
         ]
       },
       "externalSignalStats": {
-        "searchScore": 38.333333333333336,
+        "searchScore": 55.00000000000001,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -442,17 +409,17 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.3,
-        "internalSocialScore": 35.3
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 36.8,
+        "internalSocialScore": 46.7
       },
       "clusterStats": {
-        "articleCount": 4,
-        "sourceCount": 2,
-        "uniqueDomainCount": 2,
-        "officialSourceCount": 1,
+        "articleCount": 1,
+        "sourceCount": 1,
+        "uniqueDomainCount": 1,
+        "officialSourceCount": 0,
         "latestSourceCount1h": 0
       }
     },
@@ -573,22 +540,22 @@
           "summary": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2ダウンロード版が本日配信決定 電ファミニコゲーマー"
         }
       ],
-      "hotScore": 64,
+      "hotScore": 61.5,
       "posts": "4",
       "metricLabel": "signals",
-      "time": "4時間前",
+      "time": "6時間前",
       "publishedAt": "2026-07-13T13:47:41.000Z",
-      "buzzScore": 64,
+      "buzzScore": 61.5,
       "scoreBreakdown": {
         "coverage": 7.2,
         "sourceDiversity": 4.7,
-        "trend": 15.6,
+        "trend": 14.7,
         "internetNativeBoost": 0,
-        "search": 5.7,
+        "search": 5.5,
         "social": 7.4,
         "velocity": 0,
         "freshness": 7,
-        "authority": 2.5,
+        "authority": 1,
         "categoryBias": 14,
         "penalty": 0
       },
@@ -676,8 +643,8 @@
         "archiveMatchCount": 2,
         "repeatedAppearanceScore": 30,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 71,
-        "internalSearchScore": 44.3,
+        "archiveHeatScore": 67,
+        "internalSearchScore": 43,
         "internalSocialScore": 57.5
       },
       "clusterStats": {
@@ -689,131 +656,104 @@
       }
     },
     {
-      "id": "auto-games-銀河特急-ミルキー-サブウェイ-キャラの地球年齢が改めて紹介されファンの間で話題に-リョーコちゃん29才なの最高-カナタが成人しててびっくり-捗る-など反応集ま-news.denfaminicogamer.jp/news/2607132t",
-      "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
-      "summary": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-      "briefSummary": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に",
-      "whatHappened": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に",
+      "id": "auto-tech-itmedia-news-ポケカ-本人確認にマイナカード-デジタル認証アプリ-8月の抽選販売に導入-事前登録を呼び掛け-itmedia.co.jp/news/articles/2607/13/news122.html",
+      "title": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」　8月の抽選販売に導入　事前登録を呼び掛け",
+      "summary": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」 8月の抽… 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+      "briefSummary": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」 8月の抽…",
+      "whatHappened": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」 8月の抽…",
       "whyHot": "既存トレンド指標でも反応が強い。",
       "importantPoint": "1媒体・1ドメインで確認されたトピックです。",
       "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
-      "category": "games",
+      "category": "tech",
       "categories": [
+        "tech",
         "games",
+        "sns",
         "net-culture",
-        "matome",
         "general"
       ],
-      "categoryLabel": "ゲーム",
+      "categoryLabel": "テック",
       "categoryLabels": [
+        "テック",
         "ゲーム",
-        "ネットカルチャー",
-        "2chまとめ系"
+        "SNS",
+        "ネットカルチャー"
       ],
-      "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/07/HMxrHNpaMAAQvt8.png",
+      "thumbnailUrl": "",
       "sourceSignals": [
         {
-          "sourceId": "denfami",
-          "source": "電ファミニコゲーマー",
-          "sourceName": "電ファミニコゲーマー",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
+          "sourceId": "itmedia-all",
+          "source": "ITmedia",
+          "sourceName": "ITmedia",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 68,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "games",
             "net-culture",
-            "otaku"
+            "sns",
+            "tech"
           ],
-          "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
-          "url": "https://news.denfaminicogamer.jp/news/2607132t",
-          "canonicalUrl": "https://news.denfaminicogamer.jp/news/2607132t",
-          "publishedAt": "2026-07-13T10:43:56.000Z",
-          "publishedLabel": "7/13 10:43",
-          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/07/HMxrHNpaMAAQvt8.png",
+          "title": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」　8月の抽選販売に導入　事前登録を呼び掛け",
+          "url": "https://www.itmedia.co.jp/news/articles/2607/13/news122.html",
+          "canonicalUrl": "https://www.itmedia.co.jp/news/articles/2607/13/news122.html",
+          "publishedAt": "2026-07-13T09:00:00.000Z",
+          "publishedLabel": "7/13 09:00",
+          "thumbnailUrl": null,
           "briefSummary": "",
-          "summary": ""
-        },
-        {
-          "sourceId": "denfami",
-          "source": "電ファミニコゲーマー",
-          "sourceName": "電ファミニコゲーマー",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "net-culture",
-            "otaku"
-          ],
-          "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
-          "url": "https://news.denfaminicogamer.jp/news/2607132t",
-          "canonicalUrl": "https://news.denfaminicogamer.jp/news/2607132t",
-          "publishedAt": "2026-07-13T10:43:56.000Z",
-          "publishedLabel": "7/13 10:43",
-          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/07/HMxrHNpaMAAQvt8.png",
-          "briefSummary": "",
-          "summary": ""
+          "summary": "ポケモン社は7月13日、ポケモンカードゲームの本人認証で使う「デジタル認証アプリ」の事前登録を呼びかけた。公式通販サイト「ポケモンセンターオンライン」で8月に始める抽選販売を前に、アクセス集中を見込んで早めの手続きを促している。"
         }
       ],
-      "hotScore": 58.9,
-      "posts": "2",
+      "hotScore": 58.7,
+      "posts": "1",
       "metricLabel": "signals",
-      "time": "5時間前",
-      "publishedAt": "2026-07-13T10:43:56.000Z",
-      "buzzScore": 58.9,
+      "time": "9時間前",
+      "publishedAt": "2026-07-13T09:00:00.000Z",
+      "buzzScore": 58.7,
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18.3,
+        "trend": 17.2,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 7,
+        "search": 4,
+        "social": 7.4,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
-        "penalty": -7
+        "penalty": -3
       },
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "rank": 4,
       "summaryPayload": {
-        "headline": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
-        "whatHappened": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に",
+        "headline": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」　8月の抽選販売に導入　事前登録を呼び掛け",
+        "whatHappened": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」 8月の抽…",
         "whyBuzzing": "既存トレンド指標でも反応が強い。",
         "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
         "keyPoints": [
           "1媒体・1ドメインで確認されたトピックです。",
-          "最新更新は2026/7/13 10:43:56です。",
+          "最新更新は2026/7/13 9:00:00です。",
           "現時点では報道の出そろい方と勢いを優先して選出しています。"
         ],
         "watchpoints": [
           "続報で事実関係や影響範囲が更新される可能性があります。",
           "一次情報や公式コメントが追加されたら優先して確認してください。"
         ],
-        "threeMinuteSummary": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
+        "threeMinuteSummary": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」 8月の抽… 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
       },
       "representativeArticles": [
         {
-          "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
-          "url": "https://news.denfaminicogamer.jp/news/2607132t",
-          "sourceName": "電ファミニコゲーマー",
-          "publishedAt": "2026-07-13T10:43:56.000Z"
-        },
-        {
-          "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
-          "url": "https://news.denfaminicogamer.jp/news/2607132t",
-          "sourceName": "電ファミニコゲーマー",
-          "publishedAt": "2026-07-13T10:43:56.000Z"
+          "title": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」　8月の抽選販売に導入　事前登録を呼び掛け",
+          "url": "https://www.itmedia.co.jp/news/articles/2607/13/news122.html",
+          "sourceName": "ITmedia",
+          "publishedAt": "2026-07-13T09:00:00.000Z"
         }
       ],
       "externalSignals": {
-        "query": "銀河特急 ミルキー☆サブウェイ キャラの地球年齢が改めて紹介されファンの間で話題に。 リョーコちゃん29才なの最高 カナタが成人しててびっくり 捗る など反応集まる",
+        "query": "[ITmedia News] ポケカ、本人確認にマイナカード デジタル認証アプリ 8月の抽選販売に導入 事前登録を呼び掛け",
         "search": {
           "count": 1,
           "score": 1.6666666666666667,
@@ -845,16 +785,16 @@
         "bluesky:http 403 Forbidden"
       ],
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 54.8
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
+        "internalSocialScore": 57.7
       },
       "clusterStats": {
-        "articleCount": 2,
+        "articleCount": 1,
         "sourceCount": 1,
         "uniqueDomainCount": 1,
         "officialSourceCount": 0,
@@ -864,13 +804,65 @@
   ],
   "fallbackUsed": false,
   "debug": {
-    "generatedAt": "2026-07-13T18:03:50.132Z",
+    "generatedAt": "2026-07-13T19:41:59.806Z",
     "fallbackUsed": false,
-    "selectedClusterId": "today-cluster-548",
+    "selectedClusterId": "today-cluster-363",
     "selectedTitle": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
     "candidates": [
       {
-        "clusterId": "today-cluster-398",
+        "clusterId": "today-cluster-363",
+        "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+        "category": "business",
+        "categories": [
+          "business",
+          "games",
+          "general"
+        ],
+        "buzzScore": 73.5,
+        "confidence": 0.58,
+        "articleCount": 6,
+        "sourceCount": 2,
+        "uniqueDomainCount": 2,
+        "whyRanked": [
+          "直近数時間で関連記事が増加",
+          "既存トレンド指標でも反応が強い",
+          "公式または一次情報を含む"
+        ],
+        "scoreBreakdown": {
+          "coverage": 10.8,
+          "sourceDiversity": 4.7,
+          "trend": 22,
+          "internetNativeBoost": 8,
+          "search": 5.9,
+          "social": 4.5,
+          "velocity": 2.7,
+          "freshness": 8.5,
+          "authority": 5.5,
+          "categoryBias": 1,
+          "penalty": 0
+        },
+        "externalSignalStats": {
+          "searchScore": 36.666666666666664,
+          "socialScore": 0,
+          "searchAvailable": true,
+          "socialAvailable": false
+        },
+        "internalSignalStats": {
+          "browseMatchCount": 0,
+          "archiveMatchCount": 1,
+          "repeatedAppearanceScore": 4.2,
+          "crossCategoryScore": 60,
+          "archiveHeatScore": 100,
+          "internalSearchScore": 37.7,
+          "internalSocialScore": 34.9
+        },
+        "externalSignalErrors": [
+          "reddit:http 403 Blocked",
+          "bluesky:http 403 Forbidden"
+        ]
+      },
+      {
+        "clusterId": "today-cluster-455",
         "title": "EUも子のSNS制限へ 13歳未満対象",
         "category": "net-culture",
         "categories": [
@@ -879,7 +871,7 @@
           "sns",
           "general"
         ],
-        "buzzScore": 67,
+        "buzzScore": 67.1,
         "confidence": 0.37,
         "articleCount": 1,
         "sourceCount": 1,
@@ -891,9 +883,9 @@
         "scoreBreakdown": {
           "coverage": 1.8,
           "sourceDiversity": 2.3,
-          "trend": 21.3,
+          "trend": 20.7,
           "internetNativeBoost": 8,
-          "search": 8,
+          "search": 8.8,
           "social": 6,
           "velocity": 0,
           "freshness": 7,
@@ -902,7 +894,7 @@
           "penalty": -3
         },
         "externalSignalStats": {
-          "searchScore": 50,
+          "searchScore": 55.00000000000001,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -912,8 +904,8 @@
           "archiveMatchCount": 1,
           "repeatedAppearanceScore": 6,
           "crossCategoryScore": 80,
-          "archiveHeatScore": 97,
-          "internalSearchScore": 37.8,
+          "archiveHeatScore": 94,
+          "internalSearchScore": 36.8,
           "internalSocialScore": 46.7
         },
         "externalSignalErrors": [
@@ -922,58 +914,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-548",
-        "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-        "category": "business",
-        "categories": [
-          "business",
-          "games",
-          "general"
-        ],
-        "buzzScore": 64.5,
-        "confidence": 0.48,
-        "articleCount": 4,
-        "sourceCount": 2,
-        "uniqueDomainCount": 2,
-        "whyRanked": [
-          "既存トレンド指標でも反応が強い",
-          "公式または一次情報を含む"
-        ],
-        "scoreBreakdown": {
-          "coverage": 7.2,
-          "sourceDiversity": 4.7,
-          "trend": 22,
-          "internetNativeBoost": 8,
-          "search": 6.1,
-          "social": 4.5,
-          "velocity": 0,
-          "freshness": 5.5,
-          "authority": 5.5,
-          "categoryBias": 1,
-          "penalty": 0
-        },
-        "externalSignalStats": {
-          "searchScore": 38.333333333333336,
-          "socialScore": 0,
-          "searchAvailable": true,
-          "socialAvailable": false
-        },
-        "internalSignalStats": {
-          "browseMatchCount": 0,
-          "archiveMatchCount": 1,
-          "repeatedAppearanceScore": 5.1,
-          "crossCategoryScore": 60,
-          "archiveHeatScore": 100,
-          "internalSearchScore": 38.3,
-          "internalSocialScore": 35.3
-        },
-        "externalSignalErrors": [
-          "reddit:http 403 Blocked",
-          "bluesky:http 403 Forbidden"
-        ]
-      },
-      {
-        "clusterId": "today-cluster-11",
+        "clusterId": "today-cluster-15",
         "title": "『オクトパストラベラー』『オクトパストラベラーII』Nintendo Switch 2 ダウンロード版が本日配信決定！両タイトルのセットをお得に購入できるバンドルも登場",
         "category": "games",
         "categories": [
@@ -982,8 +923,8 @@
           "net-culture",
           "general"
         ],
-        "buzzScore": 64,
-        "confidence": 0.43,
+        "buzzScore": 61.5,
+        "confidence": 0.42,
         "articleCount": 4,
         "sourceCount": 2,
         "uniqueDomainCount": 2,
@@ -994,13 +935,13 @@
         "scoreBreakdown": {
           "coverage": 7.2,
           "sourceDiversity": 4.7,
-          "trend": 15.6,
+          "trend": 14.7,
           "internetNativeBoost": 0,
-          "search": 5.7,
+          "search": 5.5,
           "social": 7.4,
           "velocity": 0,
           "freshness": 7,
-          "authority": 2.5,
+          "authority": 1,
           "categoryBias": 14,
           "penalty": 0
         },
@@ -1015,8 +956,8 @@
           "archiveMatchCount": 2,
           "repeatedAppearanceScore": 30,
           "crossCategoryScore": 80,
-          "archiveHeatScore": 71,
-          "internalSearchScore": 44.3,
+          "archiveHeatScore": 67,
+          "internalSearchScore": 43,
           "internalSocialScore": 57.5
         },
         "externalSignalErrors": [
@@ -1025,58 +966,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-15",
-        "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
-        "category": "games",
-        "categories": [
-          "games",
-          "net-culture",
-          "matome",
-          "general"
-        ],
-        "buzzScore": 58.9,
-        "confidence": 0.36,
-        "articleCount": 2,
-        "sourceCount": 1,
-        "uniqueDomainCount": 1,
-        "whyRanked": [
-          "既存トレンド指標でも反応が強い"
-        ],
-        "scoreBreakdown": {
-          "coverage": 3.6,
-          "sourceDiversity": 2.3,
-          "trend": 18.3,
-          "internetNativeBoost": 8,
-          "search": 5.7,
-          "social": 7,
-          "velocity": 0,
-          "freshness": 5.5,
-          "authority": 1.5,
-          "categoryBias": 14,
-          "penalty": -7
-        },
-        "externalSignalStats": {
-          "searchScore": 1.6666666666666667,
-          "socialScore": 0,
-          "searchAvailable": true,
-          "socialAvailable": false
-        },
-        "internalSignalStats": {
-          "browseMatchCount": 1,
-          "archiveMatchCount": 1,
-          "repeatedAppearanceScore": 24,
-          "crossCategoryScore": 80,
-          "archiveHeatScore": 83,
-          "internalSearchScore": 44.7,
-          "internalSocialScore": 54.8
-        },
-        "externalSignalErrors": [
-          "reddit:http 403 Blocked",
-          "bluesky:http 403 Forbidden"
-        ]
-      },
-      {
-        "clusterId": "today-cluster-857",
+        "clusterId": "today-cluster-930",
         "title": "[ITmedia News] ポケカ、本人確認にマイナカード「デジタル認証アプリ」　8月の抽選販売に導入　事前登録を呼び掛け",
         "category": "tech",
         "categories": [
@@ -1108,7 +998,7 @@
           "penalty": -3
         },
         "externalSignalStats": {
-          "searchScore": 3.3333333333333335,
+          "searchScore": 1.6666666666666667,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -1126,6 +1016,57 @@
           "reddit:http 403 Blocked",
           "bluesky:http 403 Forbidden"
         ]
+      },
+      {
+        "clusterId": "today-cluster-18",
+        "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
+        "category": "games",
+        "categories": [
+          "games",
+          "net-culture",
+          "matome",
+          "general"
+        ],
+        "buzzScore": 57.9,
+        "confidence": 0.35,
+        "articleCount": 2,
+        "sourceCount": 1,
+        "uniqueDomainCount": 1,
+        "whyRanked": [
+          "既存トレンド指標でも反応が強い"
+        ],
+        "scoreBreakdown": {
+          "coverage": 3.6,
+          "sourceDiversity": 2.3,
+          "trend": 17.4,
+          "internetNativeBoost": 8,
+          "search": 5.5,
+          "social": 7,
+          "velocity": 0,
+          "freshness": 5.5,
+          "authority": 1.5,
+          "categoryBias": 14,
+          "penalty": -7
+        },
+        "externalSignalStats": {
+          "searchScore": 1.6666666666666667,
+          "socialScore": 0,
+          "searchAvailable": true,
+          "socialAvailable": false
+        },
+        "internalSignalStats": {
+          "browseMatchCount": 1,
+          "archiveMatchCount": 1,
+          "repeatedAppearanceScore": 24,
+          "crossCategoryScore": 80,
+          "archiveHeatScore": 79,
+          "internalSearchScore": 43.3,
+          "internalSocialScore": 54.8
+        },
+        "externalSignalErrors": [
+          "reddit:http 403 Blocked",
+          "bluesky:http 403 Forbidden"
+        ]
       }
     ]
   },
@@ -1138,6 +1079,6 @@
       "reddit:http 403 Blocked",
       "bluesky:http 403 Forbidden"
     ],
-    "confidence": 0.48
+    "confidence": 0.58
   }
 }

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-13T22:30:56.842Z",
+  "generatedAt": "2026-07-13T23:28:29.983Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-557",
+  "selectedClusterId": "today-cluster-718",
   "selectedTitle": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
   "candidates": [
     {
-      "clusterId": "today-cluster-557",
+      "clusterId": "today-cluster-718",
       "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
       "category": "business",
       "categories": [
@@ -13,7 +13,7 @@
         "games",
         "general"
       ],
-      "buzzScore": 70.1,
+      "buzzScore": 68.6,
       "confidence": 0.54,
       "articleCount": 6,
       "sourceCount": 2,
@@ -30,7 +30,7 @@
         "search": 6.7,
         "social": 4.5,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 5.5,
         "categoryBias": 1,
         "penalty": 0
@@ -56,7 +56,62 @@
       ]
     },
     {
-      "clusterId": "today-cluster-669",
+      "clusterId": "today-cluster-486",
+      "title": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可　国内AIベンチャーAIdeaLab",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "anime",
+        "entertainment",
+        "manga",
+        "sns",
+        "net-culture",
+        "business",
+        "general"
+      ],
+      "buzzScore": 65.1,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 8.333333333333332,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-834",
       "title": "EUも子のSNS制限へ 13歳未満対象",
       "category": "net-culture",
       "categories": [
@@ -100,6 +155,59 @@
         "crossCategoryScore": 80,
         "archiveHeatScore": 84,
         "internalSearchScore": 33.3,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-365",
+      "title": "EU 子どものSNS利用を制限する方針 ことし秋にも具体策公表へ",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "sns",
+        "world",
+        "general"
+      ],
+      "buzzScore": 61.8,
+      "confidence": 0.41,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 4.5,
+        "categoryBias": 4,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 10,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -153,110 +261,6 @@
         "archiveHeatScore": 67,
         "internalSearchScore": 43,
         "internalSocialScore": 57.5
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-26",
-      "title": "『銀河特急 ミルキー☆サブウェイ』キャラの地球年齢が改めて紹介されファンの間で話題に。「リョーコちゃん29才なの最高」「カナタが成人しててびっくり」「捗る」など反応集まる",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "matome",
-        "general"
-      ],
-      "buzzScore": 57.9,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -7
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-84",
-      "title": "新たな現代都市オープンワールドRPG『望月』は“差別化”に本気だった。モンスター捕獲にコマンド技風システムや自由すぎる移動能力など、野心作をいち早くプレイ",
-      "category": "games",
-      "categories": [
-        "games",
-        "general",
-        "anime",
-        "sns",
-        "net-culture"
-      ],
-      "buzzScore": 57.5,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 3.8,
-        "trend": 14.7,
-        "internetNativeBoost": 0,
-        "search": 4.9,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 23.1,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 67,
-        "internalSearchScore": 38.5,
-        "internalSocialScore": 65.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

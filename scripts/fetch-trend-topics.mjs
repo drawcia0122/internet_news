@@ -235,9 +235,9 @@ const capturedAt = payload.generatedAt ?? new Date().toISOString();
 const curatedItems = selectCuratedTrendItems(dedupedItems, MAX_CURRENT_ITEMS, payload.items ?? []);
 await enrichItemsWithMetadata(curatedItems, { limit: CURRENT_METADATA_ENRICH_LIMIT });
 await ensureFetchStageThumbnailCoverage(curatedItems, "current trend topics", { repairLimit: FETCH_STAGE_REPAIR_LIMIT });
-const normalizedCuratedItems = curatedItems.map(normalizeStoredTopic);
+const normalizedCuratedItems = curatedItems.map((item) => normalizeStoredTopic(item, capturedAt));
 const fallbackCurrentItems = Array.isArray(previousCurrentPayload.items)
-  ? previousCurrentPayload.items.map(normalizeStoredTopic)
+  ? previousCurrentPayload.items.map((item) => normalizeStoredTopic(item, previousCurrentPayload.generatedAt))
   : [];
 const hasFreshCurrentItems = normalizedCuratedItems.length > 0;
 const hasFreshArchiveItems = dedupedItems.length > 0;
@@ -259,8 +259,8 @@ const archivePath = "data/trend-topics-archive.json";
 const archivePayload = await readArchivePayload(archivePath);
 const mergedArchiveItems = dedupeNearDuplicateItems(
   mergeArchiveItems(
-    (archivePayload.items ?? []).map(normalizeArchiveItem),
-    dedupedItems.map(normalizeArchiveItem),
+    (archivePayload.items ?? []).map((item) => normalizeArchiveItem(item, archivePayload.generatedAt)),
+    dedupedItems.map((item) => normalizeArchiveItem(item, capturedAt)),
   ).filter((item) => isWithinArchiveWindow(item, capturedAt) && shouldKeepArchiveItem(item)),
 );
 await enrichItemsWithMetadata(mergedArchiveItems, { limit: ARCHIVE_METADATA_ENRICH_LIMIT });
@@ -403,7 +403,16 @@ function pickLatestGeneratedAt(values = []) {
   return timestamps[0]?.value ?? null;
 }
 
-function normalizeStoredTopic(item) {
+function pickFirstValidTimestamp(values = []) {
+  for (const value of values) {
+    if (!value) continue;
+    const time = new Date(value).getTime();
+    if (Number.isFinite(time) && time > 0) return value;
+  }
+  return null;
+}
+
+function normalizeStoredTopic(item, fallbackCapturedAt = null) {
   const { thumbnail: _thumbnail, ...baseItem } = item;
   const categories = normalizeCategoryList(item.categories);
   const category = categories[0] ?? "general";
@@ -426,7 +435,11 @@ function normalizeStoredTopic(item) {
     categories,
     categoryLabel,
     categoryLabels,
-    capturedAt: item.capturedAt ?? item.generatedAt ?? capturedAt,
+    capturedAt: pickFirstValidTimestamp([
+      item.capturedAt,
+      item.generatedAt,
+      fallbackCapturedAt,
+    ]),
       thumbnailUrl: resolvePersistedThumbnailUrl(item),
     sourceSignals: sanitizeSourceSignals(item.sourceSignals).map((signal) => ({
       sourceId: signal.sourceId ?? null,
@@ -1650,8 +1663,8 @@ function limitArchiveItems(items, limit = MAX_ARCHIVE_ITEMS) {
     .slice(0, limit);
 }
 
-function normalizeArchiveItem(item) {
-  const normalizedItem = normalizeStoredTopic(item);
+function normalizeArchiveItem(item, fallbackCapturedAt = null) {
+  const normalizedItem = normalizeStoredTopic(item, fallbackCapturedAt);
 
   return {
     ...normalizedItem,

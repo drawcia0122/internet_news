@@ -1,57 +1,55 @@
 {
-  "generatedAt": "2026-07-14T06:36:37.419Z",
+  "generatedAt": "2026-07-14T08:52:13.370Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1450",
-  "selectedTitle": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+  "selectedClusterId": "today-cluster-10",
+  "selectedTitle": "『あつまれ どうぶつの森』で『スプラトゥーン レイダース』のマイデザインが配布中。「イカのタンクトップ」と「コジャケのうちわ」が登場",
   "candidates": [
     {
-      "clusterId": "today-cluster-1278",
-      "title": "トランプ大統領「海上封鎖再開 20％対価も」 イラン反発",
-      "category": "politics",
+      "clusterId": "today-cluster-10",
+      "title": "『あつまれ どうぶつの森』で『スプラトゥーン レイダース』のマイデザインが配布中。「イカのタンクトップ」と「コジャケのうちわ」が登場",
+      "category": "games",
       "categories": [
-        "politics",
-        "world",
-        "sns",
+        "games",
         "net-culture",
         "general"
       ],
-      "buzzScore": 69.9,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 81.9,
+      "confidence": 0.55,
+      "articleCount": 4,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "公式または一次情報を含む"
+        "主要3媒体で同一話題を確認",
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 22,
+        "coverage": 7.2,
+        "sourceDiversity": 7,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 9.3,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 5.5,
-        "categoryBias": 4,
+        "search": 5.7,
+        "social": 5.6,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 58.333333333333336,
+        "searchScore": 10,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 56.9
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -59,7 +57,58 @@
       ]
     },
     {
-      "clusterId": "today-cluster-130",
+      "clusterId": "today-cluster-7",
+      "title": "「ポケパーク カントー」抽選販売などの上限枚数が「最大2枚→最大6枚」に。家族や友人といった大人数グループで行きやすくなる",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 70.1,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.5,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 5.6,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 45,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-136",
       "title": "SNSの投稿に紛れ込んだ“禁忌の画像”を選別して削除しつつ，メンタルも管理する。ホラーシム「SNS監死人」，体験版を配信開始",
       "category": "entertainment",
       "categories": [
@@ -111,7 +160,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1450",
+      "clusterId": "today-cluster-1778",
       "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
       "category": "business",
       "categories": [
@@ -119,7 +168,7 @@
         "games",
         "general"
       ],
-      "buzzScore": 65.7,
+      "buzzScore": 66.5,
       "confidence": 0.53,
       "articleCount": 6,
       "sourceCount": 2,
@@ -133,7 +182,7 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5.9,
+        "search": 6.7,
         "social": 4.4,
         "velocity": 0,
         "freshness": 3.5,
@@ -142,7 +191,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 36.666666666666664,
+        "searchScore": 41.66666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -162,7 +211,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1078",
+      "clusterId": "today-cluster-1405",
       "title": "EU 子どものSNS利用を制限する方針 ことし秋にも具体策公表へ",
       "category": "net-culture",
       "categories": [
@@ -207,56 +256,6 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 37.7,
         "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-7",
-      "title": "『MOTHER3』と「G-SHOCK」のコラボ時計が販売決定。7月17日11時よりオンラインストアにて抽選販売の受付がスタート",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 63.3,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.5,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 45,
-        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

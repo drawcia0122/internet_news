@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-07-14T14:25:57.639Z",
+  "generatedAt": "2026-07-14T16:00:41.019Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-48",
-  "selectedTitle": "『あつまれ どうぶつの森』で『スプラトゥーン レイダース』のマイデザインが配布中。「イカのタンクトップ」と「コジャケのうちわ」が登場",
+  "selectedClusterId": "today-cluster-2794",
+  "selectedTitle": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
   "candidates": [
     {
-      "clusterId": "today-cluster-1",
-      "title": "マンガ『アップルシード』Kindle版が50％オフとなるセールを実施中。全4巻が3080円→1540円で購入できる",
-      "category": "games",
+      "clusterId": "today-cluster-9",
+      "title": "『マイクラ』115個以上の全実績を解除した学生に“最大1万5000ドル”の奨学金が支給。『エルデンリング』『FF14』『原神』など50タイトル以上の高難度“ゲーム実績”を持つ生徒を評価する海外大学に注目が集まる",
+      "category": "sports",
       "categories": [
+        "sports",
         "games",
-        "manga",
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.9,
+      "buzzScore": 71.7,
       "confidence": 0.4,
       "articleCount": 2,
       "sourceCount": 1,
@@ -25,9 +25,60 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 21.8,
         "internetNativeBoost": 8,
-        "search": 6.5,
+        "search": 6.4,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 99,
+        "internalSearchScore": 50.3,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1",
+      "title": "マンガ『アップルシード』Kindle版が50％オフとなるセールを実施中。全4巻が3080円→1540円で購入できる",
+      "category": "games",
+      "categories": [
+        "games",
+        "manga",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.1,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
         "social": 7,
         "velocity": 0,
         "freshness": 7,
@@ -46,8 +97,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
@@ -56,7 +107,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-149",
+      "clusterId": "today-cluster-144",
       "title": "SNSの投稿に紛れ込んだ“禁忌の画像”を選別して削除しつつ，メンタルも管理する。ホラーシム「SNS監死人」，体験版を配信開始",
       "category": "entertainment",
       "categories": [
@@ -108,7 +159,58 @@
       ]
     },
     {
-      "clusterId": "today-cluster-48",
+      "clusterId": "today-cluster-2794",
+      "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
+      "category": "business",
+      "categories": [
+        "business",
+        "games",
+        "general"
+      ],
+      "buzzScore": 66.7,
+      "confidence": 0.53,
+      "articleCount": 6,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 10.8,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.9,
+        "social": 4.3,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 5.5,
+        "categoryBias": 1,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 43.333333333333336,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 1.8,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 36.2,
+        "internalSocialScore": 33.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-55",
       "title": "『あつまれ どうぶつの森』で『スプラトゥーン レイダース』のマイデザインが配布中。「イカのタンクトップ」と「コジャケのうちわ」が登場",
       "category": "games",
       "categories": [
@@ -152,110 +254,6 @@
         "archiveHeatScore": 75,
         "internalSearchScore": 41.9,
         "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-2630",
-      "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
-      "category": "business",
-      "categories": [
-        "business",
-        "games",
-        "general"
-      ],
-      "buzzScore": 66.5,
-      "confidence": 0.53,
-      "articleCount": 6,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 10.8,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.7,
-        "social": 4.3,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 5.5,
-        "categoryBias": 1,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 41.66666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 1.8,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 36.2,
-        "internalSocialScore": 33.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-18",
-      "title": "カートゥーン調モノクロFPS『MOUSE：やとわれの探偵』の総プレイヤー数が100万人を突破。コミカルなアニメーション、ハードボイルドなシナリオなどから「非常に好評」を得た人気作",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 64.8,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

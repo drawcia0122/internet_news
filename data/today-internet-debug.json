@@ -1,55 +1,57 @@
 {
-  "generatedAt": "2026-07-14T00:55:36.458Z",
+  "generatedAt": "2026-07-14T04:10:05.366Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-839",
+  "selectedClusterId": "today-cluster-996",
   "selectedTitle": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
   "candidates": [
     {
-      "clusterId": "today-cluster-2",
-      "title": "『キングダムハーツ』25周年パネルが8月のディズニー超大型イベント「D23」で実施決定。シリーズの歴史を深く掘り下げる内容に、『KH4』続報も登場か注目集まる",
-      "category": "anime",
+      "clusterId": "today-cluster-825",
+      "title": "トランプ大統領「海上封鎖再開 20％対価も」 イラン反発",
+      "category": "politics",
       "categories": [
-        "anime",
-        "games",
+        "politics",
+        "world",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 71.5,
+      "buzzScore": 72.9,
       "confidence": 0.43,
       "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "公式または一次情報を含む"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.5,
+        "sourceDiversity": 4.7,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "search": 12.3,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 5.5,
+        "categoryBias": 4,
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 76.66666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 45,
-        "internalSocialScore": 54.8
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.3,
+        "internalSocialScore": 57.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -57,7 +59,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-839",
+      "clusterId": "today-cluster-996",
       "title": "LINEヤフー ゲーム利用者に関する情報約710万件流出",
       "category": "business",
       "categories": [
@@ -65,7 +67,7 @@
         "games",
         "general"
       ],
-      "buzzScore": 68.9,
+      "buzzScore": 68.3,
       "confidence": 0.54,
       "articleCount": 6,
       "sourceCount": 2,
@@ -79,8 +81,8 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 6.9,
-        "social": 4.5,
+        "search": 6.4,
+        "social": 4.4,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 5.5,
@@ -88,7 +90,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 43.333333333333336,
+        "searchScore": 40,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -96,11 +98,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 60,
         "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 34.9
+        "internalSearchScore": 37,
+        "internalSocialScore": 34.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -108,41 +110,39 @@
       ]
     },
     {
-      "clusterId": "today-cluster-670",
-      "title": "トランプ大統領「海上封鎖再開 20％対価も」 イラン反発",
-      "category": "politics",
+      "clusterId": "today-cluster-626",
+      "title": "EU 子どものSNS利用を制限する方針 ことし秋にも具体策公表へ",
+      "category": "net-culture",
       "categories": [
-        "politics",
-        "world",
-        "sns",
         "net-culture",
+        "sns",
+        "world",
         "general"
       ],
-      "buzzScore": 66.6,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 65.6,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
         "公式または一次情報を含む"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 12.5,
-        "social": 7.4,
+        "search": 4.9,
+        "social": 5.9,
         "velocity": 0,
         "freshness": 7,
-        "authority": 4.5,
+        "authority": 5.5,
         "categoryBias": 4,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 78.33333333333333,
+        "searchScore": 20,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -150,11 +150,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 80,
         "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
+        "internalSearchScore": 38.3,
+        "internalSocialScore": 46.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -162,7 +162,58 @@
       ]
     },
     {
-      "clusterId": "today-cluster-603",
+      "clusterId": "today-cluster-3",
+      "title": "『キングダムハーツ』25周年パネルが8月のディズニー超大型イベント「D23」で実施決定。シリーズの歴史を深く掘り下げる内容に、『KH4』続報も登場か注目集まる",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64.2,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.5,
+        "internetNativeBoost": 8,
+        "search": 5.5,
+        "social": 6.8,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 20.4,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 42.7,
+        "internalSocialScore": 53.2
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-759",
       "title": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可　国内AIベンチャーAIdeaLab",
       "category": "tech",
       "categories": [
@@ -175,7 +226,7 @@
         "business",
         "general"
       ],
-      "buzzScore": 63.4,
+      "buzzScore": 61.8,
       "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 2,
@@ -188,10 +239,10 @@
         "sourceDiversity": 4.7,
         "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 4,
+        "search": 3.9,
         "social": 7.3,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 2.5,
         "categoryBias": 9,
         "penalty": 0
@@ -205,64 +256,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 100,
         "archiveHeatScore": 79,
-        "internalSearchScore": 31,
-        "internalSocialScore": 57.3
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-473",
-      "title": "EU 子どものSNS利用を制限する方針 ことし秋にも具体策公表へ",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "sns",
-        "world",
-        "general"
-      ],
-      "buzzScore": 61.8,
-      "confidence": 0.41,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 4.5,
-        "categoryBias": 4,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 20,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 30.4,
+        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

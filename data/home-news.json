@@ -1,144 +1,34 @@
 {
-  "generatedAt": "2026-07-15T09:17:47.040Z",
+  "generatedAt": "2026-07-15T11:11:58.832Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
-    "general": 1,
-    "tech": 12,
-    "business": 4,
+    "general": 0,
+    "tech": 11,
+    "business": 5,
     "politics": 0,
-    "entertainment": 67,
-    "anime": 26,
-    "games": 162,
-    "game-features": 2,
+    "entertainment": 68,
+    "anime": 24,
+    "games": 161,
+    "game-features": 3,
     "anime-features": 0,
-    "manga": 40,
+    "manga": 42,
     "books": 1,
-    "sports": 2,
+    "sports": 3,
     "net-culture": 2,
     "matome": 0,
     "crime": 0,
-    "adult": 0,
-    "world": 4
+    "adult": 1,
+    "world": 1
   },
   "hasMore": true,
   "nextPage": 2,
   "items": [
     {
-      "id": "auto-general-16日も危険な暑さ-熱中症に警戒-news.yahoo.co.jp/pickup/6588062",
-      "title": "16日も危険な暑さ 熱中症に警戒",
-      "summary": "今日15日に続き、明日16日も危険な暑さが続く見込みです。全国的に最高気温が33℃以上となり、関東甲信の内陸部や東海、近畿、中国地方では、体温を超えるような暑さとなる所もあるでしょう。夜も気温が下が",
-      "briefSummary": "今日15日に続き、明日16日も危険な暑さが続く見込みです。全国的に最高気温が33℃以上となり、関東甲信の内陸部や東海、近畿、中国地方では、体温を超えるような暑さとなる所もあるでしょう。夜も気温が下がりにくいため、昼夜を問わず熱中症への警戒が必要です。",
-      "category": "general",
-      "categories": [
-        "general"
-      ],
-      "categoryLabel": "その他",
-      "categoryLabels": [
-        "その他"
-      ],
-      "score": 92,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://news.yahoo.co.jp/articles/37cb4152c6e3c45fe24fa5f488df1d69e8fe089d/images/000",
-      "publishedAt": "2026-07-15T09:19:51.000Z",
-      "capturedAt": "2026-07-15T09:17:47.040Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / 国内",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6588062?source=rss",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-domestic",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 国内",
-          "sourceGroup": "important-news",
-          "sourcePriority": 76,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "16日も危険な暑さ 熱中症に警戒",
-          "url": "https://news.yahoo.co.jp/pickup/6588062?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6588062?source=rss",
-          "publishedAt": "2026-07-15T09:19:51.000Z",
-          "publishedLabel": "7/15 09:19",
-          "thumbnailUrl": "https://news.yahoo.co.jp/articles/37cb4152c6e3c45fe24fa5f488df1d69e8fe089d/images/000"
-        }
-      ],
-      "whatHappened": "16日も危険な暑さ 熱中症に警戒",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-sports-全て最安値を更新-ff7リバース-dx-3-256円に-ff12-1-914円-ffi-vi-6作品セットで5-503円と-シリーズ作品がお買い得-eショップ・-gamespark.jp/article/2026/07/14/169243.html",
-      "title": "全て最安値を更新！『FF7リバース DX』3,256円に『FF12』1,914円、『FFI』～『VI』6作品セットで5,503円と、シリーズ作品がお買い得【eショップ・PS Storeのお薦めセール】",
-      "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
-      "briefSummary": "セール対象タイトルは、時に最安値を更新することも少なくありません。「せっかくだから、安くなったタイミングで購入したい」と考える人も多いはず。そこで、eショップ/PS Storeのセールをチェックし、最安値を更新したタイトルを厳選してお届けします。",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "games",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "ゲーム"
-      ],
-      "score": 102,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1158534.png",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/07/14/169243.html",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "全て最安値を更新！『FF7リバース DX』3,256円に『FF12』1,914円、『FFI』～『VI』6作品セットで5,503円と、シリーズ作品がお買い得【eショップ・PS Storeのお薦めセール】",
-          "url": "http://www.gamespark.jp/article/2026/07/14/169243.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/14/169243.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1158534.png"
-        }
-      ],
-      "whatHappened": "全て最安値を更新",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "終了前の条件確認や購入判断に直結しやすい情報です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き",
-        "セール好き"
-      ]
-    },
-    {
       "id": "auto-games-8-800円-880円-夏の夜にちょうどよすぎる-実写映画みたいな血みどろキャンプホラー-クアリー-悪夢のサマーキャンプ-がps-storeで大幅割引中-gamespark.jp/article/2026/07/15/169284.html",
       "title": "【8,800円→880円】夏の夜にちょうどよすぎる。実写映画みたいな血みどろキャンプホラー『クアリー ～悪夢のサマーキャンプ』がPS Storeで大幅割引中",
-      "summary": "2Kは、ホラーアドベンチャー『クアリー ～悪夢のサマーキャンプ』の90％オフセールをPlayStation Storeにて実施中です。通常価格8,800円のところ、880円で購入できます。 まるで",
-      "briefSummary": "2Kは、ホラーアドベンチャー『クアリー ～悪夢のサマーキャンプ』の90％オフセールをPlayStation Storeにて実施中です。通常価格8,800円のところ、880円で購入できます。 まるで",
+      "summary": "2Kは、ホラーアドベンチャー『 クアリー ～悪夢のサマーキャンプ 』の90%オフセールをPlayStation Storeにて実施中です。通常価格8,800円のところ、880円で購入できます。",
+      "briefSummary": "2Kは、ホラーアドベンチャー『 クアリー ～悪夢のサマーキャンプ 』の90%オフセールをPlayStation Storeにて実施中です。通常価格8,800円のところ、880円で購入できます。",
       "category": "games",
       "categories": [
         "games",
@@ -155,7 +45,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159400.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169284.html",
@@ -195,78 +85,68 @@
       ]
     },
     {
-      "id": "auto-anime-ウッディやバズが400万円越えフィギュアに-トイ・ストーリー-のキャラクターを-再解釈-したグッズが発売-animeanime.jp/article/2026/07/15/101088.html",
-      "title": "ウッディやバズが400万円越えフィギュアに！「トイ・ストーリー」のキャラクターを“再解釈”したグッズが発売",
-      "summary": "ディズニー＆ピクサーの世代を超えて愛され続ける『TOY STORY（トイ・ストーリー）』と、ブランド「PEACEMINUSONE（ピースマイナスワン）」が初のコラボレーション。コラボコレクションが、7月15日(水) より順次発売開始となる。",
-      "briefSummary": "ディズニー＆ピクサーの世代を超えて愛され続ける『TOY STORY（トイ・ストーリー）』と、ブランド「PEACEMINUSONE（ピースマイナスワン）」が初のコラボレーション。コラボコレクションが、7月15日(水) より順次発売開始となる。",
-      "category": "anime",
+      "id": "auto-games-ngs-ver-2-期間限定クエスト-想定演習-古代遺境の浄化戦-を追加-4gamer.net/games/521/g052100/20260715037",
+      "title": "「NGS ver.2」，期間限定クエスト「想定演習：古代遺境の浄化戦」を追加",
+      "summary": "PSO2 ニュージェネシス ver.2 PSO2 ニュージェネシス ver.2 PSO2 ニュージェネシス ver.2 配信元 セガ 配信日 2026/07/15 『PSO2 ニュージェネシ…",
+      "briefSummary": "PSO2 ニュージェネシス ver.2 PSO2 ニュージェネシス ver.2 PSO2 ニュージェネシス ver.2 配信元 セガ 配信日 2026/07/15 『PSO2 ニュージェネシ…",
+      "category": "games",
       "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "sns",
-        "net-culture",
+        "games",
         "general"
       ],
-      "categoryLabel": "アニメ",
+      "categoryLabel": "ゲーム",
       "categoryLabels": [
-        "アニメ",
-        "エンタメ",
-        "漫画",
-        "SNS",
-        "ネットカルチャー"
+        "ゲーム"
       ],
-      "score": 101,
-      "posts": 3,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905230.jpg",
+      "score": 102,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/521/G052100/20260715037/SS/002.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/07/15/101088.html",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/521/G052100/20260715037/",
       "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "直近数時間で関連記事が増えています。"
+        "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
+            "games",
+            "pc",
+            "console",
+            "steam"
           ],
-          "title": "ウッディやバズが400万円越えフィギュアに！「トイ・ストーリー」のキャラクターを“再解釈”したグッズが発売",
-          "url": "https://animeanime.jp/article/2026/07/15/101088.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/07/15/101088.html",
+          "title": "「NGS ver.2」，期間限定クエスト「想定演習：古代遺境の浄化戦」を追加",
+          "url": "https://www.4gamer.net/games/521/G052100/20260715037/",
+          "canonicalUrl": "https://www.4gamer.net/games/521/G052100/20260715037/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905230.jpg"
+          "thumbnailUrl": "https://www.4gamer.net/games/521/G052100/20260715037/SS/002.jpg"
         }
       ],
-      "whatHappened": "ウッディやバズが400万円越えフィギュアに",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "whatHappened": "「NGS ver.2」，期間限定クエスト「想定演習：古代遺境の浄化戦」を追加",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
-        "ガジェット好き",
-        "漫画・アニメ好き",
-        "ネット文化を追う人"
+        "ゲームユーザー",
+        "ガジェット好き"
       ]
     },
     {
       "id": "auto-games-数十万円分のゲームも子供の写真も失った-マイクロソフトアカウント永久停止を訴える海外ユーザー登場-類似訴訟ではmsに復旧命令も-gamespark.jp/article/2026/07/15/169268.html",
       "title": "「数十万円分のゲームも子供の写真も失った」マイクロソフトアカウント永久停止を訴える海外ユーザー登場―類似訴訟ではMSに復旧命令も",
       "summary": "個人のMSアカウントが突如として凍結され、購入した数千ユーロ相当のゲームから息子の幼い頃の写真に至るまで、25年分のデータにアクセスできなくなったと訴えるユーザーが、SNSにその憤りを投稿しています。",
-      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
+      "briefSummary": "大の里が早くも３敗目 豊昇龍、カド番の琴桜は３勝目 綱取りの霧島は無傷の４連勝 大関復帰を目指す安青錦は初黒星",
       "category": "games",
       "categories": [
         "games",
@@ -281,7 +161,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159195.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169268.html",
@@ -325,7 +205,7 @@
       "id": "auto-games-ゲーフリ新作arpg-beast-of-reincarnation-戦闘システム紹介映像-ソウルライクのように受け流しつつ-相棒犬クゥのスキルをコマンド式に選択-gamespark.jp/article/2026/07/15/169267.html",
       "title": "ゲーフリ新作ARPG『Beast of Reincarnation』戦闘システム紹介映像！ソウルライクのように受け流しつつ、相棒犬クゥのスキルをコマンド式に選択",
       "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
-      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
+      "briefSummary": "大の里が早くも３敗目 豊昇龍、カド番の琴桜は３勝目 綱取りの霧島は無傷の４連勝 大関復帰を目指す安青錦は初黒星",
       "category": "games",
       "categories": [
         "games",
@@ -340,7 +220,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159172.png",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169267.html",
@@ -384,7 +264,7 @@
       "id": "auto-tech-日本一ソフトウェアがプロジェクトネーム-プリニーすごろく-正式発表-7月16日に公式番組-ゆるっと日本一2-の緊急生配信が決定-gamespark.jp/article/2026/07/15/169290.html",
       "title": "日本一ソフトウェアがプロジェクトネーム『プリニーすごろく』正式発表―7月16日に公式番組「ゆるっと日本一2」の緊急生配信が決定",
       "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
-      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
+      "briefSummary": "今回の緊急生放送は、2026年7月15日17時に公開されたティザー動画を受けて、プロジェクトネーム『プリニーすごろく』が紹介されるというもの。配信時間は1～2時間程度を予定しています。",
       "category": "tech",
       "categories": [
         "tech",
@@ -403,7 +283,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159433.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169290.html",
@@ -444,10 +324,128 @@
       ]
     },
     {
+      "id": "auto-games-7-678円-3-071円-ペルソナ-リロード-過去再安価-psストアで60-オフ-gamespark.jp/article/2026/07/15/169283.html",
+      "title": "【7,678円→3,071円】『ペルソナ３ リロード』過去再安価！PSストアで60%オフ",
+      "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
+      "briefSummary": "アトラスは、本日7月15日より『 ペルソナ３ リロード 』をPSストアにて過去最安価となる60％オフでセール中です。そのほかのアトラスタイトルもPSストア/ニンテンドーストアにてセール対象となっています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 100,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159390.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-15T11:11:58.832Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169283.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "【7,678円→3,071円】『ペルソナ３ リロード』過去再安価！PSストアで60%オフ",
+          "url": "http://www.gamespark.jp/article/2026/07/15/169283.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/15/169283.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159390.jpg"
+        }
+      ],
+      "whatHappened": "『ペルソナ３ リロード』過去再安価",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ポケモンユーザー",
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-あちこちにアニモが-bw2026-に出展の新作アクションrpg-アニモ-aniimo-ブースは-可愛いがいたるところに溢れていた-ブース-試遊プレイレポ-gamespark.jp/article/2026/07/15/169299.html",
+      "title": "あちこちにアニモが…！「BW2026」に出展の新作アクションRPG『アニモ（Aniimo）』ブースは、可愛いがいたるところに溢れていた【ブース&試遊プレイレポ】",
+      "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
+      "briefSummary": "本イベントにて新作ゲーム『アニモ（Aniimo）』が出展していました。本作は、シンガポールのゲームパブリッシャー・PAWPRINTによる、アニモと呼ばれるモンスターをテーマにしたアクションRPG。可愛らしいアニモの収集のほかに特徴的なのが、本作のリンクシステム。プレイヤーキャラクターが編成に入れたアニモに「変身」することでアクションが大きく変化し、アニモごと…",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 100,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159492.png",
+      "publishedAt": null,
+      "capturedAt": "2026-07-15T11:11:58.832Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169299.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "あちこちにアニモが…！「BW2026」に出展の新作アクションRPG『アニモ（Aniimo）』ブースは、可愛いがいたるところに溢れていた【ブース&試遊プレイレポ】",
+          "url": "http://www.gamespark.jp/article/2026/07/15/169299.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/15/169299.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159492.png"
+        }
+      ],
+      "whatHappened": "あちこちにアニモが…",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ポケモンユーザー",
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
       "id": "auto-anime-夏アニメ-片田舎のおっさん-剣聖になるii-ミュイとフィッセルの成長に目を細めるベリルだったが-第2話先行カット-animeanime.jp/article/2026/07/15/101070.html",
       "title": "夏アニメ「片田舎のおっさん、剣聖になるII」ミュイとフィッセルの成長に目を細めるベリルだったが…第2話先行カット",
       "summary": "夏アニメ『片田舎のおっさん、剣聖になるII』より、2026年7月15日（水）から放送開始となる第2話「片田舎のおっさん、成長を見守る」のあらすじと先行場面カットが公開された。",
-      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
+      "briefSummary": "夏アニメ『片田舎のおっさん、剣聖になるII』より、2026年7月15日（水）から放送開始となる第2話「片田舎のおっさん、成長を見守る」のあらすじと先行場面カットが公開された。",
       "category": "anime",
       "categories": [
         "anime",
@@ -466,7 +464,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/904903.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/07/15/101070.html",
@@ -507,136 +505,10 @@
       ]
     },
     {
-      "id": "auto-anime-日本三國-超かぐや姫-とんがり帽子-劇場版モノノ怪-ツインエンジン発の4作品がアニメ界に照らした2026年上半期の光景-animeanime.jp/article/2026/07/15/101079.html",
-      "title": "「日本三國」「超かぐや姫！」「とんがり帽子」「劇場版モノノ怪」　ツインエンジン発の4作品がアニメ界に照らした2026年上半期の光景",
-      "summary": "2026年上半期、ツインエンジングループの4作品が注目を集めた。コロリドの『超かぐや姫！』はブランドを更新し、BUG FILMSの『とんがり帽子のアトリエ』は原作再現の完成度を示し、スタジオカフカの『日本三國』は初の完全新作として人気獲得。『劇場版モノノ怪第三章蛇神』は20年の歴史に区切りをつけた。…",
-      "briefSummary": "またネットフリックスなどの配信プラットフォームと提携し、ときに既存の製作委員会方式を取らない独特なビジネスモデルで各スタジオが個性を発揮しながら作品を作り上げ、2026年上半期において、大きな存在感を放った。その作品たちを振り返りながら、ツインエンジンの現在地と今後について捉えていきたい。",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "アニメ",
-      "categoryLabels": [
-        "アニメ",
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/903488.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/07/15/101079.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "「日本三國」「超かぐや姫！」「とんがり帽子」「劇場版モノノ怪」　ツインエンジン発の4作品がアニメ界に照らした2026年上半期の光景",
-          "url": "https://animeanime.jp/article/2026/07/15/101079.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/07/15/101079.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/903488.jpg"
-        }
-      ],
-      "whatHappened": "「日本三國」「超かぐや姫",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "ガジェット好き",
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-manga-ヒロアカ-ポルノグラフィティ-bump-of-chicken-漫画-楽曲コラボmv2曲がプレミア公開-7月15日18時より-animeanime.jp/article/2026/07/15/101076.html",
-      "title": "「ヒロアカ」×ポルノグラフィティ、BUMP OF CHICKEN…漫画×楽曲コラボMV2曲がプレミア公開♪【7月15日18時より】",
-      "summary": "『僕のヒーローアカデミア』より、漫画原画と楽曲がコラボレーションしたミュージックビデオ2本の公開が決定した。ポルノグラフィティ「THE REVO」とBUMP OF CHICKEN「I」を使用したMVが、2026年7月15日18時よりジャンプチャンネルでプレミア公開される。",
-      "briefSummary": "『僕のヒーローアカデミア』より、漫画原画と楽曲がコラボレーションしたミュージックビデオ2本の公開が決定した。ポルノグラフィティ「THE REVO」とBUMP OF CHICKEN「I」を使用したMVが、2026年7月15日18時よりジャンプチャンネルでプレミア公開される。",
-      "category": "manga",
-      "categories": [
-        "manga",
-        "entertainment",
-        "anime",
-        "general"
-      ],
-      "categoryLabel": "漫画",
-      "categoryLabels": [
-        "漫画",
-        "エンタメ",
-        "アニメ"
-      ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/904878.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/07/15/101076.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "「ヒロアカ」×ポルノグラフィティ、BUMP OF CHICKEN…漫画×楽曲コラボMV2曲がプレミア公開♪【7月15日18時より】",
-          "url": "https://animeanime.jp/article/2026/07/15/101076.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/07/15/101076.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/904878.jpg"
-        }
-      ],
-      "whatHappened": "「ヒロアカ」×ポルノグラフィティ、BUMP OF CHICKEN…漫画×楽曲コラボMV2曲が…",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "ガジェット好き",
-        "漫画・アニメ好き"
-      ]
-    },
-    {
       "id": "auto-anime-ミニサイズ絵本-アニメちいかわ-ひみつずかん-が発売-キャラクターたちはもちろん-労働-など世界観をたっぷり紹介-inside-games.jp/article/2026/07/15/184555.html",
       "title": "ミニサイズ絵本「アニメちいかわ ひみつずかん」が発売！キャラクターたちはもちろん、“労働”など世界観をたっぷり紹介",
       "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
-      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
+      "briefSummary": "大の里が早くも３敗目 豊昇龍、カド番の琴桜は３勝目 綱取りの霧島は無傷の４連勝 大関復帰を目指す安青錦は初黒星",
       "category": "anime",
       "categories": [
         "anime",
@@ -659,7 +531,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1754390.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
       "sourceName": "INSIDE",
       "sourceUrl": "https://www.inside-games.jp/article/2026/07/15/184555.html",
@@ -702,136 +574,10 @@
       ]
     },
     {
-      "id": "auto-entertainment-攻殻機動隊-ナメクジの交尾-がトレンド入り-素子がヌメヌメ-原作準拠で歓喜の声-地上波でギリギリ流せるレベル-かなり頑張ったな-制作陣に感謝してもしきれない-第-animeanime.jp/article/2026/07/15/101074.html",
-      "title": "「攻殻機動隊」“ナメクジの交尾”がトレンド入り!? 素子がヌメヌメ☆原作準拠で歓喜の声「地上波でギリギリ流せるレベル」「かなり頑張ったな」「制作陣に感謝してもしきれない」第2話【ネタバレあり反応まとめ】",
-      "summary": "『攻殻機動隊 THE GHOST IN THE SHELL』第02話では、素子が休暇中にあんなことを……。1995年劇場版で印象的だった清掃局員も登場！",
-      "briefSummary": "事前にキャスト情報が発表されていなかった本作。第1話放送後は1995年の劇場版や2002年のTVシリーズ『攻殻機動隊 STAND ALONE COMPLEX』でバトー役を演じてきた大塚明夫が、自身のSNSで「大成功だね！ スタッフとキャストに拍手！」と投稿して放送開始を喜びを投稿していた。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "sns",
-        "anime",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画",
-        "SNS",
-        "アニメ"
-      ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/904950.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/07/15/101074.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "「攻殻機動隊」“ナメクジの交尾”がトレンド入り!? 素子がヌメヌメ☆原作準拠で歓喜の声「地上波でギリギリ流せるレベル」「かなり頑張ったな」「制作陣に感謝してもしきれない」第2話【ネタバレあり反応まとめ】",
-          "url": "https://animeanime.jp/article/2026/07/15/101074.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/07/15/101074.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/904950.jpg"
-        }
-      ],
-      "whatHappened": "「攻殻機動隊」“ナメクジの交尾”がトレンド入り",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ガジェット好き",
-        "漫画・アニメ好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-games-すりみ連合とウズシオ諸島の冒険へ-スプラトゥーン-レイダース-デザインのスイッチ2用スリムケースが予約開始-inside-games.jp/article/2026/07/15/184565.html",
-      "title": "すりみ連合とウズシオ諸島の冒険へ！『スプラトゥーン レイダース』デザインのスイッチ2用スリムケースが予約開始",
-      "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
-      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1754442.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
-      "time": "直近",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/07/15/184565.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch",
-            "pokemon"
-          ],
-          "title": "すりみ連合とウズシオ諸島の冒険へ！『スプラトゥーン レイダース』デザインのスイッチ2用スリムケースが予約開始",
-          "url": "https://www.inside-games.jp/article/2026/07/15/184565.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/07/15/184565.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1754442.jpg"
-        }
-      ],
-      "whatHappened": "すりみ連合とウズシオ諸島の冒険へ",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
       "id": "auto-sports-新たな国産sns-popopo-9月17日にサービス終了へ-取締役に西村博之-庵野秀明ら就任でも話題-約6か月で幕-inside-games.jp/article/2026/07/15/184569.html",
       "title": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任でも話題、約6か月で幕",
       "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
-      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
+      "briefSummary": "POPOPO株式会社は、新たな国産SNSとして開発されたスマホ向けアプリ 「POPOPO」 について、2026年9月17日をもってサービスを終了することを決定しました。",
       "category": "sports",
       "categories": [
         "sports",
@@ -852,7 +598,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1754608.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
       "sourceName": "INSIDE",
       "sourceUrl": "https://www.inside-games.jp/article/2026/07/15/184569.html",
@@ -898,7 +644,7 @@
       "id": "auto-games-このゲーム民度がカス-シバいて煽りセリフ決め勝利を掴め-試合開始直後に治安が終わる2d格ゲー-カスみんど-2026年内steamリリースへ-gamespark.jp/article/2026/07/15/169282.html",
       "title": "このゲーム民度がカス！！シバいて煽りセリフ決め勝利を掴め―試合開始直後に治安が終わる2D格ゲー『カスみんど』2026年内Steamリリースへ",
       "summary": "個人開発者のコギリ氏（kgrdev）は、2D対戦格闘ゲーム『 カスみんど 』について、PC（Steam）にて2026年に発売することを発表しました。",
-      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
+      "briefSummary": "大の里が早くも３敗目 豊昇龍、カド番の琴桜は３勝目 綱取りの霧島は無傷の４連勝 大関復帰を目指す安青錦は初黒星",
       "category": "games",
       "categories": [
         "games",
@@ -913,7 +659,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159354.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169282.html",
@@ -956,7 +702,7 @@
       "id": "auto-anime-欠けた月のメルセデス-tvアニメ化決定-27年1月放送-主人公は永瀬アンナ-原作陣も喜び-アニメ現場の熱量は高く-私も負けてられない-と-animeanime.jp/article/2026/07/15/101094.html",
       "title": "「欠けた月のメルセデス」TVアニメ化決定＆27年1月放送！主人公は永瀬アンナ　原作陣も喜び「アニメ現場の熱量は高く、私も負けてられない！！と」",
       "summary": "『欠けた月のメルセデス～吸血鬼の貴族に転生したけど捨てられそうなのでダンジョンを制覇する～』のTVアニメ化が決定。2027年1月より放送開始となることがわかった。",
-      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
+      "briefSummary": "『欠けた月のメルセデス～吸血鬼の貴族に転生したけど捨てられそうなのでダンジョンを制覇する～』のTVアニメ化が決定。2027年1月より放送開始となることがわかった。",
       "category": "anime",
       "categories": [
         "anime",
@@ -975,7 +721,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905217.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/07/15/101094.html",
@@ -1036,7 +782,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905078.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/07/15/101093.html",
@@ -1099,7 +845,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/904704.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/07/15/101092.html",
@@ -1141,98 +887,272 @@
       ]
     },
     {
-      "id": "auto-entertainment-これを待っていた-凱の復活劇をさらにアツくさせる展開に視聴者も-これサスケが主役だろ-鎧真伝サムライトルーパー-第14話-ネタバレあり反応まとめ-animeanime.jp/article/2026/07/15/101087.html",
-      "title": "これを待っていた！凱の復活劇をさらにアツくさせる展開に視聴者も「これサスケが主役だろ!!」『鎧真伝サムライトルーパー』第14話【ネタバレあり反応まとめ】",
-      "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
-      "briefSummary": "2026年7月7日より第2クールがスタートした『鎧真伝サムライトルーパー』。35年ぶりに人間界に侵攻した妖邪帝王「羅真我（ラマガ）」を次世代のサムライトルーパーたちが必死の思いで撃退しましたが、それは大切な仲間である凱が、自身の中にラマガを封じ込めるという大きな犠牲を伴うものでした。",
-      "category": "entertainment",
+      "id": "auto-games-姫の脳内に-にげる-や-まほう-の選択肢はない-メタrpg-たたかう-だけ-steamストアページ公開-攻撃対象は敵だけにあらず-味方やゲーム機風のウィンドウも-gamespark.jp/article/2026/07/15/169298.html",
+      "title": "姫の脳内に“にげる”や“まほう”の選択肢はない―メタRPG『たたかう　だけ』Steamストアページ公開―攻撃対象は敵だけにあらず！味方やゲーム機風のウィンドウも殴る",
+      "summary": "ホラータイピングゲーム『Dyping Escape』などで知られるゲーム制作サークル「ヘビサイドクリエイション」は、新作メタRPG『たたかう だけ』のSteamストアページを公開しました。 姫を操",
+      "briefSummary": "ホラータイピングゲーム『Dyping Escape』などで知られるゲーム制作サークル「ヘビサイドクリエイション」は、新作メタRPG『たたかう だけ』のSteamストアページを公開しました。 姫を操",
+      "category": "games",
       "categories": [
-        "entertainment",
-        "manga",
-        "anime",
+        "games",
         "general"
       ],
-      "categoryLabel": "エンタメ",
+      "categoryLabel": "ゲーム",
       "categoryLabels": [
-        "エンタメ",
-        "漫画",
-        "アニメ"
+        "ゲーム"
       ],
       "score": 98,
       "posts": 2,
       "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905194.jpg",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159423.png",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/07/15/101087.html",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169298.html",
       "hotReasons": [
         "複数ソースで同じ話題が確認されています。",
-        "SNSやネット上で反応が広がりやすい話題です。"
+        "一般ユーザーの関心が集まりやすいテーマです。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
           "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
+            "games",
+            "pc",
+            "console"
           ],
-          "title": "これを待っていた！凱の復活劇をさらにアツくさせる展開に視聴者も「これサスケが主役だろ!!」『鎧真伝サムライトルーパー』第14話【ネタバレあり反応まとめ】",
-          "url": "https://animeanime.jp/article/2026/07/15/101087.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/07/15/101087.html",
+          "title": "姫の脳内に“にげる”や“まほう”の選択肢はない―メタRPG『たたかう　だけ』Steamストアページ公開―攻撃対象は敵だけにあらず！味方やゲーム機風のウィンドウも殴る",
+          "url": "http://www.gamespark.jp/article/2026/07/15/169298.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/15/169298.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905194.jpg"
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159423.png"
         }
       ],
-      "whatHappened": "これを待っていた",
+      "whatHappened": "姫の脳内に“にげる”や“まほう”の選択肢はない―メタRPG『たたかう だけ』Steamストア…",
       "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
-        "ガジェット好き",
-        "漫画・アニメ好き",
-        "ネット文化を追う人"
+        "ゲームユーザー",
+        "ガジェット好き"
       ]
     },
     {
-      "id": "auto-anime-声優・井口裕香-大自然の水着姿からムーディーなホテルまで-グラマラス-妖艶な-今-を切り取り-3冊目写真集が発売中-animeanime.jp/article/2026/07/15/101081.html",
-      "title": "声優・井口裕香、大自然の水着姿からムーディーなホテルまで…♪ グラマラス＆妖艶な“今”を切り取り！3冊目写真集が発売中",
-      "summary": "『とある魔術の禁書目録』シリーズのインデックス役や「〈物語〉シリーズ」の阿良々木月火役などで知られる声優・井口裕香の3冊目となる写真集『cappuccino』が、2026年7月11日より発売中だ。",
-      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
-      "category": "anime",
+      "id": "auto-games-ゼノブレイドクロス-de-パッケージ等のコンテンツディスクリプターアイコンに誤表記-任天堂が謝罪-gamespark.jp/article/2026/07/15/169297.html",
+      "title": "『ゼノブレイドクロス DE』パッケージ等のコンテンツディスクリプターアイコンに誤表記―任天堂が謝罪",
+      "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
+      "briefSummary": "今回、誤表記が確認されたのは以下の製品です。 『ゼノブレイドクロス ディフィニティブエディション』 <img src='https://www.gamespark.jp/imgs/zoom/1159523.jpg' class='inline-article-image…",
+      "category": "games",
       "categories": [
-        "anime",
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159523.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-15T11:11:58.832Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169297.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "『ゼノブレイドクロス DE』パッケージ等のコンテンツディスクリプターアイコンに誤表記―任天堂が謝罪",
+          "url": "http://www.gamespark.jp/article/2026/07/15/169297.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/15/169297.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159523.jpg"
+        }
+      ],
+      "whatHappened": "『ゼノブレイドクロス DE』パッケージ等のコンテンツディスクリプターアイコンに誤表記―任天堂…",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-business-ゲームが消されなくても-誰にも見つからなければ意味がない-成人向けゲーム業界を揺らす-見えない規制-とプラットフォームリスク-海外アダルトゲーム販売元に事情を訊-gamespark.jp/article/2026/07/15/169294.html",
+      "title": "ゲームが消されなくても、誰にも見つからなければ意味がない―成人向けゲーム業界を揺らす“見えない規制”とプラットフォームリスク。海外アダルトゲーム販売元に事情を訊いた",
+      "summary": "※注意※ 本記事では、成人向けゲームパブリッシャーへのインタビューをお届けします。直接的な画像や言葉は含まれませんが、ご注意ください。 Steamやitch.io、Patreon、そして決済事業者",
+      "briefSummary": "※注意※ 本記事では、成人向けゲームパブリッシャーへのインタビューをお届けします。直接的な画像や言葉は含まれませんが、ご注意ください。 Steamやitch.io、Patreon、そして決済事業者",
+      "category": "business",
+      "categories": [
+        "business",
+        "games",
+        "adult",
+        "general"
+      ],
+      "categoryLabel": "経済",
+      "categoryLabels": [
+        "経済",
+        "ゲーム",
+        "アダルト系"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159185.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-15T11:11:58.832Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169294.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "ゲームが消されなくても、誰にも見つからなければ意味がない―成人向けゲーム業界を揺らす“見えない規制”とプラットフォームリスク。海外アダルトゲーム販売元に事情を訊いた",
+          "url": "http://www.gamespark.jp/article/2026/07/15/169294.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/15/169294.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159185.jpg"
+        }
+      ],
+      "whatHappened": "ゲームが消されなくても、誰にも見つからなければ意味がない―成人向けゲーム業界を揺らす“見えな…",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-sports-ヘラクレスの栄光ii-タイタンの滅亡-復刻版ps5-スイッチ2で7月16日配信-ギリシャ神話の世界を舞台にしたデータイーストrpgの2作目-コンアカ-で再び-gamespark.jp/article/2026/07/15/169293.html",
+      "title": "『ヘラクレスの栄光II タイタンの滅亡』復刻版PS5/スイッチ2で7月16日配信。ギリシャ神話の世界を舞台にしたデータイーストRPGの2作目「コンアカ」で再び",
+      "summary": "ハムスターは2026年7月15日、 『コンソールアーカイブス ヘラクレスの栄光II タイタンの滅亡』 を PS5/ニンテンドースイッチ2向けに7月16日に配信する ことを発表しました。",
+      "briefSummary": "1989年にFC向けにデータイーストより発売された、ギリシャ神話を題材としたRPGシリーズ『ヘラクレスの栄光』第2作が本作です。本作の主人公はヘラクレスではなく人間の青年となり、勇者として世界に平和をもたらすべく旅立ちます。",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "スポーツ",
+      "categoryLabels": [
+        "スポーツ",
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159377.png",
+      "publishedAt": null,
+      "capturedAt": "2026-07-15T11:11:58.832Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169293.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "『ヘラクレスの栄光II タイタンの滅亡』復刻版PS5/スイッチ2で7月16日配信。ギリシャ神話の世界を舞台にしたデータイーストRPGの2作目「コンアカ」で再び",
+          "url": "http://www.gamespark.jp/article/2026/07/15/169293.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/15/169293.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159377.png"
+        }
+      ],
+      "whatHappened": "『ヘラクレスの栄光II タイタンの滅亡』復刻版PS5/スイッチ2で7月16日配信",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-めぐみんの眠そうな表情が良い-このすば爆焔-から描き下ろしイラストをモチーフとした新作フィギュアが登場-animeanime.jp/article/2026/07/15/101100.html",
+      "title": "めぐみんの眠そうな表情が良い！！ 「このすば爆焔」から描き下ろしイラストをモチーフとした新作フィギュアが登場！",
+      "summary": "アニメ「この素晴らしい世界に爆焔を！」より、めぐみんの描き下ろしイラストをモチーフとした新作フィギュアが登場。2026年08月20日まで予約受付中だ。",
+      "briefSummary": "大の里が早くも３敗目 豊昇龍、カド番の琴桜は３勝目 綱取りの霧島は無傷の４連勝 大関復帰を目指す安青錦は初黒星",
+      "category": "entertainment",
+      "categories": [
         "entertainment",
         "manga",
         "general"
       ],
-      "categoryLabel": "アニメ",
+      "categoryLabel": "エンタメ",
       "categoryLabels": [
-        "アニメ",
         "エンタメ",
         "漫画"
       ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905107.jpg",
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905220.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "capturedAt": "2026-07-15T11:11:58.832Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/07/15/101081.html",
+      "sourceUrl": "https://animeanime.jp/article/2026/07/15/101100.html",
       "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
+        "複数ソースで同じ話題が確認されています。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
@@ -1251,18 +1171,82 @@
             "voice-actor",
             "movie"
           ],
-          "title": "声優・井口裕香、大自然の水着姿からムーディーなホテルまで…♪ グラマラス＆妖艶な“今”を切り取り！3冊目写真集が発売中",
-          "url": "https://animeanime.jp/article/2026/07/15/101081.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/07/15/101081.html",
+          "title": "めぐみんの眠そうな表情が良い！！ 「このすば爆焔」から描き下ろしイラストをモチーフとした新作フィギュアが登場！",
+          "url": "https://animeanime.jp/article/2026/07/15/101100.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/07/15/101100.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905107.jpg"
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905220.jpg"
         }
       ],
-      "whatHappened": "声優・井口裕香、大自然の水着姿からムーディーなホテルまで…♪ グラマラス＆妖艶な“今”を切り…",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "whatHappened": "めぐみんの眠そうな表情が良い",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": [
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-anime-信-羌瘣たちをかっこよくデザイン-アニメ-キングダム-韓国人気ブランド-randomoff-公式コラボ-日本限定コレクションが登場-animeanime.jp/article/2026/07/15/101099.html",
+      "title": "信、羌瘣たちをかっこよくデザイン！ アニメ「キングダム」×韓国人気ブランド「RANDOMOFF」公式コラボ！ 日本限定コレクションが登場",
+      "summary": "アニメ『キングダム』と韓国発のストリートファッションブランド「RANDOMOFF」の公式コラボレーションコレクションが、日本限定で発売される。2026年7月17日より、アジアファッションプラットフォーム「60%」にて独占販売される。",
+      "briefSummary": "アニメ『キングダム』と韓国発のストリートファッションブランド「RANDOMOFF」の公式コラボレーションコレクションが、日本限定で発売される。2026年7月17日より、アジアファッションプラットフォーム「60%」にて独占販売される。",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "アニメ",
+      "categoryLabels": [
+        "アニメ",
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905045.png",
+      "publishedAt": null,
+      "capturedAt": "2026-07-15T11:11:58.832Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/07/15/101099.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "信、羌瘣たちをかっこよくデザイン！ アニメ「キングダム」×韓国人気ブランド「RANDOMOFF」公式コラボ！ 日本限定コレクションが登場",
+          "url": "https://animeanime.jp/article/2026/07/15/101099.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/07/15/101099.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905045.png"
+        }
+      ],
+      "whatHappened": "信、羌瘣たちをかっこよくデザイン",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
         "漫画・アニメ好き"
       ]
     }

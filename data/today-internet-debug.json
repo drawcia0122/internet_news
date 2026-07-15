@@ -1,11 +1,65 @@
 {
-  "generatedAt": "2026-07-15T14:59:01.596Z",
+  "generatedAt": "2026-07-15T16:40:20.713Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-151",
-  "selectedTitle": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任でも話題、約6か月で幕",
+  "selectedClusterId": "today-cluster-355",
+  "selectedTitle": "【速報】千葉の病院で点滴に大便注入疑い、女逮捕",
   "candidates": [
     {
-      "clusterId": "today-cluster-151",
+      "clusterId": "today-cluster-355",
+      "title": "【速報】千葉の病院で点滴に大便注入疑い、女逮捕",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "sns",
+        "net-culture",
+        "general",
+        "politics",
+        "manga"
+      ],
+      "buzzScore": 77.9,
+      "confidence": 0.5,
+      "articleCount": 4,
+      "sourceCount": 1,
+      "uniqueDomainCount": 4,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 4.8,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 13.9,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 86.66666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-153",
       "title": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任でも話題、約6か月で幕",
       "category": "sports",
       "categories": [
@@ -57,7 +111,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-99",
+      "clusterId": "today-cluster-100",
       "title": "「100時間超プレイヤー」続出の百合恋愛ゲーム『恋に落ちるしかなかった』、強火ファン量産の裏側を開発者に訊く。日本でも人気、“つい10周しちゃう”終わらぬ恋",
       "category": "games",
       "categories": [
@@ -110,33 +164,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-9",
-      "title": "「煽りまくったら勝ち」最悪の対戦ゲーム『カスみんど』がSteamで2026年発売決定。相手をシバいたら“屈伸煽り”を決めよう",
+      "clusterId": "today-cluster-1",
+      "title": "Steam最大8人マルチ対応カードバトル『Hard Edge – War Zone』7月23日配信へ。サンソフト『ハードエッジ』の27年ぶり新展開、“リアルタイム戦術カードバトル”に新生",
       "category": "games",
       "categories": [
         "games",
-        "net-culture",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 67.5,
-      "confidence": 0.4,
+      "buzzScore": 64.5,
+      "confidence": 0.45,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 20.5,
         "internetNativeBoost": 8,
-        "search": 6.5,
+        "search": 6.2,
         "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 6,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -150,8 +205,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
+        "archiveHeatScore": 93,
+        "internalSearchScore": 48.2,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -160,7 +215,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-720",
+      "clusterId": "today-cluster-842",
       "title": "ウッディやバズが400万円越えフィギュアに！「トイ・ストーリー」のキャラクターを“再解釈”したグッズが発売",
       "category": "anime",
       "categories": [
@@ -171,8 +226,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.9,
-      "confidence": 0.38,
+      "buzzScore": 64.2,
+      "confidence": 0.37,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -184,10 +239,10 @@
         "sourceDiversity": 2.3,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.9,
+        "search": 4.8,
         "social": 7.3,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -201,62 +256,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 100,
         "archiveHeatScore": 100,
-        "internalSearchScore": 38.3,
-        "internalSocialScore": 57.3
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-591",
-      "title": "本田圭佑、W杯フランス敗退に「一言」で反応　SNS反響「まさかこんなに...」「同じ感想です」",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 62.6,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 12,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 37.7,
+        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

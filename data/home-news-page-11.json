@@ -1,56 +1,225 @@
 {
-  "generatedAt": "2026-07-15T06:37:42.809Z",
+  "generatedAt": "2026-07-15T09:17:47.040Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
-    "general": 0,
-    "tech": 8,
-    "business": 3,
+    "general": 1,
+    "tech": 12,
+    "business": 4,
     "politics": 0,
-    "entertainment": 71,
-    "anime": 27,
-    "games": 156,
+    "entertainment": 67,
+    "anime": 26,
+    "games": 162,
     "game-features": 2,
     "anime-features": 0,
-    "manga": 45,
+    "manga": 40,
     "books": 1,
-    "sports": 3,
-    "net-culture": 1,
+    "sports": 2,
+    "net-culture": 2,
     "matome": 0,
-    "crime": 1,
+    "crime": 0,
     "adult": 0,
-    "world": 5
+    "world": 4
   },
   "hasMore": true,
   "nextPage": 12,
   "items": [
     {
-      "id": "auto-anime-アニメ-無職転生-の配信はどこで見れる-シリーズの見る順番とおすすめサブスク-animeanime.jp/article/2026/07/14/101045.html",
-      "title": "アニメ「無職転生」の配信はどこで見れる？シリーズの見る順番とおすすめサブスク",
-      "summary": "アニメ『無職転生』シリーズ（1期～3期）の配信状況を主要動画配信サービスで調査しました。1期から最新3期まで見放題で楽しめるのは月額550円のDMM TV。見る順番・各シーズンの配信・声優・放送情報もまとめて紹介します。",
-      "briefSummary": "アニメ『無職転生』シリーズ（1期～3期）の配信状況を主要動画配信サービスで調査しました。1期から最新3期まで見放題で楽しめるのは月額550円のDMM TV。見る順番・各シーズンの配信・声優・放送情報もまとめて紹介します。",
-      "category": "anime",
+      "id": "auto-games-懐アニ風美少女と共に派手に戦う地獄旅-デッキ構築-弾幕アクション-ヘル・メイデン-ウィッシュリスト登録10万件達成-gamespark.jp/article/2026/07/14/169252.html",
+      "title": "懐アニ風美少女と共に派手に戦う地獄旅！デッキ構築×弾幕アクション『ヘル・メイデン』ウィッシュリスト登録10万件達成",
+      "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
+      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
+      "category": "games",
       "categories": [
-        "anime",
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1158930.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/14/169252.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "懐アニ風美少女と共に派手に戦う地獄旅！デッキ構築×弾幕アクション『ヘル・メイデン』ウィッシュリスト登録10万件達成",
+          "url": "http://www.gamespark.jp/article/2026/07/14/169252.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/14/169252.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1158930.jpg"
+        }
+      ],
+      "whatHappened": "懐アニ風美少女と共に派手に戦う地獄旅",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-大ヒットかくれんぼ-めっちゃカメレオン-7月21日午後3時から60分間プレイ不可-マッチングシステムがメンテナンスのため-gamespark.jp/article/2026/07/14/169250.html",
+      "title": "大ヒットかくれんぼ『めっちゃカメレオン』7月21日午後3時から60分間プレイ不可―マッチングシステムがメンテナンスのため",
+      "summary": "レモリオン氏はかくれんぼゲーム『 めっちゃカメレオン 』について、7月21日午後3時からプレイ不可時間があることを告知しています。マッチングシステムEpic Online Services（EOS）の定期メンテナンスを実施するためということです。",
+      "briefSummary": "レモリオン氏はかくれんぼゲーム『 めっちゃカメレオン 』について、7月21日午後3時からプレイ不可時間があることを告知しています。マッチングシステムEpic Online Services（EOS）の定期メンテナンスを実施するためということです。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1158892.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/14/169250.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "大ヒットかくれんぼ『めっちゃカメレオン』7月21日午後3時から60分間プレイ不可―マッチングシステムがメンテナンスのため",
+          "url": "http://www.gamespark.jp/article/2026/07/14/169250.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/14/169250.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1158892.jpg"
+        }
+      ],
+      "whatHappened": "大ヒットかくれんぼ『めっちゃカメレオン』7月21日午後3時から60分間プレイ不可―マッチング…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-サイコホラーadv-the-coffin-of-andy-and-leyley-悪質な行為者-に対処するため開発一時停止-知的財産の使用に関するガイドラインなど-gamespark.jp/article/2026/07/14/169246.html",
+      "title": "サイコホラーADV『The Coffin of Andy and Leyley』「悪質な行為者」に対処するため開発一時停止。知的財産の使用に関するガイドラインなどを作成",
+      "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
+      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1158779.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/14/169246.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "サイコホラーADV『The Coffin of Andy and Leyley』「悪質な行為者」に対処するため開発一時停止。知的財産の使用に関するガイドラインなどを作成",
+          "url": "http://www.gamespark.jp/article/2026/07/14/169246.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/14/169246.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1158779.jpg"
+        }
+      ],
+      "whatHappened": "サイコホラーADV『The Coffin of Andy and Leyley』「悪質な行為…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-水-キャラといえば-アンケート-切は7月21日-水の日-animeanime.jp/article/2026/07/14/101066.html",
+      "title": "“水”キャラといえば？ アンケート〆切は7月21日【#水の日】",
+      "summary": "「 “水”キャラといえば？ アンケート〆切は7月21日【#水の日】 」に一致する記事は見つかりませんでした。",
+      "briefSummary": "「 “水”キャラといえば？ アンケート〆切は7月21日【#水の日】 」に一致する記事は見つかりませんでした。",
+      "category": "entertainment",
+      "categories": [
         "entertainment",
         "manga",
         "general"
       ],
-      "categoryLabel": "アニメ",
+      "categoryLabel": "エンタメ",
       "categoryLabels": [
-        "アニメ",
         "エンタメ",
         "漫画"
       ],
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/904698.jpg",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/904573.png",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T06:37:42.809Z",
+      "capturedAt": "2026-07-15T09:17:47.040Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/07/14/101045.html",
+      "sourceUrl": "https://animeanime.jp/article/2026/07/14/101066.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -70,15 +239,15 @@
             "voice-actor",
             "movie"
           ],
-          "title": "アニメ「無職転生」の配信はどこで見れる？シリーズの見る順番とおすすめサブスク",
-          "url": "https://animeanime.jp/article/2026/07/14/101045.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/07/14/101045.html",
+          "title": "“水”キャラといえば？ アンケート〆切は7月21日【#水の日】",
+          "url": "https://animeanime.jp/article/2026/07/14/101066.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/07/14/101066.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/904698.jpg"
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/904573.png"
         }
       ],
-      "whatHappened": "アニメ「無職転生」の配信はどこで見れる",
+      "whatHappened": "“水”キャラといえば",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": [
@@ -86,252 +255,10 @@
       ]
     },
     {
-      "id": "auto-games-鬼武者-way-of-the-sword-pcの動作環境をテストできるベンチマークソフトを公開-4gamer.net/games/865/g086595/20260714034",
-      "title": "「鬼武者 Way of the Sword」，PCの動作環境をテストできるベンチマークソフトを公開",
-      "summary": "カプコンは本日（2026年7月14日），同社が9月4日に発売予定の「鬼武者WayoftheSword」について，動作環境をテストできるベンチマークソフトをSteam…",
-      "briefSummary": "カプコンは本日（2026年7月14日），同社が9月4日に発売予定の「鬼武者 Way of the Sword」について，動作環境をテストできるベンチマークソフトをSteam / Epic Games Storeで公開した。ソフトはストアから無料でダウンロードできるが，15GBほどの空き容量が必要だ。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/865/G086595/20260714034/SS/001.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T06:37:42.809Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/865/G086595/20260714034/",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "「鬼武者 Way of the Sword」，PCの動作環境をテストできるベンチマークソフトを公開",
-          "url": "https://www.4gamer.net/games/865/G086595/20260714034/",
-          "canonicalUrl": "https://www.4gamer.net/games/865/G086595/20260714034/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/865/G086595/20260714034/SS/001.jpg"
-        }
-      ],
-      "whatHappened": "「鬼武者 Way of the Sword」，PCの動作環境をテストできるベンチマークソフト…",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-ディズニー-スパークリンク・スターズ-endeloreのリーダー-ニコラ・ヴァニテール-cv-佐藤悠雅-を公開-リゼは特別な存在-4gamer.net/games/008/g100854/20260714033",
-      "title": "「ディズニー スパークリンク・スターズ」，Endeloreのリーダー「ニコラ・ヴァニテール」（CV：佐藤悠雅）を公開。リゼは特別な存在",
-      "summary": "colyは本日，夢を叶えるスパークライダー育成ADV「ディズニースパークリンク・スターズ」の公式Xで，キャラクター「ニコラ・ヴァニテール」（CV：佐藤悠雅）の情報を…",
-      "briefSummary": "colyは本日，夢を叶えるスパークライダー育成ADV「ディズニースパークリンク・スターズ」の公式Xで，キャラクター「ニコラ・ヴァニテール」（CV：佐藤悠雅）の情報を公開した。ニコラ・ヴァニテールは，Endeloreのリーダーで，愛されるため…",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "SNS"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/008/G100854/20260714033/SS/001.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T06:37:42.809Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/008/G100854/20260714033/",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "「ディズニー スパークリンク・スターズ」，Endeloreのリーダー「ニコラ・ヴァニテール」（CV：佐藤悠雅）を公開。リゼは特別な存在",
-          "url": "https://www.4gamer.net/games/008/G100854/20260714033/",
-          "canonicalUrl": "https://www.4gamer.net/games/008/G100854/20260714033/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/008/G100854/20260714033/SS/001.jpg"
-        }
-      ],
-      "whatHappened": "「ディズニー スパークリンク・スターズ」，Endeloreのリーダー「ニコラ・ヴァニテール」…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-games-ギャンブルローグライク-三位一体-超異常混沌賭博遊戯-アルティメットカオスギャンブルバトル-ストアページを公開-4gamer.net/games/024/g102482/20260714027",
-      "title": "ギャンブルローグライク「三位一体！超異常混沌賭博遊戯〜アルティメットカオスギャンブルバトル〜」，ストアページを公開",
-      "summary": "ゲーム制作チームのキザミ檸檬トーストは本日（2026年7月14日），開発中の新作タイトル「三位一体！超異常混沌賭博遊戯〜アルティメットカオスギャンブルバトル〜」のS…",
-      "briefSummary": "ゲーム制作チームのキザミ檸檬トーストは本日（2026年7月14日），開発中の新作タイトル「三位一体！超異常混沌賭博遊戯〜アルティメットカオスギャンブルバトル〜」のSteamストアページを公開した。本作は，トランプ，麻雀牌，花札の3種が混ざっ…",
-      "category": "games",
-      "categories": [
-        "games",
-        "world",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "国際"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/024/G102482/20260714027/SS/002.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T06:37:42.809Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/024/G102482/20260714027/",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "ギャンブルローグライク「三位一体！超異常混沌賭博遊戯〜アルティメットカオスギャンブルバトル〜」，ストアページを公開",
-          "url": "https://www.4gamer.net/games/024/G102482/20260714027/",
-          "canonicalUrl": "https://www.4gamer.net/games/024/G102482/20260714027/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/024/G102482/20260714027/SS/002.jpg"
-        }
-      ],
-      "whatHappened": "ギャンブルローグライク「三位一体",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き",
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-games-switch2向けパッケージ版-lies-of-p-complete-edition-発売日を10月2日に変更-前倒し発表から再び当初予定日に-4gamer.net/games/015/g101546/20260714029",
-      "title": "Switch2向けパッケージ版「Lies of P: Complete Edition」，発売日を10月2日に変更。前倒し発表から再び当初予定日に",
-      "summary": "U&Iエンターテイメントジャパンは本日，Switch2向けパッケージ版「LiesofP:CompleteEdition」の発売日を変更すると発表した。一度は2026…",
-      "briefSummary": "U&Iエンターテイメントジャパンは本日，Switch2向けパッケージ版「LiesofP:CompleteEdition」の発売日を変更すると発表した。一度は2026年10月1日への前倒しが案内されていたが，今回，当初予定どおり10月2日に発…",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/015/G101546/20260714029/SS/001.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T06:37:42.809Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/015/G101546/20260714029/",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "Switch2向けパッケージ版「Lies of P: Complete Edition」，発売日を10月2日に変更。前倒し発表から再び当初予定日に",
-          "url": "https://www.4gamer.net/games/015/G101546/20260714029/",
-          "canonicalUrl": "https://www.4gamer.net/games/015/G101546/20260714029/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/015/G101546/20260714029/SS/001.jpg"
-        }
-      ],
-      "whatHappened": "Switch2向けパッケージ版「Lies of P: Complete Edition」，発…",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-複数の空島からなる-鳥の王国-を舞台に-一羽の小鳥の冒険を描く-メトロイドヴァニア風アドベンチャー-song-of-maka-7月24日に体験版を配信-4gamer.net/games/024/g102484/20260714028",
-      "title": "複数の空島からなる“鳥の王国”を舞台に，一羽の小鳥の冒険を描く。メトロイドヴァニア風アドベンチャー「Song of Maka」，7月24日に体験版を配信",
-      "summary": "SilverjayStudioは，新作タイトル「SongofMaka」の体験版を2026年7月24日にSteamで配信予定だ。本作は，複数の空島からなる“鳥の王国”…",
-      "briefSummary": "SilverjayStudioは，新作タイトル「SongofMaka」の体験版を2026年7月24日にSteamで配信予定だ。本作は，複数の空島からなる“鳥の王国”を舞台に，一羽の小鳥がさえずりと飛行を駆使して各地を冒険するアドベンチャーゲ…",
+      "id": "auto-games-仕事内容は-倒れたペンギンを起こす-こと-極寒の島で奇妙な仕事に就くシミュレーションゲーム-penguin-lifter-が配信開始-4gamer.net/games/019/g101955/20260714050",
+      "title": "仕事内容は“倒れたペンギンを起こす”こと。極寒の島で奇妙な仕事に就くシミュレーションゲーム「Penguin Lifter」が配信開始",
+      "summary": "Peace_Studioは本日（2026年7月14日），新作タイトル「PenguinLifter」をリリースした。本作は，「倒れたペンギンを起こす」という奇妙な仕事…",
+      "briefSummary": "Peace_Studioは本日（2026年7月14日），新作タイトル「PenguinLifter」をリリースした。本作は，「倒れたペンギンを起こす」という奇妙な仕事をこなしながら，南極付近の島で生活する，シングルプレイのシミュレーションゲー…",
       "category": "games",
       "categories": [
         "games",
@@ -346,12 +273,72 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/024/G102484/20260714028/SS/002.jpg",
+      "thumbnailUrl": "https://www.4gamer.net/games/019/G101955/20260714050/SS/004.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T06:37:42.809Z",
+      "capturedAt": "2026-07-15T09:17:47.040Z",
       "time": "直近",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/024/G102484/20260714028/",
+      "sourceUrl": "https://www.4gamer.net/games/019/G101955/20260714050/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "仕事内容は“倒れたペンギンを起こす”こと。極寒の島で奇妙な仕事に就くシミュレーションゲーム「Penguin Lifter」が配信開始",
+          "url": "https://www.4gamer.net/games/019/G101955/20260714050/",
+          "canonicalUrl": "https://www.4gamer.net/games/019/G101955/20260714050/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/019/G101955/20260714050/SS/004.jpg"
+        }
+      ],
+      "whatHappened": "仕事内容は“倒れたペンギンを起こす”こと",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-プレイを極めてリーダーボードの頂点を目指せ-シンプル操作のハイスピードローグライクact-kaz-配信開始-4gamer.net/games/024/g102472/20260714047",
+      "title": "プレイを極めてリーダーボードの頂点を目指せ。シンプル操作のハイスピードローグライクACT「KAZ」，配信開始",
+      "summary": "HAKUROは本日（2026年7月14日），新作タイトル「KAZ」をSteamでリリースした。本作は，スコアを追い求めるプレイヤーや，「もう1回だけ」とやめられない…",
+      "briefSummary": "HAKUROは本日（2026年7月14日），新作タイトル「KAZ」をSteamでリリースした。本作は，スコアを追い求めるプレイヤーや，「もう1回だけ」とやめられない人向けの，ミニマルなローグライクアクションゲームだ。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/024/G102472/20260714047/SS/002.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "time": "直近",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/024/G102472/20260714047/",
       "hotReasons": [
         "一般ユーザーの関心が集まりやすいテーマです。",
         "専門媒体や公式ソースが優先的に拾っています。"
@@ -372,15 +359,15 @@
             "console",
             "steam"
           ],
-          "title": "複数の空島からなる“鳥の王国”を舞台に，一羽の小鳥の冒険を描く。メトロイドヴァニア風アドベンチャー「Song of Maka」，7月24日に体験版を配信",
-          "url": "https://www.4gamer.net/games/024/G102484/20260714028/",
-          "canonicalUrl": "https://www.4gamer.net/games/024/G102484/20260714028/",
+          "title": "プレイを極めてリーダーボードの頂点を目指せ。シンプル操作のハイスピードローグライクACT「KAZ」，配信開始",
+          "url": "https://www.4gamer.net/games/024/G102472/20260714047/",
+          "canonicalUrl": "https://www.4gamer.net/games/024/G102472/20260714047/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/024/G102484/20260714028/SS/002.jpg"
+          "thumbnailUrl": "https://www.4gamer.net/games/024/G102472/20260714047/SS/002.jpg"
         }
       ],
-      "whatHappened": "複数の空島からなる“鳥の王国”を舞台に，一羽の小鳥の冒険を描く",
+      "whatHappened": "プレイを極めてリーダーボードの頂点を目指せ",
       "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -389,70 +376,10 @@
       ]
     },
     {
-      "id": "auto-games-映画ちいかわ-人魚の島のひみつ-キラキラなオーロラバッグが素敵-セイレーンbigぬいぐるみと共に7月下旬より順次プライズ展開-inside-games.jp/article/2026/07/14/184526.html",
-      "title": "「映画ちいかわ 人魚の島のひみつ」キラキラなオーロラバッグが素敵！セイレーンBIGぬいぐるみと共に7月下旬より順次プライズ展開",
-      "summary": "「ダルビッシュ家の夏休み」妻・聖子さん 子どもたちと北海道へ！「ダルさんかと」「娘ちゃんが」「可愛すぎます」",
-      "briefSummary": "7月24日より劇場公開となる「 映画ちいかわ 人魚の島のひみつ 」より、プライズ2商品が登場。ひとつは「セイレーンBIGぬいぐるみ」で、表情と仕草が異なる全2種が用意されています。もうひとつは「オーロラビーチバッグ」全2種。セイレーンと、ちいかわたちが乗り物で水上を進むようなデザインとなっています。",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1754131.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T06:37:42.809Z",
-      "time": "直近",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/07/14/184526.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch",
-            "pokemon"
-          ],
-          "title": "「映画ちいかわ 人魚の島のひみつ」キラキラなオーロラバッグが素敵！セイレーンBIGぬいぐるみと共に7月下旬より順次プライズ展開",
-          "url": "https://www.inside-games.jp/article/2026/07/14/184526.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/07/14/184526.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1754131.jpg"
-        }
-      ],
-      "whatHappened": "「映画ちいかわ 人魚の島のひみつ」キラキラなオーロラバッグが素敵",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-刃牙-新作一番くじが迫力満点-最終形態ピクルら4体のフィギュア-ユニークな-烈海王のグルグルパンチ時計-も-inside-games.jp/article/2026/07/14/184525.html",
-      "title": "「刃牙」新作一番くじが迫力満点！最終形態ピクルら4体のフィギュア、ユニークな「烈海王のグルグルパンチ時計」も",
-      "summary": "「ダルビッシュ家の夏休み」妻・聖子さん 子どもたちと北海道へ！「ダルさんかと」「娘ちゃんが」「可愛すぎます」",
-      "briefSummary": "「俺は殺していない、誰かがとどめを」主犯格の男が語った事件発覚後の心境、土下座する被害者に「もっとやって」と煽った女【江別集団暴行死】被告人質問《詳報》",
+      "id": "auto-games-人工知能に完全管理された楽園の整備士として働くパズルadv-d-topia-本日発売-最適化された世界と現実世界を行き来し-本当の姿に迫る-4gamer.net/games/948/g094833/20260714045",
+      "title": "人工知能に完全管理された楽園の整備士として働くパズルADV「D-topia」，本日発売。最適化された世界と現実世界を行き来し，本当の姿に迫る",
+      "summary": "AnnapurnaInteractiveは本日（2026年7月14日），パズルアドベンチャー「D-topia」を発売する。本作は，人工知能に完全管理された施設型居住…",
+      "briefSummary": "AnnapurnaInteractiveは本日（2026年7月14日），パズルアドベンチャー「D-topia」を発売する。本作は，人工知能に完全管理された施設型居住区D-トピアを舞台としたパズルアドベンチャーだ。",
       "category": "games",
       "categories": [
         "games",
@@ -465,52 +392,52 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1752486.webp",
+      "thumbnailUrl": "https://www.4gamer.net/games/948/G094833/20260714045/TN/001.gif",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T06:37:42.809Z",
+      "capturedAt": "2026-07-15T09:17:47.040Z",
       "time": "直近",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/07/14/184525.html",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/948/G094833/20260714045/",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
           "sourceGroup": "games",
-          "sourcePriority": 90,
+          "sourcePriority": 94,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
-            "nintendo",
-            "switch",
-            "pokemon"
+            "pc",
+            "console",
+            "steam"
           ],
-          "title": "「刃牙」新作一番くじが迫力満点！最終形態ピクルら4体のフィギュア、ユニークな「烈海王のグルグルパンチ時計」も",
-          "url": "https://www.inside-games.jp/article/2026/07/14/184525.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/07/14/184525.html",
+          "title": "人工知能に完全管理された楽園の整備士として働くパズルADV「D-topia」，本日発売。最適化された世界と現実世界を行き来し，本当の姿に迫る",
+          "url": "https://www.4gamer.net/games/948/G094833/20260714045/",
+          "canonicalUrl": "https://www.4gamer.net/games/948/G094833/20260714045/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1752486.webp"
+          "thumbnailUrl": "https://www.4gamer.net/games/948/G094833/20260714045/TN/001.gif"
         }
       ],
-      "whatHappened": "「刃牙」新作一番くじが迫力満点",
+      "whatHappened": "人工知能に完全管理された楽園の整備士として働くパズルADV「D-topia」，本日発売",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー"
+        "ゲームユーザー",
+        "ガジェット好き"
       ]
     },
     {
-      "id": "auto-games-マツキヨココカラ-ちいかわ-コラボが激アツ-オリジナルグッズの配布・販売に加えて-店舗ラッピングや-花火打ち上げ-まで盛り沢山-inside-games.jp/article/2026/07/14/184523.html",
-      "title": "マツキヨココカラ×「ちいかわ」コラボが激アツ！オリジナルグッズの配布・販売に加えて、店舗ラッピングや”花火打ち上げ”まで盛り沢山",
-      "summary": "「ダルビッシュ家の夏休み」妻・聖子さん 子どもたちと北海道へ！「ダルさんかと」「娘ちゃんが」「可愛すぎます」",
-      "briefSummary": "「俺は殺していない、誰かがとどめを」主犯格の男が語った事件発覚後の心境、土下座する被害者に「もっとやって」と煽った女【江別集団暴行死】被告人質問《詳報》",
+      "id": "auto-games-本当に栽培できる-じんめんじゅの植木鉢-7月の-ドラクエ-プライズがめちゃユニーク-inside-games.jp/article/2026/07/14/184532.html",
+      "title": "本当に栽培できる「じんめんじゅの植木鉢」！？ 7月の『ドラクエ』プライズがめちゃユニーク",
+      "summary": "『ドラクエ』より、ぬいぐるみや雑貨などプライズ5種が展開。ぬいぐるみは、やわらかもっちりな触り心地の「スライム＆スライムベス＆ライムスライム」です。また、「スライム」たちのお手玉も登場します。",
+      "briefSummary": "「血が付いた金払え、迷惑代だ、これどういう発想?」主犯格とされる男に切り込む検察「カツアゲの最悪版」【江別集団暴行死】裁判員裁判の被告人質問《詳細》",
       "category": "games",
       "categories": [
         "games",
@@ -523,12 +450,12 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1752237.png",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1748583.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T06:37:42.809Z",
+      "capturedAt": "2026-07-15T09:17:47.040Z",
       "time": "直近",
       "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/07/14/184523.html",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/07/14/184532.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -548,15 +475,15 @@
             "switch",
             "pokemon"
           ],
-          "title": "マツキヨココカラ×「ちいかわ」コラボが激アツ！オリジナルグッズの配布・販売に加えて、店舗ラッピングや”花火打ち上げ”まで盛り沢山",
-          "url": "https://www.inside-games.jp/article/2026/07/14/184523.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/07/14/184523.html",
+          "title": "本当に栽培できる「じんめんじゅの植木鉢」！？ 7月の『ドラクエ』プライズがめちゃユニーク",
+          "url": "https://www.inside-games.jp/article/2026/07/14/184532.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/07/14/184532.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1752237.png"
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1748583.jpg"
         }
       ],
-      "whatHappened": "マツキヨココカラ×「ちいかわ」コラボが激アツ",
+      "whatHappened": "本当に栽培できる「じんめんじゅの植木鉢」",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -565,10 +492,10 @@
       ]
     },
     {
-      "id": "auto-games-吉野家-ドラクエウォーク-コラボセット第2弾の販売期間が-1週間-に短縮-第1弾は早期完売と大好評-inside-games.jp/article/2026/07/14/184522.html",
-      "title": "吉野家×『ドラクエウォーク』コラボセット第2弾の販売期間が“1週間”に短縮―第1弾は早期完売と大好評",
-      "summary": "「ダルビッシュ家の夏休み」妻・聖子さん 子どもたちと北海道へ！「ダルさんかと」「娘ちゃんが」「可愛すぎます」",
-      "briefSummary": "フィギュアのラインナップは、第1弾が「吉野家スラミチ」「どんぶりスライム A」「ひとくい紅生姜ばこ」「つゆだくスライム」、第2弾が「スラミチ 吉野家Ver.」「どんぶりスライム B」「どんぶりキング」「吉野家コラボ看板」です。",
+      "id": "auto-games-ソロでもマルチでも戦闘・探索・採掘・釣りなど楽しめるarpg-luminary-がウィッシュリスト5万件突破-gamespark.jp/article/2026/07/14/169256.html",
+      "title": "ソロでもマルチでも戦闘・探索・採掘・釣りなど楽しめるARPG『Luminary』がウィッシュリスト5万件突破",
+      "summary": "脱いだら「破壊力すげー」スタイル爆発！イメージ激変「誰？」重盛さと美に「惚れてまう」「３７歳と思えない」",
+      "briefSummary": "Refractive Entertainmentは、アクションRPG『 Luminary 』のウィッシュリスト登録数が5万件を突破したことを発表しました。現地時間8月11日にSteam早期アクセスとして発売される予定です。",
       "category": "games",
       "categories": [
         "games",
@@ -581,45 +508,101 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1754122.jpg",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1158954.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T06:37:42.809Z",
+      "capturedAt": "2026-07-15T09:17:47.040Z",
       "time": "直近",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/07/14/184522.html",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/14/169256.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
           "sourceGroup": "games",
-          "sourcePriority": 90,
+          "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
-            "nintendo",
-            "switch",
-            "pokemon"
+            "pc",
+            "console"
           ],
-          "title": "吉野家×『ドラクエウォーク』コラボセット第2弾の販売期間が“1週間”に短縮―第1弾は早期完売と大好評",
-          "url": "https://www.inside-games.jp/article/2026/07/14/184522.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/07/14/184522.html",
+          "title": "ソロでもマルチでも戦闘・探索・採掘・釣りなど楽しめるARPG『Luminary』がウィッシュリスト5万件突破",
+          "url": "http://www.gamespark.jp/article/2026/07/14/169256.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/14/169256.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1754122.jpg"
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1158954.jpg"
         }
       ],
-      "whatHappened": "吉野家×『ドラクエウォーク』コラボセット第2弾の販売期間が“1週間”に短縮―第1弾は早期完売…",
+      "whatHappened": "ソロでもマルチでも戦闘・探索・採掘・釣りなど楽しめるARPG『Luminary』がウィッシュ…",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー"
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-シブヤスクランブルストーリーズ-総指揮のイシイジロウ氏が緊急入院-映像で状況を報告-gamespark.jp/article/2026/07/14/169253.html",
+      "title": "『シブヤスクランブルストーリーズ』総指揮のイシイジロウ氏が緊急入院―映像で状況を報告",
+      "summary": "実写アドベンチャー『 シブヤスクランブルストーリーズ 』の総指揮を務めるイシイジロウ氏が、自身のXアカウントにて先週から緊急入院していると報告しました。あわせて公開された映像では、「7月31日には必ず復帰をしようと思って治療を続けています」といったことも語られています。",
+      "briefSummary": "実写アドベンチャー『 シブヤスクランブルストーリーズ 』の総指揮を務めるイシイジロウ氏が、自身のXアカウントにて先週から緊急入院していると報告しました。あわせて公開された映像では、「7月31日には必ず復帰をしようと思って治療を続けています」といったことも語られています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1158946.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-15T09:17:47.040Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/14/169253.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "『シブヤスクランブルストーリーズ』総指揮のイシイジロウ氏が緊急入院―映像で状況を報告",
+          "url": "http://www.gamespark.jp/article/2026/07/14/169253.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/14/169253.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1158946.jpg"
+        }
+      ],
+      "whatHappened": "『シブヤスクランブルストーリーズ』総指揮のイシイジロウ氏が緊急入院―映像で状況を報告",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
       ]
     }
   ]

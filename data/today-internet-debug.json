@@ -1,43 +1,97 @@
 {
-  "generatedAt": "2026-07-16T22:34:08.346Z",
+  "generatedAt": "2026-07-16T23:31:51.900Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-1",
-  "selectedTitle": "クリストファー・ノーラン監督の新作『オデュッセイア』日本語吹替版の同時公開が決定。平田広明さんら吹替キャスト情報も解禁",
+  "selectedTitle": "『FF10』“シーモア”と「コミックシーモア」がまさかのコラボか。特徴的すぎるシルエットが投稿",
   "candidates": [
     {
       "clusterId": "today-cluster-1",
-      "title": "クリストファー・ノーラン監督の新作『オデュッセイア』日本語吹替版の同時公開が決定。平田広明さんら吹替キャスト情報も解禁",
-      "category": "anime",
+      "title": "『FF10』“シーモア”と「コミックシーモア」がまさかのコラボか。特徴的すぎるシルエットが投稿",
+      "category": "sports",
       "categories": [
+        "sports",
         "anime",
         "games",
         "net-culture",
+        "manga",
         "general"
       ],
-      "buzzScore": 75,
-      "confidence": 0.46,
+      "buzzScore": 79.9,
+      "confidence": 0.47,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.6,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 7,
+        "search": 5.7,
+        "social": 8.4,
         "velocity": 8.3,
         "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 17,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 6.666666666666667,
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-53",
+      "title": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
+      "category": "games",
+      "categories": [
+        "games",
+        "general",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 77.4,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 16.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -47,8 +101,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
@@ -57,7 +111,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2588",
+      "clusterId": "today-cluster-2704",
       "title": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任でも話題、約6か月で幕",
       "category": "sports",
       "categories": [
@@ -89,7 +143,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -109,50 +163,51 @@
       ]
     },
     {
-      "clusterId": "today-cluster-340",
-      "title": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
-      "category": "games",
+      "clusterId": "today-cluster-3",
+      "title": "クリストファー・ノーラン監督の新作『オデュッセイア』日本語吹替版の同時公開が決定。平田広明さんら吹替キャスト情報も解禁",
+      "category": "anime",
       "categories": [
+        "anime",
         "games",
-        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 67.6,
-      "confidence": 0.39,
-      "articleCount": 1,
+      "buzzScore": 70.5,
+      "confidence": 0.42,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
+        "search": 5.6,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 16.666666666666664,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -160,7 +215,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2578",
+      "clusterId": "today-cluster-2693",
       "title": "「Steamセール」2027年上半期までの全日程が公開。次回の大型セールは10月1日から開催",
       "category": "games",
       "categories": [
@@ -203,58 +258,6 @@
         "archiveHeatScore": 95,
         "internalSearchScore": 35.2,
         "internalSocialScore": 34.4
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-182",
-      "title": "1本で4つの『空気読み。』が遊べるパッケージ版『みんなで空気読み。4 Nintendo Switch 2 Edition ＋』が10月29日に発売決定、予約受付もスタート。フィーチャーフォン時代の「空気読み。2」は初の復刻",
-      "category": "games",
-      "categories": [
-        "games",
-        "general",
-        "entertainment",
-        "net-culture"
-      ],
-      "buzzScore": 65.4,
-      "confidence": 0.53,
-      "articleCount": 6,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 10.8,
-        "sourceDiversity": 7,
-        "trend": 14.7,
-        "internetNativeBoost": 0,
-        "search": 3.4,
-        "social": 4.5,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 67,
-        "internalSearchScore": 26.2,
-        "internalSocialScore": 34.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

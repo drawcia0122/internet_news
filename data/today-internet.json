@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T23:33:13.133Z",
+  "generatedAt": "2026-07-16T01:01:49.785Z",
   "topicVersion": 1,
   "selectedTopic": {
     "id": "auto-crime-ちんすこう食べてくれん-など10代女性に対し義務のないことを複数回要求した疑い-男子中学生-14-を逮捕-香川-newsdig.tbs.co.jp/articles/-/2802861",
@@ -74,21 +74,21 @@
         "summary": "「ちんすこう食べてくれん？」など10代女性に対し義務のないことを複数回要求した疑い 男子中学生（14）を逮捕【香川】 TBS NEWS DIG"
       }
     ],
-    "hotScore": 71.4,
+    "hotScore": 70.3,
     "posts": "2",
     "metricLabel": "signals",
     "time": "直近",
     "publishedAt": "2026-07-15T21:10:30.277Z",
-    "buzzScore": 71.4,
+    "buzzScore": 70.3,
     "scoreBreakdown": {
       "coverage": 3.6,
       "sourceDiversity": 4.7,
       "trend": 19.6,
       "internetNativeBoost": 8,
-      "search": 10.1,
-      "social": 7.4,
+      "search": 10.7,
+      "social": 7.3,
       "velocity": 0,
-      "freshness": 8.5,
+      "freshness": 7,
       "authority": 2.5,
       "categoryBias": 7,
       "penalty": 0
@@ -131,8 +131,8 @@
     "externalSignals": {
       "query": "ちんすこう食べてくれん？ など10代女性に対し義務のないことを複数回要求した疑い 男子中学生（14）を逮捕 香川",
       "search": {
-        "count": 38,
-        "score": 63.33333333333333,
+        "count": 40,
+        "score": 66.66666666666666,
         "available": true
       },
       "reddit": {
@@ -151,7 +151,7 @@
       ]
     },
     "externalSignalStats": {
-      "searchScore": 63.33333333333333,
+      "searchScore": 66.66666666666666,
       "socialScore": 0,
       "searchAvailable": true,
       "socialAvailable": false
@@ -163,11 +163,11 @@
     "internalSignalStats": {
       "browseMatchCount": 0,
       "archiveMatchCount": 1,
-      "repeatedAppearanceScore": 6,
+      "repeatedAppearanceScore": 5.1,
       "crossCategoryScore": 100,
       "archiveHeatScore": 89,
-      "internalSearchScore": 35.1,
-      "internalSocialScore": 57.7
+      "internalSearchScore": 34.5,
+      "internalSocialScore": 57.3
     },
     "clusterStats": {
       "articleCount": 2,
@@ -179,103 +179,109 @@
   },
   "runnerUps": [
     {
-      "id": "auto-sports-w杯-アルゼンチン-2大会連続決勝へ-メッシ2アシスト-速報中-www3.nhk.or.jp/news/html/20260716/k10015177261000.html",
-      "title": "W杯 アルゼンチン 2大会連続決勝へ メッシ2アシスト【速報中】",
-      "summary": "W杯 アルゼンチン 2大会連続決勝へ メッシ2アシスト【速報中】 直近数時間で関連記事が増加。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-      "briefSummary": "W杯 アルゼンチン 2大会連続決勝へ メッシ2アシスト【速報中】",
-      "whatHappened": "W杯 アルゼンチン 2大会連続決勝へ メッシ2アシスト【速報中】",
-      "whyHot": "直近数時間で関連記事が増加。",
+      "id": "auto-sports-新たな国産sns-popopo-9月17日にサービス終了へ-取締役に西村博之-庵野秀明ら就任でも話題-約6か月で幕-inside-games.jp/article/2026/07/15/184569.html",
+      "title": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任でも話題、約6か月で幕",
+      "summary": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任… 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+      "briefSummary": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任…",
+      "whatHappened": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任…",
+      "whyHot": "既存トレンド指標でも反応が強い。",
       "importantPoint": "1媒体・1ドメインで確認されたトピックです。",
       "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
       "category": "sports",
       "categories": [
         "sports",
-        "entertainment",
+        "net-culture",
+        "games",
+        "sns",
         "general"
       ],
       "categoryLabel": "スポーツ",
       "categoryLabels": [
         "スポーツ",
-        "エンタメ"
+        "ネットカルチャー",
+        "ゲーム",
+        "その他",
+        "その他"
       ],
-      "thumbnailUrl": "https://imgu.web.nhk/news/u/news/html/20260716/K10015177261_2607160714_0716073006_01_02.jpg",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1754608.jpg",
       "sourceSignals": [
         {
-          "sourceId": "nhk-top",
-          "source": "NHK RSS",
-          "sourceName": "NHK",
-          "sourceGroup": "important-news",
-          "sourcePriority": 92,
-          "official": true,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "W杯 アルゼンチン 2大会連続決勝へ メッシ2アシスト【速報中】",
-          "url": "http://www3.nhk.or.jp/news/html/20260716/k10015177261000.html",
-          "canonicalUrl": "http://www3.nhk.or.jp/news/html/20260716/k10015177261000.html",
-          "publishedAt": "2026-07-15T22:35:16.000Z",
-          "publishedLabel": "7/15 22:35",
-          "thumbnailUrl": "https://imgu.web.nhk/news/u/news/html/20260716/K10015177261_2607160714_0716073006_01_02.jpg",
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch",
+            "pokemon"
+          ],
+          "title": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任でも話題、約6か月で幕",
+          "url": "https://www.inside-games.jp/article/2026/07/15/184569.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/07/15/184569.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1754608.jpg",
           "briefSummary": "",
-          "summary": "",
-          "thumbnail": "https://imgu.web.nhk/news/u/news/html/20260716/K10015177261_2607160714_0716073006_01_02.jpg"
+          "summary": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任でも話題、約6か月で幕 インサイド"
         }
       ],
-      "hotScore": 70.8,
+      "hotScore": 69.4,
       "posts": "1",
       "metricLabel": "signals",
-      "time": "1時間以内",
-      "publishedAt": "2026-07-15T22:35:16.000Z",
-      "buzzScore": 70.8,
+      "time": "直近",
+      "publishedAt": "2026-07-15T23:33:12.903Z",
+      "buzzScore": 69.4,
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18.5,
+        "trend": 21.1,
         "internetNativeBoost": 8,
-        "search": 10.9,
-        "social": 4.6,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 4.5,
-        "categoryBias": 9,
+        "search": 4.8,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 17,
         "penalty": -3
       },
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "公式または一次情報を含む"
+        "既存トレンド指標でも反応が強い"
       ],
       "rank": 2,
       "summaryPayload": {
-        "headline": "W杯 アルゼンチン 2大会連続決勝へ メッシ2アシスト【速報中】",
-        "whatHappened": "W杯 アルゼンチン 2大会連続決勝へ メッシ2アシスト【速報中】",
-        "whyBuzzing": "直近数時間で関連記事が増加。",
+        "headline": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任でも話題、約6か月で幕",
+        "whatHappened": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任…",
+        "whyBuzzing": "既存トレンド指標でも反応が強い。",
         "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
         "keyPoints": [
           "1媒体・1ドメインで確認されたトピックです。",
-          "最新更新は2026/7/15 22:35:16です。",
-          "一次情報を含むため、事実確認の軸を置きやすい話題です。"
+          "最新更新は2026/7/15 23:33:12です。",
+          "現時点では報道の出そろい方と勢いを優先して選出しています。"
         ],
         "watchpoints": [
           "続報で事実関係や影響範囲が更新される可能性があります。",
           "一次情報や公式コメントが追加されたら優先して確認してください。"
         ],
-        "threeMinuteSummary": "W杯 アルゼンチン 2大会連続決勝へ メッシ2アシスト【速報中】 直近数時間で関連記事が増加。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
+        "threeMinuteSummary": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任… 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
       },
       "representativeArticles": [
         {
-          "title": "W杯 アルゼンチン 2大会連続決勝へ メッシ2アシスト【速報中】",
-          "url": "http://www3.nhk.or.jp/news/html/20260716/k10015177261000.html",
-          "sourceName": "NHK",
-          "publishedAt": "2026-07-15T22:35:16.000Z"
+          "title": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任でも話題、約6か月で幕",
+          "url": "https://www.inside-games.jp/article/2026/07/15/184569.html",
+          "sourceName": "INSIDE",
+          "publishedAt": null
         }
       ],
       "externalSignals": {
-        "query": "W杯 アルゼンチン 2大会連続決勝へ メッシ2アシスト 速報中",
+        "query": "新たな国産SNS POPOPO 9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任でも話題、約6か月で幕",
         "search": {
-          "count": 41,
-          "score": 68.33333333333333,
+          "count": 3,
+          "score": 5,
           "available": true
         },
         "reddit": {
@@ -294,7 +300,7 @@
         ]
       },
       "externalSignalStats": {
-        "searchScore": 68.33333333333333,
+        "searchScore": 5,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -307,17 +313,17 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 33.3,
-        "internalSocialScore": 35.7
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 96,
+        "internalSearchScore": 37.5,
+        "internalSocialScore": 57.7
       },
       "clusterStats": {
         "articleCount": 1,
         "sourceCount": 1,
         "uniqueDomainCount": 1,
-        "officialSourceCount": 1,
-        "latestSourceCount1h": 1
+        "officialSourceCount": 0,
+        "latestSourceCount1h": 0
       }
     },
     {
@@ -373,7 +379,7 @@
       "posts": "1",
       "metricLabel": "signals",
       "time": "直近",
-      "publishedAt": "2026-07-15T22:32:47.774Z",
+      "publishedAt": "2026-07-15T23:33:12.903Z",
       "buzzScore": 66.1,
       "scoreBreakdown": {
         "coverage": 1.8,
@@ -399,7 +405,7 @@
         "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
         "keyPoints": [
           "1媒体・1ドメインで確認されたトピックです。",
-          "最新更新は2026/7/15 22:32:47です。",
+          "最新更新は2026/7/15 23:33:12です。",
           "現時点では報道の出そろい方と勢いを優先して選出しています。"
         ],
         "watchpoints": [
@@ -569,8 +575,8 @@
       "externalSignals": {
         "query": "ウッディやバズが400万円越えフィギュアに！ トイ・ストーリー のキャラクターを“再解釈”したグッズが発売",
         "search": {
-          "count": 10,
-          "score": 16.666666666666664,
+          "count": 11,
+          "score": 18.333333333333332,
           "available": true
         },
         "reddit": {
@@ -589,7 +595,7 @@
         ]
       },
       "externalSignalStats": {
-        "searchScore": 16.666666666666664,
+        "searchScore": 18.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -618,13 +624,13 @@
   ],
   "fallbackUsed": false,
   "debug": {
-    "generatedAt": "2026-07-15T23:33:13.133Z",
+    "generatedAt": "2026-07-16T01:01:49.785Z",
     "fallbackUsed": false,
-    "selectedClusterId": "today-cluster-511",
+    "selectedClusterId": "today-cluster-643",
     "selectedTitle": "「ちんすこう食べてくれん？」など10代女性に対し義務のないことを複数回要求した疑い　男子中学生（14）を逮捕【香川】",
     "candidates": [
       {
-        "clusterId": "today-cluster-511",
+        "clusterId": "today-cluster-643",
         "title": "「ちんすこう食べてくれん？」など10代女性に対し義務のないことを複数回要求した疑い　男子中学生（14）を逮捕【香川】",
         "category": "crime",
         "categories": [
@@ -634,8 +640,8 @@
           "net-culture",
           "general"
         ],
-        "buzzScore": 71.4,
-        "confidence": 0.42,
+        "buzzScore": 70.3,
+        "confidence": 0.41,
         "articleCount": 2,
         "sourceCount": 2,
         "uniqueDomainCount": 2,
@@ -648,16 +654,68 @@
           "sourceDiversity": 4.7,
           "trend": 19.6,
           "internetNativeBoost": 8,
-          "search": 10.1,
-          "social": 7.4,
+          "search": 10.7,
+          "social": 7.3,
           "velocity": 0,
-          "freshness": 8.5,
+          "freshness": 7,
           "authority": 2.5,
           "categoryBias": 7,
           "penalty": 0
         },
         "externalSignalStats": {
-          "searchScore": 63.33333333333333,
+          "searchScore": 66.66666666666666,
+          "socialScore": 0,
+          "searchAvailable": true,
+          "socialAvailable": false
+        },
+        "internalSignalStats": {
+          "browseMatchCount": 0,
+          "archiveMatchCount": 1,
+          "repeatedAppearanceScore": 5.1,
+          "crossCategoryScore": 100,
+          "archiveHeatScore": 89,
+          "internalSearchScore": 34.5,
+          "internalSocialScore": 57.3
+        },
+        "externalSignalErrors": [
+          "reddit:http 403 Blocked",
+          "bluesky:http 403 Forbidden"
+        ]
+      },
+      {
+        "clusterId": "today-cluster-153",
+        "title": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任でも話題、約6か月で幕",
+        "category": "sports",
+        "categories": [
+          "sports",
+          "net-culture",
+          "games",
+          "sns",
+          "general"
+        ],
+        "buzzScore": 69.4,
+        "confidence": 0.38,
+        "articleCount": 1,
+        "sourceCount": 1,
+        "uniqueDomainCount": 1,
+        "whyRanked": [
+          "既存トレンド指標でも反応が強い"
+        ],
+        "scoreBreakdown": {
+          "coverage": 1.8,
+          "sourceDiversity": 2.3,
+          "trend": 21.1,
+          "internetNativeBoost": 8,
+          "search": 4.8,
+          "social": 7.4,
+          "velocity": 0,
+          "freshness": 8.5,
+          "authority": 1.5,
+          "categoryBias": 17,
+          "penalty": -3
+        },
+        "externalSignalStats": {
+          "searchScore": 5,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -667,8 +725,8 @@
           "archiveMatchCount": 1,
           "repeatedAppearanceScore": 6,
           "crossCategoryScore": 100,
-          "archiveHeatScore": 89,
-          "internalSearchScore": 35.1,
+          "archiveHeatScore": 96,
+          "internalSearchScore": 37.5,
           "internalSocialScore": 57.7
         },
         "externalSignalErrors": [
@@ -677,60 +735,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-125",
-        "title": "W杯 アルゼンチン 2大会連続決勝へ メッシ2アシスト【速報中】",
-        "category": "sports",
-        "categories": [
-          "sports",
-          "entertainment",
-          "general"
-        ],
-        "buzzScore": 70.8,
-        "confidence": 0.41,
-        "articleCount": 1,
-        "sourceCount": 1,
-        "uniqueDomainCount": 1,
-        "whyRanked": [
-          "直近数時間で関連記事が増加",
-          "既存トレンド指標でも反応が強い",
-          "検索面でも関連話題の広がりを確認",
-          "公式または一次情報を含む"
-        ],
-        "scoreBreakdown": {
-          "coverage": 1.8,
-          "sourceDiversity": 2.3,
-          "trend": 18.5,
-          "internetNativeBoost": 8,
-          "search": 10.9,
-          "social": 4.6,
-          "velocity": 4.2,
-          "freshness": 10,
-          "authority": 4.5,
-          "categoryBias": 9,
-          "penalty": -3
-        },
-        "externalSignalStats": {
-          "searchScore": 68.33333333333333,
-          "socialScore": 0,
-          "searchAvailable": true,
-          "socialAvailable": false
-        },
-        "internalSignalStats": {
-          "browseMatchCount": 0,
-          "archiveMatchCount": 1,
-          "repeatedAppearanceScore": 6,
-          "crossCategoryScore": 60,
-          "archiveHeatScore": 84,
-          "internalSearchScore": 33.3,
-          "internalSocialScore": 35.7
-        },
-        "externalSignalErrors": [
-          "reddit:http 403 Blocked",
-          "bluesky:http 403 Forbidden"
-        ]
-      },
-      {
-        "clusterId": "today-cluster-154",
+        "clusterId": "today-cluster-147",
         "title": "【無料公開】バズりまくった「ペットカードジェネレーター」パワーアップ版『うちの子カード伝説』登場！ペット写真をカード化＆レイドバトルできる、野田クリスタル考案サービス",
         "category": "games",
         "categories": [
@@ -781,7 +786,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-689",
+        "clusterId": "today-cluster-836",
         "title": "ウッディやバズが400万円越えフィギュアに！「トイ・ストーリー」のキャラクターを“再解釈”したグッズが発売",
         "category": "anime",
         "categories": [
@@ -814,7 +819,7 @@
           "penalty": -3
         },
         "externalSignalStats": {
-          "searchScore": 16.666666666666664,
+          "searchScore": 18.333333333333332,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -835,11 +840,11 @@
       },
       {
         "clusterId": "today-cluster-152",
-        "title": "新たな国産SNS「POPOPO」9月17日にサービス終了へ―取締役に西村博之、庵野秀明ら就任でも話題、約6か月で幕",
-        "category": "net-culture",
+        "title": "「漫画界のオールスターやん！！」「エグすぎる、、、」漫画家・森田まさのりのX投稿に衝撃！食事会のメンツが豪華すぎると話題",
+        "category": "manga",
         "categories": [
-          "net-culture",
-          "games",
+          "manga",
+          "entertainment",
           "sns",
           "general"
         ],
@@ -865,7 +870,7 @@
           "penalty": -3
         },
         "externalSignalStats": {
-          "searchScore": 5,
+          "searchScore": 1.6666666666666667,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -895,6 +900,6 @@
       "reddit:http 403 Blocked",
       "bluesky:http 403 Forbidden"
     ],
-    "confidence": 0.42
+    "confidence": 0.41
   }
 }

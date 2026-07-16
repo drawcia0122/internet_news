@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-07-15T23:33:12.903Z",
+  "generatedAt": "2026-07-16T01:01:49.557Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
     "general": 0,
     "tech": 11,
-    "business": 4,
+    "business": 5,
     "politics": 1,
-    "entertainment": 73,
+    "entertainment": 72,
     "anime": 20,
-    "games": 159,
+    "games": 157,
     "game-features": 4,
     "anime-features": 0,
-    "manga": 42,
+    "manga": 43,
     "books": 0,
     "sports": 2,
-    "net-culture": 3,
+    "net-culture": 2,
     "matome": 0,
     "crime": 0,
     "adult": 1,
@@ -25,9 +25,60 @@
   "nextPage": 2,
   "items": [
     {
+      "id": "auto-business-日経平均-一時2000円超の値下がり-news.yahoo.co.jp/pickup/6588121",
+      "title": "日経平均 一時2000円超の値下がり",
+      "summary": "きょうの東京株式市場は取り引き開始直後から売り注文が膨らみ、日経平均株価は一時、2000円以上値下がりしました。 15日のニューヨーク市場で半導体関連銘柄が値下がりしたことを受け、東京市場でも取り",
+      "briefSummary": "きょうの東京株式市場は取り引き開始直後から売り注文が膨らみ、日経平均株価は一時、2000円以上値下がりしました。 15日のニューヨーク市場で半導体関連銘柄が値下がりしたことを受け、東京市場でも取り",
+      "category": "business",
+      "categories": [
+        "business",
+        "general"
+      ],
+      "categoryLabel": "経済",
+      "categoryLabels": [
+        "経済",
+        "その他"
+      ],
+      "score": 93,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://news.yahoo.co.jp/articles/2c8a754a0c61b9a37bbfa147576e7523eff48771/images/000",
+      "publishedAt": "2026-07-16T01:02:44.000Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
+      "time": "1時間以内",
+      "sourceName": "Yahoo!ニュース / 経済",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6588121?source=rss",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-business",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 経済",
+          "sourceGroup": "important-news",
+          "sourcePriority": 78,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "日経平均 一時2000円超の値下がり",
+          "url": "https://news.yahoo.co.jp/pickup/6588121?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6588121?source=rss",
+          "publishedAt": "2026-07-16T01:02:44.000Z",
+          "publishedLabel": "7/16 01:02",
+          "thumbnailUrl": "https://news.yahoo.co.jp/articles/2c8a754a0c61b9a37bbfa147576e7523eff48771/images/000"
+        }
+      ],
+      "whatHappened": "日経平均 一時2000円超の値下がり",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": []
+    },
+    {
       "id": "auto-games-スイッチ2版-ワンス・アポン・ア・塊魂-10月8日発売決定-追加dlc-ローリングライブハイライツ-も全機種で配信へ-gamespark.jp/article/2026/07/15/169302.html",
       "title": "スイッチ2版『ワンス・アポン・ア・塊魂』10月8日発売決定！追加DLC「ローリングライブハイライツ」も全機種で配信へ",
-      "summary": "アルゼンチン決勝進出 メッシが決勝アシスト 逆転ゴールのラウタロ・マルティネスは涙「このゴールを夢見てきた」",
+      "summary": "「恥を知れ！」大谷翔平の球宴欠場に米司会が激怒 「申し訳ない」と猛省の本人に飛んだいわれなき批判「たった1打席だけでも立つ責任があった」",
       "briefSummary": "『ワンス・アポン・ア・塊魂』は2025年に発売された『塊魂』シリーズ14年ぶりの最新作です。ニンテンドースイッチ2版では、マウス操作の追加やフレームレート・解像度の向上が図られています。",
       "category": "games",
       "categories": [
@@ -45,7 +96,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159548.png",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169302.html",
@@ -86,10 +137,10 @@
       ]
     },
     {
-      "id": "auto-games-空の軌跡-を遊ぶのは-今-がベスト-暑い夏-涼しい部屋の中で-青い空-が似合う大冒険へ-最安値でセール中の-the-1st-から新作-空の軌跡-the-2nd--gamespark.jp/article/2026/07/15/169269.html",
-      "title": "『空の軌跡』を遊ぶのは「今」がベスト！暑い夏、涼しい部屋の中で“青い空”が似合う大冒険へ―最安値でセール中の『the 1st』から新作『空の軌跡 the 2nd』まで駆け抜けよう",
-      "summary": "「 『空の軌跡』を遊ぶのは「今」がベスト！暑い夏、涼しい部屋の中で“青い空”が似合う大冒険へ―最安値でセール中の『the 1st』から新作『空の軌跡 the 2nd』まで駆け抜けよう 」に一致する記事は見つかりませんでした。",
-      "briefSummary": "「 『空の軌跡』を遊ぶのは「今」がベスト！暑い夏、涼しい部屋の中で“青い空”が似合う大冒険へ―最安値でセール中の『the 1st』から新作『空の軌跡 the 2nd』まで駆け抜けよう 」に一致する記事は見つかりませんでした。",
+      "id": "auto-games-龍が如く-極-龍が如く-外伝-dark-ties-ソニックレーシング-クロスワールド-などをラインナップ-セガ-ps-switchタイトルのセールを実施中-4gamer.net/games/947/g094763/20260715046",
+      "title": "「龍が如く 極３ / 龍が如く３外伝 Dark Ties」「ソニックレーシング クロスワールド」などをラインナップ。セガ，PS，Switchタイトルのセールを実施中",
+      "summary": "「 「龍が如く 極３ / 龍が如く３外伝 Dark Ties」「ソニックレーシング クロスワールド」などをラインナップ。セガ，PS，Switchタイトルのセールを実施中 」に一致する記事は見つかりませんでした。",
+      "briefSummary": "「 「龍が如く 極３ / 龍が如く３外伝 Dark Ties」「ソニックレーシング クロスワールド」などをラインナップ。セガ，PS，Switchタイトルのセールを実施中 」に一致する記事は見つかりませんでした。",
       "category": "games",
       "categories": [
         "games",
@@ -102,40 +153,41 @@
       "score": 102,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1157431.jpg",
+      "thumbnailUrl": "https://www.4gamer.net/games/947/G094763/20260715046/SS/009.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169269.html",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/947/G094763/20260715046/",
       "hotReasons": [
         "一般ユーザーの関心が集まりやすいテーマです。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
           "sourceGroup": "games",
-          "sourcePriority": 92,
+          "sourcePriority": 94,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
             "pc",
-            "console"
+            "console",
+            "steam"
           ],
-          "title": "『空の軌跡』を遊ぶのは「今」がベスト！暑い夏、涼しい部屋の中で“青い空”が似合う大冒険へ―最安値でセール中の『the 1st』から新作『空の軌跡 the 2nd』まで駆け抜けよう",
-          "url": "http://www.gamespark.jp/article/2026/07/15/169269.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/15/169269.html",
+          "title": "「龍が如く 極３ / 龍が如く３外伝 Dark Ties」「ソニックレーシング クロスワールド」などをラインナップ。セガ，PS，Switchタイトルのセールを実施中",
+          "url": "https://www.4gamer.net/games/947/G094763/20260715046/",
+          "canonicalUrl": "https://www.4gamer.net/games/947/G094763/20260715046/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1157431.jpg"
+          "thumbnailUrl": "https://www.4gamer.net/games/947/G094763/20260715046/SS/009.jpg"
         }
       ],
-      "whatHappened": "『空の軌跡』を遊ぶのは「今」がベスト",
+      "whatHappened": "「龍が如く 極３ / 龍が如く３外伝 Dark Ties」「ソニックレーシング クロスワール…",
       "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
       "importantPoint": "終了前の条件確認や購入判断に直結しやすい情報です。",
       "targetAudience": [
@@ -163,7 +215,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/461/G046174/20260714031/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/461/G046174/20260714031/",
@@ -224,7 +276,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159400.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169284.html",
@@ -282,7 +334,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/521/G052100/20260715037/SS/002.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/521/G052100/20260715037/",
@@ -342,7 +394,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/820/G082044/20260715018/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/820/G082044/20260715018/",
@@ -386,8 +438,8 @@
     {
       "id": "auto-games-期間限定2割引-dlc無料-4人協力ラヴクラフト系脱出ホラー-the-mound-omen-of-cthulhu-日本語対応で発売-gamespark.jp/article/2026/07/16/169317.html",
       "title": "【期間限定2割引＆DLC無料】4人協力ラヴクラフト系脱出ホラー『The Mound: Omen of Cthulhu』日本語対応で発売",
-      "summary": "パブリッシャーNaconは、『Zeno Clash』や『Rock of Ages』シリーズで知られるデベロッパーACE Team開発のア…",
-      "briefSummary": "【期間限定2割引＆DLC無料】4人協力ラヴクラフト系脱出ホラー『The Mound: Omen of Cthulhu』日本語対応で発売（Game*Spark）パブリッシャーNaconは、『Zeno Clash』や『Rock of Ages』シリーズで知られるデベロッパーACE Team開発のアクションアドベンチャ…",
+      "summary": "「恥を知れ！」大谷翔平の球宴欠場に米司会が激怒 「申し訳ない」と猛省の本人に飛んだいわれなき批判「たった1打席だけでも立つ責任があった」",
+      "briefSummary": "本作は、アメリカの著名な小説家H.P.ラヴクラフトがゴーストライターとして著したといわれる、「墳丘の怪（The Mound）」にゆるく影響を受けて制作されたとのこと。この著作では、幽霊が出るとされる丘が、実は人知を超えた恐怖の地下世界に繋がっていたという物語が描かれているとされています。",
       "category": "games",
       "categories": [
         "games",
@@ -400,9 +452,9 @@
       "score": 102,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://img.topics.smt.news.goo.ne.jp/picture/gamespark/m_gamespark-169317.jpg",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159633.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/16/169317.html",
@@ -429,7 +481,7 @@
           "canonicalUrl": "http://www.gamespark.jp/article/2026/07/16/169317.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://img.topics.smt.news.goo.ne.jp/picture/gamespark/m_gamespark-169317.jpg"
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159633.jpg"
         }
       ],
       "whatHappened": "4人協力ラヴクラフト系脱出ホラー『The Mound: Omen of Cthulhu』日本…",
@@ -460,7 +512,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/991/G999105/20260715036/SS/014.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/991/G999105/20260715036/",
@@ -503,7 +555,7 @@
     {
       "id": "auto-tech-日本一ソフトウェアがプロジェクトネーム-プリニーすごろく-正式発表-7月16日に公式番組-ゆるっと日本一2-の緊急生配信が決定-gamespark.jp/article/2026/07/15/169290.html",
       "title": "日本一ソフトウェアがプロジェクトネーム『プリニーすごろく』正式発表―7月16日に公式番組「ゆるっと日本一2」の緊急生配信が決定",
-      "summary": "アルゼンチン決勝進出 メッシが決勝アシスト 逆転ゴールのラウタロ・マルティネスは涙「このゴールを夢見てきた」",
+      "summary": "「恥を知れ！」大谷翔平の球宴欠場に米司会が激怒 「申し訳ない」と猛省の本人に飛んだいわれなき批判「たった1打席だけでも立つ責任があった」",
       "briefSummary": "今回の緊急生放送は、2026年7月15日17時に公開されたティザー動画を受けて、プロジェクトネーム『プリニーすごろく』が紹介されるというもの。配信時間は1～2時間程度を予定しています。",
       "category": "tech",
       "categories": [
@@ -523,7 +575,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159433.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169290.html",
@@ -564,9 +616,68 @@
       ]
     },
     {
+      "id": "auto-games-7-678円-3-071円-ペルソナ-リロード-過去再安価-psストアで60-オフ-gamespark.jp/article/2026/07/15/169283.html",
+      "title": "【7,678円→3,071円】『ペルソナ３ リロード』過去再安価！PSストアで60%オフ",
+      "summary": "「恥を知れ！」大谷翔平の球宴欠場に米司会が激怒 「申し訳ない」と猛省の本人に飛んだいわれなき批判「たった1打席だけでも立つ責任があった」",
+      "briefSummary": "アトラスは、本日7月15日より『 ペルソナ３ リロード 』をPSストアにて過去最安価となる60％オフでセール中です。そのほかのアトラスタイトルもPSストア/ニンテンドーストアにてセール対象となっています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 100,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159390.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-16T01:01:49.557Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169283.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "【7,678円→3,071円】『ペルソナ３ リロード』過去再安価！PSストアで60%オフ",
+          "url": "http://www.gamespark.jp/article/2026/07/15/169283.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/15/169283.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159390.jpg"
+        }
+      ],
+      "whatHappened": "『ペルソナ３ リロード』過去再安価",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ポケモンユーザー",
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
       "id": "auto-games-あちこちにアニモが-bw2026-に出展の新作アクションrpg-アニモ-aniimo-ブースは-可愛いがいたるところに溢れていた-ブース-試遊プレイレポ-gamespark.jp/article/2026/07/15/169299.html",
       "title": "あちこちにアニモが…！「BW2026」に出展の新作アクションRPG『アニモ（Aniimo）』ブースは、可愛いがいたるところに溢れていた【ブース&試遊プレイレポ】",
-      "summary": "アルゼンチン決勝進出 メッシが決勝アシスト 逆転ゴールのラウタロ・マルティネスは涙「このゴールを夢見てきた」",
+      "summary": "「恥を知れ！」大谷翔平の球宴欠場に米司会が激怒 「申し訳ない」と猛省の本人に飛んだいわれなき批判「たった1打席だけでも立つ責任があった」",
       "briefSummary": "本イベントにて新作ゲーム『アニモ（Aniimo）』が出展していました。本作は、シンガポールのゲームパブリッシャー・PAWPRINTによる、アニモと呼ばれるモンスターをテーマにしたアクションRPG。可愛らしいアニモの収集のほかに特徴的なのが、本作のリンクシステム。プレイヤーキャラクターが編成に入れたアニモに「変身」することでアクションが大きく変化し、アニモごと…",
       "category": "games",
       "categories": [
@@ -582,7 +693,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159492.png",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169299.html",
@@ -625,7 +736,7 @@
     {
       "id": "auto-games-ウルトラマン-fe-新作が20年来ない-だから-ウルトラマン-のいる-gigabash-に飛びついた-巨大特撮スターもdlcで駆け付けた乱闘act-遊んでみたそ-gamespark.jp/article/2026/07/15/169291.html",
       "title": "『ウルトラマン FE』新作が20年来ない。だから「ウルトラマン」のいる『GigaBash』に飛びついた―巨大特撮スターもDLCで駆け付けた乱闘ACT、遊んでみたその結果は",
-      "summary": "アルゼンチン決勝進出 メッシが決勝アシスト 逆転ゴールのラウタロ・マルティネスは涙「このゴールを夢見てきた」",
+      "summary": "「恥を知れ！」大谷翔平の球宴欠場に米司会が激怒 「申し訳ない」と猛省の本人に飛んだいわれなき批判「たった1打席だけでも立つ責任があった」",
       "briefSummary": "そんななか、なんとマレーシアのインディーデベロッパーPassion Republic Gamesがやってくれました。同社が手掛ける、アリーナ型対戦アクション『GigaBash』に「ウルトラマン」らがDLCとして参戦したのです。さらに2026年7月10日には、「ウルトラマンゼロ」コラボDLCも発売されました。",
       "category": "games",
       "categories": [
@@ -641,7 +752,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159272.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169291.html",
@@ -682,9 +793,76 @@
       ]
     },
     {
+      "id": "auto-sns-インストーラーをdlしてディスクに保存すれば-それは永遠にあなたのもの-drmフリーを掲げる販売プラットフォームgogが言及-オリジナルのパケ版を作る人も-gamespark.jp/article/2026/07/15/169274.html",
+      "title": "「インストーラーをDLしてディスクに保存すれば、それは永遠にあなたのもの」DRMフリーを掲げる販売プラットフォームGOGが言及―オリジナルのパケ版を作る人も",
+      "summary": "",
+      "briefSummary": "PCゲームプラットフォームのGOG.comの、“デジタルなゲームを物理的に保存する方法”についての発言がX上で注目を集めています。また、GOGは「ゲームを永遠に残す」というポリシーを掲げています。 「あなたが買ったゲームを遊ぶのに、ストアの…",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "games",
+        "net-culture",
+        "general",
+        "sports"
+      ],
+      "categoryLabel": "SNS",
+      "categoryLabels": [
+        "その他",
+        "ゲーム",
+        "ネットカルチャー",
+        "その他",
+        "スポーツ"
+      ],
+      "score": 100,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159204.png",
+      "publishedAt": null,
+      "capturedAt": "2026-07-16T01:01:49.557Z",
+      "time": "直近",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://www.gamespark.jp/article/2026/07/15/169274.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "SNSやネット上で反応が広がりやすい話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "「インストーラーをDLしてディスクに保存すれば、それは永遠にあなたのもの」DRMフリーを掲げる販売プラットフォームGOGが言及―オリジナルのパケ版を作る人も",
+          "url": "https://www.gamespark.jp/article/2026/07/15/169274.html",
+          "canonicalUrl": "https://www.gamespark.jp/article/2026/07/15/169274.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「インストーラーをDLしてディスクに保存すれば、それは永遠にあなたのもの」DRMフリーを掲げ…",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き",
+        "ネット文化を追う人"
+      ]
+    },
+    {
       "id": "auto-games-ゼノブレイドクロス-de-パッケージ等のコンテンツディスクリプターアイコンに誤表記-任天堂が謝罪-gamespark.jp/article/2026/07/15/169297.html",
       "title": "『ゼノブレイドクロス DE』パッケージ等のコンテンツディスクリプターアイコンに誤表記―任天堂が謝罪",
-      "summary": "アルゼンチン決勝進出 メッシが決勝アシスト 逆転ゴールのラウタロ・マルティネスは涙「このゴールを夢見てきた」",
+      "summary": "「恥を知れ！」大谷翔平の球宴欠場に米司会が激怒 「申し訳ない」と猛省の本人に飛んだいわれなき批判「たった1打席だけでも立つ責任があった」",
       "briefSummary": "今回、誤表記が確認されたのは以下の製品です。 『ゼノブレイドクロス ディフィニティブエディション』 <img src='https://www.gamespark.jp/imgs/zoom/1159523.jpg' class='inline-article-image…",
       "category": "games",
       "categories": [
@@ -700,7 +878,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159523.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169297.html",
@@ -760,7 +938,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159377.png",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169293.html",
@@ -802,7 +980,7 @@
     {
       "id": "auto-games-ゾンビアポカリプス-ターン制rpgなサバイバルゲームが正式リリース-崩壊寸前シェルターを再建してゾンビ包囲戦を生き残る-採れたて-本日のsteam注目ゲーム7選-gamespark.jp/article/2026/07/15/169305.html",
       "title": "ゾンビアポカリプス×ターン制RPGなサバイバルゲームが正式リリース。崩壊寸前シェルターを再建してゾンビ包囲戦を生き残る―採れたて！本日のSteam注目ゲーム7選【2026年7月15日】",
-      "summary": "アルゼンチン決勝進出 メッシが決勝アシスト 逆転ゴールのラウタロ・マルティネスは涙「このゴールを夢見てきた」",
+      "summary": "「恥を知れ！」大谷翔平の球宴欠場に米司会が激怒 「申し訳ない」と猛省の本人に飛んだいわれなき批判「たった1打席だけでも立つ責任があった」",
       "briefSummary": "「恥を知れ！」大谷翔平の球宴欠場に米司会が激怒 「申し訳ない」と猛省の本人に飛んだいわれなき批判「たった1打席だけでも立つ責任があった」",
       "category": "games",
       "categories": [
@@ -818,7 +996,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159101.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169305.html",
@@ -858,72 +1036,6 @@
       ]
     },
     {
-      "id": "auto-entertainment-天は赤い河のほとり-ラスト5分にsns絶叫-新キャラ・ティトが-かわいい-から一転-ティトぉぉぉぉぉ-第2話ネタバレあり反応まとめ-animeanime.jp/article/2026/07/15/101075.html",
-      "title": "「天は赤い河のほとり」ラスト5分にSNS絶叫!!! 新キャラ・ティトが“かわいい！”から一転…「ティトぉぉぉぉぉ！」【第2話ネタバレあり反応まとめ】",
-      "summary": "アルゼンチン決勝進出 メッシが決勝アシスト 逆転ゴールのラウタロ・マルティネスは涙「このゴールを夢見てきた」",
-      "briefSummary": "「出会いのちゅーキタァァ！！！」「平成を感じる」…「天は赤い河のほとり」約30年の時を経たアニメ化にファン歓喜!!ロマンチックなキスシーンや突然のホラー展開にSNS大盛り上がり！【第1話ネタバレあり反応まとめ】",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "net-culture",
-        "anime",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画",
-        "ネットカルチャー",
-        "アニメ"
-      ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905013.png",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/07/15/101075.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "「天は赤い河のほとり」ラスト5分にSNS絶叫!!! 新キャラ・ティトが“かわいい！”から一転…「ティトぉぉぉぉぉ！」【第2話ネタバレあり反応まとめ】",
-          "url": "https://animeanime.jp/article/2026/07/15/101075.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/07/15/101075.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/905013.png"
-        }
-      ],
-      "whatHappened": "「天は赤い河のほとり」ラスト5分にSNS絶叫",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ガジェット好き",
-        "漫画・アニメ好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
       "id": "auto-games-失敗すなわち死亡-buckshot-roulette-開発者が手がけるマルチプレイパーティゲーム-machine-party-steamにて7月30日発売-gamespark.jp/article/2026/07/16/169312.html",
       "title": "失敗すなわち死亡！『Buckshot Roulette』開発者が手がけるマルチプレイパーティゲーム『Machine Party』Steamにて7月30日発売",
       "summary": "Oro Interactiveは2026年7月16日、 『Buckshot Roulette』 で知られるMike Klubnika氏、そして実験的なピクセルアートやローポリ3Dゲームを多く手がけるGDeavid氏が開発を手がけるパーティゲーム 『Machine Party』 を<a target=…",
@@ -942,7 +1054,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159446.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/16/169312.html",
@@ -982,72 +1094,9 @@
       ]
     },
     {
-      "id": "auto-games-無料公開-バズりまくった-ペットカードジェネレーター-パワーアップ版-うちの子カード伝説-登場-ペット写真をカード化-レイドバトルできる-野田クリスタル考案サー-gamespark.jp/article/2026/07/15/169287.html",
-      "title": "【無料公開】バズりまくった「ペットカードジェネレーター」パワーアップ版『うちの子カード伝説』登場！ペット写真をカード化＆レイドバトルできる、野田クリスタル考案サービス",
-      "summary": "アルゼンチン決勝進出 メッシが決勝アシスト 逆転ゴールのラウタロ・マルティネスは涙「このゴールを夢見てきた」",
-      "briefSummary": "『うちの子カード伝説』 は、GoogleのAI「Gemini」を活用し、2025年に公開され1日で130万アクセスを記録した野田クリスタルさん考案によるサービス 「ペットカードジェネレーター」 をパワーアップしたものです。",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159393.webp",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169287.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "【無料公開】バズりまくった「ペットカードジェネレーター」パワーアップ版『うちの子カード伝説』登場！ペット写真をカード化＆レイドバトルできる、野田クリスタル考案サービス",
-          "url": "http://www.gamespark.jp/article/2026/07/15/169287.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/15/169287.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159393.webp"
-        }
-      ],
-      "whatHappened": "バズりまくった「ペットカードジェネレーター」パワーアップ版『うちの子カード伝説』登場",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
       "id": "auto-games-検品ホラー-検品作業-steamにてリリース-ミスを犯せば-よくないことが起こる-gamespark.jp/article/2026/07/15/169304.html",
       "title": "検品ホラー『検品作業』Steamにてリリース―ミスを犯せば“よくないことが起こる”",
-      "summary": "アルゼンチン決勝進出 メッシが決勝アシスト 逆転ゴールのラウタロ・マルティネスは涙「このゴールを夢見てきた」",
+      "summary": "「恥を知れ！」大谷翔平の球宴欠場に米司会が激怒 「申し訳ない」と猛省の本人に飛んだいわれなき批判「たった1打席だけでも立つ責任があった」",
       "briefSummary": "「恥を知れ！」大谷翔平の球宴欠場に米司会が激怒 「申し訳ない」と猛省の本人に飛んだいわれなき批判「たった1打席だけでも立つ責任があった」",
       "category": "games",
       "categories": [
@@ -1063,7 +1112,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159568.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/15/169304.html",
@@ -1103,66 +1152,6 @@
       ]
     },
     {
-      "id": "auto-games-rise-of-the-ronin-登場-アバター-フロンティア・オブ・パンドラ-ファイアファイティングシミュレ一タ一-イグナイト-も配信される2026年7月度-gamespark.jp/article/2026/07/16/169315.html",
-      "title": "『Rise of the Ronin』登場！『アバター：フロンティア・オブ・パンドラ』『ファイアファイティングシミュレ一タ一　イグナイト』も配信される2026年7月度PS Plus「ゲームカタログ」ラインナップ",
-      "summary": "ソニー・インタラクティブエンタテインメントは、2026年7月より追加される「 ゲームカタログ 」のタイトルを公開しました。今回は『Rise of the Ronin』や『アバター：フロンティア・オブ・パンドラ』『ファイアファイティングシミュレ一タ一 イグナイト（Firefighting Simula…",
-      "briefSummary": "同じく2026年7月21日からは、アメリカ中西部の広大な都市の消防士となり、限界までスキルを要求するあらゆるミッションをこなす『ファイアファイティングシミュレ一タ一 イグナイト』も配信されます。3名のフレンドと直感的な協力プレイが楽しめるマルチプレイヤーモードも搭載。炎、熱、煙はすべて、物理演算およびグラフィックシステムによってリアルタイムでシミュレーション…",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159651.webp",
-      "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/07/16/169315.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "『Rise of the Ronin』登場！『アバター：フロンティア・オブ・パンドラ』『ファイアファイティングシミュレ一タ一　イグナイト』も配信される2026年7月度PS Plus「ゲームカタログ」ラインナップ",
-          "url": "http://www.gamespark.jp/article/2026/07/16/169315.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/16/169315.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1159651.webp"
-        }
-      ],
-      "whatHappened": "『Rise of the Ronin』登場",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
       "id": "auto-anime-夏アニメ-スーパーの裏でヤニ吸うふたり-佐-木は田山から-あること-を伝授され-第2話先行カット-animeanime.jp/article/2026/07/16/101105.html",
       "title": "夏アニメ「スーパーの裏でヤニ吸うふたり」佐々木は田山から“あること”を伝授され…第2話先行カット",
       "summary": "夏アニメ『スーパーの裏でヤニ吸うふたり』より、2026年7月16日（木）から放送開始となる2本目（第2話）「スーパーの裏で添えるふたり」のあらすじと先行場面カットが公開された。",
@@ -1185,7 +1174,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/904917.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-15T23:33:12.903Z",
+      "capturedAt": "2026-07-16T01:01:49.557Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/07/16/101105.html",

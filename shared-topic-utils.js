@@ -53,9 +53,7 @@
     if (category === 'anime') return 'アニメ';
     if (category === 'games') return 'ゲーム';
     if (category === 'game-features') return 'ゲーム特集';
-    if (category === 'anime') return 'アニメ';
     if (category === 'anime-features') return 'アニメ特集';
-    if (category === 'game-features') return 'ゲーム特集';
     if (category === 'manga') return '漫画';
     if (category === 'books') return '本';
     if (category === 'sports') return 'スポーツ';
@@ -128,9 +126,7 @@
     if (category === 'anime') return 'アニメ 新作 放送日 PV キービジュアル キャスト 話題';
     if (category === 'games') return 'ゲーム 任天堂 Switch PS5 Steam eスポーツ 話題';
     if (category === 'game-features') return 'ゲーム インタビュー コラム プレイレポート レビュー 開発秘話';
-    if (category === 'anime') return 'アニメ 新作 続編 PV キービジュアル キャスト 放送日';
     if (category === 'anime-features') return 'アニメ インタビュー 制作秘話 コラム レビュー 特集';
-    if (category === 'game-features') return 'ゲーム インタビュー コラム レビュー プレイレポート 開発秘話';
     if (category === 'manga') return '漫画 マンガ コミック 新刊 連載 話題';
     if (category === 'books') return '本 書籍 小説 文庫 出版 話題';
     if (category === 'sports') return 'スポーツ 試合 結果 移籍 大会';
@@ -547,49 +543,5 @@
     pickCardImageUrl,
     shortEventFromTitle,
     topicText,
-  };
-})();
-(function () {
-  categoryLabelFor = function (category) {
-    if (category === 'general') return 'その他';
-    if (category === 'tech') return 'テック';
-    if (category === 'business') return '経済';
-    if (category === 'politics') return '政治';
-    if (category === 'entertainment') return 'エンタメ';
-    if (category === 'games') return 'ゲーム';
-    if (category === 'game-features') return 'ゲーム特集';
-    if (category === 'anime') return 'アニメ';
-    if (category === 'anime-features') return 'アニメ特集';
-    if (category === 'manga') return '漫画';
-    if (category === 'books') return '本';
-    if (category === 'sports') return 'スポーツ';
-    if (category === 'sns') return 'SNS';
-    if (category === 'net-culture') return 'ネットカルチャー';
-    if (category === 'matome') return '2chまとめ系';
-    if (category === 'crime') return '犯罪・事件';
-    if (category === 'adult') return 'アダルト系';
-    if (category === 'world') return '国際';
-    return '総合';
-  };
-
-  defaultSearchQueryForCategory = function (category) {
-    if (category === 'tech') return 'テクノロジー 生成AI 新製品 アップデート';
-    if (category === 'business') return '経済 企業 決算 投資 市況';
-    if (category === 'politics') return '政治 国会 首相 選挙 与党 野党';
-    if (category === 'entertainment') return 'エンタメ 映画 音楽 配信 話題';
-    if (category === 'games') return 'ゲーム 任天堂 Switch PS5 Steam eスポーツ 話題';
-    if (category === 'game-features') return 'ゲーム インタビュー コラム プレイレポート レビュー 開発秘話';
-    if (category === 'anime') return 'アニメ 新作 続編 PV キービジュアル キャスト 放送日';
-    if (category === 'anime-features') return 'アニメ インタビュー 制作秘話 コラム レビュー 特集';
-    if (category === 'manga') return '漫画 マンガ コミック 新刊 連載 話題';
-    if (category === 'books') return '本 書籍 小説 文庫 出版 話題';
-    if (category === 'sports') return 'スポーツ 試合 結果 移籍 大会';
-    if (category === 'sns') return 'X Twitter Bluesky Reddit SNSで話題 バズ投稿';
-    if (category === 'net-culture') return 'ネットカルチャー SNS バズ 炎上';
-    if (category === 'matome') return '2ch 5ch まとめサイト バズ';
-    if (category === 'crime') return '事件 逮捕 送検 詐欺 強盗 裁判';
-    if (category === 'adult') return 'グラビア セクシー女優 アダルト 話題';
-    if (category === 'world') return '国際 海外 政治 外交 戦況';
-    return '主要ニュース 速報 話題';
   };
 })();

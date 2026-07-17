@@ -136,17 +136,6 @@
     }).format(date);
   }
 
-  function formatRelativeTime(value) {
-    const timestamp = new Date(value ?? '').getTime();
-    if (Number.isNaN(timestamp)) return '時刻不明';
-    const diffMinutes = Math.max(0, Math.round((Date.now() - timestamp) / (1000 * 60)));
-    if (diffMinutes < 60) return diffMinutes + '分前';
-    const diffHours = Math.floor(diffMinutes / 60);
-    if (diffHours < 24) return diffHours + '時間前';
-    const diffDays = Math.floor(diffHours / 24);
-    return diffDays + '日前';
-  }
-
   function sanitizeBriefSummaryText(value) {
     const text = String(value ?? '').trim();
     if (!text) return '';
@@ -169,7 +158,6 @@
     briefItemText,
     briefPublishedAt,
     formatBriefTimelineTime,
-    formatRelativeTime,
     sanitizeBriefSummaryText,
   };
 })(window);

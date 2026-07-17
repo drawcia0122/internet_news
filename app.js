@@ -50,9 +50,7 @@ const {
 } = window.HomeTopicSelectionUtils;
 const {
   selectTodayNews,
-  briefPublishedAt,
   formatBriefTimelineTime,
-  formatRelativeTime,
   sanitizeBriefSummaryText,
 } = window.HomeBriefUtils;
 const {
@@ -102,11 +100,8 @@ const todayNewsListElement = document.querySelector('#today-news-list');
 const topicChannelTabsElement = document.querySelector('#topic-channel-tabs');
 const topicChannelStageElement = document.querySelector('#topic-channel-stage');
 const topicChannelsSectionElement = document.querySelector('#topic-channels');
-const dailyBriefListElement = document.querySelector('#daily-brief-list');
 const mobileMenuButton = document.querySelector('#mobile-menu-button');
 const mobileNavDrawer = document.querySelector('#mobile-nav-drawer');
-const dailyBriefToggleButton = document.querySelector('#daily-brief-toggle');
-const dailyBriefBody = document.querySelector('#daily-brief-body');
 const trendSectionToggleButton = document.querySelector('#trend-section-toggle');
 const trendSectionBody = document.querySelector('#trend-section-body');
 const trendLoadMoreTopButton = document.querySelector('#trend-load-more-top');
@@ -195,7 +190,6 @@ setLatestTrendGeneratedAt(latestTrendGeneratedAt);
 updateLatestHomeGeneratedAt(latestTrendGeneratedAt);
 dailyBriefItems = briefCacheStore.load();
 eventItems = eventCacheStore.load();
-renderDailyBrief();
 renderFeaturedEvents();
 renderDiscoverySections();
 deferredTrendRendered = true;
@@ -314,7 +308,6 @@ async function loadDailyBrief() {
   }
 
   briefCacheStore.save(dailyBriefItems);
-  renderDailyBrief();
   recordPerfCount('after-brief');
 
   return {
@@ -1130,50 +1123,6 @@ function renderTopicClusterCard(topic, options = {}) {
 }
 
 
-function renderDailyBrief() {
-  console.time('home:render-brief');
-  if (!dailyBriefListElement) return;
-
-  if (!dailyBriefItems.length) {
-    dailyBriefListElement.innerHTML = '<article class="brief-timeline-item brief-timeline-item-empty"><strong>重要ニュースを整理中です</strong><p>要約データの生成が終わり次第ここに表示されます。</p></article>';
-    console.timeEnd('home:render-brief');
-    return;
-  }
-
-  const items = [...dailyBriefItems]
-    .slice(0, 10)
-    .sort((left, right) => briefPublishedAt(left) - briefPublishedAt(right));
-
-  const cards = items.map((item, index) => {
-    const thumbnail = item.thumbnailUrl ? buildTrendCardThumb(item.thumbnailUrl, renderHelperDeps) : '';
-    const primaryLink = item.primaryLink?.url
-      ? '<a class="brief-primary-link" href="' + escapeHtml(item.primaryLink.url) + '" target="_blank" rel="noreferrer">' + escapeHtml(item.primaryLink.label ?? '元記事') + ' ↗</a>'
-      : '<span class="brief-primary-link brief-primary-link-muted">リンクなし</span>';
-    const summary = sanitizeBriefSummaryText(item.thirtySecondSummary ?? item.watchpoints ?? '情報を整理中です。');
-    const timeLabel = item.publishedLabel ?? formatBriefTimelineTime(item.publishedAt);
-    const relativeLabel = formatRelativeTime(item.publishedAt);
-    const sourceLabel = item.primaryLink?.label ?? item.categoryLabel ?? 'ニュース';
-
-    return '<article class="brief-timeline-item" style="animation-delay:' + (index * 70) + 'ms">' +
-      '<div class="brief-timeline-dot" aria-hidden="true"></div>' +
-      '<div class="brief-timeline-content">' +
-      '<div class="brief-timeline-layout">' +
-      '<div class="brief-timeline-time"><time>' + escapeHtml(timeLabel || '時刻不明') + '</time><span>' + escapeHtml(item.categoryLabel ?? 'その他') + '</span></div>' +
-      thumbnail +
-      '<div class="brief-timeline-body">' +
-      '<h3>' + escapeHtml(item.title ?? 'ニュース') + '</h3>' +
-      '<p class="brief-timeline-summary">' + escapeHtml(summary) + '</p>' +
-      '<div class="brief-meta brief-meta-timeline"><span>' + escapeHtml(sourceLabel) + ' ・ ' + escapeHtml(relativeLabel) + '</span>' + primaryLink + '</div>' +
-      '</div>' +
-      '</div>' +
-      '</div>' +
-    '</article>';
-  });
-  replaceChildrenFromHtml(dailyBriefListElement, cards);
-  console.timeEnd('home:render-brief');
-}
-
-
 function renderAdultTrends(filter = 'all') {
   if (!adultTrendListElement) return;
   activeAdultFilter = filter;
@@ -1296,7 +1245,6 @@ function recordPerfCount(label) {
   perfMetrics.counts[label] = {
     priorityCards: document.querySelectorAll('.priority-card').length,
     eventCards: document.querySelectorAll('.event-card').length,
-    briefTimelineItems: document.querySelectorAll('.brief-timeline-item').length,
     trendCards: document.querySelectorAll('.trend-card').length,
     rankingItems: document.querySelectorAll('#ranking-battle-list li, #ranking-general-list li').length,
     hotItems: document.querySelectorAll('#hot-battle-keywords li, #hot-general-keywords li').length,
@@ -1614,15 +1562,6 @@ if (trendSectionToggleButton && trendSectionBody) {
     trendSectionToggleButton.setAttribute('aria-expanded', String(!isExpanded));
     trendSectionToggleButton.textContent = isExpanded ? '開く' : '畳む';
     trendSectionBody.hidden = isExpanded;
-  });
-}
-
-if (dailyBriefToggleButton && dailyBriefBody) {
-  dailyBriefToggleButton.addEventListener('click', () => {
-    const isExpanded = dailyBriefToggleButton.getAttribute('aria-expanded') !== 'false';
-    dailyBriefToggleButton.setAttribute('aria-expanded', String(!isExpanded));
-    dailyBriefToggleButton.textContent = isExpanded ? '開く' : '畳む';
-    dailyBriefBody.hidden = isExpanded;
   });
 }
 

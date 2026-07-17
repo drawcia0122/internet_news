@@ -11,7 +11,6 @@ const {
   formatDate,
   formatTopicDisplayTime,
   getPrimarySourceLabel,
-  getPrimarySourceUrl,
   hasCategory,
   hasVisibleSummary,
   normalizeTopic,

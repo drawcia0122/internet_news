@@ -22,9 +22,6 @@ const {
   getEventItemsForTab: getEventItemsForTabFromList,
   getTodayDate,
   isEventOngoing,
-  isEventClosingSoon,
-  isLongRunningEvent,
-  isCurrentMonthLimited,
   getEventDaysUntilEnd,
 } = window.HomeEventUtils;
 const {
@@ -42,25 +39,18 @@ const {
   shortEventFromTitle,
   buildWhyHotLabel,
   buildImportantPoint,
-  buildTargetAudience,
   hotTopicScore,
   trimMetaText,
   categoryShowcaseScore,
   isAdultContentTopic,
   isDoujinEventOnlyTopic,
-  isLowPriorityTopic,
-  topicRecencyScore,
   isTrendTopicFresh,
   isTrendTopicWithinDays,
   topicTimestamp,
   topicText,
-  personalSourceAffinityScore,
 } = window.HomeTopicSelectionUtils;
 const {
   selectTodayNews,
-  isAdultBriefItem,
-  todayNewsRank,
-  briefItemText,
   briefPublishedAt,
   formatBriefTimelineTime,
   formatRelativeTime,
@@ -130,9 +120,7 @@ const TREND_MIN_ITEMS = 8;
 const TREND_HOME_LIMIT = 20;
 const TREND_LOAD_MORE_STEP = 10;
 const PERSONAL_NEWS_LIMIT = 10;
-const MUST_READ_LIMIT = 10;
 const TODAY_NEWS_LIMIT = 10;
-const TOPIC_WORKING_SET_LIMIT = 96;
 const REFRESH_INTERVAL_MS = 30 * 60 * 1000;
 const ADULT_HOME_LIMIT = 20;
 const EVENT_TAB_DEFINITIONS = [

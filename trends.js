@@ -1,5 +1,4 @@
 const {
-  archiveTimestamp,
   buildImportantPoint,
   buildGoogleNewsUrl,
   buildTargetAudience,

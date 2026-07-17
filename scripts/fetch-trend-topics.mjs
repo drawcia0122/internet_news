@@ -1235,11 +1235,6 @@ function normalizeLegacyCategoryLabel(value, fallbackCategory) {
   return value ?? CATEGORY_LABELS[fallbackCategory] ?? "その他";
 }
 
-function normalizeCategory(category) {
-  if (category === "fun") return "general";
-  return category;
-}
-
 function selectCuratedTrendItems(items, maxItems, seedCandidates = items) {
   const seededMatome = seedCandidates
     .filter(isCuratableMatomeItem)

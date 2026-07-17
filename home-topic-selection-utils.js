@@ -159,14 +159,6 @@
     return japaneseCount >= Math.max(10, Math.floor(latinCount * 0.45));
   }
 
-  function isPersonalTopicCandidate(topic) {
-    const text = topicText(topic);
-    if (hasCategory(topic, 'games') || hasCategory(topic, 'game-features') || hasCategory(topic, 'anime') || hasCategory(topic, 'manga') || hasCategory(topic, 'entertainment') || hasCategory(topic, 'sns') || hasCategory(topic, 'net-culture') || hasCategory(topic, 'matome')) {
-      return true;
-    }
-    return /ポケモン|pokemon|任天堂|nintendo|switch|steam|漫画|マンガ|アニメ|声優|同人|脱出ゲーム|scrap|謎解き|イマーシブ|展示会|ポップアップ|コラボカフェ|セール|割引|無料配布|キャンペーン/.test(text);
-  }
-
   function isPersonalHardExcludedTopic(topic) {
     const text = topicText(topic);
     return /(中古品|メルカリ|ラクマ|paypayフリマ|ヤフオク|amazon整備済み品)/i.test(text)
@@ -183,24 +175,6 @@
     const text = topicText(topic);
     const matchedRules = PERSONAL_INTEREST_RULES.filter((rule) => rule.pattern.test(text));
     return matchedRules.length >= 2 || matchedRules.some((rule) => rule.score >= 40);
-  }
-
-  function isInternetMainTopic(topic) {
-    if (!topic || isAdultContentTopic(topic) || isLowPriorityTopic(topic)) return false;
-    const text = topicText(topic);
-    const hot = hotTopicScore(topic);
-    const primaryCategory = topic.category ?? topic.categories?.[0] ?? 'general';
-    const preferredCategory = ['games', 'game-features', 'anime', 'manga', 'entertainment', 'sns', 'net-culture', 'matome'].includes(primaryCategory);
-    const preferredKeywords = /ポケモン|pokemon|任天堂|nintendo|switch|steam|ゲーム|漫画|マンガ|アニメ|同人|コミケ|コラボカフェ|炎上|バズ|ミーム|トレンド入り|togetter|はてブ|セール|割引|無料配布|オタク|声優|配信者/.test(text);
-    const networkBuzz = /sns|xで話題|twitter|bluesky|reddit|炎上|バズ|ミーム|まとめ|ネットの反応|話題/.test(text)
-      || (Array.isArray(topic.hotReasons) && topic.hotReasons.some((reason) => /話題|拡散|複数媒体|専門媒体/.test(reason)));
-    const secondaryCategory = ['sports', 'crime', 'general'].includes(primaryCategory);
-    const lowPriorityDomain = /(政治|国会|選挙|与党|野党|経済|株価|決算|金利|国際|外交|戦況|ai|生成ai|openai|claude|gemini|個人開発|副業|収益化)/i.test(text);
-
-    if ((preferredCategory || preferredKeywords) && !lowPriorityDomain) return true;
-    if (networkBuzz && hot >= 54 && !lowPriorityDomain) return true;
-    if (secondaryCategory && networkBuzz && hot >= 60) return true;
-    return hot >= 90 && !/(地域おこし|観光協会|セミナー|説明会)/.test(text);
   }
 
   function internetTopicRank(topic) {
@@ -373,26 +347,6 @@
     return baseScore + freshnessBonus + sourceBonus + personalSourceBonus + importanceBonus - penalty;
   }
 
-  function isAdultContentTopic(topic) {
-    if (!topic) return false;
-    if (hasCategory(topic, 'adult')) {
-      const text = topicText(topic);
-      if (/(グラビア|水着|コスプレ|ランジェリー|写真集)/.test(text) && !/(成人向け|18禁|r-?18|dlsite|fanza|dmm|同人音声|同人ゲーム|エロ漫画|エロゲ|\bav\b)/i.test(text)) {
-        return false;
-      }
-      return true;
-    }
-    const text = topicText(topic);
-    if (ADULT_CONTENT_PATTERN.test(text)) return true;
-    const sourceSignals = Array.isArray(topic.sourceSignals) ? topic.sourceSignals : [];
-    return sourceSignals.some((signal) => ADULT_CONTENT_PATTERN.test([
-      signal?.sourceName,
-      signal?.sourceGroup,
-      signal?.url,
-      signal?.canonicalUrl,
-    ].filter(Boolean).join(' ')));
-  }
-
   function isDoujinEventOnlyTopic(topic) {
     if (!topic) return false;
     const text = topicText(topic);
@@ -455,86 +409,6 @@
     return Number.isFinite(timestamp) ? timestamp : 0;
   }
 
-  isAdultContentTopic = function (topic) {
-    if (!topic) return false;
-    const text = topicText(topic);
-    if (SOFT_ADULT_PATTERN.test(text) && !ADULT_CONTENT_PATTERN.test(text)) return false;
-    if (hasCategory(topic, 'adult')) {
-      return ADULT_CONTENT_PATTERN.test(text) && !SOFT_ADULT_PATTERN.test(text);
-    }
-    if (ADULT_CONTENT_PATTERN.test(text)) return true;
-    const sourceSignals = Array.isArray(topic.sourceSignals) ? topic.sourceSignals : [];
-    return sourceSignals.some((signal) => ADULT_CONTENT_PATTERN.test([
-      signal?.sourceName,
-      signal?.sourceGroup,
-      signal?.url,
-      signal?.canonicalUrl,
-    ].filter(Boolean).join(' ')));
-  };
-
-  isPersonalTopicCandidate = function (topic) {
-    const text = topicText(topic);
-    if (hasCategory(topic, 'games') || hasCategory(topic, 'game-features') || hasCategory(topic, 'anime') || hasCategory(topic, 'manga') || hasCategory(topic, 'entertainment') || hasCategory(topic, 'sns') || hasCategory(topic, 'net-culture') || hasCategory(topic, 'matome')) {
-      return true;
-    }
-    return /ポケモン|pokemon|任天堂|nintendo|switch|steam|漫画|マンガ|アニメ|同人|脱出ゲーム|scrap|謎解き|イマーシブ|展示会|ポップアップ|コラボカフェ|セール|割引|無料配布|キャンペーン/.test(text);
-  };
-
-  isInternetMainTopic = function (topic) {
-    if (!topic || isAdultContentTopic(topic) || isLowPriorityTopic(topic)) return false;
-    const text = topicText(topic);
-    const hot = hotTopicScore(topic);
-    const primaryCategory = topic.category ?? topic.categories?.[0] ?? 'general';
-    const preferredCategory = ['games', 'game-features', 'anime', 'manga', 'entertainment', 'sns', 'net-culture', 'matome'].includes(primaryCategory);
-    const preferredKeywords = /ポケモン|pokemon|任天堂|nintendo|switch|steam|ゲーム|漫画|マンガ|アニメ|同人|コミケ|コラボカフェ|炎上|バズ|ミーム|トレンド入り|togetter|はてブ|セール|割引|無料配布|オタク|声優|配信者/.test(text);
-    const networkBuzz = /sns|xで話題|twitter|bluesky|reddit|炎上|バズ|ミーム|まとめ|ネットの反応|話題/.test(text)
-      || (Array.isArray(topic.hotReasons) && topic.hotReasons.some((reason) => /話題|拡散|複数媒体|専門媒体/.test(reason)));
-    const secondaryCategory = ['sports', 'crime', 'general'].includes(primaryCategory);
-    const lowPriorityDomain = /(政治|国会|選挙|与党|野党|経済|株価|決算|金利|国際|外交|ai|生成ai|openai|claude|gemini|個人開発|副業|収益化)/i.test(text);
-
-    if ((preferredCategory || preferredKeywords) && !lowPriorityDomain) return true;
-    if (networkBuzz && hot >= 54 && !lowPriorityDomain) return true;
-    if (secondaryCategory && networkBuzz && hot >= 60) return true;
-    return hot >= 90 && !/(地域おこし|観光協会|セミナー|説明会)/.test(text);
-  };
-
-  window.HomeTopicSelectionUtils = {
-    setLatestTrendGeneratedAt,
-    prepareVisibleTrendTopics,
-    selectPersonalNews,
-    selectInternetNews,
-    selectCategoryTopics,
-    isAiTopic,
-    isDealsTopic,
-    isSnsOrNetTopic,
-    isWorldTopic,
-    calculatePersonalFit,
-    hasPersonalInterestSignal,
-    isPersonalExcludedTopic,
-    isStrongOtakuTopic,
-    isInternetMainTopic,
-    internetTopicRank,
-    personalSourceAffinityScore,
-    personalTopicRank,
-    buildTrendInsights,
-    topicText,
-    shortEventFromTitle,
-    buildWhyHotLabel,
-    buildImportantPoint,
-    buildFutureOutlook,
-    buildTargetAudience,
-    hotTopicScore,
-    trimMetaText,
-    categoryShowcaseScore,
-    isAdultContentTopic,
-    isDoujinEventOnlyTopic,
-    isLowPriorityTopic,
-    topicRecencyScore,
-    isTrendTopicFresh,
-    isTrendTopicWithinDays,
-    topicTimestamp,
-  };
-
   function isAdultContentTopic(topic) {
     if (!topic) return false;
     const text = topicText(topic);
@@ -577,4 +451,41 @@
     if (secondaryCategory && networkBuzz && hot >= 60) return true;
     return hot >= 90 && !/(地域おこし|観光協会|セミナー|説明会)/.test(text);
   }
+
+  window.HomeTopicSelectionUtils = {
+    setLatestTrendGeneratedAt,
+    prepareVisibleTrendTopics,
+    selectPersonalNews,
+    selectInternetNews,
+    selectCategoryTopics,
+    isAiTopic,
+    isDealsTopic,
+    isSnsOrNetTopic,
+    isWorldTopic,
+    calculatePersonalFit,
+    hasPersonalInterestSignal,
+    isPersonalExcludedTopic,
+    isStrongOtakuTopic,
+    isInternetMainTopic,
+    internetTopicRank,
+    personalSourceAffinityScore,
+    personalTopicRank,
+    buildTrendInsights,
+    topicText,
+    shortEventFromTitle,
+    buildWhyHotLabel,
+    buildImportantPoint,
+    buildFutureOutlook,
+    buildTargetAudience,
+    hotTopicScore,
+    trimMetaText,
+    categoryShowcaseScore,
+    isAdultContentTopic,
+    isDoujinEventOnlyTopic,
+    isLowPriorityTopic,
+    topicRecencyScore,
+    isTrendTopicFresh,
+    isTrendTopicWithinDays,
+    topicTimestamp,
+  };
 })();

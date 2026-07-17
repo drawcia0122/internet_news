@@ -1,11 +1,64 @@
 {
-  "generatedAt": "2026-07-17T17:43:45.757Z",
+  "generatedAt": "2026-07-17T19:24:48.655Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-123",
-  "selectedTitle": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
+  "selectedClusterId": "today-cluster-24",
+  "selectedTitle": "元ヴァニラウェアデザイナーが放つゲームブック風ADV『ヴェリタステイルズ：暗黒城の魔女』が「非常に好評」の門出。6年間の美麗手作りアート光る“一冊”",
   "candidates": [
     {
-      "clusterId": "today-cluster-123",
+      "clusterId": "today-cluster-24",
+      "title": "元ヴァニラウェアデザイナーが放つゲームブック風ADV『ヴェリタステイルズ：暗黒城の魔女』が「非常に好評」の門出。6年間の美麗手作りアート光る“一冊”",
+      "category": "games",
+      "categories": [
+        "games",
+        "books",
+        "general",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 74.4,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 6,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 46.8,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-128",
       "title": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
       "category": "games",
       "categories": [
@@ -36,7 +89,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 11.666666666666666,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -56,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-152",
+      "clusterId": "today-cluster-149",
       "title": "「バズらなければ戻らなかった」―25年分のデータを失いかけた配信者、MSアカウントが復旧！しかしサポート対応には苦言",
       "category": "entertainment",
       "categories": [
@@ -108,7 +161,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-173",
+      "clusterId": "today-cluster-170",
       "title": "シドに捕まった「ウッディ」「バズ」を再現！一番くじ「トイ・ストーリー」より、目玉賞のフィギュアが先行公開",
       "category": "games",
       "categories": [
@@ -139,7 +192,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 11.666666666666666,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -159,7 +212,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-749",
+      "clusterId": "today-cluster-784",
       "title": "子のSNSいつから? 禁止の是非",
       "category": "sports",
       "categories": [
@@ -204,58 +257,6 @@
         "archiveHeatScore": 97,
         "internalSearchScore": 36.7,
         "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-359",
-      "title": "元ヴァニラウェアデザイナーが放つゲームブック風ADV『ヴェリタステイルズ：暗黒城の魔女』が「非常に好評」の門出。6年間の美麗手作りアート光る“一冊”",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "net-culture",
-        "books",
-        "general"
-      ],
-      "buzzScore": 66.1,
-      "confidence": 0.37,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

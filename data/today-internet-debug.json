@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-17T16:24:32.127Z",
+  "generatedAt": "2026-07-17T17:43:45.757Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-124",
+  "selectedClusterId": "today-cluster-123",
   "selectedTitle": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
   "candidates": [
     {
-      "clusterId": "today-cluster-124",
+      "clusterId": "today-cluster-123",
       "title": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
       "category": "games",
       "categories": [
@@ -36,7 +36,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 11.666666666666666,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-157",
+      "clusterId": "today-cluster-152",
       "title": "「バズらなければ戻らなかった」―25年分のデータを失いかけた配信者、MSアカウントが復旧！しかしサポート対応には苦言",
       "category": "entertainment",
       "categories": [
@@ -108,59 +108,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-713",
-      "title": "子のSNSいつから? 禁止の是非",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "net-culture",
-        "tech",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 68.3,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 17,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 36.7,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-180",
+      "clusterId": "today-cluster-173",
       "title": "シドに捕まった「ウッディ」「バズ」を再現！一番くじ「トイ・ストーリー」より、目玉賞のフィギュアが先行公開",
       "category": "games",
       "categories": [
@@ -191,7 +139,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 10,
+        "searchScore": 11.666666666666666,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -211,7 +159,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-364",
+      "clusterId": "today-cluster-749",
+      "title": "子のSNSいつから? 禁止の是非",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "net-culture",
+        "tech",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 66.8,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 4.7,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 36.7,
+        "internalSocialScore": 45.9
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-359",
       "title": "元ヴァニラウェアデザイナーが放つゲームブック風ADV『ヴェリタステイルズ：暗黒城の魔女』が「非常に好評」の門出。6年間の美麗手作りアート光る“一冊”",
       "category": "games",
       "categories": [

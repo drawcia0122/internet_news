@@ -1,40 +1,40 @@
 {
-  "generatedAt": "2026-07-17T09:18:55.092Z",
+  "generatedAt": "2026-07-17T11:10:06.323Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-6",
-  "selectedTitle": "“記憶はどこまで信じられるのか”を問う体験型の展覧会「記憶汚染展」公式ティザーPVが公開。音声ガイドナビゲーターとして、声優の梶裕貴氏の起用も発表",
+  "selectedClusterId": "today-cluster-415",
+  "selectedTitle": "児童のSNS通じた被害増 どう防ぐ",
   "candidates": [
     {
-      "clusterId": "today-cluster-6",
-      "title": "“記憶はどこまで信じられるのか”を問う体験型の展覧会「記憶汚染展」公式ティザーPVが公開。音声ガイドナビゲーターとして、声優の梶裕貴氏の起用も発表",
-      "category": "anime",
+      "clusterId": "today-cluster-415",
+      "title": "児童のSNS通じた被害増 どう防ぐ",
+      "category": "sports",
       "categories": [
-        "anime",
-        "games",
+        "sports",
         "net-culture",
+        "tech",
+        "sns",
         "general"
       ],
-      "buzzScore": 75,
-      "confidence": 0.46,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 82.6,
+      "confidence": 0.48,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 7,
-        "velocity": 8.3,
+        "search": 4.8,
+        "social": 7.4,
+        "velocity": 1.5,
         "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "authority": 2.5,
+        "categoryBias": 17,
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 1.6666666666666667,
@@ -43,13 +43,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
-        "internalSocialScore": 54.8
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -57,7 +57,110 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2",
+      "clusterId": "today-cluster-134",
+      "title": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
+      "category": "games",
+      "categories": [
+        "games",
+        "general",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 70.5,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.2,
+        "social": 6.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 13.333333333333334,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 48.7,
+        "internalSocialScore": 53.5
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-162",
+      "title": "「バズらなければ戻らなかった」―25年分のデータを失いかけた配信者、MSアカウントが復旧！しかしサポート対応には苦言",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 69,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-14",
       "title": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不足！』が発表。適当なボタン連打の先に待つのは“沈没”だけ",
       "category": "games",
       "categories": [
@@ -65,8 +168,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 74.1,
-      "confidence": 0.47,
+      "buzzScore": 68.8,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -77,12 +180,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.7,
+        "search": 5.5,
         "social": 5.6,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -98,8 +201,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -108,36 +211,32 @@
       ]
     },
     {
-      "clusterId": "today-cluster-19",
-      "title": "『ヤニねこ』ニコニコ夏アニメの1位に 『攻殻機動隊』等の並みいる話題作を抑える",
-      "category": "anime",
+      "clusterId": "today-cluster-181",
+      "title": "シドに捕まった「ウッディ」「バズ」を再現！一番くじ「トイ・ストーリー」より、目玉賞のフィギュアが先行公開",
+      "category": "games",
       "categories": [
-        "anime",
-        "entertainment",
+        "games",
         "sns",
         "net-culture",
-        "manga",
         "general"
       ],
-      "buzzScore": 73.5,
-      "confidence": 0.44,
-      "articleCount": 2,
+      "buzzScore": 67.6,
+      "confidence": 0.39,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18.9,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "search": 5,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -149,119 +248,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 45.7,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-128",
-      "title": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
-      "category": "games",
-      "categories": [
-        "games",
-        "general",
-        "sns",
-        "net-culture"
-      ],
-      "buzzScore": 72.7,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 3.8,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 6.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 16.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
         "archiveHeatScore": 100,
-        "internalSearchScore": 49.4,
-        "internalSocialScore": 54
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-15",
-      "title": "『週刊少年ジャンプ』異例の品切れを謝罪　ワンピースカード付録で転売騒動、付録なし版を受注販売へ",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "games",
-        "entertainment",
-        "sns",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 72.4,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 6.666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 65.8
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

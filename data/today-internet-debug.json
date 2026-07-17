@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-17T21:26:58.145Z",
+  "generatedAt": "2026-07-17T22:28:27.786Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-28",
+  "selectedClusterId": "today-cluster-29",
   "selectedTitle": "元ヴァニラウェアデザイナーが放つゲームブック風ADV『ヴェリタステイルズ：暗黒城の魔女』が「非常に好評」の門出。6年間の美麗手作りアート光る“一冊”",
   "candidates": [
     {
-      "clusterId": "today-cluster-28",
+      "clusterId": "today-cluster-29",
       "title": "元ヴァニラウェアデザイナーが放つゲームブック風ADV『ヴェリタステイルズ：暗黒城の魔女』が「非常に好評」の門出。6年間の美麗手作りアート光る“一冊”",
       "category": "games",
       "categories": [
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-143",
+      "clusterId": "today-cluster-140",
       "title": "「バズらなければ戻らなかった」―25年分のデータを失いかけた配信者、MSアカウントが復旧！しかしサポート対応には苦言",
       "category": "entertainment",
       "categories": [
@@ -110,59 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-420",
-      "title": "「人気キャラのおもちゃ譲ります」 不審なSNS投稿に注意",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 68.3,
-      "confidence": 0.44,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 4.6,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 4.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-351",
+      "clusterId": "today-cluster-345",
       "title": "写真週刊誌FRIDAYがグラビアアイドルと共に作った実写恋愛ゲーム『ハムコイ』は、Steam発売禁止の危機を乗り越えてなんとかリリースにこぎつけた。その過程を開発陣に訊いた",
       "category": "games",
       "categories": [
@@ -214,7 +162,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-162",
+      "clusterId": "today-cluster-157",
       "title": "シドに捕まった「ウッディ」「バズ」を再現！一番くじ「トイ・ストーリー」より、目玉賞のフィギュアが先行公開",
       "category": "games",
       "categories": [
@@ -258,6 +206,58 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 38.9,
         "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1018",
+      "title": "子のSNSいつから? 禁止の是非",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "net-culture",
+        "tech",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 66.7,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 4.6,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 35.9,
+        "internalSocialScore": 45.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

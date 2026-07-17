@@ -16,7 +16,6 @@ const {
   normalizeEventDateValue,
   calculateEventScore,
   calculateClosingSoonScore,
-  buildEventRecommendationReasons,
   eventStatusLabel,
   formatEventPeriod,
   getEventItemsForTab: getEventItemsForTabFromList,
@@ -935,7 +934,7 @@ function renderEventCard(item, index) {
   const thumbnail = item.thumbnailUrl
     ? '<div class="event-thumb-wrap"><img class="event-thumb" src="' + escapeHtml(item.thumbnailUrl) + '" alt="" loading="lazy" /></div>'
     : '';
-  const reasons = buildEventRecommendationReasons(item).slice(0, 4);
+  const cardTags = [...new Set([item.category, item.location].filter(Boolean))];
   const officialHost = item.sourceName ?? '公式サイト';
   const closingSoonBadge = buildClosingSoonBadge(item);
   const detailLink = item.detailUrl
@@ -953,9 +952,8 @@ function renderEventCard(item, index) {
     '<dl class="event-fact-list">' +
       '<div><dt>開催期間</dt><dd>' + escapeHtml(formatEventPeriod(item)) + '</dd></div>' +
       '<div><dt>開催場所</dt><dd>' + escapeHtml(item.venue) + ' / ' + escapeHtml(item.location) + '</dd></div>' +
-      '<div><dt>おすすめ理由</dt><dd>' + escapeHtml(reasons.join(' / ')) + '</dd></div>' +
     '</dl>' +
-    '<div class="priority-chip-row event-chip-row">' + reasons.map((reason) => '<span>' + escapeHtml(reason) + '</span>').join('') + '</div>' +
+    '<div class="priority-chip-row event-chip-row">' + cardTags.map((tag) => '<span>' + escapeHtml(tag) + '</span>').join('') + '</div>' +
     '<div class="event-link-row">' + detailLink + officialLink + '</div>' +
   '</article>';
 }

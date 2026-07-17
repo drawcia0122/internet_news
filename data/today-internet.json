@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T11:10:06.323Z",
+  "generatedAt": "2026-07-17T12:46:53.921Z",
   "topicVersion": 1,
   "selectedTopic": {
     "id": "auto-sports-児童のsns通じた被害増-どう防ぐ-news.yahoo.co.jp/pickup/6588318",
@@ -91,12 +91,12 @@
         "summary": ""
       }
     ],
-    "hotScore": 82.6,
+    "hotScore": 79.6,
     "posts": "3",
     "metricLabel": "signals",
-    "time": "1時間以内",
+    "time": "1時間前",
     "publishedAt": "2026-07-17T10:48:03.000Z",
-    "buzzScore": 82.6,
+    "buzzScore": 79.6,
     "scoreBreakdown": {
       "coverage": 5.4,
       "sourceDiversity": 4.7,
@@ -104,8 +104,8 @@
       "internetNativeBoost": 8,
       "search": 4.8,
       "social": 7.4,
-      "velocity": 1.5,
-      "freshness": 10,
+      "velocity": 0,
+      "freshness": 8.5,
       "authority": 2.5,
       "categoryBias": 17,
       "penalty": 0
@@ -153,8 +153,8 @@
     "externalSignals": {
       "query": "児童のSNS通じた被害増 どう防ぐ",
       "search": {
-        "count": 1,
-        "score": 1.6666666666666667,
+        "count": 6,
+        "score": 10,
         "available": true
       },
       "reddit": {
@@ -173,7 +173,7 @@
       ]
     },
     "externalSignalStats": {
-      "searchScore": 1.6666666666666667,
+      "searchScore": 10,
       "socialScore": 0,
       "searchAvailable": true,
       "socialAvailable": false
@@ -196,10 +196,184 @@
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "officialSourceCount": 0,
-      "latestSourceCount1h": 1
+      "latestSourceCount1h": 0
     }
   },
   "runnerUps": [
+    {
+      "id": "auto-politics-国旗損壊処罰法-参議院本会議で可決・成立-www3.nhk.or.jp/news/html/20260717/k10015179001000.html",
+      "title": "国旗損壊処罰法 参議院本会議で可決・成立",
+      "summary": "国旗損壊処罰法 参議院本会議で可決・成立 直近数時間で関連記事が増加。報道元はNHK、はてなブックマーク人気です。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+      "briefSummary": "国旗損壊処罰法 参議院本会議で可決・成立",
+      "whatHappened": "国旗損壊処罰法 参議院本会議で可決・成立",
+      "whyHot": "直近数時間で関連記事が増加。報道元はNHK、はてなブックマーク人気です。",
+      "importantPoint": "2媒体・2ドメインで確認されたトピックです。",
+      "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "政治",
+      "categoryLabels": [
+        "政治",
+        "その他",
+        "ネットカルチャー",
+        "その他"
+      ],
+      "thumbnailUrl": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
+      "sourceSignals": [
+        {
+          "sourceId": "nhk-top",
+          "source": "NHK RSS",
+          "sourceName": "NHK",
+          "sourceGroup": "important-news",
+          "sourcePriority": 92,
+          "official": true,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "国旗損壊処罰法 参議院本会議で可決・成立",
+          "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179001000.html",
+          "canonicalUrl": "http://www3.nhk.or.jp/news/html/20260717/k10015179001000.html",
+          "publishedAt": "2026-07-17T10:34:10.000Z",
+          "publishedLabel": "7/17 10:34",
+          "thumbnailUrl": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
+          "briefSummary": "",
+          "summary": ""
+        },
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "国旗損壊処罰法 参議院本会議で可決・成立",
+          "url": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
+          "canonicalUrl": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": null,
+          "briefSummary": "",
+          "summary": ""
+        }
+      ],
+      "hotScore": 75.8,
+      "posts": "2",
+      "metricLabel": "signals",
+      "time": "1時間以内",
+      "publishedAt": "2026-07-17T10:34:10.000Z",
+      "buzzScore": 75.8,
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 10.9,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 5.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "公式または一次情報を含む"
+      ],
+      "rank": 2,
+      "summaryPayload": {
+        "headline": "国旗損壊処罰法 参議院本会議で可決・成立",
+        "whatHappened": "国旗損壊処罰法 参議院本会議で可決・成立",
+        "whyBuzzing": "直近数時間で関連記事が増加。報道元はNHK、はてなブックマーク人気です。",
+        "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+        "keyPoints": [
+          "2媒体・2ドメインで確認されたトピックです。",
+          "最新更新は2026/7/17 10:34:10です。",
+          "一次情報を含むため、事実確認の軸を置きやすい話題です。"
+        ],
+        "watchpoints": [
+          "続報で事実関係や影響範囲が更新される可能性があります。",
+          "一次情報や公式コメントが追加されたら優先して確認してください。"
+        ],
+        "threeMinuteSummary": "国旗損壊処罰法 参議院本会議で可決・成立 直近数時間で関連記事が増加。報道元はNHK、はてなブックマーク人気です。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
+      },
+      "representativeArticles": [
+        {
+          "title": "国旗損壊処罰法 参議院本会議で可決・成立",
+          "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179001000.html",
+          "sourceName": "NHK",
+          "publishedAt": "2026-07-17T10:34:10.000Z"
+        },
+        {
+          "title": "国旗損壊処罰法 参議院本会議で可決・成立",
+          "url": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
+          "sourceName": "はてなブックマーク人気",
+          "publishedAt": null
+        }
+      ],
+      "externalSignals": {
+        "query": "国旗損壊処罰法 参議院本会議で可決・成立",
+        "search": {
+          "count": 41,
+          "score": 68.33333333333333,
+          "available": true
+        },
+        "reddit": {
+          "available": false,
+          "score": 0,
+          "count": 0
+        },
+        "bluesky": {
+          "available": false,
+          "score": 0,
+          "count": 0
+        },
+        "errors": [
+          "reddit:http 403 Blocked",
+          "bluesky:http 403 Forbidden"
+        ]
+      },
+      "externalSignalStats": {
+        "searchScore": 68.33333333333333,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ],
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "clusterStats": {
+        "articleCount": 2,
+        "sourceCount": 2,
+        "uniqueDomainCount": 2,
+        "officialSourceCount": 1,
+        "latestSourceCount1h": 0
+      }
+    },
     {
       "id": "auto-games-steamのゲームを-物理カートリッジ化-した人あらわる-ssd丸ごと-ゲームカセット化-の荒業-automaton-media.com/articles/newsjp/20260716-455314",
       "title": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
@@ -297,7 +471,7 @@
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
-      "rank": 2,
+      "rank": 3,
       "summaryPayload": {
         "headline": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
         "whatHappened": "Steamのゲームを「物理カートリッジ化」した人あらわる",
@@ -432,7 +606,7 @@
       "posts": "1",
       "metricLabel": "signals",
       "time": "直近",
-      "publishedAt": "2026-07-17T11:07:31.888Z",
+      "publishedAt": "2026-07-17T12:44:34.450Z",
       "buzzScore": 69,
       "scoreBreakdown": {
         "coverage": 1.8,
@@ -450,7 +624,7 @@
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
-      "rank": 3,
+      "rank": 4,
       "summaryPayload": {
         "headline": "「バズらなければ戻らなかった」―25年分のデータを失いかけた配信者、MSアカウントが復旧！しかしサポート対応には苦言",
         "whatHappened": "「バズらなければ戻らなかった」―25年分のデータを失いかけた配信者、MSアカウントが復旧",
@@ -458,7 +632,7 @@
         "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
         "keyPoints": [
           "1媒体・1ドメインで確認されたトピックです。",
-          "最新更新は2026/7/17 11:07:31です。",
+          "最新更新は2026/7/17 12:44:34です。",
           "現時点では報道の出そろい方と勢いを優先して選出しています。"
         ],
         "watchpoints": [
@@ -523,189 +697,17 @@
         "officialSourceCount": 0,
         "latestSourceCount1h": 0
       }
-    },
-    {
-      "id": "auto-games-最大4人で潜水艦を操縦するドタバタ協力ゲーム-s-o-n-a-r-潜水艦クルー-準備不足-が発表-適当なボタン連打の先に待つのは-沈没-だけ-news.denfaminicogamer.jp/news/2607173j",
-      "title": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不足！』が発表。適当なボタン連打の先に待つのは“沈没”だけ",
-      "summary": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不… 直近数時間で関連記事が増加。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-      "briefSummary": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不…",
-      "whatHappened": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不…",
-      "whyHot": "直近数時間で関連記事が増加。",
-      "importantPoint": "1媒体・1ドメインで確認されたトピックです。",
-      "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "ネットカルチャー"
-      ],
-      "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/07/SONAR_Screenshot_03_JP-1024x576.png",
-      "sourceSignals": [
-        {
-          "sourceId": "denfami",
-          "source": "電ファミニコゲーマー",
-          "sourceName": "電ファミニコゲーマー",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "net-culture",
-            "otaku"
-          ],
-          "title": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不足！』が発表。適当なボタン連打の先に待つのは“沈没”だけ",
-          "url": "https://news.denfaminicogamer.jp/news/2607173j",
-          "canonicalUrl": "https://news.denfaminicogamer.jp/news/2607173j",
-          "publishedAt": "2026-07-17T09:04:22.000Z",
-          "publishedLabel": "7/17 09:04",
-          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/07/SONAR_Screenshot_03_JP-1024x576.png",
-          "briefSummary": "",
-          "summary": ""
-        },
-        {
-          "sourceId": "denfami",
-          "source": "電ファミニコゲーマー",
-          "sourceName": "電ファミニコゲーマー",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "net-culture",
-            "otaku"
-          ],
-          "title": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不足！』が発表。適当なボタン連打の先に待つのは“沈没”だけ",
-          "url": "https://news.denfaminicogamer.jp/news/2607173j",
-          "canonicalUrl": "https://news.denfaminicogamer.jp/news/2607173j",
-          "publishedAt": "2026-07-17T09:04:22.000Z",
-          "publishedLabel": "7/17 09:04",
-          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/07/SONAR_Screenshot_03_JP-1024x576.png",
-          "briefSummary": "",
-          "summary": ""
-        }
-      ],
-      "hotScore": 68.8,
-      "posts": "2",
-      "metricLabel": "signals",
-      "time": "2時間前",
-      "publishedAt": "2026-07-17T09:04:22.000Z",
-      "buzzScore": 68.8,
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "rank": 4,
-      "summaryPayload": {
-        "headline": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不足！』が発表。適当なボタン連打の先に待つのは“沈没”だけ",
-        "whatHappened": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不…",
-        "whyBuzzing": "直近数時間で関連記事が増加。",
-        "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-        "keyPoints": [
-          "1媒体・1ドメインで確認されたトピックです。",
-          "最新更新は2026/7/17 9:04:22です。",
-          "現時点では報道の出そろい方と勢いを優先して選出しています。"
-        ],
-        "watchpoints": [
-          "続報で事実関係や影響範囲が更新される可能性があります。",
-          "一次情報や公式コメントが追加されたら優先して確認してください。"
-        ],
-        "threeMinuteSummary": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不… 直近数時間で関連記事が増加。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
-      },
-      "representativeArticles": [
-        {
-          "title": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不足！』が発表。適当なボタン連打の先に待つのは“沈没”だけ",
-          "url": "https://news.denfaminicogamer.jp/news/2607173j",
-          "sourceName": "電ファミニコゲーマー",
-          "publishedAt": "2026-07-17T09:04:22.000Z"
-        },
-        {
-          "title": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不足！』が発表。適当なボタン連打の先に待つのは“沈没”だけ",
-          "url": "https://news.denfaminicogamer.jp/news/2607173j",
-          "sourceName": "電ファミニコゲーマー",
-          "publishedAt": "2026-07-17T09:04:22.000Z"
-        }
-      ],
-      "externalSignals": {
-        "query": "最大4人で潜水艦を操縦するドタバタ協力ゲーム S.O.N.A.R. – 潜水艦クルー、準備不足！ が発表。適当なボタン連打の先に待つのは“沈没”だけ",
-        "search": {
-          "count": 1,
-          "score": 1.6666666666666667,
-          "available": true
-        },
-        "reddit": {
-          "available": false,
-          "score": 0,
-          "count": 0
-        },
-        "bluesky": {
-          "available": false,
-          "score": 0,
-          "count": 0
-        },
-        "errors": [
-          "reddit:http 403 Blocked",
-          "bluesky:http 403 Forbidden"
-        ]
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ],
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 43.8
-      },
-      "clusterStats": {
-        "articleCount": 2,
-        "sourceCount": 1,
-        "uniqueDomainCount": 1,
-        "officialSourceCount": 0,
-        "latestSourceCount1h": 0
-      }
     }
   ],
   "fallbackUsed": false,
   "debug": {
-    "generatedAt": "2026-07-17T11:10:06.323Z",
+    "generatedAt": "2026-07-17T12:46:53.921Z",
     "fallbackUsed": false,
-    "selectedClusterId": "today-cluster-415",
+    "selectedClusterId": "today-cluster-543",
     "selectedTitle": "児童のSNS通じた被害増 どう防ぐ",
     "candidates": [
       {
-        "clusterId": "today-cluster-415",
+        "clusterId": "today-cluster-543",
         "title": "児童のSNS通じた被害増 どう防ぐ",
         "category": "sports",
         "categories": [
@@ -715,8 +717,8 @@
           "sns",
           "general"
         ],
-        "buzzScore": 82.6,
-        "confidence": 0.48,
+        "buzzScore": 79.6,
+        "confidence": 0.46,
         "articleCount": 3,
         "sourceCount": 2,
         "uniqueDomainCount": 2,
@@ -730,14 +732,14 @@
           "internetNativeBoost": 8,
           "search": 4.8,
           "social": 7.4,
-          "velocity": 1.5,
-          "freshness": 10,
+          "velocity": 0,
+          "freshness": 8.5,
           "authority": 2.5,
           "categoryBias": 17,
           "penalty": 0
         },
         "externalSignalStats": {
-          "searchScore": 1.6666666666666667,
+          "searchScore": 10,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -757,7 +759,61 @@
         ]
       },
       {
-        "clusterId": "today-cluster-134",
+        "clusterId": "today-cluster-568",
+        "title": "国旗損壊処罰法 参議院本会議で可決・成立",
+        "category": "politics",
+        "categories": [
+          "politics",
+          "sns",
+          "net-culture",
+          "general"
+        ],
+        "buzzScore": 75.8,
+        "confidence": 0.47,
+        "articleCount": 2,
+        "sourceCount": 2,
+        "uniqueDomainCount": 2,
+        "whyRanked": [
+          "直近数時間で関連記事が増加",
+          "既存トレンド指標でも反応が強い",
+          "検索面でも関連話題の広がりを確認",
+          "公式または一次情報を含む"
+        ],
+        "scoreBreakdown": {
+          "coverage": 3.6,
+          "sourceDiversity": 4.7,
+          "trend": 22,
+          "internetNativeBoost": 8,
+          "search": 10.9,
+          "social": 6,
+          "velocity": 2.7,
+          "freshness": 8.5,
+          "authority": 5.5,
+          "categoryBias": 4,
+          "penalty": 0
+        },
+        "externalSignalStats": {
+          "searchScore": 68.33333333333333,
+          "socialScore": 0,
+          "searchAvailable": true,
+          "socialAvailable": false
+        },
+        "internalSignalStats": {
+          "browseMatchCount": 0,
+          "archiveMatchCount": 1,
+          "repeatedAppearanceScore": 6,
+          "crossCategoryScore": 80,
+          "archiveHeatScore": 100,
+          "internalSearchScore": 38.9,
+          "internalSocialScore": 46.7
+        },
+        "externalSignalErrors": [
+          "reddit:http 403 Blocked",
+          "bluesky:http 403 Forbidden"
+        ]
+      },
+      {
+        "clusterId": "today-cluster-128",
         "title": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
         "category": "games",
         "categories": [
@@ -860,86 +916,38 @@
         ]
       },
       {
-        "clusterId": "today-cluster-14",
-        "title": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不足！』が発表。適当なボタン連打の先に待つのは“沈没”だけ",
-        "category": "games",
+        "clusterId": "today-cluster-439",
+        "title": "米国株23時間取引、12月6日開始へ　世界のマネー集中で「大リーグ化」",
+        "category": "world",
         "categories": [
-          "games",
-          "net-culture",
-          "general"
+          "world",
+          "business",
+          "general",
+          "sns",
+          "net-culture"
         ],
-        "buzzScore": 68.8,
-        "confidence": 0.42,
-        "articleCount": 2,
-        "sourceCount": 1,
-        "uniqueDomainCount": 1,
+        "buzzScore": 68.1,
+        "confidence": 0.47,
+        "articleCount": 3,
+        "sourceCount": 2,
+        "uniqueDomainCount": 2,
         "whyRanked": [
           "直近数時間で関連記事が増加",
-          "既存トレンド指標でも反応が強い"
+          "既存トレンド指標でも反応が強い",
+          "アーカイブ上でも近い話題が連続出現"
         ],
         "scoreBreakdown": {
-          "coverage": 3.6,
-          "sourceDiversity": 2.3,
+          "coverage": 5.4,
+          "sourceDiversity": 4.7,
           "trend": 17.4,
           "internetNativeBoost": 8,
-          "search": 5.5,
-          "social": 5.6,
-          "velocity": 5.3,
-          "freshness": 8.5,
-          "authority": 1.5,
-          "categoryBias": 14,
-          "penalty": -3
-        },
-        "externalSignalStats": {
-          "searchScore": 1.6666666666666667,
-          "socialScore": 0,
-          "searchAvailable": true,
-          "socialAvailable": false
-        },
-        "internalSignalStats": {
-          "browseMatchCount": 1,
-          "archiveMatchCount": 1,
-          "repeatedAppearanceScore": 24,
-          "crossCategoryScore": 60,
-          "archiveHeatScore": 79,
-          "internalSearchScore": 43.3,
-          "internalSocialScore": 43.8
-        },
-        "externalSignalErrors": [
-          "reddit:http 403 Blocked",
-          "bluesky:http 403 Forbidden"
-        ]
-      },
-      {
-        "clusterId": "today-cluster-181",
-        "title": "シドに捕まった「ウッディ」「バズ」を再現！一番くじ「トイ・ストーリー」より、目玉賞のフィギュアが先行公開",
-        "category": "games",
-        "categories": [
-          "games",
-          "sns",
-          "net-culture",
-          "general"
-        ],
-        "buzzScore": 67.6,
-        "confidence": 0.39,
-        "articleCount": 1,
-        "sourceCount": 1,
-        "uniqueDomainCount": 1,
-        "whyRanked": [
-          "既存トレンド指標でも反応が強い"
-        ],
-        "scoreBreakdown": {
-          "coverage": 1.8,
-          "sourceDiversity": 2.3,
-          "trend": 22,
-          "internetNativeBoost": 8,
-          "search": 5,
-          "social": 6,
-          "velocity": 0,
+          "search": 4.4,
+          "social": 7.6,
+          "velocity": 4.2,
           "freshness": 10,
-          "authority": 1.5,
-          "categoryBias": 14,
-          "penalty": -3
+          "authority": 2.5,
+          "categoryBias": 4,
+          "penalty": 0
         },
         "externalSignalStats": {
           "searchScore": 5,
@@ -949,12 +957,12 @@
         },
         "internalSignalStats": {
           "browseMatchCount": 0,
-          "archiveMatchCount": 1,
-          "repeatedAppearanceScore": 6,
-          "crossCategoryScore": 80,
-          "archiveHeatScore": 100,
-          "internalSearchScore": 38.9,
-          "internalSocialScore": 46.7
+          "archiveMatchCount": 2,
+          "repeatedAppearanceScore": 10.2,
+          "crossCategoryScore": 100,
+          "archiveHeatScore": 79,
+          "internalSearchScore": 34.3,
+          "internalSocialScore": 59.6
         },
         "externalSignalErrors": [
           "reddit:http 403 Blocked",
@@ -972,6 +980,6 @@
       "reddit:http 403 Blocked",
       "bluesky:http 403 Forbidden"
     ],
-    "confidence": 0.48
+    "confidence": 0.46
   }
 }

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-17T11:10:06.323Z",
+  "generatedAt": "2026-07-17T12:46:53.921Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-415",
+  "selectedClusterId": "today-cluster-543",
   "selectedTitle": "児童のSNS通じた被害増 どう防ぐ",
   "candidates": [
     {
-      "clusterId": "today-cluster-415",
+      "clusterId": "today-cluster-543",
       "title": "児童のSNS通じた被害増 どう防ぐ",
       "category": "sports",
       "categories": [
@@ -15,8 +15,8 @@
         "sns",
         "general"
       ],
-      "buzzScore": 82.6,
-      "confidence": 0.48,
+      "buzzScore": 79.6,
+      "confidence": 0.46,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -30,14 +30,14 @@
         "internetNativeBoost": 8,
         "search": 4.8,
         "social": 7.4,
-        "velocity": 1.5,
-        "freshness": 10,
+        "velocity": 0,
+        "freshness": 8.5,
         "authority": 2.5,
         "categoryBias": 17,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 10,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -57,7 +57,61 @@
       ]
     },
     {
-      "clusterId": "today-cluster-134",
+      "clusterId": "today-cluster-568",
+      "title": "国旗損壊処罰法 参議院本会議で可決・成立",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 75.8,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 10.9,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 5.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 68.33333333333333,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-128",
       "title": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
       "category": "games",
       "categories": [
@@ -160,86 +214,38 @@
       ]
     },
     {
-      "clusterId": "today-cluster-14",
-      "title": "最大4人で潜水艦を操縦するドタバタ協力ゲーム『S.O.N.A.R. – 潜水艦クルー、準備不足！』が発表。適当なボタン連打の先に待つのは“沈没”だけ",
-      "category": "games",
+      "clusterId": "today-cluster-439",
+      "title": "米国株23時間取引、12月6日開始へ　世界のマネー集中で「大リーグ化」",
+      "category": "world",
       "categories": [
-        "games",
-        "net-culture",
-        "general"
+        "world",
+        "business",
+        "general",
+        "sns",
+        "net-culture"
       ],
-      "buzzScore": 68.8,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 68.1,
+      "confidence": 0.47,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
         "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-181",
-      "title": "シドに捕まった「ウッディ」「バズ」を再現！一番くじ「トイ・ストーリー」より、目玉賞のフィギュアが先行公開",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 67.6,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
-        "velocity": 0,
+        "search": 4.4,
+        "social": 7.6,
+        "velocity": 4.2,
         "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 5,
@@ -249,12 +255,12 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 10.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 34.3,
+        "internalSocialScore": 59.6
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

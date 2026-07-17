@@ -1,160 +1,135 @@
 {
-  "generatedAt": "2026-07-17T12:46:53.921Z",
+  "generatedAt": "2026-07-17T14:52:48.988Z",
   "topicVersion": 1,
   "selectedTopic": {
-    "id": "auto-sports-児童のsns通じた被害増-どう防ぐ-news.yahoo.co.jp/pickup/6588318",
-    "title": "児童のSNS通じた被害増 どう防ぐ",
-    "summary": "児童のSNS通じた被害増 どう防ぐ 既存トレンド指標でも反応が強い。報道元はYahoo!ニュース / IT、Google News / ネット話題です。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-    "briefSummary": "児童のSNS通じた被害増 どう防ぐ",
-    "whatHappened": "児童のSNS通じた被害増 どう防ぐ",
-    "whyHot": "既存トレンド指標でも反応が強い。報道元はYahoo!ニュース / IT、Google News / ネット話題です。",
+    "id": "auto-politics-国旗損壊処罰法-参議院本会議で可決・成立-www3.nhk.or.jp/news/html/20260717/k10015179001000.html",
+    "title": "国旗損壊処罰法 参議院本会議で可決・成立",
+    "summary": "国旗損壊処罰法 参議院本会議で可決・成立 既存トレンド指標でも反応が強い。報道元はNHK、はてなブックマーク人気です。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+    "briefSummary": "国旗損壊処罰法 参議院本会議で可決・成立",
+    "whatHappened": "国旗損壊処罰法 参議院本会議で可決・成立",
+    "whyHot": "既存トレンド指標でも反応が強い。報道元はNHK、はてなブックマーク人気です。",
     "importantPoint": "2媒体・2ドメインで確認されたトピックです。",
     "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
-    "category": "sports",
+    "category": "politics",
     "categories": [
-      "sports",
-      "net-culture",
-      "tech",
+      "politics",
       "sns",
+      "net-culture",
       "general"
     ],
-    "categoryLabel": "スポーツ",
+    "categoryLabel": "政治",
     "categoryLabels": [
-      "スポーツ",
+      "政治",
+      "その他",
       "ネットカルチャー",
-      "テック",
-      "SNS"
+      "その他"
     ],
-    "thumbnailUrl": "",
+    "thumbnailUrl": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
     "sourceSignals": [
       {
-        "sourceId": "yahoo-it",
-        "source": "Yahoo!ニュース",
-        "sourceName": "Yahoo!ニュース / IT",
-        "sourceGroup": "general-tech",
-        "sourcePriority": 62,
-        "official": false,
+        "sourceId": "nhk-top",
+        "source": "NHK RSS",
+        "sourceName": "NHK",
+        "sourceGroup": "important-news",
+        "sourcePriority": 92,
+        "official": true,
         "specialist": false,
         "forPersonal": false,
         "sourceTags": [],
-        "title": "児童のSNS通じた被害増 どう防ぐ",
-        "url": "https://news.yahoo.co.jp/pickup/6588318?source=rss",
-        "canonicalUrl": "https://news.yahoo.co.jp/pickup/6588318?source=rss",
-        "publishedAt": "2026-07-17T10:48:03.000Z",
-        "publishedLabel": "7/17 10:48",
-        "thumbnailUrl": null,
-        "briefSummary": "",
-        "summary": "",
-        "thumbnail": null
-      },
-      {
-        "sourceId": "yahoo-it",
-        "source": "Yahoo!ニュース",
-        "sourceName": "Yahoo!ニュース / IT",
-        "sourceGroup": "general-tech",
-        "sourcePriority": 62,
-        "official": false,
-        "specialist": false,
-        "forPersonal": false,
-        "sourceTags": [],
-        "title": "子のSNSいつから? 禁止の是非",
-        "url": "https://news.yahoo.co.jp/pickup/6588282?source=rss",
-        "canonicalUrl": "https://news.yahoo.co.jp/pickup/6588282?source=rss",
-        "publishedAt": "2026-07-17T07:22:20.000Z",
-        "publishedLabel": "7/17 07:22",
-        "thumbnailUrl": null,
+        "title": "国旗損壊処罰法 参議院本会議で可決・成立",
+        "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179001000.html",
+        "canonicalUrl": "http://www3.nhk.or.jp/news/html/20260717/k10015179001000.html",
+        "publishedAt": "2026-07-17T10:34:10.000Z",
+        "publishedLabel": "7/17 10:34",
+        "thumbnailUrl": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
         "briefSummary": "",
         "summary": ""
       },
       {
-        "sourceId": "google-news-net-culture",
-        "source": "Google News",
-        "sourceName": "Google News / ネット話題",
-        "sourceGroup": "google-news",
-        "sourcePriority": 32,
+        "sourceId": "hatena-hotentry",
+        "source": "はてなブックマーク",
+        "sourceName": "はてなブックマーク人気",
+        "sourceGroup": "net-culture",
+        "sourcePriority": 74,
         "official": false,
-        "specialist": false,
+        "specialist": true,
         "forPersonal": true,
         "sourceTags": [
-          "sns",
           "net-culture",
-          "buzz",
-          "meme"
+          "sns",
+          "trend",
+          "buzz"
         ],
-        "title": "子のSNSいつから? 禁止の是非",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE55dVM5blBLNzByUU5aa3g2ZzBON21ZQ09lTUhnS0FhV0ZtbDIzdGxUM0Rkd1RBdEM0eFVOQldnZmhwU0p4ZEZGcXdSbUk1bDN2?oc=5",
-        "canonicalUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE55dVM5blBLNzByUU5aa3g2ZzBON21ZQ09lTUhnS0FhV0ZtbDIzdGxUM0Rkd1RBdEM0eFVOQldnZmhwU0p4ZEZGcXdSbUk1bDN2?oc=5",
-        "publishedAt": "2026-07-17T07:22:20.000Z",
-        "publishedLabel": "7/17 07:22",
+        "title": "国旗損壊処罰法 参議院本会議で可決・成立",
+        "url": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
+        "canonicalUrl": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
+        "publishedAt": null,
+        "publishedLabel": "1/1 00:00",
         "thumbnailUrl": null,
         "briefSummary": "",
         "summary": ""
       }
     ],
-    "hotScore": 79.6,
-    "posts": "3",
+    "hotScore": 71.6,
+    "posts": "2",
     "metricLabel": "signals",
-    "time": "1時間前",
-    "publishedAt": "2026-07-17T10:48:03.000Z",
-    "buzzScore": 79.6,
+    "time": "1時間以内",
+    "publishedAt": "2026-07-17T10:34:10.000Z",
+    "buzzScore": 71.6,
     "scoreBreakdown": {
-      "coverage": 5.4,
+      "coverage": 3.6,
       "sourceDiversity": 4.7,
-      "trend": 21.3,
+      "trend": 22,
       "internetNativeBoost": 8,
-      "search": 4.8,
-      "social": 7.4,
+      "search": 10.9,
+      "social": 5.9,
       "velocity": 0,
-      "freshness": 8.5,
-      "authority": 2.5,
-      "categoryBias": 17,
+      "freshness": 7,
+      "authority": 5.5,
+      "categoryBias": 4,
       "penalty": 0
     },
     "whyRanked": [
-      "既存トレンド指標でも反応が強い"
+      "既存トレンド指標でも反応が強い",
+      "検索面でも関連話題の広がりを確認",
+      "公式または一次情報を含む"
     ],
     "rank": 1,
     "summaryPayload": {
-      "headline": "児童のSNS通じた被害増 どう防ぐ",
-      "whatHappened": "児童のSNS通じた被害増 どう防ぐ",
-      "whyBuzzing": "既存トレンド指標でも反応が強い。報道元はYahoo!ニュース / IT、Google News / ネット話題です。",
+      "headline": "国旗損壊処罰法 参議院本会議で可決・成立",
+      "whatHappened": "国旗損壊処罰法 参議院本会議で可決・成立",
+      "whyBuzzing": "既存トレンド指標でも反応が強い。報道元はNHK、はてなブックマーク人気です。",
       "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
       "keyPoints": [
         "2媒体・2ドメインで確認されたトピックです。",
-        "最新更新は2026/7/17 10:48:03です。",
-        "現時点では報道の出そろい方と勢いを優先して選出しています。"
+        "最新更新は2026/7/17 10:34:10です。",
+        "一次情報を含むため、事実確認の軸を置きやすい話題です。"
       ],
       "watchpoints": [
         "続報で事実関係や影響範囲が更新される可能性があります。",
         "一次情報や公式コメントが追加されたら優先して確認してください。"
       ],
-      "threeMinuteSummary": "児童のSNS通じた被害増 どう防ぐ 既存トレンド指標でも反応が強い。報道元はYahoo!ニュース / IT、Google News / ネット話題です。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
+      "threeMinuteSummary": "国旗損壊処罰法 参議院本会議で可決・成立 既存トレンド指標でも反応が強い。報道元はNHK、はてなブックマーク人気です。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
     },
     "representativeArticles": [
       {
-        "title": "児童のSNS通じた被害増 どう防ぐ",
-        "url": "https://news.yahoo.co.jp/pickup/6588318?source=rss",
-        "sourceName": "Yahoo!ニュース / IT",
-        "publishedAt": "2026-07-17T10:48:03.000Z"
+        "title": "国旗損壊処罰法 参議院本会議で可決・成立",
+        "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179001000.html",
+        "sourceName": "NHK",
+        "publishedAt": "2026-07-17T10:34:10.000Z"
       },
       {
-        "title": "子のSNSいつから? 禁止の是非",
-        "url": "https://news.yahoo.co.jp/pickup/6588282?source=rss",
-        "sourceName": "Yahoo!ニュース / IT",
-        "publishedAt": "2026-07-17T07:22:20.000Z"
-      },
-      {
-        "title": "子のSNSいつから? 禁止の是非",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE55dVM5blBLNzByUU5aa3g2ZzBON21ZQ09lTUhnS0FhV0ZtbDIzdGxUM0Rkd1RBdEM0eFVOQldnZmhwU0p4ZEZGcXdSbUk1bDN2?oc=5",
-        "sourceName": "Google News / ネット話題",
-        "publishedAt": "2026-07-17T07:22:20.000Z"
+        "title": "国旗損壊処罰法 参議院本会議で可決・成立",
+        "url": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
+        "sourceName": "はてなブックマーク人気",
+        "publishedAt": null
       }
     ],
     "externalSignals": {
-      "query": "児童のSNS通じた被害増 どう防ぐ",
+      "query": "国旗損壊処罰法 参議院本会議で可決・成立",
       "search": {
-        "count": 6,
-        "score": 10,
+        "count": 41,
+        "score": 68.33333333333333,
         "available": true
       },
       "reddit": {
@@ -173,7 +148,7 @@
       ]
     },
     "externalSignalStats": {
-      "searchScore": 10,
+      "searchScore": 68.33333333333333,
       "socialScore": 0,
       "searchAvailable": true,
       "socialAvailable": false
@@ -185,195 +160,21 @@
     "internalSignalStats": {
       "browseMatchCount": 0,
       "archiveMatchCount": 1,
-      "repeatedAppearanceScore": 6,
-      "crossCategoryScore": 100,
-      "archiveHeatScore": 97,
-      "internalSearchScore": 37.8,
-      "internalSocialScore": 57.7
+      "repeatedAppearanceScore": 5.1,
+      "crossCategoryScore": 80,
+      "archiveHeatScore": 100,
+      "internalSearchScore": 38.3,
+      "internalSocialScore": 46.3
     },
     "clusterStats": {
-      "articleCount": 3,
+      "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
-      "officialSourceCount": 0,
+      "officialSourceCount": 1,
       "latestSourceCount1h": 0
     }
   },
   "runnerUps": [
-    {
-      "id": "auto-politics-国旗損壊処罰法-参議院本会議で可決・成立-www3.nhk.or.jp/news/html/20260717/k10015179001000.html",
-      "title": "国旗損壊処罰法 参議院本会議で可決・成立",
-      "summary": "国旗損壊処罰法 参議院本会議で可決・成立 直近数時間で関連記事が増加。報道元はNHK、はてなブックマーク人気です。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-      "briefSummary": "国旗損壊処罰法 参議院本会議で可決・成立",
-      "whatHappened": "国旗損壊処罰法 参議院本会議で可決・成立",
-      "whyHot": "直近数時間で関連記事が増加。報道元はNHK、はてなブックマーク人気です。",
-      "importantPoint": "2媒体・2ドメインで確認されたトピックです。",
-      "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "政治",
-      "categoryLabels": [
-        "政治",
-        "その他",
-        "ネットカルチャー",
-        "その他"
-      ],
-      "thumbnailUrl": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
-      "sourceSignals": [
-        {
-          "sourceId": "nhk-top",
-          "source": "NHK RSS",
-          "sourceName": "NHK",
-          "sourceGroup": "important-news",
-          "sourcePriority": 92,
-          "official": true,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "国旗損壊処罰法 参議院本会議で可決・成立",
-          "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179001000.html",
-          "canonicalUrl": "http://www3.nhk.or.jp/news/html/20260717/k10015179001000.html",
-          "publishedAt": "2026-07-17T10:34:10.000Z",
-          "publishedLabel": "7/17 10:34",
-          "thumbnailUrl": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
-          "briefSummary": "",
-          "summary": ""
-        },
-        {
-          "sourceId": "hatena-hotentry",
-          "source": "はてなブックマーク",
-          "sourceName": "はてなブックマーク人気",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "trend",
-            "buzz"
-          ],
-          "title": "国旗損壊処罰法 参議院本会議で可決・成立",
-          "url": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
-          "canonicalUrl": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": null,
-          "briefSummary": "",
-          "summary": ""
-        }
-      ],
-      "hotScore": 75.8,
-      "posts": "2",
-      "metricLabel": "signals",
-      "time": "1時間以内",
-      "publishedAt": "2026-07-17T10:34:10.000Z",
-      "buzzScore": 75.8,
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 10.9,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 5.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "公式または一次情報を含む"
-      ],
-      "rank": 2,
-      "summaryPayload": {
-        "headline": "国旗損壊処罰法 参議院本会議で可決・成立",
-        "whatHappened": "国旗損壊処罰法 参議院本会議で可決・成立",
-        "whyBuzzing": "直近数時間で関連記事が増加。報道元はNHK、はてなブックマーク人気です。",
-        "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-        "keyPoints": [
-          "2媒体・2ドメインで確認されたトピックです。",
-          "最新更新は2026/7/17 10:34:10です。",
-          "一次情報を含むため、事実確認の軸を置きやすい話題です。"
-        ],
-        "watchpoints": [
-          "続報で事実関係や影響範囲が更新される可能性があります。",
-          "一次情報や公式コメントが追加されたら優先して確認してください。"
-        ],
-        "threeMinuteSummary": "国旗損壊処罰法 参議院本会議で可決・成立 直近数時間で関連記事が増加。報道元はNHK、はてなブックマーク人気です。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
-      },
-      "representativeArticles": [
-        {
-          "title": "国旗損壊処罰法 参議院本会議で可決・成立",
-          "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179001000.html",
-          "sourceName": "NHK",
-          "publishedAt": "2026-07-17T10:34:10.000Z"
-        },
-        {
-          "title": "国旗損壊処罰法 参議院本会議で可決・成立",
-          "url": "https://imgu.web.nhk/news/u/news/html/20260717/K10015179001_2607171050_0717105240_01_02.jpg",
-          "sourceName": "はてなブックマーク人気",
-          "publishedAt": null
-        }
-      ],
-      "externalSignals": {
-        "query": "国旗損壊処罰法 参議院本会議で可決・成立",
-        "search": {
-          "count": 41,
-          "score": 68.33333333333333,
-          "available": true
-        },
-        "reddit": {
-          "available": false,
-          "score": 0,
-          "count": 0
-        },
-        "bluesky": {
-          "available": false,
-          "score": 0,
-          "count": 0
-        },
-        "errors": [
-          "reddit:http 403 Blocked",
-          "bluesky:http 403 Forbidden"
-        ]
-      },
-      "externalSignalStats": {
-        "searchScore": 68.33333333333333,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ],
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
-      },
-      "clusterStats": {
-        "articleCount": 2,
-        "sourceCount": 2,
-        "uniqueDomainCount": 2,
-        "officialSourceCount": 1,
-        "latestSourceCount1h": 0
-      }
-    },
     {
       "id": "auto-games-steamのゲームを-物理カートリッジ化-した人あらわる-ssd丸ごと-ゲームカセット化-の荒業-automaton-media.com/articles/newsjp/20260716-455314",
       "title": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
@@ -471,7 +272,7 @@
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
-      "rank": 3,
+      "rank": 2,
       "summaryPayload": {
         "headline": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
         "whatHappened": "Steamのゲームを「物理カートリッジ化」した人あらわる",
@@ -606,7 +407,7 @@
       "posts": "1",
       "metricLabel": "signals",
       "time": "直近",
-      "publishedAt": "2026-07-17T12:44:34.450Z",
+      "publishedAt": "2026-07-17T14:50:02.635Z",
       "buzzScore": 69,
       "scoreBreakdown": {
         "coverage": 1.8,
@@ -624,7 +425,7 @@
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
-      "rank": 4,
+      "rank": 3,
       "summaryPayload": {
         "headline": "「バズらなければ戻らなかった」―25年分のデータを失いかけた配信者、MSアカウントが復旧！しかしサポート対応には苦言",
         "whatHappened": "「バズらなければ戻らなかった」―25年分のデータを失いかけた配信者、MSアカウントが復旧",
@@ -632,7 +433,7 @@
         "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
         "keyPoints": [
           "1媒体・1ドメインで確認されたトピックです。",
-          "最新更新は2026/7/17 12:44:34です。",
+          "最新更新は2026/7/17 14:50:02です。",
           "現時点では報道の出そろい方と勢いを優先して選出しています。"
         ],
         "watchpoints": [
@@ -697,69 +498,185 @@
         "officialSourceCount": 0,
         "latestSourceCount1h": 0
       }
-    }
-  ],
-  "fallbackUsed": false,
-  "debug": {
-    "generatedAt": "2026-07-17T12:46:53.921Z",
-    "fallbackUsed": false,
-    "selectedClusterId": "today-cluster-543",
-    "selectedTitle": "児童のSNS通じた被害増 どう防ぐ",
-    "candidates": [
-      {
-        "clusterId": "today-cluster-543",
-        "title": "児童のSNS通じた被害増 どう防ぐ",
-        "category": "sports",
-        "categories": [
-          "sports",
-          "net-culture",
-          "tech",
-          "sns",
-          "general"
+    },
+    {
+      "id": "auto-net-culture-子のsnsいつから-禁止の是非-news.yahoo.co.jp/pickup/6588282",
+      "title": "子のSNSいつから? 禁止の是非",
+      "summary": "子のSNSいつから 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+      "briefSummary": "子のSNSいつから",
+      "whatHappened": "子のSNSいつから",
+      "whyHot": "既存トレンド指標でも反応が強い。",
+      "importantPoint": "1媒体・1ドメインで確認されたトピックです。",
+      "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "net-culture",
+        "tech",
+        "sns",
+        "general"
+      ],
+      "categoryLabel": "ネットカルチャー",
+      "categoryLabels": [
+        "ネットカルチャー",
+        "テック",
+        "その他",
+        "その他"
+      ],
+      "thumbnailUrl": "",
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-it",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / IT",
+          "sourceGroup": "general-tech",
+          "sourcePriority": 62,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "児童のSNS通じた被害増 どう防ぐ",
+          "url": "https://news.yahoo.co.jp/pickup/6588318?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6588318?source=rss",
+          "publishedAt": "2026-07-17T10:48:03.000Z",
+          "publishedLabel": "7/17 10:48",
+          "thumbnailUrl": null,
+          "briefSummary": "",
+          "summary": "",
+          "thumbnail": null
+        },
+        {
+          "sourceId": "yahoo-it",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / IT",
+          "sourceGroup": "general-tech",
+          "sourcePriority": 62,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "子のSNSいつから? 禁止の是非",
+          "url": "https://news.yahoo.co.jp/pickup/6588282?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6588282?source=rss",
+          "publishedAt": "2026-07-17T07:22:20.000Z",
+          "publishedLabel": "7/17 07:22",
+          "thumbnailUrl": null,
+          "briefSummary": "",
+          "summary": ""
+        }
+      ],
+      "hotScore": 68.5,
+      "posts": "2",
+      "metricLabel": "signals",
+      "time": "1時間前",
+      "publishedAt": "2026-07-17T10:48:03.000Z",
+      "buzzScore": 68.5,
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -3
+      },
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "rank": 4,
+      "summaryPayload": {
+        "headline": "子のSNSいつから? 禁止の是非",
+        "whatHappened": "子のSNSいつから",
+        "whyBuzzing": "既存トレンド指標でも反応が強い。",
+        "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+        "keyPoints": [
+          "1媒体・1ドメインで確認されたトピックです。",
+          "最新更新は2026/7/17 10:48:03です。",
+          "現時点では報道の出そろい方と勢いを優先して選出しています。"
         ],
-        "buzzScore": 79.6,
-        "confidence": 0.46,
-        "articleCount": 3,
-        "sourceCount": 2,
-        "uniqueDomainCount": 2,
-        "whyRanked": [
-          "既存トレンド指標でも反応が強い"
+        "watchpoints": [
+          "続報で事実関係や影響範囲が更新される可能性があります。",
+          "一次情報や公式コメントが追加されたら優先して確認してください。"
         ],
-        "scoreBreakdown": {
-          "coverage": 5.4,
-          "sourceDiversity": 4.7,
-          "trend": 21.3,
-          "internetNativeBoost": 8,
-          "search": 4.8,
-          "social": 7.4,
-          "velocity": 0,
-          "freshness": 8.5,
-          "authority": 2.5,
-          "categoryBias": 17,
-          "penalty": 0
+        "threeMinuteSummary": "子のSNSいつから 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
+      },
+      "representativeArticles": [
+        {
+          "title": "児童のSNS通じた被害増 どう防ぐ",
+          "url": "https://news.yahoo.co.jp/pickup/6588318?source=rss",
+          "sourceName": "Yahoo!ニュース / IT",
+          "publishedAt": "2026-07-17T10:48:03.000Z"
         },
-        "externalSignalStats": {
-          "searchScore": 10,
-          "socialScore": 0,
-          "searchAvailable": true,
-          "socialAvailable": false
+        {
+          "title": "子のSNSいつから? 禁止の是非",
+          "url": "https://news.yahoo.co.jp/pickup/6588282?source=rss",
+          "sourceName": "Yahoo!ニュース / IT",
+          "publishedAt": "2026-07-17T07:22:20.000Z"
+        }
+      ],
+      "externalSignals": {
+        "query": "子のSNSいつから? 禁止の是非",
+        "search": {
+          "count": 2,
+          "score": 3.3333333333333335,
+          "available": true
         },
-        "internalSignalStats": {
-          "browseMatchCount": 0,
-          "archiveMatchCount": 1,
-          "repeatedAppearanceScore": 6,
-          "crossCategoryScore": 100,
-          "archiveHeatScore": 97,
-          "internalSearchScore": 37.8,
-          "internalSocialScore": 57.7
+        "reddit": {
+          "available": false,
+          "score": 0,
+          "count": 0
         },
-        "externalSignalErrors": [
+        "bluesky": {
+          "available": false,
+          "score": 0,
+          "count": 0
+        },
+        "errors": [
           "reddit:http 403 Blocked",
           "bluesky:http 403 Forbidden"
         ]
       },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ],
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.3,
+        "internalSocialScore": 46.3
+      },
+      "clusterStats": {
+        "articleCount": 2,
+        "sourceCount": 1,
+        "uniqueDomainCount": 1,
+        "officialSourceCount": 0,
+        "latestSourceCount1h": 0
+      }
+    }
+  ],
+  "fallbackUsed": false,
+  "debug": {
+    "generatedAt": "2026-07-17T14:52:48.988Z",
+    "fallbackUsed": false,
+    "selectedClusterId": "today-cluster-680",
+    "selectedTitle": "国旗損壊処罰法 参議院本会議で可決・成立",
+    "candidates": [
       {
-        "clusterId": "today-cluster-568",
+        "clusterId": "today-cluster-680",
         "title": "国旗損壊処罰法 参議院本会議で可決・成立",
         "category": "politics",
         "categories": [
@@ -768,13 +685,12 @@
           "net-culture",
           "general"
         ],
-        "buzzScore": 75.8,
-        "confidence": 0.47,
+        "buzzScore": 71.6,
+        "confidence": 0.44,
         "articleCount": 2,
         "sourceCount": 2,
         "uniqueDomainCount": 2,
         "whyRanked": [
-          "直近数時間で関連記事が増加",
           "既存トレンド指標でも反応が強い",
           "検索面でも関連話題の広がりを確認",
           "公式または一次情報を含む"
@@ -785,9 +701,9 @@
           "trend": 22,
           "internetNativeBoost": 8,
           "search": 10.9,
-          "social": 6,
-          "velocity": 2.7,
-          "freshness": 8.5,
+          "social": 5.9,
+          "velocity": 0,
+          "freshness": 7,
           "authority": 5.5,
           "categoryBias": 4,
           "penalty": 0
@@ -801,11 +717,11 @@
         "internalSignalStats": {
           "browseMatchCount": 0,
           "archiveMatchCount": 1,
-          "repeatedAppearanceScore": 6,
+          "repeatedAppearanceScore": 5.1,
           "crossCategoryScore": 80,
           "archiveHeatScore": 100,
-          "internalSearchScore": 38.9,
-          "internalSocialScore": 46.7
+          "internalSearchScore": 38.3,
+          "internalSocialScore": 46.3
         },
         "externalSignalErrors": [
           "reddit:http 403 Blocked",
@@ -813,7 +729,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-128",
+        "clusterId": "today-cluster-127",
         "title": "Steamのゲームを「物理カートリッジ化」した人あらわる。SSD丸ごと“ゲームカセット化”の荒業",
         "category": "games",
         "categories": [
@@ -864,7 +780,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-162",
+        "clusterId": "today-cluster-160",
         "title": "「バズらなければ戻らなかった」―25年分のデータを失いかけた配信者、MSアカウントが復旧！しかしサポート対応には苦言",
         "category": "entertainment",
         "categories": [
@@ -916,38 +832,87 @@
         ]
       },
       {
-        "clusterId": "today-cluster-439",
-        "title": "米国株23時間取引、12月6日開始へ　世界のマネー集中で「大リーグ化」",
-        "category": "world",
+        "clusterId": "today-cluster-654",
+        "title": "子のSNSいつから? 禁止の是非",
+        "category": "sports",
         "categories": [
-          "world",
-          "business",
-          "general",
+          "sports",
+          "net-culture",
+          "tech",
           "sns",
-          "net-culture"
+          "general"
         ],
-        "buzzScore": 68.1,
-        "confidence": 0.47,
-        "articleCount": 3,
-        "sourceCount": 2,
-        "uniqueDomainCount": 2,
+        "buzzScore": 68.5,
+        "confidence": 0.39,
+        "articleCount": 2,
+        "sourceCount": 1,
+        "uniqueDomainCount": 1,
         "whyRanked": [
-          "直近数時間で関連記事が増加",
-          "既存トレンド指標でも反応が強い",
-          "アーカイブ上でも近い話題が連続出現"
+          "既存トレンド指標でも反応が強い"
         ],
         "scoreBreakdown": {
-          "coverage": 5.4,
-          "sourceDiversity": 4.7,
-          "trend": 17.4,
+          "coverage": 3.6,
+          "sourceDiversity": 2.3,
+          "trend": 21.3,
           "internetNativeBoost": 8,
-          "search": 4.4,
-          "social": 7.6,
-          "velocity": 4.2,
+          "search": 4.8,
+          "social": 5.9,
+          "velocity": 0,
+          "freshness": 7,
+          "authority": 1.5,
+          "categoryBias": 17,
+          "penalty": -3
+        },
+        "externalSignalStats": {
+          "searchScore": 3.3333333333333335,
+          "socialScore": 0,
+          "searchAvailable": true,
+          "socialAvailable": false
+        },
+        "internalSignalStats": {
+          "browseMatchCount": 0,
+          "archiveMatchCount": 1,
+          "repeatedAppearanceScore": 5.1,
+          "crossCategoryScore": 80,
+          "archiveHeatScore": 97,
+          "internalSearchScore": 37.3,
+          "internalSocialScore": 46.3
+        },
+        "externalSignalErrors": [
+          "reddit:http 403 Blocked",
+          "bluesky:http 403 Forbidden"
+        ]
+      },
+      {
+        "clusterId": "today-cluster-184",
+        "title": "シドに捕まった「ウッディ」「バズ」を再現！一番くじ「トイ・ストーリー」より、目玉賞のフィギュアが先行公開",
+        "category": "games",
+        "categories": [
+          "games",
+          "sns",
+          "net-culture",
+          "general"
+        ],
+        "buzzScore": 67.6,
+        "confidence": 0.39,
+        "articleCount": 1,
+        "sourceCount": 1,
+        "uniqueDomainCount": 1,
+        "whyRanked": [
+          "既存トレンド指標でも反応が強い"
+        ],
+        "scoreBreakdown": {
+          "coverage": 1.8,
+          "sourceDiversity": 2.3,
+          "trend": 22,
+          "internetNativeBoost": 8,
+          "search": 5,
+          "social": 6,
+          "velocity": 0,
           "freshness": 10,
-          "authority": 2.5,
-          "categoryBias": 4,
-          "penalty": 0
+          "authority": 1.5,
+          "categoryBias": 14,
+          "penalty": -3
         },
         "externalSignalStats": {
           "searchScore": 5,
@@ -957,12 +922,12 @@
         },
         "internalSignalStats": {
           "browseMatchCount": 0,
-          "archiveMatchCount": 2,
-          "repeatedAppearanceScore": 10.2,
-          "crossCategoryScore": 100,
-          "archiveHeatScore": 79,
-          "internalSearchScore": 34.3,
-          "internalSocialScore": 59.6
+          "archiveMatchCount": 1,
+          "repeatedAppearanceScore": 6,
+          "crossCategoryScore": 80,
+          "archiveHeatScore": 100,
+          "internalSearchScore": 38.9,
+          "internalSocialScore": 46.7
         },
         "externalSignalErrors": [
           "reddit:http 403 Blocked",
@@ -980,6 +945,6 @@
       "reddit:http 403 Blocked",
       "bluesky:http 403 Forbidden"
     ],
-    "confidence": 0.46
+    "confidence": 0.44
   }
 }

@@ -123,6 +123,20 @@ function renderTrending(item) {
   }
   tag.append(createElement('strong', '', item.label));
   tag.append(createElement('span', '', item.description));
+
+  const category = typeof item.category === 'string' ? item.category.trim() : '';
+  const hasScore = Number.isFinite(item.score);
+  if (category || hasScore) {
+    const meta = createElement('div', 'trend-tag__meta');
+    if (category) {
+      meta.append(createElement('span', 'trend-tag__category', category));
+    }
+    if (hasScore) {
+      meta.append(createElement('span', 'trend-tag__score', `注目度 ${Math.round(item.score)}`));
+    }
+    tag.append(meta);
+  }
+
   return tag;
 }
 

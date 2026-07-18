@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-18T08:25:29.660Z",
+  "generatedAt": "2026-07-18T10:04:42.111Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-5",
+  "selectedClusterId": "today-cluster-4",
   "selectedTitle": "【速報中】「RIZIN広島大会」全試合結果　サバテロvs鹿志村のタイトルマッチ、萩原vsダウトベックなど全12試合",
   "candidates": [
     {
-      "clusterId": "today-cluster-5",
+      "clusterId": "today-cluster-4",
       "title": "【速報中】「RIZIN広島大会」全試合結果　サバテロvs鹿志村のタイトルマッチ、萩原vsダウトベックなど全12試合",
       "category": "entertainment",
       "categories": [
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1063",
+      "clusterId": "today-cluster-1190",
       "title": "「バズらなければ戻らなかった」―25年分のデータを失いかけた配信者、MSアカウントが復旧！しかしサポート対応には苦言",
       "category": "entertainment",
       "categories": [
@@ -143,7 +143,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -163,7 +163,58 @@
       ]
     },
     {
-      "clusterId": "today-cluster-76",
+      "clusterId": "today-cluster-158",
+      "title": "「宮本（武蔵）です。」―『鬼武者 Way of the Sword』海外公式Xの任天堂風投稿が話題に。宮本違い",
+      "category": "games",
+      "categories": [
+        "games",
+        "sports",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 70.6,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-78",
       "title": "元ヴァニラウェアデザイナーが放つゲームブック風ADV『ヴェリタステイルズ：暗黒城の魔女』が「非常に好評」の門出。6年間の美麗手作りアート光る“一冊”",
       "category": "games",
       "categories": [
@@ -209,58 +260,6 @@
         "archiveHeatScore": 89,
         "internalSearchScore": 44.8,
         "internalSocialScore": 64.5
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1317",
-      "title": "「人気キャラのおもちゃ譲ります」 不審なSNS投稿に注意",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 68.4,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5.3,
-        "social": 4.8,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 5.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 10.2,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 41.6,
-        "internalSocialScore": 37.6
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

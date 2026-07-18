@@ -9,7 +9,7 @@
       content="INTERNET NEWS Nextは、3〜5分で今日を理解するニュース体験を目指して開発中の独立ページです。"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./app.js" defer></script>
+    <script type="module" src="./app.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -34,102 +34,37 @@
         <div class="primary-column">
           <section class="section-block" aria-labelledby="key-points-title">
             <div class="section-heading">
-              <p class="section-kicker">First 30 seconds</p>
-              <h2 id="key-points-title">今日の要点</h2>
+              <div>
+                <p class="section-kicker">First 30 seconds</p>
+                <h2 id="key-points-title">今日の要点</h2>
+              </div>
+              <p class="section-meta" id="key-points-meta" aria-live="polite"></p>
             </div>
-            <div class="key-point-grid">
-              <article class="key-point-card">
-                <h3>生成AIの使い方が業務の前提に近づく</h3>
-                <p>主要サービスの更新が続き、仕事の進め方そのものに影響が広がっています。</p>
-              </article>
-              <article class="key-point-card">
-                <h3>市場は政策発言と企業決算を注視</h3>
-                <p>金利、為替、決算の見通しが重なり、生活コストにも波及しやすい局面です。</p>
-              </article>
-              <article class="key-point-card">
-                <h3>エンタメとゲームの大型発表が集中</h3>
-                <p>新作、イベント、配信情報が増え、週末に追うべき話題が見え始めています。</p>
-              </article>
+            <div
+              class="key-point-grid"
+              id="key-points-list"
+              aria-busy="true"
+              aria-live="polite"
+            >
+              <p class="section-state">今日の要点を読み込んでいます</p>
             </div>
           </section>
 
           <section class="section-block" aria-labelledby="must-know-title">
             <div class="section-heading">
-              <p class="section-kicker">Must know</p>
-              <h2 id="must-know-title">今日絶対知るべきニュース</h2>
+              <div>
+                <p class="section-kicker">Must know</p>
+                <h2 id="must-know-title">今日絶対知るべきニュース</h2>
+              </div>
+              <p class="section-meta" id="must-know-meta" aria-live="polite"></p>
             </div>
-            <div class="news-card-list">
-              <article class="understanding-card">
-                <h3>政府が新しい経済対策の骨子を発表</h3>
-                <dl>
-                  <div>
-                    <dt>何が起きた</dt>
-                    <dd>物価高と賃上げを軸に、家計支援と企業投資を組み合わせた方針が示されました。</dd>
-                  </div>
-                  <div>
-                    <dt>なぜ重要</dt>
-                    <dd>補助金、税制、賃金政策は生活費と企業活動の両方に影響します。</dd>
-                  </div>
-                  <div>
-                    <dt>次に見る</dt>
-                    <dd>具体的な予算規模、対象者、実施時期を確認します。</dd>
-                  </div>
-                </dl>
-              </article>
-
-              <article class="understanding-card">
-                <h3>大型テック企業がAI機能の標準搭載を拡大</h3>
-                <dl>
-                  <div>
-                    <dt>何が起きた</dt>
-                    <dd>検索、文章作成、画像処理にAI支援を組み込む動きが一段と進みました。</dd>
-                  </div>
-                  <div>
-                    <dt>なぜ重要</dt>
-                    <dd>仕事の生産性だけでなく、情報の探し方や判断の仕方も変わります。</dd>
-                  </div>
-                  <div>
-                    <dt>次に見る</dt>
-                    <dd>無料範囲、プライバシー設定、企業利用時の管理機能を確認します。</dd>
-                  </div>
-                </dl>
-              </article>
-
-              <article class="understanding-card">
-                <h3>ゲーム業界で新作発表と大型アップデートが相次ぐ</h3>
-                <dl>
-                  <div>
-                    <dt>何が起きた</dt>
-                    <dd>人気タイトルの追加コンテンツや新作情報が複数公開されました。</dd>
-                  </div>
-                  <div>
-                    <dt>なぜ重要</dt>
-                    <dd>発売時期、対応機種、価格がユーザーの購入判断に直結します。</dd>
-                  </div>
-                  <div>
-                    <dt>次に見る</dt>
-                    <dd>公式発表、予約開始日、レビュー解禁日を追います。</dd>
-                  </div>
-                </dl>
-              </article>
-
-              <article class="understanding-card">
-                <h3>海外情勢の変化でエネルギー価格に警戒感</h3>
-                <dl>
-                  <div>
-                    <dt>何が起きた</dt>
-                    <dd>国際情勢と供給不安が重なり、市場が価格変動に敏感になっています。</dd>
-                  </div>
-                  <div>
-                    <dt>なぜ重要</dt>
-                    <dd>燃料費や物流費を通じて、電気代や商品価格へ影響する可能性があります。</dd>
-                  </div>
-                  <div>
-                    <dt>次に見る</dt>
-                    <dd>原油価格、為替、政府の追加対応を確認します。</dd>
-                  </div>
-                </dl>
-              </article>
+            <div
+              class="news-card-list"
+              id="must-know-list"
+              aria-busy="true"
+              aria-live="polite"
+            >
+              <p class="section-state">必読ニュースを読み込んでいます</p>
             </div>
           </section>
         </div>
@@ -137,18 +72,19 @@
         <aside class="secondary-column" aria-label="補足情報">
           <section class="section-block compact-block" aria-labelledby="rising-words-title">
             <div class="section-heading">
-              <p class="section-kicker">Rising</p>
-              <h2 id="rising-words-title">急上昇ワード</h2>
+              <div>
+                <p class="section-kicker">Rising</p>
+                <h2 id="rising-words-title">急上昇ワード</h2>
+              </div>
+              <p class="section-meta" id="trending-meta" aria-live="polite"></p>
             </div>
-            <div class="trend-tag-list">
-              <div class="trend-tag"><strong>生成AI</strong><span>新機能と業務利用</span></div>
-              <div class="trend-tag"><strong>物価対策</strong><span>家計支援の焦点</span></div>
-              <div class="trend-tag"><strong>円相場</strong><span>市場の注目材料</span></div>
-              <div class="trend-tag"><strong>新作ゲーム</strong><span>発表情報が集中</span></div>
-              <div class="trend-tag"><strong>大型アップデート</strong><span>週末前の確認事項</span></div>
-              <div class="trend-tag"><strong>映画公開</strong><span>初動と口コミ</span></div>
-              <div class="trend-tag"><strong>気象警戒</strong><span>移動前に確認</span></div>
-              <div class="trend-tag"><strong>決算発表</strong><span>株価材料</span></div>
+            <div
+              class="trend-tag-list"
+              id="trending-list"
+              aria-busy="true"
+              aria-live="polite"
+            >
+              <p class="section-state">急上昇ワードを読み込んでいます</p>
             </div>
           </section>
 
@@ -173,5 +109,8 @@
         <p>INTERNET NEWS Next MVP</p>
       </div>
     </footer>
+    <noscript>
+      <p class="noscript-message">最新ニュースの表示にはJavaScriptが必要です。</p>
+    </noscript>
   </body>
 </html>

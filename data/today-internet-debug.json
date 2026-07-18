@@ -1,11 +1,64 @@
 {
-  "generatedAt": "2026-07-18T19:47:17.996Z",
+  "generatedAt": "2026-07-18T21:02:50.570Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-124",
-  "selectedTitle": "「宮本（武蔵）です。」―『鬼武者 Way of the Sword』海外公式Xの任天堂風投稿が話題に。宮本違い",
+  "selectedClusterId": "today-cluster-336",
+  "selectedTitle": "W杯 フランス×イングランド【速報予定】得点王争いも注目",
   "candidates": [
     {
-      "clusterId": "today-cluster-124",
+      "clusterId": "today-cluster-336",
+      "title": "W杯 フランス×イングランド【速報予定】得点王争いも注目",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 73.7,
+      "confidence": 0.41,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.5,
+        "internetNativeBoost": 8,
+        "search": 13.9,
+        "social": 4.6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 4.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 86.66666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 33.3,
+        "internalSocialScore": 35.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-107",
       "title": "「宮本（武蔵）です。」―『鬼武者 Way of the Sword』海外公式Xの任天堂風投稿が話題に。宮本違い",
       "category": "games",
       "categories": [
@@ -56,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-130",
+      "clusterId": "today-cluster-113",
       "title": "ウッディ&バズをモチーフにしたバッグ登場♪ サマンサタバサから「トイ・ストーリー」コレクション登場",
       "category": "anime",
       "categories": [
@@ -109,7 +162,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-112",
+      "clusterId": "today-cluster-95",
       "title": "任天堂、『パルワールド』関連の特許出願に拒絶査定―カギを握ったのは2013年の“ファンメイド3Dポケモンゲーム”。著作権侵害の映像と述べるも退けられる",
       "category": "games",
       "categories": [
@@ -160,7 +213,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1",
+      "clusterId": "today-cluster-2",
       "title": "『鳴潮』アニメシリーズ「エリュシオン」が始動！クロゲームズのアニメーションブランド「KURO ONROAD」が手がける",
       "category": "anime",
       "categories": [
@@ -207,58 +260,6 @@
         "archiveHeatScore": 87,
         "internalSearchScore": 46.1,
         "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1810",
-      "title": "「人気キャラのおもちゃ譲ります」 不審なSNS投稿に注意",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66.3,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5.2,
-        "social": 4.7,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 5.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 9,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 40.9,
-        "internalSocialScore": 37.1
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

@@ -1,11 +1,117 @@
 {
-  "generatedAt": "2026-07-18T01:02:38.696Z",
+  "generatedAt": "2026-07-18T04:10:01.550Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-52",
-  "selectedTitle": "元ヴァニラウェアデザイナーが放つゲームブック風ADV『ヴェリタステイルズ：暗黒城の魔女』が「非常に好評」の門出。6年間の美麗手作りアート光る“一冊”",
+  "selectedClusterId": "today-cluster-84",
+  "selectedTitle": "写真週刊誌FRIDAYがグラビアアイドルと共に作った実写恋愛ゲーム『ハムコイ』は、Steam発売禁止の危機を乗り越えてなんとかリリースにこぎつけた。その過程を開発陣に訊いた",
   "candidates": [
     {
-      "clusterId": "today-cluster-52",
+      "clusterId": "today-cluster-84",
+      "title": "写真週刊誌FRIDAYがグラビアアイドルと共に作った実写恋愛ゲーム『ハムコイ』は、Steam発売禁止の危機を乗り越えてなんとかリリースにこぎつけた。その過程を開発陣に訊いた",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 74.9,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 23.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49,
+        "internalSocialScore": 65.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-737",
+      "title": "「バズらなければ戻らなかった」―25年分のデータを失いかけた配信者、MSアカウントが復旧！しかしサポート対応には苦言",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "games",
+        "sns",
+        "net-culture",
+        "general",
+        "tech"
+      ],
+      "buzzScore": 74,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 4.9,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.3,
+        "internalSocialScore": 57.3
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-63",
       "title": "元ヴァニラウェアデザイナーが放つゲームブック風ADV『ヴェリタステイルズ：暗黒城の魔女』が「非常に好評」の門出。6年間の美麗手作りアート光る“一冊”",
       "category": "games",
       "categories": [
@@ -58,7 +164,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-700",
+      "clusterId": "today-cluster-991",
       "title": "「人気キャラのおもちゃ譲ります」 不審なSNS投稿に注意",
       "category": "sns",
       "categories": [
@@ -66,13 +172,14 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 69.3,
-      "confidence": 0.44,
+      "buzzScore": 68.5,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現",
         "公式または一次情報を含む"
       ],
       "scoreBreakdown": {
@@ -80,10 +187,10 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 4.6,
+        "search": 5.4,
+        "social": 4.9,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 5.5,
         "categoryBias": 9,
         "penalty": 0
@@ -96,12 +203,12 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 11.1,
         "crossCategoryScore": 60,
         "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 35.7
+        "internalSearchScore": 42.2,
+        "internalSocialScore": 38
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -109,36 +216,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-339",
-      "title": "写真週刊誌FRIDAYがグラビアアイドルと共に作った実写恋愛ゲーム『ハムコイ』は、Steam発売禁止の危機を乗り越えてなんとかリリースにこぎつけた。その過程を開発陣に訊いた",
-      "category": "games",
+      "clusterId": "today-cluster-2062",
+      "title": "子のSNSいつから? 禁止の是非",
+      "category": "net-culture",
       "categories": [
-        "games",
-        "entertainment",
-        "sns",
         "net-culture",
+        "tech",
+        "sns",
         "general"
       ],
-      "buzzScore": 68.2,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 68,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
         "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 7.4,
+        "search": 4.6,
+        "social": 5.8,
         "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
+        "freshness": 3.5,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 1.6666666666666667,
@@ -149,114 +255,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-151",
-      "title": "シドに捕まった「ウッディ」「バズ」を再現！一番くじ「トイ・ストーリー」より、目玉賞のフィギュアが先行公開",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 67.6,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 18.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-453",
-      "title": "「バズらなければ戻らなかった」―25年分のデータを失いかけた配信者、MSアカウントが復旧！しかしサポート対応には苦言",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 67.5,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
+        "archiveHeatScore": 97,
+        "internalSearchScore": 35.9,
+        "internalSocialScore": 45.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

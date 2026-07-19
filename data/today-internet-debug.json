@@ -1,11 +1,64 @@
 {
-  "generatedAt": "2026-07-19T16:07:41.133Z",
+  "generatedAt": "2026-07-19T17:13:37.298Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-327",
-  "selectedTitle": "ITエンジニアの賃金二極化　「AI代替」の仕事5割安、日本も雇用縮小",
+  "selectedClusterId": "today-cluster-325",
+  "selectedTitle": "アニメ・映画・ドラマで見かけた「Emacs」いろいろまとめ",
   "candidates": [
     {
-      "clusterId": "today-cluster-327",
+      "clusterId": "today-cluster-325",
+      "title": "アニメ・映画・ドラマで見かけた「Emacs」いろいろまとめ",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "net-culture",
+        "entertainment",
+        "manga",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 66.1,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": -4
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-350",
       "title": "ITエンジニアの賃金二極化　「AI代替」の仕事5割安、日本も雇用縮小",
       "category": "business",
       "categories": [
@@ -57,7 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-112",
+      "clusterId": "today-cluster-111",
       "title": "「宮本（武蔵）です。」―『鬼武者 Way of the Sword』海外公式Xの任天堂風投稿が話題に。宮本違い",
       "category": "games",
       "categories": [
@@ -107,7 +160,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1439",
+      "clusterId": "today-cluster-1468",
       "title": "ウッディ&バズをモチーフにしたバッグ登場♪ サマンサタバサから「トイ・ストーリー」コレクション登場",
       "category": "anime",
       "categories": [
@@ -160,7 +213,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-92",
+      "clusterId": "today-cluster-91",
       "title": "ドラマ「VIVANT」声優・大谷育江が出演！ ジャミーンの携帯音声役に サイドストーリー「ドラム」",
       "category": "sports",
       "categories": [
@@ -204,59 +257,6 @@
         "crossCategoryScore": 100,
         "archiveHeatScore": 86,
         "internalSearchScore": 34,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-277",
-      "title": "アニメ・映画・ドラマで見かけた「Emacs」いろいろまとめ",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "net-culture",
-        "entertainment",
-        "manga",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 59.4,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -7
-      },
-      "externalSignalStats": {
-        "searchScore": 5,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [

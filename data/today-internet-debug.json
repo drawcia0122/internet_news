@@ -1,19 +1,20 @@
 {
-  "generatedAt": "2026-07-19T18:33:56.528Z",
+  "generatedAt": "2026-07-19T19:47:11.811Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-309",
-  "selectedTitle": "W杯 決勝 スペイン×アルゼンチン【速報予定】スタメン発表",
+  "selectedClusterId": "today-cluster-316",
+  "selectedTitle": "メッシと赤ちゃん時代のヤマル 撮影の舞台裏は ユニセフ",
   "candidates": [
     {
-      "clusterId": "today-cluster-309",
-      "title": "W杯 決勝 スペイン×アルゼンチン【速報予定】スタメン発表",
+      "clusterId": "today-cluster-316",
+      "title": "メッシと赤ちゃん時代のヤマル 撮影の舞台裏は ユニセフ",
       "category": "sports",
       "categories": [
         "sports",
-        "entertainment",
+        "world",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 74,
+      "buzzScore": 64.8,
       "confidence": 0.41,
       "articleCount": 1,
       "sourceCount": 1,
@@ -21,24 +22,23 @@
       "whyRanked": [
         "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
         "公式または一次情報を含む"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18.5,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 14.1,
-        "social": 4.6,
-        "velocity": 4.2,
-        "freshness": 10,
+        "search": 5,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 4.5,
-        "categoryBias": 9,
+        "categoryBias": 7,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 88.33333333333333,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -47,10 +47,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 33.3,
-        "internalSocialScore": 35.7
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -58,60 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-350",
-      "title": "アニメ・映画・ドラマで見かけた「Emacs」いろいろまとめ",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "net-culture",
-        "entertainment",
-        "manga",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 66.1,
-      "confidence": 0.4,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": -4
-      },
-      "externalSignalStats": {
-        "searchScore": 5,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-106",
+      "clusterId": "today-cluster-100",
       "title": "「宮本（武蔵）です。」―『鬼武者 Way of the Sword』海外公式Xの任天堂風投稿が話題に。宮本違い",
       "category": "games",
       "categories": [
@@ -161,7 +108,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-372",
+      "clusterId": "today-cluster-387",
+      "title": "アニメ・映画・ドラマで見かけた「Emacs」いろいろまとめ",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "net-culture",
+        "entertainment",
+        "manga",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 64.4,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": -4
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31,
+        "internalSocialScore": 57.3
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-411",
       "title": "ITエンジニアの賃金二極化　「AI代替」の仕事5割安、日本も雇用縮小",
       "category": "business",
       "categories": [
@@ -213,7 +213,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1490",
+      "clusterId": "today-cluster-1533",
       "title": "ウッディ&バズをモチーフにしたバッグ登場♪ サマンサタバサから「トイ・ストーリー」コレクション登場",
       "category": "anime",
       "categories": [

@@ -4,6 +4,78 @@ const LIMITS = Object.freeze({
   trending: 8,
 });
 
+const KNOWN_CATEGORY_TERMS = Object.freeze([
+  'ゲーム',
+  'テック',
+  'テクノロジー',
+  'エンタメ',
+  'スポーツ',
+  '国内',
+  '国際',
+  '政治',
+  '経済',
+  '社会',
+  'アニメ',
+  '漫画',
+  'マンガ',
+  '映画',
+  '音楽',
+  'その他',
+  'ネットカルチャー',
+  'SNS',
+  'ニュース',
+  'games',
+  'game',
+  'tech',
+  'technology',
+  'entertainment',
+  'sports',
+  'domestic',
+  'world',
+  'international',
+  'politics',
+  'business',
+  'economy',
+  'society',
+  'anime',
+  'manga',
+  'movie',
+  'movies',
+  'music',
+  'general',
+  'other',
+  'crime',
+  'net-culture',
+  'sns',
+]);
+
+const GENERIC_LABEL_TERMS = Object.freeze([
+  'ニュース',
+  '話題',
+  'トレンド',
+  '急上昇',
+  '最新',
+  '注目',
+  '速報',
+  '情報',
+  '今日',
+  '本日',
+  '明日',
+  '明日まで',
+  '今週',
+  '期間限定',
+  'news',
+  'topic',
+  'topics',
+  'trend',
+  'trending',
+  'latest',
+  'featured',
+  'feature',
+  'breaking',
+  'hot',
+]);
+
 function isObject(value) {
   return value !== null && typeof value === 'object' && !Array.isArray(value);
 }
@@ -39,6 +111,155 @@ export function normalizeTitle(value) {
     .normalize('NFKC')
     .toLowerCase()
     .replace(/[\s\p{P}\p{S}]+/gu, '');
+}
+
+function stringLength(value) {
+  return [...value].length;
+}
+
+function itemCategoryTerms(item) {
+  return [
+    item.category,
+    item.categoryLabel,
+    ...(Array.isArray(item.categories) ? item.categories : []),
+    ...(Array.isArray(item.categoryLabels) ? item.categoryLabels : []),
+    ...KNOWN_CATEGORY_TERMS,
+  ]
+    .map(normalizeTitle)
+    .filter(Boolean);
+}
+
+function isCategoryLikeLabel(value, item) {
+  const normalized = normalizeTitle(value);
+  if (!normalized) return true;
+
+  const removableTerms = [...new Set([
+    ...itemCategoryTerms(item),
+    ...GENERIC_LABEL_TERMS.map(normalizeTitle),
+  ])].sort((left, right) => right.length - left.length);
+
+  let remainder = normalized;
+  for (const term of removableTerms) {
+    remainder = remainder.replaceAll(term, '');
+  }
+  return !remainder;
+}
+
+function isMarkupFragment(value) {
+  return /<\/?[a-z][^>]*>?/iu.test(value)
+    || /^(?:src|width|height|class)\s*=/iu.test(value);
+}
+
+function isSearchUtilityLabel(value) {
+  return /(?:ニュース|web|google|yahoo|bluesky|reddit|SNS|X).*(?:探す|検索|反応を見る)$/iu.test(value);
+}
+
+function validTrendingLabel(value, item) {
+  const label = nonEmptyString(value);
+  if (!label) return null;
+  const length = stringLength(label);
+  if (length < 2 || length > 40) return null;
+  if (validHttpUrl(label) || /^(?:https?:\/\/|www\.)/iu.test(label)) return null;
+  if (isMarkupFragment(label) || isSearchUtilityLabel(label)) return null;
+  if (isCategoryLikeLabel(label, item)) return null;
+  return label;
+}
+
+function cleanupTitle(value) {
+  let title = nonEmptyString(value);
+  if (!title) return null;
+
+  title = title
+    .replace(/\s+/gu, ' ')
+    .replace(/\s+(?:-|–|—|\||｜)\s+[^-–—|｜]{2,30}$/u, '')
+    .trim();
+
+  const quotePairs = [
+    ['「', '」'],
+    ['『', '』'],
+    ['“', '”'],
+    ['"', '"'],
+  ];
+  for (const [start, end] of quotePairs) {
+    if (title.startsWith(start) && title.endsWith(end)) {
+      title = title.slice(start.length, -end.length).trim();
+      break;
+    }
+  }
+  return title || null;
+}
+
+function titleLabelCandidates(value) {
+  const title = cleanupTitle(value);
+  if (!title) return [];
+
+  const candidates = [];
+  if (stringLength(title) <= 40) candidates.push(title);
+
+  for (const match of title.matchAll(/[「『“"]([^」』”"]{2,40})[」』”"]/gu)) {
+    candidates.push(match[1].trim());
+  }
+
+  const firstClause = title.split(/(?:[。！？!?]|──)/u)[0]?.trim();
+  if (firstClause && firstClause !== title) candidates.push(firstClause);
+
+  return [...new Set(candidates)];
+}
+
+function addLabelCandidate(target, value, source, item) {
+  const label = validTrendingLabel(value, item);
+  if (!label || target.some((candidate) => normalizeTitle(candidate.value) === normalizeTitle(label))) return;
+  target.push({ value: label, source });
+}
+
+function combinedEnglishKeywordCandidate(keywords, item) {
+  const words = [];
+  for (const keyword of keywords) {
+    const value = nonEmptyString(keyword);
+    if (!value || isCategoryLikeLabel(value, item)) continue;
+    if (!/^[a-z][a-z'’-]*$/iu.test(value)) break;
+
+    const nextValue = [...words, value].join(' ');
+    if (stringLength(nextValue) > 40) break;
+    words.push(value);
+  }
+  return words.length >= 3 ? words.join(' ') : null;
+}
+
+function trendingLabelCandidates(item) {
+  const candidates = [];
+  const relatedKeywords = Array.isArray(item.relatedKeywords) ? item.relatedKeywords : [];
+
+  addLabelCandidate(
+    candidates,
+    combinedEnglishKeywordCandidate(relatedKeywords, item),
+    'relatedKeyword',
+    item,
+  );
+  for (const keyword of relatedKeywords) {
+    addLabelCandidate(candidates, keyword, 'relatedKeyword', item);
+  }
+  for (const title of titleLabelCandidates(item.title)) {
+    addLabelCandidate(candidates, title, 'title', item);
+  }
+  for (const signal of Array.isArray(item.sourceSignals) ? item.sourceSignals : []) {
+    if (!isObject(signal)) continue;
+    for (const title of titleLabelCandidates(signal.title)) {
+      addLabelCandidate(candidates, title, 'source title', item);
+    }
+  }
+  for (const searchLink of Array.isArray(item.searchLinks) ? item.searchLinks : []) {
+    if (isObject(searchLink)) {
+      addLabelCandidate(candidates, searchLink.label, 'search link', item);
+    }
+  }
+  addLabelCandidate(candidates, item.title, 'title', item);
+
+  if (!candidates.length) {
+    const fallback = firstString(item.categoryLabel, item.category, '注目トピック');
+    if (fallback) candidates.push({ value: fallback, source: 'fallback' });
+  }
+  return candidates;
 }
 
 function sourceItems(result) {
@@ -147,14 +368,8 @@ function mapKeyPointCandidate(item, meta) {
 }
 
 function mapTrendingCandidate(item, meta, now) {
-  const keyword = Array.isArray(item.relatedKeywords) ? nonEmptyString(item.relatedKeywords[0]) : null;
-  const validKeyword = keyword
-    && keyword.length >= 2
-    && keyword.length <= 30
-    && !validHttpUrl(keyword)
-    ? keyword
-    : null;
-  const label = firstString(validKeyword, item.title, item.categoryLabel);
+  const labelCandidates = trendingLabelCandidates(item);
+  const label = labelCandidates[0]?.value || null;
   const description = firstString(
     item.scoreSummary,
     firstArrayString(item.hotReasons),
@@ -185,6 +400,9 @@ function mapTrendingCandidate(item, meta, now) {
     generatedAt: meta.generatedAt,
     _source: meta.source,
     _isOlderThan48Hours: isOlderThan48Hours,
+    _labelCandidates: labelCandidates,
+    _labelSource: labelCandidates[0]?.source || 'fallback',
+    _titleKey: normalizeTitle(item.title),
   };
 }
 
@@ -192,7 +410,9 @@ function identityKeys(item) {
   return [
     nonEmptyString(item.id),
     validHttpUrl(item.sourceUrl),
-    normalizeTitle(item.title || item.label),
+    normalizeTitle(item.title),
+    normalizeTitle(item.label),
+    nonEmptyString(item._titleKey),
   ].filter(Boolean);
 }
 
@@ -223,6 +443,43 @@ function selectDiverse(candidates, limit, maxPerCategory) {
   }
 
   appendUnique(selected, candidates, limit);
+  return selected;
+}
+
+function resolveTrendingLabel(candidate, selected) {
+  const usedLabels = new Set(selected.map((item) => normalizeTitle(item.label)).filter(Boolean));
+  const labelCandidate = candidate._labelCandidates.find(
+    (item) => !usedLabels.has(normalizeTitle(item.value)),
+  );
+  if (!labelCandidate) return null;
+
+  return {
+    ...candidate,
+    label: labelCandidate.value,
+    _labelSource: labelCandidate.source,
+  };
+}
+
+function selectTrendingCandidates(candidates, limit, maxPerCategory) {
+  const selected = [];
+  const categoryCounts = new Map();
+
+  const tryAppend = (candidate, enforceCategoryLimit) => {
+    if (selected.length >= limit) return;
+    const category = candidate.category || 'その他';
+    const count = categoryCounts.get(category) || 0;
+    if (enforceCategoryLimit && count >= maxPerCategory) return;
+
+    const resolved = resolveTrendingLabel(candidate, selected);
+    if (!resolved || isDuplicate(resolved, selected)) return;
+    selected.push(resolved);
+    categoryCounts.set(category, count + 1);
+  };
+
+  candidates.forEach((candidate) => tryAppend(candidate, true));
+  if (selected.length < limit) {
+    candidates.forEach((candidate) => tryAppend(candidate, false));
+  }
   return selected;
 }
 
@@ -307,7 +564,7 @@ export function buildHomeViewModel(results, options = {}) {
     ...trendingCandidates.filter((item) => !item._isOlderThan48Hours),
     ...trendingCandidates.filter((item) => item._isOlderThan48Hours),
   ];
-  const trending = selectDiverse(freshnessOrdered, LIMITS.trending, 3);
+  const trending = selectTrendingCandidates(freshnessOrdered, LIMITS.trending, 3);
 
   return {
     keyPoints: {

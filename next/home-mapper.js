@@ -188,8 +188,8 @@ const DESCRIPTION_SOURCE_PRIORITY = Object.freeze({
   whyHot: 90,
   importantPoint: 85,
   summary: 80,
-  'source summary': 78,
   hotReason: 75,
+  'source summary': 70,
   'source title': 70,
   title: 65,
   scoreSummary: 0,
@@ -282,10 +282,19 @@ function normalizedEnglishWord(value) {
   return value.toLowerCase().replace(/^[^a-z]+|[^a-z]+$/gu, '');
 }
 
+function isLikelyEnglishEventVerb(word, index, words) {
+  const normalized = normalizedEnglishWord(word);
+  if (ENGLISH_SENTENCE_VERBS.has(normalized)) return true;
+
+  return index > 0
+    && index < words.length - 1
+    && word === word.toLowerCase()
+    && /^[a-z]{3,}(?:ed|s)$/u.test(normalized)
+    && !normalized.endsWith('ss');
+}
+
 function hasEnglishEventVerb(words) {
-  return words
-    .map(normalizedEnglishWord)
-    .some((word) => ENGLISH_SENTENCE_VERBS.has(word));
+  return words.some(isLikelyEnglishEventVerb);
 }
 
 function isCompleteEnglishEventPhrase(value, item) {
@@ -294,6 +303,7 @@ function isCompleteEnglishEventPhrase(value, item) {
   if (!candidateWords.length || !titleWords.length || !hasEnglishEventVerb(candidateWords)) {
     return false;
   }
+  if (candidateWords.length > titleWords.length) return false;
 
   const matchesTitlePrefix = candidateWords.every(
     (word, index) => normalizedEnglishWord(word) === normalizedEnglishWord(titleWords[index]),
@@ -308,6 +318,8 @@ function isCompleteEnglishEventPhrase(value, item) {
 }
 
 function isIncompleteEnglishLabel(value, item) {
+  if (/[-–—/:,(\[{\s]$/u.test(value)) return true;
+
   const words = englishWords(value);
   if (!words.length) return false;
 
@@ -316,7 +328,6 @@ function isIncompleteEnglishLabel(value, item) {
   const lastWord = normalizedWords.at(-1);
   if (INCOMPLETE_ENGLISH_OPENINGS.has(firstWord)) return true;
   if (INCOMPLETE_ENGLISH_ENDINGS.has(lastWord)) return true;
-  if (/[-–—/:,(\[{\s]$/u.test(value)) return true;
   if (words.length > 8 || stringLength(value) > 60) return true;
   if (hasEnglishEventVerb(words) && !isCompleteEnglishEventPhrase(value, item)) return true;
   return false;
@@ -532,15 +543,10 @@ function validTrendingDescription(value, item, label) {
   return description;
 }
 
-function descriptionQualityScore(value, source) {
+function descriptionQualityScore(value) {
   const words = englishWords(value);
-  let score = (DESCRIPTION_SOURCE_PRIORITY[source] ?? 0) * 100;
-  if (isGenericMetricDescription(value)) score -= 10000;
-  if ((source === 'source title' || source === 'title')
-    && words.length
-    && hasEnglishEventVerb(words)) {
-    score += 2100;
-  }
+  let score = 0;
+  if (words.length && hasEnglishEventVerb(words)) score += 2;
   if (stringLength(value) >= 20) score += 5;
   return score;
 }
@@ -553,7 +559,10 @@ function addDescriptionCandidate(target, value, source, item, label) {
   target.push({
     value: description,
     source,
-    quality: descriptionQualityScore(description, source),
+    priority: isGenericMetricDescription(description)
+      ? -1
+      : DESCRIPTION_SOURCE_PRIORITY[source] ?? 0,
+    quality: descriptionQualityScore(description),
     isGenericMetric: isGenericMetricDescription(description),
     order: target.length,
   });
@@ -579,23 +588,16 @@ function trendingDescriptionCandidates(item, label) {
   addDescriptionCandidate(candidates, item.scoreSummary, 'scoreSummary', item, label);
 
   return candidates.sort((left, right) => (
-    right.quality - left.quality
+    right.priority - left.priority
+    || right.quality - left.quality
     || left.order - right.order
   ));
 }
 
 function isAmbiguousTrendingLabel(value) {
   const words = englishWords(value);
-  if (!words.length || hasEnglishEventVerb(words) || /\d/u.test(value)) return false;
-  if (words.some((word) => /^(?:and|or)$/iu.test(word))) return true;
-
-  const significantWords = words.filter(
-    (word) => !/^(?:a|an|the|of|for|in|on|to|with)$/iu.test(word),
-  );
-  if (significantWords.length >= 2 && significantWords.every((word) => /^[A-Z]/u.test(word))) {
-    return false;
-  }
-  return true;
+  if (!words.length) return false;
+  return !hasEnglishEventVerb(words);
 }
 
 function trendingPairCandidates(item) {

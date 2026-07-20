@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-20T12:37:16.744Z",
+  "generatedAt": "2026-07-20T14:54:04.359Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-9",
-  "selectedTitle": "マンガ『シルバーマウンテン』Kindle版が50％ポイント還元セール中。既刊4巻の購入で2398円→1200ポイントが還元、『うしおととら』『からくりサーカス』などで知られる藤田和日郎氏が描く武×魔の仙境幻想譚",
+  "selectedClusterId": "today-cluster-323",
+  "selectedTitle": "1-bit LLM「Bonsai」活用ガイド — 1.15GB で動く 8B モデルをローカルで使い倒す",
   "candidates": [
     {
-      "clusterId": "today-cluster-9",
+      "clusterId": "today-cluster-11",
       "title": "マンガ『シルバーマウンテン』Kindle版が50％ポイント還元セール中。既刊4巻の購入で2398円→1200ポイントが還元、『うしおととら』『からくりサーカス』などで知られる藤田和日郎氏が描く武×魔の仙境幻想譚",
       "category": "games",
       "categories": [
@@ -15,8 +15,8 @@
         "general",
         "entertainment"
       ],
-      "buzzScore": 70.2,
-      "confidence": 0.4,
+      "buzzScore": 68.6,
+      "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -29,10 +29,10 @@
         "sourceDiversity": 2.3,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 6.4,
-        "social": 8.4,
+        "search": 6.3,
+        "social": 8.3,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -46,11 +46,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 23.1,
+        "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 100,
         "archiveHeatScore": 100,
-        "internalSearchScore": 50,
-        "internalSocialScore": 65.4
+        "internalSearchScore": 49.4,
+        "internalSocialScore": 65
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -58,58 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-6",
-      "title": "マンガ『邪神の弁当屋さん』Kindle版が50％ポイント還元セール中。全4巻購入で3168円→1584ポイントが還元、かつて戦争を引き起こした“邪神”が経営している弁当屋を描いたファンタジー作品",
-      "category": "games",
-      "categories": [
-        "games",
-        "manga",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.4,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-292",
+      "clusterId": "today-cluster-296",
       "title": "「自分の分身」をAIで作れ、アンソロピック社員が教えるClaude活用術5選",
       "category": "tech",
       "categories": [
@@ -160,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-293",
+      "clusterId": "today-cluster-297",
       "title": "Steam Machine開発者、「メモリ不足はどんどん悪化中」と悲鳴。“店頭で見える”高騰より、裏側はもっと深刻",
       "category": "games",
       "categories": [
@@ -212,7 +161,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-12",
+      "clusterId": "today-cluster-23",
       "title": "アニメ『プリズマ☆イリヤ』シリーズ完結作『Fate/kaleid liner プリズマ☆イリヤ FINALE』2027年に放送決定。スタッフ＆キャストは続投。ダリウスと対峙するイリヤ、美遊、クロエ。魔法少女たちの最後の戦いが幕を開ける",
       "category": "anime",
       "categories": [
@@ -259,6 +208,57 @@
         "archiveHeatScore": 61,
         "internalSearchScore": 40.8,
         "internalSocialScore": 68.5
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-323",
+      "title": "1-bit LLM「Bonsai」活用ガイド — 1.15GB で動く 8B モデルをローカルで使い倒す",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62,
+      "confidence": 0.32,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

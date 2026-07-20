@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-20T14:54:04.359Z",
+  "generatedAt": "2026-07-20T16:42:00.533Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-323",
+  "selectedClusterId": "today-cluster-318",
   "selectedTitle": "1-bit LLM「Bonsai」活用ガイド — 1.15GB で動く 8B モデルをローカルで使い倒す",
   "candidates": [
     {
-      "clusterId": "today-cluster-11",
+      "clusterId": "today-cluster-16",
       "title": "マンガ『シルバーマウンテン』Kindle版が50％ポイント還元セール中。既刊4巻の購入で2398円→1200ポイントが還元、『うしおととら』『からくりサーカス』などで知られる藤田和日郎氏が描く武×魔の仙境幻想譚",
       "category": "games",
       "categories": [
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-296",
+      "clusterId": "today-cluster-297",
       "title": "「自分の分身」をAIで作れ、アンソロピック社員が教えるClaude活用術5選",
       "category": "tech",
       "categories": [
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-297",
+      "clusterId": "today-cluster-298",
       "title": "Steam Machine開発者、「メモリ不足はどんどん悪化中」と悲鳴。“店頭で見える”高騰より、裏側はもっと深刻",
       "category": "games",
       "categories": [
@@ -141,7 +141,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 5,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -161,61 +161,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-23",
-      "title": "アニメ『プリズマ☆イリヤ』シリーズ完結作『Fate/kaleid liner プリズマ☆イリヤ FINALE』2027年に放送決定。スタッフ＆キャストは続投。ダリウスと対峙するイリヤ、美遊、クロエ。魔法少女たちの最後の戦いが幕を開ける",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "net-culture",
-        "general",
-        "entertainment",
-        "manga"
-      ],
-      "buzzScore": 63.1,
-      "confidence": 0.44,
-      "articleCount": 5,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "海外SNSでも関連投稿が増加",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 9,
-        "sourceDiversity": 4.7,
-        "trend": 13.4,
-        "internetNativeBoost": 0,
-        "search": 5.2,
-        "social": 8.8,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 5,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 30,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 61,
-        "internalSearchScore": 40.8,
-        "internalSocialScore": 68.5
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-323",
+      "clusterId": "today-cluster-318",
       "title": "1-bit LLM「Bonsai」活用ガイド — 1.15GB で動く 8B モデルをローカルで使い倒す",
       "category": "tech",
       "categories": [
@@ -259,6 +205,57 @@
         "archiveHeatScore": 79,
         "internalSearchScore": 31.6,
         "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-11",
+      "title": "マンガ『邪神の弁当屋さん』Kindle版が50％ポイント還元セール中。全4巻購入で3168円→1584ポイントが還元、かつて戦争を引き起こした“邪神”が経営している弁当屋を描いたファンタジー作品",
+      "category": "games",
+      "categories": [
+        "games",
+        "manga",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 61.9,
+      "confidence": 0.35,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 5.5,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

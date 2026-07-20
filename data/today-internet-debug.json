@@ -1,21 +1,75 @@
 {
-  "generatedAt": "2026-07-20T03:59:09.203Z",
+  "generatedAt": "2026-07-20T07:23:04.272Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-4",
-  "selectedTitle": "宇宙船シミュレーション型ローグライク『FTL: Faster Than Light』とターン制ストラテジー『Into the Breach』がSteamでともに65%オフ。Subset Gamesが開発する名作ゲームが8月1日までセール中",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "マンガ『シルバーマウンテン』Kindle版が50％ポイント還元セール中。既刊4巻の購入で2398円→1200ポイントが還元、『うしおととら』『からくりサーカス』などで知られる藤田和日郎氏が描く武×魔の仙境幻想譚",
   "candidates": [
     {
-      "clusterId": "today-cluster-5",
-      "title": "オードリー若林さんの初小説『青天』がKindleにて50%ポイント還元中。アメフトを題材にした直木賞候補の話題作。セールは7月20日まで",
-      "category": "games",
+      "clusterId": "today-cluster-1",
+      "title": "マンガ『シルバーマウンテン』Kindle版が50％ポイント還元セール中。既刊4巻の購入で2398円→1200ポイントが還元、『うしおととら』『からくりサーカス』などで知られる藤田和日郎氏が描く武×魔の仙境幻想譚",
+      "category": "manga",
       "categories": [
+        "manga",
         "games",
-        "books",
+        "entertainment",
         "net-culture",
         "general"
       ],
-      "buzzScore": 71.3,
-      "confidence": 0.43,
+      "buzzScore": 81.7,
+      "confidence": 0.5,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
+        "social": 8.4,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-4",
+      "title": "Steam病原体ローグライクSTG『Pathogenic』密かな注目、からの人気爆発中。自由に進化させる“自分だけの最強菌づくり”、うにょうにょ継ぎ足し無双ゲーム",
+      "category": "games",
+      "categories": [
+        "games",
+        "game-features",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 71.5,
+      "confidence": 0.5,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -26,12 +80,114 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 7,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-91",
+      "title": "入浴剤「びっくらたまご」に、「トイ・ストーリー」ウッディ、バズたちが仲間入り！「おねがい！」とおねだりしているような全5種",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 67.6,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-13",
+      "title": "オードリー若林さんの初小説『青天』がKindleにて50%ポイント還元中。アメフトを題材にした直木賞候補の話題作。セールは7月20日まで",
+      "category": "games",
+      "categories": [
+        "games",
+        "books",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64.4,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
         "trend": 18.3,
         "internetNativeBoost": 8,
         "search": 5.7,
         "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -57,170 +213,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-4",
-      "title": "宇宙船シミュレーション型ローグライク『FTL: Faster Than Light』とターン制ストラテジー『Into the Breach』がSteamでともに65%オフ。Subset Gamesが開発する名作ゲームが8月1日までセール中",
-      "category": "games",
+      "clusterId": "today-cluster-281",
+      "title": "「自分の分身」をAIで作れ、アンソロピック社員が教えるClaude活用術5選",
+      "category": "tech",
       "categories": [
-        "games",
+        "tech",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 69.5,
-      "confidence": 0.5,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 15.6,
-        "internetNativeBoost": 0,
-        "search": 5.2,
-        "social": 5.6,
-        "velocity": 8,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 71,
-        "internalSearchScore": 40.5,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-111",
-      "title": "「宮本（武蔵）です。」―『鬼武者 Way of the Sword』海外公式Xの任天堂風投稿が話題に。宮本違い",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 64.6,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 4.6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 5,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 36.8,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1310",
-      "title": "国会周辺で市民らが集会 憲法9条堅持など訴え",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "general",
-        "sns",
-        "net-culture"
-      ],
-      "buzzScore": 62,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 5.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-74",
-      "title": "ドラマ「VIVANT」声優・大谷育江が出演！ ジャミーンの携帯音声役に サイドストーリー「ドラム」",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "anime",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 60.3,
+      "buzzScore": 64.2,
       "confidence": 0.37,
       "articleCount": 1,
       "sourceCount": 1,
@@ -231,18 +233,18 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18.9,
+        "trend": 19.1,
         "internetNativeBoost": 8,
         "search": 4.4,
-        "social": 7.4,
+        "social": 6,
         "velocity": 0,
         "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -251,10 +253,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 34,
-        "internalSocialScore": 57.7
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

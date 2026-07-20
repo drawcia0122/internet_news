@@ -282,7 +282,7 @@ function normalizedEnglishWord(value) {
   return value.toLowerCase().replace(/^[^a-z]+|[^a-z]+$/gu, '');
 }
 
-function isLikelyEnglishEventVerb(word, index, words) {
+function isPotentialEnglishEventVerb(word, index, words) {
   const normalized = normalizedEnglishWord(word);
   if (ENGLISH_SENTENCE_VERBS.has(normalized)) return true;
 
@@ -293,14 +293,34 @@ function isLikelyEnglishEventVerb(word, index, words) {
     && !normalized.endsWith('ss');
 }
 
-function hasEnglishEventVerb(words) {
-  return words.some(isLikelyEnglishEventVerb);
+function hasKnownEnglishEventVerb(words) {
+  return words
+    .map(normalizedEnglishWord)
+    .some((word) => ENGLISH_SENTENCE_VERBS.has(word));
+}
+
+function hasPotentialEnglishEventVerb(words) {
+  return words.some(isPotentialEnglishEventVerb);
+}
+
+function endsAtPotentialEventVerb(value, item) {
+  const candidateWords = englishWords(value);
+  const titleWords = englishWords(nonEmptyString(item.title) || '');
+  if (!candidateWords.length || candidateWords.length >= titleWords.length) return false;
+
+  const matchesTitlePrefix = candidateWords.every(
+    (word, index) => normalizedEnglishWord(word) === normalizedEnglishWord(titleWords[index]),
+  );
+  if (!matchesTitlePrefix) return false;
+
+  const lastIndex = candidateWords.length - 1;
+  return isPotentialEnglishEventVerb(titleWords[lastIndex], lastIndex, titleWords);
 }
 
 function isCompleteEnglishEventPhrase(value, item) {
   const candidateWords = englishWords(value);
   const titleWords = englishWords(nonEmptyString(item.title) || '');
-  if (!candidateWords.length || !titleWords.length || !hasEnglishEventVerb(candidateWords)) {
+  if (!candidateWords.length || !titleWords.length || !hasKnownEnglishEventVerb(candidateWords)) {
     return false;
   }
   if (candidateWords.length > titleWords.length) return false;
@@ -329,7 +349,8 @@ function isIncompleteEnglishLabel(value, item) {
   if (INCOMPLETE_ENGLISH_OPENINGS.has(firstWord)) return true;
   if (INCOMPLETE_ENGLISH_ENDINGS.has(lastWord)) return true;
   if (words.length > 8 || stringLength(value) > 60) return true;
-  if (hasEnglishEventVerb(words) && !isCompleteEnglishEventPhrase(value, item)) return true;
+  if (endsAtPotentialEventVerb(value, item)) return true;
+  if (hasKnownEnglishEventVerb(words) && !isCompleteEnglishEventPhrase(value, item)) return true;
   return false;
 }
 
@@ -546,7 +567,7 @@ function validTrendingDescription(value, item, label) {
 function descriptionQualityScore(value) {
   const words = englishWords(value);
   let score = 0;
-  if (words.length && hasEnglishEventVerb(words)) score += 2;
+  if (words.length && hasPotentialEnglishEventVerb(words)) score += 2;
   if (stringLength(value) >= 20) score += 5;
   return score;
 }
@@ -594,10 +615,10 @@ function trendingDescriptionCandidates(item, label) {
   ));
 }
 
-function isAmbiguousTrendingLabel(value) {
+function isAmbiguousTrendingLabel(value, item) {
   const words = englishWords(value);
   if (!words.length) return false;
-  return !hasEnglishEventVerb(words);
+  return !isCompleteEnglishEventPhrase(value, item);
 }
 
 function trendingPairCandidates(item) {
@@ -605,7 +626,7 @@ function trendingPairCandidates(item) {
   for (const labelCandidate of trendingLabelCandidates(item)) {
     const descriptionCandidate = trendingDescriptionCandidates(item, labelCandidate.value)
       .find((candidate) => (
-        !isAmbiguousTrendingLabel(labelCandidate.value) || !candidate.isGenericMetric
+        !isAmbiguousTrendingLabel(labelCandidate.value, item) || !candidate.isGenericMetric
       ));
     if (!descriptionCandidate) continue;
 

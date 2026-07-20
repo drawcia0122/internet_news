@@ -1,5 +1,5 @@
 import { loadData } from './data-loader.js';
-import { buildHomeViewModel, validHttpUrl } from './home-mapper.js';
+import { buildHomeViewModel, normalizeTitle, validHttpUrl } from './home-mapper.js';
 
 const SECTION_ELEMENTS = Object.freeze({
   keyPoints: {
@@ -125,10 +125,11 @@ function renderTrending(item) {
   tag.append(createElement('span', '', item.description));
 
   const category = typeof item.category === 'string' ? item.category.trim() : '';
+  const showCategory = category && normalizeTitle(category) !== normalizeTitle(item.label);
   const hasScore = Number.isFinite(item.score);
-  if (category || hasScore) {
+  if (showCategory || hasScore) {
     const meta = createElement('div', 'trend-tag__meta');
-    if (category) {
+    if (showCategory) {
       meta.append(createElement('span', 'trend-tag__category', category));
     }
     if (hasScore) {

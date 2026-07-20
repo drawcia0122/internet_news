@@ -76,6 +76,71 @@ const GENERIC_LABEL_TERMS = Object.freeze([
   'hot',
 ]);
 
+const INCOMPLETE_ENGLISH_ENDINGS = new Set([
+  'a',
+  'an',
+  'the',
+  'and',
+  'or',
+  'but',
+  'as',
+  'at',
+  'by',
+  'for',
+  'from',
+  'in',
+  'into',
+  'of',
+  'on',
+  'onto',
+  'to',
+  'with',
+  'after',
+  'before',
+  'during',
+  'amid',
+  'over',
+  'under',
+  'via',
+  'further',
+]);
+
+const INCOMPLETE_ENGLISH_OPENINGS = new Set(
+  [...INCOMPLETE_ENGLISH_ENDINGS].filter((word) => word !== 'the'),
+);
+
+const ENGLISH_SENTENCE_VERBS = new Set([
+  'arrest',
+  'arrested',
+  'arrests',
+  'compete',
+  'competed',
+  'competes',
+  'launch',
+  'launched',
+  'launches',
+  'promise',
+  'promised',
+  'promises',
+  'seek',
+  'seeks',
+  'sought',
+  'sink',
+  'sinks',
+  'sunk',
+  'trade',
+  'traded',
+  'trades',
+]);
+
+const CANDIDATE_SOURCE_PRIORITY = Object.freeze({
+  relatedKeyword: 0,
+  'source title': 1,
+  'search link': 2,
+  title: 3,
+  fallback: 4,
+});
+
 function isObject(value) {
   return value !== null && typeof value === 'object' && !Array.isArray(value);
 }
@@ -154,6 +219,40 @@ function isSearchUtilityLabel(value) {
   return /(?:ニュース|web|google|yahoo|bluesky|reddit|SNS|X).*(?:探す|検索|反応を見る)$/iu.test(value);
 }
 
+function englishWords(value) {
+  if (!/^[a-z0-9][a-z0-9\s'’&.+–—-]*$/iu.test(value)) return [];
+  return value.split(/\s+/u).filter(Boolean);
+}
+
+function isIncompleteEnglishLabel(value) {
+  const words = englishWords(value);
+  if (!words.length) return false;
+
+  const normalizedWords = words.map(
+    (word) => word.toLowerCase().replace(/^[^a-z]+|[^a-z]+$/gu, ''),
+  );
+  const firstWord = normalizedWords[0];
+  const lastWord = normalizedWords.at(-1);
+  if (INCOMPLETE_ENGLISH_OPENINGS.has(firstWord)) return true;
+  if (INCOMPLETE_ENGLISH_ENDINGS.has(lastWord)) return true;
+  if (/[-–—/:,(\[{\s]$/u.test(value)) return true;
+  if (words.length >= 7) return true;
+  if (stringLength(value) > 32 && words.length >= 3) return true;
+  if (words.length >= 3 && normalizedWords.some((word) => ENGLISH_SENTENCE_VERBS.has(word))) {
+    return true;
+  }
+  if (words.length === 2 && ENGLISH_SENTENCE_VERBS.has(normalizedWords[1])) {
+    return true;
+  }
+  if (words.length === 1 && ENGLISH_SENTENCE_VERBS.has(normalizedWords[0])) return true;
+  return false;
+}
+
+function isJapaneseSentenceFragment(value) {
+  return /(?:が|を|に|で|へ|と|は).*(?:する|した|なる|なった|挑む|期す|決定|開始|発売|配信)/u.test(value)
+    || /(?:について|など|ほか|から|まで|にて)$/u.test(value);
+}
+
 function validTrendingLabel(value, item) {
   const label = nonEmptyString(value);
   if (!label) return null;
@@ -162,6 +261,7 @@ function validTrendingLabel(value, item) {
   if (validHttpUrl(label) || /^(?:https?:\/\/|www\.)/iu.test(label)) return null;
   if (isMarkupFragment(label) || isSearchUtilityLabel(label)) return null;
   if (isCategoryLikeLabel(label, item)) return null;
+  if (isIncompleteEnglishLabel(label)) return null;
   return label;
 }
 
@@ -194,58 +294,101 @@ function titleLabelCandidates(value) {
   if (!title) return [];
 
   const candidates = [];
-  if (stringLength(title) <= 40) candidates.push(title);
+  if (stringLength(title) <= 40) candidates.push({ value: title, kind: 'cleaned title' });
 
   for (const match of title.matchAll(/[「『“"]([^」』”"]{2,40})[」』”"]/gu)) {
-    candidates.push(match[1].trim());
+    candidates.push({ value: match[1].trim(), kind: 'quoted title phrase' });
   }
 
   const firstClause = title.split(/(?:[。！？!?]|──)/u)[0]?.trim();
-  if (firstClause && firstClause !== title) candidates.push(firstClause);
+  if (firstClause && firstClause !== title) {
+    candidates.push({ value: firstClause, kind: 'title clause' });
+  }
 
-  return [...new Set(candidates)];
+  return candidates.filter(
+    (candidate, index) => candidates.findIndex(
+      (current) => normalizeTitle(current.value) === normalizeTitle(candidate.value),
+    ) === index,
+  );
 }
 
-function addLabelCandidate(target, value, source, item) {
+function candidateQualityScore(label, item, kind) {
+  const length = stringLength(label);
+  const words = englishWords(label);
+  const titleLength = stringLength(cleanupTitle(item.title) || '');
+  let score = length <= 24 ? 40 : 12;
+
+  if (words.length) {
+    score += 10;
+    if (words.length >= 2 && words.length <= 4) score += 10;
+    if (/[A-Z]/u.test(label)) score += 4;
+    if (words.some((word) => /^(?:and|or|but)$/iu.test(word))) score -= 3;
+    if (/^[A-Z0-9]+$/u.test(label) && /\d/u.test(label)) score -= 15;
+    if (words.length === 1 && words[0].length <= 3 && !/^[A-Z0-9]+$/u.test(words[0])) score -= 20;
+  }
+
+  const hasJapanese = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(label);
+  const hasAscii = /[a-z0-9]/iu.test(label);
+  if (hasJapanese) score += 10;
+  if (hasJapanese && hasAscii) score += 6;
+  if (/\d/u.test(label)) score += 4;
+  if (titleLength && length < titleLength) score += 5;
+  if (/^(?:今日|本日|明日|今週|最新|注目)/u.test(label)) score -= 15;
+  if (isJapaneseSentenceFragment(label)) score -= 25;
+  if (kind === 'fallback') score -= 40;
+  return score;
+}
+
+function addLabelCandidate(target, value, source, item, kind = source) {
   const label = validTrendingLabel(value, item);
   if (!label || target.some((candidate) => normalizeTitle(candidate.value) === normalizeTitle(label))) return;
-  target.push({ value: label, source });
+  target.push({
+    value: label,
+    source,
+    kind,
+    quality: candidateQualityScore(label, item, kind),
+    sourcePriority: CANDIDATE_SOURCE_PRIORITY[source] ?? Number.MAX_SAFE_INTEGER,
+    order: target.length,
+  });
 }
 
-function combinedEnglishKeywordCandidate(keywords, item) {
-  const words = [];
-  for (const keyword of keywords) {
-    const value = nonEmptyString(keyword);
-    if (!value || isCategoryLikeLabel(value, item)) continue;
-    if (!/^[a-z][a-z'’-]*$/iu.test(value)) break;
+function relatedKeywordPhrases(keywords, item) {
+  const phrases = [];
+  for (let start = 0; start < keywords.length; start += 1) {
+    const first = nonEmptyString(keywords[start]);
+    if (!first || isCategoryLikeLabel(first, item) || !/^[a-z0-9'’–—-]+$/iu.test(first)) continue;
 
-    const nextValue = [...words, value].join(' ');
-    if (stringLength(nextValue) > 40) break;
-    words.push(value);
+    const words = [];
+    for (let index = start; index < keywords.length && words.length < 4; index += 1) {
+      const value = nonEmptyString(keywords[index]);
+      if (!value || isCategoryLikeLabel(value, item) || !/^[a-z0-9'’–—-]+$/iu.test(value)) break;
+      words.push(value);
+      if (words.length >= 2) phrases.push(words.join(' '));
+    }
   }
-  return words.length >= 3 ? words.join(' ') : null;
+  return phrases;
 }
 
 function trendingLabelCandidates(item) {
   const candidates = [];
   const relatedKeywords = Array.isArray(item.relatedKeywords) ? item.relatedKeywords : [];
 
-  addLabelCandidate(
-    candidates,
-    combinedEnglishKeywordCandidate(relatedKeywords, item),
-    'relatedKeyword',
-    item,
-  );
   for (const keyword of relatedKeywords) {
     addLabelCandidate(candidates, keyword, 'relatedKeyword', item);
   }
-  for (const title of titleLabelCandidates(item.title)) {
-    addLabelCandidate(candidates, title, 'title', item);
+  for (const phrase of relatedKeywordPhrases(relatedKeywords, item)) {
+    addLabelCandidate(candidates, phrase, 'relatedKeyword', item, 'related keyword phrase');
   }
   for (const signal of Array.isArray(item.sourceSignals) ? item.sourceSignals : []) {
     if (!isObject(signal)) continue;
-    for (const title of titleLabelCandidates(signal.title)) {
-      addLabelCandidate(candidates, title, 'source title', item);
+    for (const titleCandidate of titleLabelCandidates(signal.title)) {
+      addLabelCandidate(
+        candidates,
+        titleCandidate.value,
+        'source title',
+        item,
+        titleCandidate.kind,
+      );
     }
   }
   for (const searchLink of Array.isArray(item.searchLinks) ? item.searchLinks : []) {
@@ -253,13 +396,19 @@ function trendingLabelCandidates(item) {
       addLabelCandidate(candidates, searchLink.label, 'search link', item);
     }
   }
-  addLabelCandidate(candidates, item.title, 'title', item);
-
-  if (!candidates.length) {
-    const fallback = firstString(item.categoryLabel, item.category, '注目トピック');
-    if (fallback) candidates.push({ value: fallback, source: 'fallback' });
+  for (const titleCandidate of titleLabelCandidates(item.title)) {
+    addLabelCandidate(candidates, titleCandidate.value, 'title', item, titleCandidate.kind);
   }
-  return candidates;
+  addLabelCandidate(candidates, item.title, 'title', item, 'raw title');
+  addLabelCandidate(candidates, item.categoryLabel, 'fallback', item, 'fallback');
+  addLabelCandidate(candidates, item.category, 'fallback', item, 'fallback');
+  addLabelCandidate(candidates, '注目トピック', 'fallback', item, 'fallback');
+
+  return candidates.sort((left, right) => (
+    right.quality - left.quality
+    || left.sourcePriority - right.sourcePriority
+    || left.order - right.order
+  ));
 }
 
 function sourceItems(result) {

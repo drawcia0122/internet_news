@@ -535,6 +535,18 @@ function isGenericMetricDescription(value) {
   ));
 }
 
+function isGenericTrendingDescription(value) {
+  const description = nonEmptyString(value);
+  if (!description) return false;
+
+  return [
+    /^(?:SNS(?:やネット上)?|ネット上)(?:で|では)?(?:の)?(?:反応|関心|注目|話題).*(?:広が|集ま|高ま|示|なって|され|やす)/u,
+    /^(?:一般ユーザー|多くのユーザー)(?:の|が|には|から).*(?:反応|関心|注目|話題).*(?:集ま|高ま|示|広が|され|やす)/u,
+    /^(?:専門媒体|公式ソース)(?:や(?:専門媒体|公式ソース))?(?:が|で|には).*(?:優先的に)?(?:拾|取り上げ|注目)/u,
+    /(?:(?:判断|把握|理解)する|掴む)材料になります[。.!]?$/u,
+  ].some((pattern) => pattern.test(description));
+}
+
 function isTruncatedSourceText(value) {
   return /(?:…|\.\.\.)$/u.test(value)
     || /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}][A-Z]$/u.test(value);
@@ -577,14 +589,19 @@ function addDescriptionCandidate(target, value, source, item, label) {
   if (!description || target.some(
     (candidate) => normalizeTitle(candidate.value) === normalizeTitle(description),
   )) return;
+  const isGenericMetric = isGenericMetricDescription(description);
+  const isGenericDescription = isGenericTrendingDescription(description);
   target.push({
     value: description,
     source,
-    priority: isGenericMetricDescription(description)
-      ? -1
-      : DESCRIPTION_SOURCE_PRIORITY[source] ?? 0,
+    priority: isGenericMetric
+      ? -2
+      : isGenericDescription
+        ? -1
+        : DESCRIPTION_SOURCE_PRIORITY[source] ?? 0,
     quality: descriptionQualityScore(description),
-    isGenericMetric: isGenericMetricDescription(description),
+    isGenericMetric,
+    isGenericDescription,
     order: target.length,
   });
 }
@@ -617,7 +634,7 @@ function trendingDescriptionCandidates(item, label) {
 
 function isAmbiguousTrendingLabel(value, item) {
   const words = englishWords(value);
-  if (!words.length) return false;
+  if (!words.length) return true;
   return !isCompleteEnglishEventPhrase(value, item);
 }
 
@@ -626,7 +643,8 @@ function trendingPairCandidates(item) {
   for (const labelCandidate of trendingLabelCandidates(item)) {
     const descriptionCandidate = trendingDescriptionCandidates(item, labelCandidate.value)
       .find((candidate) => (
-        !isAmbiguousTrendingLabel(labelCandidate.value, item) || !candidate.isGenericMetric
+        !isAmbiguousTrendingLabel(labelCandidate.value, item)
+        || (!candidate.isGenericMetric && !candidate.isGenericDescription)
       ));
     if (!descriptionCandidate) continue;
 

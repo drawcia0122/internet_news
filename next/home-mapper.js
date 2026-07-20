@@ -116,9 +116,18 @@ const ENGLISH_SENTENCE_VERBS = new Set([
   'compete',
   'competed',
   'competes',
+  'exchange',
+  'exchanged',
+  'exchanges',
+  'hold',
+  'held',
+  'holds',
   'launch',
   'launched',
   'launches',
+  'raise',
+  'raised',
+  'raises',
   'promise',
   'promised',
   'promises',
@@ -131,6 +140,38 @@ const ENGLISH_SENTENCE_VERBS = new Set([
   'trade',
   'traded',
   'trades',
+  'unveil',
+  'unveiled',
+  'unveils',
+]);
+
+const EVENT_CLAUSE_BOUNDARIES = new Set([
+  'after',
+  'amid',
+  'and',
+  'as',
+  'at',
+  'before',
+  'but',
+  'during',
+  'for',
+  'from',
+  'in',
+  'into',
+  'on',
+  'onto',
+  'or',
+  'over',
+  'that',
+  'to',
+  'under',
+  'via',
+  'when',
+  'where',
+  'which',
+  'while',
+  'who',
+  'with',
 ]);
 
 const CANDIDATE_SOURCE_PRIORITY = Object.freeze({
@@ -139,6 +180,19 @@ const CANDIDATE_SOURCE_PRIORITY = Object.freeze({
   'search link': 2,
   title: 3,
   fallback: 4,
+});
+
+const DESCRIPTION_SOURCE_PRIORITY = Object.freeze({
+  whatHappened: 100,
+  briefSummary: 95,
+  whyHot: 90,
+  importantPoint: 85,
+  summary: 80,
+  'source summary': 78,
+  hotReason: 75,
+  'source title': 70,
+  title: 65,
+  scoreSummary: 0,
 });
 
 function isObject(value) {
@@ -224,27 +278,47 @@ function englishWords(value) {
   return value.split(/\s+/u).filter(Boolean);
 }
 
-function isIncompleteEnglishLabel(value) {
+function normalizedEnglishWord(value) {
+  return value.toLowerCase().replace(/^[^a-z]+|[^a-z]+$/gu, '');
+}
+
+function hasEnglishEventVerb(words) {
+  return words
+    .map(normalizedEnglishWord)
+    .some((word) => ENGLISH_SENTENCE_VERBS.has(word));
+}
+
+function isCompleteEnglishEventPhrase(value, item) {
+  const candidateWords = englishWords(value);
+  const titleWords = englishWords(nonEmptyString(item.title) || '');
+  if (!candidateWords.length || !titleWords.length || !hasEnglishEventVerb(candidateWords)) {
+    return false;
+  }
+
+  const matchesTitlePrefix = candidateWords.every(
+    (word, index) => normalizedEnglishWord(word) === normalizedEnglishWord(titleWords[index]),
+  );
+  if (!matchesTitlePrefix) return false;
+
+  if (candidateWords.length >= titleWords.length) return true;
+
+  const lastWord = normalizedEnglishWord(candidateWords.at(-1));
+  const nextWord = normalizedEnglishWord(titleWords[candidateWords.length]);
+  return !ENGLISH_SENTENCE_VERBS.has(lastWord) && EVENT_CLAUSE_BOUNDARIES.has(nextWord);
+}
+
+function isIncompleteEnglishLabel(value, item) {
   const words = englishWords(value);
   if (!words.length) return false;
 
-  const normalizedWords = words.map(
-    (word) => word.toLowerCase().replace(/^[^a-z]+|[^a-z]+$/gu, ''),
-  );
+  const normalizedWords = words.map(normalizedEnglishWord);
   const firstWord = normalizedWords[0];
   const lastWord = normalizedWords.at(-1);
   if (INCOMPLETE_ENGLISH_OPENINGS.has(firstWord)) return true;
   if (INCOMPLETE_ENGLISH_ENDINGS.has(lastWord)) return true;
   if (/[-–—/:,(\[{\s]$/u.test(value)) return true;
-  if (words.length >= 7) return true;
-  if (stringLength(value) > 32 && words.length >= 3) return true;
-  if (words.length >= 3 && normalizedWords.some((word) => ENGLISH_SENTENCE_VERBS.has(word))) {
-    return true;
-  }
-  if (words.length === 2 && ENGLISH_SENTENCE_VERBS.has(normalizedWords[1])) {
-    return true;
-  }
-  if (words.length === 1 && ENGLISH_SENTENCE_VERBS.has(normalizedWords[0])) return true;
+  if (words.length > 8 || stringLength(value) > 60) return true;
+  if (hasEnglishEventVerb(words) && !isCompleteEnglishEventPhrase(value, item)) return true;
   return false;
 }
 
@@ -257,11 +331,11 @@ function validTrendingLabel(value, item) {
   const label = nonEmptyString(value);
   if (!label) return null;
   const length = stringLength(label);
-  if (length < 2 || length > 40) return null;
+  if (length < 2 || length > 60) return null;
   if (validHttpUrl(label) || /^(?:https?:\/\/|www\.)/iu.test(label)) return null;
   if (isMarkupFragment(label) || isSearchUtilityLabel(label)) return null;
   if (isCategoryLikeLabel(label, item)) return null;
-  if (isIncompleteEnglishLabel(label)) return null;
+  if (isIncompleteEnglishLabel(label, item)) return null;
   return label;
 }
 
@@ -294,9 +368,9 @@ function titleLabelCandidates(value) {
   if (!title) return [];
 
   const candidates = [];
-  if (stringLength(title) <= 40) candidates.push({ value: title, kind: 'cleaned title' });
+  if (stringLength(title) <= 60) candidates.push({ value: title, kind: 'cleaned title' });
 
-  for (const match of title.matchAll(/[「『“"]([^」』”"]{2,40})[」』”"]/gu)) {
+  for (const match of title.matchAll(/[「『“"]([^」』”"]{2,60})[」』”"]/gu)) {
     candidates.push({ value: match[1].trim(), kind: 'quoted title phrase' });
   }
 
@@ -321,6 +395,8 @@ function candidateQualityScore(label, item, kind) {
   if (words.length) {
     score += 10;
     if (words.length >= 2 && words.length <= 4) score += 10;
+    if (words.length >= 5 && words.length <= 8) score += 8;
+    if (isCompleteEnglishEventPhrase(label, item)) score += 50;
     if (/[A-Z]/u.test(label)) score += 4;
     if (words.some((word) => /^(?:and|or|but)$/iu.test(word))) score -= 3;
     if (/^[A-Z0-9]+$/u.test(label) && /\d/u.test(label)) score -= 15;
@@ -359,7 +435,7 @@ function relatedKeywordPhrases(keywords, item) {
     if (!first || isCategoryLikeLabel(first, item) || !/^[a-z0-9'’–—-]+$/iu.test(first)) continue;
 
     const words = [];
-    for (let index = start; index < keywords.length && words.length < 4; index += 1) {
+    for (let index = start; index < keywords.length && words.length < 8; index += 1) {
       const value = nonEmptyString(keywords[index]);
       if (!value || isCategoryLikeLabel(value, item) || !/^[a-z0-9'’–—-]+$/iu.test(value)) break;
       words.push(value);
@@ -406,6 +482,140 @@ function trendingLabelCandidates(item) {
 
   return candidates.sort((left, right) => (
     right.quality - left.quality
+    || left.sourcePriority - right.sourcePriority
+    || left.order - right.order
+  ));
+}
+
+function isGenericMetricDescription(value) {
+  const parts = value
+    .split(/\s*(?:\/|・|,|，)\s*/u)
+    .map((part) => part.trim())
+    .filter(Boolean);
+  if (!parts.length) return false;
+
+  return parts.every((part) => (
+    /^\d+サイト掲載$/u.test(part)
+    || /^SNS(?:急上昇|で話題)$/iu.test(part)
+    || /^(?:注目度|スコア)\s*\d+(?:\.\d+)?$/u.test(part)
+    || /^(?:外部|内部)シグナル\s*\d+件$/u.test(part)
+    || /^(?:速報性あり|検索関心高め)$/u.test(part)
+  ));
+}
+
+function isTruncatedSourceText(value) {
+  return /(?:…|\.\.\.)$/u.test(value)
+    || /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}][A-Z]$/u.test(value);
+}
+
+function isCategoryOnlyDescription(value, item) {
+  const normalized = normalizeTitle(value);
+  if (!normalized) return true;
+  return [
+    ...itemCategoryTerms(item),
+    ...GENERIC_LABEL_TERMS.map(normalizeTitle),
+  ].includes(normalized);
+}
+
+function validTrendingDescription(value, item, label) {
+  const description = nonEmptyString(value);
+  if (!description) return null;
+  if (validHttpUrl(description) || /^(?:https?:\/\/|www\.)/iu.test(description)) return null;
+  if (isMarkupFragment(description) || isTruncatedSourceText(description)) return null;
+  if (normalizeTitle(description) === normalizeTitle(label)) return null;
+  if (isCategoryOnlyDescription(description, item)) return null;
+
+  const words = englishWords(description);
+  if (words.length > 0 && words.length <= 2 && words.every((word) => (
+    GENERIC_LABEL_TERMS.includes(word.toLowerCase())
+  ))) return null;
+  return description;
+}
+
+function descriptionQualityScore(value, source) {
+  const words = englishWords(value);
+  let score = (DESCRIPTION_SOURCE_PRIORITY[source] ?? 0) * 100;
+  if (isGenericMetricDescription(value)) score -= 10000;
+  if ((source === 'source title' || source === 'title')
+    && words.length
+    && hasEnglishEventVerb(words)) {
+    score += 2100;
+  }
+  if (stringLength(value) >= 20) score += 5;
+  return score;
+}
+
+function addDescriptionCandidate(target, value, source, item, label) {
+  const description = validTrendingDescription(value, item, label);
+  if (!description || target.some(
+    (candidate) => normalizeTitle(candidate.value) === normalizeTitle(description),
+  )) return;
+  target.push({
+    value: description,
+    source,
+    quality: descriptionQualityScore(description, source),
+    isGenericMetric: isGenericMetricDescription(description),
+    order: target.length,
+  });
+}
+
+function trendingDescriptionCandidates(item, label) {
+  const candidates = [];
+  addDescriptionCandidate(candidates, item.whatHappened, 'whatHappened', item, label);
+  addDescriptionCandidate(candidates, item.briefSummary, 'briefSummary', item, label);
+  addDescriptionCandidate(candidates, item.whyHot, 'whyHot', item, label);
+  addDescriptionCandidate(candidates, item.importantPoint, 'importantPoint', item, label);
+  addDescriptionCandidate(candidates, item.summary, 'summary', item, label);
+  for (const reason of Array.isArray(item.hotReasons) ? item.hotReasons : []) {
+    addDescriptionCandidate(candidates, reason, 'hotReason', item, label);
+  }
+  for (const signal of Array.isArray(item.sourceSignals) ? item.sourceSignals : []) {
+    if (!isObject(signal)) continue;
+    addDescriptionCandidate(candidates, signal.briefSummary, 'source summary', item, label);
+    addDescriptionCandidate(candidates, signal.summary, 'source summary', item, label);
+    addDescriptionCandidate(candidates, signal.title, 'source title', item, label);
+  }
+  addDescriptionCandidate(candidates, item.title, 'title', item, label);
+  addDescriptionCandidate(candidates, item.scoreSummary, 'scoreSummary', item, label);
+
+  return candidates.sort((left, right) => (
+    right.quality - left.quality
+    || left.order - right.order
+  ));
+}
+
+function isAmbiguousTrendingLabel(value) {
+  const words = englishWords(value);
+  if (!words.length || hasEnglishEventVerb(words) || /\d/u.test(value)) return false;
+  if (words.some((word) => /^(?:and|or)$/iu.test(word))) return true;
+
+  const significantWords = words.filter(
+    (word) => !/^(?:a|an|the|of|for|in|on|to|with)$/iu.test(word),
+  );
+  if (significantWords.length >= 2 && significantWords.every((word) => /^[A-Z]/u.test(word))) {
+    return false;
+  }
+  return true;
+}
+
+function trendingPairCandidates(item) {
+  const pairs = [];
+  for (const labelCandidate of trendingLabelCandidates(item)) {
+    const descriptionCandidate = trendingDescriptionCandidates(item, labelCandidate.value)
+      .find((candidate) => (
+        !isAmbiguousTrendingLabel(labelCandidate.value) || !candidate.isGenericMetric
+      ));
+    if (!descriptionCandidate) continue;
+
+    pairs.push({
+      ...labelCandidate,
+      description: descriptionCandidate.value,
+      descriptionSource: descriptionCandidate.source,
+      pairQuality: labelCandidate.quality + descriptionCandidate.quality,
+    });
+  }
+  return pairs.sort((left, right) => (
+    right.pairQuality - left.pairQuality
     || left.sourcePriority - right.sourcePriority
     || left.order - right.order
   ));
@@ -517,15 +727,9 @@ function mapKeyPointCandidate(item, meta) {
 }
 
 function mapTrendingCandidate(item, meta, now) {
-  const labelCandidates = trendingLabelCandidates(item);
-  const label = labelCandidates[0]?.value || null;
-  const description = firstString(
-    item.scoreSummary,
-    firstArrayString(item.hotReasons),
-    item.whyHot,
-    item.summary,
-  );
-  if (!label || !description) return null;
+  const labelCandidates = trendingPairCandidates(item);
+  const labelCandidate = labelCandidates[0];
+  if (!labelCandidate) return null;
 
   const signal = Array.isArray(item.sourceSignals) && isObject(item.sourceSignals[0])
     ? item.sourceSignals[0]
@@ -539,8 +743,8 @@ function mapTrendingCandidate(item, meta, now) {
 
   return {
     id: firstString(item.id, `${meta.source}-${meta.sourceIndex}`),
-    label,
-    description,
+    label: labelCandidate.value,
+    description: labelCandidate.description,
     score: [item.hotScore, item.score].map(Number).find(Number.isFinite)
       ?? Math.max(1, 100 - meta.sourceIndex),
     category: firstString(item.categoryLabel, item.category, 'その他'),
@@ -550,7 +754,8 @@ function mapTrendingCandidate(item, meta, now) {
     _source: meta.source,
     _isOlderThan48Hours: isOlderThan48Hours,
     _labelCandidates: labelCandidates,
-    _labelSource: labelCandidates[0]?.source || 'fallback',
+    _labelSource: labelCandidate.source,
+    _descriptionSource: labelCandidate.descriptionSource,
     _titleKey: normalizeTitle(item.title),
   };
 }
@@ -605,7 +810,9 @@ function resolveTrendingLabel(candidate, selected) {
   return {
     ...candidate,
     label: labelCandidate.value,
+    description: labelCandidate.description,
     _labelSource: labelCandidate.source,
+    _descriptionSource: labelCandidate.descriptionSource,
   };
 }
 

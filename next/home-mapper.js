@@ -561,25 +561,35 @@ function candidateQualityScore(label, item, kind, sourceText) {
   return score;
 }
 
+function itemContextKey(item) {
+  return nonEmptyString(item.id) || normalizeTitle(item.title) || null;
+}
+
 function addLabelCandidate(target, value, source, item, kind = source, provenance = {}) {
-  const sourceText = nonEmptyString(provenance.sourceText) || nonEmptyString(item.title) || '';
-  const label = validTrendingLabel(value, item, sourceText);
+  const originText = nonEmptyString(provenance.originText) || nonEmptyString(value) || '';
+  const parentSourceText = nonEmptyString(provenance.parentSourceText)
+    || nonEmptyString(item.title)
+    || '';
+  const label = validTrendingLabel(value, item, parentSourceText);
   const signalIndex = Number.isInteger(provenance.signalIndex) ? provenance.signalIndex : null;
   if (!label || target.some((candidate) => (
     normalizeTitle(candidate.value) === normalizeTitle(label)
     && candidate.source === source
     && candidate.signalIndex === signalIndex
-    && normalizeTitle(candidate.sourceText) === normalizeTitle(sourceText)
+    && normalizeTitle(candidate.parentSourceText) === normalizeTitle(parentSourceText)
   ))) return;
   target.push({
     value: label,
     source,
     kind,
-    sourceText,
+    originText,
+    parentSourceText,
+    originField: provenance.originField || source,
     signalIndex,
     contextType: provenance.contextType || 'item',
-    relation: candidateRelation(label, sourceText),
-    quality: candidateQualityScore(label, item, kind, sourceText),
+    contextKey: provenance.contextKey || itemContextKey(item),
+    relation: candidateRelation(label, parentSourceText),
+    quality: candidateQualityScore(label, item, kind, parentSourceText),
     sourcePriority: CANDIDATE_SOURCE_PRIORITY[source] ?? Number.MAX_SAFE_INTEGER,
     order: target.length,
   });
@@ -608,13 +618,17 @@ function trendingLabelCandidates(item) {
 
   for (const keyword of relatedKeywords) {
     addLabelCandidate(candidates, keyword, 'relatedKeyword', item, 'single keyword', {
-      sourceText: item.title,
+      originText: keyword,
+      parentSourceText: item.title,
+      originField: 'relatedKeywords',
       contextType: 'item',
     });
   }
   for (const phrase of relatedKeywordPhrases(relatedKeywords, item)) {
     addLabelCandidate(candidates, phrase, 'relatedKeyword', item, 'related keyword phrase', {
-      sourceText: item.title,
+      originText: phrase,
+      parentSourceText: item.title,
+      originField: 'relatedKeywords',
       contextType: 'item',
     });
   }
@@ -628,9 +642,12 @@ function trendingLabelCandidates(item) {
         item,
         titleCandidate.kind,
         {
-          sourceText: signal.title,
+          originText: titleCandidate.value,
+          parentSourceText: signal.title,
+          originField: 'sourceSignals.title',
           signalIndex,
           contextType: 'signal',
+          contextKey: `${itemContextKey(item) || 'item'}:signal:${signalIndex}`,
         },
       );
     }
@@ -638,31 +655,43 @@ function trendingLabelCandidates(item) {
   for (const searchLink of Array.isArray(item.searchLinks) ? item.searchLinks : []) {
     if (isObject(searchLink)) {
       addLabelCandidate(candidates, searchLink.label, 'search link', item, 'search link', {
-        sourceText: item.title,
+        originText: searchLink.label,
+        parentSourceText: item.title,
+        originField: 'searchLinks.label',
         contextType: 'item',
       });
     }
   }
   for (const titleCandidate of titleLabelCandidates(item.title)) {
     addLabelCandidate(candidates, titleCandidate.value, 'title', item, titleCandidate.kind, {
-      sourceText: item.title,
+      originText: titleCandidate.value,
+      parentSourceText: item.title,
+      originField: 'title',
       contextType: 'item',
     });
   }
   addLabelCandidate(candidates, item.title, 'title', item, 'raw title', {
-    sourceText: item.title,
+    originText: item.title,
+    parentSourceText: item.title,
+    originField: 'title',
     contextType: 'item',
   });
   addLabelCandidate(candidates, item.categoryLabel, 'fallback', item, 'fallback', {
-    sourceText: item.title,
+    originText: item.categoryLabel,
+    parentSourceText: item.title,
+    originField: 'categoryLabel',
     contextType: 'item',
   });
   addLabelCandidate(candidates, item.category, 'fallback', item, 'fallback', {
-    sourceText: item.title,
+    originText: item.category,
+    parentSourceText: item.title,
+    originField: 'category',
     contextType: 'item',
   });
   addLabelCandidate(candidates, '注目トピック', 'fallback', item, 'fallback', {
-    sourceText: item.title,
+    originText: '注目トピック',
+    parentSourceText: item.title,
+    originField: 'fallback',
     contextType: 'item',
   });
 
@@ -746,21 +775,32 @@ function descriptionQualityScore(value) {
 
 function addDescriptionCandidate(target, value, source, item, label, provenance = {}) {
   const description = validTrendingDescription(value, item, label);
-  if (!description || target.some(
-    (candidate) => normalizeTitle(candidate.value) === normalizeTitle(description),
-  )) return;
+  const signalIndex = Number.isInteger(provenance.signalIndex) ? provenance.signalIndex : null;
+  const originField = provenance.originField || source;
+  if (!description || target.some((candidate) => (
+    normalizeTitle(candidate.value) === normalizeTitle(description)
+    && candidate.source === source
+    && candidate.signalIndex === signalIndex
+    && candidate.originField === originField
+  ))) return;
   const isGenericMetric = isGenericMetricDescription(description);
   const isGenericDescription = isGenericTrendingDescription(description);
   if (isGenericMetric || isGenericDescription) return;
 
-  const sourceText = nonEmptyString(provenance.sourceText) || nonEmptyString(item.title) || '';
+  const originText = nonEmptyString(provenance.originText) || description;
+  const parentSourceText = nonEmptyString(provenance.parentSourceText);
   target.push({
     value: description,
     source,
-    sourceText,
-    signalIndex: Number.isInteger(provenance.signalIndex) ? provenance.signalIndex : null,
+    originText,
+    parentSourceText,
+    originField,
+    signalIndex,
     contextType: provenance.contextType || 'item',
-    relation: candidateRelation(description, sourceText),
+    contextKey: provenance.contextKey || itemContextKey(item),
+    relation: parentSourceText
+      ? candidateRelation(description, parentSourceText)
+      : 'origin',
     priority: DESCRIPTION_SOURCE_PRIORITY[source] ?? 0,
     quality: descriptionQualityScore(description),
     order: target.length,
@@ -769,28 +809,114 @@ function addDescriptionCandidate(target, value, source, item, label, provenance 
 
 function trendingDescriptionCandidates(item, label) {
   const candidates = [];
-  const itemContext = { sourceText: item.title, contextType: 'item' };
-  addDescriptionCandidate(candidates, item.whatHappened, 'whatHappened', item, label, itemContext);
-  addDescriptionCandidate(candidates, item.briefSummary, 'briefSummary', item, label, itemContext);
-  addDescriptionCandidate(candidates, item.whyHot, 'whyHot', item, label, itemContext);
-  addDescriptionCandidate(candidates, item.importantPoint, 'importantPoint', item, label, itemContext);
-  addDescriptionCandidate(candidates, item.summary, 'summary', item, label, itemContext);
-  for (const reason of Array.isArray(item.hotReasons) ? item.hotReasons : []) {
-    addDescriptionCandidate(candidates, reason, 'hotReason', item, label, itemContext);
+  const itemContext = (originField, originText, parentSourceText = null) => ({
+    originText,
+    parentSourceText,
+    originField,
+    contextType: 'item',
+    contextKey: itemContextKey(item),
+  });
+  addDescriptionCandidate(
+    candidates,
+    item.whatHappened,
+    'whatHappened',
+    item,
+    label,
+    itemContext('whatHappened', item.whatHappened),
+  );
+  addDescriptionCandidate(
+    candidates,
+    item.briefSummary,
+    'briefSummary',
+    item,
+    label,
+    itemContext('briefSummary', item.briefSummary),
+  );
+  addDescriptionCandidate(
+    candidates,
+    item.whyHot,
+    'whyHot',
+    item,
+    label,
+    itemContext('whyHot', item.whyHot),
+  );
+  addDescriptionCandidate(
+    candidates,
+    item.importantPoint,
+    'importantPoint',
+    item,
+    label,
+    itemContext('importantPoint', item.importantPoint),
+  );
+  addDescriptionCandidate(
+    candidates,
+    item.summary,
+    'summary',
+    item,
+    label,
+    itemContext('summary', item.summary),
+  );
+  for (const [reasonIndex, reason] of (Array.isArray(item.hotReasons) ? item.hotReasons : []).entries()) {
+    addDescriptionCandidate(
+      candidates,
+      reason,
+      'hotReason',
+      item,
+      label,
+      itemContext(`hotReasons[${reasonIndex}]`, reason),
+    );
   }
   for (const [signalIndex, signal] of (Array.isArray(item.sourceSignals) ? item.sourceSignals : []).entries()) {
     if (!isObject(signal)) continue;
-    const signalContext = {
-      sourceText: signal.title,
+    const signalContext = (originField, originText) => ({
+      originText,
+      parentSourceText: signal.title,
+      originField,
       signalIndex,
       contextType: 'signal',
-    };
-    addDescriptionCandidate(candidates, signal.briefSummary, 'source summary', item, label, signalContext);
-    addDescriptionCandidate(candidates, signal.summary, 'source summary', item, label, signalContext);
-    addDescriptionCandidate(candidates, signal.title, 'source title', item, label, signalContext);
+      contextKey: `${itemContextKey(item) || 'item'}:signal:${signalIndex}`,
+    });
+    addDescriptionCandidate(
+      candidates,
+      signal.briefSummary,
+      'source summary',
+      item,
+      label,
+      signalContext('sourceSignals.briefSummary', signal.briefSummary),
+    );
+    addDescriptionCandidate(
+      candidates,
+      signal.summary,
+      'source summary',
+      item,
+      label,
+      signalContext('sourceSignals.summary', signal.summary),
+    );
+    addDescriptionCandidate(
+      candidates,
+      signal.title,
+      'source title',
+      item,
+      label,
+      signalContext('sourceSignals.title', signal.title),
+    );
   }
-  addDescriptionCandidate(candidates, item.title, 'title', item, label, itemContext);
-  addDescriptionCandidate(candidates, item.scoreSummary, 'scoreSummary', item, label, itemContext);
+  addDescriptionCandidate(
+    candidates,
+    item.title,
+    'title',
+    item,
+    label,
+    itemContext('title', item.title, item.title),
+  );
+  addDescriptionCandidate(
+    candidates,
+    item.scoreSummary,
+    'scoreSummary',
+    item,
+    label,
+    itemContext('scoreSummary', item.scoreSummary),
+  );
 
   return candidates.sort((left, right) => (
     right.priority - left.priority
@@ -799,16 +925,66 @@ function trendingDescriptionCandidates(item, label) {
   ));
 }
 
-function numericTokens(value) {
-  const normalized = nonEmptyString(value)?.normalize('NFKC').toLowerCase() || '';
-  const tokens = new Set(
-    [...normalized.matchAll(/\d+(?:[.,]\d+)?/gu)]
-      .map((match) => match[0].replaceAll(',', '')),
-  );
-  for (const [word, number] of Object.entries(ENGLISH_SMALL_NUMBERS)) {
-    if (new RegExp(`\\b${word}\\b`, 'u').test(normalized)) tokens.add(number);
+function numericTokenCategory(text, start, end) {
+  const before = text.slice(Math.max(0, start - 24), start);
+  const after = text.slice(end, Math.min(text.length, end + 24));
+  const nearby = `${before.slice(-12)} ${after.slice(0, 12)}`;
+
+  if (
+    /^\s*\d+\s*\/\s*\d+\s*$/u.test(text)
+    || /(?:iphone|playstation|nintendo\s+switch|switch|file|version|ver\.?|model)\s*$/iu.test(before)
+    || (
+      /第\s*$/u.test(before)
+      && /^\s*(?:章|弾|期|世代)/u.test(after)
+    )
+  ) return 'identifier';
+  if (
+    /(?:[$€£¥])\s*$/u.test(before)
+    || /^\s*(?:円|ドル|usd|eur|ユーロ|ポイント)/iu.test(after)
+    || /(?:price|価格|販売額|金額)/iu.test(nearby)
+  ) return 'money';
+  if (/^\s*(?:%|％|percent\b|off\b)/iu.test(after)) return 'percentage';
+  if (
+    /^\s*(?:人|名|件|people|persons?|runners?|killed|dead|deaths?)/iu.test(after)
+    || /(?:死者|死亡|killed|dead|deaths?)\s*$/iu.test(before)
+  ) return 'count';
+  if (
+    /^\s*(?:年|月|日)/u.test(after)
+    || /(?:january|february|march|april|may|june|july|august|september|october|november|december)\s*$/iu.test(before)
+    || /^\s*(?:st|nd|rd|th)\b/iu.test(after)
+  ) return 'date';
+  if (/^\s*(?:位|rank\b)/iu.test(after) || /(?:rank|ranking|順位)\s*$/iu.test(before)) {
+    return 'rank';
   }
-  return [...tokens];
+  return 'general';
+}
+
+function categorizedNumericTokens(value) {
+  const normalized = nonEmptyString(value)?.normalize('NFKC').toLowerCase() || '';
+  const tokens = [];
+  for (const match of normalized.matchAll(/\d+(?:[.,]\d+)?/gu)) {
+    tokens.push({
+      value: match[0].replaceAll(',', ''),
+      category: numericTokenCategory(normalized, match.index, match.index + match[0].length),
+      raw: match[0],
+    });
+  }
+  for (const [word, number] of Object.entries(ENGLISH_SMALL_NUMBERS)) {
+    for (const match of normalized.matchAll(new RegExp(`\\b${word}\\b`, 'gu'))) {
+      tokens.push({
+        value: number,
+        category: numericTokenCategory(normalized, match.index, match.index + match[0].length),
+        raw: match[0],
+      });
+    }
+  }
+  return tokens.filter((token, index) => tokens.findIndex(
+    (current) => current.value === token.value && current.category === token.category,
+  ) === index);
+}
+
+function numericTokens(value) {
+  return [...new Set(categorizedNumericTokens(value).map((token) => token.value))];
 }
 
 function quotedAnchors(value) {
@@ -871,39 +1047,80 @@ function sharedAnchorDetails(label, description) {
   return [...anchors];
 }
 
-function sameSourceContext(labelCandidate, descriptionCandidate) {
-  if (
-    labelCandidate.contextType === 'signal'
+function pairSourceEvidence(labelCandidate, descriptionCandidate) {
+  const sameSignal = labelCandidate.contextType === 'signal'
     && descriptionCandidate.contextType === 'signal'
-  ) {
-    return labelCandidate.signalIndex === descriptionCandidate.signalIndex;
-  }
-  if (
-    labelCandidate.contextType === 'item'
-    && descriptionCandidate.contextType === 'item'
-  ) {
-    return true;
-  }
-  return normalizeTitle(labelCandidate.sourceText)
-    === normalizeTitle(descriptionCandidate.sourceText);
+    && labelCandidate.signalIndex === descriptionCandidate.signalIndex;
+  const labelParent = normalizeTitle(labelCandidate.parentSourceText);
+  const descriptionOrigin = normalizeTitle(descriptionCandidate.originText);
+  const descriptionParent = normalizeTitle(descriptionCandidate.parentSourceText);
+  const labelOrigin = normalizeTitle(labelCandidate.originText);
+  const sameConcreteSourceText = Boolean(
+    labelParent
+    && (
+      labelParent === descriptionOrigin
+      || descriptionParent === labelOrigin
+    ),
+  );
+
+  return {
+    sameSignal,
+    sameConcreteSourceText,
+    sameContextKey: Boolean(
+      labelCandidate.contextKey
+      && labelCandidate.contextKey === descriptionCandidate.contextKey
+    ),
+  };
 }
 
-function hasNumericConflict(label, description) {
-  const labelNumbers = numericTokens(label);
-  const descriptionNumbers = numericTokens(description);
-  if (!labelNumbers.length || !descriptionNumbers.length) return false;
-  const descriptionSet = new Set(descriptionNumbers);
-  return !labelNumbers.some((number) => descriptionSet.has(number));
+function numericConsistencyDetails(label, description) {
+  const labelTokens = categorizedNumericTokens(label);
+  const descriptionTokens = categorizedNumericTokens(description);
+  const categories = new Set([
+    ...labelTokens.map((token) => token.category),
+    ...descriptionTokens.map((token) => token.category),
+  ]);
+  const conflicts = [];
+
+  for (const category of categories) {
+    const labelValues = new Set(
+      labelTokens.filter((token) => token.category === category).map((token) => token.value),
+    );
+    const descriptionValues = new Set(
+      descriptionTokens.filter((token) => token.category === category).map((token) => token.value),
+    );
+    if (!labelValues.size || !descriptionValues.size) continue;
+    if (![...labelValues].some((value) => descriptionValues.has(value))) {
+      conflicts.push({
+        category,
+        label: [...labelValues],
+        description: [...descriptionValues],
+      });
+    }
+  }
+
+  return {
+    consistent: conflicts.length === 0,
+    labelTokens,
+    descriptionTokens,
+    conflicts,
+  };
 }
 
 function promotionIsConsistent(label, description) {
   if (!OFFER_TERMS_PATTERN.test(label)) return true;
   if (!OFFER_TERMS_PATTERN.test(description)) return false;
 
-  const labelNumbers = numericTokens(label);
-  if (!labelNumbers.length) return true;
-  const descriptionNumbers = new Set(numericTokens(description));
-  return labelNumbers.some((number) => descriptionNumbers.has(number));
+  const labelTokens = categorizedNumericTokens(label)
+    .filter((token) => token.category === 'percentage' || token.category === 'money');
+  if (!labelTokens.length) return true;
+  const descriptionTokens = categorizedNumericTokens(description);
+  return labelTokens.every((labelToken) => descriptionTokens.some(
+    (descriptionToken) => (
+      descriptionToken.category === labelToken.category
+      && descriptionToken.value === labelToken.value
+    ),
+  ));
 }
 
 function pairCoherence(labelCandidate, descriptionCandidate) {
@@ -911,11 +1128,11 @@ function pairCoherence(labelCandidate, descriptionCandidate) {
     labelCandidate.value,
     descriptionCandidate.value,
   );
-  const sameContext = sameSourceContext(labelCandidate, descriptionCandidate);
+  const sourceEvidence = pairSourceEvidence(labelCandidate, descriptionCandidate);
   const crossSignal = labelCandidate.contextType === 'signal'
     && descriptionCandidate.contextType === 'signal'
     && labelCandidate.signalIndex !== descriptionCandidate.signalIndex;
-  const numericConsistency = !hasNumericConflict(
+  const numericConsistency = numericConsistencyDetails(
     labelCandidate.value,
     descriptionCandidate.value,
   );
@@ -924,24 +1141,28 @@ function pairCoherence(labelCandidate, descriptionCandidate) {
     descriptionCandidate.value,
   );
 
-  if (!numericConsistency || !promotionConsistency) return null;
+  if (!numericConsistency.consistent || !promotionConsistency) return null;
   if (crossSignal && !sharedAnchors.length) return null;
-  if (!sameContext && !sharedAnchors.length) return null;
+  if (
+    !sharedAnchors.length
+    && !sourceEvidence.sameSignal
+    && !sourceEvidence.sameConcreteSourceText
+  ) return null;
 
-  const level = sameContext && sharedAnchors.length
-    ? labelCandidate.signalIndex !== null
-      && labelCandidate.signalIndex === descriptionCandidate.signalIndex
-      ? 4
-      : 3
-    : sharedAnchors.length
-      ? 2
-      : 1;
+  const level = sourceEvidence.sameSignal && sharedAnchors.length
+    ? 4
+    : (sourceEvidence.sameSignal || sourceEvidence.sameConcreteSourceText)
+      && sharedAnchors.length
+      ? 3
+      : 2;
 
   return {
     level,
-    sameSourceContext: sameContext,
+    sameSourceContext: sourceEvidence.sameSignal || sourceEvidence.sameConcreteSourceText,
+    ...sourceEvidence,
     sharedAnchors,
-    numericConsistency,
+    numericConsistency: numericConsistency.consistent,
+    numericDetails: numericConsistency,
     promotionConsistency,
   };
 }
@@ -957,7 +1178,9 @@ function trendingPairCandidates(item) {
         ...labelCandidate,
         description: descriptionCandidate.value,
         descriptionSource: descriptionCandidate.source,
-        descriptionSourceText: descriptionCandidate.sourceText,
+        descriptionOriginText: descriptionCandidate.originText,
+        descriptionParentSourceText: descriptionCandidate.parentSourceText,
+        descriptionOriginField: descriptionCandidate.originField,
         descriptionSignalIndex: descriptionCandidate.signalIndex,
         descriptionPriority: descriptionCandidate.priority,
         pairQuality: labelCandidate.quality + descriptionCandidate.quality,
@@ -1108,12 +1331,17 @@ function mapTrendingCandidate(item, meta, now) {
     _isOlderThan48Hours: isOlderThan48Hours,
     _labelCandidates: labelCandidates,
     _labelSource: labelCandidate.source,
-    _labelSourceText: labelCandidate.sourceText,
+    _labelOriginText: labelCandidate.originText,
+    _labelParentSourceText: labelCandidate.parentSourceText,
+    _labelOriginField: labelCandidate.originField,
+    _labelContextKey: labelCandidate.contextKey,
     _labelSignalIndex: labelCandidate.signalIndex,
     _labelKind: labelCandidate.kind,
     _labelRelation: labelCandidate.relation,
     _descriptionSource: labelCandidate.descriptionSource,
-    _descriptionSourceText: labelCandidate.descriptionSourceText,
+    _descriptionOriginText: labelCandidate.descriptionOriginText,
+    _descriptionParentSourceText: labelCandidate.descriptionParentSourceText,
+    _descriptionOriginField: labelCandidate.descriptionOriginField,
     _descriptionSignalIndex: labelCandidate.descriptionSignalIndex,
     _coherence: labelCandidate.coherence,
     _titleKey: normalizeTitle(item.title),
@@ -1172,12 +1400,17 @@ function resolveTrendingLabel(candidate, selected) {
     label: labelCandidate.value,
     description: labelCandidate.description,
     _labelSource: labelCandidate.source,
-    _labelSourceText: labelCandidate.sourceText,
+    _labelOriginText: labelCandidate.originText,
+    _labelParentSourceText: labelCandidate.parentSourceText,
+    _labelOriginField: labelCandidate.originField,
+    _labelContextKey: labelCandidate.contextKey,
     _labelSignalIndex: labelCandidate.signalIndex,
     _labelKind: labelCandidate.kind,
     _labelRelation: labelCandidate.relation,
     _descriptionSource: labelCandidate.descriptionSource,
-    _descriptionSourceText: labelCandidate.descriptionSourceText,
+    _descriptionOriginText: labelCandidate.descriptionOriginText,
+    _descriptionParentSourceText: labelCandidate.descriptionParentSourceText,
+    _descriptionOriginField: labelCandidate.descriptionOriginField,
     _descriptionSignalIndex: labelCandidate.descriptionSignalIndex,
     _coherence: labelCandidate.coherence,
   };

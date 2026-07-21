@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-21T19:47:01.025Z",
+  "generatedAt": "2026-07-21T21:22:43.617Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-337",
+  "selectedClusterId": "today-cluster-333",
   "selectedTitle": "開発者に訊きました : スプラトゥーン レイダース｜任天堂",
   "candidates": [
     {
-      "clusterId": "today-cluster-337",
+      "clusterId": "today-cluster-333",
       "title": "開発者に訊きました : スプラトゥーン レイダース｜任天堂",
       "category": "sports",
       "categories": [
@@ -58,58 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-334",
-      "title": "政府、マイナカードをAIエージェントと連携へ　重点計画に明記",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 72.3,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 16.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-156",
+      "clusterId": "today-cluster-153",
       "title": "ウッディ＆バズ＆ジェシーが仲良くデザイン♪ 「トイ・ストーリー」ROSE BUDコレクション登場！ 名シーンTシャツやポーチなど遊び心あふれるアイテムがラインナップ♪",
       "category": "anime",
       "categories": [
@@ -142,7 +91,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 8.333333333333332,
+        "searchScore": 10,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -162,7 +111,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-41",
+      "clusterId": "today-cluster-40",
       "title": "「パブリッシャーにゲームを奪われた」開発者、権利を取り戻したと報告。“契約条件こっそり変更・無給開発・実質取り分ゼロ”の横暴に決着",
       "category": "games",
       "categories": [
@@ -213,7 +162,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-152",
+      "clusterId": "today-cluster-149",
       "title": "『パタポン』シリーズ開発者おくるリズムACT『ラタタン』公式Xがパッケージ版に言及―スイッチ2版にはゲームカード、PS5版にはディスクが入る",
       "category": "games",
       "categories": [
@@ -256,6 +205,59 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 38.9,
         "internalSocialScore": 35.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-86",
+      "title": "“こわい話”を通して日本の地理・歴史を学べるマンガ『世界コワイモノMAP 日本編』が発売。呪いの神社や落武者の亡霊、妖怪「惨海入道」の謎を追う",
+      "category": "games",
+      "categories": [
+        "games",
+        "manga",
+        "net-culture",
+        "general",
+        "entertainment"
+      ],
+      "buzzScore": 63.8,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.8,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 8.3,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 45.2,
+        "internalSocialScore": 64.5
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

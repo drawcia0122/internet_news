@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-07-20T23:11:09.152Z",
+  "generatedAt": "2026-07-21T01:04:22.772Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-613",
-  "selectedTitle": "1-bit LLM「Bonsai」活用ガイド — 1.15GB で動く 8B モデルをローカルで使い倒す",
+  "selectedClusterId": "today-cluster-4",
+  "selectedTitle": "Netflix新作アニメ『レゴ ワンピース』予告映像が公開。日本語版キャストはおなじみの声優陣が担当",
   "candidates": [
     {
-      "clusterId": "today-cluster-1",
-      "title": "実写映画『カイジ 人生リベンジゲーム』兵頭和也役は「亀梨和也」さんに決定！“新キャスト＆予告映像”が解禁",
-      "category": "games",
+      "clusterId": "today-cluster-4",
+      "title": "Netflix新作アニメ『レゴ ワンピース』予告映像が公開。日本語版キャストはおなじみの声優陣が担当",
+      "category": "anime",
       "categories": [
+        "anime",
         "games",
-        "entertainment",
         "net-culture",
         "general"
       ],
-      "buzzScore": 73.1,
-      "confidence": 0.44,
+      "buzzScore": 71,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -26,9 +26,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 19.8,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 6,
+        "search": 5.7,
         "social": 7,
         "velocity": 5.3,
         "freshness": 8.5,
@@ -37,7 +37,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 8.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -47,8 +47,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 47.1,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-65",
+      "clusterId": "today-cluster-71",
       "title": "Steam Machine開発者、「メモリ不足はどんどん悪化中」と悲鳴。“店頭で見える”高騰より、裏側はもっと深刻",
       "category": "games",
       "categories": [
@@ -67,8 +67,8 @@
         "sns",
         "net-culture"
       ],
-      "buzzScore": 72.1,
-      "confidence": 0.43,
+      "buzzScore": 70.4,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 1,
@@ -84,7 +84,7 @@
         "search": 6.4,
         "social": 8.4,
         "velocity": 0,
-        "freshness": 8.5,
+        "freshness": 7,
         "authority": 2.5,
         "categoryBias": 9,
         "penalty": 0
@@ -98,11 +98,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 23.1,
         "crossCategoryScore": 100,
         "archiveHeatScore": 99,
-        "internalSearchScore": 50.3,
-        "internalSocialScore": 65.8
+        "internalSearchScore": 49.7,
+        "internalSocialScore": 65.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-31",
+      "clusterId": "today-cluster-37",
       "title": "マンガ『シルバーマウンテン』Kindle版が50％ポイント還元セール中。既刊4巻の購入で2398円→1200ポイントが還元、『うしおととら』『からくりサーカス』などで知られる藤田和日郎氏が描く武×魔の仙境幻想譚",
       "category": "games",
       "categories": [
@@ -163,69 +163,18 @@
       ]
     },
     {
-      "clusterId": "today-cluster-613",
-      "title": "1-bit LLM「Bonsai」活用ガイド — 1.15GB で動く 8B モデルをローカルで使い倒す",
-      "category": "tech",
+      "clusterId": "today-cluster-489",
+      "title": "バーナム氏、イギリスの新首相に就任　政治の安定と分権化推進を強調　原稿見ずに演説",
+      "category": "politics",
       "categories": [
-        "tech",
+        "politics",
+        "sports",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 60.5,
-      "confidence": 0.31,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1749",
-      "title": "AIサーバー部品数は車の40倍　デジタル革命の主役、市場はスマホ逆転",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "business",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 59.7,
-      "confidence": 0.38,
+      "buzzScore": 65.7,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -235,18 +184,18 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 17.4,
+        "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 3.8,
-        "social": 7.2,
+        "search": 4.5,
+        "social": 7.4,
         "velocity": 0,
-        "freshness": 3.5,
+        "freshness": 8.5,
         "authority": 2.5,
-        "categoryBias": 9,
+        "categoryBias": 7,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 10,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -254,11 +203,62 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 29.6,
-        "internalSocialScore": 56.4
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-5",
+      "title": "実写映画『カイジ 人生リベンジゲーム』兵頭和也役は「亀梨和也」さんに決定！“新キャスト＆予告映像”が解禁",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.5,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

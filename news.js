@@ -570,6 +570,7 @@ function matchesArchiveCategory(item, category) {
   if (!category || category === 'all') return true;
   if (category === 'general') return String(item?.category ?? '') === 'general';
   if (!hasCategory(item, category)) return false;
+  if (category === 'adult') return true;
   return hasMeaningfulCategoryContext(item, category);
 }
 
@@ -604,8 +605,6 @@ function hasMeaningfulCategoryContext(item, category) {
       return hasMeaningfulWorldContext(text);
     case 'sports':
       return hasMeaningfulSportsContext(text);
-    case 'adult':
-      return hasMeaningfulAdultContext(text);
     default:
       return true;
   }
@@ -646,13 +645,6 @@ function hasMeaningfulSportsContext(text) {
   const falsePositivePattern = /進撃の巨人|監督官|花火大会|献血運動推進全国大会|作品展|展示会|内覧会|同人イベント|アニメイベント|上映会|発売記念|コラボカフェ|写真集|グラビア|コスプレ/;
 
   return strongSportsPattern.test(value) && !falsePositivePattern.test(value);
-}
-
-function hasMeaningfulAdultContext(text) {
-  const value = String(text || '').toLowerCase();
-  const strongAdultPattern = /成人向け|18禁|r-?18|porn|adult|fanza|dlsite|dmm|av女優|アダルトビデオ|同人音声|同人ゲーム|エロ漫画|エロゲ|美少女ゲーム|成人向けcg集|成人向け動画/;
-  const falsePositivePattern = /book\s*1位|写真集の夜飯沢|ジャパン写真集|大会で成長してる|サッカーユニフォーム|試合速報|大谷翔平|キャスト解禁|アニメ出演決定|トークイベント|グラビア|水着|コスプレ|ランジェリー|写真集/;
-  return strongAdultPattern.test(value) && !falsePositivePattern.test(value);
 }
 
 function hasMeaningfulAnimeContext(text) {

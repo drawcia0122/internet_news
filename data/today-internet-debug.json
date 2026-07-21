@@ -1,11 +1,65 @@
 {
-  "generatedAt": "2026-07-21T04:24:35.177Z",
+  "generatedAt": "2026-07-21T07:16:27.228Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1",
-  "selectedTitle": "Nintendo Switch 2/Switch向けセールに約250本追加。『バイオハザード レクイエム』など人気作続々、2人専用『スプリット・フィクション』は過去イチお安い",
+  "selectedClusterId": "today-cluster-3",
+  "selectedTitle": "人気品薄のSteam Machine、さっそく「商品がないのに転売」する空売り行為が横行との報告。高めの定価を約2倍に上乗せする出品も",
   "candidates": [
     {
-      "clusterId": "today-cluster-136",
+      "clusterId": "today-cluster-11",
+      "title": "“こわい話”を通して日本の地理・歴史を学べるマンガ『世界コワイモノMAP 日本編』が発売。呪いの神社や落武者の亡霊、妖怪「惨海入道」の謎を追う",
+      "category": "manga",
+      "categories": [
+        "manga",
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 74.5,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.8,
+        "internetNativeBoost": 8,
+        "search": 6,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-142",
       "title": "「超かぐや姫！」のX投稿に社会人が涙…「マジで秒だったえぐい」「ほんそれ」と共感の声相次ぐ",
       "category": "entertainment",
       "categories": [
@@ -15,30 +69,30 @@
         "anime",
         "general"
       ],
-      "buzzScore": 75.6,
-      "confidence": 0.44,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 69.6,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
         "trend": 18.5,
         "internetNativeBoost": 8,
-        "search": 4.3,
+        "search": 9.1,
         "social": 7.4,
-        "velocity": 2.7,
+        "velocity": 0,
         "freshness": 10,
-        "authority": 2.5,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 56.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -58,7 +112,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-84",
+      "clusterId": "today-cluster-89",
       "title": "Steam Machine開発者、「メモリ不足はどんどん悪化中」と悲鳴。“店頭で見える”高騰より、裏側はもっと深刻",
       "category": "games",
       "categories": [
@@ -91,7 +145,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 6.666666666666667,
+        "searchScore": 10,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -111,16 +165,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1221",
-      "title": "危険運転致死傷罪を適用する数値基準盛り込んだ改正法が施行",
-      "category": "sns",
+      "clusterId": "today-cluster-712",
+      "title": "佐々木麟太郎 大リーグ マーリンズと契約 SNSで報告",
+      "category": "net-culture",
       "categories": [
-        "sns",
         "net-culture",
+        "world",
+        "sns",
         "general"
       ],
-      "buzzScore": 67.7,
-      "confidence": 0.43,
+      "buzzScore": 66.9,
+      "confidence": 0.44,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -133,16 +188,16 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.9,
-        "social": 4.5,
+        "search": 6.1,
+        "social": 6,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 7,
         "authority": 5.5,
-        "categoryBias": 9,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 38.333333333333336,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -150,11 +205,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 60,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
         "archiveHeatScore": 100,
-        "internalSearchScore": 38.3,
-        "internalSocialScore": 35.3
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -162,61 +217,8 @@
       ]
     },
     {
-      "clusterId": "today-cluster-66",
-      "title": "マンガ『シルバーマウンテン』Kindle版が50％ポイント還元セール中。既刊4巻の購入で2398円→1200ポイントが還元、『うしおととら』『からくりサーカス』などで知られる藤田和日郎氏が描く武×魔の仙境幻想譚",
-      "category": "games",
-      "categories": [
-        "games",
-        "manga",
-        "net-culture",
-        "general",
-        "entertainment"
-      ],
-      "buzzScore": 66.4,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 48.7,
-        "internalSocialScore": 64.5
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1",
-      "title": "Nintendo Switch 2/Switch向けセールに約250本追加。『バイオハザード レクイエム』など人気作続々、2人専用『スプリット・フィクション』は過去イチお安い",
+      "clusterId": "today-cluster-3",
+      "title": "人気品薄のSteam Machine、さっそく「商品がないのに転売」する空売り行為が横行との報告。高めの定価を約2倍に上乗せする出品も",
       "category": "games",
       "categories": [
         "games",

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-22T18:47:03.951Z",
+  "generatedAt": "2026-07-22T20:19:57.876Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-449",
+  "selectedClusterId": "today-cluster-532",
   "selectedTitle": "15歳未満のSNS利用を禁止へ 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-449",
+      "clusterId": "today-cluster-532",
       "title": "15歳未満のSNS利用を禁止へ 仏",
       "category": "net-culture",
       "categories": [
@@ -18,7 +18,7 @@
         "entertainment",
         "world"
       ],
-      "buzzScore": 84,
+      "buzzScore": 84.5,
       "confidence": 0.6,
       "articleCount": 17,
       "sourceCount": 2,
@@ -32,7 +32,7 @@
         "sourceDiversity": 4.7,
         "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 8.3,
+        "search": 8.8,
         "social": 6,
         "velocity": 0,
         "freshness": 7,
@@ -41,7 +41,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 51.66666666666667,
+        "searchScore": 55.00000000000001,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2286",
+      "clusterId": "today-cluster-2372",
       "title": "開発者に訊きました : スプラトゥーン レイダース｜任天堂",
       "category": "sports",
       "categories": [
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-353",
+      "clusterId": "today-cluster-348",
       "title": "アニメ『名探偵プリキュア！』ED 、可愛さと遊び心あふれるプリキュアたちの表現に注目！〜No.1／演出篇",
       "category": "sports",
       "categories": [
@@ -168,7 +168,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1416",
+      "clusterId": "today-cluster-425",
+      "title": "全仏オープン優勝の元プロテニス選手 詐欺の疑いで逮捕",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "sports",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 67.8,
+      "confidence": 0.44,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 4.5,
+        "categoryBias": 7,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1503",
       "title": "評論家 山田五郎さん死去 67歳 西洋美術などユーモア交え解説",
       "category": "sns",
       "categories": [
@@ -176,8 +229,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 67.6,
-      "confidence": 0.43,
+      "buzzScore": 65.4,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -190,10 +243,10 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 4.5,
+        "search": 4.7,
+        "social": 4.4,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 5.5,
         "categoryBias": 9,
         "penalty": 0
@@ -207,63 +260,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 60,
         "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 34.9
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-2374",
-      "title": "フランス 15歳未満のSNS利用 9月から禁止へ ヨーロッパでは初",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "politics",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 65.3,
-      "confidence": 0.44,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.4,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 5.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 40,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
         "internalSearchScore": 37,
-        "internalSocialScore": 45.4
+        "internalSocialScore": 34.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

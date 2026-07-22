@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-22T04:27:36.223Z",
+  "generatedAt": "2026-07-22T07:18:05.646Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-402",
+  "selectedClusterId": "today-cluster-752",
   "selectedTitle": "15歳未満のSNS利用を禁止へ 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-402",
+      "clusterId": "today-cluster-752",
       "title": "15歳未満のSNS利用を禁止へ 仏",
       "category": "sns",
       "categories": [
@@ -13,11 +13,13 @@
         "net-culture",
         "general",
         "tech",
-        "sports"
+        "sports",
+        "entertainment",
+        "world"
       ],
-      "buzzScore": 96.9,
-      "confidence": 0.66,
-      "articleCount": 13,
+      "buzzScore": 85.4,
+      "confidence": 0.61,
+      "articleCount": 14,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
@@ -27,18 +29,18 @@
       "scoreBreakdown": {
         "coverage": 18,
         "sourceDiversity": 4.7,
-        "trend": 20.7,
+        "trend": 18.5,
         "internetNativeBoost": 8,
-        "search": 8.5,
+        "search": 8.8,
         "social": 6,
-        "velocity": 1.5,
-        "freshness": 10,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 2.5,
-        "categoryBias": 17,
+        "categoryBias": 12,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 53.333333333333336,
+        "searchScore": 55.00000000000001,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -48,8 +50,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 36.8,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 33.3,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -58,7 +60,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-806",
+      "clusterId": "today-cluster-1191",
       "title": "開発者に訊きました : スプラトゥーン レイダース｜任天堂",
       "category": "sports",
       "categories": [
@@ -68,7 +70,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 85.7,
+      "buzzScore": 83.1,
       "confidence": 0.41,
       "articleCount": 2,
       "sourceCount": 2,
@@ -82,16 +84,16 @@
         "sourceDiversity": 4.7,
         "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 16,
+        "search": 14.9,
         "social": 7.3,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 2.5,
         "categoryBias": 17,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 100,
+        "searchScore": 93.33333333333333,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -99,11 +101,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 100,
         "archiveHeatScore": 89,
-        "internalSearchScore": 34.5,
-        "internalSocialScore": 57.3
+        "internalSearchScore": 33.9,
+        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -111,124 +113,21 @@
       ]
     },
     {
-      "clusterId": "today-cluster-19",
-      "title": "映画『ラ・ラ・ランド』10周年でポスターが“微妙に”変更　ネタ化した主演俳優の手を修正",
-      "category": "entertainment",
+      "clusterId": "today-cluster-10",
+      "title": "異界の温泉宿で「付喪神」をもてなし、“ケガレ”に満ちた夜を生き延びるホラーゲーム『異界ノ宿帳』Steamストアページが公開",
+      "category": "games",
       "categories": [
-        "entertainment",
-        "sns",
+        "games",
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.5,
-      "confidence": 0.42,
+      "buzzScore": 74.3,
+      "confidence": 0.46,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-31",
-      "title": "伝説のシューティングゲーム『TATSUJIN』シリーズ最新作『TATSUJIN EXTREME』の体験版が配信開始。初心者でもミスを気にせず気軽に遊べるモードも搭載",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 67.6,
-      "confidence": 0.48,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 13.4,
-        "internetNativeBoost": 0,
-        "search": 5.2,
-        "social": 7.4,
-        "velocity": 8,
-        "freshness": 8.5,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 30,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 61,
-        "internalSearchScore": 40.8,
-        "internalSocialScore": 57.5
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-21",
-      "title": "Steam好評消防士シム新作『Firefighters Code Red』発表。マルチプレイで仲間と出動、リアルに刻々と燃え崩れる予測不能の火災現場で決死の救出劇",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 67.5,
-      "confidence": 0.4,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
@@ -238,8 +137,8 @@
         "internetNativeBoost": 8,
         "search": 6.5,
         "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -258,6 +157,110 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 50.6,
         "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1",
+      "title": "『MTG』『D&D』の大手ハズブロ、好調の裏で「複数のゲーム開発中止」、約91億円の減損。大作ゲームも出すけど、投資には“ブレーキ”",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "games",
+        "business",
+        "general"
+      ],
+      "buzzScore": 68.4,
+      "confidence": 0.49,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 20.5,
+        "internetNativeBoost": 8,
+        "search": 6.2,
+        "social": 7,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 4,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 93,
+        "internalSearchScore": 48.2,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-392",
+      "title": "評論家 山田五郎さん死去 67歳 西洋美術などユーモア交え解説",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.3,
+      "confidence": 0.44,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 4.6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 4.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 6.666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 35.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

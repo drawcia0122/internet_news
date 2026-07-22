@@ -1,11 +1,63 @@
 {
-  "generatedAt": "2026-07-21T23:34:31.020Z",
+  "generatedAt": "2026-07-22T01:02:31.335Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-330",
-  "selectedTitle": "開発者に訊きました : スプラトゥーン レイダース｜任天堂",
+  "selectedClusterId": "today-cluster-462",
+  "selectedTitle": "15歳未満のSNS利用を禁止へ 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-330",
+      "clusterId": "today-cluster-462",
+      "title": "15歳未満のSNS利用を禁止へ 仏",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "tech",
+        "sns",
+        "general",
+        "sports"
+      ],
+      "buzzScore": 93.5,
+      "confidence": 0.66,
+      "articleCount": 10,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 18,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.4,
+        "social": 6,
+        "velocity": 1.1,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 17,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 40,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-329",
       "title": "開発者に訊きました : スプラトゥーン レイダース｜任天堂",
       "category": "sports",
       "categories": [
@@ -15,7 +67,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 79.5,
+      "buzzScore": 79.8,
       "confidence": 0.37,
       "articleCount": 1,
       "sourceCount": 1,
@@ -29,7 +81,7 @@
         "sourceDiversity": 2.3,
         "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 14.9,
+        "search": 15.2,
         "social": 7.4,
         "velocity": 0,
         "freshness": 10,
@@ -38,7 +90,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 93.33333333333333,
+        "searchScore": 95,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -58,40 +110,39 @@
       ]
     },
     {
-      "clusterId": "today-cluster-563",
-      "title": "ウッディ＆バズ＆ジェシーが仲良くデザイン♪ 「トイ・ストーリー」ROSE BUDコレクション登場！ 名シーンTシャツやポーチなど遊び心あふれるアイテムがラインナップ♪",
-      "category": "anime",
+      "clusterId": "today-cluster-424",
+      "title": "フランス 15歳未満のSNS利用 9月から禁止へ ヨーロッパでは初",
+      "category": "net-culture",
       "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "sns",
         "net-culture",
+        "politics",
+        "sns",
         "general"
       ],
-      "buzzScore": 67.5,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 70.3,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "search": 5.1,
+        "social": 6,
+        "velocity": 1.5,
+        "freshness": 10,
+        "authority": 5.5,
+        "categoryBias": 4,
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 11.666666666666666,
+        "searchScore": 31.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -100,10 +151,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
+        "crossCategoryScore": 80,
         "archiveHeatScore": 100,
         "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -111,7 +162,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-38",
+      "clusterId": "today-cluster-64",
       "title": "「パブリッシャーにゲームを奪われた」開発者、権利を取り戻したと報告。“契約条件こっそり変更・無給開発・実質取り分ゼロ”の横暴に決着",
       "category": "games",
       "categories": [
@@ -142,7 +193,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 10,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -162,21 +213,25 @@
       ]
     },
     {
-      "clusterId": "today-cluster-147",
-      "title": "『パタポン』シリーズ開発者おくるリズムACT『ラタタン』公式Xがパッケージ版に言及―スイッチ2版にはゲームカード、PS5版にはディスクが入る",
-      "category": "games",
+      "clusterId": "today-cluster-431",
+      "title": "ウクライナ 国防相に続き軍総司令官も交代 異例の事態",
+      "category": "politics",
       "categories": [
-        "games",
+        "politics",
+        "world",
         "sns",
+        "net-culture",
         "general"
       ],
       "buzzScore": 66.2,
-      "confidence": 0.39,
+      "confidence": 0.44,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
@@ -184,15 +239,15 @@
         "trend": 22,
         "internetNativeBoost": 8,
         "search": 5,
-        "social": 4.6,
-        "velocity": 0,
+        "social": 7.4,
+        "velocity": 4.2,
         "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
+        "authority": 4.5,
+        "categoryBias": 4,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -201,63 +256,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
+        "crossCategoryScore": 100,
         "archiveHeatScore": 100,
         "internalSearchScore": 38.9,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-88",
-      "title": "“こわい話”を通して日本の地理・歴史を学べるマンガ『世界コワイモノMAP 日本編』が発売。呪いの神社や落武者の亡霊、妖怪「惨海入道」の謎を追う",
-      "category": "games",
-      "categories": [
-        "games",
-        "manga",
-        "net-culture",
-        "general",
-        "entertainment"
-      ],
-      "buzzScore": 63.8,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 19.8,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 45.2,
-        "internalSocialScore": 64.5
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

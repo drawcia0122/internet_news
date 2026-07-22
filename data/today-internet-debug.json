@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-22T11:59:56.642Z",
+  "generatedAt": "2026-07-22T14:19:02.864Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-542",
+  "selectedClusterId": "today-cluster-734",
   "selectedTitle": "15歳未満のSNS利用を禁止へ 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-542",
+      "clusterId": "today-cluster-734",
       "title": "15歳未満のSNS利用を禁止へ 仏",
       "category": "net-culture",
       "categories": [
@@ -18,25 +18,24 @@
         "entertainment",
         "world"
       ],
-      "buzzScore": 92,
-      "confidence": 0.68,
+      "buzzScore": 84.3,
+      "confidence": 0.6,
       "articleCount": 16,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
         "coverage": 18,
         "sourceDiversity": 4.7,
-        "trend": 18.5,
+        "trend": 17.6,
         "internetNativeBoost": 8,
         "search": 8.5,
         "social": 6,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 2.5,
         "categoryBias": 12,
         "penalty": 0
@@ -52,8 +51,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 33.3,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 31.9,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -62,7 +61,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1886",
+      "clusterId": "today-cluster-2089",
       "title": "開発者に訊きました : スプラトゥーン レイダース｜任天堂",
       "category": "sports",
       "categories": [
@@ -72,8 +71,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 82.3,
-      "confidence": 0.41,
+      "buzzScore": 80.2,
+      "confidence": 0.4,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -87,9 +86,9 @@
         "trend": 19.6,
         "internetNativeBoost": 8,
         "search": 14.1,
-        "social": 7.3,
+        "social": 7.2,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 17,
         "penalty": 0
@@ -103,11 +102,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 100,
         "archiveHeatScore": 89,
-        "internalSearchScore": 33.9,
-        "internalSocialScore": 56.9
+        "internalSearchScore": 33.1,
+        "internalSocialScore": 56.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -115,91 +114,41 @@
       ]
     },
     {
-      "clusterId": "today-cluster-3",
-      "title": "劇場アニメ『楽園追放 心のレゾナンス』第5弾ティザーPV＆ビジュアルが公開。新キャラクター「ぺネム」役に諸星すみれさんが決定",
-      "category": "anime",
+      "clusterId": "today-cluster-650",
+      "title": "「寝てないアピールする首相見たことない」　高市氏のX投稿波紋",
+      "category": "politics",
       "categories": [
-        "anime",
-        "games",
-        "net-culture",
+        "politics",
         "general",
-        "entertainment",
-        "manga"
+        "business",
+        "sns",
+        "net-culture"
       ],
-      "buzzScore": 73.5,
-      "confidence": 0.54,
-      "articleCount": 3,
-      "sourceCount": 2,
+      "buzzScore": 76.3,
+      "confidence": 0.52,
+      "articleCount": 5,
+      "sourceCount": 3,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 14.1,
-        "internetNativeBoost": 0,
-        "search": 4.9,
-        "social": 7,
-        "velocity": 12.5,
-        "freshness": 10,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 13.333333333333334,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 64,
-        "internalSearchScore": 38,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-792",
-      "title": "プロ野球2軍公式戦がノーゲームに 複数選手が熱中症の症状訴え",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "games",
-        "general"
-      ],
-      "buzzScore": 69.3,
-      "confidence": 0.44,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
+        "主要3媒体で同一話題を確認",
         "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
+        "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 22,
+        "coverage": 9,
+        "sourceDiversity": 6.2,
+        "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 4.6,
+        "search": 12.8,
+        "social": 7.2,
         "velocity": 0,
         "freshness": 7,
-        "authority": 5.5,
-        "categoryBias": 9,
+        "authority": 2.5,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 15,
+        "searchScore": 80,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -207,11 +156,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 35.7
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 33.1,
+        "internalSocialScore": 56.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -219,7 +168,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1027",
+      "clusterId": "today-cluster-1230",
       "title": "評論家 山田五郎さん死去 67歳 西洋美術などユーモア交え解説",
       "category": "sns",
       "categories": [
@@ -227,8 +176,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 69.2,
-      "confidence": 0.44,
+      "buzzScore": 67.6,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -241,10 +190,10 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.9,
+        "search": 4.8,
         "social": 4.5,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 5.5,
         "categoryBias": 9,
         "penalty": 0
@@ -258,11 +207,64 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 60,
         "archiveHeatScore": 100,
-        "internalSearchScore": 38.3,
-        "internalSocialScore": 35.3
+        "internalSearchScore": 37.7,
+        "internalSocialScore": 34.9
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-7",
+      "title": "劇場アニメ『楽園追放 心のレゾナンス』第5弾ティザーPV＆ビジュアルが公開。新キャラクター「ぺネム」役に諸星すみれさんが決定",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "net-culture",
+        "general",
+        "entertainment",
+        "manga"
+      ],
+      "buzzScore": 66.7,
+      "confidence": 0.48,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 13.4,
+        "internetNativeBoost": 0,
+        "search": 4.7,
+        "social": 7,
+        "velocity": 8,
+        "freshness": 8.5,
+        "authority": 1,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 11.666666666666666,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 61,
+        "internalSearchScore": 37,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

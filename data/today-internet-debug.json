@@ -1,43 +1,44 @@
 {
-  "generatedAt": "2026-07-22T01:02:31.335Z",
+  "generatedAt": "2026-07-22T04:27:36.223Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-462",
+  "selectedClusterId": "today-cluster-402",
   "selectedTitle": "15歳未満のSNS利用を禁止へ 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-462",
+      "clusterId": "today-cluster-402",
       "title": "15歳未満のSNS利用を禁止へ 仏",
-      "category": "net-culture",
+      "category": "sns",
       "categories": [
-        "net-culture",
-        "tech",
         "sns",
+        "net-culture",
         "general",
+        "tech",
         "sports"
       ],
-      "buzzScore": 93.5,
+      "buzzScore": 96.9,
       "confidence": 0.66,
-      "articleCount": 10,
+      "articleCount": 13,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
         "coverage": 18,
         "sourceDiversity": 4.7,
-        "trend": 21.3,
+        "trend": 20.7,
         "internetNativeBoost": 8,
-        "search": 6.4,
+        "search": 8.5,
         "social": 6,
-        "velocity": 1.1,
-        "freshness": 8.5,
+        "velocity": 1.5,
+        "freshness": 10,
         "authority": 2.5,
         "categoryBias": 17,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 40,
+        "searchScore": 53.333333333333336,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -47,8 +48,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 36.8,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -57,7 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-329",
+      "clusterId": "today-cluster-806",
       "title": "開発者に訊きました : スプラトゥーン レイダース｜任天堂",
       "category": "sports",
       "categories": [
@@ -67,82 +68,30 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 79.8,
-      "confidence": 0.37,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 15.2,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 17,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 95,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-424",
-      "title": "フランス 15歳未満のSNS利用 9月から禁止へ ヨーロッパでは初",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "politics",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 70.3,
-      "confidence": 0.46,
+      "buzzScore": 85.7,
+      "confidence": 0.41,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
+        "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 22,
+        "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 5.1,
-        "social": 6,
-        "velocity": 1.5,
-        "freshness": 10,
-        "authority": 5.5,
-        "categoryBias": 4,
+        "search": 16,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 17,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 31.666666666666664,
+        "searchScore": 100,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -150,11 +99,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 34.5,
+        "internalSocialScore": 57.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -162,38 +111,39 @@
       ]
     },
     {
-      "clusterId": "today-cluster-64",
-      "title": "「パブリッシャーにゲームを奪われた」開発者、権利を取り戻したと報告。“契約条件こっそり変更・無給開発・実質取り分ゼロ”の横暴に決着",
-      "category": "games",
+      "clusterId": "today-cluster-19",
+      "title": "映画『ラ・ラ・ランド』10周年でポスターが“微妙に”変更　ネタ化した主演俳優の手を修正",
+      "category": "entertainment",
       "categories": [
-        "games",
-        "general",
+        "entertainment",
         "sns",
-        "net-culture"
+        "net-culture",
+        "general"
       ],
-      "buzzScore": 67.1,
-      "confidence": 0.37,
+      "buzzScore": 70.5,
+      "confidence": 0.42,
       "articleCount": 2,
-      "sourceCount": 2,
+      "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 3.8,
-        "trend": 17.4,
+        "sourceDiversity": 2.3,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 5.4,
-        "social": 6.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
+        "search": 5.6,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -201,11 +151,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
+        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 42.1,
-        "internalSocialScore": 54
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -213,53 +163,101 @@
       ]
     },
     {
-      "clusterId": "today-cluster-431",
-      "title": "ウクライナ 国防相に続き軍総司令官も交代 異例の事態",
-      "category": "politics",
+      "clusterId": "today-cluster-31",
+      "title": "伝説のシューティングゲーム『TATSUJIN』シリーズ最新作『TATSUJIN EXTREME』の体験版が配信開始。初心者でもミスを気にせず気軽に遊べるモードも搭載",
+      "category": "games",
       "categories": [
-        "politics",
-        "world",
-        "sns",
+        "games",
         "net-culture",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 66.2,
-      "confidence": 0.44,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 67.6,
+      "confidence": 0.48,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
+        "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 13.4,
+        "internetNativeBoost": 0,
+        "search": 5.2,
         "social": 7.4,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 4.5,
-        "categoryBias": 4,
-        "penalty": -3
+        "velocity": 8,
+        "freshness": 8.5,
+        "authority": 1,
+        "categoryBias": 14,
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 30,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 61,
+        "internalSearchScore": 40.8,
+        "internalSocialScore": 57.5
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-21",
+      "title": "Steam好評消防士シム新作『Firefighters Code Red』発表。マルチプレイで仲間と出動、リアルに刻々と燃え崩れる予測不能の火災現場で決死の救出劇",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 67.5,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
+        "social": 5.6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
         "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

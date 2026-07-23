@@ -1,48 +1,102 @@
 {
-  "generatedAt": "2026-07-23T04:28:31.307Z",
+  "generatedAt": "2026-07-23T07:12:19.215Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-348",
-  "selectedTitle": "内閣支持率減、与党に危機感　典範改正・国会運営が影響：時事ドットコム",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "マンガ『ウルトラ兄弟物語』Kindle版が55円で購入できるセールを実施中。全巻購入しても275円",
   "candidates": [
     {
-      "clusterId": "today-cluster-348",
-      "title": "内閣支持率減、与党に危機感　典範改正・国会運営が影響：時事ドットコム",
-      "category": "politics",
+      "clusterId": "today-cluster-1",
+      "title": "マンガ『ウルトラ兄弟物語』Kindle版が55円で購入できるセールを実施中。全巻購入しても275円",
+      "category": "sports",
       "categories": [
-        "politics",
         "sports",
-        "sns",
-        "net-culture",
+        "manga",
+        "games",
         "entertainment",
-        "general",
-        "world",
-        "business"
+        "net-culture",
+        "general"
       ],
-      "buzzScore": 85.2,
-      "confidence": 0.49,
-      "articleCount": 4,
+      "buzzScore": 84.7,
+      "confidence": 0.5,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
+        "social": 8.4,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-526",
+      "title": "アニメ『名探偵プリキュア！』ED 、可愛さと遊び心あふれるプリキュアたちの表現に注目！〜No.1／演出篇",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "anime",
+        "entertainment",
+        "manga",
+        "general",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 79.5,
+      "confidence": 0.45,
+      "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
         "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
-        "coverage": 7.2,
+        "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 21.3,
+        "trend": 20,
         "internetNativeBoost": 8,
-        "search": 11.7,
-        "social": 7.7,
-        "velocity": 0,
-        "freshness": 10,
+        "search": 4.9,
+        "social": 7.6,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 2.5,
-        "categoryBias": 12,
+        "categoryBias": 17,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 73.33333333333333,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -50,11 +104,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 12,
+        "repeatedAppearanceScore": 10.2,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 41.8,
-        "internalSocialScore": 60.4
+        "archiveHeatScore": 91,
+        "internalSearchScore": 38.5,
+        "internalSocialScore": 59.6
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -62,92 +116,90 @@
       ]
     },
     {
-      "clusterId": "today-cluster-978",
-      "title": "15歳未満のSNS利用を禁止へ 仏",
-      "category": "sns",
+      "clusterId": "today-cluster-6",
+      "title": "【無料】TVアニメ『ボボボーボ・ボーボボ』YouTube配信が今夜20時よりスタート！毎週『ボーボボ』を観るハジケた生活が始まる",
+      "category": "anime",
       "categories": [
-        "sns",
-        "net-culture",
-        "general",
-        "business",
-        "tech",
-        "sports",
-        "entertainment",
-        "world"
-      ],
-      "buzzScore": 76.2,
-      "confidence": 0.6,
-      "articleCount": 19,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
-      ],
-      "scoreBreakdown": {
-        "coverage": 18,
-        "sourceDiversity": 4.7,
-        "trend": 16.7,
-        "internetNativeBoost": 0,
-        "search": 9.3,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 12,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 58.333333333333336,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 76,
-        "internalSearchScore": 30.5,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1",
-      "title": "超能力事件の“真実”を推理するゲーム『Staffer Retro: 超能力推理クエスト』が本日発売。会話、探索、推理を駆使して事件を追う、全6エピソード・エンディング11種類、17名の日本人声優による壮大なストーリー",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
         "anime",
+        "manga",
+        "games",
+        "entertainment",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 75.5,
-      "confidence": 0.47,
+      "buzzScore": 79,
+      "confidence": 0.48,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 7,
+        "search": 6,
+        "social": 8.4,
         "velocity": 8.3,
         "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-22",
+      "title": "魔法使い見習いの少女と作業に集中できるゲーム『Memory of Memorie : A Chill Story』がSteam、ニンテンドーストアで本日7月23日発売。チルいケルト音楽が流れる作業部屋で“誰かと一緒に頑張る”感覚を味わえる",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 77.8,
+      "confidence": 0.46,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 1.6666666666666667,
@@ -160,8 +212,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
@@ -170,16 +222,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-17",
-      "title": "【東方Project】夏コミに「秘封倶楽部」シリーズの新譜「霊長新益京〜 Artificial Utopia in Ruins.」が頒布決定。8月16日の「あー34a　上海アリス幻樂団」にて",
+      "clusterId": "today-cluster-5",
+      "title": "超能力事件の“真実”を推理するゲーム『Staffer Retro: 超能力推理クエスト』が本日発売。会話、探索、推理を駆使して事件を追う、全6エピソード・エンディング11種類、17名の日本人声優による壮大なストーリー",
       "category": "games",
       "categories": [
         "games",
         "net-culture",
+        "anime",
         "general"
       ],
-      "buzzScore": 69.6,
-      "confidence": 0.43,
+      "buzzScore": 70.2,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -190,10 +243,10 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 5.6,
+        "search": 5.5,
+        "social": 7,
         "velocity": 5.3,
         "freshness": 8.5,
         "authority": 1.5,
@@ -201,7 +254,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -210,61 +263,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-29",
-      "title": "初代Xboxの作品がPCでプレイ可能になる「XBOX on PC 後方互換機能」発表。早期リリースとして4作品がプレイ可能に。『クリムゾンスカイ』『ブリンクス・ザ・ タイムスイーパー』などの4作が遊べる",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 69.3,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.8,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 10,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 44,
-        "internalSocialScore": 43.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

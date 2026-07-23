@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-23T16:12:29.523Z",
+  "generatedAt": "2026-07-23T17:59:11.165Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-2601",
+  "selectedClusterId": "today-cluster-2650",
   "selectedTitle": "全仏オープン優勝の元プロテニス選手 詐欺の疑いで逮捕",
   "candidates": [
     {
-      "clusterId": "today-cluster-2601",
+      "clusterId": "today-cluster-2650",
       "title": "全仏オープン優勝の元プロテニス選手 詐欺の疑いで逮捕",
       "category": "crime",
       "categories": [
@@ -14,7 +14,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 74,
+      "buzzScore": 73.8,
       "confidence": 0.41,
       "articleCount": 2,
       "sourceCount": 2,
@@ -30,7 +30,7 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 13.6,
+        "search": 13.3,
         "social": 6.2,
         "velocity": 0,
         "freshness": 3.5,
@@ -39,7 +39,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 85,
+        "searchScore": 83.33333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -59,7 +59,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-348",
+      "clusterId": "today-cluster-735",
+      "title": "サッカー日本代表 監督に大岩剛氏 森保監督が約半年間続投の後",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 72.2,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 5.5,
+        "categoryBias": 12,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 18.333333333333332,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-345",
       "title": "アニメ『名探偵プリキュア！』ED 、可愛さと遊び心あふれるプリキュアたちの表現に注目！ 〜No.2／モデリング＆リギング篇",
       "category": "sports",
       "categories": [
@@ -114,7 +166,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-29",
+      "clusterId": "today-cluster-37",
       "title": "マンガ『ウルトラ兄弟物語』Kindle版が55円で購入できるセールを実施中。全巻購入しても275円",
       "category": "games",
       "categories": [
@@ -168,39 +220,38 @@
       ]
     },
     {
-      "clusterId": "today-cluster-693",
-      "title": "サッカー日本代表 監督に大岩剛氏 森保監督が約半年間続投の後",
-      "category": "sports",
+      "clusterId": "today-cluster-344",
+      "title": "テスト中のAIが「脱走」して他社に不正侵入、試験問題の答えがある場所を推論",
+      "category": "tech",
       "categories": [
-        "sports",
+        "tech",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.6,
-      "confidence": 0.38,
+      "buzzScore": 64.8,
+      "confidence": 0.37,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 5,
+        "search": 5.1,
         "social": 6,
         "velocity": 0,
-        "freshness": 7,
-        "authority": 4.5,
-        "categoryBias": 12,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 20,
+        "searchScore": 31.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -210,60 +261,9 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-9",
-      "title": "『テイルズ オブ』シリーズ30周年を記念したコラボカフェ第1期のメニューが公開。おなじみの「マーボーカレー」も登場",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.5,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
         "archiveHeatScore": 87,
-        "internalSearchScore": 46.1,
-        "internalSocialScore": 54.8
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

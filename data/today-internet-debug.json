@@ -1,57 +1,57 @@
 {
-  "generatedAt": "2026-07-23T17:59:11.165Z",
+  "generatedAt": "2026-07-23T19:41:11.378Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-2650",
-  "selectedTitle": "全仏オープン優勝の元プロテニス選手 詐欺の疑いで逮捕",
+  "selectedClusterId": "today-cluster-2",
+  "selectedTitle": "『ガンダム』新作アニメ、『機動戦士ガンダムRG XARX-ZERO（アレックスゼロ）』発表、2027年展開予定！ 監督・シリーズ構成を神山健治氏、SF設定監修として円城塔氏が参加",
   "candidates": [
     {
-      "clusterId": "today-cluster-2650",
-      "title": "全仏オープン優勝の元プロテニス選手 詐欺の疑いで逮捕",
-      "category": "crime",
+      "clusterId": "today-cluster-2",
+      "title": "『ガンダム』新作アニメ、『機動戦士ガンダムRG XARX-ZERO（アレックスゼロ）』発表、2027年展開予定！ 監督・シリーズ構成を神山健治氏、SF設定監修として円城塔氏が参加",
+      "category": "anime",
       "categories": [
-        "crime",
-        "sports",
+        "anime",
+        "games",
         "net-culture",
-        "general"
+        "general",
+        "entertainment",
+        "manga"
       ],
-      "buzzScore": 73.8,
-      "confidence": 0.41,
-      "articleCount": 2,
+      "buzzScore": 83.6,
+      "confidence": 0.55,
+      "articleCount": 4,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "アーカイブ上でも近い話題が連続出現",
-        "公式または一次情報を含む"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 7.2,
         "sourceDiversity": 4.7,
-        "trend": 22,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 13.3,
-        "social": 6.2,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 5.5,
-        "categoryBias": 7,
+        "search": 5.7,
+        "social": 7,
+        "velocity": 8,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 83.33333333333334,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 9,
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 40.9,
-        "internalSocialScore": 48.1
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -59,7 +59,63 @@
       ]
     },
     {
-      "clusterId": "today-cluster-735",
+      "clusterId": "today-cluster-369",
+      "title": "【新作発表】『機動戦士ガンダムRG XARX-ZERO（アレックスゼロ）』",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "anime",
+        "net-culture",
+        "general",
+        "entertainment",
+        "manga"
+      ],
+      "buzzScore": 73.1,
+      "confidence": 0.49,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 16.9,
+        "internetNativeBoost": 0,
+        "search": 6.1,
+        "social": 8.1,
+        "velocity": 5.3,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 38.333333333333336,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 3,
+        "repeatedAppearanceScore": 18,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 77,
+        "internalSearchScore": 38.7,
+        "internalSocialScore": 63.1
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-778",
       "title": "サッカー日本代表 監督に大岩剛氏 森保監督が約半年間続投の後",
       "category": "sports",
       "categories": [
@@ -68,7 +124,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 72.2,
+      "buzzScore": 72.1,
       "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 2,
@@ -82,8 +138,8 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
+        "search": 4.9,
+        "social": 5.9,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 5.5,
@@ -91,7 +147,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 18.333333333333332,
+        "searchScore": 16.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -99,11 +155,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 80,
         "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 38.3,
+        "internalSocialScore": 46.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -111,7 +167,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-345",
+      "clusterId": "today-cluster-340",
       "title": "アニメ『名探偵プリキュア！』ED 、可愛さと遊び心あふれるプリキュアたちの表現に注目！ 〜No.2／モデリング＆リギング篇",
       "category": "sports",
       "categories": [
@@ -166,7 +222,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-37",
+      "clusterId": "today-cluster-35",
       "title": "マンガ『ウルトラ兄弟物語』Kindle版が55円で購入できるセールを実施中。全巻購入しても275円",
       "category": "games",
       "categories": [
@@ -177,8 +233,8 @@
         "sports",
         "entertainment"
       ],
-      "buzzScore": 71.6,
-      "confidence": 0.39,
+      "buzzScore": 69.4,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -191,10 +247,10 @@
         "sourceDiversity": 2.3,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 6.3,
+        "search": 6.2,
         "social": 8.3,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 1.5,
         "categoryBias": 17,
         "penalty": -3
@@ -208,62 +264,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
+        "repeatedAppearanceScore": 21,
         "crossCategoryScore": 100,
         "archiveHeatScore": 100,
-        "internalSearchScore": 49.4,
-        "internalSocialScore": 65
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-344",
-      "title": "テスト中のAIが「脱走」して他社に不正侵入、試験問題の答えがある場所を推論",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.8,
-      "confidence": 0.37,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 5.1,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 31.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 48.7,
+        "internalSocialScore": 64.5
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-23T22:35:15.613Z",
+  "generatedAt": "2026-07-23T23:33:32.635Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-470",
+  "selectedClusterId": "today-cluster-566",
   "selectedTitle": "アニメ『名探偵プリキュア！』ED 、可愛さと遊び心あふれるプリキュアたちの表現に注目！ 〜No.2／モデリング＆リギング篇",
   "candidates": [
     {
-      "clusterId": "today-cluster-470",
+      "clusterId": "today-cluster-566",
       "title": "アニメ『名探偵プリキュア！』ED 、可愛さと遊び心あふれるプリキュアたちの表現に注目！ 〜No.2／モデリング＆リギング篇",
       "category": "sports",
       "categories": [
@@ -62,17 +62,17 @@
     {
       "clusterId": "today-cluster-355",
       "title": "【新作発表】『機動戦士ガンダムRG XARX-ZERO（アレックスゼロ）』",
-      "category": "sns",
+      "category": "anime",
       "categories": [
-        "sns",
         "anime",
+        "sns",
         "net-culture",
         "general",
         "entertainment",
         "manga",
         "games"
       ],
-      "buzzScore": 74.6,
+      "buzzScore": 75.7,
       "confidence": 0.46,
       "articleCount": 4,
       "sourceCount": 2,
@@ -88,7 +88,7 @@
         "sourceDiversity": 4.7,
         "trend": 16.9,
         "internetNativeBoost": 0,
-        "search": 11.2,
+        "search": 12.3,
         "social": 8.1,
         "velocity": 0,
         "freshness": 10,
@@ -97,7 +97,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 70,
+        "searchScore": 76.66666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -117,7 +117,58 @@
       ]
     },
     {
-      "clusterId": "today-cluster-4",
+      "clusterId": "today-cluster-1",
+      "title": "「ウルヴァリン」のアクションゲーム『Marvel’s Wolverine』のストーリー予告映像が公開。ローガンと深い関係を持つ「ジーン・グレイ」をはじめ、セイバートゥースや赤装束の忍者も登場",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general",
+        "sports"
+      ],
+      "buzzScore": 75.1,
+      "confidence": 0.54,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 14.1,
+        "internetNativeBoost": 0,
+        "search": 4.9,
+        "social": 5.6,
+        "velocity": 12.5,
+        "freshness": 10,
+        "authority": 1,
+        "categoryBias": 17,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 64,
+        "internalSearchScore": 38,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-8",
       "title": "『ガンダム』新作アニメ、『機動戦士ガンダムRG XARX-ZERO（アレックスゼロ）』発表、2027年展開予定！ 監督・シリーズ構成を神山健治氏、SF設定監修として円城塔氏が参加",
       "category": "anime",
       "categories": [
@@ -170,59 +221,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1060",
-      "title": "サッカー日本代表 監督に大岩剛氏 森保監督が約半年間続投の後",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 72,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 5.5,
-        "categoryBias": 12,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 15,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-38",
+      "clusterId": "today-cluster-42",
       "title": "マンガ『ウルトラ兄弟物語』Kindle版が55円で購入できるセールを実施中。全巻購入しても275円",
       "category": "games",
       "categories": [

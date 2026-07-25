@@ -1,9 +1,61 @@
 {
-  "generatedAt": "2026-07-25T16:31:08.533Z",
+  "generatedAt": "2026-07-25T17:37:18.309Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-139",
   "selectedTitle": "「みいちゃんと山田さん」2027年アニメ化！ 原作者・亜月ねねのイラストとスペシャルPVを公開",
   "candidates": [
+    {
+      "clusterId": "today-cluster-1",
+      "title": "昭和日本に発生した“異界”を探査するサバイバルTPS『アノマリス／ANOMALITH』の体験版が配信決定。8月1日から1週間の期間限定",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 70.7,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.8,
+        "internetNativeBoost": 8,
+        "search": 5.6,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 8.333333333333332,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 44,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
     {
       "clusterId": "today-cluster-139",
       "title": "「みいちゃんと山田さん」2027年アニメ化！ 原作者・亜月ねねのイラストとスペシャルPVを公開",
@@ -15,8 +67,8 @@
         "general",
         "sports"
       ],
-      "buzzScore": 71.7,
-      "confidence": 0.62,
+      "buzzScore": 70.2,
+      "confidence": 0.61,
       "articleCount": 7,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -31,7 +83,7 @@
         "internetNativeBoost": 0,
         "search": 4,
         "social": 6,
-        "velocity": 9.5,
+        "velocity": 8,
         "freshness": 10,
         "authority": 1,
         "categoryBias": 9,
@@ -51,58 +103,6 @@
         "archiveHeatScore": 68,
         "internalSearchScore": 27.7,
         "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1",
-      "title": "昭和日本に発生した“異界”を探査するサバイバルTPS『アノマリス／ANOMALITH』の体験版が配信決定。8月1日から1週間の期間限定",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 71.5,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.5,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 45,
-        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1589",
+      "clusterId": "today-cluster-1617",
       "title": "ネットミーム「ば～～～～～っかじゃねえの!?」の元ネタに迫る",
       "category": "net-culture",
       "categories": [
@@ -172,7 +172,7 @@
         "manga",
         "general"
       ],
-      "buzzScore": 68.3,
+      "buzzScore": 68,
       "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 2,
@@ -186,7 +186,7 @@
         "sourceDiversity": 4.7,
         "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 8.8,
+        "search": 8.5,
         "social": 5.8,
         "velocity": 0,
         "freshness": 3.5,
@@ -195,7 +195,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 55.00000000000001,
+        "searchScore": 53.333333333333336,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -215,7 +215,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-145",
+      "clusterId": "today-cluster-146",
       "title": "「銀河鉄道999」新作劇場アニメの制作決定！  東映アニメが制作&登場キャラや声優は未発表",
       "category": "anime",
       "categories": [
@@ -224,7 +224,7 @@
         "manga",
         "general"
       ],
-      "buzzScore": 66.4,
+      "buzzScore": 66.1,
       "confidence": 0.59,
       "articleCount": 10,
       "sourceCount": 2,
@@ -237,7 +237,7 @@
         "sourceDiversity": 4.7,
         "trend": 14.1,
         "internetNativeBoost": 0,
-        "search": 6.7,
+        "search": 6.4,
         "social": 6,
         "velocity": 0,
         "freshness": 10,
@@ -246,7 +246,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 41.66666666666667,
+        "searchScore": 40,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false

@@ -1,26 +1,29 @@
 {
-  "generatedAt": "2026-07-26T11:08:04.756Z",
+  "generatedAt": "2026-07-26T12:14:44.382Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-2",
-  "selectedTitle": "『ブルアカ』「水着チアキ(CV:菅野真衣)」が実装決定！",
+  "selectedClusterId": "today-cluster-4",
+  "selectedTitle": "『超かぐや姫！』×『推しの子』 コラボ映像公開　かぐやがMEMちょに弟子入り!?",
   "candidates": [
     {
-      "clusterId": "today-cluster-2",
-      "title": "『ブルアカ』「水着チアキ(CV:菅野真衣)」が実装決定！",
-      "category": "games",
+      "clusterId": "today-cluster-4",
+      "title": "『超かぐや姫！』×『推しの子』 コラボ映像公開　かぐやがMEMちょに弟子入り!?",
+      "category": "anime",
       "categories": [
-        "games",
+        "anime",
+        "entertainment",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 76.2,
+      "buzzScore": 79,
       "confidence": 0.48,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
@@ -28,7 +31,7 @@
         "trend": 19.8,
         "internetNativeBoost": 8,
         "search": 6,
-        "social": 5.6,
+        "social": 8.4,
         "velocity": 8.3,
         "freshness": 10,
         "authority": 1.5,
@@ -36,7 +39,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -45,10 +48,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
+        "crossCategoryScore": 100,
         "archiveHeatScore": 90,
         "internalSearchScore": 47.1,
-        "internalSocialScore": 43.8
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -56,7 +59,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-96",
+      "clusterId": "today-cluster-363",
+      "title": "「VIVANT」続編放送 SNSの反応",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "entertainment",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 71.8,
+      "confidence": 0.44,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 26.666666666666668,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-97",
       "title": "労働のフリーレン、雀荘のフリーレン!? SNSで大バズリの“ぬい撮り”がTシャツに！ 第2期場面写デザインも♪",
       "category": "net-culture",
       "categories": [
@@ -109,7 +164,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-8",
+      "clusterId": "today-cluster-395",
+      "title": "日本の生成AI利用まだ6割　仕事中心、7割超の米国は「友達」使い",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "business",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 67.2,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-13",
       "title": "【このすば】『この素晴らしい世界に祝福を！』アニメ4期が2027年に放送決定！カズマパーティ4人の後ろ姿を描くビジュアル解禁",
       "category": "anime",
       "categories": [
@@ -156,112 +264,6 @@
         "archiveHeatScore": 87,
         "internalSearchScore": 46.1,
         "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-429",
-      "title": "亜月ねね「みいちゃんと山田さん」2027年アニメ化！2人の声が入ったスペシャルPV",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "manga",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.4,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 5.3,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 33.33333333333333,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1166",
-      "title": "「トイ・ストーリー」ウッディ＆バズたちと夏のお出かけ♪ 保冷バッグやボトル、メッシュバッグなど【330円中心のillusie300限定】",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.2,
-      "confidence": 0.37,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

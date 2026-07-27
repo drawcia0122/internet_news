@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-26T23:35:01.048Z",
+  "generatedAt": "2026-07-27T01:14:28.816Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1",
-  "selectedTitle": "『VIVANT』シーズン2に“小島秀夫”監督がまさかの出演。「全然気が付かなかった…！」SNS上で驚きの声が広がる",
+  "selectedClusterId": "today-cluster-3",
+  "selectedTitle": "ゆずソフト『千恋＊万花』2027年にアニメ化決定！原作キャストが“完全続投”することも明らかに",
   "candidates": [
     {
-      "clusterId": "today-cluster-970",
+      "clusterId": "today-cluster-1177",
       "title": "「VIVANT」続編放送 SNSの反応",
       "category": "net-culture",
       "categories": [
@@ -14,12 +14,13 @@
         "sns",
         "general"
       ],
-      "buzzScore": 77.3,
-      "confidence": 0.41,
+      "buzzScore": 79.9,
+      "confidence": 0.44,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "検索面でも関連話題の広がりを確認"
       ],
@@ -29,8 +30,8 @@
         "trend": 20.9,
         "internetNativeBoost": 8,
         "search": 14.1,
-        "social": 6,
-        "velocity": 0,
+        "social": 5.9,
+        "velocity": 2.7,
         "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 14,
@@ -45,11 +46,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 80,
         "archiveHeatScore": 95,
-        "internalSearchScore": 37.2,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 36.6,
+        "internalSocialScore": 46.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -57,38 +58,37 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1",
-      "title": "『VIVANT』シーズン2に“小島秀夫”監督がまさかの出演。「全然気が付かなかった…！」SNS上で驚きの声が広がる",
-      "category": "crime",
+      "clusterId": "today-cluster-3",
+      "title": "ゆずソフト『千恋＊万花』2027年にアニメ化決定！原作キャストが“完全続投”することも明らかに",
+      "category": "anime",
       "categories": [
-        "crime",
-        "net-culture",
         "anime",
         "games",
-        "general"
+        "net-culture",
+        "general",
+        "entertainment",
+        "manga"
       ],
-      "buzzScore": 71.4,
-      "confidence": 0.46,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 71.2,
+      "confidence": 0.52,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "直近数時間で関連記事が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 8.4,
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 14.1,
+        "internetNativeBoost": 0,
+        "search": 4.9,
+        "social": 7,
         "velocity": 8.3,
         "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
+        "authority": 1,
+        "categoryBias": 14,
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 1.6666666666666667,
@@ -100,62 +100,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-81",
-      "title": "「みいちゃんと山田さん」2027年アニメ化！ 原作者・亜月ねねのイラストとスペシャルPVを公開",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "general",
-        "sports"
-      ],
-      "buzzScore": 67.9,
-      "confidence": 0.57,
-      "articleCount": 9,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 16.2,
-        "sourceDiversity": 4.7,
-        "trend": 15,
-        "internetNativeBoost": 0,
-        "search": 6.1,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 38.333333333333336,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 68,
-        "internalSearchScore": 27.7,
-        "internalSocialScore": 46.7
+        "archiveHeatScore": 64,
+        "internalSearchScore": 38,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -163,58 +111,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1648",
-      "title": "昨夏世界バズ 金融OLの人生変化",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 67.6,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20.9,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 16.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 36,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-423",
+      "clusterId": "today-cluster-84",
       "title": "労働のフリーレン、雀荘のフリーレン!? SNSで大バズリの“ぬい撮り”がTシャツに！ 第2期場面写デザインも♪",
       "category": "net-culture",
       "categories": [
@@ -225,7 +122,7 @@
         "sns",
         "general"
       ],
-      "buzzScore": 67.5,
+      "buzzScore": 69,
       "confidence": 0.39,
       "articleCount": 1,
       "sourceCount": 1,
@@ -241,7 +138,7 @@
         "search": 5,
         "social": 7.4,
         "velocity": 0,
-        "freshness": 8.5,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -260,6 +157,111 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 38.9,
         "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1853",
+      "title": "昨夏世界バズ 金融OLの人生変化",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 67.5,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 20.9,
+        "internetNativeBoost": 8,
+        "search": 4.5,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 15,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 35.2,
+        "internalSocialScore": 45.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-4",
+      "title": "『VIVANT』シーズン2に“小島秀夫”監督がまさかの出演。「全然気が付かなかった…！」SNS上で驚きの声が広がる",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "net-culture",
+        "anime",
+        "games",
+        "general"
+      ],
+      "buzzScore": 66.9,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 5.6,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

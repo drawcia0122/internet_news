@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-27T22:16:35.594Z",
+  "generatedAt": "2026-07-27T23:39:41.574Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-331",
+  "selectedClusterId": "today-cluster-327",
   "selectedTitle": "わなにかかったクマを溺死させ駆除の雫石町　SNSで拡散され非難殺到　県から注意も「捕獲者の安全のため」苦渋の判断　岩手",
   "candidates": [
     {
-      "clusterId": "today-cluster-331",
+      "clusterId": "today-cluster-327",
       "title": "わなにかかったクマを溺死させ駆除の雫石町　SNSで拡散され非難殺到　県から注意も「捕獲者の安全のため」苦渋の判断　岩手",
       "category": "net-culture",
       "categories": [
@@ -14,7 +14,7 @@
         "sns",
         "general"
       ],
-      "buzzScore": 80.4,
+      "buzzScore": 79.8,
       "confidence": 0.44,
       "articleCount": 2,
       "sourceCount": 2,
@@ -29,7 +29,7 @@
         "sourceDiversity": 4.7,
         "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 12.5,
+        "search": 12,
         "social": 6.2,
         "velocity": 0,
         "freshness": 10,
@@ -38,7 +38,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 78.33333333333333,
+        "searchScore": 75,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -58,7 +58,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-333",
+      "clusterId": "today-cluster-480",
+      "title": "高市首相、維新への義理と傾斜　衆院選圧勝で自信、連立合意の忠実な実行に自民の不満募る",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sports",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 67.8,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 7,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 10,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-329",
       "title": "＜独自＞海保が同志社国際高を家宅捜索、業務上過失致死傷容疑　遺族が11人を刑事告訴",
       "category": "crime",
       "categories": [
@@ -111,7 +163,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2208",
+      "clusterId": "today-cluster-2382",
       "title": "労働のフリーレン、雀荘のフリーレン!? SNSで大バズリの“ぬい撮り”がTシャツに！ 第2期場面写デザインも♪",
       "category": "net-culture",
       "categories": [
@@ -164,7 +216,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-89",
+      "clusterId": "today-cluster-88",
       "title": "VTuber周防パトラ主演の恋愛ゲームが発売　記憶を失った周防パトラとの交流を描く",
       "category": "games",
       "categories": [
@@ -211,58 +263,6 @@
         "archiveHeatScore": 69,
         "internalSearchScore": 39.8,
         "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-336",
-      "title": "高市首相、維新への義理と傾斜　衆院選圧勝で自信、連立合意の忠実な実行に自民の不満募る",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sports",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 61.2,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 7,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 13.333333333333334,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

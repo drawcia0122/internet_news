@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-07-28T09:19:27.820Z",
+  "generatedAt": "2026-07-28T11:37:04.488Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
     "general": 0,
-    "tech": 11,
-    "business": 5,
+    "tech": 8,
+    "business": 4,
     "politics": 0,
-    "entertainment": 73,
+    "entertainment": 81,
     "anime": 14,
-    "games": 162,
+    "games": 159,
     "game-features": 2,
     "anime-features": 1,
-    "manga": 41,
+    "manga": 43,
     "books": 5,
-    "sports": 5,
-    "net-culture": 0,
+    "sports": 4,
+    "net-culture": 1,
     "matome": 0,
     "crime": 0,
     "adult": 1,
@@ -25,475 +25,175 @@
   "nextPage": 19,
   "items": [
     {
-      "id": "auto-games-カメレオンを見逃さないこと-めっちゃカメレオン-8番出口-とのコラボレーションを発表-4gamer.net/games/007/g100712/20260728041",
-      "title": "カメレオンを見逃さないこと。「めっちゃカメレオン」，「8番出口」とのコラボレーションを発表",
-      "summary": "個人ゲーム開発者のLEMORION氏は本日（2026年7月28日），「めっちゃカメレオン」と「8番出口」のコラボレーションを思わせる画像を同氏のXにて公開した。コラ…",
-      "briefSummary": "個人ゲーム開発者のLEMORION氏は本日（2026年7月28日），「めっちゃカメレオン」と「8番出口」のコラボレーションを思わせる画像を同氏のXにて公開した。コラボの詳細についてはまだ明かされていないが，今週末に開催とのことなので続報を楽…",
+      "id": "auto-games-しまむら-キングダム-ハーツ-グッズ受注販売がアツい-ソラや王様たちのバッグ-キーブレードのメガネケースなど豊富なラインナップ-inside-games.jp/article/2026/07/28/185306.html",
+      "title": "しまむら『キングダム ハーツ』グッズ受注販売がアツい！ソラや王様たちのバッグ、キーブレードのメガネケースなど豊富なラインナップ",
+      "summary": "【速報】熊本・嘉島町「イオンモール熊本」で爆発 来店客や従業員など全員が避難できていたかどうかは不明、被害状況について確認中",
+      "briefSummary": "しまむらにて7月18日より発売された『キングダム ハーツ』グッズの一部が、公式オンラインストアにて受注生産販売されます。対象はバッグやポーチ、寝具類、キャップ、その他雑費など。「ソラ」や「王様」をはじめとするキャラクター、王冠やキーブレードといった印象的なアイコンがデザインされています。",
       "category": "games",
       "categories": [
         "games",
-        "sns",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1757884.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-28T11:37:04.488Z",
+      "time": "直近",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/07/28/185306.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch",
+            "pokemon"
+          ],
+          "title": "しまむら『キングダム ハーツ』グッズ受注販売がアツい！ソラや王様たちのバッグ、キーブレードのメガネケースなど豊富なラインナップ",
+          "url": "https://www.inside-games.jp/article/2026/07/28/185306.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/07/28/185306.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1757884.jpg"
+        }
+      ],
+      "whatHappened": "しまむら『キングダム ハーツ』グッズ受注販売がアツい",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ポケモンユーザー",
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-games-7-days-to-die-v3-1-henpocalypse-安定版アプデ配信-鶏小屋-追加で野生のニワトリを追いかける日-が始まる-かも-gamespark.jp/article/2026/07/28/169860.html",
+      "title": "『7 Days to Die』V3.1\"Henpocalypse\"安定版アプデ配信。「鶏小屋」追加で野生のニワトリを追いかける日々が始まる…かも",
+      "summary": "Schema.org is a set of extensible schemas that enables webmasters to embed structured data on their web pages for use by search engines and other appl…",
+      "briefSummary": "View our blog at blog.schema.org or see release history for version 30.0.",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
         "general"
       ],
       "categoryLabel": "ゲーム",
       "categoryLabels": [
         "ゲーム",
-        "SNS"
+        "エンタメ"
       ],
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/007/G100712/20260728041/SS/001.jpg",
+      "thumbnailUrl": "https://schema.org/docs/schemaicon.png",
       "publishedAt": null,
-      "capturedAt": "2026-07-28T09:19:27.820Z",
+      "capturedAt": "2026-07-28T11:37:04.488Z",
       "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/007/G100712/20260728041/",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/28/169860.html",
       "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
+        "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
           "sourceGroup": "games",
-          "sourcePriority": 94,
+          "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
             "pc",
-            "console",
-            "steam"
+            "console"
           ],
-          "title": "カメレオンを見逃さないこと。「めっちゃカメレオン」，「8番出口」とのコラボレーションを発表",
-          "url": "https://www.4gamer.net/games/007/G100712/20260728041/",
-          "canonicalUrl": "https://www.4gamer.net/games/007/G100712/20260728041/",
+          "title": "『7 Days to Die』V3.1\"Henpocalypse\"安定版アプデ配信。「鶏小屋」追加で野生のニワトリを追いかける日々が始まる…かも",
+          "url": "http://www.gamespark.jp/article/2026/07/28/169860.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/28/169860.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/007/G100712/20260728041/SS/001.jpg"
+          "thumbnailUrl": "https://schema.org/docs/schemaicon.png"
         }
       ],
-      "whatHappened": "カメレオンを見逃さないこと",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "whatHappened": "『7 Days to Die』V3.1\"Henpocalypse\"安定版アプデ配信",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー",
-        "ガジェット好き",
-        "ネット文化を追う人"
+        "ガジェット好き"
       ]
     },
     {
-      "id": "auto-games-膝-前に出しすぎていませんか-鉄拳-ソウルキャリバー-のモーションディレクターと中国武術家が壇上に並び-格闘アクションを実演で解き明かす-cedec-2026-4gamer.net/games/991/g999104/20260728025",
-      "title": "膝，前に出しすぎていませんか？ 「鉄拳」「ソウルキャリバー」のモーションディレクターと中国武術家が壇上に並び，格闘アクションを実演で解き明かす［CEDEC 2026］",
-      "summary": "「 膝，前に出しすぎていませんか？ 「鉄拳」「ソウルキャリバー」のモーションディレクターと中国武術家が壇上に並び，格闘アクションを実演で解き明かす［CEDEC 2026］ 」に一致する記事は見つかりませんでした。",
-      "briefSummary": "2026年7月22日から24日まで，神奈川・パシフィコ横浜ノースでゲーム開発者向けカンファレンス「CEDEC2026」が開催された。ゲーム業界でモーションディレクションを手掛けてきた開発者と，中国武術家が壇上に並び，格闘アクションの「格好良…",
+      "id": "auto-games-the-elder-scrolls-などから影響を受けた-魔法も罠も使うクラスに縛られない自由なarpg-forsaken-realms-vahrin-s-ca-gamespark.jp/article/2026/07/28/169859.html",
+      "title": "『The Elder Scrolls』などから影響を受けた、魔法も罠も使うクラスに縛られない自由なARPG『Forsaken Realms: Vahrin's Call』Steam配信開始！",
+      "summary": "「 『The Elder Scrolls』などから影響を受けた、魔法も罠も使うクラスに縛られない自由なARPG『Forsaken Realms: Vahrin&#x27;s Call』Steam配信開始！ 」に一致する記事は見つかりませんでした。",
+      "briefSummary": "「 『The Elder Scrolls』などから影響を受けた、魔法も罠も使うクラスに縛られない自由なARPG『Forsaken Realms: Vahrin&#x27;s Call』Steam配信開始！ 」に一致する記事は見つかりませんでした。",
       "category": "games",
       "categories": [
         "games",
-        "business",
-        "world",
+        "entertainment",
         "general"
       ],
       "categoryLabel": "ゲーム",
       "categoryLabels": [
         "ゲーム",
-        "経済",
-        "国際"
+        "エンタメ"
       ],
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/991/G999104/20260728025/SS/008.jpg",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164900.png",
       "publishedAt": null,
-      "capturedAt": "2026-07-28T09:19:27.820Z",
+      "capturedAt": "2026-07-28T11:37:04.488Z",
       "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/991/G999104/20260728025/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "膝，前に出しすぎていませんか？ 「鉄拳」「ソウルキャリバー」のモーションディレクターと中国武術家が壇上に並び，格闘アクションを実演で解き明かす［CEDEC 2026］",
-          "url": "https://www.4gamer.net/games/991/G999104/20260728025/",
-          "canonicalUrl": "https://www.4gamer.net/games/991/G999104/20260728025/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/991/G999104/20260728025/SS/008.jpg"
-        }
-      ],
-      "whatHappened": "膝，前に出しすぎていませんか",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き",
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-games-セガnet麻雀-mj-カジノモードに新ゲーム-バカラ-を実装-4gamer.net/games/226/g022696/20260728039",
-      "title": "「セガNET麻雀 MJ」，カジノモードに新ゲーム「バカラ」を実装",
-      "summary": "セガNET麻雀 MJ セガNET麻雀 MJ セガNET麻雀 MJ 配信元 セガ 配信日 2026/07/28 『セガNET麻雀 MJ』 新バージョン「Ver11.0」実装！ カジノに新ゲー…",
-      "briefSummary": "セガNET麻雀 MJ セガNET麻雀 MJ セガNET麻雀 MJ 配信元 セガ 配信日 2026/07/28 『セガNET麻雀 MJ』 新バージョン「Ver11.0」実装！ カジノに新ゲー…",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/226/G022696/20260728039/SS/002.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-28T09:19:27.820Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/226/G022696/20260728039/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "「セガNET麻雀 MJ」，カジノモードに新ゲーム「バカラ」を実装",
-          "url": "https://www.4gamer.net/games/226/G022696/20260728039/",
-          "canonicalUrl": "https://www.4gamer.net/games/226/G022696/20260728039/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/226/G022696/20260728039/SS/002.jpg"
-        }
-      ],
-      "whatHappened": "「セガNET麻雀 MJ」，カジノモードに新ゲーム「バカラ」を実装",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-悲しみはなぜ美しく-無音はなぜ心に残るのか-神経美学者・石津智大氏が語った-泣けるゲーム-静かなゲーム-の脳科学-cedec-2026-4gamer.net/games/991/g999104/20260728034",
-      "title": "悲しみはなぜ美しく，無音はなぜ心に残るのか。神経美学者・石津智大氏が語った「泣けるゲーム，静かなゲーム」の脳科学［CEDEC 2026］",
-      "summary": "2026年7月22日，CEDEC2026にて「泣けるゲーム，静かなゲームの神経科学――美的感情の仕組みをエンタメ設計に活かす」と題した講演が実施された。悲劇はなぜ美…",
-      "briefSummary": "2026年7月22日，CEDEC2026にて「泣けるゲーム，静かなゲームの神経科学――美的感情の仕組みをエンタメ設計に活かす」と題した講演が実施された。悲劇はなぜ美しく感じられるのか，音のない時間になぜ価値が生まれるのか。脳計測と心理実験の…",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/991/G999104/20260728034/SS/001.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-28T09:19:27.820Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/991/G999104/20260728034/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "悲しみはなぜ美しく，無音はなぜ心に残るのか。神経美学者・石津智大氏が語った「泣けるゲーム，静かなゲーム」の脳科学［CEDEC 2026］",
-          "url": "https://www.4gamer.net/games/991/G999104/20260728034/",
-          "canonicalUrl": "https://www.4gamer.net/games/991/G999104/20260728034/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/991/G999104/20260728034/SS/001.jpg"
-        }
-      ],
-      "whatHappened": "悲しみはなぜ美しく，無音はなぜ心に残るのか",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-sports-圧倒的な物量には最速30点の試行錯誤で挑む-granblue-fantasy-relink-4gamer.net/games/982/g098219/20260728036",
-      "title": "圧倒的な物量には最速30点の試行錯誤で挑む。「GRANBLUE FANTASY: Relink",
-      "summary": "CEDEC 2026のセッション「『GRANBLUE FANTASY: Relink - Endless Ragnarok』のバトル制作事例 〜最高のキャラゲーを目指して〜」では，キャラクターの魅力…",
-      "briefSummary": "CEDEC 2026のセッション「『GRANBLUE FANTASY: Relink - Endless Ragnarok』のバトル制作事例 〜最高のキャラゲーを目指して〜」では，キャラクターの魅力を最大限に引き出すバトルがいかにして形作られたかが解説された。プランナーとエンジニア双方の視点から語られたその工夫を見てみよう。",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "games",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/982/G098219/20260728036/SS/001.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-28T09:19:27.820Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/982/G098219/20260728036/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "圧倒的な物量には最速30点の試行錯誤で挑む。「GRANBLUE FANTASY: Relink",
-          "url": "https://www.4gamer.net/games/982/G098219/20260728036/",
-          "canonicalUrl": "https://www.4gamer.net/games/982/G098219/20260728036/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/982/G098219/20260728036/SS/001.jpg"
-        }
-      ],
-      "whatHappened": "圧倒的な物量には最速30点の試行錯誤で挑む",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-注目のリミテッドジョブ-魔獣使い-を制作担当者が解説-第93回ffxivプロデューサーレターlive-をレポートしよう-4gamer.net/games/199/g019924/20260728031",
-      "title": "注目のリミテッドジョブ“魔獣使い”を制作担当者が解説。「第93回FFXIVプロデューサーレターLIVE」をレポートしよう",
-      "summary": "「 注目のリミテッドジョブ“魔獣使い”を制作担当者が解説。「第93回FFXIVプロデューサーレターLIVE」をレポートしよう 」に一致する記事は見つかりませんでした。",
-      "briefSummary": "MMORPG「ファイナルファンタジーXIV」のイベント「FINAL FANTASY XIV Fan Festival 2026 in Berlin」で実施された「第93回FFXIVプロデューサーレターLIVE」では，パッチ7.65で実装されるリミテッドジョブ“魔獣使い”についての解説が行われた。本稿では，その模様をお届けしよう。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/199/G019924/20260728031/SS/004.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-28T09:19:27.820Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/199/G019924/20260728031/",
-      "hotReasons": [
-        "検索需要やトレンド化の兆しが強い話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "注目のリミテッドジョブ“魔獣使い”を制作担当者が解説。「第93回FFXIVプロデューサーレターLIVE」をレポートしよう",
-          "url": "https://www.4gamer.net/games/199/G019924/20260728031/",
-          "canonicalUrl": "https://www.4gamer.net/games/199/G019924/20260728031/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/199/G019924/20260728031/SS/004.jpg"
-        }
-      ],
-      "whatHappened": "注目のリミテッドジョブ“魔獣使い”を制作担当者が解説",
-      "whyHot": "検索需要やトレンド化の兆しが強い話題です。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-ルームウェアブランド-gelato-pique-とrpg-ドラゴンクエスト-シリーズのコラボ第2弾-8月7日より発売-4gamer.net/games/991/g999106/20260728035",
-      "title": "ルームウェアブランド「gelato pique」とRPG「ドラゴンクエスト」シリーズのコラボ第2弾，8月7日より発売",
-      "summary": "マッシュスタイルラボは本日（2026年7月28日），ルームウェアブランド「gelatopique」とRPG「ドラゴンクエスト」シリーズのコラボコレクション第2弾を，…",
-      "briefSummary": "マッシュスタイルラボは本日（2026年7月28日），ルームウェアブランド「gelatopique」とRPG「ドラゴンクエスト」シリーズのコラボコレクション第2弾を，8月7日より全国のジェラートピケ店舗や公式オンラインストアなどで発売すると発…",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/991/G999106/20260728035/SS/001.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-28T09:19:27.820Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/991/G999106/20260728035/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "ルームウェアブランド「gelato pique」とRPG「ドラゴンクエスト」シリーズのコラボ第2弾，8月7日より発売",
-          "url": "https://www.4gamer.net/games/991/G999106/20260728035/",
-          "canonicalUrl": "https://www.4gamer.net/games/991/G999106/20260728035/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/991/G999106/20260728035/SS/001.jpg"
-        }
-      ],
-      "whatHappened": "ルームウェアブランド「gelato pique」とRPG「ドラゴンクエスト」シリーズのコラボ…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-フォーミュラスタイルを採用したhori製pc-ps5向けステアリングホイールが2026年冬に発売-4gamer.net/games/999/g999902/20260728032",
-      "title": "フォーミュラスタイルを採用したHORI製PC＆PS5向けステアリングホイールが2026年冬に発売",
-      "summary": "2026年7月28日，ホリは，PCとPlayStation5，およびPlayStation4に対応したステアリングホイールとペダルユニットのセットモデル「Racin…",
-      "briefSummary": "2026年7月28日，ホリは，PCとPlayStation5，およびPlayStation4に対応したステアリングホイールとペダルユニットのセットモデル「RacingWheelApexFormulaforPlayStation5，PlayS…",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/999/G999902/20260728032/SS/001.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-28T09:19:27.820Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/999/G999902/20260728032/",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/28/169859.html",
       "hotReasons": [
         "一般ユーザーの関心が集まりやすいテーマです。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
           "sourceGroup": "games",
-          "sourcePriority": 94,
+          "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
             "pc",
-            "console",
-            "steam"
+            "console"
           ],
-          "title": "フォーミュラスタイルを採用したHORI製PC＆PS5向けステアリングホイールが2026年冬に発売",
-          "url": "https://www.4gamer.net/games/999/G999902/20260728032/",
-          "canonicalUrl": "https://www.4gamer.net/games/999/G999902/20260728032/",
+          "title": "『The Elder Scrolls』などから影響を受けた、魔法も罠も使うクラスに縛られない自由なARPG『Forsaken Realms: Vahrin's Call』Steam配信開始！",
+          "url": "http://www.gamespark.jp/article/2026/07/28/169859.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/28/169859.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/999/G999902/20260728032/SS/001.jpg"
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164900.png"
         }
       ],
-      "whatHappened": "フォーミュラスタイルを採用したHORI製PC＆PS5向けステアリングホイールが2026年冬に…",
+      "whatHappened": "『The Elder Scrolls』などから影響を受けた、魔法も罠も使うクラスに縛られない…",
       "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -502,10 +202,70 @@
       ]
     },
     {
-      "id": "auto-games-riot-gamesが明らかにしたアンチチートシステム-vanguard-の仕組み-windowsの進化に合わせてチート対策も強力に-4gamer.net/games/999/g999902/20260728018",
-      "title": "Riot Gamesが明らかにしたアンチチートシステム「Vanguard」の仕組み。Windowsの進化に合わせてチート対策も強力に",
-      "summary": "RiotGamesは，独自のアンチチートシステム「Vanguard」を自社のゲームに組み込んで提供している。そのVanguardが2026年6月末に刷新されたことが…",
-      "briefSummary": "Riot Gamesは，独自のアンチチートシステム「Vanguard」を自社のゲームに組み込んで提供している。そのVanguardが2026年6月末に刷新されたことが話題を呼んだ。Vanguardの新機能を使うための設定方法と，チートプログラムとアンチチートシステムの攻防について紹介しよう。",
+      "id": "auto-games-最大4人でロケット作って月から地球への帰還を目指せ-誰かがミスると銀河一の花火になる協力adv-moon-crashers-steam配信開始-gamespark.jp/article/2026/07/28/169858.html",
+      "title": "最大4人でロケット作って月から地球への帰還を目指せ！誰かがミスると銀河一の花火になる協力ADV『Moon Crashers』Steam配信開始",
+      "summary": "【速報】熊本・嘉島町「イオンモール熊本」で爆発 来店客や従業員など全員が避難できていたかどうかは不明、被害状況について確認中",
+      "briefSummary": "【速報】熊本・嘉島町「イオンモール熊本」で爆発 来店客や従業員など全員が避難できていたかどうかは不明、被害状況について確認中",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1155526.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-28T11:37:04.488Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/28/169858.html",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "最大4人でロケット作って月から地球への帰還を目指せ！誰かがミスると銀河一の花火になる協力ADV『Moon Crashers』Steam配信開始",
+          "url": "http://www.gamespark.jp/article/2026/07/28/169858.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/28/169858.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1155526.jpg"
+        }
+      ],
+      "whatHappened": "最大4人でロケット作って月から地球への帰還を目指せ",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-ブルーアーカイブ-国外steam版が-圧倒的に不評-に-ガチャの-天井-システム変更に批判集まる-gamespark.jp/article/2026/07/28/169855.html",
+      "title": "『ブルーアーカイブ』国外Steam版が“圧倒的に不評”に。ガチャの「天井」システム変更に批判集まる",
+      "summary": "NEXON Gamesが手掛けるアクションアニメRPG 『ブルーアーカイブ』 ついて、グローバル・Steam版の最近のレビューが “圧倒的に不評” となっています。",
+      "briefSummary": "Steamでは、グローバル版『ブルーアーカイブ』がNEXON Koreaにより提供されています（ 日本からは利用不可 ）。記事執筆時点で同作のSteamストアページを確認すると過去30日間のレビュー3,883件中10%が好評の“圧倒的に不評”を記録しています。",
       "category": "games",
       "categories": [
         "games",
@@ -518,42 +278,41 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/999/G999902/20260728018/SS/002.png",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164930.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-28T09:19:27.820Z",
+      "capturedAt": "2026-07-28T11:37:04.488Z",
       "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/999/G999902/20260728018/",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/28/169855.html",
       "hotReasons": [
-        "検索需要やトレンド化の兆しが強い話題です。",
+        "一般ユーザーの関心が集まりやすいテーマです。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
           "sourceGroup": "games",
-          "sourcePriority": 94,
+          "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
             "pc",
-            "console",
-            "steam"
+            "console"
           ],
-          "title": "Riot Gamesが明らかにしたアンチチートシステム「Vanguard」の仕組み。Windowsの進化に合わせてチート対策も強力に",
-          "url": "https://www.4gamer.net/games/999/G999902/20260728018/",
-          "canonicalUrl": "https://www.4gamer.net/games/999/G999902/20260728018/",
+          "title": "『ブルーアーカイブ』国外Steam版が“圧倒的に不評”に。ガチャの「天井」システム変更に批判集まる",
+          "url": "http://www.gamespark.jp/article/2026/07/28/169855.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/28/169855.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/999/G999902/20260728018/SS/002.png"
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164930.jpg"
         }
       ],
-      "whatHappened": "Riot Gamesが明らかにしたアンチチートシステム「Vanguard」の仕組み",
-      "whyHot": "検索需要やトレンド化の兆しが強い話題です。",
+      "whatHappened": "『ブルーアーカイブ』国外Steam版が“圧倒的に不評”に",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー",
@@ -561,63 +320,294 @@
       ]
     },
     {
-      "id": "auto-games-プレイヤー同士の-対話-はメカニクスとして設計できる-マーダーミステリー作家が解剖する-コミュニケーションゲームの構造-cedec-2026-4gamer.net/games/991/g999104/20260728033",
-      "title": "プレイヤー同士の「対話」はメカニクスとして設計できる。マーダーミステリー作家が解剖する，コミュニケーションゲームの構造［CEDEC 2026］",
-      "summary": "「CEDEC2026」で行われた講演『コミュニケーションゲームとは 〜マーダーミステリーに学ぶ「対話」をメカニクスとして設計する方法〜』では，プレイヤー同士の会話を…",
-      "briefSummary": "「CEDEC2026」で行われた講演『コミュニケーションゲームとは 〜マーダーミステリーに学ぶ「対話」をメカニクスとして設計する方法〜』では，プレイヤー同士の会話をゲームメカニクスとしてどう設計するのかが語られた。",
+      "id": "auto-games-吉田修平氏が約30年で出会ったクリエイターたちの創造力を振り返る-クラッシュ-や-demon-s-souls-などの裏話も-cedec-2026-gamespark.jp/article/2026/07/28/169853.html",
+      "title": "吉田修平氏が約30年で出会ったクリエイターたちの創造力を振り返る。『クラッシュ』や『Demon's Souls』などの裏話も【CEDEC 2026】",
+      "summary": "「 吉田修平氏が約30年で出会ったクリエイターたちの創造力を振り返る。『クラッシュ』や『Demon&#x27;s Souls』などの裏話も【CEDEC 2026】 」に一致する記事は見つかりませんでした。",
+      "briefSummary": "CEDEC 2026では、そんな吉田氏による基調講演「 私が出会った素晴らしいゲーム、クリエイター、そしてその創造性について 」が行われました。本講演は、吉田氏が30年近くに渡るキャリアで出会ってきたクリエイターたちと、彼らがゲームを生み出そうとするときのこだわりを間近で見てきたことについて振り返るものです。その内容は、ゲームの歴史を感じさせる厚み…",
       "category": "games",
       "categories": [
         "games",
-        "books",
         "general"
       ],
       "categoryLabel": "ゲーム",
       "categoryLabels": [
-        "ゲーム",
-        "本"
+        "ゲーム"
       ],
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/991/G999104/20260728033/SS/018.jpg",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164514.png",
       "publishedAt": null,
-      "capturedAt": "2026-07-28T09:19:27.820Z",
+      "capturedAt": "2026-07-28T11:37:04.488Z",
       "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/991/G999104/20260728033/",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/28/169853.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
           "sourceGroup": "games",
-          "sourcePriority": 94,
+          "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
             "pc",
-            "console",
-            "steam"
+            "console"
           ],
-          "title": "プレイヤー同士の「対話」はメカニクスとして設計できる。マーダーミステリー作家が解剖する，コミュニケーションゲームの構造［CEDEC 2026］",
-          "url": "https://www.4gamer.net/games/991/G999104/20260728033/",
-          "canonicalUrl": "https://www.4gamer.net/games/991/G999104/20260728033/",
+          "title": "吉田修平氏が約30年で出会ったクリエイターたちの創造力を振り返る。『クラッシュ』や『Demon's Souls』などの裏話も【CEDEC 2026】",
+          "url": "http://www.gamespark.jp/article/2026/07/28/169853.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/28/169853.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/991/G999104/20260728033/SS/018.jpg"
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164514.png"
         }
       ],
-      "whatHappened": "プレイヤー同士の「対話」はメカニクスとして設計できる",
+      "whatHappened": "吉田修平氏が約30年で出会ったクリエイターたちの創造力を振り返る",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー",
         "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-老舗ゾンビサバイバル-project-zomboid-2年間かけたアプデによりマップの面積は約2倍に-7月29日に-ビルド42-20-安定版配信-gamespark.jp/article/2026/07/28/169852.html",
+      "title": "老舗ゾンビサバイバル『Project Zomboid』2年間かけたアプデによりマップの面積は約2倍に。7月29日に「ビルド42.20」安定版配信",
+      "summary": "The Indie Stoneは2026年7月28日、同社が2013年より早期アクセス中のゾンビサバイバル 『Project Zomboid』 の 「ビルド42.20」安定版アップデートを現地時間7月29日に配信する ことを発表しました。",
+      "briefSummary": "The Indie Stoneは2026年7月28日、同社が2013年より早期アクセス中のゾンビサバイバル 『Project Zomboid』 の 「ビルド42.20」安定版アップデートを現地時間7月29日に配信する ことを発表しました。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164894.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-28T11:37:04.488Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/28/169852.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "老舗ゾンビサバイバル『Project Zomboid』2年間かけたアプデによりマップの面積は約2倍に。7月29日に「ビルド42.20」安定版配信",
+          "url": "http://www.gamespark.jp/article/2026/07/28/169852.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/28/169852.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164894.jpg"
+        }
+      ],
+      "whatHappened": "老舗ゾンビサバイバル『Project Zomboid』2年間かけたアプデによりマップの面積は…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-両足を切断され人魚に改造された被害者が施設からの脱出を目指す-mermade-開発中-gamespark.jp/article/2026/07/28/169850.html",
+      "title": "両足を切断され人魚に改造された被害者が施設からの脱出を目指す『Mermade』開発中！",
+      "summary": "ドイツの大学生チームは人体実験の被害者として施設からの脱出を目指す『 Mermade 』のトレイラーを公開しました。",
+      "briefSummary": "ドイツの大学生チームは人体実験の被害者として施設からの脱出を目指す『 Mermade 』のトレイラーを公開しました。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164700.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-28T11:37:04.488Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/28/169850.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "両足を切断され人魚に改造された被害者が施設からの脱出を目指す『Mermade』開発中！",
+          "url": "http://www.gamespark.jp/article/2026/07/28/169850.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/28/169850.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164700.jpg"
+        }
+      ],
+      "whatHappened": "両足を切断され人魚に改造された被害者が施設からの脱出を目指す『Mermade』開発中",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-ドラクエ-ジェラピケコラボ第2弾-スライム-わたぼうがふわもこでかわいい-ルームウェアやポーチなど新作アイテムが8月7日より全国発売-animeanime.jp/article/2026/07/28/101532.html",
+      "title": "「ドラクエ」×ジェラピケコラボ第2弾！ スライム、わたぼうがふわもこでかわいい♪ ルームウェアやポーチなど新作アイテムが8月7日より全国発売",
+      "summary": "今年40周年を迎えた大人気ロールプレイングゲーム『ドラゴンクエスト』シリーズをデザインに取り入れたルームウェアコレクション「GELATO PIQUE encounters DRAGON QUEST」が、2026年8月7日(金)より「全国のジェラート ピケ店舗」などにて発売される。",
+      "briefSummary": "VR体験だけじゃない！勇者気分で『ドラクエ』世界にひたる40周年記念展に、「おお！まだいってないとは なにごとだ！」【ドラゴンクエスト40周年記念展「ドラゴンクエスト the DIVE -まだ見ぬ冒険の舞台へ-」フォトレポート】",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911428.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-28T11:37:04.488Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/07/28/101532.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「ドラクエ」×ジェラピケコラボ第2弾！ スライム、わたぼうがふわもこでかわいい♪ ルームウェアやポーチなど新作アイテムが8月7日より全国発売",
+          "url": "https://animeanime.jp/article/2026/07/28/101532.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/07/28/101532.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911428.jpg"
+        }
+      ],
+      "whatHappened": "「ドラクエ」×ジェラピケコラボ第2弾",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-飛べ-思い出なんかいらん-など横断幕の英訳をデザイン-ハイキュー-烏野-音駒-稲荷崎ら5校をモチーフにしたマグカップ登場-ノリタケとコラボした上品マグカップ-animeanime.jp/article/2026/07/28/101531.html",
+      "title": "“飛べ”、“思い出なんかいらん”など横断幕の英訳をデザイン！ 「ハイキュー!!」烏野、音駒、稲荷崎ら5校をモチーフにしたマグカップ登場！ ノリタケとコラボした上品マグカップ♪",
+      "summary": "『ハイキュー!!』より、「ノリタケ」とコラボレーションした「ノリタケコラボ マグカップ」の受注が、通販サイト「AMNIBUS」にて開始された。烏野高校、青葉城西高校、音駒高校、梟谷学園高校、稲荷崎高校をイメージした全5種類がラインナップする。",
+      "briefSummary": "『ハイキュー!!』より、「ノリタケ」とコラボレーションした「ノリタケコラボ マグカップ」の受注が、通販サイト「AMNIBUS」にて開始された。烏野高校、青葉城西高校、音駒高校、梟谷学園高校、稲荷崎高校をイメージした全5種類がラインナップする。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911001.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-28T11:37:04.488Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/07/28/101531.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "“飛べ”、“思い出なんかいらん”など横断幕の英訳をデザイン！ 「ハイキュー!!」烏野、音駒、稲荷崎ら5校をモチーフにしたマグカップ登場！ ノリタケとコラボした上品マグカップ♪",
+          "url": "https://animeanime.jp/article/2026/07/28/101531.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/07/28/101531.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911001.jpg"
+        }
+      ],
+      "whatHappened": "“飛べ”、“思い出なんかいらん”など横断幕の英訳をデザイン",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き"
       ]
     }
   ]

@@ -1,11 +1,64 @@
 {
-  "generatedAt": "2026-07-28T22:39:12.543Z",
+  "generatedAt": "2026-07-28T23:37:20.093Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-354",
-  "selectedTitle": "第25話 真冬とカリンのファーストコンタクト その2 / お嬢様系底辺ダンジョン配信者、迷惑系をボコったらバズって伝説になってますわ！？",
+  "selectedClusterId": "today-cluster-441",
+  "selectedTitle": "イオンモール熊本で爆発 地震でガス漏れか 2人死亡1人心肺停止",
   "candidates": [
     {
-      "clusterId": "today-cluster-879",
+      "clusterId": "today-cluster-441",
+      "title": "イオンモール熊本で爆発 地震でガス漏れか 2人死亡1人心肺停止",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 72.6,
+      "confidence": 0.41,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 12.3,
+        "social": 4.6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 4.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 76.66666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 35.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-971",
       "title": "熊本で震度7 けが人多数 交通網遮断 被害全容つかめず",
       "category": "sns",
       "categories": [
@@ -13,7 +66,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 67.6,
+      "buzzScore": 67.4,
       "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 2,
@@ -27,8 +80,8 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 4.5,
+        "search": 4.7,
+        "social": 4.4,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 5.5,
@@ -44,11 +97,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 60,
         "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 34.9
+        "internalSearchScore": 37,
+        "internalSocialScore": 34.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -56,60 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-658",
-      "title": "「トイ・ストーリー」ウッディ、バズ、エイリアンがレトロかわいい♪ “アンディの部屋の壁紙”をイメージした雲柄トートやポーチなど新作雑貨が登場",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 67.5,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 5,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-704",
+      "clusterId": "today-cluster-797",
       "title": "【訃報】板東英二さんが86歳で、プロ野球選手から俳優タレントに転身（テレビ朝日系（ANN））",
       "category": "sports",
       "categories": [
@@ -141,7 +141,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 16.666666666666664,
+        "searchScore": 15,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -161,7 +161,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-356",
+      "clusterId": "today-cluster-355",
       "title": "注目集めた“AIキャラ生活観察ゲーム”開発元、「今も開発継続中」と生存報告。NPCたちの暮らしを眺め、“介入”もできるゲーム",
       "category": "games",
       "categories": [
@@ -213,18 +213,19 @@
       ]
     },
     {
-      "clusterId": "today-cluster-354",
-      "title": "第25話 真冬とカリンのファーストコンタクト その2 / お嬢様系底辺ダンジョン配信者、迷惑系をボコったらバズって伝説になってますわ！？",
-      "category": "entertainment",
+      "clusterId": "today-cluster-747",
+      "title": "「トイ・ストーリー」ウッディ、バズ、エイリアンがレトロかわいい♪ “アンディの部屋の壁紙”をイメージした雲柄トートやポーチなど新作雑貨が登場",
+      "category": "anime",
       "categories": [
+        "anime",
         "entertainment",
+        "manga",
         "sns",
         "net-culture",
-        "manga",
         "general"
       ],
-      "buzzScore": 64,
-      "confidence": 0.33,
+      "buzzScore": 65.9,
+      "confidence": 0.38,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -234,30 +235,30 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 17.8,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 7.4,
+        "search": 4.9,
+        "social": 7.3,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 0,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
-        "searchAvailable": false,
+        "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 32.3,
-        "internalSocialScore": 57.7
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.3,
+        "internalSocialScore": 57.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

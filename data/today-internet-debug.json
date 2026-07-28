@@ -1,11 +1,63 @@
 {
-  "generatedAt": "2026-07-28T06:13:59.846Z",
+  "generatedAt": "2026-07-28T09:22:00.532Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1083",
-  "selectedTitle": "わなにかかったクマを溺死させ駆除の雫石町　SNSで拡散され非難殺到　県から注意も「捕獲者の安全のため」苦渋の判断　岩手",
+  "selectedClusterId": "today-cluster-463",
+  "selectedTitle": "元プロ野球投手 板東英二さん死去 タレントとしても活躍 86歳",
   "candidates": [
     {
-      "clusterId": "today-cluster-1083",
+      "clusterId": "today-cluster-463",
+      "title": "元プロ野球投手 板東英二さん死去 タレントとしても活躍 86歳",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "general",
+        "entertainment"
+      ],
+      "buzzScore": 77.4,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 16,
+        "social": 4.5,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 5.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 100,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 31.3,
+        "internalSocialScore": 35.3
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1451",
       "title": "わなにかかったクマを溺死させ駆除の雫石町　SNSで拡散され非難殺到　県から注意も「捕獲者の安全のため」苦渋の判断　岩手",
       "category": "net-culture",
       "categories": [
@@ -14,7 +66,7 @@
         "sns",
         "general"
       ],
-      "buzzScore": 77.9,
+      "buzzScore": 77,
       "confidence": 0.41,
       "articleCount": 2,
       "sourceCount": 2,
@@ -29,7 +81,7 @@
         "sourceDiversity": 4.7,
         "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 14.7,
+        "search": 13.9,
         "social": 6,
         "velocity": 0,
         "freshness": 5.5,
@@ -38,7 +90,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 91.66666666666666,
+        "searchScore": 86.66666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -46,115 +98,10 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 7.2,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
         "archiveHeatScore": 95,
-        "internalSearchScore": 37.9,
-        "internalSocialScore": 47.2
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-366",
-      "title": "元プロ野球投手 板東英二さん死去 タレントとしても活躍 86歳",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 71.8,
-      "confidence": 0.4,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 12.8,
-        "social": 4.6,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 4.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 80,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 31.9,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-407",
-      "title": "子のSNS利用に年齢制限 議論へ",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "tech",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 71,
-      "confidence": 0.43,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 6,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 16.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
+        "internalSearchScore": 37.2,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -163,7 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-336",
+      "clusterId": "today-cluster-341",
       "title": "【訃報】板東英二さんが86歳で、プロ野球選手から俳優タレントに転身（テレビ朝日系（ANN））",
       "category": "sports",
       "categories": [
@@ -215,7 +162,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1084",
+      "clusterId": "today-cluster-1452",
       "title": "【VIPインタビュー】宮本茂氏に訊く、ファミコンからSwitch 2、映画、テーマパークまで。目指す理想は「ゲームをいま以上に日常に」",
       "category": "game-features",
       "categories": [
@@ -262,6 +209,57 @@
         "archiveHeatScore": 89,
         "internalSearchScore": 33.9,
         "internalSocialScore": 56.9
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-744",
+      "title": "子のSNS利用に年齢制限 議論へ",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "tech",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 64.7,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20.7,
+        "internetNativeBoost": 8,
+        "search": 6.4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 40,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 36.8,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

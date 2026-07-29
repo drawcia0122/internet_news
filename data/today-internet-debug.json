@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-29T12:34:25.395Z",
+  "generatedAt": "2026-07-29T14:56:33.884Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1827",
-  "selectedTitle": "イオンモール熊本で爆発 地震でガス漏れか 2人死亡1人心肺停止",
+  "selectedClusterId": "today-cluster-4",
+  "selectedTitle": "『ぽこ あ ポケモン』エキスパンションパス第1弾「ブクブクうみぞこの街」が8月5日配信。無料アップデートで「ダイビング」も追加",
   "candidates": [
     {
-      "clusterId": "today-cluster-1827",
+      "clusterId": "today-cluster-1962",
       "title": "イオンモール熊本で爆発 地震でガス漏れか 2人死亡1人心肺停止",
       "category": "sns",
       "categories": [
@@ -13,8 +13,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 78.7,
-      "confidence": 0.42,
+      "buzzScore": 76.7,
+      "confidence": 0.41,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -31,7 +31,7 @@
         "search": 16,
         "social": 4.4,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 5.5,
         "categoryBias": 9,
         "penalty": 0
@@ -57,7 +57,58 @@
       ]
     },
     {
-      "clusterId": "today-cluster-591",
+      "clusterId": "today-cluster-4",
+      "title": "『ぽこ あ ポケモン』エキスパンションパス第1弾「ブクブクうみぞこの街」が8月5日配信。無料アップデートで「ダイビング」も追加",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 66.4,
+      "confidence": 0.46,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 14.1,
+        "internetNativeBoost": 0,
+        "search": 4.9,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 10,
+        "authority": 1,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 13.333333333333334,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 64,
+        "internalSearchScore": 38,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-704",
       "title": "世界最大級のトレントサイト「Nyaa」の第1アップローダーを逮捕、日本ハッカー協会の解析ツールで被疑者を特定",
       "category": "crime",
       "categories": [
@@ -67,8 +118,8 @@
         "general",
         "sports"
       ],
-      "buzzScore": 65.7,
-      "confidence": 0.42,
+      "buzzScore": 64.1,
+      "confidence": 0.41,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -80,10 +131,10 @@
         "sourceDiversity": 4.7,
         "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 7.4,
+        "search": 4.4,
+        "social": 7.3,
         "velocity": 0,
-        "freshness": 8.5,
+        "freshness": 7,
         "authority": 2.5,
         "categoryBias": 7,
         "penalty": 0
@@ -97,11 +148,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 100,
         "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 57.7
+        "internalSearchScore": 34.5,
+        "internalSocialScore": 57.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -109,58 +160,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2627",
-      "title": "熊本で震度7 けが人多数 交通網遮断 被害全容つかめず",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.2,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 4.3,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 5.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 1.8,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 36.2,
-        "internalSocialScore": 33.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1363",
+      "clusterId": "today-cluster-1494",
       "title": "注目集めた“AIキャラ生活観察ゲーム”開発元、「今も開発継続中」と生存報告。NPCたちの暮らしを眺め、“介入”もできるゲーム",
       "category": "games",
       "categories": [
@@ -213,7 +213,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2439",
+      "clusterId": "today-cluster-2577",
       "title": "【訃報】板東英二さんが86歳で、プロ野球選手から俳優タレントに転身（テレビ朝日系（ANN））",
       "category": "sports",
       "categories": [

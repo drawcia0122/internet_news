@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-29T17:53:56.624Z",
+  "generatedAt": "2026-07-29T19:39:19.013Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-2",
-  "selectedTitle": "堀井雄二氏携わる友情破壊すごろくゲーム『転生ゲーム カルマxクロス』8月6日発売へ。“遊ぶと仲が悪くなる”4人対戦は物騒なシステム満載、正体明らかに",
+  "selectedClusterId": "today-cluster-2135",
+  "selectedTitle": "イオンモール熊本で爆発 地震でガス漏れか 2人死亡1人心肺停止",
   "candidates": [
     {
-      "clusterId": "today-cluster-2092",
+      "clusterId": "today-cluster-2135",
       "title": "イオンモール熊本で爆発 地震でガス漏れか 2人死亡1人心肺停止",
       "category": "sns",
       "categories": [
@@ -65,13 +65,12 @@
         "sns",
         "general"
       ],
-      "buzzScore": 73.3,
-      "confidence": 0.46,
+      "buzzScore": 66.5,
+      "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
@@ -81,8 +80,8 @@
         "internetNativeBoost": 8,
         "search": 6.3,
         "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -108,60 +107,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-401",
-      "title": "プロ野球オールスターゲーム 第2戦 全セが打ち合い制す",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "games",
-        "general"
-      ],
-      "buzzScore": 71.3,
-      "confidence": 0.4,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 12.3,
-        "social": 4.6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 4.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 76.66666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 36.8,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-810",
+      "clusterId": "today-cluster-850",
       "title": "世界最大級のトレントサイト「Nyaa」の第1アップローダーを逮捕、日本ハッカー協会の解析ツールで被疑者を特定",
       "category": "crime",
       "categories": [
@@ -213,7 +159,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2650",
+      "clusterId": "today-cluster-2696",
       "title": "「トイ・ストーリー」ウッディ、バズ、エイリアンがレトロかわいい♪ “アンディの部屋の壁紙”をイメージした雲柄トートやポーチなど新作雑貨が登場",
       "category": "anime",
       "categories": [
@@ -259,6 +205,56 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 37,
         "internalSocialScore": 56.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-189",
+      "title": "カメレオンを見逃さないこと。「めっちゃカメレオン」，「8番出口」とのコラボレーションを発表",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 61.9,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.5,
+        "internetNativeBoost": 8,
+        "search": 4.3,
+        "social": 4.6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 13.333333333333334,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 33.3,
+        "internalSocialScore": 35.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

@@ -15,6 +15,7 @@ const {
   normalizeTopic,
   pickCardImageUrl,
   prepareNewsListItems,
+  sanitizeArticleSummaryCollection,
   shortEventFromTitle,
 } = window.TopicClientUtils;
 
@@ -29,7 +30,7 @@ const archiveActionsElement = document.querySelector('#news-archive-actions');
 const PAGE_SIZE = 20;
 const RENDER_BATCH_SIZE = 4;
 const HOME_NEWS_ENDPOINT = './data/home-news.json';
-const TOPIC_CACHE_KEY = 'internet-news-browse-archive-cache-v5';
+const TOPIC_CACHE_KEY = 'internet-news-browse-archive-cache-v6';
 const MAX_CACHED_HOME_ITEMS = 200;
 const RANGE_CONFIG = {
   '24h': { minHours: 0, maxHours: 24, label: '24時間以内', searchWindowDays: 1 },
@@ -124,7 +125,7 @@ async function renderArchive() {
 }
 
 function preparePrimaryArchiveItems(rawItems) {
-  return prepareNewsListItems(Array.isArray(rawItems) ? rawItems : []);
+  return prepareNewsListItems(sanitizeArticleSummaryCollection(Array.isArray(rawItems) ? rawItems : []));
 }
 
 async function loadCompleteHomeNews(initialPayload) {
@@ -336,6 +337,7 @@ function readTopicCache() {
   try {
     localStorage.removeItem('internet-news-browse-topic-cache');
     localStorage.removeItem('internet-news-browse-archive-cache-v4');
+    localStorage.removeItem('internet-news-browse-archive-cache-v5');
     const cached = JSON.parse(localStorage.getItem(TOPIC_CACHE_KEY) ?? 'null');
     if (cached?.scope !== 'home') return [];
     if (!Array.isArray(cached?.items)) return [];

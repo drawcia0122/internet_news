@@ -2,12 +2,13 @@
   const GENERIC_TOPIC_TOKENS = new Set(['速報', '公開', '発表', '開始', '決定', '話題', '最新', '本日', 'きょう', '今日', '判明', '疑惑', '意見']);
 
   function normalizeTopic(topic, { includeSearchLinks = true } = {}) {
-    const categories = normalizeCategories(topic.categories, topic.category);
+    const safeTopic = window.NewsSummaryIntegrity?.sanitizeArticleSummaryFields(topic) ?? topic;
+    const categories = normalizeCategories(safeTopic.categories, safeTopic.category);
     const normalizedCategories = categories.map(normalizeLegacyCategory);
     const category = normalizedCategories[0] ?? 'general';
-    const labelSource = topic.categoryLabels;
-    const sourceSignals = Array.isArray(topic.sourceSignals)
-      ? topic.sourceSignals.map((signal) => ({
+    const labelSource = safeTopic.categoryLabels;
+    const sourceSignals = Array.isArray(safeTopic.sourceSignals)
+      ? safeTopic.sourceSignals.map((signal) => ({
         ...signal,
         title: decodeHtmlEntities(signal?.title ?? ''),
         summary: decodeHtmlEntities(signal?.summary ?? ''),
@@ -17,22 +18,27 @@
       : [];
 
     return {
-      ...topic,
-      title: decodeHtmlEntities(topic.title ?? ''),
-      summary: decodeHtmlEntities(topic.summary ?? ''),
-      briefSummary: decodeHtmlEntities(topic.briefSummary ?? ''),
-      whatHappened: decodeHtmlEntities(topic.whatHappened ?? ''),
-      whyHot: decodeHtmlEntities(topic.whyHot ?? ''),
-      importantPoint: decodeHtmlEntities(topic.importantPoint ?? ''),
-      futureOutlook: decodeHtmlEntities(topic.futureOutlook ?? ''),
+      ...safeTopic,
+      title: decodeHtmlEntities(safeTopic.title ?? ''),
+      summary: decodeHtmlEntities(safeTopic.summary ?? ''),
+      briefSummary: decodeHtmlEntities(safeTopic.briefSummary ?? ''),
+      whatHappened: decodeHtmlEntities(safeTopic.whatHappened ?? ''),
+      whyHot: decodeHtmlEntities(safeTopic.whyHot ?? ''),
+      importantPoint: decodeHtmlEntities(safeTopic.importantPoint ?? ''),
+      futureOutlook: decodeHtmlEntities(safeTopic.futureOutlook ?? ''),
       category,
       categories: [...new Set(normalizedCategories)],
-      categoryLabel: normalizeLegacyCategoryLabel(topic.categoryLabel, category),
+      categoryLabel: normalizeLegacyCategoryLabel(safeTopic.categoryLabel, category),
       categoryLabels: Array.isArray(labelSource) && labelSource.length ? labelSource.filter((label) => label !== 'ネタ') : [categoryLabelFor(category)],
       sourceSignals,
-      searchLinks: includeSearchLinks && Array.isArray(topic.searchLinks) ? topic.searchLinks : [],
-      thumbnailUrl: pickCardImageUrl(topic),
+      searchLinks: includeSearchLinks && Array.isArray(safeTopic.searchLinks) ? safeTopic.searchLinks : [],
+      thumbnailUrl: pickCardImageUrl(safeTopic),
     };
+  }
+
+  function sanitizeArticleSummaryCollection(topics) {
+    if (!window.NewsSummaryIntegrity) return Array.isArray(topics) ? topics : [];
+    return window.NewsSummaryIntegrity.sanitizeArticleSummaryCollection(topics);
   }
 
   function normalizeLegacyCategory(category) {
@@ -630,6 +636,7 @@
     mergeReports,
     normalizeTopic,
     prepareNewsListItems,
+    sanitizeArticleSummaryCollection,
     getPrimarySourceLabel,
     getPrimarySourceSignal,
     getPrimarySourceUrl,

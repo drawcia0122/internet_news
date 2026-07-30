@@ -13,6 +13,7 @@ const {
   matchesNewsCategory,
   pickCardImageUrl,
   prepareNewsListItems,
+  sanitizeArticleSummaryCollection,
 } = window.TopicClientUtils;
 const {
   normalizeEventDateValue,
@@ -394,9 +395,9 @@ async function fetchHomeNewsPagePayload(pageNumber) {
 
 function applyArchivePayload(payload, { append = false } = {}) {
   const rawItems = Array.isArray(payload?.items) ? payload.items : [];
-  const normalizedItems = rawItems.map(normalizeTrendTopic);
+  const normalizedItems = sanitizeArticleSummaryCollection(rawItems).map(normalizeTrendTopic);
   const nextItems = append ? [...archiveTopics, ...normalizedItems] : normalizedItems;
-  archiveTopics = sanitizeTopicCollectionThumbnails(prepareNewsListItems(nextItems));
+  archiveTopics = sanitizeTopicCollectionThumbnails(prepareNewsListItems(sanitizeArticleSummaryCollection(nextItems)));
   archiveTotalTopicCount = Math.max(
     archiveTopics.length,
     Number(payload?.totalCount ?? payload?.maxItems ?? rawItems.length ?? 0),

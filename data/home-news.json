@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-07-30T04:13:06.614Z",
+  "generatedAt": "2026-07-30T07:16:30.743Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
     "general": 0,
-    "tech": 8,
+    "tech": 11,
     "business": 7,
     "politics": 0,
-    "entertainment": 77,
-    "anime": 14,
+    "entertainment": 76,
+    "anime": 13,
     "games": 157,
     "game-features": 1,
     "anime-features": 0,
     "manga": 46,
     "books": 0,
-    "sports": 2,
+    "sports": 3,
     "net-culture": 0,
     "matome": 0,
     "crime": 1,
@@ -40,17 +40,17 @@
         "アダルト系",
         "ゲーム"
       ],
-      "score": 104,
-      "posts": 3,
+      "score": 108,
+      "posts": 4,
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165707.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/29/169923.html",
       "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
+        "複数メディア4本がほぼ同時に扱っています。",
         "主要ニュースソースや公式発表ベースで確認されています。"
       ],
       "sourceSignals": [
@@ -77,12 +77,138 @@
         }
       ],
       "whatHappened": "『ウマ娘』新育成は「セイウンスカイ」「メジロブライト」の衣装違い",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "whyHot": "複数メディア4本がほぼ同時に扱っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ポケモンユーザー",
         "ゲームユーザー",
         "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-初代-halo-のキャンペーンをフルリメイク-halo-campaign-evolved-配信開始-さまざまな部分を現代風にアレンジ-4gamer.net/games/956/g095668/20260729035",
+      "title": "初代「Halo」のキャンペーンをフルリメイク。「Halo: Campaign Evolved」，配信開始。さまざまな部分を現代風にアレンジ",
+      "summary": "XboxGameStudiosは本日（2026年7月29日），HaloStudiosが開発した新作タイトル「Halo:CampaignEvolved」をリリースした…",
+      "briefSummary": "XboxGameStudiosは本日（2026年7月29日），HaloStudiosが開発した新作タイトル「Halo:CampaignEvolved」をリリースした。本作は，人気FPSシリーズ「Halo」の1作目「Halo:CombatEv…",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 102,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/956/G095668/20260729035/SS/003.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-30T07:16:30.743Z",
+      "time": "直近",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/956/G095668/20260729035/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "初代「Halo」のキャンペーンをフルリメイク。「Halo: Campaign Evolved」，配信開始。さまざまな部分を現代風にアレンジ",
+          "url": "https://www.4gamer.net/games/956/G095668/20260729035/",
+          "canonicalUrl": "https://www.4gamer.net/games/956/G095668/20260729035/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/956/G095668/20260729035/SS/003.jpg"
+        }
+      ],
+      "whatHappened": "初代「Halo」のキャンペーンをフルリメイク",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "終了前の条件確認や購入判断に直結しやすい情報です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き",
+        "セール好き"
+      ]
+    },
+    {
+      "id": "auto-tech-戦争-復讐-ケモノ-テーマの-戦場のフーガ-スマホ版が配信開始-リリース記念で20-オフセール実施中-inside-games.jp/article/2026/07/29/185361.html",
+      "title": "“戦争×復讐×ケモノ”テーマの『戦場のフーガ』スマホ版が配信開始！リリース記念で20%オフセール実施中",
+      "summary": "スマートフォン版『戦場のフーガ』が、7月29日よりiOS・Android向けに配信開始",
+      "briefSummary": "『戦場のフーガ』は、“戦争×復讐×ケモノ”をテーマにしたドラマティックシュミレーションRPGです。子どもたちは捕虜にされた親たちを解放するために、巨大戦車タラニスに乗り込み、立ちふさがる敵兵器を撃破しながら進んでいくのが特徴です。",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 102,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1760295.webp",
+      "publishedAt": null,
+      "capturedAt": "2026-07-30T07:16:30.743Z",
+      "time": "直近",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/07/29/185361.html",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch",
+            "pokemon"
+          ],
+          "title": "“戦争×復讐×ケモノ”テーマの『戦場のフーガ』スマホ版が配信開始！リリース記念で20%オフセール実施中",
+          "url": "https://www.inside-games.jp/article/2026/07/29/185361.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/07/29/185361.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1760295.webp"
+        }
+      ],
+      "whatHappened": "“戦争×復讐×ケモノ”テーマの『戦場のフーガ』スマホ版が配信開始",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "終了前の条件確認や購入判断に直結しやすい情報です。",
+      "targetAudience": [
+        "ポケモンユーザー",
+        "ゲームユーザー",
+        "ガジェット好き",
+        "セール好き"
       ]
     },
     {
@@ -106,7 +232,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/028/G102888/20260729037/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/028/G102888/20260729037/",
@@ -165,7 +291,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/946/G094686/20260729058/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/946/G094686/20260729058/",
@@ -225,7 +351,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/028/G102873/20260729023/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/028/G102873/20260729023/",
@@ -288,7 +414,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165533.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/29/169906.html",
@@ -330,128 +456,10 @@
       ]
     },
     {
-      "id": "auto-games-ケツバトラー-大型アプデ-シリーズ2-が7月30日開幕-初の-dlcケツバトラー-参戦や-新システム-シリアスゾーン-が解禁-gamespark.jp/article/2026/07/29/169903.html",
-      "title": "『ケツバトラー』大型アプデ「シリーズ2」が7月30日開幕！初の“DLCケツバトラー”参戦や、新システム「シリアスゾーン」が解禁",
-      "summary": "初のDLCケツバトラー「キデン」参戦！漫画「ケツバトラー」でも、「キデン」を新主人公とする新章が開幕。",
-      "briefSummary": "カヤックは、ニンテンドースイッチ向けソフト 『ケツバトラー』 にて、シリーズ史上最大となる大型アップデート「シリーズ2」を7月30日に配信すると発表しました。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 100,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165514.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/07/29/169903.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "『ケツバトラー』大型アプデ「シリーズ2」が7月30日開幕！初の“DLCケツバトラー”参戦や、新システム「シリアスゾーン」が解禁",
-          "url": "http://www.gamespark.jp/article/2026/07/29/169903.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/29/169903.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165514.jpg"
-        }
-      ],
-      "whatHappened": "『ケツバトラー』大型アプデ「シリーズ2」が7月30日開幕",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-pc通販-ドスパラ-が-熊本地震に被災した人を対象に修理サービスの一部料金を無償化-galleria-など同社製のpcが対象-gamespark.jp/article/2026/07/29/169915.html",
-      "title": "PC通販「ドスパラ」が、熊本地震に被災した人を対象に修理サービスの一部料金を無償化―「GALLERIA」など同社製のPCが対象",
-      "summary": "ドスパラのPCブランドであるGALLERIA・raytrek・Diginnos・THIRDWAVEが対象となっています。",
-      "briefSummary": "“金銭授受疑惑”で揺れる福岡県議会 自民会長が政治資金パーティー開催 震度7熊本地震発生も予定通り【福岡発】",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 100,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165564.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/07/29/169915.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "PC通販「ドスパラ」が、熊本地震に被災した人を対象に修理サービスの一部料金を無償化―「GALLERIA」など同社製のPCが対象",
-          "url": "http://www.gamespark.jp/article/2026/07/29/169915.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/29/169915.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165564.jpg"
-        }
-      ],
-      "whatHappened": "PC通販「ドスパラ」が、熊本地震に被災した人を対象に修理サービスの一部料金を無償化―「GAL…",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
       "id": "auto-games-坂本真綾-ロングインタビュー-喪失感は宝物になる-30周年を終えて語る-fate-grand-order-11年の軌跡とベストアルバム-余韻-animeanime.jp/article/2026/07/29/101539.html",
       "title": "坂本真綾 ロングインタビュー「喪失感は宝物になる」　30周年を終えて語る、「Fate/Grand Order」11年の軌跡とベストアルバム「余韻」",
       "summary": "声優・アーティスト坂本真綾がデビュー30周年を経て語る創作の軌跡。『Fate/Grand Order』と歩んだ11年の物語、そして主題歌ベストアルバム『余韻』に込めた想いを明かす。",
-      "briefSummary": "声優・アーティスト坂本真綾がデビュー30周年を経て語る創作の軌跡。『Fate/Grand Order』と歩んだ11年の物語、そして主題歌ベストアルバム『余韻』に込めた想いを明かす。",
+      "briefSummary": "",
       "category": "games",
       "categories": [
         "games",
@@ -470,7 +478,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/907624.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/07/29/101539.html",
@@ -534,7 +542,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165804.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/30/169930.html",
@@ -596,7 +604,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165677.png",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/29/169924.html",
@@ -637,66 +645,65 @@
       ]
     },
     {
-      "id": "auto-manga-fairy-tail-新シリーズ-re-fantasia-連載開始-20周年を記念し冨樫義博らによるイラスト公開-animeanime.jp/article/2026/07/29/101563.html",
-      "title": "「FAIRY TAIL」新シリーズ「RE:FANTASIA」連載開始！ 20周年を記念し冨樫義博らによるイラスト公開",
-      "summary": "マンガ『FAIRY TAIL』の20周年と新シリーズ『FAIRY TAIL RE:FANTASIA』の連載開始に伴い、出版社・編集部の垣根を超えて作家たちが寄稿したイラストが公開された。『はじめの一歩』の森川ジョージや『キン肉マン』のゆでたまご、『HUNTER×HUNTER』の冨樫義博らがナツたちを…",
-      "briefSummary": "そんな『FAIRY TAIL』はこのほど、7月29日発売の「週刊少年マガジン」35号より真島ヒロの最新作にして完全新作ストーリーを描く『FAIRY TAIL RE:FANTASIA』の短期集中連載が始まった。「週刊少年マガジン」での連載は2年ぶりとなる。",
-      "category": "manga",
+      "id": "auto-business-株式会社ポケモン-令和8年熊本地震-被災地支援に総額1億円を拠出へ-gamespark.jp/article/2026/07/30/169952.html",
+      "title": "株式会社ポケモン、「令和8年熊本地震」被災地支援に総額1億円を拠出へ",
+      "summary": "2026年7月28日発生の令和8年熊本地震の被災地支援として、株式会社ポケモンが総額1億円の拠出を決定",
+      "briefSummary": "「エンタメじゃないのよ？」熊本地震の相次ぐ”SNS考察”に批判殺到「すげぇ気分悪い」「ほんと嫌になる」憤りの声",
+      "category": "business",
       "categories": [
-        "manga",
-        "entertainment",
-        "anime",
+        "business",
+        "games",
         "general"
       ],
-      "categoryLabel": "漫画",
+      "categoryLabel": "経済",
       "categoryLabels": [
-        "漫画",
-        "エンタメ",
-        "アニメ"
+        "経済",
+        "ゲーム"
       ],
-      "score": 98,
+      "score": 100,
       "posts": 2,
       "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911795.jpg",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1166103.png",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/07/29/101563.html",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/30/169952.html",
       "hotReasons": [
         "複数ソースで同じ話題が確認されています。",
-        "専門媒体や公式ソースが優先的に拾っています。"
+        "一般ユーザーの関心が集まりやすいテーマです。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
           "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
+            "games",
+            "pc",
+            "console"
           ],
-          "title": "「FAIRY TAIL」新シリーズ「RE:FANTASIA」連載開始！ 20周年を記念し冨樫義博らによるイラスト公開",
-          "url": "https://animeanime.jp/article/2026/07/29/101563.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/07/29/101563.html",
+          "title": "株式会社ポケモン、「令和8年熊本地震」被災地支援に総額1億円を拠出へ",
+          "url": "http://www.gamespark.jp/article/2026/07/30/169952.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/30/169952.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911795.jpg"
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1166103.png"
         }
       ],
-      "whatHappened": "「FAIRY TAIL」新シリーズ「RE:FANTASIA」連載開始",
+      "whatHappened": "株式会社ポケモン、「令和8年熊本地震」被災地支援に総額1億円を拠出へ",
       "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
+        "ポケモンユーザー",
+        "ゲームユーザー",
         "ガジェット好き",
-        "漫画・アニメ好き"
+        "投資家"
       ]
     },
     {
@@ -722,7 +729,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1151938.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/07/29/169910.html",
@@ -763,64 +770,6 @@
       ]
     },
     {
-      "id": "auto-games-ゼノブレイド2-nintendo-switch-2-edition-フィールドスキルの仕様変更が話題に-エンゲージしていないブレイドも判定対象になり設定の手間解-gamespark.jp/article/2026/07/30/169941.html",
-      "title": "『ゼノブレイド2 Nintendo Switch 2 Edition』フィールドスキルの仕様変更が話題に―エンゲージしていないブレイドも判定対象になり設定の手間解消",
-      "summary": "必要なフィールドスキルに合わせて、ブレイドをエンゲージし直す手間が解消されています。",
-      "briefSummary": "そうしたなか、『Switch 2 Edition』ではエンゲージしていないブレイドもフィールドスキルの判定対象となっていることが判明。ブレイドをエンゲージし直す手間が解消されており、SNS上では「大革命やん」「神ゲーとさせてください」といった反応が見られます。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165948.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/07/30/169941.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "『ゼノブレイド2 Nintendo Switch 2 Edition』フィールドスキルの仕様変更が話題に―エンゲージしていないブレイドも判定対象になり設定の手間解消",
-          "url": "http://www.gamespark.jp/article/2026/07/30/169941.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/30/169941.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165948.jpg"
-        }
-      ],
-      "whatHappened": "『ゼノブレイド2 Nintendo Switch 2 Edition』フィールドスキルの仕様…",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
       "id": "auto-entertainment-ムーミンママが肌身離さず持ち歩く-黒いハンドバッグ-を忠実再現-キタムラコラボ第5弾が登場-animeanime.jp/article/2026/07/30/101571.html",
       "title": "ムーミンママが肌身離さず持ち歩く“黒いハンドバッグ”を忠実再現♪ キタムラコラボ第5弾が登場",
       "summary": "『ムーミン』より、横浜元町のオリジナルバッグブランド「キタムラ」とのコラボレーションアイテム第5弾が登場。ムーミンママが肌身離さず持ち歩いている「黒いハンドバッグ」を忠実に再現した特別なハンドバッグ",
@@ -843,7 +792,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/912416.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/07/30/101571.html",
@@ -884,6 +833,246 @@
       ]
     },
     {
+      "id": "auto-entertainment-北斗の拳-お前はもう貼っている-ケンシロウ-ラオウの限定パケに注目-ホットパッチ-が登場-animeanime.jp/article/2026/07/30/101569.html",
+      "title": "「北斗の拳」“お前はもう貼っている”!?  ケンシロウ＆ラオウの限定パケに注目☆「ホットパッチ」が登場",
+      "summary": "アニメ『北斗の拳 -FIST OF NORTH STAR-』と鎮痛温感膏がコラボレーションした「第3類医薬品・北斗の拳ホットパッチ」が発売中。 『北斗の拳』は、武論尊（原作）、原哲夫（作画）によっ",
+      "briefSummary": "アニメ『北斗の拳 -FIST OF NORTH STAR-』と鎮痛温感膏がコラボレーションした「第3類医薬品・北斗の拳ホットパッチ」が発売中。 『北斗の拳』は、武論尊（原作）、原哲夫（作画）によっ",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "anime",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画",
+        "アニメ"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/912068.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-30T07:16:30.743Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/07/30/101569.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「北斗の拳」“お前はもう貼っている”!?  ケンシロウ＆ラオウの限定パケに注目☆「ホットパッチ」が登場",
+          "url": "https://animeanime.jp/article/2026/07/30/101569.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/07/30/101569.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/912068.jpg"
+        }
+      ],
+      "whatHappened": "「北斗の拳」“お前はもう貼っている”",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-ブリガンダイン-アビス-スイッチ2-ps5-xsx向け体験版が配信スタート-2勢力の序盤をプレイ可能で最新トレイラーも公開-gamespark.jp/article/2026/07/30/169951.html",
+      "title": "『ブリガンダイン アビス』スイッチ2/PS5/XSX向け体験版が配信スタート！2勢力の序盤をプレイ可能で最新トレイラーも公開",
+      "summary": "ハピネットは、アドグローブが開発するファンタジーウォーシミュレーション 『ブリガンダイン アビス』 について、ニンテンドースイッチ2/PS5/XBOX Series X|S向け体験版の配信を開始しました。",
+      "briefSummary": "ハピネットは、アドグローブが開発するファンタジーウォーシミュレーション 『ブリガンダイン アビス』 について、ニンテンドースイッチ2/PS5/XBOX Series X|S向け体験版の配信を開始しました。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1166079.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-30T07:16:30.743Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/30/169951.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "『ブリガンダイン アビス』スイッチ2/PS5/XSX向け体験版が配信スタート！2勢力の序盤をプレイ可能で最新トレイラーも公開",
+          "url": "http://www.gamespark.jp/article/2026/07/30/169951.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/30/169951.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1166079.jpg"
+        }
+      ],
+      "whatHappened": "『ブリガンダイン アビス』スイッチ2/PS5/XSX向け体験版が配信スタート",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-manga-fairy-tail-新シリーズ-re-fantasia-連載開始-20周年を記念し冨樫義博らによるイラスト公開-animeanime.jp/article/2026/07/29/101563.html",
+      "title": "「FAIRY TAIL」新シリーズ「RE:FANTASIA」連載開始！ 20周年を記念し冨樫義博らによるイラスト公開",
+      "summary": "マンガ『FAIRY TAIL』の20周年と新シリーズ『FAIRY TAIL RE:FANTASIA』の連載開始に伴い、出版社・編集部の垣根を超えて作家たちが寄稿したイラストが公開された。『はじめの一歩』の森川ジョージや『キン肉マン』のゆでたまご、『HUNTER×HUNTER』の冨樫義博らがナツたちを…",
+      "briefSummary": "そんな『FAIRY TAIL』はこのほど、7月29日発売の「週刊少年マガジン」35号より真島ヒロの最新作にして完全新作ストーリーを描く『FAIRY TAIL RE:FANTASIA』の短期集中連載が始まった。「週刊少年マガジン」での連載は2年ぶりとなる。",
+      "category": "manga",
+      "categories": [
+        "manga",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "漫画",
+      "categoryLabels": [
+        "漫画",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911795.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-30T07:16:30.743Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/07/29/101563.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「FAIRY TAIL」新シリーズ「RE:FANTASIA」連載開始！ 20周年を記念し冨樫義博らによるイラスト公開",
+          "url": "https://animeanime.jp/article/2026/07/29/101563.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/07/29/101563.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911795.jpg"
+        }
+      ],
+      "whatHappened": "「FAIRY TAIL」新シリーズ「RE:FANTASIA」連載開始",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-ゼノブレイド2-nintendo-switch-2-edition-フィールドスキルの仕様変更が話題に-エンゲージしていないブレイドも判定対象になり設定の手間解-gamespark.jp/article/2026/07/30/169941.html",
+      "title": "『ゼノブレイド2 Nintendo Switch 2 Edition』フィールドスキルの仕様変更が話題に―エンゲージしていないブレイドも判定対象になり設定の手間解消",
+      "summary": "必要なフィールドスキルに合わせて、ブレイドをエンゲージし直す手間が解消されています。",
+      "briefSummary": "そうしたなか、『Switch 2 Edition』ではエンゲージしていないブレイドもフィールドスキルの判定対象となっていることが判明。ブレイドをエンゲージし直す手間が解消されており、SNS上では「大革命やん」「神ゲーとさせてください」といった反応が見られます。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165948.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-07-30T07:16:30.743Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/07/30/169941.html",
+      "hotReasons": [
+        "検索需要やトレンド化の兆しが強い話題です。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "『ゼノブレイド2 Nintendo Switch 2 Edition』フィールドスキルの仕様変更が話題に―エンゲージしていないブレイドも判定対象になり設定の手間解消",
+          "url": "http://www.gamespark.jp/article/2026/07/30/169941.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/30/169941.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165948.jpg"
+        }
+      ],
+      "whatHappened": "『ゼノブレイド2 Nintendo Switch 2 Edition』フィールドスキルの仕様…",
+      "whyHot": "検索需要やトレンド化の兆しが強い話題です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
       "id": "auto-manga-おかえりなさい泣-泣くてこんなん-真島ヒロ帰還-fairy-tail-新作短期集中連載開始でファン大歓喜-animeanime.jp/article/2026/07/30/101570.html",
       "title": "「おかえりなさい泣」「泣くてこんなん」真島ヒロ帰還！「FAIRY TAIL」新作短期集中連載開始でファン大歓喜",
       "summary": "マンガ『FAIRY TAIL』の20周年と新シリーズ『FAIRY TAIL RE:FANTASIA』の短期集中連載開始が発表され、Xではファンたちから歓喜の声が寄せられ、話題になっている。 『FA",
@@ -892,26 +1081,23 @@
       "categories": [
         "manga",
         "entertainment",
-        "anime",
         "general"
       ],
       "categoryLabel": "漫画",
       "categoryLabels": [
         "漫画",
-        "エンタメ",
-        "アニメ"
+        "エンタメ"
       ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/912408.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/07/30/101570.html",
       "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
@@ -939,68 +1125,10 @@
         }
       ],
       "whatHappened": "「おかえりなさい泣」「泣くてこんなん」真島ヒロ帰還",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": [
-        "ガジェット好き",
         "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-games-今見ると-攻めすぎなハイレグ-スト6-キャミィが初代コスチュームで高級スタチュー化-後ろ姿もひたすら眩しい-gamespark.jp/article/2026/07/29/169901.html",
-      "title": "今見ると、攻めすぎなハイレグ！『スト6』キャミィが初代コスチュームで高級スタチュー化―後ろ姿もひたすら眩しい",
-      "summary": "新作スタチュー「プレミアムマスターライン ストリートファイター6 キャミィ クラシックコスチューム」の予約が受付中！",
-      "briefSummary": "『ストリートファイター6』より、「キャミィ」がOutfit 2こと初代コスチュームで1/4スケールスタチュー化。深紅のベレー帽や二房のダッチブレイド、引き締まった身体にフィットするレオタード。最新のグラフィックでリアルさを増したコスチュームを、細部に至るまで高精細に作り上げています。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165270.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/07/29/169901.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "今見ると、攻めすぎなハイレグ！『スト6』キャミィが初代コスチュームで高級スタチュー化―後ろ姿もひたすら眩しい",
-          "url": "http://www.gamespark.jp/article/2026/07/29/169901.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/07/29/169901.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1165270.jpg"
-        }
-      ],
-      "whatHappened": "今見ると、攻めすぎなハイレグ",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
       ]
     },
     {
@@ -1024,7 +1152,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/028/G102859/20260729014/SS/002.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/028/G102859/20260729014/",
@@ -1084,7 +1212,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911489.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
+      "capturedAt": "2026-07-30T07:16:30.743Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/07/29/101538.html",
@@ -1122,128 +1250,6 @@
       "targetAudience": [
         "漫画・アニメ好き",
         "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-主人公がまさかの-衝撃展開に-ここで終わるの-と騒然-天は赤い河のほとり-第4話-ネタバレあり反応まとめ-animeanime.jp/article/2026/07/29/101554.html",
-      "title": "主人公がまさかの…!? 衝撃展開に「ここで終わるの!?」と騒然「天は赤い河のほとり」第4話【ネタバレあり反応まとめ】",
-      "summary": "「 主人公がまさかの…!? 衝撃展開に「ここで終わるの!?」と騒然「天は赤い河のほとり」第4話【ネタバレあり反応まとめ】 」に一致する記事は見つかりませんでした。",
-      "briefSummary": "「 主人公がまさかの…!? 衝撃展開に「ここで終わるの!?」と騒然「天は赤い河のほとり」第4話【ネタバレあり反応まとめ】 」に一致する記事は見つかりませんでした。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911514.png",
-      "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/07/29/101554.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "主人公がまさかの…!? 衝撃展開に「ここで終わるの!?」と騒然「天は赤い河のほとり」第4話【ネタバレあり反応まとめ】",
-          "url": "https://animeanime.jp/article/2026/07/29/101554.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/07/29/101554.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911514.png"
-        }
-      ],
-      "whatHappened": "主人公がまさかの…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-anime-夏アニメ-おっさん剣聖-ベリルは初めての帰省を果たすのだが-想定外の戦いが勃発-第4話先行カット-animeanime.jp/article/2026/07/29/101549.html",
-      "title": "夏アニメ「おっさん剣聖」ベリルは初めての帰省を果たすのだが…想定外の戦いが勃発!? 第4話先行カット",
-      "summary": "夏アニメ『片田舎のおっさん、剣聖になるII』より、2026年7月29日（水）から放送開始となる第4話「片田舎のおっさん、帰省する」のあらすじと先行場面カットが公開された。",
-      "briefSummary": "夏アニメ『片田舎のおっさん、剣聖になるII』より、2026年7月29日（水）から放送開始となる第4話「片田舎のおっさん、帰省する」のあらすじと先行場面カットが公開された。",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "アニメ",
-      "categoryLabels": [
-        "アニメ",
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911825.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-07-30T04:13:06.614Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/07/29/101549.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "夏アニメ「おっさん剣聖」ベリルは初めての帰省を果たすのだが…想定外の戦いが勃発!? 第4話先行カット",
-          "url": "https://animeanime.jp/article/2026/07/29/101549.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/07/29/101549.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/911825.jpg"
-        }
-      ],
-      "whatHappened": "夏アニメ「おっさん剣聖」ベリルは初めての帰省を果たすのだが…想定外の戦いが勃発",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
       ]
     }
   ]

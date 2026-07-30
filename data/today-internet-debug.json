@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-30T21:21:51.265Z",
+  "generatedAt": "2026-07-30T22:42:20.437Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-350",
+  "selectedClusterId": "today-cluster-348",
   "selectedTitle": "【速報】高市首相は「２年後には私が責任を持って確実に税率を元に戻す」と述べた：時事ドットコム",
   "candidates": [
     {
-      "clusterId": "today-cluster-350",
+      "clusterId": "today-cluster-348",
       "title": "【速報】高市首相は「２年後には私が責任を持って確実に税率を元に戻す」と述べた：時事ドットコム",
       "category": "politics",
       "categories": [
@@ -38,7 +38,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 18.333333333333332,
+        "searchScore": 21.666666666666668,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -58,7 +58,112 @@
       ]
     },
     {
-      "clusterId": "today-cluster-153",
+      "clusterId": "today-cluster-1",
+      "title": "映画『ストリートファイター』ブランカとリュウの戦闘映像が公開。原作再現の電撃で骨が見える演出や、ローリングアタック、そして波動拳が確認できる",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 76.6,
+      "confidence": 0.48,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.9,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 7,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 45.7,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-955",
+      "title": "食料品消費税 来年4月から2年間 1％ 高市首相が役員会で表明",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 71.9,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 13.3,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 5.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 83.33333333333334,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-147",
       "title": "『ゼノブレイド2 Nintendo Switch 2 Edition』ホムラはお尻、ヒカリは清楚さに磨きがかかる!! アルストの絶景より先に目が行く曲線美を観察",
       "category": "games",
       "categories": [
@@ -109,59 +214,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1860",
-      "title": "GEZANマヒトゥ・ザ・ピーポーが性加害、バンドは一定期間の活動を休止",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "sns",
-        "net-culture",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 65.8,
-      "confidence": 0.34,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20,
-        "internetNativeBoost": 8,
-        "search": 7.5,
-        "social": 7.2,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 17,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 46.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 33.8,
-        "internalSocialScore": 56.4
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-156",
+      "clusterId": "today-cluster-149",
       "title": "SFC時代を思い起こさせるハクスラRPG、コンソールにも登場！『Dungeon Antiqua 2』PS5/Xbox Series X|S/スイッチにて8月20日発売",
       "category": "games",
       "categories": [
@@ -204,57 +257,6 @@
         "archiveHeatScore": 94,
         "internalSearchScore": 36.8,
         "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-593",
-      "title": "歌指導と称しわいせつ行為か 音楽クリエイター逮捕 警視庁",
-      "category": "crime",
-      "categories": [
-        "crime",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 62.6,
-      "confidence": 0.44,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 4.9,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 20,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.3,
-        "internalSocialScore": 46.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

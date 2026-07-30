@@ -2,12 +2,13 @@
   const GENERIC_TOPIC_TOKENS = new Set(['速報', '公開', '発表', '開始', '決定', '話題', '最新', '本日', 'きょう', '今日', '判明', '疑惑', '意見']);
 
   function normalizeTopic(topic, { includeSearchLinks = true } = {}) {
-    const categories = normalizeCategories(topic.categories, topic.category);
+    const safeTopic = window.NewsSummaryIntegrity?.sanitizeArticleSummaryFields(topic) ?? topic;
+    const categories = normalizeCategories(safeTopic.categories, safeTopic.category);
     const normalizedCategories = categories.map(normalizeLegacyCategory);
     const category = normalizedCategories[0] ?? 'general';
-    const labelSource = topic.categoryLabels;
-    const sourceSignals = Array.isArray(topic.sourceSignals)
-      ? topic.sourceSignals.map((signal) => ({
+    const labelSource = safeTopic.categoryLabels;
+    const sourceSignals = Array.isArray(safeTopic.sourceSignals)
+      ? safeTopic.sourceSignals.map((signal) => ({
         ...signal,
         title: decodeHtmlEntities(signal?.title ?? ''),
         summary: decodeHtmlEntities(signal?.summary ?? ''),
@@ -17,22 +18,27 @@
       : [];
 
     return {
-      ...topic,
-      title: decodeHtmlEntities(topic.title ?? ''),
-      summary: decodeHtmlEntities(topic.summary ?? ''),
-      briefSummary: decodeHtmlEntities(topic.briefSummary ?? ''),
-      whatHappened: decodeHtmlEntities(topic.whatHappened ?? ''),
-      whyHot: decodeHtmlEntities(topic.whyHot ?? ''),
-      importantPoint: decodeHtmlEntities(topic.importantPoint ?? ''),
-      futureOutlook: decodeHtmlEntities(topic.futureOutlook ?? ''),
+      ...safeTopic,
+      title: decodeHtmlEntities(safeTopic.title ?? ''),
+      summary: decodeHtmlEntities(safeTopic.summary ?? ''),
+      briefSummary: decodeHtmlEntities(safeTopic.briefSummary ?? ''),
+      whatHappened: decodeHtmlEntities(safeTopic.whatHappened ?? ''),
+      whyHot: decodeHtmlEntities(safeTopic.whyHot ?? ''),
+      importantPoint: decodeHtmlEntities(safeTopic.importantPoint ?? ''),
+      futureOutlook: decodeHtmlEntities(safeTopic.futureOutlook ?? ''),
       category,
       categories: [...new Set(normalizedCategories)],
-      categoryLabel: normalizeLegacyCategoryLabel(topic.categoryLabel, category),
+      categoryLabel: normalizeLegacyCategoryLabel(safeTopic.categoryLabel, category),
       categoryLabels: Array.isArray(labelSource) && labelSource.length ? labelSource.filter((label) => label !== 'ネタ') : [categoryLabelFor(category)],
       sourceSignals,
-      searchLinks: includeSearchLinks && Array.isArray(topic.searchLinks) ? topic.searchLinks : [],
-      thumbnailUrl: pickCardImageUrl(topic),
+      searchLinks: includeSearchLinks && Array.isArray(safeTopic.searchLinks) ? safeTopic.searchLinks : [],
+      thumbnailUrl: pickCardImageUrl(safeTopic),
     };
+  }
+
+  function sanitizeArticleSummaryCollection(topics) {
+    if (!window.NewsSummaryIntegrity) return Array.isArray(topics) ? topics : [];
+    return window.NewsSummaryIntegrity.sanitizeArticleSummaryCollection(topics);
   }
 
   function normalizeLegacyCategory(category) {
@@ -404,10 +410,100 @@
   }
 
   function categoryDisplayLabel(topic) {
-    const labels = Array.isArray(topic.categoryLabels) && topic.categoryLabels.length
-      ? topic.categoryLabels
-      : normalizeCategories(topic.categories, topic.category).map(categoryLabelFor);
-    return labels.slice(0, 2).join(' / ');
+    const baseCategories = normalizeCategories(topic.categories, topic.category);
+    const categories = isAdultNewsContent(topic) && !baseCategories.includes('adult')
+      ? ['adult', ...baseCategories]
+      : baseCategories;
+    const suppliedLabels = Array.isArray(topic.categoryLabels) ? topic.categoryLabels : [];
+    const labelsByCategory = new Map(baseCategories.map((category, index) => [
+      category,
+      suppliedLabels[index] ?? categoryLabelFor(category),
+    ]));
+    const displayCategories = categories.length > 1
+      ? [...categories.filter((category) => category !== 'matome'), ...categories.filter((category) => category === 'matome')]
+      : categories;
+    return displayCategories.slice(0, 2).map((category) => labelsByCategory.get(category) ?? categoryLabelFor(category)).join(' / ');
+  }
+
+  function matchesNewsCategory(topic, category) {
+    if (!category || category === 'all') return true;
+    if (category === 'general') return String(topic?.category ?? '') === 'general';
+    if (category === 'adult') return hasCategory(topic, 'adult') || isAdultNewsContent(topic);
+    return hasCategory(topic, category);
+  }
+
+  function isAdultNewsContent(topic) {
+    const text = topicText(topic);
+    return /(アダルト|成人向け|18禁|r-?18|porn|fanza|dlsite|dmm|av女優|アダルトビデオ|同人音声|同人ゲーム|エロ漫画|エロゲ|美少女ゲーム|グラビア|水着|ビキニ|ランジェリー|コスプレ|セクシーショット|美ボディ|美バスト|美尻|谷間|美少女.{0,12}フィギュア|水着.{0,12}フィギュア|セクシー.{0,12}フィギュア)/i.test(text);
+  }
+
+  function prepareNewsListItems(topics) {
+    return dedupeTopics(Array.isArray(topics) ? topics : [])
+      .filter((topic) => isGeneralNewsListItem(topic))
+      .sort((left, right) => {
+        const timeDiff = Number(archiveTimestamp(right) ?? 0) - Number(archiveTimestamp(left) ?? 0);
+        if (timeDiff !== 0) return timeDiff;
+        return Number(right?.score ?? 0) - Number(left?.score ?? 0);
+      });
+  }
+
+  function isGeneralNewsListItem(topic) {
+    if (!topic || !String(topic.title ?? '').trim()) return false;
+
+    const sourceUrl = generalNewsSourceUrl(topic);
+    const text = topicText(topic);
+    const sourceName = String(
+      topic?.sourceName
+        ?? topic?.source
+        ?? topic?.sourceSignals?.[0]?.sourceName
+        ?? topic?.sourceSignals?.[0]?.source
+        ?? ''
+    ).toLowerCase();
+    const thumbnailUrl = String(topic?.thumbnailUrl ?? topic?.thumbnail ?? '').toLowerCase();
+
+    if (!sourceUrl) return false;
+    if (/読み込み失敗|リンクなし|整理中です|&#x[0-9a-f]+;|&#\d+;|&amp;#/.test(`${topic.title ?? ''} ${topic.summary ?? ''} ${text}`)) return false;
+    if (/japanese-tech-writing\/skill|\/skill\.md\b|\/readme\b/.test(text)) return false;
+    if (sourceName.includes('はてな') && /githubassets\.com\/assets\/gist-og-image|anond\.hatelabo\.jp\/assets\//.test(thumbnailUrl)) return false;
+
+    const sourceHost = generalNewsSourceHost(sourceUrl);
+    if (/(pr times|共同通信prワイヤー|valuepress|＠press|atpress|dream news|ドリームニュース|newscast|プレスリリース|スポンサー|タイアップ|広告|中古品)/i.test(text)) return false;
+    if (/\.(?:org|xyz|top|site)$/i.test(sourceHost)) return false;
+    if (/cfecgc-orange\.org|mercari|ラクマ|paypayフリマ/i.test(`${sourceHost} ${text}`)) return false;
+
+    const locale = String(
+      topic?.language
+        ?? topic?.lang
+        ?? topic?.locale
+        ?? topic?.sourceSignals?.[0]?.language
+        ?? topic?.sourceSignals?.[0]?.locale
+        ?? ''
+    ).toLowerCase();
+    if (locale && !/(^ja\b|japan|ja-jp)/.test(locale)) return false;
+    if (/bbc\.com$|bbc\.co\.uk$|cnn\.com$|reuters\.com$|telegram\.org$/.test(sourceHost)) return false;
+
+    const languageText = `${topic.title ?? ''} ${topic.summary ?? ''} ${topic.briefSummary ?? ''}`.replace(/\s+/g, '');
+    const japaneseCount = (languageText.match(/[\u3040-\u30ff\u4e00-\u9fff]/g) ?? []).length;
+    const latinCount = (languageText.match(/[A-Za-z]/g) ?? []).length;
+    return !languageText || (japaneseCount >= Math.max(8, Math.floor(latinCount * 0.35)) && (latinCount < 24 || japaneseCount > 4));
+  }
+
+  function generalNewsSourceUrl(topic) {
+    const candidates = [
+      topic?.sourceUrl,
+      topic?.url,
+      topic?.link,
+      getPrimarySourceUrl(topic),
+    ];
+    return candidates.find((value) => /^https?:\/\//i.test(String(value ?? '').trim())) ?? '';
+  }
+
+  function generalNewsSourceHost(sourceUrl) {
+    try {
+      return new URL(sourceUrl).hostname.replace(/^www\./, '').toLowerCase();
+    } catch {
+      return '';
+    }
   }
 
   function dedupeTopicsFuzzy(topics) {
@@ -533,9 +629,14 @@
     formatTopicDisplayTime,
     hasCategory,
     hasVisibleSummary,
+    isAdultNewsContent,
+    isGeneralNewsListItem,
     isWithinRange,
+    matchesNewsCategory,
     mergeReports,
     normalizeTopic,
+    prepareNewsListItems,
+    sanitizeArticleSummaryCollection,
     getPrimarySourceLabel,
     getPrimarySourceSignal,
     getPrimarySourceUrl,

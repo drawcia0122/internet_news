@@ -3,7 +3,17 @@ import { mkdir, readFile, writeFile, readdir, unlink } from "node:fs/promises";
 import { buildDailyBrief } from "../lib/daily-brief.mjs";
 import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, extractEncodedUrlsFromHtml, hasSuspiciousThumbnailMismatch, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
 import { collectTrendTopics } from "../lib/trend-aggregator.mjs";
+import "../news-summary-integrity.js";
 import { repairItemThumbnail } from "./repair-thumbnails.mjs";
+
+const {
+  articleIdentityKeys,
+  canonicalArticleUrl: canonicalSummaryArticleUrl,
+  hasSummaryTitleAlignment: hasArticleSummaryAlignment,
+  sanitizeArticleSummaryCollection,
+  sanitizeArticleSummaryFields,
+  titlesReferToSameArticle,
+} = globalThis.NewsSummaryIntegrity;
 
 const CATEGORY_LABELS = {
   general: "その他",
@@ -235,7 +245,9 @@ const capturedAt = payload.generatedAt ?? new Date().toISOString();
 const curatedItems = selectCuratedTrendItems(dedupedItems, MAX_CURRENT_ITEMS, payload.items ?? []);
 await enrichItemsWithMetadata(curatedItems, { limit: CURRENT_METADATA_ENRICH_LIMIT });
 await ensureFetchStageThumbnailCoverage(curatedItems, "current trend topics", { repairLimit: FETCH_STAGE_REPAIR_LIMIT });
-const normalizedCuratedItems = curatedItems.map((item) => normalizeStoredTopic(item, capturedAt));
+const normalizedCuratedItems = sanitizeArticleSummaryCollection(
+  curatedItems.map((item) => normalizeStoredTopic(item, capturedAt)),
+);
 const fallbackCurrentItems = Array.isArray(previousCurrentPayload.items)
   ? previousCurrentPayload.items.map((item) => normalizeStoredTopic(item, previousCurrentPayload.generatedAt))
   : [];
@@ -257,13 +269,14 @@ const currentPayload = {
 
 const archivePath = "data/trend-topics-archive.json";
 const archivePayload = await readArchivePayload(archivePath);
-const mergedArchiveItems = dedupeNearDuplicateItems(
+let mergedArchiveItems = sanitizeArticleSummaryCollection(dedupeNearDuplicateItems(
   mergeArchiveItems(
     (archivePayload.items ?? []).map((item) => normalizeArchiveItem(item, archivePayload.generatedAt)),
     dedupedItems.map((item) => normalizeArchiveItem(item, capturedAt)),
   ).filter((item) => isWithinArchiveWindow(item, capturedAt) && shouldKeepArchiveItem(item)),
-);
+));
 await enrichItemsWithMetadata(mergedArchiveItems, { limit: ARCHIVE_METADATA_ENRICH_LIMIT });
+mergedArchiveItems = sanitizeArticleSummaryCollection(mergedArchiveItems);
 await ensureFetchStageThumbnailCoverage(
   selectItemsForArchiveThumbnailCoverage(mergedArchiveItems, ARCHIVE_THUMBNAIL_COVERAGE_LIMIT),
   "news archive",
@@ -376,7 +389,7 @@ logThumbnailCoverage(currentPayload.items);
 console.log(`Saved ${currentPayload.items.length} trend topic(s).`);
 }
 
-await main();
+if (process.env.TREND_FETCH_SKIP_MAIN_FOR_TESTS !== "1") await main();
 
 function isNoRssEntriesError(error) {
   return error?.code === "ERR_NO_RSS_ENTRIES"
@@ -1385,11 +1398,13 @@ async function enrichItemMetadata(item, { force = false } = {}) {
   const uniqueUrls = [...new Set(candidateUrls)].slice(0, 6);
   if (!uniqueUrls.length) return;
 
-  let metadata = null;
   let bestMetadata = null;
+  const metadataByArticleKey = new Map();
   for (const candidateUrl of uniqueUrls) {
-    metadata = await fetchPageMetadata(candidateUrl, item.title).catch(() => null);
+    const fetchedMetadata = await fetchPageMetadata(candidateUrl, item.title).catch(() => null);
+    const metadata = sanitizeFetchedMetadata(fetchedMetadata, item.title);
     if (!metadata) continue;
+    registerFetchedMetadata(metadataByArticleKey, candidateUrl, metadata);
     bestMetadata = mergeFetchedMetadata(bestMetadata, metadata, item.title);
     const hasThumb = Boolean(bestMetadata?.thumbnailUrl);
     const hasSummary = hasUsefulSummary(bestMetadata?.summary) || Boolean(bestMetadata?.briefSummary) || hasUsefulSummary(item.summary);
@@ -1407,7 +1422,7 @@ async function enrichItemMetadata(item, { force = false } = {}) {
     item.thumbnail = bestMetadata.thumbnailUrl;
   }
 
-  if (shouldReplaceSummary(item.summary, bestMetadata.summary)) {
+  if (shouldReplaceSummary(item.summary, bestMetadata.summary, item.title)) {
     item.summary = bestMetadata.summary;
   }
 
@@ -1415,9 +1430,10 @@ async function enrichItemMetadata(item, { force = false } = {}) {
     item.briefSummary = bestMetadata.briefSummary;
   }
 
-  if (Array.isArray(item.sourceSignals) && (bestMetadata.thumbnailUrl || bestMetadata.summary || bestMetadata.briefSummary)) {
-    item.sourceSignals = item.sourceSignals.map((entry, index) => {
-      if (index !== 0) return entry;
+  if (Array.isArray(item.sourceSignals) && metadataByArticleKey.size) {
+    item.sourceSignals = item.sourceSignals.map((entry) => {
+      const entryMetadata = findFetchedMetadata(metadataByArticleKey, [entry?.canonicalUrl, entry?.url]);
+      if (!entryMetadata) return entry;
       const entryThumbnail = sanitizeThumbnailUrl(entry.thumbnailUrl ?? entry.thumbnail);
       const shouldReplaceEntryThumbnail = !entryThumbnail
         || isWeakThumbnailUrl(entryThumbnail)
@@ -1425,18 +1441,66 @@ async function enrichItemMetadata(item, { force = false } = {}) {
         || hasSuspiciousThumbnailMismatch(entryThumbnail, entry, item);
       return {
         ...entry,
-        thumbnailUrl: shouldReplaceEntryThumbnail ? (bestMetadata.thumbnailUrl || entryThumbnail || null) : entryThumbnail,
-        thumbnail: shouldReplaceEntryThumbnail ? (bestMetadata.thumbnailUrl || entryThumbnail || null) : entryThumbnail,
-        summary: entry.summary ?? bestMetadata.summary ?? null,
-        briefSummary: entry.briefSummary ?? bestMetadata.briefSummary ?? null,
+        thumbnailUrl: shouldReplaceEntryThumbnail ? (entryMetadata.thumbnailUrl || entryThumbnail || null) : entryThumbnail,
+        thumbnail: shouldReplaceEntryThumbnail ? (entryMetadata.thumbnailUrl || entryThumbnail || null) : entryThumbnail,
+        summary: shouldReplaceSummary(entry.summary, entryMetadata.summary, entry.title ?? item.title)
+          ? entryMetadata.summary
+          : (entry.summary ?? null),
+        briefSummary: shouldReplaceBriefSummary(entry.briefSummary, entryMetadata.briefSummary, entry.title ?? item.title)
+          ? entryMetadata.briefSummary
+          : (entry.briefSummary ?? null),
       };
     });
   }
 }
 
+function sanitizeFetchedMetadata(metadata, title = "") {
+  if (!metadata) return null;
+  const summary = hasArticleSummaryAlignment(metadata.summary, title) ? metadata.summary : null;
+  const briefSummary = hasArticleSummaryAlignment(metadata.briefSummary, title) ? metadata.briefSummary : null;
+  const pageTitleAligned = !metadata.pageTitle || titlesReferToSameArticle(title, metadata.pageTitle);
+  const thumbnailUrl = pageTitleAligned || summary || briefSummary
+    ? sanitizeThumbnailUrl(metadata.thumbnailUrl ?? metadata.thumbnail)
+    : null;
+  if (!thumbnailUrl && !summary && !briefSummary) return null;
+  return {
+    ...metadata,
+    thumbnailUrl,
+    thumbnail: thumbnailUrl,
+    summary,
+    briefSummary,
+  };
+}
+
+function registerFetchedMetadata(metadataByArticleKey, candidateUrl, metadata) {
+  const urls = [
+    candidateUrl,
+    metadata?.requestedUrl,
+    metadata?.responseUrl,
+    metadata?.summarySourceUrl,
+    metadata?.briefSummarySourceUrl,
+    metadata?.thumbnailSourceUrl,
+  ];
+  for (const url of urls) {
+    const key = canonicalSummaryArticleUrl(url);
+    if (!key) continue;
+    const current = metadataByArticleKey.get(key);
+    metadataByArticleKey.set(key, mergeFetchedMetadata(current, metadata));
+  }
+}
+
+function findFetchedMetadata(metadataByArticleKey, urls = []) {
+  for (const url of urls) {
+    const key = canonicalSummaryArticleUrl(url);
+    if (key && metadataByArticleKey.has(key)) return metadataByArticleKey.get(key);
+  }
+  return null;
+}
+
 function mergeFetchedMetadata(current, next, title = "") {
   if (!current) {
     return {
+      ...next,
       thumbnailUrl: sanitizeThumbnailUrl(next?.thumbnailUrl ?? next?.thumbnail) ?? null,
       summary: next?.summary ?? null,
       briefSummary: next?.briefSummary ?? null,
@@ -1448,8 +1512,14 @@ function mergeFetchedMetadata(current, next, title = "") {
   if (merged.thumbnailUrl && hasSuspiciousThumbnailMismatch(merged.thumbnailUrl, next) && nextThumb && !hasSuspiciousThumbnailMismatch(nextThumb, next)) {
     merged.thumbnailUrl = nextThumb;
   }
-  if (shouldReplaceSummary(merged.summary, next?.summary)) merged.summary = next.summary;
-  if (shouldReplaceBriefSummary(merged.briefSummary, next?.briefSummary, title)) merged.briefSummary = next.briefSummary;
+  if (shouldReplaceSummary(merged.summary, next?.summary, title)) {
+    merged.summary = next.summary;
+    merged.summarySourceUrl = next?.summarySourceUrl ?? next?.responseUrl ?? next?.requestedUrl ?? null;
+  }
+  if (shouldReplaceBriefSummary(merged.briefSummary, next?.briefSummary, title)) {
+    merged.briefSummary = next.briefSummary;
+    merged.briefSummarySourceUrl = next?.briefSummarySourceUrl ?? next?.responseUrl ?? next?.requestedUrl ?? null;
+  }
   return merged;
 }
 
@@ -1561,6 +1631,11 @@ async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()
 
   const articleCandidates = extractArticleTextCandidates(html);
   const jsonLdSummary = extractJsonLdSummary(html);
+  const pageTitle = normalizeSummaryText(
+    html.match(/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)["']/i)?.[1]
+      ?? html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]
+      ?? "",
+  );
   const summary = pickSummaryCandidate([
     html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i)?.[1],
     html.match(/<meta[^>]+name=["']twitter:description["'][^>]+content=["']([^"']+)["']/i)?.[1],
@@ -1568,7 +1643,7 @@ async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()
     jsonLdSummary,
     ...articleCandidates.slice(0, 3),
     html.match(/<p\b[^>]*>([\s\S]{40,240}?)<\/p>/i)?.[1],
-  ]);
+  ], title);
   const paragraphMatches = [...html.matchAll(/<p\b[^>]*>([\s\S]{30,320}?)<\/p>/gi)].map((match) => match[1]);
   const briefSummary = pickBriefSummaryCandidate([
     html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i)?.[1],
@@ -1580,18 +1655,25 @@ async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()
   ], title);
 
   const metadata = {
+    requestedUrl: normalizedUrl,
+    responseUrl,
+    pageTitle,
     thumbnailUrl: thumbnailMeta.thumbnailUrl,
     thumbnail: thumbnailMeta.thumbnail,
+    thumbnailSourceUrl: thumbnailMeta.thumbnailUrl ? responseUrl : null,
     summary,
+    summarySourceUrl: summary ? responseUrl : null,
     briefSummary,
+    briefSummarySourceUrl: briefSummary ? responseUrl : null,
   };
 
   if (shouldFollowNestedArticle(responseUrl, metadata)) {
     const outboundUrls = extractOutboundArticleUrls(html, responseUrl);
     for (const outboundUrl of outboundUrls.slice(0, 8)) {
       const nested = await fetchPageMetadata(outboundUrl, title, depth + 1, visited).catch(() => null);
-      if (nested?.thumbnailUrl || nested?.summary || nested?.briefSummary) {
-        return mergeFetchedMetadata(metadata, nested, title);
+      const sanitizedNested = sanitizeFetchedMetadata(nested, title);
+      if (sanitizedNested && (sanitizedNested.thumbnailUrl || sanitizedNested.summary || sanitizedNested.briefSummary)) {
+        return mergeFetchedMetadata(metadata, sanitizedNested, title);
       }
     }
   }
@@ -1633,11 +1715,11 @@ function mergeArchiveItems(previousItems, nextItems) {
     const currentTime = archiveTimestamp(current);
     const nextTime = archiveTimestamp(item);
     if (nextTime >= currentTime) {
-      map.set(key, {
+      map.set(key, sanitizeArticleSummaryFields({
         ...current,
         ...item,
         capturedAt: item.capturedAt ?? current.capturedAt,
-      });
+      }));
     }
   }
 
@@ -1705,16 +1787,12 @@ function shouldKeepArchiveItem(item) {
 }
 
 function archiveKeyFor(item) {
+  const identityUrlKey = [...articleIdentityKeys(item)].find((key) => key.startsWith("url:"));
+  if (identityUrlKey) return identityUrlKey;
+
   const stableId = String(item?.id ?? "").trim();
-  if (stableId) return stableId;
-
-  const primaryUrl = itemPrimaryUrl(item);
-  if (primaryUrl) return primaryUrl;
-
-  return (
-    canonicalSignalUrl(item.sourceSignals?.[0]?.url ?? "") ||
-    `${item.category ?? "topic"}:${item.title ?? "untitled"}`
-  );
+  if (stableId) return `id:${stableId}`;
+  return `title:${item.category ?? "topic"}:${normalizeContentFingerprint(item.title ?? "untitled")}`;
 }
 
 function archiveTimestamp(item) {
@@ -1973,10 +2051,10 @@ function isGoogleNewsUrl(value) {
   }
 }
 
-function pickSummaryCandidate(candidates) {
+function pickSummaryCandidate(candidates, title = "") {
   for (const candidate of candidates) {
     const normalized = normalizeExtractedSummary(candidate);
-    if (normalized) return normalized;
+    if (normalized && hasArticleSummaryAlignment(normalized, title)) return normalized;
   }
   return null;
 }
@@ -1984,7 +2062,7 @@ function pickSummaryCandidate(candidates) {
 function pickBriefSummaryCandidate(candidates, title = "") {
   const normalizedCandidates = candidates
     .map((candidate) => normalizeBriefSummaryText(stripHtml(String(candidate ?? ""))))
-    .filter(Boolean);
+    .filter((candidate) => candidate && hasArticleSummaryAlignment(candidate, title));
   const ranked = normalizedCandidates
     .map((candidate) => ({ candidate, score: scoreBriefCandidate(candidate, title) }))
     .sort((left, right) => right.score - left.score);
@@ -2004,19 +2082,20 @@ function normalizeExtractedSummary(value) {
   return text.slice(0, 150) + (text.length > 150 ? "…" : "");
 }
 
-function shouldReplaceSummary(currentSummary, nextSummary) {
-  if (!nextSummary) return false;
+function shouldReplaceSummary(currentSummary, nextSummary, title = "") {
+  if (!nextSummary || !hasArticleSummaryAlignment(nextSummary, title)) return false;
   if (!hasUsefulSummary(currentSummary)) return true;
   const current = normalizeSummaryText(currentSummary);
   const next = normalizeSummaryText(nextSummary);
-  if (!current) return true;
+  if (!current || !hasArticleSummaryAlignment(current, title)) return true;
   return next.length >= current.length + 20;
 }
 
 function shouldReplaceBriefSummary(currentSummary, nextSummary, title = "") {
   const next = normalizeBriefSummaryText(nextSummary);
-  if (!next) return false;
+  if (!next || !hasArticleSummaryAlignment(next, title)) return false;
   const current = normalizeBriefSummaryText(currentSummary);
+  if (current && !hasArticleSummaryAlignment(current, title)) return true;
   const titleFingerprint = normalizeContentFingerprint(title);
   const nextFingerprint = normalizeContentFingerprint(next);
   if (!current) return nextFingerprint !== titleFingerprint;
@@ -2066,7 +2145,7 @@ function hasSummaryTitleAlignment(summary, title = "") {
   if (!text) return false;
   if (/に一致する記事は見つかりませんでした/.test(text)) return false;
   if (/現在javascriptが無効になっています/i.test(text)) return false;
-  return titleKeywordOverlapScore(title, text) > 0 || isTitleRewrite(text, title);
+  return hasArticleSummaryAlignment(text, title);
 }
 
 function scoreBriefCandidate(candidate, title = "") {
@@ -2277,10 +2356,10 @@ function isYahooArticleUrl(value) {
 
 function buildStoredBriefSummary(item) {
   const signalSummaries = sanitizeSourceSignals(item.sourceSignals)
-    .map((signal) => normalizeBriefSummaryText(signal?.briefSummary || signal?.summary))
+    .map((signal) => normalizeAlignedBriefSummary(signal?.briefSummary || signal?.summary, signal?.title ?? item.title))
     .filter(Boolean);
-  const itemBrief = normalizeBriefSummaryText(item.briefSummary);
-  const itemSummary = normalizeBriefSummaryText(item.summary);
+  const itemBrief = normalizeAlignedBriefSummary(item.briefSummary, item.title);
+  const itemSummary = normalizeAlignedBriefSummary(item.summary, item.title);
   const candidate = itemBrief || signalSummaries[0] || itemSummary;
   if (candidate && !isTitleRewrite(candidate, item.title)) {
     return candidate;
@@ -2462,39 +2541,43 @@ function mergeDuplicateItems(left, right) {
   const categories = uniqueValues([...(left.categories ?? [left.category]), ...(right.categories ?? [right.category])]);
   const primaryCategory = categories.includes(winner.category) ? winner.category : categories[0] ?? winner.category ?? loser.category ?? "general";
 
-  return {
+  return sanitizeArticleSummaryFields({
     ...loser,
     ...winner,
     category: primaryCategory,
     categoryLabel: CATEGORY_LABELS[primaryCategory] ?? winner.categoryLabel ?? loser.categoryLabel ?? "その他",
     categories,
     categoryLabels: categories.map((category) => CATEGORY_LABELS[category] ?? "その他"),
-    briefSummary: pickBetterBriefSummary(left.briefSummary, right.briefSummary),
-    summary: pickBetterSummary(left.summary, right.summary),
+    briefSummary: pickBetterBriefSummary(left.briefSummary, right.briefSummary, winner.title),
+    summary: pickBetterSummary(left.summary, right.summary, winner.title),
     sourceSignals: mergedSignals,
     searchLinks: mergedLinks,
     posts: String(Math.max(Number(left.posts ?? 1), Number(right.posts ?? 1), mergedSignals.length || 1)),
     metricLabel: mergedSignals.length > 1 ? "sources" : (winner.metricLabel ?? loser.metricLabel ?? "source"),
     thumbnailUrl: sanitizeThumbnailUrl(winner.thumbnailUrl) ?? sanitizeThumbnailUrl(loser.thumbnailUrl) ?? mergedSignals.find((signal) => signal.thumbnailUrl)?.thumbnailUrl ?? null,
-  };
+  });
 }
 
-function pickBetterBriefSummary(leftSummary, rightSummary) {
+function pickBetterBriefSummary(leftSummary, rightSummary, title = "") {
   const left = normalizeBriefSummaryText(leftSummary);
   const right = normalizeBriefSummaryText(rightSummary);
-  if (left && !right) return left;
-  if (right && !left) return right;
-  return right.length > left.length ? right : left;
+  const alignedLeft = hasArticleSummaryAlignment(left, title) ? left : "";
+  const alignedRight = hasArticleSummaryAlignment(right, title) ? right : "";
+  if (alignedLeft && !alignedRight) return alignedLeft;
+  if (alignedRight && !alignedLeft) return alignedRight;
+  return alignedRight.length > alignedLeft.length ? alignedRight : alignedLeft;
 }
 
-function pickBetterSummary(leftSummary, rightSummary) {
+function pickBetterSummary(leftSummary, rightSummary, title = "") {
   const left = normalizeSummaryText(leftSummary);
   const right = normalizeSummaryText(rightSummary);
-  const leftUseful = hasUsefulSummary(left);
-  const rightUseful = hasUsefulSummary(right);
-  if (leftUseful && !rightUseful) return left;
-  if (rightUseful && !leftUseful) return right;
-  return right.length > left.length ? right : left;
+  const alignedLeft = hasArticleSummaryAlignment(left, title) ? left : "";
+  const alignedRight = hasArticleSummaryAlignment(right, title) ? right : "";
+  const leftUseful = hasUsefulSummary(alignedLeft);
+  const rightUseful = hasUsefulSummary(alignedRight);
+  if (leftUseful && !rightUseful) return alignedLeft;
+  if (rightUseful && !leftUseful) return alignedRight;
+  return alignedRight.length > alignedLeft.length ? alignedRight : alignedLeft;
 }
 
 function normalizeContentFingerprint(value) {
@@ -2526,6 +2609,17 @@ function tokenOverlapRatio(leftTokens, rightTokens) {
   const overlap = leftTokens.filter((token) => rightSet.has(token)).length;
   return overlap / Math.min(leftTokens.length, rightTokens.length);
 }
+
+export {
+  archiveKeyFor,
+  dedupeNearDuplicateItems,
+  findFetchedMetadata,
+  mergeArchiveItems,
+  mergeDuplicateItems,
+  normalizeStoredTopic,
+  registerFetchedMetadata,
+  sanitizeFetchedMetadata,
+};
 
 function sharesAnyCategory(left, right) {
   const leftCategories = new Set(left.categories ?? [left.category]);

@@ -30,6 +30,84 @@
     '</a>';
   }
 
+  function canonicalReferenceKey(rawUrl) {
+    const value = String(rawUrl ?? '').trim();
+    if (!value) return '';
+    try {
+      const parsed = new URL(value);
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_id', 'ref', 'src', 'from']
+        .forEach((key) => parsed.searchParams.delete(key));
+      parsed.hash = '';
+      return `${parsed.hostname.replace(/^www\./, '').toLowerCase()}${parsed.pathname.replace(/\/$/, '').toLowerCase()}${parsed.search}`;
+    } catch {
+      return value.toLowerCase().replace(/^https?:\/\//, '').replace(/[#?].*$/, '').replace(/\/$/, '');
+    }
+  }
+
+  function referenceTitleKey(value) {
+    return String(value ?? '')
+      .toLowerCase()
+      .replace(/[\s\u3000\p{P}\p{S}]+/gu, '');
+  }
+
+  function sourceLabelFromUrl(rawUrl) {
+    try {
+      const hostname = new URL(rawUrl).hostname.replace(/^www\./, '');
+      if (hostname === 'news.google.com') return 'Google Newsで記事を見る';
+      if (hostname === 'b.hatena.ne.jp') return 'はてなブックマーク人気';
+      return hostname;
+    } catch {
+      return '元記事を見る';
+    }
+  }
+
+  function selectRepresentativeSource(topic, { getPrimarySourceUrl, getPrimarySourceLabel } = {}) {
+    const candidates = [
+      topic?.primarySource,
+      topic?.primaryLink,
+      {
+        url: topic?.canonicalUrl ?? topic?.sourceUrl ?? topic?.url ?? topic?.link,
+        sourceName: topic?.sourceName ?? topic?.source,
+        title: topic?.title,
+      },
+      ...(Array.isArray(topic?.sourceSignals) ? topic.sourceSignals : []),
+      ...(Array.isArray(topic?.representativeArticles) ? topic.representativeArticles : []),
+      {
+        url: getPrimarySourceUrl?.(topic),
+        sourceName: getPrimarySourceLabel?.(topic),
+        title: topic?.title,
+      },
+    ];
+    const seenUrls = new Set();
+    const seenTitles = new Set();
+    const uniqueSources = [];
+
+    for (const candidate of candidates) {
+      if (!candidate) continue;
+      const rawUrl = typeof candidate === 'string'
+        ? candidate
+        : candidate.canonicalUrl ?? candidate.url ?? candidate.href;
+      const url = String(rawUrl ?? '').trim();
+      if (!/^https?:\/\//i.test(url)) continue;
+      const title = typeof candidate === 'string' ? '' : candidate.title;
+      const urlKey = canonicalReferenceKey(url);
+      const titleKey = referenceTitleKey(title);
+      if ((urlKey && seenUrls.has(urlKey)) || (titleKey && seenTitles.has(titleKey))) continue;
+      if (urlKey) seenUrls.add(urlKey);
+      if (titleKey) seenTitles.add(titleKey);
+
+      const rawLabel = typeof candidate === 'string'
+        ? ''
+        : candidate.sourceName ?? candidate.source ?? candidate.label ?? candidate.publisher;
+      const label = String(rawLabel ?? '').trim();
+      uniqueSources.push({
+        url,
+        label: label && !/^(source|元記事を見る)$/i.test(label) ? label : sourceLabelFromUrl(url),
+      });
+    }
+    return uniqueSources[0] ?? null;
+  }
+
   function renderTopicClusterCard(topic, options = {}, deps = {}) {
     const {
       escapeHtml,
@@ -45,6 +123,7 @@
     } = deps;
     const sourceUrl = getPrimarySourceUrl(topic);
     const sourceLabel = getPrimarySourceLabel(topic);
+    const representativeSource = selectRepresentativeSource(topic, { getPrimarySourceUrl, getPrimarySourceLabel });
     const thumbnail = topic.thumbnailUrl ? buildTrendCardThumb(topic.thumbnailUrl, deps) : '';
     const summary = buildTopicCardSummary(topic, { shortEventFromTitle, trimMetaText });
     const relatedSignals = collectRelatedSignals(topic, 3);
@@ -76,9 +155,8 @@
             '<div><dt>なぜ話題？</dt><dd>' + escapeHtml(topic.whyHot ?? buildWhyHotLabel(topic)) + '</dd></div>' +
             '<div><dt>なぜ重要？</dt><dd>' + escapeHtml(topic.importantPoint ?? buildImportantPoint(topic)) + '</dd></div>' +
           '</dl>' +
-          relatedHtml +
           '<div class="trend-footer"><span><strong>' + escapeHtml(String(topic.posts ?? 1)) + '</strong> ' + escapeHtml(topic.metricLabel ?? 'source') + '</span></div>' +
-          (sourceUrl ? '<div class="trend-footer"><span></span><a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a></div>' : '') +
+          (representativeSource ? '<div class="trend-footer today-internet-reference"><span>参照元</span><a class="detail-link" href="' + escapeHtml(representativeSource.url) + '" target="_blank" rel="noreferrer">' + escapeHtml(representativeSource.label) + ' ↗</a></div>' : '') +
         '</article>';
     }
 

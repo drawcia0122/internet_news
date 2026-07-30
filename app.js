@@ -10,7 +10,10 @@ const {
   hasCategory,
   hasVisibleSummary,
   isWeakThumbnailUrl,
+  matchesNewsCategory,
   pickCardImageUrl,
+  prepareNewsListItems,
+  sanitizeArticleSummaryCollection,
 } = window.TopicClientUtils;
 const {
   normalizeEventDateValue,
@@ -42,7 +45,6 @@ const {
   trimMetaText,
   categoryShowcaseScore,
   isAdultContentTopic,
-  isDoujinEventOnlyTopic,
   isTrendTopicFresh,
   isTrendTopicWithinDays,
   topicTimestamp,
@@ -76,12 +78,8 @@ let latestHomeDataGeneratedAt = null;
 let dailyBriefItems = [];
 let todayInternetPayload = null;
 let eventItems = [];
-let adultTrendItems = [];
 let lastRefreshStartedAt = 0;
 let visibleTrendTopics = [];
-let pickedTopicIds = new Set();
-let featuredArticleKeys = new Set();
-let hiddenTrendIdentityKeys = new Set();
 let deferredTopicChannelsRendered = false;
 let activeTopicChannelKey = null;
 let activeEventTab = 'closingSoon';
@@ -106,8 +104,6 @@ const trendSectionToggleButton = document.querySelector('#trend-section-toggle')
 const trendSectionBody = document.querySelector('#trend-section-body');
 const trendLoadMoreTopButton = document.querySelector('#trend-load-more-top');
 const trendLoadMoreBottomButton = document.querySelector('#trend-load-more-bottom');
-const adultTrendListElement = document.querySelector('#adult-trend-list');
-const hasAdultTrendSection = Boolean(adultTrendListElement);
 
 const TREND_TOPUP_DAYS = 3;
 const TREND_MIN_ITEMS = 8;
@@ -116,7 +112,6 @@ const TREND_LOAD_MORE_STEP = 10;
 const PERSONAL_NEWS_LIMIT = 10;
 const TODAY_NEWS_LIMIT = 10;
 const REFRESH_INTERVAL_MS = 30 * 60 * 1000;
-const ADULT_HOME_LIMIT = 20;
 const EVENT_TAB_DEFINITIONS = [
   { key: 'closingSoon', label: '🔥もうすぐ終了', emptyTitle: '終了間近のイベントを整理中です', emptyText: '終了まで14日以内の開催中イベントをここに表示します。' },
   { key: 'ongoing', label: '開催中', emptyTitle: '開催中のイベントを整理中です', emptyText: '今行けるイベントが入り次第ここに表示します。' },
@@ -124,7 +119,6 @@ const EVENT_TAB_DEFINITIONS = [
   { key: 'nextMonth', label: '来月', emptyTitle: '来月のイベントを整理中です', emptyText: '来月開催のイベントを収集中です。' },
 ];
 let activeTrendFilter = 'all';
-let activeAdultFilter = 'all';
 let trendVisibleCount = TREND_HOME_LIMIT;
 let refreshStatusTimer;
 const isFileProtocol = window.location.protocol === 'file:';
@@ -165,20 +159,14 @@ const eventCacheStore = createStorageArrayCache({
   key: 'internet-news-event-cache-v2',
   normalize: normalizeEventItem,
 });
-const adultTrendCacheStore = createStorageArrayCache({
-  storage: sessionStorage,
-  key: 'internet-news-adult-trend-cache-v2',
-  normalize: normalizeAdultTrendItem,
-});
-
 document.addEventListener('error', (event) => {
   const image = event.target;
   if (!(image instanceof HTMLImageElement)) return;
-  if (!image.classList.contains('trend-thumb') && !image.classList.contains('adult-thumb')) return;
-  const wrapper = image.closest('.trend-thumb-wrap, .adult-thumb-wrap');
+  if (!image.classList.contains('trend-thumb')) return;
+  const wrapper = image.closest('.trend-thumb-wrap');
   if (wrapper) {
-    const card = wrapper.closest('.trend-card, .adult-card');
-    if (card) card.classList.add(card.classList.contains('adult-card') ? 'adult-card-no-thumb' : 'trend-card-no-thumb');
+    const card = wrapper.closest('.trend-card');
+    if (card) card.classList.add('trend-card-no-thumb');
     wrapper.remove();
   }
 }, true);
@@ -219,29 +207,20 @@ async function refreshLiveData({ silent = false } = {}) {
   }
 
   const tasks = [loadTrendTopics(), loadDailyBrief(), loadTodayInternet(), loadEventItems(), loadNewsArchive()];
-  const shouldRefreshArchive = true;
-  if (hasAdultTrendSection) {
-    tasks.push(loadAdultTrends());
-  }
   const results = await Promise.all(tasks);
   const trendStatus = results[0];
   const briefStatus = results[1];
   const todayInternetStatus = results[2];
   const eventStatus = results[3];
-  const archiveStatus = shouldRefreshArchive
-    ? results[4]
-    : { ok: true, count: archiveTopics.length, error: null };
-  const adultStatus = hasAdultTrendSection
-    ? results[shouldRefreshArchive ? 5 : 4]
-    : { ok: true, count: 0, error: null };
+  const archiveStatus = results[4];
   if (silent) return;
 
-  if (!trendStatus.ok && !archiveStatus.ok && !briefStatus.ok && !todayInternetStatus.ok && !eventStatus.ok && !adultStatus.ok) {
+  if (!trendStatus.ok && !archiveStatus.ok && !briefStatus.ok && !todayInternetStatus.ok && !eventStatus.ok) {
     if (isFileProtocol) {
       showRefreshStatus('取得失敗: file:// では起動すると JSON が読めません。必ず http://localhost:8000 で開いてください');
       return;
     }
-    const reason = `${trendStatus.error ?? 'trend'} / ${archiveStatus.error ?? 'archive'} / ${briefStatus.error ?? 'brief'} / ${todayInternetStatus.error ?? 'today'} / ${eventStatus.error ?? 'events'}${hasAdultTrendSection ? ` / ${adultStatus.error ?? 'adult'}` : ''}`;
+    const reason = `${trendStatus.error ?? 'trend'} / ${archiveStatus.error ?? 'archive'} / ${briefStatus.error ?? 'brief'} / ${todayInternetStatus.error ?? 'today'} / ${eventStatus.error ?? 'events'}`;
     showRefreshStatus(`取得失敗: ${reason}`);
     return;
   }
@@ -382,30 +361,6 @@ async function loadEventItems() {
   };
 }
 
-async function loadAdultTrends() {
-  let errorMessage = null;
-  try {
-    const payload = await fetchAdultTrendsPayload();
-    const rawItems = Array.isArray(payload)
-      ? payload
-      : Array.isArray(payload?.items) ? payload.items : [];
-    adultTrendItems = rawItems.map(normalizeAdultTrendItem);
-    updateLatestHomeGeneratedAt(payload?.generatedAt);
-  } catch (error) {
-    errorMessage = error?.message || '取得エラー';
-    adultTrendItems = [];
-  }
-
-  adultTrendCacheStore.save(adultTrendItems);
-  renderAdultTrends(activeAdultFilter);
-
-  return {
-    ok: adultTrendItems.length > 0,
-    count: adultTrendItems.length,
-    error: errorMessage,
-  };
-}
-
 async function fetchHomeTopicsPayload() {
   return await fetchJsonWithCache({
     cacheKey: 'home-topics-current',
@@ -425,7 +380,7 @@ async function fetchTrendTopicsPayload() {
 async function fetchHomeNewsInitialPayload() {
   return await fetchJsonWithCache({
     cacheKey: 'home-news-initial',
-    endpoints: ['./data/home-news.json', './data/news-archive.json'],
+    endpoints: ['./data/home-news.json'],
     onFetchMetric: (metric) => perfMetrics.fetches.push(metric),
   });
 }
@@ -440,10 +395,9 @@ async function fetchHomeNewsPagePayload(pageNumber) {
 
 function applyArchivePayload(payload, { append = false } = {}) {
   const rawItems = Array.isArray(payload?.items) ? payload.items : [];
-  const normalizedItems = rawItems.map(normalizeTrendTopic);
-  const nextItems = append ? dedupeTopics([...archiveTopics, ...normalizedItems]) : dedupeTopics(normalizedItems);
-  archiveTopics = sanitizeTopicCollectionThumbnails(nextItems)
-    .sort((left, right) => topicTimestamp(right) - topicTimestamp(left) || hotTopicScore(right) - hotTopicScore(left));
+  const normalizedItems = sanitizeArticleSummaryCollection(rawItems).map(normalizeTrendTopic);
+  const nextItems = append ? [...archiveTopics, ...normalizedItems] : normalizedItems;
+  archiveTopics = sanitizeTopicCollectionThumbnails(prepareNewsListItems(sanitizeArticleSummaryCollection(nextItems)));
   archiveTotalTopicCount = Math.max(
     archiveTopics.length,
     Number(payload?.totalCount ?? payload?.maxItems ?? rawItems.length ?? 0),
@@ -502,14 +456,6 @@ async function fetchTodayInternetPayload() {
   return await fetchJsonWithCache({
     cacheKey: 'today-internet',
     endpoints: ['./data/today-internet.json'],
-    onFetchMetric: (metric) => perfMetrics.fetches.push(metric),
-  });
-}
-
-async function fetchAdultTrendsPayload() {
-  return await fetchJsonWithCache({
-    cacheKey: 'adult-trends',
-    endpoints: ['./data/adult-trends.json'],
     onFetchMetric: (metric) => perfMetrics.fetches.push(metric),
   });
 }
@@ -605,42 +551,10 @@ function normalizeTodayInternetTopic(topic) {
   };
 }
 
-function normalizeAdultTrendItem(item) {
-  const categories = Array.isArray(item.categories) && item.categories.length ? item.categories : [item.category ?? 'industry'];
-  const categoryLabels = Array.isArray(item.categoryLabels) && item.categoryLabels.length ? item.categoryLabels : categories.map(adultCategoryLabelFor);
-  const sourceName = item.sourceName ?? item.source ?? 'Source';
-  const thumbnailUrl = pickCardImageUrl(item);
-  const trendReasons = Array.isArray(item.trendReasons) && item.trendReasons.length
-    ? item.trendReasons
-    : Array.isArray(item.hotReasons) ? item.hotReasons : [];
-  const ranking = Number(item.ranking ?? item.rank ?? 0) || null;
-  const adultPrimaryGenre = item.adultPrimaryGenre ?? item.genre ?? '';
-  return {
-    ...item,
-    routeId: buildAdultRouteId(item),
-    categories: [...new Set(categories.filter(Boolean))],
-    categoryLabels,
-    source: sourceName,
-    sourceName,
-    adultHotScore: Number(item.adultHotScore ?? item.score ?? 0),
-    thumbnail: thumbnailUrl,
-    thumbnailUrl,
-    hotReasons: trendReasons,
-    trendReasons,
-    genre: adultPrimaryGenre,
-    adultPrimaryGenre,
-    rank: ranking,
-    ranking,
-    rankLabel: ranking ? `${ranking}位` : (item.rankLabel ?? '注目候補'),
-    tags: Array.isArray(item.tags) ? item.tags : [],
-    relatedWorks: Array.isArray(item.relatedWorks) ? item.relatedWorks : [],
-  };
-}
-
 function normalizeEventItem(item) {
   const normalized = {
     ...item,
-    id: item.id ?? slugifyAdultRoutePart(item.title ?? 'event'),
+    id: item.id ?? slugifyRoutePart(item.title ?? 'event'),
     title: item.title ?? 'イベント',
     startDate: normalizeEventDateValue(item.startDate),
     endDate: normalizeEventDateValue(item.endDate),
@@ -666,17 +580,6 @@ function normalizeEventItem(item) {
   };
 }
 
-function adultCategoryLabelFor(category) {
-  if (category === 'av') return 'AV';
-  if (category === 'doujin') return '同人';
-  if (category === 'voice') return '音声';
-  if (category === 'ai') return 'AI作品';
-  if (category === 'manga') return 'エロ漫画';
-  if (category === 'sale') return 'セール';
-  if (category === 'industry') return '業界';
-  return 'その他';
-}
-
 function renderTrends(filter = 'all', { preserveCount = false } = {}) {
   console.time('home:render-trends');
   activeTrendFilter = filter;
@@ -685,7 +588,7 @@ function renderTrends(filter = 'all', { preserveCount = false } = {}) {
     trendVisibleCount = TREND_HOME_LIMIT;
   }
 
-  const filtered = getFilteredTrendItems(filter).filter((trend) => !isFeaturedTrendListDuplicate(trend));
+  const filtered = getFilteredTrendItems(filter);
 
   if (!filtered.length) {
     if (archiveHasMorePages && archiveTopics.length) {
@@ -723,48 +626,11 @@ function renderTrends(filter = 'all', { preserveCount = false } = {}) {
 }
 
 function getTrendListItems() {
-  const sourceItems = archiveTopics.length ? archiveTopics : trendTopics;
-  return sourceItems
-    .filter((topic) => isTrendListEligibleTopic(topic))
-    .filter((topic) => !isHiddenFromTrendList(topic));
+  return prepareNewsListItems(archiveTopics);
 }
 
 function getFilteredTrendItems(filter = activeTrendFilter) {
-  return getTrendListItems()
-    .filter((trend) => !isFeaturedTrendListDuplicate(trend))
-    .filter((trend) => {
-      if (filter === 'all') return true;
-      if (filter === 'adult') return hasCategory(trend, 'adult') && !isDoujinEventOnlyTopic(trend);
-      return hasCategory(trend, filter);
-    })
-    .sort((left, right) =>
-      topicTimestamp(right) - topicTimestamp(left)
-      || Number(pickedTopicIds.has(left.id ?? '')) - Number(pickedTopicIds.has(right.id ?? ''))
-      || hotTopicScore(right) - hotTopicScore(left)
-    );
-}
-
-function topicArticleKeys(topic) {
-  const values = new Set();
-  if (topic?.id) values.add(`id:${topic.id}`);
-  const directUrls = [
-    topic?.url,
-    topic?.sourceUrl,
-    topic?.primaryLink?.url,
-    ...(Array.isArray(topic?.representativeArticles) ? topic.representativeArticles.map((item) => item?.url) : []),
-    ...(Array.isArray(topic?.sourceSignals) ? topic.sourceSignals.flatMap((signal) => [signal?.canonicalUrl, signal?.url]) : []),
-  ];
-  for (const value of directUrls.filter(Boolean)) {
-    values.add(`url:${String(value).replace(/#.*$/, '').replace(/\/$/, '')}`);
-  }
-  return values;
-}
-
-function isFeaturedTrendListDuplicate(topic) {
-  for (const key of topicArticleKeys(topic)) {
-    if (featuredArticleKeys.has(key)) return true;
-  }
-  return false;
+  return getTrendListItems().filter((trend) => matchesNewsCategory(trend, filter));
 }
 
 function updateTrendLoadMoreButtons(visibleCount, totalCount) {
@@ -790,14 +656,8 @@ function renderDiscoverySections() {
     : visibleTrendTopics;
   const internetNews = selectInternetNews(topics);
   const personalNews = selectPersonalNews(topics, { excludedIds: new Set(internetNews.map((topic) => topic.id)), limit: PERSONAL_NEWS_LIMIT });
-  pickedTopicIds = new Set([...internetNews, ...personalNews].map((topic) => topic.id).filter(Boolean));
   const todayNewsFallback = buildTodayNewsFallbackItems(topics);
   const todayNews = selectTodayNews([...dailyBriefItems, ...todayNewsFallback], { limit: TODAY_NEWS_LIMIT });
-  featuredArticleKeys = new Set([
-    ...personalNews.flatMap((topic) => [...topicArticleKeys(topic)]),
-    ...todayNews.flatMap((topic) => [...topicArticleKeys(topic)]),
-  ]);
-  hiddenTrendIdentityKeys = buildHiddenTrendIdentityKeys({ internetNews, personalNews, todayNews });
   renderMustReadNews(internetNews, todayInternetPayload);
   renderPriorityList(personalNewsListElement, personalNews, {
     emptyTitle: '自分向けニュースを整理中です',
@@ -838,65 +698,6 @@ function buildTodayNewsFallbackItems(topics) {
         label: getPrimarySourceLabel(topic),
       },
     }));
-}
-
-function buildHiddenTrendIdentityKeys({ internetNews = [], personalNews = [], todayNews = [] } = {}) {
-  const keys = new Set();
-  [...internetNews, ...personalNews].forEach((topic) => {
-    topicIdentityKeys(topic).forEach((key) => keys.add(key));
-  });
-  todayNews.forEach((item) => {
-    briefIdentityKeys(item).forEach((key) => keys.add(key));
-  });
-  return keys;
-}
-
-function isHiddenFromTrendList(topic) {
-  if (!hiddenTrendIdentityKeys.size) return false;
-  return topicIdentityKeys(topic).some((key) => hiddenTrendIdentityKeys.has(key));
-}
-
-function topicIdentityKeys(topic) {
-  const keys = new Set();
-  const topicId = normalizeIdentityToken(topic?.id);
-  if (topicId) keys.add(`id:${topicId}`);
-  const directUrl = normalizeIdentityUrl(getPrimarySourceUrl(topic));
-  if (directUrl) keys.add(`url:${directUrl}`);
-  const sourceSignals = Array.isArray(topic?.sourceSignals) ? topic.sourceSignals : [];
-  for (const signal of sourceSignals.slice(0, 3)) {
-    const signalUrl = normalizeIdentityUrl(signal?.canonicalUrl ?? signal?.url);
-    if (signalUrl) keys.add(`url:${signalUrl}`);
-  }
-  return [...keys];
-}
-
-function briefIdentityKeys(item) {
-  const keys = new Set();
-  const itemId = normalizeIdentityToken(item?.id);
-  if (itemId) keys.add(`id:${itemId}`);
-  const linkUrl = normalizeIdentityUrl(item?.primaryLink?.url);
-  if (linkUrl) keys.add(`url:${linkUrl}`);
-  return [...keys];
-}
-
-function normalizeIdentityToken(value) {
-  const token = String(value ?? '').trim().toLowerCase();
-  return token || '';
-}
-
-function normalizeIdentityUrl(value) {
-  const url = String(value ?? '').trim();
-  if (!url) return '';
-  try {
-    const parsed = new URL(url);
-    parsed.hash = '';
-    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid', 'ref', 'ref_src', 'output', 's'].forEach((key) => parsed.searchParams.delete(key));
-    parsed.search = parsed.searchParams.toString() ? `?${parsed.searchParams.toString()}` : '';
-    parsed.pathname = parsed.pathname.replace(/\/+$/, '') || '/';
-    return parsed.toString().toLowerCase();
-  } catch {
-    return url.toLowerCase();
-  }
 }
 
 function renderFeaturedEvents() {
@@ -1122,51 +923,6 @@ function renderTopicClusterCard(topic, options = {}) {
   return renderTopicClusterCardHtml(topic, options, renderHelperDeps);
 }
 
-
-function renderAdultTrends(filter = 'all') {
-  if (!adultTrendListElement) return;
-  activeAdultFilter = filter;
-  const isAdultPortalPage = Boolean(document.body?.dataset?.adultPage);
-  const visibleLimit = isAdultPortalPage ? ADULT_HOME_LIMIT : 6;
-
-  const filtered = adultTrendItems
-    .filter((item) => filter === 'all' || item.categories?.includes(filter))
-    .sort((left, right) => Number(right.adultHotScore ?? 0) - Number(left.adultHotScore ?? 0))
-    .slice(0, visibleLimit);
-
-  if (!filtered.length) {
-    adultTrendListElement.innerHTML = '<article class="adult-card adult-card-empty"><strong>アダルトトレンドを整理中です</strong><p>adult-trends.json の生成後にランキング、急上昇、セール情報を表示します。</p></article>';
-    return;
-  }
-
-  adultTrendListElement.innerHTML = filtered.map((item, index) => {
-    const href = './adult-topic.html?id=' + encodeURIComponent(item.routeId ?? item.id ?? '');
-    const thumb = item.thumbnailUrl ? '<div class="adult-thumb-wrap"><img class="adult-thumb" src="' + escapeHtml(item.thumbnailUrl) + '" alt="" loading="lazy" referrerpolicy="no-referrer" /></div>' : '';
-    const reason = item.trendReasons?.[0] ?? item.reason ?? 'トレンド候補';
-    const typeLabels = buildAdultDisplayLabels(item);
-    const labels = [...typeLabels, ...(item.categoryLabels ?? item.categories?.map(adultCategoryLabelFor) ?? [])].slice(0, 5);
-    return '<a class="' + escapeHtml('adult-card adult-card-link ' + (item.thumbnailUrl ? 'has-thumb' : 'adult-card-no-thumb')) + '" href="' + escapeHtml(href) + '" style="animation-delay:' + (index * 45) + 'ms">' +
-      thumb +
-      '<div class="adult-card-body">' +
-      '<div class="adult-card-meta"><span>' + escapeHtml(item.sourceName) + '</span><strong>' + escapeHtml(String(item.adultHotScore ?? 0)) + '</strong></div>' +
-      '<h3>' + escapeHtml(item.title ?? 'アダルトトレンド') + '</h3>' +
-      '<p>' + escapeHtml(item.summary ?? 'ランキングやセール情報を整理中です。') + '</p>' +
-      '<div class="adult-chip-row">' + labels.map((label) => '<span>' + escapeHtml(label) + '</span>').join('') + '</div>' +
-      '<div class="adult-card-footer"><small>' + escapeHtml(reason) + '</small><span>詳細を見る →</span></div>' +
-      '</div>' +
-    '</a>';
-  }).join('');
-}
-
-function buildAdultDisplayLabels(item) {
-  const labels = [];
-  if (item.trendType === 'ranking' || item.ranking) labels.push('ランキング');
-  if (item.trendType === 'trending' || Number(item.rankChange ?? 0) > 0) labels.push('急上昇');
-  if (item.discountRate || /セール|割引/.test(String(item.summary ?? ''))) labels.push('セール');
-  if (item.publishedAt && Date.now() - new Date(item.publishedAt).getTime() <= 24 * 60 * 60 * 1000) labels.push('新着');
-  if ((item.tags ?? []).length >= 3) labels.push('関連作品');
-  return [...new Set(labels)];
-}
 
 function renderDeferredPlaceholders() {
   if (trendListElement && !trendListElement.children.length) {
@@ -1490,18 +1246,7 @@ function formatAbsoluteDate(dateString) {
   return new Intl.DateTimeFormat('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(date);
 }
 
-function buildAdultRouteId(item) {
-  const raw = [
-    item?.sourceKey,
-    item?.sourceName ?? item?.source,
-    item?.sourceUrl,
-    item?.title,
-    item?.rank,
-  ].filter(Boolean).join('::');
-  return slugifyAdultRoutePart(raw || String(item?.id ?? 'adult-topic'));
-}
-
-function slugifyAdultRoutePart(value) {
+function slugifyRoutePart(value) {
   return String(value ?? '')
     .toLowerCase()
     .replace(/^https?:\/\//, '')

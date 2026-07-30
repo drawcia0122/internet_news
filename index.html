@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=45" />
+    <link rel="stylesheet" href="./styles.css?v=46" />
   </head>
   <body>
     <div class="ambient ambient-one"></div>
@@ -28,10 +28,9 @@
         <a href="#personal-news">自分向けニュース</a>
         <a href="#featured-events">注目イベント</a>
         <a href="#today-news">今日のニュース</a>
-        <a href="#adult-trends-entry">アダルトトレンド</a>
         <a href="#trends">カテゴリ別ニュース</a>
         <a href="#ranking">注目ランキング</a>
-        <a href="./trends.html">全件</a>
+        <a href="./news.html">全件</a>
       </nav>
       <button class="menu-button" id="mobile-menu-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-nav-drawer">
         <span></span><span></span>
@@ -44,10 +43,9 @@
       <a href="#personal-news">自分向けニュース</a>
       <a href="#featured-events">注目イベント</a>
       <a href="#today-news">今日のニュース</a>
-      <a href="#adult-trends-entry">アダルトトレンド</a>
       <a href="#trends">カテゴリ別ニュース</a>
       <a href="#ranking">注目ランキング</a>
-      <a href="./trends.html">全件</a>
+      <a href="./news.html">全件</a>
     </nav>
 
     <main>
@@ -157,17 +155,6 @@
         </div>
       </section>
 
-      <section class="adult-section" id="adult-trends-entry" aria-labelledby="adult-trends-entry-heading">
-        <div class="section-heading adult-heading">
-          <div>
-            <p class="section-kicker">ADULT TREND DASHBOARD</p>
-            <h2 id="adult-trends-entry-heading">今日のアダルトトレンド</h2>
-          </div>
-          <p class="adult-description">FANZA、DLsite、Ci-en 周辺の急上昇、ランキング、セール、新着、関連作品はアダルト専用ページで確認してください。</p>
-        </div>
-        <a class="primary-button" href="./adult-trends.html">アダルトトレンドを見る →</a>
-      </section>
-
       <div class="content-grid">
         <section class="trend-section" id="trends">
           <div class="section-heading trend-section-title">
@@ -191,7 +178,6 @@
               <button data-filter="sports">スポーツ</button>
               <button data-filter="sns">SNS</button>
               <button data-filter="net-culture">ネットカルチャー</button>
-              <button data-filter="matome">2chまとめ系</button>
               <button data-filter="crime">犯罪・事件</button>
               <button data-filter="world">国際</button>
               <button data-filter="adult">アダルト系</button>
@@ -274,13 +260,13 @@
       <p>本サイトは今日ネットで何が起きたかを見やすく整理する非公式のまとめです。</p>
     </footer>
 
-    <script src="./shared-topic-utils.js?v=4"></script>
+    <script src="./news-summary-integrity.js?v=1"></script>
+    <script src="./shared-topic-utils.js?v=6"></script>
     <script src="./home-event-utils.js?v=4"></script>
     <script src="./home-topic-selection-utils.js?v=4"></script>
     <script src="./home-brief-utils.js?v=5"></script>
-    <script src="./home-render-utils.js?v=5"></script>
+    <script src="./home-render-utils.js?v=6"></script>
     <script src="./home-data-utils.js?v=4"></script>
-    <script src="./adult-age-gate.js?v=1"></script>
-    <script src="./app.js?v=31"></script>
+    <script src="./app.js?v=33"></script>
   </body>
 </html>

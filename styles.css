@@ -469,6 +469,23 @@
   border-top: 1px solid rgba(18, 51, 94, 0.08);
 }
 
+.must-read-card-shell .today-internet-reference {
+  margin-top: 0;
+}
+
+.must-read-card-shell .today-internet-reference > span {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.must-read-card-shell .today-internet-reference .detail-link {
+  min-height: 44px;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
 .must-read-card-shell .topic-related-row {
   grid-template-columns: 1fr;
   gap: 6px;

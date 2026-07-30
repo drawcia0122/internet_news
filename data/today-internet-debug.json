@@ -1,74 +1,22 @@
 {
-  "generatedAt": "2026-07-30T07:19:26.307Z",
+  "generatedAt": "2026-07-30T10:03:05.793Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1",
-  "selectedTitle": "『アベンジャーズ／エンドゲーム：アンコール』全国の映画館で9月23日より期間限定公開。監督を務めるジョー・ルッソ氏は「『ドゥームズデイ』の物語を追うために『エンドゲーム』を見ることが重要になる」と語る",
+  "selectedClusterId": "today-cluster-9",
+  "selectedTitle": "ぶいすぽっ！英リサ、活動再開を発表　休止から約3ヶ月ぶりに配信へ復帰",
   "candidates": [
     {
-      "clusterId": "today-cluster-1",
-      "title": "『アベンジャーズ／エンドゲーム：アンコール』全国の映画館で9月23日より期間限定公開。監督を務めるジョー・ルッソ氏は「『ドゥームズデイ』の物語を追うために『エンドゲーム』を見ることが重要になる」と語る",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general",
-        "sports"
-      ],
-      "buzzScore": 74.2,
-      "confidence": 0.54,
-      "articleCount": 7,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "直近数時間で関連記事が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 12.6,
-        "sourceDiversity": 4.7,
-        "trend": 14.1,
-        "internetNativeBoost": 0,
-        "search": 4.9,
-        "social": 7,
-        "velocity": 3,
-        "freshness": 10,
-        "authority": 1,
-        "categoryBias": 17,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 6.666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 64,
-        "internalSearchScore": 38,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
       "clusterId": "today-cluster-9",
-      "title": "株式会社ポケモン、熊本地震の被災地へ総額1億円を寄付　復旧と復興を支援",
-      "category": "business",
+      "title": "ぶいすぽっ！英リサ、活動再開を発表　休止から約3ヶ月ぶりに配信へ復帰",
+      "category": "entertainment",
       "categories": [
-        "business",
         "entertainment",
         "sns",
         "net-culture",
+        "matome",
         "general"
       ],
-      "buzzScore": 73,
-      "confidence": 0.48,
+      "buzzScore": 76.4,
+      "confidence": 0.46,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -80,18 +28,18 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.9,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 5.6,
         "social": 8.4,
         "velocity": 8.3,
         "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 23.333333333333332,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -101,8 +49,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 45.7,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -111,53 +59,51 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1655",
-      "title": "高市首相 食料品の消費税率 1％に引き下げる方針表明の見通し",
-      "category": "politics",
+      "clusterId": "today-cluster-5",
+      "title": "『アベンジャーズ／エンドゲーム：アンコール』全国の映画館で9月23日より期間限定公開。監督を務めるジョー・ルッソ氏は「『ドゥームズデイ』の物語を追うために『エンドゲーム』を見ることが重要になる」と語る",
+      "category": "games",
       "categories": [
-        "politics",
-        "general",
-        "sns",
+        "games",
+        "entertainment",
         "net-culture",
-        "business"
+        "general",
+        "sports"
       ],
-      "buzzScore": 70.1,
-      "confidence": 0.43,
-      "articleCount": 2,
+      "buzzScore": 76.1,
+      "confidence": 0.58,
+      "articleCount": 8,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "公式または一次情報を含む"
+        "直近数時間で関連記事が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 14.4,
         "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 9.6,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 5.5,
-        "categoryBias": 4,
+        "trend": 13.4,
+        "internetNativeBoost": 0,
+        "search": 4.7,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1,
+        "categoryBias": 17,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 60,
+        "searchScore": 10,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 56.9
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 61,
+        "internalSearchScore": 37,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -165,7 +111,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-715",
+      "clusterId": "today-cluster-1098",
       "title": "GEZANマヒトゥ・ザ・ピーポーが性加害、バンドは一定期間の活動を休止",
       "category": "sports",
       "categories": [
@@ -175,7 +121,7 @@
         "entertainment",
         "general"
       ],
-      "buzzScore": 68.4,
+      "buzzScore": 68.9,
       "confidence": 0.36,
       "articleCount": 1,
       "sourceCount": 1,
@@ -188,7 +134,7 @@
         "sourceDiversity": 2.3,
         "trend": 20,
         "internetNativeBoost": 8,
-        "search": 6.4,
+        "search": 6.9,
         "social": 7.3,
         "velocity": 0,
         "freshness": 7,
@@ -197,7 +143,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 40,
+        "searchScore": 43.333333333333336,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -217,18 +163,69 @@
       ]
     },
     {
-      "clusterId": "today-cluster-12",
-      "title": "『ワンピース』から「海軍」Tシャツ、パーカーなどの新作アパレルが登場。「麦わらの一味」をイメージした、通気性・吸水性抜群の甚平もラインナップ",
-      "category": "business",
+      "clusterId": "today-cluster-182",
+      "title": "『ゼノブレイド2 Nintendo Switch 2 Edition』ホムラはお尻、ヒカリは清楚さに磨きがかかる!! アルストの絶景より先に目が行く曲線美を観察",
+      "category": "games",
       "categories": [
-        "business",
         "games",
+        "general",
+        "sports",
+        "entertainment"
+      ],
+      "buzzScore": 65.7,
+      "confidence": 0.46,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 3.2,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
+        "internalSocialScore": 24.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-564",
+      "title": "「水が出なく」「ライフライン無事」...被災地情報を「Yahoo！天気」アプリで共有　SNS注目「賢い使い方だし便利！」",
+      "category": "net-culture",
+      "categories": [
         "net-culture",
+        "tech",
+        "sns",
         "general"
       ],
-      "buzzScore": 66,
-      "confidence": 0.43,
-      "articleCount": 2,
+      "buzzScore": 63.5,
+      "confidence": 0.37,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
@@ -236,32 +233,32 @@
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 7,
-        "velocity": 5.3,
+        "search": 4.1,
+        "social": 6,
+        "velocity": 2.7,
         "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 5,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 54.8
+        "archiveHeatScore": 80,
+        "internalSearchScore": 31.9,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

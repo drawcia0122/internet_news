@@ -1,11 +1,64 @@
 {
-  "generatedAt": "2026-07-31T20:08:22.241Z",
+  "generatedAt": "2026-07-31T21:19:50.498Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-176",
+  "selectedClusterId": "today-cluster-177",
   "selectedTitle": "「スーパーマリオサンシャイン」，「ニンテンドー ゲームキューブ Nintendo Classics」で8月13日に配信",
   "candidates": [
     {
-      "clusterId": "today-cluster-176",
+      "clusterId": "today-cluster-440",
+      "title": "UEFA、FIFAが外部投資導入ならW杯ボイコットと決定　FIFAは「サッカー売らない」と",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "business",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 65.2,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 7,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-177",
       "title": "「スーパーマリオサンシャイン」，「ニンテンドー ゲームキューブ Nintendo Classics」で8月13日に配信",
       "category": "games",
       "categories": [
@@ -14,7 +67,7 @@
         "general",
         "sports"
       ],
-      "buzzScore": 64.6,
+      "buzzScore": 64.4,
       "confidence": 0.49,
       "articleCount": 6,
       "sourceCount": 2,
@@ -28,7 +81,7 @@
         "sourceDiversity": 4.7,
         "trend": 14.5,
         "internetNativeBoost": 0,
-        "search": 7.7,
+        "search": 7.5,
         "social": 6.9,
         "velocity": 0,
         "freshness": 10,
@@ -37,7 +90,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 48.333333333333336,
+        "searchScore": 46.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -57,7 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-435",
+      "clusterId": "today-cluster-518",
       "title": "ヤンマガ編集部員が選ぶ注目漫画！【出版社横断】",
       "category": "sns",
       "categories": [
@@ -160,71 +213,18 @@
       ]
     },
     {
-      "clusterId": "today-cluster-468",
-      "title": "スクエニ、ゲームの品質テストをGeminiで自動化　AIが画面を見ながらコントローラーを操作、検証作業を自走",
-      "category": "tech",
+      "clusterId": "today-cluster-1409",
+      "title": "アンソロピックAI「Claude」も暴走　試験中にサイバー攻撃3件",
+      "category": "business",
       "categories": [
+        "business",
         "tech",
-        "games",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 60.3,
-      "confidence": 0.34,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 11.666666666666666,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31,
-        "internalSocialScore": 57.3
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-3332",
-      "title": "【速報】高市首相は「２年後には私が責任を持って確実に税率を元に戻す」と述べた：時事ドットコム",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sports",
-        "sns",
-        "net-culture",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 60.2,
-      "confidence": 0.41,
+      "buzzScore": 59.7,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -234,18 +234,18 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 22,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 4.7,
+        "search": 3.8,
         "social": 7.2,
         "velocity": 0,
-        "freshness": 1.5,
+        "freshness": 3.5,
         "authority": 2.5,
-        "categoryBias": 12,
-        "penalty": -6
+        "categoryBias": 9,
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 15,
+        "searchScore": 18.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -255,8 +255,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 3,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 29.6,
         "internalSocialScore": 56.4
       },
       "externalSignalErrors": [

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-30T22:42:20.437Z",
+  "generatedAt": "2026-07-31T00:14:19.227Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-348",
+  "selectedClusterId": "today-cluster-347",
   "selectedTitle": "【速報】高市首相は「２年後には私が責任を持って確実に税率を元に戻す」と述べた：時事ドットコム",
   "candidates": [
     {
-      "clusterId": "today-cluster-348",
+      "clusterId": "today-cluster-347",
       "title": "【速報】高市首相は「２年後には私が責任を持って確実に税率を元に戻す」と述べた：時事ドットコム",
       "category": "politics",
       "categories": [
@@ -58,7 +58,61 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1",
+      "clusterId": "today-cluster-403",
+      "title": "NY市場 1ドル＝157円台後半まで値上がり 市場介入の観測も",
+      "category": "business",
+      "categories": [
+        "business",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 72.3,
+      "confidence": 0.44,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 12.5,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 4.5,
+        "categoryBias": 4,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 78.33333333333333,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-3",
       "title": "映画『ストリートファイター』ブランカとリュウの戦闘映像が公開。原作再現の電撃で骨が見える演出や、ローリングアタック、そして波動拳が確認できる",
       "category": "games",
       "categories": [
@@ -67,8 +121,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 76.6,
-      "confidence": 0.48,
+      "buzzScore": 72.1,
+      "confidence": 0.44,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -83,8 +137,8 @@
         "internetNativeBoost": 8,
         "search": 5.8,
         "social": 7,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -110,60 +164,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-955",
-      "title": "食料品消費税 来年4月から2年間 1％ 高市首相が役員会で表明",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 71.9,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 13.3,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 5.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 83.33333333333334,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-147",
+      "clusterId": "today-cluster-146",
       "title": "『ゼノブレイド2 Nintendo Switch 2 Edition』ホムラはお尻、ヒカリは清楚さに磨きがかかる!! アルストの絶景より先に目が行く曲線美を観察",
       "category": "games",
       "categories": [
@@ -214,16 +215,18 @@
       ]
     },
     {
-      "clusterId": "today-cluster-149",
-      "title": "SFC時代を思い起こさせるハクスラRPG、コンソールにも登場！『Dungeon Antiqua 2』PS5/Xbox Series X|S/スイッチにて8月20日発売",
-      "category": "games",
+      "clusterId": "today-cluster-2142",
+      "title": "GEZANマヒトゥ・ザ・ピーポーが性加害、バンドは一定期間の活動を休止",
+      "category": "sports",
       "categories": [
-        "games",
+        "sports",
         "sns",
+        "net-culture",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 64.6,
-      "confidence": 0.38,
+      "buzzScore": 66.1,
+      "confidence": 0.34,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -233,18 +236,18 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 20.7,
+        "trend": 20,
         "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 4.6,
+        "search": 7.7,
+        "social": 7.2,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 3.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 17,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 48.333333333333336,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -252,11 +255,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 36.8,
-        "internalSocialScore": 35.7
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 33.8,
+        "internalSocialScore": 56.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

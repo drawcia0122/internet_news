@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-07-31T12:10:29.084Z",
+  "generatedAt": "2026-07-31T15:06:50.819Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-398",
+  "selectedClusterId": "today-cluster-403",
   "selectedTitle": "ヤンマガ編集部員が選ぶ注目漫画！【出版社横断】",
   "candidates": [
     {
-      "clusterId": "today-cluster-1",
-      "title": "フリュー新作サバイバルTPS『アノマリス』明日8月1日から期間限定で体験版配信スタート。「でもフリューだしな…と思った方」はぜひお試しを",
+      "clusterId": "today-cluster-3",
+      "title": "80年代液晶ゲーム風のシューティングゲーム『Future Knight』のリリース日が8月14日に決定。ロボットと体内に共生する“良性腫瘍”を切り替え、カルト集団による人類の記憶抹消を阻止する",
       "category": "games",
       "categories": [
         "games",
-        "entertainment",
         "net-culture",
+        "sns",
         "general"
       ],
-      "buzzScore": 72.1,
-      "confidence": 0.44,
+      "buzzScore": 71,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -26,9 +26,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.9,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 5.7,
         "social": 7,
         "velocity": 5.3,
         "freshness": 8.5,
@@ -47,69 +47,16 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 45.7,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
-        "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
     },
     {
-      "clusterId": "today-cluster-9",
-      "title": "VTuber巳澄はお、熊本地震で自宅が倒壊　デビュー半年で無期限の活動休止",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 70.7,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.8,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 44,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-398",
+      "clusterId": "today-cluster-403",
       "title": "ヤンマガ編集部員が選ぶ注目漫画！【出版社横断】",
       "category": "sns",
       "categories": [
@@ -119,17 +66,17 @@
         "books",
         "general"
       ],
-      "buzzScore": 66.1,
-      "confidence": 0.34,
-      "articleCount": 1,
+      "buzzScore": 68.7,
+      "confidence": 0.38,
+      "articleCount": 2,
       "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
+        "coverage": 3.6,
+        "sourceDiversity": 3.2,
         "trend": 19.6,
         "internetNativeBoost": 8,
         "search": 4.5,
@@ -156,93 +103,143 @@
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
-        "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
     },
     {
-      "clusterId": "today-cluster-1028",
-      "title": "アンソロピックAI「Claude」も暴走　試験中にサイバー攻撃3件",
-      "category": "business",
+      "clusterId": "today-cluster-1",
+      "title": "フリュー新作サバイバルTPS『アノマリス』明日8月1日から期間限定で体験版配信スタート。「でもフリューだしな…と思った方」はぜひお試しを",
+      "category": "games",
       "categories": [
-        "business",
-        "tech",
-        "sns",
+        "games",
+        "entertainment",
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.5,
-      "confidence": 0.39,
+      "buzzScore": 64.4,
+      "confidence": 0.36,
       "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
+        "sourceDiversity": 2.3,
+        "trend": 18.3,
         "internetNativeBoost": 8,
-        "search": 5.1,
-        "social": 7.3,
+        "search": 5.7,
+        "social": 7,
         "velocity": 0,
         "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 31.666666666666664,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31,
-        "internalSocialScore": 57.3
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 44.7,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
-        "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
     },
     {
-      "clusterId": "today-cluster-591",
-      "title": "即売り切れの『ガンダムカードゲーム』1周年記念グッズセット2次抽選販売が“対象者限定”で実施！プレバン全会員向け3次抽選も",
-      "category": "games",
+      "clusterId": "today-cluster-22",
+      "title": "VTuber巳澄はお、熊本地震で自宅が倒壊　デビュー半年で無期限の活動休止",
+      "category": "sns",
       "categories": [
-        "games",
+        "sns",
+        "entertainment",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 62.9,
-      "confidence": 0.44,
+      "buzzScore": 63.9,
+      "confidence": 0.36,
       "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 4.9,
-        "social": 3.2,
+        "search": 5.6,
+        "social": 7,
         "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 8.333333333333332,
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 44,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-372",
+      "title": "スクエニ、ゲームの品質テストをGeminiで自動化　AIが画面を見ながらコントローラーを操作、検証作業を自走",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 63.4,
+      "confidence": 0.35,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 11.666666666666666,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -251,13 +248,12 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 98,
-        "internalSearchScore": 38.2,
-        "internalSocialScore": 24.7
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
-        "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
     }

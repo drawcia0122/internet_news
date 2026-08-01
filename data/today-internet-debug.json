@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-01T18:35:17.728Z",
+  "generatedAt": "2026-08-01T19:48:47.711Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-384",
+  "selectedClusterId": "today-cluster-405",
   "selectedTitle": "『ポケモン赤・緑』を遊んだみんなへ…「ポケットモンスター ジ・オリジン」が8月2日19時、BS12・日曜アニメ劇場で放送！",
   "candidates": [
     {
-      "clusterId": "today-cluster-384",
+      "clusterId": "today-cluster-405",
       "title": "『ポケモン赤・緑』を遊んだみんなへ…「ポケットモンスター ジ・オリジン」が8月2日19時、BS12・日曜アニメ劇場で放送！",
       "category": "anime",
       "categories": [
@@ -38,7 +38,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 16.666666666666664,
+        "searchScore": 23.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-565",
+      "clusterId": "today-cluster-582",
       "title": "FIFA会長、物議の“W杯事業売却案”の中止を発表…UEFAら反発で「当初の目的とは相容れない分裂を生み出してしまった」",
       "category": "sports",
       "categories": [
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-331",
+      "clusterId": "today-cluster-336",
       "title": "みぃ山はどこで間違えたのか？炎上問題",
       "category": "net-culture",
       "categories": [
@@ -160,57 +160,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-5",
-      "title": "『めっちゃカメレオン』×『8番出口』コラボマップが追加。おなじみの通路が公式マップとして登場して気軽に遊べる。フレンドのサーバーを検索できる機能やカラーパレットのUIも調整",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 62.5,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.8,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 44,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-105",
+      "clusterId": "today-cluster-102",
       "title": "今年で20年の「Wii/PS3」はレトロゲーム枠なのか？「ゲームセンターCX」で挑戦タイトル解禁を議論する生配信が決定",
       "category": "games",
       "categories": [
@@ -252,6 +202,56 @@
         "crossCategoryScore": 60,
         "archiveHeatScore": 85,
         "internalSearchScore": 33.7,
+        "internalSocialScore": 35.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-276",
+      "title": "XBOX本体各モデルが3万円の値上げ―Series Xは10万円超え、Sは9万円超えに。ゲーマーからは悲鳴",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 61.9,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.5,
+        "internetNativeBoost": 8,
+        "search": 4.3,
+        "social": 4.6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 6.666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 33.3,
         "internalSocialScore": 35.7
       },
       "externalSignalErrors": [

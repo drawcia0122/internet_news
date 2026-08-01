@@ -1,11 +1,65 @@
 {
-  "generatedAt": "2026-08-01T07:37:03.913Z",
+  "generatedAt": "2026-08-01T09:36:16.126Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-515",
-  "selectedTitle": "辺野古事故2日後に沖縄・玉城知事と面会の同志社国際高・校長「研修を継続していきたい」",
+  "selectedClusterId": "today-cluster-3",
+  "selectedTitle": "『ラヴ上等』出演の小野乙葉が自叙伝を刊行　壮絶な半生告白、グラビアにも挑戦",
   "candidates": [
     {
-      "clusterId": "today-cluster-515",
+      "clusterId": "today-cluster-3",
+      "title": "『ラヴ上等』出演の小野乙葉が自叙伝を刊行　壮絶な半生告白、グラビアにも挑戦",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.5,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.9,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 45.7,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-655",
       "title": "辺野古事故2日後に沖縄・玉城知事と面会の同志社国際高・校長「研修を継続していきたい」",
       "category": "politics",
       "categories": [
@@ -15,8 +69,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.1,
-      "confidence": 0.44,
+      "buzzScore": 68,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -29,16 +83,68 @@
         "sourceDiversity": 4.7,
         "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 10.1,
-        "social": 7.4,
+        "search": 9.6,
+        "social": 7.3,
         "velocity": 0,
-        "freshness": 8.5,
+        "freshness": 7,
         "authority": 2.5,
         "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 63.33333333333333,
+        "searchScore": 60,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.3,
+        "internalSocialScore": 57.3
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-491",
+      "title": "EU、生成AIコンテンツに識別表示義務　禁止行為なら制裁金63億円",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "business",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 67.2,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 8.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -48,8 +154,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
@@ -58,30 +164,29 @@
       ]
     },
     {
-      "clusterId": "today-cluster-346",
-      "title": "「事故がないから安全」と盲信　同志社国際高、前例踏襲でずさんな管理　辺野古沖転覆で第三者委が指摘した「想像力の欠如」",
-      "category": "world",
+      "clusterId": "today-cluster-347",
+      "title": "モロッコからスペイン領セウタへ6万人押し寄せる　スペイン首相は人身売買業者を非難",
+      "category": "politics",
       "categories": [
-        "world",
+        "politics",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 66.6,
+      "buzzScore": 62.8,
       "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
         "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 8.3,
+        "search": 4.5,
         "social": 6,
         "velocity": 0,
         "freshness": 10,
@@ -90,7 +195,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 51.66666666666667,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -110,59 +215,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-148",
-      "title": "「半袖に興奮する45歳…w」「鈍感すぎるww」　「ヤニ吸う」4本目（第4話）佐々木おじんがピュアでポンコツすぎる!! ツッコミが追いつかないギャグ展開にSNSも爆笑の嵐【ネタバレあり反応まとめ】",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "net-culture",
-        "anime",
-        "general"
-      ],
-      "buzzScore": 65,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -7
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-812",
+      "clusterId": "today-cluster-958",
       "title": "SNS等における記者への誹謗中傷、名誉毀損、人権侵害等について",
       "category": "net-culture",
       "categories": [
@@ -205,59 +258,6 @@
         "archiveHeatScore": 91,
         "internalSearchScore": 34.6,
         "internalSocialScore": 34.9
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1185",
-      "title": "UEFA、FIFAが外部投資導入ならW杯ボイコットと決定　FIFAは「サッカー売らない」と",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "business",
-        "sns",
-        "net-culture",
-        "world",
-        "general"
-      ],
-      "buzzScore": 61.9,
-      "confidence": 0.4,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 7,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 33.2,
-        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

@@ -1,43 +1,44 @@
 {
-  "generatedAt": "2026-08-01T05:00:47.087Z",
+  "generatedAt": "2026-08-01T07:37:03.913Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-340",
-  "selectedTitle": "EU、生成AIコンテンツに識別表示義務　禁止行為なら制裁金63億円",
+  "selectedClusterId": "today-cluster-515",
+  "selectedTitle": "辺野古事故2日後に沖縄・玉城知事と面会の同志社国際高・校長「研修を継続していきたい」",
   "candidates": [
     {
-      "clusterId": "today-cluster-340",
-      "title": "EU、生成AIコンテンツに識別表示義務　禁止行為なら制裁金63億円",
-      "category": "tech",
+      "clusterId": "today-cluster-515",
+      "title": "辺野古事故2日後に沖縄・玉城知事と面会の同志社国際高・校長「研修を継続していきたい」",
+      "category": "politics",
       "categories": [
-        "tech",
-        "business",
+        "politics",
+        "world",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.7,
-      "confidence": 0.43,
+      "buzzScore": 70.1,
+      "confidence": 0.44,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 19.1,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 4.4,
+        "search": 10.1,
         "social": 7.4,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 8.5,
         "authority": 2.5,
-        "categoryBias": 9,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 63.33333333333333,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -47,8 +48,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
@@ -57,7 +58,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-147",
+      "clusterId": "today-cluster-346",
+      "title": "「事故がないから安全」と盲信　同志社国際高、前例踏襲でずさんな管理　辺野古沖転覆で第三者委が指摘した「想像力の欠如」",
+      "category": "world",
+      "categories": [
+        "world",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 66.6,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 8.3,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 51.66666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-148",
       "title": "「半袖に興奮する45歳…w」「鈍感すぎるww」　「ヤニ吸う」4本目（第4話）佐々木おじんがピュアでポンコツすぎる!! ツッコミが追いつかないギャグ展開にSNSも爆笑の嵐【ネタバレあり反応まとめ】",
       "category": "entertainment",
       "categories": [
@@ -109,7 +162,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-640",
+      "clusterId": "today-cluster-812",
       "title": "SNS等における記者への誹謗中傷、名誉毀損、人権侵害等について",
       "category": "net-culture",
       "categories": [
@@ -117,8 +170,8 @@
         "sns",
         "general"
       ],
-      "buzzScore": 63.8,
-      "confidence": 0.42,
+      "buzzScore": 62.2,
+      "confidence": 0.41,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -130,10 +183,10 @@
         "sourceDiversity": 4.7,
         "trend": 20,
         "internetNativeBoost": 8,
-        "search": 4.5,
+        "search": 4.4,
         "social": 4.5,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 2.5,
         "categoryBias": 9,
         "penalty": 0
@@ -147,11 +200,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 60,
         "archiveHeatScore": 91,
-        "internalSearchScore": 35.2,
-        "internalSocialScore": 35.3
+        "internalSearchScore": 34.6,
+        "internalSocialScore": 34.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -159,72 +212,19 @@
       ]
     },
     {
-      "clusterId": "today-cluster-508",
-      "title": "米財務省が31日に円買い介入と報道 協調介入であれば異例",
-      "category": "business",
+      "clusterId": "today-cluster-1185",
+      "title": "UEFA、FIFAが外部投資導入ならW杯ボイコットと決定　FIFAは「サッカー売らない」と",
+      "category": "sports",
       "categories": [
+        "sports",
         "business",
-        "world",
         "sns",
         "net-culture",
+        "world",
         "general"
       ],
-      "buzzScore": 63.3,
-      "confidence": 0.41,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "公式または一次情報を含む"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5.1,
-        "social": 7.4,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 4.5,
-        "categoryBias": 4,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 31.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-607",
-      "title": "『ポケモン赤・緑』を遊んだみんなへ…「ポケットモンスター ジ・オリジン」が8月2日19時、BS12・日曜アニメ劇場で放送！",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 62,
-      "confidence": 0.41,
+      "buzzScore": 61.9,
+      "confidence": 0.4,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -234,18 +234,18 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 18.7,
+        "trend": 19.1,
         "internetNativeBoost": 8,
         "search": 4.2,
         "social": 7.3,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 2.5,
-        "categoryBias": 6,
+        "categoryBias": 7,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 6.666666666666667,
+        "searchScore": 8.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -253,11 +253,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.1,
-        "internalSocialScore": 57.3
+        "archiveHeatScore": 87,
+        "internalSearchScore": 33.2,
+        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

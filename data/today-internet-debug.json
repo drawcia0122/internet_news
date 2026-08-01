@@ -1,11 +1,65 @@
 {
-  "generatedAt": "2026-08-01T14:10:55.198Z",
+  "generatedAt": "2026-08-01T15:42:00.213Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-3",
-  "selectedTitle": "『めっちゃカメレオン』×『8番出口』コラボマップが追加。おなじみの通路が公式マップとして登場して気軽に遊べる。フレンドのサーバーを検索できる機能やカラーパレットのUIも調整",
+  "selectedClusterId": "today-cluster-368",
+  "selectedTitle": "『ポケモン赤・緑』を遊んだみんなへ…「ポケットモンスター ジ・オリジン」が8月2日19時、BS12・日曜アニメ劇場で放送！",
   "candidates": [
     {
-      "clusterId": "today-cluster-3",
+      "clusterId": "today-cluster-368",
+      "title": "『ポケモン赤・緑』を遊んだみんなへ…「ポケットモンスター ジ・オリジン」が8月2日19時、BS12・日曜アニメ劇場で放送！",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
+        "general",
+        "games"
+      ],
+      "buzzScore": 73,
+      "confidence": 0.52,
+      "articleCount": 3,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
+      "whyRanked": [
+        "主要3媒体で同一話題を確認",
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 7,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 4.1,
+        "social": 7.2,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 13.333333333333334,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 31.7,
+        "internalSocialScore": 56.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-4",
       "title": "『めっちゃカメレオン』×『8番出口』コラボマップが追加。おなじみの通路が公式マップとして登場して気軽に遊べる。フレンドのサーバーを検索できる機能やカラーパレットのUIも調整",
       "category": "games",
       "categories": [
@@ -13,8 +67,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 74.6,
-      "confidence": 0.47,
+      "buzzScore": 69.3,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -25,12 +79,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.5,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 5.6,
         "social": 5.6,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -46,8 +100,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 45,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 44,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -56,60 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-333",
-      "title": "｢クレヨンしんちゃん｣｢プリキュア｣とはまったく違う…映画｢ちいかわ｣が破った\"長編アニメのお約束\"",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 71.6,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 21.666666666666668,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-4",
+      "clusterId": "today-cluster-5",
       "title": "TVアニメ『FX戦士くるみちゃん』の放送時期が決定、10月より放送開始。追加キャストも発表され、瀬戸麻沙美さん、伊藤彩沙さん、岡咲美保さんが新たに“FX戦士”たちに声を吹き込む",
       "category": "anime",
       "categories": [
@@ -120,8 +121,8 @@
         "entertainment",
         "manga"
       ],
-      "buzzScore": 71.1,
-      "confidence": 0.5,
+      "buzzScore": 68.9,
+      "confidence": 0.49,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -132,13 +133,13 @@
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 15.8,
+        "trend": 15.2,
         "internetNativeBoost": 0,
-        "search": 5.2,
+        "search": 5.1,
         "social": 7,
         "velocity": 8,
         "freshness": 8.5,
-        "authority": 2.5,
+        "authority": 1,
         "categoryBias": 14,
         "penalty": 0
       },
@@ -153,8 +154,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 72,
-        "internalSearchScore": 40.8,
+        "archiveHeatScore": 69,
+        "internalSearchScore": 39.8,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
@@ -163,50 +164,50 @@
       ]
     },
     {
-      "clusterId": "today-cluster-5",
-      "title": "『スパロボDD』新たなクロッシングパイロットが発表。真ゲッター1に『エヴァ』の「アスカ」「シンジ」「レイ」が再び搭乗。「マイティーストライクフリーダムガンダム」「インフィニットジャスティスガンダム弐式」参戦も",
-      "category": "games",
+      "clusterId": "today-cluster-528",
+      "title": "FIFA会長、物議の“W杯事業売却案”の中止を発表…UEFAら反発で「当初の目的とは相容れない分裂を生み出してしまった」",
+      "category": "sports",
       "categories": [
-        "games",
+        "sports",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 69.6,
-      "confidence": 0.43,
+      "buzzScore": 66.9,
+      "confidence": 0.41,
       "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18,
+        "sourceDiversity": 4.7,
+        "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "search": 4.3,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 12,
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
+        "searchScore": 15,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 43.8
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 33.4,
+        "internalSocialScore": 46.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -214,33 +215,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1",
-      "title": "Nintendo Switch向け推理アドベンチャー『ミステリーの歩き方2 人魚伝説殺人事件』9月17日発売へ。隠しシナリオではまさかの「ガチャピン＆ムック」が登場",
+      "clusterId": "today-cluster-11",
+      "title": "よゐこの濱口優さんと南明奈さんの夫婦ゲームチャンネル「まさるとあきなのゲーム時間」が開設。配信は8月8日スタート予定、告知ポストの画像にはNintendo Switch 2のパッケージも",
       "category": "games",
       "categories": [
         "games",
+        "entertainment",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 67.6,
-      "confidence": 0.49,
+      "buzzScore": 63.4,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 20.5,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 4.2,
-        "velocity": 8.3,
-        "freshness": 10,
+        "search": 5.5,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
-        "categoryBias": 6,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -253,10 +255,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 93,
-        "internalSearchScore": 48.2,
-        "internalSocialScore": 32.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

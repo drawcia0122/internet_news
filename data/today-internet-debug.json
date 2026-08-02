@@ -1,43 +1,44 @@
 {
-  "generatedAt": "2026-08-02T03:49:40.580Z",
+  "generatedAt": "2026-08-02T06:43:40.225Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-307",
-  "selectedTitle": "指まで完璧に動くギタリストVTuber #vtuber #ギター",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "『スーパーマリオサンシャイン』Switch 2向けに8月13日配信。“人海戦術”もできる本気お片付けゲームは8月14日配信。今週の見逃せないゲーム記事7選",
   "candidates": [
     {
-      "clusterId": "today-cluster-895",
-      "title": "『ポケモン赤・緑』を遊んだみんなへ…「ポケットモンスター ジ・オリジン」が8月2日19時、BS12・日曜アニメ劇場で放送！",
-      "category": "anime",
+      "clusterId": "today-cluster-287",
+      "title": "天幕のジャードゥーガル：“作画チーフ”とは何？　アニメだから表現できること　吉田健一インタビュー",
+      "category": "anime-features",
       "categories": [
-        "anime",
-        "entertainment",
+        "anime-features",
         "manga",
-        "general",
-        "games"
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
       ],
-      "buzzScore": 63.8,
+      "buzzScore": 74.8,
       "confidence": 0.43,
-      "articleCount": 4,
+      "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 7.2,
+        "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 18.7,
+        "trend": 20,
         "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 7.1,
+        "search": 4.6,
+        "social": 7.4,
         "velocity": 0,
-        "freshness": 3.5,
+        "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 6,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 38.333333333333336,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -45,11 +46,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 1.8,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 30.9,
-        "internalSocialScore": 55.8
+        "archiveHeatScore": 91,
+        "internalSearchScore": 35.8,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -57,7 +58,112 @@
       ]
     },
     {
-      "clusterId": "today-cluster-307",
+      "clusterId": "today-cluster-8",
+      "title": "『みいちゃんと山田さん』作者 亜月ねねが過去活動を説明　「ダイアナ」名義の運営及び原作への関与を否定",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "sns",
+        "net-culture",
+        "anime",
+        "general"
+      ],
+      "buzzScore": 69,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 20.9,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 48.9,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1",
+      "title": "『スーパーマリオサンシャイン』Switch 2向けに8月13日配信。“人海戦術”もできる本気お片付けゲームは8月14日配信。今週の見逃せないゲーム記事7選",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 64.8,
+      "confidence": 0.45,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 20.7,
+        "internetNativeBoost": 8,
+        "search": 6.2,
+        "social": 5.6,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 48.5,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-305",
       "title": "指まで完璧に動くギタリストVTuber #vtuber #ギター",
       "category": "tech",
       "categories": [
@@ -108,7 +214,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-217",
+      "clusterId": "today-cluster-207",
       "title": "XBOX本体各モデルが3万円の値上げ―Series Xは10万円超え、Sは9万円超えに。ゲーマーからは悲鳴",
       "category": "games",
       "categories": [
@@ -138,7 +244,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 6.666666666666667,
+        "searchScore": 10,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -151,108 +257,6 @@
         "archiveHeatScore": 84,
         "internalSearchScore": 33.3,
         "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-521",
-      "title": "「最後は横山氏の政治感覚で」　維新、都構想の区割りを一任",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 59.7,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 34.5,
-        "internalSocialScore": 46.3
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-604",
-      "title": "みぃ山はどこで間違えたのか？炎上問題",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "manga",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 59.4,
-      "confidence": 0.31,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.8,
-        "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 31.7,
-        "internalSocialScore": 46.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

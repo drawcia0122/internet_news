@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-02T23:07:17.319Z",
+  "generatedAt": "2026-08-03T00:10:10.441Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-508",
+  "selectedClusterId": "today-cluster-630",
   "selectedTitle": "女子生徒などの画像を裸に加工し投稿の疑い 32歳会社員を逮捕",
   "candidates": [
     {
-      "clusterId": "today-cluster-508",
+      "clusterId": "today-cluster-630",
       "title": "女子生徒などの画像を裸に加工し投稿の疑い 32歳会社員を逮捕",
       "category": "crime",
       "categories": [
@@ -14,13 +14,12 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 77.6,
-      "confidence": 0.5,
+      "buzzScore": 70.6,
+      "confidence": 0.44,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "公式または一次情報を含む"
       ],
@@ -29,10 +28,10 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "search": 4.9,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 5.5,
         "categoryBias": 9,
         "penalty": 0
@@ -46,11 +45,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 80,
         "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 38.3,
+        "internalSocialScore": 46.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -68,8 +67,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.4,
-      "confidence": 0.42,
+      "buzzScore": 67.4,
+      "confidence": 0.39,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -85,14 +84,14 @@
         "internetNativeBoost": 8,
         "search": 1.5,
         "social": 8.1,
-        "velocity": 4.2,
-        "freshness": 10,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -112,58 +111,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-286",
-      "title": "大きな円盤の下で",
-      "category": "manga",
-      "categories": [
-        "manga",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 62.6,
-      "confidence": 0.33,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.8,
-        "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 32.3,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-806",
+      "clusterId": "today-cluster-929",
       "title": "天幕のジャードゥーガル：“作画チーフ”とは何？　アニメだから表現できること　吉田健一インタビュー",
       "category": "anime-features",
       "categories": [
@@ -174,7 +122,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.5,
+      "buzzScore": 63,
       "confidence": 0.35,
       "articleCount": 1,
       "sourceCount": 1,
@@ -187,7 +135,7 @@
         "sourceDiversity": 2.3,
         "trend": 20,
         "internetNativeBoost": 8,
-        "search": 5.1,
+        "search": 5.6,
         "social": 7.3,
         "velocity": 0,
         "freshness": 5.5,
@@ -196,7 +144,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 31.666666666666664,
+        "searchScore": 35,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -258,6 +206,57 @@
         "crossCategoryScore": 60,
         "archiveHeatScore": 84,
         "internalSearchScore": 33.3,
+        "internalSocialScore": 35.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-621",
+      "title": "羽田空港 荷物預け入れ締め切りを出発30分前に 出発の遅れ増え",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 61.2,
+      "confidence": 0.38,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 4.6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 4.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
         "internalSocialScore": 35.7
       },
       "externalSignalErrors": [

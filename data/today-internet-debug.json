@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-08-04T07:20:27.442Z",
+  "generatedAt": "2026-08-04T10:16:42.375Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-17",
-  "selectedTitle": "映画『閃光のハサウェイ キルケーの魔女』Prime Videoで見放題配信決定",
+  "selectedClusterId": "today-cluster-352",
+  "selectedTitle": "『ライザのアトリエ』のフリーシナリオ型AIチャットRPGが8月に配信。ライザとの会話で物語が展開する、自分だけのひと夏の夢物語",
   "candidates": [
     {
-      "clusterId": "today-cluster-17",
-      "title": "映画『閃光のハサウェイ キルケーの魔女』Prime Videoで見放題配信決定",
-      "category": "entertainment",
+      "clusterId": "today-cluster-352",
+      "title": "『ライザのアトリエ』のフリーシナリオ型AIチャットRPGが8月に配信。ライザとの会話で物語が展開する、自分だけのひと夏の夢物語",
+      "category": "tech",
       "categories": [
+        "tech",
+        "anime",
         "entertainment",
         "sns",
         "net-culture",
-        "general",
-        "manga"
+        "general"
       ],
-      "buzzScore": 70.1,
-      "confidence": 0.48,
-      "articleCount": 3,
+      "buzzScore": 74.9,
+      "confidence": 0.43,
+      "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
+        "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 15.6,
-        "internetNativeBoost": 0,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
         "search": 5.6,
-        "social": 7,
-        "velocity": 5.3,
+        "social": 7.4,
+        "velocity": 0,
         "freshness": 10,
         "authority": 2.5,
         "categoryBias": 14,
@@ -44,13 +44,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 71,
-        "internalSearchScore": 40.5,
-        "internalSocialScore": 54.8
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -58,7 +58,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-133",
+      "clusterId": "today-cluster-140",
+      "title": "ゲーム音楽の著作権は、なぜ会社のもの？職務著作の仕組みと直面する問題をJASRAC理事と作曲家が徹底解説【CEDEC 2026】",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 69,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 6.666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-146",
       "title": "配信でいきなり全裸に…話題のセクシーホラー『スパンキング除霊師』人妻霊の服が消えるバグが発生。「丸裸になる現象を泣きながら修正しました」と現在はアプデ済み",
       "category": "entertainment",
       "categories": [
@@ -90,7 +142,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 10,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -110,19 +162,19 @@
       ]
     },
     {
-      "clusterId": "today-cluster-340",
-      "title": "「飯テロ画像」がヒント、謎の新作アニメ8月4日21時発表。TOHO animation",
-      "category": "anime",
+      "clusterId": "today-cluster-351",
+      "title": "『ライザのアトリエ』チャットAIアプリ「RyzaChat:AI」発表。AIチャットRPG、ただしクリエイターリスペクトで、画像・動画生成AIは使用せず、収益は絵師や声優に還元",
+      "category": "tech",
       "categories": [
+        "tech",
         "anime",
-        "entertainment",
-        "manga",
+        "games",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.7,
-      "confidence": 0.37,
+      "buzzScore": 67.7,
+      "confidence": 0.38,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -132,9 +184,9 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 19.1,
+        "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 4.5,
+        "search": 4.8,
         "social": 7.4,
         "velocity": 0,
         "freshness": 10,
@@ -143,7 +195,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 28.333333333333332,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -153,8 +205,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 37.2,
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
@@ -163,106 +215,53 @@
       ]
     },
     {
-      "clusterId": "today-cluster-91",
-      "title": "Travis Japan、Jリーグのスペシャルアンバサダーに就任　会見ではゴールパフォーマンスも披露",
-      "category": "sports",
+      "clusterId": "today-cluster-2",
+      "title": "【39％オフ】マンガ『ルリドラゴン』Kindle版の全5巻が“39％オフ”となるクーポンセールが開催中。全巻を「2632円→1604円」で購入可能、突然頭にツノが生えてしまった高校生・青木ルリの不思議な日常を描く話題作",
+      "category": "anime",
       "categories": [
-        "sports",
-        "entertainment",
-        "sns",
+        "anime",
+        "games",
         "net-culture",
+        "manga",
         "general"
       ],
-      "buzzScore": 64.3,
-      "confidence": 0.34,
-      "articleCount": 2,
+      "buzzScore": 67.3,
+      "confidence": 0.39,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 17.4,
+        "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 3.5,
+        "search": 1.5,
+        "social": 8.1,
+        "velocity": 4.2,
+        "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 17,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 8.333333333333332,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
         "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "archiveMatchCount": 0,
+        "repeatedAppearanceScore": 18,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-614",
-      "title": "米中間選挙、右も左も急進思想に若者なびく　「トランプすら伝統勢力」",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "politics",
-        "business",
-        "sns",
-        "net-culture",
-        "world",
-        "general"
-      ],
-      "buzzScore": 64.1,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 7,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 13.333333333333334,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 34.5,
-        "internalSocialScore": 57.3
+        "archiveHeatScore": 0,
+        "internalSearchScore": 11.7,
+        "internalSocialScore": 63.1
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

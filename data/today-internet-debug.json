@@ -1,96 +1,43 @@
 {
-  "generatedAt": "2026-08-05T16:50:32.910Z",
+  "generatedAt": "2026-08-05T18:44:02.001Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-11",
-  "selectedTitle": "猫になって目に入るものを全て破壊するゲーム『Cat Chaos』が8月5日よりSteam向けに発売。物理演算で反応するマグカップや花瓶を吹き飛ばし、暴れまくって損害額が跳ね上がるのを眺めよう",
+  "selectedClusterId": "today-cluster-358",
+  "selectedTitle": "【速報】AIが指示なくサイバー攻撃",
   "candidates": [
     {
-      "clusterId": "today-cluster-11",
-      "title": "猫になって目に入るものを全て破壊するゲーム『Cat Chaos』が8月5日よりSteam向けに発売。物理演算で反応するマグカップや花瓶を吹き飛ばし、暴れまくって損害額が跳ね上がるのを眺めよう",
-      "category": "games",
+      "clusterId": "today-cluster-358",
+      "title": "【速報】AIが指示なくサイバー攻撃",
+      "category": "tech",
       "categories": [
-        "games",
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 70.7,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.8,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 44,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-431",
-      "title": "高市首相、日銀総裁に「国債買い入れ」要請　積極財政にらみ、金利抑制狙う：時事ドットコム",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "business",
+        "tech",
         "sns",
         "net-culture",
-        "entertainment",
         "general"
       ],
-      "buzzScore": 69.8,
-      "confidence": 0.44,
-      "articleCount": 2,
+      "buzzScore": 88.3,
+      "confidence": 0.47,
+      "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 21.3,
+        "trend": 21.8,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 7.4,
+        "search": 16,
+        "social": 6,
         "velocity": 0,
-        "freshness": 8.5,
+        "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 30,
+        "searchScore": 100,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -99,10 +46,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 57.7
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 99,
+        "internalSearchScore": 38.6,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -110,53 +57,51 @@
       ]
     },
     {
-      "clusterId": "today-cluster-22",
-      "title": "“存在しないアニメ”のOP映像から新規IP創出　KUROGO×講談社が新プロジェクト始動",
-      "category": "anime",
+      "clusterId": "today-cluster-394",
+      "title": "【速報】NHK職員が番組出演者から性被害",
+      "category": "entertainment",
       "categories": [
-        "anime",
         "entertainment",
-        "manga",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 69,
+      "buzzScore": 73.2,
       "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.9,
+        "sourceDiversity": 3.2,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 8.4,
+        "search": 12.5,
+        "social": 6,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 6.666666666666667,
+        "searchScore": 78.33333333333333,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 48.9,
-        "internalSocialScore": 65.8
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -164,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-826",
+      "clusterId": "today-cluster-875",
       "title": "夏の全国高校野球 甲子園球場で開幕 ことしも夕方に開会式",
       "category": "sports",
       "categories": [
@@ -215,50 +160,105 @@
       ]
     },
     {
-      "clusterId": "today-cluster-25",
-      "title": "『ミカクテイ事件の観測者-Demons’Timeline-』や『One Song, One Life』のNintendo Switch版などがジー・モードのパブリッシングで配信へ。「G-MODE NEXT PREVIEW」にて発表",
-      "category": "games",
+      "clusterId": "today-cluster-372",
+      "title": "「生理が来ないの」チョコバナナをくわえ、自らの経血を…“狂気すぎるJK”を熱演、旧ジャニーズ系アイドルの【推しの子】原菜乃華（22）の早熟キャリア",
+      "category": "entertainment",
       "categories": [
-        "games",
         "entertainment",
+        "sns",
         "net-culture",
+        "manga",
         "general"
       ],
-      "buzzScore": 63.4,
-      "confidence": 0.36,
-      "articleCount": 2,
+      "buzzScore": 68.5,
+      "confidence": 0.35,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
         "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 7,
+        "search": 9.1,
+        "social": 7.4,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 10,
+        "searchScore": 56.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
         "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 54.8
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-460",
+      "title": "高市首相、日銀総裁に「国債買い入れ」要請　積極財政にらみ、金利抑制狙う：時事ドットコム",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "business",
+        "sns",
+        "net-culture",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 68.2,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 30,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.3,
+        "internalSocialScore": 57.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

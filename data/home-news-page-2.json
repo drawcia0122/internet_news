@@ -1,54 +1,176 @@
 {
-  "generatedAt": "2026-08-05T10:11:55.019Z",
+  "generatedAt": "2026-08-05T12:24:58.344Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
     "general": 0,
-    "tech": 9,
-    "business": 4,
+    "tech": 11,
+    "business": 3,
     "politics": 0,
     "entertainment": 67,
-    "anime": 12,
-    "games": 163,
+    "anime": 13,
+    "games": 161,
     "game-features": 0,
     "anime-features": 0,
-    "manga": 39,
+    "manga": 41,
     "books": 0,
-    "sports": 2,
-    "net-culture": 0,
+    "sports": 1,
+    "net-culture": 1,
     "matome": 0,
-    "crime": 2,
-    "adult": 4,
+    "crime": 3,
+    "adult": 5,
     "world": 4
   },
   "hasMore": true,
   "nextPage": 3,
   "items": [
     {
-      "id": "auto-entertainment-閃光のハサウェイ-キルケーの魔女-prime-videoで国内独占配信へ-8月31日より見放題配信がスタート-animeanime.jp/article/2026/08/04/101714.html",
-      "title": "「閃光のハサウェイ キルケーの魔女」Prime Videoで国内独占配信へ！8月31日より見放題配信がスタート",
-      "summary": "映画『機動戦士ガンダム 閃光のハサウェイ キルケーの魔女』が、Prime Videoで国内独占配信されることがわかった。2026年8月17日よりレンタル・購入配信、8月31日より見放題配信が開始される。",
-      "briefSummary": "映画『機動戦士ガンダム 閃光のハサウェイ キルケーの魔女』が、Prime Videoで国内独占配信されることがわかった。2026年8月17日よりレンタル・購入配信、8月31日より見放題配信が開始される。",
-      "category": "entertainment",
+      "id": "auto-games-ターン制ストラテジーゲーム-endless-legend-2-正式版1-0を9月17日にリリース-ps5-xbox版の配信も決定-4gamer.net/games/876/g087622/20260805009",
+      "title": "ターン制ストラテジーゲーム「ENDLESS Legend 2」，正式版1.0を9月17日にリリース。PS5＆XBOX版の配信も決定",
+      "summary": "HoodedHorseとAmplitudeStudiosは2026年8月4日，Steamで早期アクセスを実施中のターン制ストラテジーゲーム「ENDLESSLegen…",
+      "briefSummary": "Hooded HorseとAmplitude Studiosは2026年8月4日，Steamで早期アクセスを実施中のターン制ストラテジーゲーム「ENDLESS Legend 2」について，正式版「1.0」を9月17日にリリースすると発表した。これに合わせて，PS5版とXBOX Series X|S版も配信される。",
+      "category": "games",
       "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/876/G087622/20260805009/SS/001.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-05T12:24:58.344Z",
+      "time": "直近",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/876/G087622/20260805009/",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "ターン制ストラテジーゲーム「ENDLESS Legend 2」，正式版1.0を9月17日にリリース。PS5＆XBOX版の配信も決定",
+          "url": "https://www.4gamer.net/games/876/G087622/20260805009/",
+          "canonicalUrl": "https://www.4gamer.net/games/876/G087622/20260805009/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/876/G087622/20260805009/SS/001.jpg"
+        }
+      ],
+      "whatHappened": "ターン制ストラテジーゲーム「ENDLESS Legend 2」，正式版1.0を9月17日にリ…",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-ps5版-dune-awakening-10月29日に発売決定-砂の惑星アラキスで生き抜くオープンワールド・サバイバルゲーム-4gamer.net/games/651/g065189/20260805004",
+      "title": "PS5版「Dune: Awakening」，10月29日に発売決定。砂の惑星アラキスで生き抜くオープンワールド・サバイバルゲーム",
+      "summary": "スパイク・チュンソフトは本日，PS5版「Dune:Awakening」を2026年10月29日に発売すると発表した。本作は，砂の惑星「アラキス」を舞台にしたオープン…",
+      "briefSummary": "スパイク・チュンソフトは本日，PS5版「Dune:Awakening」を2026年10月29日に発売すると発表した。本作は，砂の惑星「アラキス」を舞台にしたオープンワールド・サバイバルゲームだ。パッケージ版の予約受付も全国のゲーム販売店や販…",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/651/G065189/20260805004/SS/001.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-05T12:24:58.344Z",
+      "time": "直近",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/651/G065189/20260805004/",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "PS5版「Dune: Awakening」，10月29日に発売決定。砂の惑星アラキスで生き抜くオープンワールド・サバイバルゲーム",
+          "url": "https://www.4gamer.net/games/651/G065189/20260805004/",
+          "canonicalUrl": "https://www.4gamer.net/games/651/G065189/20260805004/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/651/G065189/20260805004/SS/001.jpg"
+        }
+      ],
+      "whatHappened": "PS5版「Dune: Awakening」，10月29日に発売決定",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-anime-ドカ食いダイスキ-もちづきさん-tvアニメ化決定-カロリーのオーバードーズで-至る-限界突破の禁断グルメ・ギャグ-animeanime.jp/article/2026/08/05/101740.html",
+      "title": "「ドカ食いダイスキ！もちづきさん」TVアニメ化決定！カロリーのオーバードーズで“至る”限界突破の禁断グルメ・ギャグ!!",
+      "summary": "「ヤングアニマルZERO」にて連載中のまるよのかもめによるマンガ『ドカ食いダイスキ！もちづきさん』のTVアニメ化が決定。パッショーネが制作を担当することが決定し、原作者によるアニメ化お祝いイラスト＆お祝い漫画も公開された。",
+      "briefSummary": "アニメ化決定が発表され「やった！」「待ってたー！楽しみ！」「医者の監修を入れてくれ……」「やってしまうのか……」と期待と不安の声が入り混じっている『ドカ食いダイスキ！ もちづきさん』。TVアニメ放送に向け、ますます盛り上がりをみせる本作の続報に注目だ。",
+      "category": "anime",
+      "categories": [
+        "anime",
         "entertainment",
         "manga",
         "general"
       ],
-      "categoryLabel": "エンタメ",
+      "categoryLabel": "アニメ",
       "categoryLabels": [
+        "アニメ",
         "エンタメ",
         "漫画"
       ],
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/914390.jpg",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/914819.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-05T10:11:55.019Z",
+      "capturedAt": "2026-08-05T12:24:58.344Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/08/04/101714.html",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/05/101740.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -68,15 +190,15 @@
             "voice-actor",
             "movie"
           ],
-          "title": "「閃光のハサウェイ キルケーの魔女」Prime Videoで国内独占配信へ！8月31日より見放題配信がスタート",
-          "url": "https://animeanime.jp/article/2026/08/04/101714.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/08/04/101714.html",
+          "title": "「ドカ食いダイスキ！もちづきさん」TVアニメ化決定！カロリーのオーバードーズで“至る”限界突破の禁断グルメ・ギャグ!!",
+          "url": "https://animeanime.jp/article/2026/08/05/101740.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/05/101740.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/914390.jpg"
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/914819.jpg"
         }
       ],
-      "whatHappened": "「閃光のハサウェイ キルケーの魔女」Prime Videoで国内独占配信へ",
+      "whatHappened": "「ドカ食いダイスキ",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": [
@@ -102,7 +224,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/981/G098193/20260804036/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-05T10:11:55.019Z",
+      "capturedAt": "2026-08-05T12:24:58.344Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/981/G098193/20260804036/",
@@ -165,7 +287,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/913873.png",
       "publishedAt": null,
-      "capturedAt": "2026-08-05T10:11:55.019Z",
+      "capturedAt": "2026-08-05T12:24:58.344Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/08/04/101729.html",
@@ -225,7 +347,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/913816.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-05T10:11:55.019Z",
+      "capturedAt": "2026-08-05T12:24:58.344Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/08/05/101738.html",
@@ -284,7 +406,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1166057.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-05T10:11:55.019Z",
+      "capturedAt": "2026-08-05T12:24:58.344Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/08/05/170228.html",
@@ -344,7 +466,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/030/G103014/20260804023/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-05T10:11:55.019Z",
+      "capturedAt": "2026-08-05T12:24:58.344Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/030/G103014/20260804023/",
@@ -406,7 +528,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/011/G101178/20260804039/SS/003.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-05T10:11:55.019Z",
+      "capturedAt": "2026-08-05T12:24:58.344Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/011/G101178/20260804039/",
@@ -464,7 +586,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/256/G025620/20260804019/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-05T10:11:55.019Z",
+      "capturedAt": "2026-08-05T12:24:58.344Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/256/G025620/20260804019/",
@@ -501,125 +623,6 @@
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ポケモンユーザー",
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-adult-クロミが-大人可愛い-ランジェリーに-隠れクロミ-刺繍やチャーム-小悪魔っぽショーツが愛され度満点-animeanime.jp/article/2026/08/04/101713.html",
-      "title": "クロミが“大人可愛い”ランジェリーに♪ “隠れクロミ”刺繍やチャーム、小悪魔っぽショーツが愛され度満点◎",
-      "summary": "サンリオの人気キャラクター「クロミ」と、SHIROHATOオリジナルブランド「MCP」が初コラボ。花柄刺繍に“隠れクロミ”を忍ばせたノンワイヤーブラセットが、2026年8月4日より公式オンラインストアにて発売中だ。",
-      "briefSummary": "サンリオの人気キャラクター「クロミ」と、SHIROHATOオリジナルブランド「MCP」が初コラボ。花柄刺繍に“隠れクロミ”を忍ばせたノンワイヤーブラセットが、2026年8月4日より公式オンラインストアにて発売中だ。",
-      "category": "adult",
-      "categories": [
-        "adult",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "アダルト系",
-      "categoryLabels": [
-        "アダルト系",
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/914360.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-05T10:11:55.019Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/08/04/101713.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "クロミが“大人可愛い”ランジェリーに♪ “隠れクロミ”刺繍やチャーム、小悪魔っぽショーツが愛され度満点◎",
-          "url": "https://animeanime.jp/article/2026/08/04/101713.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/08/04/101713.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/914360.jpg"
-        }
-      ],
-      "whatHappened": "クロミが“大人可愛い”ランジェリーに♪ “隠れクロミ”刺繍やチャーム、小悪魔っぽショーツが愛…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-games-宇宙船の廃品を漁って生計を立てるハードコアな宇宙生活シムが正式リリース-多額の借金と船とクルーを管理するスカベンジャーライフ-採れたて-本日のsteam注目ゲー-gamespark.jp/article/2026/08/04/170204.html",
-      "title": "宇宙船の廃品を漁って生計を立てるハードコアな宇宙生活シムが正式リリース。多額の借金と船とクルーを管理するスカベンジャーライフ―採れたて！本日のSteam注目ゲーム3選【2026年8月4日】",
-      "summary": "廃船の残骸漁りがメインコンテンツのニッチなゲーム。廃品を売って、自分だけの船を設計して、クルーを雇おう。",
-      "briefSummary": "毎日数多くの新作タイトルが登場するSteam。注目度の高い新作をチェックしたいけれど、リリースの流れを追いきれない、という方も多いのではないでしょうか？",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1168785.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-05T10:11:55.019Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/08/04/170204.html",
-      "hotReasons": [
-        "検索需要やトレンド化の兆しが強い話題です。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "宇宙船の廃品を漁って生計を立てるハードコアな宇宙生活シムが正式リリース。多額の借金と船とクルーを管理するスカベンジャーライフ―採れたて！本日のSteam注目ゲーム3選【2026年8月4日】",
-          "url": "http://www.gamespark.jp/article/2026/08/04/170204.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/04/170204.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1168785.jpg"
-        }
-      ],
-      "whatHappened": "宇宙船の廃品を漁って生計を立てるハードコアな宇宙生活シムが正式リリース",
-      "whyHot": "検索需要やトレンド化の兆しが強い話題です。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
         "ゲームユーザー",
         "ガジェット好き"
       ]

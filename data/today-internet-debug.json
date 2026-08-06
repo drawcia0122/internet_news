@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-06T07:23:26.209Z",
+  "generatedAt": "2026-08-06T10:16:04.821Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1151",
+  "selectedClusterId": "today-cluster-1511",
   "selectedTitle": "【速報】AIが指示なくサイバー攻撃",
   "candidates": [
     {
-      "clusterId": "today-cluster-1151",
+      "clusterId": "today-cluster-1511",
       "title": "【速報】AIが指示なくサイバー攻撃",
       "category": "tech",
       "categories": [
@@ -14,9 +14,9 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 85.5,
-      "confidence": 0.47,
-      "articleCount": 4,
+      "buzzScore": 80.8,
+      "confidence": 0.45,
+      "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
@@ -24,11 +24,11 @@
         "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
-        "coverage": 7.2,
+        "coverage": 5.4,
         "sourceDiversity": 4.7,
         "trend": 21.8,
         "internetNativeBoost": 8,
-        "search": 16,
+        "search": 13.1,
         "social": 5.9,
         "velocity": 0,
         "freshness": 5.5,
@@ -37,7 +37,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 100,
+        "searchScore": 81.66666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -57,39 +57,41 @@
       ]
     },
     {
-      "clusterId": "today-cluster-6",
-      "title": "“にじさんじの雨女”リゼ・ヘルエスタの公式グッズ「折りたたみ傘」がガチすぎる",
+      "clusterId": "today-cluster-10",
+      "title": "eスポーツチームVARREL、初のAITuber「LUMA」発表　デビュー配信はマゴ選手とコラボ",
       "category": "entertainment",
       "categories": [
         "entertainment",
         "sns",
         "net-culture",
+        "games",
         "general"
       ],
-      "buzzScore": 78.1,
-      "confidence": 0.49,
+      "buzzScore": 71.9,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 20.2,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 7,
-        "velocity": 8.3,
-        "freshness": 10,
+        "search": 5.6,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -98,10 +100,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 92,
-        "internalSearchScore": 47.8,
-        "internalSocialScore": 54.8
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -109,35 +111,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-30",
-      "title": "『ONE PIECEカードゲーム』擁するバンダイ、マイナンバーカードでの本人認証を導入",
-      "category": "tech",
+      "clusterId": "today-cluster-16",
+      "title": "兎田ぺこらや宝鐘マリンをデコって強化！ ホロライブのシール帳×戦略ゲーム発売へ",
+      "category": "games",
       "categories": [
-        "tech",
         "games",
         "entertainment",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.3,
-      "confidence": 0.4,
+      "buzzScore": 71.6,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 6.5,
+        "search": 5.5,
         "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -153,8 +155,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -163,84 +165,30 @@
       ]
     },
     {
-      "clusterId": "today-cluster-19",
-      "title": "助手席から「声」で妹に運転を教えるゲーム『妹に運転を教える』の最新映像が公開。危険だらけの道路で生き残るため、プレイヤーの声を聞いて反応する妹に直接“口頭”で指示を出していく",
-      "category": "games",
+      "clusterId": "today-cluster-24",
+      "title": "“にじさんじの雨女”リゼ・ヘルエスタの公式グッズ「折りたたみ傘」がガチすぎる",
+      "category": "entertainment",
       "categories": [
-        "games",
+        "entertainment",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.1,
-      "confidence": 0.43,
+      "buzzScore": 66,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.5,
+        "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 45,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-38",
-      "title": "イラストレーターSheya、日本初の画集刊行　卒制のアニメMVが話題の新鋭",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 70.1,
-      "confidence": 0.4,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 21.8,
-        "internetNativeBoost": 8,
-        "search": 6.4,
-        "social": 8.4,
+        "search": 6,
+        "social": 7,
         "velocity": 0,
         "freshness": 7,
         "authority": 1.5,
@@ -257,10 +205,62 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 99,
-        "internalSearchScore": 50.3,
-        "internalSocialScore": 65.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 46.8,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-17",
+      "title": "【大ヒット】『トモダチコレクション わくわく生活』全世界の売上本数はなんと「800万本」以上。任天堂の決算資料にて判明。小さな島の管理人としてMiiたちの生活を見守っていく、シリーズ13年ぶりの新作",
+      "category": "games",
+      "categories": [
+        "games",
+        "business",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.2,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 5.5,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

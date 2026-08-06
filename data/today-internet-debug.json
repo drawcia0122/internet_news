@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-05T23:13:30.370Z",
+  "generatedAt": "2026-08-06T00:57:48.385Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-338",
+  "selectedClusterId": "today-cluster-343",
   "selectedTitle": "【速報】AIが指示なくサイバー攻撃",
   "candidates": [
     {
-      "clusterId": "today-cluster-338",
+      "clusterId": "today-cluster-343",
       "title": "【速報】AIが指示なくサイバー攻撃",
       "category": "tech",
       "categories": [
@@ -14,7 +14,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 87.8,
+      "buzzScore": 88.3,
       "confidence": 0.47,
       "articleCount": 3,
       "sourceCount": 2,
@@ -28,7 +28,7 @@
         "sourceDiversity": 4.7,
         "trend": 21.8,
         "internetNativeBoost": 8,
-        "search": 15.5,
+        "search": 16,
         "social": 6,
         "velocity": 0,
         "freshness": 10,
@@ -37,7 +37,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 96.66666666666667,
+        "searchScore": 100,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -57,7 +57,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-785",
+      "clusterId": "today-cluster-138",
+      "title": "実在道路をドライブできるブラウザゲー『Hop.Earth』が注目集める―Googleマップ＋『ニード・フォー・スピード』のようなゲーム性",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.5,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.6,
+        "internetNativeBoost": 8,
+        "search": 4.9,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 10,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 98,
+        "internalSearchScore": 38.2,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-984",
       "title": "高市首相、日銀総裁に「国債買い入れ」要請　積極財政にらみ、金利抑制狙う：時事ドットコム",
       "category": "politics",
       "categories": [
@@ -68,7 +120,7 @@
         "entertainment",
         "general"
       ],
-      "buzzScore": 68,
+      "buzzScore": 67.8,
       "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
@@ -81,7 +133,7 @@
         "sourceDiversity": 4.7,
         "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 6.1,
+        "search": 5.9,
         "social": 7.3,
         "velocity": 0,
         "freshness": 5.5,
@@ -90,7 +142,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 38.333333333333336,
+        "searchScore": 36.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -110,7 +162,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1206",
+      "clusterId": "today-cluster-1405",
       "title": "夏の全国高校野球 甲子園球場で開幕 ことしも夕方に開会式",
       "category": "sports",
       "categories": [
@@ -161,7 +213,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1801",
+      "clusterId": "today-cluster-2004",
       "title": "最大4人の山登りゲーム『PEAK』が半額の「440円」で買えるセール中。1000万本超を売り上げた人気作",
       "category": "games",
       "categories": [
@@ -169,7 +221,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 63.3,
+      "buzzScore": 63.2,
       "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 2,
@@ -182,8 +234,8 @@
         "sourceDiversity": 4.7,
         "trend": 18.3,
         "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 4.6,
+        "search": 4.1,
+        "social": 4.5,
         "velocity": 0,
         "freshness": 3.5,
         "authority": 2.5,
@@ -199,62 +251,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 60,
         "archiveHeatScore": 83,
-        "internalSearchScore": 32.9,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-339",
-      "title": "アンソロピックの最新AIモデル、身分を偽って実在の人物を欺く試み　英研究機関のテストで判明",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 62,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 13.333333333333334,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 32.4,
+        "internalSocialScore": 35.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

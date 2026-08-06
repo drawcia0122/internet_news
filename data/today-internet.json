@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T12:30:46.510Z",
+  "generatedAt": "2026-08-06T14:59:52.783Z",
   "topicVersion": 1,
   "selectedTopic": {
     "id": "auto-tech-速報-aiが指示なくサイバー攻撃-47news.jp/14745830.html-22-3e-e3-80-90-e9-80-9f-e5-a0-b1-e3-80-91ai-e3-81-8c-e6-8c-87-e7-a4-ba-e3-81-aa-e3-81-8f-e3-82-b5-e3-82-a4-e3-83-90-e3-83-bc-e6-94-bb-e6-92",
@@ -95,21 +95,21 @@
         "summary": ""
       }
     ],
-    "hotScore": 81.3,
+    "hotScore": 79,
     "posts": "3",
     "metricLabel": "signals",
     "time": "直近",
     "publishedAt": "2026-08-06T00:54:48.878Z",
-    "buzzScore": 81.3,
+    "buzzScore": 79,
     "scoreBreakdown": {
       "coverage": 5.4,
       "sourceDiversity": 4.7,
       "trend": 21.8,
       "internetNativeBoost": 8,
-      "search": 13.6,
-      "social": 5.9,
+      "search": 13.3,
+      "social": 5.8,
       "velocity": 0,
-      "freshness": 5.5,
+      "freshness": 3.5,
       "authority": 2.5,
       "categoryBias": 14,
       "penalty": 0
@@ -158,8 +158,8 @@
     "externalSignals": {
       "query": "速報 AIが指示なくサイバー攻撃",
       "search": {
-        "count": 51,
-        "score": 85,
+        "count": 50,
+        "score": 83.33333333333334,
         "available": true
       },
       "reddit": {
@@ -178,7 +178,7 @@
       ]
     },
     "externalSignalStats": {
-      "searchScore": 85,
+      "searchScore": 83.33333333333334,
       "socialScore": 0,
       "searchAvailable": true,
       "socialAvailable": false
@@ -190,11 +190,11 @@
     "internalSignalStats": {
       "browseMatchCount": 0,
       "archiveMatchCount": 1,
-      "repeatedAppearanceScore": 4.2,
+      "repeatedAppearanceScore": 3,
       "crossCategoryScore": 80,
       "archiveHeatScore": 99,
-      "internalSearchScore": 37.4,
-      "internalSocialScore": 45.9
+      "internalSearchScore": 36.6,
+      "internalSocialScore": 45.4
     },
     "clusterStats": {
       "articleCount": 3,
@@ -206,102 +206,140 @@
   },
   "runnerUps": [
     {
-      "id": "auto-tech-写真加工アプリ-snow-ステマで消費者庁が措置命令-www3.nhk.or.jp/news/html/20260806/k10015198441000.html",
-      "title": "写真加工アプリ「SNOW」 ステマで消費者庁が措置命令",
-      "summary": "写真加工アプリ「SNOW」 ステマで消費者庁が措置命令 直近数時間で関連記事が増加。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-      "briefSummary": "写真加工アプリ「SNOW」 ステマで消費者庁が措置命令",
-      "whatHappened": "写真加工アプリ「SNOW」 ステマで消費者庁が措置命令",
-      "whyHot": "直近数時間で関連記事が増加。",
-      "importantPoint": "1媒体・1ドメインで確認されたトピックです。",
+      "id": "auto-crime-少年ジャンプの人気マンガグッズを-大量注文しキャンセル-繰り返したか-女逮捕-総額43億円以上-news.livedoor.com/article/detail/31998913",
+      "title": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか　女逮捕　総額43億円以上",
+      "summary": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか 女逮捕 総額43億円以… 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+      "briefSummary": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか 女逮捕 総額43億円以…",
+      "whatHappened": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか 女逮捕 総額43億円以…",
+      "whyHot": "既存トレンド指標でも反応が強い。",
+      "importantPoint": "1媒体・2ドメインで確認されたトピックです。",
       "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
-      "category": "tech",
+      "category": "crime",
       "categories": [
-        "tech",
+        "crime",
+        "manga",
+        "sns",
         "net-culture",
         "general"
       ],
-      "categoryLabel": "テック",
+      "categoryLabel": "犯罪・事件",
       "categoryLabels": [
-        "テック",
-        "ネットカルチャー"
+        "犯罪・事件",
+        "漫画",
+        "その他",
+        "ネットカルチャー",
+        "その他"
       ],
-      "thumbnailUrl": "",
+      "thumbnailUrl": "https://image.news.livedoor.com/newsimage/stf/d/d/dd540_1110_3695b831_5cb869bb.jpg",
       "sourceSignals": [
         {
-          "sourceId": "nhk-top",
-          "source": "NHK RSS",
-          "sourceName": "NHK",
-          "sourceGroup": "important-news",
-          "sourcePriority": 92,
-          "official": true,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "写真加工アプリ「SNOW」 ステマで消費者庁が措置命令",
-          "url": "http://www3.nhk.or.jp/news/html/20260806/k10015198441000.html",
-          "canonicalUrl": "http://www3.nhk.or.jp/news/html/20260806/k10015198441000.html",
-          "publishedAt": "2026-08-06T11:32:43.000Z",
-          "publishedLabel": "8/6 11:32",
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか　女逮捕　総額43億円以上",
+          "url": "https://news.livedoor.com/article/detail/31998913/",
+          "canonicalUrl": "https://news.livedoor.com/article/detail/31998913/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://image.news.livedoor.com/newsimage/stf/d/d/dd540_1110_3695b831_5cb869bb.jpg",
+          "briefSummary": "",
+          "summary": "集英社のオンラインショップで、人気マンガのグッズを大量に注文したあと、キャンセルする行為を繰り返していたとみられる32歳の女が逮捕されました。 警視庁によりますと、吉田麻祐容疑者は2024年から去年にかけて、集英社のオンラインショップで注文…"
+        },
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか　女逮捕　総額43億円以上（2026年8月6日掲載）｜日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/gimage/n24/articles/13124456bde04caebc29903d1b832afb/2a7488e2fface278992407dcc806c8cd3c25ace3b51805fbbf042ca2a219e822.jpg?w=1200",
+          "canonicalUrl": "https://news.ntv.co.jp/gimage/n24/articles/13124456bde04caebc29903d1b832afb/2a7488e2fface278992407dcc806c8cd3c25ace3b51805fbbf042ca2a219e822.jpg?w=1200",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
           "thumbnailUrl": null,
           "briefSummary": "",
-          "summary": "若者に人気の写真加工アプリ「SNOW」の運営会社が、インフルエンサーに依頼してSNSでPR表記をせずにアプリの宣伝をしていたことはステルスマーケティングにあたるとして、消費者庁が再発防止などを命じる措置命令を出しました。"
+          "summary": "集英社のオンラインショップで、人気マンガのグッズを大量に注文したあと、キャンセルする行為を繰り返していたとみられる32歳の女が逮捕されました。 警視庁によりますと、吉田麻祐容疑者は2024年から去年にかけて、集英社のオンラインショップで注文…"
         }
       ],
-      "hotScore": 73,
-      "posts": "1",
+      "hotScore": 70.2,
+      "posts": "2",
       "metricLabel": "signals",
-      "time": "1時間以内",
-      "publishedAt": "2026-08-06T11:32:43.000Z",
-      "buzzScore": 73,
+      "time": "直近",
+      "publishedAt": "2026-08-06T12:28:11.007Z",
+      "buzzScore": 70.2,
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
+        "coverage": 3.6,
+        "sourceDiversity": 3.2,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 9.1,
-        "social": 4.6,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 4.5,
-        "categoryBias": 14,
+        "search": 10.7,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 9,
         "penalty": -3
       },
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "公式または一次情報を含む"
+        "検索面でも関連話題の広がりを確認"
       ],
       "rank": 2,
       "summaryPayload": {
-        "headline": "写真加工アプリ「SNOW」 ステマで消費者庁が措置命令",
-        "whatHappened": "写真加工アプリ「SNOW」 ステマで消費者庁が措置命令",
-        "whyBuzzing": "直近数時間で関連記事が増加。",
+        "headline": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか　女逮捕　総額43億円以上",
+        "whatHappened": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか 女逮捕 総額43億円以…",
+        "whyBuzzing": "既存トレンド指標でも反応が強い。",
         "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
         "keyPoints": [
-          "1媒体・1ドメインで確認されたトピックです。",
-          "最新更新は2026/8/6 11:32:43です。",
-          "一次情報を含むため、事実確認の軸を置きやすい話題です。"
+          "1媒体・2ドメインで確認されたトピックです。",
+          "最新更新は2026/8/6 12:28:11です。",
+          "現時点では報道の出そろい方と勢いを優先して選出しています。"
         ],
         "watchpoints": [
           "続報で事実関係や影響範囲が更新される可能性があります。",
           "一次情報や公式コメントが追加されたら優先して確認してください。"
         ],
-        "threeMinuteSummary": "写真加工アプリ「SNOW」 ステマで消費者庁が措置命令 直近数時間で関連記事が増加。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
+        "threeMinuteSummary": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか 女逮捕 総額43億円以… 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
       },
       "representativeArticles": [
         {
-          "title": "写真加工アプリ「SNOW」 ステマで消費者庁が措置命令",
-          "url": "http://www3.nhk.or.jp/news/html/20260806/k10015198441000.html",
-          "sourceName": "NHK",
-          "publishedAt": "2026-08-06T11:32:43.000Z"
+          "title": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか　女逮捕　総額43億円以上",
+          "url": "https://news.livedoor.com/article/detail/31998913/",
+          "sourceName": "はてなブックマーク人気",
+          "publishedAt": null
+        },
+        {
+          "title": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか　女逮捕　総額43億円以上（2026年8月6日掲載）｜日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/gimage/n24/articles/13124456bde04caebc29903d1b832afb/2a7488e2fface278992407dcc806c8cd3c25ace3b51805fbbf042ca2a219e822.jpg?w=1200",
+          "sourceName": "はてなブックマーク人気",
+          "publishedAt": null
         }
       ],
       "externalSignals": {
-        "query": "写真加工アプリ SNOW ステマで消費者庁が措置命令",
+        "query": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか 女逮捕 総額43億円以上",
         "search": {
-          "count": 34,
-          "score": 56.666666666666664,
+          "count": 40,
+          "score": 66.66666666666666,
           "available": true
         },
         "reddit": {
@@ -320,7 +358,7 @@
         ]
       },
       "externalSignalStats": {
-        "searchScore": 56.666666666666664,
+        "searchScore": 66.66666666666666,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -333,26 +371,26 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 31.9,
-        "internalSocialScore": 35.7
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 57.7
       },
       "clusterStats": {
-        "articleCount": 1,
+        "articleCount": 2,
         "sourceCount": 1,
-        "uniqueDomainCount": 1,
-        "officialSourceCount": 1,
-        "latestSourceCount1h": 1
+        "uniqueDomainCount": 2,
+        "officialSourceCount": 0,
+        "latestSourceCount1h": 0
       }
     },
     {
       "id": "auto-games-ニチアサ-をテーマにしたゲームシリーズの最新作-ココロクローバー-ムゲン編-が発表-主題歌はなんと高取ヒデアキさん-8月7日からは旧作のセールも-news.denfaminicogamer.jp/news/2608062z",
       "title": "“ニチアサ”をテーマにしたゲームシリーズの最新作『ココロクローバー ムゲン編』が発表。主題歌はなんと高取ヒデアキさん。8月7日からは旧作のセールも",
-      "summary": "“ニチアサ”をテーマにしたゲームシリーズの最新作『ココロクローバー ムゲン編』が発表 直近数時間で関連記事が増加。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+      "summary": "“ニチアサ”をテーマにしたゲームシリーズの最新作『ココロクローバー ムゲン編』が発表 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
       "briefSummary": "“ニチアサ”をテーマにしたゲームシリーズの最新作『ココロクローバー ムゲン編』が発表",
       "whatHappened": "“ニチアサ”をテーマにしたゲームシリーズの最新作『ココロクローバー ムゲン編』が発表",
-      "whyHot": "直近数時間で関連記事が増加。",
+      "whyHot": "既存トレンド指標でも反応が強い。",
       "importantPoint": "1媒体・1ドメインで確認されたトピックです。",
       "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
       "category": "games",
@@ -417,34 +455,33 @@
           "summary": "「日曜朝にやってそうな子供向けアニメ」の雰囲気を再現することにこだわったビジュアルノベル＆アクション。8月7日からは旧作のセールも"
         }
       ],
-      "hotScore": 71,
+      "hotScore": 63.4,
       "posts": "2",
       "metricLabel": "signals",
-      "time": "1時間前",
+      "time": "4時間前",
       "publishedAt": "2026-08-06T10:42:23.000Z",
-      "buzzScore": 71,
+      "buzzScore": 63.4,
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.7,
+        "search": 5.5,
         "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "rank": 3,
       "summaryPayload": {
         "headline": "“ニチアサ”をテーマにしたゲームシリーズの最新作『ココロクローバー ムゲン編』が発表。主題歌はなんと高取ヒデアキさん。8月7日からは旧作のセールも",
         "whatHappened": "“ニチアサ”をテーマにしたゲームシリーズの最新作『ココロクローバー ムゲン編』が発表",
-        "whyBuzzing": "直近数時間で関連記事が増加。",
+        "whyBuzzing": "既存トレンド指標でも反応が強い。",
         "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
         "keyPoints": [
           "1媒体・1ドメインで確認されたトピックです。",
@@ -455,7 +492,7 @@
           "続報で事実関係や影響範囲が更新される可能性があります。",
           "一次情報や公式コメントが追加されたら優先して確認してください。"
         ],
-        "threeMinuteSummary": "“ニチアサ”をテーマにしたゲームシリーズの最新作『ココロクローバー ムゲン編』が発表 直近数時間で関連記事が増加。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
+        "threeMinuteSummary": "“ニチアサ”をテーマにしたゲームシリーズの最新作『ココロクローバー ムゲン編』が発表 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
       },
       "representativeArticles": [
         {
@@ -508,8 +545,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
         "internalSocialScore": 54.8
       },
       "clusterStats": {
@@ -593,21 +630,21 @@
           "summary": "バーチャルライバー／VTuberグループ・にじさんじ所属のリゼ・ヘルエスタさんのYouTubeチャンネル登録者数100万人を記念したグッズが、8月5日から受注を開始している。タペストリー、アクリルスタンド、マウスパッド、アミュレット風チャー…"
         }
       ],
-      "hotScore": 66,
+      "hotScore": 63.4,
       "posts": "2",
       "metricLabel": "signals",
-      "time": "5時間前",
+      "time": "7時間前",
       "publishedAt": "2026-08-06T07:01:00.000Z",
-      "buzzScore": 66,
+      "buzzScore": 63.4,
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 19.6,
+        "trend": 18.7,
         "internetNativeBoost": 8,
-        "search": 6,
+        "search": 5.8,
         "social": 7,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -683,8 +720,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 46.8,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
         "internalSocialScore": 54.8
       },
       "clusterStats": {
@@ -698,13 +735,13 @@
   ],
   "fallbackUsed": false,
   "debug": {
-    "generatedAt": "2026-08-06T12:30:46.510Z",
+    "generatedAt": "2026-08-06T14:59:52.783Z",
     "fallbackUsed": false,
-    "selectedClusterId": "today-cluster-1771",
+    "selectedClusterId": "today-cluster-1979",
     "selectedTitle": "【速報】AIが指示なくサイバー攻撃",
     "candidates": [
       {
-        "clusterId": "today-cluster-1771",
+        "clusterId": "today-cluster-1979",
         "title": "【速報】AIが指示なくサイバー攻撃",
         "category": "tech",
         "categories": [
@@ -713,8 +750,8 @@
           "net-culture",
           "general"
         ],
-        "buzzScore": 81.3,
-        "confidence": 0.45,
+        "buzzScore": 79,
+        "confidence": 0.44,
         "articleCount": 3,
         "sourceCount": 2,
         "uniqueDomainCount": 2,
@@ -727,16 +764,16 @@
           "sourceDiversity": 4.7,
           "trend": 21.8,
           "internetNativeBoost": 8,
-          "search": 13.6,
-          "social": 5.9,
+          "search": 13.3,
+          "social": 5.8,
           "velocity": 0,
-          "freshness": 5.5,
+          "freshness": 3.5,
           "authority": 2.5,
           "categoryBias": 14,
           "penalty": 0
         },
         "externalSignalStats": {
-          "searchScore": 85,
+          "searchScore": 83.33333333333334,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -744,11 +781,11 @@
         "internalSignalStats": {
           "browseMatchCount": 0,
           "archiveMatchCount": 1,
-          "repeatedAppearanceScore": 4.2,
+          "repeatedAppearanceScore": 3,
           "crossCategoryScore": 80,
           "archiveHeatScore": 99,
-          "internalSearchScore": 37.4,
-          "internalSocialScore": 45.9
+          "internalSearchScore": 36.6,
+          "internalSocialScore": 45.4
         },
         "externalSignalErrors": [
           "reddit:http 403 Blocked",
@@ -756,40 +793,40 @@
         ]
       },
       {
-        "clusterId": "today-cluster-460",
-        "title": "写真加工アプリ「SNOW」 ステマで消費者庁が措置命令",
-        "category": "tech",
+        "clusterId": "today-cluster-511",
+        "title": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか　女逮捕　総額43億円以上",
+        "category": "crime",
         "categories": [
-          "tech",
+          "crime",
+          "manga",
+          "sns",
           "net-culture",
           "general"
         ],
-        "buzzScore": 73,
-        "confidence": 0.4,
-        "articleCount": 1,
+        "buzzScore": 70.2,
+        "confidence": 0.42,
+        "articleCount": 2,
         "sourceCount": 1,
-        "uniqueDomainCount": 1,
+        "uniqueDomainCount": 2,
         "whyRanked": [
-          "直近数時間で関連記事が増加",
           "既存トレンド指標でも反応が強い",
-          "検索面でも関連話題の広がりを確認",
-          "公式または一次情報を含む"
+          "検索面でも関連話題の広がりを確認"
         ],
         "scoreBreakdown": {
-          "coverage": 1.8,
-          "sourceDiversity": 2.3,
-          "trend": 17.6,
+          "coverage": 3.6,
+          "sourceDiversity": 3.2,
+          "trend": 21.3,
           "internetNativeBoost": 8,
-          "search": 9.1,
-          "social": 4.6,
-          "velocity": 4.2,
-          "freshness": 10,
-          "authority": 4.5,
-          "categoryBias": 14,
+          "search": 10.7,
+          "social": 7.4,
+          "velocity": 0,
+          "freshness": 8.5,
+          "authority": 1.5,
+          "categoryBias": 9,
           "penalty": -3
         },
         "externalSignalStats": {
-          "searchScore": 56.666666666666664,
+          "searchScore": 66.66666666666666,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -798,10 +835,10 @@
           "browseMatchCount": 0,
           "archiveMatchCount": 1,
           "repeatedAppearanceScore": 6,
-          "crossCategoryScore": 60,
-          "archiveHeatScore": 80,
-          "internalSearchScore": 31.9,
-          "internalSocialScore": 35.7
+          "crossCategoryScore": 100,
+          "archiveHeatScore": 97,
+          "internalSearchScore": 37.8,
+          "internalSocialScore": 57.7
         },
         "externalSignalErrors": [
           "reddit:http 403 Blocked",
@@ -809,7 +846,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-2",
+        "clusterId": "today-cluster-3",
         "title": "“ニチアサ”をテーマにしたゲームシリーズの最新作『ココロクローバー ムゲン編』が発表。主題歌はなんと高取ヒデアキさん。8月7日からは旧作のセールも",
         "category": "games",
         "categories": [
@@ -818,24 +855,23 @@
           "anime",
           "general"
         ],
-        "buzzScore": 71,
-        "confidence": 0.43,
+        "buzzScore": 63.4,
+        "confidence": 0.36,
         "articleCount": 2,
         "sourceCount": 1,
         "uniqueDomainCount": 1,
         "whyRanked": [
-          "直近数時間で関連記事が増加",
           "既存トレンド指標でも反応が強い"
         ],
         "scoreBreakdown": {
           "coverage": 3.6,
           "sourceDiversity": 2.3,
-          "trend": 18,
+          "trend": 17.4,
           "internetNativeBoost": 8,
-          "search": 5.7,
+          "search": 5.5,
           "social": 7,
-          "velocity": 5.3,
-          "freshness": 8.5,
+          "velocity": 0,
+          "freshness": 7,
           "authority": 1.5,
           "categoryBias": 14,
           "penalty": -3
@@ -851,8 +887,8 @@
           "archiveMatchCount": 1,
           "repeatedAppearanceScore": 24,
           "crossCategoryScore": 80,
-          "archiveHeatScore": 82,
-          "internalSearchScore": 44.3,
+          "archiveHeatScore": 79,
+          "internalSearchScore": 43.3,
           "internalSocialScore": 54.8
         },
         "externalSignalErrors": [
@@ -861,7 +897,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-37",
+        "clusterId": "today-cluster-53",
         "title": "“にじさんじの雨女”リゼ・ヘルエスタの公式グッズ「折りたたみ傘」がガチすぎる",
         "category": "entertainment",
         "categories": [
@@ -870,8 +906,8 @@
           "net-culture",
           "general"
         ],
-        "buzzScore": 66,
-        "confidence": 0.38,
+        "buzzScore": 63.4,
+        "confidence": 0.36,
         "articleCount": 2,
         "sourceCount": 1,
         "uniqueDomainCount": 1,
@@ -881,12 +917,12 @@
         "scoreBreakdown": {
           "coverage": 3.6,
           "sourceDiversity": 2.3,
-          "trend": 19.6,
+          "trend": 18.7,
           "internetNativeBoost": 8,
-          "search": 6,
+          "search": 5.8,
           "social": 7,
           "velocity": 0,
-          "freshness": 7,
+          "freshness": 5.5,
           "authority": 1.5,
           "categoryBias": 14,
           "penalty": -3
@@ -902,8 +938,8 @@
           "archiveMatchCount": 1,
           "repeatedAppearanceScore": 24,
           "crossCategoryScore": 80,
-          "archiveHeatScore": 89,
-          "internalSearchScore": 46.8,
+          "archiveHeatScore": 85,
+          "internalSearchScore": 45.3,
           "internalSocialScore": 54.8
         },
         "externalSignalErrors": [
@@ -912,32 +948,30 @@
         ]
       },
       {
-        "clusterId": "today-cluster-29",
-        "title": "兎田ぺこらや宝鐘マリンをデコって強化！ ホロライブのシール帳×戦略ゲーム発売へ",
+        "clusterId": "today-cluster-914",
+        "title": "保証切れでも対象、「Switch 2」など無償修理へ　任天堂の熊本地震支援に「さすが」の声",
         "category": "games",
         "categories": [
           "games",
-          "entertainment",
           "sns",
           "net-culture",
           "general"
         ],
-        "buzzScore": 64.8,
+        "buzzScore": 62.7,
         "confidence": 0.36,
-        "articleCount": 2,
+        "articleCount": 1,
         "sourceCount": 1,
         "uniqueDomainCount": 1,
         "whyRanked": [
-          "既存トレンド指標でも反応が強い",
-          "海外SNSでも関連投稿が増加"
+          "既存トレンド指標でも反応が強い"
         ],
         "scoreBreakdown": {
-          "coverage": 3.6,
+          "coverage": 1.8,
           "sourceDiversity": 2.3,
-          "trend": 17.4,
+          "trend": 20.5,
           "internetNativeBoost": 8,
-          "search": 5.5,
-          "social": 8.4,
+          "search": 4.7,
+          "social": 6,
           "velocity": 0,
           "freshness": 7,
           "authority": 1.5,
@@ -945,19 +979,19 @@
           "penalty": -3
         },
         "externalSignalStats": {
-          "searchScore": 3.3333333333333335,
+          "searchScore": 23.333333333333332,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
         },
         "internalSignalStats": {
-          "browseMatchCount": 1,
+          "browseMatchCount": 0,
           "archiveMatchCount": 1,
-          "repeatedAppearanceScore": 24,
-          "crossCategoryScore": 100,
-          "archiveHeatScore": 79,
-          "internalSearchScore": 43.3,
-          "internalSocialScore": 65.8
+          "repeatedAppearanceScore": 6,
+          "crossCategoryScore": 80,
+          "archiveHeatScore": 93,
+          "internalSearchScore": 36.4,
+          "internalSocialScore": 46.7
         },
         "externalSignalErrors": [
           "reddit:http 403 Blocked",
@@ -975,6 +1009,6 @@
       "reddit:http 403 Blocked",
       "bluesky:http 403 Forbidden"
     ],
-    "confidence": 0.45
+    "confidence": 0.44
   }
 }

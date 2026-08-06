@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-06T10:16:04.821Z",
+  "generatedAt": "2026-08-06T12:30:46.510Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1511",
+  "selectedClusterId": "today-cluster-1771",
   "selectedTitle": "【速報】AIが指示なくサイバー攻撃",
   "candidates": [
     {
-      "clusterId": "today-cluster-1511",
+      "clusterId": "today-cluster-1771",
       "title": "【速報】AIが指示なくサイバー攻撃",
       "category": "tech",
       "categories": [
@@ -14,7 +14,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 80.8,
+      "buzzScore": 81.3,
       "confidence": 0.45,
       "articleCount": 3,
       "sourceCount": 2,
@@ -28,7 +28,7 @@
         "sourceDiversity": 4.7,
         "trend": 21.8,
         "internetNativeBoost": 8,
-        "search": 13.1,
+        "search": 13.6,
         "social": 5.9,
         "velocity": 0,
         "freshness": 5.5,
@@ -37,7 +37,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 81.66666666666667,
+        "searchScore": 85,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -57,53 +57,52 @@
       ]
     },
     {
-      "clusterId": "today-cluster-10",
-      "title": "eスポーツチームVARREL、初のAITuber「LUMA」発表　デビュー配信はマゴ選手とコラボ",
-      "category": "entertainment",
+      "clusterId": "today-cluster-460",
+      "title": "写真加工アプリ「SNOW」 ステマで消費者庁が措置命令",
+      "category": "tech",
       "categories": [
-        "entertainment",
-        "sns",
+        "tech",
         "net-culture",
-        "games",
         "general"
       ],
-      "buzzScore": 71.9,
-      "confidence": 0.42,
-      "articleCount": 2,
+      "buzzScore": 73,
+      "confidence": 0.4,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "検索面でも関連話題の広がりを確認",
+        "公式または一次情報を含む"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
         "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
+        "search": 9.1,
+        "social": 4.6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 4.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 56.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 60,
         "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
-        "internalSocialScore": 65.8
+        "internalSearchScore": 31.9,
+        "internalSocialScore": 35.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -111,33 +110,31 @@
       ]
     },
     {
-      "clusterId": "today-cluster-16",
-      "title": "兎田ぺこらや宝鐘マリンをデコって強化！ ホロライブのシール帳×戦略ゲーム発売へ",
+      "clusterId": "today-cluster-2",
+      "title": "“ニチアサ”をテーマにしたゲームシリーズの最新作『ココロクローバー ムゲン編』が発表。主題歌はなんと高取ヒデアキさん。8月7日からは旧作のセールも",
       "category": "games",
       "categories": [
         "games",
-        "entertainment",
-        "sns",
         "net-culture",
+        "anime",
         "general"
       ],
-      "buzzScore": 71.6,
-      "confidence": 0.42,
+      "buzzScore": 71,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.4,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 8.4,
+        "search": 5.7,
+        "social": 7,
         "velocity": 5.3,
         "freshness": 8.5,
         "authority": 1.5,
@@ -145,7 +142,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -154,10 +151,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 65.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -165,7 +162,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-24",
+      "clusterId": "today-cluster-37",
       "title": "“にじさんじの雨女”リゼ・ヘルエスタの公式グッズ「折りたたみ傘」がガチすぎる",
       "category": "entertainment",
       "categories": [
@@ -216,23 +213,24 @@
       ]
     },
     {
-      "clusterId": "today-cluster-17",
-      "title": "【大ヒット】『トモダチコレクション わくわく生活』全世界の売上本数はなんと「800万本」以上。任天堂の決算資料にて判明。小さな島の管理人としてMiiたちの生活を見守っていく、シリーズ13年ぶりの新作",
+      "clusterId": "today-cluster-29",
+      "title": "兎田ぺこらや宝鐘マリンをデコって強化！ ホロライブのシール帳×戦略ゲーム発売へ",
       "category": "games",
       "categories": [
         "games",
-        "business",
+        "entertainment",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.2,
-      "confidence": 0.42,
+      "buzzScore": 64.8,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
@@ -240,15 +238,15 @@
         "trend": 17.4,
         "internetNativeBoost": 8,
         "search": 5.5,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -257,10 +255,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
+        "crossCategoryScore": 100,
         "archiveHeatScore": 79,
         "internalSearchScore": 43.3,
-        "internalSocialScore": 54.8
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

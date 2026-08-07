@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-06T14:59:52.783Z",
+  "generatedAt": "2026-08-07T00:30:03.903Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1979",
-  "selectedTitle": "【速報】AIが指示なくサイバー攻撃",
+  "selectedClusterId": "today-cluster-377",
+  "selectedTitle": "マガジン限定記事「男同士で遊ぶ方が圧倒的に楽しいことがバレはじめている」｜白饅頭",
   "candidates": [
     {
-      "clusterId": "today-cluster-1979",
+      "clusterId": "today-cluster-2420",
       "title": "【速報】AIが指示なくサイバー攻撃",
       "category": "tech",
       "categories": [
@@ -14,7 +14,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 79,
+      "buzzScore": 78.5,
       "confidence": 0.44,
       "articleCount": 3,
       "sourceCount": 2,
@@ -28,7 +28,7 @@
         "sourceDiversity": 4.7,
         "trend": 21.8,
         "internetNativeBoost": 8,
-        "search": 13.3,
+        "search": 12.8,
         "social": 5.8,
         "velocity": 0,
         "freshness": 3.5,
@@ -37,7 +37,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 83.33333333333334,
+        "searchScore": 80,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-511",
+      "clusterId": "today-cluster-930",
       "title": "少年ジャンプの人気マンガグッズを“大量注文しキャンセル”繰り返したか　女逮捕　総額43億円以上",
       "category": "crime",
       "categories": [
@@ -67,10 +67,10 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.2,
-      "confidence": 0.42,
+      "buzzScore": 70,
+      "confidence": 0.41,
       "articleCount": 2,
-      "sourceCount": 1,
+      "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
@@ -78,19 +78,19 @@
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 3.2,
+        "sourceDiversity": 4.7,
         "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 10.7,
-        "social": 7.4,
+        "search": 10.1,
+        "social": 7.2,
         "velocity": 0,
-        "freshness": 8.5,
-        "authority": 1.5,
+        "freshness": 3.5,
+        "authority": 2.5,
         "categoryBias": 9,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 66.66666666666666,
+        "searchScore": 63.33333333333333,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -98,11 +98,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 100,
         "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 57.7
+        "internalSearchScore": 35.9,
+        "internalSocialScore": 56.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -110,119 +110,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-3",
-      "title": "“ニチアサ”をテーマにしたゲームシリーズの最新作『ココロクローバー ムゲン編』が発表。主題歌はなんと高取ヒデアキさん。8月7日からは旧作のセールも",
+      "clusterId": "today-cluster-164",
+      "title": "『ゴーストリコン ワイルドランズ』無料アプデ「Last Rites」配信。PS5/Xbox Series X/S/PCにて4K解像度および60fps対応―新作の開発も発表",
       "category": "games",
       "categories": [
         "games",
-        "net-culture",
-        "anime",
-        "general"
-      ],
-      "buzzScore": 63.4,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-53",
-      "title": "“にじさんじの雨女”リゼ・ヘルエスタの公式グッズ「折りたたみ傘」がガチすぎる",
-      "category": "entertainment",
-      "categories": [
         "entertainment",
         "sns",
-        "net-culture",
         "general"
       ],
-      "buzzScore": 63.4,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-914",
-      "title": "保証切れでも対象、「Switch 2」など無償修理へ　任天堂の熊本地震支援に「さすが」の声",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 62.7,
-      "confidence": 0.36,
+      "buzzScore": 67.6,
+      "confidence": 0.39,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -232,18 +130,18 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 20.5,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.7,
+        "search": 5,
         "social": 6,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 23.333333333333332,
+        "searchScore": 26.666666666666668,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -253,8 +151,110 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 93,
-        "internalSearchScore": 36.4,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1144",
+      "title": "熊本 八代 地震の瞬間 手術室は緊迫した状況に…【動画】",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.6,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 4.5,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 5.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 37.7,
+        "internalSocialScore": 34.9
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-377",
+      "title": "マガジン限定記事「男同士で遊ぶ方が圧倒的に楽しいことがバレはじめている」｜白饅頭",
+      "category": "manga",
+      "categories": [
+        "manga",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62.6,
+      "confidence": 0.33,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.8,
+        "internetNativeBoost": 8,
+        "search": 4.1,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 32.3,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [

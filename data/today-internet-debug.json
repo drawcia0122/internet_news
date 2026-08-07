@@ -1,55 +1,56 @@
 {
-  "generatedAt": "2026-08-07T09:37:40.720Z",
+  "generatedAt": "2026-08-07T10:32:02.110Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-22",
-  "selectedTitle": "アニメ『ヤニねこ』1～6話の無料振り返り上映会が8月13日にニコ生で実施。ニコニコの“コメント最多シーンTOP5”も発表",
+  "selectedClusterId": "today-cluster-628",
+  "selectedTitle": "SNSの安全対策めぐり米メタに約900億円支払い命令 米裁判所",
   "candidates": [
     {
-      "clusterId": "today-cluster-22",
-      "title": "アニメ『ヤニねこ』1～6話の無料振り返り上映会が8月13日にニコ生で実施。ニコニコの“コメント最多シーンTOP5”も発表",
-      "category": "anime",
+      "clusterId": "today-cluster-628",
+      "title": "SNSの安全対策めぐり米メタに約900億円支払い命令 米裁判所",
+      "category": "net-culture",
       "categories": [
-        "anime",
-        "games",
         "net-culture",
+        "world",
+        "sns",
         "general"
       ],
-      "buzzScore": 71,
-      "confidence": 0.43,
+      "buzzScore": 72.6,
+      "confidence": 0.5,
       "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "公式または一次情報を含む"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18,
+        "sourceDiversity": 4.7,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 7,
+        "search": 5,
+        "social": 6,
         "velocity": 5.3,
         "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "authority": 5.5,
+        "categoryBias": 4,
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 8.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 54.8
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -57,7 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-196",
+      "clusterId": "today-cluster-197",
       "title": "『ゴーストリコン ワイルドランズ』最新アプデ配信も未だ一部のCPU環境では動かない？「ローディングが終わらない」報告がSteamフォーラムや海外掲示板に投稿",
       "category": "sports",
       "categories": [
@@ -89,7 +90,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 10,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -109,7 +110,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-17",
+      "clusterId": "today-cluster-29",
+      "title": "アニメ『ヤニねこ』1～6話の無料振り返り上映会が8月13日にニコ生で実施。ニコニコの“コメント最多シーンTOP5”も発表",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 70.2,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 5.5,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-23",
       "title": "【最大5人】海で魚を捕まえて“寿司”を作る協力レストラン運営ゲーム『Deep Blue Sushi』8月20日にリリース。海の中にはサメやピラニアといった危険な生物も棲んでいて、阿鼻叫喚待ったなし",
       "category": "games",
       "categories": [
@@ -160,7 +213,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-23",
+      "clusterId": "today-cluster-28",
       "title": "セクシーすぎてバズったゲーム『Swords & Slippers』晴れてSteamにてお披露目。白雪姫はツルハシで殴るしラプンツェルの髪は噛みつく、「闇落ち恋愛」ありスタイリッシュ反逆劇",
       "category": "games",
       "categories": [
@@ -204,57 +257,6 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 50.6,
         "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-24",
-      "title": "フロム新作『ダスクブラッド』ネットワークテストの当選結果が8月7日22時に発表。応募サイトのマイページから確認可能、テスト実施は8月21日～24日",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 68.8,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 6.666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

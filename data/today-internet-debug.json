@@ -1,22 +1,21 @@
 {
-  "generatedAt": "2026-08-08T09:51:42.880Z",
+  "generatedAt": "2026-08-08T10:45:21.408Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-461",
-  "selectedTitle": "高校野球 夏の甲子園 日本文理と大分商 5回を終え同点",
+  "selectedClusterId": "today-cluster-432",
+  "selectedTitle": "高校野球 夏の甲子園 大分商が日本文理に逆転勝ち 2回戦へ",
   "candidates": [
     {
-      "clusterId": "today-cluster-441",
-      "title": "『ゴーストリコン ワイルドランズ』最新アプデ配信も未だ一部のCPU環境では動かない？「ローディングが終わらない」報告がSteamフォーラムや海外掲示板に投稿",
-      "category": "sports",
+      "clusterId": "today-cluster-1940",
+      "title": "『ゴーストリコン ワイルドランズ』無料アプデ「Last Rites」配信。PS5/Xbox Series X/S/PCにて4K解像度および60fps対応―新作の開発も発表",
+      "category": "games",
       "categories": [
-        "sports",
         "games",
         "entertainment",
-        "net-culture",
+        "sns",
         "general"
       ],
-      "buzzScore": 78.5,
-      "confidence": 0.44,
+      "buzzScore": 69.9,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -26,15 +25,67 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 36.666666666666664,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 37,
+        "internalSocialScore": 45.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-517",
+      "title": "『ゴーストリコン ワイルドランズ』最新アプデ配信も未だ一部のCPU環境では動かない？「ローディングが終わらない」報告がSteamフォーラムや海外掲示板に投稿",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.9,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
         "trend": 20.7,
         "internetNativeBoost": 8,
         "search": 4.7,
         "social": 7.4,
         "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
+        "freshness": 8.5,
+        "authority": 1.5,
         "categoryBias": 17,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 13.333333333333334,
@@ -57,59 +108,8 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1860",
-      "title": "『ゴーストリコン ワイルドランズ』無料アプデ「Last Rites」配信。PS5/Xbox Series X/S/PCにて4K解像度および60fps対応―新作の開発も発表",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 71,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.9,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 43.333333333333336,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37,
-        "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-461",
-      "title": "高校野球 夏の甲子園 日本文理と大分商 5回を終え同点",
+      "clusterId": "today-cluster-432",
+      "title": "高校野球 夏の甲子園 大分商が日本文理に逆転勝ち 2回戦へ",
       "category": "sports",
       "categories": [
         "sports",
@@ -117,15 +117,16 @@
         "world",
         "business"
       ],
-      "buzzScore": 65.4,
-      "confidence": 0.63,
+      "buzzScore": 66.9,
+      "confidence": 0.6,
       "articleCount": 6,
       "sourceCount": 3,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "主要3媒体で同一話題を確認",
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "アーカイブ上でも近い話題が連続出現",
         "公式または一次情報を含む"
       ],
       "scoreBreakdown": {
@@ -133,77 +134,28 @@
         "sourceDiversity": 6.2,
         "trend": 22,
         "internetNativeBoost": 0,
-        "search": 5,
-        "social": 3.2,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "search": 8,
+        "social": 4,
+        "velocity": 1.5,
+        "freshness": 10,
         "authority": 5.5,
         "categoryBias": -1,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 8.333333333333332,
+        "searchScore": 50,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
         "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "archiveMatchCount": 4,
+        "repeatedAppearanceScore": 20.1,
         "crossCategoryScore": 40,
         "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 24.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-153",
-      "title": "太ももにも注目なライザのウェディング姿！ フィギュア「ライザ（ライザリン・シュタウト）ウェディングStyle」が予約受付開始",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 62.4,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 6.4,
-        "social": 3.2,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 40,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 24.7
+        "internalSearchScore": 48.1,
+        "internalSocialScore": 31
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -212,14 +164,14 @@
     },
     {
       "clusterId": "today-cluster-1",
-      "title": "Wiiの『スーパーモンキーボール』の上手さと、“内視鏡手術訓練の上手さ”に意外な相関。おサル球転がしゲームが、未来の医学教育に役立つかも",
+      "title": "Steamの「ディスカバリーキュー」に載る鍵は“ウィッシュリスト登録数の瞬間最大風速”か。あるパブリッシャーによる、赤裸々自社データ分析",
       "category": "games",
       "categories": [
         "games",
         "general"
       ],
-      "buzzScore": 60.4,
-      "confidence": 0.43,
+      "buzzScore": 65.5,
+      "confidence": 0.47,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -230,12 +182,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.3,
+        "trend": 18.7,
         "internetNativeBoost": 8,
-        "search": 5.7,
+        "search": 5.8,
         "social": 4.2,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 8.3,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 6,
         "penalty": -3
@@ -251,9 +203,58 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 40,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
         "internalSocialScore": 32.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-144",
+      "title": "名作ADVの夏にしよう！『パラノマサイト 本所七不思議』990円、『ダンガンロンパ』4作品セットで3,060円、“お紳士”な恋愛ADVは1,192円！【eショップのお薦めセール】",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 63.6,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 20.9,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 3.2,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 11.666666666666666,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 37.2,
+        "internalSocialScore": 24.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

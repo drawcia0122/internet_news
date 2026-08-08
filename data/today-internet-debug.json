@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-08T16:47:44.524Z",
+  "generatedAt": "2026-08-08T17:41:12.990Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-381",
+  "selectedClusterId": "today-cluster-394",
   "selectedTitle": "高校野球 夏の甲子園 大分商が日本文理に逆転勝ち 2回戦へ",
   "candidates": [
     {
-      "clusterId": "today-cluster-381",
+      "clusterId": "today-cluster-394",
       "title": "高校野球 夏の甲子園 大分商が日本文理に逆転勝ち 2回戦へ",
       "category": "sports",
       "categories": [
@@ -14,7 +14,7 @@
         "world",
         "business"
       ],
-      "buzzScore": 70.3,
+      "buzzScore": 69.5,
       "confidence": 0.6,
       "articleCount": 6,
       "sourceCount": 3,
@@ -32,7 +32,7 @@
         "sourceDiversity": 6.2,
         "trend": 22,
         "internetNativeBoost": 0,
-        "search": 12,
+        "search": 11.2,
         "social": 3.6,
         "velocity": 2.7,
         "freshness": 8.5,
@@ -41,7 +41,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 75,
+        "searchScore": 70,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -61,59 +61,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-334",
-      "title": "「飯塚幸三は上級国民だから逮捕されない」は間違いだった…《池袋暴走事故》警視庁幹部が「自民党議員」に呼び出されても逮捕を見送った理由",
-      "category": "crime",
-      "categories": [
-        "crime",
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66.3,
-      "confidence": 0.45,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 23.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-804",
+      "clusterId": "today-cluster-822",
       "title": "『ゴーストリコン ワイルドランズ』最新アプデ配信も未だ一部のCPU環境では動かない？「ローディングが終わらない」報告がSteamフォーラムや海外掲示板に投稿",
       "category": "sports",
       "categories": [
@@ -165,7 +113,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-121",
+      "clusterId": "today-cluster-115",
       "title": "名作ADVの夏にしよう！『パラノマサイト 本所七不思議』990円、『ダンガンロンパ』4作品セットで3,060円、“お紳士”な恋愛ADVは1,192円！【eショップのお薦めセール】",
       "category": "games",
       "categories": [
@@ -214,14 +162,65 @@
       ]
     },
     {
-      "clusterId": "today-cluster-130",
+      "clusterId": "today-cluster-2257",
+      "title": "『ゴーストリコン ワイルドランズ』無料アプデ「Last Rites」配信。PS5/Xbox Series X/S/PCにて4K解像度および60fps対応―新作の開発も発表",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 61.1,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5.1,
+        "social": 5.7,
+        "velocity": 0,
+        "freshness": 1.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": -6
+      },
+      "externalSignalStats": {
+        "searchScore": 31.666666666666664,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 1.8,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 36.2,
+        "internalSocialScore": 44.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-124",
       "title": "太ももにも注目なライザのウェディング姿！ フィギュア「ライザ（ライザリン・シュタウト）ウェディングStyle」が予約受付開始",
       "category": "games",
       "categories": [
         "games",
         "general"
       ],
-      "buzzScore": 60.8,
+      "buzzScore": 61,
       "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
@@ -234,7 +233,7 @@
         "sourceDiversity": 4.7,
         "trend": 18,
         "internetNativeBoost": 8,
-        "search": 4.8,
+        "search": 5.1,
         "social": 3.2,
         "velocity": 0,
         "freshness": 10,
@@ -243,7 +242,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 30,
+        "searchScore": 31.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false

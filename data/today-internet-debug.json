@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-08T00:04:43.307Z",
+  "generatedAt": "2026-08-08T02:13:22.655Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-151",
-  "selectedTitle": "『ゴーストリコン ワイルドランズ』最新アプデ配信も未だ一部のCPU環境では動かない？「ローディングが終わらない」報告がSteamフォーラムや海外掲示板に投稿",
+  "selectedClusterId": "today-cluster-4",
+  "selectedTitle": "フレンドにいたずらし放題協力ホラー『GRAIN ROT』Steamで本日から配信開始。燃える＆砕けるおんぼろ木製ボディを乗り移り、怪物だらけの地下遺跡を探検",
   "candidates": [
     {
-      "clusterId": "today-cluster-151",
+      "clusterId": "today-cluster-148",
       "title": "『ゴーストリコン ワイルドランズ』最新アプデ配信も未だ一部のCPU環境では動かない？「ローディングが終わらない」報告がSteamフォーラムや海外掲示板に投稿",
       "category": "sports",
       "categories": [
@@ -58,15 +58,15 @@
     },
     {
       "clusterId": "today-cluster-4",
-      "title": "リアル狩猟オープンワールド『Way of the Hunter 2』9月29日に正式リリースへ、PS5/Xbox Series X|Sにも登場。猟犬を従え、広大自然に生きる野生動物ハント",
+      "title": "フレンドにいたずらし放題協力ホラー『GRAIN ROT』Steamで本日から配信開始。燃える＆砕けるおんぼろ木製ボディを乗り移り、怪物だらけの地下遺跡を探検",
       "category": "games",
       "categories": [
         "games",
-        "sns",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 68.8,
-      "confidence": 0.42,
+      "buzzScore": 66.9,
+      "confidence": 0.47,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -77,12 +77,113 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 5.6,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1226",
+      "title": "『ゴーストリコン ワイルドランズ』無料アプデ「Last Rites」配信。PS5/Xbox Series X/S/PCにて4K解像度および60fps対応―新作の開発も発表",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 63.7,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 7.7,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 48.333333333333336,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 37,
+        "internalSocialScore": 45.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-8",
+      "title": "リアル狩猟オープンワールド『Way of the Hunter 2』9月29日に正式リリースへ、PS5/Xbox Series X|Sにも登場。猟犬を従え、広大自然に生きる野生動物ハント",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 62,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
         "trend": 17.4,
         "internetNativeBoost": 8,
         "search": 5.5,
         "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -108,7 +209,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1455",
+      "clusterId": "today-cluster-1664",
       "title": "SNSの安全対策めぐり米メタに約900億円支払い命令 米裁判所",
       "category": "net-culture",
       "categories": [
@@ -153,107 +254,6 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 37,
         "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-80",
-      "title": "虚淵玄氏のデビュー作『Phantom PHANTOM OF INFERNO』Steam版、9月4日リリースへ。ニトロプラスの“原点”たるハードボイルドADVがついに",
-      "category": "games",
-      "categories": [
-        "games",
-        "general",
-        "sns",
-        "net-culture"
-      ],
-      "buzzScore": 61.8,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 3.8,
-        "trend": 16.9,
-        "internetNativeBoost": 0,
-        "search": 5.5,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 77,
-        "internalSearchScore": 42.6,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1",
-      "title": "クラフト宇宙サバイバル『Breathedge』Steamにて期間限定で無料配布中。定価2800円の好評タイトル",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 61,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 4.2,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 32.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

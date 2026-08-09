@@ -1,11 +1,63 @@
 {
-  "generatedAt": "2026-08-09T18:56:42.021Z",
+  "generatedAt": "2026-08-09T19:43:26.160Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-342",
-  "selectedTitle": "コンサル大手トップから市場縮小論　AIによる業務代替、4社が危機感",
+  "selectedClusterId": "today-cluster-261",
+  "selectedTitle": "「Agent Plugins 1.0.0」発表、異なるAIエージェント間でもスキルやMCPサーバ設定が共通化へ。マイクロソフト、OpenAI、AWS、Googleらがサポート",
   "candidates": [
     {
-      "clusterId": "today-cluster-342",
+      "clusterId": "today-cluster-261",
+      "title": "「Agent Plugins 1.0.0」発表、異なるAIエージェント間でもスキルやMCPサーバ設定が共通化へ。マイクロソフト、OpenAI、AWS、Googleらがサポート",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "business",
+        "general"
+      ],
+      "buzzScore": 68.7,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 6.666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-361",
       "title": "コンサル大手トップから市場縮小論　AIによる業務代替、4社が危機感",
       "category": "tech",
       "categories": [
@@ -108,7 +160,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-260",
+      "clusterId": "today-cluster-259",
       "title": "自作ゲームで軽い気持ちで「シングルプレイモード」を実装した開発者、“大失敗した”と激烈後悔。マルチプレイモードのみで出すべきだったとして",
       "category": "games",
       "categories": [
@@ -159,7 +211,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-64",
+      "clusterId": "today-cluster-63",
       "title": "全て最安値を更新！『Fate/Samurai Remnant』3,217円、『クライマキナ』870円、『無双アビス』1,188円、『星空鉄道とシロの旅』3,190円【eショップ・PS Storeのお薦めセール】",
       "category": "games",
       "categories": [
@@ -201,55 +253,6 @@
         "archiveHeatScore": 80,
         "internalSearchScore": 31.9,
         "internalSocialScore": 24.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-604",
-      "title": "名作ADVの夏にしよう！『パラノマサイト 本所七不思議』990円、『ダンガンロンパ』4作品セットで3,060円、“お紳士”な恋愛ADVは1,192円！【eショップのお薦めセール】",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 58.8,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20.9,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 3.1,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 25,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 36,
-        "internalSocialScore": 23.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

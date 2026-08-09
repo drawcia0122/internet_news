@@ -1,11 +1,62 @@
 {
-  "generatedAt": "2026-08-09T10:09:28.785Z",
+  "generatedAt": "2026-08-09T10:50:55.127Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-6",
-  "selectedTitle": "小説『ムーミン谷の夏まつり』を原作としたアドベンチャーゲームがSwitch、Switch 2、PC（Steam）向けに2026年秋発売へ。手描きアートの雰囲気が良すぎる最新映像も公開",
+  "selectedClusterId": "today-cluster-5",
+  "selectedTitle": "『機動戦士ガンダム アーセナルベース』新作『アーセナルコマンダー』発表！8月28日からオープンベータテスト開催、2027年2月下旬に稼働予定",
   "candidates": [
     {
-      "clusterId": "today-cluster-6",
+      "clusterId": "today-cluster-5",
+      "title": "『機動戦士ガンダム アーセナルベース』新作『アーセナルコマンダー』発表！8月28日からオープンベータテスト開催、2027年2月下旬に稼働予定",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 74.1,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 5.6,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-7",
       "title": "小説『ムーミン谷の夏まつり』を原作としたアドベンチャーゲームがSwitch、Switch 2、PC（Steam）向けに2026年秋発売へ。手描きアートの雰囲気が良すぎる最新映像も公開",
       "category": "games",
       "categories": [
@@ -14,7 +65,7 @@
         "books",
         "general"
       ],
-      "buzzScore": 69.7,
+      "buzzScore": 68.9,
       "confidence": 0.49,
       "articleCount": 3,
       "sourceCount": 2,
@@ -27,9 +78,9 @@
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 15.2,
+        "trend": 14.5,
         "internetNativeBoost": 0,
-        "search": 5.6,
+        "search": 5.5,
         "social": 7.4,
         "velocity": 8,
         "freshness": 8.5,
@@ -48,8 +99,8 @@
         "archiveMatchCount": 2,
         "repeatedAppearanceScore": 30,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 69,
-        "internalSearchScore": 43.7,
+        "archiveHeatScore": 66,
+        "internalSearchScore": 42.6,
         "internalSocialScore": 57.5
       },
       "externalSignalErrors": [
@@ -58,109 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-275",
-      "title": "「本当に実施されるのか」と問い合わせ続出の花火大会、主催者が中止発表…有料観覧券を販売済み",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66.3,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 6.4,
-        "social": 4.6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 40,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 31.9,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-503",
-      "title": "「飯塚幸三は上級国民だから逮捕されない」は間違いだった…《池袋暴走事故》警視庁幹部が「自民党議員」に呼び出されても逮捕を見送った理由",
-      "category": "crime",
-      "categories": [
-        "crime",
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.8,
-      "confidence": 0.44,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 30,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-74",
+      "clusterId": "today-cluster-71",
       "title": "名作ADVの夏にしよう！『パラノマサイト 本所七不思議』990円、『ダンガンロンパ』4作品セットで3,060円、“お紳士”な恋愛ADVは1,192円！【eショップのお薦めセール】",
       "category": "games",
       "categories": [
@@ -209,7 +158,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-7",
+      "clusterId": "today-cluster-575",
+      "title": "「飯塚幸三は上級国民だから逮捕されない」は間違いだった…《池袋暴走事故》警視庁幹部が「自民党議員」に呼び出されても逮捕を見送った理由",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 63.5,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 5.1,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 31.666666666666664,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.3,
+        "internalSocialScore": 57.3
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-8",
       "title": "VTuber結城さくな、じん提供の初オリジナル曲公開　鮫升コモリもMV制作に参加",
       "category": "entertainment",
       "categories": [

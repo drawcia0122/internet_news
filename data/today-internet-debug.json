@@ -1,57 +1,59 @@
 {
-  "generatedAt": "2026-08-08T23:40:11.443Z",
+  "generatedAt": "2026-08-09T02:24:57.313Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1",
-  "selectedTitle": "VTuber碧依さくら、新事務所「re;ALIZE」設立　実写／バーチャル問わず配信者を募集",
+  "selectedClusterId": "today-cluster-347",
+  "selectedTitle": "高校野球 夏の甲子園 大分商が日本文理に逆転勝ち 2回戦へ",
   "candidates": [
     {
-      "clusterId": "today-cluster-1",
-      "title": "VTuber碧依さくら、新事務所「re;ALIZE」設立　実写／バーチャル問わず配信者を募集",
-      "category": "entertainment",
+      "clusterId": "today-cluster-347",
+      "title": "高校野球 夏の甲子園 大分商が日本文理に逆転勝ち 2回戦へ",
+      "category": "sports",
       "categories": [
-        "entertainment",
+        "sports",
         "business",
-        "sns",
-        "net-culture",
-        "general"
+        "general",
+        "world"
       ],
-      "buzzScore": 71.4,
-      "confidence": 0.46,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 68.6,
+      "confidence": 0.6,
+      "articleCount": 5,
+      "sourceCount": 3,
+      "uniqueDomainCount": 2,
       "whyRanked": [
+        "主要3媒体で同一話題を確認",
         "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "検索面でも関連話題の広がりを確認",
+        "アーカイブ上でも近い話題が連続出現",
+        "公式または一次情報を含む"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 8.4,
-        "velocity": 8.3,
+        "coverage": 9,
+        "sourceDiversity": 6.2,
+        "trend": 22,
+        "internetNativeBoost": 0,
+        "search": 9.3,
+        "social": 3.4,
+        "velocity": 4.2,
         "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
+        "authority": 5.5,
+        "categoryBias": -1,
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
+        "searchScore": 58.333333333333336,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
-        "internalSocialScore": 65.8
+        "browseMatchCount": 0,
+        "archiveMatchCount": 4,
+        "repeatedAppearanceScore": 10.8,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 42,
+        "internalSocialScore": 26.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -59,7 +61,56 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1087",
+      "clusterId": "today-cluster-74",
+      "title": "名作ADVの夏にしよう！『パラノマサイト 本所七不思議』990円、『ダンガンロンパ』4作品セットで3,060円、“お紳士”な恋愛ADVは1,192円！【eショップのお薦めセール】",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 63.6,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 20.9,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 3.2,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 15,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 37.2,
+        "internalSocialScore": 24.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1309",
       "title": "『ゴーストリコン ワイルドランズ』最新アプデ配信も未だ一部のCPU環境では動かない？「ローディングが終わらない」報告がSteamフォーラムや海外掲示板に投稿",
       "category": "sports",
       "categories": [
@@ -111,116 +162,69 @@
       ]
     },
     {
-      "clusterId": "today-cluster-367",
-      "title": "名作ADVの夏にしよう！『パラノマサイト 本所七不思議』990円、『ダンガンロンパ』4作品セットで3,060円、“お紳士”な恋愛ADVは1,192円！【eショップのお薦めセール】",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 62.1,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20.9,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 3.2,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 16.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 37.2,
-        "internalSocialScore": 24.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-368",
-      "title": "太ももにも注目なライザのウェディング姿！ フィギュア「ライザ（ライザリン・シュタウト）ウェディングStyle」が予約受付開始",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 58.7,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 3.2,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 26.666666666666668,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 24.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-287",
-      "title": "「飯塚幸三は上級国民だから逮捕されない」は間違いだった…《池袋暴走事故》警視庁幹部が「自民党議員」に呼び出されても逮捕を見送った理由",
+      "clusterId": "today-cluster-510",
+      "title": "避難中の住宅からエアコン室外機を窃盗　容疑で男を逮捕　地震に便乗か　県警注意呼びかけ",
       "category": "crime",
       "categories": [
         "crime",
-        "politics",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 57.7,
-      "confidence": 0.38,
+      "buzzScore": 63.4,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 18.333333333333332,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-90",
+      "title": "ルフィ、シャンクス、五老星…「ONE PIECEカードゲーム」プロモカード9枚入り！4周年記念商品が抽選販売【9月2日23時まで】",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "games",
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "buzzScore": 60.8,
+      "confidence": 0.37,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -230,18 +234,18 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 20.9,
+        "trend": 19.4,
         "internetNativeBoost": 8,
-        "search": 4.8,
+        "search": 4.4,
         "social": 7.4,
         "velocity": 0,
         "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 4,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 26.666666666666668,
+        "searchScore": 5,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -251,8 +255,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 37.2,
+        "archiveHeatScore": 88,
+        "internalSearchScore": 34.7,
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [

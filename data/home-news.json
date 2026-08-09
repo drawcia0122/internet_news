@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-08-08T23:37:22.628Z",
+  "generatedAt": "2026-08-09T02:21:41.376Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
     "general": 0,
-    "tech": 8,
+    "tech": 6,
     "business": 2,
     "politics": 0,
-    "entertainment": 82,
-    "anime": 15,
+    "entertainment": 83,
+    "anime": 20,
     "games": 161,
     "game-features": 4,
     "anime-features": 0,
-    "manga": 41,
+    "manga": 42,
     "books": 1,
-    "sports": 1,
+    "sports": 3,
     "net-culture": 0,
     "matome": 0,
     "crime": 0,
-    "adult": 8,
+    "adult": 9,
     "world": 3
   },
   "hasMore": true,
@@ -32,24 +32,26 @@
       "category": "games",
       "categories": [
         "games",
+        "sports",
         "general"
       ],
       "categoryLabel": "ゲーム",
       "categoryLabels": [
-        "ゲーム"
+        "ゲーム",
+        "スポーツ"
       ],
-      "score": 102,
-      "posts": 1,
-      "metricLabel": "source",
+      "score": 104,
+      "posts": 2,
+      "metricLabel": "sources",
       "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1765571.png",
       "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
+      "capturedAt": "2026-08-09T02:21:41.376Z",
       "time": "直近",
       "sourceName": "INSIDE",
       "sourceUrl": "https://www.inside-games.jp/article/2026/08/08/185945.html",
       "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
+        "複数ソースで同じ話題が確認されています。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
       ],
       "sourceSignals": [
         {
@@ -76,11 +78,12 @@
         }
       ],
       "whatHappened": "『仁王3』が早くも3,828円に",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
       "importantPoint": "終了前の条件確認や購入判断に直結しやすい情報です。",
       "targetAudience": [
         "ポケモンユーザー",
         "ゲームユーザー",
+        "ガジェット好き",
         "セール好き"
       ]
     },
@@ -105,7 +108,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/484/G048410/20260806001/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
+      "capturedAt": "2026-08-09T02:21:41.376Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/484/G048410/20260806001/",
@@ -166,7 +169,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/964/G096417/20260807035/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
+      "capturedAt": "2026-08-09T02:21:41.376Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/964/G096417/20260807035/",
@@ -226,7 +229,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1763831.png",
       "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
+      "capturedAt": "2026-08-09T02:21:41.376Z",
       "time": "直近",
       "sourceName": "INSIDE",
       "sourceUrl": "https://www.inside-games.jp/article/2026/08/08/185959.html",
@@ -292,7 +295,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.4gamer.net/games/238/G023885/20260809001/SS/002.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
+      "capturedAt": "2026-08-09T02:21:41.376Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/238/G023885/20260809001/",
@@ -352,7 +355,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.4gamer.net/games/008/G100886/20260807014/SS/009.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
+      "capturedAt": "2026-08-09T02:21:41.376Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/008/G100886/20260807014/",
@@ -393,127 +396,6 @@
       ]
     },
     {
-      "id": "auto-games-美少女サバイバルtps-アノマリス-steam体験版が8月9日配信終了を撤回し無期限で提供へ-想定を上回る反響-でもフリューだしな-のゲーム-今後も改善へ-gamespark.jp/article/2026/08/08/170417.html",
-      "title": "美少女サバイバルTPS『アノマリス』Steam体験版が8月9日配信終了を撤回し無期限で提供へ。想定を上回る反響―「でもフリューだしな」のゲーム、今後も改善へ",
-      "summary": "「でもフリューだしな」と公式が言及しつつ、フィードバックを受けて発売までに改善が進んでいるTPS。",
-      "briefSummary": "フリューは2026年8月8日、Steamにて配信中の 『アノマリス／ANOMALITH』 先行体験版について当初8月9日までとしていた配信期間を撤廃し、以降も配信を継続すると発表しました。あわせて 『クライムライト／CRYMELIGHT』 バトル試遊版についても、配信期間を撤廃して8月9日以降も配信するとしています。",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1172058.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/08/08/170417.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "美少女サバイバルTPS『アノマリス』Steam体験版が8月9日配信終了を撤回し無期限で提供へ。想定を上回る反響―「でもフリューだしな」のゲーム、今後も改善へ",
-          "url": "http://www.gamespark.jp/article/2026/08/08/170417.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/08/170417.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1172058.jpg"
-        }
-      ],
-      "whatHappened": "美少女サバイバルTPS『アノマリス』Steam体験版が8月9日配信終了を撤回し無期限で提供へ",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-entertainment-ムーミン谷の仲間たちをモチーフに-une-nana-cool-とのコラボ第4弾インナーウェアやルームウェアが登場-animeanime.jp/article/2026/08/08/101866.html",
-      "title": "ムーミン谷の仲間たちをモチーフに♪「une nana cool」とのコラボ第4弾インナーウェアやルームウェアが登場！",
-      "summary": "「ムーミン」がワコールが展開するブランド「une nana cool（ウンナナクール）」とコラボ第4弾を発表。インナーウェアやルームウェアが、全国のウンナナクールショップ、ワコールウェブストア、その他ECサイトにて発売中。",
-      "briefSummary": "「ムーミン」がワコールが展開するブランド「une nana cool（ウンナナクール）」とコラボ第4弾を発表。インナーウェアやルームウェアが、全国のウンナナクールショップ、ワコールウェブストア、その他ECサイトにて発売中。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916517.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/08/08/101866.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "ムーミン谷の仲間たちをモチーフに♪「une nana cool」とのコラボ第4弾インナーウェアやルームウェアが登場！",
-          "url": "https://animeanime.jp/article/2026/08/08/101866.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/08/08/101866.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916517.jpg"
-        }
-      ],
-      "whatHappened": "ムーミン谷の仲間たちをモチーフに♪「une nana cool」とのコラボ第4弾インナーウェ…",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "ガジェット好き",
-        "漫画・アニメ好き"
-      ]
-    },
-    {
       "id": "auto-games-game-sparkレビュー-ゲームフリーク新作-beast-of-reincarnation-またこいつか-となりながらも心に残る一人と一匹の旅-gamespark.jp/article/2026/08/08/170421.html",
       "title": "Game*Sparkレビュー：ゲームフリーク新作『Beast of Reincarnation』―「またこいつか」となりながらも心に残る一人と一匹の旅",
       "summary": "ゲームフリークは8月4日、完全新作となるアクションRPG『 Beast of Reincarnation 』をリリースしました。本作では記憶と感情を失った「エマ」と、犬の相棒「クゥ」による、“一人と一匹”がコンセプトの物語が描かれます。",
@@ -534,7 +416,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1170447.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
+      "capturedAt": "2026-08-09T02:21:41.376Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/08/08/170421.html",
@@ -574,67 +456,6 @@
       ]
     },
     {
-      "id": "auto-games-reanimal-新dlc配信から-way-of-the-hunter-2-発売日まで-thq-nordic-デジタルショーケース-2026-発表内容ひとまとめ-gamespark.jp/article/2026/08/08/170409.html",
-      "title": "『REANIMAL』新DLC配信から『Way of the Hunter 2』発売日まで！「THQ Nordic デジタルショーケース 2026」発表内容ひとまとめ",
-      "summary": "各ストアではTHQ Nordicタイトルのダウンロード版セールも実施されています。",
-      "briefSummary": "現在PCで早期アクセス中のハンティングシミュレーション『Way of the Hunter 2（ウェイ オブ ザ ハンター２）』が、2026年9月29日にPC正式版およびPS5/Xbox Series X|S向けダウンロード版を発売予定。 北米の「New Laurentia」や、アフリカの「Kilimaya Reserve」を舞台に、豊かな自然…",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1171928.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/08/08/170409.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "『REANIMAL』新DLC配信から『Way of the Hunter 2』発売日まで！「THQ Nordic デジタルショーケース 2026」発表内容ひとまとめ",
-          "url": "http://www.gamespark.jp/article/2026/08/08/170409.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/08/170409.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1171928.jpg"
-        }
-      ],
-      "whatHappened": "『REANIMAL』新DLC配信から『Way of the Hunter 2』発売日まで",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
       "id": "auto-games-2-800円-0円-おかしな宇宙サバイバルadv-breathedge-steamにて8月10日2時まで無料配布-8月31日早期アクセス開始の続編新トレイラー公-gamespark.jp/article/2026/08/08/170392.html",
       "title": "【2,800円→0円】おかしな宇宙サバイバルADV『Breathedge』Steamにて8月10日2時まで無料配布―8月31日早期アクセス開始の続編新トレイラー公開",
       "summary": "パブリッシャーHypeTrain Digitalは、デベロッパーRedRuins Softworks開発のアクションアドベンチャー『 Breathedge 』PC版の無料配布を開始しました。",
@@ -653,7 +474,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1171900.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
+      "capturedAt": "2026-08-09T02:21:41.376Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/08/08/170392.html",
@@ -694,6 +515,685 @@
       ]
     },
     {
+      "id": "auto-games-どうぶつの森-キャラマグネッツが可愛い-たぬきちやしずえなど全24種-ゲーム内の便箋風メモカード全10種も-inside-games.jp/article/2026/08/09/185971.html",
+      "title": "『どうぶつの森』キャラマグネッツが可愛い！たぬきちやしずえなど全24種、ゲーム内の便箋風メモカード全10種も",
+      "summary": "バンダイは、 「どうぶつの森 キャラマグネッツ」 を8月10日より全国量販店の菓子売場等にて発売します。",
+      "briefSummary": "「どうぶつの森 キャラマグネッツ」 の価格は297円（税込）で、8月10日より全国量販店の菓子売場等にて発売します。詳細は バンダイキャンディ商品ページ をご確認ください。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1717859.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-09T02:21:41.376Z",
+      "time": "直近",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/08/09/185971.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch",
+            "pokemon"
+          ],
+          "title": "『どうぶつの森』キャラマグネッツが可愛い！たぬきちやしずえなど全24種、ゲーム内の便箋風メモカード全10種も",
+          "url": "https://www.inside-games.jp/article/2026/08/09/185971.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/08/09/185971.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1717859.jpg"
+        }
+      ],
+      "whatHappened": "『どうぶつの森』キャラマグネッツが可愛い",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ポケモンユーザー",
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-さあ-迷宮へ誘いましょう-たんプリ-キュアアルカナ・シャドウのtシャツ-クッションカバーなどが新登場-animeanime.jp/article/2026/08/09/101869.html",
+      "title": "さあ、迷宮へ誘いましょう―「たんプリ」キュアアルカナ・シャドウのTシャツ、クッションカバーなどが新登場",
+      "summary": "『名探偵プリキュア！』の新商品として、公式キャラクターグッズ・アパレルを手掛ける「二次元コスパ」ブランドよりキュアアルカナ・シャドウの描き下ろしイラストを使用した新作グッズが登場。二次元コスパのサイトにて予約受付中で、一部商品は8月中旬よりコスパオフィシャルショップほかにて先行販売される。",
+      "briefSummary": "「Tシャツ」、「アクリルスタンド」、「パスケース（ナスカン付き）」については、8月中旬よりコスパオフィシャルショップ、ジーストア・ドット・コム、テレアサショップの東京駅店と六本木店にて先行販売が実施される。いち早く手に入る機会をお見逃しなく。詳細は各商品ページにて確認を。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "anime",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画",
+        "アニメ"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916768.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-09T02:21:41.376Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/09/101869.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "さあ、迷宮へ誘いましょう―「たんプリ」キュアアルカナ・シャドウのTシャツ、クッションカバーなどが新登場",
+          "url": "https://animeanime.jp/article/2026/08/09/101869.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/09/101869.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916768.jpg"
+        }
+      ],
+      "whatHappened": "さあ、迷宮へ誘いましょう―「たんプリ」キュアアルカナ・シャドウのTシャツ、クッションカバーな…",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-ムーミン-ムーミン谷の夏まつり-2026年秋リリース-手描きアートで彩られた原作の世界へ-スイッチ-スイッチ2パッケージ版同時発売も決定-gamespark.jp/article/2026/08/09/170425.html",
+      "title": "『ムーミン：ムーミン谷の夏まつり』2026年秋リリース！手描きアートで彩られた原作の世界へ、スイッチ/スイッチ2パッケージ版同時発売も決定",
+      "summary": "トーベ・ヤンソンの小説を忠実に再現した、心温まるポイント＆クリックアドベンチャーが2026年秋に登場。Nintendo Switch 2パッケージ版も同時発売が決定した。",
+      "briefSummary": "『 ムーミン：ムーミン谷の夏まつり 』は、PC（ Steam ）/ニンテンドースイッチ/ニンテンドースイッチ2向けに2026年秋に発売予定です。価格は…",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1171780.png",
+      "publishedAt": null,
+      "capturedAt": "2026-08-09T02:21:41.376Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/08/09/170425.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "『ムーミン：ムーミン谷の夏まつり』2026年秋リリース！手描きアートで彩られた原作の世界へ、スイッチ/スイッチ2パッケージ版同時発売も決定",
+          "url": "http://www.gamespark.jp/article/2026/08/09/170425.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/09/170425.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1171780.png"
+        }
+      ],
+      "whatHappened": "『ムーミン：ムーミン谷の夏まつり』2026年秋リリース",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-sports-ルフィ-シャンクス-五老星-one-pieceカードゲーム-プロモカード9枚入り-4周年記念商品が抽選販売-9月2日23時まで-animeanime.jp/article/2026/08/09/101876.html",
+      "title": "ルフィ、シャンクス、五老星…「ONE PIECEカードゲーム」プロモカード9枚入り！4周年記念商品が抽選販売【9月2日23時まで】",
+      "summary": "『ONE PIECE（ワンピース）』のトレーディングカードゲーム「ONE PIECEカードゲーム」に、4周年を記念する特別商品「ONEPIECEカードゲーム 4th Anniversary Set」が登場。バンダイナムコグループの公式通販サイト「プレミアムバンダイ」内、「バンダイカードショップ」にて…",
+      "briefSummary": "「ワンピース」全世界キャラ人気投票の結果予想企画も始動！「ONE PIECE DAY’26」今年はX・LINEでも無料ライブ配信！ステージ情報も公開",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "games",
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "スポーツ",
+      "categoryLabels": [
+        "スポーツ",
+        "ゲーム",
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916425.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-09T02:21:41.376Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/09/101876.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "ルフィ、シャンクス、五老星…「ONE PIECEカードゲーム」プロモカード9枚入り！4周年記念商品が抽選販売【9月2日23時まで】",
+          "url": "https://animeanime.jp/article/2026/08/09/101876.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/09/101876.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916425.jpg"
+        }
+      ],
+      "whatHappened": "ルフィ、シャンクス、五老星…「ONE PIECEカードゲーム」プロモカード9枚入り",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-anime-夏アニメ-無職転生iii-ナナホシは-ルーデウスにある提案をするが-第7話先行カット-animeanime.jp/article/2026/08/09/101875.html",
+      "title": "夏アニメ「無職転生III」ナナホシは、ルーデウスにある提案をするが…第7話先行カット",
+      "summary": "夏アニメ『無職転生III ～異世界行ったら本気だす～』より、2026年8月9日（日）から放送開始となる 第7話「第四段階」」のあらすじと先行場面カットが公開された。",
+      "briefSummary": "夏アニメ『無職転生III ～異世界行ったら本気だす～』より、2026年8月9日（日）から放送開始となる 第7話「第四段階」」のあらすじと先行場面カットが公開された。",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "アニメ",
+      "categoryLabels": [
+        "アニメ",
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916805.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-09T02:21:41.376Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/09/101875.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "夏アニメ「無職転生III」ナナホシは、ルーデウスにある提案をするが…第7話先行カット",
+          "url": "https://animeanime.jp/article/2026/08/09/101875.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/09/101875.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916805.jpg"
+        }
+      ],
+      "whatHappened": "夏アニメ「無職転生III」ナナホシは、ルーデウスにある提案をするが…第7話先行カット",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-ハローキティがふわふわのバンビ柄やレオパード柄に-全6種でどれが出るかはお楽しみ-フラッフィーハローキティチャーム-第2弾登場-8月20日-animeanime.jp/article/2026/08/09/101872.html",
+      "title": "ハローキティがふわふわのバンビ柄やレオパード柄に☆ 全6種でどれが出るかはお楽しみ♪「フラッフィーハローキティチャーム」第2弾登場【8月20日～】",
+      "summary": "「【sanrio houseシークレットコレクション】フラッフィーハローキティチャーム」の第2弾が2026年8月20日に発売される。アニマル柄をまとったぬいぐるみチャーム全6種（シークレットカラー1種含む）が、ブラインドボックス仕様でラインアップする。",
+      "briefSummary": "「【sanrio houseシークレットコレクション】フラッフィーハローキティチャーム」の第2弾が2026年8月20日に発売される。アニマル柄をまとったぬいぐるみチャーム全6種（シークレットカラー1種含む）が、ブラインドボックス仕様でラインアップする。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "anime",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画",
+        "アニメ"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916256.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-09T02:21:41.376Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/09/101872.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "ハローキティがふわふわのバンビ柄やレオパード柄に☆ 全6種でどれが出るかはお楽しみ♪「フラッフィーハローキティチャーム」第2弾登場【8月20日～】",
+          "url": "https://animeanime.jp/article/2026/08/09/101872.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/09/101872.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916256.jpg"
+        }
+      ],
+      "whatHappened": "ハローキティがふわふわのバンビ柄やレオパード柄に☆ 全6種でどれが出るかはお楽しみ♪「フラッ…",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-映画名探偵プリキュア-鬼頭明里-島崎信長-内山昂輝がゲスト出演-喜びコメントも-まさか自分がご縁をいただくことがあるとは-animeanime.jp/article/2026/08/09/101871.html",
+      "title": "「映画名探偵プリキュア！」鬼頭明里、島崎信長、内山昂輝がゲスト出演！ 喜びコメントも「まさか自分がご縁をいただくことがあるとは...」",
+      "summary": "劇場版『映画名探偵プリキュア！不思議な庭と2人の秘密』のゲスト声優として、鬼頭明里、島崎信長、内山昂輝の出演が決定した。3名のキャストコメントに加え、最新映像と新たなスチールも公開された。",
+      "briefSummary": "劇場版『映画名探偵プリキュア！不思議な庭と2人の秘密』のゲスト声優として、鬼頭明里、島崎信長、内山昂輝の出演が決定した。3名のキャストコメントに加え、最新映像と新たなスチールも公開された。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "anime",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画",
+        "アニメ"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916541.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-09T02:21:41.376Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/09/101871.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "SNSやネット上で反応が広がりやすい話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「映画名探偵プリキュア！」鬼頭明里、島崎信長、内山昂輝がゲスト出演！ 喜びコメントも「まさか自分がご縁をいただくことがあるとは...」",
+          "url": "https://animeanime.jp/article/2026/08/09/101871.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/09/101871.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916541.jpg"
+        }
+      ],
+      "whatHappened": "「映画名探偵プリキュア",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "漫画・アニメ好き",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-entertainment-薬屋のひとりごと-全話無料配信決定-8月9日よりtverにて配信スタート-animeanime.jp/article/2026/08/09/101870.html",
+      "title": "「薬屋のひとりごと」全話無料配信決定！8月9日よりTVerにて配信スタート",
+      "summary": "TVアニメ『薬屋のひとりごと』の全話無料配信が決定した。民放公式テレビ配信サービス「TVer」（ティーバー）にて、8月9日から期間限定で順次配信される。",
+      "briefSummary": "TVアニメ『薬屋のひとりごと』の全話無料配信が決定した。民放公式テレビ配信サービス「TVer」（ティーバー）にて、8月9日から期間限定で順次配信される。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "anime",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画",
+        "アニメ"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916515.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-09T02:21:41.376Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/09/101870.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「薬屋のひとりごと」全話無料配信決定！8月9日よりTVerにて配信スタート",
+          "url": "https://animeanime.jp/article/2026/08/09/101870.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/09/101870.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916515.jpg"
+        }
+      ],
+      "whatHappened": "「薬屋のひとりごと」全話無料配信決定",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-美少女サバイバルtps-アノマリス-steam体験版が8月9日配信終了を撤回し無期限で提供へ-想定を上回る反響-でもフリューだしな-のゲーム-今後も改善へ-gamespark.jp/article/2026/08/08/170417.html",
+      "title": "美少女サバイバルTPS『アノマリス』Steam体験版が8月9日配信終了を撤回し無期限で提供へ。想定を上回る反響―「でもフリューだしな」のゲーム、今後も改善へ",
+      "summary": "「でもフリューだしな」と公式が言及しつつ、フィードバックを受けて発売までに改善が進んでいるTPS。",
+      "briefSummary": "フリューは2026年8月8日、Steamにて配信中の 『アノマリス／ANOMALITH』 先行体験版について当初8月9日までとしていた配信期間を撤廃し、以降も配信を継続すると発表しました。あわせて 『クライムライト／CRYMELIGHT』 バトル試遊版についても、配信期間を撤廃して8月9日以降も配信するとしています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1172058.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-09T02:21:41.376Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/08/08/170417.html",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "美少女サバイバルTPS『アノマリス』Steam体験版が8月9日配信終了を撤回し無期限で提供へ。想定を上回る反響―「でもフリューだしな」のゲーム、今後も改善へ",
+          "url": "http://www.gamespark.jp/article/2026/08/08/170417.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/08/170417.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1172058.jpg"
+        }
+      ],
+      "whatHappened": "美少女サバイバルTPS『アノマリス』Steam体験版が8月9日配信終了を撤回し無期限で提供へ",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-ムーミン谷の仲間たちをモチーフに-une-nana-cool-とのコラボ第4弾インナーウェアやルームウェアが登場-animeanime.jp/article/2026/08/08/101866.html",
+      "title": "ムーミン谷の仲間たちをモチーフに♪「une nana cool」とのコラボ第4弾インナーウェアやルームウェアが登場！",
+      "summary": "「ムーミン」がワコールが展開するブランド「une nana cool（ウンナナクール）」とコラボ第4弾を発表。インナーウェアやルームウェアが、全国のウンナナクールショップ、ワコールウェブストア、その他ECサイトにて発売中。",
+      "briefSummary": "「ムーミン」がワコールが展開するブランド「une nana cool（ウンナナクール）」とコラボ第4弾を発表。インナーウェアやルームウェアが、全国のウンナナクールショップ、ワコールウェブストア、その他ECサイトにて発売中。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916517.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-09T02:21:41.376Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/08/101866.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "ムーミン谷の仲間たちをモチーフに♪「une nana cool」とのコラボ第4弾インナーウェアやルームウェアが登場！",
+          "url": "https://animeanime.jp/article/2026/08/08/101866.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/08/101866.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916517.jpg"
+        }
+      ],
+      "whatHappened": "ムーミン谷の仲間たちをモチーフに♪「une nana cool」とのコラボ第4弾インナーウェ…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-reanimal-新dlc配信から-way-of-the-hunter-2-発売日まで-thq-nordic-デジタルショーケース-2026-発表内容ひとまとめ-gamespark.jp/article/2026/08/08/170409.html",
+      "title": "『REANIMAL』新DLC配信から『Way of the Hunter 2』発売日まで！「THQ Nordic デジタルショーケース 2026」発表内容ひとまとめ",
+      "summary": "各ストアではTHQ Nordicタイトルのダウンロード版セールも実施されています。",
+      "briefSummary": "現在PCで早期アクセス中のハンティングシミュレーション『Way of the Hunter 2（ウェイ オブ ザ ハンター２）』が、2026年9月29日にPC正式版およびPS5/Xbox Series X|S向けダウンロード版を発売予定。 北米の「New Laurentia」や、アフリカの「Kilimaya Reserve」を舞台に、豊かな自然…",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1171928.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-09T02:21:41.376Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/08/08/170409.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "『REANIMAL』新DLC配信から『Way of the Hunter 2』発売日まで！「THQ Nordic デジタルショーケース 2026」発表内容ひとまとめ",
+          "url": "http://www.gamespark.jp/article/2026/08/08/170409.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/08/170409.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1171928.jpg"
+        }
+      ],
+      "whatHappened": "『REANIMAL』新DLC配信から『Way of the Hunter 2』発売日まで",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き",
+        "ネット文化を追う人"
+      ]
+    },
+    {
       "id": "auto-games-勝利の女神-nikke-夏だ-水着だ-背中で-ドロシー-ラピ-レッドフード-が-魅せる-新作一番くじラインナップ-gamespark.jp/article/2026/08/08/170420.html",
       "title": "『勝利の女神：NIKKE』夏だ、水着だ！背中で「ドロシー」「ラピ：レッドフード」が“魅せる!! 新作一番くじラインナップ",
       "summary": "「 『勝利の女神：NIKKE』夏だ、水着だ！背中で「ドロシー」「ラピ：レッドフード」が“魅せる!! 新作一番くじラインナップ 」に一致する記事は見つかりませんでした。",
@@ -714,7 +1214,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1171152.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
+      "capturedAt": "2026-08-09T02:21:41.376Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/08/08/170420.html",
@@ -746,489 +1246,6 @@
       ],
       "whatHappened": "『勝利の女神：NIKKE』夏だ、水着だ",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-リメイク版-silent-hill-2-約2年ぶりにアップデート配信も適用後に不具合発生中-ps5-ps5-proのパフォーマンスモードにて-gamespark.jp/article/2026/08/08/170403.html",
-      "title": "リメイク版『SILENT HILL 2』約2年ぶりにアップデート配信も適用後に不具合発生中―PS5/PS5 Proのパフォーマンスモードにて",
-      "summary": "パフォーマンスモードおよびクオリティモードでの動作を改善するアップデートでした。",
-      "briefSummary": "8月6日に、本作のPS5およびPS5 Pro版を対象とした1.07パッチが配信されました。公式サイトで公開された パッチノート によると、同パッチではゲーム内の一部調整を実施したといいます。",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1171929.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/08/08/170403.html",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "リメイク版『SILENT HILL 2』約2年ぶりにアップデート配信も適用後に不具合発生中―PS5/PS5 Proのパフォーマンスモードにて",
-          "url": "http://www.gamespark.jp/article/2026/08/08/170403.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/08/170403.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1171929.jpg"
-        }
-      ],
-      "whatHappened": "リメイク版『SILENT HILL 2』約2年ぶりにアップデート配信も適用後に不具合発生中―…",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-anime-夏アニメ-さよならララ-セル画-の壮絶な撮影現場とは-設備探し-故障-修理-困難の連続-op映像のメイキング公開-animeanime.jp/article/2026/08/08/101859.html",
-      "title": "夏アニメ「さよならララ」“セル画”の壮絶な撮影現場とは― 設備探し、故障、修理…困難の連続!? OP映像のメイキング公開",
-      "summary": "TVアニメ『さよならララ』のメイキング映像が公開された。セル画を使用したことで話題となったオープニングの制作過程が紹介されている。",
-      "briefSummary": "このたび、いきものがかりが歌うオープニングテーマ「さよならララ」にのせたOPのメイキング映像「『さよならララ』ができるまで ―Behind the Scenes― OP制作編」が発表された。 本作のオープニング映像は、紙に描いた線画を透明なシートに転写し、絵の具で彩色するという伝統的なアニメーション技法のセル画を一部カットに導入。どこか懐かしさを感じる…",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "アニメ",
-      "categoryLabels": [
-        "アニメ",
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916509.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/08/08/101859.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "夏アニメ「さよならララ」“セル画”の壮絶な撮影現場とは― 設備探し、故障、修理…困難の連続!? OP映像のメイキング公開",
-          "url": "https://animeanime.jp/article/2026/08/08/101859.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/08/08/101859.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916509.jpg"
-        }
-      ],
-      "whatHappened": "夏アニメ「さよならララ」“セル画”の壮絶な撮影現場とは― 設備探し、故障、修理…困難の連続",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-games-体験版配信中の-アノマリス-anomalith-ウィッシュリスト7万件突破-6万件記念コンテンツ-を兼ねた記念映像も公開-gamespark.jp/article/2026/08/08/170408.html",
-      "title": "体験版配信中の『アノマリス／ANOMALITH』ウィッシュリスト7万件突破！「6万件記念コンテンツ」を兼ねた記念映像も公開",
-      "summary": "「6万件記念コンテンツ」は達成が想定を上回る早さであったために公開延期となっていました。",
-      "briefSummary": "フリューは、サバイバルTPS『 アノマリス／ANOMALITH 』のSteamウィッシュリスト登録が7万件を突破したと公式Xアカウントにて発表しました。あわせて6万件突破時には延期となっていた「6万件記念コンテンツ」も公開されています。",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1171994.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/08/08/170408.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "体験版配信中の『アノマリス／ANOMALITH』ウィッシュリスト7万件突破！「6万件記念コンテンツ」を兼ねた記念映像も公開",
-          "url": "http://www.gamespark.jp/article/2026/08/08/170408.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/08/170408.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1171994.jpg"
-        }
-      ],
-      "whatHappened": "体験版配信中の『アノマリス／ANOMALITH』ウィッシュリスト7万件突破",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-entertainment-映画-ちいかわ-は大人もハマる傑作-原作は東野圭吾-の声も飛び交う仕掛けが満載-animeanime.jp/article/2026/08/08/101841.html",
-      "title": "映画「ちいかわ」は大人もハマる傑作!「原作は東野圭吾?」の声も飛び交う仕掛けが満載",
-      "summary": "イラストレーター・ナガノ氏による人気コンテンツ「ちいかわ」初の劇場版作品『映画ちいかわ 人魚の島のひみつ』が7月24日に全国で封切られた。",
-      "briefSummary": "イラストレーター・ナガノ氏による人気コンテンツ「ちいかわ」初の劇場版作品『映画ちいかわ 人魚の島のひみつ』が7月24日に全国で封切られた。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916422.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/08/08/101841.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "映画「ちいかわ」は大人もハマる傑作!「原作は東野圭吾?」の声も飛び交う仕掛けが満載",
-          "url": "https://animeanime.jp/article/2026/08/08/101841.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/08/08/101841.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916422.jpg"
-        }
-      ],
-      "whatHappened": "映画「ちいかわ」は大人もハマる傑作",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-entertainment-本好きの下剋上-領主の養女-セガ-ラッキーくじオンラインが登場-エタージュラやトランプなどがラインナップ-animeanime.jp/article/2026/08/08/101862.html",
-      "title": "「本好きの下剋上 領主の養女」セガ ラッキーくじオンラインが登場！エタージュラやトランプなどがラインナップ",
-      "summary": "『本好きの下剋上 領主の養女』より、「セガ ラッキーくじオンライン」が登場。描き起こしデフォルメイラストを使用したオリジナルグッズがラインナップ！",
-      "briefSummary": "『本好きの下剋上 領主の養女』より、「セガ ラッキーくじオンライン」が登場。描き起こしデフォルメイラストを使用したオリジナルグッズがラインナップ！",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "world",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画",
-        "国際"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/914981.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/08/08/101862.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "「本好きの下剋上 領主の養女」セガ ラッキーくじオンラインが登場！エタージュラやトランプなどがラインナップ",
-          "url": "https://animeanime.jp/article/2026/08/08/101862.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/08/08/101862.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/914981.jpg"
-        }
-      ],
-      "whatHappened": "「本好きの下剋上 領主の養女」セガ ラッキーくじオンラインが登場",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "漫画・アニメ好き",
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-adult-セクシー水着で弾ける夏-かのかり-カナン様-瑠璃の宝石-コミケ108に-きゃらon-出展-22タイトル・350種以上のグッズ販売-animeanime.jp/article/2026/08/08/101865.html",
-      "title": "セクシー水着で弾ける夏☆「かのかり」「カナン様」「瑠璃の宝石」…コミケ108に「きゃらON！」出展！22タイトル・350種以上のグッズ販売",
-      "summary": "「きゃらON！」が、8月15日・16日に開催される「コミックマーケット108」に企業出展する。描き下ろしや先行販売を含む22タイトル・350種以上のグッズを販売する。",
-      "briefSummary": "「きゃらON！」が、8月15日・16日に開催される「コミックマーケット108」に企業出展する。描き下ろしや先行販売を含む22タイトル・350種以上のグッズを販売する。",
-      "category": "adult",
-      "categories": [
-        "adult",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "アダルト系",
-      "categoryLabels": [
-        "アダルト系",
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916725.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/08/08/101865.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "セクシー水着で弾ける夏☆「かのかり」「カナン様」「瑠璃の宝石」…コミケ108に「きゃらON！」出展！22タイトル・350種以上のグッズ販売",
-          "url": "https://animeanime.jp/article/2026/08/08/101865.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/08/08/101865.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/916725.jpg"
-        }
-      ],
-      "whatHappened": "セクシー水着で弾ける夏☆「かのかり」「カナン様」「瑠璃の宝石」…コミケ108に「きゃらON",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-games-thq-nordic-デジタルショーケース-2026-発表情報まとめ-狩猟シミュレーション-way-of-the-hunter-2-の発売日が9月29日に決定-4gamer.net/games/991/g999110/20260807063",
-      "title": "「THQ Nordic デジタルショーケース 2026」発表情報まとめ。狩猟シミュレーション「Way of the Hunter 2」の発売日が9月29日に決定",
-      "summary": "「 「THQ Nordic デジタルショーケース 2026」発表情報まとめ。狩猟シミュレーション「Way of the Hunter 2」の発売日が9月29日に決定 」に一致する記事は見つかりませんでした。",
-      "briefSummary": "THQ Nordicは本日（2026年8月7日），公式番組「THQ Nordic デジタルショーケース 2026」を配信した。狩猟シミュレーションゲーム「Way of the Hunter 2」の発売日や，DigixArtが手掛ける「Road 96」の世界を舞台にした新作などが発表された。",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/991/G999110/20260807063/SS/001.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/991/G999110/20260807063/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "「THQ Nordic デジタルショーケース 2026」発表情報まとめ。狩猟シミュレーション「Way of the Hunter 2」の発売日が9月29日に決定",
-          "url": "https://www.4gamer.net/games/991/G999110/20260807063/",
-          "canonicalUrl": "https://www.4gamer.net/games/991/G999110/20260807063/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/991/G999110/20260807063/SS/001.jpg"
-        }
-      ],
-      "whatHappened": "「THQ Nordic デジタルショーケース 2026」発表情報まとめ",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-games-ディーゼル・パンクな巨砲をワンオペ操縦する-iron-nest-heavy-turret-simulator-発売1日足らずで15万本突破-steamレビューは-gamespark.jp/article/2026/08/08/170412.html",
-      "title": "ディーゼル・パンクな巨砲をワンオペ操縦する『IRON NEST: Heavy Turret Simulator』発売1日足らずで15万本突破。Steamレビューは“圧倒的に好評”",
-      "summary": "Nick Nieuwoudt氏とDominik Latos氏はディーゼル・パンクヘビーアサルトシミュレーター『 IRON NEST: Heavy Turret Simulator 』のプレイヤーへ向けた感謝映像を公式Xアカウントにて公開しました。発売19時間時点で15万本を突破したことも発表されてい…",
-      "briefSummary": "Nick Nieuwoudt氏とDominik Latos氏はディーゼル・パンクヘビーアサルトシミュレーター『 IRON NEST: Heavy Turret Simulator 』のプレイヤーへ向けた感謝映像を公式Xアカウントにて公開しました。発売19時間時点で15万本を突破したことも発表されています。",
-      "category": "games",
-      "categories": [
-        "games",
-        "game-features",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "ゲーム特集"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1172007.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-08T23:37:22.628Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/08/08/170412.html",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "ディーゼル・パンクな巨砲をワンオペ操縦する『IRON NEST: Heavy Turret Simulator』発売1日足らずで15万本突破。Steamレビューは“圧倒的に好評”",
-          "url": "http://www.gamespark.jp/article/2026/08/08/170412.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/08/170412.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1172007.jpg"
-        }
-      ],
-      "whatHappened": "ディーゼル・パンクな巨砲をワンオペ操縦する『IRON NEST: Heavy Turret …",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー",

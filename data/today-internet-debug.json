@@ -1,59 +1,58 @@
 {
-  "generatedAt": "2026-08-09T04:05:10.492Z",
+  "generatedAt": "2026-08-09T05:15:25.484Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-486",
-  "selectedTitle": "高校野球 夏の甲子園 大分商が日本文理に逆転勝ち 2回戦へ",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "「突然いなくなった恋人はどこにいったのか？」現実と幻想の合間で揺れる、切なさと穏やかさが交差するSteam百合ミステリー『SeaBed』をもう遊んだか",
   "candidates": [
     {
-      "clusterId": "today-cluster-486",
-      "title": "高校野球 夏の甲子園 大分商が日本文理に逆転勝ち 2回戦へ",
-      "category": "sports",
+      "clusterId": "today-cluster-418",
+      "title": "株式会社旅行新聞新社",
+      "category": "business",
       "categories": [
-        "sports",
         "business",
-        "general",
-        "world"
+        "entertainment",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
       ],
-      "buzzScore": 66.1,
-      "confidence": 0.58,
-      "articleCount": 5,
-      "sourceCount": 3,
-      "uniqueDomainCount": 2,
+      "buzzScore": 72.7,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "主要3媒体で同一話題を確認",
         "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "アーカイブ上でも近い話題が連続出現",
-        "公式または一次情報を含む"
+        "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
-        "coverage": 9,
-        "sourceDiversity": 6.2,
-        "trend": 22,
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 16.5,
         "internetNativeBoost": 0,
-        "search": 9.9,
-        "social": 3.4,
-        "velocity": 2.7,
+        "search": 16,
+        "social": 7.4,
+        "velocity": 5.3,
         "freshness": 8.5,
-        "authority": 5.5,
-        "categoryBias": -1,
+        "authority": 2.5,
+        "categoryBias": 9,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 61.66666666666667,
+        "searchScore": 100,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
         "browseMatchCount": 0,
-        "archiveMatchCount": 4,
-        "repeatedAppearanceScore": 10.8,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 42,
-        "internalSocialScore": 26.9
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 75,
+        "internalSearchScore": 30.2,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -61,7 +60,57 @@
       ]
     },
     {
-      "clusterId": "today-cluster-75",
+      "clusterId": "today-cluster-1",
+      "title": "「突然いなくなった恋人はどこにいったのか？」現実と幻想の合間で揺れる、切なさと穏やかさが交差するSteam百合ミステリー『SeaBed』をもう遊んだか",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 65.5,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 4.2,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 32.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-77",
       "title": "名作ADVの夏にしよう！『パラノマサイト 本所七不思議』990円、『ダンガンロンパ』4作品セットで3,060円、“お紳士”な恋愛ADVは1,192円！【eショップのお薦めセール】",
       "category": "games",
       "categories": [
@@ -110,7 +159,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1464",
+      "clusterId": "today-cluster-1585",
       "title": "『ゴーストリコン ワイルドランズ』最新アプデ配信も未だ一部のCPU環境では動かない？「ローディングが終わらない」報告がSteamフォーラムや海外掲示板に投稿",
       "category": "sports",
       "categories": [
@@ -162,90 +211,39 @@
       ]
     },
     {
-      "clusterId": "today-cluster-657",
-      "title": "避難中の住宅からエアコン室外機を窃盗　容疑で男を逮捕　地震に便乗か　県警注意呼びかけ",
-      "category": "crime",
+      "clusterId": "today-cluster-405",
+      "title": "「鬼滅の刃」禰豆子役の声優・鬼頭明里の姿にネット騒然　「イケメンすぎる」「最高にかっこいい」人生初の男装",
+      "category": "anime",
       "categories": [
-        "crime",
+        "anime",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 61.8,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 16.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.3,
-        "internalSocialScore": 46.3
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-98",
-      "title": "「飯塚幸三は上級国民だから逮捕されない」は間違いだった…《池袋暴走事故》警視庁幹部が「自民党議員」に呼び出されても逮捕を見送った理由",
-      "category": "crime",
-      "categories": [
-        "crime",
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 59,
+      "buzzScore": 60,
       "confidence": 0.39,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
+        "search": 4.4,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 4,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 28.333333333333332,
+        "searchScore": 18.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -254,10 +252,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 34,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

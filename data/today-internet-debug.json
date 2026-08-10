@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T20:20:38.466Z",
+  "generatedAt": "2026-08-10T21:24:44.143Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-66",
   "selectedTitle": "“21”を超えるとバーストする「ブラックジャック」仕様のデッキ構築ローグライト『必殺！メガ子パンチ！』が8月11日Steamにてリリース",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-718",
+      "clusterId": "today-cluster-790",
       "title": "NEC、AIエージェント「17人」で新部署　無人組織が業務自動化を推進",
       "category": "business",
       "categories": [
@@ -118,7 +118,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.5,
+      "buzzScore": 62.4,
       "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 2,
@@ -132,8 +132,8 @@
         "sourceDiversity": 4.7,
         "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 7.6,
+        "search": 4.2,
+        "social": 7.5,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 2.5,
@@ -149,11 +149,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 9.3,
+        "repeatedAppearanceScore": 8.4,
         "crossCategoryScore": 100,
         "archiveHeatScore": 79,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 59.2
+        "internalSearchScore": 33.1,
+        "internalSocialScore": 58.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -161,60 +161,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-40",
-      "title": "アニメ『攻殻機動隊 THE GHOST IN THE SHELL』×『天幕のジャードゥーガル』コラボイラストが公開。フチコマがシタラに赤い花を差し出す姿が描かれる",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "net-culture",
-        "general",
-        "entertainment",
-        "manga"
-      ],
-      "buzzScore": 62.1,
-      "confidence": 0.44,
-      "articleCount": 4,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "直近数時間で関連記事が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 4.7,
-        "trend": 12.5,
-        "internetNativeBoost": 0,
-        "search": 4.6,
-        "social": 7,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 57,
-        "internalSearchScore": 35.6,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-232",
+      "clusterId": "today-cluster-229",
       "title": "「あつまれ どうぶつの森」の新作グッズに「巾着 ベルぶくろ」と「折りたたみバッグ タヌキ商店」が登場。グッズの先行販売を実施中",
       "category": "games",
       "categories": [
@@ -257,6 +204,55 @@
         "archiveHeatScore": 82,
         "internalSearchScore": 32.6,
         "internalSocialScore": 35.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-95",
+      "title": "『サイバーパンク2077』DLC込みで半額！『FF7R』60%オフに『Alan Wake 2』70%オフ、新DLC発売予定の『ウィッチャー3 CE』は80%オフ【PS Storeのお薦めセール】",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 59.6,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 4.1,
+        "social": 3.2,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 18.333333333333332,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 31.9,
+        "internalSocialScore": 24.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

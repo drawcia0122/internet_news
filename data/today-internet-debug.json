@@ -1,43 +1,95 @@
 {
-  "generatedAt": "2026-08-10T22:12:15.977Z",
+  "generatedAt": "2026-08-10T23:11:11.218Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-66",
-  "selectedTitle": "“21”を超えるとバーストする「ブラックジャック」仕様のデッキ構築ローグライト『必殺！メガ子パンチ！』が8月11日Steamにてリリース",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "【大ヒット】最大12人の探索ゲーム『Big Walk』が6日間で「売上100万本」を突破。連日最大同接数が4万人を超える人気ゲーム",
   "candidates": [
     {
-      "clusterId": "today-cluster-297",
-      "title": "沖縄知事選、ポスターやのぼり旗367件に撤去命令　県選管が公選法違反と判断",
-      "category": "politics",
+      "clusterId": "today-cluster-1",
+      "title": "【大ヒット】最大12人の探索ゲーム『Big Walk』が6日間で「売上100万本」を突破。連日最大同接数が4万人を超える人気ゲーム",
+      "category": "games",
       "categories": [
-        "politics",
+        "games",
+        "game-features",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 79,
+      "confidence": 0.48,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.8,
+        "internetNativeBoost": 8,
+        "search": 6,
+        "social": 8.4,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-295",
+      "title": "【実態】なぜ？「琵琶湖三市同時花火大会」突然中止②　「50万円以上の損失になるかも」出店料5万円払った飲食店から悲鳴　地元花火業者には「3000万円任せたい」との打診も（2026年8月10日掲載）｜YTV NEWS NNN",
+      "category": "sns",
+      "categories": [
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.6,
-      "confidence": 0.42,
+      "buzzScore": 69.1,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 18.3,
+        "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 13.6,
-        "social": 6,
+        "search": 6.9,
+        "social": 4.6,
         "velocity": 0,
         "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 4,
+        "categoryBias": 9,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 85,
+        "searchScore": 43.333333333333336,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -46,10 +98,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 32.9,
-        "internalSocialScore": 46.7
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 35.4,
+        "internalSocialScore": 35.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -57,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-296",
+      "clusterId": "today-cluster-294",
       "title": "“実写”で犬と生活ゲーム『ゴールデンレトリバーと過ごす日々』体験版が8月12日配信へ。賑わう実写ADV界に新星、美女より犬が好きなあなたに",
       "category": "games",
       "categories": [
@@ -109,7 +161,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-66",
+      "clusterId": "today-cluster-70",
       "title": "“21”を超えるとバーストする「ブラックジャック」仕様のデッキ構築ローグライト『必殺！メガ子パンチ！』が8月11日Steamにてリリース",
       "category": "games",
       "categories": [
@@ -160,7 +212,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-849",
+      "clusterId": "today-cluster-940",
       "title": "NEC、AIエージェント「17人」で新部署　無人組織が業務自動化を推進",
       "category": "business",
       "categories": [
@@ -206,56 +258,6 @@
         "archiveHeatScore": 79,
         "internalSearchScore": 33.1,
         "internalSocialScore": 58.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-228",
-      "title": "「あつまれ どうぶつの森」の新作グッズに「巾着 ベルぶくろ」と「折りたたみバッグ タヌキ商店」が登場。グッズの先行販売を実施中",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 61.4,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 4.6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 11.666666666666666,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 35.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

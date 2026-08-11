@@ -1,11 +1,63 @@
 {
-  "generatedAt": "2026-08-11T14:03:48.876Z",
+  "generatedAt": "2026-08-11T15:11:20.994Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1",
-  "selectedTitle": "Nintendo Switch／Switch 2が12月にインドネシアで発売へ。任天堂が同国向け公式サイトをオープン",
+  "selectedClusterId": "today-cluster-483",
+  "selectedTitle": "茨城県に台風上陸 現地のSNS投稿",
   "candidates": [
     {
-      "clusterId": "today-cluster-1",
+      "clusterId": "today-cluster-483",
+      "title": "茨城県に台風上陸 現地のSNS投稿",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 76.8,
+      "confidence": 0.5,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 6,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 12,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 6.666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2",
       "title": "Nintendo Switch／Switch 2が12月にインドネシアで発売へ。任天堂が同国向け公式サイトをオープン",
       "category": "games",
       "categories": [
@@ -56,59 +108,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-349",
-      "title": "「女性は歌舞伎俳優になれないの？」小学生の難問に小島よしおさんは：朝日新聞",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 74,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 16,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 100,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-103",
+      "clusterId": "today-cluster-106",
       "title": "“実写”で犬と生活ゲーム『ゴールデンレトリバーと過ごす日々』体験版が8月12日配信へ。賑わう実写ADV界に新星、美女より犬が好きなあなたに",
       "category": "games",
       "categories": [
@@ -161,39 +161,40 @@
       ]
     },
     {
-      "clusterId": "today-cluster-436",
-      "title": "茨城県に台風上陸 現地のSNS投稿",
-      "category": "sports",
+      "clusterId": "today-cluster-326",
+      "title": "豪首相、高市首相からのメロンめぐり性的発言 批判高まるも謝罪拒否",
+      "category": "politics",
       "categories": [
-        "sports",
+        "politics",
         "sns",
         "net-culture",
-        "general"
+        "general",
+        "sports"
       ],
-      "buzzScore": 66,
-      "confidence": 0.41,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 70.1,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 4.8,
+        "search": 8.8,
         "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 12,
-        "penalty": -3
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 7,
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 6.666666666666667,
+        "searchScore": 55.00000000000001,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -203,8 +204,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -213,37 +214,38 @@
       ]
     },
     {
-      "clusterId": "today-cluster-230",
-      "title": "「あつまれ どうぶつの森」の新作グッズに「巾着 ベルぶくろ」と「折りたたみバッグ タヌキ商店」が登場。グッズの先行販売を実施中",
-      "category": "games",
+      "clusterId": "today-cluster-389",
+      "title": "『カルトに厳しいギャル』開発者新作のサキュバス主人公FPS『サツバツサッキュバス』デモ版公開。Steamでは「JFPSバンドル シリーズ 1」配信中",
+      "category": "sports",
       "categories": [
+        "sports",
         "games",
-        "sns",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 61.4,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 63.4,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18,
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.2,
         "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 4.6,
+        "search": 4,
+        "social": 6,
         "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 16.666666666666664,
+        "searchScore": 25,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -252,10 +254,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 35.7
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T18:30:36.130Z",
+  "generatedAt": "2026-08-11T19:42:12.575Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-106",
   "selectedTitle": "“実写”で犬と生活ゲーム『ゴールデンレトリバーと過ごす日々』体験版が8月12日配信へ。賑わう実写ADV界に新星、美女より犬が好きなあなたに",
@@ -66,8 +66,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.6,
-      "confidence": 0.44,
+      "buzzScore": 69.9,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -78,9 +78,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.9,
+        "trend": 18.3,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 5.7,
         "social": 5.6,
         "velocity": 5.3,
         "freshness": 8.5,
@@ -99,8 +99,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 45.7,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 44.7,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-562",
+      "clusterId": "today-cluster-596",
       "title": "茨城県に台風上陸 現地のSNS投稿",
       "category": "sports",
       "categories": [
@@ -160,56 +160,6 @@
       ]
     },
     {
-      "clusterId": "today-cluster-4",
-      "title": "Nintendo Switch／Switch 2が12月にインドネシアで発売へ。任天堂が同国向け公式サイトをオープン",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 67.5,
-      "confidence": 0.4,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.5,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 36.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
       "clusterId": "today-cluster-2",
       "title": "「ウルヴァリン」の爪痕が走る“PS5”が9月15日に数量限定で発売。裂け目から本体内部があらわになった荒々しいデザイン",
       "category": "games",
@@ -252,6 +202,56 @@
         "crossCategoryScore": 60,
         "archiveHeatScore": 97,
         "internalSearchScore": 49.6,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-9",
+      "title": "Nintendo Switch／Switch 2が12月にインドネシアで発売へ。任天堂が同国向け公式サイトをオープン",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.1,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 20.9,
+        "internetNativeBoost": 8,
+        "search": 6.7,
+        "social": 5.6,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 41.66666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 48.9,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [

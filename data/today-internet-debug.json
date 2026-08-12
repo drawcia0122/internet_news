@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-12T22:23:20.813Z",
+  "generatedAt": "2026-08-12T23:22:01.528Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-139",
+  "selectedClusterId": "today-cluster-137",
   "selectedTitle": "異変探しホラーゲーム「日本事故物件監視協会2 -Japan Stigmatized Property-」，Switch版が8月20日に登場",
   "candidates": [
     {
-      "clusterId": "today-cluster-2252",
+      "clusterId": "today-cluster-2370",
       "title": "高市首相が贈ったメロン巡り、オーストラリア首相の発言が炎上",
       "category": "politics",
       "categories": [
@@ -15,7 +15,7 @@
         "entertainment",
         "general"
       ],
-      "buzzScore": 73.6,
+      "buzzScore": 73.8,
       "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
@@ -29,7 +29,7 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 13.1,
+        "search": 13.3,
         "social": 7.2,
         "velocity": 0,
         "freshness": 3.5,
@@ -38,7 +38,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 81.66666666666667,
+        "searchScore": 83.33333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -58,59 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-127",
-      "title": "Steam全年齢向け百合ゲー、銀行からの入金拒否を受け発売延期。8月発売予定だった一般向けゲームなのに…相次ぐSteamゲームのデバンキング",
-      "category": "games",
-      "categories": [
-        "games",
-        "sports",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 72,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 17,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 28.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-328",
+      "clusterId": "today-cluster-443",
       "title": "『ヤニねこ』『地元最高！』『みいちゃんと山田さん』……過激マンガのアニメ化が相次ぐワケ",
       "category": "anime",
       "categories": [
@@ -122,26 +70,26 @@
         "books",
         "general"
       ],
-      "buzzScore": 65,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 71.7,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
         "trend": 18.7,
         "internetNativeBoost": 8,
         "search": 4.3,
         "social": 7.4,
         "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
+        "freshness": 8.5,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 5,
@@ -164,7 +112,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-139",
+      "clusterId": "today-cluster-326",
+      "title": "Steam全年齢向け百合ゲー、銀行からの入金拒否を受け発売延期。8月発売予定だった一般向けゲームなのに…相次ぐSteamゲームのデバンキング",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 69.4,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 30,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-137",
       "title": "異変探しホラーゲーム「日本事故物件監視協会2 -Japan Stigmatized Property-」，Switch版が8月20日に登場",
       "category": "games",
       "categories": [

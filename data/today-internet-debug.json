@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-12T09:22:26.220Z",
+  "generatedAt": "2026-08-12T10:40:15.880Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-5",
-  "selectedTitle": "PS5/PC注目の大型新作『Phantom Blade Zero』、「11分てんこ盛り」トレイラーお披露目。長尺戦闘シーンやストーリーがっつり公開、予約受付も開始",
+  "selectedClusterId": "today-cluster-6",
+  "selectedTitle": "廃病院で“行方不明の娘”をさがすホラーゲーム『Hariti』がSteamにて配信開始。『凶寓（Dread Flats）』『悪意』開発元の新作",
   "candidates": [
     {
-      "clusterId": "today-cluster-1252",
+      "clusterId": "today-cluster-1465",
       "title": "高市首相が贈ったメロン巡り、オーストラリア首相の発言が炎上",
       "category": "politics",
       "categories": [
@@ -15,7 +15,7 @@
         "entertainment",
         "general"
       ],
-      "buzzScore": 74,
+      "buzzScore": 74.5,
       "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 2,
@@ -29,7 +29,7 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 11.5,
+        "search": 12,
         "social": 7.3,
         "velocity": 0,
         "freshness": 5.5,
@@ -38,7 +38,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 71.66666666666667,
+        "searchScore": 75,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -58,34 +58,37 @@
       ]
     },
     {
-      "clusterId": "today-cluster-5",
-      "title": "PS5/PC注目の大型新作『Phantom Blade Zero』、「11分てんこ盛り」トレイラーお披露目。長尺戦闘シーンやストーリーがっつり公開、予約受付も開始",
+      "clusterId": "today-cluster-6",
+      "title": "廃病院で“行方不明の娘”をさがすホラーゲーム『Hariti』がSteamにて配信開始。『凶寓（Dread Flats）』『悪意』開発元の新作",
       "category": "games",
       "categories": [
         "games",
-        "game-features",
+        "entertainment",
+        "net-culture",
+        "world",
         "general"
       ],
-      "buzzScore": 66.9,
-      "confidence": 0.47,
+      "buzzScore": 72.2,
+      "confidence": 0.46,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 5.6,
-        "velocity": 8.3,
-        "freshness": 10,
+        "search": 6.5,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 6,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -98,10 +101,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 43.8
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -109,7 +112,112 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2268",
+      "clusterId": "today-cluster-140",
+      "title": "Steam全年齢向け百合ゲー、銀行からの入金拒否を受け発売延期。8月発売予定だった一般向けゲームなのに…相次ぐSteamゲームのデバンキング",
+      "category": "games",
+      "categories": [
+        "games",
+        "sports",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 72,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 18.333333333333332,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-17",
+      "title": "レベルファイブが令和8年熊本地震への支援として「義援金5000万円」の寄付を発表",
+      "category": "business",
+      "categories": [
+        "business",
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 70,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.9,
+        "internetNativeBoost": 8,
+        "search": 8.8,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 55.00000000000001,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 45.7,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2482",
       "title": "茨城県に台風上陸 現地のSNS投稿",
       "category": "sports",
       "categories": [
@@ -153,107 +261,6 @@
         "archiveHeatScore": 97,
         "internalSearchScore": 35.9,
         "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-7",
-      "title": "協力登山ゲーム『PEAK』、“最後の大型アプデ”で「同接12万人」に急上昇。新バイオーム2種登場、“ジェットパック”や“ワープできるキノコ”など新アイテムも追加",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 65,
-      "confidence": 0.45,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.9,
-        "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 48.9,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-4",
-      "title": "ラヴクラフトホラー街づくりゲーム『Isles of Innsmouth』発表。島を拡大＆建物を置いて旧き神々を鎮める“のんびり不気味”建設",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 64.9,
-      "confidence": 0.47,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 4.2,
-        "velocity": 8.3,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 32.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

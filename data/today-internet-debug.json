@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-08-12T14:42:07.765Z",
+  "generatedAt": "2026-08-12T16:07:57.425Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-425",
+  "selectedClusterId": "today-cluster-474",
   "selectedTitle": "中国の朱鎔基元首相が死去 97歳",
   "candidates": [
     {
-      "clusterId": "today-cluster-425",
+      "clusterId": "today-cluster-474",
       "title": "中国の朱鎔基元首相が死去 97歳",
       "category": "politics",
       "categories": [
         "politics",
         "world",
-        "business",
         "general",
+        "business",
         "entertainment"
       ],
-      "buzzScore": 83.1,
-      "confidence": 0.59,
+      "buzzScore": 82.4,
+      "confidence": 0.58,
       "articleCount": 9,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -28,7 +28,7 @@
       "scoreBreakdown": {
         "coverage": 16.2,
         "sourceDiversity": 4.7,
-        "trend": 18.5,
+        "trend": 17.8,
         "internetNativeBoost": 8,
         "search": 16,
         "social": 7.7,
@@ -49,8 +49,8 @@
         "archiveMatchCount": 2,
         "repeatedAppearanceScore": 12,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 37.2,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 36.2,
         "internalSocialScore": 60.4
       },
       "externalSignalErrors": [
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-139",
+      "clusterId": "today-cluster-135",
       "title": "Steam全年齢向け百合ゲー、銀行からの入金拒否を受け発売延期。8月発売予定だった一般向けゲームなのに…相次ぐSteamゲームのデバンキング",
       "category": "games",
       "categories": [
@@ -91,7 +91,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 23.333333333333332,
+        "searchScore": 25,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -111,101 +111,52 @@
       ]
     },
     {
-      "clusterId": "today-cluster-10",
-      "title": "にじさんじ所属ライバー「笹木咲」さんがYouTubeチャンネル登録者数100万人を突破。直筆コメントと記念動画が公開。新衣装配信や100万人記念の歌ってみた動画の投稿も発表",
-      "category": "games",
+      "clusterId": "today-cluster-338",
+      "title": "北方領土、ロシア領で確定　プーチン氏、日本が「立場変更」：時事ドットコム",
+      "category": "world",
       "categories": [
-        "games",
-        "entertainment",
+        "world",
+        "politics",
+        "sns",
         "net-culture",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 70.2,
-      "confidence": 0.42,
+      "buzzScore": 71.5,
+      "confidence": 0.43,
       "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-2",
-      "title": "PS5『ゴースト・オブ・ヨウテイ』の“大型拡張”コンテンツ発表。新ストーリー「関ケ原 慕情譚」やサバイバルモードなどを収録、10月に1480円で発売へ",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 67.6,
-      "confidence": 0.49,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.5,
-        "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 4.2,
-        "velocity": 8.3,
+        "search": 7.2,
+        "social": 7.4,
+        "velocity": 0,
         "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 45,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 93,
-        "internalSearchScore": 48.2,
-        "internalSocialScore": 32.8
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -213,7 +164,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-335",
+      "clusterId": "today-cluster-336",
       "title": "『ヤニねこ』『地元最高！』『みいちゃんと山田さん』……過激マンガのアニメ化が相次ぐワケ",
       "category": "anime",
       "categories": [
@@ -259,6 +210,59 @@
         "crossCategoryScore": 100,
         "archiveHeatScore": 85,
         "internalSearchScore": 33.7,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-335",
+      "title": "舞台挨拶もゲスト声優も「ゼロ」なのに“100億突破”圏内へ…SNS発ヒット作『ちいかわ』映画の戦略が異例すぎる《原作者・ナガノが貫いた“作品ファースト”の美学とは…》",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "sns",
+        "anime-features",
+        "anime",
+        "books",
+        "general"
+      ],
+      "buzzScore": 63.7,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.8,
+        "internetNativeBoost": 8,
+        "search": 4.9,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 11.666666666666666,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 99,
+        "internalSearchScore": 38.6,
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [

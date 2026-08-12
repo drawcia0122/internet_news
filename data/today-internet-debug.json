@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-12T20:13:42.644Z",
+  "generatedAt": "2026-08-12T21:26:40.541Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-141",
+  "selectedClusterId": "today-cluster-140",
   "selectedTitle": "異変探しホラーゲーム「日本事故物件監視協会2 -Japan Stigmatized Property-」，Switch版が8月20日に登場",
   "candidates": [
     {
-      "clusterId": "today-cluster-2033",
+      "clusterId": "today-cluster-2144",
       "title": "高市首相が贈ったメロン巡り、オーストラリア首相の発言が炎上",
       "category": "politics",
       "categories": [
@@ -15,7 +15,7 @@
         "entertainment",
         "general"
       ],
-      "buzzScore": 74.1,
+      "buzzScore": 73.8,
       "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
@@ -29,7 +29,7 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 13.6,
+        "search": 13.3,
         "social": 7.2,
         "velocity": 0,
         "freshness": 3.5,
@@ -38,7 +38,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 85,
+        "searchScore": 83.33333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-129",
+      "clusterId": "today-cluster-128",
       "title": "Steam全年齢向け百合ゲー、銀行からの入金拒否を受け発売延期。8月発売予定だった一般向けゲームなのに…相次ぐSteamゲームのデバンキング",
       "category": "games",
       "categories": [
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-330",
+      "clusterId": "today-cluster-328",
       "title": "『ヤニねこ』『地元最高！』『みいちゃんと山田さん』……過激マンガのアニメ化が相次ぐワケ",
       "category": "anime",
       "categories": [
@@ -164,7 +164,57 @@
       ]
     },
     {
-      "clusterId": "today-cluster-329",
+      "clusterId": "today-cluster-140",
+      "title": "異変探しホラーゲーム「日本事故物件監視協会2 -Japan Stigmatized Property-」，Switch版が8月20日に登場",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 64.1,
+      "confidence": 0.42,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.9,
+        "social": 3.5,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 12,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 38.3,
+        "internalSocialScore": 27.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-327",
       "title": "舞台挨拶もゲスト声優も「ゼロ」なのに“100億突破”圏内へ…SNS発ヒット作『ちいかわ』映画の戦略が異例すぎる《原作者・ナガノが貫いた“作品ファースト”の美学とは…》",
       "category": "net-culture",
       "categories": [
@@ -210,55 +260,6 @@
         "archiveHeatScore": 99,
         "internalSearchScore": 38.6,
         "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-141",
-      "title": "異変探しホラーゲーム「日本事故物件監視協会2 -Japan Stigmatized Property-」，Switch版が8月20日に登場",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 61.5,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 3.2,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
-        "internalSocialScore": 24.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

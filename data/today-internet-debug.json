@@ -1,57 +1,57 @@
 {
-  "generatedAt": "2026-08-12T13:38:06.950Z",
+  "generatedAt": "2026-08-12T14:42:07.765Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-335",
-  "selectedTitle": "『ヤニねこ』『地元最高！』『みいちゃんと山田さん』……過激マンガのアニメ化が相次ぐワケ",
+  "selectedClusterId": "today-cluster-425",
+  "selectedTitle": "中国の朱鎔基元首相が死去 97歳",
   "candidates": [
     {
-      "clusterId": "today-cluster-335",
-      "title": "『ヤニねこ』『地元最高！』『みいちゃんと山田さん』……過激マンガのアニメ化が相次ぐワケ",
-      "category": "anime",
+      "clusterId": "today-cluster-425",
+      "title": "中国の朱鎔基元首相が死去 97歳",
+      "category": "politics",
       "categories": [
-        "anime",
-        "manga",
-        "net-culture",
-        "entertainment",
-        "sns",
-        "books",
-        "general"
+        "politics",
+        "world",
+        "business",
+        "general",
+        "entertainment"
       ],
-      "buzzScore": 73.2,
-      "confidence": 0.42,
-      "articleCount": 2,
+      "buzzScore": 83.1,
+      "confidence": 0.59,
+      "articleCount": 9,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 16.2,
         "sourceDiversity": 4.7,
-        "trend": 18.7,
+        "trend": 18.5,
         "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 7.4,
+        "search": 16,
+        "social": 7.7,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 8.5,
         "authority": 2.5,
-        "categoryBias": 14,
+        "categoryBias": 1,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 100,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
         "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 12,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 57.7
+        "archiveHeatScore": 84,
+        "internalSearchScore": 37.2,
+        "internalSocialScore": 60.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-140",
+      "clusterId": "today-cluster-139",
       "title": "Steam全年齢向け百合ゲー、銀行からの入金拒否を受け発売延期。8月発売予定だった一般向けゲームなのに…相次ぐSteamゲームのデバンキング",
       "category": "games",
       "categories": [
@@ -91,7 +91,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 20,
+        "searchScore": 23.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-6",
+      "clusterId": "today-cluster-10",
       "title": "にじさんじ所属ライバー「笹木咲」さんがYouTubeチャンネル登録者数100万人を突破。直筆コメントと記念動画が公開。新衣装配信や100万人記念の歌ってみた動画の投稿も発表",
       "category": "games",
       "categories": [
@@ -120,8 +120,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 71,
-      "confidence": 0.43,
+      "buzzScore": 70.2,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -132,9 +132,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.7,
+        "search": 5.5,
         "social": 7,
         "velocity": 5.3,
         "freshness": 8.5,
@@ -153,8 +153,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
@@ -163,17 +163,15 @@
       ]
     },
     {
-      "clusterId": "today-cluster-9",
-      "title": "新海誠監督、新作アニメ映画について「国内での制作発表も劇場公開も、もうそんなに先のことでも（たぶん）ありません」とコメント。世界配給権はクランチロールが取得したと海外メディアが報じる",
-      "category": "anime",
+      "clusterId": "today-cluster-2",
+      "title": "PS5『ゴースト・オブ・ヨウテイ』の“大型拡張”コンテンツ発表。新ストーリー「関ケ原 慕情譚」やサバイバルモードなどを収録、10月に1480円で発売へ",
+      "category": "games",
       "categories": [
-        "anime",
         "games",
-        "net-culture",
         "general"
       ],
-      "buzzScore": 71,
-      "confidence": 0.43,
+      "buzzScore": 67.6,
+      "confidence": 0.49,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -184,12 +182,66 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 20.5,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "search": 6.2,
+        "social": 4.2,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 93,
+        "internalSearchScore": 48.2,
+        "internalSocialScore": 32.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-335",
+      "title": "『ヤニねこ』『地元最高！』『みいちゃんと山田さん』……過激マンガのアニメ化が相次ぐワケ",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "manga",
+        "net-culture",
+        "entertainment",
+        "sns",
+        "books",
+        "general"
+      ],
+      "buzzScore": 65,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 4.3,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -201,65 +253,12 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-334",
-      "title": "舞台挨拶もゲスト声優も「ゼロ」なのに“100億突破”圏内へ…SNS発ヒット作『ちいかわ』映画の戦略が異例すぎる《原作者・ナガノが貫いた“作品ファースト”の美学とは…》",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "sns",
-        "anime-features",
-        "anime",
-        "books",
-        "general"
-      ],
-      "buzzScore": 63.7,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.8,
-        "internetNativeBoost": 8,
-        "search": 4.9,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 11.666666666666666,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 99,
-        "internalSearchScore": 38.6,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 33.7,
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [

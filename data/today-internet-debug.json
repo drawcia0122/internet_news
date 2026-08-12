@@ -1,11 +1,63 @@
 {
-  "generatedAt": "2026-08-11T22:56:39.612Z",
+  "generatedAt": "2026-08-11T23:54:29.214Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-714",
-  "selectedTitle": "豪首相、高市首相からのメロンめぐり性的発言 批判高まるも謝罪拒否",
+  "selectedClusterId": "today-cluster-314",
+  "selectedTitle": "「女性は歌舞伎俳優になれないの？」小学生の難問に小島よしおさんは：朝日新聞",
   "candidates": [
     {
-      "clusterId": "today-cluster-714",
+      "clusterId": "today-cluster-314",
+      "title": "「女性は歌舞伎俳優になれないの？」小学生の難問に小島よしおさんは：朝日新聞",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 74,
+      "confidence": 0.35,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 16,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 100,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-819",
       "title": "豪首相、高市首相からのメロンめぐり性的発言 批判高まるも謝罪拒否",
       "category": "politics",
       "categories": [
@@ -58,7 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-876",
+      "clusterId": "today-cluster-983",
       "title": "茨城県に台風上陸 現地のSNS投稿",
       "category": "sports",
       "categories": [
@@ -109,7 +161,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-13",
+      "clusterId": "today-cluster-18",
       "title": "Nintendo Switch／Switch 2が12月にインドネシアで発売へ。任天堂が同国向け公式サイトをオープン",
       "category": "games",
       "categories": [
@@ -117,7 +169,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.8,
+      "buzzScore": 65.6,
       "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 1,
@@ -130,7 +182,7 @@
         "sourceDiversity": 2.3,
         "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 6.4,
+        "search": 7.2,
         "social": 5.6,
         "velocity": 0,
         "freshness": 5.5,
@@ -139,7 +191,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 40,
+        "searchScore": 45,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -159,69 +211,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1982",
-      "title": "“実写”で犬と生活ゲーム『ゴールデンレトリバーと過ごす日々』体験版が8月12日配信へ。賑わう実写ADV界に新星、美女より犬が好きなあなたに",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 63.8,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 47.6,
-        "internalSocialScore": 64.5
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-5",
-      "title": "「見ざる」「聞かざる」「言わざる」3匹の猿になって爆弾解体に挑む協力ゲーム『BOMBANANA!』が9月2日にSteamで発売決定。600万人が体験版をプレイした注目作",
+      "clusterId": "today-cluster-13",
+      "title": "「ウルヴァリン」の爪痕が走る“PS5”が9月15日に数量限定で発売。裂け目から本体内部があらわになった荒々しいデザイン",
       "category": "games",
       "categories": [
         "games",
         "net-culture",
         "general"
       ],
-      "buzzScore": 63,
-      "confidence": 0.36,
+      "buzzScore": 62.6,
+      "confidence": 0.37,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -231,18 +230,18 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.3,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 5.7,
+        "search": 5.9,
         "social": 5.6,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -252,8 +251,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [

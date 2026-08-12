@@ -1,40 +1,42 @@
 {
-  "generatedAt": "2026-08-12T11:57:13.597Z",
+  "generatedAt": "2026-08-12T13:38:06.950Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-4",
-  "selectedTitle": "新海誠監督、新作アニメ映画について「国内での制作発表も劇場公開も、もうそんなに先のことでも（たぶん）ありません」とコメント。世界配給権はクランチロールが取得したと海外メディアが報じる",
+  "selectedClusterId": "today-cluster-335",
+  "selectedTitle": "『ヤニねこ』『地元最高！』『みいちゃんと山田さん』……過激マンガのアニメ化が相次ぐワケ",
   "candidates": [
     {
-      "clusterId": "today-cluster-4",
-      "title": "新海誠監督、新作アニメ映画について「国内での制作発表も劇場公開も、もうそんなに先のことでも（たぶん）ありません」とコメント。世界配給権はクランチロールが取得したと海外メディアが報じる",
+      "clusterId": "today-cluster-335",
+      "title": "『ヤニねこ』『地元最高！』『みいちゃんと山田さん』……過激マンガのアニメ化が相次ぐワケ",
       "category": "anime",
       "categories": [
         "anime",
-        "games",
+        "manga",
         "net-culture",
+        "entertainment",
+        "sns",
+        "books",
         "general"
       ],
-      "buzzScore": 75.5,
-      "confidence": 0.47,
+      "buzzScore": 73.2,
+      "confidence": 0.42,
       "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18,
+        "sourceDiversity": 4.7,
+        "trend": 18.7,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 7,
-        "velocity": 8.3,
+        "search": 4.3,
+        "social": 7.4,
+        "velocity": 0,
         "freshness": 10,
-        "authority": 1.5,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 5,
@@ -43,122 +45,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-10",
-      "title": "ポケモンWebアニメ「POKÉTOON」新エピソード公開　監督は『超かぐや姫！』の山下清悟",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "sports",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 74.9,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 17,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1611",
-      "title": "高市首相が贈ったメロン巡り、オーストラリア首相の発言が炎上",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "net-culture",
-        "sns",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 74.5,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 12,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 75,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 56.9
+        "archiveHeatScore": 85,
+        "internalSearchScore": 33.7,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -166,7 +59,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-142",
+      "clusterId": "today-cluster-140",
       "title": "Steam全年齢向け百合ゲー、銀行からの入金拒否を受け発売延期。8月発売予定だった一般向けゲームなのに…相次ぐSteamゲームのデバンキング",
       "category": "games",
       "categories": [
@@ -198,7 +91,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 16.666666666666664,
+        "searchScore": 20,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -218,41 +111,39 @@
       ]
     },
     {
-      "clusterId": "today-cluster-11",
-      "title": "廃病院で“行方不明の娘”をさがすホラーゲーム『Hariti』がSteamにて配信開始。『凶寓（Dread Flats）』『悪意』開発元の新作",
+      "clusterId": "today-cluster-6",
+      "title": "にじさんじ所属ライバー「笹木咲」さんがYouTubeチャンネル登録者数100万人を突破。直筆コメントと記念動画が公開。新衣装配信や100万人記念の歌ってみた動画の投稿も発表",
       "category": "games",
       "categories": [
         "games",
         "entertainment",
         "net-culture",
-        "world",
         "general"
       ],
-      "buzzScore": 71.4,
-      "confidence": 0.46,
+      "buzzScore": 71,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 8.4,
+        "search": 5.7,
+        "social": 7,
         "velocity": 5.3,
         "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 8.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -261,10 +152,115 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-9",
+      "title": "新海誠監督、新作アニメ映画について「国内での制作発表も劇場公開も、もうそんなに先のことでも（たぶん）ありません」とコメント。世界配給権はクランチロールが取得したと海外メディアが報じる",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 71,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-334",
+      "title": "舞台挨拶もゲスト声優も「ゼロ」なのに“100億突破”圏内へ…SNS発ヒット作『ちいかわ』映画の戦略が異例すぎる《原作者・ナガノが貫いた“作品ファースト”の美学とは…》",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "sns",
+        "anime-features",
+        "anime",
+        "books",
+        "general"
+      ],
+      "buzzScore": 63.7,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.8,
+        "internetNativeBoost": 8,
+        "search": 4.9,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 11.666666666666666,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 49.6,
-        "internalSocialScore": 65.8
+        "archiveHeatScore": 99,
+        "internalSearchScore": 38.6,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

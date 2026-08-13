@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-13T11:26:17.109Z",
+  "generatedAt": "2026-08-13T12:29:44.609Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-17",
-  "selectedTitle": "TVアニメ『テンカイチ 日本最強武芸者決定戦』が2027年4月に放送決定。キャストは宮本武蔵：佐藤元さん、本多忠勝：松田健一郎さん、織田信長：堀内賢雄さん",
+  "selectedClusterId": "today-cluster-10",
+  "selectedTitle": "『東方Project』シリーズの上海アリス幻樂団が価格改定を発表。即売会ではゲーム作品1500円・音楽CD1000円に統一、9月1日からは店頭価格も改定",
   "candidates": [
     {
-      "clusterId": "today-cluster-2",
-      "title": "【50％オフ】『FF14』の世界設定資料集『Encyclopaedia Eorzea』が半額セール中。本日限り4400円→2200円に",
-      "category": "sports",
+      "clusterId": "today-cluster-10",
+      "title": "『東方Project』シリーズの上海アリス幻樂団が価格改定を発表。即売会ではゲーム作品1500円・音楽CD1000円に統一、9月1日からは店頭価格も改定",
+      "category": "games",
       "categories": [
-        "sports",
         "games",
+        "entertainment",
         "net-culture",
         "general"
       ],
-      "buzzScore": 74,
-      "confidence": 0.43,
+      "buzzScore": 75.5,
+      "confidence": 0.47,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -30,10 +30,10 @@
         "internetNativeBoost": 8,
         "search": 5.7,
         "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 8.3,
+        "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 17,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -57,121 +57,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-17",
-      "title": "TVアニメ『テンカイチ 日本最強武芸者決定戦』が2027年4月に放送決定。キャストは宮本武蔵：佐藤元さん、本多忠勝：松田健一郎さん、織田信長：堀内賢雄さん",
-      "category": "anime",
+      "clusterId": "today-cluster-2",
+      "title": "【50％オフ】『FF14』の世界設定資料集『Encyclopaedia Eorzea』が半額セール中。本日限り4400円→2200円に",
+      "category": "sports",
       "categories": [
-        "anime",
-        "games",
-        "net-culture",
         "sports",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 71.1,
-      "confidence": 0.48,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 13.4,
-        "internetNativeBoost": 0,
-        "search": 4.7,
-        "social": 8.4,
-        "velocity": 8,
-        "freshness": 8.5,
-        "authority": 1,
-        "categoryBias": 17,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 61,
-        "internalSearchScore": 37,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-7",
-      "title": "トモコレ新作のアイコンパーツが「ゲーミングすぎる」と話題に。リアルな動物や食べ物とあわせて存在感抜群のアイコンを作成→Nintendo Switch上のフレンドを威圧可能",
-      "category": "games",
-      "categories": [
         "games",
         "net-culture",
         "general"
       ],
-      "buzzScore": 69.9,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-5",
-      "title": "【50％オフ】『サガ フロンティア2』の公式設定資料集『パーフェクトワークス』Kindle版が「4400円→2200円」でセール中。2025年に復刻された稀少価値の高い資料集が半額で手に入る",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 68.8,
+      "buzzScore": 73.2,
       "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
@@ -186,11 +81,11 @@
         "trend": 17.4,
         "internetNativeBoost": 8,
         "search": 5.5,
-        "social": 5.6,
+        "social": 7,
         "velocity": 5.3,
         "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 17,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -203,10 +98,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
+        "crossCategoryScore": 80,
         "archiveHeatScore": 79,
         "internalSearchScore": 43.3,
-        "internalSocialScore": 43.8
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -214,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2078",
+      "clusterId": "today-cluster-2178",
       "title": "『ヤニねこ』『地元最高！』『みいちゃんと山田さん』……過激マンガのアニメ化が相次ぐワケ",
       "category": "anime",
       "categories": [
@@ -261,6 +156,108 @@
         "archiveHeatScore": 85,
         "internalSearchScore": 31.7,
         "internalSocialScore": 56.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-172",
+      "title": "美少女×WWII×戦車SLG『Panzer Knights : コマンダー・エディション』PS5/XBOX Series X|S版が配信開始！",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 66,
+      "confidence": 0.38,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20.7,
+        "internetNativeBoost": 8,
+        "search": 4.7,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 8.333333333333332,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 36.8,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-292",
+      "title": "「機動新世紀ガンダムX」より「ガンダムレオパルド」のHGガンプラが抽選販売受付中！ インナーアームガトリングの変形と、左腕との合体・収納ギミックが再現",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 66,
+      "confidence": 0.38,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20.7,
+        "internetNativeBoost": 8,
+        "search": 4.7,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 11.666666666666666,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 36.8,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

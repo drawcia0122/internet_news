@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T13:59:59.483Z",
+  "generatedAt": "2026-08-14T15:04:04.251Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-1",
   "selectedTitle": "『劇場版 シドニアの騎士』がYouTubeにて期間限定で無料配信中。「アニメタイムズ」公式チャンネルにて9月14日まで",
@@ -16,8 +16,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 76.6,
-      "confidence": 0.46,
+      "buzzScore": 75.8,
+      "confidence": 0.45,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -29,9 +29,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 21.6,
+        "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 6.4,
+        "search": 6.3,
         "social": 8.4,
         "velocity": 5.3,
         "freshness": 8.5,
@@ -40,7 +40,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
+        "searchScore": 5,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -50,8 +50,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 98,
-        "internalSearchScore": 49.9,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 48.9,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-163",
+      "clusterId": "today-cluster-161",
       "title": "図鑑完成で「セレビィ」が手に入る！ 「Pokémon HOME」と「ポケットモンスター ファイアレッド・リーフグリーン」が2026年10月から連携",
       "category": "games",
       "categories": [
@@ -118,8 +118,8 @@
         "games",
         "general"
       ],
-      "buzzScore": 69.4,
-      "confidence": 0.5,
+      "buzzScore": 64.9,
+      "confidence": 0.46,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -134,14 +134,14 @@
         "internetNativeBoost": 8,
         "search": 6.5,
         "social": 4.2,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 6,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -161,57 +161,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1155",
-      "title": "『ポケモンバンク』2027年2月26日のサービス終了が決定。『Pokémon HOME』へのポケモンのひっこし機能も同日終了",
-      "category": "games",
-      "categories": [
-        "games",
-        "general",
-        "net-culture"
-      ],
-      "buzzScore": 66.8,
-      "confidence": 0.53,
-      "articleCount": 8,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 14.4,
-        "sourceDiversity": 4.7,
-        "trend": 16.1,
-        "internetNativeBoost": 0,
-        "search": 5.1,
-        "social": 4.6,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 31.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 73,
-        "internalSearchScore": 29.4,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-2046",
+      "clusterId": "today-cluster-2092",
       "title": "高市首相「断じて許容できず」　プーチン氏の択捉島訪問：時事ドットコム",
       "category": "politics",
       "categories": [
@@ -259,6 +209,60 @@
         "archiveHeatScore": 97,
         "internalSearchScore": 37.8,
         "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-10",
+      "title": "『新テニスの王子様 U-17 WORLD CUP 決勝メンバー決定戦』9月30日より放送開始。キービジュアル＆PVが公開",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "anime",
+        "games",
+        "net-culture",
+        "general",
+        "entertainment",
+        "manga"
+      ],
+      "buzzScore": 64.5,
+      "confidence": 0.4,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 13.4,
+        "internetNativeBoost": 0,
+        "search": 4.7,
+        "social": 8.4,
+        "velocity": 1.3,
+        "freshness": 8.5,
+        "authority": 1,
+        "categoryBias": 17,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 15,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 61,
+        "internalSearchScore": 37,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

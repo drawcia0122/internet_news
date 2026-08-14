@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-13T23:54:17.286Z",
+  "generatedAt": "2026-08-14T02:37:50.890Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-339",
+  "selectedClusterId": "today-cluster-633",
   "selectedTitle": "高市首相「断じて許容できず」　プーチン氏の択捉島訪問：時事ドットコム",
   "candidates": [
     {
-      "clusterId": "today-cluster-339",
+      "clusterId": "today-cluster-633",
       "title": "高市首相「断じて許容できず」　プーチン氏の択捉島訪問：時事ドットコム",
       "category": "politics",
       "categories": [
@@ -17,8 +17,8 @@
         "general",
         "business"
       ],
-      "buzzScore": 74,
-      "confidence": 0.47,
+      "buzzScore": 72.5,
+      "confidence": 0.46,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -34,13 +34,13 @@
         "search": 5.4,
         "social": 7.7,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 8.5,
         "authority": 2.5,
         "categoryBias": 9,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 15,
+        "searchScore": 16.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -60,17 +60,175 @@
       ]
     },
     {
-      "clusterId": "today-cluster-340",
-      "title": "Claude文章で｢AI製｣バレる?　コピペでも残る電子透かしにネット反発",
-      "category": "business",
+      "clusterId": "today-cluster-13",
+      "title": "ピラフ星人、PS5の新CMに抜擢　ゲーム6作品の世界観を織り込んだ新曲を書き下ろし",
+      "category": "games",
       "categories": [
-        "business",
-        "tech",
+        "games",
+        "entertainment",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.7,
+      "buzzScore": 72.4,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-42",
+      "title": "『ポケットモンスター ファイアレッド・リーフグリーン』Switch版と『Pokémon HOME』が2026年10月に連携へ",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 71.3,
+      "confidence": 0.53,
+      "articleCount": 5,
+      "sourceCount": 3,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "主要3媒体で同一話題を確認",
+        "直近数時間で関連記事が増加",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 9,
+        "sourceDiversity": 6.2,
+        "trend": 13.9,
+        "internetNativeBoost": 0,
+        "search": 7.2,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 45,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 30,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 63,
+        "internalSearchScore": 41.6,
+        "internalSocialScore": 46.5
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-9",
+      "title": "『ぽこ あ ポケモン』の世界販売本数が500万本を突破。『ポケモン』初のスローライフ・サンドボックスゲームが発売から約4カ月間での達成",
+      "category": "games",
+      "categories": [
+        "games",
+        "business",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 70.5,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 7,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-353",
+      "title": "AI電力網は国民負担？　大手電力が「6000億円分」値上げ申請",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "business",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 69.2,
       "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 2,
@@ -81,61 +239,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 19.1,
+        "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-338",
-      "title": "国内ITシステム11社、30年にAI主導の開発に転換　生産性は最大1.5倍",
-      "category": "business",
-      "categories": [
-        "business",
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66.6,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
+        "search": 4.5,
         "social": 7.4,
         "velocity": 0,
         "freshness": 10,
@@ -154,111 +260,9 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
         "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-150",
-      "title": "美少女×WWII×戦車SLG『Panzer Knights : コマンダー・エディション』PS5/XBOX Series X|S版が配信開始！",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 66,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 15,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 36.8,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-245",
-      "title": "「機動新世紀ガンダムX」より「ガンダムレオパルド」のHGガンプラが抽選販売受付中！ インナーアームガトリングの変形と、左腕との合体・収納ギミックが再現",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 66,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 11.666666666666666,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 36.8,
-        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

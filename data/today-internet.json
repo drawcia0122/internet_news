@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T20:54:12.002Z",
+  "generatedAt": "2026-08-15T21:31:22.666Z",
   "topicVersion": 1,
   "selectedTopic": {
     "id": "auto-net-culture-15歳未満sns禁止に違憲判断-仏-news.yahoo.co.jp/pickup/6591773",
@@ -624,12 +624,12 @@
         "summary": "15歳未満SNS禁止に違憲判断 「表現・通信の自由侵害」 フランス (時事通信) Yahoo!ニュース"
       }
     ],
-    "hotScore": 99,
+    "hotScore": 96,
     "posts": "25",
     "metricLabel": "signals",
     "time": "21時間前",
     "publishedAt": "2026-08-15T20:00:00.000Z",
-    "buzzScore": 99,
+    "buzzScore": 96,
     "scoreBreakdown": {
       "coverage": 18,
       "sourceDiversity": 4.7,
@@ -637,8 +637,8 @@
       "internetNativeBoost": 8,
       "search": 16,
       "social": 6.1,
-      "velocity": 4.2,
-      "freshness": 10,
+      "velocity": 2.7,
+      "freshness": 8.5,
       "authority": 2.5,
       "categoryBias": 12,
       "penalty": 0
@@ -744,7 +744,7 @@
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "officialSourceCount": 0,
-      "latestSourceCount1h": 1
+      "latestSourceCount1h": 0
     }
   },
   "runnerUps": [
@@ -1002,18 +1002,18 @@
           "summary": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム 時事ドットコム"
         }
       ],
-      "hotScore": 69.8,
+      "hotScore": 69,
       "posts": "2",
       "metricLabel": "signals",
       "time": "直近",
       "publishedAt": "2026-08-15T05:54:20.654Z",
-      "buzzScore": 69.8,
+      "buzzScore": 69,
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
         "trend": 20,
         "internetNativeBoost": 8,
-        "search": 7.7,
+        "search": 6.9,
         "social": 5.8,
         "velocity": 0,
         "freshness": 3.5,
@@ -1058,8 +1058,8 @@
       "externalSignals": {
         "query": "速報 フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
         "search": {
-          "count": 29,
-          "score": 48.333333333333336,
+          "count": 26,
+          "score": 43.333333333333336,
           "available": true
         },
         "reddit": {
@@ -1078,7 +1078,7 @@
         ]
       },
       "externalSignalStats": {
-        "searchScore": 48.333333333333336,
+        "searchScore": 43.333333333333336,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -1257,13 +1257,13 @@
   ],
   "fallbackUsed": false,
   "debug": {
-    "generatedAt": "2026-08-15T20:54:12.002Z",
+    "generatedAt": "2026-08-15T21:31:22.666Z",
     "fallbackUsed": false,
-    "selectedClusterId": "today-cluster-421",
+    "selectedClusterId": "today-cluster-452",
     "selectedTitle": "15歳未満SNS禁止に違憲判断 仏",
     "candidates": [
       {
-        "clusterId": "today-cluster-421",
+        "clusterId": "today-cluster-452",
         "title": "15歳未満SNS禁止に違憲判断 仏",
         "category": "sns",
         "categories": [
@@ -1275,8 +1275,8 @@
           "business",
           "sports"
         ],
-        "buzzScore": 99,
-        "confidence": 0.66,
+        "buzzScore": 96,
+        "confidence": 0.64,
         "articleCount": 25,
         "sourceCount": 2,
         "uniqueDomainCount": 2,
@@ -1293,8 +1293,8 @@
           "internetNativeBoost": 8,
           "search": 16,
           "social": 6.1,
-          "velocity": 4.2,
-          "freshness": 10,
+          "velocity": 2.7,
+          "freshness": 8.5,
           "authority": 2.5,
           "categoryBias": 12,
           "penalty": 0
@@ -1320,7 +1320,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-44",
+        "clusterId": "today-cluster-43",
         "title": "話題博した「1文字足す」ゲーム『MARY - メアリ姫の奪還』Steam向け完全版発表。“足したらだいたい反応してくれる”ゲーム、分岐数千通りに底なし進化",
         "category": "games",
         "categories": [
@@ -1373,7 +1373,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-1243",
+        "clusterId": "today-cluster-1283",
         "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
         "category": "sns",
         "categories": [
@@ -1382,7 +1382,7 @@
           "entertainment",
           "general"
         ],
-        "buzzScore": 69.8,
+        "buzzScore": 69,
         "confidence": 0.4,
         "articleCount": 2,
         "sourceCount": 2,
@@ -1395,7 +1395,7 @@
           "sourceDiversity": 4.7,
           "trend": 20,
           "internetNativeBoost": 8,
-          "search": 7.7,
+          "search": 6.9,
           "social": 5.8,
           "velocity": 0,
           "freshness": 3.5,
@@ -1404,7 +1404,7 @@
           "penalty": 0
         },
         "externalSignalStats": {
-          "searchScore": 48.333333333333336,
+          "searchScore": 43.333333333333336,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -1424,7 +1424,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-350",
+        "clusterId": "today-cluster-377",
         "title": "ポケモンバンクのサービス終了後に「パッチールが締め出される」とざわつく。“現行作からポケモンホーム出禁”のぶちパンダ、唯一のルートも消滅へ",
         "category": "games",
         "categories": [
@@ -1477,7 +1477,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-111",
+        "clusterId": "today-cluster-107",
         "title": "「本当に電波的なものにしか救われない人たちへ」―にゃるら氏が“趣味100％”で作る『妹、他者、パラノイア』。創作と自傷、他者を描く理由【インタビュー】",
         "category": "games",
         "categories": [
@@ -1509,7 +1509,7 @@
           "penalty": -3
         },
         "externalSignalStats": {
-          "searchScore": 25,
+          "searchScore": 26.666666666666668,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -1539,6 +1539,6 @@
       "reddit:http 403 Blocked",
       "bluesky:http 403 Forbidden"
     ],
-    "confidence": 0.66
+    "confidence": 0.64
   }
 }

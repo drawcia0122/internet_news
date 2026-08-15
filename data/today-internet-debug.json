@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-15T05:56:48.688Z",
+  "generatedAt": "2026-08-15T06:54:41.414Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-803",
+  "selectedClusterId": "today-cluster-904",
   "selectedTitle": "15歳未満SNS禁止に違憲判断 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-803",
+      "clusterId": "today-cluster-904",
       "title": "15歳未満SNS禁止に違憲判断 仏",
       "category": "net-culture",
       "categories": [
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-336",
+      "clusterId": "today-cluster-439",
       "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
       "category": "sns",
       "categories": [
@@ -69,30 +69,30 @@
         "entertainment",
         "general"
       ],
-      "buzzScore": 70.8,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 77.7,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
         "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
         "trend": 20,
         "internetNativeBoost": 8,
-        "search": 10.1,
+        "search": 10.4,
         "social": 6,
         "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
+        "freshness": 8.5,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 63.33333333333333,
+        "searchScore": 65,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -112,7 +112,61 @@
       ]
     },
     {
-      "clusterId": "today-cluster-335",
+      "clusterId": "today-cluster-4",
+      "title": "『キングダム ハーツ』オリジナルアニメシリーズが発表！ キーブレードを持った謎の後ろ姿がお披露目",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "entertainment",
+        "manga",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 69,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 20.9,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 48.9,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-338",
       "title": "話題博した「1文字足す」ゲーム『MARY - メアリ姫の奪還』Steam向け完全版発表。“足したらだいたい反応してくれる”ゲーム、分岐数千通りに底なし進化",
       "category": "games",
       "categories": [
@@ -164,91 +218,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-522",
-      "title": "高市首相、物価高対策批判に対しＸに反論５件連続投稿…「ファクトで見てみよう」",
-      "category": "politics",
+      "clusterId": "today-cluster-1",
+      "title": "アパートの住民を監視して“異常”を密告するゲーム『The Watcher』発表。見なかったことにもできるが、監視する自分もまた“監視されている”サイコスリラー",
+      "category": "games",
       "categories": [
-        "politics",
-        "business",
-        "sns",
-        "net-culture",
+        "games",
         "general"
       ],
-      "buzzScore": 66,
-      "confidence": 0.42,
+      "buzzScore": 64.9,
+      "confidence": 0.47,
       "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.3,
         "internetNativeBoost": 8,
-        "search": 7.7,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 48.333333333333336,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-65",
-      "title": "ゲーム業界で「生成AI使用禁止」を盛り込む契約書、ここ1年で急増傾向との証言。もはや定型文、大手から小規模パブリッシャーにも波及",
-      "category": "games",
-      "categories": [
-        "games",
-        "game-features",
-        "business",
-        "tech",
-        "general",
-        "sns",
-        "net-culture"
-      ],
-      "buzzScore": 63.5,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 3.8,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.4,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
+        "search": 5.7,
+        "social": 4.2,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 1.6666666666666667,
@@ -259,11 +256,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 42.1,
-        "internalSocialScore": 65
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 44.7,
+        "internalSocialScore": 32.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

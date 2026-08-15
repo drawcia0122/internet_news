@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-15T17:30:41.793Z",
+  "generatedAt": "2026-08-15T17:53:07.430Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-478",
+  "selectedClusterId": "today-cluster-487",
   "selectedTitle": "15歳未満SNS禁止に違憲判断 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-478",
+      "clusterId": "today-cluster-487",
       "title": "15歳未満SNS禁止に違憲判断 仏",
       "category": "sns",
       "categories": [
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1125",
+      "clusterId": "today-cluster-1137",
       "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
       "category": "sns",
       "categories": [
@@ -166,61 +166,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2",
-      "title": "TVアニメ『薬屋のひとりごと』第3期が10月2日より放送開始！謎の仙女・白娘々（パイニャンニャン）役に上田麗奈さん",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "entertainment",
-        "manga",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 67.5,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.9,
-        "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 11.666666666666666,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 48.9,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-126",
+      "clusterId": "today-cluster-125",
       "title": "「本当に電波的なものにしか救われない人たちへ」―にゃるら氏が“趣味100％”で作る『妹、他者、パラノイア』。創作と自傷、他者を描く理由【インタビュー】",
       "category": "games",
       "categories": [
@@ -252,7 +198,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 23.333333333333332,
+        "searchScore": 26.666666666666668,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -265,6 +211,60 @@
         "archiveHeatScore": 86,
         "internalSearchScore": 34,
         "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-3",
+      "title": "TVアニメ『薬屋のひとりごと』第3期が10月2日より放送開始！謎の仙女・白娘々（パイニャンニャン）役に上田麗奈さん",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "entertainment",
+        "manga",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64.9,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 11.666666666666666,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

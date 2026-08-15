@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-15T04:42:16.640Z",
+  "generatedAt": "2026-08-15T05:35:48.432Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-688",
+  "selectedClusterId": "today-cluster-775",
   "selectedTitle": "15歳未満SNS禁止に違憲判断 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-688",
+      "clusterId": "today-cluster-775",
       "title": "15歳未満SNS禁止に違憲判断 仏",
       "category": "net-culture",
       "categories": [
@@ -18,7 +18,7 @@
       ],
       "buzzScore": 95,
       "confidence": 0.63,
-      "articleCount": 21,
+      "articleCount": 23,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
@@ -61,60 +61,6 @@
     },
     {
       "clusterId": "today-cluster-335",
-      "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "entertainment",
-        "general",
-        "politics",
-        "world"
-      ],
-      "buzzScore": 77.4,
-      "confidence": 0.46,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 20,
-        "internetNativeBoost": 8,
-        "search": 10.4,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 65,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 35.8,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-334",
       "title": "話題博した「1文字足す」ゲーム『MARY - メアリ姫の奪還』Steam向け完全版発表。“足したらだいたい反応してくれる”ゲーム、分岐数千通りに底なし進化",
       "category": "games",
       "categories": [
@@ -166,7 +112,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-419",
+      "clusterId": "today-cluster-498",
       "title": "高市首相、物価高対策批判に対しＸに反論５件連続投稿…「ファクトで見てみよう」",
       "category": "politics",
       "categories": [
@@ -176,30 +122,29 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 67.7,
-      "confidence": 0.43,
+      "buzzScore": 66,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
         "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 8,
+        "search": 7.7,
         "social": 7.4,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 8.5,
         "authority": 2.5,
         "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 50,
+        "searchScore": 48.333333333333336,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -219,7 +164,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-55",
+      "clusterId": "today-cluster-65",
       "title": "ゲーム業界で「生成AI使用禁止」を盛り込む契約書、ここ1年で急増傾向との証言。もはや定型文、大手から小規模パブリッシャーにも波及",
       "category": "games",
       "categories": [
@@ -267,6 +212,58 @@
         "archiveHeatScore": 79,
         "internalSearchScore": 42.7,
         "internalSocialScore": 65.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2434",
+      "title": "AI電力網は国民負担？　大手電力が「6000億円分」値上げ申請",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "business",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62.3,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 4.2,
+        "social": 7.2,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 6.666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 33.1,
+        "internalSocialScore": 56.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

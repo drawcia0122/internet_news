@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-15T15:52:00.795Z",
+  "generatedAt": "2026-08-15T16:37:05.518Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-444",
+  "selectedClusterId": "today-cluster-457",
   "selectedTitle": "15歳未満SNS禁止に違憲判断 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-444",
+      "clusterId": "today-cluster-457",
       "title": "15歳未満SNS禁止に違憲判断 仏",
       "category": "sns",
       "categories": [
@@ -17,13 +17,14 @@
         "business",
         "sports"
       ],
-      "buzzScore": 81.6,
-      "confidence": 0.58,
-      "articleCount": 22,
+      "buzzScore": 93.3,
+      "confidence": 0.61,
+      "articleCount": 23,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
         "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
@@ -31,7 +32,7 @@
         "sourceDiversity": 4.7,
         "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 4.2,
+        "search": 16,
         "social": 6.1,
         "velocity": 0,
         "freshness": 8.5,
@@ -40,9 +41,9 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 0,
+        "searchScore": 100,
         "socialScore": 0,
-        "searchAvailable": false,
+        "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
@@ -55,13 +56,12 @@
         "internalSocialScore": 47.5
       },
       "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
         "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
     },
     {
-      "clusterId": "today-cluster-54",
+      "clusterId": "today-cluster-51",
       "title": "話題博した「1文字足す」ゲーム『MARY - メアリ姫の奪還』Steam向け完全版発表。“足したらだいたい反応してくれる”ゲーム、分岐数千通りに底なし進化",
       "category": "games",
       "categories": [
@@ -94,9 +94,9 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 0,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
-        "searchAvailable": false,
+        "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
@@ -109,13 +109,64 @@
         "internalSocialScore": 65.4
       },
       "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
         "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
     },
     {
-      "clusterId": "today-cluster-2",
+      "clusterId": "today-cluster-1103",
+      "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 72.2,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 20,
+        "internetNativeBoost": 8,
+        "search": 8,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 50,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 34.6,
+        "internalSocialScore": 45.9
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-3",
       "title": "TVアニメ『薬屋のひとりごと』第3期が10月2日より放送開始！謎の仙女・白娘々（パイニャンニャン）役に上田麗奈さん",
       "category": "anime",
       "categories": [
@@ -149,9 +200,9 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 0,
+        "searchScore": 11.666666666666666,
         "socialScore": 0,
-        "searchAvailable": false,
+        "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
@@ -164,65 +215,12 @@
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
         "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
     },
     {
-      "clusterId": "today-cluster-1089",
-      "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 68.6,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 34.6,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-131",
+      "clusterId": "today-cluster-128",
       "title": "「本当に電波的なものにしか救われない人たちへ」―にゃるら氏が“趣味100％”で作る『妹、他者、パラノイア』。創作と自傷、他者を描く理由【インタビュー】",
       "category": "games",
       "categories": [
@@ -233,7 +231,7 @@
         "general"
       ],
       "buzzScore": 65.3,
-      "confidence": 0.34,
+      "confidence": 0.37,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -254,9 +252,9 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 0,
+        "searchScore": 26.666666666666668,
         "socialScore": 0,
-        "searchAvailable": false,
+        "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
@@ -269,7 +267,6 @@
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
         "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]

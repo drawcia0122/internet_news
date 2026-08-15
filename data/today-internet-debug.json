@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-14T23:54:38.154Z",
+  "generatedAt": "2026-08-15T01:46:43.668Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-385",
+  "selectedClusterId": "today-cluster-523",
   "selectedTitle": "15歳未満SNS禁止に違憲判断 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-385",
+      "clusterId": "today-cluster-523",
       "title": "15歳未満SNS禁止に違憲判断 仏",
       "category": "net-culture",
       "categories": [
@@ -13,16 +13,15 @@
         "tech",
         "sns",
         "general",
-        "sports",
-        "politics"
+        "politics",
+        "sports"
       ],
-      "buzzScore": 100,
-      "confidence": 0.75,
-      "articleCount": 18,
+      "buzzScore": 96.6,
+      "confidence": 0.64,
+      "articleCount": 20,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "検索面でも関連話題の広がりを確認",
         "アーカイブ上でも近い話題が連続出現"
@@ -30,12 +29,12 @@
       "scoreBreakdown": {
         "coverage": 18,
         "sourceDiversity": 4.7,
-        "trend": 21.3,
+        "trend": 20.7,
         "internetNativeBoost": 8,
         "search": 16,
         "social": 6.2,
-        "velocity": 9.5,
-        "freshness": 10,
+        "velocity": 0,
+        "freshness": 8.5,
         "authority": 2.5,
         "categoryBias": 12,
         "penalty": 0
@@ -51,8 +50,8 @@
         "archiveMatchCount": 2,
         "repeatedAppearanceScore": 10.2,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 40.6,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 39.5,
         "internalSocialScore": 48.6
       },
       "externalSignalErrors": [
@@ -61,59 +60,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1335",
-      "title": "『ポケモンバンク』2027年2月26日12時をもってサービス終了―利用者は『Pokémon HOME』への引き継ぎをお忘れなく",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "games",
-        "general",
-        "net-culture"
-      ],
-      "buzzScore": 82.9,
-      "confidence": 0.61,
-      "articleCount": 9,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 16.2,
-        "sourceDiversity": 7,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 4.4,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 17,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 35,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 31.7,
-        "internalSocialScore": 34.4
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-337",
+      "clusterId": "today-cluster-1066",
       "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
       "category": "sns",
       "categories": [
@@ -124,30 +71,31 @@
         "world",
         "general"
       ],
-      "buzzScore": 78.4,
-      "confidence": 0.46,
-      "articleCount": 3,
-      "sourceCount": 2,
+      "buzzScore": 75,
+      "confidence": 0.47,
+      "articleCount": 4,
+      "sourceCount": 3,
       "uniqueDomainCount": 2,
       "whyRanked": [
+        "主要3媒体で同一話題を確認",
         "既存トレンド指標でも反応が強い",
         "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
+        "coverage": 7.2,
+        "sourceDiversity": 6.2,
         "trend": 20,
         "internetNativeBoost": 8,
-        "search": 11.5,
+        "search": 11.2,
         "social": 7.4,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 9,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 71.66666666666667,
+        "searchScore": 70,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -167,72 +115,22 @@
       ]
     },
     {
-      "clusterId": "today-cluster-148",
-      "title": "図鑑完成で「セレビィ」が手に入る！ 「Pokémon HOME」と「ポケットモンスター ファイアレッド・リーフグリーン」が2026年10月から連携",
+      "clusterId": "today-cluster-36",
+      "title": "ゲーム業界で「生成AI使用禁止」を盛り込む契約書、ここ1年で急増傾向との証言。もはや定型文、大手から小規模パブリッシャーにも波及",
       "category": "games",
       "categories": [
         "games",
+        "tech",
+        "business",
+        "game-features",
         "general",
+        "sns",
         "net-culture"
       ],
-      "buzzScore": 71.4,
-      "confidence": 0.57,
-      "articleCount": 6,
-      "sourceCount": 4,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要4媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 10.8,
-        "sourceDiversity": 8.5,
-        "trend": 16.9,
-        "internetNativeBoost": 0,
-        "search": 4.5,
-        "social": 3.2,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 3.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 28.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 77,
-        "internalSearchScore": 30.9,
-        "internalSocialScore": 24.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-6",
-      "title": "『劇場版 シドニアの騎士』がYouTubeにて期間限定で無料配信中。「アニメタイムズ」公式チャンネルにて9月14日まで",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "entertainment",
-        "manga",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.9,
-      "confidence": 0.36,
+      "buzzScore": 66.8,
+      "confidence": 0.39,
       "articleCount": 2,
-      "sourceCount": 1,
+      "sourceCount": 2,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
@@ -240,19 +138,19 @@
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "sourceDiversity": 3.8,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 5.5,
         "social": 8.4,
         "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 6.666666666666667,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -262,9 +160,113 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
         "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2017",
+      "title": "AI電力網は国民負担？　大手電力が「6000億円分」値上げ申請",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "business",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62.3,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 4.2,
+        "social": 7.2,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 6.666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 33.1,
+        "internalSocialScore": 56.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2475",
+      "title": "Claude文章で｢AI製｣バレる?　コピペでも残る電子透かしにネット反発",
+      "category": "business",
+      "categories": [
+        "business",
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 61.8,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.1,
+        "social": 7.2,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 6.666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 32.4,
+        "internalSocialScore": 56.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

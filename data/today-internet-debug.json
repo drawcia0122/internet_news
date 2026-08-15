@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-15T08:41:33.893Z",
+  "generatedAt": "2026-08-15T09:36:15.582Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1074",
+  "selectedClusterId": "today-cluster-383",
   "selectedTitle": "15歳未満SNS禁止に違憲判断 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-1074",
+      "clusterId": "today-cluster-383",
       "title": "15歳未満SNS禁止に違憲判断 仏",
       "category": "net-culture",
       "categories": [
@@ -17,12 +17,13 @@
         "business",
         "sports"
       ],
-      "buzzScore": 91.3,
-      "confidence": 0.6,
+      "buzzScore": 100,
+      "confidence": 0.67,
       "articleCount": 21,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "検索面でも関連話題の広がりを確認",
         "アーカイブ上でも近い話題が連続出現"
@@ -34,8 +35,8 @@
         "internetNativeBoost": 8,
         "search": 16,
         "social": 6.2,
-        "velocity": 0,
-        "freshness": 5.5,
+        "velocity": 4.2,
+        "freshness": 10,
         "authority": 2.5,
         "categoryBias": 12,
         "penalty": 0
@@ -61,7 +62,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-596",
+      "clusterId": "today-cluster-684",
       "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
       "category": "sns",
       "categories": [
@@ -70,8 +71,8 @@
         "entertainment",
         "general"
       ],
-      "buzzScore": 77.1,
-      "confidence": 0.43,
+      "buzzScore": 75.6,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -85,9 +86,9 @@
         "trend": 20,
         "internetNativeBoost": 8,
         "search": 9.9,
-        "social": 6,
+        "social": 5.9,
         "velocity": 0,
-        "freshness": 8.5,
+        "freshness": 7,
         "authority": 2.5,
         "categoryBias": 14,
         "penalty": 0
@@ -101,11 +102,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 80,
         "archiveHeatScore": 91,
-        "internalSearchScore": 35.8,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 35.2,
+        "internalSocialScore": 46.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -113,61 +114,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-10",
-      "title": "『キングダム ハーツ』オリジナルアニメシリーズが発表！ キーブレードを持った謎の後ろ姿がお披露目",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "entertainment",
-        "manga",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 69,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.9,
-        "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 48.9,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-336",
+      "clusterId": "today-cluster-333",
       "title": "話題博した「1文字足す」ゲーム『MARY - メアリ姫の奪還』Steam向け完全版発表。“足したらだいたい反応してくれる”ゲーム、分岐数千通りに底なし進化",
       "category": "games",
       "categories": [
@@ -177,7 +124,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.7,
+      "buzzScore": 69,
       "confidence": 0.39,
       "articleCount": 1,
       "sourceCount": 1,
@@ -188,9 +135,9 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 21.8,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.9,
+        "search": 5,
         "social": 7.4,
         "velocity": 0,
         "freshness": 10,
@@ -209,8 +156,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 99,
-        "internalSearchScore": 38.6,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
@@ -219,21 +166,77 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1",
-      "title": "“10時間”で大量ゾンビに備えるサバイバルゲーム『Survival Log』、Steamでさっそく大人気。終末まであと半日、計画的に買い込んで“最終拠点”で生き延びる",
+      "clusterId": "today-cluster-133",
+      "title": "「本当に電波的なものにしか救われない人たちへ」―にゃるら氏が“趣味100％”で作る『妹、他者、パラノイア』。創作と自傷、他者を描く理由【インタビュー】",
       "category": "games",
       "categories": [
         "games",
+        "game-features",
+        "sns",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 65.5,
-      "confidence": 0.47,
+      "buzzScore": 65.3,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.9,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 25,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 34,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-9",
+      "title": "『キングダム ハーツ』オリジナルアニメシリーズが発表！ キーブレードを持った謎の後ろ姿がお披露目",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "entertainment",
+        "manga",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64.9,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
@@ -241,15 +244,15 @@
         "trend": 18.7,
         "internetNativeBoost": 8,
         "search": 5.8,
-        "social": 4.2,
-        "velocity": 8.3,
-        "freshness": 10,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 5.5,
         "authority": 1.5,
-        "categoryBias": 6,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -258,10 +261,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
+        "crossCategoryScore": 100,
         "archiveHeatScore": 85,
         "internalSearchScore": 45.3,
-        "internalSocialScore": 32.8
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-15T15:31:53.862Z",
+  "generatedAt": "2026-08-15T15:52:00.795Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-427",
+  "selectedClusterId": "today-cluster-444",
   "selectedTitle": "15歳未満SNS禁止に違憲判断 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-427",
+      "clusterId": "today-cluster-444",
       "title": "15歳未満SNS禁止に違憲判断 仏",
       "category": "sns",
       "categories": [
@@ -17,14 +17,13 @@
         "business",
         "sports"
       ],
-      "buzzScore": 93.3,
-      "confidence": 0.61,
-      "articleCount": 23,
+      "buzzScore": 81.6,
+      "confidence": 0.58,
+      "articleCount": 22,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
         "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
@@ -32,7 +31,7 @@
         "sourceDiversity": 4.7,
         "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 16,
+        "search": 4.2,
         "social": 6.1,
         "velocity": 0,
         "freshness": 8.5,
@@ -41,9 +40,9 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 100,
+        "searchScore": 0,
         "socialScore": 0,
-        "searchAvailable": true,
+        "searchAvailable": false,
         "socialAvailable": false
       },
       "internalSignalStats": {
@@ -56,6 +55,7 @@
         "internalSocialScore": 47.5
       },
       "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
         "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
@@ -94,9 +94,9 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 0,
         "socialScore": 0,
-        "searchAvailable": true,
+        "searchAvailable": false,
         "socialAvailable": false
       },
       "internalSignalStats": {
@@ -109,58 +109,7 @@
         "internalSocialScore": 65.4
       },
       "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1075",
-      "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 72.4,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20,
-        "internetNativeBoost": 8,
-        "search": 8.3,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 51.66666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 34.6,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
         "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
@@ -200,9 +149,9 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 11.666666666666666,
+        "searchScore": 0,
         "socialScore": 0,
-        "searchAvailable": true,
+        "searchAvailable": false,
         "socialAvailable": false
       },
       "internalSignalStats": {
@@ -215,12 +164,65 @@
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
         "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
     },
     {
-      "clusterId": "today-cluster-130",
+      "clusterId": "today-cluster-1089",
+      "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 68.6,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 20,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 34.6,
+        "internalSocialScore": 45.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-131",
       "title": "「本当に電波的なものにしか救われない人たちへ」―にゃるら氏が“趣味100％”で作る『妹、他者、パラノイア』。創作と自傷、他者を描く理由【インタビュー】",
       "category": "games",
       "categories": [
@@ -230,8 +232,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.5,
-      "confidence": 0.37,
+      "buzzScore": 65.3,
+      "confidence": 0.34,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -243,7 +245,7 @@
         "sourceDiversity": 2.3,
         "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 4.5,
+        "search": 4.4,
         "social": 7.4,
         "velocity": 0,
         "freshness": 10,
@@ -252,9 +254,9 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 28.333333333333332,
+        "searchScore": 0,
         "socialScore": 0,
-        "searchAvailable": true,
+        "searchAvailable": false,
         "socialAvailable": false
       },
       "internalSignalStats": {
@@ -267,6 +269,7 @@
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
         "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]

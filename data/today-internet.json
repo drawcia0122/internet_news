@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T21:51:02.968Z",
+  "generatedAt": "2026-08-16T22:33:18.094Z",
   "topicVersion": 1,
   "selectedTopic": {
     "id": "auto-games-steamの-生成ai利用ゲーム-に対するプレイヤーの反応を分析した研究-評価を分けるのは-利用そのもの-より-利用目的-か-automaton-media.com/articles/newsjp/20260815-460351",
@@ -202,9 +202,8 @@
       "categoryLabel": "政治",
       "categoryLabels": [
         "政治",
-        "その他",
-        "ネットカルチャー",
-        "その他"
+        "SNS",
+        "ネットカルチャー"
       ],
       "thumbnailUrl": "",
       "sourceSignals": [
@@ -255,18 +254,18 @@
           "summary": "首相のＸ、行政文書に当たらず 公務発信、保存義務求める声も | | 全国のニュース 佐賀新聞"
         }
       ],
-      "hotScore": 68.2,
+      "hotScore": 68.4,
       "posts": "2",
       "metricLabel": "signals",
       "time": "直近",
-      "publishedAt": "2026-08-16T21:48:34.701Z",
-      "buzzScore": 68.2,
+      "publishedAt": "2026-08-16T22:30:35.222Z",
+      "buzzScore": 68.4,
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
         "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 7.7,
+        "search": 8,
         "social": 6.3,
         "velocity": 0,
         "freshness": 10,
@@ -276,6 +275,7 @@
       },
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
         "アーカイブ上でも近い話題が連続出現"
       ],
       "rank": 2,
@@ -286,7 +286,7 @@
         "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
         "keyPoints": [
           "2媒体・2ドメインで確認されたトピックです。",
-          "最新更新は2026/8/16 21:48:34です。",
+          "最新更新は2026/8/16 22:30:35です。",
           "現時点では報道の出そろい方と勢いを優先して選出しています。"
         ],
         "watchpoints": [
@@ -312,8 +312,8 @@
       "externalSignals": {
         "query": "首相のX、行政文書に当たらず 公務発信、保存義務求める声も",
         "search": {
-          "count": 29,
-          "score": 48.333333333333336,
+          "count": 30,
+          "score": 50,
           "available": true
         },
         "reddit": {
@@ -332,7 +332,7 @@
         ]
       },
       "externalSignalStats": {
-        "searchScore": 48.333333333333336,
+        "searchScore": 50,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -475,7 +475,7 @@
           "publishedLabel": "8/16 12:38",
           "thumbnailUrl": null,
           "briefSummary": "",
-          "summary": "アニメ『【推しの子】』第4期 Final Season ティザービジュアル&ビジュアルムービー公開。「星に導かれ、最後の舞台へ。」 ファミ通"
+          "summary": "アニメ『【推しの子】』第4期 Final Season ティザービジュアル&ビジュアルムービー公開。「星に導かれ、最後の舞台へ。」 ファミ通.com"
         },
         {
           "sourceId": "google-news-manga-anime",
@@ -621,34 +621,33 @@
       }
     },
     {
-      "id": "auto-anime-中国でアニメ映画-牛来-異例のヒット-あまりにひどい作りが話題に-tokyo-sports.co.jp/articles/-/399670",
-      "title": "中国でアニメ映画「牛来」異例のヒット　あまりにひどい作りが話題に",
-      "summary": "中国でアニメ映画「牛来」異例のヒット あまりにひどい作りが話題に 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
-      "briefSummary": "中国でアニメ映画「牛来」異例のヒット あまりにひどい作りが話題に",
-      "whatHappened": "中国でアニメ映画「牛来」異例のヒット あまりにひどい作りが話題に",
-      "whyHot": "既存トレンド指標でも反応が強い。",
-      "importantPoint": "1媒体・1ドメインで確認されたトピックです。",
+      "id": "auto-business-ai小説が文学賞に殺到-増える選考コスト-公募新人賞は存続できるか-nikkei.com/article/dgxzqoud245p80u6a720c2000000",
+      "title": "AI小説が文学賞に殺到　増える選考コスト、公募新人賞は存続できるか",
+      "summary": "AI小説が文学賞に殺到 増える選考コスト、公募新人賞は存続できるか 既存トレンド指標でも反応が強い。報道元ははてなブックマーク人気、Google News / テックです。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
+      "briefSummary": "AI小説が文学賞に殺到 増える選考コスト、公募新人賞は存続できるか",
+      "whatHappened": "AI小説が文学賞に殺到 増える選考コスト、公募新人賞は存続できるか",
+      "whyHot": "既存トレンド指標でも反応が強い。報道元ははてなブックマーク人気、Google News / テックです。",
+      "importantPoint": "2媒体・2ドメインで確認されたトピックです。",
       "futureOutlook": "続報で事実関係や影響範囲が更新される可能性があります。",
-      "category": "anime",
+      "category": "business",
       "categories": [
-        "anime",
-        "entertainment",
-        "manga",
+        "business",
+        "tech",
+        "books",
         "sns",
         "net-culture",
-        "world",
         "general"
       ],
-      "categoryLabel": "アニメ",
+      "categoryLabel": "経済",
       "categoryLabels": [
-        "アニメ",
-        "エンタメ",
-        "漫画",
-        "SNS",
+        "経済",
+        "テック",
+        "本",
+        "その他",
         "ネットカルチャー",
-        "国際"
+        "その他"
       ],
-      "thumbnailUrl": "https://tokyo-sports.ismcdn.jp/mwimgs/2/7/1200w/img_2737d780b1472b9bf1fcb36cb778a1bd205666.jpg",
+      "thumbnailUrl": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3459710016082026000000-3.png?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&upscale=false&w=1200&s=565b5577ba345b70a2e66268e87f6530",
       "sourceSignals": [
         {
           "sourceId": "hatena-hotentry",
@@ -665,69 +664,96 @@
             "trend",
             "buzz"
           ],
-          "title": "中国でアニメ映画「牛来」異例のヒット　あまりにひどい作りが話題に",
-          "url": "https://www.tokyo-sports.co.jp/articles/-/399670",
-          "canonicalUrl": "https://www.tokyo-sports.co.jp/articles/-/399670",
+          "title": "AI小説が文学賞に殺到　増える選考コスト、公募新人賞は存続できるか",
+          "url": "https://www.nikkei.com/article/DGXZQOUD245P80U6A720C2000000/",
+          "canonicalUrl": "https://www.nikkei.com/article/DGXZQOUD245P80U6A720C2000000/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://tokyo-sports.ismcdn.jp/mwimgs/2/7/1200w/img_2737d780b1472b9bf1fcb36cb778a1bd205666.jpg",
-          "briefSummary": "中国で、あまりにひどい作りが話題となった国産アニメ映画「牛来」が、〝怖いもの見たさ〟の観客を集め、異例のヒットとなっている。香港メディア「星島頭條」が１６日、報じた。",
-          "summary": "中国で、あまりにひどい作りが話題となった国産アニメ映画「牛来」が、〝怖いもの見たさ〟の観客を集め、異例のヒットとなっている。香港メディア「星島頭條」が１６日、報じた。 同作は８月５日に公開された上映時間８６分のアニメ映画。公開から１０日間の…",
-          "thumbnail": "https://tokyo-sports.ismcdn.jp/mwimgs/2/7/1200w/img_2737d780b1472b9bf1fcb36cb778a1bd205666.jpg"
+          "thumbnailUrl": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3459710016082026000000-3.png?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&upscale=false&w=1200&s=565b5577ba345b70a2e66268e87f6530",
+          "briefSummary": "今年に入って、どこの文学賞も応募が急増している――。出版関係者らがそんなささやきを交わしている。人工知能（AI）を使って気軽に大量の小説を出力できるようになった結果、公募新人文学賞の存続が危うくなりかねない事態を招いている。",
+          "summary": "今年に入って、どこの文学賞も応募が急増している――。出版関係者らがそんなささやきを交わしている。人工知能（AI）を使って気軽に大量の小説を出力できるようになった結果、公募新人文学賞の存続が危うくなりかねない事態を招いている。「いくらなんでも多すぎる」。早川書房編集本部シニアエディターの塩澤快浩氏は目…"
+        },
+        {
+          "sourceId": "google-news-tech",
+          "source": "Google News",
+          "sourceName": "Google News / テック",
+          "sourceGroup": "google-news",
+          "sourcePriority": 34,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [
+            "tech",
+            "ai"
+          ],
+          "title": "AI小説が文学賞に殺到 増える選考コスト、公募新人賞は存続できるか",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE90VGR4WjMwSC1DOEdqMDF4TFU1TWxWQjJqNFI5Y3hhSlRhLWpUeXhDN2RWTk9ERWRUMEJSR28zZzE5N3RRMFBLdmJla2hrMjBlTVYxYk1nVTRQSWlteHc0eVdiWHZJdzFQS3BJdQ?oc=5",
+          "canonicalUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE90VGR4WjMwSC1DOEdqMDF4TFU1TWxWQjJqNFI5Y3hhSlRhLWpUeXhDN2RWTk9ERWRUMEJSR28zZzE5N3RRMFBLdmJla2hrMjBlTVYxYk1nVTRQSWlteHc0eVdiWHZJdzFQS3BJdQ?oc=5",
+          "publishedAt": "2026-08-15T20:00:00.000Z",
+          "publishedLabel": "8/15 20:00",
+          "thumbnailUrl": null,
+          "briefSummary": "",
+          "summary": "AI小説が文学賞に殺到 増える選考コスト、公募新人賞は存続できるか 日本経済新聞"
         }
       ],
-      "hotScore": 62.4,
-      "posts": "1",
+      "hotScore": 61.8,
+      "posts": "2",
       "metricLabel": "signals",
       "time": "直近",
-      "publishedAt": "2026-08-16T21:48:34.701Z",
-      "buzzScore": 62.4,
+      "publishedAt": "2026-08-16T12:54:28.910Z",
+      "buzzScore": 61.8,
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20,
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.3,
-        "social": 7.4,
+        "search": 3.9,
+        "social": 7.3,
         "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
+        "freshness": 5.5,
+        "authority": 2.5,
         "categoryBias": 9,
-        "penalty": -3
+        "penalty": 0
       },
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "rank": 4,
       "summaryPayload": {
-        "headline": "中国でアニメ映画「牛来」異例のヒット　あまりにひどい作りが話題に",
-        "whatHappened": "中国でアニメ映画「牛来」異例のヒット あまりにひどい作りが話題に",
-        "whyBuzzing": "既存トレンド指標でも反応が強い。",
+        "headline": "AI小説が文学賞に殺到　増える選考コスト、公募新人賞は存続できるか",
+        "whatHappened": "AI小説が文学賞に殺到 増える選考コスト、公募新人賞は存続できるか",
+        "whyBuzzing": "既存トレンド指標でも反応が強い。報道元ははてなブックマーク人気、Google News / テックです。",
         "netReaction": "SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。",
         "keyPoints": [
-          "1媒体・1ドメインで確認されたトピックです。",
-          "最新更新は2026/8/16 21:48:34です。",
+          "2媒体・2ドメインで確認されたトピックです。",
+          "最新更新は2026/8/16 12:54:28です。",
           "現時点では報道の出そろい方と勢いを優先して選出しています。"
         ],
         "watchpoints": [
           "続報で事実関係や影響範囲が更新される可能性があります。",
           "一次情報や公式コメントが追加されたら優先して確認してください。"
         ],
-        "threeMinuteSummary": "中国でアニメ映画「牛来」異例のヒット あまりにひどい作りが話題に 既存トレンド指標でも反応が強い。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
+        "threeMinuteSummary": "AI小説が文学賞に殺到 増える選考コスト、公募新人賞は存続できるか 既存トレンド指標でも反応が強い。報道元ははてなブックマーク人気、Google News / テックです。 SNSや検索で追いかけやすいタイプの話題として反応が集まっています。速報の共有だけでなく、背景や影響を整理する投稿も増えています。"
       },
       "representativeArticles": [
         {
-          "title": "中国でアニメ映画「牛来」異例のヒット　あまりにひどい作りが話題に",
-          "url": "https://www.tokyo-sports.co.jp/articles/-/399670",
+          "title": "AI小説が文学賞に殺到　増える選考コスト、公募新人賞は存続できるか",
+          "url": "https://www.nikkei.com/article/DGXZQOUD245P80U6A720C2000000/",
           "sourceName": "はてなブックマーク人気",
           "publishedAt": null
+        },
+        {
+          "title": "AI小説が文学賞に殺到 増える選考コスト、公募新人賞は存続できるか",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE90VGR4WjMwSC1DOEdqMDF4TFU1TWxWQjJqNFI5Y3hhSlRhLWpUeXhDN2RWTk9ERWRUMEJSR28zZzE5N3RRMFBLdmJla2hrMjBlTVYxYk1nVTRQSWlteHc0eVdiWHZJdzFQS3BJdQ?oc=5",
+          "sourceName": "Google News / テック",
+          "publishedAt": "2026-08-15T20:00:00.000Z"
         }
       ],
       "externalSignals": {
-        "query": "中国でアニメ映画 牛来 異例のヒット あまりにひどい作りが話題に",
+        "query": "AI小説が文学賞に殺到 増える選考コスト、公募新人賞は存続できるか",
         "search": {
-          "count": 20,
-          "score": 33.33333333333333,
+          "count": 4,
+          "score": 6.666666666666667,
           "available": true
         },
         "reddit": {
@@ -746,7 +772,7 @@
         ]
       },
       "externalSignalStats": {
-        "searchScore": 33.33333333333333,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -758,16 +784,16 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 35.8,
-        "internalSocialScore": 57.7
+        "archiveHeatScore": 79,
+        "internalSearchScore": 30.4,
+        "internalSocialScore": 56.9
       },
       "clusterStats": {
-        "articleCount": 1,
-        "sourceCount": 1,
-        "uniqueDomainCount": 1,
+        "articleCount": 2,
+        "sourceCount": 2,
+        "uniqueDomainCount": 2,
         "officialSourceCount": 0,
         "latestSourceCount1h": 0
       }
@@ -775,7 +801,7 @@
   ],
   "fallbackUsed": false,
   "debug": {
-    "generatedAt": "2026-08-16T21:51:02.968Z",
+    "generatedAt": "2026-08-16T22:33:18.094Z",
     "fallbackUsed": false,
     "selectedClusterId": "today-cluster-42",
     "selectedTitle": "Steamの“生成AI利用ゲーム”に対するプレイヤーの反応を分析した研究。評価を分けるのは“利用そのもの”より“利用目的”か",
@@ -844,13 +870,14 @@
           "net-culture",
           "general"
         ],
-        "buzzScore": 68.2,
+        "buzzScore": 68.4,
         "confidence": 0.44,
         "articleCount": 2,
         "sourceCount": 2,
         "uniqueDomainCount": 2,
         "whyRanked": [
           "既存トレンド指標でも反応が強い",
+          "検索面でも関連話題の広がりを確認",
           "アーカイブ上でも近い話題が連続出現"
         ],
         "scoreBreakdown": {
@@ -858,7 +885,7 @@
           "sourceDiversity": 4.7,
           "trend": 21.3,
           "internetNativeBoost": 8,
-          "search": 7.7,
+          "search": 8,
           "social": 6.3,
           "velocity": 0,
           "freshness": 10,
@@ -867,7 +894,7 @@
           "penalty": 0
         },
         "externalSignalStats": {
-          "searchScore": 48.333333333333336,
+          "searchScore": 50,
           "socialScore": 0,
           "searchAvailable": true,
           "socialAvailable": false
@@ -941,61 +968,7 @@
         ]
       },
       {
-        "clusterId": "today-cluster-274",
-        "title": "中国でアニメ映画「牛来」異例のヒット　あまりにひどい作りが話題に",
-        "category": "anime",
-        "categories": [
-          "anime",
-          "entertainment",
-          "manga",
-          "sns",
-          "net-culture",
-          "world",
-          "general"
-        ],
-        "buzzScore": 62.4,
-        "confidence": 0.38,
-        "articleCount": 1,
-        "sourceCount": 1,
-        "uniqueDomainCount": 1,
-        "whyRanked": [
-          "既存トレンド指標でも反応が強い"
-        ],
-        "scoreBreakdown": {
-          "coverage": 1.8,
-          "sourceDiversity": 2.3,
-          "trend": 20,
-          "internetNativeBoost": 8,
-          "search": 5.3,
-          "social": 7.4,
-          "velocity": 0,
-          "freshness": 10,
-          "authority": 1.5,
-          "categoryBias": 9,
-          "penalty": -3
-        },
-        "externalSignalStats": {
-          "searchScore": 33.33333333333333,
-          "socialScore": 0,
-          "searchAvailable": true,
-          "socialAvailable": false
-        },
-        "internalSignalStats": {
-          "browseMatchCount": 0,
-          "archiveMatchCount": 1,
-          "repeatedAppearanceScore": 6,
-          "crossCategoryScore": 100,
-          "archiveHeatScore": 91,
-          "internalSearchScore": 35.8,
-          "internalSocialScore": 57.7
-        },
-        "externalSignalErrors": [
-          "reddit:http 403 Blocked",
-          "bluesky:http 403 Forbidden"
-        ]
-      },
-      {
-        "clusterId": "today-cluster-747",
+        "clusterId": "today-cluster-826",
         "title": "AI小説が文学賞に殺到　増える選考コスト、公募新人賞は存続できるか",
         "category": "business",
         "categories": [
@@ -1041,6 +1014,60 @@
           "archiveHeatScore": 79,
           "internalSearchScore": 30.4,
           "internalSocialScore": 56.9
+        },
+        "externalSignalErrors": [
+          "reddit:http 403 Blocked",
+          "bluesky:http 403 Forbidden"
+        ]
+      },
+      {
+        "clusterId": "today-cluster-274",
+        "title": "中国でアニメ映画「牛来」異例のヒット　あまりにひどい作りが話題に",
+        "category": "anime",
+        "categories": [
+          "anime",
+          "entertainment",
+          "manga",
+          "sns",
+          "net-culture",
+          "world",
+          "general"
+        ],
+        "buzzScore": 61.8,
+        "confidence": 0.38,
+        "articleCount": 1,
+        "sourceCount": 1,
+        "uniqueDomainCount": 1,
+        "whyRanked": [
+          "既存トレンド指標でも反応が強い"
+        ],
+        "scoreBreakdown": {
+          "coverage": 1.8,
+          "sourceDiversity": 2.3,
+          "trend": 20,
+          "internetNativeBoost": 8,
+          "search": 4.8,
+          "social": 7.4,
+          "velocity": 0,
+          "freshness": 10,
+          "authority": 1.5,
+          "categoryBias": 9,
+          "penalty": -3
+        },
+        "externalSignalStats": {
+          "searchScore": 30,
+          "socialScore": 0,
+          "searchAvailable": true,
+          "socialAvailable": false
+        },
+        "internalSignalStats": {
+          "browseMatchCount": 0,
+          "archiveMatchCount": 1,
+          "repeatedAppearanceScore": 6,
+          "crossCategoryScore": 100,
+          "archiveHeatScore": 91,
+          "internalSearchScore": 35.8,
+          "internalSocialScore": 57.7
         },
         "externalSignalErrors": [
           "reddit:http 403 Blocked",

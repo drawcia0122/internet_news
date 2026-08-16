@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T21:51:02.968Z",
+  "generatedAt": "2026-08-16T22:33:18.094Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-42",
   "selectedTitle": "Steamの“生成AI利用ゲーム”に対するプレイヤーの反応を分析した研究。評価を分けるのは“利用そのもの”より“利用目的”か",
@@ -68,13 +68,14 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.2,
+      "buzzScore": 68.4,
       "confidence": 0.44,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
         "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
@@ -82,7 +83,7 @@
         "sourceDiversity": 4.7,
         "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 7.7,
+        "search": 8,
         "social": 6.3,
         "velocity": 0,
         "freshness": 10,
@@ -91,7 +92,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 48.333333333333336,
+        "searchScore": 50,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -165,61 +166,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-274",
-      "title": "中国でアニメ映画「牛来」異例のヒット　あまりにひどい作りが話題に",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "sns",
-        "net-culture",
-        "world",
-        "general"
-      ],
-      "buzzScore": 62.4,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20,
-        "internetNativeBoost": 8,
-        "search": 5.3,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 33.33333333333333,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 35.8,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-747",
+      "clusterId": "today-cluster-826",
       "title": "AI小説が文学賞に殺到　増える選考コスト、公募新人賞は存続できるか",
       "category": "business",
       "categories": [
@@ -265,6 +212,60 @@
         "archiveHeatScore": 79,
         "internalSearchScore": 30.4,
         "internalSocialScore": 56.9
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-274",
+      "title": "中国でアニメ映画「牛来」異例のヒット　あまりにひどい作りが話題に",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 61.8,
+      "confidence": 0.38,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 30,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 35.8,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

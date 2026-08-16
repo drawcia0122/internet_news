@@ -1,23 +1,22 @@
 {
-  "generatedAt": "2026-08-16T03:10:47.006Z",
+  "generatedAt": "2026-08-16T04:12:33.527Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-915",
+  "selectedClusterId": "today-cluster-1025",
   "selectedTitle": "15歳未満SNS禁止に違憲判断 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-915",
+      "clusterId": "today-cluster-1025",
       "title": "15歳未満SNS禁止に違憲判断 仏",
       "category": "sns",
       "categories": [
         "sns",
         "net-culture",
         "general",
-        "tech",
-        "politics"
+        "tech"
       ],
-      "buzzScore": 78.5,
+      "buzzScore": 83.5,
       "confidence": 0.59,
-      "articleCount": 16,
+      "articleCount": 13,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
@@ -35,7 +34,7 @@
         "velocity": 0,
         "freshness": 5.5,
         "authority": 2.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -59,7 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1774",
+      "clusterId": "today-cluster-1878",
       "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
       "category": "sns",
       "categories": [
@@ -110,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-294",
+      "clusterId": "today-cluster-293",
       "title": "Steamの“生成AI利用ゲーム”に対するプレイヤーの反応を分析した研究。評価を分けるのは“利用そのもの”より“利用目的”か",
       "category": "games",
       "categories": [
@@ -162,7 +161,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-474",
+      "clusterId": "today-cluster-576",
       "title": "日本初確認の虫 SNS動画きっかけ",
       "category": "net-culture",
       "categories": [
@@ -171,8 +170,8 @@
         "sns",
         "general"
       ],
-      "buzzScore": 67.7,
-      "confidence": 0.41,
+      "buzzScore": 66.9,
+      "confidence": 0.4,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -183,9 +182,9 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 21.1,
+        "trend": 20.5,
         "internetNativeBoost": 8,
-        "search": 4.8,
+        "search": 4.7,
         "social": 6,
         "velocity": 2.7,
         "freshness": 8.5,
@@ -204,8 +203,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 96,
-        "internalSearchScore": 37.5,
+        "archiveHeatScore": 93,
+        "internalSearchScore": 36.4,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -214,51 +213,52 @@
       ]
     },
     {
-      "clusterId": "today-cluster-332",
-      "title": "「母、感動」小谷実可子「次女も20歳となりました」美貌の次女・宮下結衣と顔寄せ2ショ　「美人母娘さん」話題に",
-      "category": "entertainment",
+      "clusterId": "today-cluster-1421",
+      "title": "話題博した「1文字足す」ゲーム『MARY - メアリ姫の奪還』Steam向け完全版発表。“足したらだいたい反応してくれる”ゲーム、分岐数千通りに底なし進化",
+      "category": "games",
       "categories": [
+        "games",
         "entertainment",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.9,
-      "confidence": 0.39,
+      "buzzScore": 64.6,
+      "confidence": 0.36,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 17.2,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4,
-        "social": 6,
-        "velocity": 4.2,
-        "freshness": 10,
+        "search": 6.2,
+        "social": 8.3,
+        "velocity": 0,
+        "freshness": 3.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 31.2,
-        "internalSocialScore": 46.7
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 48.7,
+        "internalSocialScore": 64.5
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

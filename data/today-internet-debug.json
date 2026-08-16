@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-16T01:54:20.147Z",
+  "generatedAt": "2026-08-16T03:10:47.006Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-770",
+  "selectedClusterId": "today-cluster-915",
   "selectedTitle": "15歳未満SNS禁止に違憲判断 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-770",
+      "clusterId": "today-cluster-915",
       "title": "15歳未満SNS禁止に違憲判断 仏",
       "category": "sns",
       "categories": [
@@ -13,13 +13,11 @@
         "net-culture",
         "general",
         "tech",
-        "politics",
-        "business",
-        "sports"
+        "politics"
       ],
-      "buzzScore": 83,
-      "confidence": 0.6,
-      "articleCount": 21,
+      "buzzScore": 78.5,
+      "confidence": 0.59,
+      "articleCount": 16,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
@@ -35,9 +33,9 @@
         "search": 16,
         "social": 6.1,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 2.5,
-        "categoryBias": 12,
+        "categoryBias": 9,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -61,59 +59,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-358",
-      "title": "日本初確認の虫 SNS動画きっかけ",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "tech",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 70.7,
-      "confidence": 0.43,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.1,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 6,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 96,
-        "internalSearchScore": 37.5,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1638",
+      "clusterId": "today-cluster-1774",
       "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
       "category": "sns",
       "categories": [
@@ -122,7 +68,7 @@
         "entertainment",
         "general"
       ],
-      "buzzScore": 68.8,
+      "buzzScore": 69,
       "confidence": 0.4,
       "articleCount": 2,
       "sourceCount": 2,
@@ -135,7 +81,7 @@
         "sourceDiversity": 4.7,
         "trend": 20,
         "internetNativeBoost": 8,
-        "search": 6.7,
+        "search": 6.9,
         "social": 5.8,
         "velocity": 0,
         "freshness": 3.5,
@@ -144,7 +90,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 41.66666666666667,
+        "searchScore": 43.333333333333336,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -164,12 +110,12 @@
       ]
     },
     {
-      "clusterId": "today-cluster-299",
+      "clusterId": "today-cluster-294",
       "title": "Steamの“生成AI利用ゲーム”に対するプレイヤーの反応を分析した研究。評価を分けるのは“利用そのもの”より“利用目的”か",
-      "category": "tech",
+      "category": "games",
       "categories": [
-        "tech",
         "games",
+        "tech",
         "sns",
         "net-culture",
         "general"
@@ -216,34 +162,33 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1180",
-      "title": "話題博した「1文字足す」ゲーム『MARY - メアリ姫の奪還』Steam向け完全版発表。“足したらだいたい反応してくれる”ゲーム、分岐数千通りに底なし進化",
-      "category": "games",
+      "clusterId": "today-cluster-474",
+      "title": "日本初確認の虫 SNS動画きっかけ",
+      "category": "net-culture",
       "categories": [
-        "games",
-        "entertainment",
-        "sns",
         "net-culture",
+        "tech",
+        "sns",
         "general"
       ],
-      "buzzScore": 64.6,
-      "confidence": 0.36,
+      "buzzScore": 67.7,
+      "confidence": 0.41,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 21.1,
         "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 3.5,
+        "search": 4.8,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -255,13 +200,65 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 48.7,
-        "internalSocialScore": 64.5
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 96,
+        "internalSearchScore": 37.5,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-332",
+      "title": "「母、感動」小谷実可子「次女も20歳となりました」美貌の次女・宮下結衣と顔寄せ2ショ　「美人母娘さん」話題に",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.9,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

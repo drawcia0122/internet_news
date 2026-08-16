@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-15T23:30:59.092Z",
+  "generatedAt": "2026-08-15T23:51:22.285Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-612",
+  "selectedClusterId": "today-cluster-639",
   "selectedTitle": "15歳未満SNS禁止に違憲判断 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-612",
+      "clusterId": "today-cluster-639",
       "title": "15歳未満SNS禁止に違憲判断 仏",
       "category": "sns",
       "categories": [
@@ -17,9 +17,9 @@
         "business",
         "sports"
       ],
-      "buzzScore": 91.8,
+      "buzzScore": 83,
       "confidence": 0.6,
-      "articleCount": 23,
+      "articleCount": 22,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
@@ -30,8 +30,8 @@
       "scoreBreakdown": {
         "coverage": 18,
         "sourceDiversity": 4.7,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
+        "trend": 16.7,
+        "internetNativeBoost": 0,
         "search": 16,
         "social": 6.1,
         "velocity": 0,
@@ -51,9 +51,61 @@
         "archiveMatchCount": 2,
         "repeatedAppearanceScore": 7.8,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 33.1,
+        "archiveHeatScore": 76,
+        "internalSearchScore": 31.7,
         "internalSocialScore": 47.5
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-349",
+      "title": "【速報】首相、靖国神社に向かって二拝二拍手一拝",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 76.5,
+      "confidence": 0.45,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 15.7,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 98.33333333333333,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -114,7 +166,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1444",
+      "clusterId": "today-cluster-1472",
       "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
       "category": "sns",
       "categories": [
@@ -165,7 +217,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-534",
+      "clusterId": "today-cluster-560",
       "title": "ポケモンバンクのサービス終了後に「パッチールが締め出される」とざわつく。“現行作からポケモンホーム出禁”のぶちパンダ、唯一のルートも消滅へ",
       "category": "games",
       "categories": [
@@ -175,8 +227,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.2,
-      "confidence": 0.38,
+      "buzzScore": 62.6,
+      "confidence": 0.37,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -192,7 +244,7 @@
         "search": 6.3,
         "social": 8.4,
         "velocity": 0,
-        "freshness": 8.5,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 9,
         "penalty": -3
@@ -206,65 +258,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 23.1,
         "crossCategoryScore": 100,
         "archiveHeatScore": 97,
-        "internalSearchScore": 49.6,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-14",
-      "title": "TVアニメ『薬屋のひとりごと』第3期が10月2日より放送開始！謎の仙女・白娘々（パイニャンニャン）役に上田麗奈さん",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "entertainment",
-        "manga",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 62.9,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 11.666666666666666,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 65.8
+        "internalSearchScore": 49,
+        "internalSocialScore": 65.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

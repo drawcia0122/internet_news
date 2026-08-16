@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-16T12:57:08.236Z",
+  "generatedAt": "2026-08-16T13:40:42.996Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-42",
-  "selectedTitle": "Steamの“生成AI利用ゲーム”に対するプレイヤーの反応を分析した研究。評価を分けるのは“利用そのもの”より“利用目的”か",
+  "selectedClusterId": "today-cluster-354",
+  "selectedTitle": "｢高市応援団｣が党内でも､SNSでも溶けてゆく…\"寝ずに働く\"高市首相の自己アピールが空回りし始めたワケ",
   "candidates": [
     {
-      "clusterId": "today-cluster-42",
+      "clusterId": "today-cluster-41",
       "title": "Steamの“生成AI利用ゲーム”に対するプレイヤーの反応を分析した研究。評価を分けるのは“利用そのもの”より“利用目的”か",
       "category": "games",
       "categories": [
@@ -59,40 +59,39 @@
       ]
     },
     {
-      "clusterId": "today-cluster-868",
-      "title": "靖国神社参拝見送った高市首相、外交への影響考慮か…保守層からは在任中の参拝求める声も",
-      "category": "politics",
+      "clusterId": "today-cluster-354",
+      "title": "｢高市応援団｣が党内でも､SNSでも溶けてゆく…\"寝ずに働く\"高市首相の自己アピールが空回りし始めたワケ",
+      "category": "net-culture",
       "categories": [
-        "politics",
-        "world",
-        "sns",
         "net-culture",
+        "politics",
+        "sns",
+        "business",
         "general"
       ],
-      "buzzScore": 69.8,
-      "confidence": 0.41,
+      "buzzScore": 69,
+      "confidence": 0.45,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 19.6,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 14.7,
-        "social": 7.3,
+        "search": 7.5,
+        "social": 7.4,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 10,
         "authority": 2.5,
         "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 91.66666666666666,
+        "searchScore": 46.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -100,11 +99,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 33.9,
-        "internalSocialScore": 56.9
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -112,7 +111,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-19",
+      "clusterId": "today-cluster-18",
       "title": "VTuber届木ウカ、恋愛ゲーム『美術部カノジョ』発表　2010年代のオタク文化を凝縮",
       "category": "games",
       "categories": [
@@ -122,8 +121,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.3,
-      "confidence": 0.36,
+      "buzzScore": 68.8,
+      "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -134,9 +133,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.3,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5.7,
+        "search": 6.5,
         "social": 8.4,
         "velocity": 0,
         "freshness": 5.5,
@@ -155,8 +154,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -165,7 +164,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-290",
+      "clusterId": "today-cluster-353",
+      "title": "AI小説が文学賞に殺到　増える選考コスト、公募新人賞は存続できるか",
+      "category": "business",
+      "categories": [
+        "business",
+        "tech",
+        "books",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 66.6,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-287",
       "title": "中国でアニメ映画「牛来」異例のヒット　あまりにひどい作りが話題に",
       "category": "anime",
       "categories": [
@@ -212,56 +264,6 @@
         "archiveHeatScore": 91,
         "internalSearchScore": 35.8,
         "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-10",
-      "title": "“デスゲーム参加者”の死因を限られた手がかりから特定するゲーム『デスゲームの報告書』がSteamにて9月1日発売予定。「ナポリの男たち」でも知られるゲーム実況者・shu3さんの新作",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 60,
-      "confidence": 0.4,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 15.6,
-        "internetNativeBoost": 0,
-        "search": 5.2,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 71,
-        "internalSearchScore": 40.5,
-        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

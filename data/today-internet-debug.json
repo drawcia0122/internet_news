@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-16T05:05:08.443Z",
+  "generatedAt": "2026-08-16T05:38:24.803Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1085",
+  "selectedClusterId": "today-cluster-1122",
   "selectedTitle": "15歳未満SNS禁止に違憲判断 仏",
   "candidates": [
     {
-      "clusterId": "today-cluster-1085",
+      "clusterId": "today-cluster-1122",
       "title": "15歳未満SNS禁止に違憲判断 仏",
       "category": "sns",
       "categories": [
@@ -92,7 +92,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -112,57 +112,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1",
-      "title": "PS5『ゴースト・オブ・ヨウテイ』の“大型拡張”は10月1日発売。老舗FPS『AVA』の新作『AVA RE:BIRTH』発表。今週の見逃せないゲーム記事7選",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 69.4,
-      "confidence": 0.5,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.5,
-        "social": 4.2,
-        "velocity": 8.3,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
-        "internalSocialScore": 32.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1937",
+      "clusterId": "today-cluster-1976",
       "title": "【速報】フランスの法令審査機関は、１５歳未満のＳＮＳ利用を禁じる法律について違憲判断を示した：時事ドットコム",
       "category": "sns",
       "categories": [
@@ -213,7 +163,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-289",
+      "clusterId": "today-cluster-288",
       "title": "Steamの“生成AI利用ゲーム”に対するプレイヤーの反応を分析した研究。評価を分けるのは“利用そのもの”より“利用目的”か",
       "category": "games",
       "categories": [
@@ -258,6 +208,56 @@
         "archiveHeatScore": 99,
         "internalSearchScore": 38.6,
         "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1",
+      "title": "PS5『ゴースト・オブ・ヨウテイ』の“大型拡張”は10月1日発売。老舗FPS『AVA』の新作『AVA RE:BIRTH』発表。今週の見逃せないゲーム記事7選",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 64.9,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
+        "social": 4.2,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 32.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

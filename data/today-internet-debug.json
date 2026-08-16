@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-16T17:51:54.379Z",
+  "generatedAt": "2026-08-16T18:42:34.877Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-42",
-  "selectedTitle": "Steamの“生成AI利用ゲーム”に対するプレイヤーの反応を分析した研究。評価を分けるのは“利用そのもの”より“利用目的”か",
+  "selectedClusterId": "today-cluster-2",
+  "selectedTitle": "TVアニメ『【推しの子】』第4期「Final Season」ティザービジュアル&ビジュアルムービーが公開。原作書影の衣装を纏い、メインキャラたちが最後の舞台へ向かっていく様子が描かれる",
   "candidates": [
     {
       "clusterId": "today-cluster-42",
@@ -59,58 +59,6 @@
       ]
     },
     {
-      "clusterId": "today-cluster-279",
-      "title": "首相のX、行政文書に当たらず　公務発信、保存義務求める声も",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 67.9,
-      "confidence": 0.44,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 7.5,
-        "social": 6.3,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 46.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 12,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 41.8,
-        "internalSocialScore": 49.4
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
       "clusterId": "today-cluster-2",
       "title": "TVアニメ『【推しの子】』第4期「Final Season」ティザービジュアル&ビジュアルムービーが公開。原作書影の衣装を纏い、メインキャラたちが最後の舞台へ向かっていく様子が描かれる",
       "category": "anime",
@@ -123,8 +71,8 @@
         "general",
         "sports"
       ],
-      "buzzScore": 65.2,
-      "confidence": 0.44,
+      "buzzScore": 69.7,
+      "confidence": 0.47,
       "articleCount": 5,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -138,8 +86,8 @@
         "internetNativeBoost": 0,
         "search": 4.7,
         "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
+        "velocity": 1.5,
+        "freshness": 10,
         "authority": 1,
         "categoryBias": 17,
         "penalty": 0
@@ -165,7 +113,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-458",
+      "clusterId": "today-cluster-278",
+      "title": "首相のX、行政文書に当たらず　公務発信、保存義務求める声も",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.2,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 7.7,
+        "social": 6.3,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 48.333333333333336,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 12,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 41.8,
+        "internalSocialScore": 49.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-473",
       "title": "｢高市応援団｣が党内でも､SNSでも溶けてゆく…\"寝ずに働く\"高市首相の自己アピールが空回りし始めたワケ",
       "category": "net-culture",
       "categories": [
@@ -217,7 +217,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-457",
+      "clusterId": "today-cluster-472",
       "title": "AI小説が文学賞に殺到　増える選考コスト、公募新人賞は存続できるか",
       "category": "business",
       "categories": [

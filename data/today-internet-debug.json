@@ -1,11 +1,170 @@
 {
-  "generatedAt": "2026-08-16T23:51:19.213Z",
+  "generatedAt": "2026-08-17T01:51:46.147Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-322",
+  "selectedClusterId": "today-cluster-549",
   "selectedTitle": "首相のX、行政文書に当たらず　公務発信、保存義務求める声も",
   "candidates": [
     {
-      "clusterId": "today-cluster-322",
+      "clusterId": "today-cluster-517",
+      "title": "オープンＡＩで経営幹部が相次ぎ退社、半年前加入の「中心人物」も…新規株式公開を前に「危険信号」",
+      "category": "business",
+      "categories": [
+        "business",
+        "tech",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 76.2,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 15.2,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 95,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-4",
+      "title": "「ドラクエ」が『人生ゲーム』になって登場。冒険者となって、仲間たちと大魔王ゾーマ討伐をめざせ",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 71.7,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.8,
+        "internetNativeBoost": 8,
+        "search": 6,
+        "social": 5.6,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-516",
+      "title": "中国でアニメ映画「牛来」異例のヒット　あまりにひどい作りが話題に",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 69,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 20,
+        "internetNativeBoost": 8,
+        "search": 5.3,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 33.33333333333333,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 35.8,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-549",
       "title": "首相のX、行政文書に当たらず　公務発信、保存義務求める声も",
       "category": "politics",
       "categories": [
@@ -14,8 +173,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.4,
-      "confidence": 0.47,
+      "buzzScore": 68.6,
+      "confidence": 0.46,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -29,16 +188,16 @@
         "sourceDiversity": 4.7,
         "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 8.3,
-        "social": 6.3,
+        "search": 8,
+        "social": 6.2,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 8.5,
         "authority": 2.5,
         "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 51.66666666666667,
+        "searchScore": 50,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -46,11 +205,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 11.1,
+        "repeatedAppearanceScore": 10.2,
         "crossCategoryScore": 80,
         "archiveHeatScore": 97,
-        "internalSearchScore": 41.2,
-        "internalSocialScore": 49
+        "internalSearchScore": 40.6,
+        "internalSocialScore": 48.6
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -58,58 +217,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2",
-      "title": "『フォートナイト』に「ソニック」「ロックマン」「リュウ」「ソラ」「ジョーカー」など多数参戦！人気ゲームキャラが夢の共演",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 69.1,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1564",
+      "clusterId": "today-cluster-1807",
       "title": "Steamの“生成AI利用ゲーム”に対するプレイヤーの反応を分析した研究。評価を分けるのは“利用そのもの”より“利用目的”か",
       "category": "games",
       "categories": [
@@ -155,113 +263,6 @@
         "archiveHeatScore": 99,
         "internalSearchScore": 48.3,
         "internalSocialScore": 64.5
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-15",
-      "title": "TVアニメ『【推しの子】』第4期「Final Season」ティザービジュアル&ビジュアルムービーが公開。原作書影の衣装を纏い、メインキャラたちが最後の舞台へ向かっていく様子が描かれる",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "net-culture",
-        "entertainment",
-        "manga",
-        "general",
-        "sports"
-      ],
-      "buzzScore": 64.2,
-      "confidence": 0.43,
-      "articleCount": 5,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 9,
-        "sourceDiversity": 4.7,
-        "trend": 12.5,
-        "internetNativeBoost": 0,
-        "search": 4.6,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1,
-        "categoryBias": 17,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 57,
-        "internalSearchScore": 35.6,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-969",
-      "title": "AI小説が文学賞に殺到　増える選考コスト、公募新人賞は存続できるか",
-      "category": "business",
-      "categories": [
-        "business",
-        "tech",
-        "books",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 61.8,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 3.9,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 6.666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 30.4,
-        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

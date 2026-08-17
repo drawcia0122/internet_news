@@ -1,9 +1,62 @@
 {
-  "generatedAt": "2026-08-16T23:31:20.595Z",
+  "generatedAt": "2026-08-16T23:51:19.213Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-2",
-  "selectedTitle": "『フォートナイト』に「ソニック」「ロックマン」「リュウ」「ソラ」「ジョーカー」など多数参戦！人気ゲームキャラが夢の共演",
+  "selectedClusterId": "today-cluster-322",
+  "selectedTitle": "首相のX、行政文書に当たらず　公務発信、保存義務求める声も",
   "candidates": [
+    {
+      "clusterId": "today-cluster-322",
+      "title": "首相のX、行政文書に当たらず　公務発信、保存義務求める声も",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 70.4,
+      "confidence": 0.47,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 8.3,
+        "social": 6.3,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 51.66666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 11.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 41.2,
+        "internalSocialScore": 49
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
     {
       "clusterId": "today-cluster-2",
       "title": "『フォートナイト』に「ソニック」「ロックマン」「リュウ」「ソラ」「ジョーカー」など多数参戦！人気ゲームキャラが夢の共演",
@@ -13,8 +66,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 73.6,
-      "confidence": 0.46,
+      "buzzScore": 69.1,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -29,8 +82,8 @@
         "internetNativeBoost": 8,
         "search": 5.6,
         "social": 5.6,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -56,60 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-275",
-      "title": "首相のX、行政文書に当たらず　公務発信、保存義務求める声も",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 68.4,
-      "confidence": 0.44,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 8,
-        "social": 6.3,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 50,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 11.1,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 41.2,
-        "internalSocialScore": 49
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1535",
+      "clusterId": "today-cluster-1564",
       "title": "Steamの“生成AI利用ゲーム”に対するプレイヤーの反応を分析した研究。評価を分けるのは“利用そのもの”より“利用目的”か",
       "category": "games",
       "categories": [
@@ -216,7 +216,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-939",
+      "clusterId": "today-cluster-969",
       "title": "AI小説が文学賞に殺到　増える選考コスト、公募新人賞は存続できるか",
       "category": "business",
       "categories": [

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T15:36:32.472Z",
+  "generatedAt": "2026-08-17T16:40:27.059Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-2",
   "selectedTitle": "『パプリカ』今敏監督の生前のインタビューで構成された特別番組「NHK映像ファイル あの人に会いたい」が再放送。NHK総合にて8月22日5時40分から",
@@ -15,8 +15,8 @@
         "manga",
         "general"
       ],
-      "buzzScore": 76.4,
-      "confidence": 0.46,
+      "buzzScore": 71.9,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -32,8 +32,8 @@
         "internetNativeBoost": 8,
         "search": 5.6,
         "social": 8.4,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -68,8 +68,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 75,
-      "confidence": 0.46,
+      "buzzScore": 70.5,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -84,8 +84,8 @@
         "internetNativeBoost": 8,
         "search": 5.6,
         "social": 7,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-4",
+      "clusterId": "today-cluster-5",
       "title": "恐怖を超えた“不安”を追求した不気味すぎるホラーゲーム『UN:Me』の公式Xが開設。Steam、PS5、Switch 2向けに2026年発売予定の新作",
       "category": "games",
       "categories": [
@@ -120,8 +120,8 @@
         "sns",
         "general"
       ],
-      "buzzScore": 71,
-      "confidence": 0.43,
+      "buzzScore": 70.2,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -132,9 +132,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.7,
+        "search": 5.5,
         "social": 7,
         "velocity": 5.3,
         "freshness": 8.5,
@@ -153,62 +153,9 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
         "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-61",
-      "title": "にじさんじ長尾景、総勢40名参加のサッカーフェスを開催　ゲーム大会かリアルかは不明",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 67.9,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 17,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 10,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -247,7 +194,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 21.666666666666668,
+        "searchScore": 23.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -260,6 +207,56 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 38.9,
         "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-11",
+      "title": "Nintendo Switch 2向け「microSD Expressカード」がニンテンドーストアで値上げ。6980円→8980円へと価格改定を実施",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 66.7,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 5.6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

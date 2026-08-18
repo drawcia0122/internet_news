@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-18T16:44:23.648Z",
+  "generatedAt": "2026-08-18T17:38:34.387Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-143",
+  "selectedClusterId": "today-cluster-141",
   "selectedTitle": "『ヴァンサバ』制作陣による『呪術廻戦 RUMBLE: SURVIVATON』がいち早く遊べる！集英社ゲームズが「TGS2026」出展内容を発表",
   "candidates": [
     {
-      "clusterId": "today-cluster-2",
+      "clusterId": "today-cluster-3",
       "title": "都市型オープンワールドRPG『無限大ANANTA』がgamescom 2026「Opening Night Live」に登場決定。8月26日午前3時より配信",
       "category": "games",
       "categories": [
@@ -15,7 +15,7 @@
         "sns",
         "general"
       ],
-      "buzzScore": 72.9,
+      "buzzScore": 72.1,
       "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
@@ -28,9 +28,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.5,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 5.6,
         "social": 8.4,
         "velocity": 5.3,
         "freshness": 8.5,
@@ -49,8 +49,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 45,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 44,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -59,60 +59,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-143",
-      "title": "『ヴァンサバ』制作陣による『呪術廻戦 RUMBLE: SURVIVATON』がいち早く遊べる！集英社ゲームズが「TGS2026」出展内容を発表",
-      "category": "games",
-      "categories": [
-        "games",
-        "general",
-        "anime",
-        "entertainment",
-        "manga"
-      ],
-      "buzzScore": 68.3,
-      "confidence": 0.53,
-      "articleCount": 4,
-      "sourceCount": 4,
-      "uniqueDomainCount": 4,
-      "whyRanked": [
-        "主要4媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 9.3,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 3.2,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 3.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 10,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 31.2,
-        "internalSocialScore": 24.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-146",
+      "clusterId": "today-cluster-144",
       "title": "都市型オープンワールドRPG『無限大ANANTA』日本公式Xに約6か月ぶりの動き！「gamescom 2026」ONL登場を正式発表",
       "category": "games",
       "categories": [
@@ -162,6 +109,56 @@
       ]
     },
     {
+      "clusterId": "today-cluster-141",
+      "title": "『ヴァンサバ』制作陣による『呪術廻戦 RUMBLE: SURVIVATON』がいち早く遊べる！集英社ゲームズが「TGS2026」出展内容を発表",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 63.2,
+      "confidence": 0.47,
+      "articleCount": 3,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
+      "whyRanked": [
+        "主要3媒体で同一話題を確認",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 7,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 3.2,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 10,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
+        "internalSocialScore": 24.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
       "clusterId": "today-cluster-356",
       "title": "開店祝いの花に鳩山由紀夫元首相や羽生結弦さんの名前無断使用　麻辣湯チェーンと店が謝罪",
       "category": "politics",
@@ -195,7 +192,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 15,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -215,7 +212,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-574",
+      "clusterId": "today-cluster-597",
       "title": "伊原六花、涼やか水色浴衣であふれる透明感...「安定の可愛さ！！！」「浴衣美人」　「バブリーダンス」紅白出場から9年",
       "category": "entertainment",
       "categories": [

@@ -1,57 +1,55 @@
 {
-  "generatedAt": "2026-08-19T22:56:50.761Z",
+  "generatedAt": "2026-08-19T23:33:32.883Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-365",
-  "selectedTitle": "【速報】高市首相は米国が国際刑事裁判所の赤根所長を制裁対象に指定したことを受け、「大変残念に思っている」と述べた：時事ドットコム",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "劇場アニメ『機動戦士ガンダムSEED FREEDOM ZERO』特別番組が10月9日に配信決定！『SEED FREEDOM』の“前日端”となる作品",
   "candidates": [
     {
-      "clusterId": "today-cluster-365",
-      "title": "【速報】高市首相は米国が国際刑事裁判所の赤根所長を制裁対象に指定したことを受け、「大変残念に思っている」と述べた：時事ドットコム",
-      "category": "politics",
+      "clusterId": "today-cluster-1",
+      "title": "劇場アニメ『機動戦士ガンダムSEED FREEDOM ZERO』特別番組が10月9日に配信決定！『SEED FREEDOM』の“前日端”となる作品",
+      "category": "anime",
       "categories": [
-        "politics",
-        "sns",
+        "anime",
+        "games",
         "net-culture",
-        "entertainment",
-        "world",
-        "general",
-        "crime"
+        "general"
       ],
-      "buzzScore": 72.5,
-      "confidence": 0.44,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 75.5,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 17.8,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 7.7,
-        "social": 7.4,
-        "velocity": 0,
+        "search": 5.7,
+        "social": 7,
+        "velocity": 8.3,
         "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 48.333333333333336,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 32.3,
-        "internalSocialScore": 57.7
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -59,17 +57,18 @@
       ]
     },
     {
-      "clusterId": "today-cluster-384",
-      "title": "「ゴリラ」名乗る政治団体が19日設立会見、立憲現職や中道落選者ら約20人参加か",
+      "clusterId": "today-cluster-412",
+      "title": "政治団体「護憲リベラル（ゴリラ）」元衆院議員３人が設立会見　現職含め16人が「参加意向」",
       "category": "politics",
       "categories": [
         "politics",
+        "sports",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 69.4,
-      "confidence": 0.43,
+      "buzzScore": 74.6,
+      "confidence": 0.45,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -80,71 +79,18 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 11.5,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 71.66666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-338",
-      "title": "政治団体「護憲リベラル（ゴリラ）」元衆院議員３人が設立会見　現職含め16人が「参加意向」",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sports",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66.2,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
         "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 9.9,
+        "search": 10.1,
         "social": 7.4,
         "velocity": 0,
         "freshness": 10,
-        "authority": 1.5,
+        "authority": 2.5,
         "categoryBias": 7,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 61.66666666666667,
+        "searchScore": 63.33333333333333,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -164,7 +110,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-131",
+      "clusterId": "today-cluster-440",
+      "title": "「ゴリラ」名乗る政治団体が19日設立会見、立憲現職や中道落選者ら約20人参加か",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.1,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 11.7,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 73.33333333333333,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-127",
       "title": "アニメ「SEKIRO: NO DEFEAT」“日本の戦国末期”を壮麗に描いた場面カットお披露目！変若の御子のキャラ情報も明らかに",
       "category": "anime",
       "categories": [
@@ -196,7 +194,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 8.333333333333332,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -216,7 +214,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2227",
+      "clusterId": "today-cluster-2300",
       "title": "AIに脅かされる米国の労働者、86%が女性　「産休育休で解雇」の疑念",
       "category": "sports",
       "categories": [

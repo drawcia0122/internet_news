@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-19T20:40:02.484Z",
+  "generatedAt": "2026-08-19T21:36:19.016Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-369",
+  "selectedClusterId": "today-cluster-365",
   "selectedTitle": "【速報】高市首相は米国が国際刑事裁判所の赤根所長を制裁対象に指定したことを受け、「大変残念に思っている」と述べた：時事ドットコム",
   "candidates": [
     {
-      "clusterId": "today-cluster-369",
+      "clusterId": "today-cluster-365",
       "title": "【速報】高市首相は米国が国際刑事裁判所の赤根所長を制裁対象に指定したことを受け、「大変残念に思っている」と述べた：時事ドットコム",
       "category": "politics",
       "categories": [
@@ -16,7 +16,7 @@
         "world",
         "general"
       ],
-      "buzzScore": 72.2,
+      "buzzScore": 72.5,
       "confidence": 0.44,
       "articleCount": 3,
       "sourceCount": 2,
@@ -29,7 +29,7 @@
         "sourceDiversity": 4.7,
         "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 7.5,
+        "search": 7.7,
         "social": 7.4,
         "velocity": 0,
         "freshness": 10,
@@ -38,7 +38,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 46.666666666666664,
+        "searchScore": 48.333333333333336,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-781",
+      "clusterId": "today-cluster-863",
       "title": "都市型オープンワールドRPG『無限大ANANTA』日本公式Xに約6か月ぶりの動き！「gamescom 2026」ONL登場を正式発表",
       "category": "games",
       "categories": [
@@ -88,7 +88,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 20,
+        "searchScore": 18.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -108,60 +108,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-340",
-      "title": "政治団体「護憲リベラル（ゴリラ）」元衆院議員３人が設立会見　現職含め16人が「参加意向」",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sports",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 9.6,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 7,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 60,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-137",
+      "clusterId": "today-cluster-133",
       "title": "アニメ「SEKIRO: NO DEFEAT」“日本の戦国末期”を壮麗に描いた場面カットお披露目！変若の御子のキャラ情報も明らかに",
       "category": "anime",
       "categories": [
@@ -213,7 +160,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-787",
+      "clusterId": "today-cluster-1026",
+      "title": "「非常に軽率だった」AIで“性暴力被害や出産を語る架空女性”を作成した男性党員が反省（堀潤） - エキスパート",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "politics",
+        "general"
+      ],
+      "buzzScore": 63.9,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.2,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 33.2,
+        "internalSocialScore": 56.9
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-869",
       "title": "道徳問う「トロッコ問題」、AIの反論で3割が判断覆す　神戸大が実験",
       "category": "tech",
       "categories": [

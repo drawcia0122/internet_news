@@ -1,42 +1,41 @@
 {
-  "generatedAt": "2026-08-19T10:39:56.740Z",
+  "generatedAt": "2026-08-19T11:01:22.350Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-8",
-  "selectedTitle": "新VTuber事務所「ウラロジゲームカンパニー」始動──経営、法律、薬学、映画、美術に特化した才能が集う",
+  "selectedClusterId": "today-cluster-11",
+  "selectedTitle": "日本一ソフトウェアの“ミュージカルRPG”『リトルプリンセス マール王国の人形姫2』Switch2、PS5向けに復刻。明日8月20日から発売",
   "candidates": [
     {
-      "clusterId": "today-cluster-8",
-      "title": "新VTuber事務所「ウラロジゲームカンパニー」始動──経営、法律、薬学、映画、美術に特化した才能が集う",
-      "category": "entertainment",
+      "clusterId": "today-cluster-11",
+      "title": "日本一ソフトウェアの“ミュージカルRPG”『リトルプリンセス マール王国の人形姫2』Switch2、PS5向けに復刻。明日8月20日から発売",
+      "category": "games",
       "categories": [
-        "entertainment",
         "games",
-        "sns",
+        "tech",
         "net-culture",
-        "general"
+        "general",
+        "entertainment"
       ],
-      "buzzScore": 76.6,
-      "confidence": 0.46,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 71.7,
+      "confidence": 0.5,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 21.6,
-        "internetNativeBoost": 8,
-        "search": 6.4,
-        "social": 8.4,
-        "velocity": 5.3,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 16.3,
+        "internetNativeBoost": 0,
+        "search": 5.3,
+        "social": 7,
+        "velocity": 8,
         "freshness": 8.5,
-        "authority": 1.5,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 1.6666666666666667,
@@ -48,10 +47,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 98,
-        "internalSearchScore": 49.9,
-        "internalSocialScore": 65.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 74,
+        "internalSearchScore": 41.5,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -69,7 +68,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.7,
+      "buzzScore": 66,
       "confidence": 0.38,
       "articleCount": 1,
       "sourceCount": 1,
@@ -84,7 +83,7 @@
         "sourceDiversity": 2.3,
         "trend": 20.2,
         "internetNativeBoost": 8,
-        "search": 1.6,
+        "search": 1.9,
         "social": 8.1,
         "velocity": 2.7,
         "freshness": 8.5,
@@ -93,7 +92,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 10,
+        "searchScore": 11.666666666666666,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -113,7 +112,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1336",
+      "clusterId": "today-cluster-151",
+      "title": "アニメ「SEKIRO: NO DEFEAT」“日本の戦国末期”を壮麗に描いた場面カットお披露目！変若の御子のキャラ情報も明らかに",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
+        "games",
+        "general"
+      ],
+      "buzzScore": 65.2,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 4.3,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 33.7,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1384",
       "title": "AIに脅かされる米国の労働者、86%が女性　「産休育休で解雇」の疑念",
       "category": "sports",
       "categories": [
@@ -167,7 +218,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-153",
+      "clusterId": "today-cluster-156",
       "title": "都市型オープンワールドRPG『無限大ANANTA』日本公式Xに約6か月ぶりの動き！「gamescom 2026」ONL登場を正式発表",
       "category": "games",
       "categories": [
@@ -210,57 +261,6 @@
         "archiveHeatScore": 94,
         "internalSearchScore": 36.8,
         "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-43",
-      "title": "『天地創造』を思わせる予告動画をスウェーデンのパブリッシャーが公開。スクウェア・エニックスやクインテットのクレジットも確認され、8月25日配信のレトロゲーム番組「Pixel Arcadia」で何らかの発表か",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 63.4,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

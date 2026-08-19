@@ -1,11 +1,65 @@
 {
-  "generatedAt": "2026-08-19T09:44:58.208Z",
+  "generatedAt": "2026-08-19T10:39:56.740Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-8",
-  "selectedTitle": "『超かぐや姫！』復活上映記念の舞台挨拶開催　メインキャスト3人と山下清悟監督が登壇",
+  "selectedTitle": "新VTuber事務所「ウラロジゲームカンパニー」始動──経営、法律、薬学、映画、美術に特化した才能が集う",
   "candidates": [
     {
       "clusterId": "today-cluster-8",
+      "title": "新VTuber事務所「ウラロジゲームカンパニー」始動──経営、法律、薬学、映画、美術に特化した才能が集う",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 76.6,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.6,
+        "internetNativeBoost": 8,
+        "search": 6.4,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 98,
+        "internalSearchScore": 49.9,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-19",
       "title": "『超かぐや姫！』復活上映記念の舞台挨拶開催　メインキャスト3人と山下清悟監督が登壇",
       "category": "anime",
       "categories": [
@@ -15,8 +69,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.7,
-      "confidence": 0.4,
+      "buzzScore": 65.7,
+      "confidence": 0.38,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -32,8 +86,8 @@
         "internetNativeBoost": 8,
         "search": 1.6,
         "social": 8.1,
-        "velocity": 4.2,
-        "freshness": 10,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -59,7 +113,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1169",
+      "clusterId": "today-cluster-1336",
       "title": "AIに脅かされる米国の労働者、86%が女性　「産休育休で解雇」の疑念",
       "category": "sports",
       "categories": [
@@ -113,7 +167,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-143",
+      "clusterId": "today-cluster-153",
       "title": "都市型オープンワールドRPG『無限大ANANTA』日本公式Xに約6か月ぶりの動き！「gamescom 2026」ONL登場を正式発表",
       "category": "games",
       "categories": [
@@ -163,7 +217,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-30",
+      "clusterId": "today-cluster-43",
       "title": "『天地創造』を思わせる予告動画をスウェーデンのパブリッシャーが公開。スクウェア・エニックスやクインテットのクレジットも確認され、8月25日配信のレトロゲーム番組「Pixel Arcadia」で何らかの発表か",
       "category": "games",
       "categories": [
@@ -207,60 +261,6 @@
         "archiveHeatScore": 79,
         "internalSearchScore": 43.3,
         "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1170",
-      "title": "トランプ政権、ICCの赤根智子所長に制裁　米国内の保有資産を凍結",
-      "category": "crime",
-      "categories": [
-        "crime",
-        "business",
-        "world",
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 61.6,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 16.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 36.7,
-        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

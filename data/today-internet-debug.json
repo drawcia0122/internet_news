@@ -1,22 +1,75 @@
 {
-  "generatedAt": "2026-08-19T22:36:12.511Z",
+  "generatedAt": "2026-08-19T22:56:50.761Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-431",
-  "selectedTitle": "政治団体「護憲リベラル（ゴリラ）」元衆院議員３人が設立会見　現職含め16人が「参加意向」",
+  "selectedClusterId": "today-cluster-365",
+  "selectedTitle": "【速報】高市首相は米国が国際刑事裁判所の赤根所長を制裁対象に指定したことを受け、「大変残念に思っている」と述べた：時事ドットコム",
   "candidates": [
     {
-      "clusterId": "today-cluster-431",
-      "title": "政治団体「護憲リベラル（ゴリラ）」元衆院議員３人が設立会見　現職含め16人が「参加意向」",
+      "clusterId": "today-cluster-365",
+      "title": "【速報】高市首相は米国が国際刑事裁判所の赤根所長を制裁対象に指定したことを受け、「大変残念に思っている」と述べた：時事ドットコム",
       "category": "politics",
       "categories": [
         "politics",
-        "sports",
+        "sns",
+        "net-culture",
+        "entertainment",
+        "world",
+        "general",
+        "crime"
+      ],
+      "buzzScore": 72.5,
+      "confidence": 0.44,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 17.8,
+        "internetNativeBoost": 8,
+        "search": 7.7,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 48.333333333333336,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 32.3,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-384",
+      "title": "「ゴリラ」名乗る政治団体が19日設立会見、立憲現職や中道落選者ら約20人参加か",
+      "category": "politics",
+      "categories": [
+        "politics",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 74.4,
-      "confidence": 0.45,
+      "buzzScore": 69.4,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -27,15 +80,68 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 11.5,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 71.66666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-338",
+      "title": "政治団体「護憲リベラル（ゴリラ）」元衆院議員３人が設立会見　現職含め16人が「参加意向」",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sports",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 66.2,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
         "trend": 21.3,
         "internetNativeBoost": 8,
         "search": 9.9,
         "social": 7.4,
         "velocity": 0,
         "freshness": 10,
-        "authority": 2.5,
+        "authority": 1.5,
         "categoryBias": 7,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 61.66666666666667,
@@ -58,61 +164,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-360",
-      "title": "【速報】高市首相は米国が国際刑事裁判所の赤根所長を制裁対象に指定したことを受け、「大変残念に思っている」と述べた：時事ドットコム",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "entertainment",
-        "world",
-        "general",
-        "crime"
-      ],
-      "buzzScore": 72.2,
-      "confidence": 0.44,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 17.8,
-        "internetNativeBoost": 8,
-        "search": 7.5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 46.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 32.3,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-132",
+      "clusterId": "today-cluster-131",
       "title": "アニメ「SEKIRO: NO DEFEAT」“日本の戦国末期”を壮麗に描いた場面カットお披露目！変若の御子のキャラ情報も明らかに",
       "category": "anime",
       "categories": [
@@ -164,7 +216,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2194",
+      "clusterId": "today-cluster-2227",
       "title": "AIに脅かされる米国の労働者、86%が女性　「産休育休で解雇」の疑念",
       "category": "sports",
       "categories": [
@@ -211,56 +263,6 @@
         "archiveHeatScore": 79,
         "internalSearchScore": 29.6,
         "internalSocialScore": 56.4
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-983",
-      "title": "都市型オープンワールドRPG『無限大ANANTA』日本公式Xに約6か月ぶりの動き！「gamescom 2026」ONL登場を正式発表",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 59.8,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 4.5,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 18.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 35.6,
-        "internalSocialScore": 34.9
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

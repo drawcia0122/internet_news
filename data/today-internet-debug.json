@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T21:36:19.016Z",
+  "generatedAt": "2026-08-19T21:56:56.819Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-365",
   "selectedTitle": "【速報】高市首相は米国が国際刑事裁判所の赤根所長を制裁対象に指定したことを受け、「大変残念に思っている」と述べた：時事ドットコム",
@@ -14,6 +14,7 @@
         "net-culture",
         "entertainment",
         "world",
+        "crime",
         "general"
       ],
       "buzzScore": 72.5,
@@ -58,7 +59,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-863",
+      "clusterId": "today-cluster-893",
       "title": "都市型オープンワールドRPG『無限大ANANTA』日本公式Xに約6か月ぶりの動き！「gamescom 2026」ONL登場を正式発表",
       "category": "games",
       "categories": [
@@ -101,6 +102,59 @@
         "archiveHeatScore": 94,
         "internalSearchScore": 35.6,
         "internalSocialScore": 34.9
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-337",
+      "title": "政治団体「護憲リベラル（ゴリラ）」元衆院議員３人が設立会見　現職含め16人が「参加意向」",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sports",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 66,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 9.6,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 7,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 60,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -160,18 +214,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1026",
-      "title": "「非常に軽率だった」AIで“性暴力被害や出産を語る架空女性”を作成した男性党員が反省（堀潤） - エキスパート",
-      "category": "tech",
+      "clusterId": "today-cluster-602",
+      "title": "Wii＆PS3はレトロゲーム？ 「ゲームセンターCX」20年ルールを巡ってスタッフが討論、有野課長と見守る“定例会議の様子”が公開ー8月23日の生配信前に視聴しておきたい",
+      "category": "games",
       "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "politics",
+        "games",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 63.9,
-      "confidence": 0.4,
+      "buzzScore": 59.2,
+      "confidence": 0.41,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -181,18 +233,18 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 19.1,
+        "trend": 18.7,
         "internetNativeBoost": 8,
         "search": 4.2,
-        "social": 7.3,
+        "social": 4.5,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 7,
         "authority": 2.5,
-        "categoryBias": 9,
+        "categoryBias": 6,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 11.666666666666666,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -200,63 +252,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 33.2,
-        "internalSocialScore": 56.9
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-869",
-      "title": "道徳問う「トロッコ問題」、AIの反論で3割が判断覆す　神戸大が実験",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "business",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 61.8,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 3.9,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 16.666666666666664,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 30.4,
-        "internalSocialScore": 56.9
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 33.1,
+        "internalSocialScore": 35.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

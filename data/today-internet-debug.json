@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-19T11:36:15.442Z",
+  "generatedAt": "2026-08-19T11:56:36.468Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-12",
+  "selectedClusterId": "today-cluster-13",
   "selectedTitle": "日本一ソフトウェアの“ミュージカルRPG”『リトルプリンセス マール王国の人形姫2』Switch2、PS5向けに復刻。明日8月20日から発売",
   "candidates": [
     {
-      "clusterId": "today-cluster-12",
+      "clusterId": "today-cluster-13",
       "title": "日本一ソフトウェアの“ミュージカルRPG”『リトルプリンセス マール王国の人形姫2』Switch2、PS5向けに復刻。明日8月20日から発売",
       "category": "games",
       "categories": [
@@ -38,7 +38,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 31.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -58,61 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-20",
-      "title": "『超かぐや姫！』復活上映記念の舞台挨拶開催　メインキャスト3人と山下清悟監督が登壇",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.3,
-      "confidence": 0.37,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 1.9,
-        "social": 8.1,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 11.666666666666666,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 0,
-        "repeatedAppearanceScore": 18,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 0,
-        "internalSearchScore": 11.7,
-        "internalSocialScore": 63.1
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-150",
+      "clusterId": "today-cluster-151",
       "title": "アニメ「SEKIRO: NO DEFEAT」“日本の戦国末期”を壮麗に描いた場面カットお披露目！変若の御子のキャラ情報も明らかに",
       "category": "anime",
       "categories": [
@@ -144,7 +90,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -164,7 +110,61 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1477",
+      "clusterId": "today-cluster-19",
+      "title": "『超かぐや姫！』復活上映記念の舞台挨拶開催　メインキャスト3人と山下清悟監督が登壇",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.1,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 1.6,
+        "social": 8.1,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 10,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 0,
+        "repeatedAppearanceScore": 18,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 0,
+        "internalSearchScore": 11.7,
+        "internalSocialScore": 63.1
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1526",
       "title": "AIに脅かされる米国の労働者、86%が女性　「産休育休で解雇」の疑念",
       "category": "sports",
       "categories": [

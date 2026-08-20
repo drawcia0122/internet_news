@@ -1,11 +1,65 @@
 {
-  "generatedAt": "2026-08-20T16:47:44.541Z",
+  "generatedAt": "2026-08-20T17:40:11.896Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-171",
-  "selectedTitle": "『マインクラフト』などから着想を得たボクセル世界を落ち続けるACT『Sensory Overload』リリース。SNSではショート動画が7,000万回以上再生",
+  "selectedClusterId": "today-cluster-349",
+  "selectedTitle": "〈「日本から尻尾を振ってきた」〉プーチン択捉島上陸で露呈した対ロ外交の惨状…経産省は面目丸つぶれ、外務省は「それ見たことか」",
   "candidates": [
     {
-      "clusterId": "today-cluster-171",
+      "clusterId": "today-cluster-349",
+      "title": "〈「日本から尻尾を振ってきた」〉プーチン択捉島上陸で露呈した対ロ外交の惨状…経産省は面目丸つぶれ、外務省は「それ見たことか」",
+      "category": "business",
+      "categories": [
+        "business",
+        "sns",
+        "net-culture",
+        "politics",
+        "world",
+        "general"
+      ],
+      "buzzScore": 69.4,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.2,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 16,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 4,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 100,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 33.7,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-166",
       "title": "『マインクラフト』などから着想を得たボクセル世界を落ち続けるACT『Sensory Overload』リリース。SNSではショート動画が7,000万回以上再生",
       "category": "net-culture",
       "categories": [
@@ -36,7 +90,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -56,58 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-16",
-      "title": "「ホラーゲームは稼ぎやすい」という時代は終わったのか、開発者ら議論白熱。競合増えつつも“成功率”は結構高そう",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.7,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 19.4,
-        "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 88,
-        "internalSearchScore": 46.4,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-153",
+      "clusterId": "today-cluster-151",
       "title": "新作『シュタゲ リブート』実況・プレイ動画は禁止…公式が改めて「お願い」ーSNSもストーリー核心に触れるテキストやネタバレ画像・動画は控えるよう告知【UPDATE】",
       "category": "games",
       "categories": [
@@ -137,7 +140,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -157,7 +160,58 @@
       ]
     },
     {
-      "clusterId": "today-cluster-84",
+      "clusterId": "today-cluster-16",
+      "title": "「ホラーゲームは稼ぎやすい」という時代は終わったのか、開発者ら議論白熱。競合増えつつも“成功率”は結構高そう",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 61.6,
+      "confidence": 0.35,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 5.5,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 42.9,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-82",
       "title": "エグすぎるビジュが大注目の新作3Dアイドルゲーム『スタートゥユー』正式発表！iOSとAndroid向けに事前登録を受付中",
       "category": "tech",
       "categories": [
@@ -201,55 +255,6 @@
         "archiveHeatScore": 81,
         "internalSearchScore": 44,
         "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-472",
-      "title": "没入型3Dアイドルゲーム『V Project』、正式タイトルが『スタートゥユー』に決定！新たなアイドルグループやゲームシステムも初公開",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 57.6,
-      "confidence": 0.4,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 3.2,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 11.666666666666666,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 31.2,
-        "internalSocialScore": 24.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

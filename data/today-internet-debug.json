@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T23:33:32.883Z",
+  "generatedAt": "2026-08-19T23:54:12.569Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-1",
   "selectedTitle": "劇場アニメ『機動戦士ガンダムSEED FREEDOM ZERO』特別番組が10月9日に配信決定！『SEED FREEDOM』の“前日端”となる作品",
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-412",
+      "clusterId": "today-cluster-441",
       "title": "政治団体「護憲リベラル（ゴリラ）」元衆院議員３人が設立会見　現職含め16人が「参加意向」",
       "category": "politics",
       "categories": [
@@ -67,7 +67,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 74.6,
+      "buzzScore": 74.1,
       "confidence": 0.45,
       "articleCount": 2,
       "sourceCount": 2,
@@ -81,7 +81,7 @@
         "sourceDiversity": 4.7,
         "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 10.1,
+        "search": 9.6,
         "social": 7.4,
         "velocity": 0,
         "freshness": 10,
@@ -90,7 +90,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 63.33333333333333,
+        "searchScore": 60,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -110,7 +110,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-440",
+      "clusterId": "today-cluster-378",
+      "title": "踏切内で後続車の進路ふさぎ電車に衝突させたＪＡＦ職員、殺人未遂容疑で逮捕…容疑否認",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.9,
+      "confidence": 0.45,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 8.8,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 55.00000000000001,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-470",
       "title": "「ゴリラ」名乗る政治団体が19日設立会見、立憲現職や中道落選者ら約20人参加か",
       "category": "politics",
       "categories": [
@@ -119,7 +171,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.1,
+      "buzzScore": 68.4,
       "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
@@ -133,7 +185,7 @@
         "sourceDiversity": 4.7,
         "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 11.7,
+        "search": 12,
         "social": 6,
         "velocity": 0,
         "freshness": 8.5,
@@ -142,7 +194,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 73.33333333333333,
+        "searchScore": 75,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -162,7 +214,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-127",
+      "clusterId": "today-cluster-126",
       "title": "アニメ「SEKIRO: NO DEFEAT」“日本の戦国末期”を壮麗に描いた場面カットお披露目！変若の御子のキャラ情報も明らかに",
       "category": "anime",
       "categories": [
@@ -207,60 +259,6 @@
         "archiveHeatScore": 85,
         "internalSearchScore": 33.7,
         "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-2300",
-      "title": "AIに脅かされる米国の労働者、86%が女性　「産休育休で解雇」の疑念",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "business",
-        "world",
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 62.7,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 3.8,
-        "social": 7.2,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 12,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 5,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 29.6,
-        "internalSocialScore": 56.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

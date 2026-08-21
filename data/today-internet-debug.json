@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-21T21:35:01.391Z",
+  "generatedAt": "2026-08-21T21:55:17.333Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-106",
+  "selectedClusterId": "today-cluster-107",
   "selectedTitle": "アニメ『サイバーパンク: エッジランナーズ2』10月20日よりNetflixで配信決定！ナイトシティが再び燃え上がる",
   "candidates": [
     {
-      "clusterId": "today-cluster-106",
+      "clusterId": "today-cluster-107",
       "title": "アニメ『サイバーパンク: エッジランナーズ2』10月20日よりNetflixで配信決定！ナイトシティが再び燃え上がる",
       "category": "anime",
       "categories": [
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-682",
+      "clusterId": "today-cluster-699",
       "title": "microSD耐久テスト歴3年、460万回以上書き換え行った検証者が耐久性に優れたメーカーをリスト化",
       "category": "games",
       "categories": [
@@ -112,7 +112,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-150",
+      "clusterId": "today-cluster-149",
       "title": "「楽園追放」のノベルゲー『楽園追放 -The Stellar Angel-』11月26日Steam/スイッチで発売！初代映画のその後を描き、最新アニメにつながる",
       "category": "games",
       "categories": [
@@ -164,7 +164,58 @@
       ]
     },
     {
-      "clusterId": "today-cluster-794",
+      "clusterId": "today-cluster-386",
+      "title": "読む政治：皇室の尊厳保護の法整備　「不敬罪の復活そのもの」",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 60.2,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-813",
       "title": "「戦争に加担したくない」「異常さを感じる」高市政権に新宿駅前でも抗議デモ　平和や反戦を求め",
       "category": "politics",
       "categories": [
@@ -195,7 +246,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 16.666666666666664,
+        "searchScore": 18.333333333333332,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -208,57 +259,6 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 37.7,
         "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-96",
-      "title": "AI VTuber「しずく」の“ノベルゲーム風”配信企画「しずくのなつやすみ」が開催中。リアルタイムで好感度が変わるから、ついコメントしたくなっちゃう",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 59.9,
-      "confidence": 0.34,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-21T05:47:11.342Z",
+  "generatedAt": "2026-08-21T07:03:39.641Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-39",
+  "selectedClusterId": "today-cluster-51",
   "selectedTitle": "アニメ『サイバーパンク: エッジランナーズ2』10月20日に配信開始　新ティザー映像も解禁",
   "candidates": [
     {
-      "clusterId": "today-cluster-39",
+      "clusterId": "today-cluster-51",
       "title": "アニメ『サイバーパンク: エッジランナーズ2』10月20日に配信開始　新ティザー映像も解禁",
       "category": "anime",
       "categories": [
@@ -41,7 +41,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 21.666666666666668,
+        "searchScore": 26.666666666666668,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -61,59 +61,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-31",
-      "title": "AI VTuber「しずく」の“ノベルゲーム風”配信企画「しずくのなつやすみ」が開催中。リアルタイムで好感度が変わるから、ついコメントしたくなっちゃう",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 72.3,
-      "confidence": 0.44,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 46.1,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-5",
+      "clusterId": "today-cluster-10",
       "title": "Nintendo Musicにて、“入手困難”スーパーファミコン版『シムシティー』の楽曲が配信開始。実に34年越しの完全版サウンドトラック",
       "category": "games",
       "categories": [
@@ -121,8 +69,8 @@
         "entertainment",
         "general"
       ],
-      "buzzScore": 70.8,
-      "confidence": 0.5,
+      "buzzScore": 66.3,
+      "confidence": 0.46,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -137,8 +85,8 @@
         "internetNativeBoost": 8,
         "search": 6.5,
         "social": 5.6,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 6,
         "penalty": -3
@@ -164,7 +112,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-165",
+      "clusterId": "today-cluster-170",
       "title": "魔女生活RPG「Little Witch in the Woods」，Switch版を9月17日に発売。見習い魔女エリーのスローライフを楽しもう",
       "category": "games",
       "categories": [
@@ -214,7 +162,58 @@
       ]
     },
     {
-      "clusterId": "today-cluster-160",
+      "clusterId": "today-cluster-39",
+      "title": "AI VTuber「しずく」の“ノベルゲーム風”配信企画「しずくのなつやすみ」が開催中。リアルタイムで好感度が変わるから、ついコメントしたくなっちゃう",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.5,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-165",
       "title": "microSD耐久テスト歴3年、460万回以上書き換え行った検証者が耐久性に優れたメーカーをリスト化",
       "category": "games",
       "categories": [

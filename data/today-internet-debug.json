@@ -1,67 +1,11 @@
 {
-  "generatedAt": "2026-08-21T15:44:14.109Z",
+  "generatedAt": "2026-08-21T16:46:37.305Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-103",
+  "selectedClusterId": "today-cluster-104",
   "selectedTitle": "アニメ『サイバーパンク: エッジランナーズ2』10月20日よりNetflixで配信決定！ナイトシティが再び燃え上がる",
   "candidates": [
     {
-      "clusterId": "today-cluster-103",
-      "title": "アニメ『サイバーパンク: エッジランナーズ2』10月20日よりNetflixで配信決定！ナイトシティが再び燃え上がる",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general",
-        "games",
-        "manga",
-        "sports"
-      ],
-      "buzzScore": 73.5,
-      "confidence": 0.56,
-      "articleCount": 7,
-      "sourceCount": 4,
-      "uniqueDomainCount": 4,
-      "whyRanked": [
-        "主要4媒体で同一話題を確認",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 12.6,
-        "sourceDiversity": 9.3,
-        "trend": 12.5,
-        "internetNativeBoost": 0,
-        "search": 3.7,
-        "social": 7.8,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2,
-        "categoryBias": 17,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 3,
-        "repeatedAppearanceScore": 14.1,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 57,
-        "internalSearchScore": 29.1,
-        "internalSocialScore": 61.3
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-448",
+      "clusterId": "today-cluster-464",
       "title": "microSD耐久テスト歴3年、460万回以上書き換え行った検証者が耐久性に優れたメーカーをリスト化",
       "category": "games",
       "categories": [
@@ -92,7 +36,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 10,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -112,6 +56,62 @@
       ]
     },
     {
+      "clusterId": "today-cluster-104",
+      "title": "アニメ『サイバーパンク: エッジランナーズ2』10月20日よりNetflixで配信決定！ナイトシティが再び燃え上がる",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general",
+        "games",
+        "manga",
+        "sports"
+      ],
+      "buzzScore": 71.9,
+      "confidence": 0.55,
+      "articleCount": 7,
+      "sourceCount": 4,
+      "uniqueDomainCount": 4,
+      "whyRanked": [
+        "主要4媒体で同一話題を確認",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 12.6,
+        "sourceDiversity": 9.3,
+        "trend": 12.5,
+        "internetNativeBoost": 0,
+        "search": 3.6,
+        "social": 7.8,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2,
+        "categoryBias": 17,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 3,
+        "repeatedAppearanceScore": 13.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 57,
+        "internalSearchScore": 28.5,
+        "internalSocialScore": 60.9
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
       "clusterId": "today-cluster-3",
       "title": "約1分で完売した『名探偵プリキュア！』フィギュアセットの2次受注が8月25日18時より開始。購入数は1人1個までの制限つき",
       "category": "games",
@@ -120,8 +120,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 69.6,
-      "confidence": 0.43,
+      "buzzScore": 68.8,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -132,9 +132,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.7,
+        "search": 5.5,
         "social": 5.6,
         "velocity": 5.3,
         "freshness": 8.5,
@@ -153,8 +153,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-551",
+      "clusterId": "today-cluster-568",
       "title": "「戦争に加担したくない」「異常さを感じる」高市政権に新宿駅前でも抗議デモ　平和や反戦を求め",
       "category": "politics",
       "categories": [
@@ -194,7 +194,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 11.666666666666666,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -214,7 +214,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-172",
+      "clusterId": "today-cluster-165",
       "title": "「楽園追放」のノベルゲー『楽園追放 -The Stellar Angel-』11月26日Steam/スイッチで発売！初代映画のその後を描き、最新アニメにつながる",
       "category": "games",
       "categories": [

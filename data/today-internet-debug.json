@@ -1,54 +1,61 @@
 {
-  "generatedAt": "2026-08-20T23:36:29.054Z",
+  "generatedAt": "2026-08-21T01:53:16.333Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-154",
-  "selectedTitle": "『マインクラフト』などから着想を得たボクセル世界を落ち続けるACT『Sensory Overload』リリース。SNSではショート動画が7,000万回以上再生",
+  "selectedClusterId": "today-cluster-10",
+  "selectedTitle": "アニメ「サイバーパンク: エッジランナーズ2」10月20日よりNetflixで配信決定！生々しくハードに復讐と贖罪をめぐる物語描く―ティーザー予告編第3弾公開",
   "candidates": [
     {
-      "clusterId": "today-cluster-154",
-      "title": "『マインクラフト』などから着想を得たボクセル世界を落ち続けるACT『Sensory Overload』リリース。SNSではショート動画が7,000万回以上再生",
-      "category": "net-culture",
+      "clusterId": "today-cluster-10",
+      "title": "アニメ「サイバーパンク: エッジランナーズ2」10月20日よりNetflixで配信決定！生々しくハードに復讐と贖罪をめぐる物語描く―ティーザー予告編第3弾公開",
+      "category": "anime",
       "categories": [
-        "net-culture",
+        "anime",
         "games",
-        "sns",
-        "general"
+        "net-culture",
+        "general",
+        "entertainment",
+        "manga",
+        "sports"
       ],
-      "buzzScore": 68.9,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 82.1,
+      "confidence": 0.59,
+      "articleCount": 5,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "主要3媒体で同一話題を確認",
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加",
+        "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.1,
-        "internetNativeBoost": 8,
-        "search": 7.2,
-        "social": 6,
-        "velocity": 0,
+        "coverage": 9,
+        "sourceDiversity": 7,
+        "trend": 15,
+        "internetNativeBoost": 0,
+        "search": 6,
+        "social": 9.1,
+        "velocity": 8,
         "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "authority": 1,
+        "categoryBias": 17,
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 45,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 96,
-        "internalSearchScore": 37.5,
-        "internalSocialScore": 46.7
+        "browseMatchCount": 1,
+        "archiveMatchCount": 3,
+        "repeatedAppearanceScore": 36,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 68,
+        "internalSearchScore": 47.2,
+        "internalSocialScore": 71.2
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -56,7 +63,109 @@
       ]
     },
     {
-      "clusterId": "today-cluster-143",
+      "clusterId": "today-cluster-7",
+      "title": "ドラマ『ゴッド・オブ・ウォー』クレイトス役がデイヴ・バウティスタ氏に決定、『ガーディアンズ・オブ・ギャラクシー』のドラックス役を演じる俳優。怪我により降板したライアン・ハースト氏に代わる",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 75.5,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 7,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2",
+      "title": "Steamの「ゲイブ」久々のご尊顔、髭さっぱり“ハンサム化”でファン沸き立つ。痩せてたけどさらに痩せる",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 68.7,
+      "confidence": 0.5,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 4.2,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
+        "internalSocialScore": 32.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-147",
       "title": "新作『シュタゲ リブート』実況・プレイ動画は禁止…公式が改めて「お願い」ーSNSもストーリー核心に触れるテキストやネタバレ画像・動画は控えるよう告知【UPDATE】",
       "category": "games",
       "categories": [
@@ -106,142 +215,38 @@
       ]
     },
     {
-      "clusterId": "today-cluster-374",
-      "title": "トランプ氏の標的になったICC赤根所長…高市首相の「大変残念」しか言えない態度に自民内からも批判の声：東京新聞デジタル",
-      "category": "politics",
+      "clusterId": "today-cluster-149",
+      "title": "microSD耐久テスト歴3年、460万回以上書き換え行った検証者が耐久性に優れたメーカーをリスト化",
+      "category": "games",
       "categories": [
-        "politics",
+        "games",
         "sns",
         "net-culture",
-        "world",
         "general"
       ],
-      "buzzScore": 64.2,
-      "confidence": 0.44,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.4,
-        "velocity": 2.7,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 5,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-101",
-      "title": "エグすぎるビジュが大注目の新作3Dアイドルゲーム『スタートゥユー』正式発表！iOSとAndroid向けに事前登録を受付中",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 60.4,
-      "confidence": 0.34,
-      "articleCount": 2,
+      "buzzScore": 63.9,
+      "confidence": 0.37,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 17.8,
+        "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 7,
+        "search": 4.4,
+        "social": 6,
         "velocity": 0,
-        "freshness": 3.5,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 44,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-436",
-      "title": "外貨預金の伸び、過去最大4兆円　家計･企業で進む「円からの資産分散」",
-      "category": "business",
-      "categories": [
-        "business",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 60.2,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -251,8 +256,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 34,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [

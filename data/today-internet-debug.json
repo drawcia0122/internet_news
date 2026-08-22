@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-22T15:32:08.419Z",
+  "generatedAt": "2026-08-22T16:36:44.922Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-816",
-  "selectedTitle": "公邸で過ごす意義 首相がXで強調",
+  "selectedClusterId": "today-cluster-804",
+  "selectedTitle": "サムスン半導体部門の賞与6000万円　DX部門は60万円、組織不和生む",
   "candidates": [
     {
-      "clusterId": "today-cluster-783",
+      "clusterId": "today-cluster-804",
       "title": "サムスン半導体部門の賞与6000万円　DX部門は60万円、組織不和生む",
       "category": "tech",
       "categories": [
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-330",
+      "clusterId": "today-cluster-327",
       "title": "機動警察パトレイバー：アニメとマンガはなぜ違う？　ゆうきまさみが語る誕生秘話",
       "category": "anime",
       "categories": [
@@ -110,58 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-816",
-      "title": "公邸で過ごす意義 首相がXで強調",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 61.4,
-      "confidence": 0.45,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.1,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 4.6,
-        "velocity": 2.7,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 96,
-        "internalSearchScore": 37.5,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-129",
+      "clusterId": "today-cluster-126",
       "title": "『ウマ娘』キセキ、エピファネイアの“原案イラスト”が公開！ゲーム内とひと味違う雰囲気は一見の価値あり",
       "category": "games",
       "categories": [
@@ -190,7 +139,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -210,7 +159,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1993",
+      "clusterId": "today-cluster-2011",
       "title": "microSD耐久テスト歴3年、460万回以上書き換え行った検証者が耐久性に優れたメーカーをリスト化",
       "category": "games",
       "categories": [
@@ -254,6 +203,55 @@
         "archiveHeatScore": 97,
         "internalSearchScore": 35.1,
         "internalSocialScore": 44.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-122",
+      "title": "全て最安値を更新！『バニーガーデン2』や『へべれけ ばにーがーでん』、『LoveR Kiss EM』など、美少女との交流をお得価格で楽しもう【eショップのお薦めセール】",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 59.6,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 4.1,
+        "social": 3.2,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 31.9,
+        "internalSocialScore": 24.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

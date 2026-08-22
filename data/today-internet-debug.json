@@ -1,63 +1,11 @@
 {
-  "generatedAt": "2026-08-22T03:05:27.402Z",
+  "generatedAt": "2026-08-22T03:51:50.811Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-112",
+  "selectedClusterId": "today-cluster-113",
   "selectedTitle": "アニメ『サイバーパンク: エッジランナーズ2』10月20日よりNetflixで配信決定！ナイトシティが再び燃え上がる",
   "candidates": [
     {
-      "clusterId": "today-cluster-345",
-      "title": "サムスン半導体部門の賞与6000万円　DX部門は60万円、組織不和生む",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "business",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 69.2,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 6.7,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 41.66666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-453",
+      "clusterId": "today-cluster-545",
       "title": "「味の素」広報にAI 炎上の本質",
       "category": "net-culture",
       "categories": [
@@ -109,7 +57,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1162",
+      "clusterId": "today-cluster-1256",
       "title": "microSD耐久テスト歴3年、460万回以上書き換え行った検証者が耐久性に優れたメーカーをリスト化",
       "category": "games",
       "categories": [
@@ -140,7 +88,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 15,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -160,7 +108,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-112",
+      "clusterId": "today-cluster-113",
       "title": "アニメ『サイバーパンク: エッジランナーズ2』10月20日よりNetflixで配信決定！ナイトシティが再び燃え上がる",
       "category": "anime",
       "categories": [
@@ -216,7 +164,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-622",
+      "clusterId": "today-cluster-716",
       "title": "COWCOW 20年の投稿今夏バズる",
       "category": "net-culture",
       "categories": [
@@ -247,7 +195,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 11.666666666666666,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -260,6 +208,56 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 38.9,
         "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-4",
+      "title": "Steam無料・怪奇事件捜査ゲーム『No Results Found』、「圧倒的に好評」の大人気。“227人死亡事件”を起こした新興宗教の真実に徹底「検索」で迫る",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 64.2,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 4.2,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
+        "internalSocialScore": 32.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

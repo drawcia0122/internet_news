@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-22T19:31:18.575Z",
+  "generatedAt": "2026-08-22T19:51:44.584Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-878",
+  "selectedClusterId": "today-cluster-881",
   "selectedTitle": "サムスン半導体部門の賞与6000万円　DX部門は60万円、組織不和生む",
   "candidates": [
     {
-      "clusterId": "today-cluster-878",
+      "clusterId": "today-cluster-881",
       "title": "サムスン半導体部門の賞与6000万円　DX部門は60万円、組織不和生む",
       "category": "tech",
       "categories": [
@@ -15,8 +15,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 69.4,
-      "confidence": 0.39,
+      "buzzScore": 67.3,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -30,9 +30,9 @@
         "trend": 17.4,
         "internetNativeBoost": 8,
         "search": 11.5,
-        "social": 7.3,
+        "social": 7.2,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 9,
         "penalty": 0
@@ -46,11 +46,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 100,
         "archiveHeatScore": 79,
-        "internalSearchScore": 30.4,
-        "internalSocialScore": 56.9
+        "internalSearchScore": 29.6,
+        "internalSocialScore": 56.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -58,59 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-306",
-      "title": "カナダ、米国との貿易交渉を停止　米国の関税に同額の対抗措置",
-      "category": "world",
-      "categories": [
-        "world",
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.2,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 18.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-307",
+      "clusterId": "today-cluster-305",
       "title": "機動警察パトレイバー：アニメとマンガはなぜ違う？　ゆうきまさみが語る誕生秘話",
       "category": "anime",
       "categories": [
@@ -162,7 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-105",
+      "clusterId": "today-cluster-103",
       "title": "『ウマ娘』キセキ、エピファネイアの“原案イラスト”が公開！ゲーム内とひと味違う雰囲気は一見の価値あり",
       "category": "games",
       "categories": [
@@ -191,7 +139,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 6.666666666666667,
+        "searchScore": 5,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -211,7 +159,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2083",
+      "clusterId": "today-cluster-2086",
       "title": "microSD耐久テスト歴3年、460万回以上書き換え行った検証者が耐久性に優れたメーカーをリスト化",
       "category": "games",
       "categories": [
@@ -242,7 +190,7 @@
         "penalty": -6
       },
       "externalSignalStats": {
-        "searchScore": 15,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -255,6 +203,55 @@
         "archiveHeatScore": 97,
         "internalSearchScore": 35.1,
         "internalSocialScore": 44.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-99",
+      "title": "全て最安値を更新！『バニーガーデン2』や『へべれけ ばにーがーでん』、『LoveR Kiss EM』など、美少女との交流をお得価格で楽しもう【eショップのお薦めセール】",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 59.6,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 4.1,
+        "social": 3.2,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 31.9,
+        "internalSocialScore": 24.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

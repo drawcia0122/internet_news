@@ -1,63 +1,11 @@
 {
-  "generatedAt": "2026-08-22T04:44:43.022Z",
+  "generatedAt": "2026-08-22T05:38:04.670Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-113",
+  "selectedClusterId": "today-cluster-115",
   "selectedTitle": "アニメ『サイバーパンク: エッジランナーズ2』10月20日よりNetflixで配信決定！ナイトシティが再び燃え上がる",
   "candidates": [
     {
-      "clusterId": "today-cluster-611",
-      "title": "「味の素」広報にAI 炎上の本質",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "tech",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 68.8,
-      "confidence": 0.41,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 6.666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1325",
+      "clusterId": "today-cluster-1397",
       "title": "microSD耐久テスト歴3年、460万回以上書き換え行った検証者が耐久性に優れたメーカーをリスト化",
       "category": "games",
       "categories": [
@@ -108,7 +56,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-113",
+      "clusterId": "today-cluster-115",
       "title": "アニメ『サイバーパンク: エッジランナーズ2』10月20日よりNetflixで配信決定！ナイトシティが再び燃え上がる",
       "category": "anime",
       "categories": [
@@ -164,7 +112,112 @@
       ]
     },
     {
-      "clusterId": "today-cluster-782",
+      "clusterId": "today-cluster-348",
+      "title": "｢円安は日本にとってプラス｣は時代遅れ…それでも方針転換しない高市首相が国民より必死で守りたいもの",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "business",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 66.9,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 4.5,
+        "social": 7.4,
+        "velocity": 2.7,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 13.333333333333334,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-680",
+      "title": "「味の素」広報にAI 炎上の本質",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "tech",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 64.6,
+      "confidence": 0.38,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 6.666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-854",
       "title": "COWCOW 20年の投稿今夏バズる",
       "category": "net-culture",
       "categories": [
@@ -195,7 +248,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 11.666666666666666,
+        "searchScore": 10,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -208,56 +261,6 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 38.9,
         "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-3",
-      "title": "Steam無料・怪奇事件捜査ゲーム『No Results Found』、「圧倒的に好評」の大人気。“227人死亡事件”を起こした新興宗教の真実に徹底「検索」で迫る",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 63.4,
-      "confidence": 0.45,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 4.2,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 48.5,
-        "internalSocialScore": 32.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

@@ -1,21 +1,22 @@
 {
-  "generatedAt": "2026-08-22T01:46:32.564Z",
+  "generatedAt": "2026-08-22T03:05:27.402Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-112",
   "selectedTitle": "アニメ『サイバーパンク: エッジランナーズ2』10月20日よりNetflixで配信決定！ナイトシティが再び燃え上がる",
   "candidates": [
     {
-      "clusterId": "today-cluster-1035",
-      "title": "microSD耐久テスト歴3年、460万回以上書き換え行った検証者が耐久性に優れたメーカーをリスト化",
-      "category": "games",
+      "clusterId": "today-cluster-345",
+      "title": "サムスン半導体部門の賞与6000万円　DX部門は60万円、組織不和生む",
+      "category": "tech",
       "categories": [
-        "games",
+        "tech",
+        "business",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.2,
-      "confidence": 0.42,
+      "buzzScore": 69.2,
+      "confidence": 0.41,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -25,18 +26,18 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 21.3,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 5.9,
+        "search": 6.7,
+        "social": 7.4,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 15,
+        "searchScore": 41.66666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -44,11 +45,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 36.7,
-        "internalSocialScore": 45.9
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -56,12 +57,12 @@
       ]
     },
     {
-      "clusterId": "today-cluster-492",
-      "title": "COWCOW 20年の投稿今夏バズる",
+      "clusterId": "today-cluster-453",
+      "title": "「味の素」広報にAI 炎上の本質",
       "category": "net-culture",
       "categories": [
         "net-culture",
-        "entertainment",
+        "tech",
         "sns",
         "general"
       ],
@@ -88,7 +89,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 11.666666666666666,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -101,6 +102,57 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 38.9,
         "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1162",
+      "title": "microSD耐久テスト歴3年、460万回以上書き換え行った検証者が耐久性に優れたメーカーをリスト化",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 4.6,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 13.333333333333334,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 35.9,
+        "internalSocialScore": 45.4
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -121,7 +173,7 @@
         "manga",
         "sports"
       ],
-      "buzzScore": 67.8,
+      "buzzScore": 67.7,
       "confidence": 0.53,
       "articleCount": 7,
       "sourceCount": 4,
@@ -135,8 +187,8 @@
         "sourceDiversity": 9.3,
         "trend": 12.5,
         "internetNativeBoost": 0,
-        "search": 3.3,
-        "social": 7.6,
+        "search": 3.2,
+        "social": 7.5,
         "velocity": 0,
         "freshness": 3.5,
         "authority": 2,
@@ -152,11 +204,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 3,
-        "repeatedAppearanceScore": 9,
+        "repeatedAppearanceScore": 7.8,
         "crossCategoryScore": 100,
         "archiveHeatScore": 57,
-        "internalSearchScore": 25.8,
-        "internalSocialScore": 59.1
+        "internalSearchScore": 25,
+        "internalSocialScore": 58.5
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -164,41 +216,38 @@
       ]
     },
     {
-      "clusterId": "today-cluster-345",
-      "title": "トルコ、ネタニヤフ氏の国際逮捕状を請求へ ジェノサイドなどの容疑で",
-      "category": "crime",
+      "clusterId": "today-cluster-622",
+      "title": "COWCOW 20年の投稿今夏バズる",
+      "category": "net-culture",
       "categories": [
-        "crime",
-        "world",
-        "politics",
-        "sns",
         "net-culture",
+        "entertainment",
+        "sns",
         "general"
       ],
-      "buzzScore": 66.9,
-      "confidence": 0.46,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 64.6,
+      "confidence": 0.38,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.6,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 7.4,
-        "velocity": 2.7,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
+        "search": 5,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 8.333333333333332,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -207,62 +256,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-266",
-      "title": "「楽園追放」のノベルゲー『楽園追放 -The Stellar Angel-』11月26日Steam/スイッチで発売！初代映画のその後を描き、最新アニメにつながる",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "manga",
-        "general",
-        "anime"
-      ],
-      "buzzScore": 60.9,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 4.5,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 31.3,
-        "internalSocialScore": 35.3
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

@@ -1,11 +1,65 @@
 {
-  "generatedAt": "2026-08-22T13:40:45.414Z",
+  "generatedAt": "2026-08-22T14:32:44.250Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-736",
-  "selectedTitle": "サムスン半導体部門の賞与6000万円　DX部門は60万円、組織不和生む",
+  "selectedClusterId": "today-cluster-799",
+  "selectedTitle": "公邸で過ごす意義 首相がXで強調",
   "candidates": [
     {
-      "clusterId": "today-cluster-736",
+      "clusterId": "today-cluster-342",
+      "title": "機動警察パトレイバー：アニメとマンガはなぜ違う？　ゆうきまさみが語る誕生秘話",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "anime",
+        "manga",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 71.7,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.8,
+        "internetNativeBoost": 8,
+        "search": 4.9,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 21.666666666666668,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 99,
+        "internalSearchScore": 38.6,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-766",
       "title": "サムスン半導体部門の賞与6000万円　DX部門は60万円、組織不和生む",
       "category": "tech",
       "categories": [
@@ -58,7 +112,111 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1942",
+      "clusterId": "today-cluster-418",
+      "title": "｢円安は日本にとってプラス｣は時代遅れ…それでも方針転換しない高市首相が国民より必死で守りたいもの",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "business",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 63.3,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 5.1,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 31.666666666666664,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-799",
+      "title": "公邸で過ごす意義 首相がXで強調",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 61.4,
+      "confidence": 0.45,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.1,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 4.6,
+        "velocity": 2.7,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 8.333333333333332,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 96,
+        "internalSearchScore": 37.5,
+        "internalSocialScore": 35.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1975",
       "title": "microSD耐久テスト歴3年、460万回以上書き換え行った検証者が耐久性に優れたメーカーをリスト化",
       "category": "games",
       "categories": [
@@ -67,8 +225,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 68,
-      "confidence": 0.41,
+      "buzzScore": 59.8,
+      "confidence": 0.4,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -80,13 +238,13 @@
         "sourceDiversity": 4.7,
         "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 5.8,
+        "search": 4.5,
+        "social": 5.7,
         "velocity": 0,
-        "freshness": 3.5,
+        "freshness": 1.5,
         "authority": 2.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -6
       },
       "externalSignalStats": {
         "searchScore": 15,
@@ -97,163 +255,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
+        "repeatedAppearanceScore": 1.8,
         "crossCategoryScore": 80,
         "archiveHeatScore": 97,
-        "internalSearchScore": 35.9,
-        "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-343",
-      "title": "機動警察パトレイバー：アニメとマンガはなぜ違う？　ゆうきまさみが語る誕生秘話",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "sns",
-        "net-culture",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 63.4,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 21.666666666666668,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1236",
-      "title": "「味の素」広報にAI 炎上の本質",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "tech",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 61.5,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 15,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 36.8,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-137",
-      "title": "全て最安値を更新！『バニーガーデン2』や『へべれけ ばにーがーでん』、『LoveR Kiss EM』など、美少女との交流をお得価格で楽しもう【eショップのお薦めセール】",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 59.6,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 3.2,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 31.9,
-        "internalSocialScore": 24.7
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 44.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

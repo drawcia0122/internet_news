@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-22T08:42:58.145Z",
+  "generatedAt": "2026-08-22T09:37:37.666Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-5",
-  "selectedTitle": "アニメ『Duel Masters LOST』の新章『Duel Masters LOST ～断罪の少年～』10月9日に配信決定。『デュエル・マスターズ』の公式YouTubeチャンネルや配信サイトにて",
+  "selectedClusterId": "today-cluster-116",
+  "selectedTitle": "アニメ『サイバーパンク: エッジランナーズ2』10月20日よりNetflixで配信決定！ナイトシティが再び燃え上がる",
   "candidates": [
     {
-      "clusterId": "today-cluster-433",
+      "clusterId": "today-cluster-513",
       "title": "サムスン半導体部門の賞与6000万円　DX部門は60万円、組織不和生む",
       "category": "tech",
       "categories": [
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-351",
+      "clusterId": "today-cluster-352",
       "title": "機動警察パトレイバー：アニメとマンガはなぜ違う？　ゆうきまさみが語る誕生秘話",
       "category": "sports",
       "categories": [
@@ -112,61 +112,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-5",
-      "title": "アニメ『Duel Masters LOST』の新章『Duel Masters LOST ～断罪の少年～』10月9日に配信決定。『デュエル・マスターズ』の公式YouTubeチャンネルや配信サイトにて",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "net-culture",
-        "general",
-        "entertainment",
-        "manga"
-      ],
-      "buzzScore": 70.7,
-      "confidence": 0.52,
-      "articleCount": 4,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 4.7,
-        "trend": 15.2,
-        "internetNativeBoost": 0,
-        "search": 5.1,
-        "social": 7,
-        "velocity": 8,
-        "freshness": 8.5,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 10,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 69,
-        "internalSearchScore": 39.8,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1626",
+      "clusterId": "today-cluster-1712",
       "title": "microSD耐久テスト歴3年、460万回以上書き換え行った検証者が耐久性に優れたメーカーをリスト化",
       "category": "games",
       "categories": [
@@ -197,7 +143,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 16.666666666666664,
+        "searchScore": 15,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -217,7 +163,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-115",
+      "clusterId": "today-cluster-116",
       "title": "アニメ『サイバーパンク: エッジランナーズ2』10月20日よりNetflixで配信決定！ナイトシティが再び燃え上がる",
       "category": "anime",
       "categories": [
@@ -266,6 +212,62 @@
         "archiveHeatScore": 57,
         "internalSearchScore": 25,
         "internalSocialScore": 58.5
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-22",
+      "title": "TVアニメ「Fate/strange Fake」，新シリーズ制作決定。キービジュアルと告知トレイラー公開",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "net-culture",
+        "world",
+        "general",
+        "entertainment",
+        "manga"
+      ],
+      "buzzScore": 63.2,
+      "confidence": 0.43,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 16.9,
+        "internetNativeBoost": 0,
+        "search": 6,
+        "social": 8.8,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 6.666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 30,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 77,
+        "internalSearchScore": 46.5,
+        "internalSocialScore": 68.5
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

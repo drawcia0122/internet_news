@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T23:31:18.686Z",
+  "generatedAt": "2026-08-21T23:52:03.100Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
@@ -7,14 +7,14 @@
     "tech": 12,
     "business": 7,
     "politics": 0,
-    "entertainment": 84,
+    "entertainment": 83,
     "anime": 22,
     "games": 157,
     "game-features": 1,
     "anime-features": 1,
     "manga": 46,
     "books": 3,
-    "sports": 3,
+    "sports": 5,
     "net-culture": 2,
     "matome": 0,
     "crime": 0,
@@ -25,64 +25,476 @@
   "nextPage": 3,
   "items": [
     {
-      "id": "auto-games-劇場アニメの後日譚を描くゲーム作品-楽園追放-the-stellar-angel-2026年11月26日に発売-人としての情に傾く-kizuna-か-使命を貫く-4gamer.net/games/006/g100663/20260820047",
-      "title": "劇場アニメの後日譚を描くゲーム作品「楽園追放 -The Stellar Angel-」，2026年11月26日に発売。人としての情に傾く「KIZUNA」か，使命を貫く「KAKUGO」かを選ぶ",
-      "summary": "Schema.org is a set of extensible schemas that enables webmasters to embed structured data on their web pages for use by search engines and other appl…",
-      "briefSummary": "Schema.org is a set of extensible schemas that enables webmasters to embed structured data on their web pages for use by search engines and other applications.",
-      "category": "games",
+      "id": "auto-anime-俺と悠兄-27年1月より放送開始-椿と悠のあまキュンデイズを描くティザーpv公開-スタッフも明らかに-animeanime.jp/article/2026/08/21/102242.html",
+      "title": "「俺と悠兄！」27年1月より放送開始！ 椿と悠のあまキュンデイズを描くティザーPV公開 スタッフも明らかに",
+      "summary": "マンガ『ショタおに』を原作とするTV アニメ『俺と悠兄！』が、2027年1月より放送されることがわかった。これに伴いティザーPV が公開され、アニメーションを手掛けるスタッフ情報も明らかになった。",
+      "briefSummary": "マンガ『ショタおに』を原作とするTV アニメ『俺と悠兄！』が、2027年1月より放送されることがわかった。これに伴いティザーPV が公開され、アニメーションを手掛けるスタッフ情報も明らかになった。",
+      "category": "anime",
       "categories": [
-        "games",
         "anime",
+        "entertainment",
+        "manga",
         "general"
       ],
-      "categoryLabel": "ゲーム",
+      "categoryLabel": "アニメ",
       "categoryLabels": [
-        "ゲーム",
-        "アニメ"
+        "アニメ",
+        "エンタメ",
+        "漫画"
       ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://schema.org/docs/schemaicon.png",
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/922031.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-21T23:31:18.686Z",
+      "capturedAt": "2026-08-21T23:52:03.100Z",
       "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/006/G100663/20260820047/",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/21/102242.html",
       "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「俺と悠兄！」27年1月より放送開始！ 椿と悠のあまキュンデイズを描くティザーPV公開 スタッフも明らかに",
+          "url": "https://animeanime.jp/article/2026/08/21/102242.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/21/102242.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/922031.jpg"
+        }
+      ],
+      "whatHappened": "「俺と悠兄",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-スイッチでも-お別れの挨拶がしたい-という声に急遽対応した-作業用アドベンチャー-memory-of-memorie-a-chill-story-開発者インタビ-gamespark.jp/article/2026/08/21/171045.html",
+      "title": "「スイッチでも「お別れの挨拶がしたい！」という声に急遽対応した」作業用アドベンチャー『Memory of Memorie : A Chill Story』【開発者インタビュー】",
+      "summary": "気になる新作インディーゲームの開発者にインタビューする本企画。今回は、ビサイド開発、PC/Mac/スイッチ2/スイッチ向けに7月23日にリリースされた作業用アドベンチャー『Memory of Memorie : A Chill Story』開発者へのミニインタビューをお届けします。",
+      "briefSummary": "『Memory of Memorie : A Chill Story』は、1,200円（スイッチ2版は1,500円）で 配信中（Steam） 。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1176653.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-21T23:52:03.100Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/08/21/171045.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
           "sourceGroup": "games",
-          "sourcePriority": 94,
+          "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
             "pc",
-            "console",
-            "steam"
+            "console"
           ],
-          "title": "劇場アニメの後日譚を描くゲーム作品「楽園追放 -The Stellar Angel-」，2026年11月26日に発売。人としての情に傾く「KIZUNA」か，使命を貫く「KAKUGO」かを選ぶ",
-          "url": "https://www.4gamer.net/games/006/G100663/20260820047/",
-          "canonicalUrl": "https://www.4gamer.net/games/006/G100663/20260820047/",
+          "title": "「スイッチでも「お別れの挨拶がしたい！」という声に急遽対応した」作業用アドベンチャー『Memory of Memorie : A Chill Story』【開発者インタビュー】",
+          "url": "http://www.gamespark.jp/article/2026/08/21/171045.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/21/171045.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": null
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1176653.jpg"
         }
       ],
-      "whatHappened": "劇場アニメの後日譚を描くゲーム作品「楽園追放 -The Stellar Angel-」，20…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "whatHappened": "「スイッチでも「お別れの挨拶がしたい",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー",
-        "ガジェット好き",
-        "漫画・アニメ好き"
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-老人たちの山登り協力ゲーム-sunset-summit-9月9日に延期-steam承認が間に合わずリリース直前に発表-gamespark.jp/article/2026/08/21/171067.html",
+      "title": "老人たちの山登り協力ゲーム『Sunset Summit』9月9日に延期。Steam承認が間に合わずリリース直前に発表",
+      "summary": "Future Friends Gamesは、Joe Fender氏とAndrew Fender氏が手掛けるCo-op山登りゲーム 『Sunset Summit』 のリリース日を9月9日に延期すると発表しました。",
+      "briefSummary": "Future Friends Gamesは、Joe Fender氏とAndrew Fender氏が手掛けるCo-op山登りゲーム 『Sunset Summit』 のリリース日を9月9日に延期すると発表しました。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164443.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-21T23:52:03.100Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/08/21/171067.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "老人たちの山登り協力ゲーム『Sunset Summit』9月9日に延期。Steam承認が間に合わずリリース直前に発表",
+          "url": "http://www.gamespark.jp/article/2026/08/21/171067.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/21/171067.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164443.jpg"
+        }
+      ],
+      "whatHappened": "老人たちの山登り協力ゲーム『Sunset Summit』9月9日に延期",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-現役医師制作の医療ループadv-ループシンドローム-steam配信-時間を戻して患者を救う-だがループするほど現実は壊れていく-gamespark.jp/article/2026/08/21/171066.html",
+      "title": "現役医師制作の医療ループADV『ループシンドローム』Steam配信。時間を戻して患者を救う―だがループするほど現実は壊れていく",
+      "summary": "TBCATGAMES（てべ猫GAMES）は、ループサスペンスADV『 ループシンドローム 』をSteamにて リリースしました 。",
+      "briefSummary": "本物の医者が手がけたリアルな描写に特に注目したい、ループサスペンスADV『ループシンドローム』はPC向けにSteamにて790円で配信中。リリース記念セールにつき8月29日まで、15％引きの671円で発売中です。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178827.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-21T23:52:03.100Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/08/21/171066.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "現役医師制作の医療ループADV『ループシンドローム』Steam配信。時間を戻して患者を救う―だがループするほど現実は壊れていく",
+          "url": "http://www.gamespark.jp/article/2026/08/21/171066.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/21/171066.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178827.jpg"
+        }
+      ],
+      "whatHappened": "現役医師制作の医療ループADV『ループシンドローム』Steam配信",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-無料-デスクトップの片隅で育てる水族館-pc-fish-taskbar-aquarium-steamで好評スタート-450種超の魚を育て取引可能-gamespark.jp/article/2026/08/21/171065.html",
+      "title": "【無料】デスクトップの片隅で育てる水族館『PC FISH: Taskbar Aquarium』Steamで好評スタート。450種超の魚を育て取引可能",
+      "summary": "NANOO COMPANYは、デスクトップコンパニオンゲーム『PC FISH: Taskbar Aquarium』をSteam向けに2026年8月14日に無料でリリース。Steamで51件中86%が「好評」の「非常に好評」となっています。",
+      "briefSummary": "NANOO COMPANYは、デスクトップコンパニオンゲーム『PC FISH: Taskbar Aquarium』をSteam向けに2026年8月14日に無料でリリース。Steamで51件中86%が「好評」の「非常に好評」となっています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178691.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-21T23:52:03.100Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/08/21/171065.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "【無料】デスクトップの片隅で育てる水族館『PC FISH: Taskbar Aquarium』Steamで好評スタート。450種超の魚を育て取引可能",
+          "url": "http://www.gamespark.jp/article/2026/08/21/171065.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/21/171065.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178691.jpg"
+        }
+      ],
+      "whatHappened": "デスクトップの片隅で育てる水族館『PC FISH: Taskbar Aquarium』Ste…",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-最大6人-足を引っ張り合いながらデスゲームに挑む協力ホラー-c-u-b-e-早期アクセス開始-gamespark.jp/article/2026/08/22/171073.html",
+      "title": "【最大6人】足を引っ張り合いながらデスゲームに挑む協力ホラー『C.U.B.E』早期アクセス開始",
+      "summary": "LovDEVは、Co-opホラー 『C.U.B.E』 をSteamにてリリースしました。",
+      "briefSummary": "本作は、様々な試練が用意された危険な施設で10日間生き延びることを目指すパーティーホラーゲーム。1人プレイに加え、最大6人でのオンライン協力プレイにも対応します。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164227.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-21T23:52:03.100Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/08/22/171073.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "【最大6人】足を引っ張り合いながらデスゲームに挑む協力ホラー『C.U.B.E』早期アクセス開始",
+          "url": "http://www.gamespark.jp/article/2026/08/22/171073.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/22/171073.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164227.jpg"
+        }
+      ],
+      "whatHappened": "足を引っ張り合いながらデスゲームに挑む協力ホラー『C.U.B.E』早期アクセス開始",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-オープンワールド吸血鬼rpg-the-blood-of-dawnwalker-コンソール版プレイ映像が公開-gamespark.jp/article/2026/08/22/171072.html",
+      "title": "オープンワールド吸血鬼RPG『The Blood of Dawnwalker』コンソール版プレイ映像が公開！",
+      "summary": "先日、PC版の必要システム要件が 公開 されたオープンワールド吸血鬼RPG『 The Blood of Dawnwalker 』で…",
+      "briefSummary": "先日、PC版の必要システム要件が 公開 されたオープンワールド吸血鬼RPG『 The Blood of Dawnwalker 』ですが、デベロッパーのRebel Wolvesは新たにコンソール版のゲームプレイ映像を公開しました。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178880.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-21T23:52:03.100Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/08/22/171072.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "オープンワールド吸血鬼RPG『The Blood of Dawnwalker』コンソール版プレイ映像が公開！",
+          "url": "http://www.gamespark.jp/article/2026/08/22/171072.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/22/171072.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178880.jpg"
+        }
+      ],
+      "whatHappened": "オープンワールド吸血鬼RPG『The Blood of Dawnwalker』コンソール版プ…",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-sports-キングボンビー襲来-桃鉄-のslが-プラレール-になって登場-フィギュアや-目的地到着-などゲーム再現できる背景カードも付属-gamespark.jp/article/2026/08/22/171076.html",
+      "title": "キングボンビー襲来！『桃鉄』のSLが「プラレール」になって登場、フィギュアや“目的地到着”などゲーム再現できる背景カードも付属",
+      "summary": "タカラトミーは、「プラレール 桃太郎電鉄 ＳＬ」を11月21日より全国の玩具専門店、百貨店・量販店の玩具売り場などにて発売します。",
+      "briefSummary": "鉄道玩具「プラレール」の新商品として、すごろくゲーム『桃太郎電鉄（桃鉄）』シリーズに登場するプレーヤーの移動手段をイメージした「SL」が登場。車両のデコレーションは最新タイトル『桃太郎電鉄２ ～あなたの町も きっとある～』を取り入れています。",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "games",
+        "general"
+      ],
+      "categoryLabel": "スポーツ",
+      "categoryLabels": [
+        "スポーツ",
+        "ゲーム"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1176413.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-21T23:52:03.100Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/08/22/171076.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "キングボンビー襲来！『桃鉄』のSLが「プラレール」になって登場、フィギュアや“目的地到着”などゲーム再現できる背景カードも付属",
+          "url": "http://www.gamespark.jp/article/2026/08/22/171076.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/22/171076.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1176413.jpg"
+        }
+      ],
+      "whatHappened": "キングボンビー襲来",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
       ]
     },
     {
@@ -106,7 +518,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178351.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-21T23:31:18.686Z",
+      "capturedAt": "2026-08-21T23:52:03.100Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/08/21/171031.html",
@@ -166,7 +578,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178450.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-21T23:31:18.686Z",
+      "capturedAt": "2026-08-21T23:52:03.100Z",
       "time": "直近",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/08/21/171039.html",
@@ -197,417 +609,6 @@
         }
       ],
       "whatHappened": "米ゲーム機市場の支出額、7月としては2020年以来の最低水準に―販売台数も前年比39％減",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-anime-2026年夏アニメ-一目惚れしたキャラは-アンケート-切は8月27日-animeanime.jp/article/2026/08/21/102240.html",
-      "title": "2026年夏アニメ、一目惚れしたキャラは？ アンケート〆切は8月27日",
-      "summary": "「 2026年夏アニメ、一目惚れしたキャラは？ アンケート〆切は8月27日 」に一致する記事は見つかりませんでした。",
-      "briefSummary": "「 2026年夏アニメ、一目惚れしたキャラは？ アンケート〆切は8月27日 」に一致する記事は見つかりませんでした。",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "アニメ",
-      "categoryLabels": [
-        "アニメ",
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/920793.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-21T23:31:18.686Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/08/21/102240.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "2026年夏アニメ、一目惚れしたキャラは？ アンケート〆切は8月27日",
-          "url": "https://animeanime.jp/article/2026/08/21/102240.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/08/21/102240.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/920793.jpg"
-        }
-      ],
-      "whatHappened": "2026年夏アニメ、一目惚れしたキャラは",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-games-スイッチでも-お別れの挨拶がしたい-という声に急遽対応した-作業用アドベンチャー-memory-of-memorie-a-chill-story-開発者インタビ-gamespark.jp/article/2026/08/21/171045.html",
-      "title": "「スイッチでも「お別れの挨拶がしたい！」という声に急遽対応した」作業用アドベンチャー『Memory of Memorie : A Chill Story』【開発者インタビュー】",
-      "summary": "気になる新作インディーゲームの開発者にインタビューする本企画。今回は、ビサイド開発、PC/Mac/スイッチ2/スイッチ向けに7月23日にリリースされた作業用アドベンチャー『Memory of Memorie : A Chill Story』開発者へのミニインタビューをお届けします。",
-      "briefSummary": "『Memory of Memorie : A Chill Story』は、1,200円（スイッチ2版は1,500円）で 配信中（Steam） 。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1176653.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-21T23:31:18.686Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/08/21/171045.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "「スイッチでも「お別れの挨拶がしたい！」という声に急遽対応した」作業用アドベンチャー『Memory of Memorie : A Chill Story』【開発者インタビュー】",
-          "url": "http://www.gamespark.jp/article/2026/08/21/171045.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/21/171045.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1176653.jpg"
-        }
-      ],
-      "whatHappened": "「スイッチでも「お別れの挨拶がしたい",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-老人たちの山登り協力ゲーム-sunset-summit-9月9日に延期-steam承認が間に合わずリリース直前に発表-gamespark.jp/article/2026/08/21/171067.html",
-      "title": "老人たちの山登り協力ゲーム『Sunset Summit』9月9日に延期。Steam承認が間に合わずリリース直前に発表",
-      "summary": "Future Friends Gamesは、Joe Fender氏とAndrew Fender氏が手掛けるCo-op山登りゲーム 『Sunset Summit』 のリリース日を9月9日に延期すると発表しました。",
-      "briefSummary": "Future Friends Gamesは、Joe Fender氏とAndrew Fender氏が手掛けるCo-op山登りゲーム 『Sunset Summit』 のリリース日を9月9日に延期すると発表しました。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164443.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-21T23:31:18.686Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/08/21/171067.html",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "老人たちの山登り協力ゲーム『Sunset Summit』9月9日に延期。Steam承認が間に合わずリリース直前に発表",
-          "url": "http://www.gamespark.jp/article/2026/08/21/171067.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/21/171067.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164443.jpg"
-        }
-      ],
-      "whatHappened": "老人たちの山登り協力ゲーム『Sunset Summit』9月9日に延期",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-現役医師制作の医療ループadv-ループシンドローム-steam配信-時間を戻して患者を救う-だがループするほど現実は壊れていく-gamespark.jp/article/2026/08/21/171066.html",
-      "title": "現役医師制作の医療ループADV『ループシンドローム』Steam配信。時間を戻して患者を救う―だがループするほど現実は壊れていく",
-      "summary": "TBCATGAMES（てべ猫GAMES）は、ループサスペンスADV『 ループシンドローム 』をSteamにて リリースしました 。",
-      "briefSummary": "本物の医者が手がけたリアルな描写に特に注目したい、ループサスペンスADV『ループシンドローム』はPC向けにSteamにて790円で配信中。リリース記念セールにつき8月29日まで、15％引きの671円で発売中です。",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178827.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-21T23:31:18.686Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/08/21/171066.html",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "現役医師制作の医療ループADV『ループシンドローム』Steam配信。時間を戻して患者を救う―だがループするほど現実は壊れていく",
-          "url": "http://www.gamespark.jp/article/2026/08/21/171066.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/21/171066.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178827.jpg"
-        }
-      ],
-      "whatHappened": "現役医師制作の医療ループADV『ループシンドローム』Steam配信",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-無料-デスクトップの片隅で育てる水族館-pc-fish-taskbar-aquarium-steamで好評スタート-450種超の魚を育て取引可能-gamespark.jp/article/2026/08/21/171065.html",
-      "title": "【無料】デスクトップの片隅で育てる水族館『PC FISH: Taskbar Aquarium』Steamで好評スタート。450種超の魚を育て取引可能",
-      "summary": "NANOO COMPANYは、デスクトップコンパニオンゲーム『PC FISH: Taskbar Aquarium』をSteam向けに2026年8月14日に無料でリリース。Steamで51件中86%が「好評」の「非常に好評」となっています。",
-      "briefSummary": "NANOO COMPANYは、デスクトップコンパニオンゲーム『PC FISH: Taskbar Aquarium』をSteam向けに2026年8月14日に無料でリリース。Steamで51件中86%が「好評」の「非常に好評」となっています。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178691.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-21T23:31:18.686Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/08/21/171065.html",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "【無料】デスクトップの片隅で育てる水族館『PC FISH: Taskbar Aquarium』Steamで好評スタート。450種超の魚を育て取引可能",
-          "url": "http://www.gamespark.jp/article/2026/08/21/171065.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/21/171065.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178691.jpg"
-        }
-      ],
-      "whatHappened": "デスクトップの片隅で育てる水族館『PC FISH: Taskbar Aquarium』Ste…",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-原因はわずか数秒のローポリヌードか-steam審査終了めど立たず発売延期インディーゲームの開発者激情語る-steamは前例のほとんどない独占企業-gamespark.jp/article/2026/08/21/171032.html",
-      "title": "原因はわずか数秒のローポリヌードか…Steam審査終了めど立たず発売延期インディーゲームの開発者激情語る「Steamは前例のほとんどない独占企業」",
-      "summary": "政治風刺を盛り込んだオープンワールドRPG 『Future? No Thanks!』 のSteamリリースが度重なる延期を余儀なくされ、開発元のMolleindustriaがSteamに対する強い批判を表明しました。",
-      "briefSummary": "このまま「成人向け」タグでリリースされるとドイツと中国のユーザーは購入できなくなるなど、本作の認知度やアクセス性に深刻な影響が出る可能性に言及。さらに、問題を回避するためゲーム内容の調整も検討しているものの、具体的にどのような修正が必要なのかは分かっていないとのこと。同氏は審査プロセスやガイドラインが曖昧であると指摘し、「Steamは前例のほとんどない独占企…",
-      "category": "games",
-      "categories": [
-        "games",
-        "business",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "経済"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178415.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-21T23:31:18.686Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/08/21/171032.html",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "原因はわずか数秒のローポリヌードか…Steam審査終了めど立たず発売延期インディーゲームの開発者激情語る「Steamは前例のほとんどない独占企業」",
-          "url": "http://www.gamespark.jp/article/2026/08/21/171032.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/21/171032.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1178415.jpg"
-        }
-      ],
-      "whatHappened": "原因はわずか数秒のローポリヌードか…Steam審査終了めど立たず発売延期インディーゲームの開…",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-最大6人-足を引っ張り合いながらデスゲームに挑む協力ホラー-c-u-b-e-早期アクセス開始-gamespark.jp/article/2026/08/22/171073.html",
-      "title": "【最大6人】足を引っ張り合いながらデスゲームに挑む協力ホラー『C.U.B.E』早期アクセス開始",
-      "summary": "LovDEVは、Co-opホラー 『C.U.B.E』 をSteamにてリリースしました。",
-      "briefSummary": "本作は、様々な試練が用意された危険な施設で10日間生き延びることを目指すパーティーホラーゲーム。1人プレイに加え、最大6人でのオンライン協力プレイにも対応します。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164227.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-21T23:31:18.686Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/08/22/171073.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "【最大6人】足を引っ張り合いながらデスゲームに挑む協力ホラー『C.U.B.E』早期アクセス開始",
-          "url": "http://www.gamespark.jp/article/2026/08/22/171073.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/22/171073.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1164227.jpg"
-        }
-      ],
-      "whatHappened": "足を引っ張り合いながらデスゲームに挑む協力ホラー『C.U.B.E』早期アクセス開始",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [

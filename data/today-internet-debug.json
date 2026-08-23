@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-23T19:31:20.994Z",
+  "generatedAt": "2026-08-23T19:51:07.140Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-272",
+  "selectedClusterId": "today-cluster-271",
   "selectedTitle": "国会空転、1日3億円？　審議拒否批判の与党常とう句",
   "candidates": [
     {
-      "clusterId": "today-cluster-272",
+      "clusterId": "today-cluster-271",
       "title": "国会空転、1日3億円？　審議拒否批判の与党常とう句",
       "category": "politics",
       "categories": [
@@ -59,7 +59,61 @@
       ]
     },
     {
-      "clusterId": "today-cluster-15",
+      "clusterId": "today-cluster-1361",
+      "title": "《クレジットカード窃盗容疑で逮捕》NY出身キラキラ慶應女子大生（22）の父は大手クレカ海外法人の「最高経営責任者」だった",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "sports",
+        "world",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 73.8,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 16,
+        "social": 7.2,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 7,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 100,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 35.9,
+        "internalSocialScore": 56.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-14",
       "title": "『ワンピース』新作映画2本が公開決定。『ONE PIECE FILM GOD VALLEY』が2027年夏、『ONE PIECE FILM BAAD』が2029年",
       "category": "games",
       "categories": [
@@ -113,7 +167,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-89",
+      "clusterId": "today-cluster-88",
       "title": "「BLEACH」井上織姫の“自爆特攻”で「月島さん」がSNSのトレンド入り!?「月島さん、なんとかして！」「こういう時の月島さんじゃないのか！」第45話【ネタバレあり反応まとめ】",
       "category": "entertainment",
       "categories": [
@@ -210,56 +264,6 @@
         "crossCategoryScore": 60,
         "archiveHeatScore": 71,
         "internalSearchScore": 40.5,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-7",
-      "title": "ナイキと『ワンピース』のコラボ商品が登場。“ゴムゴム”“オペオペ”“メラメラ”の悪魔の実をモチーフにしたエア マックス プラス3種が9月4日より展開",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 63,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [

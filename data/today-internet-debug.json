@@ -1,11 +1,65 @@
 {
-  "generatedAt": "2026-08-23T14:34:13.776Z",
+  "generatedAt": "2026-08-23T14:55:22.124Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1",
-  "selectedTitle": "ナイキと『ワンピース』のコラボ商品が登場。“ゴムゴム”“オペオペ”“メラメラ”の悪魔の実をモチーフにしたエア マックス プラス3種が9月4日より展開",
+  "selectedClusterId": "today-cluster-9",
+  "selectedTitle": "『ワンピース』新作映画2本が公開決定。『ONE PIECE FILM GOD VALLEY』が2027年夏、『ONE PIECE FILM BAAD』が2029年",
   "candidates": [
     {
-      "clusterId": "today-cluster-1",
+      "clusterId": "today-cluster-9",
+      "title": "『ワンピース』新作映画2本が公開決定。『ONE PIECE FILM GOD VALLEY』が2027年夏、『ONE PIECE FILM BAAD』が2029年",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general",
+        "manga",
+        "anime"
+      ],
+      "buzzScore": 71.8,
+      "confidence": 0.51,
+      "articleCount": 5,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
+      "whyRanked": [
+        "主要3媒体で同一話題を確認",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 9,
+        "sourceDiversity": 7,
+        "trend": 15.6,
+        "internetNativeBoost": 0,
+        "search": 6.7,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 41.66666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 71,
+        "internalSearchScore": 40.5,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2",
       "title": "ナイキと『ワンピース』のコラボ商品が登場。“ゴムゴム”“オペオペ”“メラメラ”の悪魔の実をモチーフにしたエア マックス プラス3種が9月4日より展開",
       "category": "games",
       "categories": [
@@ -13,8 +67,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 75.1,
-      "confidence": 0.48,
+      "buzzScore": 70.6,
+      "confidence": 0.44,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -29,8 +83,8 @@
         "internetNativeBoost": 8,
         "search": 5.8,
         "social": 5.6,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -56,114 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-278",
-      "title": "国会空転、1日3億円？　審議拒否批判の与党常とう句",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 71.7,
-      "confidence": 0.49,
-      "articleCount": 4,
-      "sourceCount": 2,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 5.5,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 8.3,
-        "social": 6.6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 51.66666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 3,
-        "repeatedAppearanceScore": 17.1,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 42.3,
-        "internalSocialScore": 51.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-7",
-      "title": "『ワンピース』新作映画2本が公開決定。『ONE PIECE FILM GOD VALLEY』が2027年夏、『ONE PIECE FILM BAAD』が2029年",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general",
-        "manga",
-        "anime"
-      ],
-      "buzzScore": 71.5,
-      "confidence": 0.51,
-      "articleCount": 5,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 9,
-        "sourceDiversity": 7,
-        "trend": 15.6,
-        "internetNativeBoost": 0,
-        "search": 6.4,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 40,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 71,
-        "internalSearchScore": 40.5,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-87",
+      "clusterId": "today-cluster-88",
       "title": "「トイ・ストーリー」かわいくて実用性も抜群！ウッディやバズ、エイリアンもデザインされた雑貨が発売",
       "category": "anime",
       "categories": [
@@ -216,7 +163,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-53",
+      "clusterId": "today-cluster-107",
+      "title": "「トイ・ストーリー」ウッディ＆バズ、リトル・グリーン・メンのアクキー付き！おもちゃたち大集合のグラフィックTシャツが可愛い♪",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 69,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 11.666666666666666,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-55",
       "title": "Steamにおける“売れるジャンル”、ずっとサンドボックスが強い説。「10万本分」のデータから見る、Steamでの売れ筋分析",
       "category": "games",
       "categories": [

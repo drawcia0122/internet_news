@@ -1,64 +1,11 @@
 {
-  "generatedAt": "2026-08-22T23:52:48.229Z",
+  "generatedAt": "2026-08-23T01:56:23.534Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-441",
-  "selectedTitle": "りくりゅう木原さん&三浦さん婚約",
+  "selectedClusterId": "today-cluster-542",
+  "selectedTitle": "人型ロボ100mボルト超え 直後炎上",
   "candidates": [
     {
-      "clusterId": "today-cluster-441",
-      "title": "りくりゅう木原さん&三浦さん婚約",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 75,
-      "confidence": 0.4,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.2,
-        "internetNativeBoost": 8,
-        "search": 14.9,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 12,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 93.33333333333333,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 92,
-        "internalSearchScore": 36.1,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-382",
+      "clusterId": "today-cluster-542",
       "title": "人型ロボ100mボルト超え 直後炎上",
       "category": "net-culture",
       "categories": [
@@ -67,8 +14,8 @@
         "sns",
         "general"
       ],
-      "buzzScore": 71.8,
-      "confidence": 0.44,
+      "buzzScore": 68.8,
+      "confidence": 0.41,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -83,14 +30,14 @@
         "internetNativeBoost": 8,
         "search": 5,
         "social": 6,
-        "velocity": 4.2,
-        "freshness": 10,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 30,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -110,38 +57,38 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1836",
-      "title": "COWCOW 20年の投稿今夏バズる",
-      "category": "net-culture",
+      "clusterId": "today-cluster-280",
+      "title": "Steamにおける“売れるジャンル”、ずっとサンドボックスが強い説。「10万本分」のデータから見る、Steamでの売れ筋分析",
+      "category": "games",
       "categories": [
-        "net-culture",
-        "entertainment",
+        "games",
         "sns",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 66.8,
-      "confidence": 0.4,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 64.7,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 4.6,
+        "search": 4.5,
         "social": 6,
         "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
+        "freshness": 10,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 8.333333333333332,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -151,8 +98,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 35.8,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -161,7 +108,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-325",
+      "clusterId": "today-cluster-279",
+      "title": "サンダー３：異色マンガをどうアニメ化した？　“違和感や落差”を生む映像表現　瀬下寛之、井手恵介、菅井進インタビュー",
+      "category": "anime-features",
+      "categories": [
+        "anime-features",
+        "manga",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 63.4,
+      "confidence": 0.35,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-483",
       "title": "カナダ、米国との貿易交渉を停止　米国の関税に同額の対抗措置",
       "category": "world",
       "categories": [
@@ -171,8 +171,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.2,
-      "confidence": 0.43,
+      "buzzScore": 62.7,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -187,13 +187,13 @@
         "search": 4.5,
         "social": 7.4,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 8.5,
         "authority": 2.5,
         "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 15,
+        "searchScore": 21.666666666666668,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -213,7 +213,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-298",
+      "clusterId": "today-cluster-455",
       "title": "高市外交に「弱腰」批判　ＩＣＣ、ロシア対応巡り：時事ドットコム",
       "category": "politics",
       "categories": [
@@ -225,8 +225,8 @@
         "general",
         "sports"
       ],
-      "buzzScore": 64.1,
-      "confidence": 0.44,
+      "buzzScore": 62.6,
+      "confidence": 0.43,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 3,
@@ -242,7 +242,7 @@
         "search": 4.2,
         "social": 7.6,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 8.5,
         "authority": 2.5,
         "categoryBias": 12,
         "penalty": 0

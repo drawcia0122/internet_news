@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T16:38:47.469Z",
+  "generatedAt": "2026-08-23T16:59:05.843Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-277",
   "selectedTitle": "国会空転、1日3億円？　審議拒否批判の与党常とう句",
@@ -14,9 +14,9 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 71.3,
-      "confidence": 0.49,
-      "articleCount": 4,
+      "buzzScore": 73.4,
+      "confidence": 0.52,
+      "articleCount": 5,
       "sourceCount": 2,
       "uniqueDomainCount": 3,
       "whyRanked": [
@@ -25,11 +25,11 @@
         "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
-        "coverage": 7.2,
+        "coverage": 9,
         "sourceDiversity": 5.5,
         "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 8,
+        "search": 8.3,
         "social": 6.6,
         "velocity": 0,
         "freshness": 10,
@@ -38,7 +38,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 50,
+        "searchScore": 51.66666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -58,6 +58,59 @@
       ]
     },
     {
+      "clusterId": "today-cluster-1",
+      "title": "【半額】謎解き探索ゲーム『Lorelei and the Laser Eyes』がSteamで3250円→1625円のセール中。奇妙なホテルを訪れた女性が、謎を解くたび一歩ずつ真実へと踏み込んでいく",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general",
+        "sports",
+        "entertainment"
+      ],
+      "buzzScore": 73.3,
+      "confidence": 0.5,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 16.3,
+        "internetNativeBoost": 0,
+        "search": 5.3,
+        "social": 5.6,
+        "velocity": 8,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 17,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 74,
+        "internalSearchScore": 41.5,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
       "clusterId": "today-cluster-12",
       "title": "『ワンピース』新作映画2本が公開決定。『ONE PIECE FILM GOD VALLEY』が2027年夏、『ONE PIECE FILM BAAD』が2029年",
       "category": "games",
@@ -69,7 +122,7 @@
         "manga",
         "anime"
       ],
-      "buzzScore": 70,
+      "buzzScore": 70.5,
       "confidence": 0.5,
       "articleCount": 5,
       "sourceCount": 3,
@@ -83,7 +136,7 @@
         "sourceDiversity": 7,
         "trend": 14.7,
         "internetNativeBoost": 0,
-        "search": 7.2,
+        "search": 7.7,
         "social": 7,
         "velocity": 0,
         "freshness": 10,
@@ -92,7 +145,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 45,
+        "searchScore": 48.333333333333336,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -105,57 +158,6 @@
         "archiveHeatScore": 67,
         "internalSearchScore": 39.1,
         "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-3",
-      "title": "ナイキと『ワンピース』のコラボ商品が登場。“ゴムゴム”“オペオペ”“メラメラ”の悪魔の実をモチーフにしたエア マックス プラス3種が9月4日より展開",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 69.9,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -216,7 +218,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-56",
+      "clusterId": "today-cluster-55",
       "title": "Steamにおける“売れるジャンル”、ずっとサンドボックスが強い説。「10万本分」のデータから見る、Steamでの売れ筋分析",
       "category": "games",
       "categories": [

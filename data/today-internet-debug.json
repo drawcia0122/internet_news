@@ -1,45 +1,44 @@
 {
-  "generatedAt": "2026-08-22T23:31:30.166Z",
+  "generatedAt": "2026-08-22T23:52:48.229Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-279",
-  "selectedTitle": "《クレジットカード窃盗容疑で逮捕》NY出身キラキラ慶應女子大生（22）の父は大手クレカ海外法人の「最高経営責任者」だった",
+  "selectedClusterId": "today-cluster-441",
+  "selectedTitle": "りくりゅう木原さん&三浦さん婚約",
   "candidates": [
     {
-      "clusterId": "today-cluster-279",
-      "title": "《クレジットカード窃盗容疑で逮捕》NY出身キラキラ慶應女子大生（22）の父は大手クレカ海外法人の「最高経営責任者」だった",
-      "category": "crime",
+      "clusterId": "today-cluster-441",
+      "title": "りくりゅう木原さん&三浦さん婚約",
+      "category": "sports",
       "categories": [
-        "crime",
         "sports",
-        "world",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 72.4,
-      "confidence": 0.39,
+      "buzzScore": 75,
+      "confidence": 0.4,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "trend": 20.2,
         "internetNativeBoost": 8,
-        "search": 16,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
+        "search": 14.9,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 7,
+        "categoryBias": 12,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 100,
+        "searchScore": 93.33333333333333,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -48,10 +47,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 57.7
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 92,
+        "internalSearchScore": 36.1,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -59,7 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-359",
+      "clusterId": "today-cluster-382",
       "title": "人型ロボ100mボルト超え 直後炎上",
       "category": "net-culture",
       "categories": [
@@ -111,7 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1808",
+      "clusterId": "today-cluster-1836",
       "title": "COWCOW 20年の投稿今夏バズる",
       "category": "net-culture",
       "categories": [
@@ -162,7 +161,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-305",
+      "clusterId": "today-cluster-325",
+      "title": "カナダ、米国との貿易交渉を停止　米国の関税に同額の対抗措置",
+      "category": "world",
+      "categories": [
+        "world",
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64.2,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 4.5,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 15,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-298",
       "title": "高市外交に「弱腰」批判　ＩＣＣ、ロシア対応巡り：時事ドットコム",
       "category": "politics",
       "categories": [
@@ -174,7 +225,7 @@
         "general",
         "sports"
       ],
-      "buzzScore": 64.3,
+      "buzzScore": 64.1,
       "confidence": 0.44,
       "articleCount": 3,
       "sourceCount": 2,
@@ -188,7 +239,7 @@
         "sourceDiversity": 5.5,
         "trend": 16.9,
         "internetNativeBoost": 0,
-        "search": 4.3,
+        "search": 4.2,
         "social": 7.6,
         "velocity": 0,
         "freshness": 10,
@@ -205,63 +256,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 10.2,
+        "repeatedAppearanceScore": 9,
         "crossCategoryScore": 100,
         "archiveHeatScore": 77,
-        "internalSearchScore": 33.6,
-        "internalSocialScore": 59.6
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-525",
-      "title": "機動警察パトレイバー：アニメとマンガはなぜ違う？　ゆうきまさみが語る誕生秘話",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "sns",
-        "net-culture",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 61.9,
-      "confidence": 0.34,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 21.666666666666668,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 57.7
+        "internalSearchScore": 32.8,
+        "internalSocialScore": 59.1
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

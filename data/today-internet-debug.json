@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-23T15:33:39.325Z",
+  "generatedAt": "2026-08-23T15:53:40.063Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-11",
+  "selectedClusterId": "today-cluster-10",
   "selectedTitle": "『ワンピース』新作映画2本が公開決定。『ONE PIECE FILM GOD VALLEY』が2027年夏、『ONE PIECE FILM BAAD』が2029年",
   "candidates": [
     {
-      "clusterId": "today-cluster-11",
+      "clusterId": "today-cluster-10",
       "title": "『ワンピース』新作映画2本が公開決定。『ONE PIECE FILM GOD VALLEY』が2027年夏、『ONE PIECE FILM BAAD』が2029年",
       "category": "games",
       "categories": [
@@ -16,7 +16,7 @@
         "manga",
         "anime"
       ],
-      "buzzScore": 71.8,
+      "buzzScore": 72.3,
       "confidence": 0.51,
       "articleCount": 5,
       "sourceCount": 3,
@@ -30,7 +30,7 @@
         "sourceDiversity": 7,
         "trend": 15.6,
         "internetNativeBoost": 0,
-        "search": 6.7,
+        "search": 7.2,
         "social": 7,
         "velocity": 0,
         "freshness": 10,
@@ -39,7 +39,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 41.66666666666667,
+        "searchScore": 45,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -67,8 +67,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.6,
-      "confidence": 0.44,
+      "buzzScore": 69.9,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -79,9 +79,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.9,
+        "trend": 18.3,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 5.7,
         "social": 5.6,
         "velocity": 5.3,
         "freshness": 8.5,
@@ -100,8 +100,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 45.7,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 44.7,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -110,60 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-280",
-      "title": "国会空転、1日3億円？　審議拒否批判の与党常とう句",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 69,
-      "confidence": 0.45,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 8.3,
-        "social": 6.6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 51.66666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 3,
-        "repeatedAppearanceScore": 16.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 41.7,
-        "internalSocialScore": 51.3
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-87",
+      "clusterId": "today-cluster-84",
       "title": "「トイ・ストーリー」かわいくて実用性も抜群！ウッディやバズ、エイリアンもデザインされた雑貨が発売",
       "category": "anime",
       "categories": [
@@ -209,6 +156,59 @@
         "archiveHeatScore": 100,
         "internalSearchScore": 38.9,
         "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-277",
+      "title": "国会空転、1日3億円？　審議拒否批判の与党常とう句",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.7,
+      "confidence": 0.45,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 8,
+        "social": 6.6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 50,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 3,
+        "repeatedAppearanceScore": 16.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 41.7,
+        "internalSocialScore": 51.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

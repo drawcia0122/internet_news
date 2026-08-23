@@ -1,43 +1,96 @@
 {
-  "generatedAt": "2026-08-23T01:56:23.534Z",
+  "generatedAt": "2026-08-23T03:13:49.677Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-542",
-  "selectedTitle": "人型ロボ100mボルト超え 直後炎上",
+  "selectedClusterId": "today-cluster-3",
+  "selectedTitle": "最大4人で釣った獲物を“銃”で撃ちまくるカオスな釣りゲーム『How to Fish』Steam同接「14万2000人」を突破。ライフルやナイフで“魅せプ”もできる話題作",
   "candidates": [
     {
-      "clusterId": "today-cluster-542",
-      "title": "人型ロボ100mボルト超え 直後炎上",
-      "category": "net-culture",
+      "clusterId": "today-cluster-3",
+      "title": "最大4人で釣った獲物を“銃”で撃ちまくるカオスな釣りゲーム『How to Fish』Steam同接「14万2000人」を突破。ライフルやナイフで“魅せプ”もできる話題作",
+      "category": "games",
       "categories": [
+        "games",
         "net-culture",
-        "tech",
-        "sns",
         "general"
       ],
-      "buzzScore": 68.8,
-      "confidence": 0.41,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 87.4,
+      "confidence": 0.58,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
+        "search": 5.8,
+        "social": 5.6,
+        "velocity": 12.5,
+        "freshness": 10,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 30,
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 45.7,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-426",
+      "title": "《クレジットカード窃盗容疑で逮捕》NY出身キラキラ慶應女子大生（22）の父は大手クレカ海外法人の「最高経営責任者」だった",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "sports",
+        "world",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 79,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 16,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 7,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 100,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -46,10 +99,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -57,17 +110,70 @@
       ]
     },
     {
-      "clusterId": "today-cluster-280",
+      "clusterId": "today-cluster-27",
       "title": "Steamにおける“売れるジャンル”、ずっとサンドボックスが強い説。「10万本分」のデータから見る、Steamでの売れ筋分析",
       "category": "games",
       "categories": [
         "games",
+        "general",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 73,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 6,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 46.8,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-73",
+      "title": "「トイ・ストーリー」かわいくて実用性も抜群！ウッディやバズ、エイリアンもデザインされた雑貨が発売",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.7,
-      "confidence": 0.37,
+      "buzzScore": 69,
+      "confidence": 0.39,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -77,10 +183,63 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 19.6,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 6,
+        "search": 5,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-89",
+      "title": "「トイ・ストーリー」ウッディ＆バズ、リトル・グリーン・メンのアクキー付き！おもちゃたち大集合のグラフィックTシャツが可愛い♪",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 69,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 7.4,
         "velocity": 0,
         "freshness": 10,
         "authority": 1.5,
@@ -97,170 +256,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-279",
-      "title": "サンダー３：異色マンガをどうアニメ化した？　“違和感や落差”を生む映像表現　瀬下寛之、井手恵介、菅井進インタビュー",
-      "category": "anime-features",
-      "categories": [
-        "anime-features",
-        "manga",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 63.4,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 5,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
         "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-483",
-      "title": "カナダ、米国との貿易交渉を停止　米国の関税に同額の対抗措置",
-      "category": "world",
-      "categories": [
-        "world",
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 62.7,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 21.666666666666668,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-455",
-      "title": "高市外交に「弱腰」批判　ＩＣＣ、ロシア対応巡り：時事ドットコム",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "entertainment",
-        "world",
-        "general",
-        "sports"
-      ],
-      "buzzScore": 62.6,
-      "confidence": 0.43,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 5.5,
-        "trend": 16.9,
-        "internetNativeBoost": 0,
-        "search": 4.2,
-        "social": 7.6,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 12,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 6.666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 9,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 77,
-        "internalSearchScore": 32.8,
-        "internalSocialScore": 59.1
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

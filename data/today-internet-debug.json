@@ -1,62 +1,11 @@
 {
-  "generatedAt": "2026-08-23T09:38:34.984Z",
+  "generatedAt": "2026-08-23T09:58:29.741Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-2",
-  "selectedTitle": "『ゲームセンターCX』が「Wii」「PS3」をついに解禁！有野課長「どうしよう、解禁しちゃいました」",
+  "selectedClusterId": "today-cluster-44",
+  "selectedTitle": "Steamにおける“売れるジャンル”、ずっとサンドボックスが強い説。「10万本分」のデータから見る、Steamでの売れ筋分析",
   "candidates": [
     {
-      "clusterId": "today-cluster-2",
-      "title": "『ゲームセンターCX』が「Wii」「PS3」をついに解禁！有野課長「どうしよう、解禁しちゃいました」",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 71.7,
-      "confidence": 0.44,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 19.8,
-        "internetNativeBoost": 8,
-        "search": 6,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 47.1,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-42",
+      "clusterId": "today-cluster-44",
       "title": "Steamにおける“売れるジャンル”、ずっとサンドボックスが強い説。「10万本分」のデータから見る、Steamでの売れ筋分析",
       "category": "games",
       "categories": [
@@ -107,7 +56,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-84",
+      "clusterId": "today-cluster-85",
       "title": "「トイ・ストーリー」かわいくて実用性も抜群！ウッディやバズ、エイリアンもデザインされた雑貨が発売",
       "category": "anime",
       "categories": [
@@ -140,7 +89,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
+        "searchScore": 5,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -160,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-94",
+      "clusterId": "today-cluster-95",
       "title": "「トイ・ストーリー」ウッディ＆バズ、リトル・グリーン・メンのアクキー付き！おもちゃたち大集合のグラフィックTシャツが可愛い♪",
       "category": "anime",
       "categories": [
@@ -213,7 +162,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-17",
+      "clusterId": "today-cluster-18",
       "title": "最大4人で釣った獲物を“銃”で撃ちまくるカオスな釣りゲーム『How to Fish』Steam同接「14万2000人」を突破。ライフルやナイフで“魅せプ”もできる話題作",
       "category": "games",
       "categories": [
@@ -256,6 +205,59 @@
         "archiveHeatScore": 79,
         "internalSearchScore": 43.3,
         "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-653",
+      "title": "サンダー３：異色マンガをどうアニメ化した？　“違和感や落差”を生む映像表現　瀬下寛之、井手恵介、菅井進インタビュー",
+      "category": "anime-features",
+      "categories": [
+        "anime-features",
+        "manga",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.4,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 6.666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31,
+        "internalSocialScore": 57.3
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

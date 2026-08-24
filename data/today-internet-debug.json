@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-24T04:26:45.296Z",
+  "generatedAt": "2026-08-24T05:24:10.921Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-48",
+  "selectedClusterId": "today-cluster-59",
   "selectedTitle": "『ワンピース』新作映画2本が公開決定。『ONE PIECE FILM GOD VALLEY』が2027年夏、『ONE PIECE FILM BAAD』が2029年",
   "candidates": [
     {
-      "clusterId": "today-cluster-48",
+      "clusterId": "today-cluster-59",
       "title": "『ワンピース』新作映画2本が公開決定。『ONE PIECE FILM GOD VALLEY』が2027年夏、『ONE PIECE FILM BAAD』が2029年",
       "category": "games",
       "categories": [
@@ -16,7 +16,7 @@
         "manga",
         "anime"
       ],
-      "buzzScore": 73.9,
+      "buzzScore": 74.4,
       "confidence": 0.49,
       "articleCount": 5,
       "sourceCount": 3,
@@ -30,7 +30,7 @@
         "sourceDiversity": 7,
         "trend": 13.9,
         "internetNativeBoost": 0,
-        "search": 12,
+        "search": 12.5,
         "social": 7,
         "velocity": 0,
         "freshness": 10,
@@ -39,7 +39,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 75,
+        "searchScore": 78.33333333333333,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -59,16 +59,68 @@
       ]
     },
     {
-      "clusterId": "today-cluster-16",
-      "title": "【最大100人】大規模FPS『WARDOGS』Steamプレイテスト同接が10万5000人を記録。9月11日に早期アクセス予定",
+      "clusterId": "today-cluster-303",
+      "title": "任天堂、Switchエミュレータ関連401件を一斉停止　わずか7件のDMCA通知で「一網打尽」に（多根清史） - エキスパート",
       "category": "games",
       "categories": [
         "games",
+        "tech",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 73.6,
-      "confidence": 0.46,
+      "buzzScore": 74.2,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 4.5,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2",
+      "title": "『ネコぱら セカイコネクト』Steam版、9月28日リリースへ。人気シリーズ最新作、“ネコ学園恋愛ADV”がついにPCでも遊べる",
+      "category": "games",
+      "categories": [
+        "games",
+        "sports",
+        "general"
+      ],
+      "buzzScore": 72,
+      "confidence": 0.49,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -79,18 +131,18 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "trend": 20.5,
         "internetNativeBoost": 8,
-        "search": 6.3,
+        "search": 6.2,
         "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 8.3,
+        "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -100,8 +152,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 49.6,
+        "archiveHeatScore": 93,
+        "internalSearchScore": 48.2,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -110,60 +162,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1105",
-      "title": "国会空転、1日3億円？　審議拒否批判の与党常とう句",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 72.7,
-      "confidence": 0.55,
-      "articleCount": 7,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "検索面でも関連話題の広がりを確認",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 12.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 8,
-        "social": 6.3,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 50,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 3,
-        "repeatedAppearanceScore": 12.3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 39.1,
-        "internalSocialScore": 49.5
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-97",
+      "clusterId": "today-cluster-103",
       "title": "『バンドリ！ ゆめ∞みた』バーチャルでの新たなライブに没入！ メンバーの仲を荒らす悪女・ビオラって何者!? 炎上、配信事故の“鬼畜ルート”にドキドキ!?",
       "category": "entertainment",
       "categories": [
@@ -215,52 +214,49 @@
       ]
     },
     {
-      "clusterId": "today-cluster-102",
-      "title": "「BLEACH」井上織姫の“自爆特攻”で「月島さん」がSNSのトレンド入り!?「月島さん、なんとかして！」「こういう時の月島さんじゃないのか！」第45話【ネタバレあり反応まとめ】",
-      "category": "entertainment",
+      "clusterId": "today-cluster-18",
+      "title": "【最大100人】大規模FPS『WARDOGS』Steamプレイテスト同接が10万5000人を記録。9月11日に早期アクセス予定",
+      "category": "games",
       "categories": [
-        "entertainment",
-        "manga",
-        "sns",
-        "anime",
+        "games",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65,
+      "buzzScore": 66.7,
       "confidence": 0.39,
-      "articleCount": 1,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 7.4,
+        "search": 6.3,
+        "social": 5.6,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
-        "penalty": -7
+        "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 8.333333333333332,
+        "searchScore": 3.3333333333333335,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

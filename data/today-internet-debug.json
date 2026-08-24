@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-24T05:24:10.921Z",
+  "generatedAt": "2026-08-24T06:09:26.594Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-59",
+  "selectedClusterId": "today-cluster-65",
   "selectedTitle": "『ワンピース』新作映画2本が公開決定。『ONE PIECE FILM GOD VALLEY』が2027年夏、『ONE PIECE FILM BAAD』が2029年",
   "candidates": [
     {
-      "clusterId": "today-cluster-59",
+      "clusterId": "today-cluster-65",
       "title": "『ワンピース』新作映画2本が公開決定。『ONE PIECE FILM GOD VALLEY』が2027年夏、『ONE PIECE FILM BAAD』が2029年",
       "category": "games",
       "categories": [
@@ -16,7 +16,7 @@
         "manga",
         "anime"
       ],
-      "buzzScore": 74.4,
+      "buzzScore": 73.6,
       "confidence": 0.49,
       "articleCount": 5,
       "sourceCount": 3,
@@ -30,7 +30,7 @@
         "sourceDiversity": 7,
         "trend": 13.9,
         "internetNativeBoost": 0,
-        "search": 12.5,
+        "search": 11.7,
         "social": 7,
         "velocity": 0,
         "freshness": 10,
@@ -39,7 +39,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 78.33333333333333,
+        "searchScore": 73.33333333333333,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -59,67 +59,15 @@
       ]
     },
     {
-      "clusterId": "today-cluster-303",
-      "title": "任天堂、Switchエミュレータ関連401件を一斉停止　わずか7件のDMCA通知で「一網打尽」に（多根清史） - エキスパート",
-      "category": "games",
-      "categories": [
-        "games",
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 74.2,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
       "clusterId": "today-cluster-2",
-      "title": "『ネコぱら セカイコネクト』Steam版、9月28日リリースへ。人気シリーズ最新作、“ネコ学園恋愛ADV”がついにPCでも遊べる",
+      "title": "基本プレイ無料・美麗アニメ少女RPG『エピックセブン』がとうとうSteamに来る、年内リリースへ。アカウント連携可能、“新規勢”向けの配慮もあり",
       "category": "games",
       "categories": [
         "games",
-        "sports",
+        "anime",
         "general"
       ],
-      "buzzScore": 72,
+      "buzzScore": 69,
       "confidence": 0.49,
       "articleCount": 2,
       "sourceCount": 1,
@@ -138,7 +86,7 @@
         "velocity": 8.3,
         "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 9,
+        "categoryBias": 6,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -162,7 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-103",
+      "clusterId": "today-cluster-108",
       "title": "『バンドリ！ ゆめ∞みた』バーチャルでの新たなライブに没入！ メンバーの仲を荒らす悪女・ビオラって何者!? 炎上、配信事故の“鬼畜ルート”にドキドキ!?",
       "category": "entertainment",
       "categories": [
@@ -214,37 +162,90 @@
       ]
     },
     {
-      "clusterId": "today-cluster-18",
-      "title": "【最大100人】大規模FPS『WARDOGS』Steamプレイテスト同接が10万5000人を記録。9月11日に早期アクセス予定",
-      "category": "games",
+      "clusterId": "today-cluster-1296",
+      "title": "国会空転、1日3億円？　審議拒否批判の与党常とう句",
+      "category": "politics",
       "categories": [
-        "games",
+        "politics",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 66.7,
-      "confidence": 0.39,
+      "buzzScore": 68.8,
+      "confidence": 0.51,
+      "articleCount": 6,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 10.8,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 7.5,
+        "social": 6.3,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 46.666666666666664,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 3,
+        "repeatedAppearanceScore": 11.4,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 38.6,
+        "internalSocialScore": 49.1
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-3",
+      "title": "『ネコぱら セカイコネクト』Steam版、9月28日リリースへ。人気シリーズ最新作、“ネコ学園恋愛ADV”がついにPCでも遊べる",
+      "category": "games",
+      "categories": [
+        "games",
+        "sports",
+        "general"
+      ],
+      "buzzScore": 67.5,
+      "confidence": 0.45,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "trend": 20.5,
         "internetNativeBoost": 8,
-        "search": 6.3,
+        "search": 6.2,
         "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -254,8 +255,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 49.6,
+        "archiveHeatScore": 93,
+        "internalSearchScore": 48.2,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [

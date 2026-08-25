@@ -1,60 +1,9 @@
 {
-  "generatedAt": "2026-08-25T22:39:01.444Z",
+  "generatedAt": "2026-08-25T23:02:06.248Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-12",
-  "selectedTitle": "「レゴ」の都市建設ゲーム『LEGO Skylines』が発表！レゴで自分らしい街が作れる",
+  "selectedClusterId": "today-cluster-43",
+  "selectedTitle": "『レインボーシックス』シリーズ新作『Rainbow Six Tactics』発表！2027年にリリース予定のターン制戦略ゲーム",
   "candidates": [
-    {
-      "clusterId": "today-cluster-12",
-      "title": "「レゴ」の都市建設ゲーム『LEGO Skylines』が発表！レゴで自分らしい街が作れる",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 73,
-      "confidence": 0.45,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.9,
-        "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 5,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 48.9,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
     {
       "clusterId": "today-cluster-100",
       "title": "巨大化ネコと少女の美麗旅ゲーム『Ylem's Cat』は「ほぼ全員ネコを飼ってる開発チーム」が放つ、ネコの手借りまくりゲーム。目指すのは『The Outer Wilds』の“あの感覚”",
@@ -158,7 +107,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-21",
+      "clusterId": "today-cluster-43",
+      "title": "『レインボーシックス』シリーズ新作『Rainbow Six Tactics』発表！2027年にリリース予定のターン制戦略ゲーム",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.2,
+      "confidence": 0.45,
+      "articleCount": 4,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認",
+        "内部ブラウズ候補でも繰り返し浮上",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 2.3,
+        "trend": 20.9,
+        "internetNativeBoost": 8,
+        "search": 8.3,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -8
+      },
+      "externalSignalStats": {
+        "searchScore": 11.666666666666666,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 2,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 48,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 64.5,
+        "internalSocialScore": 54.6
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-16",
       "title": "『Hearts of Iron IV』開発元の新作ゲーム『Afterworld』が発表！Steamストアページが公開、マルチプレイ対戦・協力プレイに対応",
       "category": "games",
       "categories": [
@@ -208,8 +210,8 @@
       ]
     },
     {
-      "clusterId": "today-cluster-40",
-      "title": "『ゲーム・オブ・スローンズ』のストラテジーゲーム『Game of Thrones: War for Westeros』の新トレーラーが発表",
+      "clusterId": "today-cluster-15",
+      "title": "「レゴ」の都市建設ゲーム『LEGO Skylines』が発表！レゴで自分らしい街が作れる",
       "category": "games",
       "categories": [
         "games",
@@ -238,7 +240,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 11.666666666666666,
+        "searchScore": 5,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false

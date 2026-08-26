@@ -1,11 +1,62 @@
 {
-  "generatedAt": "2026-08-26T08:57:06.694Z",
+  "generatedAt": "2026-08-26T09:54:48.452Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-15",
-  "selectedTitle": "『ケロロ軍曹☆』の新作ゲーム『ケロロ軍曹☆ ハチャメチャTVショー　～賞金ゲット大作戦であります！～』2026年12月に発売決定",
+  "selectedClusterId": "today-cluster-12",
+  "selectedTitle": "『初音ミク』と『涼宮ハルヒ』のスペシャルコラボが決定。「世界を大いに盛り上げる」新たなプロジェクトが始動",
   "candidates": [
     {
-      "clusterId": "today-cluster-15",
+      "clusterId": "today-cluster-12",
+      "title": "『初音ミク』と『涼宮ハルヒ』のスペシャルコラボが決定。「世界を大いに盛り上げる」新たなプロジェクトが始動",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 77.3,
+      "confidence": 0.49,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 20.7,
+        "internetNativeBoost": 8,
+        "search": 6.2,
+        "social": 5.6,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 48.5,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-21",
       "title": "『ケロロ軍曹☆』の新作ゲーム『ケロロ軍曹☆ ハチャメチャTVショー　～賞金ゲット大作戦であります！～』2026年12月に発売決定",
       "category": "games",
       "categories": [
@@ -13,7 +64,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 74.3,
+      "buzzScore": 73.6,
       "confidence": 0.46,
       "articleCount": 2,
       "sourceCount": 1,
@@ -25,9 +76,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 6.5,
+        "search": 6.3,
         "social": 5.6,
         "velocity": 5.3,
         "freshness": 8.5,
@@ -36,7 +87,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 16.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -46,8 +97,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -56,7 +107,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-23",
+      "clusterId": "today-cluster-32",
       "title": "KLabのAI VTuber「ゆめみなな」オリジナル楽曲のMVが3作連続で100万再生を突破",
       "category": "entertainment",
       "categories": [
@@ -65,13 +116,12 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 72.3,
-      "confidence": 0.44,
+      "buzzScore": 65.5,
+      "confidence": 0.37,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
@@ -81,8 +131,8 @@
         "internetNativeBoost": 8,
         "search": 5.9,
         "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -108,109 +158,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-125",
-      "title": "巨大化ネコと少女の美麗旅ゲーム『Ylem's Cat』は「ほぼ全員ネコを飼ってる開発チーム」が放つ、ネコの手借りまくりゲーム。目指すのは『The Outer Wilds』の“あの感覚”",
-      "category": "games",
-      "categories": [
-        "games",
-        "general",
-        "sns",
-        "net-culture"
-      ],
-      "buzzScore": 64.9,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 3.8,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.3,
-        "social": 6.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 41.3,
-        "internalSocialScore": 53.5
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1076",
-      "title": "元ヤクルト古田敦也さん、いじめ受けて野球を諦めかけた中学時代「胸を張って逃げて」　＃しんどい君へ",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.8,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 3.9,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 12,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 6.666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 30.6,
-        "internalSocialScore": 46.3
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-377",
+      "clusterId": "today-cluster-380",
       "title": "オードリー・タンが警鐘　AIを「親友」にしてはいけない",
       "category": "tech",
       "categories": [
@@ -254,6 +202,58 @@
         "archiveHeatScore": 87,
         "internalSearchScore": 34.4,
         "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-315",
+      "title": "クリーチャー収集型オープンワールドRPG「アニモ」，9月16日にPC，PS5，XBOX Series X|S向けに配信決定。最新トレイラーを公開",
+      "category": "games",
+      "categories": [
+        "games",
+        "tech",
+        "entertainment",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 64.2,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 4.2,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 32.6,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

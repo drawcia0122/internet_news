@@ -1,58 +1,300 @@
 {
-  "generatedAt": "2026-08-26T07:52:50.221Z",
+  "generatedAt": "2026-08-26T08:54:25.401Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
     "general": 0,
-    "tech": 6,
-    "business": 1,
+    "tech": 5,
+    "business": 2,
     "politics": 0,
-    "entertainment": 91,
+    "entertainment": 88,
     "anime": 15,
-    "games": 154,
+    "games": 157,
     "game-features": 0,
     "anime-features": 0,
-    "manga": 49,
+    "manga": 47,
     "books": 1,
     "sports": 1,
     "net-culture": 0,
     "matome": 0,
     "crime": 0,
     "adult": 4,
-    "world": 6
+    "world": 5
   },
   "hasMore": true,
   "nextPage": 3,
   "items": [
     {
-      "id": "auto-manga-夏目友人帳-が1位に-夏休み明けの疲れた心をチャージする-メンパ爆上げマンガ-といえば-コミックシーモアが調査-animeanime.jp/article/2026/08/26/102383.html",
-      "title": "「夏目友人帳」が1位に！夏休み明けの疲れた心をチャージする“メンパ爆上げマンガ”といえば？ コミックシーモアが調査☆",
-      "summary": "国内最大級の総合電子書籍ストア「コミックシーモア」による、夏休み明けの疲れた心をチャージして実力を発揮する「メンパ爆上げマンガランキング」が発表された。マンガを愛する同サービスのユーザー5,856名の回答により、第1位は『夏目友人帳』に決定した。",
-      "briefSummary": "国内最大級の総合電子書籍ストア「コミックシーモア」による、夏休み明けの疲れた心をチャージして実力を発揮する「メンパ爆上げマンガランキング」が発表された。マンガを愛する同サービスのユーザー5,856名の回答により、第1位は『夏目友人帳』に決定した。",
-      "category": "manga",
+      "id": "auto-anime-勇者ヒンメルも恐れた-泣きわめく-フリーレン-アニメの魅力そのまま-座りポーズを存在感たっぷりに立体化-inside-games.jp/article/2026/08/26/186799.html",
+      "title": "勇者ヒンメルも恐れた“泣きわめく”「フリーレン」！アニメの魅力そのまま、座りポーズを存在感たっぷりに立体化",
+      "summary": "「葬送のフリーレン フィギュア-うお～ん-」プライズフィギュアが8月27日よりプライズとして順次展開！",
+      "briefSummary": "アニメ「 葬送のフリーレン」2期より、 “泣きわめく”「フリーレン」がプライズフィギュアとして登場。サイズ約13cmで座りポーズを存在感たっぷりに立体化しています。「うお～ん」と泣く表情を、作中そのままに魅力を再現したフィギュアです。",
+      "category": "anime",
       "categories": [
-        "manga",
-        "entertainment",
         "anime",
+        "games",
+        "entertainment",
+        "manga",
         "general"
       ],
-      "categoryLabel": "漫画",
+      "categoryLabel": "アニメ",
       "categoryLabels": [
-        "漫画",
+        "アニメ",
+        "ゲーム",
         "エンタメ",
-        "アニメ"
+        "漫画"
       ],
       "score": 98,
       "posts": 2,
       "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923871.jpg",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1758764.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-26T07:52:50.221Z",
+      "capturedAt": "2026-08-26T08:54:25.401Z",
       "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/08/26/102383.html",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/08/26/186799.html",
       "hotReasons": [
         "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch",
+            "pokemon"
+          ],
+          "title": "勇者ヒンメルも恐れた“泣きわめく”「フリーレン」！アニメの魅力そのまま、座りポーズを存在感たっぷりに立体化",
+          "url": "https://www.inside-games.jp/article/2026/08/26/186799.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/08/26/186799.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1758764.jpg"
+        }
+      ],
+      "whatHappened": "勇者ヒンメルも恐れた“泣きわめく”「フリーレン」",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ポケモンユーザー",
+        "ゲームユーザー",
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-日が落ちてから-なかでも秋に遊ぶのをお薦めしたい-海外レビューハイスコア-servant-of-the-lake-gamespark.jp/article/2026/08/26/171286.html",
+      "title": "「日が落ちてから、なかでも秋に遊ぶのをお薦めしたい」海外レビューハイスコア『Servant of the Lake』",
+      "summary": "2026年8月13日発売『Servant of the Lake』の海外レビューをお届けします。",
+      "briefSummary": "9件 本作『 Servant of the Lake 』は、2026年8月13日に発売されたポイント＆クリック式アドベンチャーゲームです。プレイヤーは悪名高い一族に仕える使用人となり、日々の仕事をこなしながら錬金術の秘密を解明します。シュールなパズルの謎解きを謳っています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1181196.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-26T08:54:25.401Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/08/26/171286.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "「日が落ちてから、なかでも秋に遊ぶのをお薦めしたい」海外レビューハイスコア『Servant of the Lake』",
+          "url": "http://www.gamespark.jp/article/2026/08/26/171286.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/26/171286.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1181196.jpg"
+        }
+      ],
+      "whatHappened": "「日が落ちてから、なかでも秋に遊ぶのをお薦めしたい」海外レビューハイスコア『Servant …",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "開催期間、会場、予約条件を早めに押さえたいイベント系の話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き",
+        "体験型イベント好き"
+      ]
+    },
+    {
+      "id": "auto-games-7-4型有機elディスプレイ搭載-ゲームパッドを強化した携帯型ゲームpc-rog-xbox-ally-x20-の国内販売が決定-4gamer.net/games/047/g004755/20260826045",
+      "title": "7.4型有機ELディスプレイ搭載＆ゲームパッドを強化した携帯型ゲームPC「ROG XBOX ALLY X20」の国内販売が決定",
+      "summary": "2026年8月26日，ASUSは，携帯型ゲームPC「ROGXBOXALLYX20」を10月中旬以降に日本国内でも販売することを発表した。PC単体に加えて，サングラス…",
+      "briefSummary": "2026年8月26日，ASUSは，携帯型ゲームPC「ROGXBOXALLYX20」を10月中旬以降に日本国内でも販売することを発表した。PC単体に加えて，サングラス型ディスプレイとのセットモデルもラインナップする。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/047/G004755/20260826045/SS/001.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-26T08:54:25.401Z",
+      "time": "直近",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/047/G004755/20260826045/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "7.4型有機ELディスプレイ搭載＆ゲームパッドを強化した携帯型ゲームPC「ROG XBOX ALLY X20」の国内販売が決定",
+          "url": "https://www.4gamer.net/games/047/G004755/20260826045/",
+          "canonicalUrl": "https://www.4gamer.net/games/047/G004755/20260826045/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/047/G004755/20260826045/SS/001.jpg"
+        }
+      ],
+      "whatHappened": "7.4型有機ELディスプレイ搭載＆ゲームパッドを強化した携帯型ゲームPC「ROG XBOX …",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-ビジュアルや戦闘など-あらゆる要素がアップグレード-ウィッチャー3-ワイルドハント-リマスター版が9月29日配信-拡張dlc-追憶の調べ-最新映像も公開-gam-gamespark.jp/article/2026/08/26/171262.html",
+      "title": "ビジュアルや戦闘など、あらゆる要素がアップグレード！『ウィッチャー3：ワイルドハント』リマスター版が9月29日配信―拡張DLC「追憶の調べ」最新映像も公開【gamescom ONL 2026】",
+      "summary": "既に『ウィッチャー3』を所有しているユーザーは、無料のアップグレードが可能です。",
+      "briefSummary": "さらに、既に『ウィッチャー3』を所持しているユーザーは、無料でリマスター版のアップグレードを受けられることも明らかになっています。 リマスター版は9月29日配信予定です。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1180941.png",
+      "publishedAt": null,
+      "capturedAt": "2026-08-26T08:54:25.401Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/08/26/171262.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "ビジュアルや戦闘など、あらゆる要素がアップグレード！『ウィッチャー3：ワイルドハント』リマスター版が9月29日配信―拡張DLC「追憶の調べ」最新映像も公開【gamescom ONL 2026】",
+          "url": "http://www.gamespark.jp/article/2026/08/26/171262.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/08/26/171262.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1180941.png"
+        }
+      ],
+      "whatHappened": "ビジュアルや戦闘など、あらゆる要素がアップグレード",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-ゴジラ-おせち襲来-27年は-メカゴジラ-モチーフ-ゴジラの足跡-練切-やモスラ-テリーヌ-で表現-重箱・特典も目白押し-animeanime.jp/article/2026/08/26/102380.html",
+      "title": "「ゴジラ」おせち襲来!! 27年は「×メカゴジラ」モチーフ！ゴジラの足跡“練切”やモスラ“テリーヌ”で表現　重箱・特典も目白押し",
+      "summary": "「ゴジラ」シリーズを題材にした、デアゴスティーニ・ジャパンによるキャラクターおせち「ゴジラおせち2027」の予約受付が開始された。2027年に公開25周年を迎える『ゴジラ×メカゴジラ』（2002）をメインモチーフに、メカゴジラをはじめゴジラや東宝怪獣が満載のおせちとなる。",
+      "briefSummary": "「ゴジラ」シリーズを題材にした、デアゴスティーニ・ジャパンによるキャラクターおせち「ゴジラおせち2027」の予約受付が開始された。2027年に公開25周年を迎える『ゴジラ×メカゴジラ』（2002）をメインモチーフに、メカゴジラをはじめゴジラや東宝怪獣が満載のおせちとなる。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923916.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-26T08:54:25.401Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/26/102380.html",
+      "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
@@ -71,19 +313,18 @@
             "voice-actor",
             "movie"
           ],
-          "title": "「夏目友人帳」が1位に！夏休み明けの疲れた心をチャージする“メンパ爆上げマンガ”といえば？ コミックシーモアが調査☆",
-          "url": "https://animeanime.jp/article/2026/08/26/102383.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/08/26/102383.html",
+          "title": "「ゴジラ」おせち襲来!! 27年は「×メカゴジラ」モチーフ！ゴジラの足跡“練切”やモスラ“テリーヌ”で表現　重箱・特典も目白押し",
+          "url": "https://animeanime.jp/article/2026/08/26/102380.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/26/102380.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923871.jpg"
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923916.jpg"
         }
       ],
-      "whatHappened": "「夏目友人帳」が1位に",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "whatHappened": "「ゴジラ」おせち襲来",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": [
-        "ガジェット好き",
         "漫画・アニメ好き"
       ]
     },
@@ -108,7 +349,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/991/G999110/20260826043/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-26T07:52:50.221Z",
+      "capturedAt": "2026-08-26T08:54:25.401Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/991/G999110/20260826043/",
@@ -168,7 +409,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923508.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-26T07:52:50.221Z",
+      "capturedAt": "2026-08-26T08:54:25.401Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/08/25/102357.html",
@@ -229,7 +470,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923717.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-26T07:52:50.221Z",
+      "capturedAt": "2026-08-26T08:54:25.401Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/08/26/102376.html",
@@ -289,7 +530,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/036/G103604/20260825038/SS/008.png",
       "publishedAt": null,
-      "capturedAt": "2026-08-26T07:52:50.221Z",
+      "capturedAt": "2026-08-26T08:54:25.401Z",
       "time": "直近",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/036/G103604/20260825038/",
@@ -350,7 +591,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771997.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-26T07:52:50.221Z",
+      "capturedAt": "2026-08-26T08:54:25.401Z",
       "time": "直近",
       "sourceName": "INSIDE",
       "sourceUrl": "https://www.inside-games.jp/article/2026/08/26/186758.html",
@@ -388,244 +629,6 @@
         "ポケモンユーザー",
         "ゲームユーザー",
         "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-entertainment-名探偵コナン-バック・トゥ・ザ・フューチャー-one-piece-ジュラシック・パーク-など夢のコラボグッズが登場-ユニバーサル・スタジオ・ジャパン25周年-animeanime.jp/article/2026/08/25/102373.html",
-      "title": "「名探偵コナン」× 「バック・トゥ・ザ・フューチャー」、「ONE PIECE」×「ジュラシック・パーク」など夢のコラボグッズが登場！ ユニバーサル・スタジオ・ジャパン25周年！",
-      "summary": "ユニバーサル・スタジオ・ジャパンの開業25周年を記念し、人気アニメ作品とパークを代表するアトラクションがコラボレーションしたスペシャル・グッズがこの秋に登場する。",
-      "briefSummary": "TVアニメ『ONE PIECE』は2007年以降、夏の一大イベントとして、圧倒的なスケールとクオリティで作品の世界観をリアルに再現。麦わらの一味の仲間と一緒に冒険をしているかのような超興奮体験で、多くのゲストを熱狂の渦に巻き込んできた。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923664.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-26T07:52:50.221Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/08/25/102373.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "「名探偵コナン」× 「バック・トゥ・ザ・フューチャー」、「ONE PIECE」×「ジュラシック・パーク」など夢のコラボグッズが登場！ ユニバーサル・スタジオ・ジャパン25周年！",
-          "url": "https://animeanime.jp/article/2026/08/25/102373.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/08/25/102373.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923664.jpg"
-        }
-      ],
-      "whatHappened": "「名探偵コナン」× 「バック・トゥ・ザ・フューチャー」、「ONE PIECE」×「ジュラシッ…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-adult-水着-キャラといえば-3位-着せ恋-喜多川海夢-1位は-水着が普段着-のヒロイン2人が同率に-女性キャラ編-26年版-animeanime.jp/article/2026/08/25/102364.html",
-      "title": "“水着”キャラといえば？ 3位「着せ恋」喜多川海夢、1位は“水着が普段着”のヒロイン2人が同率に！ 【女性キャラ編】 ＜26年版＞",
-      "summary": "「 “水着”キャラといえば？ 3位「着せ恋」喜多川海夢、1位は“水着が普段着”のヒロイン2人が同率に！ 【女性キャラ編】 ＜26年版＞ 」に一致する記事は見つかりませんでした。",
-      "briefSummary": "「 “水着”キャラといえば？ 3位「着せ恋」喜多川海夢、1位は“水着が普段着”のヒロイン2人が同率に！ 【女性キャラ編】 ＜26年版＞ 」に一致する記事は見つかりませんでした。",
-      "category": "adult",
-      "categories": [
-        "adult",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "アダルト系",
-      "categoryLabels": [
-        "アダルト系",
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/919248.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-26T07:52:50.221Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/08/25/102364.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "“水着”キャラといえば？ 3位「着せ恋」喜多川海夢、1位は“水着が普段着”のヒロイン2人が同率に！ 【女性キャラ編】 ＜26年版＞",
-          "url": "https://animeanime.jp/article/2026/08/25/102364.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/08/25/102364.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/919248.jpg"
-        }
-      ],
-      "whatHappened": "“水着”キャラといえば",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-games-hoyoverseの新作スローライフゲーム-プチプラネット-は2026年冬リリース-ファイナル-テストを近日実施予定-4gamer.net/games/948/g094822/20260826002",
-      "title": "HoYoverseの新作スローライフゲーム「プチプラネット」は2026年冬リリース。ファイナルβテストを近日実施予定",
-      "summary": "HoYoverseは，本日（2026年8月26日）配信されたgamescomOpeningNightLive2026で，開発中の新作「プチプラネット」を2026年冬…",
-      "briefSummary": "HoYoverseは，本日（2026年8月26日）配信されたgamescomOpeningNightLive2026で，開発中の新作「プチプラネット」を2026年冬にリリースすると発表した。また，本作のファイナルβテストが近日実施予定である…",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/948/G094822/20260826002/SS/002.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-26T07:52:50.221Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/948/G094822/20260826002/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "HoYoverseの新作スローライフゲーム「プチプラネット」は2026年冬リリース。ファイナルβテストを近日実施予定",
-          "url": "https://www.4gamer.net/games/948/G094822/20260826002/",
-          "canonicalUrl": "https://www.4gamer.net/games/948/G094822/20260826002/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/948/G094822/20260826002/SS/002.jpg"
-        }
-      ],
-      "whatHappened": "HoYoverseの新作スローライフゲーム「プチプラネット」は2026年冬リリース",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-ff7-リベレーション-星の守護者-ウェポン-との戦いを描く2ndトレイラー-装い新たなルビーウェポン-アルテマウェポンらの姿を見よ-inside-games.jp/article/2026/08/26/186760.html",
-      "title": "『FF7 リベレーション』星の守護者“ウェポン”との戦いを描く2ndトレイラー！装い新たなルビーウェポン、アルテマウェポンらの姿を見よ",
-      "summary": "「gamescom 2026」にて『ファイナルファンタジー7 リベレーション』の最新映像「2ndトレーラー｜星の守護者」が公開！",
-      "briefSummary": "2ndトレイラー「星の守護者」では、世界滅亡の脅威に呼応して目覚めた強敵 「星の守護者（ウェポン）」 との戦いにフォーカス。ルビーウェポン、エメラルドウェポン、アルテマウェポンなど、リメイクで装い新たに描かれるウェポンたちの姿は必見です。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1772010.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-26T07:52:50.221Z",
-      "time": "直近",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/08/26/186760.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch",
-            "pokemon"
-          ],
-          "title": "『FF7 リベレーション』星の守護者“ウェポン”との戦いを描く2ndトレイラー！装い新たなルビーウェポン、アルテマウェポンらの姿を見よ",
-          "url": "https://www.inside-games.jp/article/2026/08/26/186760.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/08/26/186760.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1772010.jpg"
-        }
-      ],
-      "whatHappened": "『FF7 リベレーション』星の守護者“ウェポン”との戦いを描く2ndトレイラー",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー"
       ]
     }
   ]

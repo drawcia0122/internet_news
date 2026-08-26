@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-26T07:04:27.857Z",
+  "generatedAt": "2026-08-26T07:55:46.312Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-4",
-  "selectedTitle": "KLabのAI VTuber「ゆめみなな」オリジナル楽曲のMVが3作連続で100万再生を突破",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "Nintendo Switch 2 / Switchセールに約200本追加。『ロックマン11』が478円、『ライドウ』リマスターや『ガンダムブレイカー4』など最安値級もいろいろ",
   "candidates": [
     {
-      "clusterId": "today-cluster-4",
+      "clusterId": "today-cluster-13",
       "title": "KLabのAI VTuber「ゆめみなな」オリジナル楽曲のMVが3作連続で100万再生を突破",
       "category": "entertainment",
       "categories": [
@@ -14,8 +14,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 77.6,
-      "confidence": 0.48,
+      "buzzScore": 73.1,
+      "confidence": 0.44,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -30,8 +30,8 @@
         "internetNativeBoost": 8,
         "search": 6,
         "social": 7,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-120",
+      "clusterId": "today-cluster-121",
       "title": "巨大化ネコと少女の美麗旅ゲーム『Ylem's Cat』は「ほぼ全員ネコを飼ってる開発チーム」が放つ、ネコの手借りまくりゲーム。目指すのは『The Outer Wilds』の“あの感覚”",
       "category": "games",
       "categories": [
@@ -108,7 +108,57 @@
       ]
     },
     {
-      "clusterId": "today-cluster-801",
+      "clusterId": "today-cluster-1",
+      "title": "Nintendo Switch 2 / Switchセールに約200本追加。『ロックマン11』が478円、『ライドウ』リマスターや『ガンダムブレイカー4』など最安値級もいろいろ",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 65.5,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 4.2,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 32.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-925",
       "title": "元ヤクルト古田敦也さん、いじめ受けて野球を諦めかけた中学時代「胸を張って逃げて」　＃しんどい君へ",
       "category": "sports",
       "categories": [
@@ -159,57 +209,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-47",
-      "title": "『Hearts of Iron IV』開発元の新作ゲーム『Afterworld』が発表！Steamストアページが公開、マルチプレイ対戦・協力プレイに対応",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.7,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.9,
-        "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 48.9,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-378",
+      "clusterId": "today-cluster-379",
       "title": "オードリー・タンが警鐘　AIを「親友」にしてはいけない",
       "category": "tech",
       "categories": [

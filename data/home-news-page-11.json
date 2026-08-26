@@ -1,54 +1,112 @@
 {
-  "generatedAt": "2026-08-26T01:50:51.082Z",
+  "generatedAt": "2026-08-26T03:13:24.964Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
     "general": 0,
-    "tech": 10,
+    "tech": 8,
     "business": 1,
-    "politics": 1,
-    "entertainment": 80,
-    "anime": 19,
-    "games": 153,
+    "politics": 0,
+    "entertainment": 83,
+    "anime": 16,
+    "games": 157,
     "game-features": 1,
     "anime-features": 0,
-    "manga": 50,
+    "manga": 46,
     "books": 1,
     "sports": 2,
     "net-culture": 0,
     "matome": 0,
     "crime": 0,
     "adult": 4,
-    "world": 5
+    "world": 6
   },
   "hasMore": true,
   "nextPage": 12,
   "items": [
     {
-      "id": "auto-games-ルーンファクトリー6-の映像が公開に-モコモコの行く先は巨大な都市-公式コミック-モコビ-の20周年記念ストーリーも連載決定-4gamer.net/games/710/g071013/20260825021",
-      "title": "「ルーンファクトリー6」の映像が公開に。モコモコの行く先は巨大な都市。公式コミック「モコビ」の20周年記念ストーリーも連載決定",
-      "summary": "マーベラスは2026年8月24日，「『牧場物語』シリーズ30周年＆『ルーンファクトリー』シリーズ20周年記念スペシャル生放送」で，「ルーンファクトリー」シリーズ最新…",
-      "briefSummary": "マーベラスは2026年8月24日，「『牧場物語』シリーズ30周年＆『ルーンファクトリー』シリーズ20周年記念スペシャル生放送」で，「ルーンファクトリー」シリーズ最新作「ルーンファクトリー6」の映像を公開した。",
+      "id": "auto-games-ハリー・ポッター-ホグワーツ特急のポップコーンボックスが-tohoシネマズで発売-水を入れると蒸気が出る特別仕様-inside-games.jp/article/2026/08/25/186738.html",
+      "title": "「ハリー・ポッター」ホグワーツ特急のポップコーンボックスが、TOHOシネマズで発売！水を入れると蒸気が出る特別仕様",
+      "summary": "「ハリー・ポッターと賢者の石」の公開25周年を記念して、「ホグワーツ特急ポップコーンボックス」が8月26日よりTOHOシネマズ各劇場、ECサイトにて発売！",
+      "briefSummary": "価格は9,800円（税込）。8月26日の各劇場オープン時より数量限定販売されるほか、TOHOシネマズ公式ECサイトでも同日より取り扱われます（※ECサイトでの販売にはポップコーンは付きません）。販売劇場の一覧は TOHOシネマズ公式サイト をご確認ください。",
       "category": "games",
       "categories": [
         "games",
-        "manga",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1768071.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-26T03:13:24.964Z",
+      "time": "直近",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/08/25/186738.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch",
+            "pokemon"
+          ],
+          "title": "「ハリー・ポッター」ホグワーツ特急のポップコーンボックスが、TOHOシネマズで発売！水を入れると蒸気が出る特別仕様",
+          "url": "https://www.inside-games.jp/article/2026/08/25/186738.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/08/25/186738.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1768071.jpg"
+        }
+      ],
+      "whatHappened": "「ハリー・ポッター」ホグワーツ特急のポップコーンボックスが、TOHOシネマズで発売",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ポケモンユーザー",
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-games-namco-legendary-mountains-対戦機能を追加するver1-2-0を本日配信-スコアアタックとボクセルレースの2モードを実装-4gamer.net/games/007/g100735/20260825028",
+      "title": "「NAMCO LEGENDARY Mountains」，対戦機能を追加するVer1.2.0を本日配信。スコアアタックとボクセルレースの2モードを実装",
+      "summary": "ビサイドは本日，3Dパズル「NAMCOLEGENDARYMountains」の大型アップデートVer1.2.0を配信した。新たに対戦機能を追加し，制限時間内のスコア…",
+      "briefSummary": "ビサイドは本日，3Dパズル「NAMCO LEGENDARY Mountains」の大型アップデートVer1.2.0を配信した。新たに対戦機能を追加し，制限時間内のスコアを競う「スコアアタック」と，相手より早く，いちばん大きなボクセルを作る「ボクセルレース」を実装。1人での練習プレイにも対応する。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
         "general"
       ],
       "categoryLabel": "ゲーム",
       "categoryLabels": [
         "ゲーム",
-        "漫画"
+        "エンタメ"
       ],
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/710/G071013/20260825021/SS/007.jpg",
+      "thumbnailUrl": "https://www.4gamer.net/games/007/G100735/20260825028/SS/002.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-26T01:50:51.082Z",
+      "capturedAt": "2026-08-26T03:13:24.964Z",
       "time": "直近",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/710/G071013/20260825021/",
+      "sourceUrl": "https://www.4gamer.net/games/007/G100735/20260825028/",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -68,250 +126,15 @@
             "console",
             "steam"
           ],
-          "title": "「ルーンファクトリー6」の映像が公開に。モコモコの行く先は巨大な都市。公式コミック「モコビ」の20周年記念ストーリーも連載決定",
-          "url": "https://www.4gamer.net/games/710/G071013/20260825021/",
-          "canonicalUrl": "https://www.4gamer.net/games/710/G071013/20260825021/",
+          "title": "「NAMCO LEGENDARY Mountains」，対戦機能を追加するVer1.2.0を本日配信。スコアアタックとボクセルレースの2モードを実装",
+          "url": "https://www.4gamer.net/games/007/G100735/20260825028/",
+          "canonicalUrl": "https://www.4gamer.net/games/007/G100735/20260825028/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/710/G071013/20260825021/SS/007.jpg"
+          "thumbnailUrl": "https://www.4gamer.net/games/007/G100735/20260825028/SS/002.jpg"
         }
       ],
-      "whatHappened": "「ルーンファクトリー6」の映像が公開に",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き",
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-games-しまむらで-ちいかわ-アパレルが8月26日発売-毛量が増えた-くりまんじゅう-のルームウェア-寝具類やスリッパなどのグッズも-inside-games.jp/article/2026/08/25/186731.html",
-      "title": "しまむらで「ちいかわ」アパレルが8月26日発売！毛量が増えた「くりまんじゅう」のルームウェア、寝具類やスリッパなどのグッズも",
-      "summary": "しまむらにて、「ちいかわ」グッズが8月26日より発売！同日17時よりしまむらパーク（オンラインストア）でも取り扱われます。",
-      "briefSummary": "しまむらにて、「ちいかわ」グッズが8月26日より発売！同日17時よりしまむらパーク（オンラインストア）でも取り扱われます。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771832.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-26T01:50:51.082Z",
-      "time": "直近",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/08/25/186731.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch",
-            "pokemon"
-          ],
-          "title": "しまむらで「ちいかわ」アパレルが8月26日発売！毛量が増えた「くりまんじゅう」のルームウェア、寝具類やスリッパなどのグッズも",
-          "url": "https://www.inside-games.jp/article/2026/08/25/186731.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/08/25/186731.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771832.jpg"
-        }
-      ],
-      "whatHappened": "しまむらで「ちいかわ」アパレルが8月26日発売",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-遊-戯-王デュエルモンスターズ-千年アイテムがミニフィギュアに-千年パズル-ミレニアム・アイなど全7種発売へ-inside-games.jp/article/2026/08/25/186730.html",
-      "title": "「遊☆戯☆王デュエルモンスターズ」千年アイテムがミニフィギュアに！千年パズル、ミレニアム・アイなど全7種発売へ",
-      "summary": "「遊☆戯☆王デュエルモンスターズ」とコラボした千年アイテムのミニフィギュア全7種が予約受付中。",
-      "briefSummary": "今回登場するのは、「遊☆戯☆王デュエルモンスターズ」に登場する千年アイテムを再現したミニフィギュアです。 千年パズル、千年リング、千年眼（ミレニアム・アイ）、千年ロッド、千年タウク、千年錠、千年秤 の全7種類がラインナップ。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771788.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-26T01:50:51.082Z",
-      "time": "直近",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/08/25/186730.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch",
-            "pokemon"
-          ],
-          "title": "「遊☆戯☆王デュエルモンスターズ」千年アイテムがミニフィギュアに！千年パズル、ミレニアム・アイなど全7種発売へ",
-          "url": "https://www.inside-games.jp/article/2026/08/25/186730.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/08/25/186730.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771788.jpg"
-        }
-      ],
-      "whatHappened": "「遊☆戯☆王デュエルモンスターズ」千年アイテムがミニフィギュアに",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-いちごみるく-なポチャッコ-マイメロディたちが可愛い-コップのフチにちょこんとのる-putitto-サンリオキャラクターズ-がカプセルトイにて発売-inside-games.jp/article/2026/08/25/186729.html",
-      "title": "“いちごみるく”なポチャッコ、マイメロディたちが可愛い！コップのフチにちょこんとのる「PUTITTO サンリオキャラクターズ」がカプセルトイにて発売",
-      "summary": "「PUTITTO サンリオキャラクターズ いちごみるくなフロッキー」が全国のカプセルトイ売場で順次発売！",
-      "briefSummary": "「PUTITTO サンリオキャラクターズ いちごみるくなフロッキー」の価格は1回400円（税込）で、本日8月25日より全国のカプセルトイ売場で順次発売。詳細は キタンクラブ商品ページ をご確認ください。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771721.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-26T01:50:51.082Z",
-      "time": "直近",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/08/25/186729.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch",
-            "pokemon"
-          ],
-          "title": "“いちごみるく”なポチャッコ、マイメロディたちが可愛い！コップのフチにちょこんとのる「PUTITTO サンリオキャラクターズ」がカプセルトイにて発売",
-          "url": "https://www.inside-games.jp/article/2026/08/25/186729.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/08/25/186729.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771721.jpg"
-        }
-      ],
-      "whatHappened": "“いちごみるく”なポチャッコ、マイメロディたちが可愛い",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-tech-アズールプロミリア-事前登録者数がグローバルで2000万人を突破-app-storeとgoogle-playでの事前登録も可能に-4gamer.net/games/784/g078489/20260825025",
-      "title": "「アズールプロミリア」，事前登録者数がグローバルで2000万人を突破。App StoreとGoogle Playでの事前登録も可能に",
-      "summary": "Yostarは本日（2026年8月25日），ManjuuGamesと共同パブリッシングするスマホ＆PC向け新作タイトル「アズールプロミリア」の事前登録者数が，グロー…",
-      "briefSummary": "Yostarは本日（2026年8月25日），Manjuu Gamesと共同パブリッシングするスマホ＆PC向け新作タイトル「アズールプロミリア」の事前登録者数が，グローバルで2000万人を突破したことを発表した。また，App StoreとGoogle Playでの事前登録受付もスタートした。",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "games",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/784/G078489/20260825025/SS/001.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-26T01:50:51.082Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/784/G078489/20260825025/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "「アズールプロミリア」，事前登録者数がグローバルで2000万人を突破。App StoreとGoogle Playでの事前登録も可能に",
-          "url": "https://www.4gamer.net/games/784/G078489/20260825025/",
-          "canonicalUrl": "https://www.4gamer.net/games/784/G078489/20260825025/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/784/G078489/20260825025/SS/001.jpg"
-        }
-      ],
-      "whatHappened": "「アズールプロミリア」，事前登録者数がグローバルで2000万人を突破",
+      "whatHappened": "「NAMCO LEGENDARY Mountains」，対戦機能を追加するVer1.2.0を…",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -320,10 +143,70 @@
       ]
     },
     {
-      "id": "auto-games-ダンバインより-hg-1-72-バストール-が完全新規造形でプラモ化-鳥類や昆虫のような形状を最新フォーマットで再現-inside-games.jp/article/2026/08/25/186737.html",
-      "title": "ダンバインより「HG 1/72 バストール」が完全新規造形でプラモ化！鳥類や昆虫のような形状を最新フォーマットで再現",
-      "summary": "BANDAI SPIRITS ホビー事業部は、 「HG 1/72 バストール」 の商品化を発表しました。",
-      "briefSummary": "BANDAI SPIRITS ホビー事業部は、 「HG 1/72 バストール」 の商品化を発表しました。",
+      "id": "auto-games-映画-8番出口-が8月28日の-金曜ロードショー-で地上波初放送-興行収入51億円を記録したサバイバルムービーをノーカットで見られる-4gamer.net/games/751/g075133/20260825034",
+      "title": "映画「8番出口」が8月28日の「金曜ロードショー」で地上波初放送。興行収入51億円を記録したサバイバルムービーをノーカットで見られる",
+      "summary": "日本テレビは，2026年8月28日21：00に放送する「金曜ロードショー」で映画「8番出口」を地上波初放送すると発表した。本作は，2023年11月29日にリリースさ…",
+      "briefSummary": "日本テレビは，2026年8月28日21：00に放送する「金曜ロードショー」で映画「8番出口」を地上波初放送すると発表した。本作は，2023年11月29日にリリースされた同名のゲームを原作とする実写映画だ。興行収入51億円を超える作品で，今回…",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/751/G075133/20260825034/SS/001.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-26T03:13:24.964Z",
+      "time": "直近",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/751/G075133/20260825034/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "映画「8番出口」が8月28日の「金曜ロードショー」で地上波初放送。興行収入51億円を記録したサバイバルムービーをノーカットで見られる",
+          "url": "https://www.4gamer.net/games/751/G075133/20260825034/",
+          "canonicalUrl": "https://www.4gamer.net/games/751/G075133/20260825034/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/751/G075133/20260825034/SS/001.jpg"
+        }
+      ],
+      "whatHappened": "映画「8番出口」が8月28日の「金曜ロードショー」で地上波初放送",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-ドラクエ-40周年記念くじがオンライン販売決定-ルーラ-が鳴るサウンドブロック-歴代勇者-スライムのフィギュアなど-シリーズを振り返る景品盛りだくさん-inside-games.jp/article/2026/08/25/186743.html",
+      "title": "『ドラクエ』40周年記念くじがオンライン販売決定！「ルーラ」が鳴るサウンドブロック、歴代勇者＆スライムのフィギュアなど、シリーズを振り返る景品盛りだくさん",
+      "summary": "オンラインくじ商品をPCやスマホから購入できる「e-STOREくじ」にて、「ドラゴンクエストふくびき所スペシャル～40年目の旅立ち～」が9月1日12時より発売！",
+      "briefSummary": "B賞は『ドラクエ』ロゴをモチーフにしたロゴ型ライト。C賞はドアなどに仕掛けられるサウンドブロックで、「階段」「ルーラ」「旅の扉」を収録。F～G賞の歴代勇者デフォルメフィギュアは、それぞれに「スライム」のフィギュアがセットになっています。",
       "category": "games",
       "categories": [
         "games",
@@ -336,12 +219,12 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771858.jpg",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771888.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-26T01:50:51.082Z",
+      "capturedAt": "2026-08-26T03:13:24.964Z",
       "time": "直近",
       "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/08/25/186737.html",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/08/25/186743.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -361,15 +244,15 @@
             "switch",
             "pokemon"
           ],
-          "title": "ダンバインより「HG 1/72 バストール」が完全新規造形でプラモ化！鳥類や昆虫のような形状を最新フォーマットで再現",
-          "url": "https://www.inside-games.jp/article/2026/08/25/186737.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/08/25/186737.html",
+          "title": "『ドラクエ』40周年記念くじがオンライン販売決定！「ルーラ」が鳴るサウンドブロック、歴代勇者＆スライムのフィギュアなど、シリーズを振り返る景品盛りだくさん",
+          "url": "https://www.inside-games.jp/article/2026/08/25/186743.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/08/25/186743.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771858.jpg"
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771888.jpg"
         }
       ],
-      "whatHappened": "ダンバインより「HG 1/72 バストール」が完全新規造形でプラモ化",
+      "whatHappened": "『ドラクエ』40周年記念くじがオンライン販売決定",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -378,10 +261,10 @@
       ]
     },
     {
-      "id": "auto-games-vtuber-名取さな-いらすとや-コラボグッズが登場-お馴染みナース服-デビル-キョンシーなどの衣装が可愛い-inside-games.jp/article/2026/08/25/186736.html",
-      "title": "VTuber「名取さな」×「いらすとや」コラボグッズが登場！お馴染みナース服、デビル、キョンシーなどの衣装が可愛い",
-      "summary": "バーチャルYouTuber「名取さな」さんと、フリー素材サイト「いらすとや」がコラボ！",
-      "briefSummary": "A3は、VTuber 「名取さな」 さんとフリー素材サイト「いらすとや」のコラボグッズを通販サイト「eeo Store online」にて販売中です。",
+      "id": "auto-games-モンハンワイルズ-より-リオレウス-アルシュベルド-装備のプラモが登場-スリンガーやスラッシュアックスなど展開可能-inside-games.jp/article/2026/08/25/186741.html",
+      "title": "『モンハンワイルズ』より、「リオレウス」「アルシュベルド」装備のプラモが登場！スリンガーやスラッシュアックスなど展開可能",
+      "summary": "『モンスターハンターワイルズ』より、リオレウス/アルシュベルド装備のハンタープラモデルが2027年3月に発売！",
+      "briefSummary": "『モンスターハンターワイルズ』より、リオレウス/アルシュベルド装備のハンタープラモデルが2027年3月に発売！",
       "category": "games",
       "categories": [
         "games",
@@ -394,71 +277,12 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771808.jpg",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771848.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-26T01:50:51.082Z",
+      "capturedAt": "2026-08-26T03:13:24.964Z",
       "time": "直近",
       "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/08/25/186736.html",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch",
-            "pokemon"
-          ],
-          "title": "VTuber「名取さな」×「いらすとや」コラボグッズが登場！お馴染みナース服、デビル、キョンシーなどの衣装が可愛い",
-          "url": "https://www.inside-games.jp/article/2026/08/25/186736.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/08/25/186736.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771808.jpg"
-        }
-      ],
-      "whatHappened": "VTuber「名取さな」×「いらすとや」コラボグッズが登場",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-アストラエ・オラティオ-またまた-癖-すぎる-新キャラ-灰原望乃-が公開ー今度はストレスまみれの准看護師-ステッカー集めが好きな-文京の薔薇-メンバー-inside-games.jp/article/2026/08/25/186735.html",
-      "title": "『アストラエ・オラティオ』またまた“癖”すぎる…新キャラ「灰原望乃」が公開ー今度はストレスまみれの准看護師、ステッカー集めが好きな「文京の薔薇」メンバー",
-      "summary": "アストラエ・オラティオ新キャラ灰原望乃公開。慢性疲労の准看護師、文京の薔薇所属。CBT募集8/19-9/21、89年東京が舞台。",
-      "briefSummary": "今回『アストラエ・オラティオ』の公式Xにて、クラン「文京の薔薇」の「灰原望乃」がお披露目されました。紹介文によれば「とある療養型病院で働いている准看護師」であるとのこと。過酷な業務のために「常に慢性疲労とストレス」に苛まれているようで、地雷系のような見た目も相まって何かしらの“危うさ”を感じさせます。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771853.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-08-26T01:50:51.082Z",
-      "time": "直近",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/08/25/186735.html",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/08/25/186741.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -478,15 +302,15 @@
             "switch",
             "pokemon"
           ],
-          "title": "『アストラエ・オラティオ』またまた“癖”すぎる…新キャラ「灰原望乃」が公開ー今度はストレスまみれの准看護師、ステッカー集めが好きな「文京の薔薇」メンバー",
-          "url": "https://www.inside-games.jp/article/2026/08/25/186735.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/08/25/186735.html",
+          "title": "『モンハンワイルズ』より、「リオレウス」「アルシュベルド」装備のプラモが登場！スリンガーやスラッシュアックスなど展開可能",
+          "url": "https://www.inside-games.jp/article/2026/08/25/186741.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/08/25/186741.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771853.jpg"
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1771848.jpg"
         }
       ],
-      "whatHappened": "『アストラエ・オラティオ』またまた“癖”すぎる…新キャラ「灰原望乃」が公開ー今度はストレスま…",
+      "whatHappened": "『モンハンワイルズ』より、「リオレウス」「アルシュベルド」装備のプラモが登場",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -495,10 +319,10 @@
       ]
     },
     {
-      "id": "auto-entertainment-さくらが応援してくれる-カードキャプターさくら-タニタ-コラボ商品が登場-さくらの音声でナビする体組成計-タイマーなど全3種を予約受付中-animeanime.jp/article/2026/08/25/102361.html",
-      "title": "さくらが応援してくれる♪ 「カードキャプターさくら」×タニタ、コラボ商品が登場！ さくらの音声でナビする体組成計＆タイマーなど全3種を予約受付中",
-      "summary": "『カードキャプターさくら』より、タニタとのコラボレーション商品が登場。木之本桜の音声でナビゲーションする通信機能付き音声体組成計や音声タイマー、デジタルクッキングスケールの全3商品が、2026年8月25日から予約を受け付けている。",
-      "briefSummary": "『カードキャプターさくら』より、タニタとのコラボレーション商品が登場。木之本桜の音声でナビゲーションする通信機能付き音声体組成計や音声タイマー、デジタルクッキングスケールの全3商品が、2026年8月25日から予約を受け付けている。",
+      "id": "auto-entertainment-マレフィセント-アースラが100均グッズに-ディズニーヴィランズ-のグッズがキャンドゥに登場-アトマイザー-アクセサリーケース-キーホルダーなど全37品-animeanime.jp/article/2026/08/25/102369.html",
+      "title": "マレフィセント、アースラが100均グッズに♪ 「ディズニーヴィランズ」のグッズがキャンドゥに登場！ アトマイザー、アクセサリーケース、キーホルダーなど全37品",
+      "summary": "ディズニー映画に美しき影を添え、ストーリーに欠かすことのできない「ディズニーヴィランズ」モチーフのシリーズが、キャンドゥに登場した。",
+      "briefSummary": "ディズニー映画に美しき影を添え、ストーリーに欠かすことのできない「ディズニーヴィランズ」モチーフのシリーズが、キャンドゥに登場した。",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -513,12 +337,12 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923613.jpg",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923653.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-26T01:50:51.082Z",
+      "capturedAt": "2026-08-26T03:13:24.964Z",
       "time": "直近",
       "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/08/25/102361.html",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/25/102369.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -538,15 +362,74 @@
             "voice-actor",
             "movie"
           ],
-          "title": "さくらが応援してくれる♪ 「カードキャプターさくら」×タニタ、コラボ商品が登場！ さくらの音声でナビする体組成計＆タイマーなど全3種を予約受付中",
-          "url": "https://animeanime.jp/article/2026/08/25/102361.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/08/25/102361.html",
+          "title": "マレフィセント、アースラが100均グッズに♪ 「ディズニーヴィランズ」のグッズがキャンドゥに登場！ アトマイザー、アクセサリーケース、キーホルダーなど全37品",
+          "url": "https://animeanime.jp/article/2026/08/25/102369.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/25/102369.html",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923613.jpg"
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923653.jpg"
         }
       ],
-      "whatHappened": "さくらが応援してくれる♪ 「カードキャプターさくら」×タニタ、コラボ商品が登場",
+      "whatHappened": "マレフィセント、アースラが100均グッズに♪ 「ディズニーヴィランズ」のグッズがキャンドゥに…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-モンチッチ-riendaコラボ第3弾-riendaがデザイン監修の-ベビチッチ-シリーズよりルームウェア-ポーチなどが発売-animeanime.jp/article/2026/08/25/102367.html",
+      "title": "モンチッチ×riendaコラボ第3弾！ riendaがデザイン監修の「ベビチッチ」シリーズよりルームウェア、ポーチなどが発売",
+      "summary": "ベビチッチとファッションブランド rienda(リエンダ)のコラボレーションアイテムが、2026年9月18日(金)よりrienda全店舗・SHEL&#039;TTER WEBSTORE・ZOZOTOWNにて発売される。",
+      "briefSummary": "今回のコラボレーションでは、riendaがデザイン監修を務めた「ベビチッチ」を用いたルームウェアやレッグウォーマー、ヘアクリップ、ポーチ、トートBAG、ヘアバンド、チャームの全9型が発売される。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923579.webp",
+      "publishedAt": null,
+      "capturedAt": "2026-08-26T03:13:24.964Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/25/102367.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "モンチッチ×riendaコラボ第3弾！ riendaがデザイン監修の「ベビチッチ」シリーズよりルームウェア、ポーチなどが発売",
+          "url": "https://animeanime.jp/article/2026/08/25/102367.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/25/102367.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923579.webp"
+        }
+      ],
+      "whatHappened": "モンチッチ×riendaコラボ第3弾",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -554,28 +437,92 @@
       ]
     },
     {
-      "id": "auto-games-マッチ棒で戦う小鳥が邪悪な女王に立ち向かうダークメルヘンadv-井戸の鳥-9月22日に発売決定-4gamer.net/games/995/g099511/20260825029",
-      "title": "マッチ棒で戦う小鳥が邪悪な女王に立ち向かうダークメルヘンADV「井戸の鳥」，9月22日に発売決定",
-      "summary": "個人開発者のKyleThompson氏は本日（2026年8月25日），「井戸の鳥」（WellDweller）を，9月22日にリリースすると発表した。本作は，邪悪な女…",
-      "briefSummary": "個人開発者のKyle Thompson氏は本日（2026年8月25日），「井戸の鳥」（Well Dweller）を，9月22日にリリースすると発表した。本作は，邪悪な女王が支配する崩壊した王国を舞台に，マッチ棒を手にした小鳥「グリマー」が，家族を救うために女王を討つ旅へ出るアクションアドベンチャーゲームだ。",
-      "category": "games",
+      "id": "auto-anime-ガンダム-ククルス・ドアンの島-逆襲のシャア-含む5作品が無料で見られる-bs12-日曜アニメ劇場-でシリーズ作品が放送-animeanime.jp/article/2026/08/25/102365.html",
+      "title": "「ガンダム」「ククルス・ドアンの島」「逆襲のシャア」含む5作品が無料で見られる！ BS12「日曜アニメ劇場」でシリーズ作品が放送",
+      "summary": "『機動戦士ガンダム』シリーズの作品が、全国無料放送のBS12 トゥエルビ「日曜アニメ劇場」にて放送中だ。8月30日には『機動戦士ガンダム ククルス・ドアンの島』の無料初放送を控え、9月以降は『機動戦士Zガンダム』劇場版3部作と『機動戦士ガンダム 逆襲のシャア』を届ける。",
+      "briefSummary": "『機動戦士ガンダム』シリーズの作品が、全国無料放送のBS12 トゥエルビ「日曜アニメ劇場」にて放送中だ。8月30日には『機動戦士ガンダム ククルス・ドアンの島』の無料初放送を控え、9月以降は『機動戦士Zガンダム』劇場版3部作と『機動戦士ガンダム 逆襲のシャア』を届ける。",
+      "category": "anime",
       "categories": [
-        "games",
+        "anime",
+        "entertainment",
+        "manga",
         "general"
       ],
-      "categoryLabel": "ゲーム",
+      "categoryLabel": "アニメ",
       "categoryLabels": [
-        "ゲーム"
+        "アニメ",
+        "エンタメ",
+        "漫画"
       ],
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/995/G099511/20260825029/SS/001.jpg",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923529.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-08-26T01:50:51.082Z",
+      "capturedAt": "2026-08-26T03:13:24.964Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/08/25/102365.html",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「ガンダム」「ククルス・ドアンの島」「逆襲のシャア」含む5作品が無料で見られる！ BS12「日曜アニメ劇場」でシリーズ作品が放送",
+          "url": "https://animeanime.jp/article/2026/08/25/102365.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/08/25/102365.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/923529.jpg"
+        }
+      ],
+      "whatHappened": "「ガンダム」「ククルス・ドアンの島」「逆襲のシャア」含む5作品が無料で見られる",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-コンソールアーカイブス-バブルボブル-8月26日に配信決定-1988年にタイトーから発売されたアクションゲーム-4gamer.net/games/035/g103578/20260825017",
+      "title": "「コンソールアーカイブス バブルボブル」，8月26日に配信決定。1988年にタイトーから発売されたアクションゲーム",
+      "summary": "ハムスターは本日，「コンソールアーカイブスバブルボブル」を2026年8月26日に配信すると発表した。「バブルボブル」は，1988年にタイトーから発売されたアクション…",
+      "briefSummary": "ハムスターは本日，「コンソールアーカイブスバブルボブル」を2026年8月26日に配信すると発表した。「バブルボブル」は，1988年にタイトーから発売されたアクションゲームだ。さらわれたベティーちゃんとパティーちゃんを救うため，バブルンとボブ…",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/035/G103578/20260825017/SS/003.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-26T03:13:24.964Z",
       "time": "直近",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/995/G099511/20260825029/",
+      "sourceUrl": "https://www.4gamer.net/games/035/G103578/20260825017/",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -595,15 +542,73 @@
             "console",
             "steam"
           ],
-          "title": "マッチ棒で戦う小鳥が邪悪な女王に立ち向かうダークメルヘンADV「井戸の鳥」，9月22日に発売決定",
-          "url": "https://www.4gamer.net/games/995/G099511/20260825029/",
-          "canonicalUrl": "https://www.4gamer.net/games/995/G099511/20260825029/",
+          "title": "「コンソールアーカイブス バブルボブル」，8月26日に配信決定。1988年にタイトーから発売されたアクションゲーム",
+          "url": "https://www.4gamer.net/games/035/G103578/20260825017/",
+          "canonicalUrl": "https://www.4gamer.net/games/035/G103578/20260825017/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/995/G099511/20260825029/SS/001.jpg"
+          "thumbnailUrl": "https://www.4gamer.net/games/035/G103578/20260825017/SS/003.jpg"
         }
       ],
-      "whatHappened": "マッチ棒で戦う小鳥が邪悪な女王に立ち向かうダークメルヘンADV「井戸の鳥」，9月22日に発売…",
+      "whatHappened": "「コンソールアーカイブス バブルボブル」，8月26日に配信決定",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-kalanoro-カラノロ-9月24日に発売決定-主人公が自身の髪や武器を活用して戦うマダガスカル産アクションadv-4gamer.net/games/036/g103600/20260825035",
+      "title": "「Kalanoro（カラノロ）」，9月24日に発売決定。主人公が自身の髪や武器を活用して戦うマダガスカル産アクションADV",
+      "summary": "セガは2026年8月25日，マダガスカルを拠点とするRedRaketaStudioが手掛ける「Kalanoro（カラノロ）」を9月24日に発売すると発表した。本作は…",
+      "briefSummary": "セガは2026年8月25日，マダガスカルを拠点とするRedRaketaStudioが手掛ける「Kalanoro（カラノロ）」を9月24日に発売すると発表した。本作は，マダガスカルの民話と活気溢れるアートにインスパイアされた世界「レムリア」を…",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/036/G103600/20260825035/SS/001.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-08-26T03:13:24.964Z",
+      "time": "直近",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/036/G103600/20260825035/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "「Kalanoro（カラノロ）」，9月24日に発売決定。主人公が自身の髪や武器を活用して戦うマダガスカル産アクションADV",
+          "url": "https://www.4gamer.net/games/036/G103600/20260825035/",
+          "canonicalUrl": "https://www.4gamer.net/games/036/G103600/20260825035/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/036/G103600/20260825035/SS/001.jpg"
+        }
+      ],
+      "whatHappened": "「Kalanoro（カラノロ）」，9月24日に発売決定",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [

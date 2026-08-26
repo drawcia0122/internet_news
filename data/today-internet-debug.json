@@ -1,54 +1,57 @@
 {
-  "generatedAt": "2026-08-26T03:16:21.996Z",
+  "generatedAt": "2026-08-26T04:21:18.275Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-135",
-  "selectedTitle": "傑作アクションRPG『天地創造』リマスター版正式発表。スクエニ公認、クインテットの主要スタッフが携わり31年越しに蘇る",
+  "selectedClusterId": "today-cluster-382",
+  "selectedTitle": "「日本が圧力に負けるか世界が見ている」米制裁対象のICC赤根所長が訴え　高市総理は引き続き支援強調",
   "candidates": [
     {
-      "clusterId": "today-cluster-135",
-      "title": "傑作アクションRPG『天地創造』リマスター版正式発表。スクエニ公認、クインテットの主要スタッフが携わり31年越しに蘇る",
-      "category": "games",
+      "clusterId": "today-cluster-382",
+      "title": "「日本が圧力に負けるか世界が見ている」米制裁対象のICC赤根所長が訴え　高市総理は引き続き支援強調",
+      "category": "world",
       "categories": [
-        "games",
+        "world",
+        "politics",
         "sns",
-        "general",
-        "net-culture"
+        "net-culture",
+        "general"
       ],
-      "buzzScore": 69.7,
-      "confidence": 0.4,
+      "buzzScore": 72.6,
+      "confidence": 0.45,
       "articleCount": 2,
       "sourceCount": 2,
-      "uniqueDomainCount": 1,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 3.8,
-        "trend": 21.3,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 6.8,
-        "velocity": 0,
-        "freshness": 3.5,
+        "search": 10.7,
+        "social": 7.4,
+        "velocity": 2.7,
+        "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 14,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
+        "searchScore": 66.66666666666666,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 47.6,
-        "internalSocialScore": 53.5
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -56,7 +59,114 @@
       ]
     },
     {
-      "clusterId": "today-cluster-116",
+      "clusterId": "today-cluster-11",
+      "title": "“掃除×工場×経営”要素モリモリ・シミュレーションゲーム『スイスイ株式会社』本日8月26日正式リリース。集めたゴミを工場に持ち込んで加工、莫大な富を生み出す“スイスイ”ライフ",
+      "category": "games",
+      "categories": [
+        "games",
+        "game-features",
+        "net-culture",
+        "business",
+        "general",
+        "sports"
+      ],
+      "buzzScore": 71.6,
+      "confidence": 0.51,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 16.7,
+        "internetNativeBoost": 0,
+        "search": 5.4,
+        "social": 8.4,
+        "velocity": 8,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 12,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 76,
+        "internalSearchScore": 42.2,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-518",
+      "title": "元ヤクルト古田敦也さん、いじめ受けて野球を諦めかけた中学時代「胸を張って逃げて」　＃しんどい君へ",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 69.1,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 12,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-117",
       "title": "巨大化ネコと少女の美麗旅ゲーム『Ylem's Cat』は「ほぼ全員ネコを飼ってる開発チーム」が放つ、ネコの手借りまくりゲーム。目指すのは『The Outer Wilds』の“あの感覚”",
       "category": "games",
       "categories": [
@@ -107,57 +217,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1363",
-      "title": "HoYoverseの新作アクションゲーム『Nodusfall』が発表。ダークファンタジー調の重厚な世界観",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.8,
-      "confidence": 0.4,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 4.6,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-30",
+      "clusterId": "today-cluster-34",
       "title": "『Hearts of Iron IV』開発元の新作ゲーム『Afterworld』が発表！Steamストアページが公開、マルチプレイ対戦・協力プレイに対応",
       "category": "games",
       "categories": [
@@ -200,58 +260,6 @@
         "archiveHeatScore": 95,
         "internalSearchScore": 48.9,
         "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-373",
-      "title": "クリーチャー収集型オープンワールドRPG「アニモ」，9月16日にPC，PS5，XBOX Series X|S向けに配信決定。最新トレイラーを公開",
-      "category": "games",
-      "categories": [
-        "games",
-        "tech",
-        "entertainment",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 64.2,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

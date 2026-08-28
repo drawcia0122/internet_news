@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-28T11:15:01.025Z",
+  "generatedAt": "2026-08-28T21:32:26.489Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-60",
-  "selectedTitle": "NHK「ゲームゲノム」初期11本が配信決定 『デススト』『ペルソナ5』『バイオハザード』を読み解く",
+  "selectedClusterId": "today-cluster-6",
+  "selectedTitle": "アニメ『機動戦艦ナデシコ』テレビシリーズ放映30周年を記念したPVが公開。「ホシノ・ルリ（CV.南央美）」の「バカばっか」も聞ける",
   "candidates": [
     {
-      "clusterId": "today-cluster-60",
+      "clusterId": "today-cluster-94",
       "title": "NHK「ゲームゲノム」初期11本が配信決定 『デススト』『ペルソナ5』『バイオハザード』を読み解く",
       "category": "games",
       "categories": [
@@ -16,8 +16,8 @@
         "anime",
         "sns"
       ],
-      "buzzScore": 74.3,
-      "confidence": 0.45,
+      "buzzScore": 71.2,
+      "confidence": 0.43,
       "articleCount": 4,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -28,18 +28,18 @@
       "scoreBreakdown": {
         "coverage": 7.2,
         "sourceDiversity": 4.7,
-        "trend": 18.3,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.7,
+        "search": 5.5,
         "social": 8.4,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 10,
+        "searchScore": 11.666666666666666,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -49,8 +49,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -59,7 +59,62 @@
       ]
     },
     {
-      "clusterId": "today-cluster-329",
+      "clusterId": "today-cluster-6",
+      "title": "アニメ『機動戦艦ナデシコ』テレビシリーズ放映30周年を記念したPVが公開。「ホシノ・ルリ（CV.南央美）」の「バカばっか」も聞ける",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "entertainment",
+        "manga",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 65.4,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-274",
       "title": "「新劇場版 銀魂 -吉原大炎上-」の配信はどこで見れる？サブスクレンタル開始日とお得な視聴方法",
       "category": "anime",
       "categories": [
@@ -111,7 +166,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-371",
+      "clusterId": "today-cluster-728",
+      "title": "OpenAIの暴走AI、1200体が結託　「仲間のため｣とシステムに突撃要求",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "business",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64.5,
+      "confidence": 0.41,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 4.3,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 5,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 33.9,
+        "internalSocialScore": 56.9
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-315",
       "title": "500万本の藁の中に隠された，たった1本の針を探す異様な苦行ゲーム。SNSで話題を呼んだ「Needle In A Haystack Simulator」，2026年第4四半期に発売",
       "category": "games",
       "categories": [
@@ -142,7 +249,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 6.666666666666667,
+        "searchScore": 5,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -155,111 +262,6 @@
         "archiveHeatScore": 86,
         "internalSearchScore": 34,
         "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1598",
-      "title": "ビル・ゲイツ氏、AIに対する世界的制限を提唱　恩恵を圧倒する人間への危害に警鐘",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 63.2,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 3.8,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 15,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 29.6,
-        "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-91",
-      "title": "Twitchで大規模な接続障害が発生、SNSで「サーバー落ちた？」とコメント相次ぎ、配信の延期なども生じる。公式Xでも問題を確認していることが告知され、解決に向けて取り組み中とのこと",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "games",
-        "entertainment",
-        "sns",
-        "general",
-        "sports"
-      ],
-      "buzzScore": 62.3,
-      "confidence": 0.39,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 15.6,
-        "internetNativeBoost": 0,
-        "search": 5.2,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 17,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 71,
-        "internalSearchScore": 40.5,
-        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

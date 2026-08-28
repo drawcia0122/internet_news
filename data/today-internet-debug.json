@@ -1,37 +1,42 @@
 {
-  "generatedAt": "2026-08-27T14:37:06.933Z",
+  "generatedAt": "2026-08-27T23:58:26.500Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-19",
-  "selectedTitle": "『ステラーブレイド』Switch 2版、TGS2026で世界初の一般向け試遊出展。生みの親キム・ヒョンテ氏登壇のステージも予定",
+  "selectedClusterId": "today-cluster-3",
+  "selectedTitle": "Twitchで大規模な接続障害が発生、SNSで「サーバー落ちた？」とコメント相次ぎ、配信の延期なども生じる。公式Xでも問題を確認していることが告知され、解決に向けて取り組み中とのこと",
   "candidates": [
     {
-      "clusterId": "today-cluster-19",
-      "title": "『ステラーブレイド』Switch 2版、TGS2026で世界初の一般向け試遊出展。生みの親キム・ヒョンテ氏登壇のステージも予定",
-      "category": "games",
+      "clusterId": "today-cluster-3",
+      "title": "Twitchで大規模な接続障害が発生、SNSで「サーバー落ちた？」とコメント相次ぎ、配信の延期なども生じる。公式Xでも問題を確認していることが告知され、解決に向けて取り組み中とのこと",
+      "category": "net-culture",
       "categories": [
-        "games",
         "net-culture",
-        "general"
+        "games",
+        "entertainment",
+        "sns",
+        "general",
+        "sports"
       ],
-      "buzzScore": 74.9,
-      "confidence": 0.46,
+      "buzzScore": 85.4,
+      "confidence": 0.51,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 21.3,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
+        "search": 5.5,
+        "social": 8.4,
+        "velocity": 8,
+        "freshness": 8.5,
         "authority": 2.5,
-        "categoryBias": 14,
+        "categoryBias": 17,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -44,61 +49,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 49.6,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-382",
-      "title": "ビル・ゲイツ氏、AIに対する世界的制限を提唱　恩恵を圧倒する人間への危害に警鐘",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 70.2,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 10,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
+        "crossCategoryScore": 100,
         "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 43.3,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -106,7 +60,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-379",
+      "clusterId": "today-cluster-377",
       "title": "『北斗の拳』なぜ“バスケ”は生まれたのか。バグがあるから愛され続ける世紀末格ゲー、約21年越しの開発者インタビューで新事実続出",
       "category": "games",
       "categories": [
@@ -158,7 +112,110 @@
       ]
     },
     {
-      "clusterId": "today-cluster-71",
+      "clusterId": "today-cluster-486",
+      "title": "[ITmedia ビジネスオンライン] なぜ「ほぼAI」のエイベックス・松浦noteは絶賛されたのか　発信者に問われる「その人である必要性」",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 66.2,
+      "confidence": 0.4,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-855",
+      "title": "ビル・ゲイツ氏、AIに対する世界的制限を提唱　恩恵を圧倒する人間への危害に警鐘",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.4,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 3.9,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 10,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 30.4,
+        "internalSocialScore": 45.9
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-96",
       "title": "Nintendo Switch版『スイカゲーム』DLC「ミラクルサーカス」いきなり配信。コンボボーナスやランダム効果追加、ドリアンボムで一発逆転",
       "category": "games",
       "categories": [
@@ -167,8 +224,8 @@
         "sns",
         "general"
       ],
-      "buzzScore": 66.4,
-      "confidence": 0.38,
+      "buzzScore": 63.3,
+      "confidence": 0.37,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -178,12 +235,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 21.1,
+        "trend": 20.2,
         "internetNativeBoost": 8,
-        "search": 6.3,
+        "search": 6.1,
         "social": 7,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -199,62 +256,9 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 96,
-        "internalSearchScore": 49.2,
+        "archiveHeatScore": 92,
+        "internalSearchScore": 47.8,
         "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-113",
-      "title": "世界的注目ゲーム『GTA6』の未公開映像が流出に声明　開発チームは「胸が張り裂ける思い」と吐露",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.4,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 5,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 46.1,
-        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

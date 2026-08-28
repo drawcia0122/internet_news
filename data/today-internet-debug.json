@@ -1,11 +1,219 @@
 {
-  "generatedAt": "2026-08-27T23:58:26.500Z",
+  "generatedAt": "2026-08-28T11:15:01.025Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-3",
-  "selectedTitle": "Twitchで大規模な接続障害が発生、SNSで「サーバー落ちた？」とコメント相次ぎ、配信の延期なども生じる。公式Xでも問題を確認していることが告知され、解決に向けて取り組み中とのこと",
+  "selectedClusterId": "today-cluster-60",
+  "selectedTitle": "NHK「ゲームゲノム」初期11本が配信決定 『デススト』『ペルソナ5』『バイオハザード』を読み解く",
   "candidates": [
     {
-      "clusterId": "today-cluster-3",
+      "clusterId": "today-cluster-60",
+      "title": "NHK「ゲームゲノム」初期11本が配信決定 『デススト』『ペルソナ5』『バイオハザード』を読み解く",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general",
+        "anime",
+        "sns"
+      ],
+      "buzzScore": 74.3,
+      "confidence": 0.45,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 18.3,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 10,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 44.7,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-329",
+      "title": "「新劇場版 銀魂 -吉原大炎上-」の配信はどこで見れる？サブスクレンタル開始日とお得な視聴方法",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.3,
+      "confidence": 0.34,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.9,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 34,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-371",
+      "title": "500万本の藁の中に隠された，たった1本の針を探す異様な苦行ゲーム。SNSで話題を呼んだ「Needle In A Haystack Simulator」，2026年第4四半期に発売",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 63.9,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.9,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 6.666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 34,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1598",
+      "title": "ビル・ゲイツ氏、AIに対する世界的制限を提唱　恩恵を圧倒する人間への危害に警鐘",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 63.2,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 3.8,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 15,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 29.6,
+        "internalSocialScore": 45.4
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-91",
       "title": "Twitchで大規模な接続障害が発生、SNSで「サーバー落ちた？」とコメント相次ぎ、配信の延期なども生じる。公式Xでも問題を確認していることが告知され、解決に向けて取り組み中とのこと",
       "category": "net-culture",
       "categories": [
@@ -16,25 +224,24 @@
         "general",
         "sports"
       ],
-      "buzzScore": 85.4,
-      "confidence": 0.51,
+      "buzzScore": 62.3,
+      "confidence": 0.39,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.5,
+        "trend": 15.6,
+        "internetNativeBoost": 0,
+        "search": 5.2,
         "social": 8.4,
-        "velocity": 8,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 17,
         "penalty": 0
@@ -50,215 +257,9 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
+        "archiveHeatScore": 71,
+        "internalSearchScore": 40.5,
         "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-377",
-      "title": "『北斗の拳』なぜ“バスケ”は生まれたのか。バグがあるから愛され続ける世紀末格ゲー、約21年越しの開発者インタビューで新事実続出",
-      "category": "games",
-      "categories": [
-        "games",
-        "game-features",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66.6,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 5,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 35.8,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-486",
-      "title": "[ITmedia ビジネスオンライン] なぜ「ほぼAI」のエイベックス・松浦noteは絶賛されたのか　発信者に問われる「その人である必要性」",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 66.2,
-      "confidence": 0.4,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 6,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 3.3333333333333335,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-855",
-      "title": "ビル・ゲイツ氏、AIに対する世界的制限を提唱　恩恵を圧倒する人間への危害に警鐘",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.4,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 3.9,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 10,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 30.4,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-96",
-      "title": "Nintendo Switch版『スイカゲーム』DLC「ミラクルサーカス」いきなり配信。コンボボーナスやランダム効果追加、ドリアンボムで一発逆転",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 63.3,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.2,
-        "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 92,
-        "internalSearchScore": 47.8,
-        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

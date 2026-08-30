@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-29T21:42:15.032Z",
+  "generatedAt": "2026-08-30T00:10:12.400Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-121",
+  "selectedClusterId": "today-cluster-113",
   "selectedTitle": "ポケモン新作アニメ 2027年配信",
   "candidates": [
     {
-      "clusterId": "today-cluster-121",
+      "clusterId": "today-cluster-113",
       "title": "ポケモン新作アニメ 2027年配信",
       "category": "anime",
       "categories": [
@@ -15,13 +15,14 @@
         "entertainment",
         "manga"
       ],
-      "buzzScore": 75.2,
-      "confidence": 0.66,
-      "articleCount": 10,
+      "buzzScore": 79.4,
+      "confidence": 0.7,
+      "articleCount": 11,
       "sourceCount": 4,
       "uniqueDomainCount": 4,
       "whyRanked": [
         "主要4媒体で同一話題を確認",
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "検索面でも関連話題の広がりを確認"
       ],
@@ -32,7 +33,7 @@
         "internetNativeBoost": 0,
         "search": 9.3,
         "social": 5.8,
-        "velocity": 0,
+        "velocity": 4.2,
         "freshness": 10,
         "authority": 2,
         "categoryBias": 6,
@@ -59,18 +60,18 @@
       ]
     },
     {
-      "clusterId": "today-cluster-485",
-      "title": "イスラエル右派騒然、極右与党が別の極右与党との共闘拒否",
+      "clusterId": "today-cluster-305",
+      "title": "高市早苗首相、物価高対策前のめり　ガソリン補助を突如発表・Xで長文投稿",
       "category": "politics",
       "categories": [
         "politics",
+        "business",
         "sns",
         "net-culture",
-        "world",
         "general"
       ],
-      "buzzScore": 65.4,
-      "confidence": 0.44,
+      "buzzScore": 66.3,
+      "confidence": 0.45,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -80,18 +81,18 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 21.8,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 4.9,
+        "search": 4.8,
         "social": 7.4,
         "velocity": 0,
-        "freshness": 8.5,
+        "freshness": 10,
         "authority": 2.5,
         "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 23.333333333333332,
+        "searchScore": 13.333333333333334,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -101,8 +102,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 99,
-        "internalSearchScore": 38.6,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
@@ -111,7 +112,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-544",
+      "clusterId": "today-cluster-17",
+      "title": "TVアニメ『呪術廻戦』第4期「死滅回游 後編」スーパーティザービジュアルが公開。薄暗い水中から鋭い眼光を向け、こちらへ手を伸ばす両面宿儺",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "net-culture",
+        "general",
+        "entertainment",
+        "manga"
+      ],
+      "buzzScore": 65.9,
+      "confidence": 0.48,
+      "articleCount": 5,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 9,
+        "sourceDiversity": 4.7,
+        "trend": 11.7,
+        "internetNativeBoost": 0,
+        "search": 4.4,
+        "social": 7,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 13.333333333333334,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 53,
+        "internalSearchScore": 34.2,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-684",
       "title": "自衛隊情報基盤にIOWN導入　AI活用へ大容量通信、次期計画に明記",
       "category": "business",
       "categories": [
@@ -163,7 +217,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-219",
+      "clusterId": "today-cluster-203",
       "title": "500万本の藁の中に隠された，たった1本の針を探す異様な苦行ゲーム。SNSで話題を呼んだ「Needle In A Haystack Simulator」，2026年第4四半期に発売",
       "category": "games",
       "categories": [
@@ -194,7 +248,7 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -207,56 +261,6 @@
         "archiveHeatScore": 86,
         "internalSearchScore": 34,
         "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-224",
-      "title": "最新作「台湾事故物件監視協会」が制作中。これまでの作品とは異なり，舞台は台湾に",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 61.4,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 4.6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 6.666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 35.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

@@ -1,73 +1,21 @@
 {
-  "generatedAt": "2026-08-31T06:03:09.560Z",
+  "generatedAt": "2026-08-31T13:33:26.336Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-99",
-  "selectedTitle": "バズらなければ公開処刑。死刑囚たちのリアリティショー×デスゲームADV「BUZZ or DIE」，2026年内にSteamで発売決定",
+  "selectedClusterId": "today-cluster-2",
+  "selectedTitle": "「TM NETWORK」9月3日22時に放送されるNHK総合「SONGS」に出演。『機動戦士ガンダム 逆襲のシャア』名曲「BEYOND THE TIME」を披露",
   "candidates": [
     {
-      "clusterId": "today-cluster-99",
-      "title": "バズらなければ公開処刑。死刑囚たちのリアリティショー×デスゲームADV「BUZZ or DIE」，2026年内にSteamで発売決定",
+      "clusterId": "today-cluster-2",
+      "title": "「TM NETWORK」9月3日22時に放送されるNHK総合「SONGS」に出演。『機動戦士ガンダム 逆襲のシャア』名曲「BEYOND THE TIME」を披露",
       "category": "games",
       "categories": [
         "games",
-        "sns",
+        "entertainment",
         "net-culture",
         "general"
       ],
-      "buzzScore": 82.5,
-      "confidence": 0.54,
-      "articleCount": 3,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-3",
-      "title": "『スタバレ』開発者の最新作『Haunted Chocolatier』着実に開発が進行中、公式サイトにて近況報告が公開。急いで仕上げたり、時期尚早にリリースしたりして妥協するつもりはないとコメント",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 74.1,
-      "confidence": 0.47,
+      "buzzScore": 77.6,
+      "confidence": 0.48,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -78,12 +26,169 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 19.8,
+        "internetNativeBoost": 8,
+        "search": 6,
+        "social": 7,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-4",
+      "title": "にじさんじ不破湊、武道館ワンマンライブ決定　新曲MVはスタンミじゃぱん主演",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 75,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 5.6,
+        "social": 7,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 3.3333333333333335,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-120",
+      "title": "銀さんの誕生日を祝う描き下ろし色紙が入場者特典に！「新劇場版 銀魂 -吉原大炎上-＜超炎上版＞」9月25日より上映",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "net-culture",
+        "entertainment",
+        "manga",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 70.4,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 8,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 3,
+        "repeatedAppearanceScore": 16.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 45.5,
+        "internalSocialScore": 62.3
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-10",
+      "title": "“作品名が113文字”のSteamゲームが見つかるも、「ギネス記録にはまったく及ばない」と話題に。その長さ、圧巻の277文字",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 69.9,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.3,
         "internetNativeBoost": 8,
         "search": 5.7,
         "social": 5.6,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -99,8 +204,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 44.7,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -109,90 +214,36 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1",
-      "title": "ホロライブ ラプラス・ダークネス、Red Bullのバーチャル・アンバサダーに就任",
-      "category": "tech",
+      "clusterId": "today-cluster-118",
+      "title": "エニックス名作『天地創造』を、なぜスウェーデンのゲーム会社がリマスターするのか？―“保存”を重視する復刻の哲学を訊いた【インタビュー】",
+      "category": "game-features",
       "categories": [
-        "tech",
-        "entertainment",
+        "game-features",
+        "games",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 72.9,
-      "confidence": 0.43,
-      "articleCount": 2,
+      "buzzScore": 69,
+      "confidence": 0.39,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.5,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 11.666666666666666,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 45,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1446",
-      "title": "法で子のSNS年齢制限「必要」64%",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "tech",
-        "sns",
-        "general",
-        "sports"
-      ],
-      "buzzScore": 66.9,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.6,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 6,
+        "search": 5,
+        "social": 7.4,
         "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 17,
-        "penalty": 0
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 8.333333333333332,
@@ -204,66 +255,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 31.9,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-63",
-      "title": "劇場版『メダリスト』2027年2月19日公開　フィギュアスケート全日本ノービス大会の激闘を描く",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "net-culture",
-        "general",
-        "sports",
-        "entertainment",
-        "sns",
-        "manga"
-      ],
-      "buzzScore": 65.9,
-      "confidence": 0.48,
-      "articleCount": 6,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 10.8,
-        "sourceDiversity": 7,
-        "trend": 13.4,
-        "internetNativeBoost": 0,
-        "search": 4.7,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1,
-        "categoryBias": 17,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 11.666666666666666,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 61,
-        "internalSearchScore": 37,
-        "internalSocialScore": 65.8
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

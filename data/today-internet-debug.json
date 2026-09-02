@@ -1,42 +1,198 @@
 {
-  "generatedAt": "2026-09-02T05:42:24.491Z",
+  "generatedAt": "2026-09-02T11:12:12.933Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-37",
-  "selectedTitle": "「怒」「ドラゴンバスター」「忍者龍剣伝III 黄泉の方船」が「ファミリーコンピュータ Nintendo Classics」に登場",
+  "selectedClusterId": "today-cluster-13",
+  "selectedTitle": "猫の戦士を育てて色々な動物と戦うゲーム『Warrior Cats: Clans of the Forest』10月24日にリリース。小説『ウォーリアーズ』シリーズを題材とする",
   "candidates": [
     {
-      "clusterId": "today-cluster-37",
-      "title": "「怒」「ドラゴンバスター」「忍者龍剣伝III 黄泉の方船」が「ファミリーコンピュータ Nintendo Classics」に登場",
+      "clusterId": "today-cluster-370",
+      "title": "漫画「聖闘士星矢」作者側が28億円賠償求め提訴　元役員が流用か",
+      "category": "manga",
+      "categories": [
+        "manga",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 70.2,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "検索面でも関連話題の広がりを確認"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 9.1,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 56.666666666666664,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-13",
+      "title": "猫の戦士を育てて色々な動物と戦うゲーム『Warrior Cats: Clans of the Forest』10月24日にリリース。小説『ウォーリアーズ』シリーズを題材とする",
       "category": "games",
       "categories": [
         "games",
-        "entertainment",
+        "books",
         "net-culture",
-        "general",
-        "sports"
+        "sns",
+        "general"
       ],
-      "buzzScore": 82.5,
-      "confidence": 0.5,
+      "buzzScore": 67.1,
+      "confidence": 0.46,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 14.7,
+        "internetNativeBoost": 0,
+        "search": 5,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 1.6666666666666667,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 67,
+        "internalSearchScore": 39.1,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-171",
+      "title": "『忍者龍剣伝III 黄泉の方船』が「ファミリーコンピュータ Nintendo Classics」に追加！『怒』『ドラゴンバスター』とあわせて9月2日に配信",
+      "category": "games",
+      "categories": [
+        "games",
+        "general",
+        "sports",
+        "entertainment",
+        "net-culture"
+      ],
+      "buzzScore": 65.6,
+      "confidence": 0.46,
       "articleCount": 4,
       "sourceCount": 3,
       "uniqueDomainCount": 3,
       "whyRanked": [
         "主要3媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い",
         "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
         "coverage": 7.2,
         "sourceDiversity": 7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 6,
-        "social": 7.4,
+        "trend": 13.4,
+        "internetNativeBoost": 0,
+        "search": 3.7,
+        "social": 6.3,
         "velocity": 0,
         "freshness": 10,
-        "authority": 2.5,
+        "authority": 1,
         "categoryBias": 17,
         "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 13.333333333333334,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 11.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 61,
+        "internalSearchScore": 28.6,
+        "internalSocialScore": 49
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-32",
+      "title": "【3人協力】「見ざる」「言わざる」「聞かざる」になって爆弾解除するゲーム『BOMBANANA!』が9月2日22時頃にSteamで発売",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 63,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.3,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 5.6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 5,
@@ -46,62 +202,11 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 1,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 30,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 47.2,
-        "internalSocialScore": 57.5
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-6",
-      "title": "“1億匹の魚”すべてを釣り上げるゲーム『海の魚、ぜんぶ釣る』Steamストアページが公開。釣りまくってスキルを強化しさらに釣る",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 74.3,
-      "confidence": 0.46,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.5,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 44.7,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -110,35 +215,36 @@
       ]
     },
     {
-      "clusterId": "today-cluster-17",
-      "title": "【最大6人】幽霊や怪異を“生配信”してバズらせるホラーゲーム『Stream Train』がSteamで10月15日に発売。視聴者の無茶振りに応えれば“投げ銭”をもらえるかも",
-      "category": "games",
+      "clusterId": "today-cluster-31",
+      "title": "『ライブアライブ』主人公8人をモチーフにした“1点物”キャンバスアートの抽選販売が決定。すべて時田プロデューサー直筆サイン入りの特別仕様",
+      "category": "business",
       "categories": [
+        "business",
         "games",
-        "entertainment",
         "net-culture",
+        "sns",
         "general"
       ],
-      "buzzScore": 70.7,
-      "confidence": 0.43,
+      "buzzScore": 62.4,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.8,
+        "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "search": 6,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -151,117 +257,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 44,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-15",
-      "title": "NOTHING NEW×宮原拓也監督のホラー映画『洗浄』発表　『カタシロ』ディズムが脚本協力",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "world",
-        "general"
-      ],
-      "buzzScore": 66.9,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 46.8,
         "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-180",
-      "title": "銀さんの誕生日を祝う描き下ろし色紙が入場者特典に！「新劇場版 銀魂 -吉原大炎上-＜超炎上版＞」9月25日より上映",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.5,
-      "confidence": 0.34,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.9,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 7.5,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 7.8,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 35.2,
-        "internalSocialScore": 58.5
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

@@ -1,35 +1,87 @@
 {
-  "generatedAt": "2026-09-02T21:47:11.567Z",
+  "generatedAt": "2026-09-03T00:05:10.631Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-128",
-  "selectedTitle": "『アナザーエデン ビギンズ』無料体験版が配信開始！メインストーリー第6章までプレイでき、セーブデータは製品版へ引き継ぎ可能",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "【最大50%オフ】『ひぐらしのなく頃に』シリーズがSteamでセールを開催中。6月には新作アニメも発表された人気作",
   "candidates": [
     {
-      "clusterId": "today-cluster-343",
-      "title": "Steamの定番データベース「SteamDB」、まさかのNexus Modsに譲渡される。“燃え尽き寸前だった”約10年ワンオペ運営に区切り",
+      "clusterId": "today-cluster-1",
+      "title": "【最大50%オフ】『ひぐらしのなく頃に』シリーズがSteamでセールを開催中。6月には新作アニメも発表された人気作",
       "category": "games",
       "categories": [
         "games",
-        "sns",
+        "anime",
         "net-culture",
         "general"
       ],
-      "buzzScore": 66.8,
-      "confidence": 0.39,
-      "articleCount": 1,
+      "buzzScore": 78.7,
+      "confidence": 0.49,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "trend": 20.7,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 6,
-        "velocity": 0,
+        "search": 6.2,
+        "social": 7,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 48.5,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2",
+      "title": "JAF公式の“クルマ”カードゲーム『DRIVE CARD GAME』発表。幅広い世代に“クルマ”の魅力を伝えるため、メーカーの垣根を越えたトレーディングカードゲームとして2027年初夏にリリース予定",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 78.3,
+      "confidence": 0.5,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.6,
+        "internetNativeBoost": 8,
+        "search": 6.4,
+        "social": 5.6,
+        "velocity": 8.3,
         "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
@@ -42,13 +94,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 46.7
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 98,
+        "internalSearchScore": 49.9,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -56,7 +108,58 @@
       ]
     },
     {
-      "clusterId": "today-cluster-128",
+      "clusterId": "today-cluster-27",
+      "title": "Steamの定番データベース「SteamDB」、まさかのNexus Modsに譲渡される。“燃え尽き寸前だった”約10年ワンオペ運営に区切り",
+      "category": "games",
+      "categories": [
+        "games",
+        "general",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 75.1,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-127",
       "title": "『アナザーエデン ビギンズ』無料体験版が配信開始！メインストーリー第6章までプレイでき、セーブデータは製品版へ引き継ぎ可能",
       "category": "games",
       "categories": [
@@ -87,7 +190,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 10,
+        "searchScore": 6.666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -107,7 +210,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-146",
+      "clusterId": "today-cluster-149",
       "title": "『忍者龍剣伝III 黄泉の方船』が「ファミリーコンピュータ Nintendo Classics」に追加！『怒』『ドラゴンバスター』とあわせて9月2日に配信",
       "category": "games",
       "categories": [
@@ -140,7 +243,7 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 11.666666666666666,
+        "searchScore": 10,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -153,109 +256,6 @@
         "archiveHeatScore": 61,
         "internalSearchScore": 27.2,
         "internalSocialScore": 48.1
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-512",
-      "title": "“ニンダイ”告知が拡散されるも…またしても「それ去年の！」2025年の投稿に勘違いするファンたち―ほぼ毎年9月に配信されているゆえの期待",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 63.2,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 4.6,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 6.666666666666667,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 36.8,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-359",
-      "title": "やめろ好きになってしまう第64話 殺人クロスカウンター　その②｜ヤンジャン＋集英社公式・ジャンプ系青年マンガ誌アプリ",
-      "category": "crime",
-      "categories": [
-        "crime",
-        "tech",
-        "sns",
-        "net-culture",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 60.6,
-      "confidence": 0.34,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
-        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",

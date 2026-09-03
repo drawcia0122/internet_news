@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T09:11:14.188Z",
+  "generatedAt": "2026-09-03T13:54:41.128Z",
   "items": {
     "ソニー、PSコンソール向け新作ゲームのディスク生産終了を発表―2028年1月以降発売タイトルはダウンロード版としてのみ提供::2026-07-01T23:59:03.422Z": {
       "fetchedAt": "2026-07-02T17:49:07.652Z",
@@ -33123,13 +33123,13 @@
       }
     },
     "Steamの定番データベース SteamDB 、まさかのNexus Modsに譲渡される。“燃え尽き寸前だった”約10年ワンオペ運営に区切り::2026-09-02T21:44:17.884Z": {
-      "fetchedAt": "2026-09-03T09:11:14.188Z",
+      "fetchedAt": "2026-09-03T13:54:41.128Z",
       "externalSignals": {
         "query": "Steamの定番データベース SteamDB 、まさかのNexus Modsに譲渡される。“燃え尽き寸前だった”約10年ワンオペ運営に区切り",
         "search": {
-          "count": 0,
+          "available": false,
           "score": 0,
-          "available": false
+          "count": 0
         },
         "reddit": {
           "available": false,
@@ -33142,6 +33142,7 @@
           "count": 0
         },
         "errors": [
+          "search:http 429 Too Many Requests",
           "reddit:http 403 Blocked",
           "bluesky:http 403 Forbidden"
         ]
@@ -33248,13 +33249,13 @@
       }
     },
     "Number_iがメジャーリーグの始球式に登場 岸優太の投球を佐々木朗希がキャッチ::2026-09-03T03:18:00.000Z": {
-      "fetchedAt": "2026-09-03T09:11:14.188Z",
+      "fetchedAt": "2026-09-03T13:54:41.128Z",
       "externalSignals": {
         "query": "Number_iがメジャーリーグの始球式に登場 岸優太の投球を佐々木朗希がキャッチ",
         "search": {
-          "count": 10,
-          "score": 16.666666666666664,
-          "available": true
+          "available": false,
+          "score": 0,
+          "count": 0
         },
         "reddit": {
           "available": false,
@@ -33267,6 +33268,7 @@
           "count": 0
         },
         "errors": [
+          "search:http 429 Too Many Requests",
           "reddit:http 403 Blocked",
           "bluesky:http 403 Forbidden"
         ]
@@ -33342,6 +33344,32 @@
           "count": 0
         },
         "errors": [
+          "reddit:http 403 Blocked",
+          "bluesky:http 403 Forbidden"
+        ]
+      }
+    },
+    "冷やし蟹ラーメン 食中毒事故、港区保健所が原因を断定 割烹こめを 7日間の営業停止処分へ::2026-09-03T09:54:00.000Z": {
+      "fetchedAt": "2026-09-03T13:54:41.128Z",
+      "externalSignals": {
+        "query": "冷やし蟹ラーメン 食中毒事故、港区保健所が原因を断定 割烹こめを 7日間の営業停止処分へ",
+        "search": {
+          "available": false,
+          "score": 0,
+          "count": 0
+        },
+        "reddit": {
+          "available": false,
+          "score": 0,
+          "count": 0
+        },
+        "bluesky": {
+          "available": false,
+          "score": 0,
+          "count": 0
+        },
+        "errors": [
+          "search:http 429 Too Many Requests",
           "reddit:http 403 Blocked",
           "bluesky:http 403 Forbidden"
         ]

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-04T21:26:05.564Z",
+  "generatedAt": "2026-09-04T23:16:12.421Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-90",
+  "selectedClusterId": "today-cluster-93",
   "selectedTitle": "マクロスのリズムゲーム『歌マクロス』はなぜ復活できたのか？元スクエニ広野Pが語る「ゲームを形に残すこと」への挑戦、熱烈ユーザーの声に導かれた道しるべ",
   "candidates": [
     {
-      "clusterId": "today-cluster-90",
+      "clusterId": "today-cluster-93",
       "title": "マクロスのリズムゲーム『歌マクロス』はなぜ復活できたのか？元スクエニ広野Pが語る「ゲームを形に残すこと」への挑戦、熱烈ユーザーの声に導かれた道しるべ",
       "category": "games",
       "categories": [
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-759",
+      "clusterId": "today-cluster-934",
       "title": "アンソロピックのAI学習向け書籍販売、日販が契約　米出版取次は拒否",
       "category": "sports",
       "categories": [
@@ -115,35 +115,37 @@
       ]
     },
     {
-      "clusterId": "today-cluster-385",
-      "title": "Geminiの助言で遭難、食料も水も不足--ずさんな登山が浮き彫りにする「AI依存」の危険性",
-      "category": "tech",
+      "clusterId": "today-cluster-1546",
+      "title": "経済プラス：内閣府でも財務省幹部「冷遇」　次官候補転出に首相ブレーンの影",
+      "category": "sports",
       "categories": [
-        "tech",
+        "sports",
+        "politics",
+        "business",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 62,
-      "confidence": 0.32,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 62.4,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 4,
-        "social": 6,
+        "search": 4.6,
+        "social": 7.2,
         "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 7,
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -154,11 +156,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 46.7
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 35.9,
+        "internalSocialScore": 56.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -167,58 +169,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-106",
-      "title": "【話題沸騰】“最大100人対戦”FPS『WARDOGS』第2回CBTがSteam最大同接「16万人」を突破。初日から大盛況",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 59.5,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-161",
+      "clusterId": "today-cluster-158",
       "title": "スパイク・チュンソフト，「エンドサマーセール 2026」を9月5日2：00にSteamで開始。「風来のシレン6」「超探偵事件簿 レインコード プラス」が50％オフ",
       "category": "games",
       "categories": [
@@ -262,6 +213,56 @@
         "archiveHeatScore": 87,
         "internalSearchScore": 34.4,
         "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-169",
+      "title": "「悪魔城ドラキュラ」シリーズ新作など、コナミのTGS2026出展タイトルが発表！ 完全新作『Rev. NOiR』『Rhapsody in Scarlet』の展示や隠しコマンド「↑↑↓↓←→←→BA」コーナーも",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 59.1,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 3.2,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
+        "internalSocialScore": 24.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

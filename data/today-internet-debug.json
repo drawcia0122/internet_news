@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-04T19:08:16.153Z",
+  "generatedAt": "2026-09-04T21:26:05.564Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-91",
+  "selectedClusterId": "today-cluster-90",
   "selectedTitle": "マクロスのリズムゲーム『歌マクロス』はなぜ復活できたのか？元スクエニ広野Pが語る「ゲームを形に残すこと」への挑戦、熱烈ユーザーの声に導かれた道しるべ",
   "candidates": [
     {
-      "clusterId": "today-cluster-91",
+      "clusterId": "today-cluster-90",
       "title": "マクロスのリズムゲーム『歌マクロス』はなぜ復活できたのか？元スクエニ広野Pが語る「ゲームを形に残すこと」への挑戦、熱烈ユーザーの声に導かれた道しるべ",
       "category": "games",
       "categories": [
@@ -38,9 +38,9 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 0,
         "socialScore": 0,
-        "searchAvailable": true,
+        "searchAvailable": false,
         "socialAvailable": false
       },
       "internalSignalStats": {
@@ -53,12 +53,13 @@
         "internalSocialScore": 65
       },
       "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
         "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
     },
     {
-      "clusterId": "today-cluster-648",
+      "clusterId": "today-cluster-759",
       "title": "アンソロピックのAI学習向け書籍販売、日販が契約　米出版取次は拒否",
       "category": "sports",
       "categories": [
@@ -72,7 +73,7 @@
         "general"
       ],
       "buzzScore": 66.9,
-      "confidence": 0.4,
+      "confidence": 0.37,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -93,9 +94,9 @@
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 15,
+        "searchScore": 0,
         "socialScore": 0,
-        "searchAvailable": true,
+        "searchAvailable": false,
         "socialAvailable": false
       },
       "internalSignalStats": {
@@ -108,115 +109,65 @@
         "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
         "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
     },
     {
-      "clusterId": "today-cluster-1253",
-      "title": "経済プラス：内閣府でも財務省幹部「冷遇」　次官候補転出に首相ブレーンの影",
-      "category": "sports",
+      "clusterId": "today-cluster-385",
+      "title": "Geminiの助言で遭難、食料も水も不足--ずさんな登山が浮き彫りにする「AI依存」の危険性",
+      "category": "tech",
       "categories": [
-        "sports",
-        "politics",
-        "business",
+        "tech",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.4,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 7.2,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 7,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 8.333333333333332,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 35.9,
-        "internalSocialScore": 56.4
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-3",
-      "title": "『まのさば』Acaciaの新作『魔法少女ノ因習村』、「薬師堂シイ」のCVは川口莉奈さんが担当と発表。村唯一の医者一族として育った、一途で礼儀正しくも体の弱い少女",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
       "buzzScore": 62,
-      "confidence": 0.36,
-      "articleCount": 2,
+      "confidence": 0.32,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
         "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 5.6,
+        "search": 4,
+        "social": 6,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 0,
         "socialScore": 0,
-        "searchAvailable": true,
+        "searchAvailable": false,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
         "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 43.8
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
         "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]
     },
     {
-      "clusterId": "today-cluster-107",
+      "clusterId": "today-cluster-106",
       "title": "【話題沸騰】“最大100人対戦”FPS『WARDOGS』第2回CBTがSteam最大同接「16万人」を突破。初日から大盛況",
       "category": "games",
       "categories": [
@@ -246,9 +197,9 @@
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 1.6666666666666667,
+        "searchScore": 0,
         "socialScore": 0,
-        "searchAvailable": true,
+        "searchAvailable": false,
         "socialAvailable": false
       },
       "internalSignalStats": {
@@ -261,6 +212,59 @@
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-161",
+      "title": "スパイク・チュンソフト，「エンドサマーセール 2026」を9月5日2：00にSteamで開始。「風来のシレン6」「超探偵事件簿 レインコード プラス」が50％オフ",
+      "category": "games",
+      "categories": [
+        "games",
+        "sports",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 59.2,
+      "confidence": 0.34,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
         "reddit:http 403 Blocked",
         "bluesky:http 403 Forbidden"
       ]

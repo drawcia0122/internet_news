@@ -1,60 +1,58 @@
 {
-  "generatedAt": "2026-09-04T06:39:17.568Z",
+  "generatedAt": "2026-09-04T11:45:06.573Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-11",
-  "selectedTitle": "米ホワイトハウス、トランプ大統領の移民政策をゲーム化　SEGAを「MAGA」に、プレステやXboxもパロディ",
+  "selectedClusterId": "today-cluster-399",
+  "selectedTitle": "OpenAI、次世代モデル「GPT-6 Astra」を発表 ～「PCでできることは、すべて代行できる」／科学研究、ビジネス業務、高度な数学、コンピューター操作などの分野で新境地を拓く",
   "candidates": [
     {
-      "clusterId": "today-cluster-11",
-      "title": "米ホワイトハウス、トランプ大統領の移民政策をゲーム化　SEGAを「MAGA」に、プレステやXboxもパロディ",
-      "category": "sns",
+      "clusterId": "today-cluster-392",
+      "title": "アンソロピックのAI学習向け書籍販売、日販が契約　米出版取次は拒否",
+      "category": "sports",
       "categories": [
-        "sns",
+        "sports",
+        "books",
         "business",
-        "entertainment",
+        "tech",
+        "sns",
         "net-culture",
-        "politics",
-        "games",
         "world",
         "general"
       ],
-      "buzzScore": 67.6,
-      "confidence": 0.5,
-      "articleCount": 3,
+      "buzzScore": 71.7,
+      "confidence": 0.43,
+      "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
+        "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 15.8,
-        "internetNativeBoost": 0,
-        "search": 5.2,
-        "social": 8.4,
-        "velocity": 8,
-        "freshness": 8.5,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 9,
+        "categoryBias": 12,
         "penalty": 0
       },
       "externalSignalStats": {
-        "searchScore": 13.333333333333334,
+        "searchScore": 16.666666666666664,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 72,
-        "internalSearchScore": 40.8,
-        "internalSocialScore": 65.8
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -62,31 +60,85 @@
       ]
     },
     {
-      "clusterId": "today-cluster-43",
-      "title": "【話題沸騰】“最大100人対戦”FPS『WARDOGS』第2回CBTがSteam最大同接「16万人」を突破。初日から大盛況",
-      "category": "games",
+      "clusterId": "today-cluster-948",
+      "title": "経済プラス：内閣府でも財務省幹部「冷遇」　次官候補転出に首相ブレーンの影",
+      "category": "sports",
       "categories": [
-        "games",
+        "sports",
+        "politics",
+        "business",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.1,
-      "confidence": 0.38,
+      "buzzScore": 66.2,
+      "confidence": 0.43,
       "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 7,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 8.333333333333332,
+        "socialScore": 0,
+        "searchAvailable": true,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.3,
+        "internalSocialScore": 57.3
+      },
+      "externalSignalErrors": [
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-391",
+      "title": "マクロスのリズムゲーム『歌マクロス』はなぜ復活できたのか？元スクエニ広野Pが語る「ゲームを形に残すこと」への挑戦、熱烈ユーザーの声に導かれた道しるべ",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64.7,
+      "confidence": 0.37,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 20,
+        "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 5.6,
+        "search": 4.5,
+        "social": 6,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -98,13 +150,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 47.5,
-        "internalSocialScore": 43.8
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "reddit:http 403 Blocked",
@@ -125,7 +177,7 @@
       ],
       "buzzScore": 62.9,
       "confidence": 0.59,
-      "articleCount": 12,
+      "articleCount": 13,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
@@ -145,7 +197,7 @@
         "penalty": -7
       },
       "externalSignalStats": {
-        "searchScore": 8.333333333333332,
+        "searchScore": 15,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -165,91 +217,37 @@
       ]
     },
     {
-      "clusterId": "today-cluster-385",
-      "title": "経済プラス：内閣府でも財務省幹部「冷遇」　次官候補転出に首相ブレーンの影",
-      "category": "sports",
+      "clusterId": "today-cluster-83",
+      "title": "【話題沸騰】“最大100人対戦”FPS『WARDOGS』第2回CBTがSteam最大同接「16万人」を突破。初日から大盛況",
+      "category": "games",
       "categories": [
-        "sports",
-        "politics",
-        "business",
-        "sns",
+        "games",
         "net-culture",
         "general"
       ],
-      "buzzScore": 61.2,
-      "confidence": 0.39,
-      "articleCount": 1,
+      "buzzScore": 62.6,
+      "confidence": 0.37,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 7.4,
+        "search": 5.9,
+        "social": 5.6,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 5.5,
         "authority": 1.5,
-        "categoryBias": 7,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
-        "searchScore": 5,
-        "socialScore": 0,
-        "searchAvailable": true,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-101",
-      "title": "コナミが手がける新作アクションゲーム『Rhapsody in Scarlet』が発表。1920年代のニューヨークを舞台に、魔法使いと“ビースト”が共闘する爽快コンボアクション",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general",
-        "entertainment"
-      ],
-      "buzzScore": 58.8,
-      "confidence": 0.4,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "複数の話題候補の中で最も総合スコアが高い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 13.4,
-        "internetNativeBoost": 0,
-        "search": 4.7,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 5,
+        "searchScore": 1.6666666666666667,
         "socialScore": 0,
         "searchAvailable": true,
         "socialAvailable": false
@@ -259,8 +257,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 61,
-        "internalSearchScore": 37,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [

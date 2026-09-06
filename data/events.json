@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T22:52:28.859Z",
+  "generatedAt": "2026-09-06T00:51:03.020Z",
   "sourceCandidates": [
     {
       "name": "SCRAP / リアル脱出ゲーム",
@@ -406,33 +406,6 @@
       "sourceName": "SCRAP / リアル脱出ゲーム",
       "sourceUrl": "https://api.scrapmagazine.com/public/api/2/events",
       "thumbnailUrl": "https://dttj1kl1hn9zl.cloudfront.net/images/detailed/2/casinoroyal_tate_660x934.jpg",
-      "tags": [
-        "escape",
-        "scrap",
-        "tokyo",
-        "collaboration",
-        "game"
-      ],
-      "recommendationReasons": [
-        "脱出ゲーム好き向け",
-        "東京開催",
-        "コラボ系"
-      ]
-    },
-    {
-      "id": "mysterycircus-jp-events-13877",
-      "title": "リアル脱出ゲーム×名探偵コナン『公安最終試験からの脱出』（リバイバル）",
-      "startDate": "2026-07-09",
-      "endDate": "2026-09-06",
-      "venue": "東京ミステリーサーカス",
-      "location": "東京都",
-      "category": "体験型 / リアル脱出ゲーム",
-      "description": "東京都 の 東京ミステリーサーカス を中心に展開される リアル脱出ゲーム×名探偵コナン『公安最終試験からの脱出』（リバイバル）。SCRAP公式の公開イベントAPIから取得しています。",
-      "detailUrl": "https://mysterycircus.jp/events/13877",
-      "officialUrl": "https://realdgame.jp/",
-      "sourceName": "SCRAP / リアル脱出ゲーム",
-      "sourceUrl": "https://api.scrapmagazine.com/public/api/2/events",
-      "thumbnailUrl": "https://dttj1kl1hn9zl.cloudfront.net/images/detailed/2/%E3%82%B3%E3%83%8A%E3%83%B3_06.jpg",
       "tags": [
         "escape",
         "scrap",
@@ -1117,6 +1090,31 @@
       ]
     },
     {
+      "id": "realdgame-jp-ajito-osaka-nazobldg-event-antique-osaka-html",
+      "title": "リアル脱出ゲーム『あるアンティークルームからの脱出』（リバイバル）",
+      "startDate": "2026-06-05",
+      "endDate": "2026-11-30",
+      "venue": "リアル脱出ゲーム大阪恵美須町店",
+      "location": "大阪府",
+      "category": "体験型 / リアル脱出ゲーム",
+      "description": "大阪府 の リアル脱出ゲーム大阪恵美須町店 を中心に展開される リアル脱出ゲーム『あるアンティークルームからの脱出』（リバイバル）。SCRAP公式の公開イベントAPIから取得しています。",
+      "detailUrl": "http://realdgame.jp/ajito/osaka_nazobldg/event/antique_osaka.html",
+      "officialUrl": "https://realdgame.jp/",
+      "sourceName": "SCRAP / リアル脱出ゲーム",
+      "sourceUrl": "https://api.scrapmagazine.com/public/api/2/events",
+      "thumbnailUrl": "https://scrapticket.jp/content_logo/b52575f4468013497805bb5af7532ef7.jpg",
+      "tags": [
+        "escape",
+        "scrap",
+        "collaboration",
+        "game"
+      ],
+      "recommendationReasons": [
+        "脱出ゲーム好き向け",
+        "コラボ系"
+      ]
+    },
+    {
       "id": "www-yomiuriland-com-event-2026dpaymentcp",
       "title": "よみうりランド限定!!最大全額還元キャンペーン",
       "startDate": "2026-07-10",
@@ -1268,7 +1266,7 @@
       "venue": "アニメイトアニメイト池袋本店",
       "location": "東京都",
       "category": "ゲーム / オンリーショップ",
-      "description": "アニメイトアニメイト池袋本店 を中心に展開される 『Identity V』ミュージアム 2026 in アニメイト のポップアップ系イベントです。開催予定を確認しやすい一覧から取得しています。",
+      "description": "アニメイトアニメイト池袋本店 を中心に展開される 『Identity V』ミュージアム 2026 in アニメイト のポップアップ系イベントです。開催中を確認しやすい一覧から取得しています。",
       "detailUrl": "https://www.animate.co.jp/onlyshop/48233/",
       "officialUrl": "https://www.animate.co.jp/onlyshop/",
       "sourceName": "アニメイト オンリーショップ",
@@ -1278,12 +1276,12 @@
         "tokyo",
         "popup",
         "onlyshop",
-        "upcoming",
+        "ongoing",
         "game"
       ],
       "recommendationReasons": [
         "東京開催",
-        "開催予定",
+        "開催中",
         "ゲーム好き向け"
       ]
     },

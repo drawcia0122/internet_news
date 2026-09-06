@@ -1,36 +1,87 @@
 {
-  "generatedAt": "2026-09-05T22:52:41.524Z",
+  "generatedAt": "2026-09-06T00:51:18.713Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-8",
-  "selectedTitle": "くら寿司、「ちいかわ」コラボキャンペーンの中止を発表。同社従業員による不正行為が発覚したため",
+  "selectedClusterId": "today-cluster-304",
+  "selectedTitle": "衛星１００基以上で監視網増強、移動発射台を探知しミサイル無力化…画像販売も「防衛と経済の好循環」",
   "candidates": [
     {
-      "clusterId": "today-cluster-8",
-      "title": "くら寿司、「ちいかわ」コラボキャンペーンの中止を発表。同社従業員による不正行為が発覚したため",
-      "category": "games",
+      "clusterId": "today-cluster-304",
+      "title": "衛星１００基以上で監視網増強、移動発射台を探知しミサイル無力化…画像販売も「防衛と経済の好循環」",
+      "category": "business",
       "categories": [
-        "games",
+        "business",
+        "sns",
         "net-culture",
-        "general",
-        "sns"
+        "general"
       ],
-      "buzzScore": 61.2,
+      "buzzScore": 62.3,
       "confidence": 0.4,
-      "articleCount": 3,
+      "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
+        "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 14.7,
-        "internetNativeBoost": 0,
-        "search": 5.5,
-        "social": 7.4,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 6,
         "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-476",
+      "title": "[ITmedia News] OpenAI、休眠サイトへの自社AIエージェント書き込みを認め、非公表の理由を説明",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 60,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 13.6,
+        "internetNativeBoost": 0,
+        "search": 3.3,
+        "social": 6,
+        "velocity": 5.3,
         "freshness": 8.5,
         "authority": 1,
         "categoryBias": 14,
@@ -43,13 +94,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 30,
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 67,
-        "internalSearchScore": 43,
-        "internalSocialScore": 57.5
+        "archiveHeatScore": 62,
+        "internalSearchScore": 25.6,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -58,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-22",
+      "clusterId": "today-cluster-28",
       "title": "国産インディーゲームはどう変わった？『めっちゃカメレオン』のヒット、出版社参入から読む現在地",
       "category": "entertainment",
       "categories": [
@@ -114,35 +165,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1249",
-      "title": "日本のデータセンター4倍へ、8年で10兆円投資　AI向けで米中に次ぐ",
-      "category": "tech",
+      "clusterId": "today-cluster-14",
+      "title": "くら寿司、「ちいかわ」コラボキャンペーンの中止を発表。同社従業員による不正行為が発覚したため",
+      "category": "games",
       "categories": [
-        "tech",
-        "business",
-        "sns",
+        "games",
         "net-culture",
-        "general"
+        "general",
+        "sns"
       ],
-      "buzzScore": 59.7,
-      "confidence": 0.35,
-      "articleCount": 2,
+      "buzzScore": 59.5,
+      "confidence": 0.4,
+      "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 3.8,
-        "social": 7.2,
+        "trend": 14.7,
+        "internetNativeBoost": 0,
+        "search": 5.4,
+        "social": 7.3,
         "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 9,
+        "freshness": 7,
+        "authority": 1,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -152,13 +203,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 29.6,
-        "internalSocialScore": 56.4
+        "browseMatchCount": 1,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 29.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 67,
+        "internalSearchScore": 42.4,
+        "internalSocialScore": 57.1
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -167,7 +218,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-695",
+      "clusterId": "today-cluster-837",
       "title": "「外国人に殴られた」 全島エイサー道ジュネーで男性3人暴行被害　沖縄署が米兵2人逮捕",
       "category": "crime",
       "categories": [
@@ -212,58 +263,6 @@
         "archiveHeatScore": 89,
         "internalSearchScore": 33.9,
         "internalSocialScore": 56.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-89",
-      "title": "スパイク・チュンソフト，「エンドサマーセール 2026」を9月5日2：00にSteamで開始。「風来のシレン6」「超探偵事件簿 レインコード プラス」が50％オフ",
-      "category": "games",
-      "categories": [
-        "games",
-        "sports",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 59.2,
-      "confidence": 0.34,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
-        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

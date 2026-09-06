@@ -1,25 +1,75 @@
 {
-  "generatedAt": "2026-09-06T14:09:05.626Z",
+  "generatedAt": "2026-09-06T17:00:21.210Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-811",
-  "selectedTitle": "SEKIRO:NO DEFEAT：全編手描きに挑んだ理由　日本アニメの伝統や美意識を継承　沓名健一監督インタビュー",
+  "selectedClusterId": "today-cluster-2",
+  "selectedTitle": "名画「ひまわり」の異形頭キャラ「サニー」が“最高に推せる”と話題に。新作アドベンチャーゲーム『Lost Museum -カイガミ追想譚-』に登場",
   "candidates": [
     {
-      "clusterId": "today-cluster-811",
-      "title": "SEKIRO:NO DEFEAT：全編手描きに挑んだ理由　日本アニメの伝統や美意識を継承　沓名健一監督インタビュー",
-      "category": "anime-features",
+      "clusterId": "today-cluster-2",
+      "title": "名画「ひまわり」の異形頭キャラ「サニー」が“最高に推せる”と話題に。新作アドベンチャーゲーム『Lost Museum -カイガミ追想譚-』に登場",
+      "category": "games",
       "categories": [
-        "anime-features",
-        "entertainment",
-        "manga",
-        "sns",
+        "games",
         "net-culture",
-        "tech",
-        "game-features",
+        "matome",
         "general"
       ],
-      "buzzScore": 66.8,
-      "confidence": 0.36,
+      "buzzScore": 71.3,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.3,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 44.7,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-282",
+      "title": "沖縄県知事選挙は前那覇市副市長・古謝玄太氏が先行、現職・玉城デニー氏が追う展開…読売新聞の情勢分析",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 66.3,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -29,14 +79,14 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 17.4,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 3.9,
-        "social": 7.3,
+        "search": 4.8,
+        "social": 7.4,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 14,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -48,11 +98,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 30.4,
-        "internalSocialScore": 56.9
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -61,7 +111,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-289",
+      "clusterId": "today-cluster-281",
       "title": "「包丁キャンセル」ＳＮＳで普及、「手間かけるだけが愛情ではない」…カット野菜やミールキット増・調理器具進化",
       "category": "sports",
       "categories": [
@@ -113,7 +163,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-306",
+      "clusterId": "today-cluster-294",
       "title": "『うみねこのなく頃に』を今こそ遊んでみよう。賛否の向こうにある「愛がなければ視えない」魅力",
       "category": "games",
       "categories": [
@@ -165,7 +215,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-291",
+      "clusterId": "today-cluster-284",
       "title": "GPT-6 Astra で飛躍的に向上したBlender 制作能力｜npaka",
       "category": "tech",
       "categories": [
@@ -208,58 +258,6 @@
         "crossCategoryScore": 80,
         "archiveHeatScore": 79,
         "internalSearchScore": 31.6,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-75",
-      "title": "スパイク・チュンソフト，「エンドサマーセール 2026」を9月5日2：00にSteamで開始。「風来のシレン6」「超探偵事件簿 レインコード プラス」が50％オフ",
-      "category": "games",
-      "categories": [
-        "games",
-        "sports",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 59.2,
-      "confidence": 0.34,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [

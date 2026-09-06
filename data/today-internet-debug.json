@@ -1,21 +1,25 @@
 {
-  "generatedAt": "2026-09-06T10:49:32.054Z",
+  "generatedAt": "2026-09-06T14:09:05.626Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-301",
-  "selectedTitle": "「包丁キャンセル」ＳＮＳで普及、「手間かけるだけが愛情ではない」…カット野菜やミールキット増・調理器具進化",
+  "selectedClusterId": "today-cluster-811",
+  "selectedTitle": "SEKIRO:NO DEFEAT：全編手描きに挑んだ理由　日本アニメの伝統や美意識を継承　沓名健一監督インタビュー",
   "candidates": [
     {
-      "clusterId": "today-cluster-301",
-      "title": "「包丁キャンセル」ＳＮＳで普及、「手間かけるだけが愛情ではない」…カット野菜やミールキット増・調理器具進化",
-      "category": "sports",
+      "clusterId": "today-cluster-811",
+      "title": "SEKIRO:NO DEFEAT：全編手描きに挑んだ理由　日本アニメの伝統や美意識を継承　沓名健一監督インタビュー",
+      "category": "anime-features",
       "categories": [
-        "sports",
+        "anime-features",
+        "entertainment",
+        "manga",
         "sns",
         "net-culture",
+        "tech",
+        "game-features",
         "general"
       ],
-      "buzzScore": 71.3,
-      "confidence": 0.4,
+      "buzzScore": 66.8,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -25,15 +29,67 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 3.9,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 30.4,
+        "internalSocialScore": 56.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-289",
+      "title": "「包丁キャンセル」ＳＮＳで普及、「手間かけるだけが愛情ではない」…カット野菜やミールキット増・調理器具進化",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 63.2,
+      "confidence": 0.35,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
         "trend": 20,
         "internetNativeBoost": 8,
         "search": 4.6,
         "social": 6,
         "velocity": 0,
         "freshness": 10,
-        "authority": 2.5,
+        "authority": 1.5,
         "categoryBias": 12,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -57,39 +113,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-620",
-      "title": "SEKIRO:NO DEFEAT：全編手描きに挑んだ理由　日本アニメの伝統や美意識を継承　沓名健一監督インタビュー",
-      "category": "anime-features",
+      "clusterId": "today-cluster-306",
+      "title": "『うみねこのなく頃に』を今こそ遊んでみよう。賛否の向こうにある「愛がなければ視えない」魅力",
+      "category": "games",
       "categories": [
-        "anime-features",
-        "entertainment",
-        "manga",
+        "games",
         "sns",
         "net-culture",
-        "tech",
-        "game-features",
         "general"
       ],
-      "buzzScore": 68.4,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 62.6,
+      "confidence": 0.33,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.3,
+        "search": 4.1,
+        "social": 6,
         "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
+        "freshness": 10,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -100,11 +152,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31,
-        "internalSocialScore": 57.3
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 32.3,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -113,7 +165,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-306",
+      "clusterId": "today-cluster-291",
       "title": "GPT-6 Astra で飛躍的に向上したBlender 制作能力｜npaka",
       "category": "tech",
       "categories": [
@@ -165,35 +217,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-328",
-      "title": "SNSで関心高まる沖縄県知事選 YouTube動画を分析すると…",
-      "category": "net-culture",
+      "clusterId": "today-cluster-75",
+      "title": "スパイク・チュンソフト，「エンドサマーセール 2026」を9月5日2：00にSteamで開始。「風来のシレン6」「超探偵事件簿 レインコード プラス」が50％オフ",
+      "category": "games",
       "categories": [
-        "net-culture",
-        "politics",
-        "sns",
+        "games",
+        "sports",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 61.2,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 59.2,
+      "confidence": 0.34,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 18.3,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 4.2,
+        "search": 4.4,
         "social": 6,
         "velocity": 0,
         "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -206,60 +258,9 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 32.9,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
         "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-599",
-      "title": "待望の「ニンダイ」が来た！「Nintendo Direct 2026.9.9」9月9日23時より配信決定、前日8日には「ゼルダの伝説40周年 Direct」も",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 59.2,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 4.5,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.1,
-        "internalSocialScore": 35.3
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

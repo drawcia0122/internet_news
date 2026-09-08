@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-08T17:27:13.307Z",
+  "generatedAt": "2026-09-08T20:13:32.363Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-326",
+  "selectedClusterId": "today-cluster-314",
   "selectedTitle": "過去の時代で配信者としてバズる育成SLG「過去でバズってVTuber -2018からならバズれるんじゃ！？」，年内に発売",
   "candidates": [
     {
-      "clusterId": "today-cluster-326",
+      "clusterId": "today-cluster-314",
       "title": "過去の時代で配信者としてバズる育成SLG「過去でバズってVTuber -2018からならバズれるんじゃ！？」，年内に発売",
       "category": "games",
       "categories": [
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1880",
+      "clusterId": "today-cluster-1982",
       "title": "『炎姫』『魔法少女ノ魔女裁判』などアニメスタイルのゲームが期間限定セールのイベント「Steamアニメゲームフェスティバル2026」開幕！600作以上が集う",
       "category": "games",
       "categories": [
@@ -111,59 +111,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1708",
-      "title": "「最大6人」で“呪われたボードゲーム”を遊ぶホラーゲーム『Invokyr』が面白そう。ダイスを振るたび命がけのチャレンジが襲い来る",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.7,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 33.8,
-        "internalSocialScore": 46.3
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-174",
+      "clusterId": "today-cluster-161",
       "title": "『スト6』公式X漫画「がんばれ！ジュリちゃん」が単行本化！描き下ろし番外編やおまけページも収録",
       "category": "manga",
       "categories": [
@@ -217,15 +165,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1690",
-      "title": "『逆転裁判』シリーズがSteamで一挙セール中。6作入りコレクションが“半額”の3495円、『逆転検事』、『大逆転裁判』もお得に",
+      "clusterId": "today-cluster-1810",
+      "title": "「最大6人」で“呪われたボードゲーム”を遊ぶホラーゲーム『Invokyr』が面白そう。ダイスを振るたび命がけのチャレンジが襲い来る",
       "category": "games",
       "categories": [
         "games",
+        "entertainment",
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.3,
+      "buzzScore": 65.5,
       "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 2,
@@ -238,7 +187,58 @@
         "sourceDiversity": 4.7,
         "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 4.3,
+        "search": 4.2,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 33.2,
+        "internalSocialScore": 45.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1792",
+      "title": "『逆転裁判』シリーズがSteamで一挙セール中。6作入りコレクションが“半額”の3495円、『逆転検事』、『大逆転裁判』もお得に",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64.1,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.2,
         "social": 4.5,
         "velocity": 0,
         "freshness": 3.5,
@@ -255,11 +255,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 60,
         "archiveHeatScore": 87,
-        "internalSearchScore": 33.8,
-        "internalSocialScore": 35.3
+        "internalSearchScore": 33.2,
+        "internalSocialScore": 34.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

@@ -1,180 +1,471 @@
 {
-  "generatedAt": "2026-09-09T01:11:30.026Z",
+  "generatedAt": "2026-09-09T06:35:35.635Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
     "general": 0,
-    "tech": 7,
+    "tech": 9,
     "business": 2,
     "politics": 1,
-    "entertainment": 79,
-    "anime": 14,
+    "entertainment": 73,
+    "anime": 20,
     "games": 155,
-    "game-features": 6,
-    "anime-features": 2,
-    "manga": 48,
+    "game-features": 4,
+    "anime-features": 1,
+    "manga": 47,
     "books": 2,
-    "sports": 0,
+    "sports": 1,
     "net-culture": 1,
     "matome": 0,
     "crime": 0,
-    "adult": 6,
+    "adult": 5,
     "world": 2
   },
   "hasMore": false,
   "nextPage": 0,
   "items": [
     {
-      "id": "auto-games-スマホ連携サービス-zelda-notes-が-ゼルダの伝説-時のオカリナ-に対応-オカリナ演奏や作品知識を試す検定など新機能を搭載-4gamer.net/games/015/g101542/20260909001",
-      "title": "スマホ連携サービス「ZELDA NOTES」が「ゼルダの伝説 時のオカリナ」に対応。オカリナ演奏や作品知識を試す検定など新機能を搭載",
-      "summary": "任天堂は2026年9月8日，配信番組「ゼルダの伝説40周年Direct2026.9.8」にて，スマートフォン向けアプリ「NintendoSwitchApp」のゲーム…",
-      "briefSummary": "任天堂は2026年9月8日，配信番組「ゼルダの伝説40周年Direct2026.9.8」にて，スマートフォン向けアプリ「NintendoSwitchApp」のゲーム連携サービス「ZELDANOTES」が，「ゼルダの伝説時のオカリナ」に対応す…",
+      "id": "auto-games-無料-silent-hill-f-都市伝説解体センター-雛子とあざみが共演するコラボゲームが公開-バンドルや記念イラストも展開の特別コラボ開催-gamespark.jp/article/2026/09/09/171971.html",
+      "title": "【無料】『SILENT HILL f』×『都市伝説解体センター』雛子とあざみが共演するコラボゲームが公開！バンドルや記念イラストも展開の特別コラボ開催",
+      "summary": "ミニゲームは墓場文庫が制作。今回のコラボでは、記念イラストの公開やSteamでのバンドル販売も行われています。",
+      "briefSummary": "コナミデジタルエンタテインメントは9月9日、サイコロジカルホラー『 SILENT HILL f 』と、集英社ゲームズがパブリッシングを行うミステリーADV『 都市伝説解体センター 』とのコラボレーション企画を開始しました。",
       "category": "games",
       "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1188297.png",
+      "publishedAt": null,
+      "capturedAt": "2026-09-09T06:35:35.635Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/09/09/171971.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "【無料】『SILENT HILL f』×『都市伝説解体センター』雛子とあざみが共演するコラボゲームが公開！バンドルや記念イラストも展開の特別コラボ開催",
+          "url": "http://www.gamespark.jp/article/2026/09/09/171971.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/09/171971.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1188297.png"
+        }
+      ],
+      "whatHappened": "『SILENT HILL f』×『都市伝説解体センター』雛子とあざみが共演するコラボゲームが…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-code-vein-ii-エンディング後の時代を描くコンテンツ追加の無料アプデと拡張dlcが配信開始-dlcでは-もう一つの歴史改変ストーリー描く-gamespark.jp/article/2026/09/09/171968.html",
+      "title": "『CODE VEIN II』エンディング後の時代を描くコンテンツ追加の無料アプデと拡張DLCが配信開始！DLCでは、もう一つの歴史改変ストーリー描く",
+      "summary": "バンダイナムコエンターテインメントは9月9日、『 CODE VEIN II 』の拡張DLC「Mask of Idris」と無料アップデートVer.2.0を配信しました。",
+      "briefSummary": "本編『CODE VEIN II』は、アニメ調のソウルライクなアクションRPGとして2026年1月に発売。吸血鬼ハンターの主人公が、時を超える力を持つ少女とともに100年前の過去へ飛び、世界の崩壊を食い止める物語が描かれます。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1188185.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-09T06:35:35.635Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/09/09/171968.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "『CODE VEIN II』エンディング後の時代を描くコンテンツ追加の無料アプデと拡張DLCが配信開始！DLCでは、もう一つの歴史改変ストーリー描く",
+          "url": "http://www.gamespark.jp/article/2026/09/09/171968.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/09/171968.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1188185.jpg"
+        }
+      ],
+      "whatHappened": "『CODE VEIN II』エンディング後の時代を描くコンテンツ追加の無料アプデと拡張DLC…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-米ホワイトハウス-国境を守る壁を築く-テトリス-ゲー黙って削除-さらに-時オカ-リメイクにも乗っかる-トランプの伝説-make-america-great-ag-gamespark.jp/article/2026/09/09/171965.html",
+      "title": "米ホワイトハウス“国境を守る壁を築く”『テトリス』ゲー黙って削除。さらに『時オカ』リメイクにも乗っかる「トランプの伝説 MAKE AMERICA GREAT AGAIN」",
+      "summary": "米ホワイトハウスが2026年9月4日に公開したゲームサイト「 ARCADE.GOV 」。同サイトでは 『テトリス』 を模した …",
+      "briefSummary": "ホワイトハウスの公式Xはさらに、9月8日に発売日が発表されたばかりのスイッチ2版『ゼルダの伝説 時のオカリナ』に便乗したと思われる映像を9月9日に公開しました。こちらの映像では「トランプの伝説 MAKE AMERICA GREAT AGAIN」と書かれており、スマホゲーム風の縦画面でトランプ大統領が冒険し、執務をする様子が描かれています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "world",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "国際"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1188103.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-09T06:35:35.635Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/09/09/171965.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "米ホワイトハウス“国境を守る壁を築く”『テトリス』ゲー黙って削除。さらに『時オカ』リメイクにも乗っかる「トランプの伝説 MAKE AMERICA GREAT AGAIN」",
+          "url": "http://www.gamespark.jp/article/2026/09/09/171965.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/09/171965.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1188103.jpg"
+        }
+      ],
+      "whatHappened": "米ホワイトハウス“国境を守る壁を築く”『テトリス』ゲー黙って削除",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き",
+        "時事ニュースを追う人"
+      ]
+    },
+    {
+      "id": "auto-anime-秋アニメ-ジャンケットバンク-が放送延期-公式からの発表に-いつまでも待つよ-大丈夫-待ってます-と応援の声続-animeanime.jp/article/2026/09/09/102781.html",
+      "title": "秋アニメ「ジャンケットバンク」が放送延期!? 公式からの発表に「いつまでも待つよ」「大丈夫！！待ってます！！」と応援の声続々",
+      "summary": "2026年10月より放送予定だったTVアニメ『ジャンケットバンク』が公式より放送延期を発表。Xでのお知らせにファンからは「待ってます！」と声援が寄せられ、話題になっている。",
+      "briefSummary": "2026年10月より放送予定だったTVアニメ『ジャンケットバンク』が公式より放送延期を発表。Xでのお知らせにファンからは「待ってます！」と声援が寄せられ、話題になっている。",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "アニメ",
+      "categoryLabels": [
+        "アニメ",
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/929231.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-09T06:35:35.635Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/09/09/102781.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "秋アニメ「ジャンケットバンク」が放送延期!? 公式からの発表に「いつまでも待つよ」「大丈夫！！待ってます！！」と応援の声続々",
+          "url": "https://animeanime.jp/article/2026/09/09/102781.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/09/09/102781.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/929231.jpg"
+        }
+      ],
+      "whatHappened": "秋アニメ「ジャンケットバンク」が放送延期",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-spy-family-ロイド-アーニャ-ヨル-ボンドがスマートウォッチに-キャラごとに変化する文字盤のギミックも-animeanime.jp/article/2026/09/09/102779.html",
+      "title": "「SPY×FAMILY」ロイド、アーニャ、ヨル、ボンドがスマートウォッチに！ キャラごとに変化する文字盤のギミックも♪",
+      "summary": "TVアニメ『SPY×FAMILY』のスマートウォッチが「GARRACK（ギャラック）」より登場する。ロイド、アーニャ、ヨル、ボンドをイメージした4モデルをラインアップし、9月11日より予約受付、9月30日より一般発売を開始する。",
+      "briefSummary": "TVアニメ『SPY×FAMILY』のスマートウォッチが「GARRACK（ギャラック）」より登場する。ロイド、アーニャ、ヨル、ボンドをイメージした4モデルをラインアップし、9月11日より予約受付、9月30日より一般発売を開始する。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/926720.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-09T06:35:35.635Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/09/09/102779.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「SPY×FAMILY」ロイド、アーニャ、ヨル、ボンドがスマートウォッチに！ キャラごとに変化する文字盤のギミックも♪",
+          "url": "https://animeanime.jp/article/2026/09/09/102779.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/09/09/102779.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/926720.jpg"
+        }
+      ],
+      "whatHappened": "「SPY×FAMILY」ロイド、アーニャ、ヨル、ボンドがスマートウォッチに",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-カオスゼロナイトメア-銀河系災害シーズン4の第3の物語-奪うばかりの大鎌-を実装-新-5戦闘員-オルガ-も登場-4gamer.net/games/793/g079349/20260909023",
+      "title": "「カオスゼロナイトメア」，銀河系災害シーズン4の第3の物語「奪うばかりの大鎌」を実装。新★5戦闘員「オルガ」も登場",
+      "summary": "スマイルゲートは本日，ローグライクRPG「カオスゼロナイトメア」に，「銀河系災害」シーズン4の新ストーリー「奪うばかりの大鎌」を追加した。新★5戦闘員「オルガ」と新…",
+      "briefSummary": "スマイルゲートは本日，ローグライクRPG「カオスゼロナイトメア」に，「銀河系災害」シーズン4の新ストーリー「奪うばかりの大鎌」を追加した。新★5戦闘員「オルガ」と新パートナー「エミリー」が登場し，「記憶の欠片」の自動管理や「リモート抽出」な…",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": null,
+      "capturedAt": "2026-09-09T06:35:35.635Z",
+      "time": "直近",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/793/G079349/20260909023/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "「カオスゼロナイトメア」，銀河系災害シーズン4の第3の物語「奪うばかりの大鎌」を実装。新★5戦闘員「オルガ」も登場",
+          "url": "https://www.4gamer.net/games/793/G079349/20260909023/",
+          "canonicalUrl": "https://www.4gamer.net/games/793/G079349/20260909023/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「カオスゼロナイトメア」，銀河系災害シーズン4の第3の物語「奪うばかりの大鎌」を実装",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-巨大な移動要塞を構築し-行く手を阻むすべてをなぎ倒せ-ローグライクact-wanderburg-の早期アクセス版が配信開始-4gamer.net/games/918/g091858/20260909022",
+      "title": "巨大な移動要塞を構築し，行く手を阻むすべてをなぎ倒せ！　ローグライクACT「Wanderburg」の早期アクセス版が配信開始",
+      "summary": "SidekickPublishingは2026年9月8日，Randwerkが開発中の新作タイトル「Wanderburgワンダーバーグ」の早期アクセス版をリリースした…",
+      "briefSummary": "SidekickPublishingは2026年9月8日，Randwerkが開発中の新作タイトル「Wanderburgワンダーバーグ」の早期アクセス版をリリースした。本作は，車輪付きの動く城を要塞化しながら，中世の世界を進むローグライクアク…",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": null,
+      "capturedAt": "2026-09-09T06:35:35.635Z",
+      "time": "直近",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/918/G091858/20260909022/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "巨大な移動要塞を構築し，行く手を阻むすべてをなぎ倒せ！　ローグライクACT「Wanderburg」の早期アクセス版が配信開始",
+          "url": "https://www.4gamer.net/games/918/G091858/20260909022/",
+          "canonicalUrl": "https://www.4gamer.net/games/918/G091858/20260909022/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "巨大な移動要塞を構築し，行く手を阻むすべてをなぎ倒せ",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-anime-ラグナロク-アドベンチャーズ-魅力を紹介するpvを公開-事前登録特典に-ゆめかわポリンヘアのレシピ-などのアイテムを追加-4gamer.net/games/033/g103301/20260909020",
+      "title": "「ラグナロク：アドベンチャーズ」，魅力を紹介するPVを公開。事前登録特典に「ゆめかわポリンヘアのレシピ」などのアイテムを追加",
+      "summary": "ガンホー・オンライン・エンターテイメントは本日，スマホアプリ「ラグナロク：アドベンチャーズ」のPVを公開した。PV公開を記念して，事前登録特典にポリンをモチーフにし…",
+      "briefSummary": "ガンホー・オンライン・エンターテイメントは本日，スマホアプリ「ラグナロク：アドベンチャーズ」のPVを公開した。PV公開を記念して，事前登録特典にポリンをモチーフにした「ゆめかわポリンヘアのレシピ」などのゲーム内アイテムを追加した。",
+      "category": "anime",
+      "categories": [
+        "anime",
         "games",
         "tech",
-        "entertainment",
         "general"
       ],
-      "categoryLabel": "ゲーム",
+      "categoryLabel": "アニメ",
       "categoryLabels": [
+        "アニメ",
         "ゲーム",
-        "テック",
-        "エンタメ"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/015/G101542/20260909001/SS/002.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-09T01:11:30.026Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/015/G101542/20260909001/",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "スマホ連携サービス「ZELDA NOTES」が「ゼルダの伝説 時のオカリナ」に対応。オカリナ演奏や作品知識を試す検定など新機能を搭載",
-          "url": "https://www.4gamer.net/games/015/G101542/20260909001/",
-          "canonicalUrl": "https://www.4gamer.net/games/015/G101542/20260909001/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/015/G101542/20260909001/SS/002.jpg"
-        }
-      ],
-      "whatHappened": "スマホ連携サービス「ZELDA NOTES」が「ゼルダの伝説 時のオカリナ」に対応",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-switch2の-ゼルダの伝説-40周年-アニバーサリーエディション-10月29日に発売決定-特別デザインのproコンやキャリングケースも同日発売-4gamer.net/games/990/g999030/20260908057",
-      "title": "Switch2の「ゼルダの伝説 40周年 アニバーサリーエディション」，10月29日に発売決定。特別デザインのProコンやキャリングケースも同日発売",
-      "summary": "任天堂は，本日（2026年9月8日）配信された「ゼルダの伝説40周年Direct2026.9.8」で，「NintendoSwitch2ゼルダの伝説40周年アニバーサ…",
-      "briefSummary": "任天堂は，本日（2026年9月8日）配信された「ゼルダの伝説40周年 Direct 2026.9.8」で，「Nintendo Switch 2 ゼルダの伝説 40周年 アニバーサリーエディション」を10月29日に発売すると発表した。特別デザインのProコンやキャリングケースも同日発売となる。",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/990/G999030/20260908057/SS/001.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-09T01:11:30.026Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/990/G999030/20260908057/",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "Switch2の「ゼルダの伝説 40周年 アニバーサリーエディション」，10月29日に発売決定。特別デザインのProコンやキャリングケースも同日発売",
-          "url": "https://www.4gamer.net/games/990/G999030/20260908057/",
-          "canonicalUrl": "https://www.4gamer.net/games/990/G999030/20260908057/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/990/G999030/20260908057/SS/001.jpg"
-        }
-      ],
-      "whatHappened": "Switch2の「ゼルダの伝説 40周年 アニバーサリーエディション」，10月29日に発売決…",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-リメイク版-ゼルダの伝説-時のオカリナ-2026年11月5日に発売決定-初公開の実機プレイでは-こどもリンクの姿を見られた-4gamer.net/games/999/g999903/20260908060",
-      "title": "リメイク版「ゼルダの伝説 時のオカリナ」2026年11月5日に発売決定！　初公開の実機プレイでは，こどもリンクの姿を見られた",
-      "summary": "任天堂の配信映像「ゼルダの伝説40周年Direct2026.9.8」で，NintendoSwitch2用ソフト「ゼルダの伝説時のオカリナ」が，2026年11月5日に…",
-      "briefSummary": "任天堂の配信映像「ゼルダの伝説40周年Direct2026.9.8」で，NintendoSwitch2用ソフト「ゼルダの伝説時のオカリナ」が，2026年11月5日に発売されると発表された。配信では実機プレイ映像として，物語導入部のプレイの様…",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
+        "テック"
       ],
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": null,
-      "capturedAt": "2026-09-09T01:11:30.026Z",
+      "capturedAt": "2026-09-09T06:35:35.635Z",
       "time": "直近",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/999/G999903/20260908060/",
+      "sourceUrl": "https://www.4gamer.net/games/033/G103301/20260909020/",
       "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
@@ -193,88 +484,28 @@
             "console",
             "steam"
           ],
-          "title": "リメイク版「ゼルダの伝説 時のオカリナ」2026年11月5日に発売決定！　初公開の実機プレイでは，こどもリンクの姿を見られた",
-          "url": "https://www.4gamer.net/games/999/G999903/20260908060/",
-          "canonicalUrl": "https://www.4gamer.net/games/999/G999903/20260908060/",
+          "title": "「ラグナロク：アドベンチャーズ」，魅力を紹介するPVを公開。事前登録特典に「ゆめかわポリンヘアのレシピ」などのアイテムを追加",
+          "url": "https://www.4gamer.net/games/033/G103301/20260909020/",
+          "canonicalUrl": "https://www.4gamer.net/games/033/G103301/20260909020/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "リメイク版「ゼルダの伝説 時のオカリナ」2026年11月5日に発売決定",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "whatHappened": "「ラグナロク：アドベンチャーズ」，魅力を紹介するPVを公開",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー",
-        "ガジェット好き"
+        "ガジェット好き",
+        "漫画・アニメ好き"
       ]
     },
     {
-      "id": "auto-games-実写映画の正式タイトルはズバリ-ゼルダの伝説-2027年4月30日公開-4gamer.net/games/015/g101542/20260908062",
-      "title": "実写映画の正式タイトルはズバリ「ゼルダの伝説」。2027年4月30日公開",
-      "summary": "任天堂は本日に配信された「ゼルダの伝説40周年Direct2026.9.8」にて，実写映画版の正式タイトルが副題なしの「ゼルダの伝説」に決定したことを発表した。20…",
-      "briefSummary": "任天堂は本日に配信された「ゼルダの伝説40周年Direct2026.9.8」にて，実写映画版の正式タイトルが副題なしの「ゼルダの伝説」に決定したことを発表した。2027年4月30日に全世界同時公開が予定されている。",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": null,
-      "capturedAt": "2026-09-09T01:11:30.026Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/015/G101542/20260908062/",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "実写映画の正式タイトルはズバリ「ゼルダの伝説」。2027年4月30日公開",
-          "url": "https://www.4gamer.net/games/015/G101542/20260908062/",
-          "canonicalUrl": "https://www.4gamer.net/games/015/G101542/20260908062/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "実写映画の正式タイトルはズバリ「ゼルダの伝説」",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-プレイレポ-gundam-rogue-orbit-は-ガンダム-対-地球外生命体-を描く-ハイスピードかつ重量感のある近接主体のバトルを確認してきた-4gamer.net/games/013/g101360/20260827035",
-      "title": "［プレイレポ］「GUNDAM ROGUE ORBIT」は“ガンダム 対 地球外生命体”を描く。ハイスピードかつ重量感のある近接主体のバトルを確認してきた",
-      "summary": "バンダイナムコエンターテインメントが2027年3月5日に発売を予定している「GUNDAMROGUEORBIT」の試遊機会を得たので，そのプレイレポートをお届けしよう…",
-      "briefSummary": "バンダイナムコエンターテインメントが2027年3月5日に発売を予定している「GUNDAMROGUEORBIT」の試遊機会を得たので，そのプレイレポートをお届けしよう。高速・高火力のガンダムが重量感とともに暴れる爽快なアクションを楽しめた。",
+      "id": "auto-games-wizardry-variants-daphne-東京ゲームショウ2026の出展内容が一部公開に-ダンジョンでの冒険を体感できる大型展示やフォトスポットを用意-4gamer.net/games/540/g054095/20260909019",
+      "title": "「Wizardry Variants Daphne」，東京ゲームショウ2026の出展内容が一部公開に。ダンジョンでの冒険を体感できる大型展示やフォトスポットを用意",
+      "summary": "ドリコムは本日（2026年9月9日），3DダンジョンRPG「WizardryVariantsDaphne」について，東京ゲームショウ2026における出展内容を一部発…",
+      "briefSummary": "ドリコムは本日（2026年9月9日），3DダンジョンRPG「WizardryVariantsDaphne」について，東京ゲームショウ2026における出展内容を一部発表した。本作のブースでは，LEDを3面に配した没入空間でダンジョン「はじまり…",
       "category": "games",
       "categories": [
         "games",
@@ -289,12 +520,11 @@
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": null,
-      "capturedAt": "2026-09-09T01:11:30.026Z",
+      "capturedAt": "2026-09-09T06:35:35.635Z",
       "time": "直近",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/013/G101360/20260827035/",
+      "sourceUrl": "https://www.4gamer.net/games/540/G054095/20260909019/",
       "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
@@ -313,16 +543,16 @@
             "console",
             "steam"
           ],
-          "title": "［プレイレポ］「GUNDAM ROGUE ORBIT」は“ガンダム 対 地球外生命体”を描く。ハイスピードかつ重量感のある近接主体のバトルを確認してきた",
-          "url": "https://www.4gamer.net/games/013/G101360/20260827035/",
-          "canonicalUrl": "https://www.4gamer.net/games/013/G101360/20260827035/",
+          "title": "「Wizardry Variants Daphne」，東京ゲームショウ2026の出展内容が一部公開に。ダンジョンでの冒険を体感できる大型展示やフォトスポットを用意",
+          "url": "https://www.4gamer.net/games/540/G054095/20260909019/",
+          "canonicalUrl": "https://www.4gamer.net/games/540/G054095/20260909019/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "［プレイレポ］「GUNDAM ROGUE ORBIT」は“ガンダム 対 地球外生命体”を描く",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "whatHappened": "「Wizardry Variants Daphne」，東京ゲームショウ2026の出展内容が一…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー",
@@ -330,10 +560,10 @@
       ]
     },
     {
-      "id": "auto-games-ウィッチャー3-ワイルドハント-コンプリートエディション-販売価格を改定-リマスター版発表に伴い-gamespark.jp/article/2026/09/09/171956.html",
-      "title": "『ウィッチャー3 ワイルドハント コンプリートエディション』販売価格を改定―リマスター版発表に伴い",
-      "summary": "CD Projekt REDは、既存の『ウィッチャー３ ワイルドハント コンプリートエディション』の販売価格を改定すると発表しました。",
-      "briefSummary": "CD Projekt REDは、既存の『ウィッチャー３ ワイルドハント コンプリートエディション』の販売価格を改定すると発表しました。",
+      "id": "auto-games-ゲーミングディスプレイの機能で-映像酔い-を減らせる-ioデータが-酔い軽減アシスト-を既存製品にアップデートで追加-4gamer.net/games/278/g027801/20260909018",
+      "title": "ゲーミングディスプレイの機能で「映像酔い」を減らせる!? IOデータが「酔い軽減アシスト」を既存製品にアップデートで追加",
+      "summary": "2026年9月9日，アイ・オー・データは，「GigaCrysta」の23.8インチディスプレイ「LCD-GD243UD」シリーズに，いわゆる「映像酔い」「3D酔い」…",
+      "briefSummary": "2026年9月9日，アイ・オー・データは，「GigaCrysta」の23.8インチディスプレイ「LCD-GD243UD」シリーズに，いわゆる「映像酔い」「3D酔い」を軽減する新機能「酔い軽減アシスト」を，ファームウェアアップデートで提供する…",
       "category": "games",
       "categories": [
         "games",
@@ -346,270 +576,40 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1188035.jpg",
+      "thumbnailUrl": null,
       "publishedAt": null,
-      "capturedAt": "2026-09-09T01:11:30.026Z",
+      "capturedAt": "2026-09-09T06:35:35.635Z",
       "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/09/09/171956.html",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/278/G027801/20260909018/",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
           "sourceGroup": "games",
-          "sourcePriority": 92,
+          "sourcePriority": 94,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
             "pc",
-            "console"
+            "console",
+            "steam"
           ],
-          "title": "『ウィッチャー3 ワイルドハント コンプリートエディション』販売価格を改定―リマスター版発表に伴い",
-          "url": "http://www.gamespark.jp/article/2026/09/09/171956.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/09/171956.html",
+          "title": "ゲーミングディスプレイの機能で「映像酔い」を減らせる!? IOデータが「酔い軽減アシスト」を既存製品にアップデートで追加",
+          "url": "https://www.4gamer.net/games/278/G027801/20260909018/",
+          "canonicalUrl": "https://www.4gamer.net/games/278/G027801/20260909018/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1188035.jpg"
+          "thumbnailUrl": null
         }
       ],
-      "whatHappened": "『ウィッチャー3 ワイルドハント コンプリートエディション』販売価格を改定―リマスター版発表…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-コスプレ-抜群のスタイルにヘソ出し-ショートパンツの健康美-ポージングも完璧な-ff10-リュックの再現度が高すぎた-写真9枚-inside-games.jp/article/2026/09/09/187450.html",
-      "title": "【コスプレ】抜群のスタイルにヘソ出し×ショートパンツの健康美！ポージングも完璧な『FF10』リュックの再現度が高すぎた【写真9枚】",
-      "summary": "",
-      "briefSummary": "本稿では『 ファイナルファンタジー10 』リュックのコスプレでイベントに参加した 白銀みや（X：@miyy_my） さんの撮り下ろしフォトレポートをお届けします。抜群のスタイルにヘソ出し、ショートパンツから伸びる健康的な美脚が眩しい美女レイヤー。キャラになりきった完璧なポージングが見せる再現度の高さにも注目です。",
-      "category": "games",
-      "categories": [
-        "games",
-        "adult",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "アダルト系"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1766792.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-09T01:11:30.026Z",
-      "time": "直近",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/09/09/187450.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch",
-            "pokemon"
-          ],
-          "title": "【コスプレ】抜群のスタイルにヘソ出し×ショートパンツの健康美！ポージングも完璧な『FF10』リュックの再現度が高すぎた【写真9枚】",
-          "url": "https://www.inside-games.jp/article/2026/09/09/187450.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/09/09/187450.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1766792.jpg"
-        }
-      ],
-      "whatHappened": "抜群のスタイルにヘソ出し×ショートパンツの健康美",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-トースト焼ける-xbox-series-s-型ゲーミングpcが誕生-公式トースターが改造される-gamespark.jp/article/2026/09/09/171959.html",
-      "title": "トースト焼ける“Xbox Series S”型ゲーミングPCが誕生！公式トースターが改造される",
-      "summary": "2024年より販売されている 「Xbox Series S」型の2スライストースター 。ゲーム機の形を模した一見ジョークなようで実在する公式ライセンス品ですが、それをゲーム可能なデバイスへと改造する、先祖返りのような試みが動画として公開されました",
-      "briefSummary": "2024年より販売されている 「Xbox Series S」型の2スライストースター 。ゲーム機の形を模した一見ジョークなようで実在する公式ライセンス品ですが、それをゲーム可能なデバイスへと改造する、先祖返りのような試みが動画として公開されました",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1187984.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-09T01:11:30.026Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/09/09/171959.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "トースト焼ける“Xbox Series S”型ゲーミングPCが誕生！公式トースターが改造される",
-          "url": "http://www.gamespark.jp/article/2026/09/09/171959.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/09/171959.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1187984.jpg"
-        }
-      ],
-      "whatHappened": "トースト焼ける“Xbox Series S”型ゲーミングPCが誕生",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-車輪付きの城-が中世の戦場で暴れ回るローグライク-ワンダーバーグ-早期アクセス開始-村や動物を吸収してどんどん成長-gamespark.jp/article/2026/09/09/171958.html",
-      "title": "“車輪付きの城”が中世の戦場で暴れ回るローグライク『ワンダーバーグ』早期アクセス開始！村や動物を吸収してどんどん成長",
-      "summary": "Sidekick Publishingは、Randwerkが手掛ける中世ローグライク 『Wanderburg ワンダーバーグ』 の早期アクセスを開始しました。",
-      "briefSummary": "Sidekick Publishingは、Randwerkが手掛ける中世ローグライク 『Wanderburg ワンダーバーグ』 の早期アクセスを開始しました。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1187990.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-09T01:11:30.026Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/09/09/171958.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "“車輪付きの城”が中世の戦場で暴れ回るローグライク『ワンダーバーグ』早期アクセス開始！村や動物を吸収してどんどん成長",
-          "url": "http://www.gamespark.jp/article/2026/09/09/171958.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/09/171958.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1187990.jpg"
-        }
-      ],
-      "whatHappened": "“車輪付きの城”が中世の戦場で暴れ回るローグライク『ワンダーバーグ』早期アクセス開始",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-gta6-予約開始から約2ヶ月半で予約本数528万本-予約売上約800億円を記録-sensor-tower調べ-gamespark.jp/article/2026/09/09/171957.html",
-      "title": "『GTA6』予約開始から約2ヶ月半で予約本数528万本、予約売上約800億円を記録―Sensor Tower調べ",
-      "summary": "市場調査会社Sensor Towerは、『 グランド・セフト・オートVI（GTA6） 』のPlayStation/Xbox版の売上追跡データ（2026年9月8日時点）を公開しました。",
-      "briefSummary": "同データによると、本作は6月25日の予約開始から累計予約本数528万本（返品控除後）、累計予約売上5億1,600万ドル（約800億円※、返品控除後）を記録しています。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1188032.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-09T01:11:30.026Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/09/09/171957.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "『GTA6』予約開始から約2ヶ月半で予約本数528万本、予約売上約800億円を記録―Sensor Tower調べ",
-          "url": "http://www.gamespark.jp/article/2026/09/09/171957.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/09/171957.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1188032.jpg"
-        }
-      ],
-      "whatHappened": "『GTA6』予約開始から約2ヶ月半で予約本数528万本、予約売上約800億円を記録―Sens…",
+      "whatHappened": "ゲーミングディスプレイの機能で「映像酔い」を減らせる",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [

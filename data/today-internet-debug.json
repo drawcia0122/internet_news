@@ -1,29 +1,26 @@
 {
-  "generatedAt": "2026-09-10T09:08:41.272Z",
+  "generatedAt": "2026-09-10T13:34:12.906Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-7",
-  "selectedTitle": "ぽこピー×スイパラ、コラボカフェを5都府県で開催　テーマは世界旅行",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "『妖怪ウォッチ2 覇道』新映像が公開！Switch 2、PS5、Steamで発売決定！",
   "candidates": [
     {
-      "clusterId": "today-cluster-7",
-      "title": "ぽこピー×スイパラ、コラボカフェを5都府県で開催　テーマは世界旅行",
-      "category": "entertainment",
+      "clusterId": "today-cluster-1",
+      "title": "『妖怪ウォッチ2 覇道』新映像が公開！Switch 2、PS5、Steamで発売決定！",
+      "category": "games",
       "categories": [
-        "entertainment",
-        "anime",
-        "sns",
+        "games",
         "net-culture",
         "general"
       ],
-      "buzzScore": 77.2,
-      "confidence": 0.46,
+      "buzzScore": 78.8,
+      "confidence": 0.5,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
@@ -31,7 +28,113 @@
         "trend": 22,
         "internetNativeBoost": 8,
         "search": 6.5,
-        "social": 8.4,
+        "social": 5.6,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-202",
+      "title": "『ゼノブレイド3 Nintendo Switch 2 Edition』新ヒーロー「カグヤ」参戦！ 無数の敵に立ち向かう新モード「ヒーローズ・レコード」も【Nintendo Direct 2026.9.9】",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general",
+        "net-culture"
+      ],
+      "buzzScore": 73.7,
+      "confidence": 0.44,
+      "articleCount": 3,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
+      "whyRanked": [
+        "主要3媒体で同一話題を確認",
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 7,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 4.8,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 10.2,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 34.6,
+        "internalSocialScore": 37.6
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-31",
+      "title": "「『メトロイド』の主人公はメトロイドじゃない」がいよいよ通用しなくなると盛り上がる。『ドレッド』を経て、“ちゃんとメトロイドが主人公”の新作",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 72,
+      "confidence": 0.45,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 20,
+        "internetNativeBoost": 8,
+        "search": 6.1,
+        "social": 5.6,
         "velocity": 5.3,
         "freshness": 8.5,
         "authority": 1.5,
@@ -48,64 +151,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-210",
-      "title": "『ゼノブレイド3 Nintendo Switch 2 Edition』新ヒーロー「カグヤ」参戦！ 無数の敵に立ち向かう新モード「ヒーローズ・レコード」も【Nintendo Direct 2026.9.9】",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general",
-        "net-culture"
-      ],
-      "buzzScore": 73.9,
-      "confidence": 0.44,
-      "articleCount": 3,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 7,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 4.9,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 11.1,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 35.2,
-        "internalSocialScore": 38
+        "archiveHeatScore": 91,
+        "internalSearchScore": 47.5,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -114,7 +163,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-809",
+      "clusterId": "today-cluster-1227",
       "title": "スイッチ2『ピクミン4 Nintendo Switch 2 Edition + だれでもチャレンジ! ダンドリ検定』が11月12日に発売！【Nintendo Direct 2026.9.9】",
       "category": "games",
       "categories": [
@@ -123,7 +172,7 @@
         "entertainment",
         "net-culture"
       ],
-      "buzzScore": 73.4,
+      "buzzScore": 71.8,
       "confidence": 0.45,
       "articleCount": 3,
       "sourceCount": 3,
@@ -138,10 +187,10 @@
         "sourceDiversity": 7,
         "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 5.2,
-        "social": 3.5,
+        "search": 5.1,
+        "social": 3.4,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 2.5,
         "categoryBias": 14,
         "penalty": 0
@@ -155,11 +204,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 11.1,
+        "repeatedAppearanceScore": 10.2,
         "crossCategoryScore": 40,
         "archiveHeatScore": 95,
-        "internalSearchScore": 40.5,
-        "internalSocialScore": 27
+        "internalSearchScore": 39.9,
+        "internalSocialScore": 26.6
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -168,7 +217,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1917",
+      "clusterId": "today-cluster-2355",
       "title": "『めっちゃカメレオン』Nintendo Switch 2版が発表！ダイレクト終了後に配信開始！",
       "category": "games",
       "categories": [
@@ -177,7 +226,7 @@
         "general",
         "net-culture"
       ],
-      "buzzScore": 70.8,
+      "buzzScore": 70.6,
       "confidence": 0.41,
       "articleCount": 3,
       "sourceCount": 2,
@@ -190,8 +239,8 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 5.9,
+        "search": 4.7,
+        "social": 5.8,
         "velocity": 0,
         "freshness": 3.5,
         "authority": 2.5,
@@ -207,64 +256,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 80,
         "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-857",
-      "title": "英強硬右派「リフォームUK」、選挙資金を違法に調達か　警察が刑事捜査開始",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 68.2,
-      "confidence": 0.4,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.3,
-        "internalSocialScore": 57.3
+        "internalSearchScore": 37,
+        "internalSocialScore": 45.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

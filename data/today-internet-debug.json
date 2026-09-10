@@ -1,21 +1,76 @@
 {
-  "generatedAt": "2026-09-10T04:31:44.555Z",
+  "generatedAt": "2026-09-10T09:08:41.272Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-170",
-  "selectedTitle": "スイッチ2『ピクミン4 Nintendo Switch 2 Edition + だれでもチャレンジ! ダンドリ検定』が11月12日に発売！【Nintendo Direct 2026.9.9】",
+  "selectedClusterId": "today-cluster-7",
+  "selectedTitle": "ぽこピー×スイパラ、コラボカフェを5都府県で開催　テーマは世界旅行",
   "candidates": [
     {
-      "clusterId": "today-cluster-170",
-      "title": "スイッチ2『ピクミン4 Nintendo Switch 2 Edition + だれでもチャレンジ! ダンドリ検定』が11月12日に発売！【Nintendo Direct 2026.9.9】",
+      "clusterId": "today-cluster-7",
+      "title": "ぽこピー×スイパラ、コラボカフェを5都府県で開催　テーマは世界旅行",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "anime",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 77.2,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-210",
+      "title": "『ゼノブレイド3 Nintendo Switch 2 Edition』新ヒーロー「カグヤ」参戦！ 無数の敵に立ち向かう新モード「ヒーローズ・レコード」も【Nintendo Direct 2026.9.9】",
       "category": "games",
       "categories": [
         "games",
-        "general",
         "entertainment",
+        "general",
         "net-culture"
       ],
-      "buzzScore": 76.6,
-      "confidence": 0.47,
+      "buzzScore": 73.9,
+      "confidence": 0.44,
       "articleCount": 3,
       "sourceCount": 3,
       "uniqueDomainCount": 3,
@@ -27,63 +82,9 @@
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 7,
-        "trend": 20.9,
-        "internetNativeBoost": 8,
-        "search": 5.3,
-        "social": 3.5,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 12,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 41.1,
-        "internalSocialScore": 27.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-92",
-      "title": "『ゼノブレイド3 Nintendo Switch 2 Edition』新ヒーロー「カグヤ」参戦！ 無数の敵に立ち向かう新モード「ヒーローズ・レコード」も【Nintendo Direct 2026.9.9】",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general",
-        "entertainment"
-      ],
-      "buzzScore": 75.8,
-      "confidence": 0.47,
-      "articleCount": 4,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 7,
         "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 4.6,
+        "search": 4.5,
         "social": 4.9,
         "velocity": 0,
         "freshness": 10,
@@ -100,11 +101,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 12,
+        "repeatedAppearanceScore": 11.1,
         "crossCategoryScore": 60,
         "archiveHeatScore": 80,
-        "internalSearchScore": 35.8,
-        "internalSocialScore": 38.4
+        "internalSearchScore": 35.2,
+        "internalSocialScore": 38
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -113,91 +114,37 @@
       ]
     },
     {
-      "clusterId": "today-cluster-9",
-      "title": "Apple初の折りたたみiPhone「iPhone Duo」発表　閉じればパスポートサイズ、開けば史上最大",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "tech",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 75.4,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 17,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1",
-      "title": "【約200円】初代『ダンガンロンパ』が約90％オフのセール中。『2』『V3』などのシリーズ作品も各プラットフォームで大幅値下げ",
+      "clusterId": "today-cluster-809",
+      "title": "スイッチ2『ピクミン4 Nintendo Switch 2 Edition + だれでもチャレンジ! ダンドリ検定』が11月12日に発売！【Nintendo Direct 2026.9.9】",
       "category": "games",
       "categories": [
         "games",
-        "net-culture",
-        "general"
+        "general",
+        "entertainment",
+        "net-culture"
       ],
-      "buzzScore": 73.6,
-      "confidence": 0.46,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 73.4,
+      "confidence": 0.45,
+      "articleCount": 3,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "主要3媒体で同一話題を確認",
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "coverage": 5.4,
+        "sourceDiversity": 7,
+        "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
+        "search": 5.2,
+        "social": 3.5,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -206,13 +153,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 49.6,
-        "internalSocialScore": 43.8
+        "browseMatchCount": 0,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 11.1,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 40.5,
+        "internalSocialScore": 27
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -221,7 +168,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-369",
+      "clusterId": "today-cluster-1917",
+      "title": "『めっちゃカメレオン』Nintendo Switch 2版が発表！ダイレクト終了後に配信開始！",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general",
+        "net-culture"
+      ],
+      "buzzScore": 70.8,
+      "confidence": 0.41,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 37.7,
+        "internalSocialScore": 45.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-857",
       "title": "英強硬右派「リフォームUK」、選挙資金を違法に調達か　警察が刑事捜査開始",
       "category": "politics",
       "categories": [
@@ -231,8 +230,8 @@
         "entertainment",
         "general"
       ],
-      "buzzScore": 71.3,
-      "confidence": 0.42,
+      "buzzScore": 68.2,
+      "confidence": 0.4,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -245,9 +244,9 @@
         "trend": 21.3,
         "internetNativeBoost": 8,
         "search": 4.8,
-        "social": 7.4,
+        "social": 7.3,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 7,
         "authority": 2.5,
         "categoryBias": 9,
         "penalty": 0
@@ -261,11 +260,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 100,
         "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 57.7
+        "internalSearchScore": 37.3,
+        "internalSocialScore": 57.3
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

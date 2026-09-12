@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-12T11:14:19.069Z",
+  "generatedAt": "2026-09-12T14:22:01.835Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-2",
+  "selectedClusterId": "today-cluster-5",
   "selectedTitle": "『ストパン』『ビビオペ』高村和宏監督の最新TVアニメ『バーテックスフォース』メインPV第2弾が公開。OPをClariSが担当",
   "candidates": [
     {
-      "clusterId": "today-cluster-2",
+      "clusterId": "today-cluster-5",
       "title": "『ストパン』『ビビオペ』高村和宏監督の最新TVアニメ『バーテックスフォース』メインPV第2弾が公開。OPをClariSが担当",
       "category": "sports",
       "categories": [
@@ -18,191 +18,26 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 82,
-      "confidence": 0.48,
+      "buzzScore": 69.9,
+      "confidence": 0.37,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 19.8,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 6,
+        "search": 5.9,
         "social": 8.4,
-        "velocity": 8.3,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 17,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 47.1,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1",
-      "title": "MAPPA制作の新アニメ『恋せよまやかし天使ども』小鹿なおさん、坂泰斗さんがメインキャストを担当。キャスト解禁PVも公開",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "entertainment",
-        "manga",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 79,
-      "confidence": 0.48,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 19.8,
-        "internetNativeBoost": 8,
-        "search": 6,
-        "social": 8.4,
-        "velocity": 8.3,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 47.1,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-10",
-      "title": "ぽこピーが『竜とそばかすの姫』没入型ライブに出演決定　公募のオーディションで見事合格",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "anime",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 74.9,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 17,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-128",
-      "title": "任天堂、拒絶査定された『パルワールド』関連特許に不服審判請求。査定内容に反論し、特許を受けられる発明であると主張",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66.5,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.1,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 6,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 7,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 17,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -212,13 +47,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 96,
-        "internalSearchScore": 37.5,
-        "internalSocialScore": 46.7
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -227,18 +62,18 @@
       ]
     },
     {
-      "clusterId": "today-cluster-332",
-      "title": "米南部で黒人女性、木につるされ遺体で発見　家族らの訴え経て最初の逮捕",
-      "category": "crime",
+      "clusterId": "today-cluster-326",
+      "title": "ＡＩで数学の難問を解く行為は「科学や数学界に有害だ」…世界の数学者２５人が非難の緊急声明",
+      "category": "business",
       "categories": [
-        "crime",
+        "business",
+        "tech",
         "sns",
         "net-culture",
-        "world",
         "general"
       ],
-      "buzzScore": 66.3,
-      "confidence": 0.42,
+      "buzzScore": 67.1,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -248,14 +83,14 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 21.3,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 4.8,
+        "search": 4.1,
         "social": 7.4,
         "velocity": 0,
         "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 4,
+        "categoryBias": 9,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -269,9 +104,169 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 32.3,
         "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-4",
+      "title": "MAPPA制作の新アニメ『恋せよまやかし天使ども』小鹿なおさん、坂泰斗さんがメインキャストを担当。キャスト解禁PVも公開",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "entertainment",
+        "manga",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 66.9,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-323",
+      "title": "レベルファイブ日野社長、“AI盛り込みトレイラー発表会”について「派手にしたかった」ためと弁明。ただ発売するゲームには、“安易なAI出力データ”は入れない",
+      "category": "games",
+      "categories": [
+        "games",
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.6,
+      "confidence": 0.34,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-495",
+      "title": "沖縄知事選、荒れるSNS　動画、Xの大半が県外発　AI悪用し中傷拡散　兵庫知事選と重なる投稿者も",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "politics",
+        "general"
+      ],
+      "buzzScore": 61.3,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 20.9,
+        "internetNativeBoost": 8,
+        "search": 4.7,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 36.6,
+        "internalSocialScore": 46.3
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

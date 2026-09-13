@@ -1,88 +1,37 @@
 {
-  "generatedAt": "2026-09-13T21:39:28.335Z",
+  "generatedAt": "2026-09-13T23:34:24.880Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-469",
-  "selectedTitle": "【解説】沖縄県知事選挙 古謝氏の勝因は? 高市政権への影響は?",
+  "selectedClusterId": "today-cluster-2",
+  "selectedTitle": "『オーバーウォッチ』と『サイバーパンク: エッジランナーズ』まさかのコラボが決定！2027年に開催へ",
   "candidates": [
     {
-      "clusterId": "today-cluster-469",
-      "title": "【解説】沖縄県知事選挙 古謝氏の勝因は? 高市政権への影響は?",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sports",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66.3,
-      "confidence": 0.4,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 7,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 35.8,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-8",
-      "title": "『アイドルマスター SideM』シリーズ初となる家庭用ゲームプロジェクトが始動！Nintendo Switch、Switch 2向けに展開へ",
+      "clusterId": "today-cluster-2",
+      "title": "『オーバーウォッチ』と『サイバーパンク: エッジランナーズ』まさかのコラボが決定！2027年に開催へ",
       "category": "games",
       "categories": [
         "games",
+        "entertainment",
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.7,
-      "confidence": 0.38,
+      "buzzScore": 71.5,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 20.9,
+        "trend": 18.5,
         "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 5.5,
+        "search": 5.8,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -97,10 +46,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 48.9,
-        "internalSocialScore": 43.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 45,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -109,7 +58,112 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1071",
+      "clusterId": "today-cluster-60",
+      "title": "日本で『ダンジョンマスター』や『ウルティマ オンライン』を売った男―EAビクターやアイドス日本法人を率いた本多慧氏に訊く\"洋ゲー\"黎明期の舞台裏",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 63.9,
+      "confidence": 0.34,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.9,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 34,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-483",
+      "title": "【解説】沖縄県知事選挙 古謝氏の勝因は? 高市政権への影響は?",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sports",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 56.5,
+      "confidence": 0.33,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20,
+        "internetNativeBoost": 8,
+        "search": 4.5,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 7,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 35.2,
+        "internalSocialScore": 57.3
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1084",
       "title": "【感動の最終回】『天幕のジャードゥーガル』山田尚子総監督が明かす、ラストシーンに託した思い「まるで巨大なブラックホール」「草っぱらで大の字になるしか…」",
       "category": "manga",
       "categories": [
@@ -120,26 +174,26 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.7,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 56.5,
+      "confidence": 0.29,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
         "trend": 17.4,
         "internetNativeBoost": 8,
         "search": 3.8,
         "social": 7.2,
         "velocity": 0,
         "freshness": 3.5,
-        "authority": 2.5,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -163,7 +217,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1072",
+      "clusterId": "today-cluster-1085",
       "title": "押井守監督の実写映画「紅い眼鏡」「ケルベロス 地獄の番犬」9月14日からNetflixで配信　劇場アニメ「人狼 JIN-ROH」も",
       "category": "anime",
       "categories": [
@@ -175,26 +229,26 @@
         "books",
         "general"
       ],
-      "buzzScore": 64.7,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 56.5,
+      "confidence": 0.29,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
         "trend": 17.4,
         "internetNativeBoost": 8,
         "search": 3.8,
         "social": 7.2,
         "velocity": 0,
         "freshness": 3.5,
-        "authority": 2.5,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -210,59 +264,6 @@
         "archiveHeatScore": 79,
         "internalSearchScore": 29.6,
         "internalSocialScore": 56.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-667",
-      "title": "アンソロピックCEO「AIが1年内ネット乗っ取り恐れ」　開発減速訴え",
-      "category": "business",
-      "categories": [
-        "business",
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.5,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 33.9,
-        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

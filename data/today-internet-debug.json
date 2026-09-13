@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-12T23:19:43.787Z",
+  "generatedAt": "2026-09-13T01:24:23.522Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-34",
+  "selectedClusterId": "today-cluster-37",
   "selectedTitle": "レベルファイブ日野社長、“AI盛り込みトレイラー発表会”について「派手にしたかった」ためと弁明。ただ発売するゲームには、“安易なAI出力データ”は入れない",
   "candidates": [
     {
-      "clusterId": "today-cluster-34",
+      "clusterId": "today-cluster-37",
       "title": "レベルファイブ日野社長、“AI盛り込みトレイラー発表会”について「派手にしたかった」ためと弁明。ただ発売するゲームには、“安易なAI出力データ”は入れない",
       "category": "games",
       "categories": [
@@ -15,8 +15,8 @@
         "sns",
         "net-culture"
       ],
-      "buzzScore": 73.9,
-      "confidence": 0.4,
+      "buzzScore": 72.3,
+      "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 1,
@@ -29,10 +29,10 @@
         "sourceDiversity": 3.8,
         "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 5.9,
+        "search": 5.8,
         "social": 8.4,
         "velocity": 0,
-        "freshness": 8.5,
+        "freshness": 7,
         "authority": 2.5,
         "categoryBias": 14,
         "penalty": 0
@@ -46,11 +46,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 23.1,
         "crossCategoryScore": 100,
         "archiveHeatScore": 87,
-        "internalSearchScore": 46.1,
-        "internalSocialScore": 65.8
+        "internalSearchScore": 45.5,
+        "internalSocialScore": 65.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -59,18 +59,19 @@
       ]
     },
     {
-      "clusterId": "today-cluster-421",
-      "title": "米南部で黒人女性、木につるされ遺体で発見　家族らの訴え経て最初の逮捕",
-      "category": "crime",
+      "clusterId": "today-cluster-290",
+      "title": "【感動の最終回】『天幕のジャードゥーガル』山田尚子総監督が明かす、ラストシーンに託した思い「まるで巨大なブラックホール」「草っぱらで大の字になるしか…」",
+      "category": "manga",
       "categories": [
-        "crime",
+        "manga",
+        "anime",
+        "entertainment",
         "sns",
         "net-culture",
-        "world",
         "general"
       ],
-      "buzzScore": 64.8,
-      "confidence": 0.41,
+      "buzzScore": 71.6,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -80,14 +81,14 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 21.3,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 4.8,
+        "search": 4,
         "social": 7.4,
         "velocity": 0,
-        "freshness": 8.5,
+        "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 4,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -101,8 +102,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
@@ -112,7 +113,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-714",
+      "clusterId": "today-cluster-455",
+      "title": "ＡＩで数学の難問を解く行為は「科学や数学界に有害だ」…世界の数学者２５人が非難の緊急声明",
+      "category": "business",
+      "categories": [
+        "business",
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.6,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.8,
+        "internetNativeBoost": 8,
+        "search": 4.1,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 32.3,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-875",
       "title": "数学難問をAIで解決、フィールズ賞25人が非難声明「科学に有害」",
       "category": "business",
       "categories": [
@@ -165,7 +219,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1",
+      "clusterId": "today-cluster-4",
       "title": "『オーバーウォッチ』“ソンブラ”が「ダメージ→サポート」へと変更。来月開幕のシーズン5にてリワークへ",
       "category": "games",
       "categories": [
@@ -209,57 +263,6 @@
         "archiveHeatScore": 79,
         "internalSearchScore": 43.3,
         "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1714",
-      "title": "SNSで情報知り13歳を保護 感謝状",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 60.5,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20.5,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 4.4,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 93,
-        "internalSearchScore": 34.5,
-        "internalSocialScore": 34.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

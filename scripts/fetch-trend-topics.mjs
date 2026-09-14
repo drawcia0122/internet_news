@@ -10,6 +10,7 @@ const {
   articleIdentityKeys,
   canonicalArticleUrl: canonicalSummaryArticleUrl,
   hasSummaryTitleAlignment: hasArticleSummaryAlignment,
+  isInvalidArticleSummary,
   sanitizeArticleSummaryCollection,
   sanitizeArticleSummaryFields,
   titlesReferToSameArticle,
@@ -2143,8 +2144,7 @@ function normalizeAlignedBriefSummary(value, title = "") {
 function hasSummaryTitleAlignment(summary, title = "") {
   const text = normalizeBriefSummaryText(summary);
   if (!text) return false;
-  if (/に一致する記事は見つかりませんでした/.test(text)) return false;
-  if (/現在javascriptが無効になっています/i.test(text)) return false;
+  if (isInvalidArticleSummary(text)) return false;
   return hasArticleSummaryAlignment(text, title);
 }
 

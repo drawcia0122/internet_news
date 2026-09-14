@@ -255,6 +255,7 @@
   function hasVisibleSummary(summary) {
     const text = String(summary ?? '').replace(/\s+/g, ' ').trim();
     if (!text) return false;
+    if (window.NewsSummaryIntegrity?.isInvalidArticleSummary(text)) return false;
     return !/に関する話題。?$|が明らかになり、?話題になっている。?$|がきょうの注目話題として取り上げられている。?$|を伝える話題。?$/.test(text);
   }
 

@@ -27,6 +27,22 @@
     '明らか',
     'news',
   ]);
+  const INVALID_SUMMARY_MAX_LENGTH = 600;
+  const INVALID_SUMMARY_PATTERNS = [
+    /^.+に一致する(?:記事|検索結果|ページ|情報)(?:は|が)?(?:見つかりません|ありません|存在しません)(?:でした)?[。.!]?$/u,
+    /^(?:検索結果|該当する(?:記事|ページ|情報)|条件に一致する(?:記事|ページ|情報))(?:は|が)?(?:見つかりません|ありません|存在しません)(?:でした)?[。.!]?$/u,
+    /^(?:お探しの|指定された|要求された)?(?:ページ|記事)(?:は|が)?(?:見つかりません|存在しません|削除されました|ご利用いただけません)(?:でした)?[。.!]?$/u,
+    /^(?:(?:http\s*)?(?:403|404|500|502|503|504)(?:\s*(?:error|エラー))?|(?:error|エラー)\s*(?:403|404|500|502|503|504))(?:[\s:：\-|]*(?:access denied|forbidden|not found|internal server error|service unavailable|bad gateway|gateway timeout|ページが見つかりません|アクセスが拒否されました))?[。.!]?$/iu,
+    /^(?:access denied|forbidden|not found|internal server error|service unavailable|bad gateway|gateway timeout)[。.!]?$/iu,
+    /^(?:no (?:search )?results?(?: were| was)? found|your search did not match any (?:documents|results)|we (?:could not|couldn't) find any results)[。.!]?$/iu,
+    /^(?:just a moment|attention required|checking your browser|security check)(?:[。.!]?\s+.+|[。.!])?$/iu,
+    /^(?:(?:please\s+)?(?:verify|confirm).*(?:human|captcha).*|(?:captcha|bot|challenge)\s+(?:verification|required|detected|check).*)$/iu,
+    /^(?:ロボットではないこと|人間であること).*(?:確認|証明).*[。.!]?$/u,
+    /^(?:アクセスが拒否されました|アクセスは制限されています|このページへのアクセス(?:が拒否されました|は制限されています|権限がありません|はできません))[。.!]?$/u,
+    /^(?:(?:please\s+)?enable javascript(?: and cookies)?(?: to continue)?|javascript (?:is disabled|required)|現在javascriptが無効になっています|javascriptを有効にしてください)(?:[。.!].*)?$/iu,
+    /^(?:(?:we use|this (?:site|website) uses?) cookies|enable javascript and cookies to continue)(?:[。.!].*)?$/iu,
+    /^(?:cookieの使用(?:について|に同意してください)|cookieを(?:有効に|許可)してください)(?:[。.!]|\s.+)?$/iu,
+  ];
 
   function canonicalArticleUrl(rawUrl) {
     const value = String(rawUrl ?? '').trim();
@@ -89,6 +105,12 @@
       .replace(/(?:速報|動画|写真|ニュース|news)/giu, '');
   }
 
+  function isInvalidArticleSummary(value) {
+    const text = normalizeText(value);
+    if (!text || text.length > INVALID_SUMMARY_MAX_LENGTH) return false;
+    return INVALID_SUMMARY_PATTERNS.some((pattern) => pattern.test(text));
+  }
+
   function meaningfulTerms(value) {
     const text = normalizeText(value);
     const terms = new Set();
@@ -125,6 +147,7 @@
     const summaryText = normalizeText(summary);
     const titleText = normalizeText(title);
     if (!summaryText) return false;
+    if (isInvalidArticleSummary(summaryText)) return false;
     if (!titleText) return true;
 
     const normalizedSummary = normalizeTitle(summaryText);
@@ -234,6 +257,7 @@
     articlesShareIdentity,
     canonicalArticleUrl,
     hasSummaryTitleAlignment,
+    isInvalidArticleSummary,
     sanitizeArticleSummaryCollection,
     sanitizeArticleSummaryFields,
     titlesReferToSameArticle,

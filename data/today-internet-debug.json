@@ -1,20 +1,24 @@
 {
-  "generatedAt": "2026-09-14T22:45:07.099Z",
+  "generatedAt": "2026-09-15T01:24:29.526Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-628",
-  "selectedTitle": "【アケアカ対応】ホリ新作アケコンが2027年発売。左右に付いたスティック、トラボ、パドル、ループレバーを自由に付け替え",
+  "selectedClusterId": "today-cluster-346",
+  "selectedTitle": "トランプ氏、AI懸念を陰謀と一蹴　「高IQの大統領いれば統制は十分」",
   "candidates": [
     {
-      "clusterId": "today-cluster-628",
-      "title": "【アケアカ対応】ホリ新作アケコンが2027年発売。左右に付いたスティック、トラボ、パドル、ループレバーを自由に付け替え",
-      "category": "games",
+      "clusterId": "today-cluster-346",
+      "title": "トランプ氏、AI懸念を陰謀と一蹴　「高IQの大統領いれば統制は十分」",
+      "category": "sports",
       "categories": [
-        "games",
-        "sns",
+        "sports",
+        "tech",
+        "business",
         "net-culture",
+        "politics",
+        "sns",
+        "world",
         "general"
       ],
-      "buzzScore": 69.7,
+      "buzzScore": 69.6,
       "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 2,
@@ -25,14 +29,14 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 19.6,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 5.9,
+        "search": 4,
+        "social": 7.4,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 14,
+        "categoryBias": 12,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -44,11 +48,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 34.5,
-        "internalSocialScore": 46.3
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -57,7 +61,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1356",
+      "clusterId": "today-cluster-1640",
       "title": "【新作】『アイドルマスター SideM』家庭用ゲームは“315パッションコンテンツ”と地続きの世界線で新たな物語を紡ぐアドベンチャーゲーム。実現できたのはプロデューサーの応援があったから【インタビュー】",
       "category": "game-features",
       "categories": [
@@ -110,7 +114,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-95",
+      "clusterId": "today-cluster-347",
+      "title": "AI脅威論、アンソロピックCEOに賛同広がる　歯止めなき競争に恐怖感",
+      "category": "business",
+      "categories": [
+        "business",
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.7,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-104",
       "title": "ゲームフリーク完全新作ゲーム『雨のちハレ女』いきなり発表！基本無料でモバイル向けに今冬配信へ",
       "category": "games",
       "categories": [
@@ -165,70 +222,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-160",
-      "title": "「コナン」「鬼滅」「呪術」に「アベンジャーズ」まで!?「VIVANT」第18話に豪華声優陣が集結！小山力也・中村悠一・鬼頭明里らのサプライズ出演にSNS騒然【反応まとめ】",
-      "category": "anime",
+      "clusterId": "today-cluster-916",
+      "title": "【アケアカ対応】ホリ新作アケコンが2027年発売。左右に付いたスティック、トラボ、パドル、ループレバーを自由に付け替え",
+      "category": "games",
       "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 62.9,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.2,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -7
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 92,
-        "internalSearchScore": 36.1,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-343",
-      "title": "読む政治：たった1人で政党交付金12億円、中道「受け皿」批判に火消し躍起",
-      "category": "politics",
-      "categories": [
-        "politics",
+        "games",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.8,
-      "confidence": 0.4,
+      "buzzScore": 68.1,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -240,12 +244,12 @@
         "sourceDiversity": 4.7,
         "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 6,
+        "search": 4.3,
+        "social": 5.9,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 5.5,
         "authority": 2.5,
-        "categoryBias": 4,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -257,11 +261,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 80,
         "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 33.9,
+        "internalSocialScore": 45.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

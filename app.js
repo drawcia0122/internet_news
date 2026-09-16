@@ -61,6 +61,8 @@ const {
   renderTopicClusterCard: renderTopicClusterCardHtml,
   renderBriefCard,
   renderPriorityCard,
+  getPersonalNewsPageState,
+  advancePersonalNewsVisibleCount,
 } = window.HomeRenderUtils;
 const {
   createStorageArrayCache,
@@ -91,6 +93,7 @@ const rankingCategoryElement = document.querySelector('#ranking-general-list');
 const trendListElement = document.querySelector('#trend-list');
 const hotSectionElement = document.querySelector('#hot-network');
 const personalNewsListElement = document.querySelector('#personal-news-list');
+const personalNewsLoadMoreButton = document.querySelector('#personal-news-load-more');
 const mustReadNewsListElement = document.querySelector('#must-read-news-list');
 const featuredEventTabsElement = document.querySelector('#featured-event-tabs');
 const featuredEventListElement = document.querySelector('#featured-event-list');
@@ -110,6 +113,8 @@ const TREND_MIN_ITEMS = 8;
 const TREND_HOME_LIMIT = 20;
 const TREND_LOAD_MORE_STEP = 10;
 const PERSONAL_NEWS_LIMIT = 10;
+const PERSONAL_INITIAL_LIMIT = 5;
+const PERSONAL_LOAD_MORE_STEP = 5;
 const TODAY_NEWS_LIMIT = 10;
 const REFRESH_INTERVAL_MS = 30 * 60 * 1000;
 const EVENT_TAB_DEFINITIONS = [
@@ -120,6 +125,8 @@ const EVENT_TAB_DEFINITIONS = [
 ];
 let activeTrendFilter = 'all';
 let trendVisibleCount = TREND_HOME_LIMIT;
+let personalVisibleCount = PERSONAL_INITIAL_LIMIT;
+let personalNewsItems = [];
 let refreshStatusTimer;
 const isFileProtocol = window.location.protocol === 'file:';
 let deferredHotRendered = false;
@@ -655,15 +662,11 @@ function renderDiscoverySections() {
     ? dedupeTopics([...trendTopics, ...archiveTopics])
     : visibleTrendTopics;
   const internetNews = selectInternetNews(topics);
-  const personalNews = selectPersonalNews(topics, { excludedIds: new Set(internetNews.map((topic) => topic.id)), limit: PERSONAL_NEWS_LIMIT });
+  personalNewsItems = selectPersonalNews(topics, { excludedIds: new Set(internetNews.map((topic) => topic.id)), limit: PERSONAL_NEWS_LIMIT });
   const todayNewsFallback = buildTodayNewsFallbackItems(topics);
   const todayNews = selectTodayNews([...dailyBriefItems, ...todayNewsFallback], { limit: TODAY_NEWS_LIMIT });
   renderMustReadNews(internetNews, todayInternetPayload);
-  renderPriorityList(personalNewsListElement, personalNews, {
-    emptyTitle: '自分向けニュースを整理中です',
-    emptyText: 'ゲーム、ポケモン、漫画・アニメ、セール、ネット文化系の話題を探しています。',
-    badge: 'FOR YOU',
-  });
+  renderPersonalNews();
   renderBriefCardList(todayNewsListElement, todayNews, {
     emptyTitle: '今日のニュースを整理中です',
     emptyText: '事件、政治、経済、スポーツ、災害などの時事ニュースをまとめています。',
@@ -671,6 +674,21 @@ function renderDiscoverySections() {
   });
   if (deferredTrendRendered) renderTrends(activeTrendFilter, { preserveCount: true });
   console.timeEnd('home:render-discovery');
+}
+
+function renderPersonalNews() {
+  const state = getPersonalNewsPageState(personalNewsItems.length, personalVisibleCount, PERSONAL_LOAD_MORE_STEP);
+  renderPriorityList(personalNewsListElement, personalNewsItems, {
+    emptyTitle: '自分向けニュースを整理中です',
+    emptyText: 'ゲーム、ポケモン、漫画・アニメ、セール、ネット文化系の話題を探しています。',
+    badge: 'FOR YOU',
+    visibleCount: state.visibleCount,
+  });
+  if (!personalNewsLoadMoreButton) return;
+  personalNewsLoadMoreButton.hidden = !state.hasMore;
+  personalNewsLoadMoreButton.disabled = !state.hasMore;
+  personalNewsLoadMoreButton.textContent = state.hasMore ? `さらに${state.nextCount}件見る ↓` : 'すべて表示中';
+  personalNewsLoadMoreButton.setAttribute('aria-expanded', String(state.visibleCount > PERSONAL_INITIAL_LIMIT));
 }
 
 function buildTodayNewsFallbackItems(topics) {
@@ -801,6 +819,10 @@ function renderPriorityList(element, topics, options) {
 
   const cards = topics.map((topic, index) => renderPriorityCard(topic, index, options, renderHelperDeps));
   replaceChildrenFromHtml(element, cards);
+  const visibleCount = Number.isFinite(options.visibleCount) ? options.visibleCount : topics.length;
+  element.querySelectorAll('.priority-card').forEach((card, index) => {
+    card.hidden = index >= visibleCount;
+  });
 }
 
 function renderTopicChannels(topics) {
@@ -1276,6 +1298,13 @@ if (trendLoadMoreBottomButton) {
     await loadMoreArchiveTopicsIfNeeded(trendVisibleCount + TREND_LOAD_MORE_STEP);
     trendVisibleCount += TREND_LOAD_MORE_STEP;
     renderTrends(activeTrendFilter, { preserveCount: true });
+  });
+}
+
+if (personalNewsLoadMoreButton) {
+  personalNewsLoadMoreButton.addEventListener('click', () => {
+    personalVisibleCount = advancePersonalNewsVisibleCount(personalNewsItems.length, personalVisibleCount, PERSONAL_LOAD_MORE_STEP);
+    renderPersonalNews();
   });
 }
 

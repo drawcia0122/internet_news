@@ -876,8 +876,8 @@
 .priority-card {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 18px;
+  gap: 10px;
+  padding: 16px;
   color: inherit;
   text-decoration: none;
   background:
@@ -894,9 +894,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 180px;
-  margin: -18px -18px 2px;
-  padding: 10px;
+  height: 160px;
+  margin: -16px -16px 2px;
+  padding: 8px;
   border-radius: 20px 20px 14px 14px;
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(232, 242, 255, 0.88)),
@@ -920,7 +920,7 @@
   margin: 0;
   color: var(--muted);
   font-size: 12px;
-  line-height: 1.75;
+  line-height: 1.65;
 }
 
 .priority-card-top,
@@ -943,12 +943,26 @@
 }
 
 .priority-card-top strong {
-  padding: 5px 9px;
-  color: white;
-  background: linear-gradient(135deg, var(--blue), #154fc7);
+  padding: 3px 7px;
+  color: var(--blue);
+  background: rgba(33, 102, 255, 0.09);
   border-radius: 999px;
   font-family: "DM Sans", sans-serif;
   font-size: 10px;
+}
+
+.priority-reasons {
+  margin: 0;
+}
+
+.personal-news-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.personal-news-load-more {
+  min-width: 180px;
 }
 
 .priority-chip-row span {
@@ -3955,8 +3969,38 @@ footer p {
 
   .priority-list > .priority-card,
   .priority-list > article {
-    width: min(78vw, 100%);
+    width: 100%;
     justify-self: center;
+  }
+
+  .priority-card {
+    gap: 8px;
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .priority-card h3 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .priority-summary,
+  .priority-reasons dd {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .priority-chip-row {
+    gap: 6px;
+  }
+
+  .personal-news-load-more {
+    width: 100%;
+    min-height: 48px;
   }
 
   .must-read-card-shell {
@@ -4125,8 +4169,9 @@ footer p {
   }
 
   .priority-card .trend-thumb-wrap {
-    height: 156px;
-    padding: 8px;
+    height: 128px;
+    margin: -14px -14px 2px;
+    padding: 6px;
   }
 
   .topic-cluster-card-featured {

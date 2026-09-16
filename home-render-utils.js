@@ -212,20 +212,53 @@
     '</article>';
   }
 
+  function getPersonalNewsPageState(totalCount, requestedVisibleCount, step = 5) {
+    const total = Math.max(0, Math.floor(Number(totalCount) || 0));
+    const visibleCount = Math.min(total, Math.max(0, Math.floor(Number(requestedVisibleCount) || 0)));
+    const safeStep = Math.max(1, Math.floor(Number(step) || 1));
+    const remainingCount = Math.max(0, total - visibleCount);
+    return {
+      visibleCount,
+      remainingCount,
+      nextCount: Math.min(safeStep, remainingCount),
+      hasMore: remainingCount > 0,
+    };
+  }
+
+  function advancePersonalNewsVisibleCount(totalCount, currentVisibleCount, step = 5) {
+    return getPersonalNewsPageState(totalCount, Number(currentVisibleCount) + Number(step), step).visibleCount;
+  }
+
+  function normalizePriorityCopy(value) {
+    return String(value ?? '')
+      .toLowerCase()
+      .replace(/[\s\u3000\p{P}\p{S}]+/gu, '');
+  }
+
+  function isRedundantPriorityReason(summary, reason) {
+    const summaryKey = normalizePriorityCopy(summary);
+    const reasonKey = normalizePriorityCopy(reason);
+    if (summaryKey.length < 12 || reasonKey.length < 12) return false;
+    return summaryKey === reasonKey || summaryKey.includes(reasonKey) || reasonKey.includes(summaryKey);
+  }
+
   function renderPriorityCard(topic, index, options = {}, deps = {}) {
     const { escapeHtml, getPrimarySourceUrl, getPrimarySourceLabel, hotTopicScore, shortEventFromTitle, buildImportantPoint } = deps;
     const sourceUrl = getPrimarySourceUrl(topic);
     const sourceLabel = getPrimarySourceLabel(topic);
-    const reasons = (topic.personalReasons ?? topic.hotReasons ?? []).slice(0, 3);
+    const reasons = (topic.personalReasons ?? topic.hotReasons ?? []).slice(0, 2);
     const thumb = topic.thumbnailUrl ? buildTrendCardThumb(topic.thumbnailUrl, deps) : '';
+    const summary = topic.whatHappened ?? shortEventFromTitle(topic.title);
+    const personalReason = topic.importantPoint ?? buildImportantPoint(topic);
+    const reasonHtml = isRedundantPriorityReason(summary, personalReason)
+      ? ''
+      : '<dl class="trend-reason-list priority-reasons"><div><dt>なぜ見る？</dt><dd>' + escapeHtml(personalReason) + '</dd></div></dl>';
     return '<article class="priority-card" style="animation-delay:' + (index * 55) + 'ms">' +
       thumb +
       '<div class="priority-card-top"><span>' + escapeHtml(options.badge) + '</span><strong>' + escapeHtml(String(Math.round(Number(topic.personalScore ?? hotTopicScore(topic) ?? 0)))) + '</strong></div>' +
       '<h3>' + escapeHtml(topic.title ?? 'ニュース') + '</h3>' +
-      '<p>' + escapeHtml(topic.whatHappened ?? shortEventFromTitle(topic.title)) + '</p>' +
-      '<dl class="trend-reason-list priority-reasons">' +
-      '<div><dt>なぜ見る？</dt><dd>' + escapeHtml(topic.importantPoint ?? buildImportantPoint(topic)) + '</dd></div>' +
-      '</dl>' +
+      '<p class="priority-summary">' + escapeHtml(summary) + '</p>' +
+      reasonHtml +
       '<div class="priority-chip-row">' + (sourceUrl ? '<a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a>' : '<span class="detail-link">リンクなし</span>') + '</div>' +
       '<div class="priority-chip-row">' + reasons.map((reason) => '<span>' + escapeHtml(reason) + '</span>').join('') + '</div>' +
       '</article>';
@@ -237,5 +270,8 @@
     renderTopicClusterCard,
     renderBriefCard,
     renderPriorityCard,
+    getPersonalNewsPageState,
+    advancePersonalNewsVisibleCount,
+    isRedundantPriorityReason,
   };
 })(window);

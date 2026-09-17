@@ -7,7 +7,7 @@ await import('../home-render-utils.js');
 const {
   buildTopicCardReasonRows,
   buildVerificationLabels,
-  getPersonalPriorityLabel,
+  buildPersonalPriorityLabels,
   isSubstantiallySameCopy,
   isVerificationOnlyText,
   renderPriorityCard,
@@ -28,16 +28,27 @@ const renderDeps = {
   isWeakThumbnailUrl: () => false,
 };
 
-test('personal priority labels use relative rank without changing score order', () => {
-  const scores = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100];
-  const labels = scores.map((_, index) => getPersonalPriorityLabel(index, scores.length));
+test('personal priority labels use existing ranking values and keep tied items together', () => {
+  const topics = [82, 78, 77, 75, 74, 74, 72, 72, 72, 71].map((hotScore) => ({ personalRank: 140, hotScore }));
+  const labels = buildPersonalPriorityLabels(topics, {
+    personalTopicRank: (topic) => topic.personalRank,
+    hotTopicScore: (topic) => topic.hotScore,
+  });
   assert.deepEqual(labels, [
     '最優先', '最優先',
-    'おすすめ', 'おすすめ', 'おすすめ',
-    '関連あり', '関連あり', '関連あり', '関連あり', '関連あり',
+    'おすすめ', 'おすすめ', 'おすすめ', 'おすすめ',
+    '関連あり', '関連あり', '関連あり', '関連あり',
   ]);
   assert.equal(new Set(labels).size, 3);
-  assert.deepEqual(scores, [...scores].sort((left, right) => right - left));
+  assert.equal(labels[4], labels[5]);
+});
+
+test('personal priority labels do not invent differences when all ranking values tie', () => {
+  const topics = Array.from({ length: 5 }, () => ({ personalRank: 140, hotScore: 72 }));
+  assert.deepEqual(buildPersonalPriorityLabels(topics, {
+    personalTopicRank: (topic) => topic.personalRank,
+    hotTopicScore: (topic) => topic.hotScore,
+  }), ['おすすめ', 'おすすめ', 'おすすめ', 'おすすめ', 'おすすめ']);
 });
 
 test('verification-only copy is excluded from importance', () => {
@@ -110,7 +121,7 @@ test('Personal card shows a relative label instead of the saturated raw score', 
     importantPoint: '購入判断に影響する新情報です。',
     personalScore: 100,
     url: 'https://example.com/personal',
-  }, 0, { badge: 'FOR YOU', totalCount: 10 }, renderDeps);
+  }, 0, { badge: 'FOR YOU', priorityLabels: ['最優先'] }, renderDeps);
   assert.match(html, /最優先/);
   assert.doesNotMatch(html, />100</);
 });

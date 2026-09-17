@@ -7,7 +7,7 @@
 
 ## Decision
 
-- 内部ranking scoreは選定・並び順のために保持し、値が飽和して記事差を伝えない場合はraw値を利用者向けUIの主情報にしない。表示は同一候補集合内の順位を使った少数の意味ラベルへ変換する。
+- 内部ranking scoreは選定・並び順のために保持し、値が飽和して記事差を伝えない場合はraw値を利用者向けUIの主情報にしない。表示labelは既存のranking値とtie-breakに実差がある場合だけ相対化し、同値候補は同じlabelにする。全指標が同値なら人工的な段階差を作らない。
 - 「なぜ話題？」は現在注目されている契機、「なぜ重要？」は利用者・作品・業界・社会への影響だけを扱う。
 - 媒体数、domain数、一次情報の有無はimportanceではなく「確認状況」として小さなmetadataへ分離する。
 - 根拠のあるimportanceがない場合は欄を省略し、fallback文章を捏造しない。summary、why-hot、importanceが実質重複する場合も下位の説明を省略する。
@@ -27,4 +27,3 @@
 - `home-render-utils.js`: 相対label、説明の重複抑制、importanceとverificationの分離。
 - `tests/card-information-hierarchy.test.mjs`: label分布、verification-only除外、正常importance維持、重複抑制。
 - `data/trend-topics.json`, `data/trend-topics-archive.json`, `data/today-internet.json`: C-007時点の分布・表示内容検査元。data自体は変更しない。
-

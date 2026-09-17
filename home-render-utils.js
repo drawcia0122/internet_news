@@ -107,14 +107,34 @@
     return '<div class="topic-verification"><span>確認状況</span><strong>' + escapeHtml(labels.join(' · ')) + '</strong></div>';
   }
 
-  function getPersonalPriorityLabel(index, totalCount) {
-    const total = Math.max(1, Math.floor(Number(totalCount) || 1));
-    const rank = Math.max(0, Math.floor(Number(index) || 0));
-    const highestEnd = Math.max(1, Math.ceil(total * 0.2));
-    const recommendedEnd = Math.max(highestEnd + 1, Math.ceil(total * 0.5));
-    if (rank < highestEnd) return '最優先';
-    if (rank < recommendedEnd) return 'おすすめ';
-    return '関連あり';
+  function comparePersonalPriority(left, right) {
+    return Number(left?.rank ?? 0) - Number(right?.rank ?? 0)
+      || Number(left?.hotScore ?? 0) - Number(right?.hotScore ?? 0);
+  }
+
+  function buildPersonalPriorityLabels(topics, { personalTopicRank, hotTopicScore } = {}) {
+    if (!Array.isArray(topics) || !topics.length) return [];
+    if (typeof personalTopicRank !== 'function' || typeof hotTopicScore !== 'function') {
+      return topics.map(() => 'おすすめ');
+    }
+
+    const values = topics.map((topic) => ({
+      rank: personalTopicRank(topic),
+      hotScore: hotTopicScore(topic),
+    }));
+    const distinctValues = new Set(values.map((value) => `${value.rank}:${value.hotScore}`));
+    if (distinctValues.size <= 1) return topics.map(() => 'おすすめ');
+
+    const highestEnd = Math.max(1, Math.ceil(values.length * 0.2));
+    const recommendedEnd = Math.max(highestEnd + 1, Math.ceil(values.length * 0.5));
+    const highestCutoff = values[Math.min(highestEnd - 1, values.length - 1)];
+    const recommendedCutoff = values[Math.min(recommendedEnd - 1, values.length - 1)];
+
+    return values.map((value) => {
+      if (comparePersonalPriority(value, highestCutoff) >= 0) return '最優先';
+      if (comparePersonalPriority(value, recommendedCutoff) >= 0) return 'おすすめ';
+      return '関連あり';
+    });
   }
 
   function collectRelatedSignals(topic, limit = 3) {
@@ -349,7 +369,7 @@
       || isGenericImportanceText(personalReason)
       ? ''
       : '<dl class="trend-reason-list priority-reasons"><div><dt>なぜ見る？</dt><dd>' + escapeHtml(personalReason) + '</dd></div></dl>';
-    const priorityLabel = getPersonalPriorityLabel(index, options.totalCount);
+    const priorityLabel = options.priorityLabels?.[index] ?? 'おすすめ';
     return '<article class="priority-card" style="animation-delay:' + (index * 55) + 'ms">' +
       thumb +
       '<div class="priority-card-top"><span>' + escapeHtml(options.badge) + '</span><strong>' + escapeHtml(priorityLabel) + '</strong></div>' +
@@ -374,6 +394,6 @@
     isSubstantiallySameCopy,
     buildTopicCardReasonRows,
     buildVerificationLabels,
-    getPersonalPriorityLabel,
+    buildPersonalPriorityLabels,
   };
 })(window);

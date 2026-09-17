@@ -955,6 +955,24 @@
   margin: 0;
 }
 
+.topic-verification {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: -4px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.topic-verification span {
+  font-weight: 800;
+}
+
+.topic-verification strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .personal-news-actions {
   display: flex;
   justify-content: center;

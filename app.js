@@ -830,7 +830,8 @@ function renderPriorityList(element, topics, options) {
     return;
   }
 
-  const cards = topics.map((topic, index) => renderPriorityCard(topic, index, options, renderHelperDeps));
+  const cardOptions = { ...options, totalCount: topics.length };
+  const cards = topics.map((topic, index) => renderPriorityCard(topic, index, cardOptions, renderHelperDeps));
   replaceChildrenFromHtml(element, cards);
   const visibleCount = Number.isFinite(options.visibleCount) ? options.visibleCount : topics.length;
   element.querySelectorAll('.priority-card').forEach((card, index) => {

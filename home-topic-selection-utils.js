@@ -1,8 +1,9 @@
 (function () {
-  const { hasCategory } = window.TopicClientUtils;
+  const { hasArticleIdentityOverlap, hasCategory } = window.TopicClientUtils;
+  const { hasPokemonBrandSignal } = window.ArticleCategoryQuality;
 
   const PERSONAL_INTEREST_RULES = [
-    { label: 'ポケモン', pattern: /ポケモン|pokemon|pokémon|ポケカ|pokemon go|pokémon home/i, score: 60 },
+    { label: 'ポケモン', matches: hasPokemonBrandSignal, score: 60 },
     { label: 'ゲーム', pattern: /ゲーム|モンハン|マリオ|ゼルダ|スプラトゥーン|apex|valorant|eスポーツ/i, score: 45 },
     { label: 'Nintendo / Switch', pattern: /任天堂|nintendo|switch\s?2?|switch/i, score: 40 },
     { label: 'Steam', pattern: /steam|steam deck/i, score: 35 },
@@ -43,7 +44,7 @@
       .slice(0, limit);
   }
 
-  function selectPersonalNews(topics, { excludedIds = new Set(), overlapLimit = 2, limit = 10 } = {}) {
+  function selectPersonalNews(topics, { excludedIds = new Set(), excludedArticleKeys = new Set(), limit = 10 } = {}) {
     const baseCandidates = [...topics]
       .filter((topic) => !isAdultContentTopic(topic))
       .filter((topic) => isJapaneseHeavyTopic(topic))
@@ -54,23 +55,20 @@
       .filter((topic) => !isPersonalExcludedTopic(topic) || isStrongOtakuTopic(topic))
       .sort((left, right) => personalTopicRank(right) - personalTopicRank(left) || hotTopicScore(right) - hotTopicScore(left));
 
-    const primary = baseCandidates.filter((topic) => !excludedIds.has(topic.id)).slice(0, limit);
+    const isExcluded = (topic) => excludedIds.has(topic.id) || hasArticleIdentityOverlap(topic, excludedArticleKeys);
+    const primary = baseCandidates.filter((topic) => !isExcluded(topic)).slice(0, limit);
     if (primary.length >= limit) return primary;
-
-    const overlap = baseCandidates
-      .filter((topic) => excludedIds.has(topic.id))
-      .slice(0, overlapLimit);
 
     const fallback = [...topics]
       .filter((topic) => !isAdultContentTopic(topic))
       .filter((topic) => isJapaneseHeavyTopic(topic))
-      .filter((topic) => !excludedIds.has(topic.id))
+      .filter((topic) => !isExcluded(topic))
       .filter((topic) => isPersonalTopicCandidate(topic))
       .filter((topic) => !isPersonalHardExcludedTopic(topic))
       .filter((topic) => !isPersonalExcludedTopic(topic) || isStrongOtakuTopic(topic))
       .sort((left, right) => personalTopicRank(right) - personalTopicRank(left) || hotTopicScore(right) - hotTopicScore(left));
 
-    return [...new Map([...primary, ...overlap, ...fallback].map((topic) => [topic.id, topic])).values()].slice(0, limit);
+    return [...new Map([...primary, ...fallback].map((topic) => [topic.id, topic])).values()].slice(0, limit);
   }
 
   function selectInternetNews(topics, { limit = 10 } = {}) {
@@ -125,7 +123,7 @@
     let score = 0;
 
     for (const rule of PERSONAL_INTEREST_RULES) {
-      if (!rule.pattern.test(text)) continue;
+      if (!personalRuleMatches(rule, topic, text)) continue;
       score += rule.score;
       reasons.push(rule.label);
     }
@@ -149,7 +147,7 @@
 
   function hasPersonalInterestSignal(topic) {
     const text = topicText(topic);
-    return PERSONAL_INTEREST_RULES.some((rule) => rule.pattern.test(text)) || personalSourceAffinityScore(topic) >= 10;
+    return PERSONAL_INTEREST_RULES.some((rule) => personalRuleMatches(rule, topic, text)) || personalSourceAffinityScore(topic) >= 10;
   }
 
   function isJapaneseHeavyTopic(topic) {
@@ -173,8 +171,12 @@
 
   function isStrongOtakuTopic(topic) {
     const text = topicText(topic);
-    const matchedRules = PERSONAL_INTEREST_RULES.filter((rule) => rule.pattern.test(text));
+    const matchedRules = PERSONAL_INTEREST_RULES.filter((rule) => personalRuleMatches(rule, topic, text));
     return matchedRules.length >= 2 || matchedRules.some((rule) => rule.score >= 40);
+  }
+
+  function personalRuleMatches(rule, topic, text = topicText(topic)) {
+    return typeof rule.matches === 'function' ? rule.matches(topic) : rule.pattern.test(text);
   }
 
   function internetTopicRank(topic) {
@@ -314,7 +316,7 @@
   function buildTargetAudience(topic, personal = { reasons: [] }) {
     const text = topicText(topic);
     const values = [];
-    if (/ポケモン|pokemon|ポケカ/.test(text)) values.push('ポケモンユーザー');
+    if (hasPokemonBrandSignal(topic)) values.push('ポケモンユーザー');
     if (/ゲーム|任天堂|switch|steam|ps5/.test(text)) values.push('ゲームユーザー');
     if (/ai|chatgpt|openai|claude|gemini/.test(text)) values.push('AI利用者');
     if (/iphone|android|ガジェット|スマホ|nvidia|gpu/.test(text)) values.push('ガジェット好き');

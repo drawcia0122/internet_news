@@ -14,6 +14,10 @@
         summary: decodeHtmlEntities(signal?.summary ?? ''),
         sourceName: decodeHtmlEntities(signal?.sourceName ?? ''),
         source: decodeHtmlEntities(signal?.source ?? ''),
+        sourceTags: window.ArticleCategoryQuality?.sanitizeArticleSourceTags(signal?.sourceTags, {
+          ...safeTopic,
+          sourceSignals: [signal],
+        }) ?? signal?.sourceTags,
       }))
       : [];
 
@@ -381,12 +385,63 @@
     try {
       const parsed = new URL(value);
       const params = new URLSearchParams(parsed.search);
-      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_id', 'ref', 'src', 'from'].forEach((key) => params.delete(key));
+      [...params.keys()].forEach((key) => {
+        if (/^utm_/i.test(key) || ['ref', 'src', 'from', 'source', 'fbclid', 'gclid', 'yclid', 'oc'].includes(key.toLowerCase())) params.delete(key);
+      });
       parsed.search = params.toString();
-      return `${parsed.hostname.replace(/^www\./, '').toLowerCase()}${parsed.pathname.toLowerCase()}`.replace(/\/$/, '');
+      const path = parsed.pathname.toLowerCase().replace(/\/$/, '');
+      const search = parsed.searchParams.toString();
+      return `${parsed.hostname.replace(/^www\./, '').toLowerCase()}${path}${search ? `?${search}` : ''}`;
     } catch {
       return value.toLowerCase().replace(/^https?:\/\//, '').replace(/[#?].*$/i, '');
     }
+  }
+
+  function articleIdentityKeys(item) {
+    if (!item) return [];
+    const signals = Array.isArray(item.sourceSignals) ? item.sourceSignals : [];
+    const rawUrls = [
+      item.canonicalUrl,
+      item.sourceUrl,
+      item.url,
+      item.link,
+      item.primaryLink?.url,
+      ...signals.flatMap((signal) => [signal?.canonicalUrl, signal?.url]),
+    ];
+    const urls = [...new Set(rawUrls.map(canonicalUrlForDedup).filter(Boolean))];
+    const keys = urls.map((url) => `url:${url}`);
+    const id = String(item.id ?? '').trim();
+    if (id) keys.push(`id:${id}`);
+
+    const title = normalizeTopicFingerprint(item.title ?? '');
+    const publishedDay = articlePublishedDay(item);
+    if (title.length >= 18 && publishedDay) {
+      const hosts = [...new Set(urls.map((url) => url.split('/')[0]).filter(Boolean))];
+      hosts.forEach((host) => keys.push(`title-source-day:${title}::${host}::${publishedDay}`));
+    }
+    return [...new Set(keys)];
+  }
+
+  function createArticleIdentitySet(items = []) {
+    return new Set((Array.isArray(items) ? items : []).flatMap(articleIdentityKeys));
+  }
+
+  function hasArticleIdentityOverlap(item, identitySet) {
+    if (!(identitySet instanceof Set) || !identitySet.size) return false;
+    return articleIdentityKeys(item).some((key) => identitySet.has(key));
+  }
+
+  function articleIdentityKey(item) {
+    return articleIdentityKeys(item)[0] ?? `title:${normalizeTopicFingerprint(item?.title ?? '')}`;
+  }
+
+  function articlePublishedDay(item) {
+    const value = item?.publishedAt
+      ?? item?.capturedAt
+      ?? item?.generatedAt
+      ?? item?.sourceSignals?.[0]?.publishedAt;
+    const time = new Date(value ?? '').getTime();
+    return Number.isNaN(time) ? '' : new Date(time).toISOString().slice(0, 10);
   }
 
   function normalizeTopicFingerprint(value) {
@@ -616,12 +671,15 @@
 
   window.TopicClientUtils = {
     archiveTimestamp,
+    articleIdentityKey,
+    articleIdentityKeys,
     buildImportantPoint,
     buildGoogleNewsUrl,
     buildTargetAudience,
     buildWhyHotLabel,
     categoryDisplayLabel,
     categoryLabelFor,
+    createArticleIdentitySet,
     decodeHtmlEntities,
     dedupeTopics,
     defaultSearchQueryForCategory,
@@ -629,6 +687,7 @@
     formatDate,
     formatTopicDisplayTime,
     hasCategory,
+    hasArticleIdentityOverlap,
     hasVisibleSummary,
     isAdultNewsContent,
     isGeneralNewsListItem,

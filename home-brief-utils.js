@@ -1,8 +1,14 @@
 (function attachHomeBriefUtils(global) {
+  const {
+    articleIdentityKey,
+    hasArticleIdentityOverlap,
+  } = global.TopicClientUtils;
   const ADULT_BRIEF_PATTERN = /dlsite|fanza|dmm|同人音声|エロ漫画|\bav\b|成人向け|18禁|r-?18|adult[-\s]?trend|adult[-\s]?feature/i;
 
-  function selectTodayNews(items, { limit = 10 } = {}) {
-    const uniqueItems = [...new Map(items.map((item) => [todayItemKey(item), item])).values()];
+  function selectTodayNews(items, { excludedArticleKeys = new Set(), limit = 10 } = {}) {
+    const uniqueItems = [...new Map(items
+      .filter((item) => !hasArticleIdentityOverlap(item, excludedArticleKeys))
+      .map((item) => [todayItemKey(item), item])).values()];
 
     const preferred = [...uniqueItems]
       .filter((item) => isTodayNewsItem(item))
@@ -108,8 +114,7 @@
   }
 
   function todayItemKey(item) {
-    const titleKey = String(item?.title ?? '').replace(/\s+/g, ' ').trim();
-    return titleKey || String(item?.id ?? '').trim();
+    return articleIdentityKey(item);
   }
 
   function briefItemText(item) {

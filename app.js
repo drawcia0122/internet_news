@@ -1,6 +1,7 @@
 const {
   categoryDisplayLabel,
   categoryLabelFor,
+  createArticleIdentitySet,
   decodeHtmlEntities,
   dedupeTopics,
   escapeHtml,
@@ -662,9 +663,21 @@ function renderDiscoverySections() {
     ? dedupeTopics([...trendTopics, ...archiveTopics])
     : visibleTrendTopics;
   const internetNews = selectInternetNews(topics);
-  personalNewsItems = selectPersonalNews(topics, { excludedIds: new Set(internetNews.map((topic) => topic.id)), limit: PERSONAL_NEWS_LIMIT });
+  const featuredInternetNews = todayInternetPayload?.selectedTopic
+    ? [todayInternetPayload.selectedTopic, ...(Array.isArray(todayInternetPayload.runnerUps) ? todayInternetPayload.runnerUps : [])].filter(Boolean)
+    : internetNews;
+  const internetArticleKeys = createArticleIdentitySet(featuredInternetNews);
+  personalNewsItems = selectPersonalNews(topics, {
+    excludedArticleKeys: internetArticleKeys,
+    excludedIds: new Set(internetNews.map((topic) => topic.id)),
+    limit: PERSONAL_NEWS_LIMIT,
+  });
+  const occupiedArticleKeys = createArticleIdentitySet([...featuredInternetNews, ...personalNewsItems]);
   const todayNewsFallback = buildTodayNewsFallbackItems(topics);
-  const todayNews = selectTodayNews([...dailyBriefItems, ...todayNewsFallback], { limit: TODAY_NEWS_LIMIT });
+  const todayNews = selectTodayNews([...dailyBriefItems, ...todayNewsFallback], {
+    excludedArticleKeys: occupiedArticleKeys,
+    limit: TODAY_NEWS_LIMIT,
+  });
   renderMustReadNews(internetNews, todayInternetPayload);
   renderPersonalNews();
   renderBriefCardList(todayNewsListElement, todayNews, {

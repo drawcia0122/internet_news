@@ -1,54 +1,522 @@
 {
-  "generatedAt": "2026-09-17T07:32:41.796Z",
+  "generatedAt": "2026-09-17T12:44:43.803Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
     "general": 0,
-    "tech": 8,
-    "business": 7,
-    "politics": 0,
-    "entertainment": 73,
-    "anime": 15,
-    "games": 157,
+    "tech": 14,
+    "business": 3,
+    "politics": 1,
+    "entertainment": 80,
+    "anime": 23,
+    "games": 156,
     "game-features": 5,
-    "anime-features": 2,
-    "manga": 47,
+    "anime-features": 1,
+    "manga": 48,
     "books": 0,
-    "sports": 3,
-    "net-culture": 1,
+    "sports": 5,
+    "net-culture": 5,
     "matome": 0,
     "crime": 0,
     "adult": 6,
-    "world": 3
+    "world": 2
   },
   "hasMore": true,
   "nextPage": 8,
   "items": [
     {
-      "id": "auto-games-英雄伝説iii-白き魔女-pc-家庭用ゲーム機向けの開発と-グローバル市場でのリリースに向けてneowizと商品化ライセンス契約を締結-4gamer.net/games/043/g104314/20260916003",
-      "title": "「英雄伝説III 白き魔女」，PC＆家庭用ゲーム機向けの開発と，グローバル市場でのリリースに向けてNEOWIZと商品化ライセンス契約を締結",
-      "summary": "日本ファルコムは本日（2026年9月16日），同社が保有するIP「英雄伝説III白き魔女」について，PCならびに家庭用ゲーム機向けの開発と，グローバル市場でのリリー…",
-      "briefSummary": "日本ファルコムは本日（2026年9月16日），同社が保有するIP「英雄伝説III白き魔女」について，PCならびに家庭用ゲーム機向けの開発と，グローバル市場でのリリースに向けた商品ライセンス契約をNEOWIZと締結したことを発表した。",
+      "id": "auto-tech-強化型zzを-フルアーマーzzガンダム-に換装-metal-robot魂用の拡張パーツ登場-迫力のハイパー・メガ・キャノン付き-inside-games.jp/article/2026/09/17/187870.html",
+      "title": "強化型ZZを「フルアーマーZZガンダム」に換装！METAL ROBOT魂用の拡張パーツ登場、迫力のハイパー・メガ・キャノン付き",
+      "summary": "プレミアムバンダイにて、「METAL ROBOT魂（Ka signature） ＜SIDE MS＞ 強化型ZZガンダム用フルアーマーパーツセット」が9月18日17時より予約開始！",
+      "briefSummary": "プレミアムバンダイにて、「METAL ROBOT魂（Ka signature） ＜SIDE MS＞ 強化型ZZガンダム用フルアーマーパーツセット」が9月18日17時より予約開始！",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "games",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1781649.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-17T12:44:43.803Z",
+      "time": "直近",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/09/17/187870.html",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "強化型ZZを「フルアーマーZZガンダム」に換装！METAL ROBOT魂用の拡張パーツ登場、迫力のハイパー・メガ・キャノン付き",
+          "url": "https://www.inside-games.jp/article/2026/09/17/187870.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/09/17/187870.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1781649.jpg"
+        }
+      ],
+      "whatHappened": "強化型ZZを「フルアーマーZZガンダム」に換装",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-games-仮面ライダーカブト-20周年ver-キックホッパー-パンチホッパー-がs-h-figuarts-真骨彫製法-で登場-9月18日16時より予約開始-inside-games.jp/article/2026/09/17/187863.html",
+      "title": "「仮面ライダーカブト」20周年Ver.「キックホッパー＆パンチホッパー」がS.H.Figuarts（真骨彫製法）で登場！9月18日16時より予約開始",
+      "summary": "「S.H.Figuarts（真骨彫製法） 仮面ライダーキックホッパー＆仮面ライダーパンチホッパー 20th Anniversary Ver.」が商品化決定！",
+      "briefSummary": "「仮面ライダーカブト」より、「仮面ライダーキックホッパー」「仮面ライダーパンチホッパー」がセットで20th Anniversary Ver.として登場。劇中のスーツの色を再度解釈し、2017年発売の「S.H.Figuarts（真骨彫製法）」とは異なるカラーリング表現を採用しています。交換用手首パーツやホッパーゼクター、集光頭部や専用背景シートが付属した特別仕…",
       "category": "games",
       "categories": [
         "games",
-        "business",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1781623.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-17T12:44:43.803Z",
+      "time": "直近",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/09/17/187863.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "「仮面ライダーカブト」20周年Ver.「キックホッパー＆パンチホッパー」がS.H.Figuarts（真骨彫製法）で登場！9月18日16時より予約開始",
+          "url": "https://www.inside-games.jp/article/2026/09/17/187863.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/09/17/187863.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1781623.jpg"
+        }
+      ],
+      "whatHappened": "「仮面ライダーカブト」20周年Ver.「キックホッパー＆パンチホッパー」がS.H.Figua…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-games-happyくじ-サンリオ-に注目-シナモロールら10キャラが-パンクロック-にイメチェン-フィギュアやチャームでクールに決める-inside-games.jp/article/2026/09/17/187862.html",
+      "title": "「Happyくじ サンリオ」に注目！シナモロールら10キャラが“パンクロック”にイメチェン、フィギュアやチャームでクールに決める",
+      "summary": "Happyくじ「Sanrio characters PUNKS Party～ Halloween2026～」が発表！ローソン、ファミリーマートなどで9月18日より順次発売。",
+      "briefSummary": "Happyくじ「Sanrio characters PUNKS Party～ Halloween2026～」が発表！ローソン、ファミリーマートなどで9月18日より順次発売。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1769810.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-17T12:44:43.803Z",
+      "time": "直近",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/09/17/187862.html",
+      "hotReasons": [
+        "検索需要やトレンド化の兆しが強い話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "「Happyくじ サンリオ」に注目！シナモロールら10キャラが“パンクロック”にイメチェン、フィギュアやチャームでクールに決める",
+          "url": "https://www.inside-games.jp/article/2026/09/17/187862.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/09/17/187862.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1769810.jpg"
+        }
+      ],
+      "whatHappened": "「Happyくじ サンリオ」に注目",
+      "whyHot": "検索需要やトレンド化の兆しが強い話題です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-games-水曜日のダウンタウン-藤井健太郎プロデュース-ゾンビになってゾンビを増やすゲーム-the-first-zombie-発表-steam-スイッチで配信予定-gamespark.jp/article/2026/09/17/172391.html",
+      "title": "「水曜日のダウンタウン」藤井健太郎プロデュース、ゾンビになってゾンビを増やすゲーム『THE FIRST ZOMBIE』発表！Steam/スイッチで配信予定",
+      "summary": "人間や動物をゾンビ化して仲間を増やし、渋谷や新宿など東京の街を制圧していく“逆ゾンビゲー”です。",
+      "briefSummary": "Phoenixxは9月17日、「水曜日のダウンタウン」の藤井健太郎氏がプロデュースするPC（Steam）/ニンテンドースイッチ向けゲーム 『THE FIRST ZOMBIE』 を発表しました。あわせてSteamのストアページも公開しています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
         "general"
       ],
       "categoryLabel": "ゲーム",
       "categoryLabels": [
         "ゲーム",
-        "経済"
+        "エンタメ"
       ],
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/043/G104314/20260916003/SS/001.jpg",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1192901.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-09-17T07:32:41.796Z",
+      "capturedAt": "2026-09-17T12:44:43.803Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/09/17/172391.html",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "「水曜日のダウンタウン」藤井健太郎プロデュース、ゾンビになってゾンビを増やすゲーム『THE FIRST ZOMBIE』発表！Steam/スイッチで配信予定",
+          "url": "http://www.gamespark.jp/article/2026/09/17/172391.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/17/172391.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1192901.jpg"
+        }
+      ],
+      "whatHappened": "「水曜日のダウンタウン」藤井健太郎プロデュース、ゾンビになってゾンビを増やすゲーム『THE …",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-4-000枚以上のドットフレーム-手描きピクセルで描かれる終末世界rpg-アーティス-インパクト-スイッチパッケージ-ダウンロード版リリース-bitsummit-gamespark.jp/article/2026/09/17/172390.html",
+      "title": "4,000枚以上のドットフレーム、 手描きピクセルで描かれる終末世界RPG『アーティス インパクト』スイッチパッケージ/ダウンロード版リリース！BitSummit大賞受賞の話題作",
+      "summary": "Steam版で未実装だった日本語を含む全11言語に対応し、マレーシアのクリエイターMas氏が単独制作した話題作が待望の日本語化を果たしました。",
+      "briefSummary": "ハピネットは本日9月17日、マレーシアのクリエイターMas氏が手掛けるアドベンチャーRPG『 アーティス インパクト 』（Artis Impact）のニンテンドースイッチ版を発売しました。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1192846.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-17T12:44:43.803Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/09/17/172390.html",
+      "hotReasons": [
+        "検索需要やトレンド化の兆しが強い話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "4,000枚以上のドットフレーム、 手描きピクセルで描かれる終末世界RPG『アーティス インパクト』スイッチパッケージ/ダウンロード版リリース！BitSummit大賞受賞の話題作",
+          "url": "http://www.gamespark.jp/article/2026/09/17/172390.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/17/172390.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1192846.jpg"
+        }
+      ],
+      "whatHappened": "4,000枚以上のドットフレーム、 手描きピクセルで描かれる終末世界RPG『アーティス イン…",
+      "whyHot": "検索需要やトレンド化の兆しが強い話題です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-ボールペンだけで描かれた犬さがしadv-finding-polka-スイッチ版が発売決定-新ステージ含む追加コンテンツも収録-gamespark.jp/article/2026/09/17/172389.html",
+      "title": "ボールペンだけで描かれた犬さがしADV『Finding Polka』スイッチ版が発売決定！新ステージ含む追加コンテンツも収録",
+      "summary": "追加コンテンツはSteamでも配信予定。TGS2026のPARCO GAMESブースでは世界最速でスイッチ版を試遊できます。",
+      "briefSummary": "パルコのゲームレーベル・PARCO GAMESは、『 Finding Polka 』のニンテンドースイッチ版を発売すると発表しました。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1188613.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-17T12:44:43.803Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/09/17/172389.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "ボールペンだけで描かれた犬さがしADV『Finding Polka』スイッチ版が発売決定！新ステージ含む追加コンテンツも収録",
+          "url": "http://www.gamespark.jp/article/2026/09/17/172389.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/17/172389.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1188613.jpg"
+        }
+      ],
+      "whatHappened": "ボールペンだけで描かれた犬さがしADV『Finding Polka』スイッチ版が発売決定",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-ff7-も-鬼武者-もヌルヌル動くぞ-新型ハンドヘルドpc-rog-xbox-ally-x20-発表-実機を触ってきた-gamespark.jp/article/2026/09/17/172388.html",
+      "title": "『FF7』も『鬼武者』もヌルヌル動くぞ！新型ハンドヘルドPC「ROG XBOX Ally X20」発表、実機を触ってきた",
+      "summary": "「Ally」の読みが「エイラァイ」なのはゲーマーの中にジワジワ浸透してきた気がします。",
+      "briefSummary": "ASUSは、新型ハンドヘルドPC「 ROG XBOX Ally X20 」を発表しました。本稿では、発表に伴い行われた本製品の発表会の様子や、製品性能についてお届けします。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1191459.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-17T12:44:43.803Z",
+      "time": "直近",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/09/17/172388.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "『FF7』も『鬼武者』もヌルヌル動くぞ！新型ハンドヘルドPC「ROG XBOX Ally X20」発表、実機を触ってきた",
+          "url": "http://www.gamespark.jp/article/2026/09/17/172388.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/17/172388.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1191459.jpg"
+        }
+      ],
+      "whatHappened": "『FF7』も『鬼武者』もヌルヌル動くぞ",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-乙女ゲーム-ミラミス-いよいよ発売-ストーリー・キャラ・声優をまとめて紹介-店舗別特典情報も-le-mirage-mystique-ル-ミラージュ-ミスティーク-animeanime.jp/article/2026/09/17/102999.html",
+      "title": "乙女ゲーム「ミラミス」いよいよ発売！ストーリー・キャラ・声優をまとめて紹介！店舗別特典情報も♪【Le Mirage Mystique（ル ミラージュ ミスティーク）】",
+      "summary": "乙女ゲーム『Le Mirage Mystique（ル ミラージュ ミスティーク）』略称『ミラミス』が、2026年9月17日に発売された。本記事では、ゲームの概要やキャラについて紹介する。",
+      "briefSummary": "乙女ゲーム『Le Mirage Mystique（ル ミラージュ ミスティーク）』略称『ミラミス』が、2026年9月17日に発売された。本記事では、ゲームの概要やキャラについて紹介する。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "manga",
+        "anime",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ",
+        "漫画",
+        "アニメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/931891.png",
+      "publishedAt": null,
+      "capturedAt": "2026-09-17T12:44:43.803Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/09/17/102999.html",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "乙女ゲーム「ミラミス」いよいよ発売！ストーリー・キャラ・声優をまとめて紹介！店舗別特典情報も♪【Le Mirage Mystique（ル ミラージュ ミスティーク）】",
+          "url": "https://animeanime.jp/article/2026/09/17/102999.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/09/17/102999.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/931891.png"
+        }
+      ],
+      "whatHappened": "乙女ゲーム「ミラミス」いよいよ発売",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "漫画・アニメ好き",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-games-銀河を舞台にした大規模バトルを紹介する-トータルウォー-ウォーハンマー40-000-の最新トレイラーを公開-tgs2026-4gamer.net/games/968/g096877/20260917002",
+      "title": "銀河を舞台にした大規模バトルを紹介する「トータルウォー：ウォーハンマー40,000」の最新トレイラーを公開［TGS2026］",
+      "summary": "セガは本日（2026年9月17日），2027年発売予定の「トータルウォー：ウォーハンマー40,000」の「TGS2026ゲーム紹介トレーラー」を公開した。あわせて，…",
+      "briefSummary": "セガは本日（2026年9月17日），2027年発売予定の「トータルウォー：ウォーハンマー40,000」の「TGS2026ゲーム紹介トレーラー」を公開した。あわせて，9月19日に東京ゲームショウ2026のブース内で行うスペシャルステージの内容…",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/968/G096877/20260917002/SS/003.png",
+      "publishedAt": null,
+      "capturedAt": "2026-09-17T12:44:43.803Z",
       "time": "直近",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/043/G104314/20260916003/",
+      "sourceUrl": "https://www.4gamer.net/games/968/G096877/20260917002/",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -68,15 +536,15 @@
             "console",
             "steam"
           ],
-          "title": "「英雄伝説III 白き魔女」，PC＆家庭用ゲーム機向けの開発と，グローバル市場でのリリースに向けてNEOWIZと商品化ライセンス契約を締結",
-          "url": "https://www.4gamer.net/games/043/G104314/20260916003/",
-          "canonicalUrl": "https://www.4gamer.net/games/043/G104314/20260916003/",
+          "title": "銀河を舞台にした大規模バトルを紹介する「トータルウォー：ウォーハンマー40,000」の最新トレイラーを公開［TGS2026］",
+          "url": "https://www.4gamer.net/games/968/G096877/20260917002/",
+          "canonicalUrl": "https://www.4gamer.net/games/968/G096877/20260917002/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/043/G104314/20260916003/SS/001.jpg"
+          "thumbnailUrl": "https://www.4gamer.net/games/968/G096877/20260917002/SS/003.png"
         }
       ],
-      "whatHappened": "「英雄伝説III 白き魔女」，PC＆家庭用ゲーム機向けの開発と，グローバル市場でのリリースに…",
+      "whatHappened": "銀河を舞台にした大規模バトルを紹介する「トータルウォー：ウォーハンマー40,000」の最新ト…",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -85,10 +553,10 @@
       ]
     },
     {
-      "id": "auto-games-崩壊-スターレイル-から-ルアン・メェイ-紙上に咲く雪梅ver-が予約受付開始-扇子を手にした優雅なひとときを再現-inside-games.jp/article/2026/09/16/187844.html",
-      "title": "『崩壊：スターレイル』から「ルアン・メェイ 紙上に咲く雪梅Ver.」が予約受付開始！扇子を手にした優雅なひとときを再現",
-      "summary": "『崩壊：スターレイル』から「ルアン・メェイ」の1/7スケールフィギュアが登場。予約期間は9月16日21時から11月30日まで。",
-      "briefSummary": "Myethosはスマホゲーム『崩壊：スターレイル』より、フィギュア「ルアン・メェイ 紙上に咲く雪梅Ver.」の予約受付を9月16日21時から開始します。",
+      "id": "auto-games-プレイレポ-ブルアカ開発スタジオの新作-ファレイドリア-は-かわいい-に一切の妥協なし-戦闘システムもユニークで面白い-4gamer.net/games/851/g085169/20260915041",
+      "title": "［プレイレポ］ブルアカ開発スタジオの新作「ファレイドリア」は“かわいい”に一切の妥協なし。戦闘システムもユニークで面白い",
+      "summary": "「ブルーアーカイブ」開発スタジオの新作「ファレイドリア」の試遊ビルドがTGS2026で公開される。今回は，ユニークな戦闘システム「ライブターンバトル」や，キャラたち…",
+      "briefSummary": "「ブルーアーカイブ」開発スタジオの新作「ファレイドリア」の試遊ビルドがTGS2026で公開される。今回は，ユニークな戦闘システム「ライブターンバトル」や，キャラたちとの交流ができる「黄昏館」などを一足先に体験してきたので，その内容をお届けす…",
       "category": "games",
       "categories": [
         "games",
@@ -101,514 +569,45 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1779782.jpg",
+      "thumbnailUrl": "https://www.4gamer.net/games/851/G085169/20260915041/SS/017.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-09-17T07:32:41.796Z",
+      "capturedAt": "2026-09-17T12:44:43.803Z",
       "time": "直近",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/09/16/187844.html",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/851/G085169/20260915041/",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
           "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "『崩壊：スターレイル』から「ルアン・メェイ 紙上に咲く雪梅Ver.」が予約受付開始！扇子を手にした優雅なひとときを再現",
-          "url": "https://www.inside-games.jp/article/2026/09/16/187844.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/09/16/187844.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1779782.jpg"
-        }
-      ],
-      "whatHappened": "『崩壊：スターレイル』から「ルアン・メェイ 紙上に咲く雪梅Ver.」が予約受付開始",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-しまむらで-ポケモン-グッズが9月19日発売-バッグ類や雑貨多数-エーフィ・ブラッキー・イーブイらの組み合わせが可愛い-inside-games.jp/article/2026/09/16/187843.html",
-      "title": "しまむらで『ポケモン』グッズが9月19日発売！バッグ類や雑貨多数、エーフィ・ブラッキー・イーブイらの組み合わせが可愛い",
-      "summary": "しまむらにて、『ポケットモンスター』のグッズが2026年9月19日発売！同日15時よりオンラインストアでも取り扱われます。",
-      "briefSummary": "しまむらにて、『ポケットモンスター』のグッズが2026年9月19日発売！同日15時よりオンラインストアでも取り扱われます。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1781401.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-17T07:32:41.796Z",
-      "time": "直近",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/09/16/187843.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch",
-            "pokemon"
-          ],
-          "title": "しまむらで『ポケモン』グッズが9月19日発売！バッグ類や雑貨多数、エーフィ・ブラッキー・イーブイらの組み合わせが可愛い",
-          "url": "https://www.inside-games.jp/article/2026/09/16/187843.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/09/16/187843.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1781401.jpg"
-        }
-      ],
-      "whatHappened": "しまむらで『ポケモン』グッズが9月19日発売",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-超常現象アクションrpg続編-control-resonant-アクセシビリティ対応を含めた難度調整機能詳細公開-調整次第でより高難度にも-gamespark.jp/article/2026/09/16/172368.html",
-      "title": "超常現象アクションRPG続編『CONTROL Resonant』アクセシビリティ対応を含めた難度調整機能詳細公開―調整次第でより高難度にも",
-      "summary": "Remedy EntertainmentはアクションアドベンチャーRPG続編 『CONTROL Resonant』 のアクセシビリティ対応を含めた難度調整機能について明かす<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://contr…",
-      "briefSummary": "Remedy EntertainmentはアクションアドベンチャーRPG続編 『CONTROL Resonant』 のアクセシビリティ対応を含めた難度調整機能について明かす 公式ブログ記事 を公開しました。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1192819.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-17T07:32:41.796Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/09/16/172368.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
+          "sourcePriority": 94,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
             "pc",
-            "console"
+            "console",
+            "steam"
           ],
-          "title": "超常現象アクションRPG続編『CONTROL Resonant』アクセシビリティ対応を含めた難度調整機能詳細公開―調整次第でより高難度にも",
-          "url": "http://www.gamespark.jp/article/2026/09/16/172368.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/16/172368.html",
+          "title": "［プレイレポ］ブルアカ開発スタジオの新作「ファレイドリア」は“かわいい”に一切の妥協なし。戦闘システムもユニークで面白い",
+          "url": "https://www.4gamer.net/games/851/G085169/20260915041/",
+          "canonicalUrl": "https://www.4gamer.net/games/851/G085169/20260915041/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1192819.jpg"
+          "thumbnailUrl": "https://www.4gamer.net/games/851/G085169/20260915041/SS/017.jpg"
         }
       ],
-      "whatHappened": "超常現象アクションRPG続編『CONTROL Resonant』アクセシビリティ対応を含めた…",
+      "whatHappened": "［プレイレポ］ブルアカ開発スタジオの新作「ファレイドリア」は“かわいい”に一切の妥協なし",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー",
         "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-エニックス名作アクションrpg-天地創造-2027年1月14日にリリース決定-16ビットの傑作が現代のプラットフォームで復活-gamespark.jp/article/2026/09/16/172367.html",
-      "title": "エニックス名作アクションRPG『天地創造』2027年1月14日にリリース決定。16ビットの傑作が現代のプラットフォームで復活",
-      "summary": "Clear River Gamesは『 天地創造（Terranigma） 』を2027年1月14日にリリースすることを発表しました。",
-      "briefSummary": "Clear River Gamesは『 天地創造（Terranigma） 』を2027年1月14日にリリースすることを発表しました。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1192825.png",
-      "publishedAt": null,
-      "capturedAt": "2026-09-17T07:32:41.796Z",
-      "time": "直近",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/09/16/172367.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "エニックス名作アクションRPG『天地創造』2027年1月14日にリリース決定。16ビットの傑作が現代のプラットフォームで復活",
-          "url": "http://www.gamespark.jp/article/2026/09/16/172367.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/09/16/172367.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1192825.png"
-        }
-      ],
-      "whatHappened": "エニックス名作アクションRPG『天地創造』2027年1月14日にリリース決定",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-entertainment-名コンビ-といえば-アンケート-切は9月23日-接着の日-animeanime.jp/article/2026/09/16/102997.html",
-      "title": "“名コンビ”といえば？ アンケート〆切は9月23日【接着の日】",
-      "summary": "アニメ！アニメ！では「“名コンビ”といえば？」と題した読者アンケートを実施します。〆切は9月23日。",
-      "briefSummary": "そこでアニメ！アニメ！では 「“名コンビ”といえば？」 と題した読者アンケートを実施します。自由回答形式で、これだと思うキャラクター2人と作品名をお答えください。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/929511.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-17T07:32:41.796Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/09/16/102997.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "“名コンビ”といえば？ アンケート〆切は9月23日【接着の日】",
-          "url": "https://animeanime.jp/article/2026/09/16/102997.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/09/16/102997.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/929511.jpg"
-        }
-      ],
-      "whatHappened": "“名コンビ”といえば",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-entertainment-suicaのペンギン-愛らしいぬいぐるみポーチ-エコバッグがセット-コラボ付録つき-オレンジページ-発売-10月2日-animeanime.jp/article/2026/09/16/102996.html",
-      "title": "「Suicaのペンギン」愛らしいぬいぐるみポーチ&エコバッグがセット！コラボ付録つき「オレンジページ」発売【10月2日】",
-      "summary": "JR東日本の「Suica」のキャラクター「Suicaのペンギン」のコラボ付録がつく、生活情報誌「オレンジページ」が2026年10月2日より数量限定で発売される。これが第5弾となるもので、愛らしいぬいぐるみポーチと持ち歩きに便利なエコバッグのセットが表情＆柄違いの2パターンで登場する。",
-      "briefSummary": "JR東日本の「Suica」のキャラクター「Suicaのペンギン」のコラボ付録がつく、生活情報誌「オレンジページ」が2026年10月2日より数量限定で発売される。これが第5弾となるもので、愛らしいぬいぐるみポーチと持ち歩きに便利なエコバッグのセットが表情＆柄違いの2パターンで登場する。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/932062.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-17T07:32:41.796Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/09/16/102996.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "「Suicaのペンギン」愛らしいぬいぐるみポーチ&エコバッグがセット！コラボ付録つき「オレンジページ」発売【10月2日】",
-          "url": "https://animeanime.jp/article/2026/09/16/102996.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/09/16/102996.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/932062.jpg"
-        }
-      ],
-      "whatHappened": "「Suicaのペンギン」愛らしいぬいぐるみポーチ&エコバッグがセット",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-entertainment-まどマギ-ワルプルギスの夜-ら魔女-星を大胆デザイン-ベベのチャームもかわいい-converse-tokyo-コラボ第2弾-9月18日より-animeanime.jp/article/2026/09/16/102995.html",
-      "title": "「まどマギ」“ワルプルギスの夜”ら魔女×星を大胆デザイン☆ベベのチャームもかわいい♪「CONVERSE TOKYO」コラボ第2弾【9月18日より】",
-      "summary": "『魔法少女まどか☆マギカ』と「CONVERSE TOKYO」のコラボレーション第2弾が登場。お菓子の魔女、人魚の魔女、舞台装置の魔女をモチーフにしたTシャツや、ベベをモチーフにしたチャームが9月18日より発売される。",
-      "briefSummary": "このたび、アパレルブランド「CONVERSE TOKYO」とアニメ『魔法少女まどか☆マギカ』によるコラボレーション第2弾が登場。2026年9月18日より、CONVERSE TOKYO全店舗（御殿場アウトレット店を除く）と公式オンラインストアにて発売される。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/931937.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-17T07:32:41.796Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/09/16/102995.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "「まどマギ」“ワルプルギスの夜”ら魔女×星を大胆デザイン☆ベベのチャームもかわいい♪「CONVERSE TOKYO」コラボ第2弾【9月18日より】",
-          "url": "https://animeanime.jp/article/2026/09/16/102995.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/09/16/102995.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/931937.jpg"
-        }
-      ],
-      "whatHappened": "「まどマギ」“ワルプルギスの夜”ら魔女×星を大胆デザイン☆ベベのチャームもかわいい♪「CON…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-anime-超かぐや姫-彩葉とヤチヨが映画デート-声優・永瀬アンナの写真投稿に夏吉ゆうこが反応して話題に-かぐやが嫉妬してる-かわいいかよ-animeanime.jp/article/2026/09/16/102992.html",
-      "title": "「超かぐや姫！」彩葉とヤチヨが映画デート!? 声優・永瀬アンナの写真投稿に夏吉ゆうこが反応して話題に！「かぐやが嫉妬してる…」「かわいいかよ」",
-      "summary": "『超かぐや姫！』が、2026年9月18日（金）より全国249館にて復活上映中のなか、本作でキャラを演じる声優の永瀬アンナさんの投稿に注目が。また、かぐや役の夏吉ゆうこさんも反応し、「嫉妬の仕方かぐやすぎ」と話題になっている。",
-      "briefSummary": "映画『超かぐや姫！』は、仮想空間〈ツクヨミ〉を舞台に“歌”でつながる少女たちの絆を描くオリジナル長編アニメ映画だ。ライバー、音楽ライブ、SNS文化などが融合された映像・音楽体験が若い世代を中心に話題となり、2026年1月からのNetflixでの配信後、2月20日より劇場公開も行われた。",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "アニメ",
-      "categoryLabels": [
-        "アニメ",
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/932054.png",
-      "publishedAt": null,
-      "capturedAt": "2026-09-17T07:32:41.796Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/09/16/102992.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "「超かぐや姫！」彩葉とヤチヨが映画デート!? 声優・永瀬アンナの写真投稿に夏吉ゆうこが反応して話題に！「かぐやが嫉妬してる…」「かわいいかよ」",
-          "url": "https://animeanime.jp/article/2026/09/16/102992.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/09/16/102992.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/932054.png"
-        }
-      ],
-      "whatHappened": "「超かぐや姫",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-数量限定-スヌーピーがサンタさんに-オーナメントやぬい-ジグソーパズルなど輸入ホリデーアイテム登場-animeanime.jp/article/2026/09/16/102991.html",
-      "title": "数量限定☆スヌーピーがサンタさんに♪ オーナメントやぬい、ジグソーパズルなど輸入ホリデーアイテム登場",
-      "summary": "「スヌーピー」たち『PEANUTS（ピーナッツ）』のキャラクターがあしらわれた、アメリカ・ホールマーク社製の輸入クリスマスオーナメントやぬいぐるみ、ジグソーパズルが登場。家族で楽しめるホリデーアイテム各種が、日本ホールマークの公式オンラインストアほかにて取り扱い中だ。",
-      "briefSummary": "「スヌーピー」たち『PEANUTS（ピーナッツ）』のアメリカ・ホールマーク社製輸入アイテム各種のお求めは、日本ホールマークの公式オンラインストアほかにて全国の取り扱い専門店・一部催事まで。詳細は各商品ページにて確認を。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/932030.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-17T07:32:41.796Z",
-      "time": "直近",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/09/16/102991.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "数量限定☆スヌーピーがサンタさんに♪ オーナメントやぬい、ジグソーパズルなど輸入ホリデーアイテム登場",
-          "url": "https://animeanime.jp/article/2026/09/16/102991.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/09/16/102991.html",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/932030.jpg"
-        }
-      ],
-      "whatHappened": "数量限定☆スヌーピーがサンタさんに♪ オーナメントやぬい、ジグソーパズルなど輸入ホリデーアイ…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
       ]
     }
   ]

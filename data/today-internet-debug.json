@@ -1,21 +1,20 @@
 {
-  "generatedAt": "2026-09-18T06:34:54.133Z",
+  "generatedAt": "2026-09-18T11:44:43.973Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-3",
-  "selectedTitle": "『逆転裁判』シリーズ25周年を記念したコラボカフェのグッズとメニューが公開！10月9日からカプコンカフェ池袋店・梅田店で開催",
+  "selectedClusterId": "today-cluster-4",
+  "selectedTitle": "ミクとハルヒが互いの衣装を交換。『初音ミク』×『涼宮ハルヒ』コラボ、いとうのいぢ氏による描き下ろしビジュアルがお披露目",
   "candidates": [
     {
-      "clusterId": "today-cluster-3",
-      "title": "『逆転裁判』シリーズ25周年を記念したコラボカフェのグッズとメニューが公開！10月9日からカプコンカフェ池袋店・梅田店で開催",
+      "clusterId": "today-cluster-4",
+      "title": "ミクとハルヒが互いの衣装を交換。『初音ミク』×『涼宮ハルヒ』コラボ、いとうのいぢ氏による描き下ろしビジュアルがお披露目",
       "category": "games",
       "categories": [
         "games",
-        "entertainment",
         "net-culture",
         "general"
       ],
-      "buzzScore": 73.1,
-      "confidence": 0.44,
+      "buzzScore": 77.3,
+      "confidence": 0.49,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -26,10 +25,65 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 19.8,
+        "trend": 20.7,
         "internetNativeBoost": 8,
-        "search": 6,
-        "social": 7,
+        "search": 6.2,
+        "social": 5.6,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 48.5,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-10",
+      "title": "VTuberやストリーマーが交わるTCG『Xross Stars（クロスタ）』1周年　渋谷TSUTAYAポップアップで感じた熱狂",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 72.9,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.5,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 8.4,
         "velocity": 5.3,
         "freshness": 8.5,
         "authority": 1.5,
@@ -46,10 +100,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 47.1,
-        "internalSocialScore": 54.8
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 45,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -58,19 +112,71 @@
       ]
     },
     {
-      "clusterId": "today-cluster-364",
-      "title": "「鳥取県」がまさかのゲームに！フレンドと鳥取を発展させる和風ファンタジーRPG『竜宮国・鳥取』が2027年にSteamで配信へ",
-      "category": "games",
+      "clusterId": "today-cluster-80",
+      "title": "TVアニメ『ヤニねこ』公式Xアカウントが「シャドウバン」されているのではないかとSNSで話題に。「公式アカウントがシャドウバンは草」「さすがヤニねこ」「話題提供しすぎでしょ！」とコメント相次ぐ",
+      "category": "net-culture",
       "categories": [
-        "games",
-        "entertainment",
-        "tech",
-        "sns",
         "net-culture",
+        "anime",
+        "games",
+        "sns",
         "general"
       ],
-      "buzzScore": 68.2,
-      "confidence": 0.36,
+      "buzzScore": 65.4,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-363",
+      "title": "経営「AIでラクして早く帰って」→社員「帰らない」　工数最大9割減のDeNAも悩むAI効率化の壁",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 65.2,
+      "confidence": 0.35,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -80,10 +186,10 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "trend": 20,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 7.4,
+        "search": 4.6,
+        "social": 6,
         "velocity": 0,
         "freshness": 10,
         "authority": 1.5,
@@ -100,10 +206,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 57.7
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 35.8,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -112,32 +218,32 @@
       ]
     },
     {
-      "clusterId": "today-cluster-42",
-      "title": "TVアニメ『ヤニねこ』公式Xアカウントが「シャドウバン」されているのではないかとSNSで話題に。「公式アカウントがシャドウバンは草」「さすがヤニねこ」「話題提供しすぎでしょ！」とコメント相次ぐ",
-      "category": "net-culture",
+      "clusterId": "today-cluster-919",
+      "title": "「鳥取県」がまさかのゲームに！フレンドと鳥取を発展させる和風ファンタジーRPG『竜宮国・鳥取』が2027年にSteamで配信へ",
+      "category": "games",
       "categories": [
-        "net-culture",
-        "anime",
         "games",
+        "entertainment",
+        "tech",
         "sns",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 68,
-      "confidence": 0.38,
-      "articleCount": 2,
+      "buzzScore": 65.1,
+      "confidence": 0.34,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 20,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 8.4,
+        "search": 4.8,
+        "social": 7.3,
         "velocity": 0,
         "freshness": 7,
         "authority": 1.5,
@@ -151,119 +257,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 47.5,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-13",
-      "title": "『ソフィーのアトリエ』のフリーシナリオ型AIチャット形式RPG『ソフィーチャットAI』発表。『ライザチャットAI』には歴代ライザの描き下ろしイラストを元にしたスキンが登場",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "net-culture",
-        "business",
-        "general"
-      ],
-      "buzzScore": 66.9,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-2379",
-      "title": "高い自由度を誇るサンドボックスRPG『歴史の終わり』PS5/XBOX Series X|S版が発売決定。Steam正式版とともに2027年第1四半期リリース予定",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 65.8,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 4.4,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 34.9,
-        "internalSocialScore": 34.4
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.3,
+        "internalSocialScore": 57.3
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

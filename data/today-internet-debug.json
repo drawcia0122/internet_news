@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-18T16:20:50.302Z",
+  "generatedAt": "2026-09-18T19:11:53.732Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-14",
+  "selectedClusterId": "today-cluster-19",
   "selectedTitle": "ミクとハルヒが互いの衣装を交換。『初音ミク』×『涼宮ハルヒ』コラボ、いとうのいぢ氏による描き下ろしビジュアルがお披露目",
   "candidates": [
     {
-      "clusterId": "today-cluster-14",
+      "clusterId": "today-cluster-19",
       "title": "ミクとハルヒが互いの衣装を交換。『初音ミク』×『涼宮ハルヒ』コラボ、いとうのいぢ氏による描き下ろしビジュアルがお披露目",
       "category": "games",
       "categories": [
@@ -13,8 +13,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.1,
-      "confidence": 0.38,
+      "buzzScore": 62.6,
+      "confidence": 0.37,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -24,12 +24,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 20,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 6.1,
+        "search": 5.9,
         "social": 5.6,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -45,8 +45,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 47.5,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -56,7 +56,58 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1166",
+      "clusterId": "today-cluster-415",
+      "title": "韓国、朝鮮出兵の「豊臣秀吉」登場に抗議 アジア大会行事で",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62.5,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 4.1,
+        "social": 4.6,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 31.9,
+        "internalSocialScore": 35.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1241",
       "title": "「鳥取県」がまさかのゲームに！フレンドと鳥取を発展させる和風ファンタジーRPG『竜宮国・鳥取』が2027年にSteamで配信へ",
       "category": "games",
       "categories": [
@@ -67,8 +118,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 63.5,
-      "confidence": 0.33,
+      "buzzScore": 61.3,
+      "confidence": 0.32,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -80,8 +131,112 @@
         "sourceDiversity": 2.3,
         "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 7.3,
+        "search": 4.6,
+        "social": 7.2,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 35.9,
+        "internalSocialScore": 56.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-408",
+      "title": "【TGS2026】ネクソンブースで『マビノギモバイル』『ファレイドリア』の世界へ！ ティルコネイルと黄昏館がホール7・C04に出現",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "buzzScore": 61.2,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.8,
+        "internetNativeBoost": 8,
+        "search": 4.1,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 32.3,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-640",
+      "title": "経営「AIでラクして早く帰って」→社員「帰らない」　工数最大9割減のDeNAも悩むAI効率化の壁",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 60.5,
+      "confidence": 0.32,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 5.9,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 1.5,
@@ -98,164 +253,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 36.7,
-        "internalSocialScore": 56.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-569",
-      "title": "経営「AIでラクして早く帰って」→社員「帰らない」　工数最大9割減のDeNAも悩むAI効率化の壁",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 62.1,
-      "confidence": 0.33,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 80,
         "archiveHeatScore": 91,
-        "internalSearchScore": 35.2,
-        "internalSocialScore": 46.3
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-353",
-      "title": "便漏れしながらスポーツ競技を続行した豪選手に批判の声。主催者が謝罪、ルール改正へ",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "world",
-        "general"
-      ],
-      "buzzScore": 62,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 18.9,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 34,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-149",
-      "title": "『ファイナルファンタジー レゾナンス』ド迫力の巨大壁面ドットアート！ノベルティは懐かしのBOXがもらえる！【TGS2026】",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 60.9,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 3.2,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 24.7
+        "internalSearchScore": 34.6,
+        "internalSocialScore": 45.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

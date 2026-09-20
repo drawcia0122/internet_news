@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T21:43:56.655Z",
+  "generatedAt": "2026-09-20T00:06:08.724Z",
   "sourceCandidates": [
     {
       "name": "SCRAP / リアル脱出ゲーム",
@@ -744,7 +744,7 @@
       "venue": "アニメイトアニメイト秋葉原",
       "location": "東京都",
       "category": "アニメ / オンリーショップ",
-      "description": "アニメイトアニメイト秋葉原 を中心に展開される Myethos POP UP STORE in アニメイト秋葉原 のポップアップ系イベントです。開催予定を確認しやすい一覧から取得しています。",
+      "description": "アニメイトアニメイト秋葉原 を中心に展開される Myethos POP UP STORE in アニメイト秋葉原 のポップアップ系イベントです。開催中を確認しやすい一覧から取得しています。",
       "detailUrl": "https://www.animate.co.jp/onlyshop/48692/",
       "officialUrl": "https://www.animate.co.jp/onlyshop/",
       "sourceName": "アニメイト オンリーショップ",
@@ -754,12 +754,12 @@
         "tokyo",
         "popup",
         "onlyshop",
-        "upcoming",
+        "ongoing",
         "anime"
       ],
       "recommendationReasons": [
         "東京開催",
-        "開催予定",
+        "開催中",
         "アニメ・漫画好き向け"
       ]
     },
@@ -1182,6 +1182,29 @@
       ]
     },
     {
+      "id": "www-pokemon-jp-special-pokemonminiconcert",
+      "title": "高知県南国市で「N響メンバーによるポケモンミニコンサート」が開催！",
+      "startDate": "2026-09-27",
+      "endDate": null,
+      "venue": "イベント会場は詳細ページで確認",
+      "location": "開催地は詳細ページで確認",
+      "category": "ポケモン / ステージイベント",
+      "description": "参加申し込み受け付け中！ イベント会場は詳細ページで確認 で展開される 高知県南国市で「N響メンバーによるポケモンミニコンサート」が開催！。ポケモン公式のお知らせ一覧から「現地で行けるイベント」寄りの情報だけ抽出しています。",
+      "detailUrl": "https://www.pokemon.jp/special/pokemonminiconcert/",
+      "officialUrl": "https://www.pokemon.co.jp/info/cat_event/",
+      "sourceName": "ポケットモンスターオフィシャルサイト",
+      "sourceUrl": "https://www.pokemon.co.jp/info/cat_event/",
+      "thumbnailUrl": "https://www.pokemon.co.jp/PostImages/b2457c5c7fab9da84cc9de8f0541324d9f1ff5bd.png",
+      "tags": [
+        "pokemon"
+      ],
+      "recommendationReasons": [
+        "ポケモン好き向け",
+        "公式一次情報",
+        "今月開催"
+      ]
+    },
+    {
       "id": "www-yomiuriland-com-event-halloween2026",
       "title": "よみランハロウィン！～Jump in Party 2026～",
       "startDate": "2026-09-26",
@@ -1383,29 +1406,6 @@
         "東京開催",
         "開催予定",
         "アニメ・漫画好き向け"
-      ]
-    },
-    {
-      "id": "www-pokemon-jp-special-pokemonminiconcert",
-      "title": "高知県南国市で「N響メンバーによるポケモンミニコンサート」が開催！",
-      "startDate": "2026-09-27",
-      "endDate": null,
-      "venue": "イベント会場は詳細ページで確認",
-      "location": "開催地は詳細ページで確認",
-      "category": "ポケモン / ステージイベント",
-      "description": "参加申し込み受け付け中！ イベント会場は詳細ページで確認 で展開される 高知県南国市で「N響メンバーによるポケモンミニコンサート」が開催！。ポケモン公式のお知らせ一覧から「現地で行けるイベント」寄りの情報だけ抽出しています。",
-      "detailUrl": "https://www.pokemon.jp/special/pokemonminiconcert/",
-      "officialUrl": "https://www.pokemon.co.jp/info/cat_event/",
-      "sourceName": "ポケットモンスターオフィシャルサイト",
-      "sourceUrl": "https://www.pokemon.co.jp/info/cat_event/",
-      "thumbnailUrl": "https://www.pokemon.co.jp/PostImages/b2457c5c7fab9da84cc9de8f0541324d9f1ff5bd.png",
-      "tags": [
-        "pokemon"
-      ],
-      "recommendationReasons": [
-        "ポケモン好き向け",
-        "公式一次情報",
-        "今月開催"
       ]
     },
     {
@@ -1633,7 +1633,7 @@
       "venue": "アニメイトアニメイト札幌",
       "location": "東京都ほか",
       "category": "アニメ / オンリーショップ",
-      "description": "アニメイトアニメイト札幌 を中心に展開される UTA☆PRI GRAND SHOP 出張版 のポップアップ系イベントです。開催予定を確認しやすい一覧から取得しています。",
+      "description": "アニメイトアニメイト札幌 を中心に展開される UTA☆PRI GRAND SHOP 出張版 のポップアップ系イベントです。開催中を確認しやすい一覧から取得しています。",
       "detailUrl": "https://www.animate.co.jp/onlyshop/49366/",
       "officialUrl": "https://www.animate.co.jp/onlyshop/",
       "sourceName": "アニメイト オンリーショップ",
@@ -1643,11 +1643,11 @@
         "tokyo",
         "popup",
         "onlyshop",
-        "upcoming",
+        "ongoing",
         "anime"
       ],
       "recommendationReasons": [
-        "開催予定",
+        "開催中",
         "アニメ・漫画好き向け"
       ]
     },

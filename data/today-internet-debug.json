@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T17:27:57.910Z",
+  "generatedAt": "2026-09-20T19:43:27.151Z",
   "fallbackUsed": false,
   "selectedClusterId": "today-cluster-1",
   "selectedTitle": "【マルチ対応】あらゆる場所で“危険すぎるゴルフ”をプレイするゲーム『Really Illegal Golf』新映像が公開。Steamにて体験版が配信中",
@@ -15,25 +15,24 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 80.2,
-      "confidence": 0.46,
+      "buzzScore": 72.5,
+      "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 6.5,
+        "search": 6.3,
         "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 17,
         "penalty": -3
@@ -49,8 +48,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -60,7 +59,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-10",
+      "clusterId": "today-cluster-285",
+      "title": "『エストポリス伝記 I＆II』現行機復活。Switch/PS5/Steamなど",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 69.1,
+      "confidence": 0.34,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 4.5,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-12",
       "title": "【！？】「伯方の塩」とアニメ『塩対応の佐藤さんが俺にだけ甘い』がまさかのコラボ。「押尾くん」が「お塩くん」と化したPVが公開",
       "category": "anime",
       "categories": [
@@ -70,13 +122,12 @@
         "sns",
         "general"
       ],
-      "buzzScore": 71.6,
-      "confidence": 0.42,
+      "buzzScore": 64.8,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
@@ -87,8 +138,8 @@
         "internetNativeBoost": 8,
         "search": 5.5,
         "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -115,59 +166,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1762",
-      "title": "AIとの対話だけで完成! 広がる“アプリ開発革命”",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 68.5,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.8,
-        "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 99,
-        "internalSearchScore": 36.6,
-        "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-275",
+      "clusterId": "today-cluster-274",
       "title": "公開トーク番組「吉Pラジオ/吉Pナイト」，台風接近に伴う悪天候や交通機関への影響を考慮し開催中止に",
       "category": "games",
       "categories": [
@@ -219,37 +218,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-25",
-      "title": "timelesz猪俣周杜が傷害容疑で逮捕　STARTO社は謹慎を発表、本人は容疑を否認",
-      "category": "crime",
+      "clusterId": "today-cluster-1810",
+      "title": "AIとの対話だけで完成! 広がる“アプリ開発革命”",
+      "category": "tech",
       "categories": [
-        "crime",
-        "entertainment",
+        "tech",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 59.3,
-      "confidence": 0.36,
+      "buzzScore": 60.4,
+      "confidence": 0.38,
       "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
+        "sourceDiversity": 4.7,
+        "trend": 21.8,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 8.4,
+        "search": 4.6,
+        "social": 5.7,
         "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
+        "freshness": 1.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": -6
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -258,13 +255,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 65.8
+        "repeatedAppearanceScore": 1.8,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 99,
+        "internalSearchScore": 35.8,
+        "internalSocialScore": 44.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

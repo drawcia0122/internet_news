@@ -1,22 +1,132 @@
 {
-  "generatedAt": "2026-09-21T11:05:05.230Z",
+  "generatedAt": "2026-09-21T17:01:03.507Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1131",
-  "selectedTitle": "『エストポリス伝記 I＆II』現行機復活。Switch/PS5/Steamなど",
+  "selectedClusterId": "today-cluster-339",
+  "selectedTitle": "【速報】ロシア政権与党、4分の3議席確保で圧勝へ",
   "candidates": [
     {
-      "clusterId": "today-cluster-1131",
-      "title": "『エストポリス伝記 I＆II』現行機復活。Switch/PS5/Steamなど",
-      "category": "sports",
+      "clusterId": "today-cluster-339",
+      "title": "【速報】ロシア政権与党、4分の3議席確保で圧勝へ",
+      "category": "politics",
       "categories": [
-        "sports",
-        "games",
+        "politics",
         "sns",
         "net-culture",
+        "world",
         "general"
       ],
-      "buzzScore": 72.5,
-      "confidence": 0.38,
+      "buzzScore": 69.6,
+      "confidence": 0.44,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5.4,
+        "social": 7.7,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 11.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 42.2,
+        "internalSocialScore": 60
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-11",
+      "title": "Ado×サンリオ「クロミ」初のコラボ楽曲を発表　自分らしさを貫く自己肯定ソング",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general",
+        "sns",
+        "manga"
+      ],
+      "buzzScore": 68.3,
+      "confidence": 0.51,
+      "articleCount": 5,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
+      "whyRanked": [
+        "主要3媒体で同一話題を確認",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 9,
+        "sourceDiversity": 7,
+        "trend": 15.2,
+        "internetNativeBoost": 0,
+        "search": 5.1,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 69,
+        "internalSearchScore": 39.8,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-340",
+      "title": "【分析】中間選挙を目前にひたすら奇妙な言動を重ねていくトランプ氏",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sports",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 67.2,
+      "confidence": 0.4,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -28,12 +138,12 @@
         "sourceDiversity": 4.7,
         "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 7.3,
+        "search": 4.5,
+        "social": 7.4,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 17,
+        "categoryBias": 7,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -45,11 +155,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
         "archiveHeatScore": 89,
-        "internalSearchScore": 33.9,
-        "internalSocialScore": 56.9
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -58,70 +168,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-760",
-      "title": "国産AIへ機械に「マイナンバー」　官民でデータ収集、DMG森など100社",
-      "category": "business",
+      "clusterId": "today-cluster-338",
+      "title": "『空の軌跡 the 2nd』いきなり大人気、Steam同接はファルコム史上トップに。『the 1st』を超え、続編リメイクも絶好調",
+      "category": "games",
       "categories": [
-        "business",
-        "tech",
+        "games",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.6,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 33.8,
-        "internalSocialScore": 57.3
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-232",
-      "title": "公開トーク番組「吉Pラジオ/吉Pナイト」，台風接近に伴う悪天候や交通機関への影響を考慮し開催中止に",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 62.8,
-      "confidence": 0.33,
+      "buzzScore": 64.7,
+      "confidence": 0.34,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -131,9 +188,9 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 4.2,
+        "search": 4.5,
         "social": 6,
         "velocity": 0,
         "freshness": 10,
@@ -152,8 +209,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -163,19 +220,18 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1130",
-      "title": "AIバブルはこうして終わる　金利高と収穫逓減「死の交差」",
+      "clusterId": "today-cluster-1020",
+      "title": "国産AIへ機械に「マイナンバー」　官民でデータ収集、DMG森など100社",
       "category": "business",
       "categories": [
         "business",
         "tech",
         "sns",
         "net-culture",
-        "world",
         "general"
       ],
-      "buzzScore": 61.8,
-      "confidence": 0.36,
+      "buzzScore": 63.9,
+      "confidence": 0.37,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -185,9 +241,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 17.4,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 3.9,
+        "search": 4.2,
         "social": 7.3,
         "velocity": 0,
         "freshness": 5.5,
@@ -206,60 +262,9 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 30.4,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 33.2,
         "internalSocialScore": 56.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-278",
-      "title": "2人協力型パズルアドベンチャー「We Were Here Tomorrow」，10月20日にPC，PS5，XBOX Series X|S向けに発売",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 61.4,
-      "confidence": 0.33,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 4.6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 35.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-20T22:24:32.643Z",
+  "generatedAt": "2026-09-21T00:30:13.516Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-284",
+  "selectedClusterId": "today-cluster-288",
   "selectedTitle": "『エストポリス伝記 I＆II』現行機復活。Switch/PS5/Steamなど",
   "candidates": [
     {
-      "clusterId": "today-cluster-284",
+      "clusterId": "today-cluster-288",
       "title": "『エストポリス伝記 I＆II』現行機復活。Switch/PS5/Steamなど",
       "category": "sports",
       "categories": [
@@ -50,6 +50,57 @@
         "archiveHeatScore": 89,
         "internalSearchScore": 35.1,
         "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1",
+      "title": "2人プレイ協力必須ゲーム『We Were Here Tomorrow』10月20日発売へ。“知らないこと・できないこと”を補い合う、ゲーム内ボイチャでつながる巨大施設分担攻略",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 64.9,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.3,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 4.2,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 44.7,
+        "internalSocialScore": 32.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -110,7 +161,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1991",
+      "clusterId": "today-cluster-2179",
       "title": "AIとの対話だけで完成! 広がる“アプリ開発革命”",
       "category": "tech",
       "categories": [
@@ -162,72 +213,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2154",
-      "title": "新作TVアニメ「新 美味しんぼ」放送決定！シンエイ動画50周年記念で発表",
-      "category": "anime",
+      "clusterId": "today-cluster-290",
+      "title": "【アジア大会】選手村なしで混乱　男女同室、自力でホテル探し、サッカーバスが野球場へ",
+      "category": "sports",
       "categories": [
-        "anime",
-        "manga",
-        "entertainment",
+        "sports",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 58.6,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.1,
-        "velocity": 0,
-        "freshness": 1.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": -6
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 1.8,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 55.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-283",
-      "title": "AIバブルはこうして終わる　金利高と収穫逓減「死の交差」",
-      "category": "business",
-      "categories": [
-        "business",
-        "tech",
-        "sns",
-        "net-culture",
-        "world",
-        "general"
-      ],
-      "buzzScore": 58.4,
+      "buzzScore": 59.8,
       "confidence": 0.32,
       "articleCount": 1,
       "sourceCount": 1,
@@ -238,14 +233,14 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 17.4,
+        "trend": 17.2,
         "internetNativeBoost": 8,
         "search": 4,
-        "social": 7.4,
+        "social": 6,
         "velocity": 0,
         "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 9,
+        "categoryBias": 12,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -258,10 +253,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 57.7
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

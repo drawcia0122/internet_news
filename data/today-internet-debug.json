@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-21T05:24:18.612Z",
+  "generatedAt": "2026-09-21T11:05:05.230Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-679",
+  "selectedClusterId": "today-cluster-1131",
   "selectedTitle": "『エストポリス伝記 I＆II』現行機復活。Switch/PS5/Steamなど",
   "candidates": [
     {
-      "clusterId": "today-cluster-679",
+      "clusterId": "today-cluster-1131",
       "title": "『エストポリス伝記 I＆II』現行機復活。Switch/PS5/Steamなど",
       "category": "sports",
       "categories": [
@@ -15,7 +15,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 74.1,
+      "buzzScore": 72.5,
       "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 2,
@@ -28,10 +28,10 @@
         "sourceDiversity": 4.7,
         "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 4.4,
+        "search": 4.3,
         "social": 7.3,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 2.5,
         "categoryBias": 17,
         "penalty": 0
@@ -45,11 +45,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 100,
         "archiveHeatScore": 89,
-        "internalSearchScore": 34.5,
-        "internalSocialScore": 57.3
+        "internalSearchScore": 33.9,
+        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-307",
+      "clusterId": "today-cluster-760",
       "title": "国産AIへ機械に「マイナンバー」　官民でデータ収集、DMG森など100社",
       "category": "business",
       "categories": [
@@ -68,8 +68,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.7,
-      "confidence": 0.4,
+      "buzzScore": 65.6,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -81,112 +81,7 @@
         "sourceDiversity": 4.7,
         "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1",
-      "title": "オープンワールド荒野運転旅ゲーム『HODKA』発表。おんぼろバンで孤独なガラクタ漁り、夜になると“巨大な何か”に襲われる",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 64.9,
-      "confidence": 0.47,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 4.2,
-        "velocity": 8.3,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 32.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-678",
-      "title": "AIバブルはこうして終わる　金利高と収穫逓減「死の交差」",
-      "category": "business",
-      "categories": [
-        "business",
-        "tech",
-        "sns",
-        "net-culture",
-        "world",
-        "general"
-      ],
-      "buzzScore": 63.4,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
+        "search": 4.3,
         "social": 7.3,
         "velocity": 0,
         "freshness": 7,
@@ -205,8 +100,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 33.8,
         "internalSocialScore": 57.3
       },
       "externalSignalErrors": [
@@ -216,33 +111,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2",
-      "title": "Steam壮絶ADV『泣き叫ぶ雁』に日本語フルボイス実装へ。“暗すぎて賛否真っ二つ”過酷物語を、日本語吹き替えで楽しめるように",
+      "clusterId": "today-cluster-232",
+      "title": "公開トーク番組「吉Pラジオ/吉Pナイト」，台風接近に伴う悪天候や交通機関への影響を考慮し開催中止に",
       "category": "games",
       "categories": [
         "games",
+        "entertainment",
+        "sns",
         "general"
       ],
-      "buzzScore": 63.1,
-      "confidence": 0.45,
-      "articleCount": 2,
+      "buzzScore": 62.8,
+      "confidence": 0.33,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 20.5,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 4.2,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "search": 4.2,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 6,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -252,13 +148,118 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 93,
-        "internalSearchScore": 48.2,
-        "internalSocialScore": 32.8
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 32.6,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1130",
+      "title": "AIバブルはこうして終わる　金利高と収穫逓減「死の交差」",
+      "category": "business",
+      "categories": [
+        "business",
+        "tech",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 61.8,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 3.9,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 30.4,
+        "internalSocialScore": 56.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-278",
+      "title": "2人協力型パズルアドベンチャー「We Were Here Tomorrow」，10月20日にPC，PS5，XBOX Series X|S向けに発売",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 61.4,
+      "confidence": 0.33,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 4.2,
+        "social": 4.6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 32.6,
+        "internalSocialScore": 35.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

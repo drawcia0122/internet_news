@@ -1,40 +1,146 @@
 {
-  "generatedAt": "2026-09-22T00:03:18.321Z",
+  "generatedAt": "2026-09-22T04:42:51.494Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-330",
-  "selectedTitle": "【速報】ロシア政権与党、4分の3議席確保で圧勝へ",
+  "selectedClusterId": "today-cluster-11",
+  "selectedTitle": "VTuber HIMEHINAがラジオ「オールナイトニッポン0」パーソナリティーを初担当",
   "candidates": [
     {
-      "clusterId": "today-cluster-330",
-      "title": "【速報】ロシア政権与党、4分の3議席確保で圧勝へ",
-      "category": "politics",
+      "clusterId": "today-cluster-11",
+      "title": "VTuber HIMEHINAがラジオ「オールナイトニッポン0」パーソナリティーを初担当",
+      "category": "entertainment",
       "categories": [
-        "politics",
+        "entertainment",
         "sns",
         "net-culture",
-        "world",
         "general"
       ],
-      "buzzScore": 70.2,
-      "confidence": 0.45,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 3,
+      "buzzScore": 73.1,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 5.5,
-        "trend": 22,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 5.2,
-        "social": 7.6,
+        "search": 6,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-13",
+      "title": "動物たちの心あたたまる木製ジオラマパズルゲーム『Woodo』Steamユーザーレビュー「非常に好評」の好スタート。3D空間で木製の風景をひとつずつ組み立てる",
+      "category": "games",
+      "categories": [
+        "games",
+        "game-features",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 72.1,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.8,
+        "internetNativeBoost": 8,
+        "search": 5.6,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 44,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-53",
+      "title": "『空の軌跡 the 2nd』いきなり大人気、Steam同接はファルコム史上トップに。『the 1st』を超え、続編リメイクも絶好調",
+      "category": "games",
+      "categories": [
+        "games",
+        "general",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 71.4,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 7,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 7,
         "authority": 2.5,
-        "categoryBias": 4,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -44,13 +150,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 9,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 40.9,
-        "internalSocialScore": 59.1
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 23.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 46.2,
+        "internalSocialScore": 54.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -59,7 +165,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-25",
+      "clusterId": "today-cluster-46",
       "title": "Ado×サンリオ「クロミ」初のコラボ楽曲を発表　自分らしさを貫く自己肯定ソング",
       "category": "games",
       "categories": [
@@ -113,140 +219,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-328",
-      "title": "『空の軌跡 the 2nd』いきなり大人気、Steam同接はファルコム史上トップに。『the 1st』を超え、続編リメイクも絶好調",
+      "clusterId": "today-cluster-7",
+      "title": "日本風の夜市をつくるサンドボックスゲーム『Oboro no Ichi』公式トレーラーが公開。屋台や建物、小道をつなぎながら、自分だけの市をつくると、迷える魂たちが安らぎを求めて訪れる",
       "category": "games",
       "categories": [
         "games",
-        "sns",
+        "business",
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.7,
-      "confidence": 0.34,
-      "articleCount": 1,
+      "buzzScore": 66,
+      "confidence": 0.43,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-577",
-      "title": "【分析】中間選挙を目前にひたすら奇妙な言動を重ねていくトランプ氏",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sports",
-        "sns",
-        "net-culture",
-        "world",
-        "general"
-      ],
-      "buzzScore": 64.1,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 7,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 34.5,
-        "internalSocialScore": 57.3
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-215",
-      "title": "公開トーク番組「吉Pラジオ/吉Pナイト」，台風接近に伴う悪天候や交通機関への影響を考慮し開催中止に",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 62.8,
-      "confidence": 0.33,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
         "sourceDiversity": 2.3,
         "trend": 18,
         "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
+        "search": 5.7,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -256,13 +257,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
         "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

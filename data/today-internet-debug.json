@@ -1,43 +1,95 @@
 {
-  "generatedAt": "2026-09-24T06:06:38.665Z",
+  "generatedAt": "2026-09-24T11:38:36.208Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-49",
-  "selectedTitle": "『真・三國無双２ with 猛将伝 Remastered』本日9月24日から体験版がPS5、Nintendo Switch 2、XBOX Series X|Sで配信開始。Steam版は後日配信",
+  "selectedClusterId": "today-cluster-4",
+  "selectedTitle": "美少女×クトゥルフ経営シム新作『夜明けの笛吹き者』Steam配信開始！謎の労働力「人柴」を酷使し錬金工房を発展、SAN値が下がったら一晩寝かせて復活",
   "candidates": [
     {
-      "clusterId": "today-cluster-49",
-      "title": "『真・三國無双２ with 猛将伝 Remastered』本日9月24日から体験版がPS5、Nintendo Switch 2、XBOX Series X|Sで配信開始。Steam版は後日配信",
+      "clusterId": "today-cluster-4",
+      "title": "美少女×クトゥルフ経営シム新作『夜明けの笛吹き者』Steam配信開始！謎の労働力「人柴」を酷使し錬金工房を発展、SAN値が下がったら一晩寝かせて復活",
       "category": "games",
       "categories": [
         "games",
         "entertainment",
-        "net-culture",
-        "sns",
         "general"
       ],
-      "buzzScore": 71.8,
-      "confidence": 0.53,
-      "articleCount": 5,
+      "buzzScore": 74.6,
+      "confidence": 0.55,
+      "articleCount": 4,
       "sourceCount": 3,
       "uniqueDomainCount": 3,
       "whyRanked": [
         "主要3媒体で同一話題を確認",
         "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 7,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 3.9,
+        "social": 4.5,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 30.6,
+        "internalSocialScore": 35.3
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-5",
+      "title": "『GANTZ』作者・奥浩哉氏、マンガ『サンダー3』作者・池田祐輝が自身の別名義であることをカミングアウトし話題に。「画風が似てるとは思ってたけど本人だったとは……」と反応集まる",
+      "category": "games",
+      "categories": [
+        "games",
+        "manga",
+        "net-culture",
+        "matome",
+        "general"
+      ],
+      "buzzScore": 74,
+      "confidence": 0.48,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 9,
-        "sourceDiversity": 7,
-        "trend": 14.7,
-        "internetNativeBoost": 0,
-        "search": 5,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.9,
+        "internetNativeBoost": 8,
+        "search": 5.8,
         "social": 8.4,
-        "velocity": 2.7,
+        "velocity": 8.3,
         "freshness": 10,
-        "authority": 1,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -7
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -50,8 +102,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 67,
-        "internalSearchScore": 39.1,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 45.7,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -61,7 +113,61 @@
       ]
     },
     {
-      "clusterId": "today-cluster-37",
+      "clusterId": "today-cluster-110",
+      "title": "『風来のシレン６』Steamにて過去最高同接プレイヤー数更新。『トルネコの大冒険』リマスター登場もあり、「不思議のダンジョン」ブーム再燃か",
+      "category": "games",
+      "categories": [
+        "games",
+        "general",
+        "entertainment",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 72.8,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 23.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 46.2,
+        "internalSocialScore": 65.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-74",
       "title": "『スーパーダンガンロンパ2×2』新キャラ「東 才空太郎（CV 花江夏樹）」公開―さっそく才能や名前に関する考察が飛び交う",
       "category": "games",
       "categories": [
@@ -113,7 +219,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-342",
+      "clusterId": "today-cluster-936",
       "title": "オーストラリア首相「OpenAIのAIが国民健保サイトに侵入」と公表",
       "category": "tech",
       "categories": [
@@ -124,8 +230,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 71.3,
-      "confidence": 0.41,
+      "buzzScore": 68.2,
+      "confidence": 0.4,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -138,9 +244,9 @@
         "trend": 21.3,
         "internetNativeBoost": 8,
         "search": 4.8,
-        "social": 7.4,
+        "social": 7.3,
         "velocity": 0,
-        "freshness": 10,
+        "freshness": 7,
         "authority": 2.5,
         "categoryBias": 9,
         "penalty": 0
@@ -154,117 +260,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 100,
         "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-11",
-      "title": "人気神話ハクスラARPG『Titan Quest II』来年1月19日に正式リリースへ、PS5/XBOX Series X|S版も同時発売。古代ギリシャ世界を冒険し、神話モンスターに立ち向かう",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 71,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-8",
-      "title": "アイドルグループ「WEST.」9月末で活動終了　メンバー7人はSTARTO社で活動継続",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 70.5,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
-        "internalSocialScore": 54.8
+        "internalSearchScore": 37.3,
+        "internalSocialScore": 57.3
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

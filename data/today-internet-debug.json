@@ -1,38 +1,40 @@
 {
-  "generatedAt": "2026-09-26T21:03:56.504Z",
+  "generatedAt": "2026-09-26T23:33:34.894Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-448",
-  "selectedTitle": "4歳と1歳の娘2人をマンション6階のベランダから投げ落とす 25歳父親を殺人未遂の疑いで現行犯逮捕 「おれは一緒に死ぬんだと言って連れて行かれた」岐阜･各務原市",
+  "selectedClusterId": "today-cluster-440",
+  "selectedTitle": "「アニメじゃない」40年を経て生まれ変わる",
   "candidates": [
     {
-      "clusterId": "today-cluster-448",
-      "title": "4歳と1歳の娘2人をマンション6階のベランダから投げ落とす 25歳父親を殺人未遂の疑いで現行犯逮捕 「おれは一緒に死ぬんだと言って連れて行かれた」岐阜･各務原市",
-      "category": "crime",
+      "clusterId": "today-cluster-440",
+      "title": "「アニメじゃない」40年を経て生まれ変わる",
+      "category": "anime",
       "categories": [
-        "crime",
-        "general",
+        "anime",
+        "entertainment",
+        "manga",
         "sns",
-        "net-culture"
+        "net-culture",
+        "general"
       ],
-      "buzzScore": 70.4,
-      "confidence": 0.54,
-      "articleCount": 8,
+      "buzzScore": 72.7,
+      "confidence": 0.39,
+      "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 14.4,
+        "coverage": 3.6,
         "sourceDiversity": 4.7,
         "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 5.9,
+        "search": 4.5,
+        "social": 7.4,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 8.5,
         "authority": 2.5,
-        "categoryBias": 4,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -44,11 +46,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
         "archiveHeatScore": 89,
-        "internalSearchScore": 33.9,
-        "internalSocialScore": 45.9
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -57,7 +59,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-417",
+      "clusterId": "today-cluster-552",
       "title": "Docker、AIコーディングエージェント向けの公式スキル「Docker Skills」を公開",
       "category": "tech",
       "categories": [
@@ -109,7 +111,111 @@
       ]
     },
     {
-      "clusterId": "today-cluster-487",
+      "clusterId": "today-cluster-584",
+      "title": "4歳と1歳の娘2人をマンション6階のベランダから投げ落とす 25歳父親を殺人未遂の疑いで現行犯逮捕 「おれは一緒に死ぬんだと言って連れて行かれた」岐阜･各務原市",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "general",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 68.7,
+      "confidence": 0.53,
+      "articleCount": 8,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 14.4,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 4.2,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 33.1,
+        "internalSocialScore": 45.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-439",
+      "title": "【ｅスポーツ】11歳栗原悠輝、金メダル獲得！「ぷよぷよ」でアジア大会史上最年少メダリスト",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.7,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-624",
       "title": "【速報】米中両首脳は、ＡＩの呼称をスーパーインテリジェンス（ＳＩ）とすることで合意した：時事ドットコム",
       "category": "tech",
       "categories": [
@@ -156,113 +262,6 @@
         "archiveHeatScore": 91,
         "internalSearchScore": 34.6,
         "internalSocialScore": 56.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-309",
-      "title": "「アニメじゃない」40年を経て生まれ変わる",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "entertainment",
-        "manga",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66.1,
-      "confidence": 0.34,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 35.1,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-106",
-      "title": "「豪華すぎ！」「まじでオールスター！」「メロメロメロ」…「名探偵コナン」安室や赤井、平次＆和葉に“鑑識のトメさん”まで!? TVSP「30号殺人事件」久々キャラも総出演でSNSはお祭り状態☆【反応まとめ】",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "anime",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 65,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -7
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

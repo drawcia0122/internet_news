@@ -1,25 +1,236 @@
 {
-  "generatedAt": "2026-09-26T09:51:32.062Z",
+  "generatedAt": "2026-09-26T14:22:56.820Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-3",
-  "selectedTitle": "ゲーム業界で加速する、IP創出への注力と生成AIの浸透 「東京ゲームショウ2026」で見えた変化",
+  "selectedClusterId": "today-cluster-347",
+  "selectedTitle": "「アニメじゃない」40年を経て生まれ変わる",
   "candidates": [
     {
-      "clusterId": "today-cluster-3",
-      "title": "ゲーム業界で加速する、IP創出への注力と生成AIの浸透 「東京ゲームショウ2026」で見えた変化",
-      "category": "sports",
+      "clusterId": "today-cluster-347",
+      "title": "「アニメじゃない」40年を経て生まれ変わる",
+      "category": "anime",
       "categories": [
-        "sports",
+        "anime",
+        "entertainment",
+        "manga",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 74.2,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 4.5,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-3",
+      "title": "『サマポケ』公式ショートストーリー集がフルボイスのノベルゲームに！『Summer Pockets Sunnyside Stories』がPC向けに12月18日発売",
+      "category": "games",
+      "categories": [
+        "games",
+        "general",
+        "net-culture"
+      ],
+      "buzzScore": 71.5,
+      "confidence": 0.53,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 15.8,
+        "internetNativeBoost": 0,
+        "search": 5.2,
+        "social": 5.6,
+        "velocity": 8,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 72,
+        "internalSearchScore": 40.8,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-349",
+      "title": "【速報】米中両首脳は、ＡＩの呼称をスーパーインテリジェンス（ＳＩ）とすることで合意した：時事ドットコム",
+      "category": "tech",
+      "categories": [
         "tech",
         "entertainment",
         "sns",
         "net-culture",
-        "business",
-        "games",
+        "politics",
+        "world",
         "general"
       ],
-      "buzzScore": 74.9,
-      "confidence": 0.47,
+      "buzzScore": 69.8,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 20,
+        "internetNativeBoost": 8,
+        "search": 4.6,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 35.8,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-595",
+      "title": "4歳と1歳の娘2人をマンション6階のベランダから投げ落とす 25歳父親を殺人未遂の疑いで現行犯逮捕 「おれは一緒に死ぬんだと言って連れて行かれた」岐阜･各務原市",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 67.5,
+      "confidence": 0.49,
+      "articleCount": 6,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 10.8,
+        "sourceDiversity": 4.7,
+        "trend": 19.6,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 6.2,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 9.3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 37.2,
+        "internalSocialScore": 48.2
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2",
+      "title": "ラッパーMU-TON、新曲「Everything」発表　MCバトル復帰も決定「真摯に音楽に向き合う」",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "sns",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 67.4,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -35,10 +246,10 @@
         "internetNativeBoost": 8,
         "search": 5.7,
         "social": 8.4,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 12,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -55,218 +266,6 @@
         "archiveHeatScore": 82,
         "internalSearchScore": 44.3,
         "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-358",
-      "title": "【ｅスポーツ】11歳栗原悠輝、金メダル獲得！「ぷよぷよ」でアジア大会史上最年少メダリスト",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 69.9,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 31.2,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-356",
-      "title": "4歳と1歳の娘2人をマンション6階のベランダから投げ落とす 25歳父親を殺人未遂の疑いで現行犯逮捕 「おれは一緒に死ぬんだと言って連れて行かれた」岐阜･各務原市",
-      "category": "crime",
-      "categories": [
-        "crime",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 68.9,
-      "confidence": 0.48,
-      "articleCount": 5,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 9,
-        "sourceDiversity": 4.7,
-        "trend": 19.6,
-        "internetNativeBoost": 8,
-        "search": 4.9,
-        "social": 6.3,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 11.1,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 38.4,
-        "internalSocialScore": 49
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-155",
-      "title": "「豪華すぎ！」「まじでオールスター！」「メロメロメロ」…「名探偵コナン」安室や赤井、平次＆和葉に“鑑識のトメさん”まで!? TVSP「30号殺人事件」久々キャラも総出演でSNSはお祭り状態☆【反応まとめ】",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "anime",
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 65,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 7.4,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -7
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1621",
-      "title": "資産数百億円の投資家・片山晃氏ロングインタビュー、「日本株は中長期で有望」とみる理由とは？「アップサイドの大きい銘柄の条件」から投資アイデア、初心者が避けるべき行動＆銘柄も！",
-      "category": "business",
-      "categories": [
-        "business",
-        "tech",
-        "sns",
-        "net-culture",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 61.2,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 7.2,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 31.7,
-        "internalSocialScore": 56.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

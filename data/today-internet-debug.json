@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-26T17:59:37.128Z",
+  "generatedAt": "2026-09-26T21:03:56.504Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-384",
+  "selectedClusterId": "today-cluster-448",
   "selectedTitle": "4歳と1歳の娘2人をマンション6階のベランダから投げ落とす 25歳父親を殺人未遂の疑いで現行犯逮捕 「おれは一緒に死ぬんだと言って連れて行かれた」岐阜･各務原市",
   "candidates": [
     {
-      "clusterId": "today-cluster-384",
+      "clusterId": "today-cluster-448",
       "title": "4歳と1歳の娘2人をマンション6階のベランダから投げ落とす 25歳父親を殺人未遂の疑いで現行犯逮捕 「おれは一緒に死ぬんだと言って連れて行かれた」岐阜･各務原市",
       "category": "crime",
       "categories": [
@@ -14,24 +14,23 @@
         "sns",
         "net-culture"
       ],
-      "buzzScore": 73.6,
-      "confidence": 0.56,
-      "articleCount": 6,
+      "buzzScore": 70.4,
+      "confidence": 0.54,
+      "articleCount": 8,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 10.8,
+        "coverage": 14.4,
         "sourceDiversity": 4.7,
         "trend": 19.6,
         "internetNativeBoost": 8,
         "search": 4.3,
         "social": 5.9,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 2.5,
         "categoryBias": 4,
         "penalty": 0
@@ -58,7 +57,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-419",
+      "clusterId": "today-cluster-417",
+      "title": "Docker、AIコーディングエージェント向けの公式スキル「Docker Skills」を公開",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 69.2,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.3,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 33.8,
+        "internalSocialScore": 46.3
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-487",
       "title": "【速報】米中両首脳は、ＡＩの呼称をスーパーインテリジェンス（ＳＩ）とすることで合意した：時事ドットコム",
       "category": "tech",
       "categories": [
@@ -70,7 +121,7 @@
         "world",
         "general"
       ],
-      "buzzScore": 68.4,
+      "buzzScore": 66.8,
       "confidence": 0.41,
       "articleCount": 3,
       "sourceCount": 2,
@@ -83,10 +134,10 @@
         "sourceDiversity": 4.7,
         "trend": 20,
         "internetNativeBoost": 8,
-        "search": 4.5,
+        "search": 4.4,
         "social": 7.3,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 2.5,
         "categoryBias": 9,
         "penalty": 0
@@ -100,11 +151,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 100,
         "archiveHeatScore": 91,
-        "internalSearchScore": 35.2,
-        "internalSocialScore": 57.3
+        "internalSearchScore": 34.6,
+        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -113,7 +164,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-332",
+      "clusterId": "today-cluster-309",
       "title": "「アニメじゃない」40年を経て生まれ変わる",
       "category": "anime",
       "categories": [
@@ -167,59 +218,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-4",
-      "title": "メカに乗って戦うPvPvE脱出ゲーム『SYNDUALITY Echo of Ada』が2027年5月以降にオンラインサービスを終了。オフラインのPvEゲームへ移行し、一部機能を除いてプレイを継続できる",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.5,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 46.1,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-130",
+      "clusterId": "today-cluster-106",
       "title": "「豪華すぎ！」「まじでオールスター！」「メロメロメロ」…「名探偵コナン」安室や赤井、平次＆和葉に“鑑識のトメさん”まで!? TVSP「30号殺人事件」久々キャラも総出演でSNSはお祭り状態☆【反応まとめ】",
       "category": "net-culture",
       "categories": [

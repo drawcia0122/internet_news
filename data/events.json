@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T01:45:38.365Z",
+  "generatedAt": "2026-09-27T08:02:21.073Z",
   "sourceCandidates": [
     {
       "name": "SCRAP / リアル脱出ゲーム",
@@ -314,33 +314,6 @@
       ]
     },
     {
-      "id": "リアル脱出ゲーム-ある実験室からの脱出-リバイバル",
-      "title": "リアル脱出ゲーム『ある実験室からの脱出』(リバイバル）",
-      "startDate": "2026-05-14",
-      "endDate": "2026-12-31",
-      "venue": "東京ミステリーサーカス",
-      "location": "東京都",
-      "category": "体験型 / リアル脱出ゲーム",
-      "description": "東京都 の 東京ミステリーサーカス を中心に展開される リアル脱出ゲーム『ある実験室からの脱出』(リバイバル）。SCRAP公式の公開イベントAPIから取得しています。",
-      "detailUrl": "",
-      "officialUrl": "https://realdgame.jp/",
-      "sourceName": "SCRAP / リアル脱出ゲーム",
-      "sourceUrl": "https://api.scrapmagazine.com/public/api/2/events",
-      "thumbnailUrl": "https://dttj1kl1hn9zl.cloudfront.net/images/detailed/2/0316_%E3%81%82%E3%82%8B%E5%AE%9F%E9%A8%93%E5%AE%A4%E3%81%8B%E3%82%89%E3%81%AE%E8%84%B1%E5%87%BA_660x934_TMCnashi.jpg",
-      "tags": [
-        "escape",
-        "scrap",
-        "tokyo",
-        "collaboration",
-        "game"
-      ],
-      "recommendationReasons": [
-        "脱出ゲーム好き向け",
-        "東京開催",
-        "コラボ系"
-      ]
-    },
-    {
       "id": "realdgame-jp-ajito-asakusa-event-red-asakusa-html",
       "title": "リアル脱出ゲーム『Escape from the REDROOM』",
       "startDate": "2026-06-01",
@@ -578,6 +551,31 @@
         "公式一次情報",
         "開催中",
         "展示会好き向け"
+      ]
+    },
+    {
+      "id": "ある実験室からの脱出-only-in-japanese",
+      "title": "『ある実験室からの脱出』（Only in Japanese）",
+      "startDate": "2026-05-14",
+      "endDate": "2026-12-31",
+      "venue": "東京ミステリーサーカス",
+      "location": "東京都",
+      "category": "体験型 / リアル脱出ゲーム",
+      "description": "東京都 の 東京ミステリーサーカス を中心に展開される 『ある実験室からの脱出』（Only in Japanese）。SCRAP公式の公開イベントAPIから取得しています。",
+      "detailUrl": "",
+      "officialUrl": "https://realdgame.jp/",
+      "sourceName": "SCRAP / リアル脱出ゲーム",
+      "sourceUrl": "https://api.scrapmagazine.com/public/api/2/events",
+      "thumbnailUrl": "https://dttj1kl1hn9zl.cloudfront.net/images/detailed/2/0316_%E3%81%82%E3%82%8B%E5%AE%9F%E9%A8%93%E5%AE%A4%E3%81%8B%E3%82%89%E3%81%AE%E8%84%B1%E5%87%BA_660x934_TMCnashi.jpg",
+      "tags": [
+        "escape",
+        "scrap",
+        "tokyo",
+        "anime"
+      ],
+      "recommendationReasons": [
+        "脱出ゲーム好き向け",
+        "東京開催"
       ]
     },
     {
@@ -1229,6 +1227,29 @@
       "recommendationReasons": [
         "東京開催",
         "IPコラボ",
+        "開催予定"
+      ]
+    },
+    {
+      "id": "www-yomiuriland-com-event-parking-syuyu1003",
+      "title": "10/3（土）、4（日）限定！遊園地もHANA・BIYORIもジャイアンツタウンも丸ごと楽しめる駐車場周遊券！",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-04",
+      "venue": "よみうりランド",
+      "location": "東京都稲城市",
+      "category": "体験型 / 大型イベント",
+      "description": "よみうりランドで開催される 10/3（土）、4（日）限定！遊園地もHANA・BIYORIもジャイアンツタウンも丸ごと楽しめる駐車場周遊券！。IPコラボか大型企画に絞って取得しています。",
+      "detailUrl": "https://www.yomiuriland.com/event/parking_syuyu1003/",
+      "officialUrl": "https://www.yomiuriland.com/event/",
+      "sourceName": "よみうりランド",
+      "sourceUrl": "https://www.yomiuriland.com/event/",
+      "thumbnailUrl": "https://www.yomiuriland.com/wp/assets/data/bnr_parking_syuyu1003.png",
+      "tags": [
+        "tokyo",
+        "anime"
+      ],
+      "recommendationReasons": [
+        "東京開催",
         "開催予定"
       ]
     },

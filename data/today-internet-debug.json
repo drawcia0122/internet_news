@@ -1,73 +1,21 @@
 {
-  "generatedAt": "2026-09-28T05:14:13.414Z",
+  "generatedAt": "2026-09-28T11:59:13.457Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-22",
-  "selectedTitle": "「PS5 Pro」の購入申し込みがソニーストアで受付開始。応募にはPS5もしくはPS4での“2年間”のプレイ時間が「合計60時間以上」必要",
+  "selectedClusterId": "today-cluster-3",
+  "selectedTitle": "k4senがプロデュースするVTuberグループ「UltraLMTM」1期生の詳細が解禁",
   "candidates": [
     {
-      "clusterId": "today-cluster-22",
-      "title": "「PS5 Pro」の購入申し込みがソニーストアで受付開始。応募にはPS5もしくはPS4での“2年間”のプレイ時間が「合計60時間以上」必要",
-      "category": "games",
+      "clusterId": "today-cluster-3",
+      "title": "k4senがプロデュースするVTuberグループ「UltraLMTM」1期生の詳細が解禁",
+      "category": "entertainment",
       "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 72,
-      "confidence": 0.45,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20,
-        "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 47.5,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-15",
-      "title": "『原神』日本公式カフェが2027年にオープン決定！常設カフェが東京に登場",
-      "category": "games",
-      "categories": [
-        "games",
+        "entertainment",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 71.5,
-      "confidence": 0.43,
+      "buzzScore": 75,
+      "confidence": 0.46,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -78,12 +26,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.5,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 5.6,
         "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 8.3,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -99,8 +47,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 45,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
@@ -110,18 +58,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-298",
-      "title": "PS5ディスク廃止に変化の兆し？ ソニーが開発会社にアンケートか、日本一ソフト社長とも協議（多根清史） - エキスパート",
-      "category": "games",
+      "clusterId": "today-cluster-327",
+      "title": "OpenAI、最上位モデルのツール使用を伴う学習・評価・推論を全て停止したと発表",
+      "category": "tech",
       "categories": [
-        "games",
-        "business",
+        "tech",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 71.3,
-      "confidence": 0.42,
+      "buzzScore": 72.3,
+      "confidence": 0.4,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -131,14 +78,67 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 21.3,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 4.8,
+        "search": 4.4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-358",
+      "title": "AIが人間のようにゲームをプレイ　話題の「Jev」を試してわかったこと",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general",
+        "games"
+      ],
+      "buzzScore": 71.6,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
         "social": 7.4,
         "velocity": 0,
         "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -152,8 +152,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
         "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
@@ -163,33 +163,86 @@
       ]
     },
     {
-      "clusterId": "today-cluster-20",
-      "title": "おめがシスターズ、早稲田大学の文化祭に出演 “部位チューバー”の姿でトークライブ",
-      "category": "entertainment",
+      "clusterId": "today-cluster-328",
+      "title": "アジア大会公式、旭日旗巡る掲示を謝罪　野球会場に不適切な案内掲げ物議「現場の誤った認識によるもの」",
+      "category": "sports",
       "categories": [
-        "entertainment",
+        "sports",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.7,
-      "confidence": 0.43,
+      "buzzScore": 70,
+      "confidence": 0.39,
       "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.8,
+        "sourceDiversity": 4.7,
+        "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "search": 4.4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 12,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 34,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-132",
+      "title": "「銀魂」“銀時はとても悩みました”原作者・空知英秋が杉田智和を推した理由とは!? 「新劇場版 -吉原大炎上-」再上映舞台挨拶レポ",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 69,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -201,63 +254,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 44,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-13",
-      "title": "品薄続くPS5 Pro、ソニーストアで“購入申し込み”開始。ゲームのプレイ時間「60時間以上」など応募条件あり",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 66.6,
-      "confidence": 0.46,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 19.8,
-        "internetNativeBoost": 8,
-        "search": 6,
-        "social": 4.2,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 47.1,
-        "internalSocialScore": 32.8
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

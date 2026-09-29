@@ -1,90 +1,39 @@
 {
-  "generatedAt": "2026-09-29T11:33:57.508Z",
+  "generatedAt": "2026-09-29T17:01:07.428Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-143",
-  "selectedTitle": "PS5 Pro、ソニーストアで購入申し込み受付開始―応募多数なら抽選に。PS4/PS5“60時間以上プレイ”など条件あり",
+  "selectedClusterId": "today-cluster-2",
+  "selectedTitle": "『ウィッチャー3』リマスター版がさっそくSteam同接「11万人」を突破。対象のオリジナル版は“無償アップデート”に対応",
   "candidates": [
     {
-      "clusterId": "today-cluster-143",
-      "title": "PS5 Pro、ソニーストアで購入申し込み受付開始―応募多数なら抽選に。PS4/PS5“60時間以上プレイ”など条件あり",
+      "clusterId": "today-cluster-2",
+      "title": "『ウィッチャー3』リマスター版がさっそくSteam同接「11万人」を突破。対象のオリジナル版は“無償アップデート”に対応",
       "category": "games",
       "categories": [
         "games",
-        "general"
-      ],
-      "buzzScore": 65.4,
-      "confidence": 0.5,
-      "articleCount": 5,
-      "sourceCount": 4,
-      "uniqueDomainCount": 4,
-      "whyRanked": [
-        "主要4媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 9,
-        "sourceDiversity": 9.3,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 3.8,
-        "social": 3.1,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 3.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 30,
-        "internalSocialScore": 23.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-66",
-      "title": "【最大4人プレイ】いろんな道具を使って穴を掘りまくるゲーム『A Game About Digging A Hole Together』発表、今年後半にリリースへ。100万本売上を達成した高評価穴掘りゲームを進化させた続編",
-      "category": "games",
-      "categories": [
-        "games",
-        "game-features",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.4,
-      "confidence": 0.43,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 73.6,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 16.5,
-        "internetNativeBoost": 0,
-        "search": 5.4,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 10,
-        "authority": 2.5,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 5.6,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -96,10 +45,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 75,
-        "internalSearchScore": 41.9,
-        "internalSocialScore": 54.8
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -108,7 +57,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-197",
+      "clusterId": "today-cluster-173",
+      "title": "スパ君大炎上！ウェブサイトを破壊して回れる棒人間ブラウザゲーム『Destroy Any Website』発表",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "games",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 67.6,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-194",
       "title": "「銀魂」“銀時はとても悩みました”原作者・空知英秋が杉田智和を推した理由とは!? 「新劇場版 -吉原大炎上-」再上映舞台挨拶レポ",
       "category": "anime",
       "categories": [
@@ -161,7 +162,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1892",
+      "clusterId": "today-cluster-87",
+      "title": "【最大4人プレイ】いろんな道具を使って穴を掘りまくるゲーム『A Game About Digging A Hole Together』発表、今年後半にリリースへ。100万本売上を達成した高評価穴掘りゲームを進化させた続編",
+      "category": "games",
+      "categories": [
+        "games",
+        "game-features",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64.4,
+      "confidence": 0.42,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 15.6,
+        "internetNativeBoost": 0,
+        "search": 5.2,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 71,
+        "internalSearchScore": 40.5,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2159",
       "title": "アジア大会公式、旭日旗巡る掲示を謝罪　野球会場に不適切な案内掲げ物議「現場の誤った認識によるもの」",
       "category": "sports",
       "categories": [
@@ -205,58 +258,6 @@
         "archiveHeatScore": 86,
         "internalSearchScore": 32.1,
         "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1379",
-      "title": "トラックと衝突し炎上 車に3遺体",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "sns",
-        "general",
-        "sports"
-      ],
-      "buzzScore": 60.7,
-      "confidence": 0.53,
-      "articleCount": 10,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "複数の話題候補の中で最も総合スコアが高い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 18,
-        "sourceDiversity": 4.7,
-        "trend": 13.4,
-        "internetNativeBoost": 0,
-        "search": 3.1,
-        "social": 3.1,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1,
-        "categoryBias": 12,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 61,
-        "internalSearchScore": 24.1,
-        "internalSocialScore": 23.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

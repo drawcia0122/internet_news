@@ -1,11 +1,62 @@
 {
-  "generatedAt": "2026-09-29T05:36:58.943Z",
+  "generatedAt": "2026-09-29T11:33:57.508Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-21",
-  "selectedTitle": "【最大4人プレイ】いろんな道具を使って穴を掘りまくるゲーム『A Game About Digging A Hole Together』発表、今年後半にリリースへ。100万本売上を達成した高評価穴掘りゲームを進化させた続編",
+  "selectedClusterId": "today-cluster-143",
+  "selectedTitle": "PS5 Pro、ソニーストアで購入申し込み受付開始―応募多数なら抽選に。PS4/PS5“60時間以上プレイ”など条件あり",
   "candidates": [
     {
-      "clusterId": "today-cluster-21",
+      "clusterId": "today-cluster-143",
+      "title": "PS5 Pro、ソニーストアで購入申し込み受付開始―応募多数なら抽選に。PS4/PS5“60時間以上プレイ”など条件あり",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 65.4,
+      "confidence": 0.5,
+      "articleCount": 5,
+      "sourceCount": 4,
+      "uniqueDomainCount": 4,
+      "whyRanked": [
+        "主要4媒体で同一話題を確認",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 9,
+        "sourceDiversity": 9.3,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 3.8,
+        "social": 3.1,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 3.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 30,
+        "internalSocialScore": 23.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-66",
       "title": "【最大4人プレイ】いろんな道具を使って穴を掘りまくるゲーム『A Game About Digging A Hole Together』発表、今年後半にリリースへ。100万本売上を達成した高評価穴掘りゲームを進化させた続編",
       "category": "games",
       "categories": [
@@ -14,27 +65,26 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.2,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 65.4,
+      "confidence": 0.43,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.5,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 16.5,
+        "internetNativeBoost": 0,
+        "search": 5.4,
         "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -47,8 +97,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
+        "archiveHeatScore": 75,
+        "internalSearchScore": 41.9,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
@@ -58,17 +108,18 @@
       ]
     },
     {
-      "clusterId": "today-cluster-155",
-      "title": "「トイ・ストーリー」新作一番くじに注目！シドに捕まったウッディとバズ、魔改造おもちゃたちのフィギュアがズラリ",
-      "category": "games",
+      "clusterId": "today-cluster-197",
+      "title": "「銀魂」“銀時はとても悩みました”原作者・空知英秋が杉田智和を推した理由とは!? 「新劇場版 -吉原大炎上-」再上映舞台挨拶レポ",
+      "category": "anime",
       "categories": [
-        "games",
-        "sns",
+        "anime",
+        "entertainment",
+        "manga",
         "net-culture",
         "general"
       ],
-      "buzzScore": 67.6,
-      "confidence": 0.36,
+      "buzzScore": 65.3,
+      "confidence": 0.34,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -78,10 +129,10 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
+        "search": 4.4,
+        "social": 7.4,
         "velocity": 0,
         "freshness": 10,
         "authority": 1.5,
@@ -98,116 +149,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-139",
-      "title": "PS5 Pro、ソニーストアで購入申し込み受付開始―応募多数なら抽選に。PS4/PS5“60時間以上プレイ”など条件あり",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 67,
-      "confidence": 0.51,
-      "articleCount": 5,
-      "sourceCount": 4,
-      "uniqueDomainCount": 4,
-      "whyRanked": [
-        "主要4媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 9,
-        "sourceDiversity": 9.3,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 3.9,
-        "social": 3.1,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 3.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 30.6,
-        "internalSocialScore": 24.3
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-20",
-      "title": "ラッパーG PLANTSが新曲のMVを公開　警官から医者まで全登場人物を本人が熱演",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66.6,
-      "confidence": 0.42,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 65.8
+        "archiveHeatScore": 86,
+        "internalSearchScore": 34,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -216,7 +161,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1283",
+      "clusterId": "today-cluster-1892",
       "title": "アジア大会公式、旭日旗巡る掲示を謝罪　野球会場に不適切な案内掲げ物議「現場の誤った認識によるもの」",
       "category": "sports",
       "categories": [
@@ -225,8 +170,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.3,
-      "confidence": 0.37,
+      "buzzScore": 63.1,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -238,10 +183,10 @@
         "sourceDiversity": 4.7,
         "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 5.9,
+        "search": 4.1,
+        "social": 5.8,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 12,
         "penalty": 0
@@ -255,11 +200,63 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 80,
         "archiveHeatScore": 86,
-        "internalSearchScore": 32.8,
-        "internalSocialScore": 45.9
+        "internalSearchScore": 32.1,
+        "internalSocialScore": 45.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1379",
+      "title": "トラックと衝突し炎上 車に3遺体",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "sns",
+        "general",
+        "sports"
+      ],
+      "buzzScore": 60.7,
+      "confidence": 0.53,
+      "articleCount": 10,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "複数の話題候補の中で最も総合スコアが高い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 18,
+        "sourceDiversity": 4.7,
+        "trend": 13.4,
+        "internetNativeBoost": 0,
+        "search": 3.1,
+        "social": 3.1,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1,
+        "categoryBias": 12,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 61,
+        "internalSearchScore": 24.1,
+        "internalSocialScore": 23.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

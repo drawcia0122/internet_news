@@ -1,54 +1,236 @@
 {
-  "generatedAt": "2026-09-30T12:57:28.314Z",
+  "generatedAt": "2026-09-30T18:22:36.501Z",
   "totalCount": 200,
   "categoryCounts": {
     "all": 200,
     "general": 0,
-    "tech": 4,
-    "business": 7,
-    "politics": 0,
-    "entertainment": 81,
-    "anime": 13,
-    "games": 152,
+    "tech": 9,
+    "business": 8,
+    "politics": 2,
+    "entertainment": 82,
+    "anime": 15,
+    "games": 129,
     "game-features": 2,
     "anime-features": 1,
-    "manga": 50,
-    "books": 3,
-    "sports": 2,
-    "net-culture": 1,
-    "matome": 0,
-    "crime": 0,
-    "adult": 3,
-    "world": 0
+    "manga": 52,
+    "books": 4,
+    "sports": 1,
+    "net-culture": 24,
+    "matome": 1,
+    "crime": 4,
+    "adult": 2,
+    "world": 4
   },
   "hasMore": true,
   "nextPage": 6,
   "items": [
     {
-      "id": "auto-games-aion2-正式サービス前夜の特別生放送は10月4日に配信-忘れずに見たい-今週の公式配信番組-ピックアップ-4gamer.net/games/421/g042182/20260928027",
-      "title": "「AION2」正式サービス前夜の特別生放送は10月4日に配信。忘れずに見たい「今週の公式配信番組」ピックアップ",
-      "summary": "「AION2」の生放送が正式サービス前夜である10月4日に実施される。今回もこの1週間で予定されている，ゲームに関連した公式配信番組を中心に，いくつかをピックアップ…",
-      "briefSummary": "「AION2」の生放送が正式サービス前夜である10月4日に実施される。今回もこの1週間で予定されている，ゲームに関連した公式配信番組を中心に，いくつかをピックアップして紹介しよう。",
-      "category": "games",
+      "id": "auto-entertainment-キン肉マン-ロビンマスクとウォーズマンの-師弟-リングが登場-肉の日-9月29日より予約受付開始-animeanime.jp/article/2026/09/29/103350.html",
+      "title": "「キン肉マン」ロビンマスクとウォーズマンの“師弟”リングが登場！“肉の日”9月29日より予約受付開始",
+      "summary": "ゆでたまご原作の人気コミック『キン肉マン』のシルバーアクセサリーコレクション第3弾が、“肉の日”にちなみ2026年9月29日（火）より予約受付が開始となった。",
+      "briefSummary": "ゆでたまご原作の人気コミック『キン肉マン』のシルバーアクセサリーコレクション第3弾が、“肉の日”にちなみ2026年9月29日（火）より予約受付が開始となった。",
+      "category": "entertainment",
       "categories": [
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/936581.webp",
+      "publishedAt": null,
+      "capturedAt": "2026-09-30T18:22:36.501Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/09/29/103350.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「キン肉マン」ロビンマスクとウォーズマンの“師弟”リングが登場！“肉の日”9月29日より予約受付開始",
+          "url": "https://animeanime.jp/article/2026/09/29/103350.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/09/29/103350.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/936581.webp"
+        }
+      ],
+      "whatHappened": "「キン肉マン」ロビンマスクとウォーズマンの“師弟”リングが登場",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-anime-ゲーム好き-なキャラといえば-3位-怪獣8号-鳴海弦-2-5次元の誘惑-羽生まゆり-2位-五等分の花嫁-中野三玖-1位はスポーツアニメの-26年版-animeanime.jp/article/2026/09/29/103349.html",
+      "title": "“ゲーム好き”なキャラといえば？ 3位「怪獣8号」鳴海弦＆「2.5次元の誘惑」羽生まゆり、2位「五等分の花嫁」中野三玖、1位はスポーツアニメの…＜26年版＞",
+      "summary": "アニメ！アニメ！では「“ゲーム好き”なキャラといえば？」と題した読者アンケートを実施しました。結果を発表します。",
+      "briefSummary": "アニメ！アニメ！では「“ゲーム好き”なキャラといえば？」と題した読者アンケートを実施しました。結果を発表します。",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "アニメ",
+      "categoryLabels": [
+        "アニメ",
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/936493.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-30T18:22:36.501Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/09/29/103349.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "“ゲーム好き”なキャラといえば？ 3位「怪獣8号」鳴海弦＆「2.5次元の誘惑」羽生まゆり、2位「五等分の花嫁」中野三玖、1位はスポーツアニメの…＜26年版＞",
+          "url": "https://animeanime.jp/article/2026/09/29/103349.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/09/29/103349.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/936493.jpg"
+        }
+      ],
+      "whatHappened": "“ゲーム好き”なキャラといえば",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-星のカービィ-が鏡餅をすいこんじゃった-おもち-ぬいや-年賀はがきセット27年が登場-郵便局で発売-animeanime.jp/article/2026/09/29/103347.html",
+      "title": "「星のカービィ」が鏡餅をすいこんじゃった!?“おもち”ぬいや、年賀はがきセット27年が登場！郵便局で発売",
+      "summary": "『星のカービィ』をあしらった「星のカービィ カービィグッズコレクション 2026」が、2026年10月1日より全国約1,600局の郵便局店頭にて販売されることがわかった。11月2日からは「年賀はがきセット」も登場し、グッズコレクションとともに「エンスカイショップ」でも取り扱われる。",
+      "briefSummary": "『星のカービィ』をあしらった「星のカービィ カービィグッズコレクション 2026」が、2026年10月1日より全国約1,600局の郵便局店頭にて販売されることがわかった。11月2日からは「年賀はがきセット」も登場し、グッズコレクションとともに「エンスカイショップ」でも取り扱われる。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/936508.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-30T18:22:36.501Z",
+      "time": "直近",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/09/29/103347.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「星のカービィ」が鏡餅をすいこんじゃった!?“おもち”ぬいや、年賀はがきセット27年が登場！郵便局で発売",
+          "url": "https://animeanime.jp/article/2026/09/29/103347.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/09/29/103347.html",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/936508.jpg"
+        }
+      ],
+      "whatHappened": "「星のカービィ」が鏡餅をすいこんじゃった",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-business-巨大企業の特殊部隊員として-アノマリーに立ち向かえ-phantom-line-プロローグ版を10月26日に無料配信決定-4gamer.net/games/807/g080790/20260929035",
+      "title": "巨大企業の特殊部隊員として，アノマリーに立ち向かえ。「Phantom Line」，プロローグ版を10月26日に無料配信決定",
+      "summary": "AntistaticStudiosは本日（2026年9月29日），開発中の新作タイトル「PhantomLine」の序盤を体験できる「PhantomLine:Prol…",
+      "briefSummary": "Antistatic Studiosは本日（2026年9月29日），開発中の新作タイトル「Phantom Line」の序盤を体験できる「Phantom Line: Prologue」を，10月26日に無料配信すると発表した。プロローグ版では，訓練と最初のミッションに加え，オープンワールドのさまざまな要素を体験できるという。",
+      "category": "business",
+      "categories": [
+        "business",
         "games",
         "entertainment",
         "general"
       ],
-      "categoryLabel": "ゲーム",
+      "categoryLabel": "経済",
       "categoryLabels": [
+        "経済",
         "ゲーム",
         "エンタメ"
       ],
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/421/G042182/20260928027/SS/002.jpg",
+      "thumbnailUrl": "https://www.4gamer.net/games/807/G080790/20260929035/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-09-30T12:57:28.314Z",
+      "capturedAt": "2026-09-30T18:22:36.501Z",
       "time": "直近",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/421/G042182/20260928027/",
+      "sourceUrl": "https://www.4gamer.net/games/807/G080790/20260929035/",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -68,15 +250,15 @@
             "console",
             "steam"
           ],
-          "title": "「AION2」正式サービス前夜の特別生放送は10月4日に配信。忘れずに見たい「今週の公式配信番組」ピックアップ",
-          "url": "https://www.4gamer.net/games/421/G042182/20260928027/",
-          "canonicalUrl": "https://www.4gamer.net/games/421/G042182/20260928027/",
+          "title": "巨大企業の特殊部隊員として，アノマリーに立ち向かえ。「Phantom Line」，プロローグ版を10月26日に無料配信決定",
+          "url": "https://www.4gamer.net/games/807/G080790/20260929035/",
+          "canonicalUrl": "https://www.4gamer.net/games/807/G080790/20260929035/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/421/G042182/20260928027/SS/002.jpg"
+          "thumbnailUrl": "https://www.4gamer.net/games/807/G080790/20260929035/SS/001.jpg"
         }
       ],
-      "whatHappened": "「AION2」正式サービス前夜の特別生放送は10月4日に配信",
+      "whatHappened": "巨大企業の特殊部隊員として，アノマリーに立ち向かえ",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -85,10 +267,10 @@
       ]
     },
     {
-      "id": "auto-games-極寒サバイバル-permafrost-では-どうして新氷河期がやってきたのか-月が分裂し-大地震や大火災火事で文明が崩壊した世界を紹介するストーリートレイラーが-4gamer.net/games/939/g093956/20260929009",
-      "title": "極寒サバイバル「Permafrost」では，どうして新氷河期がやってきたのか？ 月が分裂し，大地震や大火災火事で文明が崩壊した世界を紹介するストーリートレイラーが公開",
-      "summary": "ToplitzProductionsとSpaceRocketGamesが手掛ける極寒サバイバルアクション新作「Permafrost」の最新ストーリートレイラーが公開…",
-      "briefSummary": "ToplitzProductionsとSpaceRocketGamesが手掛ける極寒サバイバルアクション新作「Permafrost」の最新ストーリートレイラーが公開され，世界が新氷河期へと突入した壊滅的な経緯が明かされた。月の崩壊に伴い破片…",
+      "id": "auto-games-原神-精鋭たちで編成された特殊任務隊の隊長-バレリー-cv-古川-慎-の情報を公開-神の目は-雷-命ノ星座は-ウルスス・マグヌス座-4gamer.net/games/486/g048621/20260929033",
+      "title": "「原神」，精鋭たちで編成された特殊任務隊の隊長「バレリー」（CV：古川 慎）の情報を公開。神の目は「雷」，命ノ星座は「ウルスス・マグヌス座」",
+      "summary": "HoYoverseは本日，オープンワールドRPG「原神」のキャラクター「バレリー」（CV：古川慎）の情報を公開した。バレリーは，第一擲弾兵団の精鋭たちで編成された「…",
+      "briefSummary": "HoYoverseは本日，オープンワールドRPG「原神」のキャラクター「バレリー」（CV：古川慎）の情報を公開した。バレリーは，第一擲弾兵団の精鋭たちで編成された「特殊任務隊」の隊長だ。神の目は「雷」，命ノ星座は「ウルスス・マグヌス座」。",
       "category": "games",
       "categories": [
         "games",
@@ -101,12 +283,190 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/939/G093956/20260929009/SS/008.jpg",
+      "thumbnailUrl": "https://www.4gamer.net/games/486/G048621/20260929033/SS/002.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-09-30T12:57:28.314Z",
+      "capturedAt": "2026-09-30T18:22:36.501Z",
       "time": "直近",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/939/G093956/20260929009/",
+      "sourceUrl": "https://www.4gamer.net/games/486/G048621/20260929033/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "「原神」，精鋭たちで編成された特殊任務隊の隊長「バレリー」（CV：古川 慎）の情報を公開。神の目は「雷」，命ノ星座は「ウルスス・マグヌス座」",
+          "url": "https://www.4gamer.net/games/486/G048621/20260929033/",
+          "canonicalUrl": "https://www.4gamer.net/games/486/G048621/20260929033/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/486/G048621/20260929033/SS/002.jpg"
+        }
+      ],
+      "whatHappened": "「原神」，精鋭たちで編成された特殊任務隊の隊長「バレリー」（CV：古川 慎）の情報を公開",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-悪魔に支配された世界で会社員として働くパズルアドベンチャー-hr-human-remains-配信開始-4gamer.net/games/924/g092499/20260929031",
+      "title": "悪魔に支配された世界で会社員として働くパズルアドベンチャー「HR: Human Remains」，配信開始",
+      "summary": "BlackLanternCollectiveは本日（2026年9月29日），新作タイトル「HR:HumanRemains」をリリースした。本作は，悪魔に支配され崩壊…",
+      "briefSummary": "BlackLanternCollectiveは本日（2026年9月29日），新作タイトル「HR:HumanRemains」をリリースした。本作は，悪魔に支配され崩壊した世界で“ごく普通の会社員”として働く，一人称視点のパズルアドベンチャーゲ…",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/924/G092499/20260929031/SS/001.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-30T18:22:36.501Z",
+      "time": "直近",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/924/G092499/20260929031/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "悪魔に支配された世界で会社員として働くパズルアドベンチャー「HR: Human Remains」，配信開始",
+          "url": "https://www.4gamer.net/games/924/G092499/20260929031/",
+          "canonicalUrl": "https://www.4gamer.net/games/924/G092499/20260929031/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/924/G092499/20260929031/SS/001.jpg"
+        }
+      ],
+      "whatHappened": "悪魔に支配された世界で会社員として働くパズルアドベンチャー「HR: Human Remain…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-好きな場所を好きなだけ掘り進み-集めた化石を使って博物館で骨格を組み上げていく-発掘シム-穴掘り恐竜博物館-発表-2026年10月16日に発売予定-4gamer.net/games/046/g104636/20260929028",
+      "title": "好きな場所を好きなだけ掘り進み，集めた化石を使って博物館で骨格を組み上げていく。発掘シム「穴掘り恐竜博物館」発表，2026年10月16日に発売予定",
+      "summary": "インディー開発スタジオYagniLabは本日，2026年10月16日に発売予定の新作「穴掘り恐竜博物館」を発表した。本作は，好きな場所を自由に掘り進み，発掘した化石…",
+      "briefSummary": "インディー開発スタジオYagniLabは本日，2026年10月16日に発売予定の新作「穴掘り恐竜博物館」を発表した。本作は，好きな場所を自由に掘り進み，発掘した化石を博物館へ持ち帰って全身骨格を復元していくシミュレーションゲームだ。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/046/G104636/20260929028/SS/002.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-30T18:22:36.501Z",
+      "time": "直近",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/046/G104636/20260929028/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "好きな場所を好きなだけ掘り進み，集めた化石を使って博物館で骨格を組み上げていく。発掘シム「穴掘り恐竜博物館」発表，2026年10月16日に発売予定",
+          "url": "https://www.4gamer.net/games/046/G104636/20260929028/",
+          "canonicalUrl": "https://www.4gamer.net/games/046/G104636/20260929028/",
+          "publishedAt": null,
+          "publishedLabel": "1/1 00:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/046/G104636/20260929028/SS/002.jpg"
+        }
+      ],
+      "whatHappened": "好きな場所を好きなだけ掘り進み，集めた化石を使って博物館で骨格を組み上げていく",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-舞台はループする学校-怪異を見つけて脱出を目指すvr専用ホラーゲーム-学校の七つの怪談-steamで配信開始-4gamer.net/games/046/g104632/20260929026",
+      "title": "舞台はループする学校。怪異を見つけて脱出を目指すVR専用ホラーゲーム「学校の七つの怪談」，Steamで配信開始",
+      "summary": "Hikachof氏は本日，PC用ソフト「学校の七つの怪談」の配信をSteamで開始した。本作は，ループする学校で怪異を見つけ，屋上を目指す「8番出口」ライクのVR専…",
+      "briefSummary": "Hikachof氏は本日，PC用ソフト「学校の七つの怪談」の配信をSteamで開始した。本作は，ループする学校で怪異を見つけ，屋上を目指す「8番出口」ライクのVR専用ホラーゲームだ。教室やトイレ，廊下，美術室。さまざまなタイプの部屋が用意さ…",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/046/G104632/20260929026/SS/002.jpg",
+      "publishedAt": null,
+      "capturedAt": "2026-09-30T18:22:36.501Z",
+      "time": "直近",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/046/G104632/20260929026/",
       "hotReasons": [
         "一般ユーザーの関心が集まりやすいテーマです。",
         "専門媒体や公式ソースが優先的に拾っています。"
@@ -127,15 +487,15 @@
             "console",
             "steam"
           ],
-          "title": "極寒サバイバル「Permafrost」では，どうして新氷河期がやってきたのか？ 月が分裂し，大地震や大火災火事で文明が崩壊した世界を紹介するストーリートレイラーが公開",
-          "url": "https://www.4gamer.net/games/939/G093956/20260929009/",
-          "canonicalUrl": "https://www.4gamer.net/games/939/G093956/20260929009/",
+          "title": "舞台はループする学校。怪異を見つけて脱出を目指すVR専用ホラーゲーム「学校の七つの怪談」，Steamで配信開始",
+          "url": "https://www.4gamer.net/games/046/G104632/20260929026/",
+          "canonicalUrl": "https://www.4gamer.net/games/046/G104632/20260929026/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/939/G093956/20260929009/SS/008.jpg"
+          "thumbnailUrl": "https://www.4gamer.net/games/046/G104632/20260929026/SS/002.jpg"
         }
       ],
-      "whatHappened": "極寒サバイバル「Permafrost」では，どうして新氷河期がやってきたのか",
+      "whatHappened": "舞台はループする学校",
       "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -144,324 +504,30 @@
       ]
     },
     {
-      "id": "auto-games-vアーティスト-カグラナナ-コラボモデルのゲーミングpcがリニューアル-galleriaから6製品を発売-4gamer.net/games/029/g002975/20260929007",
-      "title": "Vアーティスト「カグラナナ」コラボモデルのゲーミングPCがリニューアル。GALLERIAから6製品を発売",
-      "summary": "2026年9月29日，サードウェーブは，ゲーマー向けPCブランド「GALLERIA」から，イラストレーター/Vアーティストとして活動するカグラナナとのコラボモデルP…",
-      "briefSummary": "2026年9月29日，サードウェーブは，ゲーマー向けPCブランド「GALLERIA」から，イラストレーター/Vアーティストとして活動するカグラナナとのコラボモデルPCを，リニューアルして発売した。カグラナナさん自身が監修したビジュアルによる…",
+      "id": "auto-games-ウメハラ選手に長期密着したドキュメンタリー映画-rebeast-ウメハラ-1-60秒に賭けた人生-2027年1月29日に公開-ティザー予告も解禁-4gamer.net/games/635/g063504/20260929019",
+      "title": "ウメハラ選手に長期密着したドキュメンタリー映画「ReBEAST 〜ウメハラ、1/60秒に賭けた人生〜」，2027年1月29日に公開。ティザー予告も解禁",
+      "summary": "ウメハラ選手に長期密着したドキュメンタリー映画「ReBEAST〜ウメハラ、1/60秒に賭けた人生〜」が，2027年1月29日にテアトル新宿ほかで全国公開される。プロ…",
+      "briefSummary": "ウメハラ選手に長期密着したドキュメンタリー映画「ReBEAST〜ウメハラ、1/60秒に賭けた人生〜」が，2027年1月29日にテアトル新宿ほかで全国公開される。プロeスポーツチーム「REJECT」への加入を機に，新たな環境で勝負に挑むウメハ…",
       "category": "games",
       "categories": [
         "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/029/G002975/20260929007/SS/002.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-30T12:57:28.314Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/029/G002975/20260929007/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "Vアーティスト「カグラナナ」コラボモデルのゲーミングPCがリニューアル。GALLERIAから6製品を発売",
-          "url": "https://www.4gamer.net/games/029/G002975/20260929007/",
-          "canonicalUrl": "https://www.4gamer.net/games/029/G002975/20260929007/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/029/G002975/20260929007/SS/002.jpg"
-        }
-      ],
-      "whatHappened": "Vアーティスト「カグラナナ」コラボモデルのゲーミングPCがリニューアル",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-yahoo-きっず-2026年12月4日をもってサービス終了-29年の運営に幕-4gamer.net/games/991/g999113/20260929005",
-      "title": "「Yahoo!きっず」，2026年12月4日をもってサービス終了。29年の運営に幕",
-      "summary": "LINEヤフーは2026年9月28日，子ども向けポータルサイト「Yahoo!きっず」のサービスを2026年12月4日をもって終了すると発表した。 終了は，子どもたちのインターネット利用環境の変…",
-      "briefSummary": "LINEヤフーは2026年9月28日，子ども向けポータルサイト「Yahoo!きっず」のサービスを2026年12月4日をもって終了すると発表した。 終了は，子どもたちのインターネット利用環境の変…",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/991/G999113/20260929005/SS/002.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-30T12:57:28.314Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/991/G999113/20260929005/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "「Yahoo!きっず」，2026年12月4日をもってサービス終了。29年の運営に幕",
-          "url": "https://www.4gamer.net/games/991/G999113/20260929005/",
-          "canonicalUrl": "https://www.4gamer.net/games/991/G999113/20260929005/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/991/G999113/20260929005/SS/002.jpg"
-        }
-      ],
-      "whatHappened": "「Yahoo",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-トゥームレイダー-レガシー・オブ・アトランティス-の最新開発者ビデオダイアリーが公開-エジプト-ステージの片鱗と-オリジナル版との明確な違いに迫る-4gamer.net/games/968/g096863/20260929004",
-      "title": "「トゥームレイダー：レガシー・オブ・アトランティス」の最新開発者ビデオダイアリーが公開。「エジプト」ステージの片鱗と，オリジナル版との明確な違いに迫る",
-      "summary": "AmazonGamesは，オリジナル作品の30年ぶりに完全リメイクした「トゥームレイダー：レガシー・オブ・アトランティス」の開発者ビデオダイアリー第10弾を公開した…",
-      "briefSummary": "AmazonGamesは，オリジナル作品の30年ぶりに完全リメイクした「トゥームレイダー：レガシー・オブ・アトランティス」の開発者ビデオダイアリー第10弾を公開した。第3ステージとなる「エジプト」について紹介されている。明るい屋外と，真っ暗…",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/968/G096863/20260929004/SS/005.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-30T12:57:28.314Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/968/G096863/20260929004/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "「トゥームレイダー：レガシー・オブ・アトランティス」の最新開発者ビデオダイアリーが公開。「エジプト」ステージの片鱗と，オリジナル版との明確な違いに迫る",
-          "url": "https://www.4gamer.net/games/968/G096863/20260929004/",
-          "canonicalUrl": "https://www.4gamer.net/games/968/G096863/20260929004/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/968/G096863/20260929004/SS/005.jpg"
-        }
-      ],
-      "whatHappened": "「トゥームレイダー：レガシー・オブ・アトランティス」の最新開発者ビデオダイアリーが公開",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-business-putty-world-35th-anniversary-をひっさげて来日した伝説的ゲームクリエイターmark-cale氏に聞く-ゲーム業界サバイバル術-tgs-4gamer.net/games/045/g104561/20260925033",
-      "title": "「Putty World 35th Anniversary」をひっさげて来日した伝説的ゲームクリエイターMark Cale氏に聞く，ゲーム業界サバイバル術［TGS2026］",
-      "summary": "イギリス生まれのレトロゲーム「Putty」が，2027年に35周年を迎える。TGS2026には，これを記念した新作「PuttyWorld35thAnniversar…",
-      "briefSummary": "イギリス生まれのレトロゲーム「Putty」が，2027年に35周年を迎える。TGS2026には，これを記念した新作「PuttyWorld35thAnniversary」が出展され，System3のCEO，MarkCale氏も来日。最新作を試…",
-      "category": "business",
-      "categories": [
-        "business",
-        "games",
-        "general"
-      ],
-      "categoryLabel": "経済",
-      "categoryLabels": [
-        "経済",
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/045/G104561/20260925033/SS/021.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-30T12:57:28.314Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/045/G104561/20260925033/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "「Putty World 35th Anniversary」をひっさげて来日した伝説的ゲームクリエイターMark Cale氏に聞く，ゲーム業界サバイバル術［TGS2026］",
-          "url": "https://www.4gamer.net/games/045/G104561/20260925033/",
-          "canonicalUrl": "https://www.4gamer.net/games/045/G104561/20260925033/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/045/G104561/20260925033/SS/021.jpg"
-        }
-      ],
-      "whatHappened": "「Putty World 35th Anniversary」をひっさげて来日した伝説的ゲーム…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-business-lenovo-thinkstation-p8-なら作業の同時進行もお手の物-クリエイターの-手を増やす-ワークステーションだ-pr-4gamer.net/games/999/g999902/20260917012",
-      "title": "Lenovo ThinkStation P8 なら作業の同時進行もお手の物。クリエイターの“手を増やす”ワークステーションだ【PR】",
-      "summary": "ゲームや3DCGコンテンツの制作現場では，PCに求められる性能も急速に高まっている。Lenovoのプロフェッショナル向けワークステーション「ThinkStation…",
-      "briefSummary": "ゲームや3DCGコンテンツの制作現場では，PCに求められる性能も急速に高まっている。Lenovoのプロフェッショナル向けワークステーション「ThinkStation P8」もこうしたニーズに応える製品である。今回は，同製品を活用する企業の事例から，仕事のワークフローはどう変わったのかを紹介する。",
-      "category": "business",
-      "categories": [
-        "business",
-        "games",
-        "general"
-      ],
-      "categoryLabel": "経済",
-      "categoryLabels": [
-        "経済",
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/999/G999902/20260917012/SS/002.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-30T12:57:28.314Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/999/G999902/20260917012/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "Lenovo ThinkStation P8 なら作業の同時進行もお手の物。クリエイターの“手を増やす”ワークステーションだ【PR】",
-          "url": "https://www.4gamer.net/games/999/G999902/20260917012/",
-          "canonicalUrl": "https://www.4gamer.net/games/999/G999902/20260917012/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/999/G999902/20260917012/SS/002.jpg"
-        }
-      ],
-      "whatHappened": "Lenovo ThinkStation P8 なら作業の同時進行もお手の物",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-wizardry-45周年記念インタビュー記事の第2弾が公開-隣り合わせの灰と青春-のベニー松山氏が執筆の裏話や全滅体験を語る-4gamer.net/games/042/g104292/20260929001",
-      "title": "「Wizardry」45周年記念インタビュー記事の第2弾が公開。「隣り合わせの灰と青春」のベニー松山氏が執筆の裏話や全滅体験を語る",
-      "summary": "ドリコムは本日，「Wizardry」シリーズの誕生45周年を記念した特設サイトで，「小説ウィザードリィ隣り合わせの灰と青春」の著者であるベニー松山氏への特別インタビ…",
-      "briefSummary": "ドリコムは本日，「Wizardry」シリーズの誕生45周年を記念した特設サイトで，「小説ウィザードリィ 隣り合わせの灰と青春」の著者であるベニー松山氏への特別インタビュー記事を公開した。45周年を記念したプレミアムインタビューの第2弾で，小説の執筆にまつわる裏話や，強烈な全滅体験などが語られている。",
-      "category": "games",
-      "categories": [
-        "games",
-        "books",
+        "entertainment",
         "general"
       ],
       "categoryLabel": "ゲーム",
       "categoryLabels": [
         "ゲーム",
-        "本"
+        "エンタメ"
       ],
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/042/G104292/20260929001/SS/001.jpg",
+      "thumbnailUrl": "https://www.4gamer.net/games/635/G063504/20260929019/SS/001.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-09-30T12:57:28.314Z",
+      "capturedAt": "2026-09-30T18:22:36.501Z",
       "time": "直近",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/042/G104292/20260929001/",
+      "sourceUrl": "https://www.4gamer.net/games/635/G063504/20260929019/",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -481,15 +547,15 @@
             "console",
             "steam"
           ],
-          "title": "「Wizardry」45周年記念インタビュー記事の第2弾が公開。「隣り合わせの灰と青春」のベニー松山氏が執筆の裏話や全滅体験を語る",
-          "url": "https://www.4gamer.net/games/042/G104292/20260929001/",
-          "canonicalUrl": "https://www.4gamer.net/games/042/G104292/20260929001/",
+          "title": "ウメハラ選手に長期密着したドキュメンタリー映画「ReBEAST 〜ウメハラ、1/60秒に賭けた人生〜」，2027年1月29日に公開。ティザー予告も解禁",
+          "url": "https://www.4gamer.net/games/635/G063504/20260929019/",
+          "canonicalUrl": "https://www.4gamer.net/games/635/G063504/20260929019/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/042/G104292/20260929001/SS/001.jpg"
+          "thumbnailUrl": "https://www.4gamer.net/games/635/G063504/20260929019/SS/001.jpg"
         }
       ],
-      "whatHappened": "「Wizardry」45周年記念インタビュー記事の第2弾が公開",
+      "whatHappened": "ウメハラ選手に長期密着したドキュメンタリー映画「ReBEAST 〜ウメハラ、1/60秒に賭け…",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -498,91 +564,32 @@
       ]
     },
     {
-      "id": "auto-games-the-last-of-us-シリーズの新プロジェクト2本が進行中-開発はごく初期段階で-いずれも-part-i-part-ii-を超えて正史を広げるものに-4gamer.net/games/755/g075576/20260929002",
-      "title": "「The Last of Us」シリーズの新プロジェクト2本が進行中。開発はごく初期段階で，いずれも「Part I」「Part II」を超えて正史を広げるものに",
-      "summary": "NaughtyDogのスタジオヘッドNeilDruckmann氏は2026年9月28日，「TheLastofUs」シリーズの新プロジェクト2本が進行中であることを明…",
-      "briefSummary": "NaughtyDogのスタジオヘッドNeilDruckmann氏は2026年9月28日，「TheLastofUs」シリーズの新プロジェクト2本が進行中であることを明らかにした。また，最新作「Intergalactic:TheHereticP…",
+      "id": "auto-games-スーパーヒーローの管理と配置を担う国家機関-英雄管理庁-に潜入し-20年前の爆発事件の真相を追うslg-bureau-of-hero-affairs-体験版配信-4gamer.net/games/035/g103555/20260929024",
+      "title": "スーパーヒーローの管理と配置を担う国家機関「英雄管理庁」に潜入し，20年前の爆発事件の真相を追うSLG「Bureau of Hero Affairs」，体験版配信開始",
+      "summary": "indigoblueは本日，「BureauofHeroAffairs」（英雄管理庁）の体験版をSteamで配信開始した。スーパーヒーローの管理と配置を担う国家機関に…",
+      "briefSummary": "indigoblueは本日，「BureauofHeroAffairs」（英雄管理庁）の体験版をSteamで配信開始した。スーパーヒーローの管理と配置を担う国家機関に潜入した取材記者となり，20年前の爆発事件の真相を追うシミュレーションゲーム…",
       "category": "games",
       "categories": [
         "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/755/G075576/20260929002/SS/002.jpg",
-      "publishedAt": null,
-      "capturedAt": "2026-09-30T12:57:28.314Z",
-      "time": "直近",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/755/G075576/20260929002/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "「The Last of Us」シリーズの新プロジェクト2本が進行中。開発はごく初期段階で，いずれも「Part I」「Part II」を超えて正史を広げるものに",
-          "url": "https://www.4gamer.net/games/755/G075576/20260929002/",
-          "canonicalUrl": "https://www.4gamer.net/games/755/G075576/20260929002/",
-          "publishedAt": null,
-          "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/755/G075576/20260929002/SS/002.jpg"
-        }
-      ],
-      "whatHappened": "「The Last of Us」シリーズの新プロジェクト2本が進行中",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-インタビュー-俺はこの業界を-sekiroの最高難度でプレイしてるんだ-red-dunes-gamesの-cko-であるsultan-al-darmaki氏が--4gamer.net/games/883/g088337/20260924002",
-      "title": "［インタビュー］「俺はこの業界を，SEKIROの最高難度でプレイしてるんだ」―――Red Dunes Gamesの“CKO”であるSultan Al Darmaki氏が，フロム脳の超本音トークで業界をぶった切り",
-      "summary": "筆者は仕事柄色んな人とインタビューするが，ここまで爽快に，皆が言わないけど思っていることを，バッサバッサと口にする人は珍しい。ゲームが本当に大好きなゲーマーにこそ読…",
-      "briefSummary": "UAEを拠点とする Red Dunes Games は本日（2025年7月14日）， アクワイアと複数年にわたる共同開発契約の締結 を発表した。本契約を通じて，両社は世界基準のクオリティと日本の匠の精神を融合させた「完全オリジナルIP」の共同開発に取り組むとしている。現時点では，いずれもコードネームとなるが3作品の開発が進行中だ。",
-      "category": "games",
-      "categories": [
-        "games",
-        "game-features",
-        "business",
+        "entertainment",
         "general"
       ],
       "categoryLabel": "ゲーム",
       "categoryLabels": [
         "ゲーム",
-        "ゲーム特集",
-        "経済"
+        "エンタメ"
       ],
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/883/G088337/20260924002/SS/012.jpg",
+      "thumbnailUrl": "https://www.4gamer.net/games/035/G103555/20260929024/SS/004.jpg",
       "publishedAt": null,
-      "capturedAt": "2026-09-30T12:57:28.314Z",
+      "capturedAt": "2026-09-30T18:22:36.501Z",
       "time": "直近",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/883/G088337/20260924002/",
+      "sourceUrl": "https://www.4gamer.net/games/035/G103555/20260929024/",
       "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
@@ -601,20 +608,21 @@
             "console",
             "steam"
           ],
-          "title": "［インタビュー］「俺はこの業界を，SEKIROの最高難度でプレイしてるんだ」―――Red Dunes Gamesの“CKO”であるSultan Al Darmaki氏が，フロム脳の超本音トークで業界をぶった切り",
-          "url": "https://www.4gamer.net/games/883/G088337/20260924002/",
-          "canonicalUrl": "https://www.4gamer.net/games/883/G088337/20260924002/",
+          "title": "スーパーヒーローの管理と配置を担う国家機関「英雄管理庁」に潜入し，20年前の爆発事件の真相を追うSLG「Bureau of Hero Affairs」，体験版配信開始",
+          "url": "https://www.4gamer.net/games/035/G103555/20260929024/",
+          "canonicalUrl": "https://www.4gamer.net/games/035/G103555/20260929024/",
           "publishedAt": null,
           "publishedLabel": "1/1 00:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/883/G088337/20260924002/SS/012.jpg"
+          "thumbnailUrl": "https://www.4gamer.net/games/035/G103555/20260929024/SS/004.jpg"
         }
       ],
-      "whatHappened": "［インタビュー］「俺はこの業界を，SEKIROの最高難度でプレイしてるんだ」―――Red D…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "whatHappened": "スーパーヒーローの管理と配置を担う国家機関「英雄管理庁」に潜入し，20年前の爆発事件の真相を…",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー",
-        "ガジェット好き"
+        "ガジェット好き",
+        "時事ニュースを追う人"
       ]
     }
   ]

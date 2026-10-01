@@ -11,7 +11,7 @@
       ? safeTopic.sourceSignals.map((signal) => ({
         ...signal,
         title: decodeHtmlEntities(signal?.title ?? ''),
-        summary: decodeHtmlEntities(signal?.summary ?? ''),
+        summary: normalizeSummaryMarkup(signal?.summary ?? ''),
         sourceName: decodeHtmlEntities(signal?.sourceName ?? ''),
         source: decodeHtmlEntities(signal?.source ?? ''),
         sourceTags: window.ArticleCategoryQuality?.sanitizeArticleSourceTags(signal?.sourceTags, {
@@ -24,8 +24,8 @@
     return {
       ...safeTopic,
       title: decodeHtmlEntities(safeTopic.title ?? ''),
-      summary: decodeHtmlEntities(safeTopic.summary ?? ''),
-      briefSummary: decodeHtmlEntities(safeTopic.briefSummary ?? ''),
+      summary: normalizeSummaryMarkup(safeTopic.summary ?? ''),
+      briefSummary: normalizeSummaryMarkup(safeTopic.briefSummary ?? ''),
       whatHappened: decodeHtmlEntities(safeTopic.whatHappened ?? ''),
       whyHot: decodeHtmlEntities(safeTopic.whyHot ?? ''),
       importantPoint: decodeHtmlEntities(safeTopic.importantPoint ?? ''),
@@ -88,6 +88,32 @@
     const element = document.createElement('textarea');
     element.innerHTML = text;
     return element.value;
+  }
+
+  function normalizeSummaryMarkup(value) {
+    let text = String(value ?? '');
+    // RSS and extracted metadata may escape markup more than once. Decode
+    // before stripping, and remove a trailing tag truncated by summary limits.
+    for (let pass = 0; pass < 2; pass += 1) text = decodeHtmlEntities(text);
+    return text
+      .replace(/<script\b[^>]*>[\s\S]*?(?:<\/script>|$)/gi, ' ')
+      .replace(/<style\b[^>]*>[\s\S]*?(?:<\/style>|$)/gi, ' ')
+      .replace(/<\/?[a-z][a-z0-9:-]*(?:\s[^>]*|\s*\/?)>/gi, ' ')
+      .replace(/<\/?[a-z][a-z0-9:-]*(?:\s[^>]*)?$/gi, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function sanitizeNewsSummaryMarkup(topic) {
+    return {
+      ...topic,
+      summary: normalizeSummaryMarkup(topic?.summary),
+      briefSummary: normalizeSummaryMarkup(topic?.briefSummary),
+      sourceSignals: Array.isArray(topic?.sourceSignals) ? topic.sourceSignals.map((signal) => ({
+        ...signal,
+        summary: normalizeSummaryMarkup(signal?.summary),
+      })) : topic?.sourceSignals,
+    };
   }
 
   function topicText(topic) {
@@ -495,6 +521,7 @@
 
   function prepareNewsListItems(topics) {
     return dedupeTopics(Array.isArray(topics) ? topics : [])
+      .map(sanitizeNewsSummaryMarkup)
       .filter((topic) => isGeneralNewsListItem(topic))
       .sort((left, right) => {
         const timeDiff = Number(archiveTimestamp(right) ?? 0) - Number(archiveTimestamp(left) ?? 0);
@@ -695,6 +722,7 @@
     matchesNewsCategory,
     mergeReports,
     normalizeTopic,
+    normalizeSummaryMarkup,
     prepareNewsListItems,
     sanitizeArticleSummaryCollection,
     getPrimarySourceLabel,

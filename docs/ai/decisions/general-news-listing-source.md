@@ -32,3 +32,11 @@ trend dataはToday Internet、急上昇、ランキング、topic表示等の用
 ## Verification
 
 PR #14の回帰確認でトップ20件と全件先頭20件の順序一致、カテゴリ・検索・期間・paginationを確認している。今後は現在の生成dataで再検証する。
+
+## 2026-10-01: restore the full available listing
+
+The all-news page defaults to all retained periods and offers an explicit reset-all control. The shared `home-news` population retains up to the existing 1,500-item news-archive limit instead of truncating at 200. The initial payload remains 20 items; subsequent chunks contain 100 items to avoid excessive sequential requests. Both home and all-news still consume the same ordered payloads, with featured-story exclusions preserved.
+
+The 14-day archive retention is a maximum age, not a promise of complete 14-day coverage: upstream item limits may remove older items. Do not fabricate publication dates or relabel fresh capture timestamps as publication times. Missing RDF `dc:date` support and repeated undated captures must be handled at ingestion/archive merge, not by inventing dates in the view.
+
+Verification: regression tests cover payload count/order/chunks, date handling, offline cache preservation, reset-all behavior, and cancellation of interrupted list rendering. The cached collection remains available when any network page fails, with an explicit cached-data status.

@@ -40,3 +40,5 @@ The all-news page defaults to all retained periods and offers an explicit reset-
 The 14-day archive retention is a maximum age, not a promise of complete 14-day coverage: upstream item limits may remove older items. Do not fabricate publication dates or relabel fresh capture timestamps as publication times. Missing RDF `dc:date` support and repeated undated captures must be handled at ingestion/archive merge, not by inventing dates in the view.
 
 Verification: regression tests cover payload count/order/chunks, date handling, offline cache preservation, reset-all behavior, and cancellation of interrupted list rendering. The cached collection remains available when any network page fails, with an explicit cached-data status.
+
+For the expanded population, fuzzy dedupe computes URL/title/category comparison signatures once per input or merged result within each pass. Its output must remain identical to the previous predicates and ordering; do not replace it with a looser identity rule as a performance shortcut. Successful archive loads reuse the already prepared collection instead of running the expensive pass twice.

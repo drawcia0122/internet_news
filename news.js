@@ -82,7 +82,7 @@ async function init() {
     const completeItems = await loadCompleteHomeNews(archivePayload);
     const preparedArchive = preparePrimaryArchiveItems(completeItems);
     trendItems = preparedArchive;
-    rebuildDerivedItems();
+    rebuildDerivedItems({ prepared: true });
     latestUpdatedLabel = archivePayload?.generatedAt
       ? formatDate(archivePayload.generatedAt) + ' 更新'
       : '更新時刻不明';
@@ -215,8 +215,8 @@ function getRangeDisplayCount(rangeKey) {
   return getRangeItems(rangeKey).length;
 }
 
-function rebuildDerivedItems() {
-  dedupedTrendItems = prepareNewsListItems(trendItems);
+function rebuildDerivedItems({ prepared = false } = {}) {
+  dedupedTrendItems = prepared ? trendItems : prepareNewsListItems(trendItems);
   rangeItemsCache.clear();
   normalizedTopicCache.clear();
 }

@@ -25,6 +25,7 @@ async function startArchive({ cached = [cachedArticle], fetchImpl, requestAnimat
   const originalCache = JSON.stringify({ scope: 'home', items: cached, cachedAt: '2026-09-30T00:00:00Z' });
   const storage = new Map(cached.length ? [[CACHE_KEY, originalCache]] : []);
   const writes = [];
+  let preparationCalls = 0;
   const utils = {
     buildImportantPoint: () => '', buildGoogleNewsUrl: () => 'https://news.google.com/',
     buildTargetAudience: () => [], buildWhyHotLabel: () => '',
@@ -33,7 +34,7 @@ async function startArchive({ cached = [cachedArticle], fetchImpl, requestAnimat
     formatDate: (value) => value, formatTopicDisplayTime: () => '',
     getPrimarySourceLabel: () => '出典', hasVisibleSummary: () => false,
     matchesNewsCategory: () => true, normalizeTopic: (item) => item,
-    pickCardImageUrl: () => null, prepareNewsListItems: (items) => items,
+    pickCardImageUrl: () => null, prepareNewsListItems: (items) => { preparationCalls += 1; return items; },
     sanitizeArticleSummaryCollection: (items) => items, shortEventFromTitle: () => '',
   };
   const context = vm.createContext({
@@ -51,7 +52,7 @@ async function startArchive({ cached = [cachedArticle], fetchImpl, requestAnimat
   vm.runInContext(script, context, { filename: 'news.js' });
   // init() starts automatically; these fixtures render one batch synchronously.
   await new Promise((resolve) => setImmediate(resolve));
-  return { elements, storage, writes, originalCache, context };
+  return { elements, storage, writes, originalCache, context, preparationCalls };
 }
 
 test('network failure keeps saved articles visible and preserves the cache timestamp', async () => {
@@ -150,4 +151,13 @@ test('published dates take precedence over new capture times and invalid dates f
   result.context.fixture = { publishedAt: 'invalid', capturedAt: null };
   assert.equal(vm.runInContext('getNewsRangeTimestamp(fixture)', result.context), null);
   assert.equal(vm.runInContext("isWithinNewsRange(fixture, RANGE_CONFIG['24h'])", result.context), false);
+});
+
+
+test('a successful uncached load prepares the full collection only once', async () => {
+  const result = await startArchive({ cached: [], fetchImpl: async () => ({
+    ok: true, json: async () => ({ items: [cachedArticle] }),
+  }) });
+  assert.equal(result.preparationCalls, 1);
+  assert.equal(result.elements.get('#news-count').textContent, '1 件');
 });

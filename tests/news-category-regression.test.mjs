@@ -70,3 +70,59 @@ test('RDF dc:date is retained as publication time rather than refresh time', asy
   assert.equal(result.items.length, 1);
   assert.equal(result.items[0].sourceSignals[0].publishedAt, '2026-09-29T00:30:00.000Z');
 });
+
+test('character merchandise does not inherit games or manga from publisher feeds', () => {
+  for (const title of [
+    '「ちいかわ」キラキラシール付きカップスープ2種が期間限定発売',
+    'しまむらで「ミッフィー」グッズが発売！ルームウェアやタオルに寝具類も',
+    '「リラックマ」「すみっコぐらし」のスクイーズが発売',
+    'ミッフィーのぬいぐるみキーホルダーが新登場',
+  ]) {
+    const inferred = categories(title, '', ['games', 'manga']);
+    assert.equal(inferred[0], 'entertainment');
+    assert.ok(!inferred.includes('games'));
+    assert.ok(!inferred.includes('manga'));
+    const item = { id: 'keep-id', title, category: 'games', categories: ['games', 'manga', 'general'], sourceUrl: 'https://www.inside-games.jp/article/1', sourceSignals: [{ sourceGroup: 'games', sourceTags: ['games', 'pokemon'], title }] };
+    const repaired = repairStoredTopicCategories(item);
+    assert.deepEqual(repaired.categories, ['entertainment', 'general']);
+    assert.equal(repaired.categoryLabel, 'エンタメ');
+    assert.equal(repaired.id, item.id);
+    assert.equal(repaired.sourceUrl, item.sourceUrl);
+    assert.equal(repaired.sourceSignals, item.sourceSignals);
+    assert.equal(item.category, 'games');
+    assert.equal(repairStoredTopicCategories(repaired), repaired);
+  }
+});
+
+test('anime-only coverage does not inherit manga without article evidence', () => {
+  const title = '秋アニメの放送開始日とキャスト発表';
+  assert.ok(!categories(title).includes('manga'));
+  assert.ok(categories(title).includes('anime'));
+  const repaired = repairStoredTopicCategories({ title, categories: ['anime', 'manga', 'general'] });
+  assert.deepEqual(repaired.categories, ['anime', 'general']);
+  assert.ok(categories(title, '人気漫画を原作としたアニメ化作品です。').includes('manga'));
+  assert.ok(categories('漫画「ちいかわ」単行本の新刊にグッズが付属').includes('manga'));
+  assert.ok(categories('声優がジャンプショップで買ったグッズを紹介').includes('manga'));
+});
+
+test('merchandise guard preserves real games, in-game goods and sparse specialist titles', () => {
+  for (const title of [
+    'ちいかわのゲームが発売、限定グッズも登場',
+    'ミッフィーのSwitch向け新作とぬいぐるみセットを発売',
+    'リラックマのゲーム内アクセサリーを追加するDLCが登場',
+    'すみっコぐらしアプリのマスコットがログイン報酬に登場',
+    '謎の新作タイトルの続報が公開',
+  ]) {
+    assert.ok(categories(title, '', ['games']).includes('games'), title);
+    const item = { title, category: 'games', categories: ['games', 'general'] };
+    assert.equal(repairStoredTopicCategories(item), item);
+  }
+  assert.ok(categories('ポケモンのぬいぐるみ付きSwitchソフトが発売', '', ['games']).includes('games'));
+});
+
+test('merchandise repair preserves explicit anime and manga categories', () => {
+  const anime = repairStoredTopicCategories({ title: 'ちいかわのカップスープ発売', briefSummary: 'アニメ「ちいかわ」の限定デザイン', categories: ['games', 'general'] });
+  assert.deepEqual(anime.categories, ['anime', 'general']);
+  const manga = repairStoredTopicCategories({ title: '漫画「ちいかわ」の新刊とグッズを発売', categories: ['games', 'manga', 'books', 'general'] });
+  assert.deepEqual(manga.categories, ['manga', 'books', 'general']);
+});

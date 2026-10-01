@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile, readdir, unlink } from "node:fs/promises";
 
 import { buildDailyBrief } from "../lib/daily-brief.mjs";
 import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, extractEncodedUrlsFromHtml, hasSuspiciousThumbnailMismatch, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
-import { collectTrendTopics } from "../lib/trend-aggregator.mjs";
+import { collectTrendTopics, repairStoredTopicCategories } from "../lib/trend-aggregator.mjs";
 import "../news-summary-integrity.js";
 import { repairItemThumbnail } from "./repair-thumbnails.mjs";
 
@@ -29,6 +29,7 @@ const CATEGORY_LABELS = {
   manga: "漫画",
   books: "本",
   sports: "スポーツ",
+  sns: "SNS",
   "net-culture": "ネットカルチャー",
   matome: "2chまとめ系",
   crime: "犯罪・事件",
@@ -201,9 +202,9 @@ const HOME_SOURCE_MAX = 2;
 const HOME_SOURCE_GROUP_MAX = 5;
 const HOME_PERSONAL_MIN = 18;
 const NEWS_ARCHIVE_MAX_ITEMS = 1500;
-const HOME_NEWS_MAX_ITEMS = 200;
+const HOME_NEWS_MAX_ITEMS = NEWS_ARCHIVE_MAX_ITEMS;
 const HOME_NEWS_INITIAL_COUNT = 20;
-const HOME_NEWS_PAGE_SIZE = 10;
+const HOME_NEWS_PAGE_SIZE = 100;
 const ADULT_NEWS_MAX_ITEMS = 80;
 const BROWSE_24_TO_3D_LIMIT = 360;
 const BROWSE_3_TO_7D_LIMIT = 120;
@@ -362,19 +363,7 @@ await writeFile(
   `${JSON.stringify(newsArchivePayload, null, 2)}\n`,
   "utf8",
 );
-await writeFile(
-  "data/home-news.json",
-  `${JSON.stringify(homeNewsPayloads.initial, null, 2)}\n`,
-  "utf8",
-);
-for (const page of homeNewsPayloads.pages) {
-  await writeFile(
-    `data/home-news-page-${page.page}.json`,
-    `${JSON.stringify(page.payload, null, 2)}\n`,
-    "utf8",
-  );
-}
-await removeStaleHomeNewsPages(homeNewsPayloads.pages.map((page) => page.page));
+await writeHomeNewsPayloads(homeNewsPayloads);
 await writeFile(
   "data/adult-news.json",
   `${JSON.stringify(adultNewsPayload, null, 2)}\n`,
@@ -427,6 +416,7 @@ function pickFirstValidTimestamp(values = []) {
 }
 
 function normalizeStoredTopic(item, fallbackCapturedAt = null) {
+  item = repairStoredTopicCategories(item);
   const { thumbnail: _thumbnail, ...baseItem } = item;
   const categories = normalizeCategoryList(item.categories);
   const category = categories[0] ?? "general";
@@ -727,6 +717,7 @@ function buildBrowseTopicsPayload({ archiveItems = [], generatedAt = new Date().
 
 function buildNewsArchivePayload({ archiveItems = [], generatedAt = new Date().toISOString() }) {
   const domesticItems = archiveItems
+    .map(repairStoredTopicCategories)
     .filter((item) => isWithinArchiveWindow(item, generatedAt))
     .filter((item) => isDomesticNewsArchiveItem(item))
     .filter((item) => !isMalformedArchiveItem(item));
@@ -786,6 +777,7 @@ function buildNewsArchivePayload({ archiveItems = [], generatedAt = new Date().t
 function buildHomeNewsPayloads({ newsArchivePayload, currentItems = [], dailyBriefPayload = null, homeTopicsPayload = null, generatedAt = new Date().toISOString() }) {
   const excludedKeys = buildFeaturedNewsExclusionKeys({ currentItems, dailyBriefPayload, homeTopicsPayload });
   const items = (Array.isArray(newsArchivePayload?.items) ? newsArchivePayload.items : [])
+    .map(repairStoredTopicCategories)
     .filter((item) => !matchesFeaturedNewsExclusion(item, excludedKeys))
     .slice(0, HOME_NEWS_MAX_ITEMS);
   const totalCount = items.length;
@@ -884,15 +876,32 @@ function itemDeduplicationKeys(item) {
   return keys;
 }
 
-async function removeStaleHomeNewsPages(activePages = []) {
+async function writeHomeNewsPayloads(payloads, { dataDirectory = "data" } = {}) {
+  await mkdir(dataDirectory, { recursive: true });
+  await writeFile(
+    `${dataDirectory}/home-news.json`,
+    `${JSON.stringify(payloads.initial, null, 2)}\n`,
+    "utf8",
+  );
+  for (const page of payloads.pages) {
+    await writeFile(
+      `${dataDirectory}/home-news-page-${page.page}.json`,
+      `${JSON.stringify(page.payload, null, 2)}\n`,
+      "utf8",
+    );
+  }
+  await removeStaleHomeNewsPages(payloads.pages.map((page) => page.page), dataDirectory);
+}
+
+async function removeStaleHomeNewsPages(activePages = [], dataDirectory = "data") {
   const activeSet = new Set(activePages.map((value) => Number(value)).filter((value) => Number.isFinite(value)));
-  const entries = await readdir("data").catch(() => []);
+  const entries = await readdir(dataDirectory).catch(() => []);
   const staleFiles = entries.filter((entry) => {
     const match = entry.match(/^home-news-page-(\d+)\.json$/);
     if (!match) return false;
     return !activeSet.has(Number(match[1]));
   });
-  await Promise.all(staleFiles.map((file) => unlink(`data/${file}`).catch(() => {})));
+  await Promise.all(staleFiles.map((file) => unlink(`${dataDirectory}/${file}`).catch(() => {})));
 }
 
 function buildAdultNewsPayload({ archiveItems = [], generatedAt = new Date().toISOString() }) {
@@ -1713,13 +1722,26 @@ function mergeArchiveItems(previousItems, nextItems) {
       continue;
     }
 
-    const currentTime = archiveTimestamp(current);
-    const nextTime = archiveTimestamp(item);
-    if (nextTime >= currentTime) {
+    const currentPublishedAt = archivePublishedAt(current);
+    const nextPublishedAt = archivePublishedAt(item);
+    const currentTime = currentPublishedAt ? new Date(currentPublishedAt).getTime() : archiveTimestamp(current);
+    const nextTime = nextPublishedAt ? new Date(nextPublishedAt).getTime() : archiveTimestamp(item);
+    const recoversPublicationTime = !currentPublishedAt && nextPublishedAt;
+    if (nextTime >= currentTime || recoversPublicationTime) {
+      // Undated articles use capturedAt as their age fallback. Re-fetching the
+      // same identity must not repeatedly move them into the newest time range.
+      const firstCapturedAt = [current.capturedAt, item.capturedAt]
+        .filter((value) => pickFirstValidTimestamp([value]))
+        .sort((left, right) => new Date(left).getTime() - new Date(right).getTime())[0];
       map.set(key, sanitizeArticleSummaryFields({
         ...current,
         ...item,
-        capturedAt: item.capturedAt ?? current.capturedAt,
+        // A recovered publication date beats the old capture-time fallback.
+        // Conversely, a later undated fetch must not erase a known date.
+        publishedAt: nextPublishedAt ?? currentPublishedAt ?? null,
+        capturedAt: !currentPublishedAt && !nextPublishedAt && firstCapturedAt
+          ? firstCapturedAt
+          : item.capturedAt ?? current.capturedAt,
       }));
     }
   }
@@ -1797,13 +1819,18 @@ function archiveKeyFor(item) {
 }
 
 function archiveTimestamp(item) {
-  const value =
-    item.sourceSignals?.[0]?.publishedAt ??
-    item.publishedAt ??
-    item.capturedAt ??
-    0;
+  const value = archivePublishedAt(item)
+    ?? pickFirstValidTimestamp([item?.capturedAt])
+    ?? 0;
   const time = new Date(value).getTime();
   return Number.isNaN(time) ? 0 : time;
+}
+
+function archivePublishedAt(item) {
+  return pickFirstValidTimestamp([
+    ...(Array.isArray(item?.sourceSignals) ? item.sourceSignals.map((signal) => signal?.publishedAt) : []),
+    item?.publishedAt,
+  ]);
 }
 
 function isWithinArchiveWindow(item, nowValue) {
@@ -2612,6 +2639,8 @@ function tokenOverlapRatio(leftTokens, rightTokens) {
 
 export {
   archiveKeyFor,
+  buildHomeNewsPayloads,
+  buildNewsArchivePayload,
   dedupeNearDuplicateItems,
   findFetchedMetadata,
   mergeArchiveItems,
@@ -2619,6 +2648,7 @@ export {
   normalizeStoredTopic,
   registerFetchedMetadata,
   sanitizeFetchedMetadata,
+  writeHomeNewsPayloads,
 };
 
 function sharesAnyCategory(left, right) {

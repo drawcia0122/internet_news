@@ -33,15 +33,18 @@
             </div>
             <a class="outline-button news-search-button" href="https://news.google.com/" target="_blank" rel="noreferrer">Googleニュースで探す ↗</a>
           </div>
+          <button class="outline-button" id="news-show-all" type="button">全件表示（絞り込みを解除）</button>
           <div class="news-archive-actions" id="news-archive-actions"></div>
           <div class="news-toolbar">
             <div class="featured-tabs news-range-tabs" role="group" aria-label="期間選択">
-              <button class="active" data-range="24h">24時間以内</button>
+              <button class="active" type="button" data-range="all">全期間</button>
+              <button type="button" data-range="24h">24時間以内</button>
               <button data-range="24-3d">24時間〜3日</button>
-              <button data-range="3-7d">3日〜7日</button>
+              <button type="button" data-range="3-7d">3日〜7日</button>
+              <button type="button" data-range="7-14d">7日〜14日</button>
             </div>
             <div class="featured-tabs news-category-tabs" role="group" aria-label="カテゴリ選択">
-              <button class="active" data-category="all">総合</button>
+              <button class="active" data-category="all">全カテゴリ</button>
               <button data-category="tech">テック</button>
               <button data-category="business">経済</button>
               <button data-category="politics">政治</button>
@@ -70,8 +73,8 @@
       </section>
     </main>
     <script src="./news-summary-integrity.js?v=2"></script>
-    <script src="./shared-topic-utils.js?v=9"></script>
-    <script src="./news.js?v=26"></script>
+    <script src="./shared-topic-utils.js?v=11"></script>
+    <script src="./news.js?v=28"></script>
     <script>
       (function () {
         const backLink = document.getElementById('news-back-link');

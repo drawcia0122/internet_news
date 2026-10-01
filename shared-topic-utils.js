@@ -11,7 +11,7 @@
       ? safeTopic.sourceSignals.map((signal) => ({
         ...signal,
         title: decodeHtmlEntities(signal?.title ?? ''),
-        summary: decodeHtmlEntities(signal?.summary ?? ''),
+        summary: normalizeSummaryMarkup(signal?.summary ?? ''),
         sourceName: decodeHtmlEntities(signal?.sourceName ?? ''),
         source: decodeHtmlEntities(signal?.source ?? ''),
         sourceTags: window.ArticleCategoryQuality?.sanitizeArticleSourceTags(signal?.sourceTags, {
@@ -24,8 +24,8 @@
     return {
       ...safeTopic,
       title: decodeHtmlEntities(safeTopic.title ?? ''),
-      summary: decodeHtmlEntities(safeTopic.summary ?? ''),
-      briefSummary: decodeHtmlEntities(safeTopic.briefSummary ?? ''),
+      summary: normalizeSummaryMarkup(safeTopic.summary ?? ''),
+      briefSummary: normalizeSummaryMarkup(safeTopic.briefSummary ?? ''),
       whatHappened: decodeHtmlEntities(safeTopic.whatHappened ?? ''),
       whyHot: decodeHtmlEntities(safeTopic.whyHot ?? ''),
       importantPoint: decodeHtmlEntities(safeTopic.importantPoint ?? ''),
@@ -88,6 +88,32 @@
     const element = document.createElement('textarea');
     element.innerHTML = text;
     return element.value;
+  }
+
+  function normalizeSummaryMarkup(value) {
+    let text = String(value ?? '');
+    // RSS and extracted metadata may escape markup more than once. Decode
+    // before stripping, and remove a trailing tag truncated by summary limits.
+    for (let pass = 0; pass < 2; pass += 1) text = decodeHtmlEntities(text);
+    return text
+      .replace(/<script\b[^>]*>[\s\S]*?(?:<\/script>|$)/gi, ' ')
+      .replace(/<style\b[^>]*>[\s\S]*?(?:<\/style>|$)/gi, ' ')
+      .replace(/<\/?[a-z][a-z0-9:-]*(?:\s[^>]*|\s*\/?)>/gi, ' ')
+      .replace(/<\/?[a-z][a-z0-9:-]*(?:\s[^>]*)?$/gi, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function sanitizeNewsSummaryMarkup(topic) {
+    return {
+      ...topic,
+      summary: normalizeSummaryMarkup(topic?.summary),
+      briefSummary: normalizeSummaryMarkup(topic?.briefSummary),
+      sourceSignals: Array.isArray(topic?.sourceSignals) ? topic.sourceSignals.map((signal) => ({
+        ...signal,
+        summary: normalizeSummaryMarkup(signal?.summary),
+      })) : topic?.sourceSignals,
+    };
   }
 
   function topicText(topic) {
@@ -495,6 +521,7 @@
 
   function prepareNewsListItems(topics) {
     return dedupeTopics(Array.isArray(topics) ? topics : [])
+      .map(sanitizeNewsSummaryMarkup)
       .filter((topic) => isGeneralNewsListItem(topic))
       .sort((left, right) => {
         const timeDiff = Number(archiveTimestamp(right) ?? 0) - Number(archiveTimestamp(left) ?? 0);
@@ -564,32 +591,48 @@
 
   function dedupeTopicsFuzzy(topics) {
     const kept = [];
+    const signatures = [];
     for (const topic of topics) {
-      const currentKey = canonicalTopicKey(topic);
-      const duplicateIndex = kept.findIndex((item) => isNearDuplicateTopic(item, topic, currentKey));
+      const signature = topicComparisonSignature(topic);
+      const duplicateIndex = signatures.findIndex((current) => isNearDuplicateTopic(current, signature));
       if (duplicateIndex === -1) {
         kept.push(topic);
+        signatures.push(signature);
         continue;
       }
       kept[duplicateIndex] = mergeDuplicateTopics(kept[duplicateIndex], topic);
+      // Merges may replace titles, URLs, dates and categories. Cache only within
+      // this pass and recompute the merged record before the next comparison.
+      signatures[duplicateIndex] = topicComparisonSignature(kept[duplicateIndex]);
     }
     return kept;
   }
 
-  function isNearDuplicateTopic(current, next, nextKey = canonicalTopicKey(next)) {
-    if (!current || !next) return false;
-    const currentUrl = canonicalTopicSourceSignature(current);
-    const nextUrl = canonicalTopicSourceSignature(next);
-    if (currentUrl && nextUrl && currentUrl === nextUrl) return true;
+  function topicComparisonSignature(topic) {
+    const title = normalizeTopicFingerprint(topic.title ?? '');
+    const url = canonicalTopicSourceSignature(topic);
+    const key = `${title}::${url}`;
+    return {
+      title,
+      url,
+      key,
+      titleTokens: distinctiveTokens(title),
+      keyTokens: distinctiveTokens(key),
+      categories: normalizeCategories(topic.categories, topic.category),
+      publishedAt: topicPublishedAt(topic),
+    };
+  }
+
+  function isNearDuplicateTopic(current, next) {
+    if (current.url && next.url && current.url === next.url) return true;
     if (isLikelySameStory(current, next)) return true;
-    if (!shareAnyCategory(current, next)) return false;
-    const currentKey = canonicalTopicKey(current);
-    if (!currentKey || !nextKey) return false;
-    if (currentKey.includes(nextKey) || nextKey.includes(currentKey)) {
-      return Math.min(currentKey.length, nextKey.length) >= 18;
+    if (!current.categories.some((category) => next.categories.includes(category))) return false;
+    if (!current.key || !next.key) return false;
+    if (current.key.includes(next.key) || next.key.includes(current.key)) {
+      return Math.min(current.key.length, next.key.length) >= 18;
     }
-    const currentTokens = distinctiveTokens(currentKey);
-    const nextTokens = distinctiveTokens(nextKey);
+    const currentTokens = current.keyTokens;
+    const nextTokens = next.keyTokens;
     if (currentTokens.length < 3 || nextTokens.length < 3) return false;
     const overlap = currentTokens.filter((token) => nextTokens.includes(token)).length;
     return overlap >= 3 && overlap / Math.min(currentTokens.length, nextTokens.length) >= 0.78;
@@ -599,29 +642,21 @@
     return [...new Set(String(value ?? '').split(' ').filter((token) => token.length >= 2 && !GENERIC_TOPIC_TOKENS.has(token)))];
   }
 
-  function shareAnyCategory(left, right) {
-    const leftCategories = normalizeCategories(left.categories, left.category);
-    const rightCategories = normalizeCategories(right.categories, right.category);
-    return leftCategories.some((category) => rightCategories.includes(category));
-  }
-
   function isLikelySameStory(current, next) {
-    if (!current || !next) return false;
-
-    const currentTitle = normalizeTopicFingerprint(current.title ?? '');
-    const nextTitle = normalizeTopicFingerprint(next.title ?? '');
+    const currentTitle = current.title;
+    const nextTitle = next.title;
     if (!currentTitle || !nextTitle) return false;
 
     const sameTitle = currentTitle === nextTitle || currentTitle.includes(nextTitle) || nextTitle.includes(currentTitle);
-    const currentPublishedAt = topicPublishedAt(current);
-    const nextPublishedAt = topicPublishedAt(next);
+    const currentPublishedAt = current.publishedAt;
+    const nextPublishedAt = next.publishedAt;
     if (sameTitle) {
       if (currentPublishedAt == null || nextPublishedAt == null) return true;
       return Math.abs(currentPublishedAt - nextPublishedAt) <= 36 * 60 * 60 * 1000;
     }
 
-    const currentTokens = distinctiveTokens(currentTitle);
-    const nextTokens = distinctiveTokens(nextTitle);
+    const currentTokens = current.titleTokens;
+    const nextTokens = next.titleTokens;
     if (currentTokens.length < 4 || nextTokens.length < 4) return false;
     if (!currentPublishedAt || !nextPublishedAt) return false;
     const overlap = currentTokens.filter((token) => nextTokens.includes(token)).length;
@@ -695,6 +730,7 @@
     matchesNewsCategory,
     mergeReports,
     normalizeTopic,
+    normalizeSummaryMarkup,
     prepareNewsListItems,
     sanitizeArticleSummaryCollection,
     getPrimarySourceLabel,

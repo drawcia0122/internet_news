@@ -31,17 +31,19 @@ const PAGE_SIZE = 20;
 const RENDER_BATCH_SIZE = 4;
 const HOME_NEWS_ENDPOINT = './data/home-news.json';
 const TOPIC_CACHE_KEY = 'internet-news-browse-archive-cache-v6';
-const MAX_CACHED_HOME_ITEMS = 200;
+const MAX_CACHED_HOME_ITEMS = 1500;
 const RANGE_CONFIG = {
+  all: { minHours: 0, maxHours: Number.POSITIVE_INFINITY, label: '全期間', searchWindowDays: 14 },
   '24h': { minHours: 0, maxHours: 24, label: '24時間以内', searchWindowDays: 1 },
   '24-3d': { minHours: 24, maxHours: 72, label: '24時間〜3日', searchWindowDays: 3 },
   '3-7d': { minHours: 72, maxHours: 168, label: '3日〜7日', searchWindowDays: 7 },
+  '7-14d': { minHours: 168, maxHours: 336, label: '7日〜14日', searchWindowDays: 14 },
 };
 
 let trendItems = [];
 let dedupedTrendItems = [];
 let activeCategory = 'all';
-let activeRange = '24h';
+let activeRange = 'all';
 let currentPage = 1;
 let queryDebounceTimer = null;
 let renderPassId = 0;
@@ -80,24 +82,25 @@ async function init() {
     const completeItems = await loadCompleteHomeNews(archivePayload);
     const preparedArchive = preparePrimaryArchiveItems(completeItems);
     trendItems = preparedArchive;
-    rebuildDerivedItems();
+    rebuildDerivedItems({ prepared: true });
     latestUpdatedLabel = archivePayload?.generatedAt
       ? formatDate(archivePayload.generatedAt) + ' 更新'
       : '更新時刻不明';
     updatedElement.textContent = latestUpdatedLabel;
+    saveTopicCache(trendItems, { scope: 'home' });
   } catch {
-    trendItems = [];
+    trendItems = cachedTopics;
     rebuildDerivedItems();
-    latestUpdatedLabel = '読み込み失敗';
+    latestUpdatedLabel = cachedTopics.length ? '読み込み失敗・キャッシュを表示中' : '読み込み失敗';
     updatedElement.textContent = latestUpdatedLabel;
   }
 
-  saveTopicCache(trendItems, { scope: 'home' });
   updateRangeTabLabels();
   await renderArchive();
 }
 
 async function renderArchive() {
+  const passId = ++renderPassId;
   const query = queryElement.value.trim().toLowerCase();
   const filtered = getRangeItems(activeRange)
     .filter((item) => matchesNewsCategory(item, activeCategory))
@@ -120,7 +123,8 @@ async function renderArchive() {
     return;
   }
 
-  await renderArchivePageItems(pageItems);
+  await renderArchivePageItems(pageItems, passId);
+  if (passId !== renderPassId) return;
   renderPagination(totalPages, filtered.length, pageItems.length);
 }
 
@@ -143,8 +147,7 @@ async function loadCompleteHomeNews(initialPayload) {
   return items;
 }
 
-async function renderArchivePageItems(items) {
-  const passId = ++renderPassId;
+async function renderArchivePageItems(items, passId) {
   listElement.innerHTML = '';
 
   for (let index = 0; index < items.length; index += RENDER_BATCH_SIZE) {
@@ -212,16 +215,19 @@ function getRangeDisplayCount(rangeKey) {
   return getRangeItems(rangeKey).length;
 }
 
-function rebuildDerivedItems() {
-  dedupedTrendItems = prepareNewsListItems(trendItems);
+function rebuildDerivedItems({ prepared = false } = {}) {
+  dedupedTrendItems = prepared ? trendItems : prepareNewsListItems(trendItems);
   rangeItemsCache.clear();
+  normalizedTopicCache.clear();
 }
 
 function getRangeItems(rangeKey) {
-  const key = RANGE_CONFIG[rangeKey] ? rangeKey : '24h';
+  const key = RANGE_CONFIG[rangeKey] ? rangeKey : 'all';
   if (rangeItemsCache.has(key)) return rangeItemsCache.get(key);
   const range = RANGE_CONFIG[key];
-  const items = dedupedTrendItems.filter((item) => isWithinNewsRange(item, range));
+  const items = key === 'all'
+    ? dedupedTrendItems
+    : dedupedTrendItems.filter((item) => isWithinNewsRange(item, range));
   rangeItemsCache.set(key, items);
   return items;
 }
@@ -464,7 +470,7 @@ document.querySelectorAll('.news-range-tabs button').forEach((button) => {
   button.addEventListener('click', () => {
     document.querySelectorAll('.news-range-tabs button').forEach((item) => item.classList.remove('active'));
     button.classList.add('active');
-    activeRange = button.dataset.range || '24h';
+    activeRange = button.dataset.range || 'all';
     currentPage = 1;
     void renderArchive();
   });
@@ -486,4 +492,19 @@ queryElement.addEventListener('input', () => {
   queryDebounceTimer = window.setTimeout(() => {
     void renderArchive();
   }, 180);
+});
+
+document.querySelector('#news-show-all')?.addEventListener('click', () => {
+  activeRange = 'all';
+  activeCategory = 'all';
+  currentPage = 1;
+  queryElement.value = '';
+  clearTimeout(queryDebounceTimer);
+  document.querySelectorAll('.news-range-tabs button').forEach((button) => {
+    button.classList.toggle('active', button.dataset.range === 'all');
+  });
+  document.querySelectorAll('.news-category-tabs button').forEach((button) => {
+    button.classList.toggle('active', button.dataset.category === 'all');
+  });
+  void renderArchive();
 });

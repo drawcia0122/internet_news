@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-30T22:34:27.689Z",
+  "generatedAt": "2026-10-01T01:31:15.079Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1399",
+  "selectedClusterId": "today-cluster-1697",
   "selectedTitle": "OpenAI、「24時間働く」エージェント「dots」発表　Astra搭載、クラウド上で常時稼働",
   "candidates": [
     {
-      "clusterId": "today-cluster-1399",
+      "clusterId": "today-cluster-1697",
       "title": "OpenAI、「24時間働く」エージェント「dots」発表　Astra搭載、クラウド上で常時稼働",
       "category": "tech",
       "categories": [
@@ -57,33 +57,36 @@
       ]
     },
     {
-      "clusterId": "today-cluster-142",
-      "title": "スイッチ2をお得に楽しもう！『FFVII』リメイクシリーズ2作や『FFT』、『アサクリ シャドウズ』、『デイヴ・ザ・ダイバー』などがお買い得【eショップのお薦めセール】",
-      "category": "games",
+      "clusterId": "today-cluster-152",
+      "title": "漫画家・尾田栄一郎、アニメ「ヤニねこ」見ていた!? 声優・稲田徹がエピ披露で話題☆「笑った」「尾田先生お墨付きのヤニねこ」「目次作者コメント見たら合点」",
+      "category": "sports",
       "categories": [
-        "games",
+        "sports",
+        "manga",
+        "anime",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 63.6,
-      "confidence": 0.41,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 63.5,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20.9,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.6,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 3.2,
+        "search": 4.9,
+        "social": 7.4,
         "velocity": 0,
         "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -95,10 +98,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 37.2,
-        "internalSocialScore": 24.7
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 98,
+        "internalSearchScore": 38.2,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -107,7 +110,115 @@
       ]
     },
     {
-      "clusterId": "today-cluster-144",
+      "clusterId": "today-cluster-354",
+      "title": "マッチングアプリで知り合った男性から1300万円詐取か　「いただきヨシコ」逮捕",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 63.2,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-3",
+      "title": "VTuber朝ノ瑠璃、慶應義塾大学の学園祭に出演　トークショーやミニライブを実施",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62.3,
+      "confidence": 0.45,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 15.8,
+        "internetNativeBoost": 0,
+        "search": 5.2,
+        "social": 8.4,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -10
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 72,
+        "internalSearchScore": 40.8,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-142",
       "title": "“斜め移動”に調整！ リマスター版『トルネコの大冒険 不思議のダンジョン』スイッチ/スイッチ2版でもアップデートが配信",
       "category": "games",
       "categories": [
@@ -150,109 +261,6 @@
         "archiveHeatScore": 85,
         "internalSearchScore": 33.7,
         "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-79",
-      "title": "ホロライブ新人 熱千めら「インターネット防災訓練」配信を実施　身バレや乗っ取りを解説",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 60.9,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-750",
-      "title": "スパ君大炎上！ウェブサイトを破壊して回れる棒人間ブラウザゲーム『Destroy Any Website』発表",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 59.8,
-      "confidence": 0.33,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 4.5,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 35.6,
-        "internalSocialScore": 34.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

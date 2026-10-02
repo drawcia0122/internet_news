@@ -1,6 +1,34 @@
 (function attachArticleCategoryQuality(global) {
   const POKEMON_BRAND_PATTERN = /(?:ポケモン|ポケットモンスター|ピカチュウ|ポケカ|(?<![a-z])pok[eé]mon(?:\s*(?:go|home))?(?![a-z])|(?<![a-z])pok[eé]park(?![a-z]))/iu;
   const POKEMON_TAG_PATTERN = /^(?:pokemon|pokémon|ポケモン)$/iu;
+  const YAHOO_EDITORIAL_SECTIONS = { 'yahoo-sports': 'sports', 'yahoo-world': 'world', 'yahoo-business': 'business' };
+
+  function yahooArticleIdentity(value) {
+    try {
+      const url = new URL(String(value ?? ''));
+      if (!/^https?:$/.test(url.protocol) || url.hostname !== 'news.yahoo.co.jp') return '';
+      if (!/^\/(?:pickup\/\d+|articles\/[a-z0-9]+)\/?$/i.test(url.pathname)) return '';
+      return url.hostname + url.pathname.replace(/\/$/, '');
+    } catch { return ''; }
+  }
+
+  // Only dedicated editorial sections qualify. A broad publisher tag or a
+  // secondary story in a cluster must never relabel the primary article.
+  function getArticleEditorialSectionCategories(article) {
+    const signals = Array.isArray(article?.sourceSignals) ? article.sourceSignals : [];
+    const primaryUrl = article?.sourceUrl ?? article?.url ?? article?.link ?? article?.primaryLink?.url ?? article?.canonicalUrl
+      ?? signals[0]?.url ?? signals[0]?.canonicalUrl;
+    const identity = yahooArticleIdentity(primaryUrl);
+    const title = String(article?.title ?? '').normalize('NFKC').replace(/\s+/g, ' ').trim();
+    if (!identity || !title) return [];
+    return [...new Set(signals.flatMap((signal) => {
+      const category = Object.hasOwn(YAHOO_EDITORIAL_SECTIONS, signal?.sourceId) ? YAHOO_EDITORIAL_SECTIONS[signal.sourceId] : null;
+      if (!category) return [];
+      if (yahooArticleIdentity(signal?.url ?? signal?.canonicalUrl) !== identity) return [];
+      if (String(signal?.title ?? '').normalize('NFKC').replace(/\s+/g, ' ').trim() !== title) return [];
+      return [category];
+    }))];
+  }
 
   function articleBrandText(article) {
     return [
@@ -42,6 +70,7 @@
   }
 
   global.ArticleCategoryQuality = {
+    getArticleEditorialSectionCategories,
     hasPokemonBrandSignal,
     sanitizeArticleSourceTags,
   };

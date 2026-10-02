@@ -1723,6 +1723,49 @@ async function readArchivePayload(path) {
   }
 }
 
+function summaryPrimaryUrl(item) {
+  const keyFor = (raw) => {
+    try {
+      const url = new URL(raw);
+      return /^https?:$/.test(url.protocol) ? canonicalSummaryArticleUrl(url.href) : '';
+    } catch { return ''; }
+  };
+  const directUrl = item?.sourceUrl || item?.canonicalUrl || item?.url || item?.link;
+  if (directUrl) return keyFor(directUrl);
+  const title = plainSummaryText(item?.title).normalize('NFKC');
+  const signalKeys = new Set((Array.isArray(item?.sourceSignals) ? item.sourceSignals : [])
+    .filter((signal) => plainSummaryText(signal?.title).normalize('NFKC') === title)
+    .map((signal) => keyFor(signal.canonicalUrl || signal.url)).filter(Boolean));
+  // Signal ordering is a quality/time ranking, not a primary-article guarantee.
+  return signalKeys.size === 1 ? [...signalKeys][0] : '';
+}
+
+function sameSummaryArticle(previous, next) {
+  const previousUrl = summaryPrimaryUrl(previous);
+  const nextUrl = summaryPrimaryUrl(next);
+  const title = plainSummaryText(previous?.title).normalize('NFKC');
+  return Boolean(previousUrl && nextUrl && previousUrl === nextUrl && title
+    && title === plainSummaryText(next?.title).normalize('NFKC'));
+}
+
+function retainExistingArticleSummaries(previous, next) {
+  const fresh = sanitizeArticleSummaryFields(next);
+  // RSS often supplies only a headline. An empty/failed enrichment must not
+  // erase a previously verified summary of the unchanged primary article.
+  // Shared IDs, search links and grouped secondary sources are not evidence.
+  if (!sameSummaryArticle(previous, next)) return fresh;
+  const retained = sanitizeArticleSummaryFields(previous);
+  return {
+    ...fresh,
+    summary: fresh.summary || retained.summary || '',
+    briefSummary: fresh.briefSummary || retained.briefSummary || '',
+    sourceSignals: Array.isArray(fresh.sourceSignals) ? fresh.sourceSignals.map((signal) => {
+      const oldSignal = (retained.sourceSignals || []).find((old) => sameSummaryArticle(old, signal));
+      return oldSignal ? retainExistingArticleSummaries(oldSignal, signal) : signal;
+    }) : fresh.sourceSignals,
+  };
+}
+
 function mergeArchiveItems(previousItems, nextItems) {
   const map = new Map();
 
@@ -1747,7 +1790,7 @@ function mergeArchiveItems(previousItems, nextItems) {
         .sort((left, right) => new Date(left).getTime() - new Date(right).getTime())[0];
       map.set(key, sanitizeArticleSummaryFields({
         ...current,
-        ...item,
+        ...retainExistingArticleSummaries(current, item),
         // A recovered publication date beats the old capture-time fallback.
         // Conversely, a later undated fetch must not erase a known date.
         publishedAt: nextPublishedAt ?? currentPublishedAt ?? null,

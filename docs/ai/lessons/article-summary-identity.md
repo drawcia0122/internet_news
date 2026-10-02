@@ -38,3 +38,7 @@ title、summary、description、thumbnail、URL、sourceは同じ記事identity�
 - `scripts/repair-summary-snapshots.mjs` migrates retained summary text without altering identity, counts, category, thumbnail, ordering or timestamps. `refresh-data.mjs` runs it before health-guard fallback capture, so a failed fetch cannot restore the known contaminated snapshot.
 
 Evidence: `tests/article-metadata-identity.test.mjs`; original [volleyball pickup](https://news.yahoo.co.jp/pickup/6597306), [Sportsnavi main story](https://sports.yahoo.co.jp/volley/japan/competitions/5001/game/2620/point), [baseball Expert article](https://news.yahoo.co.jp/expert/articles/32e047893c67efce237c3eb2b84fbacbeb2d2b77).
+
+## Retained synopsis during an empty refresh (2026-10-02)
+
+The first real refresh of the source-identity fix (`37036321588`, generated `35882f4`) proved HTML cleanup and volleyball identity, but fresh RSS with an empty summary overwrote the previously repaired baseball commentary in `mergeArchiveItems`. Summary sanitation cannot recover text after an unconditional object spread discards it. Retain validated previous text only when both the primary article URL and full normalized headline are unchanged; an ID, search link, or grouped secondary source alone is insufficient. Apply the same rule to matching source signals. Fresh valid text still takes priority, and title changes prevent fallback. `tests/news-summary-retention.test.mjs` covers the observed repair → normalization → merge → archive → home-consumer path, plus negative identity cases.

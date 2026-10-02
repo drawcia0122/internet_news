@@ -1661,8 +1661,10 @@ async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()
   }
   const pageTitle = normalizeSummaryText(metadataValues.get('og:title')
     || html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || '');
-  // Reject redirects to a different article before any nested link is fetched.
-  if (pageTitle && title && !titlesReferToSameArticle(title, pageTitle)) return null;
+  // A generic aggregator shell has no article title; it may still expose one
+  // exact-headline primary link. A concrete different title is a rejection.
+  const genericWrapperTitle = isWrapper && /^(?:google news|google ニュース|yahoo!?ニュース)$/iu.test(pageTitle);
+  if (!genericWrapperTitle && pageTitle && title && !titlesReferToSameArticle(title, pageTitle)) return null;
   const descriptionCandidates = ['og:description', 'twitter:description', 'description']
     .map((key) => metadataValues.get(key));
   const summary = pickSummaryCandidate(descriptionCandidates, title, 20)
@@ -1692,7 +1694,8 @@ async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()
       const nested = await fetchPageMetadata(outboundUrl, articleTitle, depth + 1, visited).catch(() => null);
       const sanitizedNested = sanitizeFetchedMetadata(nested, articleTitle);
       if (sanitizedNested && (sanitizedNested.thumbnailUrl || sanitizedNested.summary || sanitizedNested.briefSummary)) {
-        return mergeFetchedMetadata(metadata, sanitizedNested, title);
+        const merged = mergeFetchedMetadata(metadata, sanitizedNested, title);
+        return genericWrapperTitle ? { ...merged, pageTitle: sanitizedNested.pageTitle || "" } : merged;
       }
     }
   }

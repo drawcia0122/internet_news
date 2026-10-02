@@ -166,3 +166,17 @@ test('bad retained snapshots do not abort migration or prevent health-guard reco
     assert.equal(await repairSummarySnapshots(join(directory, 'missing')), 0);
   } finally { await rm(directory, { recursive: true, force: true }); }
 });
+
+test('generic Google News shell can follow an exact-headline link without trusting sidebar text', async (t) => {
+  const wrapperUrl = 'https://news.google.com/rss/articles/123';
+  const title = '新作ゲームの発売日を正式発表';
+  const article = 'https://publisher.example/articles/new-game';
+  const summary = '新作ゲームの発売日を正式発表した。対応する機種や新しい遊び方、予約受付の日程を詳しく紹介している。';
+  const { metadata, requested } = await fetchFixture(t, {
+    [wrapperUrl]: { html: `<title>Google News</title><a href="${article}">${title}</a><a href="${unrelated}">無関係な記事</a>` },
+    [article]: { html: `${titleTag(title)}<meta name="description" content="${summary}">` },
+  }, wrapperUrl, title);
+  assert.deepEqual(requested, [wrapperUrl, article]);
+  assert.equal(metadata.summary, summary);
+  assert.equal(sanitizeFetchedMetadata(metadata, title).summary, summary);
+});

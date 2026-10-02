@@ -27,6 +27,11 @@ async function startArchive({ cached = [cachedArticle], fetchImpl, requestAnimat
   const writes = [];
   let preparationCalls = 0;
   const utils = {
+    buildArticleTitleLink: (title) => title,
+    groupNewsStories: (items) => items,
+    formatNewsStoryCount: (items) => items.length + ' 話題',
+    renderStorySources: () => '',
+    getNewsArticleSource: (item) => ({ url: item.sourceUrl, label: '出典' }),
     buildImportantPoint: () => '', buildGoogleNewsUrl: () => 'https://news.google.com/',
     buildTargetAudience: () => [], buildWhyHotLabel: () => '',
     categoryDisplayLabel: () => 'ニュース', categoryLabelFor: () => 'ニュース',
@@ -58,7 +63,7 @@ async function startArchive({ cached = [cachedArticle], fetchImpl, requestAnimat
 test('network failure keeps saved articles visible and preserves the cache timestamp', async () => {
   const result = await startArchive();
   assert.match(result.elements.get('#news-archive-list').innerHTML, /保存済みのニュース/);
-  assert.equal(result.elements.get('#news-count').textContent, '1 件');
+  assert.equal(result.elements.get('#news-count').textContent, '1 話題');
   assert.equal(result.elements.get('#news-updated').textContent, '読み込み失敗・キャッシュを表示中');
   assert.equal(result.storage.get(CACHE_KEY), result.originalCache);
   assert.deepEqual(result.writes, []);
@@ -76,7 +81,7 @@ test('a later page failure also retains the previous complete cached collection'
 test('failure without a cache reports failure without creating an empty cache', async () => {
   const result = await startArchive({ cached: [] });
   assert.equal(result.elements.get('#news-updated').textContent, '読み込み失敗');
-  assert.equal(result.elements.get('#news-count').textContent, '0 件');
+  assert.equal(result.elements.get('#news-count').textContent, '0 話題');
   assert.equal(result.storage.has(CACHE_KEY), false);
 });
 
@@ -96,20 +101,20 @@ test('all-period default includes dated historical articles and articles without
   const oldArticle = { ...cachedArticle, id: 'old', title: '過去のニュース', publishedAt: new Date(Date.now() - 10 * 86400000).toISOString() };
   const unknownDate = { ...cachedArticle, id: 'undated', title: '日付不明のニュース', publishedAt: null };
   const result = await startArchive({ cached: [cachedArticle, oldArticle, unknownDate] });
-  assert.equal(result.elements.get('#news-count').textContent, '3 件');
+  assert.equal(result.elements.get('#news-count').textContent, '3 話題');
   assert.match(result.elements.get('#news-archive-list').innerHTML, /過去のニュース/);
   assert.match(result.elements.get('#news-archive-list').innerHTML, /日付不明のニュース/);
   await vm.runInContext("activeRange = '7-14d'; renderArchive()", result.context);
-  assert.equal(result.elements.get('#news-count').textContent, '1 件');
+  assert.equal(result.elements.get('#news-count').textContent, '1 話題');
 });
 
 test('show-all resets search, category, period and pagination together', async () => {
   const result = await startArchive();
   await vm.runInContext("activeRange = '7-14d'; activeCategory = 'tech'; currentPage = 3; queryElement.value = 'no-match'; renderArchive()", result.context);
-  assert.equal(result.elements.get('#news-count').textContent, '0 件');
+  assert.equal(result.elements.get('#news-count').textContent, '0 話題');
   result.elements.get('#news-show-all').listeners.click();
   await new Promise((resolve) => setImmediate(resolve));
-  assert.equal(result.elements.get('#news-count').textContent, '1 件');
+  assert.equal(result.elements.get('#news-count').textContent, '1 話題');
   assert.equal(result.elements.get('#news-query').value, '');
   assert.equal(vm.runInContext('activeRange', result.context), 'all');
   assert.equal(vm.runInContext('activeCategory', result.context), 'all');
@@ -125,7 +130,7 @@ test('an empty filter cancels pending batches and stale pagination', async () =>
     frames.shift()();
     await new Promise((resolve) => setImmediate(resolve));
   }
-  assert.equal(result.elements.get('#news-count').textContent, '0 件');
+  assert.equal(result.elements.get('#news-count').textContent, '0 話題');
   assert.doesNotMatch(result.elements.get('#news-archive-list').innerHTML, /trend-card-rich/);
   assert.equal(result.elements.get('#trend-pagination').innerHTML, '');
 });
@@ -159,5 +164,5 @@ test('a successful uncached load prepares the full collection only once', async 
     ok: true, json: async () => ({ items: [cachedArticle] }),
   }) });
   assert.equal(result.preparationCalls, 1);
-  assert.equal(result.elements.get('#news-count').textContent, '1 件');
+  assert.equal(result.elements.get('#news-count').textContent, '1 話題');
 });

@@ -1,5 +1,6 @@
 const {
   buildCardThumbnail,
+  buildArticleTitleLink,
   buildImportantPoint,
   buildGoogleNewsUrl,
   buildTargetAudience,
@@ -17,6 +18,10 @@ const {
   normalizeTopic,
   pickCardImageUrl,
   prepareNewsListItems,
+  getNewsArticleSource,
+  groupNewsStories,
+  formatNewsStoryCount,
+  renderStorySources,
   sanitizeArticleSummaryCollection,
   shortEventFromTitle,
 } = window.TopicClientUtils;
@@ -51,6 +56,7 @@ let queryDebounceTimer = null;
 let renderPassId = 0;
 let latestUpdatedLabel = '更新時刻不明';
 const rangeItemsCache = new Map();
+const rangeDisplayCountCache = new Map();
 const normalizedTopicCache = new Map();
 
 document.addEventListener('error', handleCardImageError, true);
@@ -94,16 +100,20 @@ async function init() {
 async function renderArchive() {
   const passId = ++renderPassId;
   const query = queryElement.value.trim().toLowerCase();
-  const filtered = getRangeItems(activeRange)
+  normalizedTopicCache.clear();
+  const filteredArticles = getRangeItems(activeRange)
     .filter((item) => matchesNewsCategory(item, activeCategory))
     .filter((item) => {
       if (!query) return true;
       return (String(item.title ?? '') + ' ' + String(item.summary ?? '')).toLowerCase().includes(query);
     });
 
+  // Filters operate on original articles, so another publisher’s title/date or
+  // category remains searchable even when its article was previously collapsed.
+  const filtered = groupNewsStories(filteredArticles);
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   currentPage = Math.min(currentPage, totalPages);
-  countElement.textContent = filtered.length + ' 件';
+  countElement.textContent = formatNewsStoryCount(filtered);
   updateRangeTabLabels();
   updateSearchButton();
 
@@ -172,16 +182,13 @@ function renderArchiveCard(item) {
   const summaryHtml = hasVisibleSummary(item.summary) ? '<p>' + escapeHtml(item.summary ?? '') + '</p>' : '';
   const insightHtml = renderInsightList(item);
   const footerHtml = sourceUrl
-    ? '<div class="trend-footer"><span><strong>' + escapeHtml(sourceLabel) + '</strong></span><span class="detail-link">元記事を見る ↗</span></div>'
+    ? '<div class="trend-footer"><span><strong>' + escapeHtml(sourceLabel) + '</strong></span><a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noopener noreferrer">元記事を見る ↗</a></div>'
     : '<div class="trend-footer"><span><strong>元記事リンクなし</strong></span><span class="detail-link">リンクなし</span></div>';
-  const bodyHtml = '<div><div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(item)) + '</span><time>' + escapeHtml(formatTopicDisplayTime(item)) + '</time></div><h3>' + escapeHtml(item.title ?? 'ニュース') + '</h3>' + summaryHtml + insightHtml + footerHtml + '</div>';
-  const cardClass = 'trend-card trend-card-rich trend-card-link' + (hasThumbnail ? ' has-thumb' : ' trend-card-no-thumb');
-
-  if (!sourceUrl) {
-    return '<article class="' + cardClass + '" aria-disabled="true">' + thumb + bodyHtml + '</article>';
-  }
-
-  return '<a class="' + cardClass + '" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + thumb + bodyHtml + '</a>';
+  const titleHtml = buildArticleTitleLink(item.title ?? 'ニュース', sourceUrl);
+  const bodyHtml = '<div><div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(item)) + '</span><time>' + escapeHtml(formatTopicDisplayTime(item)) + '</time></div><h3>' + titleHtml + '</h3>' + summaryHtml + insightHtml + footerHtml + renderStorySources(item) + '</div>';
+  const cardClass = 'trend-card trend-card-rich' + (hasThumbnail ? ' has-thumb' : ' trend-card-no-thumb');
+  // Keep native details/summary and publisher anchors outside any outer link.
+  return '<article class="' + cardClass + '">' + thumb + bodyHtml + '</article>';
 }
 
 function renderInsightList(item) {
@@ -199,17 +206,19 @@ function updateRangeTabLabels() {
     const range = RANGE_CONFIG[button.dataset.range];
     if (!range) return;
     const count = getRangeDisplayCount(button.dataset.range);
-    button.textContent = range.label + ' (' + count + ')';
+    button.textContent = range.label + ' (' + count + '話題)';
   });
 }
 
 function getRangeDisplayCount(rangeKey) {
-  return getRangeItems(rangeKey).length;
+  if (!rangeDisplayCountCache.has(rangeKey)) rangeDisplayCountCache.set(rangeKey, groupNewsStories(getRangeItems(rangeKey)).length);
+  return rangeDisplayCountCache.get(rangeKey);
 }
 
 function rebuildDerivedItems({ prepared = false } = {}) {
   dedupedTrendItems = prepared ? trendItems : prepareNewsListItems(trendItems);
   rangeItemsCache.clear();
+  rangeDisplayCountCache.clear();
   normalizedTopicCache.clear();
 }
 
@@ -292,7 +301,7 @@ function renderPagination(totalPages, totalItems, visibleCount = totalItems) {
 
   const rangeStart = (currentPage - 1) * PAGE_SIZE + 1;
   const rangeEnd = rangeStart + visibleCount - 1;
-  const displayStatusText = rangeStart + '〜' + rangeEnd + ' / ' + totalItems + '件';
+  const displayStatusText = rangeStart + '〜' + rangeEnd + ' / ' + totalItems + '話題';
 
   if (archiveActionsElement) {
     archiveActionsElement.innerHTML = '<div class="pagination-row pagination-row-top"><span class="pagination-status">' + displayStatusText + '</span></div>';
@@ -350,91 +359,19 @@ function getArchiveThumbnailUrl(item) {
 }
 
 function getArchiveSourceUrl(item) {
-  const candidates = [
-    item?.sourceUrl,
-    item?.url,
-    item?.link,
-    item?.sourceSignals?.[0]?.canonicalUrl,
-    item?.sourceSignals?.[0]?.url,
-    item?.sourceSignals?.[1]?.canonicalUrl,
-    item?.sourceSignals?.[1]?.url,
-    item?.relatedArticles?.[0]?.url,
-  ];
-
-  const ranked = candidates
-    .map((candidate) => ({
-      url: sanitizeArchiveSourceUrl(candidate),
-      score: scoreArchiveSourceUrl(candidate),
-    }))
-    .filter((candidate) => candidate.url)
-    .sort((left, right) => right.score - left.score);
-
-  return ranked[0]?.url ?? null;
-}
-
-function sanitizeArchiveSourceUrl(value) {
-  const url = String(value ?? '').trim();
-  if (!url || !/^https?:\/\//i.test(url)) return null;
-  if (isLikelyHomepageArchiveUrl(url)) return null;
-  return url;
-}
-
-function scoreArchiveSourceUrl(value) {
-  const url = String(value ?? '').trim();
-  if (!url || !/^https?:\/\//i.test(url)) return -1000;
-  try {
-    const parsed = new URL(url);
-    const path = parsed.pathname.replace(/\/+$/, '') || '/';
-    let score = 0;
-    if (isLikelyHomepageArchiveUrl(url)) score -= 100;
-    else score += 40;
-    if (parsed.hostname.toLowerCase() === 'news.google.com') score -= 120;
-    if (path.split('/').filter(Boolean).length >= 2) score += 16;
-    if (/\d{4}\/\d{2}\/\d{2}|\/article\/|\/articles\/|\/news\/|\/entry\/|\/story\/|\/topics?\//i.test(path)) score += 16;
-    if (/\.(?:html?|amp)$/i.test(path)) score += 8;
-    if (parsed.search) score += 3;
-    return score;
-  } catch {
-    return -1000;
-  }
-}
-
-function isLikelyHomepageArchiveUrl(value) {
-  try {
-    const parsed = new URL(String(value ?? '').trim());
-    const path = parsed.pathname.replace(/\/+$/, '') || '/';
-    return (path === '/' || /^\/(?:index\.(?:html?|php)|home)?$/i.test(path)) && !parsed.search;
-  } catch {
-    return false;
-  }
+  return getNewsArticleSource(item)?.url ?? null;
 }
 
 function getArchiveSourceLabel(item) {
-  return item?.sourceName
-    ?? item?.source
-    ?? item?.sourceSignals?.[0]?.sourceName
-    ?? item?.sourceSignals?.[0]?.source
-    ?? getPrimarySourceLabel(item)
-    ?? '元記事';
+  return getNewsArticleSource(item)?.label ?? '元記事';
 }
 
 function getNormalizedTopicForUi(item) {
-  const cacheKey = topicCacheKey(item);
+  const cacheKey = item;
   if (normalizedTopicCache.has(cacheKey)) return normalizedTopicCache.get(cacheKey);
   const normalized = normalizeTopic(item);
   normalizedTopicCache.set(cacheKey, normalized);
   return normalized;
-}
-
-function topicCacheKey(item) {
-  return item?.id
-    ?? [
-      item?.title ?? '',
-      item?.publishedAt ?? '',
-      item?.capturedAt ?? '',
-      item?.sourceUrl ?? '',
-      item?.sourceSignals?.[0]?.url ?? '',
-    ].join('::');
 }
 
 function isRenderableArchiveItem(item) {

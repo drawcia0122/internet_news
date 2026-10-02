@@ -618,8 +618,204 @@
     return /(アダルト|成人向け|18禁|r-?18|porn|fanza|dlsite|dmm|av女優|アダルトビデオ|同人音声|同人ゲーム|エロ漫画|エロゲ|美少女ゲーム|グラビア|水着|ビキニ|ランジェリー|コスプレ|セクシーショット|美ボディ|美バスト|美尻|谷間|美少女.{0,12}フィギュア|水着.{0,12}フィギュア|セクシー.{0,12}フィギュア)/i.test(text);
   }
 
+  // General-news listings deliberately keep article identity separate from
+  // story similarity. A story is a display wrapper, never a metadata merge.
+  function sanitizeNewsArticleUrl(value) {
+    const raw = String(value ?? '').trim();
+    if (!/^https?:\/\//i.test(raw) || /[\u0000-\u0020\u007f\\]/u.test(raw)) return '';
+    try {
+      const url = new URL(raw);
+      if (!url.hostname || url.username || url.password) return '';
+      const path = decodeURIComponent(url.pathname);
+      const meaningfulParams = [...url.searchParams.keys()].filter((key) => !/^utm_/i.test(key) && !/^(ref|src|from|source|fbclid|gclid|yclid|oc)$/i.test(key));
+      const indexPath = /^\/(?:index\.(?:html?|php)|home)?\/*$/i.test(path);
+      if (indexPath && !meaningfulParams.some((key) => /^(?:p|id|article_id|story_id)$/i.test(key))) return '';
+      if (/^\/(?:search|tags?|categories?|category|news|topics)(?:\.(?:html?|php))?\/*$/i.test(path)) return '';
+      if (meaningfulParams.some((key) => /^(?:q|query|search|s)$/i.test(key)) && /(?:^|\/)search(?:\/|$)/i.test(path)) return '';
+      if (/\.(?:avif|bmp|gif|heic|heif|jpe?g|png|svg|webp|ico|pdf|mp4|m4v|mov|webm|mp3|m4a|wav|ogg|ogv)$/i.test(path)) return '';
+      if (['format', 'fm', 'ext'].some((key) => /^(?:avif|gif|jpe?g|png|svg|webp)$/i.test(url.searchParams.get(key) ?? ''))) return '';
+      return raw;
+    } catch {
+      return '';
+    }
+  }
+
+  function newsArticleUrlKey(value) {
+    const safe = sanitizeNewsArticleUrl(value);
+    if (!safe) return '';
+    const url = new URL(safe);
+    url.hash = '';
+    for (const key of [...url.searchParams.keys()]) {
+      if (/^utm_/i.test(key) || /^(ref|src|from|source|fbclid|gclid|yclid|oc)$/i.test(key)) url.searchParams.delete(key);
+    }
+    url.searchParams.sort();
+    // Paths and meaningful query values are case-sensitive article identity.
+    return url.hostname.toLowerCase().replace(/^www\./, '') + (url.port ? ':' + url.port : '') + url.pathname.replace(/\/$/, '') + url.search;
+  }
+
+  function getNewsArticleSource(item) {
+    const signals = Array.isArray(item?.sourceSignals) ? item.sourceSignals : [];
+    const ownCandidates = [item?.sourceUrl, item?.url, item?.link, item?.primaryLink?.url, item?.canonicalUrl];
+    let url = ownCandidates.map(sanitizeNewsArticleUrl).find(Boolean) ?? '';
+    let signal = null;
+    if (!url) {
+      // A bad/homepage primary URL is not permission to use another cluster
+      // member's destination. A fallback needs this article's exact headline.
+      const titleKey = (value) => String(value ?? '').normalize('NFKC').toLowerCase().replace(/[「」『』“”"\s]/gu, '').trim();
+      const title = titleKey(item?.title);
+      signal = signals.find((value) => title.length >= 12 && titleKey(value?.title) === title && sanitizeNewsArticleUrl(value?.url));
+      url = sanitizeNewsArticleUrl(signal?.url);
+    }
+    if (!url) return null;
+    const key = newsArticleUrlKey(url);
+    signal ??= signals.find((value) => newsArticleUrlKey(value?.url) === key);
+    const host = new URL(url).hostname.toLowerCase().replace(/^www\./, '');
+    const label = String(signal?.sourceName ?? signal?.source ?? item?.sourceName ?? item?.source ?? host).trim() || host;
+    return { url, key, host, label };
+  }
+
+  function dedupeNewsArticles(items) {
+    const seen = new Set();
+    return items.filter((item) => {
+      const source = getNewsArticleSource(item);
+      // Do not use shared titles, generated IDs or a cluster's other signals as
+      // proof that two separate articles are interchangeable.
+      if (!source) return false;
+      if (seen.has(source.key)) return false;
+      seen.add(source.key);
+      return true;
+    });
+  }
+
+  function storyHeadline(item, source) {
+    let title = decodeHtmlEntities(item?.title ?? '').normalize('NFKC').trim();
+    const publisher = String(source?.label ?? '').normalize('NFKC').trim();
+    // Only remove a known publisher label, not arbitrary bracketed qualifiers
+    // such as a person's name, sequel number, region or release stage.
+    if (publisher) {
+      for (const prefix of ['[' + publisher + ']', '【' + publisher + '】']) {
+        if (title.startsWith(prefix)) title = title.slice(prefix.length).trim();
+      }
+      for (const separator of [' - ', ' | ', '｜']) {
+        const suffix = separator + publisher;
+        if (title.endsWith(suffix)) title = title.slice(0, -suffix.length).trim();
+      }
+    }
+    title = title.replace(/^(?:【速報】|\[速報\])\s*/u, '');
+    // Typographic differences and sentence-final announcement inflections are
+    // the only near-match allowance. No bag-of-words/substring similarity:
+    // swapping a name, number, action, or subject/object must remain separate.
+    return title.toLowerCase()
+      .replace(/(?:発表|公開|決定)(?:しました|した)(?=[。.!！]?\s*$)/u, (value) => value.replace(/しました|した/u, ''))
+      .replace(/[「」『』“”‘’"'【】\[\]]/gu, '')
+      .replace(/[〜～]/gu, '~')
+      .replace(/[、,，。.!！\s]+/gu, '')
+      .trim();
+  }
+
+  function storyComparison(item) {
+    const source = getNewsArticleSource(item);
+    const title = storyHeadline(item, source);
+    const original = decodeHtmlEntities(item?.title ?? '').normalize('NFKC');
+    const signals = Array.isArray(item?.sourceSignals) ? item.sourceSignals : [];
+    const signal = signals.find((value) => newsArticleUrlKey(value?.url) === source?.key);
+    const publishedAt = parseTimestamp(item?.publishedAt ?? signal?.publishedAt);
+    const numbers = (original.match(/\d+(?:[.,]\d+)*/g) ?? []).sort().join('|');
+    const recurring = /きょう|今日|本日|あす|明日|今朝|今週|今月|毎日|週間|ランキング|運勢|占い|ニュースまとめ/u.test(title);
+    const eligible = Boolean(source && title.length >= 20 && !recurring);
+    const quoted = [...original.matchAll(/[「『]([^「」『』]+)[」』]/gu)]
+      .map((match) => storyHeadline({ title: match[1] })).filter((value) => value.length >= 12);
+    // A long work name alone is not a story. This secondary path additionally
+    // requires an explicit matching release date and the same release action.
+    const releases = [...original.matchAll(/((?:20\d{2}年)?\d{1,2}月\d{1,2}日)(?:に|より|から)?(?:発売|配信|放送|上映|公開)/gu)]
+      .map((match) => {
+        let action = match[0].match(/発売|配信|放送|上映|公開/u)[0];
+        if (/映画|ドキュメンタリー/u.test(original) && /上映|公開/u.test(action)) action = '映画上映';
+        return match[1] + ':' + action;
+      });
+    const roles = new Map([...original.matchAll(/(主演|監督|著者|声優|演出|脚本|主催|会場)(?:は|の|に|が|[:：・]|\s)*([\p{Script=Han}\p{Script=Katakana}A-Za-z・]{2,20})/gu)]
+      .map((match) => [match[1], match[2]]));
+    for (const match of original.matchAll(/([\p{Script=Han}\p{Script=Katakana}A-Za-z・]{2,20})(?:氏|さん)?(主演|監督|著)/gu)) {
+      roles.set('name-before-' + match[2], match[1]);
+    }
+    const qualifiers = (original.match(/体験版|製品版|リメイク|リマスター|通常版|限定版|特装版|再公開|再上映|再放送|中止|延期|予約|抽選/gu) ?? []).sort().join('|');
+    const keys = eligible && publishedAt ? ['headline:' + title + ':' + numbers] : [];
+    if (eligible && quoted.length === 1 && releases.length === 1 && (publishedAt || /^20\d{2}年/u.test(releases[0]))) {
+      keys.push('release:' + quoted[0] + ':' + releases[0] + ':' + numbers);
+    }
+    const grams = new Set([...title].slice(1).map((_, index) => title.slice(index, index + 2)));
+    return { source, title, publishedAt, numbers, roles, qualifiers, keys, grams };
+  }
+
+  function sameNewsStory(left, right) {
+    if (!left.keys.length || !right.keys.length || left.numbers !== right.numbers) return false;
+    const sameRelease = left.keys.some((key) => key.startsWith('release:') && right.keys.includes(key));
+    if (left.publishedAt && right.publishedAt) {
+      if (Math.abs(left.publishedAt - right.publishedAt) >= 24 * 60 * 60 * 1000) return false;
+    } else if (!sameRelease || !left.keys.some((key) => key.startsWith('release:') && /:20\d{2}年/u.test(key))) {
+      // An absolute release date can identify that scheduled event even in
+      // legacy data missing publication time. Capture time is never substituted.
+      return false;
+    }
+    for (const [role, name] of left.roles) {
+      if (right.roles.has(role) && right.roles.get(role) !== name) return false;
+    }
+    if (left.title === right.title) return true;
+    if (!sameRelease || left.qualifiers !== right.qualifiers) return false;
+    const overlap = [...left.grams].filter((gram) => right.grams.has(gram)).length;
+    return 2 * overlap / (left.grams.size + right.grams.size) >= 0.6;
+  }
+
+  function groupNewsStories(items = []) {
+    const groups = [];
+    const byKey = new Map();
+    const articles = (Array.isArray(items) ? items : []).flatMap((item) => Array.isArray(item?.storyArticles) ? item.storyArticles : [item]);
+    for (const item of dedupeNewsArticles(articles)) {
+      const comparison = storyComparison(item);
+      const candidates = [...new Set(comparison.keys.flatMap((key) => byKey.get(key) ?? []))];
+      // Complete-link evidence and time checks prevent A~B~C chaining. Never
+      // compare only to an evolving representative or combine article fields.
+      let group = candidates.find((candidate) => candidate.comparisons.every((other) => sameNewsStory(other, comparison)));
+      if (group) {
+        group.articles.push(item);
+        group.comparisons.push(comparison);
+      } else {
+        group = { articles: [item], comparisons: [comparison] };
+        groups.push(group);
+      }
+      for (const key of comparison.keys) {
+        const matches = byKey.get(key) ?? [];
+        if (!matches.includes(group)) matches.push(group);
+        byKey.set(key, matches);
+      }
+    }
+    return groups.map(({ articles }) => articles.length > 1
+      ? { ...articles[0], storyArticles: articles }
+      : articles[0]);
+  }
+
+  function newsStoryArticleCount(items = []) {
+    return items.reduce((total, item) => total + (item.storyArticles?.length || 1), 0);
+  }
+
+  function formatNewsStoryCount(items = []) {
+    const articleCount = newsStoryArticleCount(items);
+    return items.length + ' 話題' + (articleCount > items.length ? '・' + articleCount + '記事' : '');
+  }
+
+  function renderStorySources(item) {
+    const articles = Array.isArray(item?.storyArticles) ? item.storyArticles : [];
+    if (articles.length < 2) return '';
+    const sources = articles.map((article) => ({ article, source: getNewsArticleSource(article) })).filter(({ source }) => source);
+    if (sources.length < 2) return '';
+    const publisherCount = new Set(sources.map(({ source }) => source.host)).size;
+    return '<details class="news-story-sources"><summary>同じニュースの記事 ' + sources.length + '件（' + publisherCount + '媒体）</summary>' +
+      '<ul>' + sources.map(({ article, source }, index) => '<li><a href="' + escapeHtml(source.url) + '" target="_blank" rel="noopener noreferrer">' +
+        '<strong>' + escapeHtml(source.label) + (index === 0 ? '（表示中）' : '') + '</strong><span>' + escapeHtml(article.title ?? '') + ' ↗</span></a></li>').join('') + '</ul></details>';
+  }
+
   function prepareNewsListItems(topics) {
-    return dedupeTopics(Array.isArray(topics) ? topics : [])
+    return dedupeNewsArticles(Array.isArray(topics) ? topics : [])
       .map(sanitizeNewsSummaryMarkup)
       .filter((topic) => isGeneralNewsListItem(topic))
       .sort((left, right) => {
@@ -833,6 +1029,11 @@
     normalizeTopic,
     normalizeSummaryMarkup,
     prepareNewsListItems,
+    getNewsArticleSource,
+    groupNewsStories,
+    newsStoryArticleCount,
+    formatNewsStoryCount,
+    renderStorySources,
     sanitizeArticleSummaryCollection,
     getPrimarySourceLabel,
     getPrimarySourceSignal,

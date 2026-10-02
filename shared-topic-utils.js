@@ -816,6 +816,7 @@
 
   function prepareNewsListItems(topics) {
     return dedupeNewsArticles(Array.isArray(topics) ? topics : [])
+      .map(restoreNewsEditorialSections)
       .map(sanitizeNewsSummaryMarkup)
       .filter((topic) => isGeneralNewsListItem(topic))
       .sort((left, right) => {
@@ -823,6 +824,16 @@
         if (timeDiff !== 0) return timeDiff;
         return Number(right?.score ?? 0) - Number(left?.score ?? 0);
       });
+  }
+
+  function restoreNewsEditorialSections(topic) {
+    const categories = normalizeCategories(topic?.categories, topic?.category);
+    const added = (window.ArticleCategoryQuality?.getArticleEditorialSectionCategories(topic) ?? [])
+      .filter((category) => !categories.includes(category));
+    if (!added.length) return topic;
+    const restored = [...categories.filter((category) => category !== 'general'), ...added, ...categories.filter((category) => category === 'general')];
+    return { ...topic, category: restored[0], categories: restored,
+      categoryLabel: categoryLabelFor(restored[0]), categoryLabels: restored.map(categoryLabelFor) };
   }
 
   function isGeneralNewsListItem(topic) {

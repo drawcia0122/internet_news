@@ -158,12 +158,37 @@
     return Number(item.eventScore ?? 0) + Number(item.closingSoonScore ?? 0) + recencyBoost + ongoingBoost + nextBoost + closingBoost;
   }
 
-  function getEventItemsForTab(items, tabKey) {
-    const now = getTodayDate();
+  function isPreferredEventRegion(item) {
+    // Only the event's location is evidence. A title or provider-wide tag can
+    // mention Tokyo even when the actual venue is in another prefecture.
+    return /東京|埼玉|\btokyo\b|\bsaitama\b/i.test(String(item?.location ?? ''));
+  }
+
+  // Use event-level identity, not description/recommendation copy, for type filters.
+  // A Pokémon escape collaboration belongs in both specialist filters, never General.
+  function getEventCategories(item) {
+    const tags = Array.isArray(item?.tags) ? item.tags : [];
+    const text = [item?.title, item?.category, ...tags].filter(Boolean).join(' ').toLowerCase();
+    const sourceName = String(item?.sourceName ?? '').toLowerCase();
+    const categories = [];
+    if (/ポケモン|ポケットモンスター|ポケパーク|pok[eé]mon|pok[eé]park/.test(text)
+      || /ポケットモンスターオフィシャルサイト|pok[eé]park/.test(sourceName)) categories.push('pokemon');
+    if (/脱出ゲーム|リアル脱出|からの脱出|謎解き|謎とき|ナゾトキ|ナゾ解き|escape[- ]+(?:game|room)/i.test(text)
+      || tags.some((tag) => /^(escape|scrap|nazotoki|mystery-solving|脱出)$/i.test(String(tag)))
+      || /^scrap(?:\s*\/|$)|リアル脱出ゲーム/.test(sourceName)) categories.push('escape');
+    return categories.length ? categories : ['general'];
+  }
+
+  function matchesEventCategory(item, categoryKey = 'all') {
+    return categoryKey === 'all' || getEventCategories(item).includes(categoryKey);
+  }
+
+  function getEventItemsForTab(items, tabKey, categoryKey = 'all', now = getTodayDate()) {
     const monthStart = new Date(now.getFullYear(), now.getMonth(), 1);
     const nextMonthStart = new Date(now.getFullYear(), now.getMonth() + 1, 1);
 
     return [...items]
+      .filter((item) => matchesEventCategory(item, categoryKey))
       .filter((item) => {
         if (tabKey === 'ongoing') return isEventOngoing(item, now);
         if (tabKey === 'closingSoon') return isEventClosingSoon(item, now);
@@ -171,7 +196,8 @@
         if (tabKey === 'nextMonth') return eventStartsInMonth(item, nextMonthStart) || (item.tags ?? []).includes('next-month');
         return false;
       })
-      .sort((left, right) => eventSortScore(right, tabKey, now) - eventSortScore(left, tabKey, now));
+      .sort((left, right) => Number(isPreferredEventRegion(right)) - Number(isPreferredEventRegion(left))
+        || eventSortScore(right, tabKey, now) - eventSortScore(left, tabKey, now));
   }
 
   function getEventDaysUntilEnd(item, today = getTodayDate()) {
@@ -197,6 +223,9 @@
     eventStatusLabel,
     formatEventPeriod,
     eventSortScore,
+    isPreferredEventRegion,
+    getEventCategories,
+    matchesEventCategory,
     getEventItemsForTab,
     getEventDaysUntilEnd,
   };

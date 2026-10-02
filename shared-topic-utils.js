@@ -1,5 +1,7 @@
 (function () {
   const GENERIC_TOPIC_TOKENS = new Set(['速報', '公開', '発表', '開始', '決定', '話題', '最新', '本日', 'きょう', '今日', '判明', '疑惑', '意見']);
+  const MAX_CARD_IMAGE_ATTEMPTS = 3;
+  const cardImageAttempts = new WeakMap();
 
   function normalizeTopic(topic, { includeSearchLinks = true } = {}) {
     const safeTopic = window.NewsSummaryIntegrity?.sanitizeArticleSummaryFields(topic) ?? topic;
@@ -197,30 +199,127 @@
 
   function pickCardImageUrl(item) {
     const candidates = [
-      item?.ogImage,
-      item?.twitterImage,
-      item?.thumbnailUrl,
-      item?.thumbnail,
-      item?.imageUrl,
-      item?.image,
-      item?.sourceImage,
-      item?.jsonLdImage,
-      ...(Array.isArray(item?.sourceSignals) ? item.sourceSignals.flatMap((signal) => [
-        signal?.ogImage,
-        signal?.twitterImage,
-        signal?.thumbnailUrl,
-        signal?.thumbnail,
-        signal?.imageUrl,
-        signal?.image,
-        signal?.sourceImage,
-        signal?.jsonLdImage,
-      ]) : []),
+      ...cardImageValues(item),
+      ...(Array.isArray(item?.sourceSignals) ? item.sourceSignals.flatMap(cardImageValues) : []),
     ];
     for (const candidate of candidates) {
       const normalized = sanitizeCardImageUrl(candidate);
       if (normalized) return normalized;
     }
     return null;
+  }
+
+  function cardImageValues(item) {
+    return [item?.ogImage, item?.twitterImage, item?.thumbnailUrl, item?.thumbnail,
+      item?.imageUrl, item?.image, item?.sourceImage, item?.jsonLdImage];
+  }
+
+  function cardImageArticleKeys(item) {
+    return [item?.canonicalUrl, item?.sourceUrl, item?.url, item?.link, item?.primaryLink?.url]
+      .map((value) => {
+        try {
+          const url = new URL(value);
+          if (!/^https?:$/.test(url.protocol)) return '';
+          url.hash = '';
+          for (const key of [...url.searchParams.keys()]) {
+            if (/^utm_/i.test(key) || /^(ref|src|from|source|fbclid|gclid|yclid|oc)$/i.test(key)) url.searchParams.delete(key);
+          }
+          url.searchParams.sort();
+          return url.hostname.replace(/^www\./i, '') + url.pathname.replace(/\/$/, '') + url.search;
+        } catch {
+          return '';
+        }
+      }).filter(Boolean);
+  }
+
+  function uniqueCardImageUrls(values) {
+    const seen = new Set();
+    const result = [];
+    for (const value of values) {
+      const url = sanitizeCardImageUrl(value);
+      if (!url) continue;
+      const key = new URL(url);
+      key.hash = '';
+      if (seen.has(key.href)) continue;
+      seen.add(key.href);
+      result.push(url);
+      if (result.length === MAX_CARD_IMAGE_ATTEMPTS) break;
+    }
+    return result;
+  }
+
+  function getCardImageCandidates(item) {
+    // Preserve the existing primary selection, then stay within its article.
+    const primary = pickCardImageUrl(item);
+    if (!primary) return [];
+    const signals = Array.isArray(item?.sourceSignals) ? item.sourceSignals : [];
+    const ownsPrimary = (value) => cardImageValues(value).some((url) => sanitizeCardImageUrl(url) === primary);
+    const owner = ownsPrimary(item) ? item : signals.find(ownsPrimary);
+    const ownerKeys = new Set(cardImageArticleKeys(owner));
+    const matchingSignals = signals.filter((signal) => signal !== owner
+      && cardImageArticleKeys(signal).some((key) => ownerKeys.has(key)));
+    return uniqueCardImageUrls([primary, ...cardImageValues(owner), ...matchingSignals.flatMap(cardImageValues)]);
+  }
+
+  function buildCardThumbnail(item) {
+    const candidates = getCardImageCandidates(typeof item === 'string' ? { thumbnailUrl: item } : item);
+    if (!candidates.length) return '';
+    const escapeAttribute = (value) => String(value).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const fallbacks = candidates.length > 1
+      ? ' data-thumbnail-fallbacks="' + escapeAttribute(JSON.stringify(candidates.slice(1))) + '"'
+      : '';
+    return '<div class="trend-thumb-wrap"><img class="trend-thumb" src="' + escapeAttribute(candidates[0]) + '"' + fallbacks + ' alt="" loading="lazy" referrerpolicy="no-referrer" /></div>';
+  }
+
+  function buildArticleTitleLink(title, sourceUrl) {
+    const escape = (value) => String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    const text = escape(title);
+    try {
+      const url = new URL(String(sourceUrl ?? '').trim());
+      if (!/^https?:$/.test(url.protocol)) return text;
+      // Old feed data can contain an image/media URL in the article-link field.
+      const path = decodeURIComponent(url.pathname);
+      if (/\.(?:avif|bmp|gif|heic|heif|jpe?g|png|svg|webp|ico|pdf|mp4|m4v|mov|webm|mp3|m4a|wav|ogg|ogv)$/i.test(path)) return text;
+      if (['format', 'fm', 'ext'].some((key) => /^(?:avif|gif|jpe?g|png|svg|webp)$/i.test(url.searchParams.get(key) ?? ''))) return text;
+      return '<a class="article-title-link" href="' + escape(url.href) + '" target="_blank" rel="noreferrer noopener">' + text + '</a>';
+    } catch {
+      return text;
+    }
+  }
+
+  function handleCardImageError(event) {
+    const image = event.target;
+    if (!(image instanceof HTMLImageElement) || !image.classList.contains('trend-thumb')) return;
+    // Ignore duplicate/stale errors while the replacement is loading or after success.
+    if (image.isConnected === false || !image.complete || image.naturalWidth > 0) return;
+    if (image.currentSrc && image.currentSrc !== image.src) return;
+    const wrapper = image.closest('.trend-thumb-wrap');
+    if (!wrapper) return;
+    let state = cardImageAttempts.get(image);
+    if (!state) {
+      let fallbacks = [];
+      try {
+        const parsed = JSON.parse(image.getAttribute('data-thumbnail-fallbacks') ?? '[]');
+        if (Array.isArray(parsed)) fallbacks = parsed;
+      } catch { /* Malformed cached markup degrades to the no-image layout. */ }
+      const candidates = uniqueCardImageUrls([image.src, ...fallbacks]);
+      state = { remaining: candidates.filter((url) => new URL(url).href !== image.src), attempts: 1, finished: false };
+      cardImageAttempts.set(image, state);
+      image.removeAttribute('data-thumbnail-fallbacks');
+    }
+    if (state.finished) return;
+    if (state.remaining.length && state.attempts < MAX_CARD_IMAGE_ATTEMPTS) {
+      state.attempts += 1;
+      image.src = state.remaining.shift();
+      return;
+    }
+    state.finished = true;
+    const card = wrapper.closest('.trend-card, .topic-cluster-card, .priority-card, .must-read-card-shell');
+    if (card) {
+      card.classList.remove('has-thumb');
+      card.classList.add('trend-card-no-thumb');
+    }
+    wrapper.remove();
   }
 
   function isProxyThumbnailUrl(url) {
@@ -712,6 +811,8 @@
     buildGoogleNewsUrl,
     buildTargetAudience,
     buildWhyHotLabel,
+    buildCardThumbnail,
+    buildArticleTitleLink,
     categoryDisplayLabel,
     categoryLabelFor,
     createArticleIdentitySet,
@@ -736,6 +837,8 @@
     getPrimarySourceLabel,
     getPrimarySourceSignal,
     getPrimarySourceUrl,
+    getCardImageCandidates,
+    handleCardImageError,
     isWeakThumbnailUrl,
     pickCardImageUrl,
     shortEventFromTitle,

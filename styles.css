@@ -1067,6 +1067,25 @@ a {
   text-decoration: none;
 }
 
+.article-title-link {
+  display: block;
+  min-height: 44px;
+  align-content: center;
+  color: inherit;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.article-title-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.article-title-link:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
 [hidden] {
   display: none !important;
 }
@@ -4819,5 +4838,45 @@ footer {
 
   .game-home-stats {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Featured-event type and period filters are independent, with General first. */
+.event-category-tabs {
+  margin-bottom: 0;
+}
+
+.event-period-tabs {
+  margin-bottom: 0;
+}
+
+.event-period-tabs button {
+  padding: 9px 13px;
+  font-size: 12px;
+}
+
+.event-filter-status {
+  margin: -4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.event-tabs button:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
+@media (max-width: 620px) {
+  .event-category-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
+  }
+
+  .event-category-tabs button {
+    min-width: 0;
+    justify-content: space-between;
+    padding: 10px 12px;
+    font-size: 12px;
   }
 }

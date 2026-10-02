@@ -1,6 +1,7 @@
 (function gameDashboard() {
   const {
     archiveTimestamp,
+    buildArticleTitleLink,
     buildGoogleNewsUrl,
     dedupeTopics,
     escapeHtml,
@@ -330,7 +331,7 @@
             <span class="game-card-badge">${escapeHtml(item.label)}</span>
             <span class="game-card-meta">${escapeHtml(item.meta)}</span>
           </div>
-          <h3>${escapeHtml(item.title)}</h3>
+          <h3>${buildArticleTitleLink(item.title, item.url)}</h3>
           <p class="game-card-summary">${escapeHtml(item.summary)}</p>
           <div class="game-home-inline-facts">${renderFactPills(item.facts || [])}</div>
           <a class="game-card-link" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.cta || '確認する ↗')}</a>
@@ -352,7 +353,7 @@
           <div class="game-card-top">
             <span class="game-card-meta">${escapeHtml(item.evidenceLabel)}</span>
           </div>
-          <h3>${escapeHtml(item.title)}</h3>
+          <h3>${buildArticleTitleLink(item.title, item.url)}</h3>
           <p class="game-card-summary">${escapeHtml(item.summary)}</p>
           <div class="game-home-tag-row">${renderTagPills(item.tags)}</div>
           <div class="game-home-inline-facts">${renderFactPills(item.facts)}</div>
@@ -376,7 +377,7 @@
             <span class="game-card-badge">${escapeHtml(item.store)}</span>
             <span class="game-card-meta">${escapeHtml(item.endsAtLabel || '期限確認中')}</span>
           </div>
-          <h3>${escapeHtml(item.title)}</h3>
+          <h3>${buildArticleTitleLink(item.title, item.url)}</h3>
           <p class="game-card-summary">${escapeHtml(item.summary)}</p>
           <div class="game-home-inline-facts">${renderFactPills([
             item.endsAtLabel ? `配布終了 ${item.endsAtLabel}` : '終了時刻確認中',
@@ -402,7 +403,7 @@
             <span class="game-card-badge">${escapeHtml(item.priorityLabel)}</span>
             <span class="game-card-meta">${escapeHtml(item.discount || '割引率確認中')}</span>
           </div>
-          <h3>${escapeHtml(item.title)}</h3>
+          <h3>${buildArticleTitleLink(item.title, item.url)}</h3>
           <p class="game-card-summary">${escapeHtml(item.summary)}</p>
           <div class="game-home-inline-facts">${renderFactPills([
             item.price ? `価格 ${item.price}` : '価格は記事内で確認',
@@ -428,7 +429,7 @@
             <span class="game-card-badge">${escapeHtml(item.label)}</span>
             <span class="game-card-meta">${escapeHtml(item.sourceLabel)}</span>
           </div>
-          <h3>${escapeHtml(item.title)}</h3>
+          <h3>${buildArticleTitleLink(item.title, item.url)}</h3>
           <p class="game-card-summary">${escapeHtml(item.summary)}</p>
           <div class="game-home-inline-facts">${renderFactPills([
             item.gameTitle,
@@ -451,7 +452,7 @@
       <article class="game-news-row" data-game-search="${escapeHtml(searchIndexText(item.gameTitle, item.title, item.summary))}">
         <div class="game-news-row-main">
           <span class="game-news-row-game">${escapeHtml(item.gameTitle)}</span>
-          <h3>${escapeHtml(item.title)}</h3>
+          <h3>${buildArticleTitleLink(item.title, item.url)}</h3>
           <p>${escapeHtml(item.summary)}</p>
         </div>
         <div class="game-news-row-side">

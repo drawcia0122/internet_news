@@ -2,7 +2,10 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { resolveThumbnail, sanitizeThumbnailUrl, extractEncodedUrlsFromHtml, isWeakThumbnailUrl, hasSuspiciousThumbnailMismatch, isAggregatorThumbnailUrl, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
+import { resolveThumbnail, sanitizeThumbnailUrl, readImageTagAttributes, isWeakThumbnailUrl, hasSuspiciousThumbnailMismatch, isAggregatorThumbnailUrl, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
+
+import "../news-summary-integrity.js";
+const { canonicalArticleUrl, titlesReferToSameArticle } = globalThis.NewsSummaryIntegrity;
 
 const DEFAULT_DATA_FILES = [
   "data/news-archive.json",
@@ -41,7 +44,8 @@ export async function repairThumbnails(selectedFiles = []) {
     await mapWithConcurrency(targets, CONCURRENCY, async (item) => {
       const repairedItem = await repairItemThumbnail(item);
       if (!repairedItem) {
-        clearInvalidThumbnail(item);
+        // A transient publisher failure must not erase an otherwise usable image.
+        if (!sanitizeThumbnailUrl(item.thumbnailUrl)) clearInvalidThumbnail(item);
         failed += 1;
         return;
       }
@@ -52,13 +56,82 @@ export async function repairThumbnails(selectedFiles = []) {
     await fs.writeFile(absoluteFile, `${JSON.stringify(payload, null, 2)}\n`);
     console.log(`${relativeFile}: repaired=${repaired} failed=${failed} total=${targets.length}`);
   }
+  const archiveFile = dataFiles.find((file) => path.basename(file) === "news-archive.json");
+  if (archiveFile) await synchronizeThumbnailConsumers(path.dirname(path.resolve(archiveFile)));
 }
 
-export async function repairItemThumbnail(item) {
-  const thumbnailUrl = await resolveBestThumbnail(item);
-  if (!thumbnailUrl) return null;
-  applyThumbnail(item, thumbnailUrl);
-  return thumbnailUrl;
+// Home/news pages are generated before the final repair stage. Copy only thumbnail
+// fields for the exact same article, keeping order, pagination, dates and categories.
+export async function synchronizeThumbnailConsumers(dataDirectory = path.resolve("data")) {
+  const archive = JSON.parse(await fs.readFile(path.join(dataDirectory, "news-archive.json"), "utf8"));
+  const byId = new Map((archive.items || []).map((item) => [item.id, item]));
+  const files = (await fs.readdir(dataDirectory)).filter((name) => /^home-news(?:-page-\d+)?\.json$/.test(name));
+  let updated = 0;
+  for (const file of files) {
+    const filename = path.join(dataDirectory, file);
+    const payload = JSON.parse(await fs.readFile(filename, "utf8"));
+    let changed = false;
+    const changes = restoreArchivedThumbnails(payload.items || [], [...byId.values()]);
+    updated += changes;
+    changed = changes > 0;
+    if (changed) await fs.writeFile(filename, `${JSON.stringify(payload, null, 2)}\n`);
+  }
+  console.log(`[thumbnail:sync] consumers updated=${updated}`);
+  return updated;
+}
+
+export function restoreArchivedThumbnails(items, archivedItems) {
+  const byId = new Map(archivedItems.map((item) => [item.id, item]));
+  let updated = 0;
+  for (const item of items) {
+    const repaired = byId.get(item.id);
+    if (!repaired || !sameArticle(item, repaired)) continue;
+    let changed = false;
+    const shouldRestore = (current, previous) => {
+      const saved = sanitizeThumbnailUrl(previous);
+      const active = sanitizeThumbnailUrl(current);
+      return saved && saved !== active && (!active || (isLowResolutionThumbnailUrl(active) && !isLowResolutionThumbnailUrl(saved)));
+    };
+    const thumbnailUrl = sanitizeThumbnailUrl(repaired.thumbnailUrl);
+    // An already usable new-feed image remains authoritative.
+    if (shouldRestore(item.thumbnailUrl, thumbnailUrl)) {
+      item.thumbnailUrl = thumbnailUrl;
+      if (Object.hasOwn(item, "thumbnail")) item.thumbnail = thumbnailUrl;
+      changed = true;
+    }
+    for (const signal of item.sourceSignals || []) {
+      const repairedSignal = (repaired.sourceSignals || []).find((candidate) => sameArticle(signal, candidate));
+      const signalImage = sanitizeThumbnailUrl(repairedSignal?.thumbnailUrl);
+      if (shouldRestore(signal.thumbnailUrl, signalImage)) {
+        signal.thumbnailUrl = signalImage;
+        if (Object.hasOwn(signal, "thumbnail")) signal.thumbnail = signalImage;
+        changed = true;
+      }
+    }
+    if (changed) updated += 1;
+  }
+  return updated;
+}
+
+function directArticleKeys(item) {
+  const direct = [item?.sourceUrl, item?.canonicalUrl, item?.url, item?.link, item?.primaryLink?.url].filter(Boolean);
+  if (direct.length) return direct.map(canonicalArticleUrl);
+  // Raw trend-archive topics only store URLs in signals. Pick the matching
+  // primary article, not every related article in the cluster.
+  const primary = (item?.sourceSignals || []).find((signal) => titlesReferToSameArticle(item?.title, signal?.title));
+  return [primary?.canonicalUrl, primary?.url].filter(Boolean).map(canonicalArticleUrl);
+}
+
+function sameArticle(left, right) {
+  const rightKeys = new Set(directArticleKeys(right));
+  return directArticleKeys(left).some((key) => rightKeys.has(key));
+}
+
+export async function repairItemThumbnail(item, { fetchHtml = fetchPageHtml } = {}) {
+  const resolved = await resolveBestThumbnail(item, fetchHtml);
+  if (!resolved) return null;
+  applyThumbnail(item, resolved.thumbnailUrl, resolved.sourceUrl);
+  return resolved.thumbnailUrl;
 }
 
 function needsThumbnailRepair(item, duplicateThumbnailUrls = new Set()) {
@@ -77,21 +150,28 @@ function needsThumbnailRepair(item, duplicateThumbnailUrls = new Set()) {
   });
 }
 
-async function resolveBestThumbnail(item) {
-  for (const sourceUrl of candidateSourceUrls(item)) {
-    const html = await fetchPageHtml(sourceUrl);
+async function resolveBestThumbnail(item, fetchHtml) {
+  for (const sourceUrl of candidateSourceUrls(item).slice(0, 4)) {
+    // An asset accidentally saved as an article URL is not HTML or new provenance.
+    if (/\.(?:jpe?g|png|gif|webp|avif)(?:[?#]|$)/i.test(sourceUrl)) continue;
+    const html = await fetchHtml(sourceUrl);
     if (!html) continue;
-    const directThumbnailUrl = await resolveThumbnailFromHtml(html, sourceUrl);
-    if (directThumbnailUrl) return directThumbnailUrl;
-
-    for (const nestedUrl of extractNestedArticleUrls(html, sourceUrl)) {
-      const nestedHtml = await fetchPageHtml(nestedUrl);
-      if (!nestedHtml) continue;
-      const nestedThumbnailUrl = await resolveThumbnailFromHtml(nestedHtml, nestedUrl);
-      if (nestedThumbnailUrl) return nestedThumbnailUrl;
-    }
+    const pageTitle = extractPageTitle(html);
+    const sourceTitle = (item.sourceSignals || []).find((signal) => sameArticle(signal, { url: sourceUrl }))?.title || item.title;
+    if (pageTitle && !titlesReferToSameArticle(pageTitle, sourceTitle)) continue;
+    const thumbnailUrl = await resolveThumbnailFromHtml(html, sourceUrl);
+    if (thumbnailUrl) return { thumbnailUrl, sourceUrl };
+    // Never scrape unrelated outbound stories to fill a missing thumbnail.
   }
   return null;
+}
+
+function extractPageTitle(html) {
+  for (const match of String(html).matchAll(/<meta\b[^>]*>/gi)) {
+    const attrs = readImageTagAttributes(match[0]);
+    if ((attrs.property || attrs.name || "").toLowerCase() === "og:title") return attrs.content || "";
+  }
+  return String(html).match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || "";
 }
 
 async function resolveThumbnailFromHtml(html, sourceUrl) {
@@ -110,11 +190,13 @@ async function resolveThumbnailFromHtml(html, sourceUrl) {
 
 function candidateSourceUrls(item) {
   const values = [
-    ...(Array.isArray(item?.sourceSignals) ? item.sourceSignals.map((signal) => signal?.url) : []),
-    item?.primaryLink?.url,
     item?.sourceUrl,
     item?.url,
     item?.link,
+    item?.primaryLink?.url,
+    ...(Array.isArray(item?.sourceSignals) ? item.sourceSignals
+      .filter((signal) => sameArticle(item, signal) || titlesReferToSameArticle(item.title, signal.title))
+      .map((signal) => signal?.url) : []),
   ].map((value) => String(value ?? "").trim()).filter(Boolean);
 
   const unique = [...new Set(values)];
@@ -125,41 +207,6 @@ function candidateSourceUrls(item) {
 
 function isAggregatorUrl(value) {
   return /news\.yahoo\.co\.jp|news\.google\.com|b\.hatena\.ne\.jp/i.test(String(value ?? ""));
-}
-
-function extractNestedArticleUrls(html, baseUrl) {
-  const rawUrls = new Set();
-  for (const match of String(html ?? "").matchAll(/https?:\/\/[^"'\\\s<>()]+/g)) {
-    rawUrls.add(match[0]);
-  }
-  for (const url of extractEncodedUrlsFromHtml(html)) {
-    rawUrls.add(url);
-  }
-
-  return [...rawUrls]
-    .map((value) => {
-      try {
-        return new URL(value, baseUrl).toString();
-      } catch {
-        return "";
-      }
-    })
-    .filter(Boolean)
-    .filter((value) => !isAggregatorUrl(value))
-    .filter((value) => !/support\.x\.com\/articles\/|anond\.hatelabo\.jp\/assets\/|b\.st-hatena\.com\/images\/entry-button\/|(?:img\.cf\.)?47news\.jp\/static\/|tagger\.opecloud\.com\/mediaconsortium\//i.test(value))
-    .filter((value) => !/\.(?:png|jpe?g|webp|gif|svg)(?:$|[?#])/i.test(value))
-    .sort((left, right) => scoreArticleUrl(right) - scoreArticleUrl(left))
-    .slice(0, 12);
-}
-
-function scoreArticleUrl(url) {
-  const value = String(url ?? "").toLowerCase();
-  let score = 0;
-  if (/\/article\/|\/articles\/|\/news\/|\/games\/|\/entertainment\/|\/anime\//.test(value)) score += 40;
-  if (/4gamer|gamespark|inside-games|animeanime|denfaminicogamer|nhk|nikkei|asahi|yahoo/.test(value)) score += 30;
-  if (/news\.yahoo\.co\.jp\/articles\//.test(value)) score += 60;
-  if (/[\w-]+\.(?:co\.jp|jp)\//.test(value)) score += 10;
-  return score;
 }
 
 async function fetchPageHtml(url) {
@@ -175,6 +222,8 @@ async function fetchPageHtml(url) {
       signal: controller.signal,
     });
     if (!response.ok) return "";
+    const contentType = response.headers.get("content-type") || "";
+    if (contentType && !/text\/html|application\/xhtml\+xml/i.test(contentType)) return "";
     return await response.text();
   } catch {
     return "";
@@ -183,12 +232,12 @@ async function fetchPageHtml(url) {
   }
 }
 
-function applyThumbnail(item, thumbnailUrl) {
+function applyThumbnail(item, thumbnailUrl, sourceUrl) {
   item.thumbnail = thumbnailUrl;
   item.thumbnailUrl = thumbnailUrl;
   if (!Array.isArray(item.sourceSignals)) return;
   for (const signal of item.sourceSignals) {
-    if (!signal) continue;
+    if (!signal || !sameArticle(signal, { url: sourceUrl })) continue;
     if (!sanitizeThumbnailUrl(signal.thumbnailUrl) || isWeakThumbnailUrl(signal.thumbnailUrl) || isLowResolutionThumbnailUrl(signal.thumbnailUrl) || hasSuspiciousThumbnailMismatch(signal.thumbnailUrl, signal, item)) {
       signal.thumbnailUrl = thumbnailUrl;
       signal.thumbnail = thumbnailUrl;
@@ -201,7 +250,7 @@ function clearInvalidThumbnail(item) {
   item.thumbnailUrl = null;
   if (!Array.isArray(item.sourceSignals)) return;
   for (const signal of item.sourceSignals) {
-    if (!signal) continue;
+    if (!signal || sanitizeThumbnailUrl(signal.thumbnailUrl)) continue;
     signal.thumbnail = null;
     signal.thumbnailUrl = null;
   }

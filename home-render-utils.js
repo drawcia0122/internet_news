@@ -1,7 +1,6 @@
 (function attachHomeRenderUtils(global) {
-  function buildTrendCardThumb(thumbnailUrl, { escapeHtml, isWeakThumbnailUrl } = {}) {
-    if (!thumbnailUrl || isWeakThumbnailUrl?.(thumbnailUrl)) return '';
-    return '<div class="trend-thumb-wrap"><img class="trend-thumb" src="' + escapeHtml(thumbnailUrl) + '" alt="" loading="lazy" referrerpolicy="no-referrer" /></div>';
+  function buildTrendCardThumb(item, { buildCardThumbnail } = {}) {
+    return buildCardThumbnail(item);
   }
 
   function renderTrendReasonList(trend, { escapeHtml, shortEventFromTitle, buildWhyHotLabel } = {}) {
@@ -230,6 +229,7 @@
 
   function renderTopicClusterCard(topic, options = {}, deps = {}) {
     const {
+      buildArticleTitleLink,
       escapeHtml,
       getPrimarySourceUrl,
       getPrimarySourceLabel,
@@ -244,7 +244,7 @@
     const sourceUrl = getPrimarySourceUrl(topic);
     const sourceLabel = getPrimarySourceLabel(topic);
     const representativeSource = selectRepresentativeSource(topic, { getPrimarySourceUrl, getPrimarySourceLabel });
-    const thumbnail = topic.thumbnailUrl ? buildTrendCardThumb(topic.thumbnailUrl, deps) : '';
+    const thumbnail = topic.thumbnailUrl ? buildTrendCardThumb(topic, deps) : '';
     const summary = buildTopicCardSummary(topic, { shortEventFromTitle, trimMetaText });
     const reasonRows = buildTopicCardReasonRows({
       summary,
@@ -267,7 +267,7 @@
       'topic-cluster-shell',
       isCompact ? 'topic-cluster-card-compact topic-cluster-card-channel' : '',
       options.featured ? 'topic-cluster-card-featured' : '',
-      topic.thumbnailUrl ? 'has-thumb' : 'trend-card-no-thumb',
+      thumbnail ? 'has-thumb' : 'trend-card-no-thumb',
     ].filter(Boolean).join(' ');
 
     if (options.featured) {
@@ -275,7 +275,7 @@
           thumbnail +
           '<div class="topic-cluster-top"><span>' + escapeHtml(options.badge ?? 'TOPIC') + '</span><strong>' + escapeHtml(String(scoreValue)) + '</strong></div>' +
           '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(formatTopicDisplayTime(topic)) + '</time></div>' +
-          '<h3>' + escapeHtml(topic.title ?? '話題') + '</h3>' +
+          '<h3>' + buildArticleTitleLink(topic.title ?? '話題', representativeSource?.url) + '</h3>' +
           '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
           renderReasonRows(reasonRows, { escapeHtml }) +
           renderVerificationMeta(verificationLabels, { escapeHtml }) +
@@ -289,7 +289,7 @@
         '<div class="topic-cluster-body topic-cluster-body-channel">' +
           '<div class="topic-cluster-top"><span>' + escapeHtml(options.badge ?? 'TOPIC') + '</span><strong>' + escapeHtml(String(scoreValue)) + '</strong></div>' +
           '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(formatTopicDisplayTime(topic)) + '</time></div>' +
-          '<h3>' + escapeHtml(topic.title ?? '話題') + '</h3>' +
+          '<h3>' + buildArticleTitleLink(topic.title ?? '話題', sourceUrl) + '</h3>' +
           '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
           '<dl class="trend-reason-list trend-reason-list-compact">' +
             '<div><dt>なぜ話題？</dt><dd>' + escapeHtml(topic.whyHot ?? buildWhyHotLabel(topic)) + '</dd></div>' +
@@ -306,7 +306,7 @@
       '<div class="topic-cluster-body">' +
         '<div class="topic-cluster-top"><span>' + escapeHtml(options.badge ?? 'TOPIC') + '</span><strong>' + escapeHtml(String(scoreValue)) + '</strong></div>' +
         '<div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(topic)) + '</span><time>' + escapeHtml(formatTopicDisplayTime(topic)) + '</time></div>' +
-        '<h3>' + escapeHtml(topic.title ?? '話題') + '</h3>' +
+        '<h3>' + buildArticleTitleLink(topic.title ?? '話題', sourceUrl) + '</h3>' +
         '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
         '<dl class="trend-reason-list">' +
           '<div><dt>なぜ話題？</dt><dd>' + escapeHtml(topic.whyHot ?? buildWhyHotLabel(topic)) + '</dd></div>' +
@@ -320,8 +320,8 @@
   }
 
   function renderBriefCard(item, index, options = {}, deps = {}) {
-    const { escapeHtml, formatBriefTimelineTime, sanitizeBriefSummaryText } = deps;
-    const thumbnail = item.thumbnailUrl ? buildTrendCardThumb(item.thumbnailUrl, deps) : '';
+    const { buildArticleTitleLink, escapeHtml, formatBriefTimelineTime, sanitizeBriefSummaryText } = deps;
+    const thumbnail = item.thumbnailUrl ? buildTrendCardThumb(item, deps) : '';
     const sourceUrl = item.primaryLink?.url ?? '';
     const sourceLabel = item.primaryLink?.label ?? item.categoryLabel ?? '元記事';
     const summary = sanitizeBriefSummaryText(item.thirtySecondSummary ?? item.watchpoints ?? '重要ニュースを整理中です。');
@@ -329,7 +329,7 @@
       thumbnail +
       '<div class="topic-cluster-top"><span>' + escapeHtml(options.badge ?? 'NEWS') + '</span><strong>' + escapeHtml(item.categoryLabel ?? 'その他') + '</strong></div>' +
       '<div class="trend-meta"><span>' + escapeHtml(item.categoryLabel ?? 'その他') + '</span><time>' + escapeHtml(item.publishedLabel ?? formatBriefTimelineTime(item.publishedAt)) + '</time></div>' +
-      '<h3>' + escapeHtml(item.title ?? 'ニュース') + '</h3>' +
+      '<h3>' + buildArticleTitleLink(item.title ?? 'ニュース', sourceUrl) + '</h3>' +
       '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
       '<div class="trend-footer"><span><strong>' + escapeHtml(sourceLabel) + '</strong></span>' + (sourceUrl ? '<a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">元記事を見る ↗</a>' : '<span class="detail-link">リンクなし</span>') + '</div>' +
     '</article>';
@@ -357,11 +357,11 @@
   }
 
   function renderPriorityCard(topic, index, options = {}, deps = {}) {
-    const { escapeHtml, getPrimarySourceUrl, getPrimarySourceLabel, shortEventFromTitle, buildImportantPoint } = deps;
+    const { buildArticleTitleLink, escapeHtml, getPrimarySourceUrl, getPrimarySourceLabel, shortEventFromTitle, buildImportantPoint } = deps;
     const sourceUrl = getPrimarySourceUrl(topic);
     const sourceLabel = getPrimarySourceLabel(topic);
     const reasons = (topic.personalReasons ?? topic.hotReasons ?? []).slice(0, 2);
-    const thumb = topic.thumbnailUrl ? buildTrendCardThumb(topic.thumbnailUrl, deps) : '';
+    const thumb = topic.thumbnailUrl ? buildTrendCardThumb(topic, deps) : '';
     const summary = topic.whatHappened ?? shortEventFromTitle(topic.title);
     const personalReason = topic.importantPoint ?? buildImportantPoint(topic);
     const reasonHtml = isRedundantPriorityReason(summary, personalReason)
@@ -373,7 +373,7 @@
     return '<article class="priority-card" style="animation-delay:' + (index * 55) + 'ms">' +
       thumb +
       '<div class="priority-card-top"><span>' + escapeHtml(options.badge) + '</span><strong>' + escapeHtml(priorityLabel) + '</strong></div>' +
-      '<h3>' + escapeHtml(topic.title ?? 'ニュース') + '</h3>' +
+      '<h3>' + buildArticleTitleLink(topic.title ?? 'ニュース', sourceUrl) + '</h3>' +
       '<p class="priority-summary">' + escapeHtml(summary) + '</p>' +
       reasonHtml +
       '<div class="priority-chip-row">' + (sourceUrl ? '<a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a>' : '<span class="detail-link">リンクなし</span>') + '</div>' +

@@ -1,6 +1,11 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 import { EVENT_SOURCE_CANDIDATES } from "../config/event-sources.mjs";
+import {
+  PARCO_ART_SOURCE, PARCO_CAFE_SOURCE, MIRAIKAN_SOURCE,
+  extractParcoArtItems, extractParcoCafeItems, selectMiraikanEntries, buildMiraikanItem,
+  collectSourcesWithFallback, balanceEventsBySource, isPureSalesCampaign, japanToday, isEventInCollectionWindow,
+} from "../lib/event-source-utils.mjs";
 
 const EVENTS_PATH = "data/events.json";
 const MAX_EVENT_ITEMS = 64;
@@ -12,16 +17,23 @@ const AUTO_MANAGED_SOURCES = new Set([
   "PokéPark KANTO",
   "ポケットモンスターオフィシャルサイト",
   "よみうりランド",
+  PARCO_ART_SOURCE.name,
+  PARCO_CAFE_SOURCE.name,
+  MIRAIKAN_SOURCE.name,
 ]);
-const TODAY = new Date();
-TODAY.setHours(0, 0, 0, 0);
+const TODAY_VALUE = japanToday();
+// Date objects here are calendar arithmetic in the runner's zone, not instants.
+// Both endpoints use that same zone; the calendar day itself is always Japan's.
+const TODAY = new Date(`${TODAY_VALUE}T00:00:00`);
 const UPCOMING_WINDOW_DAYS = 75;
 const STALE_START_WINDOW_DAYS = 180;
 const fetchedAt = new Date().toISOString();
 const currentPayload = await readJson(EVENTS_PATH, { items: [] });
-const manualItems = (Array.isArray(currentPayload?.items) ? currentPayload.items : [])
+const previousItems = Array.isArray(currentPayload?.items) ? currentPayload.items : [];
+const manualItems = previousItems
   .filter((item) => !AUTO_MANAGED_SOURCES.has(String(item?.sourceName ?? "")));
-const autoItems = await collectAutoEventItems();
+const collection = await collectAutoEventItems();
+const autoItems = collection.items;
 const mergedItems = mergeEventItems(autoItems, manualItems);
 
 const nextPayload = {
@@ -34,42 +46,69 @@ const nextPayload = {
       url,
     }))
   ),
-  items: limitEventsPerSource(
+  sourceDiagnostics: collection.diagnostics,
+  items: balanceEventsBySource(
     mergedItems
       .filter(isEventRelevantWindow)
+      .filter((item) => item.sourceName !== "よみうりランド" || !isPureSalesCampaign(item.title))
       .sort((left, right) => collectionEventScore(right) - collectionEventScore(left) || compareEventFreshness(left, right)),
+    MAX_EVENT_ITEMS,
     MAX_PER_SOURCE,
-  ).slice(0, MAX_EVENT_ITEMS),
+  ),
 };
 
-await mkdir("data", { recursive: true });
-await writeFile(EVENTS_PATH, `${JSON.stringify(nextPayload, null, 2)}\n`, "utf8");
+if (collection.allFailed) {
+  if (!previousItems.length) throw new Error("No event source succeeded and no previous snapshot exists");
+  console.warn("[events] all sources failed; keeping data/events.json unchanged");
+} else {
+  await mkdir("data", { recursive: true });
+  await writeFile(EVENTS_PATH, `${JSON.stringify(nextPayload, null, 2)}\n`, "utf8");
 
-console.log(`Saved ${nextPayload.items.length} event item(s).`);
-console.log(`Collected ${autoItems.length} auto event item(s).`);
-console.log(`Registered ${nextPayload.sourceCandidates.length} event source candidate(s).`);
+  console.log(`Saved ${nextPayload.items.length} event item(s).`);
+  console.log(`Collected ${autoItems.length} auto event item(s).`);
+  console.log(`Registered ${nextPayload.sourceCandidates.length} event source candidate(s).`);
+}
 
 async function collectAutoEventItems() {
-  const tasks = [
-    fetchAnimateOnlyShopItems(),
-    fetchAnimateGratteItems(),
-    fetchPokeparkItems(),
-    fetchPokemonOfficialItems(),
-    fetchYomiuriItems(),
-    fetchScrapItems(),
+  const sources = [
+    { name: "アニメイト オンリーショップ", collect: fetchAnimateOnlyShopItems },
+    { name: "アニメイト Gratte", collect: fetchAnimateGratteItems },
+    { name: "PokéPark KANTO", collect: fetchPokeparkItems },
+    { name: "ポケットモンスターオフィシャルサイト", collect: fetchPokemonOfficialItems },
+    { name: "よみうりランド", collect: fetchYomiuriItems },
+    { name: "SCRAP / リアル脱出ゲーム", collect: fetchScrapItems },
+    { name: PARCO_ART_SOURCE.name, collect: async () => extractParcoArtItems(await fetchText(PARCO_ART_SOURCE.url)) },
+    { name: PARCO_CAFE_SOURCE.name, collect: async () => extractParcoCafeItems(await fetchText(PARCO_CAFE_SOURCE.url)) },
+    { name: MIRAIKAN_SOURCE.name, collect: fetchMiraikanItems, allowEmpty: true },
   ];
-  const settled = await Promise.allSettled(tasks);
-  const items = [];
-
-  for (const result of settled) {
-    if (result.status === "fulfilled") {
-      items.push(...result.value);
-      continue;
+  const result = await collectSourcesWithFallback(sources, previousItems, { normalize: normalizeEventItem, checkedAt: fetchedAt });
+  for (const diagnostic of result.diagnostics) {
+    if (diagnostic.status === "failed") {
+      console.warn(`[events] ${diagnostic.name} failed; preserved ${diagnostic.preserved}: ${diagnostic.error}`);
+    } else {
+      console.log(`[events] ${diagnostic.name}: ${diagnostic.collected} collected`);
     }
-    console.warn(`[events] source failed: ${result.reason?.message ?? result.reason}`);
   }
+  return result;
+}
 
-  return items.map((item) => normalizeEventItem(item)).filter(Boolean);
+async function fetchMiraikanItems() {
+  const today = TODAY_VALUE;
+  const lastDay = new Date(`${today}T00:00:00Z`);
+  lastDay.setUTCDate(lastDay.getUTCDate() + UPCOMING_WINDOW_DAYS);
+  const years = [...new Set([Number(today.slice(0, 4)), lastDay.getUTCFullYear()])];
+  // Public feed paths are the same year/language URLs used by Miraikan's events.js.
+  const payloads = await Promise.all(years.map((year) => fetchJson(`https://www.miraikan.jst.go.jp/events/_assets/json/${year}/ja.json`)));
+  if (payloads.some((payload) => !Array.isArray(payload))) throw new Error("Miraikan event JSON shape changed");
+  const entries = selectMiraikanEntries(payloads.flat(), today, UPCOMING_WINDOW_DAYS);
+  const items = [];
+  // At most 12 detail pages, sequentially, to avoid unbounded requests to the venue.
+  for (const entry of entries) {
+    const url = new URL(entry.permalink, MIRAIKAN_SOURCE.url).href;
+    const item = buildMiraikanItem(entry, await fetchText(url), today);
+    if (item) items.push(item);
+  }
+  return items;
 }
 
 async function fetchAnimateOnlyShopItems() {
@@ -455,18 +494,7 @@ function compareEventFreshness(left, right) {
 }
 
 function isEventRelevantWindow(item) {
-  const start = parseDate(item.startDate);
-  const end = parseDate(item.endDate) ?? start;
-  const staleStart = new Date(TODAY);
-  staleStart.setDate(staleStart.getDate() - STALE_START_WINDOW_DAYS);
-  if (!start && !end) return true;
-  const limit = new Date(TODAY);
-  limit.setDate(limit.getDate() + UPCOMING_WINDOW_DAYS);
-  if (end && end < TODAY) return false;
-  if (start && start < staleStart) return false;
-  if (start && start > limit) return false;
-  if (/オンライン/i.test(String(item.location ?? "")) || /オンライン/i.test(String(item.venue ?? ""))) return false;
-  return true;
+  return isEventInCollectionWindow(item, { today: TODAY_VALUE, upcomingDays: UPCOMING_WINDOW_DAYS, staleStartDays: STALE_START_WINDOW_DAYS });
 }
 
 function collectionEventScore(item) {
@@ -491,19 +519,6 @@ function collectionEventScore(item) {
   if ((item.tags ?? []).includes("large-scale")) score += 8;
   if (/PokéPark KANTO|アニメイト|ポケットモンスターオフィシャルサイト/.test(String(item.sourceName ?? ""))) score += 12;
   return score;
-}
-
-function limitEventsPerSource(items, maxPerSource) {
-  const counts = new Map();
-  const limited = [];
-  for (const item of items) {
-    const source = String(item.sourceName ?? "unknown");
-    const current = counts.get(source) ?? 0;
-    if (current >= maxPerSource) continue;
-    counts.set(source, current + 1);
-    limited.push(item);
-  }
-  return limited;
 }
 
 function buildAnimateCategory(title, kind) {
@@ -711,6 +726,7 @@ function buildPokemonOfficialTags(title, teaser, detailUrl, location, period) {
 }
 
 function isAllowedYomiuriEvent(item) {
+  if (isPureSalesCampaign(item.title)) return false;
   const text = `${item.title} ${item.category} ${item.description}`;
   if (/未就学児|県民|市民|クーポン|LINE|誕生日|ECサイト|待ち時間|マスコット|グッド＆ラッキー|スムースチケット|エクスプレス|会員|登録無料|スタッフ募集|募集中|アシカショー|プールWAI|振替休日/i.test(text)) return false;
   return /ポケパーク|PokéPark|東方|コラボ|×|アニメ|ゲーム|謎|脱出|イマーシブ/i.test(text);
@@ -954,7 +970,7 @@ function daysInMonth(year, month) {
 
 function parseDate(value) {
   if (!value) return null;
-  const date = new Date(`${value}T00:00:00+09:00`);
+  const date = new Date(`${value}T00:00:00`);
   return Number.isNaN(date.getTime()) ? null : date;
 }
 
@@ -1023,6 +1039,7 @@ function absolutizeUrl(value, base) {
 
 async function fetchText(url) {
   const response = await fetch(url, {
+    signal: AbortSignal.timeout(20000),
     headers: {
       "user-agent": "INTERNET NEWS event collector/1.0 (+local personal use)",
       accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -1035,6 +1052,7 @@ async function fetchText(url) {
 
 async function fetchJson(url) {
   const response = await fetch(url, {
+    signal: AbortSignal.timeout(20000),
     headers: {
       "user-agent": "INTERNET NEWS event collector/1.0 (+local personal use)",
       accept: "application/json,*/*;q=0.8",

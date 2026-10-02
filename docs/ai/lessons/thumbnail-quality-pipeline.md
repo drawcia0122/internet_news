@@ -2,7 +2,7 @@
 
 - Status: active
 - Created: 2026-08-20
-- Last verified: 2026-08-20
+- Last verified: 2026-10-02
 - Source task: repository initialization from current implementation
 
 ## Lesson
@@ -25,3 +25,14 @@ sourceごとにRSSとHTMLの画像表現が異なり、画像らしく見えるU
 ## Reverification
 
 画像処理変更では、画像あり/なし、relative URL、`srcset`、OG/Twitter/JSON-LD、favicon/logo、proxy、低解像度、記事URL誤認、既存の正常画像維持をfixtureで確認する。外部siteの一時的な成功だけを根拠に一般化しない。
+
+
+## Repair propagation and article identity (2026-10-02)
+
+最終thumbnail repairはhome-news生成より後に実行される。修復済みの`news-archive.json`から同じIDかつ記事URL identityが一致する`home-news*.json`へthumbnail fieldsだけ同期する。次回refreshも、metadata取得前に前回news archiveの修復済み画像を引き継ぐ。記事順・時刻・カテゴリ・paginationを変えない。
+
+はてな等のRSSでは本文画像URLのpathが記事URLより深い場合がある。URLの深さで本文中の全URLを順位付けすると画像を記事として保存するため、RSS link / Atom alternateを優先する。aggregator wrapperの解決は一意の同一title anchorだけを候補にする。
+
+HTMLは属性順を問わずmetadataを読み、無効な先頭候補の後も試す。JSON-LDのarticle imageと本文container内のlazy/srcsetを使う。srcsetは実際に指定されている大きなvariantを選び、URLを推測で書き換えない。script内の無関係な画像やbase64 asset、関連記事を辿るrepairは利用しない。publisher取得失敗でも既存の利用可能画像は消さない。
+
+回帰test: `tests/thumbnail-retrieval.test.mjs`、`tests/rss-thumbnail-ingestion.test.mjs`、`tests/thumbnail-display-fallback.test.mjs`。browserでは既存の実画像候補への有限fallback後に画像なしlayoutへ移る。外部proxyや無限retryは使わない。

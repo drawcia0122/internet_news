@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 
 globalThis.window = globalThis;
+await import('../shared-topic-utils.js');
 await import('../home-render-utils.js');
 
 const {
@@ -15,6 +16,8 @@ const {
 } = globalThis.HomeRenderUtils;
 
 const renderDeps = {
+  buildArticleTitleLink: globalThis.TopicClientUtils.buildArticleTitleLink,
+  buildCardThumbnail: globalThis.TopicClientUtils.buildCardThumbnail,
   escapeHtml: (value) => String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'),
   getPrimarySourceUrl: (topic) => topic.url ?? '',
   getPrimarySourceLabel: () => 'テスト媒体',

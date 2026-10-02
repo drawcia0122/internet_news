@@ -4,7 +4,7 @@ import { buildDailyBrief } from "../lib/daily-brief.mjs";
 import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, extractEncodedUrlsFromHtml, hasSuspiciousThumbnailMismatch, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
 import { collectTrendTopics, repairStoredTopicCategories } from "../lib/trend-aggregator.mjs";
 import "../news-summary-integrity.js";
-import { repairItemThumbnail } from "./repair-thumbnails.mjs";
+import { repairItemThumbnail, restoreArchivedThumbnails } from "./repair-thumbnails.mjs";
 
 const {
   articleIdentityKeys,
@@ -231,6 +231,7 @@ const GENERATED_TREND_DATA_PATHS = [
 async function main() {
 
 const previousCurrentPayload = await readArchivePayload("data/trend-topics.json");
+const previousNewsArchive = await readArchivePayload("data/news-archive.json");
 let payload;
 try {
   payload = await collectTrendTopics();
@@ -277,6 +278,8 @@ let mergedArchiveItems = sanitizeArticleSummaryCollection(dedupeNearDuplicateIte
     dedupedItems.map((item) => normalizeArchiveItem(item, capturedAt)),
   ).filter((item) => isWithinArchiveWindow(item, capturedAt) && shouldKeepArchiveItem(item)),
 ));
+// Carry forward repairs from the final stage instead of re-fetching the same images.
+restoreArchivedThumbnails(mergedArchiveItems, previousNewsArchive.items || []);
 await enrichItemsWithMetadata(mergedArchiveItems, { limit: ARCHIVE_METADATA_ENRICH_LIMIT });
 mergedArchiveItems = sanitizeArticleSummaryCollection(mergedArchiveItems);
 await ensureFetchStageThumbnailCoverage(

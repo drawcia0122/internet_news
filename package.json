@@ -11,6 +11,7 @@
     "refresh:news": "node scripts/fetch-trend-topics.mjs",
     "refresh:today": "node scripts/build-today-internet.mjs",
     "refresh:events": "node scripts/fetch-events.mjs",
+    "refresh:matome": "node scripts/fetch-matome-threads.mjs",
     "refresh:adult": "node scripts/fetch-adult-trends.mjs",
     "repair:thumbnails": "node scripts/repair-thumbnails.mjs",
     "refresh:stale": "node scripts/refresh-trend-topics-if-stale.mjs"

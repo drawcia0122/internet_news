@@ -47,6 +47,10 @@ npm run refresh:events
 npm run refresh:stale
 ```
 
+## スレまとめ
+
+トップの「スレまとめ」は、ゲーム・アニメ・雑談・ネタのまとめ記事を公開RSSから集める独立コーナーです。`npm run refresh:matome` で個別に更新でき、通常の `npm run refresh` にも組み込まれています。取得失敗時は各サイトの直近データを最大7日保持します。取得元・分類・時刻の意味は [docs/matome-sources.md](docs/matome-sources.md) を参照してください。
+
 ## Auto refresh
 
 `.github/workflows/refresh-news.yml` で 30 分ごとに自動更新します。GitHub Actions の混雑しやすい毎時ちょうどを避けるため、実行時刻は `:07` と `:37` にしています。差分が出たときだけ JSON をコミットします。

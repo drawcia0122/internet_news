@@ -1,4 +1,8 @@
 // This section deliberately stays separate from the factual-news renderers.
+import {
+  normalizeMatomePreferences, loadMatomePreferences, saveMatomePreferences, resetMatomePreferences,
+} from './matome-preferences.js';
+
 export const MATOME_CATEGORIES = Object.freeze([
   Object.freeze({ id: 'game', label: 'ゲーム' }),
   Object.freeze({ id: 'anime', label: 'アニメ' }),
@@ -106,7 +110,7 @@ export function normalizeMatomePayload(payload, now = Date.now()) {
     });
   }
   items.sort((a, b) => b.publishedAtMs - a.publishedAtMs || a.id.localeCompare(b.id));
-  return { status: payload.status, generatedAtMs, checkedAtMs, items };
+  return { status: payload.status, generatedAtMs, checkedAtMs, sources: [...sources.values()], items };
 }
 
 export function formatMatomeTime(value) {
@@ -116,15 +120,18 @@ export function formatMatomeTime(value) {
 
 /** Revalidate on every render, including a failed refresh, so old cards expire. */
 export function getMatomeViewModel(payload, {
-  category = 'game', visibleCount = MATOME_PAGE_SIZE, now = Date.now(), networkError = false,
+  category, visibleCount = MATOME_PAGE_SIZE, now = Date.now(), networkError = false, preferences,
 } = {}) {
-  const selectedCategory = CATEGORY_IDS.has(category) ? category : 'game';
   const data = normalizeMatomePayload(payload, now);
+  const effective = normalizeMatomePreferences(preferences, data?.sources.map(({ id }) => id));
+  const selectedCategory = CATEGORY_IDS.has(category) ? category : effective.categoryOrder[0];
+  const hiddenSources = new Set(effective.hiddenSourceIds);
+  const visibleItems = (data?.items ?? []).filter((item) => !hiddenSources.has(item.sourceId));
   const counts = Object.fromEntries(MATOME_CATEGORIES.map(({ id }) => [id, 0]));
-  for (const item of data?.items ?? []) {
+  for (const item of visibleItems) {
     for (const id of item.categories) counts[id] += 1;
   }
-  const matching = (data?.items ?? []).filter((item) => item.categories.includes(selectedCategory));
+  const matching = visibleItems.filter((item) => item.categories.includes(selectedCategory));
   const limit = Number.isSafeInteger(visibleCount) && visibleCount >= MATOME_PAGE_SIZE
     ? Math.min(visibleCount, 5000) : MATOME_PAGE_SIZE;
   const items = matching.slice(0, limit);
@@ -150,24 +157,32 @@ export function getMatomeViewModel(payload, {
   } else if (!data.items.length) {
     status = 'empty';
     statusText = '現在、過去7日以内のまとめ記事はありません';
+  } else if (!visibleItems.length) {
+    status = 'filtered-empty';
+    statusText = '現在の表示設定に合う記事はありません。「表示設定」で取得元を見直せます';
   }
+  const filteredEmpty = hiddenSources.size > 0 && matching.length === 0;
   return {
     category: selectedCategory, counts, items, total: matching.length,
     moreCount: Math.min(MATOME_PAGE_SIZE, matching.length - items.length),
     nextExpiryAt: data?.items.length ? data.items.at(-1).publishedAtMs + MATOME_MAX_AGE_MS + 1 : null,
     status, statusText,
     updatedText: data?.generatedAtMs != null ? `最終取得 ${formatMatomeTime(data.generatedAtMs)}` : '',
-    emptyTitle: status === 'unavailable' ? 'まとめ記事を準備できませんでした' : 'このカテゴリの新着はまだありません',
-    emptyMessage: '取得できた過去7日以内の記事があると、ここに表示されます。ほかのタブもご覧ください。',
+    emptyTitle: status === 'unavailable' ? 'まとめ記事を準備できませんでした'
+      : filteredEmpty ? 'この設定で表示できる新着はありません' : 'このカテゴリの新着はまだありません',
+    emptyMessage: filteredEmpty
+      ? '非表示にした取得元の記事は表示されません。「表示設定」で見直せます。ほかのタブもご覧ください。'
+      : '取得できた過去7日以内の記事があると、ここに表示されます。ほかのタブもご覧ください。',
   };
 }
 
-export function getNextMatomeCategory(current, key) {
-  const index = Math.max(0, MATOME_CATEGORIES.findIndex(({ id }) => id === current));
-  if (key === 'Home') return MATOME_CATEGORIES[0].id;
-  if (key === 'End') return MATOME_CATEGORIES.at(-1).id;
-  if (key === 'ArrowRight') return MATOME_CATEGORIES[(index + 1) % MATOME_CATEGORIES.length].id;
-  if (key === 'ArrowLeft') return MATOME_CATEGORIES[(index + MATOME_CATEGORIES.length - 1) % MATOME_CATEGORIES.length].id;
+export function getNextMatomeCategory(current, key, categoryOrder) {
+  const order = normalizeMatomePreferences({ version: 1, categoryOrder }).categoryOrder;
+  const index = Math.max(0, order.indexOf(current));
+  if (key === 'Home') return order[0];
+  if (key === 'End') return order.at(-1);
+  if (key === 'ArrowRight') return order[(index + 1) % order.length];
+  if (key === 'ArrowLeft') return order[(index + order.length - 1) % order.length];
   return null;
 }
 
@@ -185,8 +200,14 @@ export function initializeMatomeSection(root, {
   const more = root.querySelector('#matome-more');
   if (tabs.length !== 4 || !panel || !list || !status || !updated || !empty || !more) return null;
 
+  const loaded = loadMatomePreferences([], windowRef);
+  let pendingPreferences = loaded.raw;
+  let preferences = loaded.preferences;
+  let draft = normalizeMatomePreferences(preferences);
+  let sources = [];
+  let sourcesLoaded = false;
   let payload = null;
-  let category = 'game';
+  let category = preferences.categoryOrder[0];
   const limits = Object.fromEntries(MATOME_CATEGORIES.map(({ id }) => [id, MATOME_PAGE_SIZE]));
   let networkError = false;
   let inFlight = null;
@@ -200,6 +221,150 @@ export function initializeMatomeSection(root, {
     return node;
   }
 
+  const settings = element('details', 'matome-preferences');
+  settings.id = 'matome-preferences';
+  const summary = element('summary', '', 'スレまとめの表示設定');
+  const scope = element('p', 'matome-preferences-note',
+    'スレまとめだけの設定です。このブラウザに保存され、ほかの端末や一般ニュースには反映されません。');
+  const ordering = element('fieldset', 'matome-preferences-group');
+  ordering.append(element('legend', '', 'カテゴリの順番'));
+  const orderList = element('ol', 'matome-preferences-order');
+  ordering.append(orderList);
+  const visibility = element('fieldset', 'matome-preferences-group');
+  visibility.append(element('legend', '', '非表示にする取得元'));
+  const sourceList = element('div', 'matome-preferences-sources');
+  const sourceHint = element('p', 'matome-preferences-note', '取得元を読み込んでいます');
+  visibility.append(sourceList, sourceHint);
+  const actions = element('div', 'matome-preferences-actions');
+  const save = element('button', 'outline-button', '設定を保存');
+  save.type = 'button';
+  save.id = 'matome-preferences-save';
+  const reset = element('button', 'outline-button', '初期状態に戻す');
+  reset.type = 'button';
+  reset.id = 'matome-preferences-reset';
+  actions.append(save, reset);
+  const settingsStatus = element('p', 'matome-preferences-note');
+  settingsStatus.id = 'matome-preferences-status';
+  settingsStatus.setAttribute('role', 'status');
+  settingsStatus.setAttribute('aria-live', 'polite');
+  settingsStatus.textContent = loaded.status === 'unavailable'
+    ? '保存機能を利用できません。変更はこのページを開いている間だけ反映できます。'
+    : loaded.status === 'invalid' ? '保存済みの設定を読み取れないため、初期設定で表示します。' : '';
+  settings.append(summary, scope, ordering, visibility, actions, settingsStatus);
+  const tabList = root.querySelector('[role="tablist"]');
+  if (tabList?.parentNode) tabList.parentNode.insertBefore(settings, tabList);
+  else root.append(settings);
+
+  const categoryRows = new Map();
+  for (const { id, label } of MATOME_CATEGORIES) {
+    const row = element('li', 'matome-preferences-category');
+    row.dataset.matomeOrder = id;
+    const name = element('span', '', label);
+    const up = element('button', '', '↑ 上へ');
+    const down = element('button', '', '↓ 下へ');
+    for (const [button, direction, word] of [[up, -1, '上'], [down, 1, '下']]) {
+      button.type = 'button';
+      button.dataset.matomeMove = `${id}:${direction}`;
+      button.setAttribute('aria-label', `${label}を${word}へ移動`);
+      button.addEventListener('click', () => {
+        if (disposed) return;
+        const from = draft.categoryOrder.indexOf(id);
+        const to = from + direction;
+        if (to < 0 || to >= draft.categoryOrder.length) return;
+        [draft.categoryOrder[from], draft.categoryOrder[to]] = [draft.categoryOrder[to], draft.categoryOrder[from]];
+        renderSettings();
+        settingsStatus.textContent = `${label}を${to + 1}番目に移動しました。「設定を保存」で反映します。`;
+      });
+    }
+    row.append(name, up, down);
+    categoryRows.set(id, { row, up, down });
+  }
+  const sourceRows = new Map();
+
+  function renderSettings() {
+    const focused = settings.contains(documentRef.activeElement) ? documentRef.activeElement : null;
+    orderList.replaceChildren(...draft.categoryOrder.map((id, index) => {
+      const { row, up, down } = categoryRows.get(id);
+      // Keep boundary buttons focusable so moving a row never loses keyboard focus.
+      up.setAttribute('aria-disabled', String(index === 0));
+      down.setAttribute('aria-disabled', String(index === draft.categoryOrder.length - 1));
+      return row;
+    }));
+    const nodes = sources.map(({ id, name }) => {
+      if (!sourceRows.has(id)) {
+        const label = element('label', 'matome-preferences-source');
+        const checkbox = element('input');
+        checkbox.type = 'checkbox';
+        checkbox.dataset.matomeHideSource = id;
+        const text = element('span');
+        label.append(checkbox, text);
+        checkbox.addEventListener('change', () => {
+          if (disposed) return;
+          const hidden = new Set(draft.hiddenSourceIds);
+          if (checkbox.checked) hidden.add(id);
+          else hidden.delete(id);
+          draft.hiddenSourceIds = [...hidden];
+          settingsStatus.textContent = '変更はまだ反映されていません。「設定を保存」で反映します。';
+        });
+        sourceRows.set(id, { label, checkbox, text });
+      }
+      const entry = sourceRows.get(id);
+      entry.checkbox.checked = draft.hiddenSourceIds.includes(id);
+      entry.text.textContent = `${name}を非表示`;
+      return entry.label;
+    });
+    sourceList.replaceChildren(...nodes);
+    sourceHint.hidden = sources.length > 0;
+    sourceHint.textContent = sourcesLoaded ? '設定できる取得元がありません' : '取得元を読み込むと設定を保存できます';
+    save.disabled = !sourcesLoaded;
+    if (focused && settings.contains(focused)) focused.focus({ preventScroll: true });
+    else if (focused) summary.focus({ preventScroll: true });
+  }
+
+  function reorderTabs() {
+    const focused = documentRef.activeElement;
+    for (const tab of tabs) {
+      const active = tab.dataset.matomeCategory === category;
+      tab.setAttribute('aria-selected', String(active));
+      tab.tabIndex = active ? 0 : -1;
+    }
+    panel.setAttribute('aria-labelledby', `matome-tab-${category}`);
+    if (tabList) {
+      tabList.append(...preferences.categoryOrder.map((id) => tabs.find((tab) => tab.dataset.matomeCategory === id)));
+      if (tabs.includes(focused)) focused.focus({ preventScroll: true });
+    }
+  }
+
+  function applyPreferences(next, resetCategory = false) {
+    preferences = next;
+    pendingPreferences = null;
+    draft = normalizeMatomePreferences(next, sources.map(({ id }) => id));
+    for (const id of CATEGORY_IDS) limits[id] = MATOME_PAGE_SIZE;
+    if (resetCategory) category = preferences.categoryOrder[0];
+    reorderTabs();
+    renderSettings();
+    render();
+  }
+
+  function saveSettings() {
+    if (disposed || !sourcesLoaded) return;
+    const result = saveMatomePreferences(draft, sources.map(({ id }) => id), windowRef);
+    applyPreferences(result.preferences);
+    settingsStatus.textContent = result.saved ? 'スレまとめの設定をこのブラウザに保存しました。'
+      : '保存できませんでした。変更はこのページを開いている間だけ反映しています。再読み込みすると元の設定に戻る場合があります。';
+  }
+  function resetSettings() {
+    if (disposed) return;
+    const result = resetMatomePreferences(windowRef);
+    applyPreferences(result.preferences, true);
+    settingsStatus.textContent = result.saved ? 'スレまとめの設定を初期状態に戻しました。'
+      : '保存済み設定を削除できませんでした。このページでは初期状態に戻しましたが、再読み込みすると以前の設定に戻る場合があります。';
+  }
+  save.addEventListener('click', saveSettings);
+  reset.addEventListener('click', resetSettings);
+  renderSettings();
+  reorderTabs();
+
   function articleLink(item, className, text) {
     const link = element('a', className, text);
     link.href = item.url;
@@ -211,7 +376,9 @@ export function initializeMatomeSection(root, {
   }
 
   function render() {
-    const model = getMatomeViewModel(payload, { category, visibleCount: limits[category], now: now(), networkError });
+    const model = getMatomeViewModel(payload, {
+      category, visibleCount: limits[category], now: now(), networkError, preferences,
+    });
     windowRef.clearTimeout(expiryTimer);
     if (model.nextExpiryAt !== null) {
       expiryTimer = windowRef.setTimeout(() => { if (!disposed) render(); }, Math.max(1, model.nextExpiryAt - now()));
@@ -279,7 +446,7 @@ export function initializeMatomeSection(root, {
   const tabListeners = tabs.map((tab) => {
     const click = () => selectCategory(tab.dataset.matomeCategory);
     const keydown = (event) => {
-      const next = getNextMatomeCategory(tab.dataset.matomeCategory, event.key);
+      const next = getNextMatomeCategory(tab.dataset.matomeCategory, event.key, preferences.categoryOrder);
       if (next) {
         event.preventDefault();
         selectCategory(next, true);
@@ -309,9 +476,19 @@ export function initializeMatomeSection(root, {
         const response = await fetchImpl('./data/matome-threads.json', { cache: 'no-cache', signal: controller.signal });
         if (!response.ok) throw new Error('Matome data unavailable');
         const next = await response.json();
-        if (!normalizeMatomePayload(next, now())) throw new Error('Invalid matome data');
+        const validated = normalizeMatomePayload(next, now());
+        if (!validated) throw new Error('Invalid matome data');
         if (!disposed) {
           payload = next;
+          sources = validated.sources;
+          const sourceIds = sources.map(({ id }) => id);
+          preferences = normalizeMatomePreferences(pendingPreferences ?? preferences, sourceIds);
+          draft = normalizeMatomePreferences({ ...draft,
+            hiddenSourceIds: sourcesLoaded ? draft.hiddenSourceIds : preferences.hiddenSourceIds,
+          }, sourceIds);
+          pendingPreferences = null;
+          sourcesLoaded = true;
+          renderSettings();
           networkError = false;
         }
       } catch {
@@ -339,6 +516,9 @@ export function initializeMatomeSection(root, {
       windowRef.clearTimeout(expiryTimer);
       documentRef.removeEventListener('visibilitychange', onVisibility);
       more.removeEventListener('click', showMore);
+      save.removeEventListener('click', saveSettings);
+      reset.removeEventListener('click', resetSettings);
+      settings.remove?.();
       for (const { tab, click, keydown } of tabListeners) {
         tab.removeEventListener('click', click);
         tab.removeEventListener('keydown', keydown);

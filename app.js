@@ -175,21 +175,27 @@ const renderHelperDeps = {
   sanitizeBriefSummaryText,
 };
 const homeTopicCacheStore = createStorageArrayCache({
-  storage: localStorage,
+  storage: window.ReaderPreferences.getStorage('localStorage'),
   key: 'internet-news-home-topic-cache-v2',
   normalize: normalizeTrendTopic,
 });
 const briefCacheStore = createStorageArrayCache({
-  storage: sessionStorage,
+  storage: window.ReaderPreferences.getStorage('sessionStorage'),
   key: 'internet-news-daily-brief-cache-v2',
   normalize: (item) => item,
 });
 const eventCacheStore = createStorageArrayCache({
-  storage: sessionStorage,
+  storage: window.ReaderPreferences.getStorage('sessionStorage'),
   key: 'internet-news-event-cache-v2',
   normalize: normalizeEventItem,
 });
 document.addEventListener('error', handleCardImageError, true);
+const readerPreferences = window.ReaderPreferences.initializeReaderPreferences(document.querySelector('#reader-preferences'), {
+  onChange() {
+    personalVisibleCount = PERSONAL_INITIAL_LIMIT;
+    renderDiscoverySections();
+  },
+});
 
 console.time('home:init');
 trendTopics = homeTopicCacheStore.load();
@@ -680,10 +686,12 @@ function renderDiscoverySections() {
     ? [todayInternetPayload.selectedTopic, ...(Array.isArray(todayInternetPayload.runnerUps) ? todayInternetPayload.runnerUps : [])].filter(Boolean)
     : internetNews;
   const internetArticleKeys = createArticleIdentitySet(featuredInternetNews);
+  readerPreferences?.updateSources(topics);
   personalNewsItems = selectPersonalNews(topics, {
     excludedArticleKeys: internetArticleKeys,
     excludedIds: new Set(internetNews.map((topic) => topic.id)),
     limit: PERSONAL_NEWS_LIMIT,
+    preferences: readerPreferences?.getPreferences(),
   });
   const occupiedArticleKeys = createArticleIdentitySet([...featuredInternetNews, ...personalNewsItems]);
   const todayNewsFallback = buildTodayNewsFallbackItems(topics);
@@ -704,9 +712,13 @@ function renderDiscoverySections() {
 
 function renderPersonalNews() {
   const state = getPersonalNewsPageState(personalNewsItems.length, personalVisibleCount, PERSONAL_LOAD_MORE_STEP);
+  const settings = readerPreferences?.getPreferences();
+  const custom = settings && window.ReaderPreferences.isActive(settings);
+  const status = document.querySelector('#personal-news-status');
+  if (status) status.textContent = `${custom ? '登録した条件で表示' : '標準のおすすめを表示'} · ${state.visibleCount}/${personalNewsItems.length}件（最大${PERSONAL_NEWS_LIMIT}件）`;
   renderPriorityList(personalNewsListElement, personalNewsItems, {
-    emptyTitle: '自分向けニュースを整理中です',
-    emptyText: 'ゲーム、ポケモン、漫画・アニメ、セール、ネット文化系の話題を探しています。',
+    emptyTitle: custom ? '条件に合うマイニュースはありません' : '自分向けニュースを整理中です',
+    emptyText: custom ? '取得済みの記事に一致するものがありません。キーワードや非表示の設定を見直すか、設定をリセットできます。' : 'ゲーム、ポケモン、漫画・アニメ、セール、ネット文化系の話題を探しています。',
     badge: 'FOR YOU',
     visibleCount: state.visibleCount,
   });

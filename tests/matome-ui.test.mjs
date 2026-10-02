@@ -180,7 +180,7 @@ test('the compact section stays after personal news and before events, with isol
   assert.match(html, /掲示板の反応・ネタを含むまとめ記事です。一般ニュースとは別枠で掲載しています/);
   assert.equal((html.match(/role="tab" data-matome-category=/g) ?? []).length, 4);
   assert.match(html, /role="tabpanel" aria-labelledby="matome-tab-game"/);
-  assert.match(html, /<script type="module" src="\.\/matome-section.js\?v=1"><\/script>/);
+  assert.match(html, /<script type="module" src="\.\/matome-section.js\?v=\d+"><\/script>/);
   assert.doesNotMatch(js, /innerHTML|insertAdjacentHTML|localStorage|createElement\(['"]img/);
   assert.match(js, /cache: 'no-cache'/);
   assert.match(js, /visibilitychange/);

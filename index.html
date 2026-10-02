@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css?v=52" />
     <link rel="stylesheet" href="./refresh-status.css?v=1" />
-    <link rel="stylesheet" href="./matome-section.css?v=1" />
+    <link rel="stylesheet" href="./matome-section.css?v=2" />
+    <link rel="stylesheet" href="./reader-preferences.css?v=1" />
   </head>
   <body>
     <div class="ambient ambient-one"></div>
@@ -27,7 +28,7 @@
       <nav class="desktop-nav" aria-label="メインナビゲーション">
         <a class="active" href="#must-read-news">今日のインターネット</a>
         <a href="./game.html">ゲーム</a>
-        <a href="#personal-news">自分向けニュース</a>
+        <a href="#personal-news">マイニュース</a>
         <a href="#matome-threads">スレまとめ</a>
         <a href="#featured-events">注目イベント</a>
         <a href="#today-news">今日のニュース</a>
@@ -43,7 +44,7 @@
     <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="モバイルナビゲーション" hidden>
       <a href="#must-read-news">今日のインターネット</a>
       <a href="./game.html">ゲーム</a>
-      <a href="#personal-news">自分向けニュース</a>
+      <a href="#personal-news">マイニュース</a>
       <a href="#matome-threads">スレまとめ</a>
       <a href="#featured-events">注目イベント</a>
       <a href="#today-news">今日のニュース</a>
@@ -104,10 +105,35 @@
         <div class="section-heading section-heading-stack">
           <div>
             <p class="section-kicker">FOR YOU</p>
-            <h2 id="personal-news-heading">今日の自分向けニュース</h2>
+            <h2 id="personal-news-heading">マイニュース</h2>
           </div>
-          <p class="brief-description">ポケモン、ゲーム、Nintendo、Steam、漫画・アニメ、ネット文化、炎上、ミーム、セール、同人、オタクイベントを優先して拾います。</p>
+          <p class="brief-description">標準ではポケモン、ゲーム、漫画・アニメ、セール、ネット文化などを優先。好みを登録すると、この欄だけを絞り込めます。</p>
         </div>
+        <details class="reader-preferences" id="reader-preferences" hidden>
+          <summary>マイニュースの設定</summary>
+          <form aria-label="マイニュースの設定">
+            <p>設定はこのブラウザーにだけ保存します。ほかの端末には同期しません。絞り込みはマイニュースだけに適用し、スレまとめは別に設定できます。</p>
+            <label class="reader-check"><input type="checkbox" name="reader-enabled" /><span>登録した条件をマイニュースに使う</span></label>
+            <fieldset>
+              <legend>興味のあるジャンル</legend>
+              <div class="reader-preferences-grid" data-reader-categories></div>
+            </fieldset>
+            <p id="reader-keyword-help">ジャンルまたはキーワードのどれかに一致する記事を表示します。両方が空欄なら標準のおすすめです。キーワードはタイトル・概要の部分一致で、各欄20個まで、1個80文字以内。改行か「、」で区切ってください。</p>
+            <label>見たいキーワード<textarea name="reader-keywords" rows="2" maxlength="1800" aria-describedby="reader-keyword-help" placeholder="ポケモン&#10;Nintendo Switch"></textarea></label>
+            <label>非表示にするキーワード<textarea name="reader-excluded-keywords" rows="2" maxlength="1800" aria-describedby="reader-keyword-help" placeholder="見たくない話題"></textarea></label>
+            <fieldset>
+              <legend>非表示にする取得元</legend>
+              <p>選んだ取得元を含む記事を非表示にします。非表示の条件を優先します。</p>
+              <div class="reader-preferences-sources" data-reader-sources></div>
+            </fieldset>
+            <div class="reader-preferences-actions">
+              <button class="primary-button" type="submit">設定を保存</button>
+              <button class="outline-button" type="button" data-reader-reset>設定をリセット</button>
+            </div>
+            <p class="reader-preferences-status" data-reader-status role="status" aria-live="polite"></p>
+          </form>
+        </details>
+        <p class="reader-news-status" id="personal-news-status" role="status" aria-live="polite"></p>
         <div class="priority-list" id="personal-news-list">
           <article class="priority-card priority-card-empty">
             <strong>自分向けニュースを整理中です</strong>
@@ -314,11 +340,12 @@
     <script src="./news-summary-integrity.js?v=2"></script>
     <script src="./shared-topic-utils.js?v=14"></script>
     <script src="./home-event-utils.js?v=7"></script>
-    <script src="./home-topic-selection-utils.js?v=5"></script>
+    <script src="./reader-preferences.js?v=1"></script>
+    <script src="./home-topic-selection-utils.js?v=6"></script>
     <script src="./home-brief-utils.js?v=6"></script>
     <script src="./home-render-utils.js?v=9"></script>
     <script src="./home-data-utils.js?v=4"></script>
-    <script src="./app.js?v=39"></script>
-    <script type="module" src="./matome-section.js?v=1"></script>
+    <script src="./app.js?v=40"></script>
+    <script type="module" src="./matome-section.js?v=2"></script>
   </body>
 </html>

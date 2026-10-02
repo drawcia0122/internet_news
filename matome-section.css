@@ -53,6 +53,123 @@
   box-shadow: var(--shadow-soft);
 }
 
+.matome-preferences {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.matome-preferences > summary {
+  width: fit-content;
+  min-height: 44px;
+  align-content: center;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.matome-preferences-note {
+  margin: 4px 0 8px;
+  color: var(--muted);
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.matome-preferences-note:empty {
+  display: none;
+}
+
+.matome-preferences-group {
+  min-width: 0;
+  margin: 12px 0;
+  padding: 0;
+  border: 0;
+}
+
+.matome-preferences-group legend {
+  padding: 0;
+  font-weight: 800;
+}
+
+.matome-preferences-order {
+  display: grid;
+  max-width: 480px;
+  gap: 4px;
+  padding: 0;
+  margin: 8px 0 0;
+  list-style: none;
+  counter-reset: matome-order;
+}
+
+.matome-preferences-category {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  counter-increment: matome-order;
+}
+
+.matome-preferences-category > span {
+  flex: 1;
+}
+
+.matome-preferences-category > span::before {
+  content: counter(matome-order) ". ";
+  color: var(--muted);
+}
+
+.matome-preferences button {
+  min-height: 44px;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.matome-preferences button:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: var(--bg);
+  border-color: var(--blue);
+}
+
+.matome-preferences button[aria-disabled="true"],
+.matome-preferences button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.matome-preferences-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin-top: 4px;
+}
+
+.matome-preferences-source {
+  display: flex;
+  min-height: 44px;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.matome-preferences-source input {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--blue);
+}
+
+.matome-preferences-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .matome-tabs {
   display: flex;
   gap: 6px;
@@ -210,6 +327,8 @@
 
 .matome-section a:focus-visible,
 .matome-section button:focus-visible,
+.matome-section input:focus-visible,
+.matome-section summary:focus-visible,
 .matome-section [role="tabpanel"]:focus-visible {
   outline: 3px solid var(--blue);
   outline-offset: 3px;

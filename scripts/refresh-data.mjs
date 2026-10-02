@@ -1,3 +1,5 @@
+import { fileURLToPath } from 'node:url';
+import { repairSummarySnapshots } from './repair-summary-snapshots.mjs';
 import { repairThumbnails } from './repair-thumbnails.mjs';
 import { runGuardedRefresh } from '../lib/refresh-health.mjs';
 
@@ -6,6 +8,10 @@ const DEFAULT_REPAIR_TARGETS = [
   'data/home-topics.json',
   'data/trend-topics-browse.json',
 ];
+
+// Repair retained snapshots before the health guard captures fallback data, so
+// a source outage cannot restore a known mismatched/HTML-tainted summary.
+await repairSummarySnapshots(fileURLToPath(new URL('../data/', import.meta.url)));
 
 // Keep dependent stages sequential, including thumbnail consumer synchronization.
 await runGuardedRefresh([

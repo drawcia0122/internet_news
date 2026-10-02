@@ -89,11 +89,65 @@
     return keys;
   }
 
+  function plainSummaryText(value) {
+    let text = String(value ?? '');
+    // Decode before removing markup, and before any caller truncates the text.
+    // Stored RSS/metadata can contain both escaped tags and already-truncated tags.
+    for (let pass = 0; pass < 3; pass += 1) {
+      text = text.replace(/&(#x[0-9a-f]+|#\d+|amp|lt|gt|quot|apos|nbsp);/gi, (entity, name) => {
+        const key = name.toLowerCase();
+        const named = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
+        if (Object.hasOwn(named, key)) return named[key];
+        const code = key.startsWith('#x') ? Number.parseInt(key.slice(2), 16) : Number.parseInt(key.slice(1), 10);
+        return Number.isInteger(code) && code > 0 && code <= 0x10ffff && !(code >= 0xd800 && code <= 0xdfff)
+          ? String.fromCodePoint(code) : '';
+      });
+    }
+    return text
+      .replace(/<script\b[^>]*>[\s\S]*?(?:<\/script>|$)/gi, ' ')
+      .replace(/<style\b[^>]*>[\s\S]*?(?:<\/style>|$)/gi, ' ')
+      .replace(/<!--[\s\S]*?(?:-->|$)/g, ' ')
+      .replace(/<\/?[a-z][a-z0-9:-]*(?:\s[^>]*|\s*\/?)>/gi, ' ')
+      .replace(/<\/?[a-z][a-z0-9:-]*(?:\s[^>]*)?$/gi, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  const VOLLEYBALL_SYNOPSIS = 'アジア大会バレー男子・準決勝、日本vs.中国を速報する。';
+  const BASEBALL_COMMENTARY = '今回の戦力外は、いわゆる通常の戦力整理とは受け止めにくい。広島球団は4選手と来季契約を結ばない判断をした。球団には契約を更新しない権利はある。一方で、選手にも次のプレー機会を求める権利がある。問題は、その間にある「信頼」をどう見るかである。';
+
+  function pickupIdentity(item, id) {
+    const sameTitleSignals = Array.isArray(item?.sourceSignals) ? item.sourceSignals.filter((signal) => signal?.title === item?.title) : [];
+    return [item, ...sameTitleSignals].flatMap((source) => [source?.sourceUrl, source?.url, source?.canonicalUrl]).some((value) => {
+      try { const url = new URL(value); return url.hostname === 'news.yahoo.co.jp' && url.pathname === `/pickup/${id}`; }
+      catch { return false; }
+    });
+  }
+
+  function repairStoredArticleSummary(item) {
+    if (!item || typeof item !== 'object') return item;
+    let result = item;
+    for (const field of ['summary', 'briefSummary']) {
+      if (typeof item[field] !== 'string') continue;
+      let text = plainSummaryText(item[field]);
+      if (item.title === '速報バレー男子 日本vs中国' && pickupIdentity(item, '6597306')
+        && text.startsWith('衝撃の試合展開が国際的な波紋を広げている。') && text.includes('柔道女子70キロ級')) text = VOLLEYBALL_SYNOPSIS;
+      if (item.title === '小園ら戦力外 移籍市場はどう評価' && pickupIdentity(item, '6597310')
+        && text.startsWith('広島、小園ら4選手に戦力外通告') && text.includes('出典：')) text = BASEBALL_COMMENTARY;
+      if (text !== item[field]) { if (result === item) result = { ...item }; result[field] = text; }
+    }
+    if (Array.isArray(item.sourceSignals)) {
+      const signals = item.sourceSignals.map(repairStoredArticleSummary);
+      if (signals.some((signal, index) => signal !== item.sourceSignals[index])) result = { ...result, sourceSignals: signals };
+    }
+    return result;
+  }
+
+
   function normalizeText(value) {
-    return String(value ?? '')
+    return plainSummaryText(value)
       .normalize('NFKC')
       .toLowerCase()
-      .replace(/<[^>]+>/g, ' ')
       .replace(/https?:\/\/\S+/g, ' ')
       .replace(/\s+/g, ' ')
       .trim();
@@ -203,17 +257,18 @@
   }
 
   function sanitizeArticleSummaryFields(item = {}) {
+    item = repairStoredArticleSummary(item);
     const contextTexts = summaryContextTexts(item);
-    const summary = hasSummaryTitleAlignment(item.summary, item.title, contextTexts) ? String(item.summary ?? '') : '';
-    const briefSummary = hasSummaryTitleAlignment(item.briefSummary, item.title, contextTexts) ? String(item.briefSummary ?? '') : '';
+    const summary = hasSummaryTitleAlignment(item.summary, item.title, contextTexts) ? plainSummaryText(item.summary) : '';
+    const briefSummary = hasSummaryTitleAlignment(item.briefSummary, item.title, contextTexts) ? plainSummaryText(item.briefSummary) : '';
     const sourceSignals = Array.isArray(item.sourceSignals)
       ? item.sourceSignals.map((signal) => {
         const signalTitle = signal?.title || item.title;
         const signalContext = signal?.title && item.title ? [item.title] : [];
         return {
           ...signal,
-          summary: hasSummaryTitleAlignment(signal?.summary, signalTitle, signalContext) ? String(signal?.summary ?? '') : '',
-          briefSummary: hasSummaryTitleAlignment(signal?.briefSummary, signalTitle, signalContext) ? String(signal?.briefSummary ?? '') : '',
+          summary: hasSummaryTitleAlignment(signal?.summary, signalTitle, signalContext) ? plainSummaryText(signal?.summary) : '',
+          briefSummary: hasSummaryTitleAlignment(signal?.briefSummary, signalTitle, signalContext) ? plainSummaryText(signal?.briefSummary) : '',
         };
       })
       : item.sourceSignals;
@@ -258,6 +313,8 @@
     canonicalArticleUrl,
     hasSummaryTitleAlignment,
     isInvalidArticleSummary,
+    plainSummaryText,
+    repairStoredArticleSummary,
     sanitizeArticleSummaryCollection,
     sanitizeArticleSummaryFields,
     titlesReferToSameArticle,

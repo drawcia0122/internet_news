@@ -1,0 +1,13 @@
+/* Separate from normal refresh progress; it must survive app.js status updates. */
+.data-refresh-health {
+  padding: 12px 16px;
+  margin: 0 0 20px;
+  border: 1px solid #e7c68b;
+  border-radius: 12px;
+  background: #fff7e9;
+  color: #76521e;
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.data-refresh-health[hidden] { display: none; }

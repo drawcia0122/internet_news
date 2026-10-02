@@ -192,7 +192,8 @@ test('refresh writes atomic generated JSON and first-run failure never writes an
 test('scheduled refresh runs the collector and commits its generated JSON', async () => {
   const refresh = await readFile(new URL('../scripts/refresh-data.mjs', import.meta.url), 'utf8');
   const workflow = await readFile(new URL('../.github/workflows/refresh-news.yml', import.meta.url), 'utf8');
-  assert.match(refresh, /runStage\('matome',[\s\S]*fetch-matome-threads\.mjs[\s\S]*refreshMatomeThreads/);
+  assert.match(refresh, /name: 'matome',[\s\S]*fetch-matome-threads\.mjs[\s\S]*refreshMatomeThreads/);
+  assert.match(refresh, /await runGuardedRefresh/);
   assert.match(workflow, /npm run refresh/);
   assert.match(workflow, /git add data/);
   assert.match(workflow, /7,37 \* \* \* \*/);

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css?v=50" />
+    <link rel="stylesheet" href="./matome-section.css?v=1" />
   </head>
   <body>
     <div class="ambient ambient-one"></div>
@@ -26,6 +27,7 @@
         <a class="active" href="#must-read-news">今日のインターネット</a>
         <a href="./game.html">ゲーム</a>
         <a href="#personal-news">自分向けニュース</a>
+        <a href="#matome-threads">スレまとめ</a>
         <a href="#featured-events">注目イベント</a>
         <a href="#today-news">今日のニュース</a>
         <a href="#trends">カテゴリ別ニュース</a>
@@ -41,6 +43,7 @@
       <a href="#must-read-news">今日のインターネット</a>
       <a href="./game.html">ゲーム</a>
       <a href="#personal-news">自分向けニュース</a>
+      <a href="#matome-threads">スレまとめ</a>
       <a href="#featured-events">注目イベント</a>
       <a href="#today-news">今日のニュース</a>
       <a href="#trends">カテゴリ別ニュース</a>
@@ -110,6 +113,36 @@
         </div>
         <div class="personal-news-actions">
           <button class="outline-button personal-news-load-more" id="personal-news-load-more" type="button" aria-controls="personal-news-list" aria-expanded="false" hidden>さらに5件見る ↓</button>
+        </div>
+      </section>
+
+      <section class="focus-section matome-section" id="matome-threads" aria-labelledby="matome-heading" aria-describedby="matome-caveat">
+        <div class="section-heading section-heading-stack">
+          <div class="matome-heading-row">
+            <h2 id="matome-heading">スレまとめ</h2>
+            <p class="matome-intro">5ch・2ch系まとめブログの新着</p>
+          </div>
+          <p class="matome-caveat" id="matome-caveat">掲示板の反応・ネタを含むまとめ記事です。一般ニュースとは別枠で掲載しています</p>
+        </div>
+        <div class="matome-box">
+          <div class="matome-tabs" role="tablist" aria-label="スレまとめのカテゴリ">
+            <button id="matome-tab-game" type="button" role="tab" data-matome-category="game" aria-selected="true" aria-controls="matome-panel" tabindex="0">ゲーム <span class="matome-count" data-matome-count aria-hidden="true">0</span></button>
+            <button id="matome-tab-anime" type="button" role="tab" data-matome-category="anime" aria-selected="false" aria-controls="matome-panel" tabindex="-1">アニメ <span class="matome-count" data-matome-count aria-hidden="true">0</span></button>
+            <button id="matome-tab-chat" type="button" role="tab" data-matome-category="chat" aria-selected="false" aria-controls="matome-panel" tabindex="-1">雑談 <span class="matome-count" data-matome-count aria-hidden="true">0</span></button>
+            <button id="matome-tab-neta" type="button" role="tab" data-matome-category="neta" aria-selected="false" aria-controls="matome-panel" tabindex="-1">ネタ <span class="matome-count" data-matome-count aria-hidden="true">0</span></button>
+          </div>
+          <div class="matome-state-row">
+            <p class="matome-status" id="matome-status" role="status" aria-live="polite">まとめ記事を読み込んでいます</p>
+            <p class="matome-updated" id="matome-updated" hidden></p>
+          </div>
+          <div id="matome-panel" role="tabpanel" aria-labelledby="matome-tab-game" tabindex="0">
+            <ul class="matome-list" id="matome-list" hidden></ul>
+            <div class="matome-empty" id="matome-empty"><strong>まとめ記事を読み込んでいます</strong></div>
+            <div class="matome-actions">
+              <button class="outline-button matome-more" id="matome-more" type="button" aria-controls="matome-list" aria-expanded="false" hidden>さらに6件見る ↓</button>
+            </div>
+          </div>
+          <noscript><p class="matome-empty">スレまとめを表示するにはJavaScriptを有効にしてください。</p></noscript>
         </div>
       </section>
 
@@ -274,5 +307,6 @@
     <script src="./home-render-utils.js?v=9"></script>
     <script src="./home-data-utils.js?v=4"></script>
     <script src="./app.js?v=37"></script>
+    <script type="module" src="./matome-section.js?v=1"></script>
   </body>
 </html>

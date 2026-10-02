@@ -13,6 +13,7 @@ await runStage('today-internet', () => import('./build-today-internet.mjs'));
 await runStage('thumbnail-repair', () => (
   repairThumbnails(process.env.REPAIR_THUMBNAILS === '1' ? [] : DEFAULT_REPAIR_TARGETS)
 ));
+await runStage('matome', async () => (await import('./fetch-matome-threads.mjs')).refreshMatomeThreads());
 
 async function runStage(name, run) {
   console.log(`[refresh] ${name}:start`);

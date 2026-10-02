@@ -1,0 +1,248 @@
+.site-header .desktop-nav {
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px 18px;
+  margin-left: 24px;
+}
+
+.site-header > .brand {
+  flex-shrink: 0;
+}
+
+.site-header .desktop-nav a {
+  white-space: nowrap;
+}
+
+.matome-section .section-heading {
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.matome-heading-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.matome-heading-row h2 {
+  margin: 0;
+}
+
+.matome-section .matome-intro,
+.matome-caveat,
+.matome-status,
+.matome-updated {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.matome-caveat {
+  max-width: 80ch;
+}
+
+.matome-box {
+  overflow: hidden;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.matome-tabs {
+  display: flex;
+  gap: 6px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.matome-tabs button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.matome-tabs button:hover {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.matome-tabs button[aria-selected="true"] {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: white;
+}
+
+.matome-count {
+  min-width: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.matome-state-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2px 16px;
+  padding-top: 12px;
+}
+
+.matome-updated {
+  flex-shrink: 0;
+  font-size: 11px;
+}
+
+.matome-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+  padding: 0;
+  margin: 2px 0 0;
+  list-style: none;
+}
+
+.matome-card {
+  min-width: 0;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.matome-card-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.matome-title-link {
+  display: block;
+  min-height: 44px;
+  align-content: center;
+  border-radius: 4px;
+}
+
+.matome-title-link:hover,
+.matome-original-link:hover {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.matome-card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 10px;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.matome-source {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-weight: 700;
+}
+
+.matome-date {
+  white-space: nowrap;
+}
+
+.matome-original-link {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  margin-left: auto;
+  color: var(--blue);
+  border-radius: 4px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.matome-empty {
+  padding: 22px 0 12px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.matome-empty strong {
+  color: var(--ink);
+}
+
+.matome-empty p {
+  margin: 6px 0 0;
+}
+
+.matome-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.matome-more {
+  margin-top: 16px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.matome-section [hidden] {
+  display: none !important;
+}
+
+.matome-section a:focus-visible,
+.matome-section button:focus-visible,
+.matome-section [role="tabpanel"]:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .matome-box {
+    padding: 12px 14px;
+    border-radius: 16px;
+  }
+
+  .matome-tabs {
+    gap: 4px;
+  }
+
+  .matome-tabs button {
+    flex: 1;
+    min-width: 0;
+    gap: 4px;
+    padding: 8px 5px;
+    font-size: 12px;
+  }
+
+  .matome-count {
+    min-width: 12px;
+    font-size: 10px;
+  }
+
+  .matome-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .matome-card-title {
+    font-size: 14px;
+  }
+}

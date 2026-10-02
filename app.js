@@ -1,4 +1,6 @@
 const {
+  buildCardThumbnail,
+  buildArticleTitleLink,
   categoryDisplayLabel,
   categoryLabelFor,
   createArticleIdentitySet,
@@ -10,6 +12,7 @@ const {
   getPrimarySourceUrl,
   hasCategory,
   hasVisibleSummary,
+  handleCardImageError,
   isWeakThumbnailUrl,
   matchesNewsCategory,
   pickCardImageUrl,
@@ -88,6 +91,7 @@ let visibleTrendTopics = [];
 let deferredTopicChannelsRendered = false;
 let activeTopicChannelKey = null;
 let activeEventTab = 'closingSoon';
+let activeEventCategory = 'general';
 
 const hotPrimaryElement = document.querySelector('#hot-battle-keywords');
 const hotCategoryElement = document.querySelector('#hot-general-keywords');
@@ -99,6 +103,8 @@ const personalNewsListElement = document.querySelector('#personal-news-list');
 const personalNewsLoadMoreButton = document.querySelector('#personal-news-load-more');
 const mustReadNewsListElement = document.querySelector('#must-read-news-list');
 const featuredEventTabsElement = document.querySelector('#featured-event-tabs');
+const featuredEventCategoryTabsElement = document.querySelector('#featured-event-category-tabs');
+const featuredEventStatusElement = document.querySelector('#featured-event-status');
 const featuredEventListElement = document.querySelector('#featured-event-list');
 const todayNewsListElement = document.querySelector('#today-news-list');
 const topicChannelTabsElement = document.querySelector('#topic-channel-tabs');
@@ -120,6 +126,12 @@ const PERSONAL_INITIAL_LIMIT = 5;
 const PERSONAL_LOAD_MORE_STEP = 5;
 const TODAY_NEWS_LIMIT = 10;
 const REFRESH_INTERVAL_MS = 30 * 60 * 1000;
+const EVENT_CATEGORY_DEFINITIONS = [
+  { key: 'general', label: '一般イベント' },
+  { key: 'pokemon', label: 'ポケモン' },
+  { key: 'escape', label: '脱出・謎解き' },
+  { key: 'all', label: 'すべて' },
+];
 const EVENT_TAB_DEFINITIONS = [
   { key: 'closingSoon', label: '🔥もうすぐ終了', emptyTitle: '終了間近のイベントを整理中です', emptyText: '終了まで14日以内の開催中イベントをここに表示します。' },
   { key: 'ongoing', label: '開催中', emptyTitle: '開催中のイベントを整理中です', emptyText: '今行けるイベントが入り次第ここに表示します。' },
@@ -140,6 +152,8 @@ const perfMetrics = {
   fetches: [],
 };
 const renderHelperDeps = {
+  buildCardThumbnail,
+  buildArticleTitleLink,
   escapeHtml,
   isWeakThumbnailUrl,
   shortEventFromTitle,
@@ -169,17 +183,7 @@ const eventCacheStore = createStorageArrayCache({
   key: 'internet-news-event-cache-v2',
   normalize: normalizeEventItem,
 });
-document.addEventListener('error', (event) => {
-  const image = event.target;
-  if (!(image instanceof HTMLImageElement)) return;
-  if (!image.classList.contains('trend-thumb')) return;
-  const wrapper = image.closest('.trend-thumb-wrap');
-  if (wrapper) {
-    const card = wrapper.closest('.trend-card');
-    if (card) card.classList.add('trend-card-no-thumb');
-    wrapper.remove();
-  }
-}, true);
+document.addEventListener('error', handleCardImageError, true);
 
 console.time('home:init');
 trendTopics = homeTopicCacheStore.load();
@@ -615,15 +619,15 @@ function renderTrends(filter = 'all', { preserveCount = false } = {}) {
   const cards = limited.map((trend, index) => {
     const sourceUrl = getPrimarySourceUrl(trend);
     const sourceLabel = getPrimarySourceLabel(trend);
-    const hasThumbnail = Boolean(trend.thumbnailUrl);
-    const thumb = hasThumbnail ? buildTrendCardThumb(trend.thumbnailUrl, renderHelperDeps) : '';
+    const thumb = trend.thumbnailUrl ? buildTrendCardThumb(trend, renderHelperDeps) : '';
+    const hasThumbnail = Boolean(thumb);
     const scoreSummary = trend.scoreSummary ? '<div class="trend-score-summary">' + escapeHtml(trend.scoreSummary) + '</div>' : '';
     const summaryHtml = hasVisibleSummary(trend.summary) ? '<p>' + escapeHtml(trend.summary ?? '') + '</p>' : '';
     const insightHtml = renderTrendReasonList(trend, renderHelperDeps);
     return '<article class="' + escapeHtml('trend-card trend-card-rich ' + (hasThumbnail ? 'has-thumb' : 'trend-card-no-thumb')) + '" style="animation-delay:' + (index * 70) + 'ms">' +
       thumb +
       '<div><div class="trend-meta"><span>' + escapeHtml(categoryDisplayLabel(trend)) + '</span><time>' + escapeHtml(formatTopicDisplayTime(trend)) + '</time></div>' +
-      '<h3>' + escapeHtml(trend.title ?? 'ニュース') + '</h3>' +
+      '<h3>' + buildArticleTitleLink(trend.title ?? 'ニュース', sourceUrl) + '</h3>' +
       summaryHtml +
       insightHtml +
       scoreSummary +
@@ -724,6 +728,7 @@ function buildTodayNewsFallbackItems(topics) {
       publishedAt: topic.sourceSignals?.[0]?.publishedAt ?? topic.publishedAt ?? topic.capturedAt ?? '',
       publishedLabel: topic.time ?? '',
       thumbnailUrl: topic.thumbnailUrl ?? '',
+      sourceSignals: topic.sourceSignals ?? [],
       thirtySecondSummary: topic.summary ?? topic.whatHappened ?? '',
       watchpoints: topic.importantPoint ?? '',
       primaryLink: {
@@ -737,24 +742,42 @@ function renderFeaturedEvents() {
   if (!featuredEventListElement || !featuredEventTabsElement) return;
   const availableKeys = new Set(EVENT_TAB_DEFINITIONS.map((tab) => tab.key));
   if (!availableKeys.has(activeEventTab)) activeEventTab = 'closingSoon';
+  if (!EVENT_CATEGORY_DEFINITIONS.some((tab) => tab.key === activeEventCategory)) activeEventCategory = 'general';
+  const focusedCategory = document.activeElement?.dataset?.eventCategory;
+  const focusedPeriod = document.activeElement?.dataset?.eventTab;
+  const focusedFilter = EVENT_CATEGORY_DEFINITIONS.some((tab) => tab.key === focusedCategory)
+    ? { selector: '[data-event-category="' + focusedCategory + '"]', container: featuredEventCategoryTabsElement }
+    : availableKeys.has(focusedPeriod)
+      ? { selector: '[data-event-tab="' + focusedPeriod + '"]', container: featuredEventTabsElement }
+      : null;
 
-  replaceChildrenFromHtml(featuredEventTabsElement, EVENT_TAB_DEFINITIONS.map((tab) => {
-    const count = getEventItemsForTab(tab.key).length;
-    return '<button class="' + escapeHtml(tab.key === activeEventTab ? 'active' : '') + '" type="button" data-event-tab="' + escapeHtml(tab.key) + '" role="tab" aria-selected="' + escapeHtml(String(tab.key === activeEventTab)) + '">' +
-      escapeHtml(tab.label) +
-      '<strong>' + escapeHtml(String(count)) + '</strong>' +
-    '</button>';
-  }));
+  if (featuredEventCategoryTabsElement) {
+    replaceChildrenFromHtml(featuredEventCategoryTabsElement, EVENT_CATEGORY_DEFINITIONS.map((tab) => {
+      const count = getEventItemsForTab(activeEventTab, tab.key).length;
+      return renderEventFilterButton(tab, tab.key === activeEventCategory, 'event-category', count);
+    }));
+  }
+  replaceChildrenFromHtml(featuredEventTabsElement, EVENT_TAB_DEFINITIONS.map((tab) =>
+    renderEventFilterButton(tab, tab.key === activeEventTab, 'event-tab', getEventItemsForTab(tab.key).length)
+  ));
 
   const activeDefinition = EVENT_TAB_DEFINITIONS.find((tab) => tab.key === activeEventTab) ?? EVENT_TAB_DEFINITIONS[0];
+  const categoryDefinition = EVENT_CATEGORY_DEFINITIONS.find((tab) => tab.key === activeEventCategory);
   const visibleItems = getEventItemsForTab(activeDefinition.key);
-
-  if (!visibleItems.length) {
-    featuredEventListElement.innerHTML = '<article class="event-card event-card-empty"><strong>' + escapeHtml(activeDefinition.emptyTitle) + '</strong><p>' + escapeHtml(activeDefinition.emptyText) + '</p></article>';
-    return;
+  if (featuredEventStatusElement) {
+    featuredEventStatusElement.textContent = categoryDefinition.label + ' · ' + activeDefinition.label.replace('🔥', '') + ' ' + visibleItems.length + '件';
   }
+  if (!visibleItems.length) {
+    featuredEventListElement.innerHTML = '<article class="event-card event-card-empty"><strong>' + escapeHtml(categoryDefinition.label + '：この期間の掲載イベントはありません') + '</strong><p>' + escapeHtml(activeDefinition.emptyText) + ' 種類や期間を切り替えて探せます。</p></article>';
+  } else {
+    replaceChildrenFromHtml(featuredEventListElement, visibleItems.map((item, index) => renderEventCard(item, index)));
+  }
+  focusedFilter?.container?.querySelector(focusedFilter.selector)?.focus({ preventScroll: true });
+}
 
-  replaceChildrenFromHtml(featuredEventListElement, visibleItems.map((item, index) => renderEventCard(item, index)));
+function renderEventFilterButton(tab, isActive, dataAttribute, count) {
+  return '<button class="' + (isActive ? 'active' : '') + '" type="button" data-' + dataAttribute + '="' + escapeHtml(tab.key) + '" aria-pressed="' + String(isActive) + '" aria-controls="featured-event-list">' +
+    escapeHtml(tab.label) + '<strong>' + escapeHtml(String(count)) + '</strong></button>';
 }
 
 function renderEventCard(item, index) {
@@ -785,8 +808,8 @@ function renderEventCard(item, index) {
   '</article>';
 }
 
-function getEventItemsForTab(tabKey) {
-  return getEventItemsForTabFromList(eventItems, tabKey);
+function getEventItemsForTab(tabKey, categoryKey = activeEventCategory) {
+  return getEventItemsForTabFromList(eventItems, tabKey, categoryKey);
 }
 
 function buildClosingSoonBadge(item) {
@@ -1333,7 +1356,22 @@ if (featuredEventTabsElement) {
     if (!(button instanceof HTMLButtonElement)) return;
     const nextTab = button.dataset.eventTab;
     if (!nextTab || nextTab === activeEventTab) return;
+    if (!EVENT_TAB_DEFINITIONS.some((tab) => tab.key === nextTab)) return;
     activeEventTab = nextTab;
+    featuredEventListElement.scrollLeft = 0;
+    renderFeaturedEvents();
+  });
+}
+
+if (featuredEventCategoryTabsElement) {
+  featuredEventCategoryTabsElement.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-event-category]');
+    if (!(button instanceof HTMLButtonElement)) return;
+    const nextCategory = button.dataset.eventCategory;
+    if (!nextCategory || nextCategory === activeEventCategory) return;
+    if (!EVENT_CATEGORY_DEFINITIONS.some((tab) => tab.key === nextCategory)) return;
+    activeEventCategory = nextCategory;
+    featuredEventListElement.scrollLeft = 0;
     renderFeaturedEvents();
   });
 }

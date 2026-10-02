@@ -1,4 +1,5 @@
 const {
+  buildCardThumbnail,
   buildImportantPoint,
   buildGoogleNewsUrl,
   buildTargetAudience,
@@ -11,6 +12,7 @@ const {
   formatTopicDisplayTime,
   getPrimarySourceLabel,
   hasVisibleSummary,
+  handleCardImageError,
   matchesNewsCategory,
   normalizeTopic,
   pickCardImageUrl,
@@ -51,17 +53,7 @@ let latestUpdatedLabel = '更新時刻不明';
 const rangeItemsCache = new Map();
 const normalizedTopicCache = new Map();
 
-document.addEventListener('error', (event) => {
-  const image = event.target;
-  if (!(image instanceof HTMLImageElement)) return;
-  if (!image.classList.contains('trend-thumb')) return;
-  const wrapper = image.closest('.trend-thumb-wrap');
-  if (wrapper) {
-    const card = wrapper.closest('.trend-card');
-    if (card) card.classList.add('trend-card-no-thumb');
-    wrapper.remove();
-  }
-}, true);
+document.addEventListener('error', handleCardImageError, true);
 
 init();
 
@@ -173,10 +165,10 @@ function waitForNextPaint() {
 
 function renderArchiveCard(item) {
   const thumbnailUrl = getArchiveThumbnailUrl(item);
-  const hasThumbnail = Boolean(thumbnailUrl);
+  const thumb = thumbnailUrl ? buildCardThumbnail(item) : '';
+  const hasThumbnail = Boolean(thumb);
   const sourceUrl = getArchiveSourceUrl(item);
   const sourceLabel = getArchiveSourceLabel(item);
-  const thumb = hasThumbnail ? '<div class="trend-thumb-wrap"><img class="trend-thumb" src="' + escapeHtml(thumbnailUrl) + '" alt="" loading="lazy" referrerpolicy="no-referrer" /></div>' : '';
   const summaryHtml = hasVisibleSummary(item.summary) ? '<p>' + escapeHtml(item.summary ?? '') + '</p>' : '';
   const insightHtml = renderInsightList(item);
   const footerHtml = sourceUrl

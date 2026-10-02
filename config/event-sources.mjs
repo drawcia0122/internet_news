@@ -1,5 +1,23 @@
 export const EVENT_SOURCE_CANDIDATES = [
   {
+    name: "PARCO ART",
+    category: "展覧会・展示 / ポップアップ / ゲーム・アニメ",
+    priority: 92,
+    urls: ["https://art.parco.jp/"],
+  },
+  {
+    name: "PARCO CAFE",
+    category: "コラボカフェ",
+    priority: 90,
+    urls: ["https://cafe.parco.jp/"],
+  },
+  {
+    name: "日本科学未来館",
+    category: "体験型 / 科学・ワークショップ",
+    priority: 88,
+    urls: ["https://www.miraikan.jst.go.jp/events/"],
+  },
+  {
     name: "SCRAP / リアル脱出ゲーム",
     category: "脱出ゲーム",
     priority: 100,

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=49" />
+    <link rel="stylesheet" href="./styles.css?v=50" />
   </head>
   <body>
     <div class="ambient ambient-one"></div>
@@ -119,15 +119,22 @@
             <p class="section-kicker">GO OUT NOW</p>
             <h2 id="featured-events-heading">🎭 注目イベント</h2>
           </div>
-          <p class="brief-description">ニュースとは別に、今行けるイベントと近いうちに行けるイベントをまとめます。ゲーム、ポケモン、アニメ、体験型、コラボ系を優先表示します。</p>
+          <p class="brief-description">東京・埼玉の開催情報を優先表示。展示・展覧会、コラボカフェ、ポップアップ、体験型などを種類と期間で探せます。</p>
         </div>
         <div class="event-panel">
-          <div class="featured-tabs event-tabs" id="featured-event-tabs" role="tablist" aria-label="注目イベント期間タブ">
-            <button class="active" type="button" data-event-tab="closingSoon">🔥もうすぐ終了</button>
-            <button type="button" data-event-tab="ongoing">開催中</button>
-            <button type="button" data-event-tab="thisMonth">今月</button>
-            <button type="button" data-event-tab="nextMonth">来月</button>
+          <div class="featured-tabs event-tabs event-category-tabs" id="featured-event-category-tabs" role="group" aria-label="注目イベントの種類">
+            <button class="active" type="button" data-event-category="general" aria-pressed="true" aria-controls="featured-event-list">一般イベント</button>
+            <button type="button" data-event-category="pokemon" aria-pressed="false" aria-controls="featured-event-list">ポケモン</button>
+            <button type="button" data-event-category="escape" aria-pressed="false" aria-controls="featured-event-list">脱出・謎解き</button>
+            <button type="button" data-event-category="all" aria-pressed="false" aria-controls="featured-event-list">すべて</button>
           </div>
+          <div class="featured-tabs event-tabs event-period-tabs" id="featured-event-tabs" role="group" aria-label="注目イベントの期間">
+            <button class="active" type="button" data-event-tab="closingSoon" aria-pressed="true" aria-controls="featured-event-list">🔥もうすぐ終了</button>
+            <button type="button" data-event-tab="ongoing" aria-pressed="false" aria-controls="featured-event-list">開催中</button>
+            <button type="button" data-event-tab="thisMonth" aria-pressed="false" aria-controls="featured-event-list">今月</button>
+            <button type="button" data-event-tab="nextMonth" aria-pressed="false" aria-controls="featured-event-list">来月</button>
+          </div>
+          <p class="event-filter-status" id="featured-event-status" role="status" aria-live="polite"></p>
           <div class="event-list" id="featured-event-list">
             <article class="event-card event-card-empty">
               <strong>注目イベントを整理中です</strong>
@@ -260,12 +267,12 @@
 
     <script src="./article-category-quality.js?v=1"></script>
     <script src="./news-summary-integrity.js?v=2"></script>
-    <script src="./shared-topic-utils.js?v=8"></script>
-    <script src="./home-event-utils.js?v=4"></script>
+    <script src="./shared-topic-utils.js?v=13"></script>
+    <script src="./home-event-utils.js?v=6"></script>
     <script src="./home-topic-selection-utils.js?v=5"></script>
     <script src="./home-brief-utils.js?v=6"></script>
-    <script src="./home-render-utils.js?v=8"></script>
+    <script src="./home-render-utils.js?v=9"></script>
     <script src="./home-data-utils.js?v=4"></script>
-    <script src="./app.js?v=36"></script>
+    <script src="./app.js?v=37"></script>
   </body>
 </html>

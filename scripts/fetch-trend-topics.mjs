@@ -1,8 +1,9 @@
 import { mkdir, readFile, writeFile, readdir, unlink } from "node:fs/promises";
 
+import { repairStoredArticleSummary } from "../lib/article-summary-corrections.mjs";
 import { repairStoredArticleSource } from "../lib/article-source-corrections.mjs";
 import { buildDailyBrief } from "../lib/daily-brief.mjs";
-import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, extractEncodedUrlsFromHtml, hasSuspiciousThumbnailMismatch, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
+import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, readImageTagAttributes, hasSuspiciousThumbnailMismatch, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
 import { collectTrendTopics, repairStoredTopicCategories } from "../lib/trend-aggregator.mjs";
 import "../news-summary-integrity.js";
 import { repairItemThumbnail, restoreArchivedThumbnails } from "./repair-thumbnails.mjs";
@@ -12,6 +13,7 @@ const {
   canonicalArticleUrl: canonicalSummaryArticleUrl,
   hasSummaryTitleAlignment: hasArticleSummaryAlignment,
   isInvalidArticleSummary,
+  plainSummaryText,
   sanitizeArticleSummaryCollection,
   sanitizeArticleSummaryFields,
   titlesReferToSameArticle,
@@ -420,7 +422,7 @@ function pickFirstValidTimestamp(values = []) {
 }
 
 function normalizeStoredTopic(item, fallbackCapturedAt = null) {
-  item = repairStoredTopicCategories(repairStoredArticleSource(item));
+  item = repairStoredTopicCategories(repairStoredArticleSummary(repairStoredArticleSource(item)));
   const { thumbnail: _thumbnail, ...baseItem } = item;
   const categories = normalizeCategoryList(item.categories);
   const category = categories[0] ?? "general";
@@ -1470,8 +1472,10 @@ async function enrichItemMetadata(item, { force = false } = {}) {
 
 function sanitizeFetchedMetadata(metadata, title = "") {
   if (!metadata) return null;
-  const summary = hasArticleSummaryAlignment(metadata.summary, title) ? metadata.summary : null;
-  const briefSummary = hasArticleSummaryAlignment(metadata.briefSummary, title) ? metadata.briefSummary : null;
+  // A known different page is never rescued by coincidental summary keywords.
+  if (metadata.pageTitle && title && !titlesReferToSameArticle(title, metadata.pageTitle)) return null;
+  const summary = hasArticleSummaryAlignment(metadata.summary, title) ? plainSummaryText(metadata.summary) : null;
+  const briefSummary = hasArticleSummaryAlignment(metadata.briefSummary, title) ? plainSummaryText(metadata.briefSummary) : null;
   const pageTitleAligned = !metadata.pageTitle || titlesReferToSameArticle(title, metadata.pageTitle);
   const thumbnailUrl = pageTitleAligned || summary || briefSummary
     ? sanitizeThumbnailUrl(metadata.thumbnailUrl ?? metadata.thumbnail)
@@ -1643,29 +1647,28 @@ async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()
     },
   });
 
-  const articleCandidates = extractArticleTextCandidates(html);
-  const jsonLdSummary = extractJsonLdSummary(html);
-  const pageTitle = normalizeSummaryText(
-    html.match(/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)["']/i)?.[1]
-      ?? html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]
-      ?? "",
-  );
-  const summary = pickSummaryCandidate([
-    html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i)?.[1],
-    html.match(/<meta[^>]+name=["']twitter:description["'][^>]+content=["']([^"']+)["']/i)?.[1],
-    html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i)?.[1],
-    jsonLdSummary,
-    ...articleCandidates.slice(0, 3),
-    html.match(/<p\b[^>]*>([\s\S]{40,240}?)<\/p>/i)?.[1],
-  ], title);
-  const paragraphMatches = [...html.matchAll(/<p\b[^>]*>([\s\S]{30,320}?)<\/p>/gi)].map((match) => match[1]);
+  // Aggregator pages contain recommendations, live widgets and navigation in
+  // their main region. Only page-level metadata or a verified article link is
+  // eligible; generic paragraphs and recursive JSON-LD are not provenance.
+  const isWrapper = isYahooPickupUrl(responseUrl) || isGoogleNewsUrl(responseUrl);
+  const articleCandidates = isWrapper ? [] : extractArticleTextCandidates(html);
+  const jsonLdSummary = isWrapper ? null : extractJsonLdSummary(html);
+  const metadataValues = new Map();
+  for (const match of html.matchAll(/<meta\b[^>]*>/gi)) {
+    const attributes = readImageTagAttributes(match[0]);
+    const key = String(attributes.property || attributes.name || '').toLowerCase();
+    if (key && !metadataValues.has(key)) metadataValues.set(key, attributes.content || '');
+  }
+  const pageTitle = normalizeSummaryText(metadataValues.get('og:title')
+    || html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || '');
+  // Reject redirects to a different article before any nested link is fetched.
+  if (pageTitle && title && !titlesReferToSameArticle(title, pageTitle)) return null;
+  const descriptionCandidates = ['og:description', 'twitter:description', 'description']
+    .map((key) => metadataValues.get(key));
+  const summary = pickSummaryCandidate(descriptionCandidates, title, 20)
+    || pickSummaryCandidate([jsonLdSummary, ...articleCandidates.slice(0, 3)], title);
   const briefSummary = pickBriefSummaryCandidate([
-    html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i)?.[1],
-    html.match(/<meta[^>]+name=["']twitter:description["'][^>]+content=["']([^"']+)["']/i)?.[1],
-    html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i)?.[1],
-    jsonLdSummary,
-    ...articleCandidates,
-    ...paragraphMatches.slice(0, 6),
+    ...descriptionCandidates, jsonLdSummary, ...articleCandidates,
   ], title);
 
   const metadata = {
@@ -1682,10 +1685,12 @@ async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()
   };
 
   if (shouldFollowNestedArticle(responseUrl, metadata)) {
-    const outboundUrls = extractOutboundArticleUrls(html, responseUrl);
-    for (const outboundUrl of outboundUrls.slice(0, 8)) {
-      const nested = await fetchPageMetadata(outboundUrl, title, depth + 1, visited).catch(() => null);
-      const sanitizedNested = sanitizeFetchedMetadata(nested, title);
+    const primary = extractYahooPickupArticle(html, responseUrl, title);
+    const outboundUrls = primary ? [primary.url] : extractOutboundArticleUrls(html, responseUrl, title);
+    for (const outboundUrl of outboundUrls) {
+      const articleTitle = primary?.title || title;
+      const nested = await fetchPageMetadata(outboundUrl, articleTitle, depth + 1, visited).catch(() => null);
+      const sanitizedNested = sanitizeFetchedMetadata(nested, articleTitle);
       if (sanitizedNested && (sanitizedNested.thumbnailUrl || sanitizedNested.summary || sanitizedNested.briefSummary)) {
         return mergeFetchedMetadata(metadata, sanitizedNested, title);
       }
@@ -1778,7 +1783,7 @@ function normalizeArchiveItem(item, fallbackCapturedAt = null) {
 }
 
 function normalizeSummaryText(value) {
-  return String(value ?? "")
+  return plainSummaryText(value)
     .replace(/&nbsp;|&#160;/g, " ")
     .replace(/^現在JavaScriptが無効になっています.*$/iu, " ")
     .replace(/^Googleの「Google ニュース」をApp Storeでダウンロードしてください。?.*$/iu, " ")
@@ -2083,9 +2088,9 @@ function isGoogleNewsUrl(value) {
   }
 }
 
-function pickSummaryCandidate(candidates, title = "") {
+function pickSummaryCandidate(candidates, title = "", minimumLength = 40) {
   for (const candidate of candidates) {
-    const normalized = normalizeExtractedSummary(candidate);
+    const normalized = normalizeExtractedSummary(candidate, minimumLength);
     if (normalized && hasArticleSummaryAlignment(normalized, title)) return normalized;
   }
   return null;
@@ -2101,10 +2106,10 @@ function pickBriefSummaryCandidate(candidates, title = "") {
   return ranked[0]?.candidate ?? null;
 }
 
-function normalizeExtractedSummary(value) {
+function normalizeExtractedSummary(value, minimumLength = 40) {
   const text = normalizeSummaryText(stripHtml(String(value ?? "")));
   if (!text) return null;
-  if (text.length < 40) return null;
+  if (text.length < minimumLength) return null;
   if (/^comprehensive up-to-date news coverage/i.test(text)) return null;
   if (/^view the latest/i.test(text)) return null;
   if (/googleの「google ニュース」をapp storeでダウンロードしてください/i.test(text)) return null;
@@ -2237,6 +2242,8 @@ function extractMeaningfulKeywords(value) {
 }
 
 function extractArticleTextCandidates(html) {
+  html = String(html).replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
+    .replace(/<blockquote\b[^>]*>[\s\S]*?<\/blockquote>/gi, '');
   const scopedBlocks = [
     ...matchScopedParagraphs(html, /<article\b[^>]*>([\s\S]*?)<\/article>/gi),
     ...matchScopedParagraphs(html, /<main\b[^>]*>([\s\S]*?)<\/main>/gi),
@@ -2287,93 +2294,50 @@ function extractJsonLdTextCandidates(value) {
   return candidates;
 }
 
-function extractOutboundArticleUrls(html, baseUrl) {
-  const urls = [];
-  const canonicalUrl = absolutizeUrl(
-    html.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/i)?.[1]
-      ?? html.match(/<meta[^>]+property=["']og:url["'][^>]+content=["']([^"']+)["']/i)?.[1],
-    baseUrl,
-  );
-  if (canonicalUrl && !isGoogleNewsUrl(canonicalUrl) && !isAppDistributionUrl(canonicalUrl)) {
-    urls.push(canonicalUrl);
+function extractYahooPickupArticle(html, baseUrl, title = '') {
+  if (!isYahooPickupUrl(baseUrl)) return null;
+  const pickupId = new URL(baseUrl).pathname.match(/^\/pickup\/(\d+)\/?$/)?.[1];
+  if (!pickupId) return null;
+  for (const match of String(html).matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)) {
+    const stateText = match[1].match(/^\s*window\.__PRELOADED_STATE__\s*=\s*([\s\S]*?)\s*;?\s*$/)?.[1];
+    if (!stateText) continue;
+    const detail = safeJsonParse(stateText)?.topicsDetail;
+    if (String(detail?.id) !== pickupId || !titlesReferToSameArticle(title, detail?.title)) continue;
+    try {
+      const identity = new URL(detail.url);
+      if (identity.hostname !== 'news.yahoo.co.jp' || identity.pathname !== `/pickup/${pickupId}`) continue;
+      const articleUrl = new URL(detail.article?.url);
+      if (!/^https?:$/.test(articleUrl.protocol) || !detail.article?.title
+        || isYahooPickupUrl(articleUrl.href) || isGoogleNewsUrl(articleUrl.href)) continue;
+      return { url: articleUrl.href, title: plainSummaryText(detail.article.title) };
+    } catch { /* Missing or inconsistent source identity: leave it unfilled. */ }
   }
-
-  for (const match of html.matchAll(/<a\b[^>]*href=["']([^"']+)["']/gi)) {
-    const candidate = absolutizeUrl(match[1], baseUrl);
-    if (!candidate) continue;
-    if (pushOutboundUrl(urls, candidate)) continue;
-  }
-
-  for (const match of html.matchAll(/https?:\/\/[^"'\\\s<>()]+/g)) {
-    const candidate = absolutizeUrl(normalizeEmbeddedUrlString(match[0]), baseUrl);
-    if (!candidate) continue;
-    pushOutboundUrl(urls, candidate);
-  }
-
-  for (const raw of extractEncodedUrlsFromHtml(html)) {
-    const candidate = absolutizeUrl(normalizeEmbeddedUrlString(raw), baseUrl);
-    if (!candidate) continue;
-    pushOutboundUrl(urls, candidate);
-  }
-
-  return [...new Set(urls)].sort((left, right) => scoreOutboundArticleUrl(right) - scoreOutboundArticleUrl(left));
+  return null;
 }
 
-function pushOutboundUrl(urls, candidate) {
-  try {
-    const parsed = new URL(candidate);
-    const hostname = parsed.hostname.toLowerCase();
-    if (!/^https?:$/.test(parsed.protocol)) return false;
-    if (isAppDistributionUrl(parsed.toString())) return false;
-    if (hostname === "news.google.com") return false;
-    if (hostname.endsWith(".google.com")) return false;
-    if (hostname.endsWith("googleusercontent.com")) return false;
-    if (hostname.endsWith("gstatic.com")) return false;
-    if (hostname.endsWith("google-analytics.com")) return false;
-    if (hostname.endsWith("googletagmanager.com")) return false;
-    if (hostname.endsWith("fonts.googleapis.com")) return false;
-    if (hostname.endsWith("fonts.gstatic.com")) return false;
-    if (hostname.endsWith("newsstand.google.com")) return false;
-    if (hostname.endsWith("w3.org")) return false;
-    if (hostname.endsWith("angular.dev")) return false;
-    if (/\/search$|\/preferences$/.test(parsed.pathname)) return false;
-    urls.push(parsed.toString());
-    return true;
-  } catch {
-    return false;
+function extractOutboundArticleUrls(html, baseUrl, title = '') {
+  // The URL shape, host reputation or position on a page cannot establish
+  // article identity. Follow only an unambiguous link with the same headline.
+  // In particular never mine arbitrary script URLs or recommended-story links.
+  const matches = new Set();
+  const fingerprint = (value) => plainSummaryText(value).normalize('NFKC').toLowerCase()
+    .replace(/(?:速報|ニュース|news)/giu, '').replace(/[\s\p{P}\p{S}]+/gu, '');
+  const target = fingerprint(title);
+  if (target.length < 5) return [];
+  for (const match of String(html).matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)) {
+    const attributes = readImageTagAttributes(match[1]);
+    const label = fingerprint(match[2]);
+    if (!label || !(label === target || (Math.min(label.length, target.length) >= 10 && (label.includes(target) || target.includes(label))))) continue;
+    const candidate = absolutizeUrl(attributes.href, baseUrl);
+    if (!candidate || canonicalSummaryArticleUrl(candidate) === canonicalSummaryArticleUrl(baseUrl)) continue;
+    try {
+      const parsed = new URL(candidate);
+      if (!/^https?:$/.test(parsed.protocol) || isGoogleNewsUrl(candidate) || isYahooPickupUrl(candidate)
+        || isAppDistributionUrl(candidate) || /\.(?:jpe?g|png|gif|webp|avif|pdf|mp4|svg)(?:$|[?#])/i.test(candidate)) continue;
+      matches.add(candidate);
+    } catch { /* Invalid links cannot establish article identity. */ }
   }
-}
-
-function normalizeEmbeddedUrlString(value) {
-  return String(value ?? "")
-    .replace(/\\u003d/gi, "=")
-    .replace(/\\u0026/gi, "&")
-    .replace(/\\u002f/gi, "/")
-    .replace(/\\x3d/gi, "=")
-    .replace(/\\x26/gi, "&")
-    .replace(/\\\//g, "/")
-    .replace(/&amp;/gi, "&");
-}
-
-function scoreOutboundArticleUrl(value) {
-  try {
-    if (isAppDistributionUrl(value)) return -999;
-    const parsed = new URL(value);
-    const host = parsed.hostname.toLowerCase();
-    const combined = `${host}${parsed.pathname}${parsed.search}`.toLowerCase();
-    let score = 0;
-    if (/\.(?:co\.jp|or\.jp|ne\.jp|go\.jp|ac\.jp|jp)$/.test(host) || host.endsWith(".jp")) score += 40;
-    if (/\/articles?\//.test(parsed.pathname)) score += 60;
-    if (/\/\d{4}\/\d{2}\/\d{2}\//.test(parsed.pathname)) score += 50;
-    if (/\d{6,}|\d{4,}\.html|news\d+|article/i.test(combined)) score += 35;
-    if (/yahoo|asahi|nhk|mainichi|nikkei|itmedia|j-cast|4gamer|gamespark|inside|animeanime|oricon|natalie|mantan|reuters|fnn|tbs|tv-asahi|nikkansports|sponichi/i.test(combined)) score += 45;
-    if (!isGoogleNewsUrl(value) && !isYahooPickupUrl(value) && !isYahooArticleUrl(value)) score += 35;
-    if (isYahooArticleUrl(value)) score -= 55;
-    if (/rss|feed|manifest|license|logo|favicon|svg|css|js/.test(combined)) score -= 120;
-    return score;
-  } catch {
-    return -1;
-  }
+  return matches.size === 1 ? [...matches] : [];
 }
 
 function isYahooArticleUrl(value) {
@@ -2647,6 +2611,10 @@ export {
   buildNewsArchivePayload,
   dedupeNearDuplicateItems,
   findFetchedMetadata,
+  fetchPageMetadata,
+  extractOutboundArticleUrls,
+  extractYahooPickupArticle,
+  normalizeSummaryText,
   mergeArchiveItems,
   mergeDuplicateItems,
   normalizeStoredTopic,

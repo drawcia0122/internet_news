@@ -28,3 +28,13 @@ title、summary、description、thumbnail、URL、sourceは同じ記事identity�
 ## Reverification
 
 最低限、無関係な重複summary、前記事からの継承、canonical URL一致、不一致URL拒否、並び替え、dedupe、正常summary維持を確認する。単純な主要語一致だけで正常summaryを大量に落とさない。
+
+## Aggregator primary-story provenance (2026-10-02)
+
+- A Yahoo pickup's first/highest-scoring outbound article can be an access-ranking recommendation. `6597306` points to Sportsnavi volleyball, but the old URL scan selected a judo article containing the same country names. Shared words such as 日本 / 中国 are not evidence of article identity.
+- Resolve Yahoo nested content only from `topicsDetail` when its pickup ID, URL and title match the requested page. Other nested links require one unambiguous same-headline anchor. Never rank arbitrary script URLs or sidebar links as candidate articles. Reject a known different page title even when the description shares keywords.
+- Aggregator wrappers may use a short, valid page-level description (the verified volleyball synopsis is 28 characters). Keep descriptions from 20 characters; do not replace missing text with generic main/sidebar paragraphs. Exclude script and blockquote paragraphs from publisher narrative extraction.
+- Decode escaped HTML and remove complete/truncated tags before summary truncation; enforce plain text in stored normalization and shared integrity sanitation. Known persisted errors require narrowly source/title/signature-matched repair, not a guessed replacement summary.
+- `scripts/repair-summary-snapshots.mjs` migrates retained summary text without altering identity, counts, category, thumbnail, ordering or timestamps. `refresh-data.mjs` runs it before health-guard fallback capture, so a failed fetch cannot restore the known contaminated snapshot.
+
+Evidence: `tests/article-metadata-identity.test.mjs`; original [volleyball pickup](https://news.yahoo.co.jp/pickup/6597306), [Sportsnavi main story](https://sports.yahoo.co.jp/volley/japan/competitions/5001/game/2620/point), [baseball Expert article](https://news.yahoo.co.jp/expert/articles/32e047893c67efce237c3eb2b84fbacbeb2d2b77).

@@ -151,3 +151,7 @@ test('retains scoped publisher lazy attributes and CSS background images', async
     '<div data-background-image="/photos/lead.jpg"></div>',
   ]) assert.equal((await resolveThumbnail({ sourceUrl, pageHtml: `<article>${markup}</article>` })).thumbnailUrl, image);
 });
+
+test('publisher favicon size suffixes never become article thumbnails', () => {
+  assert.equal(sanitizeThumbnailUrl('https://www.youtube.com/s/desktop/2b888666/img/favicon_32x32.png'), null);
+});

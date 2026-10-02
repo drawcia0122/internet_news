@@ -142,3 +142,7 @@ test('home renderer retains lazy loading and safely encodes fallback attributes'
   assert.doesNotMatch(html, /" onerror="/);
   assert.equal(buildCardThumbnail({ thumbnailUrl: 'https://example.com/site-logo.png' }), '');
 });
+
+test('legacy underscored favicon thumbnails are rejected in card rendering', () => {
+  assert.equal(globalThis.TopicClientUtils.buildCardThumbnail({ thumbnailUrl: 'https://www.youtube.com/s/desktop/2b888666/img/favicon_32x32.png' }), '');
+});

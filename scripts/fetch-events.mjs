@@ -5,6 +5,7 @@ import {
   PARCO_ART_SOURCE, PARCO_CAFE_SOURCE, MIRAIKAN_SOURCE,
   extractParcoArtItems, extractParcoCafeItems, selectMiraikanEntries, buildMiraikanItem,
   collectSourcesWithFallback, balanceEventsBySource, isPureSalesCampaign, japanToday, isEventInCollectionWindow,
+  selectScrapVenueRecords, normalizeScrapEventGeography, preferAtomicScrapItem,
 } from "../lib/event-source-utils.mjs";
 
 const EVENTS_PATH = "data/events.json";
@@ -240,17 +241,8 @@ async function fetchPokemonOfficialItems() {
 async function fetchScrapItems() {
   const payload = await fetchJson("https://api.scrapmagazine.com/public/api/2/events");
   const events = Array.isArray(payload?.events) ? payload.events : [];
-  const grouped = new Map();
-
-  for (const event of events) {
-    const groupKey = String(event?.event_id ?? "").replace(/^\d+-/, "") || String(event?.event_url ?? "");
-    const current = grouped.get(groupKey) ?? [];
-    current.push(event);
-    grouped.set(groupKey, current);
-  }
-
-  return [...grouped.values()]
-    .map((group) => buildScrapGroupEvent(group))
+  return selectScrapVenueRecords(events, { today: TODAY_VALUE, upcomingDays: UPCOMING_WINDOW_DAYS })
+    .map((entry) => buildScrapVenueEvent(entry))
     .filter(Boolean);
 }
 
@@ -320,18 +312,13 @@ function isPokemonOfficialEventEntry(entry) {
   return /開催|オープン|OPEN|リニューアル|コラボ|ポップアップ|POP-UP|POP UP|展|美術館|博物館|カフェ|メニュー|ショー|キャンペーン|チャンピオンシップ|WCS|イオンモール|ストア|センター/i.test(text);
 }
 
-function buildScrapGroupEvent(group) {
-  const preferred = group
-    .filter((entry) => isPreferredScrapRegion(entry))
-    .sort((left, right) => scrapRegionRank(left) - scrapRegionRank(right));
-  const items = preferred.length ? preferred : group;
-  const first = items[0];
+function buildScrapVenueEvent(first) {
   const title = String(first?.event_name ?? "").replace(/^【[^】]+】/, "").trim();
   const detailUrl = first?.event_url ?? "";
-  const startDate = items.map((entry) => entry?.starts_on).filter(Boolean).sort()[0] ?? null;
-  const endDate = items.map((entry) => entry?.ends_on).filter(Boolean).sort().at(-1) ?? null;
-  const venues = [...new Set(items.map((entry) => entry?.place_name).filter(Boolean))];
-  const prefs = [...new Set(items.map((entry) => entry?.place_pref).filter(Boolean))];
+  const startDate = first.starts_on;
+  const endDate = first.ends_on;
+  const venues = [first.place_name];
+  const prefs = [first.place_pref];
   const isLikelyCollab = /名探偵コナン|ポケモン|アニメ|アイドル|ゲーム|ハンター|呪術|ヒロアカ|モンハン|東方/i.test(title);
   const tags = [
     "escape",
@@ -343,18 +330,20 @@ function buildScrapGroupEvent(group) {
   ].filter(Boolean);
 
   return {
-    id: buildEventId(detailUrl || title),
+    id: buildEventId(detailUrl || `${first.event_id}-${title}`),
     title,
     startDate,
     endDate,
-    venue: venues.slice(0, 3).join(" / ") || "SCRAP会場",
-    location: prefs.join("・") || String(first?.place_area ?? "関東"),
+    venue: first.place_name,
+    location: first.place_pref,
     category: "体験型 / リアル脱出ゲーム",
     description: buildScrapDescription(title, venues, prefs),
     detailUrl,
     officialUrl: "https://realdgame.jp/",
     sourceName: "SCRAP / リアル脱出ゲーム",
     sourceUrl: "https://api.scrapmagazine.com/public/api/2/events",
+    sourceEventId: first.event_id,
+    sourceVenueUrl: first.place_url || "",
     thumbnailUrl: first?.event_image ?? "",
     tags,
     recommendationReasons: buildScrapReasons(title, prefs, venues),
@@ -432,6 +421,12 @@ function mergeEventItems(primaryItems, fallbackItems) {
       merged.set(key, normalized);
       continue;
     }
+    const atomicScrapItem = preferAtomicScrapItem(current, normalized);
+    if (atomicScrapItem) {
+      // Even an alternate-source/manual duplicate cannot transplant another venue's fields.
+      merged.set(key, atomicScrapItem);
+      continue;
+    }
     merged.set(key, {
       ...current,
       ...normalized,
@@ -449,6 +444,7 @@ function mergeEventItems(primaryItems, fallbackItems) {
 
 function normalizeEventItem(item) {
   if (!item?.title) return null;
+  item = normalizeScrapEventGeography(item);
   const title = decodeHtml(String(item.title)).trim();
   if (!title) return null;
   const normalizedVenue = sanitizeVenue(item.venue, item.sourceName);
@@ -483,6 +479,7 @@ function sanitizeVenue(value, sourceName) {
 function eventMergeKey(item) {
   const detail = String(item.detailUrl ?? "").trim();
   if (detail) return `url:${detail}`;
+  if (item.sourceName === "SCRAP / リアル脱出ゲーム" && item.sourceEventId) return `scrap:${item.sourceEventId}`;
   return `title:${titleKey(item.title)}`;
 }
 
@@ -786,21 +783,6 @@ function inferAnimateLocation(storeName = "") {
   if (/大宮/.test(storeName)) return "埼玉県";
   if (/千葉/.test(storeName)) return "千葉県";
   return "東京都ほか";
-}
-
-function isPreferredScrapRegion(item) {
-  const pref = String(item?.place_pref ?? "");
-  const area = String(item?.place_area ?? "");
-  return /東京|神奈川|千葉|埼玉/.test(pref) || /関東/.test(area);
-}
-
-function scrapRegionRank(item) {
-  const pref = String(item?.place_pref ?? "");
-  if (/東京/.test(pref)) return 0;
-  if (/神奈川/.test(pref)) return 1;
-  if (/千葉/.test(pref)) return 2;
-  if (/埼玉/.test(pref)) return 3;
-  return 10;
 }
 
 function parseAnimatePeriod(value) {

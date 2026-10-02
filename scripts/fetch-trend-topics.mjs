@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile, readdir, unlink } from "node:fs/promises";
 
+import { repairStoredArticleSource } from "../lib/article-source-corrections.mjs";
 import { buildDailyBrief } from "../lib/daily-brief.mjs";
 import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, extractEncodedUrlsFromHtml, hasSuspiciousThumbnailMismatch, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
 import { collectTrendTopics, repairStoredTopicCategories } from "../lib/trend-aggregator.mjs";
@@ -419,7 +420,7 @@ function pickFirstValidTimestamp(values = []) {
 }
 
 function normalizeStoredTopic(item, fallbackCapturedAt = null) {
-  item = repairStoredTopicCategories(item);
+  item = repairStoredTopicCategories(repairStoredArticleSource(item));
   const { thumbnail: _thumbnail, ...baseItem } = item;
   const categories = normalizeCategoryList(item.categories);
   const category = categories[0] ?? "general";

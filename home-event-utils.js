@@ -1,4 +1,8 @@
 (function () {
+  const japanCalendarFormatter = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Tokyo', year: 'numeric', month: 'numeric', day: 'numeric',
+  });
+
   function normalizeEventDateValue(value) {
     if (!value) return null;
     const text = String(value).trim();
@@ -11,13 +15,16 @@
     return Number.isNaN(date.getTime()) ? null : date;
   }
 
-  function getTodayDate() {
-    const now = new Date();
-    return new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  function getTodayDate(now = new Date()) {
+    const parts = Object.fromEntries(japanCalendarFormatter.formatToParts(now).map((part) => [part.type, part.value]));
+    // Event dates are Japan calendar dates. Represent that day using the same
+    // local calendar shape as parseEventDate, regardless of the viewer's zone.
+    return new Date(Number(parts.year), Number(parts.month) - 1, Number(parts.day));
   }
 
   function daysBetween(left, right) {
-    return Math.round((left.getTime() - right.getTime()) / (1000 * 60 * 60 * 24));
+    const calendarTime = (date) => Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
+    return (calendarTime(left) - calendarTime(right)) / (1000 * 60 * 60 * 24);
   }
 
   function isEventOngoing(item, today = getTodayDate()) {

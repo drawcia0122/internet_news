@@ -9,6 +9,7 @@ import {
   extractParcoArtItems, extractParcoCafeItems, parseExplicitEventRange,
   selectMiraikanEntries, buildMiraikanItem, collectSourcesWithFallback,
   balanceEventsBySource, isPureSalesCampaign, japanToday, isEventInCollectionWindow,
+  selectScrapVenueRecords, normalizeScrapEventGeography, preferAtomicScrapItem,
 } from "../lib/event-source-utils.mjs";
 
 const fixture = (name) => readFile(new URL(`./fixtures/events/${name}`, import.meta.url), "utf8");
@@ -208,4 +209,114 @@ test("ticket/parking-only promotions are excluded while festivals and collaborat
   for (const title of ["よみランハロウィン！～Jump in Party 2026～", "ブルーロック×よみうりランド", "リポビタンロケット☆ルナ ダーク・ザ・ライド"]) {
     assert.equal(isPureSalesCampaign(title), false, title);
   }
+});
+
+function scrapVenueFixture(overrides = {}) {
+  return {
+    event_id: "394-itemd_2",
+    event_name: "【池袋店】リアル脱出ゲーム『アイテムだらけの部屋からの脱出』",
+    event_url: "https://realdgame.jp/s/item/",
+    place_name: "リアル脱出ゲーム池袋店", place_pref: "東京都", place_area: "関東",
+    place_url: "https://realdgame.jp/shop/ikebukuro/access/",
+    starts_on: "2026-10-01", ends_on: "2026-12-31", event_image: "https://example.test/tokyo.jpg",
+    ...overrides,
+  };
+}
+
+test("SCRAP selects one complete current venue tuple for a shared official page", () => {
+  const tokyo = scrapVenueFixture();
+  const osaka = scrapVenueFixture({ event_id: "95-itemd_o", place_name: "リアル脱出ゲーム大阪恵美須町店", place_pref: "大阪府", place_area: "関西", ends_on: "2026-11-30", event_image: "https://example.test/osaka.jpg" });
+  const expired = scrapVenueFixture({ event_id: "394-itemd_", starts_on: "2025-01-27", ends_on: "2026-09-30" });
+  const selected = selectScrapVenueRecords([expired, tokyo, osaka], { today: "2026-10-02" });
+  assert.deepEqual(selected, [tokyo]);
+  assert.equal(selected[0].ends_on, "2026-12-31");
+  assert.equal(selected[0].event_image, "https://example.test/tokyo.jpg");
+  const onlyOsakaCurrent = selectScrapVenueRecords([expired, osaka], { today: "2026-10-02" });
+  assert.deepEqual(onlyOsakaCurrent, [osaka]); // An expired Tokyo row must not hide genuine Osaka activity.
+});
+
+test("SCRAP uses exact venue/address evidence over broad area, raw prefecture, or title", () => {
+  const misleading = scrapVenueFixture({ event_id: "osaka", event_name: "東京が舞台の物語", place_name: "リアル脱出ゲーム大阪恵美須町店", place_pref: "東京都", place_area: "関東" });
+  const selected = selectScrapVenueRecords([misleading], { today: "2026-10-02" });
+  assert.equal(selected[0].place_pref, "大阪府");
+  const unknown = scrapVenueFixture({ place_name: "未確認会場", place_pref: "", place_area: "関東" });
+  assert.deepEqual(selectScrapVenueRecords([unknown], { today: "2026-10-02" }), []);
+  const saitama = scrapVenueFixture({ event_id: "saitama", place_name: "埼玉の会場", place_pref: "埼玉県" });
+  const yokohama = scrapVenueFixture({ event_id: "yokohama", place_name: "リアル脱出ゲーム横浜店", place_pref: "神奈川県" });
+  assert.equal(selectScrapVenueRecords([yokohama, saitama], { today: "2026-10-02" })[0].event_id, "saitama");
+});
+
+test("SCRAP no-URL entries retain distinct source identities and all current venue records remain eligible", () => {
+  const rows = [scrapVenueFixture({ event_id: "a", event_url: "" }), scrapVenueFixture({ event_id: "b", event_url: "", place_name: "リアル脱出ゲーム大阪恵美須町店", place_pref: "大阪府" })];
+  assert.equal(selectScrapVenueRecords(rows, { today: "2026-10-02" }).length, 2);
+  assert.equal(selectScrapVenueRecords(rows, { today: "2026-12-31" }).length, 2);
+  assert.equal(selectScrapVenueRecords(rows, { today: "2027-01-01" }).length, 0);
+  const linked = scrapVenueFixture({ event_id: "same-occurrence" });
+  const unlinkedVariant = { ...linked, event_url: "", event_name: `${linked.event_name}（Only in Japanese）` };
+  assert.deepEqual(selectScrapVenueRecords([unlinkedVariant, linked], { today: "2026-10-02" }), [linked]);
+});
+
+test("a verified SCRAP occurrence wins an alternate-source collision as an indivisible record", () => {
+  const atomic = { sourceName: "SCRAP / リアル脱出ゲーム", sourceEventId: "394-itemd_2", venue: "リアル脱出ゲーム池袋店", location: "東京都", endDate: "2026-12-31", tags: ["tokyo"] };
+  const alternate = { sourceName: "手動イベント", venue: "リアル脱出ゲーム大阪恵美須町店", location: "大阪府大阪市浪速区", endDate: "2026-11-30", tags: ["other"] };
+  assert.equal(preferAtomicScrapItem(atomic, alternate), atomic);
+  assert.equal(preferAtomicScrapItem(alternate, atomic), atomic);
+  assert.equal(preferAtomicScrapItem(alternate, { sourceName: "Other" }), null);
+});
+
+test("legacy SCRAP snapshot repair removes contradictory Tokyo tags and leaves unknown places unknown", async () => {
+  const mixed = {
+    title: "リアル脱出ゲーム『アイテムだらけの部屋からの脱出』", sourceName: "SCRAP / リアル脱出ゲーム",
+    venue: "リアル脱出ゲーム大阪恵美須町店", location: "東京都", tags: ["escape", "tokyo", "kanto"],
+    recommendationReasons: ["脱出ゲーム好き向け", "東京開催", "関東で行きやすい"], description: "東京都のイベントです。",
+    sourceCheckedAt: "old-check", startDate: "2026-10-01", endDate: "2026-11-30",
+  };
+  const result = await collectSourcesWithFallback([
+    { name: "SCRAP / リアル脱出ゲーム", collect: async () => { throw new Error("SCRAP offline"); } },
+    { name: "Other", collect: async () => [{ title: "Other event", sourceName: "Other" }] },
+  ], [mixed], { normalize: normalizeScrapEventGeography });
+  const repaired = result.items.find((item) => item.sourceName === mixed.sourceName);
+  assert.equal(repaired.location, "大阪府");
+  assert.deepEqual(repaired.tags, ["escape"]);
+  assert.deepEqual(repaired.recommendationReasons, ["脱出ゲーム好き向け"]);
+  assert.ok(!repaired.description.includes("東京都"));
+  assert.equal(repaired.sourceCheckedAt, "old-check");
+  const unknown = normalizeScrapEventGeography({ ...mixed, venue: "東京ミステリーサーカスに似た未確認会場" });
+  assert.equal(unknown.location, "開催場所未確認");
+  assert.ok(!unknown.tags.includes("tokyo"));
+});
+
+test("the CLI preserves coherent SCRAP tuple through merge and repairs mixed fallback snapshots on partial failure", async () => {
+  const cwd = await mkdtemp(join(tmpdir(), "scrap-geography-test-"));
+  try {
+    await mkdir(join(cwd, "data"));
+    const script = fileURLToPath(new URL("../scripts/fetch-events.mjs", import.meta.url));
+    const tokyo = scrapVenueFixture();
+    const osaka = scrapVenueFixture({ event_id: "95-itemd_o", place_name: "リアル脱出ゲーム大阪恵美須町店", place_pref: "大阪府", place_area: "関西", ends_on: "2026-11-30", event_image: "https://example.test/osaka.jpg" });
+    const freeze = "const OriginalDate=Date;globalThis.Date=class extends OriginalDate{constructor(...args){super(...(args.length?args:['2026-10-02T03:00:00Z']))}static now(){return OriginalDate.parse('2026-10-02T03:00:00Z')}};";
+    const run = (fetchCode) => execFileSync(process.execPath, ["--import", `data:text/javascript,${encodeURIComponent(freeze + fetchCode)}`, script], { cwd, stdio: "pipe", env: { ...process.env, TZ: "UTC" } });
+    await writeFile(join(cwd, "data/events.json"), JSON.stringify({ items: [{ title: "Duplicate from another source", sourceName: "手動イベント", detailUrl: tokyo.event_url, venue: osaka.place_name, location: "大阪府大阪市浪速区", startDate: "2026-10-01", endDate: "2026-11-30", tags: ["other"] }] }));
+    run(`globalThis.fetch=async(url)=>{if(url==='https://api.scrapmagazine.com/public/api/2/events')return new Response(${JSON.stringify(JSON.stringify({ events: [tokyo, osaka] }))});throw new Error('fixture outage')};`);
+    let result = JSON.parse(await readFile(join(cwd, "data/events.json"), "utf8"));
+    const event = result.items.find((item) => item.detailUrl === tokyo.event_url);
+    assert.equal(event.venue, tokyo.place_name);
+    assert.equal(event.location, tokyo.place_pref);
+    assert.equal(event.startDate, tokyo.starts_on);
+    assert.equal(event.endDate, tokyo.ends_on);
+    assert.equal(event.thumbnailUrl, tokyo.event_image);
+    assert.equal(event.sourceEventId, tokyo.event_id);
+    assert.ok(!event.description.includes("大阪"));
+    assert.equal(result.items.filter((item) => item.detailUrl === tokyo.event_url).length, 1);
+    // Reproduce a prior malformed snapshot while SCRAP itself is unavailable.
+    await writeFile(join(cwd, "data/events.json"), JSON.stringify({ items: [{ ...event, sourceEventId: undefined, venue: osaka.place_name, location: "東京都", tags: ["escape", "tokyo"], recommendationReasons: ["東京開催"] }] }));
+    const art = await fixture("parco-art.html");
+    run(`globalThis.fetch=async(url)=>{if(url==='https://art.parco.jp/')return new Response(${JSON.stringify(art)});throw new Error('fixture outage')};`);
+    result = JSON.parse(await readFile(join(cwd, "data/events.json"), "utf8"));
+    const fallback = result.items.find((item) => item.detailUrl === tokyo.event_url);
+    assert.equal(fallback.venue, osaka.place_name);
+    assert.equal(fallback.location, "大阪府");
+    assert.ok(!fallback.tags.includes("tokyo"));
+    assert.ok(!fallback.recommendationReasons.includes("東京開催"));
+    assert.equal(result.sourceDiagnostics.find((item) => item.name === event.sourceName).status, "failed");
+  } finally { await rm(cwd, { recursive: true, force: true }); }
 });

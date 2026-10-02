@@ -174,3 +174,14 @@ test('Hatena explicit original image outranks its tiny scissors preview', async 
   const missing = await collectEntry(`<link>${articleUrl}</link><description>${escapeXml(`<img src="${proxy}">`)}</description>`);
   assert.equal(missing.thumbnailUrl, null);
 });
+
+test('YouTube feed watch links outrank subscription links in the description', async () => {
+  const video = 'https://www.youtube.com/watch?v=Hs1AlE91RYQ';
+  const channel = 'https://www.youtube.com/c/Oishinbo?sub_confirmation=1';
+  const item = await collectEntry(`<link>${video}</link><description><![CDATA[<a href="${channel}">チャンネル登録はこちら</a>]]></description>`);
+  assert.equal(item.sourceSignals[0].url, video);
+  const matched = await collectEntry(`<link>${channel}</link><description><![CDATA[<a href="${video}">${title}</a>]]></description>`);
+  assert.equal(matched.sourceSignals[0].url, video);
+  const unrelated = await collectEntry(`<link>${channel}</link><description><![CDATA[<a href="${video}">別の動画はこちら</a>]]></description>`);
+  assert.equal(unrelated.sourceSignals[0].url, channel);
+});

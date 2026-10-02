@@ -358,7 +358,7 @@
     if (isWeakThumbnailUrl(url)) return null;
     if (/^https?:\/\/lh3\.googleusercontent\.com\/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc(?:=|$)/i.test(url)) return null;
     if (/^https?:\/\/lh3\.googleusercontent\.com\/zpUAWPoFO8BgmXeHZna-q2AFE1ss9PWr2E16kntkjD5pyjVWfWEhzza9qBxRpMypBCYTnINVLw(?:=|$)/i.test(url)) return null;
-    if (/(?:^|\/)(?:favicon(?:-\d+x\d+)?|apple-touch-icon|android-chrome-\d+x\d+|mstile-\d+x\d+)(?:\.[a-z0-9]+)?(?:$|[?#])/i.test(url)) return null;
+    if (/(?:^|\/)(?:favicon(?:[-_]\d+x\d+)?|apple-touch-icon|android-chrome-\d+x\d+|mstile-\d+x\d+)(?:\.[a-z0-9]+)?(?:$|[?#])/i.test(url)) return null;
     if (/\/favicon\.ico(?:$|[?#])/i.test(url)) return null;
     if (/(?:google|gstatic)\.[^/]+\/.*(?:favicon|logo|icon)/i.test(url)) return null;
     if (/(?:^|[/?#&=_-])(logo|icon|menu|nav|sns-share|share-icon|social-icon|site-logo|header-logo|brand-logo)(?:[/?#&=._-]|$)/i.test(url)) return null;

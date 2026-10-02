@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css?v=51" />
+    <link rel="stylesheet" href="./refresh-status.css?v=1" />
     <link rel="stylesheet" href="./matome-section.css?v=1" />
   </head>
   <body>
@@ -69,6 +70,8 @@
       <section class="refresh-strip" aria-label="更新状態">
         <p id="refresh-status">最新データを自動で確認中</p>
       </section>
+
+      <p class="data-refresh-health" id="data-refresh-health" role="status" aria-live="polite" hidden></p>
 
       <section class="focus-section" id="must-read-news" aria-labelledby="must-read-news-heading">
         <div class="section-heading section-heading-stack">
@@ -307,6 +310,7 @@
     </footer>
 
     <script src="./article-category-quality.js?v=1"></script>
+    <script src="./refresh-status.js?v=1"></script>
     <script src="./news-summary-integrity.js?v=2"></script>
     <script src="./shared-topic-utils.js?v=13"></script>
     <script src="./home-event-utils.js?v=7"></script>

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css?v=50" />
+    <link rel="stylesheet" href="./refresh-status.css?v=1" />
   </head>
   <body>
     <div class="ambient ambient-one"></div>
@@ -24,6 +25,7 @@
           <span id="news-updated">更新確認中</span>
         </div>
       </section>
+      <p class="data-refresh-health" id="data-refresh-health" data-refresh-datasets="home-news.json" role="status" aria-live="polite" hidden></p>
       <section class="topic-layout news-layout">
         <article class="topic-panel">
           <div class="section-heading news-controls-heading">
@@ -72,6 +74,7 @@
         </article>
       </section>
     </main>
+    <script src="./refresh-status.js?v=1"></script>
     <script src="./news-summary-integrity.js?v=2"></script>
     <script src="./shared-topic-utils.js?v=13"></script>
     <script src="./news.js?v=29"></script>

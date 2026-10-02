@@ -1,4 +1,5 @@
 import { repairThumbnails } from './repair-thumbnails.mjs';
+import { runGuardedRefresh } from '../lib/refresh-health.mjs';
 
 const DEFAULT_REPAIR_TARGETS = [
   'data/news-archive.json',
@@ -6,22 +7,12 @@ const DEFAULT_REPAIR_TARGETS = [
   'data/trend-topics-browse.json',
 ];
 
-await runStage('trend', () => import('./fetch-trend-topics.mjs'));
-await runStage('events', () => import('./fetch-events.mjs'));
-await runStage('adult', () => import('./fetch-adult-trends.mjs'));
-await runStage('today-internet', () => import('./build-today-internet.mjs'));
-await runStage('thumbnail-repair', () => (
-  repairThumbnails(process.env.REPAIR_THUMBNAILS === '1' ? [] : DEFAULT_REPAIR_TARGETS)
-));
-await runStage('matome', async () => (await import('./fetch-matome-threads.mjs')).refreshMatomeThreads());
-
-async function runStage(name, run) {
-  console.log(`[refresh] ${name}:start`);
-  try {
-    await run();
-  } catch (error) {
-    console.error(`[refresh] ${name}:failed`);
-    throw error;
-  }
-  console.log(`[refresh] ${name}:complete`);
-}
+// Keep dependent stages sequential, including thumbnail consumer synchronization.
+await runGuardedRefresh([
+  { name: 'trend', run: () => import('./fetch-trend-topics.mjs') },
+  { name: 'events', run: () => import('./fetch-events.mjs') },
+  { name: 'adult', run: () => import('./fetch-adult-trends.mjs') },
+  { name: 'today-internet', run: () => import('./build-today-internet.mjs') },
+  { name: 'thumbnail-repair', run: () => repairThumbnails(process.env.REPAIR_THUMBNAILS === '1' ? [] : DEFAULT_REPAIR_TARGETS) },
+  { name: 'matome', run: async () => (await import('./fetch-matome-threads.mjs')).refreshMatomeThreads() },
+]);

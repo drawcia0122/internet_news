@@ -44,7 +44,21 @@
       .slice(0, limit);
   }
 
-  function selectPersonalNews(topics, { excludedIds = new Set(), excludedArticleKeys = new Set(), limit = 10 } = {}) {
+  function selectPersonalNews(topics, { excludedIds = new Set(), excludedArticleKeys = new Set(), limit = 10, preferences = null } = {}) {
+    const reader = window.ReaderPreferences;
+    const settings = reader?.normalizePreferences(preferences);
+    if (settings && reader.isActive(settings)) {
+      const matching = topics.filter((topic) => reader.matchesTopic(topic, settings));
+      // Exclusions alone retain the established ranking and fallback behavior.
+      if (!reader.hasInterests(settings)) return selectPersonalNews(matching, { excludedIds, excludedArticleKeys, limit });
+      // Explicit interests can include categories outside the old fixed otaku interests.
+      // Existing adult/language and upper-section identity guards remain in force.
+      return matching
+        .filter((topic) => !isAdultContentTopic(topic) && isJapaneseHeavyTopic(topic))
+        .filter((topic) => !excludedIds.has(topic.id) && !hasArticleIdentityOverlap(topic, excludedArticleKeys))
+        .sort((left, right) => personalTopicRank(right) - personalTopicRank(left) || hotTopicScore(right) - hotTopicScore(left))
+        .slice(0, limit);
+    }
     const baseCandidates = [...topics]
       .filter((topic) => !isAdultContentTopic(topic))
       .filter((topic) => isJapaneseHeavyTopic(topic))

@@ -47,8 +47,23 @@ Timestamp meanings:
 
 An all-feed outage retains valid articles and their publication/capture timestamps, marks source failures and cached entries, and does not advance `generatedAt`. If no usable articles exist during a complete outage, no empty successful snapshot replaces the existing file. The browser also removes expired cards and shows delayed acquisition status. UI refresh failure retains the last valid in-memory view without resetting the selected tab or expanded count.
 
+## Local reader preferences
+
+The collapsed 「スレまとめの表示設定」 panel can reorder all four categories and hide individual publishers. Its scope is only this section in this browser. No account, remote service, tracking, collector change, shared JSON mutation, or effect on factual-news sections is involved.
+
+- Without saved settings, the existing ゲーム → アニメ → 雑談 → ネタ order and all publishers remain visible
+- Up/down buttons support keyboard operation. Changes remain a draft until 「設定を保存」 is selected. The selected tab stays selected on save, while the first preferred category is selected on the next page load. Arrow keys, Home and End follow the saved order
+- Publisher choices come only from validated `payload.sources`; hidden sources are removed before computing tab counts and six-item pagination. Empty filtered results explain how to revisit the settings
+- Save/reset restart pagination safely at six per category. Background refresh preserves selection, expanded counts, unsaved edits and keyboard focus; invalid refresh data retains the previous valid view
+- `matome-preferences.js` uses the independent key `internet-news-matome-preferences-v1` with `{ version: 1, categoryOrder, hiddenSourceIds }`. Unknown versions fall back to defaults, categories are restricted to the four supported IDs, duplicates are removed, missing categories are appended in default order, and source IDs are restricted to the currently validated publisher list
+- Missing, malformed or blocked storage never prevents reading. If saving fails, the UI applies preferences for the current page and explicitly warns they were not saved. Reset removes only this section's key; a failed removal restores defaults for the current page and warns that older settings may return after reload
+
+Source choices and saving become available after the first valid source payload; resetting remains available during an acquisition outage. This avoids overwriting stored publisher choices with an unknown source list.
+
 ## Verification
 
 Run `node --test tests/*.test.mjs`, syntax checks for changed JS/MJS, and `git diff --check`. Focused fixtures cover RDF/Atom/RSS, publication dates, canonical URL identity, safety filters, classification, partial/total failures, permanent-failure non-retry, bounded retention and scheduled-pipeline wiring. A real `npm run refresh:matome` must produce current direct publisher links before release; HTTP 200 alone is insufficient.
 
 Desktop/mobile browser checks cover all four tabs, keyboard activation, pagination, repeated refresh/error retention, source links, freshness labels, and navigation overflow. Check the actual scheduled GitHub Actions run after deployment; local acquisition is not evidence that the deployment runner can fetch those same sources.
+
+Preferences fixtures in `tests/matome-preferences.test.mjs` cover malformed/unknown/duplicate settings, storage read/write/removal failures, repeat save/reset, source-filtered counts/pagination, preferred tab navigation, and controller focus/refresh behavior. The optional Playwright check is `node tests/matome-preferences-browser.mjs` with a local server at `http://127.0.0.1:8000` (override with `MATOME_TEST_BASE_URL`); it checks desktop and mobile settings, reload persistence, keyboard order, safe output, outages, and blocked storage.

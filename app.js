@@ -84,7 +84,8 @@ let archiveTopics = [];
 let archiveTotalTopicCount = 0;
 let archiveHasMorePages = false;
 let archiveNextPage = 0;
-let archivePageLoadPromise = null;
+let archiveReady = false;
+let archiveInitialFailed = false;
 let latestTrendGeneratedAt = null;
 let latestHomeDataGeneratedAt = null;
 let dailyBriefItems = [];
@@ -175,21 +176,46 @@ const renderHelperDeps = {
   sanitizeBriefSummaryText,
 };
 const homeTopicCacheStore = createStorageArrayCache({
-  storage: localStorage,
+  storage: window.ReaderPreferences.getStorage('localStorage'),
   key: 'internet-news-home-topic-cache-v2',
   normalize: normalizeTrendTopic,
 });
 const briefCacheStore = createStorageArrayCache({
-  storage: sessionStorage,
+  storage: window.ReaderPreferences.getStorage('sessionStorage'),
   key: 'internet-news-daily-brief-cache-v2',
   normalize: (item) => item,
 });
 const eventCacheStore = createStorageArrayCache({
-  storage: sessionStorage,
+  storage: window.ReaderPreferences.getStorage('sessionStorage'),
   key: 'internet-news-event-cache-v2',
   normalize: normalizeEventItem,
 });
 document.addEventListener('error', handleCardImageError, true);
+const archivePager = window.HomeReaderLoading.createSharedArchivePager({
+  getCursor: () => archiveHasMorePages ? archiveNextPage : null,
+  fetchPage: fetchHomeNewsPagePayload,
+  applyPage: (payload) => applyArchivePayload(payload, { append: true }),
+  onUpdate: () => renderDiscoverySections(),
+});
+const personalNewsLoader = window.HomeReaderLoading.createReaderNewsLoader({
+  isEnabled: () => {
+    const settings = readerPreferences?.getPreferences();
+    return Boolean(settings && window.ReaderPreferences.isActive(settings) && window.ReaderPreferences.hasInterests(settings));
+  },
+  isReady: () => archiveReady,
+  getCount: () => personalNewsItems.length,
+  hasMore: () => archiveHasMorePages,
+  loadNext: () => archivePager.loadNext(),
+  onState: () => renderPersonalNews(),
+  limit: PERSONAL_NEWS_LIMIT,
+});
+const readerPreferences = window.ReaderPreferences.initializeReaderPreferences(document.querySelector('#reader-preferences'), {
+  onChange() {
+    personalNewsLoader.restart();
+    personalVisibleCount = PERSONAL_INITIAL_LIMIT;
+    renderDiscoverySections();
+  },
+});
 
 console.time('home:init');
 trendTopics = homeTopicCacheStore.load();
@@ -337,12 +363,17 @@ async function loadTodayInternet() {
 }
 
 async function loadNewsArchive() {
+  archiveInitialFailed = false;
+  archiveReady = false;
+  archivePager.reset();
+  personalNewsLoader.restart();
   let errorMessage = null;
   try {
     const payload = await fetchHomeNewsInitialPayload();
     applyArchivePayload(payload, { append: false });
     updateLatestHomeGeneratedAt(payload?.generatedAt);
   } catch (error) {
+    archiveInitialFailed = true;
     errorMessage = error?.message || '取得エラー';
     archiveTopics = [];
     archiveTotalTopicCount = 0;
@@ -350,6 +381,7 @@ async function loadNewsArchive() {
     archiveNextPage = 0;
   }
 
+  archiveReady = true;
   renderDiscoverySections();
   if (deferredTrendRendered) renderTrends(activeTrendFilter, { preserveCount: true });
 
@@ -427,32 +459,11 @@ function applyArchivePayload(payload, { append = false } = {}) {
 }
 
 async function loadMoreArchiveTopicsIfNeeded(minFilteredCount = trendVisibleCount + TREND_LOAD_MORE_STEP) {
-  while (archiveHasMorePages) {
-    const currentFilteredCount = getFilteredTrendItems(activeTrendFilter).length;
-    if (currentFilteredCount >= minFilteredCount) break;
-    if (archivePageLoadPromise) {
-      await archivePageLoadPromise;
-      continue;
-    }
-    const pageNumber = archiveNextPage;
-    if (!pageNumber) {
-      archiveHasMorePages = false;
-      break;
-    }
-    archivePageLoadPromise = (async () => {
-      try {
-        const payload = await fetchHomeNewsPagePayload(pageNumber);
-        applyArchivePayload(payload, { append: true });
-      } catch {
-        archiveHasMorePages = false;
-        archiveNextPage = 0;
-      }
-    })();
-    try {
-      await archivePageLoadPromise;
-    } finally {
-      archivePageLoadPromise = null;
-    }
+  const filter = activeTrendFilter;
+  while (archiveReady && archiveHasMorePages && activeTrendFilter === filter) {
+    if (getFilteredTrendItems(filter).length >= minFilteredCount) break;
+    const result = await archivePager.loadNext();
+    if (result.status === 'error' || result.status === 'exhausted') break;
   }
 }
 
@@ -611,8 +622,10 @@ function renderTrends(filter = 'all', { preserveCount = false } = {}) {
   const filtered = getFilteredTrendItems(filter);
 
   if (!filtered.length) {
-    if (archiveHasMorePages && archiveTopics.length) {
-      void loadMoreArchiveTopicsIfNeeded(1).then(() => renderTrends(filter, { preserveCount: true }));
+    if (archiveReady && archiveHasMorePages && archiveTopics.length && !archivePager.getState().failed) {
+      void loadMoreArchiveTopicsIfNeeded(1).then(() => {
+        if (activeTrendFilter === filter) renderTrends(filter, { preserveCount: true });
+      });
     }
     const freshnessLabel = latestTrendGeneratedAt ? '最終生成: ' + formatAbsoluteDate(latestTrendGeneratedAt) : 'まだ最新データを取得できていません';
     trendListElement.innerHTML = '<div class="empty-tweets trend-empty"><strong>最近話題のトピックを収集中です</strong><p>' + escapeHtml(freshnessLabel) + '</p></div>';
@@ -680,10 +693,12 @@ function renderDiscoverySections() {
     ? [todayInternetPayload.selectedTopic, ...(Array.isArray(todayInternetPayload.runnerUps) ? todayInternetPayload.runnerUps : [])].filter(Boolean)
     : internetNews;
   const internetArticleKeys = createArticleIdentitySet(featuredInternetNews);
+  readerPreferences?.updateSources(topics);
   personalNewsItems = selectPersonalNews(topics, {
     excludedArticleKeys: internetArticleKeys,
     excludedIds: new Set(internetNews.map((topic) => topic.id)),
     limit: PERSONAL_NEWS_LIMIT,
+    preferences: readerPreferences?.getPreferences(),
   });
   const occupiedArticleKeys = createArticleIdentitySet([...featuredInternetNews, ...personalNewsItems]);
   const todayNewsFallback = buildTodayNewsFallbackItems(topics);
@@ -700,13 +715,32 @@ function renderDiscoverySections() {
   });
   if (deferredTrendRendered) renderTrends(activeTrendFilter, { preserveCount: true });
   console.timeEnd('home:render-discovery');
+  void personalNewsLoader.ensure();
 }
 
 function renderPersonalNews() {
   const state = getPersonalNewsPageState(personalNewsItems.length, personalVisibleCount, PERSONAL_LOAD_MORE_STEP);
+  const settings = readerPreferences?.getPreferences();
+  const custom = settings && window.ReaderPreferences.isActive(settings);
+  const status = document.querySelector('#personal-news-status');
+  const loading = archiveInitialFailed && custom
+    ? { phase: 'error', retryable: true } : personalNewsLoader.getState();
+  const searching = custom && loading.phase === 'loading';
+  const incomplete = custom && loading.phase === 'error';
+  const progress = searching ? ' · 続きの記事から条件に合うものを探しています'
+    : incomplete ? ' · 続きの記事を取得できず、取得済みの結果だけを表示しています' : '';
+  if (status) status.textContent = `${custom ? '登録した条件で表示' : '標準のおすすめを表示'} · ${state.visibleCount}/${personalNewsItems.length}件（最大${PERSONAL_NEWS_LIMIT}件）${progress}`;
+  const retry = document.querySelector('#personal-news-retry');
+  if (retry) {
+    const wasFocused = document.activeElement === retry;
+    retry.hidden = !(incomplete && loading.retryable);
+    if (wasFocused && retry.hidden) document.querySelector('#personal-news-heading')?.focus({ preventScroll: true });
+  }
   renderPriorityList(personalNewsListElement, personalNewsItems, {
-    emptyTitle: '自分向けニュースを整理中です',
-    emptyText: 'ゲーム、ポケモン、漫画・アニメ、セール、ネット文化系の話題を探しています。',
+    emptyTitle: searching ? '条件に合う記事を探しています' : incomplete ? '検索を最後まで完了できませんでした' : custom ? '条件に合うマイニュースはありません' : '自分向けニュースを整理中です',
+    emptyText: searching ? '続きの記事も確認しています。設定を変更すると、新しい条件で探し直します。'
+      : incomplete ? (loading.retryable ? '取得済みの記事には一致するものがありません。「続きを再試行」で確認を再開できます。' : '続きのデータを確認できませんでした。時間をおいてページを再読み込みしてください。')
+        : custom ? 'この欄で表示できる記事がありません。キーワードや非表示の設定を見直すか、設定をリセットできます。' : 'ゲーム、ポケモン、漫画・アニメ、セール、ネット文化系の話題を探しています。',
     badge: 'FOR YOU',
     visibleCount: state.visibleCount,
   });
@@ -1360,11 +1394,18 @@ if (trendLoadMoreTopButton) {
 
 if (trendLoadMoreBottomButton) {
   trendLoadMoreBottomButton.addEventListener('click', async () => {
+    const filter = activeTrendFilter;
     await loadMoreArchiveTopicsIfNeeded(trendVisibleCount + TREND_LOAD_MORE_STEP);
+    if (activeTrendFilter !== filter) return;
     trendVisibleCount += TREND_LOAD_MORE_STEP;
     renderTrends(activeTrendFilter, { preserveCount: true });
   });
 }
+
+document.querySelector('#personal-news-retry')?.addEventListener('click', () => {
+  if (archiveInitialFailed) void loadNewsArchive();
+  else void personalNewsLoader.retry();
+});
 
 if (personalNewsLoadMoreButton) {
   personalNewsLoadMoreButton.addEventListener('click', () => {

@@ -117,11 +117,17 @@
   const BASEBALL_COMMENTARY = '今回の戦力外は、いわゆる通常の戦力整理とは受け止めにくい。広島球団は4選手と来季契約を結ばない判断をした。球団には契約を更新しない権利はある。一方で、選手にも次のプレー機会を求める権利がある。問題は、その間にある「信頼」をどう見るかである。';
 
   function pickupIdentity(item, id) {
-    const sameTitleSignals = Array.isArray(item?.sourceSignals) ? item.sourceSignals.filter((signal) => signal?.title === item?.title) : [];
-    return [item, ...sameTitleSignals].flatMap((source) => [source?.sourceUrl, source?.url, source?.canonicalUrl]).some((value) => {
+    const matchesPickup = (value) => {
       try { const url = new URL(value); return url.hostname === 'news.yahoo.co.jp' && url.pathname === `/pickup/${id}`; }
       catch { return false; }
-    });
+    };
+    const directUrl = item?.sourceUrl || item?.canonicalUrl || item?.url || item?.link;
+    if (directUrl) return matchesPickup(directUrl);
+    const signalUrls = (Array.isArray(item?.sourceSignals) ? item.sourceSignals : [])
+      .filter((signal) => signal?.title === item?.title)
+      .map((signal) => signal.sourceUrl || signal.canonicalUrl || signal.url).filter(Boolean);
+    // A grouped/secondary Yahoo link cannot prove another primary's summary.
+    return signalUrls.length > 0 && signalUrls.every(matchesPickup);
   }
 
   function repairStoredArticleSummary(item) {
@@ -133,7 +139,7 @@
       if (item.title === '速報バレー男子 日本vs中国' && pickupIdentity(item, '6597306')
         && text.startsWith('衝撃の試合展開が国際的な波紋を広げている。') && text.includes('柔道女子70キロ級')) text = VOLLEYBALL_SYNOPSIS;
       if (item.title === '小園ら戦力外 移籍市場はどう評価' && pickupIdentity(item, '6597310')
-        && text.startsWith('広島、小園ら4選手に戦力外通告') && text.includes('出典：')) text = BASEBALL_COMMENTARY;
+        && (!text || (text.startsWith('広島、小園ら4選手に戦力外通告') && text.includes('出典：')))) text = BASEBALL_COMMENTARY;
       if (text !== item[field]) { if (result === item) result = { ...item }; result[field] = text; }
     }
     if (Array.isArray(item.sourceSignals)) {

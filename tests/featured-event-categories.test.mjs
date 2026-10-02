@@ -127,7 +127,9 @@ function renderContext(category = 'general', period = 'closingSoon') {
     featuredEventListElement: element(), featuredEventTabsElement: element(),
     featuredEventCategoryTabsElement: element(), featuredEventStatusElement: element(),
     escapeHtml: (value) => String(value),
-    getEventItemsForTabFromList: (items, tab, type) => getEventItemsForTab(items, tab, type, today),
+    getTodayDate: () => today, getEventAttendance: globalThis.HomeEventUtils.getEventAttendance,
+    featuredEventFiltersElement: null,
+    getEventItemsForTabFromList: (items, tab, type, now, filters) => getEventItemsForTab(items, tab, type, now, filters),
     replaceChildrenFromHtml: (target, children) => { target.innerHTML = children.join(''); },
     renderEventCard: (item) => `<article>${item.id}</article>`,
   });
@@ -191,4 +193,19 @@ test('Refreshing the filters restores the actually focused button, including ina
   vm.runInContext('renderFeaturedEvents()', context);
   assert.equal(focusedSelector, '[data-event-tab="nextMonth"]');
   assert.equal(context.activeEventTab, 'closingSoon');
+});
+
+
+test('Period counts precede category controls in DOM and keyboard order', () => {
+  assert.ok(html.indexOf('id="featured-event-tabs"') < html.indexOf('id="featured-event-category-tabs"'));
+  assert.ok(html.indexOf('id="featured-event-category-tabs"') < html.indexOf('id="featured-event-filters"'));
+});
+
+test('Practical filters affect every period and category count with a clear empty state', () => {
+  const context = renderContext();
+  vm.runInContext("activeEventFilters = {region: 'saitama', kind: 'all', weekend: false, free: false}; renderFeaturedEvents()", context);
+  assert.match(context.featuredEventStatusElement.textContent, /0件（条件で絞り込み中）/);
+  assert.doesNotMatch(context.featuredEventTabsElement.innerHTML, /<strong>[1-9]/);
+  assert.doesNotMatch(context.featuredEventCategoryTabsElement.innerHTML, /<strong>[1-9]/);
+  assert.match(context.featuredEventListElement.innerHTML, /絞り込み条件/);
 });

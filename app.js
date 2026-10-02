@@ -17,6 +17,9 @@ const {
   matchesNewsCategory,
   pickCardImageUrl,
   prepareNewsListItems,
+  getNewsArticleSource,
+  groupNewsStories,
+  renderStorySources,
   sanitizeArticleSummaryCollection,
 } = window.TopicClientUtils;
 const {
@@ -620,8 +623,9 @@ function renderTrends(filter = 'all', { preserveCount = false } = {}) {
 
   const limited = filtered.slice(0, trendVisibleCount);
   const cards = limited.map((trend, index) => {
-    const sourceUrl = getPrimarySourceUrl(trend);
-    const sourceLabel = getPrimarySourceLabel(trend);
+    const source = getNewsArticleSource(trend);
+    const sourceUrl = source?.url ?? '';
+    const sourceLabel = source?.label ?? '元記事';
     const thumb = trend.thumbnailUrl ? buildTrendCardThumb(trend, renderHelperDeps) : '';
     const hasThumbnail = Boolean(thumb);
     const scoreSummary = trend.scoreSummary ? '<div class="trend-score-summary">' + escapeHtml(trend.scoreSummary) + '</div>' : '';
@@ -634,8 +638,8 @@ function renderTrends(filter = 'all', { preserveCount = false } = {}) {
       summaryHtml +
       insightHtml +
       scoreSummary +
-      '<div class="trend-footer"><span><strong>' + escapeHtml(String(trend.posts ?? 1)) + '</strong> ' + escapeHtml(trend.metricLabel ?? 'source') + '</span>' +
-      (sourceUrl ? '<a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a>' : '<span class="detail-link">元記事なし</span>') + '</div></div></article>';
+      '<div class="trend-footer"><span>' + (trend.storyArticles?.length ? trend.storyArticles.length + '記事をまとめて表示' : '1記事') + '</span>' +
+      (sourceUrl ? '<a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(sourceLabel) + ' ↗</a>' : '<span class="detail-link">元記事なし</span>') + '</div>' + renderStorySources(trend) + '</div></article>';
   });
   replaceChildrenFromHtml(trendListElement, cards);
   updateTrendLoadMoreButtons(limited.length, filtered.length);
@@ -647,7 +651,7 @@ function getTrendListItems() {
 }
 
 function getFilteredTrendItems(filter = activeTrendFilter) {
-  return getTrendListItems().filter((trend) => matchesNewsCategory(trend, filter));
+  return groupNewsStories(getTrendListItems().filter((trend) => matchesNewsCategory(trend, filter)));
 }
 
 function updateTrendLoadMoreButtons(visibleCount, totalCount) {
@@ -656,7 +660,7 @@ function updateTrendLoadMoreButtons(visibleCount, totalCount) {
     trendLoadMoreBottomButton.hidden = !hasMore;
     trendLoadMoreBottomButton.disabled = !hasMore;
     trendLoadMoreBottomButton.textContent = hasMore
-      ? (archiveHasMorePages ? `もっと表示 (${visibleCount}件表示中)` : `もっと表示 (${visibleCount}/${totalCount})`)
+      ? (archiveHasMorePages ? `もっと表示 (${visibleCount}話題表示中)` : `もっと表示 (${visibleCount}/${totalCount}話題)`)
       : 'すべて表示中';
   }
   if (trendLoadMoreTopButton) {

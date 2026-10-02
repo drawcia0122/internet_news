@@ -42,3 +42,7 @@ The 14-day archive retention is a maximum age, not a promise of complete 14-day 
 Verification: regression tests cover payload count/order/chunks, date handling, offline cache preservation, reset-all behavior, and cancellation of interrupted list rendering. The cached collection remains available when any network page fails, with an explicit cached-data status.
 
 For the expanded population, fuzzy dedupe computes URL/title/category comparison signatures once per input or merged result within each pass. Its output must remain identical to the previous predicates and ordering; do not replace it with a looser identity rule as a performance shortcut. Successful archive loads reuse the already prepared collection instead of running the expensive pass twice.
+
+## 2026-10-02: display-only story grouping
+
+The general-list preparation detail above is superseded by [conservative news story groups](conservative-news-story-groups.md). General listings now dedupe only exact article URLs, retain original articles, filter before conservative grouping, and paginate/count story cards. Legacy `dedupeTopics()` remains unchanged for its other consumers.

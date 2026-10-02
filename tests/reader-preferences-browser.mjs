@@ -17,6 +17,7 @@ async function pageFor(options = {}, init) {
   return { context, page };
 }
 const titles = (page) => page.locator('#personal-news-list .priority-card h3').allTextContents();
+const waitForSearch = (page) => page.waitForFunction(() => !document.querySelector('#personal-news-status').textContent.includes('探しています'));
 try {
   const { context, page } = await pageFor();
   const initial = await titles(page);
@@ -27,30 +28,35 @@ try {
   const enabled = page.locator('[name="reader-enabled"]');
   const keyword = page.locator('[name="reader-keywords"]');
   const message = page.locator('[data-reader-status]');
-  const normalNews = await page.locator('#trend-list').textContent();
+  const normalFilter = await page.locator('.filter-pills .active').getAttribute('data-filter');
   await keyword.fill('zz-no-matching-news-987654321');
   await save.click();
   assert.deepEqual(await titles(page), initial, 'saving unchecked opt-in leaves default untouched');
   await enabled.check();
   await save.click();
+  await waitForSearch(page);
   assert.ok((await list.textContent()).includes('条件に合うマイニュースはありません'));
   assert.ok((await page.locator('#personal-news-status').textContent()).includes('0/0件'));
   assert.equal(await page.locator('#personal-news-load-more').isVisible(), false);
-  assert.equal(await page.locator('#trend-list').textContent(), normalNews, 'personal filter does not filter normal news');
+  assert.equal(await page.locator('.filter-pills .active').getAttribute('data-filter'), normalFilter, 'personal filter does not change the normal-news filter');
+  assert.ok((await page.locator('#trend-list .trend-card').count()) > 0, 'no-match personal search leaves normal news visible');
   await save.click();
   assert.ok((await message.textContent()).includes('保存しました'));
   await page.reload({ waitUntil: 'networkidle' });
   assert.ok((await list.textContent()).includes('条件に合うマイニュースはありません'));
   await page.locator('#reader-preferences summary').click();
   await reset.click();
-  assert.deepEqual(await titles(page), initial);
+  const loadedPoolDefault = await titles(page);
+  assert.ok(loadedPoolDefault.length > 0);
+  assert.ok((await page.locator('#personal-news-status').textContent()).includes('標準のおすすめ'));
+  // Search expanded the shared pool; compare defaults on that same pool, not the original first page.
   await reset.click();
-  assert.deepEqual(await titles(page), initial, 'reset is repeatable');
+  assert.deepEqual(await titles(page), loadedPoolDefault, 'reset is repeatable on the loaded pool');
   if (await page.locator('#personal-news-load-more').isVisible()) {
     await page.locator('#personal-news-load-more').click();
-    assert.ok((await titles(page)).length > initial.length);
+    assert.ok((await titles(page)).length > loadedPoolDefault.length);
     await save.click();
-    assert.deepEqual(await titles(page), initial, 'saving resets pagination');
+    assert.deepEqual(await titles(page), loadedPoolDefault, 'saving resets pagination');
   }
   await enabled.check();
   await keyword.fill('');
@@ -58,7 +64,7 @@ try {
   await save.click();
   assert.equal((await titles(page)).length, 0, 'source exclusions update filtered count');
   await reset.click();
-  assert.deepEqual(await titles(page), initial);
+  assert.deepEqual(await titles(page), loadedPoolDefault);
   await keyword.fill('<img src=x onerror="window.injected=1">');
   await enabled.check();
   await save.click();
@@ -89,6 +95,7 @@ try {
   await denied.page.locator('[name="reader-keywords"]').fill('zz-no-matching-news-987654321');
   await denied.page.locator('#reader-preferences').getByRole('button', { name: '設定を保存', exact: true }).click();
   assert.ok((await denied.page.locator('[data-reader-status]').textContent()).includes('保存できません'));
+  await waitForSearch(denied.page);
   assert.ok((await denied.page.locator('#personal-news-list').textContent()).includes('条件に合うマイニュースはありません'));
   await denied.page.getByRole('button', { name: '設定をリセット', exact: true }).click();
   assert.ok((await denied.page.locator('[data-reader-status]').textContent()).includes('削除できず'));
@@ -104,6 +111,7 @@ try {
   await quota.page.locator('[name="reader-keywords"]').fill('zz-no-matching-news-987654321');
   await quota.page.locator('#reader-preferences').getByRole('button', { name: '設定を保存', exact: true }).click();
   assert.ok((await quota.page.locator('[data-reader-status]').textContent()).includes('保存できません'));
+  await waitForSearch(quota.page);
   assert.ok((await quota.page.locator('#personal-news-list').textContent()).includes('条件に合うマイニュースはありません'));
   await quota.context.close();
   assert.deepEqual(errors, [], 'no uncaught JavaScript errors');

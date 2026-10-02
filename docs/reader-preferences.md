@@ -13,7 +13,9 @@ The Classic homepage has an explicit opt-in **マイニュース** filter. Its c
 - Source IDs are the collector's normalized ID when available, otherwise a normalized publisher hostname. Hiding a source hides personal-news cards containing that source. Stale saved IDs remain visible/removable in settings even when that source is absent from the loaded candidate set
 - Filters are only applied to マイニュース. Other sections retain their selectors; existing cross-section duplicate suppression still gives upper sections precedence
 
-The current candidate pool remains the homepage's loaded trend/archive data, with a maximum of 10 personal cards and 5 initially visible. This is not a search of every historical article. Saving or resetting returns this section to its first page and recomputes the visible count and load-more button.
+The candidate pool is the homepage trend data plus the same paginated `home-news` snapshot used by normal news, with a maximum of 10 personal cards and 5 initially visible. Active positive genres/keywords automatically read later `home-news-page-*` pages until 10 eligible matches are selected or the snapshot is exhausted. Default/disabled/empty-interest settings do not prefetch extra pages. This does not query a separate historical archive or service. Searching and interrupted/partial results are explicit; transient failures retain the page cursor and offer a retry, rather than claiming no matches. Saving or resetting returns this section to its first page and recomputes the count.
+
+Both sections share one page loader, so concurrent requests join the same in-flight page. Preference changes invalidate the old search loop but may reuse its in-flight page in the new filtered view; reset does not cause that old loop to keep fetching. Refreshing the initial snapshot invalidates responses from its old pagination generation. Invalid/repeated page cursors stop with an incomplete-results state rather than looping. Only explicit retry, another saved choice, or snapshot refresh restarts an interrupted personal search.
 
 ## Storage and UI boundaries
 

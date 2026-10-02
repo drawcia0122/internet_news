@@ -105,7 +105,7 @@
         <div class="section-heading section-heading-stack">
           <div>
             <p class="section-kicker">FOR YOU</p>
-            <h2 id="personal-news-heading">マイニュース</h2>
+            <h2 id="personal-news-heading" tabindex="-1">マイニュース</h2>
           </div>
           <p class="brief-description">標準ではポケモン、ゲーム、漫画・アニメ、セール、ネット文化などを優先。好みを登録すると、この欄だけを絞り込めます。</p>
         </div>
@@ -141,6 +141,7 @@
           </article>
         </div>
         <div class="personal-news-actions">
+          <button class="outline-button" id="personal-news-retry" type="button" aria-controls="personal-news-list" hidden>続きを再試行</button>
           <button class="outline-button personal-news-load-more" id="personal-news-load-more" type="button" aria-controls="personal-news-list" aria-expanded="false" hidden>さらに5件見る ↓</button>
         </div>
       </section>
@@ -345,7 +346,8 @@
     <script src="./home-brief-utils.js?v=6"></script>
     <script src="./home-render-utils.js?v=9"></script>
     <script src="./home-data-utils.js?v=4"></script>
-    <script src="./app.js?v=40"></script>
+    <script src="./home-reader-loading.js?v=1"></script>
+    <script src="./app.js?v=41"></script>
     <script type="module" src="./matome-section.js?v=2"></script>
   </body>
 </html>

@@ -29,6 +29,7 @@ const {
   getTodayDate,
   isEventOngoing,
   getEventDaysUntilEnd,
+  getEventAttendance,
 } = window.HomeEventUtils;
 const {
   setLatestTrendGeneratedAt,
@@ -104,6 +105,7 @@ const personalNewsLoadMoreButton = document.querySelector('#personal-news-load-m
 const mustReadNewsListElement = document.querySelector('#must-read-news-list');
 const featuredEventTabsElement = document.querySelector('#featured-event-tabs');
 const featuredEventCategoryTabsElement = document.querySelector('#featured-event-category-tabs');
+const featuredEventFiltersElement = document.querySelector('#featured-event-filters');
 const featuredEventStatusElement = document.querySelector('#featured-event-status');
 const featuredEventListElement = document.querySelector('#featured-event-list');
 const todayNewsListElement = document.querySelector('#today-news-list');
@@ -132,6 +134,7 @@ const EVENT_CATEGORY_DEFINITIONS = [
   { key: 'escape', label: '脱出・謎解き' },
   { key: 'all', label: 'すべて' },
 ];
+let activeEventFilters = { region: 'all', kind: 'all', weekend: false, free: false };
 const EVENT_TAB_DEFINITIONS = [
   { key: 'closingSoon', label: '🔥もうすぐ終了', emptyTitle: '終了間近のイベントを整理中です', emptyText: '終了まで14日以内の開催中イベントをここに表示します。' },
   { key: 'ongoing', label: '開催中', emptyTitle: '開催中のイベントを整理中です', emptyText: '今行けるイベントが入り次第ここに表示します。' },
@@ -765,10 +768,10 @@ function renderFeaturedEvents() {
   const categoryDefinition = EVENT_CATEGORY_DEFINITIONS.find((tab) => tab.key === activeEventCategory);
   const visibleItems = getEventItemsForTab(activeDefinition.key);
   if (featuredEventStatusElement) {
-    featuredEventStatusElement.textContent = categoryDefinition.label + ' · ' + activeDefinition.label.replace('🔥', '') + ' ' + visibleItems.length + '件';
+    featuredEventStatusElement.textContent = categoryDefinition.label + ' · ' + activeDefinition.label.replace('🔥', '') + ' ' + visibleItems.length + '件' + (activeEventFilters.region !== 'all' || activeEventFilters.kind !== 'all' || activeEventFilters.weekend || activeEventFilters.free ? '（条件で絞り込み中）' : '');
   }
   if (!visibleItems.length) {
-    featuredEventListElement.innerHTML = '<article class="event-card event-card-empty"><strong>' + escapeHtml(categoryDefinition.label + '：この期間の掲載イベントはありません') + '</strong><p>' + escapeHtml(activeDefinition.emptyText) + ' 種類や期間を切り替えて探せます。</p></article>';
+    featuredEventListElement.innerHTML = '<article class="event-card event-card-empty"><strong>' + escapeHtml(categoryDefinition.label + '：この期間の掲載イベントはありません') + '</strong><p>' + escapeHtml(activeDefinition.emptyText) + ' 種類・期間・絞り込み条件を切り替えて探せます。</p></article>';
   } else {
     replaceChildrenFromHtml(featuredEventListElement, visibleItems.map((item, index) => renderEventCard(item, index)));
   }
@@ -802,6 +805,7 @@ function renderEventCard(item, index) {
     '<dl class="event-fact-list">' +
       '<div><dt>開催期間</dt><dd>' + escapeHtml(formatEventPeriod(item)) + '</dd></div>' +
       '<div><dt>開催場所</dt><dd>' + escapeHtml(item.venue) + ' / ' + escapeHtml(item.location) + '</dd></div>' +
+      renderEventAttendance(item) +
     '</dl>' +
     '<div class="priority-chip-row event-chip-row">' + cardTags.map((tag) => '<span>' + escapeHtml(tag) + '</span>').join('') + '</div>' +
     '<div class="event-link-row">' + detailLink + officialLink + '</div>' +
@@ -809,7 +813,22 @@ function renderEventCard(item, index) {
 }
 
 function getEventItemsForTab(tabKey, categoryKey = activeEventCategory) {
-  return getEventItemsForTabFromList(eventItems, tabKey, categoryKey);
+  return getEventItemsForTabFromList(eventItems, tabKey, categoryKey, getTodayDate(), activeEventFilters);
+}
+
+function renderEventAttendance(item) {
+  const attendance = getEventAttendance(item);
+  const rows = [];
+  if (attendance?.feeText) rows.push(['参加費', attendance.feeText]);
+  if (attendance?.reservationRequired === true) rows.push(['予約・申込', attendance.reservationClosed === true ? '受付終了（公式を確認）' : '事前申込が必要']);
+  if (attendance?.deadlineAt && Number.isFinite(Date.parse(attendance.deadlineAt))) {
+    const deadline = new Intl.DateTimeFormat('ja-JP', { timeZone: 'Asia/Tokyo', year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(attendance.deadlineAt));
+    rows.push(['申込締切', deadline + '（日本時間）']);
+  }
+  if (item.sourceCheckedAt && Number.isFinite(Date.parse(item.sourceCheckedAt))) {
+    rows.push(['情報確認', new Intl.DateTimeFormat('ja-JP', { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(item.sourceCheckedAt)) + '（日本時間）']);
+  }
+  return rows.map(([label, value]) => '<div><dt>' + escapeHtml(label) + '</dt><dd>' + escapeHtml(value) + '</dd></div>').join('');
 }
 
 function buildClosingSoonBadge(item) {
@@ -1371,6 +1390,21 @@ if (featuredEventCategoryTabsElement) {
     if (!nextCategory || nextCategory === activeEventCategory) return;
     if (!EVENT_CATEGORY_DEFINITIONS.some((tab) => tab.key === nextCategory)) return;
     activeEventCategory = nextCategory;
+    featuredEventListElement.scrollLeft = 0;
+    renderFeaturedEvents();
+  });
+}
+
+if (featuredEventFiltersElement) {
+  featuredEventFiltersElement.addEventListener('submit', (event) => event.preventDefault());
+  featuredEventFiltersElement.addEventListener('change', () => {
+    const fields = featuredEventFiltersElement.elements;
+    activeEventFilters = { region: fields.region.value, kind: fields.kind.value, weekend: fields.weekend.checked, free: fields.free.checked };
+    featuredEventListElement.scrollLeft = 0;
+    renderFeaturedEvents();
+  });
+  featuredEventFiltersElement.addEventListener('reset', () => {
+    activeEventFilters = { region: 'all', kind: 'all', weekend: false, free: false };
     featuredEventListElement.scrollLeft = 0;
     renderFeaturedEvents();
   });

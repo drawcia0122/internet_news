@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=50" />
+    <link rel="stylesheet" href="./styles.css?v=51" />
     <link rel="stylesheet" href="./matome-section.css?v=1" />
   </head>
   <body>
@@ -152,21 +152,29 @@
             <p class="section-kicker">GO OUT NOW</p>
             <h2 id="featured-events-heading">🎭 注目イベント</h2>
           </div>
-          <p class="brief-description">東京・埼玉の開催情報を優先表示。展示・展覧会、コラボカフェ、ポップアップ、体験型などを種類と期間で探せます。</p>
+          <p class="brief-description">東京・埼玉の開催情報を優先表示。展示・展覧会、コラボカフェ、ポップアップ、体験型などを期間・種類・行ける条件で探せます。</p>
         </div>
         <div class="event-panel">
-          <div class="featured-tabs event-tabs event-category-tabs" id="featured-event-category-tabs" role="group" aria-label="注目イベントの種類">
-            <button class="active" type="button" data-event-category="general" aria-pressed="true" aria-controls="featured-event-list">一般イベント</button>
-            <button type="button" data-event-category="pokemon" aria-pressed="false" aria-controls="featured-event-list">ポケモン</button>
-            <button type="button" data-event-category="escape" aria-pressed="false" aria-controls="featured-event-list">脱出・謎解き</button>
-            <button type="button" data-event-category="all" aria-pressed="false" aria-controls="featured-event-list">すべて</button>
-          </div>
           <div class="featured-tabs event-tabs event-period-tabs" id="featured-event-tabs" role="group" aria-label="注目イベントの期間">
             <button class="active" type="button" data-event-tab="closingSoon" aria-pressed="true" aria-controls="featured-event-list">🔥もうすぐ終了</button>
             <button type="button" data-event-tab="ongoing" aria-pressed="false" aria-controls="featured-event-list">開催中</button>
             <button type="button" data-event-tab="thisMonth" aria-pressed="false" aria-controls="featured-event-list">今月</button>
             <button type="button" data-event-tab="nextMonth" aria-pressed="false" aria-controls="featured-event-list">来月</button>
           </div>
+          <div class="featured-tabs event-tabs event-category-tabs" id="featured-event-category-tabs" role="group" aria-label="注目イベントの種類">
+            <button class="active" type="button" data-event-category="general" aria-pressed="true" aria-controls="featured-event-list">一般イベント</button>
+            <button type="button" data-event-category="pokemon" aria-pressed="false" aria-controls="featured-event-list">ポケモン</button>
+            <button type="button" data-event-category="escape" aria-pressed="false" aria-controls="featured-event-list">脱出・謎解き</button>
+            <button type="button" data-event-category="all" aria-pressed="false" aria-controls="featured-event-list">すべて</button>
+          </div>
+          <form class="event-practical-filters" id="featured-event-filters" aria-label="イベントの絞り込み条件">
+            <label>地域<select name="region" aria-controls="featured-event-list"><option value="all">全国（東京・埼玉優先）</option><option value="nearby">東京・埼玉</option><option value="tokyo">東京</option><option value="saitama">埼玉</option></select></label>
+            <label>体験の種類<select name="kind" aria-controls="featured-event-list"><option value="all">すべて</option><option value="exhibition">展示・展覧会</option><option value="cafe">コラボカフェ</option><option value="popup">ポップアップ</option><option value="experience">体験・ワークショップ</option></select></label>
+            <label class="event-check-filter"><input type="checkbox" name="weekend" aria-controls="featured-event-list">今週末に期間が重なる</label>
+            <label class="event-check-filter"><input type="checkbox" name="free" aria-controls="featured-event-list">無料（公式確認済み）</label>
+            <button type="reset" class="outline-button">条件をリセット</button>
+          </form>
+          <p class="event-filter-help">無料は公式の参加費を確認できたイベントのみ。休館日・予約枠・追加料金は各公式ページでご確認ください。</p>
           <p class="event-filter-status" id="featured-event-status" role="status" aria-live="polite"></p>
           <div class="event-list" id="featured-event-list">
             <article class="event-card event-card-empty">
@@ -301,12 +309,12 @@
     <script src="./article-category-quality.js?v=1"></script>
     <script src="./news-summary-integrity.js?v=2"></script>
     <script src="./shared-topic-utils.js?v=13"></script>
-    <script src="./home-event-utils.js?v=6"></script>
+    <script src="./home-event-utils.js?v=7"></script>
     <script src="./home-topic-selection-utils.js?v=5"></script>
     <script src="./home-brief-utils.js?v=6"></script>
     <script src="./home-render-utils.js?v=9"></script>
     <script src="./home-data-utils.js?v=4"></script>
-    <script src="./app.js?v=37"></script>
+    <script src="./app.js?v=38"></script>
     <script type="module" src="./matome-section.js?v=1"></script>
   </body>
 </html>

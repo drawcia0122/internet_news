@@ -6,11 +6,13 @@
   function normalizeEventDateValue(value) {
     if (!value) return null;
     const text = String(value).trim();
-    return /^\d{4}-\d{2}-\d{2}$/.test(text) ? text : null;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(text)) return null;
+    const parsed = new Date(`${text}T00:00:00Z`);
+    return Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === text ? text : null;
   }
 
   function parseEventDate(value) {
-    if (!value) return null;
+    if (!normalizeEventDateValue(value)) return null;
     const date = new Date(`${value}T00:00:00`);
     return Number.isNaN(date.getTime()) ? null : date;
   }
@@ -190,12 +192,62 @@
     return categoryKey === 'all' || getEventCategories(item).includes(categoryKey);
   }
 
-  function getEventItemsForTab(items, tabKey, categoryKey = 'all', now = getTodayDate()) {
+  function getEventKinds(item) {
+    const tags = Array.isArray(item?.tags) ? item.tags : [];
+    const text = [item?.category, ...tags].filter(Boolean).join(' ').toLowerCase();
+    const kinds = [];
+    if (/展覧会|展示|exhibition/.test(text)) kinds.push('exhibition');
+    if (/コラボカフェ|gratte|collab-cafe/.test(text)) kinds.push('cafe');
+    if (/ポップアップ|オンリーショップ|popup|onlyshop/.test(text)) kinds.push('popup');
+    if (/体験|ワークショップ|experience|workshop/.test(text)) kinds.push('experience');
+    return kinds;
+  }
+
+  function getEventAttendance(item) {
+    const facts = item?.attendance;
+    if (!facts || typeof facts !== 'object') return null;
+    try {
+      const source = new URL(facts.sourceUrl);
+      const official = new URL(item.officialUrl || item.detailUrl);
+      // Evidence belongs to this exact event, not a source home page or another event.
+      if (!['https:', 'http:'].includes(source.protocol) || source.href !== official.href) return null;
+      return facts;
+    } catch { return null; }
+  }
+
+  function eventOverlapsWeekend(item, today = getTodayDate()) {
+    const start = parseEventDate(item.startDate);
+    const end = parseEventDate(item.endDate);
+    if (!start || !end || end < start) return false;
+    const firstDay = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    const weekday = firstDay.getDay();
+    firstDay.setDate(firstDay.getDate() + (weekday === 0 ? 0 : (6 - weekday)));
+    const lastDay = new Date(firstDay.getFullYear(), firstDay.getMonth(), firstDay.getDate() + (weekday === 0 ? 0 : 1));
+    return start <= lastDay && end >= firstDay;
+  }
+
+  function matchesEventFilters(item, filters = {}, today = getTodayDate()) {
+    const location = String(item?.location ?? '');
+    const tokyo = /東京|\btokyo\b/i.test(location);
+    const saitama = /埼玉|\bsaitama\b/i.test(location);
+    const region = filters.region || 'all';
+    if (!['all', 'nearby', 'tokyo', 'saitama'].includes(region)) return false;
+    if (region === 'nearby' && !tokyo && !saitama) return false;
+    if (region === 'tokyo' && !tokyo) return false;
+    if (region === 'saitama' && !saitama) return false;
+    if (filters.kind && filters.kind !== 'all' && !getEventKinds(item).includes(filters.kind)) return false;
+    if (filters.weekend && !eventOverlapsWeekend(item, today)) return false;
+    if (filters.free && getEventAttendance(item)?.isFree !== true) return false;
+    return true;
+  }
+
+  function getEventItemsForTab(items, tabKey, categoryKey = 'all', now = getTodayDate(), filters = {}) {
     const monthStart = new Date(now.getFullYear(), now.getMonth(), 1);
     const nextMonthStart = new Date(now.getFullYear(), now.getMonth() + 1, 1);
 
     return [...items]
       .filter((item) => matchesEventCategory(item, categoryKey))
+      .filter((item) => matchesEventFilters(item, filters, now))
       .filter((item) => {
         if (tabKey === 'ongoing') return isEventOngoing(item, now);
         if (tabKey === 'closingSoon') return isEventClosingSoon(item, now);
@@ -232,6 +284,10 @@
     eventSortScore,
     isPreferredEventRegion,
     getEventCategories,
+    getEventKinds,
+    getEventAttendance,
+    eventOverlapsWeekend,
+    matchesEventFilters,
     matchesEventCategory,
     getEventItemsForTab,
     getEventDaysUntilEnd,

@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-10-03T16:08:29.070Z",
-  "totalCount": 1360,
+  "generatedAt": "2026-10-03T19:21:49.152Z",
+  "totalCount": 1254,
   "categoryCounts": {
-    "all": 1360,
-    "general": 56,
-    "tech": 185,
-    "business": 97,
-    "politics": 41,
-    "entertainment": 310,
-    "anime": 83,
-    "games": 625,
-    "game-features": 12,
+    "all": 1254,
+    "general": 54,
+    "tech": 177,
+    "business": 86,
+    "politics": 40,
+    "entertainment": 287,
+    "anime": 79,
+    "games": 553,
+    "game-features": 11,
     "anime-features": 4,
-    "manga": 95,
-    "books": 34,
-    "sports": 63,
-    "sns": 448,
-    "net-culture": 524,
+    "manga": 79,
+    "books": 30,
+    "sports": 60,
+    "sns": 427,
+    "net-culture": 502,
     "matome": 0,
-    "crime": 17,
-    "adult": 18,
-    "world": 66
+    "crime": 16,
+    "adult": 17,
+    "world": 67
   },
   "hasMore": true,
   "nextPage": 2,
@@ -39,16 +39,19 @@
       "categoryLabels": [
         "スポーツ"
       ],
-      "score": 83,
-      "posts": 1,
-      "metricLabel": "source",
+      "score": 80,
+      "posts": 2,
+      "metricLabel": "sources",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T14:51:27.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "1時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "4時間前",
       "sourceName": "Yahoo!ニュース / スポーツ",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597458?source=rss",
-      "hotReasons": [],
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "直近数時間で関連記事が増えています。"
+      ],
       "sourceSignals": [
         {
           "sourceId": "yahoo-sports",
@@ -69,9 +72,11 @@
         }
       ],
       "whatHappened": "韓国サッカー男子V 国旗揚がらず",
-      "whyHot": "直近の新しい話題として浮上しています。",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
+      "targetAudience": [
+        "ガジェット好き"
+      ]
     },
     {
       "id": "auto-entertainment-m-1エントリー過去最多1万2663組-news.yahoo.co.jp/pickup/6597457",
@@ -87,13 +92,13 @@
       "categoryLabels": [
         "エンタメ"
       ],
-      "score": 86,
+      "score": 81,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T14:33:41.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "1時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "4時間前",
       "sourceName": "Yahoo!ニュース / エンタメ",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597457?source=rss",
       "hotReasons": [],
@@ -125,7 +130,7 @@
       "id": "auto-general-阪神v2-監督が涙-苦しかった-news.yahoo.co.jp/pickup/6597455",
       "title": "阪神V2 監督が涙「苦しかった」",
       "summary": "",
-      "briefSummary": "「悲しくて信じられない」 中川翔子さん、大切な家族との別れに「まだまだずーっと生きて欲しかった」 双子妊娠中に見せた驚きの行動も",
+      "briefSummary": "史上初連覇の阪神 藤川監督は号泣「苦しかった」巨人とのマッチレースを制す 重圧から解放「良かったです…」",
       "category": "sports",
       "categories": [
         "sports",
@@ -136,13 +141,13 @@
         "スポーツ",
         "その他"
       ],
-      "score": 82,
+      "score": 77,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T14:18:10.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "1時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "5時間前",
       "sourceName": "Yahoo!ニュース / スポーツ",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597455?source=rss",
       "hotReasons": [],
@@ -185,13 +190,13 @@
         "スポーツ",
         "その他"
       ],
-      "score": 82,
+      "score": 77,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T14:06:21.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "2時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "5時間前",
       "sourceName": "Yahoo!ニュース / スポーツ",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597456?source=rss",
       "hotReasons": [],
@@ -232,13 +237,13 @@
       "categoryLabels": [
         "その他"
       ],
-      "score": 78,
+      "score": 74,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T13:47:22.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "2時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "5時間前",
       "sourceName": "Yahoo!ニュース / 地域",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597454?source=rss",
       "hotReasons": [],
@@ -279,13 +284,13 @@
       "categoryLabels": [
         "その他"
       ],
-      "score": 88,
+      "score": 83,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T13:23:55.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "2時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "5時間前",
       "sourceName": "Yahoo!ニュース / 国内",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597449?source=rss",
       "hotReasons": [
@@ -328,13 +333,13 @@
       "categoryLabels": [
         "その他"
       ],
-      "score": 77,
+      "score": 73,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T13:05:29.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "3時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "6時間前",
       "sourceName": "Yahoo!ニュース / 地域",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597447?source=rss",
       "hotReasons": [],
@@ -376,18 +381,18 @@
       "categoryLabels": [
         "テック"
       ],
-      "score": 84,
+      "score": 79,
       "posts": 2,
       "metricLabel": "sources",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T12:52:45.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "3時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "6時間前",
       "sourceName": "Yahoo!ニュース / IT",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597441?source=rss",
       "hotReasons": [
         "複数ソースで同じ話題が確認されています。",
-        "直近数時間で関連記事が増えています。"
+        "主要ニュースソースや公式発表ベースで確認されています。"
       ],
       "sourceSignals": [
         {
@@ -431,13 +436,13 @@
         "スポーツ",
         "その他"
       ],
-      "score": 80,
+      "score": 75,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T12:41:20.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "3時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "6時間前",
       "sourceName": "Yahoo!ニュース / スポーツ",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597446?source=rss",
       "hotReasons": [],
@@ -481,13 +486,13 @@
         "国際",
         "スポーツ"
       ],
-      "score": 80,
+      "score": 75,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T12:31:35.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "3時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "6時間前",
       "sourceName": "Yahoo!ニュース / スポーツ",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597444?source=rss",
       "hotReasons": [],
@@ -537,13 +542,13 @@
         "ネットカルチャー",
         "国際"
       ],
-      "score": 86,
+      "score": 81,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://img.jp.ekkowassets.com/c_fill,w_400,h_210,f_auto,g_faces,q_auto:eco/ch/images/1479090368761659834/origin_1.jpg",
       "publishedAt": "2026-10-03T12:29:30.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "3時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "6時間前",
       "sourceName": "はてなブックマーク人気",
       "sourceUrl": "https://news.jp/i/1479086243079635580",
       "hotReasons": [
@@ -596,16 +601,19 @@
       "categoryLabels": [
         "スポーツ"
       ],
-      "score": 80,
-      "posts": 1,
-      "metricLabel": "source",
+      "score": 77,
+      "posts": 2,
+      "metricLabel": "sources",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T12:29:22.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "3時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "6時間前",
       "sourceName": "Yahoo!ニュース / スポーツ",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597443?source=rss",
-      "hotReasons": [],
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "主要ニュースソースや公式発表ベースで確認されています。"
+      ],
       "sourceSignals": [
         {
           "sourceId": "yahoo-sports",
@@ -626,9 +634,11 @@
         }
       ],
       "whatHappened": "サッカー男子 韓国に敗れ銀メダル",
-      "whyHot": "直近の新しい話題として浮上しています。",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
+      "targetAudience": [
+        "ガジェット好き"
+      ]
     },
     {
       "id": "auto-tech-マンジャロ使用巡り-肥満学会声明-news.yahoo.co.jp/pickup/6597438",
@@ -644,13 +654,13 @@
       "categoryLabels": [
         "テック"
       ],
-      "score": 80,
+      "score": 75,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T12:08:56.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "3時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "7時間前",
       "sourceName": "Yahoo!ニュース / 科学",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597438?source=rss",
       "hotReasons": [],
@@ -693,13 +703,13 @@
         "スポーツ",
         "その他"
       ],
-      "score": 79,
+      "score": 74,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T12:05:33.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "4時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "7時間前",
       "sourceName": "Yahoo!ニュース / スポーツ",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597439?source=rss",
       "hotReasons": [],
@@ -730,7 +740,7 @@
     {
       "id": "auto-games-山が邪魔なら削ればいい-自然すら独裁者の思い通りになる-トロピコ-7-を試遊-議会システムも加わり-独裁-はさらに進化-gamespark.jp/article/2026/10/03/173131.html",
       "title": "山が邪魔なら削ればいい！自然すら独裁者の思い通りになる『トロピコ 7』を試遊―議会システムも加わり“独裁”はさらに進化",
-      "summary": "地形改変や議会システムで独裁がさらに加速！",
+      "summary": "",
       "briefSummary": "さらにコンテンツ量もシリーズ最大級となっており、5つのキャンペーン、10以上のシナリオ、20以上のサンドボックスマップに加えて「ランダムマップ生成機能」まで搭載！前作『トロピコ 6』から何が変わったのか、シリーズファンも初見の方も注目の新要素を中心に、その手触りをご紹介します。",
       "category": "games",
       "categories": [
@@ -741,13 +751,13 @@
       "categoryLabels": [
         "ゲーム"
       ],
-      "score": 90,
+      "score": 85,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1198823.jpg",
       "publishedAt": "2026-10-03T12:00:03.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "4時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "7時間前",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/10/03/173131.html",
       "hotReasons": [
@@ -782,6 +792,66 @@
       "targetAudience": [
         "ゲームユーザー",
         "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-sns-東京から岡山に来た人が-鉄製のパイプでできた段差スロープ-を指さして-これは岡山によくあるのか-と聞いてきたが岡山・広島にしかないのか-togetter.com/li/2753570",
+      "title": "東京から岡山に来た人が『鉄製のパイプでできた段差スロープ』を指さして「これは岡山によくあるのか？」と聞いてきたが岡山・広島にしかないのか？",
+      "summary": "内海慶一 @pictist 《東京から来た知人が、「それ」を指差して言った。 「こういうの、岡山にはよくあるんですか？」 それは鉄製のパイプでできた段差スロープだっ…",
+      "briefSummary": "内海慶一 @pictist 《東京から来た知人が、「それ」を指差して言った。 「こういうの、岡山にはよくあるんですか？」 それは鉄製のパイプでできた段差スロープだった。岡山在住の私には見慣れたものだった。 「ありますけど……え？ 東京にはな…",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "SNS",
+      "categoryLabels": [
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 80,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://s.tgstc.com/ogp3/0423f11d8c2249266b6e7fc4df7e2d3f-1200x630.jpeg",
+      "publishedAt": "2026-10-03T11:52:28.000Z",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "7時間前",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://togetter.com/li/2753570",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "東京から岡山に来た人が『鉄製のパイプでできた段差スロープ』を指さして「これは岡山によくあるのか？」と聞いてきたが岡山・広島にしかないのか？",
+          "url": "https://togetter.com/li/2753570",
+          "canonicalUrl": "https://togetter.com/li/2753570",
+          "publishedAt": "2026-10-03T11:52:28.000Z",
+          "publishedLabel": "10/3 11:52",
+          "thumbnailUrl": "https://s.tgstc.com/ogp3/0423f11d8c2249266b6e7fc4df7e2d3f-1200x630.jpeg"
+        }
+      ],
+      "whatHappened": "東京から岡山に来た人が『鉄製のパイプでできた段差スロープ』を指さして「これは岡山によくあるの…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
       ]
     },
     {
@@ -832,6 +902,68 @@
       "whyHot": "直近の新しい話題として浮上しています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": []
+    },
+    {
+      "id": "auto-entertainment-rizin長崎大会-全試合結果レポート-堀江圭功がko勝利-芦澤竜誠は22歳に1rko負け-kai-you.net/article/96741",
+      "title": "「RIZIN長崎大会」全試合結果レポート　堀江圭功がKO勝利、芦澤竜誠は22歳に1RKO負け",
+      "summary": "総合格闘技イベント「RIZIN LANDMARK 16 in NAGASAKI」が、10月3日（土）に長崎スタジアムシティ HAPPINESS ARENAで開催され…",
+      "briefSummary": "総合格闘技イベント「RIZIN LANDMARK 16 in NAGASAKI」が、10月3日（土）に長崎スタジアムシティ HAPPINESS ARENAで開催されている。二団体制覇をかけたラジャブアリ・シェイドゥラエフ選手 vs. AJ・…",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 85,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://img.kai-you.net/storage/2026/10/07cee461-f987-44b5-a615-84f30208d470/main/re_93M02963.webp",
+      "publishedAt": "2026-10-03T11:48:00.000Z",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "7時間前",
+      "sourceName": "KAI-YOU",
+      "sourceUrl": "https://kai-you.net/article/96741",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "kai-you",
+          "source": "KAI-YOU",
+          "sourceName": "KAI-YOU",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "meme",
+            "otaku"
+          ],
+          "title": "「RIZIN長崎大会」全試合結果レポート　堀江圭功がKO勝利、芦澤竜誠は22歳に1RKO負け",
+          "url": "https://kai-you.net/article/96741",
+          "canonicalUrl": "https://kai-you.net/article/96741",
+          "publishedAt": "2026-10-03T11:48:00.000Z",
+          "publishedLabel": "10/3 11:48",
+          "thumbnailUrl": "https://img.kai-you.net/storage/2026/10/07cee461-f987-44b5-a615-84f30208d470/main/re_93M02963.webp"
+        }
+      ],
+      "whatHappened": "「RIZIN長崎大会」全試合結果レポート 堀江圭功がKO勝利、芦澤竜誠は22歳に1RKO負け",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
     },
     {
       "id": "auto-general-元清水商監督-大瀧雅良さん死去-news.yahoo.co.jp/pickup/6597436",
@@ -895,13 +1027,13 @@
       "categoryLabels": [
         "その他"
       ],
-      "score": 75,
+      "score": 70,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-03T11:41:07.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "4時間前",
+      "capturedAt": "2026-10-03T19:21:49.152Z",
+      "time": "7時間前",
       "sourceName": "Yahoo!ニュース / 地域",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6597434?source=rss",
       "hotReasons": [],
@@ -925,100 +1057,6 @@
         }
       ],
       "whatHappened": "4人死亡の火災 玄関付近が火元か",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-general-23階転落-母が-転落しそう-通報-news.yahoo.co.jp/pickup/6597435",
-      "title": "23階転落 母が「転落しそう」通報",
-      "summary": "3日午後1時10分ごろ、東京都中央区晴海2のタワーマンション（49階建て）で「子どもが転落しそうだ」と母親から119番があった。【図解】子どものベランダ転落 事故につながる状況4つ 警視庁月島署によ",
-      "briefSummary": "3日午後1時10分ごろ、東京都中央区晴海2のタワーマンション（49階建て）で「子どもが転落しそうだ」と母親から119番があった。【図解】子どものベランダ転落 事故につながる状況4つ 警視庁月島署によ",
-      "category": "general",
-      "categories": [
-        "general"
-      ],
-      "categoryLabel": "その他",
-      "categoryLabels": [
-        "その他"
-      ],
-      "score": 75,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-03T11:37:54.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "4時間前",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6597435?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "23階転落 母が「転落しそう」通報",
-          "url": "https://news.yahoo.co.jp/pickup/6597435?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6597435?source=rss",
-          "publishedAt": "2026-10-03T11:37:54.000Z",
-          "publishedLabel": "10/3 11:37",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "23階転落 母が「転落しそう」通報",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-general-4人死亡火災-隣家の住民ぼうぜん-news.yahoo.co.jp/pickup/6597432",
-      "title": "4人死亡火災 隣家の住民ぼうぜん",
-      "summary": "",
-      "briefSummary": "",
-      "category": "general",
-      "categories": [
-        "general"
-      ],
-      "categoryLabel": "その他",
-      "categoryLabels": [
-        "その他"
-      ],
-      "score": 75,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-03T11:25:45.000Z",
-      "capturedAt": "2026-10-03T16:08:29.070Z",
-      "time": "4時間前",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6597432?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "4人死亡火災 隣家の住民ぼうぜん",
-          "url": "https://news.yahoo.co.jp/pickup/6597432?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6597432?source=rss",
-          "publishedAt": "2026-10-03T11:25:45.000Z",
-          "publishedLabel": "10/3 11:25",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "4人死亡火災 隣家の住民ぼうぜん",
       "whyHot": "直近の新しい話題として浮上しています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": []

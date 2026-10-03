@@ -1,21 +1,22 @@
 {
-  "generatedAt": "2026-10-03T06:23:44.050Z",
+  "generatedAt": "2026-10-03T12:00:31.179Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-240",
-  "selectedTitle": "「GUNDAM-Con2027 SIDE MAKUHARI」で、新作アクションゲーム『GUNDAM ROGUE ORBIT』最新情報が公開へ―アニメ「機動戦士ガンダムRG XARX-ZERO」神山健治監督&大塚剛央さんも登壇",
+  "selectedClusterId": "today-cluster-2",
+  "selectedTitle": "『ガルクラ』公式ゲーム『ガールズバンドクライ First Riff』新バンドは“だらしない大人4人と毒舌な中学生1人”。第3弾オリジナルバンド「クズミミズク」が公開",
   "candidates": [
     {
-      "clusterId": "today-cluster-240",
-      "title": "「GUNDAM-Con2027 SIDE MAKUHARI」で、新作アクションゲーム『GUNDAM ROGUE ORBIT』最新情報が公開へ―アニメ「機動戦士ガンダムRG XARX-ZERO」神山健治監督&大塚剛央さんも登壇",
-      "category": "anime",
+      "clusterId": "today-cluster-2",
+      "title": "『ガルクラ』公式ゲーム『ガールズバンドクライ First Riff』新バンドは“だらしない大人4人と毒舌な中学生1人”。第3弾オリジナルバンド「クズミミズク」が公開",
+      "category": "games",
       "categories": [
-        "anime",
         "games",
+        "entertainment",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 67.1,
-      "confidence": 0.44,
-      "articleCount": 2,
+      "buzzScore": 77.1,
+      "confidence": 0.55,
+      "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
@@ -23,16 +24,16 @@
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 4.4,
-        "velocity": 2.7,
-        "freshness": 8.5,
+        "trend": 15.8,
+        "internetNativeBoost": 0,
+        "search": 5.2,
+        "social": 7,
+        "velocity": 12.5,
+        "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 6,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -42,68 +43,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37,
-        "internalSocialScore": 34.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-6",
-      "title": "「名探偵プリキュア！感謝祭」2027年2月開催　『コナン』や『スト6』コラボなど話題続いた1年のフィナーレ",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "anime",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.5,
-      "confidence": 0.37,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 1.5,
-        "social": 8.1,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
         "browseMatchCount": 1,
-        "archiveMatchCount": 0,
-        "repeatedAppearanceScore": 18,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 0,
-        "internalSearchScore": 11.7,
-        "internalSocialScore": 63.1
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 72,
+        "internalSearchScore": 40.8,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -112,16 +58,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-24",
-      "title": "国営配信者の“コメントを検問する”ゲーム『ハッピープロパガンダ』が面白そう。全コメントを「万歳！」に変える力業も可能。10月28日にPC（Steam）に向けて発売予定",
+      "clusterId": "today-cluster-8",
+      "title": "『バイオハザード』公式が『ドカ食いダイスキ！ もちづきさん』第4巻の発売を祝福。「ともにホラージャンルを盛り上げていきましょう！」",
       "category": "games",
       "categories": [
         "games",
-        "entertainment",
+        "manga",
         "net-culture",
         "general"
       ],
-      "buzzScore": 63.8,
+      "buzzScore": 63.9,
       "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
@@ -151,11 +97,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 23.1,
+        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
         "archiveHeatScore": 81,
-        "internalSearchScore": 43.4,
-        "internalSocialScore": 54.4
+        "internalSearchScore": 44,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -164,17 +110,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-18",
-      "title": "新作アニメ『ケロロ軍曹☆』新キャスト発表。旧作で「日向夏美」を演じた斎藤千和さんが日向秋ママを担当、アンゴル＝モア役に市ノ瀬加那さんに。ナレーションは新井里美さん",
-      "category": "anime",
+      "clusterId": "today-cluster-25",
+      "title": "キャラビルド＆アイテムハントを堪能！探索＆ハクスラRPG『モノクローム・エコーズ ホワイト』―白黒の世界を舞台に繰り広げられる超濃厚RPG",
+      "category": "games",
       "categories": [
-        "anime",
         "games",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 63.4,
-      "confidence": 0.36,
+      "buzzScore": 61.6,
+      "confidence": 0.35,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -186,10 +132,10 @@
         "sourceDiversity": 2.3,
         "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 7,
+        "search": 5.4,
+        "social": 6.9,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -203,11 +149,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 80,
         "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 54.8
+        "internalSearchScore": 42.1,
+        "internalSocialScore": 54
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -216,34 +162,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-15",
-      "title": "しゃぶ葉の配膳ロボで「横取り」問題再燃　他の客の商品を取ると音声通知、運営元が全店導入へ",
-      "category": "net-culture",
+      "clusterId": "today-cluster-2694",
+      "title": "「Steamオータムセール」が始まったので注目タイトル120種類をピックアップして紹介してみた。全力おすすめリストを更新",
+      "category": "games",
       "categories": [
-        "net-culture",
+        "games",
         "sns",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 62.8,
-      "confidence": 0.43,
-      "articleCount": 3,
+      "buzzScore": 59.8,
+      "confidence": 0.37,
+      "articleCount": 2,
       "sourceCount": 2,
-      "uniqueDomainCount": 1,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 3.8,
-        "trend": 20.7,
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 6,
-        "social": 5.4,
+        "search": 4.5,
+        "social": 5.7,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 1.5,
         "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": -5
+        "categoryBias": 14,
+        "penalty": -6
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -252,13 +199,64 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
+        "repeatedAppearanceScore": 1.8,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 35.1,
+        "internalSocialScore": 44.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1434",
+      "title": "「GUNDAM-Con2027 SIDE MAKUHARI」で、新作アクションゲーム『GUNDAM ROGUE ORBIT』最新情報が公開へ―アニメ「機動戦士ガンダムRG XARX-ZERO」神山健治監督&大塚剛央さんも登壇",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "general"
+      ],
+      "buzzScore": 59.4,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 4.7,
+        "social": 4.4,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 46.6,
-        "internalSocialScore": 42.5
+        "archiveHeatScore": 100,
+        "internalSearchScore": 37,
+        "internalSocialScore": 34.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

@@ -135,10 +135,8 @@
   function formatBriefTimelineTime(value) {
     const date = new Date(value ?? '');
     if (Number.isNaN(date.getTime())) return '時刻不明';
-    return new Intl.DateTimeFormat('ja-JP', {
-      hour: '2-digit',
-      minute: '2-digit',
-    }).format(date);
+    // Use the archive's date and timezone formatting, not a label frozen at fetch time.
+    return global.TopicClientUtils.formatDate(date);
   }
 
   function sanitizeBriefSummaryText(value) {

@@ -328,7 +328,7 @@
     return '<article class="must-read-card-shell" style="animation-delay:' + (index * 60) + 'ms">' +
       thumbnail +
       '<div class="topic-cluster-top"><span>' + escapeHtml(options.badge ?? 'NEWS') + '</span><strong>' + escapeHtml(item.categoryLabel ?? 'その他') + '</strong></div>' +
-      '<div class="trend-meta"><span>' + escapeHtml(item.categoryLabel ?? 'その他') + '</span><time>' + escapeHtml(item.publishedLabel ?? formatBriefTimelineTime(item.publishedAt)) + '</time></div>' +
+      '<div class="trend-meta"><span>' + escapeHtml(item.categoryLabel ?? 'その他') + '</span><time>' + escapeHtml(formatBriefTimelineTime(item.publishedAt)) + '</time></div>' +
       '<h3>' + buildArticleTitleLink(item.title ?? 'ニュース', sourceUrl) + '</h3>' +
       '<p class="topic-cluster-summary">' + escapeHtml(summary) + '</p>' +
       '<div class="trend-footer"><span><strong>' + escapeHtml(sourceLabel) + '</strong></span>' + (sourceUrl ? '<a class="detail-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noreferrer">元記事を見る ↗</a>' : '<span class="detail-link">リンクなし</span>') + '</div>' +

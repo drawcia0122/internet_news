@@ -848,7 +848,9 @@
         ?? topic?.sourceSignals?.[0]?.source
         ?? ''
     ).toLowerCase();
-    const thumbnailUrl = String(topic?.thumbnailUrl ?? topic?.thumbnail ?? '').toLowerCase();
+    // Count the same cards the renderer can show, including signal-owned images.
+    const thumbnailUrl = [topic?.thumbnailUrl ?? topic?.thumbnail, pickCardImageUrl(topic)]
+      .filter(Boolean).join(' ').toLowerCase();
 
     if (!sourceUrl) return false;
     if (/読み込み失敗|リンクなし|整理中です|&#x[0-9a-f]+;|&#\d+;|&amp;#/.test(`${topic.title ?? ''} ${topic.summary ?? ''} ${text}`)) return false;

@@ -1,41 +1,91 @@
 {
-  "generatedAt": "2026-10-04T08:29:55.887Z",
+  "generatedAt": "2026-10-04T14:22:00.310Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-9",
-  "selectedTitle": "G7オンライン首脳会合　トランプ氏カメラオフ、高市首相の姿なく",
+  "selectedClusterId": "today-cluster-288",
+  "selectedTitle": "横浜流星 日頃SNSを見る習慣ない",
   "candidates": [
     {
-      "clusterId": "today-cluster-9",
-      "title": "G7オンライン首脳会合　トランプ氏カメラオフ、高市首相の姿なく",
-      "category": "sns",
+      "clusterId": "today-cluster-288",
+      "title": "横浜流星 日頃SNSを見る習慣ない",
+      "category": "net-culture",
       "categories": [
-        "sns",
-        "politics",
         "net-culture",
-        "world",
+        "entertainment",
+        "sns",
         "general"
       ],
-      "buzzScore": 62.6,
-      "confidence": 0.41,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 63.3,
+      "confidence": 0.34,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 17.2,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 8.4,
+        "search": 4.8,
+        "social": 6,
         "velocity": 0,
         "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 37.2,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-13",
+      "title": "「兵役行かずにすむ」 金メダル掲げ発言、韓国サッカー代表主将が謝罪",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 61.9,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.8,
+        "internetNativeBoost": 8,
+        "search": 5.6,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 12,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -47,10 +97,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 42.9,
-        "internalSocialScore": 65.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 44,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -59,7 +109,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-404",
+      "clusterId": "today-cluster-770",
+      "title": "読む政治：高市早苗氏、きょう総裁選出から1年に　あの熱狂は今…",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 58.1,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 20.2,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 7.2,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 92,
+        "internalSearchScore": 34.2,
+        "internalSocialScore": 56.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-860",
       "title": "【サッカーＵ２１】表彰式でまさかの事態…優勝の韓国の国旗掲揚されず　応援団はブーイング＆選手は困惑…アジア大会",
       "category": "sports",
       "categories": [
@@ -68,8 +171,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 57,
-      "confidence": 0.31,
+      "buzzScore": 55,
+      "confidence": 0.3,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -84,7 +187,7 @@
         "search": 4.1,
         "social": 5.8,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 1.5,
         "categoryBias": 12,
         "penalty": -3
@@ -111,36 +214,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-648",
-      "title": "TVアニメ『新 美味しんぼ』ティザーPV",
-      "category": "anime",
+      "clusterId": "today-cluster-23",
+      "title": "簗農相「多く回すのが当たり前」発言の危うさ　高市首相の任命責任はどこまで問われるか（大濱崎卓真） - エキスパート",
+      "category": "politics",
       "categories": [
-        "anime",
-        "entertainment",
+        "politics",
         "sns",
         "net-culture",
-        "general",
-        "books"
+        "general"
       ],
-      "buzzScore": 56.5,
-      "confidence": 0.29,
-      "articleCount": 1,
+      "buzzScore": 54.8,
+      "confidence": 0.37,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.6,
+        "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 3.7,
-        "social": 7.1,
+        "search": 6,
+        "social": 7,
         "velocity": 0,
-        "freshness": 3.5,
+        "freshness": 5.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 4,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -150,121 +251,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 0.9,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 28.6,
-        "internalSocialScore": 55.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-39",
-      "title": "薬屋のひとりごと：テレビアニメ第2期　名場面誕生の裏側　山場の「なあに」　“カエル”の表現　筆坂明規監督インタビュー",
-      "category": "anime-features",
-      "categories": [
-        "anime-features",
-        "sns",
-        "net-culture",
-        "books",
-        "general",
-        "entertainment"
-      ],
-      "buzzScore": 54.8,
-      "confidence": 0.35,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 11.4,
-        "internetNativeBoost": 0,
-        "search": 4.3,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 52,
-        "internalSearchScore": 33.8,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-26",
-      "title": "彼方から：1990年代を代表する少女マンガ　2026年にテレビアニメ化する意義　阿部記之監督インタビュー",
-      "category": "anime-features",
-      "categories": [
-        "anime-features",
-        "sns",
-        "net-culture",
-        "manga",
-        "general",
-        "entertainment"
-      ],
-      "buzzScore": 54.1,
-      "confidence": 0.35,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 9.7,
-        "internetNativeBoost": 0,
-        "search": 4,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 44,
-        "internalSearchScore": 31,
-        "internalSocialScore": 65.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

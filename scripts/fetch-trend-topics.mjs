@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile, readdir, unlink } from "node:fs/promises";
 
 import { repairStoredArticleSummary } from "../lib/article-summary-corrections.mjs";
-import { repairStoredArticleSource } from "../lib/article-source-corrections.mjs";
+import { repairStoredArticleSource, recoverRetainedSourceArticles } from "../lib/article-source-corrections.mjs";
 import { buildDailyBrief } from "../lib/daily-brief.mjs";
 import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, readImageTagAttributes, hasSuspiciousThumbnailMismatch, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
 import { collectTrendTopics, repairStoredTopicCategories } from "../lib/trend-aggregator.mjs";
@@ -277,7 +277,7 @@ const archivePath = "data/trend-topics-archive.json";
 const archivePayload = await readArchivePayload(archivePath);
 let mergedArchiveItems = sanitizeArticleSummaryCollection(dedupeNearDuplicateItems(
   mergeArchiveItems(
-    (archivePayload.items ?? []).map((item) => normalizeArchiveItem(item, archivePayload.generatedAt)),
+    recoverRetainedSourceArticles(archivePayload.items ?? []).map((item) => normalizeArchiveItem(item, archivePayload.generatedAt)),
     dedupedItems.map((item) => normalizeArchiveItem(item, capturedAt)),
   ).filter((item) => isWithinArchiveWindow(item, capturedAt) && shouldKeepArchiveItem(item)),
 ));
@@ -1972,11 +1972,14 @@ function canonicalSignalUrl(rawUrl) {
   if (!value) return "";
   try {
     const parsed = new URL(value);
-    const params = new URLSearchParams(parsed.search);
-    ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "utm_id", "ref", "src", "from"].forEach((key) => params.delete(key));
-    parsed.search = params.toString();
+    // Query values (YouTube v, article IDs, etc.) and paths are case-sensitive
+    // article identity. Only tracking parameters and fragments are disposable.
+    for (const key of [...parsed.searchParams.keys()]) {
+      if (/^utm_/i.test(key) || /^(?:ref|src|from)$/i.test(key)) parsed.searchParams.delete(key);
+    }
+    parsed.searchParams.sort();
     parsed.hash = "";
-    return `${parsed.hostname.replace(/^www\./, "")}${parsed.pathname}`.toLowerCase();
+    return `${parsed.host.replace(/^www\./i, "").toLowerCase()}${parsed.pathname}${parsed.search}`;
   } catch {
     return value.toLowerCase();
   }

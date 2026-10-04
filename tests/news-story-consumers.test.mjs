@@ -103,3 +103,55 @@ test('home and archive use the same prepared population and category-before-grou
   const newsResult = await archive([original, alternative]);
   assert.equal(vm.runInContext('getFilteredTrendItems()[0].id', context), vm.runInContext('groupNewsStories(dedupedTrendItems)[0].id', newsResult.context));
 });
+
+
+test('signal-owned placeholder cards are excluded before counting, searching and paginating', async () => {
+  const excluded = item('placeholder', {
+    title: '娘が嫁に行っちゃったよという家族のニュース',
+    sourceName: 'はてなブックマーク人気',
+    thumbnailUrl: 'javascript:invalid',
+    sourceSignals: [{ sourceName: 'はてなブックマーク人気', thumbnailUrl: 'https://anond.hatelabo.jp/assets/images/rss.gif' }],
+  });
+  const items = [excluded, ...Array.from({ length: 21 }, (_, index) => item(index))];
+  const before = JSON.stringify(items);
+  const result = await archive(items);
+  assert.equal(result.elements.get('#news-count').textContent, '21 話題');
+  assert.equal(cardCount(result), 20, 'excluded cards must not leave a short first page');
+  assert.match(result.elements.get('#news-archive-actions').innerHTML, /1〜20 \/ 21話題/);
+  assert.equal(vm.runInContext("getRangeDisplayCount('all')", result.context), 21);
+  await result.render('currentPage = 2');
+  assert.equal(cardCount(result), 1);
+  assert.match(result.elements.get('#news-archive-actions').innerHTML, /21〜21 \/ 21話題/);
+  result.elements.get('#news-query').value = '娘が嫁';
+  await result.render('currentPage = 1');
+  assert.equal(result.elements.get('#news-count').textContent, '0 話題');
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /該当するニュースはありません/);
+  assert.equal(result.elements.get('#news-archive-actions').innerHTML, '');
+  assert.equal(result.elements.get('#trend-pagination').innerHTML, '');
+  assert.equal(JSON.stringify(items), before, 'filtering must preserve original article data');
+});
+
+test('ordinary signal thumbnails and image-free Hatena articles remain in the shared population', async () => {
+  const items = [
+    item('real-image', { sourceName: 'はてなブックマーク人気', thumbnailUrl: null,
+      sourceSignals: [{ thumbnailUrl: 'https://images.example.com/article-photo.jpg' }] }),
+    item('no-image', { sourceName: 'はてなブックマーク人気', thumbnailUrl: null }),
+    item('preferred-image', { sourceName: 'はてなブックマーク人気',
+      ogImage: 'https://images.example.com/verified-photo.jpg',
+      sourceSignals: [{ thumbnailUrl: 'https://anond.hatelabo.jp/assets/images/rss.gif' }] }),
+    item('invalid-primary', { sourceName: 'はてなブックマーク人気', thumbnailUrl: 'javascript:invalid',
+      sourceSignals: [{ thumbnailUrl: 'https://images.example.com/fallback-photo.jpg' }] }),
+  ];
+  const result = await archive(items);
+  assert.equal(result.elements.get('#news-count').textContent, '4 話題');
+  assert.equal(cardCount(result), 4);
+});
+
+
+test('existing top-level placeholder exclusions stay unchanged when a preferred image exists', async () => {
+  const result = await archive([item('existing-placeholder', { sourceName: 'はてなブックマーク人気',
+    ogImage: 'https://images.example.com/preferred-photo.jpg',
+    thumbnailUrl: 'https://anond.hatelabo.jp/assets/images/rss.gif' })]);
+  assert.equal(result.elements.get('#news-count').textContent, '0 話題');
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /該当するニュースはありません/);
+});

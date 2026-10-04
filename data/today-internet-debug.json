@@ -1,42 +1,41 @@
 {
-  "generatedAt": "2026-10-03T22:25:26.934Z",
+  "generatedAt": "2026-10-04T01:59:13.481Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1",
-  "selectedTitle": "Claude×真鍋大度が新作アートを制作　Anthropicが「木工×AI」展覧会を開催",
+  "selectedClusterId": "today-cluster-6",
+  "selectedTitle": "米兵を強盗殺人容疑で緊急逮捕　那覇市のホテルでの女性遺体発見で　普天間飛行場所属の海兵隊上等兵",
   "candidates": [
     {
-      "clusterId": "today-cluster-1",
-      "title": "Claude×真鍋大度が新作アートを制作　Anthropicが「木工×AI」展覧会を開催",
-      "category": "tech",
+      "clusterId": "today-cluster-6",
+      "title": "米兵を強盗殺人容疑で緊急逮捕　那覇市のホテルでの女性遺体発見で　普天間飛行場所属の海兵隊上等兵",
+      "category": "crime",
       "categories": [
-        "tech",
-        "entertainment",
+        "crime",
         "sns",
         "net-culture",
+        "world",
         "general"
       ],
-      "buzzScore": 59.3,
-      "confidence": 0.45,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 71.3,
+      "confidence": 0.48,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 15.8,
-        "internetNativeBoost": 0,
-        "search": 5.2,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
         "social": 8.4,
-        "velocity": 8.3,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -10
+        "velocity": 1.3,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -49,8 +48,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 72,
-        "internalSearchScore": 40.8,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -60,33 +59,36 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1215",
-      "title": "しゃぶ葉の配膳ロボで「横取り」問題再燃　他の客の商品を取ると音声通知、運営元が全店導入へ",
-      "category": "net-culture",
+      "clusterId": "today-cluster-7",
+      "title": "読む政治：高市早苗氏、きょう総裁選出から1年に　あの熱狂は今…",
+      "category": "politics",
       "categories": [
-        "net-culture",
+        "politics",
         "sns",
+        "net-culture",
+        "world",
         "general"
       ],
-      "buzzScore": 57.9,
-      "confidence": 0.35,
-      "articleCount": 2,
+      "buzzScore": 69.2,
+      "confidence": 0.46,
+      "articleCount": 3,
       "sourceCount": 2,
-      "uniqueDomainCount": 1,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 3.8,
-        "trend": 18.9,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 20.2,
         "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 4.4,
-        "velocity": 0,
-        "freshness": 3.5,
+        "search": 6.1,
+        "social": 8.4,
+        "velocity": 1.3,
+        "freshness": 8.5,
         "authority": 2.5,
-        "categoryBias": 9,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -96,13 +98,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 32.1,
-        "internalSocialScore": 34.4
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 92,
+        "internalSearchScore": 47.8,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -111,35 +113,87 @@
       ]
     },
     {
-      "clusterId": "today-cluster-15",
-      "title": "『ガルクラ』公式ゲーム『ガールズバンドクライ First Riff』新バンドは“だらしない大人4人と毒舌な中学生1人”。第3弾オリジナルバンド「クズミミズク」が公開",
+      "clusterId": "today-cluster-1",
+      "title": "美少女全国統一SLG『戦国ランス』Steam版、さっそく「好評率94％」の盛り上がり。やりこみ甲斐も高評価な欲望マシマシ天下統一、Steamでも華々しくデビュー",
       "category": "games",
       "categories": [
         "games",
         "entertainment",
+        "general"
+      ],
+      "buzzScore": 66.9,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 5.6,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-9",
+      "title": "【サッカーＵ２１】表彰式でまさかの事態…優勝の韓国の国旗掲揚されず　応援団はブーイング＆選手は困惑…アジア大会",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 56.5,
-      "confidence": 0.38,
+      "buzzScore": 65.6,
+      "confidence": 0.41,
       "articleCount": 3,
-      "sourceCount": 2,
+      "sourceCount": 1,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 14.3,
-        "internetNativeBoost": 0,
-        "search": 4.8,
+        "sourceDiversity": 3.2,
+        "trend": 18.9,
+        "internetNativeBoost": 8,
+        "search": 5.7,
         "social": 6.9,
         "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 12,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -152,8 +206,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 65,
-        "internalSearchScore": 37.2,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 44.5,
         "internalSocialScore": 54
       },
       "externalSignalErrors": [
@@ -163,16 +217,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1779",
-      "title": "「GUNDAM-Con2027 SIDE MAKUHARI」で、新作アクションゲーム『GUNDAM ROGUE ORBIT』最新情報が公開へ―アニメ「機動戦士ガンダムRG XARX-ZERO」神山健治監督&大塚剛央さんも登壇",
-      "category": "anime",
+      "clusterId": "today-cluster-1001",
+      "title": "悪質な「名古屋ライド」SNS拡散",
+      "category": "net-culture",
       "categories": [
-        "anime",
-        "games",
+        "net-culture",
+        "sns",
         "general"
       ],
-      "buzzScore": 51.2,
-      "confidence": 0.38,
+      "buzzScore": 58.7,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -182,66 +236,15 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 4.3,
-        "velocity": 0,
-        "freshness": 1.5,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": -6
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 1.8,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 36.2,
-        "internalSocialScore": 33.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-783",
-      "title": "悪質な「名古屋ライド」SNS拡散",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 50.6,
-      "confidence": 0.3,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
         "trend": 18.9,
         "internetNativeBoost": 8,
         "search": 4.1,
         "social": 4.4,
         "velocity": 0,
         "freshness": 3.5,
-        "authority": 1.5,
+        "authority": 2.5,
         "categoryBias": 9,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,

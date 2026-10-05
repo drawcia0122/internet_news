@@ -69,7 +69,23 @@
     return tags.filter((tag) => !POKEMON_TAG_PATTERN.test(String(tag ?? '').trim()));
   }
 
+  function hasOnlyStoreReviewFeatureEvidence(value) {
+    const text = String(value ?? '').normalize('NFKC');
+    // Store ratings are not the publisher's editorial review. Remove only
+    // explicit store/user-review phrases; independent feature evidence wins.
+    const withoutRatings = text.replace(/(?:steam\s*(?:の\s*)?(?:日本語\s*)?(?:ユーザー\s*)?|(?:日本語\s*)?ユーザー\s*)レビュー/giu, '');
+    return withoutRatings !== text
+      && !/インタビュー|開発秘話|制作裏話|コラム|特集|プレイレポート|先行プレイ|レビュー|技術解説|開発者ブログ|振り返り|開発者に聞く|体験レポ|ハンズオン/.test(withoutRatings);
+  }
+
+  function correctStoreReviewCategories(article, categories) {
+    if (!categories.includes('game-features') || !hasOnlyStoreReviewFeatureEvidence(articleBrandText(article))) return categories;
+    return [...new Set(categories.map((category) => category === 'game-features' ? 'games' : category))];
+  }
+
   global.ArticleCategoryQuality = {
+    hasOnlyStoreReviewFeatureEvidence,
+    correctStoreReviewCategories,
     getArticleEditorialSectionCategories,
     hasPokemonBrandSignal,
     sanitizeArticleSourceTags,

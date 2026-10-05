@@ -827,10 +827,11 @@
   }
 
   function restoreNewsEditorialSections(topic) {
-    const categories = normalizeCategories(topic?.categories, topic?.category);
+    const original = normalizeCategories(topic?.categories, topic?.category);
+    const categories = window.ArticleCategoryQuality?.correctStoreReviewCategories(topic, original) ?? original;
     const added = (window.ArticleCategoryQuality?.getArticleEditorialSectionCategories(topic) ?? [])
       .filter((category) => !categories.includes(category));
-    if (!added.length) return topic;
+    if (!added.length && categories === original) return topic;
     const restored = [...categories.filter((category) => category !== 'general'), ...added, ...categories.filter((category) => category === 'general')];
     return { ...topic, category: restored[0], categories: restored,
       categoryLabel: categoryLabelFor(restored[0]), categoryLabels: restored.map(categoryLabelFor) };

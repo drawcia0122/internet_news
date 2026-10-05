@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-05T00:47:29.621Z",
+  "generatedAt": "2026-10-05T06:54:16.666Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1",
-  "selectedTitle": "映画『アベンジャーズ／エンドゲーム』全世界興行収入で再び「歴代1位」に！『アバター』破り“史上最大のヒット作”に返り咲く",
+  "selectedClusterId": "today-cluster-298",
+  "selectedTitle": "「トイ・ストーリー」新作一番くじが受注再販売！シドに捕まったウッディとバズ、魔改造おもちゃたちのフィギュアがズラリ",
   "candidates": [
     {
-      "clusterId": "today-cluster-1",
-      "title": "映画『アベンジャーズ／エンドゲーム』全世界興行収入で再び「歴代1位」に！『アバター』破り“史上最大のヒット作”に返り咲く",
+      "clusterId": "today-cluster-298",
+      "title": "「トイ・ストーリー」新作一番くじが受注再販売！シドに捕まったウッディとバズ、魔改造おもちゃたちのフィギュアがズラリ",
       "category": "games",
       "categories": [
         "games",
-        "entertainment",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 73.1,
-      "confidence": 0.44,
-      "articleCount": 2,
+      "buzzScore": 68.8,
+      "confidence": 0.38,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
@@ -24,14 +24,176 @@
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-31",
+      "title": "高市首相のG7首脳会合欠席、官房長官「議長国が当日に急きょ設定」",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "business",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 67.2,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 19.8,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 6,
-        "social": 7,
+        "search": 6.5,
+        "social": 8.4,
         "velocity": 5.3,
         "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 4,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-451",
+      "title": "声優・上坂すみれ SNS投稿を再開",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "sns",
+        "net-culture",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 66,
+      "confidence": 0.35,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-20",
+      "title": "“好き”の定義を本気で研究──漫画『理系が恋に落ちたので証明してみた。』が研究論文に",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.3,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.8,
+        "internetNativeBoost": 8,
+        "search": 5.6,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -46,62 +208,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 47.1,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-763",
-      "title": "「兵役行かずにすむ」 金メダル掲げ発言、韓国サッカー代表主将が謝罪",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 61.9,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.8,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 12,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
+        "crossCategoryScore": 100,
         "archiveHeatScore": 81,
-        "internalSearchScore": 31.1,
-        "internalSocialScore": 45.9
+        "internalSearchScore": 44,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -110,86 +220,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-94",
-      "title": "『ワンピース カードゲーム』“ONE PIECE DAY'26”記念商品がプレバンで抽選販売！特別な「ルフィ」と「ドン！！カード」の2枚セット",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 60.9,
-      "confidence": 0.41,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 5,
-        "social": 3.2,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 24.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-42",
+      "clusterId": "today-cluster-90",
       "title": "「死因特定推理ゲーム」空前のブーム到来。『未整理記録』など無料で面白いゲームも続々、『オブラディン』『Type Help』の影響力大きく。どれもセールで買える",
       "category": "games",
       "categories": [
         "games",
+        "general",
         "sns",
-        "net-culture",
-        "general"
+        "net-culture"
       ],
-      "buzzScore": 59.2,
-      "confidence": 0.34,
+      "buzzScore": 64.7,
+      "confidence": 0.36,
       "articleCount": 2,
-      "sourceCount": 1,
+      "sourceCount": 2,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
+        "sourceDiversity": 3.8,
         "trend": 17.2,
         "internetNativeBoost": 8,
         "search": 5.2,
         "social": 6.8,
         "velocity": 0,
         "freshness": 3.5,
-        "authority": 1.5,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -205,58 +264,6 @@
         "archiveHeatScore": 78,
         "internalSearchScore": 40.9,
         "internalSocialScore": 53.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-52",
-      "title": "簗和生農水相「私が取ってきた予算をなんで受注」　釈明会見後に地元紙が音声公開...「恫喝」批判が止まらない",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "politics",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 57.1,
-      "confidence": 0.43,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 3.8,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 6.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": -5
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 19.8,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 47.9,
-        "internalSocialScore": 52.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

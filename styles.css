@@ -4338,6 +4338,7 @@ footer {
 
 .game-home-page {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
   width: min(1320px, calc(100% - 32px));
   padding: 28px;
@@ -4381,12 +4382,22 @@ footer {
 }
 
 .game-home-page > * {
+  min-width: 0;
   position: relative;
   z-index: 1;
 }
 
 .game-home-page .topic-back-link {
+  align-items: center;
+  justify-self: start;
+  min-height: 44px;
   color: #9dbdff;
+}
+
+.game-home-page .article-title-link {
+  display: inline-block;
+  min-height: 44px;
+  overflow-wrap: anywhere;
 }
 
 .game-home-page .section-kicker {
@@ -4402,6 +4413,7 @@ footer {
 
 .game-home-hero {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 14px;
   padding: 36px;
   border: 1px solid rgba(157, 135, 255, 0.16);
@@ -4414,11 +4426,17 @@ footer {
 }
 
 .game-home-hero h1 {
+  /* The shared homepage h1 names a grid area absent from this hero. */
+  grid-area: auto;
   color: #f5f8ff;
   font-size: clamp(34px, 4.2vw, 54px);
   line-height: 1.02;
   letter-spacing: -0.05em;
-  max-width: 8ch;
+  max-width: none;
+}
+
+.game-home-hero > * {
+  min-width: 0;
 }
 
 .game-home-hero .topic-summary {
@@ -4577,6 +4595,7 @@ footer {
   gap: 12px;
   min-width: 0;
   align-content: start;
+  overflow-wrap: anywhere;
 }
 
 .game-home-tag-row,
@@ -4614,6 +4633,9 @@ footer {
 }
 
 .game-home-card .game-card-thumb {
+  width: 100%;
+  min-width: 0;
+  align-self: start;
   margin-bottom: 0;
   min-height: 92px;
   border: 1px solid rgba(135, 161, 220, 0.12);
@@ -4635,6 +4657,7 @@ footer {
 
 .game-home-card .game-card-top {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
@@ -4643,17 +4666,35 @@ footer {
 .game-home-card .game-card-meta {
   color: rgba(201, 216, 247, 0.74);
   font-size: 12px;
-  white-space: nowrap;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
-.game-home-card .game-card-link {
+.game-home-page .game-card-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   width: fit-content;
+  max-width: 100%;
+  min-height: 44px;
+  margin-top: 0;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 117, 203, 0.22);
+  border-radius: 12px;
+  background: rgba(255, 74, 193, 0.08);
   color: #ff9cdd;
+  font-size: 12px;
   font-weight: 800;
   text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.game-home-page .game-card-link:focus-visible,
+.game-home-page .article-title-link:focus-visible,
+.game-home-page .topic-back-link:focus-visible {
+  outline: 2px solid #ff9cdd;
+  outline-offset: 3px;
 }
 
 .game-home-card .game-card-badge {
@@ -4714,7 +4755,9 @@ footer {
 }
 
 .game-compact-card .game-card-thumb {
-  min-height: 84px;
+  /* Fit the 112px column without an aspect-ratio minimum widening it. */
+  min-height: 0;
+  aspect-ratio: 4 / 3;
 }
 
 .game-compact-card h3 {
@@ -4744,6 +4787,8 @@ footer {
 .game-news-row-main {
   display: grid;
   gap: 8px;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .game-news-row-main h3,
@@ -4817,6 +4862,10 @@ footer {
   .game-hub-card,
   .game-compact-card {
     gap: 12px;
+  }
+
+  .game-compact-card .game-card-thumb {
+    aspect-ratio: 16 / 9;
   }
 
   .game-home-card h3 {

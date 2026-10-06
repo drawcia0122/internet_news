@@ -56,7 +56,7 @@ test('game page reuses the nonblocking refresh notice for all its source dataset
   assert.match(html, /src="\.\/refresh-status\.js\?v=1"/);
   const notices = html.match(/<p\b[^>]*id="data-refresh-health"[^>]*>/g) || [];
   assert.equal(notices.length, 1);
-  assert.match(notices[0], /data-refresh-datasets="trend-topics\.json,home-news\.json,events\.json"/);
+  assert.match(notices[0], /data-refresh-datasets="trend-topics\.json,home-news\.json,events\.json,game-sale-offers\.json"/);
   assert.match(notices[0], /role="status"/);
   assert.match(notices[0], /aria-live="polite"/);
   assert.match(notices[0], /\bhidden\b/);

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=53" />
+    <link rel="stylesheet" href="./styles.css?v=54" />
     <link rel="stylesheet" href="./refresh-status.css?v=1" />
   </head>
   <body>
@@ -18,12 +18,12 @@
     <main class="topic-page game-page game-home-page">
       <a class="topic-back-link" href="./index.html">← トップに戻る</a>
 
-      <p class="data-refresh-health" id="data-refresh-health" data-refresh-datasets="trend-topics.json,home-news.json,events.json" role="status" aria-live="polite" hidden></p>
+      <p class="data-refresh-health" id="data-refresh-health" data-refresh-datasets="trend-topics.json,home-news.json,events.json,game-sale-offers.json" role="status" aria-live="polite" hidden></p>
 
       <section class="topic-hero game-home-hero">
         <p class="section-kicker">GAME HOME</p>
         <h1>今日のゲーム状況</h1>
-        <p class="topic-summary">ゲームの発売・更新・無料体験・セールに関する記事を整理しています。実施状況が不明な情報は区別し、価格や利用条件は元記事で確認できます。</p>
+        <p class="topic-summary">ゲームの発売・更新・無料体験・セールに関する記事を整理しています。実施状況が不明な情報は区別し、セールは通常価格と割引後の価格を比較できます。</p>
 
         <div class="game-home-command" id="game-hero-command">
           <article class="game-home-command-card">
@@ -104,7 +104,7 @@
             <p class="section-kicker">SALE PICKS</p>
             <h2>💸 セール情報</h2>
           </div>
-          <p class="brief-description">ゲームと対応する掲載価格・割引率を表示します。実施期間が不明な場合は、現在の価格や条件を記事で確認してください。</p>
+          <p class="brief-description">通常価格 → 割引後の価格と割引率を作品ごとに表示。Steam日本ストアの確認日時を添え、未確認の価格は区別します。</p>
         </div>
         <div class="game-home-list game-home-compact-list" id="steam-sale-list">
           <article class="game-empty-card">
@@ -150,6 +150,6 @@
     <script src="./refresh-status.js?v=1"></script>
     <script src="./shared-topic-utils.js?v=14"></script>
     <script src="./home-data-utils.js?v=1"></script>
-    <script src="./game.js?v=13"></script>
+    <script src="./game.js?v=14"></script>
   </body>
 </html>

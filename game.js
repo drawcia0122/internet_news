@@ -81,11 +81,12 @@
   });
 
   async function init() {
-    const [trendPayload, archivePayload, homeNewsPayload, eventPayload] = await Promise.all([
+    const [trendPayload, archivePayload, homeNewsPayload, eventPayload, salePayload] = await Promise.all([
       fetchJsonWithCache({ endpoints: ['./data/trend-topics.json', 'data/trend-topics.json'] }),
       fetchJsonWithCache({ endpoints: ['./data/news-archive.json', 'data/news-archive.json'] }),
       fetchJsonWithCache({ endpoints: ['./data/home-news.json', 'data/home-news.json'] }),
       fetchJsonWithCache({ endpoints: ['./data/events.json', 'data/events.json'] }),
+      fetchJsonWithCache({ endpoints: ['./data/game-sale-offers.json', 'data/game-sale-offers.json'] }).catch(() => null),
     ]);
 
     const currentTopics = Array.isArray(trendPayload?.items) ? trendPayload.items.map((item) => normalizeTopic(item)) : [];
@@ -97,6 +98,8 @@
     const events = Array.isArray(eventPayload?.items) ? eventPayload.items : [];
 
     dashboardState = buildDashboardState(gameTopics, events, {
+      saleOffers: Array.isArray(salePayload?.items) ? salePayload.items : [],
+      saleSources: Array.isArray(salePayload?.sources) ? salePayload.sources : [],
       generatedAt: trendPayload?.generatedAt ?? homeNewsPayload?.generatedAt ?? archivePayload?.generatedAt ?? eventPayload?.generatedAt ?? null,
     });
 
@@ -128,13 +131,15 @@
   }
 
   function buildDashboardState(topics, events, meta) {
-    const steamSales = buildSteamSales(topics);
+    const steamSales = buildSteamSales(topics, meta.saleOffers, meta.saleSources);
     const freeGames = buildFreeGames(topics);
     const releasesToday = buildTodayReleases(topics);
     const majorUpdates = buildMajorUpdates(topics);
     const startingEvents = buildStartingEvents(events);
     const importantItems = buildImportantItems({ steamSales, freeGames, releasesToday, majorUpdates, startingEvents });
-    const gameHubs = buildGameHubs(topics, {
+    const supersededPrices = supersededPriceArticles(topics, meta.saleOffers, meta.saleSources);
+    const hubTopics = topics.filter((topic) => !supersededPrices.has(canonicalArticleUrl(articleSource(topic)?.canonicalUrl || articleSource(topic)?.url || topic.sourceUrl || topic.url)));
+    const gameHubs = buildGameHubs(hubTopics, {
       steamSales,
       freeGames,
       releasesToday,
@@ -239,7 +244,7 @@
       heroCards.push({
         label: '注目セール',
         value: formatCountLabel(visibleSaleCount, '件'),
-        description: '掲載価格と実施期間を記事で確認',
+        description: '通常価格と割引後の価格を比較',
         target: '#sale-section',
       });
     } else if (visibleUpdateCount > 0) {
@@ -394,28 +399,43 @@
     `).join('');
   }
 
+  function renderSalePrice(item) {
+    const prior = item.priceState === 'stale' || item.status === 'ended';
+    const original = item.regularPrice === null || item.regularPrice === undefined ? '未確認' : `${Number(item.regularPrice).toLocaleString('ja-JP')}円`;
+    const sale = item.salePrice === null || item.salePrice === undefined ? '未確認' : `${Number(item.salePrice).toLocaleString('ja-JP')}円`;
+    return `<div class="game-sale-prices${prior ? ' is-historical' : ''}" role="group" aria-label="${escapeHtml(`${prior ? '前回確認価格。' : ''}通常価格 ${original}、割引後 ${sale}`)}">
+      <span class="game-sale-price-part"><span class="game-sale-price-label">通常価格</span>${item.regularPrice !== null && item.regularPrice !== undefined ? `<s>${escapeHtml(original)}</s>` : '<span>未確認</span>'}</span>
+      <span class="game-sale-price-arrow" aria-hidden="true">→</span>
+      <span class="game-sale-price-part"><span class="game-sale-price-label">${prior ? '前回の割引価格' : '割引後'}</span><strong>${escapeHtml(sale)}</strong></span>
+    </div>`;
+  }
+
   function renderSteamSales() {
     const items = dashboardState.steamSales.slice(0, 4);
     if (!items.length) {
-      steamSaleListElement.innerHTML = renderEmptyCard('今出す価値があるセール案件はまだ少なめです', '割引率や最安値圏が確認できるゲームだけを残しています。');
+      steamSaleListElement.innerHTML = renderEmptyCard('確認できるセール情報はまだありません', '通常価格と割引後の価格を確認できた情報から掲載します。');
       return;
     }
     steamSaleListElement.innerHTML = items.map((item) => `
-      <article class="game-home-card game-compact-card" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.discount, item.price))}">
+      <article class="game-home-card game-compact-card game-sale-card" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.discount, item.price))}">
         ${renderSignalThumbnail(item.thumbnailUrl, item.title, '💸')}
         <div class="game-home-card-body">
           <div class="game-card-top">
             <span class="game-card-badge">${escapeHtml(item.priorityLabel)}</span>
-            <span class="game-card-meta">${escapeHtml(item.discount || '割引率確認中')}</span>
+            <span class="game-card-meta">${escapeHtml(item.discount || '割引率未確認')}</span>
           </div>
-          <h3>${buildArticleTitleLink(item.title, item.url)}</h3>
-          <p class="game-card-summary">${escapeHtml(item.summary)}</p>
+          <h3>${buildArticleTitleLink(item.title, item.storeUrl || item.url)}</h3>
+          ${renderSalePrice(item)}
+          <p class="game-card-summary">${escapeHtml(item.storeUrl ? 'Steam日本ストア · PC版 · 本編 · 税込' : item.summary)}</p>
           <div class="game-home-inline-facts">${renderFactPills([
-            item.price ? `掲載価格 ${item.price}` : '価格は記事内で確認',
-            item.startsAtLabel ? `開始 ${item.startsAtLabel}` : '開始日時不明',
-            item.endsAtLabel ? `終了 ${item.endsAtLabel}` : '終了日時不明',
+            item.endsAtLabel ? `終了 ${item.endsAtLabel}` : '終了日時未確認',
+            item.priceState === 'stale' ? '現在の価格は再確認待ち' : null,
           ])}</div>
-          <a class="game-card-link" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">記事で価格・条件を確認 ↗</a>
+          <p class="game-sale-source">${item.checkedAt ? `価格確認 ${escapeHtml(formatPriceCheckedAt(item.checkedAt))} · ` : '記事掲載価格 · '}${item.storeUrl ? `<a href="${escapeHtml(item.storeUrl)}" target="_blank" rel="noreferrer">Steam公式</a>` : '元の価格が未記載の場合は未確認'}</p>
+          <div class="game-sale-links">
+            ${item.storeUrl ? `<a class="game-card-link" href="${escapeHtml(item.storeUrl)}" target="_blank" rel="noreferrer">Steamで確認 ↗</a>` : ''}
+            <a class="game-card-link" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">紹介記事 ↗</a>
+          </div>
         </div>
       </article>
     `).join('');
@@ -495,24 +515,114 @@
 
   // Action cards use the named article's headline and entity-scoped statements only.
   // Feed tags, sibling source articles and incidental summary keywords are not evidence.
-  function buildSteamSales(topics) {
-    const items = [];
+  function formatPriceCheckedAt(value) {
+    const date = safeDate(value);
+    return date ? `${new Intl.DateTimeFormat('ja-JP', { timeZone: 'Asia/Tokyo', year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }).format(date)} JST` : '日時未確認';
+  }
+
+  function verifiedSaleCard(offer, topics, { includeEnded = false } = {}) {
+    if (!offer || !Number.isSafeInteger(offer.appId) || offer.appId <= 0 || offer.currency !== 'JPY'
+      || offer.country !== 'JP' || offer.edition !== 'base-game' || offer.store !== 'Steam'
+      || !['verified', 'cached', 'stale', 'ended'].includes(offer.status)) return null;
+    const checked = safeDate(offer.checkedAt);
+    const now = new Date();
+    if (!checked || checked > now || now - checked >= 24 * 60 * 60 * 1000) return null;
+    const validUntil = safeDate(offer.priceValidUntil);
+    if (!validUntil || now >= validUntil || validUntil - checked > 24 * 60 * 60 * 1000) return null;
+    const title = String(offer.title || '').trim();
+    if (!title) return null;
+    const { regularPrice, salePrice, discountPercent } = offer;
+    const noDiscount = discountPercent === 0 && salePrice === regularPrice;
+    if (offer.status === 'ended' && !noDiscount) return null;
+    if (noDiscount && !includeEnded) return null;
+    if (!Number.isSafeInteger(regularPrice) || !Number.isSafeInteger(salePrice) || regularPrice <= 0 || salePrice <= 0
+      || salePrice > regularPrice || !Number.isInteger(discountPercent) || discountPercent < 0 || discountPercent > 99
+      || (salePrice === regularPrice && !noDiscount)
+      || Math.abs(100 * (regularPrice - salePrice) / regularPrice - discountPercent) > 1) return null;
+    try {
+      const store = new URL(offer.storeUrl);
+      const source = new URL(offer.priceSource?.url);
+      if (offer.priceSource?.kind !== 'steam-appdetails' || store.username || store.password || source.username || source.password
+        || store.protocol !== 'https:' || store.hostname !== 'store.steampowered.com' || !new RegExp(`^/app/${offer.appId}(?:/|$)`).test(store.pathname)
+        || source.protocol !== 'https:' || source.hostname !== 'store.steampowered.com'
+        || source.pathname !== '/api/appdetails' || source.searchParams.get('appids') !== String(offer.appId)
+        || source.searchParams.get('cc')?.toLowerCase() !== 'jp') return null;
+    } catch { return null; }
+    if (!Array.isArray(offer.articleUrls)) return null;
+    const articleUrls = new Set(offer.articleUrls.filter((value) => typeof value === 'string').map(canonicalArticleUrl).filter(Boolean));
+    const topic = topics.find((entry) => {
+      const source = articleSource(entry);
+      if (entry.sourceSignals?.length && !source) return false;
+      const published = safeDate(entry.publishedAt || source?.publishedAt);
+      return published && published <= now && articleUrls.has(canonicalArticleUrl(source?.canonicalUrl || source?.url || entry.sourceUrl || entry.url));
+    });
+    if (!topic) return null;
+    const endsAt = safeDate(offer.endsAt);
+    const freshUntil = safeDate(offer.freshUntil);
+    const stale = !freshUntil || offer.status === 'stale' || (freshUntil && now >= freshUntil) || now - checked >= 6 * 60 * 60 * 1000;
+    const status = noDiscount || (endsAt && endsAt <= now) ? 'ended' : stale ? 'unknown' : 'active';
+    const url = articleSource(topic)?.url || topic.sourceUrl || topic.url;
+    return {
+      key: `steam-${offer.appId}`, articleUrls: [...articleUrls], topicId: topic.id || topic.title, title,
+      summary: `${title} のSteam日本ストア価格`, url,
+      storeUrl: `https://store.steampowered.com/app/${offer.appId}/?cc=jp&l=japanese`,
+      thumbnailUrl: offer.thumbnailUrl || null,
+      regularPrice, salePrice: noDiscount ? null : salePrice, price: noDiscount ? null : `${salePrice.toLocaleString('ja-JP')}円`, discount: noDiscount ? null : `${discountPercent}% OFF`,
+      checkedAt: offer.checkedAt, priceState: stale ? 'stale' : 'verified', status,
+      startsAt: null, startsAtLabel: null, endsAt,
+      endsAtLabel: endsAt ? formatPriceCheckedAt(endsAt) : null,
+      priority: 100 + (offer.featuredInArticle === true ? 100 : 0) + discountPercent, priorityLabel: status === 'ended' ? 'セール終了' : stale ? '価格の再確認待ち' : '確認時に割引中',
+    };
+  }
+
+  function isAuthoritativePriceUnavailable(source) {
+    if (source?.kind !== 'steam' || source.status !== 'unavailable' || !Number.isSafeInteger(source.appId) || source.appId <= 0
+      || !Array.isArray(source.articleUrls) || source.articleUrls.some((value) => typeof value !== 'string')) return false;
+    const checked = safeDate(source.attemptedAt);
+    if (!checked || checked > new Date() || new Date() - checked >= 6 * 60 * 60 * 1000) return false;
+    try {
+      const url = new URL(source.url);
+      return url.protocol === 'https:' && url.hostname === 'store.steampowered.com' && !url.username && !url.password
+        && url.pathname === '/api/appdetails' && url.searchParams.get('appids') === String(source.appId)
+        && url.searchParams.get('cc')?.toLowerCase() === 'jp';
+    } catch { return false; }
+  }
+
+  function supersededPriceArticles(topics, offers = [], sources = []) {
+    const urls = new Set((Array.isArray(sources) ? sources : []).filter(isAuthoritativePriceUnavailable)
+      .flatMap((source) => source.articleUrls).map(canonicalArticleUrl).filter(Boolean));
+    const newest = uniqueBy((Array.isArray(offers) ? offers : []).slice()
+      .sort((a, b) => (safeDate(a?.checkedAt)?.getTime() || 0) - (safeDate(b?.checkedAt)?.getTime() || 0))
+      .map((offer) => verifiedSaleCard(offer, topics, { includeEnded: true })).filter(Boolean), (item) => item.key);
+    for (const item of newest) if (item.status === 'ended') item.articleUrls.forEach((url) => urls.add(url));
+    return urls;
+  }
+
+  function buildSteamSales(topics, offers = [], sources = []) {
+    const official = uniqueBy((Array.isArray(offers) ? offers : [])
+      .slice().sort((a, b) => (safeDate(a?.checkedAt)?.getTime() || 0) - (safeDate(b?.checkedAt)?.getTime() || 0))
+      .map((offer) => verifiedSaleCard(offer, topics, { includeEnded: true })).filter(Boolean), (item) => item.key);
+    const items = official.filter((item) => item.salePrice !== null);
+    const unavailableArticles = new Set((Array.isArray(sources) ? sources : []).filter(isAuthoritativePriceUnavailable)
+      .flatMap((source) => source.articleUrls).map(canonicalArticleUrl).filter(Boolean));
     for (const topic of topics) {
       const evidence = actionEvidence(topic, SALE_PATTERN, { kind: 'sale' });
       if (!evidence || evidence.multipleSubjects || !/\bsteam\b/i.test(evidence.text)) continue;
+      const sourceIdentity = canonicalArticleUrl(articleSource(topic)?.canonicalUrl || evidence.url);
+      if (unavailableArticles.has(sourceIdentity) || official.some((item) => item.articleUrls.includes(sourceIdentity))) continue;
       const discount = extractDiscount(evidence.claim);
-      const price = extractPrice(evidence.claim);
+      const pair = extractPricePair(evidence.claim);
+      const price = pair.salePrice === null ? extractPrice(evidence.claim) : pair.salePrice.toLocaleString('ja-JP');
       if ((!discount || discount < 30) && !/過去最安|最安/i.test(evidence.claim)) continue;
       const period = extractActionPeriod(evidence.text, evidence.referenceDate);
       const priority = (discount >= 90 ? 4 : 0) + (/過去最安|最安/i.test(evidence.claim) ? 3 : 0);
       items.push({
-        ...actionCardBase(topic, evidence),
-        ...period,
+        ...actionCardBase(topic, evidence), ...period,
         key: `sale-${evidence.title}-${topic.id || evidence.url}`,
         discount: discount ? `${discount}% OFF` : null,
-        price: price !== null ? `${price}円` : null,
-        priority,
-        priorityLabel: actionStatusLabel(period.status),
+        regularPrice: pair.regularPrice, salePrice: price === null ? null : Number(price.replace(/,/g, '')),
+        price: price !== null ? `${price}円` : null, priceState: 'article',
+        priority, priorityLabel: actionStatusLabel(period.status),
       });
     }
     return uniqueBy(items, (item) => item.key)
@@ -712,7 +822,7 @@
         title: `${sale.title} のセール終了が近い`,
         gameTitle: sale.title,
         summary: sale.discount ? `${sale.discount}、${sale.price || '価格未取得'}。終了日時と条件を記事で確認してください。` : sale.summary,
-        facts: [sale.price ? `価格 ${sale.price}` : null, sale.discount, 'Steam'],
+        facts: [salePriceSummary(sale), sale.discount, 'Steam'],
         thumbnailUrl: sale.thumbnailUrl || null,
         url: sale.url,
         icon: '💸',
@@ -943,9 +1053,9 @@
     if (extra.sale) {
       tags.push(extra.sale.priorityLabel);
       facts.push(extra.sale.discount || null);
-      facts.push(extra.sale.price || null);
+      facts.push(salePriceSummary(extra.sale));
       if (!extra.release && !extra.update && !extra.free) {
-        summary = `${bucket.title} のセール報道。${extra.sale.discount || '割引情報あり'}${extra.sale.price ? ` / 掲載価格 ${extra.sale.price}` : ''}。${actionStatusLabel(extra.sale.status)}`;
+        summary = `${bucket.title} のセール報道。${extra.sale.discount || '割引情報あり'} / ${salePriceSummary(extra.sale)}。${actionStatusLabel(extra.sale.status)}`;
       }
       if (ctaLabel === '関連記事を見る') ctaLabel = 'セールを見る';
       if (!extra.free && !extra.release && !extra.update) url = extra.sale.url;
@@ -1246,6 +1356,32 @@
     const values = [...String(text ?? '').matchAll(/(\d{1,3})\s*[%％]\s*(?:オフ|OFF)/gi)].map((match) => Number(match[1]));
     const distinct = [...new Set(values)];
     return distinct.length === 1 && distinct[0] > 0 && distinct[0] <= 100 ? distinct[0] : null;
+  }
+
+  function salePriceSummary(sale) {
+    const regular = sale.regularPrice === null || sale.regularPrice === undefined ? '通常価格未確認' : `通常${Number(sale.regularPrice).toLocaleString('ja-JP')}円`;
+    return `${regular} → ${sale.price || '割引後未確認'}`;
+  }
+
+  function extractPricePair(text) {
+    const source = String(text || '');
+    const unknown = { regularPrice: null, salePrice: null };
+    // Both roles must be stated for the same product. Never reverse-calculate
+    // the regular price from a rounded discount or mix editions/bundles.
+    if (/最大|円(?:から|より|〜|～|相当|引き|割引)|通常版.*(?:デラックス|deluxe|限定版)|本編.*(?:DLC|セット|バンドル)|(?:デラックス|deluxe|限定版).*通常版/i.test(source)) return unknown;
+    const amount = '([0-9]{1,3}(?:,[0-9]{3})*|[0-9]+)\\s*円';
+    const regular = [...source.matchAll(new RegExp(`(?:通常価格|定価|元値)\\s*[：:]?\\s*${amount}`, 'g'))];
+    const sale = [...source.matchAll(new RegExp(`(?:セール価格|割引後(?:の価格)?|特価)\\s*[：:]?\\s*${amount}`, 'g'))];
+    const arrow = source.match(new RegExp(`(?:通常価格|定価|元値)\\s*[：:]?\\s*${amount}\\s*[→⇒]\\s*(?:(?:セール価格|割引後(?:の価格)?|特価)\\s*[：:]?\\s*)?${amount}`));
+    const prices = [...source.matchAll(PRICE_PATTERN)].map((match) => Number(match[1].replace(/,/g, '')));
+    if (regular.length !== 1) return unknown;
+    const regularPrice = Number(regular[0][1].replace(/,/g, ''));
+    const salePrice = sale.length === 1 ? Number(sale[0][1].replace(/,/g, '')) : arrow ? Number(arrow[2].replace(/,/g, '')) : null;
+    if (salePrice === null) return prices.length === 1 ? { regularPrice, salePrice: null } : unknown;
+    if (salePrice >= regularPrice || salePrice < 0 || prices.some((value) => value !== regularPrice && value !== salePrice)) return unknown;
+    const discount = extractDiscount(source);
+    if (discount && Math.abs(100 * (regularPrice - salePrice) / regularPrice - discount) > 1) return unknown;
+    return { regularPrice, salePrice };
   }
 
   function extractPrice(text) {

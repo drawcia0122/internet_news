@@ -4769,6 +4769,67 @@ footer {
   line-height: 1.58;
 }
 
+.game-sale-prices {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid rgba(144, 225, 177, 0.22);
+  border-radius: 12px;
+  background: rgba(63, 166, 111, 0.08);
+}
+
+.game-sale-price-part {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.game-sale-price-label,
+.game-sale-source {
+  color: rgba(211, 223, 248, 0.78);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.game-sale-price-part s {
+  color: rgba(211, 223, 248, 0.78);
+  font-size: 15px;
+}
+
+.game-sale-price-part strong {
+  color: #a5f3c4;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.game-sale-price-arrow {
+  padding-bottom: 3px;
+  color: rgba(211, 223, 248, 0.78);
+}
+
+.game-sale-prices.is-historical {
+  opacity: 0.75;
+}
+
+.game-sale-source {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.game-sale-source a {
+  color: #b8d7ff;
+  text-underline-offset: 3px;
+}
+
+.game-sale-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .game-news-list {
   display: grid;
   gap: 14px;

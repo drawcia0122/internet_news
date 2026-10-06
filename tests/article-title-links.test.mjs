@@ -94,7 +94,7 @@ test('home trends and game article surfaces call the shared native-link renderer
   const game = await readFile(new URL('../game.js', import.meta.url), 'utf8');
   const news = await readFile(new URL('../news.js', import.meta.url), 'utf8');
   assert.match(app, /buildArticleTitleLink\(trend\.title \?\? 'ニュース', sourceUrl\)/);
-  assert.equal((game.match(/<h3>\$\{buildArticleTitleLink\(item\.title, item\.url\)\}<\/h3>/g) ?? []).length, 6);
+  assert.equal((game.match(/<h3>\$\{buildArticleTitleLink\(item\.title, (?:item\.storeUrl \|\| )?item\.url\)\}<\/h3>/g) ?? []).length, 6);
   assert.match(news, /buildArticleTitleLink\(item\.title \?\? 'ニュース', sourceUrl\)/);
   assert.match(news, /return '<article class="' \+ cardClass/); // Disclosures and source links must not nest in anchors.
 });

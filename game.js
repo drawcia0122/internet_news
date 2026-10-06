@@ -362,7 +362,10 @@
     clearOfferRefreshTimer();
     if (!dashboardInputs || document.hidden || !window.setTimeout) return;
     const now = currentOfferTime().getTime();
-    const deadlines = [];
+    // A Japanese calendar-day rollover must remove yesterday's top picks at
+    // midnight, even when their price observations remain otherwise fresh.
+    const day = japaneseParts(new Date(now));
+    const deadlines = day ? [Date.UTC(day.year, day.month - 1, day.day + 1) - 9 * 3600000] : [];
     for (const offer of dashboardInputs.meta.saleOffers || []) {
       if (!offer) continue;
       const checkedAt = safeDate(offer.checkedAt)?.getTime();

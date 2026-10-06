@@ -511,3 +511,17 @@ test('review follow: rejected latest offer evidence cannot leave the saved disco
     assert.equal(changes(h).length, 0);
   }
 });
+
+test('review today: open tabs clear yesterday picks exactly at JST midnight', () => {
+  const before = Date.parse('2026-10-06T14:59:59.500Z');
+  const h = harness({ now: before });
+  h.load([offer({ checkedAt: iso(before - 1000), freshUntil: iso(before + 5 * HOUR), priceValidUntil: iso(before + 23 * HOUR) })]);
+  assert.equal(current(h).dashboardState.todayHighlights.length, 1);
+  let timer;
+  h.c.setTimeout = (callback, delay) => { timer = { callback, delay }; return 100; };
+  h.c.scheduleOfferRefresh();
+  assert.equal(timer.delay, 500);
+  h.time(before + 500); timer.callback();
+  assert.equal(current(h).dashboardState.todayHighlights.length, 0);
+  assert.match(h.el('#game-hero-command').innerHTML, /今日分の確認情報はまだありません/);
+});

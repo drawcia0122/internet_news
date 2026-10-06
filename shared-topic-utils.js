@@ -334,6 +334,8 @@
     if (!value) return true;
     if (isProxyThumbnailUrl(value)) return true;
     return /^https?:\/\/(?:[^/]+\.)?yimg\.jp\/?$/i.test(value)
+      // Also reject this site-wide logo in already generated/cached articles.
+      || /^https?:\/\/s\.yimg\.jp\/images\/news-web\/versions\/[^/]+\/all\/images\/jsonld_image_1244x700\.png(?:[?#]|$)/i.test(value)
       || /^https?:\/\/img\.youtube\.com\/?$/i.test(value)
       || /^https?:\/\/b\.hatena\.ne\.jp\/entry\/image\//i.test(value)
       || /s\.yimg\.jp\/images\/top\/ogp\/fb_y_1500px\.png|s\.yimg\.jp\/images\/news-web\/versions\/[^/]+\/all\/images\/ogp_default\.png|s\.yimg\.jp\/images\/advertising\/common\/img\/ico_jiaa\.png|news-pctr\.c\.yimg\.jp\/uUzvQ3lM|news-topics\/images\/tpc|news-topics\/pickups|\/t\/news-topics\/|support\.x\.com\/articles\/|gstatic\.com\/_\/mss\/boq-dots\/.*dotssplashui/i.test(value)

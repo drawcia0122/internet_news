@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T16:23:33.879Z",
+  "generatedAt": "2026-10-06T21:19:14.379Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
@@ -37,7 +37,7 @@
       },
       "freshUntil": "2026-10-06T22:23:33.879Z",
       "priceValidUntil": "2026-10-07T16:23:33.879Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=960910&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -81,8 +81,8 @@
           "kind": "update",
           "checkedAt": "2026-10-06T16:23:33.879Z",
           "freshUntil": "2026-10-06T22:23:33.879Z",
-          "eventId": "steam-announcement-4379139488519954534",
           "date": "2020-07-23T08:38:46.000Z",
+          "eventId": "steam-announcement-4379139488519954534",
           "title": "Heavy Rain update: improvement of Simplified Chinese",
           "eventType": "release-notes",
           "source": {
@@ -126,7 +126,7 @@
       },
       "freshUntil": "2026-10-06T22:23:33.879Z",
       "priceValidUntil": "2026-10-07T16:23:33.879Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1222140&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1728,7 +1728,7 @@
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/2610062t",
       "checkedAt": "2026-10-06T16:23:33.879Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": [
         {
           "appId": 960910,
@@ -1840,26 +1840,14 @@
       "appId": 960910,
       "url": "https://store.steampowered.com/api/appdetails?appids=960910&cc=jp&l=japanese",
       "checkedAt": "2026-10-06T16:23:33.879Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/2610062t"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1222140,
       "url": "https://store.steampowered.com/api/appdetails?appids=1222140&cc=jp&l=japanese",
       "checkedAt": "2026-10-06T16:23:33.879Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/2610062t"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",

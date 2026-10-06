@@ -1,11 +1,117 @@
 {
-  "generatedAt": "2026-10-06T16:16:25.776Z",
+  "generatedAt": "2026-10-06T21:13:17.751Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-270",
-  "selectedTitle": "公式Xも思わず絶叫？サンソフト『レトロゲームセレクション2』レーティングが12才以上対象の「CERO B」に",
+  "selectedClusterId": "today-cluster-4",
+  "selectedTitle": "在沖縄米軍が7～9日業務停止　9日から30日間は午前０～５時の外出禁止　強殺事件受け",
   "candidates": [
     {
-      "clusterId": "today-cluster-270",
+      "clusterId": "today-cluster-4",
+      "title": "在沖縄米軍が7～9日業務停止　9日から30日間は午前０～５時の外出禁止　強殺事件受け",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "sns",
+        "world",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 60.3,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 4,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1100",
+      "title": "高市首相の「私の簗ちゃん」大失言...「もう代えちゃえばいいんじゃないですか」と立川志らく",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 58.3,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 4.9,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.3,
+        "internalSocialScore": 46.3
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-449",
       "title": "公式Xも思わず絶叫？サンソフト『レトロゲームセレクション2』レーティングが12才以上対象の「CERO B」に",
       "category": "games",
       "categories": [
@@ -13,8 +119,8 @@
         "sns",
         "general"
       ],
-      "buzzScore": 61.9,
-      "confidence": 0.34,
+      "buzzScore": 57.5,
+      "confidence": 0.31,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -24,12 +130,12 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 20.9,
+        "trend": 18.7,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 4.6,
+        "search": 4.2,
+        "social": 4.5,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -43,11 +149,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 37.2,
-        "internalSocialScore": 35.7
+        "archiveHeatScore": 85,
+        "internalSearchScore": 32.5,
+        "internalSocialScore": 34.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -56,123 +162,19 @@
       ]
     },
     {
-      "clusterId": "today-cluster-82",
-      "title": "アリスソフトの名作『戦国ランス』Steam版が10月2日のリリースから「非常に好評」スタート。一般向けに“キス魔”と化したランスが話題に",
+      "clusterId": "today-cluster-133",
+      "title": "『ARC Raiders』が映画・ドラマ化へ。ネクソンがチェルニン・エンターテインメントと提携を発表。『THE FINALS』も同社とのパートナーシップで映像化へ",
       "category": "games",
       "categories": [
         "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 60.2,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.4,
-        "social": 5.5,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 42.1,
-        "internalSocialScore": 43
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-36",
-      "title": "高市首相の「私の簗ちゃん」大失言...「もう代えちゃえばいいんじゃないですか」と立川志らく",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 59.7,
-      "confidence": 0.44,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 3.8,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.5,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": -5
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-91",
-      "title": "累計登録者数1400万人──YouTubeショートアニメ制作会社Plottが地上波テレビに参入",
-      "category": "anime",
-      "categories": [
-        "anime",
         "entertainment",
-        "sns",
-        "net-culture",
+        "general",
         "business",
-        "general"
+        "net-culture"
       ],
-      "buzzScore": 56.9,
-      "confidence": 0.4,
-      "articleCount": 3,
+      "buzzScore": 56.2,
+      "confidence": 0.42,
+      "articleCount": 4,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
@@ -180,14 +182,14 @@
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
+        "coverage": 7.2,
         "sourceDiversity": 4.7,
-        "trend": 16.5,
+        "trend": 16.1,
         "internetNativeBoost": 0,
-        "search": 5.1,
+        "search": 5,
         "social": 8.3,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 9,
         "penalty": 0
@@ -203,8 +205,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 21,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 75,
-        "internalSearchScore": 39.9,
+        "archiveHeatScore": 73,
+        "internalSearchScore": 39.2,
         "internalSocialScore": 64.5
       },
       "externalSignalErrors": [
@@ -214,34 +216,33 @@
       ]
     },
     {
-      "clusterId": "today-cluster-243",
-      "title": "『エンドフィールド』今後実装のオペレーターがチラ見せ！「ケーちゃん」がやって来るーこれからの物語では「ロドス」も登場",
+      "clusterId": "today-cluster-1484",
+      "title": "「スイッチ2」お得な「選べるソフト セット」が11月12日発売！本体と“対象の3タイトル”から選んだ1本を安く購入可能",
       "category": "games",
       "categories": [
         "games",
         "general"
       ],
-      "buzzScore": 56.4,
-      "confidence": 0.37,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 52.2,
+      "confidence": 0.35,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.7,
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.2,
         "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 3.2,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
+        "search": 3.7,
+        "social": 3,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
         "categoryBias": 6,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -252,11 +253,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 40,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 36.8,
-        "internalSocialScore": 24.7
+        "archiveHeatScore": 78,
+        "internalSearchScore": 29.2,
+        "internalSocialScore": 23.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

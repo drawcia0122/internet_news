@@ -7,6 +7,7 @@
     escapeHtml,
     formatTopicDisplayTime,
     getNewsArticleSource,
+    getCardImageCandidates,
     normalizeTopic,
     topicText,
   } = window.TopicClientUtils;
@@ -104,6 +105,9 @@
   const offerClockOrigin = Date.now();
   const offerMonotonicOrigin = window.performance?.now?.() ?? null;
   let latestOfferClock = offerClockOrigin;
+  const gameImageAttempts = new WeakMap();
+  const gameThumbnailFieldCache = new WeakMap();
+  const gameImageUrlCache = new Map();
 
   init().catch((error) => {
     console.error('[game] failed to render', error);
@@ -120,7 +124,9 @@
     if (source.articles) {
       const items = payload.items.map((item) => {
         if (!item || typeof item !== 'object' || Array.isArray(item) || typeof item.title !== 'string') throw new Error(`Invalid article in ${source.file}`);
-        const topic = normalizeTopic(item);
+        // Keep original image provenance before generic normalization/grouping
+        // can borrow a neighbour's art. Resolve it lazily for game articles only.
+        const topic = { ...normalizeTopic(item), gameArticleImages: { article: item } };
         if (topic.relatedKeywords != null && !Array.isArray(topic.relatedKeywords)) throw new Error(`Invalid keywords in ${source.file}`);
         // Validate the fields used by the game filter before committing a source.
         isGameTopic(topic);
@@ -234,6 +240,7 @@
   }
 
   function bindInteractions() {
+    document.addEventListener?.('error', handleGameImageError, true);
     loadRetryElement?.addEventListener('click', retryGameSources);
     searchFormElement?.addEventListener('submit', (event) => {
       event.preventDefault();
@@ -559,11 +566,13 @@
       {
         label: '今すぐ確認',
         title: important ? important.title : '今日は緊急で見る案件は少なめ',
+        image: important,
         text: important ? important.summary : '終了間近や本日発売が強い日はここに最優先項目を出します。',
       },
       {
         label: '無料・セール情報',
         title: free ? `${free.title} の${free.offerLabel}` : sale ? `${sale.title} のセール情報` : '今日は無理に拾う案件は少なめ',
+        image: free || sale,
         text: free
           ? `${actionStatusLabel(free.status)}。${free.startsAtLabel ? `開始 ${free.startsAtLabel}。` : ''}条件は記事で確認してください。`
           : sale
@@ -573,12 +582,14 @@
       {
         label: '遊ぶ候補',
         title: hub ? hub.title : '今日は大きく動いたゲームが少なめ',
+        image: hub,
         text: hub ? hub.summary : '大型更新や発売が強いゲームが上段に来るようにしています。',
       },
     ];
 
     return cards.map((card) => `
       <article class="game-home-command-card">
+        ${card.image?.thumbnailUrl ? renderSignalThumbnail(card.image) : ''}
         <strong>${escapeHtml(card.label)}</strong>
         <h3>${escapeHtml(card.title)}</h3>
         <p>${escapeHtml(card.text)}</p>
@@ -608,7 +619,7 @@
     }
     importantListElement.innerHTML = items.map((item) => `
       <article class="game-home-card game-important-card" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.gameTitle, item.title, item.summary))}">
-        ${renderSignalThumbnail(item.thumbnailUrl, item.gameTitle, item.icon)}
+        ${renderSignalThumbnail(item, item.icon)}
         <div class="game-home-card-body">
           <div class="game-card-top">
             <span class="game-card-badge">${escapeHtml(item.label)}</span>
@@ -631,7 +642,7 @@
     }
     hubListElement.innerHTML = items.map((item) => `
       <article class="game-home-card game-hub-card" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.tags.join(' ')))}">
-        ${renderSignalThumbnail(item.thumbnailUrl, item.title, '🎮')}
+        ${renderSignalThumbnail(item, '🎮')}
         <div class="game-home-card-body">
           <div class="game-card-top">
             <span class="game-card-meta">${escapeHtml(item.evidenceLabel)}</span>
@@ -654,7 +665,7 @@
     }
     freeGameListElement.innerHTML = items.map((item) => `
       <article class="game-home-card game-compact-card" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.store))}">
-        ${renderSignalThumbnail(item.thumbnailUrl, item.title, '🎁')}
+        ${renderSignalThumbnail(item, '🎁')}
         <div class="game-home-card-body">
           <div class="game-card-top">
             <span class="game-card-badge">${escapeHtml(item.offerLabel)}</span>
@@ -694,7 +705,7 @@
     }
     steamSaleListElement.innerHTML = items.map((item) => `
       <article class="game-home-card game-compact-card game-sale-card" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.discount, item.price))}">
-        ${renderSignalThumbnail(item.thumbnailUrl, item.title, '💸')}
+        ${renderSignalThumbnail(item, '💸')}
         <div class="game-home-card-body">
           <div class="game-card-top">
             <span class="game-card-badge">${escapeHtml(item.priorityLabel)}</span>
@@ -725,7 +736,7 @@
     }
     steamStoryListElement.innerHTML = items.map((item) => `
       <article class="game-home-card game-compact-card" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.label, item.gameTitle))}">
-        ${renderSignalThumbnail(item.thumbnailUrl, item.title, '🖥')}
+        ${renderSignalThumbnail(item, '🖥')}
         <div class="game-home-card-body">
           <div class="game-card-top">
             <span class="game-card-badge">${escapeHtml(item.label)}</span>
@@ -753,6 +764,7 @@
     newsListElement.innerHTML = items.map((item) => `
       <article class="game-news-row" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.gameTitle, item.title, item.summary))}">
         <div class="game-news-row-main">
+          ${item.thumbnailUrl ? renderSignalThumbnail(item) : ''}
           <span class="game-news-row-game">${escapeHtml(item.gameTitle)}</span>
           <h3>${buildArticleTitleLink(item.title, item.url)}</h3>
           <p>${escapeHtml(item.summary)}</p>
@@ -842,7 +854,7 @@
       key: `steam-${offer.appId}`, articleUrls: [...articleUrls], topicId: topic.id || topic.title, title,
       summary: `${title} のSteam日本ストア価格`, url,
       storeUrl: `https://store.steampowered.com/app/${offer.appId}/?cc=jp&l=japanese`,
-      thumbnailUrl: offer.thumbnailUrl || null,
+      ...thumbnailFields(steamImageCandidates(offer)),
       regularPrice, salePrice: noDiscount ? null : salePrice, price: noDiscount ? null : `${salePrice.toLocaleString('ja-JP')}円`, discount: noDiscount ? null : `${discountPercent}% OFF`,
       checkedAt: offer.checkedAt, priceState: stale ? 'stale' : 'verified', status,
       startsAt: null, startsAtLabel: null, endsAt,
@@ -1038,11 +1050,24 @@
   }
 
   function actionCardBase(topic, evidence) {
+    // Japanese headlines also quote patch names and descriptive phrases with 「」.
+    // A single explicitly featured 『game title』 is not a multi-game roundup.
+    const featured = [...String(topic.title).matchAll(/『([^』]+)』/gu)].map((match) => canonicalizeGameName(match[1]));
+    const secondaryQuotes = [...String(topic.title).matchAll(QUOTED_TITLE_PATTERN)]
+      .filter((match) => canonicalizeGameName(match[1]) !== canonicalizeGameName(evidence.title));
+    const onlyQuotedDescriptions = secondaryQuotes.every((match) => {
+      const before = topic.title.slice(0, match.index).trimEnd();
+      const after = topic.title.slice(match.index + match[0].length);
+      return /アップデート(?:名)?$/.test(before)
+        || /^(?:リリース以来|過去|史上).*(?:アプデ|アップデート)$/.test(match[1])
+        || (/の限界$/.test(match[1]) && /^を見極め/.test(after));
+    });
+    const singleFeaturedGame = featured.length === 1 && featured[0] === canonicalizeGameName(evidence.title) && onlyQuotedDescriptions;
     return {
       topicId: topic.id || topic.title,
       title: evidence.title,
       summary: evidence.claim,
-      thumbnailUrl: topic.thumbnailUrl || articleSource(topic)?.thumbnailUrl || null,
+      ...thumbnailFields(evidence.multipleSubjects && !singleFeaturedGame ? [] : articleImageCandidates(topic)),
       url: evidence.url,
     };
   }
@@ -1079,7 +1104,7 @@
         title: event.title,
         startLabel: formatAbsoluteDate(start.toISOString()),
         summary: event.description || event.category || '本日開始イベント',
-        thumbnailUrl: event.thumbnailUrl || event.imageUrl || null,
+        ...thumbnailFields(getCardImageCandidates({ ...event, sourceSignals: [] })),
         url: event.detailUrl || event.officialUrl || '#',
       });
     }
@@ -1100,7 +1125,7 @@
         gameTitle: sale.title,
         summary: sale.discount ? `${sale.discount}、${sale.price || '価格未取得'}。終了日時と条件を記事で確認してください。` : sale.summary,
         facts: [salePriceSummary(sale), sale.discount, 'Steam'],
-        thumbnailUrl: sale.thumbnailUrl || null,
+        ...thumbnailFields(sale.thumbnailCandidates || [sale.thumbnailUrl]),
         url: sale.url,
         icon: '💸',
         cta: '記事で確認 ↗',
@@ -1119,7 +1144,7 @@
         gameTitle: giveaway.title,
         summary: `${giveaway.offerLabel}の報道です。${giveaway.endsAtLabel ? `${giveaway.endsAtLabel}まで。` : ''}対象ストアと利用条件は記事で確認してください。`,
         facts: [giveaway.store, giveaway.endsAtLabel ? `終了 ${giveaway.endsAtLabel}` : null],
-        thumbnailUrl: giveaway.thumbnailUrl || null,
+        ...thumbnailFields(giveaway.thumbnailCandidates || [giveaway.thumbnailUrl]),
         url: giveaway.url,
         icon: '🎁',
         cta: '記事で確認 ↗',
@@ -1137,7 +1162,7 @@
         gameTitle: release.title,
         summary: release.summary,
         facts: [release.status === 'upcoming' ? '本日発売予定' : '本日発売', release.releaseDateLabel],
-        thumbnailUrl: release.thumbnailUrl || null,
+        ...thumbnailFields(release.thumbnailCandidates || [release.thumbnailUrl]),
         url: release.url,
         icon: '🕹️',
         cta: '記事で確認 ↗',
@@ -1155,7 +1180,7 @@
         gameTitle: update.title,
         summary: update.summary,
         facts: ['大型更新', update.publishedLabel],
-        thumbnailUrl: update.thumbnailUrl || null,
+        ...thumbnailFields(update.thumbnailCandidates || [update.thumbnailUrl]),
         url: update.url,
         icon: '🛠️',
         cta: '記事で確認 ↗',
@@ -1173,7 +1198,7 @@
         gameTitle: event.title,
         summary: event.summary,
         facts: ['本日開始', event.startLabel],
-        thumbnailUrl: event.thumbnailUrl || null,
+        ...thumbnailFields(event.thumbnailCandidates || [event.thumbnailUrl]),
         url: event.url,
         icon: '🎫',
         cta: 'イベントを見る ↗',
@@ -1239,9 +1264,9 @@
           title: topic.title || gameTitle,
           summary: summarizeSupportingText(topic, gameTitle),
           publishedLabel: formatArticleTime(topic),
-          sourceLabel: topic.sourceSignals?.[0]?.sourceName || '元記事',
-          thumbnailUrl: topic.thumbnailUrl || topic.sourceSignals?.find((signal) => signal.thumbnailUrl)?.thumbnailUrl || null,
-          url: topic.sourceSignals?.[0]?.url || buildGoogleNewsUrl(gameTitle, { rangeDays: 7 }),
+          sourceLabel: getNewsArticleSource(topic)?.label || '元記事',
+          ...thumbnailFields(articleImageCandidates(topic)),
+          url: getNewsArticleSource(topic)?.url || buildGoogleNewsUrl(gameTitle, { rangeDays: 7 }),
           sortScore: Number(topic.score ?? topic.hotScore ?? 0) + steamBonus + ((archiveTimestamp(topic) || 0) / 100000000),
         };
       })
@@ -1264,9 +1289,9 @@
           summary: summarizeSupportingText(topic, gameTitle),
           label: classifySteamStoryLabel(topic.title),
           publishedLabel: formatArticleTime(topic),
-          sourceLabel: topic.sourceSignals?.[0]?.sourceName || topic.sourceName || 'Steam記事',
-          thumbnailUrl: topic.thumbnailUrl || topic.sourceSignals?.find((signal) => signal.thumbnailUrl)?.thumbnailUrl || null,
-          url: topic.sourceSignals?.[0]?.url || buildGoogleNewsUrl(`${gameTitle} Steam`, { rangeDays: 7 }),
+          sourceLabel: getNewsArticleSource(topic)?.label || 'Steam記事',
+          ...thumbnailFields(articleImageCandidates(topic)),
+          url: getNewsArticleSource(topic)?.url || buildGoogleNewsUrl(`${gameTitle} Steam`, { rangeDays: 7 }),
           sortScore: scoreTopicFitness(topic, gameTitle) + steamStoryPriority(text),
         };
       })
@@ -1301,7 +1326,7 @@
     let sortScore = bucket.hotScore + bucket.articleCount * 8 + bucket.trigger.score * 60 + bucket.evidenceTypes.size * 20;
     let summary = summarizeGameTopic(bucket.bestTopic);
     let ctaLabel = '関連記事を見る';
-    let url = bucket.bestTopic.sourceSignals?.[0]?.url || buildGoogleNewsUrl(bucket.title, { rangeDays: 7 });
+    let url = getNewsArticleSource(bucket.bestTopic)?.url || buildGoogleNewsUrl(bucket.title, { rangeDays: 7 });
 
     if (extra.release) {
       tags.push(extra.release.status === 'upcoming' ? '本日発売予定' : '本日発売');
@@ -1348,7 +1373,7 @@
       topicIds: [bucket.bestTopic.id || bucket.bestTopic.title],
       title: bucket.title,
       summary: trimSummary(summary, 78),
-      thumbnailUrl: bucket.bestTopic.thumbnailUrl || bucket.bestTopic.sourceSignals?.find((signal) => signal.thumbnailUrl)?.thumbnailUrl || null,
+      ...thumbnailFields(articleImageCandidates(bucket.bestTopic)),
       tags: uniqueCompact(tags).slice(0, 3),
       facts: uniqueCompact(facts).slice(0, 4),
       evidenceLabel,
@@ -1823,6 +1848,7 @@
       if (existing) {
         // Same-article mirrors add searchable wording, never sibling destinations.
         if (!existing.searchText.includes(searchText)) existing.searchText += ` ${searchText}`;
+        Object.assign(existing, thumbnailFields([...existing.thumbnailCandidates, ...articleImageCandidates(topic)]));
         continue;
       }
       articles.set(key, {
@@ -1833,6 +1859,7 @@
         url: source?.url || '',
         publishedLabel: formatArticleTime(topic),
         publishedAt: safeDate(topic.publishedAt || articleSource(topic)?.publishedAt)?.getTime() || 0,
+        ...thumbnailFields(articleImageCandidates(topic)),
         // Index original article text before display limits and hub exclusions.
         // A neighbouring source in a topic cluster cannot donate its destination.
         searchText,
@@ -1872,6 +1899,7 @@
     searchResultsElement.innerHTML = items.length ? items.map((result) => `
       <article class="game-news-row" data-game-key="${escapeHtml(result.key)}">
         <div class="game-news-row-main">
+          ${result.thumbnailUrl ? renderSignalThumbnail(result) : ''}
           <span class="game-news-row-game">${escapeHtml(result.sourceLabel)}</span>
           <h3 tabindex="-1" data-game-result-title>${buildArticleTitleLink(result.title, result.url)}</h3>
           <p>${escapeHtml(result.summary)}</p>
@@ -1915,11 +1943,71 @@
     `;
   }
 
-  function renderSignalThumbnail(url, title, fallbackIcon = '🎮') {
-    if (url) {
+  function thumbnailFields(values) {
+    if (Array.isArray(values) && gameThumbnailFieldCache.has(values)) return gameThumbnailFieldCache.get(values);
+    const candidates = [];
+    for (const value of values || []) {
+      const key = String(value ?? '').trim();
+      if (!gameImageUrlCache.has(key)) {
+        // Validation is URL-only and shared across exact-article mirrors. Bound
+        // this cache independently from the image-attempt state on DOM nodes.
+        const url = getCardImageCandidates({ thumbnailUrl: key })[0];
+        const identity = url ? new URL(url) : null;
+        if (identity) identity.hash = '';
+        if (gameImageUrlCache.size >= 1024) gameImageUrlCache.clear();
+        gameImageUrlCache.set(key, identity?.href || null);
+      }
+      const url = gameImageUrlCache.get(key);
+      if (!url) continue;
+      if (!candidates.includes(url)) candidates.push(url);
+      if (candidates.length === 3) break;
+    }
+    const fields = { thumbnailUrl: candidates[0] || null, thumbnailCandidates: candidates };
+    if (Array.isArray(values)) gameThumbnailFieldCache.set(values, fields);
+    gameThumbnailFieldCache.set(candidates, fields);
+    return fields;
+  }
+
+  function articleImageSnapshot(topic) {
+    const source = getNewsArticleSource(topic);
+    if (!source) return { articleKey: '', candidates: [] };
+    const signals = (Array.isArray(topic.sourceSignals) ? topic.sourceSignals : []).filter((signal) => getNewsArticleSource(signal)?.key === source.key);
+    const ownSource = getNewsArticleSource({ ...topic, sourceSignals: [] });
+    // An exact-headline signal may establish the destination when the top-level
+    // URL is absent. Its own images are safe; unowned cluster images are not.
+    const owner = ownSource?.key === source.key ? topic : signals[0];
+    const imageValues = (item) => [item?.ogImage, item?.twitterImage, item?.thumbnailUrl, item?.thumbnail,
+      item?.imageUrl, item?.image, item?.sourceImage, item?.jsonLdImage];
+    const candidates = thumbnailFields([...imageValues(owner), ...signals.flatMap(imageValues)]).thumbnailCandidates;
+    return { articleKey: source.key, candidates };
+  }
+
+  function articleImageCandidates(topic) {
+    const snapshot = topic.gameArticleImages || articleImageSnapshot(topic);
+    if (snapshot.article) {
+      Object.assign(snapshot, articleImageSnapshot(snapshot.article));
+      delete snapshot.article;
+    }
+    return snapshot.articleKey === getNewsArticleSource(topic)?.key ? snapshot.candidates : [];
+  }
+
+  function steamImageCandidates(offer) {
+    return [offer.thumbnailUrl, ...(Array.isArray(offer.thumbnailCandidates) ? offer.thumbnailCandidates : [])].filter((value) => {
+      try {
+        const url = new URL(value);
+        return url.protocol === 'https:' && !url.username && !url.password && !url.port
+          && /(?:^|\.)(?:steamstatic\.com|steamcdn-a\.akamaihd\.net)$/i.test(url.hostname)
+          && new RegExp(`^/(?:store_item_assets/)?steam/apps/${offer.appId}/`).test(url.pathname);
+      } catch { return false; }
+    });
+  }
+
+  function renderSignalThumbnail(item, fallbackIcon = '🎮') {
+    const { thumbnailCandidates: candidates } = thumbnailFields(item?.thumbnailCandidates || [item?.thumbnailUrl]);
+    if (candidates.length) {
       return `
-        <div class="game-card-thumb">
-          <img src="${escapeHtml(url)}" alt="${escapeHtml(title)} のサムネイル" loading="lazy" />
+        <div class="game-card-thumb" data-game-image-fallback="${escapeHtml(fallbackIcon).replace(/"/g, '&quot;')}">
+          <img class="game-card-image" src="${escapeHtml(candidates[0])}" data-game-image-candidates="${escapeHtml(JSON.stringify(candidates.slice(1))).replace(/"/g, '&quot;')}" alt="" width="460" height="259" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
         </div>
       `;
     }
@@ -1928,6 +2016,35 @@
         <span>${escapeHtml(fallbackIcon)}</span>
       </div>
     `;
+  }
+
+  function handleGameImageError(event) {
+    const image = event.target;
+    if (!(image instanceof HTMLImageElement) || !image.classList.contains('game-card-image')) return;
+    if (image.isConnected === false || !image.complete || image.naturalWidth > 0 || (image.currentSrc && image.currentSrc !== image.src)) return;
+    const wrapper = image.closest('.game-card-thumb');
+    if (!wrapper) return;
+    let state = gameImageAttempts.get(image);
+    if (!state) {
+      let candidates = [];
+      try {
+        const raw = JSON.parse(image.getAttribute('data-game-image-candidates') || '[]');
+        if (Array.isArray(raw)) candidates = raw;
+      } catch { /* Invalid cached markup ends at the stable no-image fallback. */ }
+      const primary = thumbnailFields([image.src]).thumbnailUrl;
+      state = { remaining: thumbnailFields([image.src, ...candidates]).thumbnailCandidates.filter((url) => url !== primary).slice(0, 2), attempts: 1, finished: false };
+      gameImageAttempts.set(image, state);
+      image.removeAttribute('data-game-image-candidates');
+    }
+    if (state.finished) return;
+    if (state.remaining.length && state.attempts < 3) { state.attempts += 1; image.src = state.remaining.shift(); return; }
+    state.finished = true;
+    // Keep the reserved frame so a failed remote image never moves links or text.
+    const icon = document.createElement('span');
+    icon.textContent = wrapper.getAttribute('data-game-image-fallback') || '🎮';
+    wrapper.replaceChildren(icon);
+    wrapper.classList.add('game-card-thumb-fallback');
+    wrapper.setAttribute('aria-hidden', 'true');
   }
 
   function renderTagPills(tags) {

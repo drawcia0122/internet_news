@@ -4834,6 +4834,44 @@ footer {
   line-height: 1.58;
 }
 
+/* Show the complete official Steam header rather than a tiny cropped square. */
+.game-sale-card.game-compact-card {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.game-sale-card.game-compact-card .game-card-thumb {
+  aspect-ratio: 460 / 215;
+}
+
+.game-sale-card .game-card-thumb img {
+  object-fit: contain;
+}
+
+.game-home-command-card .game-card-thumb,
+.game-news-row .game-card-thumb {
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 0;
+}
+
+.game-home-command-card .game-card-thumb {
+  margin-bottom: 12px;
+}
+
+/* Backup cards already occupy narrow grid columns; keep metadata below text. */
+.game-news-panel .game-news-row {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.game-news-panel .game-news-row-side {
+  justify-items: start;
+}
+
+.game-search-section .game-card-thumb {
+  max-width: 280px;
+}
+
 .game-sale-prices {
   display: flex;
   align-items: flex-end;

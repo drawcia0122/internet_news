@@ -429,7 +429,7 @@
     }
     steamStoryListElement.innerHTML = items.map((item) => `
       <article class="game-home-card game-compact-card" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.label, item.gameTitle))}">
-        ${renderSignalThumbnail(item.thumbnailUrl, item.gameTitle || item.title, '🖥')}
+        ${renderSignalThumbnail(item.thumbnailUrl, item.title, '🖥')}
         <div class="game-home-card-body">
           <div class="game-card-top">
             <span class="game-card-badge">${escapeHtml(item.label)}</span>
@@ -470,8 +470,14 @@
     if (items.length < dashboardState.newsItems.length) {
       newsListElement.insertAdjacentHTML('beforeend', '<button type="button" class="game-card-link" data-game-more-news>記事をもっと見る</button>');
       newsListElement.querySelector('[data-game-more-news]')?.addEventListener('click', () => {
+        const firstNewIndex = items.length;
         newsVisibleCount += 8;
         renderNewsList();
+        // Rendering replaces the activated button. Continue keyboard navigation
+        // at the first newly revealed article rather than losing focus to body.
+        const firstNewTitle = newsListElement.querySelectorAll('.game-news-row h3 a')[firstNewIndex];
+        const focusTarget = firstNewTitle || newsListElement.querySelector('[data-game-more-news]');
+        focusTarget?.focus();
       });
     }
   }
@@ -838,7 +844,7 @@
       .filter((topic) => !excludedTopicIds.has(topic.id || topic.title))
       .filter(isUsefulNewsTopic)
       .map((topic) => {
-        const gameTitle = pickPrimaryGameTitle(topic, { actionableOnly: true }) || 'ゲームニュース';
+        const gameTitle = 'ゲームニュース';
         const steamBonus = isSteamRelevantTopic(topic) ? 42 : 0;
         return {
           key: topic.id || topic.title,
@@ -861,7 +867,7 @@
       .filter((topic) => isSteamRelevantTopic(topic))
       .filter((topic) => isUsefulSteamTopic(topic))
       .map((topic) => {
-        const gameTitle = pickPrimaryGameTitle(topic, { actionableOnly: true }) || 'Steamゲーム';
+        const gameTitle = 'Steam記事';
         const text = [topic.title, topic.whatHappened, topic.summary, topic.briefSummary].filter(Boolean).join(' ');
         return {
           key: topic.id || topic.title,
@@ -1040,7 +1046,19 @@
   function extractGameNames(topic) {
     const text = String(topic.title || '');
     const bookQuote = text.match(/『([^『』]{2,48})』/u);
-    const firstQuote = bookQuote?.[1] || extractQuotedNames(text)[0];
+    const generalQuotes = [...text.matchAll(/「([^「」]{2,48})」/gu)];
+    // General-purpose quotation marks also enclose features and opinions. With
+    // multiple candidates, retain the article without inventing a game label.
+    if (!bookQuote && generalQuotes.length > 1) return [];
+    const generalQuote = generalQuotes[0];
+    if (!bookQuote && generalQuote) {
+      const name = canonicalizeGameName(generalQuote[1]);
+      const isKnown = KNOWN_GAME_TERMS.some(([label]) => label === name);
+      const following = text.slice(generalQuote.index + generalQuote[0].length);
+      const hasSubjectAction = /^\s*[,，、]?\s*(?:は|が|の|を)?\s*(?:Steam|Switch|PS[45]|Xbox|PC|発売|配信|リリース|早期アクセス|セール|無料配布|無料プレイ|フリープレイ|大型アップデート|体験版|デモ版)/i.test(following);
+      if (!isKnown && !hasSubjectAction) return [];
+    }
+    const firstQuote = bookQuote?.[1] || generalQuote?.[1];
     // Do not skip an unrecognized primary name and promote a quoted feature,
     // character or opinion later in the headline into a made-up game title.
     if (firstQuote) return [canonicalizeGameName(firstQuote)].filter(isValidGameName);

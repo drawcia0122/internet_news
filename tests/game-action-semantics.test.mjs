@@ -16,9 +16,14 @@ function harness(now = NOW) {
   }
   const elements = new Map();
   const node = () => ({
-    innerHTML: '', listeners: {},
+    innerHTML: '', listeners: {}, focusedTitleIndex: null,
     insertAdjacentHTML(position, html) { this.innerHTML += html; },
-    querySelector() { return { addEventListener: (type, listener) => { this.listeners[type] = listener; } }; },
+    querySelector() { return { addEventListener: (type, listener) => { this.listeners[type] = listener; }, focus: () => { this.focusedTitleIndex = 'more-button'; } }; },
+    querySelectorAll() {
+      return Array.from({ length: (this.innerHTML.match(/game-news-row-main/g) || []).length }, (_, index) => ({
+        focus: () => { this.focusedTitleIndex = index; },
+      }));
+    },
   });
   const context = { console, URL, Intl, Date: FixedDate, document: {
     querySelector(selector) { if (!elements.has(selector)) elements.set(selector, node()); return elements.get(selector); },
@@ -285,8 +290,11 @@ test('load-more retains all demoted article titles without excluding hidden capp
   assert.equal((element.innerHTML.match(/game-news-row-main/g) || []).length, 8);
   element.listeners.click();
   assert.equal((element.innerHTML.match(/game-news-row-main/g) || []).length, 16);
+  assert.equal(element.focusedTitleIndex, 8, 'focus moves to the first newly revealed article');
   element.listeners.click();
+  assert.equal(element.focusedTitleIndex, 16, 'repeated expansion advances focus to the next new article');
   element.listeners.click();
+  assert.equal(element.focusedTitleIndex, 24, 'the final expansion preserves focus after removing the button');
   assert.equal((element.innerHTML.match(/game-news-row-main/g) || []).length, 30);
   assert.doesNotMatch(element.innerHTML, /data-game-more-news/);
   const offers = Array.from({ length: 16 }, (_, index) => topic(`『Example Quest ${index}』Steamで50%オフの500円`, { id: `offer-${index}` }));
@@ -357,4 +365,27 @@ test('publication labels use JST rather than browser local day or archive captur
   const { c } = harness();
   const article = topic('ゲーム関連ニュース', { publishedAt: '2026-10-05T16:00:00Z', capturedAt: NOW });
   assert.equal(c.buildNewsFeed([article], new Set())[0].publishedLabel, '10/6 01:00 JST');
+});
+
+
+test('ambiguous general quotes cannot turn a feature into a game label or image alt', () => {
+  const { c, elements } = harness();
+  const title = '「敵対要素」を完全排除したサバイバルシム「アンダー・キャノピーズ」，早期アクセス版を2026年10月23日にSteamで公開';
+  const article = topic(title, { thumbnailUrl: 'https://example.com/image.jpg' });
+  const dashboard = state(c, [article]);
+  assert.equal(c.pickPrimaryGameTitle(article), null);
+  assert.equal(dashboard.gameHubs.length, 0);
+  assert.equal(dashboard.steamStories.length, 0);
+  assert.equal(dashboard.newsItems[0].title, title);
+  assert.equal(dashboard.newsItems[0].gameTitle, 'ゲームニュース');
+  c.setState(dashboard);
+  c.renderNewsList();
+  assert.doesNotMatch(elements.get('#news-list').innerHTML, />敵対要素<|alt="敵対要素/);
+  assert.equal(c.pickPrimaryGameTitle(topic('「敵対要素」を完全排除したサバイバルゲームがSteamで発売')), null);
+  assert.equal(c.pickPrimaryGameTitle(topic('「Example Quest」Steamで50%オフ')), 'Example Quest');
+  const priceHeadline = '財布が寂しくても大丈夫。「1000円未満」で買えるSteamおすすめゲーム5選';
+  assert.equal(c.pickPrimaryGameTitle(topic(priceHeadline)), null);
+  assert.equal(state(c, [topic(priceHeadline)]).newsItems[0].gameTitle, 'ゲームニュース');
+  const [story] = c.buildSteamStories([topic('『Example Quest』Steam版の新情報')], new Set());
+  assert.equal(story.gameTitle, 'Steam記事');
 });

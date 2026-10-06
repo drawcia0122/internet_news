@@ -74,3 +74,12 @@ test('all existing shared thumbnail consumers receive the updated browser cache 
     assert.match(html, /shared-topic-utils\.js\?v=18/);
   }
 });
+
+test('desktop news cards without a usable image do not inherit the narrow image column', () => {
+  const css = fs.readFileSync(new URL('../styles.css', import.meta.url), 'utf8');
+  const desktopRule = css.indexOf('.news-page .trend-card {');
+  const noImageRule = css.indexOf('.news-page .trend-card.trend-card-no-thumb {');
+  assert.ok(noImageRule > desktopRule, 'the scoped no-image override follows the desktop card rule');
+  assert.match(css.slice(noImageRule), /^\.news-page \.trend-card\.trend-card-no-thumb\s*\{\s*grid-template-columns:\s*minmax\(0, 1fr\);\s*\}/);
+  assert.match(fs.readFileSync(new URL('../news.html', import.meta.url), 'utf8'), /styles\.css\?v=62/);
+});

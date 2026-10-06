@@ -3291,6 +3291,10 @@ h1 span {
     align-items: start;
   }
 
+  .news-page .trend-card.trend-card-no-thumb {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .news-page .trend-card > div:last-child {
     display: grid;
     min-width: 0;

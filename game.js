@@ -84,6 +84,12 @@
   let searchQuery = '';
   let searchLoadFailed = false;
   let searchVisibleCount = 8;
+  let dashboardInputs = null;
+  let offerRefreshTimer = null;
+  let offerLifecycleBound = false;
+  const offerClockOrigin = Date.now();
+  const offerMonotonicOrigin = window.performance?.now?.() ?? null;
+  let latestOfferClock = offerClockOrigin;
 
   init().catch((error) => {
     console.error('[game] failed to render', error);
@@ -108,15 +114,21 @@
     const gameTopics = dedupeTopics([...currentTopics, ...archiveTopics, ...homeNewsTopics]).filter(isGameTopic);
     const events = Array.isArray(eventPayload?.items) ? eventPayload.items : [];
 
-    dashboardState = buildDashboardState(gameTopics, events, {
-      saleOffers: Array.isArray(salePayload?.items) ? salePayload.items : [],
-      saleSources: Array.isArray(salePayload?.sources) ? salePayload.sources : [],
-      generatedAt: trendPayload?.generatedAt ?? homeNewsPayload?.generatedAt ?? archivePayload?.generatedAt ?? eventPayload?.generatedAt ?? null,
-    });
+    dashboardInputs = {
+      topics: gameTopics,
+      events,
+      meta: {
+        saleOffers: Array.isArray(salePayload?.items) ? salePayload.items : [],
+        saleSources: Array.isArray(salePayload?.sources) ? salePayload.sources : [],
+        generatedAt: trendPayload?.generatedAt ?? homeNewsPayload?.generatedAt ?? archivePayload?.generatedAt ?? eventPayload?.generatedAt ?? null,
+      },
+    };
+    dashboardState = buildDashboardState(dashboardInputs.topics, dashboardInputs.events, dashboardInputs.meta);
 
     renderDashboard();
     if (searchQuery) renderSearchResults({ focusHeading: true });
     else setSearchStatus();
+    bindOfferLifecycle();
   }
 
   function bindInteractions() {
@@ -154,6 +166,130 @@
       if (!target) return;
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
+  }
+
+  function currentOfferTime() {
+    // A clock correction must never make an already-aged snapshot fresh again.
+    const monotonicNow = window.performance?.now?.();
+    const elapsed = offerMonotonicOrigin !== null && Number.isFinite(monotonicNow)
+      ? Math.max(0, monotonicNow - offerMonotonicOrigin) : 0;
+    latestOfferClock = Math.max(latestOfferClock, Date.now(), offerClockOrigin + elapsed);
+    return new Date(latestOfferClock);
+  }
+
+  function bindOfferLifecycle() {
+    if (offerLifecycleBound) return;
+    offerLifecycleBound = true;
+    document.addEventListener?.('visibilitychange', synchronizeOfferLifecycle);
+    window.addEventListener?.('focus', synchronizeOfferLifecycle);
+    window.addEventListener?.('pageshow', synchronizeOfferLifecycle);
+    window.addEventListener?.('pagehide', clearOfferRefreshTimer);
+    scheduleOfferRefresh();
+  }
+
+  function clearOfferRefreshTimer() {
+    if (offerRefreshTimer !== null) window.clearTimeout?.(offerRefreshTimer);
+    offerRefreshTimer = null;
+  }
+
+  function scheduleOfferRefresh() {
+    clearOfferRefreshTimer();
+    if (!dashboardInputs || document.hidden || !window.setTimeout) return;
+    const now = currentOfferTime().getTime();
+    const deadlines = [];
+    for (const offer of dashboardInputs.meta.saleOffers || []) {
+      if (!offer) continue;
+      const checkedAt = safeDate(offer.checkedAt)?.getTime();
+      if (checkedAt !== undefined) deadlines.push(checkedAt + 6 * 3600000, checkedAt + 24 * 3600000);
+      for (const value of [offer.freshUntil, offer.priceValidUntil, offer.endsAt]) {
+        const date = safeDate(value);
+        if (date) deadlines.push(date.getTime());
+      }
+    }
+    for (const source of dashboardInputs.meta.saleSources || []) {
+      const checkedAt = safeDate(source?.attemptedAt)?.getTime();
+      if (checkedAt !== undefined) deadlines.push(checkedAt + 6 * 3600000);
+    }
+    for (const item of [...(dashboardState?.steamSales || []), ...(dashboardState?.freeGames || [])]) {
+      if (item.startsAt) deadlines.push(item.startsAt.getTime());
+      if (item.endsAt) deadlines.push(item.endsAt.getTime(), item.endsAt.getTime() - 24 * 3600000);
+    }
+    const delay = Math.max(1, deadlines.reduce((soonest, at) => at > now ? Math.min(soonest, at - now) : soonest, 60000));
+    offerRefreshTimer = window.setTimeout(synchronizeOfferLifecycle, delay);
+  }
+
+  function synchronizeOfferLifecycle() {
+    clearOfferRefreshTimer();
+    if (document.hidden) return;
+    refreshTimeSensitiveDashboard();
+    scheduleOfferRefresh();
+  }
+
+  function sameDisplayedData(before, after) {
+    // Ranking scores can age continuously without changing visible content.
+    const serialize = (value) => JSON.stringify(value, (key, item) => key === 'sortScore' ? undefined : item);
+    return serialize(before) === serialize(after);
+  }
+
+  function refreshTimeSensitiveDashboard() {
+    if (!dashboardInputs || !dashboardState) return;
+    const previous = dashboardState;
+    const next = buildDashboardState(dashboardInputs.topics, dashboardInputs.events, dashboardInputs.meta);
+    // Article search and its pagination belong to the reader, not the clock.
+    next.searchItems = previous.searchItems;
+    dashboardState = next;
+    const heroFields = ['briefing', 'importantItems', 'gameHubs', 'freeGames', 'steamSales', 'releasesToday', 'majorUpdates'];
+    if (!sameDisplayedData(heroFields.map((key) => previous[key]), heroFields.map((key) => next[key]))) {
+      renderPreservingFocus([heroBriefElement, heroCommandElement, heroStatsElement], renderHero);
+    }
+    for (const [key, element, render] of [
+      ['importantItems', importantListElement, renderImportantItems],
+      ['gameHubs', hubListElement, renderGameHubs],
+      ['freeGames', freeGameListElement, renderFreeGames],
+      ['steamSales', steamSaleListElement, renderSteamSales],
+      ['steamStories', steamStoryListElement, renderSteamStories],
+      ['newsItems', newsListElement, renderNewsList],
+    ]) {
+      if (!sameDisplayedData(previous[key], next[key])) renderPreservingFocus([element], render);
+    }
+  }
+
+  function renderPreservingFocus(elements, render) {
+    const active = document.activeElement;
+    const owner = elements.find((element) => element?.contains?.(active));
+    const identity = owner ? {
+      id: active.id,
+      href: active.getAttribute('href'),
+      target: active.getAttribute('data-target'),
+      moreNews: active.hasAttribute('data-game-more-news'),
+      className: active.className,
+      control: active.getAttribute('data-game-control'),
+      cardKey: active.closest?.('[data-game-key]')?.getAttribute('data-game-key'),
+      text: String(active.textContent || '').trim(),
+    } : null;
+    const matchesIdentity = (element) => {
+      if (identity.id) return element.id === identity.id;
+      if (identity.control) return element.getAttribute('data-game-control') === identity.control;
+      if (identity.href) return element.getAttribute('href') === identity.href && element.className === identity.className
+        && (!identity.cardKey || element.closest?.('[data-game-key]')?.getAttribute('data-game-key') === identity.cardKey);
+      if (identity.target) return element.getAttribute('data-target') === identity.target && String(element.textContent || '').trim() === identity.text;
+      return identity.moreNews && element.hasAttribute('data-game-more-news');
+    };
+    // Stable card/control keys survive reordering; the occurrence fallback keeps
+    // equivalent unkeyed controls from jumping to the first shared destination.
+    const occurrence = owner ? [...owner.querySelectorAll('a, button, [tabindex]')].filter(matchesIdentity).indexOf(active) : -1;
+    render();
+    if (!owner || document.activeElement === active) return;
+    const replacement = [...owner.querySelectorAll('a, button, [tabindex]')].filter(matchesIdentity)[occurrence];
+    if (replacement) replacement.focus({ preventScroll: true });
+    else {
+      const section = owner.closest('section');
+      const heading = section?.querySelector('h2, h1');
+      if (heading) {
+        heading.setAttribute('tabindex', '-1');
+        heading.focus({ preventScroll: true });
+      }
+    }
   }
 
   function buildDashboardState(topics, events, meta) {
@@ -341,7 +477,7 @@
 
   function renderHeroStat(label, value, description, target) {
     return `
-      <button class="topic-meta-card game-home-stat" type="button" data-target="${escapeHtml(target)}">
+      <button class="topic-meta-card game-home-stat" type="button" data-game-control="${escapeHtml(label)}" data-target="${escapeHtml(target)}">
         <strong>${escapeHtml(label)}</strong>
         <span class="game-hero-value">${escapeHtml(value)}</span>
         <p class="topic-signal-summary">${escapeHtml(description)}</p>
@@ -360,7 +496,7 @@
       return;
     }
     importantListElement.innerHTML = items.map((item) => `
-      <article class="game-home-card game-important-card" data-game-search="${escapeHtml(searchIndexText(item.gameTitle, item.title, item.summary))}">
+      <article class="game-home-card game-important-card" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.gameTitle, item.title, item.summary))}">
         ${renderSignalThumbnail(item.thumbnailUrl, item.gameTitle, item.icon)}
         <div class="game-home-card-body">
           <div class="game-card-top">
@@ -383,7 +519,7 @@
       return;
     }
     hubListElement.innerHTML = items.map((item) => `
-      <article class="game-home-card game-hub-card" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.tags.join(' ')))}">
+      <article class="game-home-card game-hub-card" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.tags.join(' ')))}">
         ${renderSignalThumbnail(item.thumbnailUrl, item.title, '🎮')}
         <div class="game-home-card-body">
           <div class="game-card-top">
@@ -406,7 +542,7 @@
       return;
     }
     freeGameListElement.innerHTML = items.map((item) => `
-      <article class="game-home-card game-compact-card" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.store))}">
+      <article class="game-home-card game-compact-card" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.store))}">
         ${renderSignalThumbnail(item.thumbnailUrl, item.title, '🎁')}
         <div class="game-home-card-body">
           <div class="game-card-top">
@@ -444,7 +580,7 @@
       return;
     }
     steamSaleListElement.innerHTML = items.map((item) => `
-      <article class="game-home-card game-compact-card game-sale-card" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.discount, item.price))}">
+      <article class="game-home-card game-compact-card game-sale-card" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.discount, item.price))}">
         ${renderSignalThumbnail(item.thumbnailUrl, item.title, '💸')}
         <div class="game-home-card-body">
           <div class="game-card-top">
@@ -475,7 +611,7 @@
       return;
     }
     steamStoryListElement.innerHTML = items.map((item) => `
-      <article class="game-home-card game-compact-card" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.label, item.gameTitle))}">
+      <article class="game-home-card game-compact-card" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.label, item.gameTitle))}">
         ${renderSignalThumbnail(item.thumbnailUrl, item.title, '🖥')}
         <div class="game-home-card-body">
           <div class="game-card-top">
@@ -502,7 +638,7 @@
       return;
     }
     newsListElement.innerHTML = items.map((item) => `
-      <article class="game-news-row" data-game-search="${escapeHtml(searchIndexText(item.gameTitle, item.title, item.summary))}">
+      <article class="game-news-row" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.gameTitle, item.title, item.summary))}">
         <div class="game-news-row-main">
           <span class="game-news-row-game">${escapeHtml(item.gameTitle)}</span>
           <h3>${buildArticleTitleLink(item.title, item.url)}</h3>
@@ -552,7 +688,7 @@
       || offer.country !== 'JP' || offer.edition !== 'base-game' || offer.store !== 'Steam'
       || !['verified', 'cached', 'stale', 'ended'].includes(offer.status)) return null;
     const checked = safeDate(offer.checkedAt);
-    const now = new Date();
+    const now = currentOfferTime();
     if (!checked || checked > now || now - checked >= 24 * 60 * 60 * 1000) return null;
     const validUntil = safeDate(offer.priceValidUntil);
     if (!validUntil || now >= validUntil || validUntil - checked > 24 * 60 * 60 * 1000) return null;
@@ -606,7 +742,8 @@
     if (source?.kind !== 'steam' || source.status !== 'unavailable' || !Number.isSafeInteger(source.appId) || source.appId <= 0
       || !Array.isArray(source.articleUrls) || source.articleUrls.some((value) => typeof value !== 'string')) return false;
     const checked = safeDate(source.attemptedAt);
-    if (!checked || checked > new Date() || new Date() - checked >= 6 * 60 * 60 * 1000) return false;
+    const now = currentOfferTime();
+    if (!checked || checked > now || now - checked >= 6 * 60 * 60 * 1000) return false;
     try {
       const url = new URL(source.url);
       return url.protocol === 'https:' && url.hostname === 'store.steampowered.com' && !url.username && !url.password

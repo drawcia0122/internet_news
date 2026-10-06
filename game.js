@@ -814,6 +814,7 @@
 
   function changeGameFollow(key, shouldFollow) {
     if (!followUtils || !followStore || !savedFollowState) return;
+    const focusedFollowRemoval = !shouldFollow && followListElement?.contains?.(document.activeElement);
     const now = currentOfferTime();
     savedFollowState = followStore.load({ now }).state;
     let result;
@@ -830,6 +831,10 @@
       followStorageStatus = saved.status;
     }
     refreshFollowViews();
+    // Explicit removal can collapse a tall panel above the current viewport.
+    // Bring its restored focus/empty-state feedback into view; clock-only
+    // re-renders retain their existing non-scrolling behavior.
+    if (result.changed && focusedFollowRemoval) document.activeElement?.scrollIntoView?.({ block: 'nearest' });
   }
 
   function refreshFollowViews() {

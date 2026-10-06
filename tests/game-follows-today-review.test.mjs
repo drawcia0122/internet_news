@@ -525,3 +525,11 @@ test('review today: open tabs clear yesterday picks exactly at JST midnight', ()
   assert.equal(current(h).dashboardState.todayHighlights.length, 0);
   assert.match(h.el('#game-hero-command').innerHTML, /今日分の確認情報はまだありません/);
 });
+
+test('review follow: explicit panel removal brings restored focus and empty feedback into view', () => {
+  const h = harness(); h.load(); follow(h);
+  h.clickAttribute('#game-follow-list', 'data-game-unfollow', 'steam:123');
+  assert.equal(h.document.activeElement, h.el('#game-follow-section h2'));
+  assert.deepEqual(plain(h.document.activeElement.scrollOptions), { block: 'nearest' });
+  assert.match(h.el('#game-follow-list').innerHTML, /気になる作品を保存/);
+});

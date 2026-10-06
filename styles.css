@@ -4502,6 +4502,10 @@ footer {
   scroll-margin-top: 20px;
 }
 
+.game-search-section .game-news-list {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .game-search-section .section-heading {
   flex-wrap: wrap;
 }

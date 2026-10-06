@@ -284,3 +284,8 @@ test('HTML offers a labelled local search, live counts, keyboard targets and act
   assert.match(CSS, /\.game-home-page \.game-search-section\[hidden\],[\s\S]*?display: none;/);
   assert.match(CSS, /\.game-search-form input:focus-visible,[\s\S]*?outline: 3px solid/);
 });
+
+
+test('search results override the legacy three-column grid with readable full-width article rows', () => {
+  assert.match(CSS, /\.game-search-section \.game-news-list\s*\{\s*grid-template-columns: minmax\(0, 1fr\);/);
+});

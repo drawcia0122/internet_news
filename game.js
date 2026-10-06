@@ -186,11 +186,14 @@
     const currentTopics = trendPayload?.items || [];
     const archiveTopics = archivePayload?.items || [];
     const homeNewsTopics = (homeNewsPayload?.items || []).filter((topic) => isGameTopic(topic) || isSteamRelevantTopic(topic));
-    const gameTopics = dedupeTopics([...currentTopics, ...archiveTopics, ...homeNewsTopics]).filter(isGameTopic);
+    const searchTopics = [...currentTopics, ...archiveTopics, ...homeNewsTopics];
+    const gameTopics = dedupeTopics(searchTopics).filter(isGameTopic);
     const inputs = {
       topics: gameTopics,
       events: eventPayload?.items || [],
       meta: {
+        // Topic grouping is presentation-only; search preserves each article URL.
+        searchTopics,
         saleOffers: salePayload?.items || [],
         saleSources: Array.isArray(salePayload?.sources) ? salePayload.sources : [],
         generatedAt: trendPayload?.generatedAt ?? homeNewsPayload?.generatedAt ?? archivePayload?.generatedAt ?? eventPayload?.generatedAt ?? null,
@@ -429,7 +432,7 @@
 
     return {
       generatedAt: meta.generatedAt,
-      searchItems: buildSearchArticles(topics),
+      searchItems: buildSearchArticles(Array.isArray(meta.searchTopics) ? meta.searchTopics : topics),
       briefing: buildBriefing({ importantItems, gameHubs, freeGames, steamSales, releasesToday, majorUpdates }),
       importantItems,
       gameHubs,
@@ -1811,13 +1814,18 @@
   }
 
   function buildSearchArticles(topics) {
-    const seen = new Set();
-    return topics.filter(isUsefulNewsTopic).map((topic) => {
+    const articles = new Map();
+    for (const topic of topics.filter(isUsefulNewsTopic)) {
       const source = getNewsArticleSource(topic);
       const key = source?.key || topic.id || topic.title;
-      if (seen.has(key)) return null;
-      seen.add(key);
-      return {
+      const searchText = normalizeSearchText(searchIndexText(topic.title, topic.whatHappened, topic.summary, topic.briefSummary, ...extractGameNames(topic)));
+      const existing = articles.get(key);
+      if (existing) {
+        // Same-article mirrors add searchable wording, never sibling destinations.
+        if (!existing.searchText.includes(searchText)) existing.searchText += ` ${searchText}`;
+        continue;
+      }
+      articles.set(key, {
         key,
         title: topic.title,
         summary: summarizeSupportingText(topic, topic.title),
@@ -1827,9 +1835,10 @@
         publishedAt: safeDate(topic.publishedAt || articleSource(topic)?.publishedAt)?.getTime() || 0,
         // Index original article text before display limits and hub exclusions.
         // A neighbouring source in a topic cluster cannot donate its destination.
-        searchText: normalizeSearchText(searchIndexText(topic.title, topic.whatHappened, topic.summary, topic.briefSummary, ...extractGameNames(topic))),
-      };
-    }).filter(Boolean).sort((a, b) => b.publishedAt - a.publishedAt);
+        searchText,
+      });
+    }
+    return [...articles.values()].sort((a, b) => b.publishedAt - a.publishedAt);
   }
 
   function normalizeSearchText(value) {

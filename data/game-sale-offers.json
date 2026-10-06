@@ -1,10 +1,169 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T15:30:11.858Z",
+  "generatedAt": "2026-10-06T16:23:33.879Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
   "items": [
+    {
+      "id": "steam:960910",
+      "appId": 960910,
+      "title": "Heavy Rain",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/960910/?cc=jp&l=japanese",
+      "regularPrice": 2300,
+      "salePrice": 115,
+      "discountPercent": 95,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-06T16:23:33.879Z",
+      "endsAt": "2026-10-08T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A960910%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/960910/?cc=jp&l=japanese",
+        "appId": 960910,
+        "packageId": 445494,
+        "discountEndDate": 1791478800,
+        "checkedAt": "2026-10-06T16:23:33.879Z",
+        "regularPrice": 2300,
+        "salePrice": 115,
+        "discountPercent": 95,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-06T22:23:33.879Z",
+      "priceValidUntil": "2026-10-07T16:23:33.879Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=960910&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960910/header.jpg?t=1675271942",
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/2610062t"
+      ],
+      "articles": [
+        {
+          "url": "https://news.denfaminicogamer.jp/news/2610062t",
+          "title": "【115円】『ヘビーレイン』がSteamで95%オフとなるセール中。4人それぞれの視点から「折り紙殺人鬼」をめぐる事件を追うサスペンスゲームが安すぎる",
+          "publishedAt": "2026-10-06T09:25:50.000Z",
+          "topicId": "auto-games-115円-ヘビーレイン-がsteamで95-オフとなるセール中-4人それぞれの視点から-折り紙殺人鬼-をめぐる事件を追うサスペンスゲームが安すぎる-news.denfaminicogamer.jp/news/2610062t",
+          "gameTitle": "Heavy Rain"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 960910
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T16:23:33.879Z",
+          "freshUntil": "2026-10-06T22:23:33.879Z",
+          "date": "2020-06-18",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=960910&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 960910
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T16:23:33.879Z",
+          "freshUntil": "2026-10-06T22:23:33.879Z",
+          "eventId": "steam-announcement-4379139488519954534",
+          "date": "2020-07-23T08:38:46.000Z",
+          "title": "Heavy Rain update: improvement of Simplified Chinese",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:960910",
+            "url": "https://steamcommunity.com/ogg/960910/announcements/detail/4379139488519954534",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1222140",
+      "appId": 1222140,
+      "title": "Detroit: Become Human",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1222140/?cc=jp&l=japanese",
+      "regularPrice": 4500,
+      "salePrice": 450,
+      "discountPercent": 90,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-06T16:23:33.879Z",
+      "endsAt": "2026-10-08T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1222140%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1222140/?cc=jp&l=japanese",
+        "appId": 1222140,
+        "packageId": 423337,
+        "discountEndDate": 1791478800,
+        "checkedAt": "2026-10-06T16:23:33.879Z",
+        "regularPrice": 4500,
+        "salePrice": 450,
+        "discountPercent": 90,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-06T22:23:33.879Z",
+      "priceValidUntil": "2026-10-07T16:23:33.879Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1222140&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/header.jpg?t=1667468479",
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/2610062t"
+      ],
+      "articles": [
+        {
+          "url": "https://news.denfaminicogamer.jp/news/2610062t",
+          "title": "【115円】『ヘビーレイン』がSteamで95%オフとなるセール中。4人それぞれの視点から「折り紙殺人鬼」をめぐる事件を追うサスペンスゲームが安すぎる",
+          "publishedAt": "2026-10-06T09:25:50.000Z",
+          "topicId": "auto-games-115円-ヘビーレイン-がsteamで95-オフとなるセール中-4人それぞれの視点から-折り紙殺人鬼-をめぐる事件を追うサスペンスゲームが安すぎる-news.denfaminicogamer.jp/news/2610062t",
+          "gameTitle": "デトロイト ビカム ヒューマン"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1222140
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T16:23:33.879Z",
+          "freshUntil": "2026-10-06T22:23:33.879Z",
+          "date": "2020-06-18",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1222140&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
     {
       "id": "steam:1304930",
       "appId": 1304930,
@@ -1562,108 +1721,28 @@
           }
         }
       ]
-    },
-    {
-      "id": "steam:1067360",
-      "appId": 1067360,
-      "title": "Pax Autocratica",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/1067360/?cc=jp&l=japanese",
-      "regularPrice": 3850,
-      "salePrice": 3080,
-      "discountPercent": 20,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-06T15:19:32.848Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1067360%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/1067360/?cc=jp&l=japanese",
-        "appId": 1067360,
-        "packageId": 357353,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:19:32.848Z",
-        "regularPrice": 3850,
-        "salePrice": 3080,
-        "discountPercent": 20,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-06T21:19:32.848Z",
-      "priceValidUntil": "2026-10-07T15:19:32.848Z",
-      "status": "cached",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1067360&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1067360/d492e901f3aec578ea3b3fc45c25f09784313d8c/header.jpg?t=1791181582",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261001-471455"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/20261001-471455",
-          "title": "Steam人気作『Pax Autocratica』、新作なのに“80％オフ”セールに。設定ミスった",
-          "publishedAt": "2026-10-02T06:45:36.000Z",
-          "topicId": "auto-games-steam人気作-pax-autocratica-新作なのに-80-オフ-セールに-設定ミスった-automaton-media.com/articles/newsjp/20261001-471455",
-          "gameTitle": "Pax Autocratica"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1067360
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-06T15:19:32.848Z",
-          "freshUntil": "2026-10-06T21:19:32.848Z",
-          "date": "2026-08-10",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=1067360&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1067360
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-06T15:19:32.848Z",
-          "freshUntil": "2026-10-06T21:19:32.848Z",
-          "date": "2026-08-28T15:45:09.000Z",
-          "eventId": "steam-announcement-680759856779493883",
-          "title": "🛠️ State Maintenance Directive 🛠️",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:1067360",
-            "url": "https://steamcommunity.com/ogg/1067360/announcements/detail/680759856779493883",
-            "verified": true
-          }
-        }
-      ]
     }
   ],
   "sources": [
     {
       "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/2610062i",
-      "checkedAt": "2026-10-06T15:19:32.848Z",
-      "status": "cached",
-      "candidates": []
+      "url": "https://news.denfaminicogamer.jp/news/2610062t",
+      "checkedAt": "2026-10-06T16:23:33.879Z",
+      "status": "ok",
+      "candidates": [
+        {
+          "appId": 960910,
+          "articleGameTitle": "Heavy Rain"
+        },
+        {
+          "appId": 1222140,
+          "articleGameTitle": "デトロイト ビカム ヒューマン"
+        }
+      ]
     },
     {
       "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/2610052s",
+      "url": "https://news.denfaminicogamer.jp/news/2610062i",
       "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached",
       "candidates": []
@@ -1757,16 +1836,30 @@
       ]
     },
     {
-      "kind": "article",
-      "url": "https://automaton-media.com/articles/newsjp/20261001-471455",
-      "checkedAt": "2026-10-06T15:19:32.848Z",
-      "status": "cached",
-      "candidates": [
-        {
-          "appId": 1067360,
-          "articleGameTitle": "Pax Autocratica"
-        }
-      ]
+      "kind": "steam",
+      "appId": 960910,
+      "url": "https://store.steampowered.com/api/appdetails?appids=960910&cc=jp&l=japanese",
+      "checkedAt": "2026-10-06T16:23:33.879Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/2610062t"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 1222140,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1222140&cc=jp&l=japanese",
+      "checkedAt": "2026-10-06T16:23:33.879Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/2610062t"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
     },
     {
       "kind": "steam",
@@ -1905,13 +1998,6 @@
       "kind": "steam",
       "appId": 4229200,
       "url": "https://store.steampowered.com/api/appdetails?appids=4229200&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:19:32.848Z",
-      "status": "cached"
-    },
-    {
-      "kind": "steam",
-      "appId": 1067360,
-      "url": "https://store.steampowered.com/api/appdetails?appids=1067360&cc=jp&l=japanese",
       "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     }

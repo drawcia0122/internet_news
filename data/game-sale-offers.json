@@ -1,82 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T04:41:59.033Z",
+  "generatedAt": "2026-10-06T09:31:43.432Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
   "items": [
-    {
-      "id": "steam:814380",
-      "appId": 814380,
-      "title": "Sekiro™: Shadows Die Twice - GOTY Edition",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/814380/?cc=jp&l=japanese",
-      "regularPrice": 8360,
-      "salePrice": 4180,
-      "discountPercent": 50,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-06T04:38:19.576Z",
-      "freshUntil": "2026-10-06T10:38:19.576Z",
-      "priceValidUntil": "2026-10-07T04:38:19.576Z",
-      "status": "cached",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=814380&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/header.jpg?t=1762888662",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/2610052q"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/2610052q",
-          "title": "【50％オフ】『SEKIRO』がSteamにて50％オフとなるセールが開催中、8360円→「4180円」で購入できる。和風剣劇アクションの名作がお得に",
-          "publishedAt": "2026-10-05T09:11:03.000Z",
-          "topicId": "auto-games-50-オフ-sekiro-がsteamにて50-オフとなるセールが開催中-8360円-4180円-で購入できる-和風剣劇アクションの名作がお得に-news.denfaminicogamer.jp/news/2610052q",
-          "gameTitle": "SEKIRO: SHADOWS DIE TWICE"
-        }
-      ],
-      "featuredInArticle": true
-    },
-    {
-      "id": "steam:1824220",
-      "appId": 1824220,
-      "title": "Chivalry 2",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/1824220/?cc=jp&l=japanese",
-      "regularPrice": 4180,
-      "salePrice": 836,
-      "discountPercent": 80,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-06T04:38:19.576Z",
-      "freshUntil": "2026-10-06T10:38:19.576Z",
-      "priceValidUntil": "2026-10-07T04:38:19.576Z",
-      "status": "cached",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1824220&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1824220/header.jpg?t=1744201613",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261005x"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/261005x",
-          "title": "【836円】最大32人対32人の剣、斧、メイスでシバキあいするゲーム『Chivalry 2』Steamにて80％オフ、4180円→「836円」で購入可能に。人は囲んで棒で殴れば死ぬことを教えてくれる",
-          "publishedAt": "2026-10-05T05:16:38.000Z",
-          "topicId": "auto-games-836円-最大32人対32人の剣-斧-メイスでシバキあいするゲーム-chivalry-2-steamにて80-オフ-4180円-836円-で購入可能に-人は囲ん-news.denfaminicogamer.jp/news/261005x",
-          "gameTitle": "Chivalry 2"
-        }
-      ],
-      "featuredInArticle": true
-    },
     {
       "id": "steam:1304930",
       "appId": 1304930,
@@ -837,38 +765,14 @@
   "sources": [
     {
       "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/2610052s",
-      "checkedAt": "2026-10-06T04:38:19.576Z",
-      "status": "cached",
+      "url": "https://news.denfaminicogamer.jp/news/2610062i",
+      "checkedAt": "2026-10-06T09:31:43.432Z",
+      "status": "ok",
       "candidates": []
     },
     {
       "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/2610052q",
-      "checkedAt": "2026-10-06T04:38:19.576Z",
-      "status": "cached",
-      "candidates": [
-        {
-          "appId": 814380,
-          "articleGameTitle": "SEKIRO: SHADOWS DIE TWICE"
-        }
-      ]
-    },
-    {
-      "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/261005x",
-      "checkedAt": "2026-10-06T04:38:19.576Z",
-      "status": "cached",
-      "candidates": [
-        {
-          "appId": 1824220,
-          "articleGameTitle": "Chivalry 2"
-        }
-      ]
-    },
-    {
-      "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/261005r",
+      "url": "https://news.denfaminicogamer.jp/news/2610052s",
       "checkedAt": "2026-10-06T04:38:19.576Z",
       "status": "cached",
       "candidates": []
@@ -972,20 +876,6 @@
           "articleGameTitle": "Pax Autocratica"
         }
       ]
-    },
-    {
-      "kind": "steam",
-      "appId": 814380,
-      "url": "https://store.steampowered.com/api/appdetails?appids=814380&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T04:38:19.576Z",
-      "status": "cached"
-    },
-    {
-      "kind": "steam",
-      "appId": 1824220,
-      "url": "https://store.steampowered.com/api/appdetails?appids=1824220&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T04:38:19.576Z",
-      "status": "cached"
     },
     {
       "kind": "steam",

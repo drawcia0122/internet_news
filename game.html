@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=52" />
+    <link rel="stylesheet" href="./styles.css?v=53" />
+    <link rel="stylesheet" href="./refresh-status.css?v=1" />
   </head>
   <body>
     <div class="ambient ambient-one"></div>
@@ -17,10 +18,12 @@
     <main class="topic-page game-page game-home-page">
       <a class="topic-back-link" href="./index.html">← トップに戻る</a>
 
+      <p class="data-refresh-health" id="data-refresh-health" data-refresh-datasets="trend-topics.json,home-news.json,events.json" role="status" aria-live="polite" hidden></p>
+
       <section class="topic-hero game-home-hero">
         <p class="section-kicker">GAME HOME</p>
         <h1>今日のゲーム状況</h1>
-        <p class="topic-summary">ニュース一覧ではなく、今日の判断材料だけを先に整理するページです。確認・受け取り・購入・起動に直結するものを上から順に置きます。</p>
+        <p class="topic-summary">ゲームの発売・更新・無料体験・セールに関する記事を整理しています。実施状況が不明な情報は区別し、価格や利用条件は元記事で確認できます。</p>
 
         <div class="game-home-command" id="game-hero-command">
           <article class="game-home-command-card">
@@ -82,15 +85,15 @@
       <section class="topic-panel game-panel game-home-section" id="free-section">
         <div class="section-heading topic-panel-heading">
           <div>
-            <p class="section-kicker">FREE CLAIMS</p>
-            <h2>🎁 今受け取るべき無料配布</h2>
+            <p class="section-kicker">FREE &amp; TRIALS</p>
+            <h2>🎁 無料・体験情報</h2>
           </div>
-          <p class="brief-description">基本プレイ無料ではなく、今だけ無料で取得できるものだけを残します。</p>
+          <p class="brief-description">無料配布、期間限定の体験、加入者向けの特典を区別し、開始予定・期間内・終了・状況不明を表示します。</p>
         </div>
         <div class="game-home-list game-home-compact-list" id="free-game-list">
           <article class="game-empty-card">
-            <strong>無料配布を整理中です</strong>
-            <p>期間限定で取得できる案件だけを確認しています。</p>
+            <strong>無料・体験情報を整理中です</strong>
+            <p>種別と実施期間を記事の記載から確認しています。</p>
           </article>
         </div>
       </section>
@@ -99,14 +102,14 @@
         <div class="section-heading topic-panel-heading">
           <div>
             <p class="section-kicker">SALE PICKS</p>
-            <h2>💸 今見る価値があるセール</h2>
+            <h2>💸 セール情報</h2>
           </div>
-          <p class="brief-description">セールしているもの全部ではなく、割引率や終了時刻の観点で今日見る意味があるものだけを出します。</p>
+          <p class="brief-description">ゲームと対応する掲載価格・割引率を表示します。実施期間が不明な場合は、現在の価格や条件を記事で確認してください。</p>
         </div>
         <div class="game-home-list game-home-compact-list" id="steam-sale-list">
           <article class="game-empty-card">
             <strong>セール対象のゲームを整理中です</strong>
-            <p>価格変化が確認できた案件だけを残しています。</p>
+            <p>ゲームと価格・条件の対応を確認しています。</p>
           </article>
         </div>
       </section>
@@ -133,19 +136,20 @@
             <p class="section-kicker">NEWS BACKUP</p>
             <h2>📰 補完ニュース</h2>
           </div>
-          <p class="brief-description">このページの主役ではありません。上の判断材料に入らなかった記事だけを、最後に最小限だけ置きます。</p>
+          <p class="brief-description">上のセクションに入らなかった記事も読めます。価格や実施日を特定できない情報は、元の記事見出しのまま残しています。</p>
         </div>
         <div class="game-news-list" id="news-list">
           <article class="game-empty-card">
             <strong>補完ニュースを整理中です</strong>
-            <p>重要セクションに入らなかった記事だけを最後に残します。</p>
+            <p>日付や条件が特定できない記事もここで確認できます。</p>
           </article>
         </div>
       </section>
     </main>
 
+    <script src="./refresh-status.js?v=1"></script>
     <script src="./shared-topic-utils.js?v=14"></script>
     <script src="./home-data-utils.js?v=1"></script>
-    <script src="./game.js?v=12"></script>
+    <script src="./game.js?v=13"></script>
   </body>
 </html>

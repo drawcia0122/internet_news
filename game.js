@@ -28,23 +28,28 @@
   const QUOTED_TITLE_PATTERN = /[『「]([^『』「」]{2,42})[』」]/gu;
   const PERCENT_PATTERN = /(\d{1,3})\s*(?:％|%)\s*(?:オフ|OFF)/i;
   const PRICE_PATTERN = /([0-9]{1,3}(?:,[0-9]{3})*|[0-9]+)\s*円/g;
-  const JAPANESE_DATE_PATTERN = /(\d{1,2})月(\d{1,2})日(?:[^\d]{0,6}(\d{1,2})[:：](\d{2}))?/g;
+  const JAPANESE_DATE_PATTERN = /(?:(\d{4})年\s*)?(\d{1,2})月\s*(\d{1,2})日(?:\s*[（(][月火水木金土日](?:曜日)?[）)])?(?:\s*(午前|午後)?\s*(\d{1,2})(?:[:：](\d{2})|時(?:(\d{1,2})分|半)?))?/gu;
   const GENERIC_GAME_NAME_PATTERN = /steam|switch(?:\s?2)?|ps[45]|xbox|pc(?:\s*\/\s*steam)?|dlc|イベント|コラボ|メンテ|ガチャ|アップデート|大型アップデート|無料配布|セール|予約開始|予約受付|配信開始|発売予定|体験版|デモ版|festival|fest|showcase|direct|state of play|game pass|worlds|masters|championship|cup/i;
   const STORE_SIGNAL_PATTERN = /steam|eshop|playstation store|ps store|xbox store|app store|google play|store page|ストアページ|公式サイト|公式x|公式発表/i;
   const OFFICIAL_SIGNAL_PATTERN = /公式|official|メーカー|開発元|パブリッシャー/i;
   const STRONG_GAME_TOPIC_PATTERN = /steam|switch|ps5|xbox|pc|ios|android|ゲーム|アプリ|アップデート|dlc|セール|発売|配信|早期アクセス|体験版|デモ版|store|eスポーツ|大会/i;
   const NON_GAME_TOPIC_PATTERN = /フィギュア|ぬいぐるみ|グッズ|シール|一番くじ|ポップアップ|popup|カフェ|tvアニメ|アニメ化|映画化|舞台化|漫画|コミック|blu-ray|dvd|主題歌|コスメ|アパレル|カード|トレカ/i;
   const MERCHANDISE_TOPIC_PATTERN = /グッズ|tシャツ|アパレル|ソックス|ルームウェア|ライト|ウェファー|キーリング|ぬいぐるみ|フィギュア|コスメ|雑貨|ステッカー|シール|カード|トレカ|ガシャポン|くじ|ポップアップ|カフェ/i;
-  const NON_GAME_PRODUCT_PATTERN = /steam machine|playground|ゲーミングpc|ゲームシステム|デバイス|ハードウェア|周辺機器|フィギュア|tシャツ|アパレル|グッズ|コラボメニュー|ライト|ウェファー|ガシャポン|設定画集|キーホルダー|画集|書籍/i;
+  const NON_GAME_PRODUCT_PATTERN = /steam machine|playground|ゲーミングpc|ゲームシステム|デバイス|ハードウェア|周辺機器|しまむら|シャンブル|クッション|収納ボックス|チョコエッグ|食玩|お菓子|フィギュア|tシャツ|アパレル|グッズ|コラボメニュー|ライト|ウェファー|ガシャポン|設定画集|キーホルダー|画集|書籍/i;
   const NON_ACTIONABLE_MEDIA_PATTERN = /kindle|漫画|マンガ|コミック|小説|文庫|画集|設定画集|サントラ|サウンドトラック|アルバム|主題歌|朗読劇|ライブ配信|ブロマイド|アニメ化|tvアニメ|映画化|舞台化|amazon限定|アパレル|ルームウェア|バッグ|ポーチ|チャーム|キャディバッグ|コントローラー|ゲーミングpc|steam machine|switch online|playstation plus|game pass|料金改定|値上げ/i;
   const WEAK_FALLBACK_TITLE_PATTERN = /^(もうすぐ始まる|まもなく|開催中|配信開始|発売開始|発売決定|予約開始|予約受付|体験版|デモ版|大型アップデート|最終アップデート|無料配布|セール|注目タイトル|新作ゲーム|話題作)$/i;
   const PROMOTIONAL_TITLE_PATTERN = /sale|セール|キャンペーン|summer sale|june sale|sale part|steam machine|playground|集英社100周年ut|diorama|ver\.?|version|パック/i;
-  const LIMITED_FREE_PATTERN = /無料配布|期間限定無料|無料でもらえる|無料で入手|無料取得|無料配信中|0円配布|無料プレゼント/i;
+  const LIMITED_FREE_PATTERN = /無料配布|無料でもらえる|無料で入手|無料取得|0円配布|無料プレゼント|永久無料|free.to.keep/i;
+  const TRIAL_PATTERN = /無料(?:で)?プレイ|フリープレイ|無料トライアル|体験版|デモ版|free (?:weekend|play|trial)/i;
+  const SUBSCRIPTION_PATTERN = /prime gaming|amazonプライム|プライム会員|game pass|playstation plus|ps plus|nintendo switch online|加入者|会員(?:限定|向け)|サブスクリプション/i;
+  const ADAPTATION_PATTERN = /映画[・／/]?(?:ドラマ)?化|映画・テレビ|ドラマ化|映像化|映像作品化|アニメ化|舞台化/i;
+  const SALE_PATTERN = /セール|割引|オフ|最安|sale/i;
+  const RELEASE_PATTERN = /発売|配信開始|リリース/i;
+  const UPDATE_PATTERN = /大型アップデート|アップデート配信|アップデート実装|シーズン開始|新章開幕|新エリア追加|新キャラ実装|新オペレーター実装|パッチノート|イベント開始/i;
   const FREE_TO_PLAY_PATTERN = /基本プレイ無料|基本無料|free-to-play|f2p|ストアページを公開|配信開始|事前登録|発表/i;
   const NEWS_EXCLUDE_PATTERN = /nintendo switch online|playstation plus|xbox game pass|値上げ|料金改定|周辺機器|コントローラー|ヘッドセット|キーボード|マウス|tvアニメ|アニメ|コミック|漫画|書籍|サントラ|サウンドトラック|グッズ|ポップアップ|カフェ/i;
   const KNOWN_GAME_TERMS = [
     ['Monster Hunter Wilds', /monster hunter wilds|モンスターハンターワイルズ|モンハンワイルズ/i],
-    ['Monster Hunter Wilds', /\bモンハン\b/i],
     ['どうぶつの森', /どうぶつの森|animal crossing/i],
     ['Pokemon Champions', /pokemon champions|ポケモンチャンピオンズ/i],
     ['Mario Kart World', /mario kart world|マリオカートワールド/i],
@@ -68,6 +73,7 @@
   ];
 
   let dashboardState = null;
+  let newsVisibleCount = 8;
 
   init().catch((error) => {
     console.error('[game] failed to render', error);
@@ -135,15 +141,13 @@
       majorUpdates,
     });
     const excludedTopicIds = new Set([
-      ...importantItems.map((item) => item.topicId).filter(Boolean),
-      ...gameHubs.flatMap((item) => item.topicIds || []),
-      ...steamSales.map((item) => item.topicId).filter(Boolean),
-      ...freeGames.map((item) => item.topicId).filter(Boolean),
-      ...releasesToday.map((item) => item.topicId).filter(Boolean),
-      ...majorUpdates.map((item) => item.topicId).filter(Boolean),
+      ...importantItems.slice(0, 4).map((item) => item.topicId).filter(Boolean),
+      ...gameHubs.slice(0, 6).flatMap((item) => item.topicIds || []),
+      ...steamSales.slice(0, 4).map((item) => item.topicId).filter(Boolean),
+      ...freeGames.slice(0, 4).map((item) => item.topicId).filter(Boolean),
     ]);
     const steamStories = buildSteamStories(topics, excludedTopicIds);
-    steamStories.forEach((item) => {
+    steamStories.slice(0, 6).forEach((item) => {
       if (item.topicId) excludedTopicIds.add(item.topicId);
     });
     const newsItems = buildNewsFeed(topics, excludedTopicIds);
@@ -160,8 +164,8 @@
       majorUpdates,
       newsItems,
       totals: {
-        endingSoonSaleCount: steamSales.filter((item) => item.endsAt && hoursUntil(item.endsAt) <= 24).length,
-        freeCount: freeGames.length,
+        endingSoonSaleCount: steamSales.filter((item) => item.status === 'active' && item.endsAt && hoursUntil(item.endsAt) > 0 && hoursUntil(item.endsAt) <= 24).length,
+        freeCount: freeGames.filter((item) => item.status === 'active' && item.offerType === 'ownership').length,
         releaseTodayCount: releasesToday.length,
         updateCount: majorUpdates.length,
         hotGameCount: gameHubs.length,
@@ -210,9 +214,9 @@
 
     if (visibleFreeCount > 0) {
       heroCards.push({
-        label: '無料配布',
+        label: '無料・体験情報',
         value: formatCountLabel(visibleFreeCount, '件'),
-        description: '今受け取れる期間限定配布',
+        description: '種別と開始・終了状況を記事で確認',
         target: '#free-section',
       });
     } else if (visibleReleaseCount > 0) {
@@ -224,9 +228,9 @@
       });
     } else {
       heroCards.push({
-        label: '無料配布',
+        label: '無料・体験情報',
         value: 'なし',
-        description: '今日は信頼できる配布案件は見当たりません',
+        description: '取得した記事では確認できていません',
         target: '#free-section',
       });
     }
@@ -235,7 +239,7 @@
       heroCards.push({
         label: '注目セール',
         value: formatCountLabel(visibleSaleCount, '件'),
-        description: '今見る価値がある割引',
+        description: '掲載価格と実施期間を記事で確認',
         target: '#sale-section',
       });
     } else if (visibleUpdateCount > 0) {
@@ -249,7 +253,7 @@
       heroCards.push({
         label: '注目セール',
         value: 'なし',
-        description: '今日は強く勧められる割引は少なめ',
+        description: '取得した記事では確認できていません',
         target: '#sale-section',
       });
     }
@@ -279,10 +283,10 @@
         text: important ? important.summary : '終了間近や本日発売が強い日はここに最優先項目を出します。',
       },
       {
-        label: '受け取り / 購入',
-        title: free ? `${free.title} を受け取る` : sale ? `${sale.title} のセールを見る` : '今日は無理に拾う案件は少なめ',
+        label: '無料・セール情報',
+        title: free ? `${free.title} の${free.offerLabel}` : sale ? `${sale.title} のセール情報` : '今日は無理に拾う案件は少なめ',
         text: free
-          ? `${free.store} で配布中。${free.endsAtLabel ? `${free.endsAtLabel}まで。` : '期限は配布ページで確認。'}`
+          ? `${actionStatusLabel(free.status)}。${free.startsAtLabel ? `開始 ${free.startsAtLabel}。` : ''}条件は記事で確認してください。`
           : sale
             ? sale.summary
             : '無料配布や強い割引がない日は、ここは静かな表示に留めます。',
@@ -366,7 +370,7 @@
   function renderFreeGames() {
     const items = dashboardState.freeGames.slice(0, 4);
     if (!items.length) {
-      freeGameListElement.innerHTML = renderEmptyCard('現在、信頼できる無料配布案件はありません', '基本プレイ無料化ではなく、期間限定で取得できるものだけを残しています。');
+      freeGameListElement.innerHTML = renderEmptyCard('無料・体験情報はまだ確認できていません', '配布、期間限定の体験、加入者向けの情報を区別し、日付が不明な場合はその旨を表示します。');
       return;
     }
     freeGameListElement.innerHTML = items.map((item) => `
@@ -374,16 +378,17 @@
         ${renderSignalThumbnail(item.thumbnailUrl, item.title, '🎁')}
         <div class="game-home-card-body">
           <div class="game-card-top">
-            <span class="game-card-badge">${escapeHtml(item.store)}</span>
-            <span class="game-card-meta">${escapeHtml(item.endsAtLabel || '期限確認中')}</span>
+            <span class="game-card-badge">${escapeHtml(item.offerLabel)}</span>
+            <span class="game-card-meta">${escapeHtml(actionStatusLabel(item.status))}</span>
           </div>
           <h3>${buildArticleTitleLink(item.title, item.url)}</h3>
           <p class="game-card-summary">${escapeHtml(item.summary)}</p>
           <div class="game-home-inline-facts">${renderFactPills([
-            item.endsAtLabel ? `配布終了 ${item.endsAtLabel}` : '終了時刻確認中',
-            item.store,
+            item.startsAtLabel ? `開始 ${item.startsAtLabel}` : '開始日時不明',
+            item.endsAtLabel ? `終了 ${item.endsAtLabel}` : '終了日時不明',
+            item.store || '対象ストアは記事で確認',
           ])}</div>
-          <a class="game-card-link" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">受け取る ↗</a>
+          <a class="game-card-link" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">記事で条件を確認 ↗</a>
         </div>
       </article>
     `).join('');
@@ -406,10 +411,11 @@
           <h3>${buildArticleTitleLink(item.title, item.url)}</h3>
           <p class="game-card-summary">${escapeHtml(item.summary)}</p>
           <div class="game-home-inline-facts">${renderFactPills([
-            item.price ? `価格 ${item.price}` : '価格は記事内で確認',
-            item.endsAtLabel ? `終了 ${item.endsAtLabel}` : '終了時刻確認中',
+            item.price ? `掲載価格 ${item.price}` : '価格は記事内で確認',
+            item.startsAtLabel ? `開始 ${item.startsAtLabel}` : '開始日時不明',
+            item.endsAtLabel ? `終了 ${item.endsAtLabel}` : '終了日時不明',
           ])}</div>
-          <a class="game-card-link" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">詳細を見る ↗</a>
+          <a class="game-card-link" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">記事で価格・条件を確認 ↗</a>
         </div>
       </article>
     `).join('');
@@ -423,7 +429,7 @@
     }
     steamStoryListElement.innerHTML = items.map((item) => `
       <article class="game-home-card game-compact-card" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.label, item.gameTitle))}">
-        ${renderSignalThumbnail(item.thumbnailUrl, item.gameTitle || item.title, '🖥')}
+        ${renderSignalThumbnail(item.thumbnailUrl, item.title, '🖥')}
         <div class="game-home-card-body">
           <div class="game-card-top">
             <span class="game-card-badge">${escapeHtml(item.label)}</span>
@@ -443,7 +449,7 @@
   }
 
   function renderNewsList() {
-    const items = dashboardState.newsItems.slice(0, 8);
+    const items = dashboardState.newsItems.slice(0, newsVisibleCount);
     if (!items.length) {
       newsListElement.innerHTML = renderEmptyCard('補完用のニュースは現在ありません', 'このページでは、主役をゲームの動きに寄せているため、記事一覧は最小限にしています。');
       return;
@@ -461,6 +467,19 @@
         </div>
       </article>
     `).join('');
+    if (items.length < dashboardState.newsItems.length) {
+      newsListElement.insertAdjacentHTML('beforeend', '<button type="button" class="game-card-link" data-game-more-news>記事をもっと見る</button>');
+      newsListElement.querySelector('[data-game-more-news]')?.addEventListener('click', () => {
+        const firstNewIndex = items.length;
+        newsVisibleCount += 8;
+        renderNewsList();
+        // Rendering replaces the activated button. Continue keyboard navigation
+        // at the first newly revealed article rather than losing focus to body.
+        const firstNewTitle = newsListElement.querySelectorAll('.game-news-row h3 a')[firstNewIndex];
+        const focusTarget = firstNewTitle || newsListElement.querySelector('[data-game-more-news]');
+        focusTarget?.focus();
+      });
+    }
   }
 
   function buildBriefing({ importantItems, gameHubs, freeGames, steamSales, releasesToday, majorUpdates }) {
@@ -468,101 +487,74 @@
     if (importantItems[0]) lines.push(`最優先: ${importantItems[0].title}`);
     if (releasesToday.length) lines.push(`本日発売 ${releasesToday.length} 件`);
     if (majorUpdates.length) lines.push(`大型アップデート ${majorUpdates.length} 件`);
-    if (freeGames.length) lines.push(`無料配布 ${freeGames.length} 件`);
-    if (steamSales.some((item) => item.endsAt && hoursUntil(item.endsAt) <= 24)) lines.push('終了間近のセールあり');
+    if (freeGames.length) lines.push(`無料・体験情報 ${freeGames.length} 件（予定・状況不明を含む）`);
+    if (steamSales.some((item) => item.status === 'active' && item.endsAt && hoursUntil(item.endsAt) > 0 && hoursUntil(item.endsAt) <= 24)) lines.push('終了間近のセールあり');
     if (!lines.length && gameHubs.length) lines.push(`今日は ${gameHubs[0].title} 周辺の動きが強め`);
     return lines.slice(0, 4);
   }
 
+  // Action cards use the named article's headline and entity-scoped statements only.
+  // Feed tags, sibling source articles and incidental summary keywords are not evidence.
   function buildSteamSales(topics) {
     const items = [];
     for (const topic of topics) {
-      const haystack = [topic.title, topic.summary, topic.briefSummary, JSON.stringify(topic.sourceSignals || [])].join(' ');
-      if (isNonGameProductTopic(topic)) continue;
-      if (NON_ACTIONABLE_MEDIA_PATTERN.test(haystack)) continue;
-      if (!/steam/i.test(haystack) || !/セール|割引|オフ|最安|sale/i.test(haystack)) continue;
-      const discount = extractDiscount(haystack);
-      if (!discount && !/過去最安|最安/i.test(haystack)) continue;
-      if (discount && discount < 30) continue;
-      const title = pickPrimaryGameTitle(topic, { actionableOnly: true });
-      if (!title || !isPrimaryGameSubject(topic, title)) continue;
-      const price = extractPrice(haystack);
-      const endDate = extractRelevantDate(haystack, /まで|終了|終了日時|販売終了/i);
-      const priority = [
-        discount >= 90 ? 4 : 0,
-        /過去最安|最安/i.test(haystack) ? 3 : 0,
-        Number(topic.score ?? topic.hotScore ?? 0) >= 120 ? 2 : 0,
-        endDate && hoursUntil(endDate) <= 24 ? 1 : 0,
-      ].reduce((sum, value) => sum + value, 0);
+      const evidence = actionEvidence(topic, SALE_PATTERN, { kind: 'sale' });
+      if (!evidence || evidence.multipleSubjects || !/\bsteam\b/i.test(evidence.text)) continue;
+      const discount = extractDiscount(evidence.claim);
+      const price = extractPrice(evidence.claim);
+      if ((!discount || discount < 30) && !/過去最安|最安/i.test(evidence.claim)) continue;
+      const period = extractActionPeriod(evidence.text, evidence.referenceDate);
+      const priority = (discount >= 90 ? 4 : 0) + (/過去最安|最安/i.test(evidence.claim) ? 3 : 0);
       items.push({
-        key: `${title}-${price}-${discount}`,
-        topicId: topic.id || null,
-        title,
+        ...actionCardBase(topic, evidence),
+        ...period,
+        key: `sale-${evidence.title}-${topic.id || evidence.url}`,
         discount: discount ? `${discount}% OFF` : null,
-        price: price ? `${price}円` : null,
-        endsAt: endDate,
-        endsAtLabel: endDate ? formatAbsoluteDate(endDate.toISOString()) : null,
+        price: price !== null ? `${price}円` : null,
         priority,
-        priorityLabel: discount >= 90 ? '90%+ OFF' : /過去最安|最安/i.test(haystack) ? '最安値圏' : endDate && hoursUntil(endDate) <= 24 ? '終了間近' : '注目作',
-        summary: summarizeSupportingText(topic, 'Steamセール関連ニュースから抽出'),
-        thumbnailUrl: topic.thumbnailUrl || topic.sourceSignals?.find((signal) => signal.thumbnailUrl)?.thumbnailUrl || null,
-        url: topic.sourceSignals?.[0]?.url || buildGoogleNewsUrl(title, { rangeDays: 7 }),
+        priorityLabel: actionStatusLabel(period.status),
       });
     }
     return uniqueBy(items, (item) => item.key)
-      .sort((a, b) => b.priority - a.priority || compareDates(a.endsAt, b.endsAt))
+      .sort((a, b) => actionStatusRank(a.status) - actionStatusRank(b.status) || b.priority - a.priority)
       .slice(0, 10);
   }
 
   function buildFreeGames(topics) {
     const items = [];
     for (const topic of topics) {
-      const haystack = [topic.title, topic.summary, topic.briefSummary].join(' ');
-      if (isNonGameProductTopic(topic)) continue;
-      if (NON_ACTIONABLE_MEDIA_PATTERN.test(haystack)) continue;
-      if (!LIMITED_FREE_PATTERN.test(haystack) || FREE_TO_PLAY_PATTERN.test(haystack)) continue;
-      const store = inferStore(haystack);
-      if (!store) continue;
-      const primaryTitle = pickPrimaryGameTitle(topic, { actionableOnly: true });
-      if (!primaryTitle || !isPrimaryGameSubject(topic, primaryTitle)) continue;
-      const endDate = extractRelevantDate(haystack, /まで|終了|期限|配布/i);
+      const evidence = actionEvidence(topic, /無料|フリープレイ|体験版|デモ版|game pass|playstation plus|ps plus/i, { allowSubscription: true, kind: 'free' });
+      if (!evidence || /有料体験|購入特典|予約特典/.test(evidence.claim)) continue;
+      const offerType = classifyFreeOffer(evidence.restrictions || evidence.claim);
+      if (!offerType) continue;
+      const period = extractActionPeriod(evidence.text, evidence.referenceDate);
       items.push({
-        key: `${store}-${primaryTitle}`,
-        topicId: topic.id || null,
-        title: primaryTitle,
-        store,
-        endsAt: endDate,
-        endsAtLabel: endDate ? formatAbsoluteDate(endDate.toISOString()) : null,
-        summary: summarizeSupportingText(topic, '無料配布関連ニュースから抽出'),
-        thumbnailUrl: topic.thumbnailUrl || topic.sourceSignals?.find((signal) => signal.thumbnailUrl)?.thumbnailUrl || null,
-        url: topic.sourceSignals?.[0]?.url || buildGoogleNewsUrl(primaryTitle, { rangeDays: 7 }),
+        ...actionCardBase(topic, evidence),
+        ...period,
+        key: `free-${evidence.title}-${topic.id || evidence.url}`,
+        offerType,
+        offerLabel: freeOfferLabel(offerType),
+        store: inferStore(evidence.text, /無料|フリープレイ|体験版|デモ版|game pass|playstation plus|ps plus/i),
       });
     }
     return uniqueBy(items, (item) => item.key)
-      .sort((a, b) => compareDates(a.endsAt, b.endsAt))
+      .sort((a, b) => actionStatusRank(a.status) - actionStatusRank(b.status) || compareDates(a.endsAt, b.endsAt))
       .slice(0, 10);
   }
 
   function buildTodayReleases(topics) {
     const items = [];
-    const now = new Date();
     for (const topic of topics) {
-      const haystack = [topic.title, topic.summary, topic.briefSummary].join(' ');
-      if (isNonGameProductTopic(topic) || NON_ACTIONABLE_MEDIA_PATTERN.test(haystack)) continue;
-      if (!/発売|配信開始|リリース/i.test(haystack) || /予約受付|予約開始|事前登録/i.test(haystack)) continue;
-      const title = pickPrimaryGameTitle(topic, { actionableOnly: true });
-      if (!title || !isPrimaryGameSubject(topic, title)) continue;
-      const releaseDate = extractRelevantDate(haystack);
-      if (!releaseDate || daysBetween(now, releaseDate) !== 0) continue;
+      const evidence = actionEvidence(topic, RELEASE_PATTERN, { kind: 'release' });
+      if (!evidence || evidence.multipleSubjects || /予約|事前登録|体験版|デモ版|発表|決定/i.test(evidence.claim)) continue;
+      const release = extractEventDate(evidence.text, RELEASE_PATTERN, evidence.referenceDate);
+      if (!release || daysBetween(new Date(), release.date) !== 0) continue;
       items.push({
-        key: `${title}-${releaseDate.toISOString()}`,
-        topicId: topic.id || null,
-        title,
-        releaseDate,
-        releaseDateLabel: formatAbsoluteDate(releaseDate.toISOString()),
-        summary: summarizeSupportingText(topic, '本日発売タイトル'),
-        thumbnailUrl: topic.thumbnailUrl || topic.sourceSignals?.find((signal) => signal.thumbnailUrl)?.thumbnailUrl || null,
-        url: topic.sourceSignals?.[0]?.url || buildGoogleNewsUrl(title, { rangeDays: 7 }),
+        ...actionCardBase(topic, evidence),
+        key: `release-${evidence.title}-${release.date.toISOString()}`,
+        status: /予定|発売へ|配信へ/.test(evidence.claim) || (release.precision === 'minute' && release.date > new Date()) ? 'upcoming' : 'active',
+        releaseDate: release.date,
+        releaseDateLabel: formatActionDate(release),
       });
     }
     return uniqueBy(items, (item) => item.key).sort((a, b) => compareDates(a.releaseDate, b.releaseDate));
@@ -570,28 +562,122 @@
 
   function buildMajorUpdates(topics) {
     const items = [];
-    const now = new Date();
     for (const topic of topics) {
-      const haystack = [topic.title, topic.whatHappened, topic.summary, topic.briefSummary].join(' ');
-      if (isNonGameProductTopic(topic) || NON_ACTIONABLE_MEDIA_PATTERN.test(haystack)) continue;
-      if (!/大型アップデート|アップデート配信|アップデート実装|シーズン開始|新章開幕|新エリア追加|新キャラ実装|新オペレーター実装|パッチノート|イベント開始/i.test(haystack)) continue;
-      if (/pv公開|トレイラー公開|映像公開|発売日決定|発売決定|hotfix|軽微な修正|不具合修正|微調整/i.test(haystack)) continue;
-      const title = pickPrimaryGameTitle(topic, { actionableOnly: true });
-      if (!title || !isPrimaryGameSubject(topic, title)) continue;
-      const timestamp = archiveTimestamp(topic);
-      if (timestamp && daysBetween(now, new Date(timestamp)) > 0) continue;
+      const evidence = actionEvidence(topic, UPDATE_PATTERN, { kind: 'update' });
+      if (!evidence || evidence.multipleSubjects || /予定|予告|配信へ|実施へ|pv公開|トレイラー公開|映像公開|hotfix|軽微な修正|不具合修正|微調整/i.test(evidence.claim)) continue;
+      const update = extractEventDate(evidence.text, UPDATE_PATTERN, evidence.referenceDate);
+      // Publication time is never substituted for an update's effective date.
+      if (!update || daysBetween(new Date(), update.date) !== 0 || update.date > new Date()) continue;
       items.push({
-        key: `${title}-${topic.id || topic.title}`,
-        topicId: topic.id || null,
-        title,
-        publishedAt: timestamp ? new Date(timestamp) : null,
-        publishedLabel: timestamp ? formatAbsoluteDate(new Date(timestamp).toISOString()) : formatTopicDisplayTime(topic),
-        summary: summarizeSupportingText(topic, '大型アップデート情報'),
-        thumbnailUrl: topic.thumbnailUrl || topic.sourceSignals?.find((signal) => signal.thumbnailUrl)?.thumbnailUrl || null,
-        url: topic.sourceSignals?.[0]?.url || buildGoogleNewsUrl(title, { rangeDays: 7 }),
+        ...actionCardBase(topic, evidence),
+        key: `update-${evidence.title}-${topic.id || evidence.url}`,
+        status: 'active',
+        publishedAt: update.date,
+        publishedLabel: formatActionDate(update),
       });
     }
     return uniqueBy(items, (item) => item.key).sort((a, b) => compareDates(b.publishedAt, a.publishedAt));
+  }
+
+  function articleSource(topic) {
+    const title = String(topic.title || '').replace(/\s+/g, ' ').trim();
+    const sourceUrl = topic.sourceUrl || topic.url;
+    return (topic.sourceSignals || []).find((signal) => {
+      if (String(signal.title || '').replace(/\s+/g, ' ').trim() !== title) return false;
+      if (!sourceUrl) return true;
+      const identity = canonicalArticleUrl(sourceUrl);
+      return Boolean(identity) && identity === canonicalArticleUrl(signal.canonicalUrl || signal.url);
+    }) || null;
+  }
+
+  function canonicalArticleUrl(value) {
+    try {
+      const url = new URL(value);
+      url.hash = '';
+      for (const key of [...url.searchParams.keys()]) {
+        if (/^utm_|^(?:fbclid|gclid)$/i.test(key)) url.searchParams.delete(key);
+      }
+      url.searchParams.sort();
+      return url.href.replace(/\/$/, '');
+    } catch { return null; }
+  }
+
+  function actionEvidence(topic, actionPattern, { allowSubscription = false, kind = '' } = {}) {
+    const headline = String(topic.title || '');
+    if (!actionPattern.test(headline) || isNonGameProductTopic(topic) || ADAPTATION_PATTERN.test(headline) || /映画|ドラマ|テレビアニメ|TVアニメ/i.test(headline) || /延期|中止|撤回|終了済み/.test(headline)) return null;
+    if (kind === 'release' && !/steam|switch|playstation|ps[45]|xbox|pc|ゲーム|アプリ|android|ios/i.test(headline)) return null;
+    if (kind === 'release' && /アップデート|パッチ|シーズン|追加コンテンツ|dlc|体験版|デモ版/i.test(headline)) return null;
+    if (kind === 'sale' && /無料|体験版|デモ版/i.test(headline)) return null;
+    const mediaPattern = allowSubscription
+      ? /kindle|漫画|マンガ|コミック|小説|文庫|画集|サントラ|サウンドトラック|アニメ|映画|ドラマ|アパレル|料金改定|値上げ/i
+      : NON_ACTIONABLE_MEDIA_PATTERN;
+    if (mediaPattern.test(headline)) return null;
+    const source = articleSource(topic);
+    if (topic.sourceSignals?.length && !source) return null;
+    const referenceDate = safeDate(topic.publishedAt || source?.publishedAt);
+    if (referenceDate && referenceDate > new Date()) return null;
+    const title = pickPrimaryGameTitle(topic, { actionableOnly: true });
+    if (!title || !isPrimaryGameSubject(topic, title)) return null;
+    const subjects = extractQuotedNames(headline).filter(isValidGameName).map(canonicalizeGameName);
+    const multipleSubjects = new Set(subjects).size > 1;
+    const statements = [headline, source?.summary, topic.summary, topic.briefSummary]
+      .filter(Boolean).flatMap((text) => String(text).split(/[。！!？?\n]/u)).map((text) => text.trim()).filter(Boolean);
+    // Restrictions and withdrawals may be in the next sentence with an omitted
+    // subject. They may veto/downgrade an action, never establish a positive fact.
+    const restrictions = statements.filter((text) => {
+      const names = extractQuotedNames(text).filter(isValidGameName).map(canonicalizeGameName);
+      return !names.length || names.every((name) => name === title);
+    }).join('。');
+    if (/延期|中止|撤回|終了済み|配布終了|セール終了/.test(restrictions)) return null;
+    const scoped = statements.filter((text) => {
+      if (!mentionsGame(text, title) || !actionPattern.test(text)) return false;
+      if (kind === 'sale' && /無料|体験版|デモ版/i.test(text)) return false;
+      return extractQuotedNames(text).filter(isValidGameName).every((name) => canonicalizeGameName(name) === title);
+    });
+    // The headline can quote patch names as well as games. Keep only the primary
+    // subject's clause; never take another quoted subject's price, dates or store.
+    const claim = scoped.find((text) => actionPattern.test(text)) || '';
+    if (!claim) return null;
+    const context = statements.filter((text) => !extractQuotedNames(text).length && /\bsteam\b/i.test(text) && SALE_PATTERN.test(text));
+    return {
+      title,
+      claim,
+      restrictions,
+      text: [...new Set([...scoped, ...(context.length && kind === 'sale' ? ['Steamセール'] : [])])].join('。'),
+      multipleSubjects,
+      referenceDate,
+      url: source?.url || topic.sourceUrl || topic.url || buildGoogleNewsUrl(headline, { rangeDays: 7 }),
+    };
+  }
+
+  function actionCardBase(topic, evidence) {
+    return {
+      topicId: topic.id || topic.title,
+      title: evidence.title,
+      summary: evidence.claim,
+      thumbnailUrl: topic.thumbnailUrl || articleSource(topic)?.thumbnailUrl || null,
+      url: evidence.url,
+    };
+  }
+
+  function classifyFreeOffer(text) {
+    if (SUBSCRIPTION_PATTERN.test(text)) return 'subscription';
+    if (/基本プレイ無料|基本無料|free-to-play|f2p/i.test(text)) return 'free-to-play';
+    if (TRIAL_PATTERN.test(text)) return 'trial';
+    if (LIMITED_FREE_PATTERN.test(text)) return 'ownership';
+    return null;
+  }
+
+  function freeOfferLabel(type) {
+    return { ownership: '無料配布', trial: '体験・試遊', subscription: '加入者向け', 'free-to-play': '基本プレイ無料' }[type] || '無料関連情報';
+  }
+
+  function actionStatusLabel(status) {
+    return { upcoming: '開始予定', active: '期間内', ended: '終了', unknown: '実施状況は記事で確認' }[status] || '実施状況は記事で確認';
+  }
+
+  function actionStatusRank(status) {
+    return { active: 0, upcoming: 1, unknown: 2, ended: 3 }[status] ?? 2;
   }
 
   function buildStartingEvents(events) {
@@ -617,38 +703,39 @@
     const items = [];
 
     for (const sale of steamSales) {
-      if (!sale.endsAt || hoursUntil(sale.endsAt) > 24) continue;
+      if (sale.status !== 'active' || !sale.endsAt || hoursUntil(sale.endsAt) <= 0 || hoursUntil(sale.endsAt) > 24) continue;
       items.push({
         key: `sale-${sale.key}`,
         topicId: sale.topicId,
-        label: 'ENDS TODAY',
+        label: '24時間以内に終了',
         meta: sale.endsAtLabel || '本日終了',
         title: `${sale.title} のセール終了が近い`,
         gameTitle: sale.title,
-        summary: sale.discount ? `${sale.discount}、${sale.price || '価格未取得'}。今日中に確認したい案件です。` : sale.summary,
+        summary: sale.discount ? `${sale.discount}、${sale.price || '価格未取得'}。終了日時と条件を記事で確認してください。` : sale.summary,
         facts: [sale.price ? `価格 ${sale.price}` : null, sale.discount, 'Steam'],
         thumbnailUrl: sale.thumbnailUrl || null,
         url: sale.url,
         icon: '💸',
-        cta: 'セールを見る ↗',
+        cta: '記事で確認 ↗',
         sortScore: 5000 - hoursUntil(sale.endsAt),
       });
     }
 
     for (const giveaway of freeGames) {
+      if (giveaway.status !== 'active' || !['ownership', 'trial'].includes(giveaway.offerType)) continue;
       items.push({
         key: `free-${giveaway.key}`,
         topicId: giveaway.topicId,
-        label: 'FREE',
+        label: giveaway.offerLabel,
         meta: giveaway.endsAtLabel || '期間限定',
-        title: `${giveaway.title} を今すぐ受け取れる`,
+        title: `${giveaway.title} の${giveaway.offerLabel}期間`,
         gameTitle: giveaway.title,
-        summary: `${giveaway.store} で無料配布中です。${giveaway.endsAtLabel ? `${giveaway.endsAtLabel}まで。` : '期限は配布ページで確認してください。'}`,
+        summary: `${giveaway.offerLabel}の報道です。${giveaway.endsAtLabel ? `${giveaway.endsAtLabel}まで。` : ''}対象ストアと利用条件は記事で確認してください。`,
         facts: [giveaway.store, giveaway.endsAtLabel ? `終了 ${giveaway.endsAtLabel}` : null],
         thumbnailUrl: giveaway.thumbnailUrl || null,
         url: giveaway.url,
         icon: '🎁',
-        cta: '受け取る ↗',
+        cta: '記事で確認 ↗',
         sortScore: giveaway.endsAt ? 4400 - hoursUntil(giveaway.endsAt) : 4100,
       });
     }
@@ -659,14 +746,14 @@
         topicId: release.topicId,
         label: 'TODAY',
         meta: release.releaseDateLabel,
-        title: `${release.title} が本日発売`,
+        title: `${release.title} が本日発売${release.status === 'upcoming' ? '予定' : ''}`,
         gameTitle: release.title,
         summary: release.summary,
-        facts: ['本日発売', release.releaseDateLabel],
+        facts: [release.status === 'upcoming' ? '本日発売予定' : '本日発売', release.releaseDateLabel],
         thumbnailUrl: release.thumbnailUrl || null,
         url: release.url,
         icon: '🕹️',
-        cta: '発売情報を見る ↗',
+        cta: '記事で確認 ↗',
         sortScore: 3600,
       });
     }
@@ -684,7 +771,7 @@
         thumbnailUrl: update.thumbnailUrl || null,
         url: update.url,
         icon: '🛠️',
-        cta: '更新内容を見る ↗',
+        cta: '記事で確認 ↗',
         sortScore: 3200,
       });
     }
@@ -718,7 +805,7 @@
 
     const buckets = new Map();
     for (const topic of topics) {
-      if (!isDiscoveryGameTopic(topic)) continue;
+      if (!isDiscoveryGameTopic(topic) || new Set(extractQuotedNames(topic.title).filter(isValidGameName).map(canonicalizeGameName)).size > 1) continue;
       const title = pickPrimaryGameTitle(topic, { actionableOnly: true });
       if (!title || !isPrimaryGameSubject(topic, title)) continue;
       const trigger = classifyGameMovement(topic);
@@ -754,34 +841,33 @@
 
   function buildNewsFeed(topics, excludedTopicIds) {
     return topics
-      .filter((topic) => !excludedTopicIds.has(topic.id))
+      .filter((topic) => !excludedTopicIds.has(topic.id || topic.title))
       .filter(isUsefulNewsTopic)
       .map((topic) => {
-        const gameTitle = pickPrimaryGameTitle(topic, { actionableOnly: true }) || 'ゲームニュース';
+        const gameTitle = 'ゲームニュース';
         const steamBonus = isSteamRelevantTopic(topic) ? 42 : 0;
         return {
           key: topic.id || topic.title,
           gameTitle,
           title: topic.title || gameTitle,
           summary: summarizeSupportingText(topic, gameTitle),
-          publishedLabel: formatTopicDisplayTime(topic),
+          publishedLabel: formatArticleTime(topic),
           sourceLabel: topic.sourceSignals?.[0]?.sourceName || '元記事',
           thumbnailUrl: topic.thumbnailUrl || topic.sourceSignals?.find((signal) => signal.thumbnailUrl)?.thumbnailUrl || null,
           url: topic.sourceSignals?.[0]?.url || buildGoogleNewsUrl(gameTitle, { rangeDays: 7 }),
           sortScore: Number(topic.score ?? topic.hotScore ?? 0) + steamBonus + ((archiveTimestamp(topic) || 0) / 100000000),
         };
       })
-      .sort((a, b) => b.sortScore - a.sortScore)
-      .slice(0, 12);
+      .sort((a, b) => b.sortScore - a.sortScore);
   }
 
   function buildSteamStories(topics, excludedTopicIds) {
     return topics
-      .filter((topic) => !excludedTopicIds.has(topic.id))
+      .filter((topic) => !excludedTopicIds.has(topic.id || topic.title))
       .filter((topic) => isSteamRelevantTopic(topic))
       .filter((topic) => isUsefulSteamTopic(topic))
       .map((topic) => {
-        const gameTitle = pickPrimaryGameTitle(topic, { actionableOnly: true }) || 'Steamゲーム';
+        const gameTitle = 'Steam記事';
         const text = [topic.title, topic.whatHappened, topic.summary, topic.briefSummary].filter(Boolean).join(' ');
         return {
           key: topic.id || topic.title,
@@ -789,8 +875,8 @@
           gameTitle,
           title: topic.title || gameTitle,
           summary: summarizeSupportingText(topic, gameTitle),
-          label: classifySteamStoryLabel(text),
-          publishedLabel: formatTopicDisplayTime(topic),
+          label: classifySteamStoryLabel(topic.title),
+          publishedLabel: formatArticleTime(topic),
           sourceLabel: topic.sourceSignals?.[0]?.sourceName || topic.sourceName || 'Steam記事',
           thumbnailUrl: topic.thumbnailUrl || topic.sourceSignals?.find((signal) => signal.thumbnailUrl)?.thumbnailUrl || null,
           url: topic.sourceSignals?.[0]?.url || buildGoogleNewsUrl(`${gameTitle} Steam`, { rangeDays: 7 }),
@@ -816,6 +902,9 @@
   }
 
   function finalizeGameHub(bucket, extra) {
+    for (const key of ['sale', 'free', 'release', 'update']) {
+      if (extra[key]?.topicId !== (bucket.bestTopic?.id || bucket.bestTopic?.title)) extra[key] = null;
+    }
     const actionableCount = [extra.sale, extra.free, extra.release, extra.update].filter(Boolean).length;
     if (!bucket.bestTopic) return null;
     if (bucket.trigger.score < 2 && actionableCount === 0) return null;
@@ -828,9 +917,9 @@
     let url = bucket.bestTopic.sourceSignals?.[0]?.url || buildGoogleNewsUrl(bucket.title, { rangeDays: 7 });
 
     if (extra.release) {
-      tags.push('本日発売');
+      tags.push(extra.release.status === 'upcoming' ? '本日発売予定' : '本日発売');
       facts.push(extra.release.releaseDateLabel);
-      summary = `${bucket.title} が本日発売。${summarizeSupportingText(extra.release, summary)}`;
+      summary = extra.release.summary;
       ctaLabel = '発売情報を見る';
       url = extra.release.url;
       sortScore += 260;
@@ -844,9 +933,9 @@
       sortScore += 220;
     }
     if (extra.free) {
-      tags.push('無料配布');
+      tags.push(extra.free.offerLabel, actionStatusLabel(extra.free.status));
       facts.push(extra.free.store);
-      if (!extra.release && !extra.update) summary = `${extra.free.store} で ${bucket.title} を無料配布中。${extra.free.endsAtLabel ? `${extra.free.endsAtLabel}まで。` : ''}`;
+      if (!extra.release && !extra.update) summary = extra.free.summary;
       ctaLabel = '受け取る';
       url = extra.free.url;
       sortScore += 240;
@@ -856,7 +945,7 @@
       facts.push(extra.sale.discount || null);
       facts.push(extra.sale.price || null);
       if (!extra.release && !extra.update && !extra.free) {
-        summary = `${bucket.title} がセール中。${extra.sale.discount || '割引情報あり'}${extra.sale.price ? ` / ${extra.sale.price}` : ''}。`;
+        summary = `${bucket.title} のセール報道。${extra.sale.discount || '割引情報あり'}${extra.sale.price ? ` / 掲載価格 ${extra.sale.price}` : ''}。${actionStatusLabel(extra.sale.status)}`;
       }
       if (ctaLabel === '関連記事を見る') ctaLabel = 'セールを見る';
       if (!extra.free && !extra.release && !extra.update) url = extra.sale.url;
@@ -869,78 +958,52 @@
 
     return {
       key: bucket.title,
-      topicIds: [...bucket.topicIds],
+      topicIds: [bucket.bestTopic.id || bucket.bestTopic.title],
       title: bucket.title,
       summary: trimSummary(summary, 78),
       thumbnailUrl: bucket.bestTopic.thumbnailUrl || bucket.bestTopic.sourceSignals?.find((signal) => signal.thumbnailUrl)?.thumbnailUrl || null,
       tags: uniqueCompact(tags).slice(0, 3),
       facts: uniqueCompact(facts).slice(0, 4),
       evidenceLabel,
-      ctaLabel,
+      ctaLabel: '記事で確認',
       url,
       sortScore,
     };
   }
 
   function classifyGameMovement(topic) {
-    const text = [topic.title, topic.whatHappened, topic.summary, topic.briefSummary].filter(Boolean).join(' ');
-    if (/本日発売|配信開始|リリース開始/i.test(text)) return { score: 6, label: '本日発売', reason: '今日遊べる状態になりました' };
-    if (/大型アップデート|アップデート配信|新シーズン|新章|新エリア|新キャラ|新オペレーター|パッチノート|dlc/i.test(text)) {
-      return { score: 5, label: '大型更新', reason: 'プレイ内容に直結する更新が入りました' };
-    }
-    if (/無料配布|期間限定無料|無料で入手/i.test(text)) return { score: 5, label: '無料配布', reason: '今すぐ受け取れる動きがあります' };
-    if (/セール|割引|最安|90%オフ|50%オフ/i.test(text)) return { score: 4, label: 'セール', reason: '購入判断に直結する価格変化があります' };
-    if (/発売日.*決定|発売決定|ストアページ公開|予約開始|予約受付/i.test(text)) return { score: 4, label: '発売準備', reason: '発売や予約に向けた動きがあります' };
-    if (/万ダウンロード|万本|突破|達成|記録/i.test(text)) return { score: 3, label: '記録更新', reason: '大きな節目を迎えています' };
-    if (/pv公開|トレイラー公開|映像公開|続報|詳細公開/i.test(text)) return { score: 2, label: '続報', reason: '新しい情報が公開されました' };
-    return { score: 1, label: '話題化', reason: '新しい動きが確認されています' };
+    const text = String(topic.title || '');
+    if (isNonGameProductTopic(topic) || ADAPTATION_PATTERN.test(text) || /映画|ドラマ|テレビアニメ|TVアニメ/i.test(text)) return { score: 1, label: '関連ニュース', reason: '記事で内容を確認できます' };
+    if (buildTodayReleases([topic]).length) return { score: 6, label: '本日発売情報', reason: '記事に発売日の記載があります' };
+    if (buildMajorUpdates([topic]).length) return { score: 5, label: '大型更新', reason: '記事に実施日の記載があります' };
+    const free = buildFreeGames([topic])[0];
+    if (free) return { score: 4, label: `${free.offerLabel}・${actionStatusLabel(free.status)}`, reason: '利用条件は記事で確認してください' };
+    if (SALE_PATTERN.test(text)) return { score: 2, label: 'セール情報', reason: '価格と期間は記事で確認してください' };
+    if (/体験版|デモ版/.test(text)) return { score: 2, label: '体験版情報', reason: '配信状況は記事で確認してください' };
+    if (RELEASE_PATTERN.test(text)) return { score: 2, label: '発売・配信情報', reason: '発売日と対象機種は記事で確認してください' };
+    if (UPDATE_PATTERN.test(text)) return { score: 2, label: '更新情報', reason: '実施日時は記事で確認してください' };
+    if (/万ダウンロード|万本|突破|達成|記録/i.test(text)) return { score: 3, label: '記録の報道', reason: '記事で内容を確認できます' };
+    if (/pv公開|トレイラー公開|映像公開|続報|詳細公開/i.test(text)) return { score: 2, label: '続報', reason: '記事で内容を確認できます' };
+    return { score: 1, label: '関連ニュース', reason: '記事で内容を確認できます' };
   }
 
   function collectEvidenceTypes(topic) {
-    const evidence = new Set(['news']);
-    if (STORE_SIGNAL_PATTERN.test(topicText(topic))) evidence.add('store');
-    if (OFFICIAL_SIGNAL_PATTERN.test(topicText(topic))) evidence.add('official');
-    if (Array.isArray(topic.socialLinks) && topic.socialLinks.length) evidence.add('social');
-    return evidence;
+    return new Set(['news']);
   }
 
   function buildEvidenceLabel(evidenceSet) {
-    const labels = [];
-    if (evidenceSet.has('official')) labels.push('公式');
-    if (evidenceSet.has('store')) labels.push('ストア');
-    if (evidenceSet.has('social')) labels.push('SNS');
-    if (!labels.length) labels.push('ニュース');
-    return labels.join(' + ');
+    return '記事で報道';
   }
 
   function isUsefulNewsTopic(topic) {
-    const text = [topic.title, topic.whatHappened, topic.summary, topic.briefSummary].filter(Boolean).join(' ');
-    const gameTitle = pickPrimaryGameTitle(topic, { actionableOnly: true });
-    if (!gameTitle) return false;
-    if (!isDiscoveryGameTopic(topic)) return false;
-    if (isNonGameProductTopic(topic) || NON_ACTIONABLE_MEDIA_PATTERN.test(text)) return false;
-    if (NEWS_EXCLUDE_PATTERN.test(text)) return false;
-    if (/無料配布|セール|大型アップデート|発売日.*決定|発売決定|予約開始|予約受付|ストアページ公開/i.test(text)) return false;
-    if (/weekly|1週間を振り返る|キャリアクエスト|開発の裏側|インタビュー完全版|座談会/i.test(text)) return false;
-    if (!isPrimaryGameSubject(topic, gameTitle)) return false;
-    return true;
+    // Not enough evidence for an action card is a reason to retain the original
+    // article, including roundups, adaptations and merchandise coverage.
+    return isGameTopic(topic) && Boolean(String(topic.title || '').trim());
   }
 
   function isSteamRelevantTopic(topic) {
-    const sourceTags = Array.isArray(topic.sourceSignals)
-      ? topic.sourceSignals.flatMap((signal) => Array.isArray(signal.sourceTags) ? signal.sourceTags : [])
-      : [];
-    const text = [
-      topic.title,
-      topic.whatHappened,
-      topic.summary,
-      topic.briefSummary,
-      ...(topic.relatedKeywords || []),
-      ...sourceTags,
-      topic.sourceName,
-      ...(topic.sourceSignals || []).flatMap((signal) => [signal.sourceName, signal.title, signal.summary]),
-    ].filter(Boolean).join(' ');
-    return /\bsteam\b|steam deck|pcゲーム|早期アクセス/i.test(text);
+    // Publisher-wide feed tags do not establish this article's platform.
+    return /\bsteam\b|steam deck|pcゲーム|早期アクセス/i.test([topic.title, topic.summary, topic.briefSummary].filter(Boolean).join(' '));
   }
 
   function isUsefulSteamTopic(topic) {
@@ -955,13 +1018,15 @@
   }
 
   function classifySteamStoryLabel(text) {
-    if (/早期アクセス/i.test(text)) return 'EARLY ACCESS';
-    if (/体験版|デモ版/i.test(text)) return 'DEMO';
-    if (/本日発売|発売|配信開始/i.test(text)) return 'NEW RELEASE';
-    if (/大型アップデート|アップデート|パッチノート|新シーズン/i.test(text)) return 'UPDATE';
-    if (/セール|割引|最安/i.test(text)) return 'SALE';
-    if (/無料トライアル|無料配布/i.test(text)) return 'FREE';
-    return 'STEAM';
+    if (ADAPTATION_PATTERN.test(text)) return '関連ニュース';
+    if (/体験版|デモ版|無料(?:で)?プレイ|フリープレイ|無料トライアル/i.test(text)) return '無料体験情報';
+    if (SUBSCRIPTION_PATTERN.test(text)) return '加入者向け情報';
+    if (LIMITED_FREE_PATTERN.test(text)) return '無料配布情報';
+    if (/早期アクセス/i.test(text)) return '早期アクセス情報';
+    if (RELEASE_PATTERN.test(text)) return '発売・配信情報';
+    if (UPDATE_PATTERN.test(text)) return '更新情報';
+    if (SALE_PATTERN.test(text)) return 'セール情報';
+    return 'Steam記事';
   }
 
   function steamStoryPriority(text) {
@@ -979,24 +1044,35 @@
   }
 
   function extractGameNames(topic) {
-    const text = [
-      topic.title,
-      topic.whatHappened,
-      topic.summary,
-      topic.briefSummary,
-      ...(topic.relatedKeywords || []),
-      ...(topic.sourceSignals || []).flatMap((signal) => [signal.title, signal.summary]),
-    ].filter(Boolean).join(' ');
+    const text = String(topic.title || '');
+    const bookQuote = text.match(/『([^『』]{2,48})』/u);
+    const generalQuotes = [...text.matchAll(/「([^「」]{2,48})」/gu)];
+    // General-purpose quotation marks also enclose features and opinions. With
+    // multiple candidates, retain the article without inventing a game label.
+    if (!bookQuote && generalQuotes.length > 1) return [];
+    const generalQuote = generalQuotes[0];
+    if (!bookQuote && generalQuote) {
+      const name = canonicalizeGameName(generalQuote[1]);
+      const isKnown = KNOWN_GAME_TERMS.some(([label]) => label === name);
+      const following = text.slice(generalQuote.index + generalQuote[0].length);
+      const hasSubjectAction = /^\s*[,，、]?\s*(?:は|が|の|を)?\s*(?:Steam|Switch|PS[45]|Xbox|PC|発売|配信|リリース|早期アクセス|セール|無料配布|無料プレイ|フリープレイ|大型アップデート|体験版|デモ版)/i.test(following);
+      if (!isKnown && !hasSubjectAction) return [];
+    }
+    const firstQuote = bookQuote?.[1] || generalQuote?.[1];
+    // Do not skip an unrecognized primary name and promote a quoted feature,
+    // character or opinion later in the headline into a made-up game title.
+    if (firstQuote) return [canonicalizeGameName(firstQuote)].filter(isValidGameName);
     const found = [];
     for (const [label, pattern] of KNOWN_GAME_TERMS) {
-      if (pattern.test(text)) found.push(label);
+      if (pattern.test(text) && !found.includes(label)) found.push(label);
     }
-    found.push(...extractQuotedNames(text));
-    const ranked = [...new Set(found.map(canonicalizeGameName).filter(isValidGameName))]
-      .map((name) => ({ name, score: scoreGameNameCandidate(name, topic, text) }))
-      .filter((item) => item.score > 0)
-      .sort((a, b) => b.score - a.score || b.name.length - a.name.length);
-    return ranked.slice(0, 2).map((item) => item.name);
+    return [...new Set(found)];
+  }
+
+  function mentionsGame(text, name) {
+    if (!name) return false;
+    if (String(text).toLowerCase().includes(String(name).toLowerCase())) return true;
+    return KNOWN_GAME_TERMS.some(([label, pattern]) => label === name && pattern.test(text));
   }
 
   function pickPrimaryGameTitle(topic, { actionableOnly = false } = {}) {
@@ -1013,23 +1089,15 @@
   }
 
   function normalizeGameName(value) {
-    return String(value ?? '')
-      .replace(/^[『「]|[』」]$/g, '')
-      .replace(/^【[^】]+】/u, '')
-      .replace(/^[0-9０-９]+[%％]オフ/u, '')
-      .replace(/^(?:大型|無料)?アップデート.*/u, '')
-      .replace(/^(?:ゲーム|新作ゲーム|協力プレイ対応・|マルチ対応・)/u, '')
-      .replace(/(?:体験版|デモ版|発売日|予約開始|予約受付|配信開始|セール開催中).*/u, '')
-      .replace(/[，,。！!？?].*$/u, '')
-      .replace(/\s*[:：]\s*(?:Call of the Wild)$/u, ': Call of the Wild')
-      .replace(/\s+/g, ' ')
-      .trim();
+    // Quoted title punctuation is part of identity (e.g. Warhammer 40,000).
+    return String(value ?? '').replace(/^[『「]|[』」]$/g, '').replace(/\s+/g, ' ').trim();
   }
 
   function canonicalizeGameName(value) {
     const normalized = normalizeGameName(value);
     for (const [label, pattern] of KNOWN_GAME_TERMS) {
-      if (pattern.test(normalized)) return label;
+      const match = normalized.match(pattern);
+      if (match && match[0].length === normalized.length) return label;
     }
     return normalized;
   }
@@ -1062,30 +1130,25 @@
   }
 
   function isPrimaryGameSubject(topic, name) {
-    const titles = [topic.title, ...(topic.sourceSignals || []).map((signal) => signal.title)].filter(Boolean);
-    return titles.some((title) => isFocusedGameMention(String(title), name));
+    return isFocusedGameMention(String(topic.title || ''), name);
   }
 
   function isFocusedGameMention(text, name) {
+    if (!name) return false;
     const source = String(text || '');
-    const quotedPattern = new RegExp(`[『「]${escapeRegExp(name)}[』」]`, 'u');
-    const directIndex = source.indexOf(name);
-    const quotedMatch = source.match(quotedPattern);
-    const focusIndex = quotedMatch?.index ?? directIndex;
-    if (focusIndex < 0) return false;
-    return focusIndex <= Math.floor(source.length * 0.45);
+    let index = source.toLowerCase().indexOf(String(name).toLowerCase());
+    if (index < 0) {
+      for (const [label, pattern] of KNOWN_GAME_TERMS) {
+        if (label !== name) continue;
+        const match = source.match(pattern);
+        if (match) { index = match.index; break; }
+      }
+    }
+    return index >= 0 && index <= Math.floor(source.length * 0.45);
   }
 
   function hasStrongTitleEvidence(name, topic) {
-    const isKnownAlias = KNOWN_GAME_TERMS.some(([label]) => label === name);
-    if (isKnownAlias) return true;
-    const title = String(topic.title || '');
-    const quotedPattern = new RegExp(`[『「]${escapeRegExp(name)}[』」]`, 'u');
-    if (title.includes(name) || quotedPattern.test(title)) return true;
-    return (topic.sourceSignals || []).some((signal) => {
-      const sourceTitle = String(signal.title || '');
-      return sourceTitle.includes(name) || quotedPattern.test(sourceTitle);
-    });
+    return mentionsGame(topic.title, name);
   }
 
   function scoreGameNameCandidate(name, topic, text) {
@@ -1104,6 +1167,8 @@
   function isDiscoveryGameTopic(topic) {
     const text = [topic.title, topic.whatHappened, topic.summary, topic.briefSummary, ...(topic.relatedKeywords || [])].filter(Boolean).join(' ');
     return isGameTopic(topic)
+      && !ADAPTATION_PATTERN.test(String(topic.title || ''))
+      && !/映画|ドラマ|テレビアニメ|TVアニメ/i.test(String(topic.title || ''))
       && !isNonGameProductTopic(topic)
       && !NON_ACTIONABLE_MEDIA_PATTERN.test(text)
       && (!NON_GAME_TOPIC_PATTERN.test(text) || STRONG_GAME_TOPIC_PATTERN.test(text));
@@ -1117,10 +1182,8 @@
   }
 
   function isNonGameProductTopic(topic) {
-    const text = [topic.title, topic.whatHappened, topic.summary, topic.briefSummary, ...(topic.relatedKeywords || [])]
-      .filter(Boolean)
-      .join(' ');
-    return isMerchandiseTopic(topic) || NON_GAME_PRODUCT_PATTERN.test(text);
+    const text = String(topic.title || '');
+    return MERCHANDISE_TOPIC_PATTERN.test(text) || NON_GAME_PRODUCT_PATTERN.test(text);
   }
 
   function isLikelyGameEvent(event) {
@@ -1128,12 +1191,19 @@
     return /game|ゲーム|nintendo|switch|steam|playstation|xbox|eスポーツ|esports|pokemon|ポケモン|valorant|apex|street fighter|bitsummit/i.test(text);
   }
 
-  function inferStore(text) {
-    if (/epic games/i.test(text)) return 'Epic Games';
-    if (/itch\.io/i.test(text)) return 'itch.io';
-    if (/\bgog\b/i.test(text)) return 'GOG';
-    if (/\bsteam\b/i.test(text)) return 'Steam';
-    return null;
+  function inferStore(text, actionPattern = /無料|セール|割引|体験版|デモ版/i) {
+    const stores = new Set();
+    for (const sentence of String(text || '').split(/[。！!？?\n]/u)) {
+      if (!actionPattern.test(sentence)) continue;
+      // General retail availability is not evidence of participating platforms.
+      if (/向けに発売中|対応機種|発売中です/.test(sentence)) continue;
+      for (const [label, pattern] of [
+        ['Steam', /\bsteam\b/i], ['Epic Games', /epic games/i], ['GOG', /\bgog\b/i],
+        ['itch.io', /itch\.io/i], ['PS5', /ps5/i], ['Xbox', /xbox/i],
+        ['Prime Gaming（会員向け）', /prime gaming/i], ['Game Pass', /game pass/i], ['PlayStation Plus', /playstation plus|ps plus/i],
+      ]) if (pattern.test(sentence)) stores.add(label);
+    }
+    return [...stores].join(' / ') || null;
   }
 
   function summarizeGameTopic(topic) {
@@ -1172,34 +1242,144 @@
   }
 
   function extractDiscount(text) {
-    const match = String(text ?? '').match(PERCENT_PATTERN);
-    return match ? Number(match[1]) : null;
+    if (/最大\s*\d+\s*[%％]|(?:から|〜|～)\s*\d+\s*[%％]/.test(String(text))) return null;
+    const values = [...String(text ?? '').matchAll(/(\d{1,3})\s*[%％]\s*(?:オフ|OFF)/gi)].map((match) => Number(match[1]));
+    const distinct = [...new Set(values)];
+    return distinct.length === 1 && distinct[0] > 0 && distinct[0] <= 100 ? distinct[0] : null;
   }
 
   function extractPrice(text) {
+    if (/通常価格|定価|参考価格|元値|円(?:引き|割引|相当|分|から|〜|～)/.test(String(text))) return null;
     const prices = [...String(text ?? '').matchAll(PRICE_PATTERN)].map((match) => Number(match[1].replace(/,/g, '')));
-    return prices.length ? Math.min(...prices).toLocaleString('ja-JP') : null;
+    // A list price, previous price or another edition must not become the sale price.
+    const distinct = [...new Set(prices)];
+    return distinct.length === 1 ? distinct[0].toLocaleString('ja-JP') : null;
   }
 
-  function extractRelevantDate(text, hintPattern = null) {
-    const source = String(text ?? '');
-    const matches = [...source.matchAll(JAPANESE_DATE_PATTERN)];
-    if (!matches.length) return null;
-    const targetMatch = hintPattern
-      ? matches.find((match) => hintPattern.test(source.slice(Math.max(0, match.index - 18), match.index + match[0].length + 18)))
-      : matches[0];
-    if (!targetMatch) return null;
-    const date = buildDateFromParts(targetMatch[1], targetMatch[2], targetMatch[3], targetMatch[4]);
-    return date && date < new Date('2025-01-01T00:00:00+09:00') ? null : date;
+  function japaneseParts(value) {
+    const date = safeDate(value);
+    if (!date) return null;
+    const shifted = new Date(date.getTime() + 9 * 60 * 60 * 1000);
+    return { year: shifted.getUTCFullYear(), month: shifted.getUTCMonth() + 1, day: shifted.getUTCDate() };
   }
 
-  function buildDateFromParts(month, day, hour = '12', minute = '00') {
-    const now = new Date();
-    const year = now.getFullYear();
-    const date = new Date(`${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}T${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}:00+09:00`);
-    if (Number.isNaN(date.getTime())) return null;
-    if (date.getTime() < now.getTime() - 1000 * 60 * 60 * 24 * 150) date.setFullYear(year + 1);
-    return date;
+  function parseJapaneseDates(text, referenceDate) {
+    const source = String(text || '');
+    const reference = japaneseParts(referenceDate);
+    const entries = [];
+    for (const match of source.matchAll(JAPANESE_DATE_PATTERN)) {
+      const [, explicitYear, monthText, dayText, meridiem, hourText, colonMinutes, kanjiMinutes] = match;
+      const month = Number(monthText);
+      const day = Number(dayText);
+      const relativeYear = source.slice(Math.max(0, match.index - 3), match.index).match(/(再来年|来年|今年|昨年|去年)$/)?.[1];
+      let year = explicitYear ? Number(explicitYear) : reference?.year;
+      if (!explicitYear && relativeYear && year) year += { 再来年: 2, 来年: 1, 今年: 0, 昨年: -1, 去年: -1 }[relativeYear];
+      if (!year) continue; // A yearless date without a publication anchor is unknown.
+      if (!explicitYear && !relativeYear && reference) {
+        // Only the adjacent Dec/Jan boundary warrants inferring another year.
+        if (reference.month >= 11 && month <= 2) year += 1;
+        if (reference.month <= 2 && month >= 11) year -= 1;
+      }
+      const previous = entries.at(-1);
+      const connector = previous ? source.slice(previous.end, match.index) : '';
+      if (!explicitYear && !relativeYear && previous && /^(?:\s*(?:から|[〜～~－–—-])\s*)$/.test(connector)) {
+        year = previous.year + (month < previous.month ? 1 : 0);
+      }
+      let hour = hourText === undefined ? 0 : Number(hourText);
+      const minute = Number(colonMinutes ?? kanjiMinutes ?? (/時半/.test(match[0]) ? 30 : 0));
+      if (meridiem) {
+        if (hour < 1 || hour > 12) continue;
+        hour = hour % 12 + (meridiem === '午後' ? 12 : 0);
+      }
+      const date = buildDateFromParts(month, day, hour, minute, year);
+      if (!date) continue;
+      entries.push({ date, year, month, day, precision: hourText === undefined ? 'day' : 'minute', index: match.index, end: match.index + match[0].length, raw: match[0] });
+    }
+    return entries;
+  }
+
+  function buildDateFromParts(month, day, hour = 0, minute = 0, year = null) {
+    if (!year || month < 1 || month > 12 || day < 1 || day > 31 || hour < 0 || hour > 23 || minute < 0 || minute > 59) return null;
+    const utc = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day), Number(hour), Number(minute)));
+    if (utc.getUTCFullYear() !== Number(year) || utc.getUTCMonth() + 1 !== Number(month) || utc.getUTCDate() !== Number(day)) return null;
+    return new Date(utc.getTime() - 9 * 60 * 60 * 1000);
+  }
+
+  function distinctDate(entries) {
+    if (!entries.length) return null;
+    const days = new Set(entries.map((entry) => `${entry.year}-${entry.month}-${entry.day}`));
+    if (days.size !== 1) return null;
+    const precise = entries.filter((entry) => entry.precision === 'minute');
+    if (new Set(precise.map((entry) => entry.date.getTime())).size > 1) return null;
+    return precise[0] || entries[0];
+  }
+
+  function extractActionPeriod(text, referenceDate) {
+    const starts = [];
+    const ends = [];
+    for (const sentence of String(text || '').split(/[。！!？?\n]/u)) {
+      const dates = parseJapaneseDates(sentence, referenceDate);
+      dates.forEach((entry, index) => {
+        const after = sentence.slice(entry.end, dates[index + 1]?.index ?? sentence.length);
+        const before = sentence.slice(dates[index - 1]?.end ?? 0, entry.index);
+        if (/^\s*(?:から|より|[〜～~－–—-])/.test(after) || /(?:開始|スタート)\s*(?:日時)?[:：]?\s*$/.test(before)) starts.push(entry);
+        if (/^\s*(?:まで|終了|締切)/.test(after) || /(?:終了|期限|締切)\s*(?:日時)?[:：]?\s*$/.test(before)) ends.push(entry);
+        if (index > 0 && /^\s*[〜～~－–—-]\s*$/.test(before)) ends.push(entry);
+      });
+    }
+    const start = distinctDate(starts);
+    const end = distinctDate(ends);
+    const startsAt = start?.date || null;
+    // A day-only end includes the named Japanese calendar day. Do not display a
+    // made-up clock time. A precise end is exclusive, including exactly at expiry.
+    const endsAt = end ? new Date(end.date.getTime() + (end.precision === 'day' ? 86400000 : 0)) : null;
+    const conflicting = (starts.length > 0 && !start) || (ends.length > 0 && !end) || (startsAt && endsAt && startsAt >= endsAt);
+    let status = 'unknown';
+    if (!conflicting) {
+      if (endsAt && Date.now() >= endsAt.getTime()) status = 'ended';
+      else if (startsAt && Date.now() < startsAt.getTime()) status = 'upcoming';
+      else if (startsAt && endsAt) status = 'active';
+    }
+    return {
+      status,
+      startsAt: conflicting ? null : startsAt,
+      startsAtLabel: !conflicting && start ? formatActionDate(start) : null,
+      endsAt: conflicting ? null : endsAt,
+      endsAtLabel: !conflicting && end ? formatActionDate(end) : null,
+    };
+  }
+
+  function extractEventDate(text, eventPattern, referenceDate) {
+    const matches = [];
+    for (const sentence of String(text || '').split(/[。！!？?\n]/u)) {
+      if (!eventPattern.test(sentence) || /発表|決定|予告|予定だった/.test(sentence)) continue;
+      const dates = parseJapaneseDates(sentence, referenceDate);
+      dates.forEach((entry, index) => {
+        const following = sentence.slice(entry.end, dates[index + 1]?.index ?? sentence.length);
+        // The effective date must lead directly into the event, not "announced
+        // today" or a publication timestamp elsewhere in the article.
+        if (/^\s*(?:(?:に|から|より|を予定して|予定の)\s*)?(?:発売|配信開始|リリース|大型アップデート|アップデート(?:配信|実装)|シーズン開始|新章開幕|新エリア追加|新キャラ実装|新オペレーター実装|パッチノート|イベント開始)/i.test(following)) matches.push(entry);
+      });
+      if (!dates.length && /本日(?:発売|配信(?:開始)?|リリース|、?大型アップデート)/.test(sentence) && referenceDate) {
+        const ref = japaneseParts(referenceDate);
+        matches.push({ ...ref, date: buildDateFromParts(ref.month, ref.day, 0, 0, ref.year), precision: 'day' });
+      }
+    }
+    return distinctDate(matches);
+  }
+
+  function extractRelevantDate(text, hintPattern = null, referenceDate = null) {
+    const dates = parseJapaneseDates(text, referenceDate);
+    const candidates = hintPattern ? dates.filter((entry) => hintPattern.test(String(text).slice(entry.end, entry.end + 12))) : dates;
+    return distinctDate(candidates)?.date || null;
+  }
+
+  function formatActionDate(entry) {
+    if (!entry) return null;
+    return new Intl.DateTimeFormat('ja-JP', {
+      timeZone: 'Asia/Tokyo', year: 'numeric', month: 'numeric', day: 'numeric',
+      ...(entry.precision === 'minute' ? { hour: '2-digit', minute: '2-digit' } : {}),
+    }).format(entry.date) + (entry.precision === 'minute' ? ' JST' : '');
   }
 
   function renderFailure() {
@@ -1216,8 +1396,18 @@
   function findSearchMatch(query) {
     const normalizedQuery = String(query || '').trim().toLowerCase();
     if (!normalizedQuery) return null;
-    const cards = Array.from(document.querySelectorAll('[data-game-search]'));
-    return cards.find((card) => String(card.dataset.gameSearch || '').toLowerCase().includes(normalizedQuery)) || null;
+    let cards = Array.from(document.querySelectorAll('[data-game-search]'));
+    let match = cards.find((card) => String(card.dataset.gameSearch || '').toLowerCase().includes(normalizedQuery));
+    if (!match && dashboardState) {
+      const index = dashboardState.newsItems.findIndex((item) => searchIndexText(item.gameTitle, item.title, item.summary).toLowerCase().includes(normalizedQuery));
+      if (index >= newsVisibleCount) {
+        newsVisibleCount = Math.ceil((index + 1) / 8) * 8;
+        renderNewsList();
+        cards = Array.from(document.querySelectorAll('[data-game-search]'));
+        match = cards.find((card) => String(card.dataset.gameSearch || '').toLowerCase().includes(normalizedQuery));
+      }
+    }
+    return match || null;
   }
 
   function highlightSearchMatch(element) {
@@ -1278,6 +1468,11 @@
     return a.getTime() - b.getTime();
   }
 
+  function formatArticleTime(topic) {
+    const date = safeDate(topic.publishedAt || articleSource(topic)?.publishedAt);
+    return date ? `${formatAbsoluteDate(date)} JST` : '公開日時不明';
+  }
+
   function formatAbsoluteDate(value) {
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return '日時未定';
@@ -1301,8 +1496,8 @@
   }
 
   function startOfDay(value) {
-    const date = new Date(value);
-    return new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
+    const parts = japaneseParts(value);
+    return parts ? Date.UTC(parts.year, parts.month - 1, parts.day) : Number.NaN;
   }
 
   function hoursUntil(date) {

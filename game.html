@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=60" />
+    <link rel="stylesheet" href="./styles.css?v=61" />
     <link rel="stylesheet" href="./refresh-status.css?v=1" />
   </head>
   <body>
@@ -27,13 +27,13 @@
 
       <section class="topic-hero game-home-hero">
         <p class="section-kicker">GAME HOME</p>
-        <h1>今日のゲーム状況</h1>
-        <p class="topic-summary">ゲームの発売・更新・無料体験・セールに関する記事を整理しています。実施状況が不明な情報は区別し、セールは通常価格と割引後の価格を比較できます。</p>
+        <h1>今日見るべきゲーム情報</h1>
+        <p class="topic-summary">日本時間の本日分として確認できた発売・更新・開始・終了・価格情報を最大3件。機種や予算でセールを探し、気になる作品はこのブラウザーに保存できます。</p>
 
         <div class="game-home-command" id="game-hero-command">
           <article class="game-home-command-card">
-            <strong>今すぐ確認</strong>
-            <p>今日の優先項目を整理しています。</p>
+            <strong>今日見るべき3件</strong>
+            <p>確認できた情報を整理しています。</p>
           </article>
         </div>
 
@@ -69,13 +69,20 @@
         <button type="button" class="game-card-link" id="game-search-more" hidden>検索結果をもっと見る</button>
       </section>
 
+      <section class="topic-panel game-panel game-home-section" id="game-follow-section" aria-labelledby="game-follow-heading">
+        <div class="section-heading topic-panel-heading"><div><p class="section-kicker">FOLLOWING</p><h2 id="game-follow-heading" tabindex="-1">気になる作品</h2></div></div>
+        <p class="brief-description">再訪時に、掲載中の作品の公式価格・発売情報・更新記事を比較します。通知やアカウント登録はありません。掲載対象から外れた作品や取得できない情報は未確認と表示します。最大50作品。</p>
+        <p class="game-sale-count" id="game-follow-status" role="status" aria-live="polite"></p>
+        <div class="game-follow-list" id="game-follow-list"></div>
+      </section>
+
       <section class="topic-panel game-panel game-home-section" id="important-section">
         <div class="section-heading topic-panel-heading">
           <div>
             <p class="section-kicker">TODAY FIRST</p>
-            <h2>🚨 今日まず見ること</h2>
+            <h2>発売・更新・開催情報</h2>
           </div>
-          <p class="brief-description">終了間近のセール、本日発売、大型アップデートなど、今日の行動が変わる情報だけを最上段に置きます。</p>
+          <p class="brief-description">発売・更新・無料体験・開催に関する記事の詳細。予定と実施済みを区別し、記事の日付と条件を添えます。</p>
         </div>
         <div class="game-home-list game-home-important-list" id="important-list">
           <article class="game-empty-card">
@@ -179,6 +186,7 @@
     <script src="./refresh-status.js?v=1"></script>
     <script src="./shared-topic-utils.js?v=14"></script>
     <script src="./home-data-utils.js?v=1"></script>
-    <script src="./game.js?v=20"></script>
+    <script src="./game-follow-utils.js?v=1"></script>
+    <script src="./game.js?v=23"></script>
   </body>
 </html>

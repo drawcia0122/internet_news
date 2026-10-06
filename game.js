@@ -38,6 +38,13 @@
   let saleVisibleCount = 8;
   const steamStoryListElement = document.querySelector('#steam-story-list');
   const newsListElement = document.querySelector('#news-list');
+  const followListElement = document.querySelector('#game-follow-list');
+  const followStatusElement = document.querySelector('#game-follow-status');
+  const followUtils = window.GameFollowUtils;
+  const followStore = followUtils?.createStore(window);
+  let savedFollowState = followUtils?.emptyState();
+  let followStorageStatus = 'local';
+  let followMessage = '';
 
   const GAME_HINT_PATTERN = /ゲーム|switch|steam|ps5|xbox|nintendo|任天堂|playstation|pcゲーム|eスポーツ|esports|valorant|apex|pokemon|ポケモン|モンハン|mario|マリオ|gta|原神|スト6|street fighter|lol|league of legends/i;
   const INVALID_GAME_NAME_PATTERN = /^(ゲーム|セール|アップデート|デモ版|体験版|発売日|予約|配信|リリース|イベント|大会|無料配布|公式番組|最終アップデート|今週のすべり込みセール情報|steamos|switch2\/ios\/android版|switch 2|steam next fest|summer game fest|nintendo direct|state of play|valorant masters|ndc26|steam|switch|ps5|xbox|dlc|コラボ|メンテ|ガチャ|steam machine|nex playground|集英社100周年ut|サンリオキャラクターズ)$/i;
@@ -120,6 +127,12 @@
   });
 
   async function init() {
+    if (followStore) {
+      const saved = followStore.load({ now: currentOfferTime() });
+      savedFollowState = saved.state;
+      followStorageStatus = saved.status;
+      if (saved.reason === 'invalid') followMessage = '保存データを読み直せなかったため、空の一覧から開始しました。';
+    }
     bindInteractions();
     await loadGameSources(GAME_DATA_SOURCES.map((source) => source.key));
   }
@@ -214,10 +227,12 @@
     const previous = dashboardState;
     dashboardInputs = inputs;
     dashboardState = next;
+    updateFollowObservations();
     searchLoadFailed = false;
     gameLoadFatal = false;
     if (previous) renderDashboardChanges(previous, next);
     else renderDashboard();
+    if (previous) renderPreservingFocus([followListElement], renderFollowedGames);
     // Availability can change even when an empty sale list remains empty.
     if (isRetry && refreshSaleAvailability) renderPreservingFocus([steamSaleListElement], renderSteamSales);
     if (searchQuery) {
@@ -246,6 +261,23 @@
 
   function bindInteractions() {
     document.addEventListener?.('error', handleGameImageError, true);
+    document.addEventListener?.('click', (event) => {
+      const button = event.target?.closest?.('[data-game-follow], [data-game-unfollow], [data-game-jump]');
+      if (!button) return;
+      if (button.hasAttribute('data-game-jump')) {
+        event.preventDefault();
+        jumpToGameCard(button.getAttribute('data-game-jump'));
+      } else if (button.hasAttribute('data-game-unfollow')) {
+        changeGameFollow(button.getAttribute('data-game-unfollow'), false);
+      } else changeGameFollow(button.getAttribute('data-game-follow'), true);
+    });
+    window.addEventListener?.('storage', (event) => {
+      if (!followStore || (event.key !== null && event.key !== followUtils.STORAGE_KEY)) return;
+      const saved = followStore.load({ now: currentOfferTime(), external: true });
+      savedFollowState = saved.state;
+      followStorageStatus = saved.status;
+      refreshFollowViews();
+    });
     loadRetryElement?.addEventListener('click', retryGameSources);
     saleControlsElement?.addEventListener('change', (event) => {
       const field = event.target?.getAttribute?.('data-sale-filter');
@@ -330,7 +362,10 @@
     clearOfferRefreshTimer();
     if (!dashboardInputs || document.hidden || !window.setTimeout) return;
     const now = currentOfferTime().getTime();
-    const deadlines = [];
+    // A Japanese calendar-day rollover must remove yesterday's top picks at
+    // midnight, even when their price observations remain otherwise fresh.
+    const day = japaneseParts(new Date(now));
+    const deadlines = day ? [Date.UTC(day.year, day.month - 1, day.day + 1) - 9 * 3600000] : [];
     for (const offer of dashboardInputs.meta.saleOffers || []) {
       if (!offer) continue;
       const checkedAt = safeDate(offer.checkedAt)?.getTime();
@@ -373,10 +408,11 @@
     next.searchItems = previous.searchItems;
     dashboardState = next;
     renderDashboardChanges(previous, next);
+    renderPreservingFocus([followListElement], renderFollowedGames);
   }
 
   function renderDashboardChanges(previous, next) {
-    const heroFields = ['generatedAt', 'briefing', 'importantItems', 'gameHubs', 'freeGames', 'steamSales', 'releasesToday', 'majorUpdates'];
+    const heroFields = ['generatedAt', 'todayHighlights', 'briefing', 'importantItems', 'gameHubs', 'freeGames', 'steamSales', 'releasesToday', 'majorUpdates'];
     if (!sameDisplayedData(heroFields.map((key) => previous[key]), heroFields.map((key) => next[key]))) {
       renderPreservingFocus([heroBriefElement, heroCommandElement, heroStatsElement], renderHero);
     }
@@ -441,6 +477,7 @@
     const majorUpdates = buildMajorUpdates(topics);
     const startingEvents = buildStartingEvents(events);
     const importantItems = buildImportantItems({ steamSales, freeGames, releasesToday, majorUpdates, startingEvents });
+    const todayHighlights = buildTodayHighlights({ steamSales, freeGames, releasesToday, majorUpdates, startingEvents });
     const supersededPrices = supersededPriceArticles(topics, meta.saleOffers, meta.saleSources);
     const hubTopics = topics.filter((topic) => !supersededPrices.has(canonicalArticleUrl(articleSource(topic)?.canonicalUrl || articleSource(topic)?.url || topic.sourceUrl || topic.url)));
     const gameHubs = buildGameHubs(hubTopics, {
@@ -466,6 +503,7 @@
       searchItems: buildSearchArticles(Array.isArray(meta.searchTopics) ? meta.searchTopics : topics),
       briefing: buildBriefing({ importantItems, gameHubs, freeGames, steamSales, releasesToday, majorUpdates }),
       importantItems,
+      todayHighlights,
       gameHubs,
       freeGames,
       steamSales,
@@ -492,133 +530,76 @@
     renderSteamSales();
     renderSteamStories();
     renderNewsList();
+    renderFollowedGames();
   }
 
   function renderHero() {
-    const { briefing, generatedAt } = dashboardState;
-    const visibleImportantCount = dashboardState.importantItems.slice(0, 4).length;
-    const visibleHubCount = dashboardState.gameHubs.slice(0, 6).length;
-    const visibleFreeCount = dashboardState.freeGames.slice(0, 4).length;
-    const visibleSaleCount = dashboardState.steamSales.length;
-    const visibleReleaseCount = dashboardState.releasesToday.slice(0, 4).length;
-    const visibleUpdateCount = dashboardState.majorUpdates.slice(0, 4).length;
-    heroBriefElement.innerHTML = briefing.length
-      ? briefing.map((line) => `<li>${escapeHtml(line)}</li>`).join('')
-      : '<li>今日は大きな動きが少ないため、無料配布とセールを優先表示しています。</li>';
+    const highlights = dashboardState.todayHighlights || [];
     heroCommandElement.innerHTML = buildHeroCommandCards();
+    // Keep the top concise: one set of evidence-bound picks and direct navigation.
+    heroBriefElement.innerHTML = `<li>${highlights.length ? `日本時間の本日分として確認できた${highlights.length}件を表示。価格確認日は値下げの開始日とは限りません。` : '日本時間の本日分として確認できる項目はまだありません。過去の記事を今日の変化として補いません。'}</li>`;
+    heroStatsElement.innerHTML = [
+      renderHeroStat('セールを探す', `${dashboardState.steamSales.length}件`, '価格・予算・終了日時で絞り込み', '#sale-section'),
+      renderHeroStat('気になる作品', `${savedFollowState?.follows.length || 0}作品`, '保存した作品の確認情報と変更履歴', '#game-follow-section'),
+      renderHeroStat('記事を読む', '検索', '検索ですべての記事を確認', '#game-search-form'),
+    ].join('') + `<p class="game-sale-source game-hero-update">データ更新 ${dashboardState.generatedAt ? escapeHtml(formatPriceCheckedAt(dashboardState.generatedAt)) : '未確認'}</p>`;
+  }
 
-    const heroCards = [
-      {
-        label: '今日まず見ること',
-        value: formatCountLabel(visibleImportantCount, '件', '静か'),
-        description: '終了間近や本日発売など、先に確認すべき項目',
-        target: '#important-section',
-      },
-      {
-        label: '今動いているゲーム',
-        value: formatCountLabel(visibleHubCount, '本', '少なめ'),
-        description: '今日ゲーム側で動きがあったタイトルを整理',
-        target: '#game-hub-section',
-      },
-    ];
-
-    if (visibleFreeCount > 0) {
-      heroCards.push({
-        label: '無料・体験情報',
-        value: formatCountLabel(visibleFreeCount, '件'),
-        description: '種別と開始・終了状況を記事で確認',
-        target: '#free-section',
-      });
-    } else if (visibleReleaseCount > 0) {
-      heroCards.push({
-        label: '本日発売',
-        value: formatCountLabel(visibleReleaseCount, '件'),
-        description: '今日から遊べる新作を優先確認',
-        target: '#important-section',
-      });
-    } else {
-      heroCards.push({
-        label: '無料・体験情報',
-        value: 'なし',
-        description: '取得した記事では確認できていません',
-        target: '#free-section',
-      });
+  function buildTodayHighlights({ steamSales = [], freeGames = [], releasesToday = [], majorUpdates = [], startingEvents = [] }) {
+    const now = currentOfferTime();
+    const today = (value) => { const date = safeDate(value); return date && daysBetween(now, date) === 0; };
+    const picks = [];
+    for (const item of steamSales) {
+      if (!comparableSale(item)) continue;
+      const ending = item.deadlineVerified && item.endsAt > now && today(item.endsAt);
+      if (!ending && !today(item.checkedAt)) continue;
+      picks.push({ ...item, highlightKey: `sale:${item.key}`, label: ending ? '本日終了' : '本日価格確認',
+        detail: ending ? `${item.endsAtLabel} · ${item.remainingLabel}` : `${salePriceSummary(item)} · ${item.discount}`,
+        jumpKey: item.key, href: `#game-card-${item.key}`, rank: ending ? 100 : 30 + Math.min(1, (item.discountPercent || 0) / 100) });
     }
-
-    if (visibleSaleCount > 0) {
-      heroCards.push({
-        label: '注目セール',
-        value: formatCountLabel(visibleSaleCount, '件'),
-        description: '通常価格と割引後の価格を比較',
-        target: '#sale-section',
-      });
-    } else if (visibleUpdateCount > 0) {
-      heroCards.push({
-        label: '大型更新',
-        value: formatCountLabel(visibleUpdateCount, '件'),
-        description: '今日のプレイ判断に効くアップデート',
-        target: '#important-section',
-      });
-    } else {
-      heroCards.push({
-        label: '注目セール',
-        value: 'なし',
-        description: '取得した記事では確認できていません',
-        target: '#sale-section',
-      });
-    }
-
-    heroCards.push({
-      label: '最終更新',
-      value: generatedAt ? formatAbsoluteDate(generatedAt) : '更新待ち',
-      description: '最新データの反映時刻',
-      target: '#important-section',
-    });
-
-    heroStatsElement.innerHTML = heroCards.map((card) =>
-      renderHeroStat(card.label, card.value, card.description, card.target)
-    ).join('');
+    for (const item of releasesToday) if (today(item.releaseDate)) picks.push({ ...item, highlightKey: `release:${item.key}`,
+      label: item.status === 'upcoming' ? '本日発売予定の報道' : '本日発売の報道', detail: item.releaseDateLabel,
+      href: item.url, rank: 80 });
+    for (const item of majorUpdates) if (today(item.publishedAt) && item.publishedAt <= now) picks.push({ ...item,
+      highlightKey: `update:${item.key}`, label: '本日更新の報道', detail: item.publishedLabel, href: item.url, rank: 70 });
+    for (const item of freeGames) if (item.status === 'active' && today(item.startsAt)) picks.push({ ...item,
+      highlightKey: `free:${item.key}`, label: `本日開始の報道 · ${item.offerLabel}`, detail: `${item.startsAtLabel} · 利用条件は記事で確認`,
+      href: item.url, rank: 60 });
+    for (const item of startingEvents) if (today(item.startAt)) picks.push({ ...item, highlightKey: `event:${item.key}`,
+      label: '本日開始予定', detail: item.startLabel, href: item.url, rank: 50 });
+    const seen = new Set();
+    return picks.sort((a, b) => b.rank - a.rank).filter((item) => {
+      // Deduplicate presentation only. Never borrow prices/dates from another card.
+      const key = normalizeGameName(item.title).toLocaleLowerCase('ja-JP');
+      if (seen.has(key)) return false;
+      seen.add(key); return true;
+    }).slice(0, 3);
   }
 
   function buildHeroCommandCards() {
-    const important = dashboardState.importantItems[0];
-    const free = dashboardState.freeGames[0];
-    const sale = dashboardState.steamSales[0];
-    const hub = dashboardState.gameHubs[0];
+    const cards = dashboardState.todayHighlights || [];
+    if (!cards.length) return renderEmptyCard('今日分の確認情報はまだありません', 'セール一覧や記事検索から確認できます。取得した情報が更新されるとここに最大3件表示します。');
+    return cards.map((item) => `
+      <article class="game-home-command-card" data-game-key="${escapeHtml(item.highlightKey)}">
+        ${item.thumbnailUrl ? renderSignalThumbnail(item) : ''}
+        <strong>${escapeHtml(item.label)}</strong>
+        <h3><a class="article-title-link" href="${escapeHtml(item.href)}" ${item.jumpKey ? `data-game-jump="${escapeHtml(item.jumpKey)}"` : 'target="_blank" rel="noreferrer"'}>${escapeHtml(item.title)}</a></h3>
+        <p>${escapeHtml(item.detail)}</p>
+        <a class="game-card-link" href="${escapeHtml(item.href)}" ${item.jumpKey ? `data-game-jump="${escapeHtml(item.jumpKey)}"` : 'target="_blank" rel="noreferrer"'}>${item.jumpKey ? 'セールの詳細へ ↓' : '日付と条件を記事で確認 ↗'}</a>
+      </article>`).join('');
+  }
 
-    const cards = [
-      {
-        label: '今すぐ確認',
-        title: important ? important.title : '今日は緊急で見る案件は少なめ',
-        image: important,
-        text: important ? important.summary : '終了間近や本日発売が強い日はここに最優先項目を出します。',
-      },
-      {
-        label: '無料・セール情報',
-        title: free ? `${free.title} の${free.offerLabel}` : sale ? `${sale.title} のセール情報` : '今日は無理に拾う案件は少なめ',
-        image: free || sale,
-        text: free
-          ? `${actionStatusLabel(free.status)}。${free.startsAtLabel ? `開始 ${free.startsAtLabel}。` : ''}条件は記事で確認してください。`
-          : sale
-            ? sale.summary
-            : '無料配布や強い割引がない日は、ここは静かな表示に留めます。',
-      },
-      {
-        label: '遊ぶ候補',
-        title: hub ? hub.title : '今日は大きく動いたゲームが少なめ',
-        image: hub,
-        text: hub ? hub.summary : '大型更新や発売が強いゲームが上段に来るようにしています。',
-      },
-    ];
-
-    return cards.map((card) => `
-      <article class="game-home-command-card">
-        ${card.image?.thumbnailUrl ? renderSignalThumbnail(card.image) : ''}
-        <strong>${escapeHtml(card.label)}</strong>
-        <h3>${escapeHtml(card.title)}</h3>
-        <p>${escapeHtml(card.text)}</p>
-      </article>
-    `).join('');
+  function jumpToGameCard(key) {
+    if (!dashboardState) return;
+    const targetIndex = dashboardState.steamSales.findIndex((item) => item.key === key);
+    if (targetIndex < 0) return;
+    Object.assign(saleFilters, { platform: 'all', store: 'all', sort: 'recommended', ceiling: '' });
+    saleControlsElement?.querySelectorAll('[data-sale-filter]').forEach((element) => { element.value = saleFilters[element.getAttribute('data-sale-filter')]; });
+    saleVisibleCount = Math.max(8, Math.ceil((targetIndex + 1) / 8) * 8);
+    renderSteamSales();
+    const card = document.getElementById?.(`game-card-${key}`);
+    card?.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
+    card?.focus?.({ preventScroll: true });
   }
 
   function renderHeroStat(label, value, description, target) {
@@ -787,12 +768,129 @@
           ${item.deadlineVerified ? `<p class="game-sale-source">期限確認 ${escapeHtml(formatPriceCheckedAt(item.deadlineCheckedAt))} · <a href="${escapeHtml(item.storeUrl)}" target="_blank" rel="noreferrer">公式ストアの期限</a></p>` : ''}
           <p class="game-sale-source">${item.checkedAt ? `価格確認 ${escapeHtml(formatPriceCheckedAt(item.checkedAt))} · ` : '記事掲載価格 · '}${item.storeUrl ? `<a href="${escapeHtml(item.storeUrl)}" target="_blank" rel="noreferrer">Steam公式</a>` : '元の価格が未記載の場合は未確認'}</p>
           <div class="game-sale-links">
+            ${renderFollowButton(item)}
             ${item.storeUrl ? `<a class="game-card-link" href="${escapeHtml(item.storeUrl)}" target="_blank" rel="noreferrer">Steamで確認 ↗</a>` : ''}
             <a class="game-card-link" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">紹介記事 ↗</a>
           </div>
         </div>
       </article>
     `).join('');
+  }
+
+  function followObservations() {
+    if (!followUtils) return [];
+    const now = currentOfferTime();
+    return (dashboardInputs?.meta.saleOffers || []).flatMap((offer) => {
+      const card = verifiedSaleCard(offer, dashboardInputs?.topics || [], { includeEnded: true });
+      if (!card) return [];
+      const price = card.status === 'ended' && offer.discountPercent > 0 ? null : followUtils.observationFromSteamOffer(offer, { now });
+      // The producer carries only exact per-app official evidence. Validate the
+      // individual observation again; source/check times never become "now".
+      const events = (Array.isArray(offer?.followObservations) ? offer.followObservations : [])
+        .filter((event) => event?.identity?.kind === 'steam' && event.identity.appId === offer.appId)
+        .map((event) => followUtils.normalizeObservation(event, { now })).filter(Boolean);
+      return [price, ...events].filter(Boolean);
+    });
+  }
+
+  function updateFollowObservations() {
+    if (!followUtils || !followStore || !savedFollowState) return;
+    const now = currentOfferTime();
+    const next = followUtils.applyObservations(savedFollowState, followObservations(), { now });
+    savedFollowState = next.state;
+    if (next.changed) {
+      const saved = followStore.save(savedFollowState, { now });
+      savedFollowState = saved.state;
+      followStorageStatus = saved.status;
+    }
+  }
+
+  function renderFollowButton(item) {
+    if (!followUtils || !Number.isSafeInteger(item.appId) || item.store !== 'Steam') return '';
+    const key = `steam:${item.appId}`;
+    const followed = savedFollowState?.follows.some((entry) => entry.key === key);
+    return `<button type="button" class="game-card-link game-follow-button" data-game-control="follow-${item.appId}" ${followed ? 'data-game-unfollow' : 'data-game-follow'}="${escapeHtml(key)}" aria-pressed="${Boolean(followed)}" aria-label="${escapeHtml(`${item.title}を${followed ? 'フォロー解除' : 'フォロー'}`)}">${followed ? 'フォロー中 ✓' : '＋ フォロー'}</button>`;
+  }
+
+  function changeGameFollow(key, shouldFollow) {
+    if (!followUtils || !followStore || !savedFollowState) return;
+    const focusedFollowRemoval = !shouldFollow && followListElement?.contains?.(document.activeElement);
+    const now = currentOfferTime();
+    savedFollowState = followStore.load({ now }).state;
+    let result;
+    if (shouldFollow) {
+      const offer = (dashboardInputs?.meta.saleOffers || []).find((entry) => `steam:${entry?.appId}` === key);
+      if (!offer || !verifiedSaleCard(offer, dashboardInputs.topics, { includeEnded: true })) return;
+      result = followUtils.followGame(savedFollowState, offer, followObservations(), { now });
+    } else result = followUtils.removeGame(savedFollowState, key, { now });
+    followMessage = result.status === 'limit' ? 'フォローは50作品までです。不要な作品を解除してから追加してください。'
+      : result.changed ? shouldFollow ? 'フォローに追加しました。最初の確認内容を比較の基準にします。' : 'フォローを解除しました。' : '';
+    if (result.changed) {
+      const saved = followStore.save(result.state, { now });
+      savedFollowState = saved.state;
+      followStorageStatus = saved.status;
+    }
+    refreshFollowViews();
+    // Explicit removal can collapse a tall panel above the current viewport.
+    // Bring its restored focus/empty-state feedback into view; clock-only
+    // re-renders retain their existing non-scrolling behavior.
+    if (result.changed && focusedFollowRemoval) document.activeElement?.scrollIntoView?.({ block: 'nearest' });
+  }
+
+  function refreshFollowViews() {
+    if (dashboardState) renderPreservingFocus([steamSaleListElement], renderSteamSales);
+    renderPreservingFocus([followListElement], renderFollowedGames);
+    if (dashboardState) renderPreservingFocus([heroBriefElement, heroCommandElement, heroStatsElement], renderHero);
+  }
+
+  function followChangeText(change) {
+    const before = change.before;
+    const after = change.after;
+    if (change.kind === 'price-drop' || change.kind === 'price-increase') return `${change.kind === 'price-drop' ? '値下げを確認' : '価格変更を確認'}: ${before.amount.toLocaleString('ja-JP')}円 → ${after.amount.toLocaleString('ja-JP')}円`;
+    if (change.kind === 'release-changed') return `発売情報の変更: ${before.date} → ${after.date}（${after.status === 'released' ? '発売済み' : '予定'}）`;
+    return `公式更新記事: ${after.title || 'リリースノート'}`;
+  }
+
+  function renderFollowedGames() {
+    if (!followListElement || !followStatusElement) return;
+    if (!followUtils || !savedFollowState) {
+      followStatusElement.textContent = 'フォロー機能を読み込めませんでした。ページを再読み込みしてください。';
+      return;
+    }
+    const now = currentOfferTime();
+    const follows = savedFollowState.follows;
+    const storageText = followStorageStatus === 'local' ? 'このブラウザーに保存します。'
+      : followStorageStatus === 'session' ? '長期保存が使えないため、このタブの保存領域を使用中です。タブを閉じると失われる場合があります。'
+        : '保存領域が使えないため、このページを開いている間だけ保持します。再読み込みで失われます。';
+    followStatusElement.textContent = `${follows.length}作品をフォロー中。${storageText}${followMessage}`;
+    if (!follows.length) {
+      followListElement.innerHTML = renderEmptyCard('気になる作品を保存', 'セールカードの「＋ フォロー」から追加できます。次の訪問時に確認できた価格・発売情報・公式更新記事を比較します。');
+      return;
+    }
+    const changes = followUtils.listChanges(savedFollowState, { now });
+    const currentObservations = followObservations();
+    followListElement.innerHTML = follows.map((follow) => {
+      const observations = follow.observations;
+      const price = observations.find((entry) => entry.kind === 'price');
+      const release = observations.find((entry) => entry.kind === 'release');
+      const update = observations.find((entry) => entry.kind === 'update');
+      const records = changes.filter((entry) => entry.key === follow.key).slice(0, 3);
+      const currentOffer = (dashboardInputs?.meta.saleOffers || []).find((offer) => `steam:${offer?.appId}` === follow.key);
+      const covered = Boolean(currentOffer);
+      const currentPrice = currentObservations.find((entry) => entry.kind === 'price' && followUtils.identityKey(entry.identity) === follow.key);
+      const saleEnd = currentOffer ? verifiedSaleDeadline(currentOffer) : null;
+      const expiredSale = saleEnd && saleEnd <= now;
+      const fresh = (entry) => followUtils.observationStatus(entry, { now }) === 'fresh';
+      return `<article class="game-follow-card" data-game-key="${escapeHtml(follow.key)}">
+        <h3>${buildArticleTitleLink(follow.title, follow.url)}</h3>
+        <p>${!covered ? '今回の掲載対象外。新しい情報は未確認です。' : expiredSale ? '確認したセール期限を過ぎました。現在価格は再確認待ちです。' : price && fresh(price) && currentPrice && currentPrice.amount === price.amount && currentPrice.checkedAt === price.checkedAt ? `確認価格 ${price.amount.toLocaleString('ja-JP')}円（Steam日本ストア）` : '現在価格は未確認・再確認待ちです。'}</p>
+        ${price ? `<p class="game-sale-source">前回確認 ${escapeHtml(formatPriceCheckedAt(price.checkedAt))} · ${price.amount.toLocaleString('ja-JP')}円</p>` : ''}
+        <p class="game-sale-source">${release ? `公式発売日 ${escapeHtml(release.date)}（${release.status === 'released' ? '発売済み' : '予定'}）${fresh(release) ? '' : ' · 再確認待ち'}` : '発売情報は未確認'}</p>
+        ${update ? `<p class="game-sale-source"><a href="${escapeHtml(update.source.url)}" target="_blank" rel="noreferrer">${escapeHtml(update.title || '公式リリースノート')}</a> · 発表 ${escapeHtml(formatPriceCheckedAt(update.date))}${fresh(update) ? '' : ' · 再確認待ち'}</p>` : '<p class="game-sale-source">公式更新記事は未確認</p>'}
+        ${records.length ? `<ul class="game-follow-changes">${records.map((change) => `<li><a href="${escapeHtml(change.url)}" target="_blank" rel="noreferrer">${escapeHtml(followChangeText(change))}</a><span>確認 ${escapeHtml(formatPriceCheckedAt(change.after.checkedAt))}${change.freshness === 'stale' ? ' · 過去の記録' : ''}</span></li>`).join('')}</ul>` : '<p class="game-sale-source">フォロー後の新しい変更はまだ確認されていません。</p>'}
+        <button type="button" class="game-card-link" data-game-control="remove-${escapeHtml(follow.key)}" data-game-unfollow="${escapeHtml(follow.key)}" aria-label="${escapeHtml(`${follow.title}のフォローを解除`)}">フォローを解除</button>
+      </article>`;
+    }).join('');
   }
 
   function renderSteamStories() {
@@ -1208,7 +1306,7 @@
       items.push({
         key: event.id || event.title,
         title: event.title,
-        startLabel: formatAbsoluteDate(start.toISOString()),
+        startAt: start, startLabel: formatPriceCheckedAt(start),
         summary: event.description || event.category || '本日開始イベント',
         ...thumbnailFields(getCardImageCandidates({ ...event, sourceSignals: [] })),
         url: event.detailUrl || event.officialUrl || '#',

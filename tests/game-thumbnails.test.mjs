@@ -114,9 +114,11 @@ test('thumbnail requests are sanitized, deduplicated and capped with safely esca
 
 test('hero cards only illustrate concrete content; stat controls get no images', () => {
   const { c } = harness();
-  const item = { title: 'Example Quest', summary: 'Verified report', thumbnailUrl: first };
-  c.setState({ importantItems: [], freeGames: [], steamSales: [item], gameHubs: [item] });
-  assert.equal((c.buildHeroCommandCards().match(/<img/g) || []).length, 2);
+  const item = { title: 'Example Quest', label: '本日価格確認', detail: 'Verified report', thumbnailUrl: first, href: '#game-card-steam-123', jumpKey: 'steam-123', highlightKey: 'sale:steam-123' };
+  c.setState({ todayHighlights: [item] });
+  assert.equal((c.buildHeroCommandCards().match(/<img/g) || []).length, 1);
+  c.setState({ todayHighlights: [] });
+  assert.doesNotMatch(c.buildHeroCommandCards(), /<img/);
   assert.doesNotMatch(c.renderHeroStat('Sale', '1', 'Info', '#sale-section'), /<img/);
 });
 

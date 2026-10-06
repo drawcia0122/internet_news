@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T15:05:03.657Z",
+  "generatedAt": "2026-10-06T15:30:11.858Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
@@ -18,7 +18,7 @@
       "discountPercent": 90,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -27,7 +27,7 @@
         "appId": 1304930,
         "packageId": 984895,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 4500,
         "salePrice": 450,
         "discountPercent": 90,
@@ -35,8 +35,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1304930&cc=jp&l=japanese",
@@ -55,7 +55,44 @@
           "gameTitle": "The Outlast Trials"
         }
       ],
-      "featuredInArticle": true
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1304930
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2024-03-05",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1304930&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1304930
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2026-09-17T16:02:48.000Z",
+          "eventId": "steam-announcement-701027957162901761",
+          "title": "Hotfix Patch Notes | Chemical Leak - Sept. 17",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1304930",
+            "url": "https://steamcommunity.com/ogg/1304930/announcements/detail/701027957162901761",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:1446780",
@@ -70,11 +107,11 @@
       "discountPercent": 90,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": null,
       "deadlineSource": null,
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1446780&cc=jp&l=japanese",
@@ -93,7 +130,25 @@
           "gameTitle": "モンスターハンターライズ"
         }
       ],
-      "featuredInArticle": true
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1446780
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2022-01-12",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1446780&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:240720",
@@ -108,7 +163,7 @@
       "discountPercent": 85,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -117,7 +172,7 @@
         "appId": 240720,
         "packageId": 201019,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 820,
         "salePrice": 123,
         "discountPercent": 85,
@@ -125,8 +180,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=240720&cc=jp&l=japanese",
@@ -145,7 +200,44 @@
           "gameTitle": "Getting Over It with Bennett Foddy"
         }
       ],
-      "featuredInArticle": true
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 240720
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2017-12-06",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=240720&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 240720
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2022-01-29T21:38:22.000Z",
+          "eventId": "steam-announcement-4330775883764720317",
+          "title": "Minor bugfix for M1 macs",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:240720",
+            "url": "https://steamcommunity.com/ogg/240720/announcements/detail/4330775883764720317",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:543260",
@@ -160,11 +252,11 @@
       "discountPercent": 80,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": null,
       "deadlineSource": null,
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=543260&cc=jp&l=japanese",
@@ -183,7 +275,44 @@
           "gameTitle": "ワンダーボーイ：ドラゴンの罠"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 543260
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2017-06-08",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=543260&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 543260
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2018-12-21T11:57:08.000Z",
+          "eventId": "steam-announcement-1690437771463868196",
+          "title": "Now available Traditional Chinese! (Taiwan, Hong Kong)",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:543260",
+            "url": "https://steamcommunity.com/ogg/543260/announcements/detail/1690437771463868196",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:368340",
@@ -198,7 +327,7 @@
       "discountPercent": 80,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -207,7 +336,7 @@
         "appId": 368340,
         "packageId": 66912,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 1980,
         "salePrice": 396,
         "discountPercent": 80,
@@ -215,8 +344,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=368340&cc=jp&l=japanese",
@@ -235,7 +364,25 @@
           "gameTitle": "CrossCode"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 368340
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2018-09-20",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=368340&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:1282730",
@@ -250,7 +397,7 @@
       "discountPercent": 80,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -259,7 +406,7 @@
         "appId": 1282730,
         "packageId": 446993,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 1700,
         "salePrice": 340,
         "discountPercent": 80,
@@ -267,8 +414,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1282730&cc=jp&l=japanese",
@@ -287,7 +434,44 @@
           "gameTitle": "Loop Hero"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1282730
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2021-03-04",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1282730&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1282730
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2022-06-06T16:36:15.000Z",
+          "eventId": "steam-announcement-3338869387046918890",
+          "title": "Small update v1.155",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1282730",
+            "url": "https://steamcommunity.com/ogg/1282730/announcements/detail/3338869387046918890",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:1722020",
@@ -302,11 +486,11 @@
       "discountPercent": 80,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": null,
       "deadlineSource": null,
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1722020&cc=jp&l=japanese",
@@ -325,7 +509,44 @@
           "gameTitle": "古銭プッシャーフレンズ"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1722020
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2021-10-07",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1722020&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1722020
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2025-10-04T10:19:52.000Z",
+          "eventId": "steam-announcement-521977529734530772",
+          "title": "Applied Security Patch",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1722020",
+            "url": "https://steamcommunity.com/ogg/1722020/announcements/detail/521977529734530772",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:555220",
@@ -340,7 +561,7 @@
       "discountPercent": 80,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -349,7 +570,7 @@
         "appId": 555220,
         "packageId": 138475,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 1180,
         "salePrice": 236,
         "discountPercent": 80,
@@ -357,8 +578,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=555220&cc=jp&l=japanese",
@@ -377,7 +598,44 @@
           "gameTitle": "Detention"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 555220
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2017-01-12",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=555220&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 555220
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2017-10-27T04:57:50.000Z",
+          "eventId": "steam-announcement-1460716231301561223",
+          "title": "Japanese version released. Buy Detention now with 50% off!",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:555220",
+            "url": "https://steamcommunity.com/ogg/555220/announcements/detail/1460716231301561223",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:1939970",
@@ -392,7 +650,7 @@
       "discountPercent": 90,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -401,7 +659,7 @@
         "appId": 1939970,
         "packageId": 698950,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 2989,
         "salePrice": 298,
         "discountPercent": 90,
@@ -409,8 +667,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1939970&cc=jp&l=japanese",
@@ -429,7 +687,25 @@
           "gameTitle": "Nobody Wants to Die"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1939970
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2024-07-17",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1939970&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:564230",
@@ -444,7 +720,7 @@
       "discountPercent": 80,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -453,7 +729,7 @@
         "appId": 564230,
         "packageId": 142039,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 3240,
         "salePrice": 648,
         "discountPercent": 80,
@@ -461,8 +737,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=564230&cc=jp&l=japanese",
@@ -481,7 +757,44 @@
           "gameTitle": "Fire Pro Wrestling World"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 564230
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2017-12-18",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=564230&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 564230
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2025-09-03T06:57:45.000Z",
+          "eventId": "steam-announcement-502835327731236881",
+          "title": "Steam - Ver.2.16.3",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:564230",
+            "url": "https://steamcommunity.com/ogg/564230/announcements/detail/502835327731236881",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:2304440",
@@ -496,7 +809,7 @@
       "discountPercent": 80,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -505,7 +818,7 @@
         "appId": 2304440,
         "packageId": 827212,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 2800,
         "salePrice": 560,
         "discountPercent": 80,
@@ -513,8 +826,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2304440&cc=jp&l=japanese",
@@ -533,7 +846,44 @@
           "gameTitle": "Creatures of Ava"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2304440
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2024-08-07",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=2304440&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2304440
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2024-10-01T14:42:42.000Z",
+          "eventId": "steam-announcement-4681018807419399436",
+          "title": "Creatures of Ava | Free Collectibles Update",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:2304440",
+            "url": "https://steamcommunity.com/ogg/2304440/announcements/detail/4681018807419399436",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:990080",
@@ -548,7 +898,7 @@
       "discountPercent": 90,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -557,7 +907,7 @@
         "appId": 990080,
         "packageId": 822363,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 8778,
         "salePrice": 877,
         "discountPercent": 90,
@@ -565,8 +915,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=990080&cc=jp&l=japanese",
@@ -585,7 +935,25 @@
           "gameTitle": "ホグワーツ・レガシー"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 990080
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2023-02-10",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=990080&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:499180",
@@ -600,7 +968,7 @@
       "discountPercent": 90,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -609,7 +977,7 @@
         "appId": 499180,
         "packageId": 114223,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 2300,
         "salePrice": 230,
         "discountPercent": 90,
@@ -617,8 +985,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=499180&cc=jp&l=japanese",
@@ -637,7 +1005,44 @@
           "gameTitle": "Braid, Anniversary Edition"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 499180
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2024-05-14",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=499180&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 499180
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2025-01-15T21:35:47.000Z",
+          "eventId": "steam-announcement-539969101030752748",
+          "title": "Fixed crash on macOS",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:499180",
+            "url": "https://steamcommunity.com/ogg/499180/announcements/detail/539969101030752748",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:233290",
@@ -652,11 +1057,11 @@
       "discountPercent": 90,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": null,
       "deadlineSource": null,
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=233290&cc=jp&l=japanese",
@@ -675,7 +1080,25 @@
           "gameTitle": "Murdered: Soul Suspect"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 233290
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2014-08-21",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=233290&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:210970",
@@ -690,7 +1113,7 @@
       "discountPercent": 90,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -699,7 +1122,7 @@
         "appId": 210970,
         "packageId": 88364,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 3980,
         "salePrice": 398,
         "discountPercent": 90,
@@ -707,8 +1130,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=210970&cc=jp&l=japanese",
@@ -727,7 +1150,44 @@
           "gameTitle": "The Witness"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 210970
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2016-01-26",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=210970&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 210970
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2023-06-01T19:11:51.000Z",
+          "eventId": "steam-announcement-3681175932887310904",
+          "title": "Another Update for the macOS version",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:210970",
+            "url": "https://steamcommunity.com/ogg/210970/announcements/detail/3681175932887310904",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:934700",
@@ -742,7 +1202,7 @@
       "discountPercent": 90,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -751,7 +1211,7 @@
         "appId": 934700,
         "packageId": 303210,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 5889,
         "salePrice": 588,
         "discountPercent": 90,
@@ -759,8 +1219,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=934700&cc=jp&l=japanese",
@@ -779,7 +1239,25 @@
           "gameTitle": "Dead Island 2"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 934700
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2024-04-22",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=934700&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:1488490",
@@ -794,7 +1272,7 @@
       "discountPercent": 10,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-13T17:00:49.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -803,7 +1281,7 @@
         "appId": 1488490,
         "packageId": 524630,
         "discountEndDate": 1791910849,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 3150,
         "salePrice": 2835,
         "discountPercent": 10,
@@ -811,8 +1289,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1488490&cc=jp&l=japanese",
@@ -831,7 +1309,25 @@
           "gameTitle": "Nivalis Nights"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1488490
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2026-09-29",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1488490&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:3917700",
@@ -846,7 +1342,7 @@
       "discountPercent": 10,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-13T17:00:56.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -855,7 +1351,7 @@
         "appId": 3917700,
         "packageId": 1376673,
         "discountEndDate": 1791910856,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 1800,
         "salePrice": 1620,
         "discountPercent": 10,
@@ -863,8 +1359,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=3917700&cc=jp&l=japanese",
@@ -883,7 +1379,44 @@
           "gameTitle": "Dicevaders"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 3917700
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2026-09-29",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=3917700&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 3917700
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2026-09-30T00:38:41.000Z",
+          "eventId": "steam-announcement-678511227668791312",
+          "title": "1.0 Hotfix 1",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:3917700",
+            "url": "https://steamcommunity.com/ogg/3917700/announcements/detail/678511227668791312",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:2900640",
@@ -898,11 +1431,11 @@
       "discountPercent": 15,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": null,
       "deadlineSource": null,
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2900640&cc=jp&l=japanese",
@@ -921,7 +1454,44 @@
           "gameTitle": "トーエム2"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2900640
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2026-09-29",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=2900640&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2900640
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2026-10-01T20:32:14.000Z",
+          "eventId": "steam-announcement-714540024688804649",
+          "title": "MacOS Hotfix",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:2900640",
+            "url": "https://steamcommunity.com/ogg/2900640/announcements/detail/714540024688804649",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:4229200",
@@ -936,7 +1506,7 @@
       "discountPercent": 10,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-15T17:00:11.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -945,7 +1515,7 @@
         "appId": 4229200,
         "packageId": 1480664,
         "discountEndDate": 1792083611,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 5390,
         "salePrice": 4851,
         "discountPercent": 10,
@@ -953,8 +1523,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=4229200&cc=jp&l=japanese",
@@ -973,7 +1543,25 @@
           "gameTitle": "むちむちポーク！＆ピンクスゥイーツ Boosted"
         }
       ],
-      "featuredInArticle": false
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4229200
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2026-10-01",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=4229200&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
     },
     {
       "id": "steam:1067360",
@@ -988,7 +1576,7 @@
       "discountPercent": 20,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -997,7 +1585,7 @@
         "appId": 1067360,
         "packageId": 357353,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-06T15:01:43.580Z",
+        "checkedAt": "2026-10-06T15:19:32.848Z",
         "regularPrice": 3850,
         "salePrice": 3080,
         "discountPercent": 20,
@@ -1005,8 +1593,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-06T21:01:43.580Z",
-      "priceValidUntil": "2026-10-07T15:01:43.580Z",
+      "freshUntil": "2026-10-06T21:19:32.848Z",
+      "priceValidUntil": "2026-10-07T15:19:32.848Z",
       "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1067360&cc=jp&l=japanese",
@@ -1025,28 +1613,65 @@
           "gameTitle": "Pax Autocratica"
         }
       ],
-      "featuredInArticle": true
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1067360
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2026-08-10",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1067360&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1067360
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-06T15:19:32.848Z",
+          "freshUntil": "2026-10-06T21:19:32.848Z",
+          "date": "2026-08-28T15:45:09.000Z",
+          "eventId": "steam-announcement-680759856779493883",
+          "title": "🛠️ State Maintenance Directive 🛠️",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1067360",
+            "url": "https://steamcommunity.com/ogg/1067360/announcements/detail/680759856779493883",
+            "verified": true
+          }
+        }
+      ]
     }
   ],
   "sources": [
     {
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/2610062i",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached",
       "candidates": []
     },
     {
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/2610052s",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached",
       "candidates": []
     },
     {
       "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached",
       "candidates": [
         {
@@ -1134,7 +1759,7 @@
     {
       "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/20261001-471455",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached",
       "candidates": [
         {
@@ -1147,147 +1772,147 @@
       "kind": "steam",
       "appId": 1304930,
       "url": "https://store.steampowered.com/api/appdetails?appids=1304930&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1446780,
       "url": "https://store.steampowered.com/api/appdetails?appids=1446780&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 240720,
       "url": "https://store.steampowered.com/api/appdetails?appids=240720&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 543260,
       "url": "https://store.steampowered.com/api/appdetails?appids=543260&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 368340,
       "url": "https://store.steampowered.com/api/appdetails?appids=368340&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1282730,
       "url": "https://store.steampowered.com/api/appdetails?appids=1282730&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1722020,
       "url": "https://store.steampowered.com/api/appdetails?appids=1722020&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 555220,
       "url": "https://store.steampowered.com/api/appdetails?appids=555220&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1939970,
       "url": "https://store.steampowered.com/api/appdetails?appids=1939970&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 564230,
       "url": "https://store.steampowered.com/api/appdetails?appids=564230&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 2304440,
       "url": "https://store.steampowered.com/api/appdetails?appids=2304440&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 990080,
       "url": "https://store.steampowered.com/api/appdetails?appids=990080&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 499180,
       "url": "https://store.steampowered.com/api/appdetails?appids=499180&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 233290,
       "url": "https://store.steampowered.com/api/appdetails?appids=233290&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 210970,
       "url": "https://store.steampowered.com/api/appdetails?appids=210970&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 934700,
       "url": "https://store.steampowered.com/api/appdetails?appids=934700&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1488490,
       "url": "https://store.steampowered.com/api/appdetails?appids=1488490&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 3917700,
       "url": "https://store.steampowered.com/api/appdetails?appids=3917700&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 2900640,
       "url": "https://store.steampowered.com/api/appdetails?appids=2900640&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 4229200,
       "url": "https://store.steampowered.com/api/appdetails?appids=4229200&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1067360,
       "url": "https://store.steampowered.com/api/appdetails?appids=1067360&cc=jp&l=japanese",
-      "checkedAt": "2026-10-06T15:01:43.580Z",
+      "checkedAt": "2026-10-06T15:19:32.848Z",
       "status": "cached"
     }
   ]

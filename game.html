@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=54" />
+    <link rel="stylesheet" href="./styles.css?v=55" />
     <link rel="stylesheet" href="./refresh-status.css?v=1" />
   </head>
   <body>
@@ -33,10 +33,11 @@
         </div>
 
         <form class="game-search-form" id="game-search-form">
-          <label class="sr-only" for="game-search-input">ゲーム名で検索</label>
-          <input id="game-search-input" type="search" name="q" placeholder="ゲーム名でページ内検索" autocomplete="off" />
-          <button type="submit">探す ↗</button>
+          <label class="sr-only" for="game-search-input">ゲーム名・記事の言葉で検索</label>
+          <input id="game-search-input" type="search" name="q" placeholder="ゲーム名・記事の言葉で検索" autocomplete="off" aria-describedby="game-search-status" aria-controls="game-search-section" />
+          <button type="submit">記事を検索</button>
         </form>
+        <p class="game-search-status" id="game-search-status" role="status" aria-live="polite">ゲーム記事を読み込んでいます。</p>
 
         <ul class="game-home-brief" id="game-hero-brief">
           <li>今日の判断材料を整理しています。</li>
@@ -48,6 +49,19 @@
             <p class="topic-signal-summary">ゲーム側で起きた変化を優先的に集約しています。</p>
           </article>
         </div>
+      </section>
+
+      <section class="topic-panel game-panel game-home-section game-search-section" id="game-search-section" aria-labelledby="game-search-heading" hidden>
+        <div class="section-heading topic-panel-heading">
+          <div>
+            <p class="section-kicker">ARTICLE SEARCH</p>
+            <h2 id="game-search-heading" tabindex="-1">記事の検索結果</h2>
+          </div>
+          <button type="button" class="game-card-link" id="game-search-clear">検索をクリア</button>
+        </div>
+        <p class="brief-description">読み込んだ記事を新しい順に表示しています。記事の価格や実施期間は掲載当時の情報です。</p>
+        <div class="game-news-list" id="game-search-results"></div>
+        <button type="button" class="game-card-link" id="game-search-more" hidden>検索結果をもっと見る</button>
       </section>
 
       <section class="topic-panel game-panel game-home-section" id="important-section">
@@ -150,6 +164,6 @@
     <script src="./refresh-status.js?v=1"></script>
     <script src="./shared-topic-utils.js?v=14"></script>
     <script src="./home-data-utils.js?v=1"></script>
-    <script src="./game.js?v=14"></script>
+    <script src="./game.js?v=15"></script>
   </body>
 </html>

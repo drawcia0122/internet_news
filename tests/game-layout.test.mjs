@@ -56,7 +56,7 @@ test('game backup news tracks fit narrow containers without changing the search 
     .map((rule) => rule['grid-template-columns']).filter(Boolean);
   assert.deepEqual(newsTracks, ['repeat(auto-fit, minmax(min(260px, 100%), 1fr))']);
   assert.equal(rules('.game-search-section .game-news-list')[0]['grid-template-columns'], 'minmax(0, 1fr)');
-  assert.match(html, /href="\.\/styles\.css\?v=57"/);
+  assert.match(html, /href="\.\/styles\.css\?v=58"/);
 });
 
 test('game page reuses the nonblocking refresh notice for all its source datasets', () => {

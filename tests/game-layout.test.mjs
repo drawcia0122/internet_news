@@ -6,7 +6,7 @@ const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
 const html = await readFile(new URL('../game.html', import.meta.url), 'utf8');
 
 // These narrow source contracts protect the known cascade regressions. Actual
-// element bounds at 393px and 1180px still need a browser layout check.
+// element bounds at 295px, 393px, and 1180px still need a browser layout check.
 function rules(selector) {
   const escaped = selector.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   return [...css.matchAll(new RegExp(`(?:^|[}\\n])\\s*${escaped}\\s*\\{([^}]*)\\}`, 'g'))]
@@ -49,6 +49,14 @@ test('game links remain touch-sized and source metadata can wrap inside its card
   assert.equal(rules('.game-home-card .game-card-top')[0]['flex-wrap'], 'wrap');
   assert.equal(rules('.game-home-card .game-card-meta')[0]['white-space'], 'normal');
   assert.equal(rules('.game-news-row-main')[0]['min-width'], '0');
+});
+
+test('game backup news tracks fit narrow containers without changing the search result column', () => {
+  const newsTracks = rules('.game-news-list')
+    .map((rule) => rule['grid-template-columns']).filter(Boolean);
+  assert.deepEqual(newsTracks, ['repeat(auto-fit, minmax(min(260px, 100%), 1fr))']);
+  assert.equal(rules('.game-search-section .game-news-list')[0]['grid-template-columns'], 'minmax(0, 1fr)');
+  assert.match(html, /href="\.\/styles\.css\?v=57"/);
 });
 
 test('game page reuses the nonblocking refresh notice for all its source datasets', () => {

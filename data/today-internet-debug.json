@@ -1,11 +1,66 @@
 {
-  "generatedAt": "2026-10-05T22:33:43.045Z",
+  "generatedAt": "2026-10-06T02:29:34.090Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1353",
-  "selectedTitle": "声優・上坂すみれ SNS投稿を再開",
+  "selectedClusterId": "today-cluster-4",
+  "selectedTitle": "『ARC Raiders』が映画・ドラマ化へ。ネクソンがチェルニン・エンターテインメントと提携を発表。『THE FINALS』も同社とのパートナーシップで映像化へ",
   "candidates": [
     {
-      "clusterId": "today-cluster-1353",
+      "clusterId": "today-cluster-4",
+      "title": "『ARC Raiders』が映画・ドラマ化へ。ネクソンがチェルニン・エンターテインメントと提携を発表。『THE FINALS』も同社とのパートナーシップで映像化へ",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general",
+        "business",
+        "net-culture"
+      ],
+      "buzzScore": 88,
+      "confidence": 0.62,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 18.5,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 8.4,
+        "velocity": 14,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 45,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1533",
       "title": "声優・上坂すみれ SNS投稿を再開",
       "category": "anime",
       "categories": [
@@ -58,89 +113,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-30",
-      "title": "高市首相「消費税減税で家計にゆとり」　赤字国債頼らず、所信表明",
-      "category": "politics",
+      "clusterId": "today-cluster-1",
+      "title": "【499円】『スカイリム』や『モロウィンド』の絶品グルメを再現した「公式レシピ本」を86％オフ「499円」で買える日替わりセールが開催中",
+      "category": "games",
       "categories": [
-        "politics",
-        "business",
-        "sns",
+        "games",
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.2,
-      "confidence": 0.41,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 63.6,
+      "confidence": 0.38,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-27",
-      "title": "「国は自民の財布でない」　農相続投に野党反発「公平性ゆがむ」",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 60.8,
-      "confidence": 0.41,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
         "trend": 18,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
+        "search": 1.5,
+        "social": 5.3,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -150,12 +151,12 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 54.8
+        "archiveMatchCount": 0,
+        "repeatedAppearanceScore": 18,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 0,
+        "internalSearchScore": 11.7,
+        "internalSocialScore": 41.1
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -164,7 +165,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1287",
+      "clusterId": "today-cluster-169",
+      "title": "[ITmedia エグゼクティブ] 富士フイルムビジネスイノベーション　初のAI採用、新世代複合機を発売へ　「情報プラットフォーム」に",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 58.1,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 14.3,
+        "internetNativeBoost": 0,
+        "search": 3.4,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 65,
+        "internalSearchScore": 26.7,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1465",
       "title": "高市首相のG7首脳会合欠席、官房長官「議長国が当日に急きょ設定」",
       "category": "politics",
       "categories": [
@@ -209,56 +263,6 @@
         "archiveHeatScore": 90,
         "internalSearchScore": 33.4,
         "internalSocialScore": 56.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1617",
-      "title": "『ワンピース カードゲーム』“ONE PIECE DAY'26”記念商品がプレバンで抽選販売！特別な「ルフィ」と「ドン！！カード」の2枚セット",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 55.6,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 3,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 33.8,
-        "internalSocialScore": 23.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

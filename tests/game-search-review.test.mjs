@@ -118,8 +118,8 @@ test('review: failed load stays actionable after submit and native clear', () =>
   const { c, elements, submit } = harness();
   c.renderFailure();
   submit('Quest');
-  assert.match(elements.get('#game-search-status').textContent, /再読み込み/);
+  assert.match(elements.get('#game-search-status').textContent, /再試行/);
   elements.get('#game-search-input').value = '';
   elements.get('#game-search-input').listeners.input();
-  assert.match(elements.get('#game-search-status').textContent, /再読み込み/);
+  assert.match(elements.get('#game-search-status').textContent, /再試行/);
 });

@@ -23,6 +23,9 @@
   const searchResultsElement = document.querySelector('#game-search-results');
   const searchClearElement = document.querySelector('#game-search-clear');
   const searchMoreElement = document.querySelector('#game-search-more');
+  const loadNoticeElement = document.querySelector('#game-load-notice');
+  const loadMessageElement = document.querySelector('#game-load-message');
+  const loadRetryElement = document.querySelector('#game-load-retry');
   const importantListElement = document.querySelector('#important-list');
   const hubListElement = document.querySelector('#game-hub-list');
   const freeGameListElement = document.querySelector('#free-game-list');
@@ -79,6 +82,17 @@
     ['ひぐらしのなく頃に', /ひぐらしのなく頃に/i],
   ];
 
+  const GAME_DATA_SOURCES = [
+    { key: 'trend', file: 'trend-topics.json', label: '新着記事', articles: true },
+    { key: 'archive', file: 'news-archive.json', label: '過去の記事', articles: true },
+    { key: 'home', file: 'home-news.json', label: 'ニュース記事', articles: true },
+    { key: 'events', file: 'events.json', label: 'イベント情報' },
+    { key: 'prices', file: 'game-sale-offers.json', label: 'Steam公式価格' },
+  ];
+  let gameSourcePayloads = {};
+  let gameSourceFailures = new Set();
+  let gameSourceLoading = false;
+  let gameLoadFatal = false;
   let dashboardState = null;
   let newsVisibleCount = 8;
   let searchQuery = '';
@@ -98,40 +112,126 @@
 
   async function init() {
     bindInteractions();
-    const [trendPayload, archivePayload, homeNewsPayload, eventPayload, salePayload] = await Promise.all([
-      fetchJsonWithCache({ endpoints: ['./data/trend-topics.json', 'data/trend-topics.json'] }),
-      fetchJsonWithCache({ endpoints: ['./data/news-archive.json', 'data/news-archive.json'] }),
-      fetchJsonWithCache({ endpoints: ['./data/home-news.json', 'data/home-news.json'] }),
-      fetchJsonWithCache({ endpoints: ['./data/events.json', 'data/events.json'] }),
-      fetchJsonWithCache({ endpoints: ['./data/game-sale-offers.json', 'data/game-sale-offers.json'] }).catch(() => null),
-    ]);
+    await loadGameSources(GAME_DATA_SOURCES.map((source) => source.key));
+  }
 
-    const currentTopics = Array.isArray(trendPayload?.items) ? trendPayload.items.map((item) => normalizeTopic(item)) : [];
-    const archiveTopics = Array.isArray(archivePayload?.items) ? archivePayload.items.map((item) => normalizeTopic(item)) : [];
-    const homeNewsTopics = Array.isArray(homeNewsPayload?.items)
-      ? homeNewsPayload.items.map((item) => normalizeTopic(item)).filter((topic) => isGameTopic(topic) || isSteamRelevantTopic(topic))
-      : [];
+  function prepareGameSourcePayload(source, payload) {
+    if (!payload || !Array.isArray(payload.items)) throw new Error(`Invalid ${source.file}`);
+    if (source.articles) {
+      const items = payload.items.map((item) => {
+        if (!item || typeof item !== 'object' || Array.isArray(item) || typeof item.title !== 'string') throw new Error(`Invalid article in ${source.file}`);
+        const topic = normalizeTopic(item);
+        if (topic.relatedKeywords != null && !Array.isArray(topic.relatedKeywords)) throw new Error(`Invalid keywords in ${source.file}`);
+        // Validate the fields used by the game filter before committing a source.
+        isGameTopic(topic);
+        return topic;
+      });
+      return { ...payload, items };
+    }
+    if (source.key === 'events') payload.items.forEach((event) => {
+      if (!event || typeof event !== 'object' || Array.isArray(event) || typeof event.title !== 'string'
+        || (event.tags != null && !Array.isArray(event.tags))) throw new Error('Invalid event record');
+      isLikelyGameEvent(event);
+    });
+    if (source.key === 'prices' && payload.sources !== undefined && !Array.isArray(payload.sources)) throw new Error('Invalid price source diagnostics');
+    return payload;
+  }
+
+  async function loadGameSources(keys, { isRetry = false } = {}) {
+    if (gameSourceLoading) return;
+    const requested = GAME_DATA_SOURCES.filter((source) => keys.includes(source.key));
+    if (!requested.length) return;
+    gameSourceLoading = true;
+    renderGameLoadNotice();
+    const previousPayloads = { ...gameSourcePayloads };
+    const results = await Promise.all(requested.map(async (source) => {
+      try {
+        const payload = await fetchJsonWithCache({ endpoints: [`./data/${source.file}`, `data/${source.file}`] });
+        return { source, payload: prepareGameSourcePayload(source, payload) };
+      } catch {
+        return { source, failed: true };
+      }
+    }));
+    for (const result of results) {
+      if (result.failed) gameSourceFailures.add(result.source.key);
+      else {
+        gameSourcePayloads[result.source.key] = result.payload;
+        gameSourceFailures.delete(result.source.key);
+      }
+    }
+    try {
+      const hasArticles = GAME_DATA_SOURCES.some((source) => source.articles && gameSourcePayloads[source.key]);
+      if (hasArticles) applyGameSourcePayloads({ isRetry, refreshSaleAvailability: requested.some((source) => source.key === 'prices') });
+      else renderFailure();
+    } catch (error) {
+      // A failed retry must not replace a reader's usable snapshot with bad data.
+      gameSourcePayloads = previousPayloads;
+      requested.forEach((source) => gameSourceFailures.add(source.key));
+      gameLoadFatal = true;
+      console.error('[game] source display failed', error);
+      if (!dashboardState) renderFailure();
+    } finally {
+      gameSourceLoading = false;
+      renderGameLoadNotice();
+    }
+  }
+
+  async function retryGameSources() {
+    const keys = gameSourceFailures.size ? [...gameSourceFailures] : GAME_DATA_SOURCES.map((source) => source.key);
+    await loadGameSources(keys, { isRetry: true });
+  }
+
+  function applyGameSourcePayloads({ isRetry = false, refreshSaleAvailability = false } = {}) {
+    const { trend: trendPayload, archive: archivePayload, home: homeNewsPayload, events: eventPayload, prices: salePayload } = gameSourcePayloads;
+    const currentTopics = trendPayload?.items || [];
+    const archiveTopics = archivePayload?.items || [];
+    const homeNewsTopics = (homeNewsPayload?.items || []).filter((topic) => isGameTopic(topic) || isSteamRelevantTopic(topic));
     const gameTopics = dedupeTopics([...currentTopics, ...archiveTopics, ...homeNewsTopics]).filter(isGameTopic);
-    const events = Array.isArray(eventPayload?.items) ? eventPayload.items : [];
-
-    dashboardInputs = {
+    const inputs = {
       topics: gameTopics,
-      events,
+      events: eventPayload?.items || [],
       meta: {
-        saleOffers: Array.isArray(salePayload?.items) ? salePayload.items : [],
+        saleOffers: salePayload?.items || [],
         saleSources: Array.isArray(salePayload?.sources) ? salePayload.sources : [],
         generatedAt: trendPayload?.generatedAt ?? homeNewsPayload?.generatedAt ?? archivePayload?.generatedAt ?? eventPayload?.generatedAt ?? null,
       },
     };
-    dashboardState = buildDashboardState(dashboardInputs.topics, dashboardInputs.events, dashboardInputs.meta);
-
-    renderDashboard();
-    if (searchQuery) renderSearchResults({ focusHeading: true });
-    else setSearchStatus();
+    const next = buildDashboardState(inputs.topics, inputs.events, inputs.meta);
+    const previous = dashboardState;
+    dashboardInputs = inputs;
+    dashboardState = next;
+    searchLoadFailed = false;
+    gameLoadFatal = false;
+    if (previous) renderDashboardChanges(previous, next);
+    else renderDashboard();
+    // Availability can change even when an empty sale list remains empty.
+    if (isRetry && refreshSaleAvailability) renderPreservingFocus([steamSaleListElement], renderSteamSales);
+    if (searchQuery) {
+      if (!previous || !sameDisplayedData(previous.searchItems, next.searchItems)) {
+        renderPreservingFocus([searchResultsElement], () => renderSearchResults({ focusHeading: !isRetry }));
+      }
+    } else setSearchStatus();
     bindOfferLifecycle();
+    scheduleOfferRefresh();
+  }
+
+  function renderGameLoadNotice() {
+    if (!loadNoticeElement || !loadMessageElement || !loadRetryElement) return;
+    const failedLabels = GAME_DATA_SOURCES.filter((source) => gameSourceFailures.has(source.key)).map((source) => source.label);
+    const visible = failedLabels.length > 0 || gameLoadFatal;
+    const restoreFocus = !visible && loadNoticeElement.contains?.(document.activeElement);
+    loadNoticeElement.hidden = !visible;
+    loadMessageElement.textContent = gameSourceLoading
+      ? `読み込めなかった情報を再試行しています。${dashboardState ? '表示中の記事はそのまま読めます。' : ''}`
+      : `${failedLabels.length ? `${failedLabels.join('・')}を読み込めませんでした。` : 'データの表示を準備できませんでした。'}${dashboardState ? '読み込めた情報だけを表示しています。' : '通信状況を確認して、再試行してください。'}`;
+    loadRetryElement.textContent = gameSourceLoading ? '再試行中…' : '読み込めなかった情報を再試行';
+    // Keep the initiating control focused while repeated clicks are ignored.
+    loadRetryElement.setAttribute?.('aria-disabled', String(gameSourceLoading));
+    if (restoreFocus) searchInputElement?.focus({ preventScroll: true });
   }
 
   function bindInteractions() {
+    loadRetryElement?.addEventListener('click', retryGameSources);
     searchFormElement?.addEventListener('submit', (event) => {
       event.preventDefault();
       searchQuery = String(searchInputElement?.value || '').trim();
@@ -238,7 +338,11 @@
     // Article search and its pagination belong to the reader, not the clock.
     next.searchItems = previous.searchItems;
     dashboardState = next;
-    const heroFields = ['briefing', 'importantItems', 'gameHubs', 'freeGames', 'steamSales', 'releasesToday', 'majorUpdates'];
+    renderDashboardChanges(previous, next);
+  }
+
+  function renderDashboardChanges(previous, next) {
+    const heroFields = ['generatedAt', 'briefing', 'importantItems', 'gameHubs', 'freeGames', 'steamSales', 'releasesToday', 'majorUpdates'];
     if (!sameDisplayedData(heroFields.map((key) => previous[key]), heroFields.map((key) => next[key]))) {
       renderPreservingFocus([heroBriefElement, heroCommandElement, heroStatsElement], renderHero);
     }
@@ -264,12 +368,16 @@
       moreNews: active.hasAttribute('data-game-more-news'),
       className: active.className,
       control: active.getAttribute('data-game-control'),
+      resultTitle: active.hasAttribute('data-game-result-title'),
       cardKey: active.closest?.('[data-game-key]')?.getAttribute('data-game-key'),
       text: String(active.textContent || '').trim(),
     } : null;
     const matchesIdentity = (element) => {
       if (identity.id) return element.id === identity.id;
       if (identity.control) return element.getAttribute('data-game-control') === identity.control;
+      if (identity.resultTitle) return element.hasAttribute('data-game-result-title') && (identity.cardKey
+        ? element.closest?.('[data-game-key]')?.getAttribute('data-game-key') === identity.cardKey
+        : String(element.textContent || '').trim() === identity.text);
       if (identity.href) return element.getAttribute('href') === identity.href && element.className === identity.className
         && (!identity.cardKey || element.closest?.('[data-game-key]')?.getAttribute('data-game-key') === identity.cardKey);
       if (identity.target) return element.getAttribute('data-target') === identity.target && String(element.textContent || '').trim() === identity.text;
@@ -576,7 +684,9 @@
   function renderSteamSales() {
     const items = dashboardState.steamSales.slice(0, 4);
     if (!items.length) {
-      steamSaleListElement.innerHTML = renderEmptyCard('確認できるセール情報はまだありません', '通常価格と割引後の価格を確認できた情報から掲載します。');
+      steamSaleListElement.innerHTML = gameSourceFailures.has('prices')
+        ? renderEmptyCard('Steam公式価格を読み込めませんでした', 'ページ上部の再試行で読み込み直せます。取得できたゲーム記事は引き続き読めます。')
+        : renderEmptyCard('確認できるセール情報はまだありません', '通常価格と割引後の価格を確認できた情報から掲載します。');
       return;
     }
     steamSaleListElement.innerHTML = items.map((item) => `
@@ -1684,15 +1794,20 @@
 
   function renderFailure() {
     searchLoadFailed = true;
+    gameLoadFatal = true;
+    clearOfferRefreshTimer();
     setSearchStatus();
-    const html = renderEmptyCard('ゲームページの読み込みに失敗しました', 'ローカルHTTPサーバーで開いているか確認してください。');
+    const html = renderEmptyCard('ゲーム記事を読み込めませんでした', '通信状況を確認して、ページ上部の再試行で読み込み直してください。');
     if (heroBriefElement) heroBriefElement.innerHTML = '<li>ゲームデータの読み込みに失敗しました。</li>';
     if (heroStatsElement) heroStatsElement.innerHTML = html;
+    if (heroCommandElement) heroCommandElement.innerHTML = html;
     if (importantListElement) importantListElement.innerHTML = html;
     if (hubListElement) hubListElement.innerHTML = html;
     if (steamSaleListElement) steamSaleListElement.innerHTML = html;
+    if (steamStoryListElement) steamStoryListElement.innerHTML = html;
     if (freeGameListElement) freeGameListElement.innerHTML = html;
     if (newsListElement) newsListElement.innerHTML = html;
+    renderGameLoadNotice();
   }
 
   function buildSearchArticles(topics) {
@@ -1731,7 +1846,7 @@
     if (!searchStatusElement) return;
     const count = dashboardState?.searchItems?.length;
     searchStatusElement.textContent = message || (searchLoadFailed
-      ? '記事を読み込めませんでした。ページを再読み込みしてください。'
+      ? '記事を読み込めませんでした。上の再試行で読み込み直してください。'
       : count === undefined
       ? 'ゲーム記事を読み込んでいます。'
       : `読み込んだゲーム記事 ${count}件を検索できます。表示欄に収まらない記事も対象です。`);
@@ -1746,7 +1861,7 @@
     setSearchStatus(`「${searchQuery}」に一致する記事 ${matches.length}件（${items.length}件表示 / 読み込んだ${corpusCount}件を検索）`);
     if (searchResultsHeading) searchResultsHeading.textContent = `「${searchQuery}」の記事 ${matches.length}件`;
     searchResultsElement.innerHTML = items.length ? items.map((result) => `
-      <article class="game-news-row">
+      <article class="game-news-row" data-game-key="${escapeHtml(result.key)}">
         <div class="game-news-row-main">
           <span class="game-news-row-game">${escapeHtml(result.sourceLabel)}</span>
           <h3 tabindex="-1" data-game-result-title>${buildArticleTitleLink(result.title, result.url)}</h3>

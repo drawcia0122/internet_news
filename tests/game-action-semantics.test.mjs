@@ -125,12 +125,12 @@ test('participating stores come from the trial claim, not unrelated retail avail
   assert.equal(offer.offerType, 'trial');
 });
 
-test('precise start/end boundaries are half-open and no ended offer is urgent', () => {
+test('article periods stay half-open but cannot establish official sale urgency', () => {
   const article = topic('『Example Quest』Steamで50%オフの500円、10月6日18:00から10月7日18:00まで', { publishedAt: '2026-10-05T02:00:00Z' });
   for (const [now, status, urgent] of [
     ['2026-10-06T08:59:59Z', 'upcoming', 0],
-    ['2026-10-06T09:00:00Z', 'active', 1],
-    ['2026-10-07T08:59:59Z', 'active', 1],
+    ['2026-10-06T09:00:00Z', 'active', 0],
+    ['2026-10-07T08:59:59Z', 'active', 0],
     ['2026-10-07T09:00:00Z', 'ended', 0],
     ['2026-10-08T09:00:00Z', 'ended', 0],
   ]) {
@@ -279,7 +279,7 @@ test('game names preserve punctuation and never fall through to a quoted feature
   assert.notEqual(c.canonicalizeGameName('モンハン'), 'Monster Hunter Wilds');
 });
 
-test('load-more retains all demoted article titles without excluding hidden capped actions', () => {
+test('load-more retains demoted article titles and every paginated sale remains reachable', () => {
   const { c, elements } = harness();
   const topics = Array.from({ length: 30 }, (_, index) => topic(`ゲーム関連ニュース${index}`, { id: `news-${index}`, score: 100 - index }));
   const dashboard = state(c, topics);
@@ -302,7 +302,7 @@ test('load-more retains all demoted article titles without excluding hidden capp
   const visible = new Set([
     ...full.importantItems.slice(0, 4).map((item) => item.topicId),
     ...full.gameHubs.slice(0, 6).flatMap((item) => item.topicIds),
-    ...full.steamSales.slice(0, 4).map((item) => item.topicId),
+    ...full.steamSales.map((item) => item.topicId),
     ...full.steamStories.slice(0, 6).map((item) => item.topicId),
     ...full.newsItems.map((item) => item.key),
   ]);
@@ -448,7 +448,14 @@ test('official price snapshots expire, retain their own checked timestamp and ne
   assert.equal(stale.status, 'unknown');
   assert.equal(stale.checkedAt, '2026-10-05T22:00:00Z');
   assert.match(c.renderSalePrice(stale), /前回の割引価格/);
-  const ended = c.verifiedSaleCard(officialOffer({ endsAt: NOW }), topics);
+  const deadlineOffer = officialOffer({ endsAt: new Date(NOW).toISOString() });
+  deadlineOffer.deadlineSource = { kind: 'steam-storebrowse', appId: deadlineOffer.appId, packageId: 123,
+    checkedAt: deadlineOffer.checkedAt, country: 'JP', currency: 'JPY', edition: 'base-game',
+    regularPrice: deadlineOffer.regularPrice, salePrice: deadlineOffer.salePrice, discountPercent: deadlineOffer.discountPercent,
+    discountEndDate: Date.parse(NOW) / 1000,
+    storeUrl: `https://store.steampowered.com/app/${deadlineOffer.appId}/?cc=jp&l=japanese`,
+    url: `https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=${encodeURIComponent(JSON.stringify({ids:[{appid:deadlineOffer.appId}],context:{language:'japanese',country_code:'JP'},data_request:{include_all_purchase_options:true}}))}` };
+  const ended = c.verifiedSaleCard(deadlineOffer, topics);
   assert.equal(ended.status, 'ended');
   assert.match(c.renderSalePrice(ended), /前回の割引価格/);
   const futureTopic = { ...topics[0], publishedAt: '2026-10-07T04:00:00Z' };

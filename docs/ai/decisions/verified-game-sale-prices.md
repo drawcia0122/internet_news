@@ -26,4 +26,19 @@ Only changed dashboard sections are rendered. Search results, query, pagination 
 
 ## Boundaries
 
-This does not establish sale ending times. Store price snapshots prove only the discounted amount at checking time; a deadline is shown only when independently grounded. Keep existing article/source identity, future-publication, trial, membership, merchandise and event-date protections. Do not match different editions or infer eligibility from unrelated platform mentions.
+Appdetails price snapshots prove only the discounted amount at checking time. The deadline extension below independently establishes exact ending times; missing or inconsistent evidence stays unknown. Keep existing article/source identity, future-publication, trial, membership, merchandise and event-date protections. Do not match different editions or infer eligibility from unrelated platform mentions.
+
+
+## Exact deadline extension (2026-10-06)
+
+The public official `IStoreBrowseService/GetItems/v1` response can independently prove the end time of a particular purchase option. The collector requests exactly one app with `context.country_code=JP`, `context.language=japanese` and `include_all_purchase_options=true`. `steamDeadlineSourceUrl(appId)` defines the canonical source URL. No API key, sign-in, storefront scraping or publisher date inference is used.
+
+Appdetails must first identify exactly one non-recurring base-game package with a matching title and discounted JPY amount. StoreBrowse must confirm the exact app ID, game type, package ID, single-game purchase option, title, original/final amounts and discount percentage. Both the best purchase option and its sole matching entry must agree. Exactly one active discount must supply an integer Unix-second `discount_end_date` and the matching discount amount. Bundles, mismatched/localization-ambiguous names, stacked discounts, missing data, non-JP response URLs and invalid/past timestamps fail closed. A one-year plausibility bound rejects implausible data without inventing a replacement date.
+
+The additive fields are `endsAt` and `deadlineSource`, both explicitly null when unknown. Provenance records the actual official endpoint URL, the exact Japanese storefront URL, app/package identity, raw `discountEndDate`, JP/JPY/base-game identity, the matching amounts/percentage and the original `checkedAt`. The raw Unix value must equal `endsAt`; source and offer check times must be identical. Date-only storefront labels, article event dates, `freshUntil` and `priceValidUntil` are never transformed into exact deadlines.
+
+The optional read adds at most one bounded 1 MiB request per already-selected app, inside the existing concurrency, timeout, 90-second total budget and article/app limits. It is skipped for non-sales and unproven packages. Failure keeps the valid price and null deadline, with `deadlineStatus` diagnostics. This endpoint's schema is not assumed stable; shape changes remain unknown rather than falling back to guesswork.
+
+Repeated refreshes retain the original proof only with its same price observation, within the existing 24-hour maximum age. A successful new price response does not inherit an old deadline if new deadline evidence is unavailable. Invalid retained provenance is stripped without discarding a valid price. At the exact end instant, the six-hour cache is bypassed to recheck the price; on an outage the original expired proof is retained so consumers can suppress it and avoid resurrecting article claims. Retention never moves the end time or check timestamp.
+
+Verification: `tests/game-sale-deadlines.test.mjs` covers source/offer mismatches, missing/invalid timestamps, expiry boundaries, bounded failures, cache/outage retention and the real refresh writer. A live refresh on 2026-10-06 produced 21 discounted games, 16 verified deadlines and 5 explicit unknowns. Independently retrieved app 240720/package 201019 reported 82000 → 12300 JPY cents, 85%, `discount_end_date=1791478800` (2026-10-08 17:00 UTC). New-release offers carried distinct second-resolution deadlines, rather than inferred seasonal dates.

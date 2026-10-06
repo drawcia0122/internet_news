@@ -5154,3 +5154,15 @@ footer {
 .news-story-sources a strong {
   font-size: 12px;
 }
+
+/* Verified sale controls share the Classic card palette. */
+.game-sale-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin: 0 0 12px; }
+.game-sale-controls label { display: grid; gap: 6px; flex: 1 1 140px; min-width: 0; font-size: .82rem; font-weight: 700; }
+.game-sale-controls select { width: 100%; min-width: 0; min-height: 44px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface-strong); color: var(--ink); font: inherit; }
+.game-sale-controls button { min-height: 44px; }
+.game-sale-controls select:focus-visible, .game-sale-controls button:focus-visible, .game-sale-card:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.game-sale-count { font-size: .8rem; line-height: 1.7; color: var(--muted); }
+#game-sale-more { margin-top: 16px; }
+
+.game-sale-controls label,
+.game-sale-count { color: #dbe7ff; }

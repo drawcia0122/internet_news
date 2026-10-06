@@ -31,6 +31,11 @@
   const hubListElement = document.querySelector('#game-hub-list');
   const freeGameListElement = document.querySelector('#free-game-list');
   const steamSaleListElement = document.querySelector('#steam-sale-list');
+  const saleControlsElement = document.querySelector('#game-sale-controls');
+  const saleCountElement = document.querySelector('#game-sale-count');
+  const saleMoreElement = document.querySelector('#game-sale-more');
+  const saleFilters = { platform: 'all', store: 'all', sort: 'recommended', ceiling: '' };
+  let saleVisibleCount = 8;
   const steamStoryListElement = document.querySelector('#steam-story-list');
   const newsListElement = document.querySelector('#news-list');
 
@@ -242,6 +247,25 @@
   function bindInteractions() {
     document.addEventListener?.('error', handleGameImageError, true);
     loadRetryElement?.addEventListener('click', retryGameSources);
+    saleControlsElement?.addEventListener('change', (event) => {
+      const field = event.target?.getAttribute?.('data-sale-filter');
+      if (!Object.hasOwn(saleFilters, field)) return;
+      saleFilters[field] = String(event.target.value || '');
+      saleVisibleCount = 8;
+      if (dashboardState) renderSteamSales();
+    });
+    document.querySelector('#game-sale-reset')?.addEventListener('click', () => {
+      Object.assign(saleFilters, { platform: 'all', store: 'all', sort: 'recommended', ceiling: '' });
+      saleControlsElement?.querySelectorAll('[data-sale-filter]').forEach((element) => { element.value = saleFilters[element.getAttribute('data-sale-filter')]; });
+      saleVisibleCount = 8;
+      if (dashboardState) renderSteamSales();
+    });
+    saleMoreElement?.addEventListener('click', () => {
+      const firstNew = saleVisibleCount;
+      saleVisibleCount += 8;
+      renderSteamSales();
+      steamSaleListElement?.querySelectorAll('h3 a')[firstNew]?.focus();
+    });
     searchFormElement?.addEventListener('submit', (event) => {
       event.preventDefault();
       searchQuery = String(searchInputElement?.value || '').trim();
@@ -428,7 +452,7 @@
     const excludedTopicIds = new Set([
       ...importantItems.slice(0, 4).map((item) => item.topicId).filter(Boolean),
       ...gameHubs.slice(0, 6).flatMap((item) => item.topicIds || []),
-      ...steamSales.slice(0, 4).map((item) => item.topicId).filter(Boolean),
+      ...steamSales.map((item) => item.topicId).filter(Boolean),
       ...freeGames.slice(0, 4).map((item) => item.topicId).filter(Boolean),
     ]);
     const steamStories = buildSteamStories(topics, excludedTopicIds);
@@ -450,7 +474,7 @@
       majorUpdates,
       newsItems,
       totals: {
-        endingSoonSaleCount: steamSales.filter((item) => item.status === 'active' && item.endsAt && hoursUntil(item.endsAt) > 0 && hoursUntil(item.endsAt) <= 24).length,
+        endingSoonSaleCount: steamSales.filter((item) => item.status === 'active' && item.deadlineVerified && item.endsAt && hoursUntil(item.endsAt) > 0 && hoursUntil(item.endsAt) <= 24).length,
         freeCount: freeGames.filter((item) => item.status === 'active' && item.offerType === 'ownership').length,
         releaseTodayCount: releasesToday.length,
         updateCount: majorUpdates.length,
@@ -475,7 +499,7 @@
     const visibleImportantCount = dashboardState.importantItems.slice(0, 4).length;
     const visibleHubCount = dashboardState.gameHubs.slice(0, 6).length;
     const visibleFreeCount = dashboardState.freeGames.slice(0, 4).length;
-    const visibleSaleCount = dashboardState.steamSales.slice(0, 4).length;
+    const visibleSaleCount = dashboardState.steamSales.length;
     const visibleReleaseCount = dashboardState.releasesToday.slice(0, 4).length;
     const visibleUpdateCount = dashboardState.majorUpdates.slice(0, 4).length;
     heroBriefElement.innerHTML = briefing.length
@@ -695,16 +719,56 @@
     </div>`;
   }
 
+  function comparableSale(item) {
+    return item.priceState === 'verified' && item.status === 'active' && item.store === 'Steam'
+      && item.platform === 'PC' && Number.isSafeInteger(item.salePrice) && item.salePrice > 0;
+  }
+
+  function selectSaleCards(items, filters = saleFilters) {
+    const ceiling = /^\d+$/.test(String(filters.ceiling)) ? Number(filters.ceiling) : null;
+    const filtered = items.filter((item) => {
+      const platform = item.platform === 'PC' ? 'PC' : 'unknown';
+      const store = item.store === 'Steam' && item.platform === 'PC' ? 'Steam' : 'unknown';
+      return (filters.platform === 'all' || filters.platform === platform)
+        && (filters.store === 'all' || filters.store === store)
+        && (ceiling === null || (comparableSale(item) && item.salePrice <= ceiling));
+    });
+    if (filters.sort === 'recommended') return filtered;
+    const value = (item) => {
+      if (!comparableSale(item)) return null;
+      if (filters.sort === 'price') return item.salePrice;
+      if (filters.sort === 'discount') return Number.isInteger(item.discountPercent) ? -item.discountPercent : null;
+      if (filters.sort === 'ending') return item.deadlineVerified && item.endsAt ? item.endsAt.getTime() : null;
+      return null;
+    };
+    return filtered.map((item, index) => ({ item, index, value: value(item) })).sort((a, b) =>
+      (a.value === null) - (b.value === null) || (a.value === null ? 0 : a.value - b.value) || a.index - b.index
+    ).map(({ item }) => item);
+  }
+
   function renderSteamSales() {
-    const items = dashboardState.steamSales.slice(0, 4);
+    const filtered = selectSaleCards(dashboardState.steamSales);
+    const items = filtered.slice(0, saleVisibleCount);
+    if (saleCountElement) saleCountElement.textContent = `${filtered.length}件 / 全${dashboardState.steamSales.length}件（${items.length}件表示）。価格・割引率・終了順は確認済みの有効な情報を先に表示。予算指定時は古い価格・未確認・終了済みを除きます。`;
+    if (saleMoreElement) {
+      const restoreFocus = document.activeElement === saleMoreElement && items.length >= filtered.length;
+      saleMoreElement.hidden = items.length >= filtered.length;
+      if (restoreFocus) {
+        const heading = document.querySelector('#sale-section h2');
+        heading?.setAttribute?.('tabindex', '-1');
+        heading?.focus?.({ preventScroll: true });
+      }
+    }
     if (!items.length) {
-      steamSaleListElement.innerHTML = gameSourceFailures.has('prices')
+      steamSaleListElement.innerHTML = dashboardState.steamSales.length
+        ? renderEmptyCard('条件に合うセールはありません', '予算指定では再確認待ちの価格も除外します。「条件をリセット」で全件に戻せます。')
+        : gameSourceFailures.has('prices')
         ? renderEmptyCard('Steam公式価格を読み込めませんでした', 'ページ上部の再試行で読み込み直せます。取得できたゲーム記事は引き続き読めます。')
         : renderEmptyCard('確認できるセール情報はまだありません', '通常価格と割引後の価格を確認できた情報から掲載します。');
       return;
     }
     steamSaleListElement.innerHTML = items.map((item) => `
-      <article class="game-home-card game-compact-card game-sale-card" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.discount, item.price))}">
+      <article class="game-home-card game-compact-card game-sale-card" id="game-card-${escapeHtml(item.key)}" tabindex="-1" data-game-key="${escapeHtml(item.key)}" data-game-search="${escapeHtml(searchIndexText(item.title, item.summary, item.discount, item.price))}">
         ${renderSignalThumbnail(item, '💸')}
         <div class="game-home-card-body">
           <div class="game-card-top">
@@ -715,9 +779,12 @@
           ${renderSalePrice(item)}
           <p class="game-card-summary">${escapeHtml(item.storeUrl ? 'Steam日本ストア · PC版 · 本編 · 税込' : item.summary)}</p>
           <div class="game-home-inline-facts">${renderFactPills([
-            item.endsAtLabel ? `終了 ${item.endsAtLabel}` : '終了日時未確認',
+            item.deadlineVerified ? `終了 ${item.endsAtLabel}` : '終了日時未確認',
+            item.remainingLabel,
+            item.platform === 'PC' ? 'PC / Steam' : '機種・ストア未確認',
             item.priceState === 'stale' ? '現在の価格は再確認待ち' : null,
           ])}</div>
+          ${item.deadlineVerified ? `<p class="game-sale-source">期限確認 ${escapeHtml(formatPriceCheckedAt(item.deadlineCheckedAt))} · <a href="${escapeHtml(item.storeUrl)}" target="_blank" rel="noreferrer">公式ストアの期限</a></p>` : ''}
           <p class="game-sale-source">${item.checkedAt ? `価格確認 ${escapeHtml(formatPriceCheckedAt(item.checkedAt))} · ` : '記事掲載価格 · '}${item.storeUrl ? `<a href="${escapeHtml(item.storeUrl)}" target="_blank" rel="noreferrer">Steam公式</a>` : '元の価格が未記載の場合は未確認'}</p>
           <div class="game-sale-links">
             ${item.storeUrl ? `<a class="game-card-link" href="${escapeHtml(item.storeUrl)}" target="_blank" rel="noreferrer">Steamで確認 ↗</a>` : ''}
@@ -796,7 +863,7 @@
     if (releasesToday.length) lines.push(`本日発売 ${releasesToday.length} 件`);
     if (majorUpdates.length) lines.push(`大型アップデート ${majorUpdates.length} 件`);
     if (freeGames.length) lines.push(`無料・体験情報 ${freeGames.length} 件（予定・状況不明を含む）`);
-    if (steamSales.some((item) => item.status === 'active' && item.endsAt && hoursUntil(item.endsAt) > 0 && hoursUntil(item.endsAt) <= 24)) lines.push('終了間近のセールあり');
+    if (steamSales.some((item) => item.status === 'active' && item.deadlineVerified && item.endsAt && hoursUntil(item.endsAt) > 0 && hoursUntil(item.endsAt) <= 24)) lines.push('終了間近のセールあり');
     if (!lines.length && gameHubs.length) lines.push(`今日は ${gameHubs[0].title} 周辺の動きが強め`);
     return lines.slice(0, 4);
   }
@@ -830,10 +897,11 @@
     try {
       const store = new URL(offer.storeUrl);
       const source = new URL(offer.priceSource?.url);
-      if (offer.priceSource?.kind !== 'steam-appdetails' || store.username || store.password || source.username || source.password
+      if (offer.priceSource?.kind !== 'steam-appdetails' || store.username || store.password || source.username || source.password || store.port || source.port || source.hash
         || store.protocol !== 'https:' || store.hostname !== 'store.steampowered.com' || !new RegExp(`^/app/${offer.appId}(?:/|$)`).test(store.pathname)
         || source.protocol !== 'https:' || source.hostname !== 'store.steampowered.com'
-        || source.pathname !== '/api/appdetails' || source.searchParams.get('appids') !== String(offer.appId)
+        || source.pathname !== '/api/appdetails' || source.searchParams.getAll('appids').length !== 1 || source.searchParams.get('appids') !== String(offer.appId)
+        || source.searchParams.getAll('cc').length !== 1
         || source.searchParams.get('cc')?.toLowerCase() !== 'jp') return null;
     } catch { return null; }
     if (!Array.isArray(offer.articleUrls)) return null;
@@ -845,22 +913,60 @@
       return published && published <= now && articleUrls.has(canonicalArticleUrl(source?.canonicalUrl || source?.url || entry.sourceUrl || entry.url));
     });
     if (!topic) return null;
-    const endsAt = safeDate(offer.endsAt);
+    const endsAt = verifiedSaleDeadline(offer);
     const freshUntil = safeDate(offer.freshUntil);
     const stale = !freshUntil || offer.status === 'stale' || (freshUntil && now >= freshUntil) || now - checked >= 6 * 60 * 60 * 1000;
     const status = noDiscount || (endsAt && endsAt <= now) ? 'ended' : stale ? 'unknown' : 'active';
     const url = articleSource(topic)?.url || topic.sourceUrl || topic.url;
     return {
-      key: `steam-${offer.appId}`, articleUrls: [...articleUrls], topicId: topic.id || topic.title, title,
+      key: `steam-${offer.appId}`, appId: offer.appId, store: 'Steam', platform: 'PC', discountPercent, articleUrls: [...articleUrls], topicId: topic.id || topic.title, title,
       summary: `${title} のSteam日本ストア価格`, url,
       storeUrl: `https://store.steampowered.com/app/${offer.appId}/?cc=jp&l=japanese`,
       ...thumbnailFields(steamImageCandidates(offer)),
       regularPrice, salePrice: noDiscount ? null : salePrice, price: noDiscount ? null : `${salePrice.toLocaleString('ja-JP')}円`, discount: noDiscount ? null : `${discountPercent}% OFF`,
       checkedAt: offer.checkedAt, priceState: stale ? 'stale' : 'verified', status,
       startsAt: null, startsAtLabel: null, endsAt,
-      endsAtLabel: endsAt ? formatPriceCheckedAt(endsAt) : null,
+      endsAtLabel: endsAt ? formatSaleDeadline(endsAt) : null,
+      deadlineVerified: Boolean(endsAt), deadlineCheckedAt: endsAt ? offer.deadlineSource.checkedAt : null,
+      remainingLabel: endsAt ? saleRemainingLabel(endsAt, now) : null,
       priority: 100 + (offer.featuredInArticle === true ? 100 : 0) + discountPercent, priorityLabel: status === 'ended' ? 'セール終了' : stale ? '価格の再確認待ち' : '確認時に割引中',
     };
+  }
+
+  function formatSaleDeadline(value) {
+    const date = safeDate(value);
+    return date ? `${new Intl.DateTimeFormat('ja-JP', { timeZone: 'Asia/Tokyo', year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }).format(date)} JST` : '終了日時未確認';
+  }
+
+  function verifiedSaleDeadline(offer) {
+    const end = safeDate(offer?.endsAt);
+    const source = offer?.deadlineSource;
+    if (!end || typeof offer.endsAt !== 'string' || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.000Z$/.test(offer.endsAt)
+      || end.toISOString() !== offer.endsAt || source?.kind !== 'steam-storebrowse' || source.appId !== offer.appId
+      || !Number.isSafeInteger(source.packageId) || source.packageId <= 0
+      || source.checkedAt !== offer.checkedAt || source.country !== 'JP' || source.currency !== 'JPY'
+      || source.edition !== 'base-game' || source.regularPrice !== offer.regularPrice
+      || source.salePrice !== offer.salePrice || source.discountPercent !== offer.discountPercent
+      || source.storeUrl !== offer.storeUrl || source.storeUrl !== `https://store.steampowered.com/app/${offer.appId}/?cc=jp&l=japanese`
+      || !Number.isSafeInteger(source.discountEndDate) || source.discountEndDate * 1000 !== end.getTime()
+      || !safeDate(source.checkedAt) || end <= safeDate(source.checkedAt) || end - safeDate(source.checkedAt) > 366 * 86400000) return null;
+    const expectedUrl = `https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=${encodeURIComponent(JSON.stringify({
+      ids: [{ appid: offer.appId }], context: { language: 'japanese', country_code: 'JP' },
+      data_request: { include_all_purchase_options: true },
+    }))}`;
+    if (source.url !== expectedUrl) return null;
+    return end;
+  }
+
+  function saleRemainingLabel(end, now = currentOfferTime()) {
+    const remaining = end - now;
+    if (remaining <= 0) return '終了済み';
+    if (remaining < 60000) return '残り1分未満';
+    const minutes = Math.ceil(remaining / 60000);
+    if (minutes < 60) return `残り${minutes}分`;
+    const hours = Math.floor(minutes / 60);
+    if (hours < 24) return `残り${hours}時間${minutes % 60 ? `${minutes % 60}分` : ''}`;
+    return `残り${Math.floor(hours / 24)}日${hours % 24 ? `${hours % 24}時間` : ''}`;
   }
 
   function isAuthoritativePriceUnavailable(source) {
@@ -871,8 +977,9 @@
     if (!checked || checked > now || now - checked >= 6 * 60 * 60 * 1000) return false;
     try {
       const url = new URL(source.url);
-      return url.protocol === 'https:' && url.hostname === 'store.steampowered.com' && !url.username && !url.password
-        && url.pathname === '/api/appdetails' && url.searchParams.get('appids') === String(source.appId)
+      return url.protocol === 'https:' && url.hostname === 'store.steampowered.com' && !url.username && !url.password && !url.port && !url.hash
+        && url.pathname === '/api/appdetails' && url.searchParams.getAll('appids').length === 1 && url.searchParams.get('appids') === String(source.appId)
+        && url.searchParams.getAll('cc').length === 1
         && url.searchParams.get('cc')?.toLowerCase() === 'jp';
     } catch { return false; }
   }
@@ -910,13 +1017,12 @@
         key: `sale-${evidence.title}-${topic.id || evidence.url}`,
         discount: discount ? `${discount}% OFF` : null,
         regularPrice: pair.regularPrice, salePrice: price === null ? null : Number(price.replace(/,/g, '')),
-        price: price !== null ? `${price}円` : null, priceState: 'article',
+        price: price !== null ? `${price}円` : null, priceState: 'article', store: null, platform: null, discountPercent: null, deadlineVerified: false,
         priority, priorityLabel: actionStatusLabel(period.status),
       });
     }
     return uniqueBy(items, (item) => item.key)
-      .sort((a, b) => actionStatusRank(a.status) - actionStatusRank(b.status) || b.priority - a.priority)
-      .slice(0, 10);
+      .sort((a, b) => actionStatusRank(a.status) - actionStatusRank(b.status) || b.priority - a.priority);
   }
 
   function buildFreeGames(topics) {
@@ -1115,7 +1221,7 @@
     const items = [];
 
     for (const sale of steamSales) {
-      if (sale.status !== 'active' || !sale.endsAt || hoursUntil(sale.endsAt) <= 0 || hoursUntil(sale.endsAt) > 24) continue;
+      if (sale.status !== 'active' || !sale.deadlineVerified || !sale.endsAt || hoursUntil(sale.endsAt) <= 0 || hoursUntil(sale.endsAt) > 24) continue;
       items.push({
         key: `sale-${sale.key}`,
         topicId: sale.topicId,

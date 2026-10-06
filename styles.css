@@ -5163,3 +5163,6 @@ footer {
 .game-sale-controls select:focus-visible, .game-sale-controls button:focus-visible, .game-sale-card:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 .game-sale-count { font-size: .8rem; line-height: 1.7; color: var(--muted); }
 #game-sale-more { margin-top: 16px; }
+
+.game-sale-controls label,
+.game-sale-count { color: #dbe7ff; }

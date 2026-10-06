@@ -4485,6 +4485,26 @@ footer {
   line-height: 1.65;
 }
 
+.game-load-notice p {
+  margin: 0 0 8px;
+}
+
+.game-home-page .game-load-notice .game-card-link {
+  color: #76521e;
+  border-color: #caa668;
+  background: #fff;
+}
+
+.game-load-notice [aria-disabled="true"] {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.game-home-command > .game-empty-card,
+.game-home-stats > .game-empty-card {
+  grid-column: 1 / -1;
+}
+
 .game-home-page .game-search-status {
   margin: 0;
   color: rgba(227, 235, 255, 0.84);

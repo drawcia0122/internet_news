@@ -267,10 +267,10 @@ test('failed loads keep an actionable failure status during further submits and 
   c.bindInteractions();
   c.renderFailure();
   submit('Quest');
-  assert.match(elements.get('#game-search-status').textContent, /再読み込み/);
+  assert.match(elements.get('#game-search-status').textContent, /再試行/);
   assert.doesNotMatch(elements.get('#game-search-status').textContent, /完了後/);
   submit('');
-  assert.match(elements.get('#game-search-status').textContent, /再読み込み/);
+  assert.match(elements.get('#game-search-status').textContent, /再試行/);
 });
 
 test('HTML offers a labelled local search, live counts, keyboard targets and actually hidden empty results', () => {

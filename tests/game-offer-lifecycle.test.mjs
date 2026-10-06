@@ -255,7 +255,9 @@ test('empty optional offers keep a bounded visible timer and no timer in the bac
 
 test('failed initial data does not start background retries or a lifecycle timer', async () => {
   const h = harness({ fetchError: true });
-  await assert.rejects(h.c.init(), /fixture offline/);
+  await assert.doesNotReject(h.c.init());
+  assert.equal(h.c.state(), null);
+  assert.match(h.elements.get('#game-search-status').textContent, /再試行/);
   assert.equal(h.timers.size, 0);
   assert.equal(h.windowEvents.has('focus'), false);
   assert.equal(h.fetchCount(), 5);

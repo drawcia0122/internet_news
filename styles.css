@@ -4485,6 +4485,47 @@ footer {
   line-height: 1.65;
 }
 
+.game-home-page .game-search-status {
+  margin: 0;
+  color: rgba(227, 235, 255, 0.84);
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.game-home-page .game-search-section[hidden],
+.game-home-page #game-search-more[hidden] {
+  display: none;
+}
+
+.game-search-section {
+  scroll-margin-top: 20px;
+}
+
+.game-search-section .section-heading {
+  flex-wrap: wrap;
+}
+
+.game-search-section h2 {
+  overflow-wrap: anywhere;
+}
+
+.game-search-section > .brief-description {
+  margin: 0 0 16px;
+}
+
+.game-search-section #game-search-more {
+  margin-top: 16px;
+}
+
+.game-search-form input:focus-visible,
+.game-search-form button:focus-visible,
+.game-search-section button:focus-visible,
+.game-search-section [tabindex="-1"]:focus {
+  outline: 3px solid #9ec3ff;
+  outline-offset: 4px;
+}
+
 .game-home-brief {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

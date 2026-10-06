@@ -6,6 +6,7 @@
     dedupeTopics,
     escapeHtml,
     formatTopicDisplayTime,
+    getNewsArticleSource,
     normalizeTopic,
     topicText,
   } = window.TopicClientUtils;
@@ -16,6 +17,12 @@
   const heroStatsElement = document.querySelector('#game-hero-stats');
   const searchFormElement = document.querySelector('#game-search-form');
   const searchInputElement = document.querySelector('#game-search-input');
+  const searchStatusElement = document.querySelector('#game-search-status');
+  const searchResultsSection = document.querySelector('#game-search-section');
+  const searchResultsHeading = document.querySelector('#game-search-heading');
+  const searchResultsElement = document.querySelector('#game-search-results');
+  const searchClearElement = document.querySelector('#game-search-clear');
+  const searchMoreElement = document.querySelector('#game-search-more');
   const importantListElement = document.querySelector('#important-list');
   const hubListElement = document.querySelector('#game-hub-list');
   const freeGameListElement = document.querySelector('#free-game-list');
@@ -74,6 +81,9 @@
 
   let dashboardState = null;
   let newsVisibleCount = 8;
+  let searchQuery = '';
+  let searchLoadFailed = false;
+  let searchVisibleCount = 8;
 
   init().catch((error) => {
     console.error('[game] failed to render', error);
@@ -81,6 +91,7 @@
   });
 
   async function init() {
+    bindInteractions();
     const [trendPayload, archivePayload, homeNewsPayload, eventPayload, salePayload] = await Promise.all([
       fetchJsonWithCache({ endpoints: ['./data/trend-topics.json', 'data/trend-topics.json'] }),
       fetchJsonWithCache({ endpoints: ['./data/news-archive.json', 'data/news-archive.json'] }),
@@ -103,22 +114,37 @@
       generatedAt: trendPayload?.generatedAt ?? homeNewsPayload?.generatedAt ?? archivePayload?.generatedAt ?? eventPayload?.generatedAt ?? null,
     });
 
-    bindInteractions();
     renderDashboard();
+    if (searchQuery) renderSearchResults({ focusHeading: true });
+    else setSearchStatus();
   }
 
   function bindInteractions() {
     searchFormElement?.addEventListener('submit', (event) => {
       event.preventDefault();
-      const query = String(searchInputElement?.value || '').trim();
-      if (!query) return;
-      const matchedCard = findSearchMatch(query);
-      if (matchedCard) {
-        highlightSearchMatch(matchedCard);
-        matchedCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      searchQuery = String(searchInputElement?.value || '').trim();
+      searchVisibleCount = 8;
+      if (!searchQuery) {
+        clearGameSearch();
         return;
       }
-      window.open(buildGoogleNewsUrl(`${query} ゲーム`, { rangeDays: 7 }), '_blank', 'noreferrer');
+      if (!dashboardState) {
+        setSearchStatus(searchLoadFailed ? '' : '記事を読み込み中です。完了後に検索します。');
+        return;
+      }
+      renderSearchResults({ focusHeading: true });
+    });
+    searchInputElement?.addEventListener('input', () => {
+      // The native search-field clear button must restore the unfiltered page too.
+      if (!String(searchInputElement.value || '').trim()) clearGameSearch();
+    });
+    searchClearElement?.addEventListener('click', () => clearGameSearch({ focusInput: true }));
+    searchMoreElement?.addEventListener('click', () => {
+      const firstNewIndex = searchVisibleCount;
+      searchVisibleCount += 8;
+      renderSearchResults();
+      const firstNewTitle = searchResultsElement?.querySelectorAll('[data-game-result-title]')[firstNewIndex];
+      (firstNewTitle?.querySelector('a') || firstNewTitle)?.focus();
     });
 
     heroStatsElement?.addEventListener('click', (event) => {
@@ -159,6 +185,7 @@
 
     return {
       generatedAt: meta.generatedAt,
+      searchItems: buildSearchArticles(topics),
       briefing: buildBriefing({ importantItems, gameHubs, freeGames, steamSales, releasesToday, majorUpdates }),
       importantItems,
       gameHubs,
@@ -1519,6 +1546,8 @@
   }
 
   function renderFailure() {
+    searchLoadFailed = true;
+    setSearchStatus();
     const html = renderEmptyCard('ゲームページの読み込みに失敗しました', 'ローカルHTTPサーバーで開いているか確認してください。');
     if (heroBriefElement) heroBriefElement.innerHTML = '<li>ゲームデータの読み込みに失敗しました。</li>';
     if (heroStatsElement) heroStatsElement.innerHTML = html;
@@ -1529,26 +1558,87 @@
     if (newsListElement) newsListElement.innerHTML = html;
   }
 
-  function findSearchMatch(query) {
-    const normalizedQuery = String(query || '').trim().toLowerCase();
-    if (!normalizedQuery) return null;
-    let cards = Array.from(document.querySelectorAll('[data-game-search]'));
-    let match = cards.find((card) => String(card.dataset.gameSearch || '').toLowerCase().includes(normalizedQuery));
-    if (!match && dashboardState) {
-      const index = dashboardState.newsItems.findIndex((item) => searchIndexText(item.gameTitle, item.title, item.summary).toLowerCase().includes(normalizedQuery));
-      if (index >= newsVisibleCount) {
-        newsVisibleCount = Math.ceil((index + 1) / 8) * 8;
-        renderNewsList();
-        cards = Array.from(document.querySelectorAll('[data-game-search]'));
-        match = cards.find((card) => String(card.dataset.gameSearch || '').toLowerCase().includes(normalizedQuery));
-      }
-    }
-    return match || null;
+  function buildSearchArticles(topics) {
+    const seen = new Set();
+    return topics.filter(isUsefulNewsTopic).map((topic) => {
+      const source = getNewsArticleSource(topic);
+      const key = source?.key || topic.id || topic.title;
+      if (seen.has(key)) return null;
+      seen.add(key);
+      return {
+        key,
+        title: topic.title,
+        summary: summarizeSupportingText(topic, topic.title),
+        sourceLabel: source?.label || '記事リンク未確認',
+        url: source?.url || '',
+        publishedLabel: formatArticleTime(topic),
+        publishedAt: safeDate(topic.publishedAt || articleSource(topic)?.publishedAt)?.getTime() || 0,
+        // Index original article text before display limits and hub exclusions.
+        // A neighbouring source in a topic cluster cannot donate its destination.
+        searchText: normalizeSearchText(searchIndexText(topic.title, topic.whatHappened, topic.summary, topic.briefSummary, ...extractGameNames(topic))),
+      };
+    }).filter(Boolean).sort((a, b) => b.publishedAt - a.publishedAt);
   }
 
-  function highlightSearchMatch(element) {
-    element.classList.add('game-search-match');
-    window.setTimeout(() => element.classList.remove('game-search-match'), 2200);
+  function normalizeSearchText(value) {
+    return String(value || '').normalize('NFKC').toLowerCase().replace(/\s+/gu, ' ').trim();
+  }
+
+  function findSearchResults(query) {
+    const terms = normalizeSearchText(query).split(' ').filter(Boolean);
+    if (!terms.length) return [];
+    return (dashboardState?.searchItems || []).filter((item) => terms.every((term) => item.searchText.includes(term)));
+  }
+
+  function setSearchStatus(message = '') {
+    if (!searchStatusElement) return;
+    const count = dashboardState?.searchItems?.length;
+    searchStatusElement.textContent = message || (searchLoadFailed
+      ? '記事を読み込めませんでした。ページを再読み込みしてください。'
+      : count === undefined
+      ? 'ゲーム記事を読み込んでいます。'
+      : `読み込んだゲーム記事 ${count}件を検索できます。表示欄に収まらない記事も対象です。`);
+  }
+
+  function renderSearchResults({ focusHeading = false } = {}) {
+    if (!searchResultsSection || !searchResultsElement || !searchQuery) return;
+    const matches = findSearchResults(searchQuery);
+    const items = matches.slice(0, searchVisibleCount);
+    const corpusCount = dashboardState?.searchItems?.length || 0;
+    searchResultsSection.hidden = false;
+    setSearchStatus(`「${searchQuery}」に一致する記事 ${matches.length}件（${items.length}件表示 / 読み込んだ${corpusCount}件を検索）`);
+    if (searchResultsHeading) searchResultsHeading.textContent = `「${searchQuery}」の記事 ${matches.length}件`;
+    searchResultsElement.innerHTML = items.length ? items.map((result) => `
+      <article class="game-news-row">
+        <div class="game-news-row-main">
+          <span class="game-news-row-game">${escapeHtml(result.sourceLabel)}</span>
+          <h3 tabindex="-1" data-game-result-title>${buildArticleTitleLink(result.title, result.url)}</h3>
+          <p>${escapeHtml(result.summary)}</p>
+        </div>
+        <div class="game-news-row-side">
+          <span class="game-card-meta">${escapeHtml(result.publishedLabel)}</span>
+        </div>
+      </article>
+    `).join('') : renderEmptyCard('一致する記事は見つかりませんでした', 'ゲーム名を短くするか、別の表記で試してください。検索対象は現在読み込んだ記事です。');
+    if (searchMoreElement) {
+      searchMoreElement.hidden = items.length >= matches.length;
+      searchMoreElement.textContent = `次の${Math.min(8, matches.length - items.length)}件を表示（残り${matches.length - items.length}件）`;
+    }
+    if (focusHeading) {
+      searchResultsHeading?.focus({ preventScroll: true });
+      searchResultsSection.scrollIntoView({ behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+    }
+  }
+
+  function clearGameSearch({ focusInput = false } = {}) {
+    searchQuery = '';
+    searchVisibleCount = 8;
+    if (searchInputElement) searchInputElement.value = '';
+    if (searchResultsSection) searchResultsSection.hidden = true;
+    if (searchResultsElement) searchResultsElement.innerHTML = '';
+    if (searchMoreElement) searchMoreElement.hidden = true;
+    setSearchStatus();
+    if (focusInput) searchInputElement?.focus();
   }
 
   function searchIndexText(...parts) {

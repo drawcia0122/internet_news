@@ -20,5 +20,6 @@ await runGuardedRefresh([
   { name: 'adult', run: () => import('./fetch-adult-trends.mjs') },
   { name: 'today-internet', run: () => import('./build-today-internet.mjs') },
   { name: 'thumbnail-repair', run: () => repairThumbnails(process.env.REPAIR_THUMBNAILS === '1' ? [] : DEFAULT_REPAIR_TARGETS) },
+  { name: 'game-sale-offers', run: async () => (await import('./fetch-game-sale-offers.mjs')).refreshGameSaleOffers() },
   { name: 'matome', run: async () => (await import('./fetch-matome-threads.mjs')).refreshMatomeThreads() },
 ]);

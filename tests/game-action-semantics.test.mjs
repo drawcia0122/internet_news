@@ -389,3 +389,83 @@ test('ambiguous general quotes cannot turn a feature into a game label or image 
   const [story] = c.buildSteamStories([topic('『Example Quest』Steam版の新情報')], new Set());
   assert.equal(story.gameTitle, 'Steam記事');
 });
+
+
+function officialOffer(overrides = {}) {
+  const article = example('471699');
+  return {
+    id: 'steam:1304930', appId: 1304930, title: 'The Outlast Trials', edition: 'base-game', store: 'Steam',
+    storeUrl: 'https://store.steampowered.com/app/1304930/?cc=jp&l=japanese',
+    regularPrice: 4500, salePrice: 450, discountPercent: 90, currency: 'JPY', country: 'JP',
+    checkedAt: '2026-10-06T03:00:00Z', freshUntil: '2026-10-06T09:00:00Z', priceValidUntil: '2026-10-07T03:00:00Z',
+    articleUrls: [article.sourceUrl], priceSource: { kind: 'steam-appdetails', url: 'https://store.steampowered.com/api/appdetails?appids=1304930&cc=jp&l=japanese' },
+    status: 'verified', ...overrides,
+  };
+}
+
+test('official per-app prices split a roundup without giving Outlast another game’s 123 yen', () => {
+  const { c, elements } = harness();
+  const article = example('471699');
+  const getting = officialOffer({ appId: 240720, id: 'steam:240720', title: 'Getting Over It with Bennett Foddy', regularPrice: 820, salePrice: 123, discountPercent: 85,
+    storeUrl: 'https://store.steampowered.com/app/240720/', priceSource: { kind: 'steam-appdetails', url: 'https://store.steampowered.com/api/appdetails?appids=240720&cc=jp' } });
+  const dashboard = c.buildDashboardState([article], [], { generatedAt: NOW, saleOffers: [officialOffer(), getting] });
+  assert.equal(dashboard.steamSales.length, 2);
+  assert.equal(dashboard.steamSales[0].title, 'The Outlast Trials');
+  assert.equal(dashboard.steamSales[0].regularPrice, 4500);
+  assert.equal(dashboard.steamSales[0].salePrice, 450);
+  assert.equal(dashboard.steamSales[1].salePrice, 123);
+  assert.equal(dashboard.steamSales[0].thumbnailUrl, null, 'roundup artwork never impersonates the specific game');
+  c.setState(dashboard); c.renderSteamSales();
+  const html = elements.get('#steam-sale-list').innerHTML;
+  assert.match(html, /通常価格 4,500円、割引後 450円/);
+  assert.match(html, /通常価格 820円、割引後 123円/);
+  assert.match(html, /90% OFF/);
+  assert.match(html, /2026\/10\/6 12:00 JST/);
+  assert.match(html, /Steam日本ストア · PC版 · 本編 · 税込/);
+  assert.doesNotMatch(html, /価格は記事内で確認/);
+});
+
+test('official offer identity and Japan currency are mandatory', () => {
+  const { c } = harness();
+  const topics = [example('471699')];
+  for (const invalid of [
+    { currency: 'USD' }, { country: 'US' }, { edition: 'deluxe' }, { appId: '1304930' },
+    { priceSource: { url: 'https://store.steampowered.com/api/appdetails?appids=240720&cc=jp' } },
+    { priceSource: { url: 'https://store.steampowered.com.evil.test/api/appdetails?appids=1304930&cc=jp' } },
+    { storeUrl: 'https://store.steampowered.com/app/240720/' },
+    { articleUrls: ['https://automaton-media.com/different-article'] }, { regularPrice: 8000 },
+    { regularPrice: null }, { salePrice: 4500 }, { salePrice: 0 }, { discountPercent: 101 },
+  ]) assert.equal(c.verifiedSaleCard(officialOffer(invalid), topics), null, JSON.stringify(invalid));
+});
+
+test('official price snapshots expire, retain their own checked timestamp and never become false urgency', () => {
+  const topics = [example('471699')];
+  const { c } = harness();
+  for (const checkedAt of ['2026-10-06T04:00:01Z', '2026-10-05T04:00:00Z', 'invalid']) {
+    assert.equal(c.verifiedSaleCard(officialOffer({ checkedAt }), topics), null, checkedAt);
+  }
+  const stale = c.verifiedSaleCard(officialOffer({ checkedAt: '2026-10-05T22:00:00Z', priceValidUntil: '2026-10-06T22:00:00Z', status: 'stale' }), topics);
+  assert.equal(stale.status, 'unknown');
+  assert.equal(stale.checkedAt, '2026-10-05T22:00:00Z');
+  assert.match(c.renderSalePrice(stale), /前回の割引価格/);
+  const ended = c.verifiedSaleCard(officialOffer({ endsAt: NOW }), topics);
+  assert.equal(ended.status, 'ended');
+  assert.match(c.renderSalePrice(ended), /前回の割引価格/);
+  const futureTopic = { ...topics[0], publishedAt: '2026-10-07T04:00:00Z' };
+  assert.equal(c.verifiedSaleCard(officialOffer(), [futureTopic]), null);
+});
+
+test('explicit roles support price pairs but rounded discounts never reconstruct original prices', () => {
+  const { c } = harness();
+  for (const text of ['通常価格2,000円 → 1,000円、50%オフ', '通常価格2,000円、セール価格1,000円、50%オフ', '通常価格2,000円→割引後1,000円、10月6日から10月8日まで']) {
+    assert.deepEqual(plain(c.extractPricePair(text)), { regularPrice: 2000, salePrice: 1000 }, text);
+  }
+  assert.deepEqual(plain(c.extractPricePair('定価820円、特価123円、85%OFF')), { regularPrice: 820, salePrice: 123 });
+  for (const text of ['85%OFFの123円', '通常価格2,000円、セール価格1,000円、80%OFF', '通常版の通常価格2,000円、デラックス版が特価1,000円', '本編の通常価格2,000円、DLC特価1,000円']) {
+    assert.deepEqual(plain(c.extractPricePair(text)), { regularPrice: null, salePrice: null }, text);
+  }
+  const sale = c.buildSteamSales([topic('『Example Quest』Steamで85%オフの123円')])[0];
+  assert.equal(sale.regularPrice, null);
+  assert.equal(sale.salePrice, 123);
+  assert.match(c.renderSalePrice(sale), /通常価格 未確認、割引後 123円/);
+});

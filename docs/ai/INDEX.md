@@ -20,3 +20,5 @@
 | Thumbnail quality | [`lessons/thumbnail-quality-pipeline.md`](lessons/thumbnail-quality-pipeline.md) | image, thumbnail, og:image, srcset, enclosure, metadata, repair | active | 2026-10-02 | 候補抽出、記事identity、repair結果のconsumer同期と継続保持 |
 | Documentation drift | [`observations/documentation-drift.md`](observations/documentation-drift.md) | README, CONTEXT, stale docs, categories | needs-verification | 2026-08-20 | 一部概要docsと現行コードの不一致観測 |
 | Deployment source of truth | [`../../README.md`](../../README.md), [`../../.github/workflows/deploy-pages.yml`](../../.github/workflows/deploy-pages.yml), [`../../.github/workflows/refresh-news.yml`](../../.github/workflows/refresh-news.yml) | GitHub Pages, schedule, auto commit, deploy | active | 2026-08-20 | deployment詳細は既存READMEとworkflowを直接参照 |
+
+| Verified game sale prices | [`decisions/verified-game-sale-prices.md`](decisions/verified-game-sale-prices.md) | game, Steam, JPY, sale, regular price, TTL, edition | active | 2026-10-06 | Official per-app JP price pairs, bounded cache and authoritative expiry |

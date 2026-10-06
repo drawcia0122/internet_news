@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=58" />
+    <link rel="stylesheet" href="./styles.css?v=59" />
     <link rel="stylesheet" href="./refresh-status.css?v=1" />
   </head>
   <body>
@@ -125,12 +125,22 @@
           </div>
           <p class="brief-description">通常価格 → 割引後の価格と割引率を作品ごとに表示。Steam日本ストアの確認日時を添え、未確認の価格は区別します。</p>
         </div>
+        <div class="game-sale-controls" id="game-sale-controls" role="group" aria-label="セールの絞り込みと並び替え">
+          <label>機種<select id="game-sale-platform" data-sale-filter="platform" aria-controls="steam-sale-list"><option value="all">すべて</option><option value="PC">PC（確認済み）</option><option value="unknown">未確認</option></select></label>
+          <label>ストア<select id="game-sale-store" data-sale-filter="store" aria-controls="steam-sale-list"><option value="all">すべて</option><option value="Steam">Steam（確認済み）</option><option value="unknown">未確認</option></select></label>
+          <label>並び順<select id="game-sale-sort" data-sale-filter="sort" aria-controls="steam-sale-list"><option value="recommended">おすすめ順</option><option value="price">価格が安い順</option><option value="discount">割引率が高い順</option><option value="ending">終了が近い順</option></select></label>
+          <label>予算<select id="game-sale-ceiling" data-sale-filter="ceiling" aria-controls="steam-sale-list"><option value="">指定なし</option><option value="1000">1,000円以下</option><option value="2000">2,000円以下</option><option value="3000">3,000円以下</option><option value="5000">5,000円以下</option></select></label>
+          <button type="button" class="game-card-link" id="game-sale-reset">条件をリセット</button>
+        </div>
+        <p class="brief-description">公式の機種・価格確認は現在 PC / Steam日本ストアのみ。記事中の機種名では判定しません。終了日時は同じ商品の公式期限を確認できた場合だけ表示します。</p>
+        <p class="game-sale-count" id="game-sale-count" role="status" aria-live="polite"></p>
         <div class="game-home-list game-home-compact-list" id="steam-sale-list">
           <article class="game-empty-card">
             <strong>セール対象のゲームを整理中です</strong>
             <p>ゲームと価格・条件の対応を確認しています。</p>
           </article>
         </div>
+        <button type="button" class="game-card-link" id="game-sale-more" hidden>セールをもっと見る</button>
       </section>
 
       <section class="topic-panel game-panel game-home-section" id="steam-section">
@@ -169,6 +179,6 @@
     <script src="./refresh-status.js?v=1"></script>
     <script src="./shared-topic-utils.js?v=14"></script>
     <script src="./home-data-utils.js?v=1"></script>
-    <script src="./game.js?v=19"></script>
+    <script src="./game.js?v=20"></script>
   </body>
 </html>

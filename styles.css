@@ -4571,7 +4571,7 @@ footer {
 }
 
 .game-home-stats {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .game-home-stat {
@@ -5163,6 +5163,17 @@ footer {
 .game-sale-controls select:focus-visible, .game-sale-controls button:focus-visible, .game-sale-card:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 .game-sale-count { font-size: .8rem; line-height: 1.7; color: var(--muted); }
 #game-sale-more { margin-top: 16px; }
+
+.game-follow-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 14px; }
+.game-follow-card { min-width: 0; padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: linear-gradient(145deg, #142344, #101a34); color: #f5f8ff; overflow-wrap: anywhere; }
+.game-follow-card h3 { margin: 0 0 12px; }
+.game-follow-card p { font-size: .84rem; line-height: 1.7; }
+.game-follow-changes { padding-left: 20px; font-size: .8rem; line-height: 1.65; }
+.game-follow-changes span { display: block; color: #b9ccec; }
+.game-follow-changes a { color: #b8d7ff; text-underline-offset: 3px; }
+.game-follow-button[aria-pressed="true"] { background: #254571; color: #f5f8ff; }
+
+.game-hero-update { grid-column: 1 / -1; margin: 0; }
 
 .game-sale-controls label,
 .game-sale-count { color: #dbe7ff; }

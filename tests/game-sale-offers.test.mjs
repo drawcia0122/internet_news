@@ -3,10 +3,11 @@ import test from 'node:test';
 import { mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
+import vm from 'node:vm';
 import { canonicalSaleArticleUrl, steamAppId, selectSaleArticles, extractArticleSteamApps, parseSteamPrice,
   collectGameSaleOffers, steamPriceSourceUrl, GAME_PRICE_FRESH_MS, GAME_PRICE_MAX_AGE_MS } from '../lib/game-sale-offers.mjs';
 import { refreshGameSaleOffers } from '../scripts/fetch-game-sale-offers.mjs';
-import { compareDatasets, REFRESH_STAGE_FILES } from '../lib/refresh-health.mjs';
+import { compareDatasets, inspectDataset, runGuardedRefresh, REFRESH_STAGE_FILES } from '../lib/refresh-health.mjs';
 
 const NOW = new Date('2026-10-06T04:00:00.000Z');
 const URL = 'https://automaton-media.com/articles/newsjp/sale-123';
@@ -23,6 +24,32 @@ const fetcher = (overrides = {}) => async (url) => response(overrides[url] ?? (u
 const offer = (now = NOW) => parseSteamPrice(app(), 1304930, { now, articles: [ARTICLE] });
 const previous = (checkedAt) => ({ items: [offer(new Date(checkedAt))], sources: [{ kind: 'article', url: URL, status: 'ok', checkedAt,
   candidates: [{ appId: 1304930, articleGameTitle: 'The Outlast Trials' }] }] });
+const singleSaleArticle = { ...ARTICLE, title: 'Steam『The Outlast Trials』90%オフの450円、10月5日から10月8日まで' };
+const singleSaleTopic = { ...topic(singleSaleArticle), sourceUrl: URL, publishedAt: ARTICLE.publishedAt };
+const unavailableSources = (payload) => payload.sources.filter((source) => source.kind === 'steam' && source.status === 'unavailable');
+const errorSources = (payload) => payload.sources.filter((source) => source.kind === 'steam' && source.status === 'error');
+const unavailablePayload = (options = {}) => collectGameSaleOffers({ topics: [singleSaleTopic], now: NOW,
+  fetchImpl: fetcher({ [steamPriceSourceUrl(1304930)]: { '1304930': { success: false } } }), ...options });
+
+// Follow the emitted payload through the unchanged production consumer: the
+// single-game article would otherwise revive an apparently active sale.
+async function articleSaleCards(payload, now) {
+  class FixedDate extends Date {
+    constructor(...args) { super(...(args.length ? args : [now])); }
+    static now() { return new Date(now).getTime(); }
+  }
+  const context = { console, URL: globalThis.URL, Intl, Date: FixedDate, HomeDataUtils: {}, document: {
+    querySelector: () => ({ innerHTML: '', querySelectorAll: () => [] }), createElement: () => ({}),
+  } };
+  context.window = context;
+  vm.createContext(context);
+  vm.runInContext(await readFile(new globalThis.URL('../shared-topic-utils.js', import.meta.url), 'utf8'), context);
+  const source = (await readFile(new globalThis.URL('../game.js', import.meta.url), 'utf8'))
+    .replace(/  init\(\)\.catch\(\(error\) => \{[\s\S]*?\n  \}\);/, '')
+    .replace(/\}\)\(\);\s*$/, 'window.buildSteamSales = buildSteamSales;})();');
+  vm.runInContext(source, context);
+  return context.buildSteamSales([singleSaleTopic], payload.items, payload.sources);
+}
 
 test('candidate articles require bounded current game-sale identity and known publishers', () => {
   const inputs = [topic(), topic({ ...ARTICLE, url: 'https://untrusted.example/sale' }), topic(ARTICLE, { category: 'books' }),
@@ -144,6 +171,140 @@ test('a new official non-sale or unavailable response never resurrects an old di
     fetchImpl: fetcher({ [steamPriceSourceUrl(1304930)]: app(1304930, { price_overview: { currency: 'JPY', initial: 450000, final: 450000, discount_percent: 0 } }) }) });
   assert.equal(ended.items[0].status, 'ended');
   assert.equal(ended.items[0].salePrice, 4500);
+});
+
+test('consecutive outages preserve recent official unavailability without renewing its timestamp', async () => {
+  let prior = await unavailablePayload();
+  assert.equal((await articleSaleCards({ items: [], sources: [] }, NOW)).length, 1, 'the fixture has an article-only sale fallback');
+  assert.equal((await articleSaleCards(prior, NOW)).length, 0);
+  for (const offset of [30 * 60 * 1000, 2 * 60 * 60 * 1000, GAME_PRICE_FRESH_MS - 1]) {
+    const now = new Date(NOW.getTime() + offset);
+    const next = await collectGameSaleOffers({ topics: [singleSaleTopic], previous: prior, now,
+      fetchImpl: async () => { throw new Error('network down'); } });
+    assert.deepEqual(next.items, []);
+    assert.equal(unavailableSources(next).length, 1);
+    assert.equal(unavailableSources(next)[0].attemptedAt, NOW.toISOString());
+    assert.deepEqual(unavailableSources(next)[0].articleUrls, [URL]);
+    assert.equal(errorSources(next).length, 1);
+    assert.equal(errorSources(next)[0].attemptedAt, now.toISOString());
+    assert.equal(next.status, 'unavailable', 'the failure must not be disguised as a successful cache hit');
+    const health = inspectDataset('game-sale-offers.json', next, { now });
+    assert.equal(health.valid, true);
+    assert.ok(health.issues.some((issue) => issue.code === 'source_failures'));
+    assert.equal((await articleSaleCards(next, now)).length, 0, 'an outage cannot resurrect the article discount');
+    prior = next;
+  }
+  const now = new Date(NOW.getTime() + GAME_PRICE_FRESH_MS);
+  const expired = await collectGameSaleOffers({ topics: [singleSaleTopic], previous: prior, now,
+    fetchImpl: async () => { throw new Error('still offline'); } });
+  assert.deepEqual(unavailableSources(expired), [], 'the six-hour limit is exclusive despite repeated failed attempts');
+  assert.equal(errorSources(expired)[0].attemptedAt, now.toISOString());
+  assert.equal((await articleSaleCards(expired, now)).length, 1);
+});
+
+test('only non-authoritative failures may carry a prior unavailable observation', async () => {
+  const prior = await unavailablePayload();
+  const now = new Date(NOW.getTime() + 30 * 60 * 1000);
+  for (const fetchImpl of [
+    async () => { throw new Error('offline'); },
+    async (url) => ({ ...response('', url), ok: false, status: 503 }),
+    async (url) => response('not JSON', url),
+    async (url) => response({ unexpected: true }, url),
+  ]) {
+    const result = await collectGameSaleOffers({ topics: [singleSaleTopic], previous: prior, now, fetchImpl });
+    assert.deepEqual(unavailableSources(result), unavailableSources(prior));
+    assert.equal(errorSources(result).length, 1);
+  }
+  for (const official of [app(), app(1304930, { price_overview: { currency: 'JPY', initial: 450000, final: 450000, discount_percent: 0 } })]) {
+    const result = await collectGameSaleOffers({ topics: [singleSaleTopic], previous: prior, now,
+      fetchImpl: fetcher({ [steamPriceSourceUrl(1304930)]: official }) });
+    assert.deepEqual(unavailableSources(result), []);
+    assert.deepEqual(errorSources(result), []);
+    assert.equal(result.items.length, 1);
+    assert.equal(result.items[0].checkedAt, now.toISOString());
+    assert.equal(result.status, 'ok');
+    const failedLater = await collectGameSaleOffers({ topics: [singleSaleTopic], previous: result,
+      now: new Date(now.getTime() + 30 * 60 * 1000), force: true, fetchImpl: async () => { throw new Error('offline again'); } });
+    assert.deepEqual(unavailableSources(failedLater), [], 'an older negative observation cannot return after a successful price');
+  }
+  const replaced = await unavailablePayload({ previous: prior, now });
+  assert.equal(unavailableSources(replaced).length, 1);
+  assert.equal(unavailableSources(replaced)[0].attemptedAt, now.toISOString(), 'a new authoritative negative response replaces the old observation');
+  assert.deepEqual(errorSources(replaced), []);
+});
+
+test('retained unavailable evidence requires exact app, Japanese API, timestamp and article provenance', async () => {
+  const prior = await unavailablePayload();
+  const original = unavailableSources(prior)[0];
+  const now = new Date(NOW.getTime() + 30 * 60 * 1000);
+  const invalid = [null, {},
+    { ...original, kind: 'article' }, { ...original, status: 'error' }, { ...original, status: 'ok' },
+    ...['1304930', 999, -1, 0, 1.5].map((appId) => ({ ...original, appId })),
+    ...[undefined, null, '', 'invalid', [NOW.toISOString()], '2026-10-06T04:30:00.001Z',
+      new Date(now.getTime() - GAME_PRICE_FRESH_MS).toISOString()].map((attemptedAt) => ({ ...original, attemptedAt })),
+    ...[steamPriceSourceUrl(999), steamPriceSourceUrl(1304930).replace('cc=jp', 'cc=us'),
+      steamPriceSourceUrl(1304930).replace('l=japanese', 'l=english'),
+      steamPriceSourceUrl(1304930).replace('https:', 'http:'),
+      steamPriceSourceUrl(1304930).replace('store.steampowered.com', 'store.steampowered.com.evil.test'),
+      steamPriceSourceUrl(1304930).replace('https://', 'https://user:pass@'),
+      `${steamPriceSourceUrl(1304930)}&appids=999`].map((url) => ({ ...original, url })),
+    ...[undefined, null, URL, {}, [], [null], [URL, null], [URL, ''], [`${URL}-different`],
+      ['https://untrusted.example/article'], [`${URL}?edition=other`], [`${URL}?utm_source=test`]]
+      .map((articleUrls) => ({ ...original, articleUrls })),
+  ];
+  for (const source of invalid) {
+    const result = await collectGameSaleOffers({ topics: [singleSaleTopic], now,
+      previous: { ...prior, sources: [prior.sources[0], source] }, fetchImpl: async () => { throw new Error('offline'); } });
+    assert.deepEqual(unavailableSources(result), [], JSON.stringify(source));
+    assert.equal(errorSources(result).length, 1);
+  }
+  const zeroAge = await collectGameSaleOffers({ topics: [singleSaleTopic], previous: prior, now: NOW,
+    fetchImpl: async () => { throw new Error('offline'); } });
+  assert.equal(unavailableSources(zeroAge).length, 1, 'the zero-age boundary is inclusive');
+});
+
+test('retention never expands an unavailable observation to newly associated articles', async () => {
+  const secondArticle = { ...singleSaleArticle, url: `${URL}-second`, topicId: 'second' };
+  const prior = await unavailablePayload();
+  const now = new Date(NOW.getTime() + 30 * 60 * 1000);
+  const result = await collectGameSaleOffers({ topics: [singleSaleTopic, topic(secondArticle)], previous: prior, now,
+    fetchImpl: async (url) => {
+      if (url.includes('/api/')) throw new Error('offline');
+      return response(html(paragraph(), secondArticle), url);
+    } });
+  assert.deepEqual(unavailableSources(result)[0].articleUrls, [URL]);
+  assert.deepEqual(errorSources(result)[0].articleUrls, [URL, secondArticle.url]);
+  const onlyNewArticle = await collectGameSaleOffers({ topics: [topic(secondArticle)], previous: result, now,
+    fetchImpl: async () => { throw new Error('offline'); } });
+  assert.deepEqual(unavailableSources(onlyNewArticle), [], 'a different current article has no prior negative provenance');
+});
+
+test('guarded refresh publishes retained unavailability and a truthful warning while later stages continue', async (t) => {
+  const directory = await mkdtemp(join(tmpdir(), 'game-price-negative-'));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const inputPath = join(directory, 'trend-topics.json');
+  const outputPath = join(directory, 'game-sale-offers.json');
+  const now = new Date(NOW.getTime() + 30 * 60 * 1000);
+  await writeFile(inputPath, JSON.stringify({ generatedAt: now.toISOString(), items: [singleSaleTopic] }));
+  await writeFile(outputPath, JSON.stringify(await unavailablePayload()));
+  let laterStageRan = false;
+  const report = await runGuardedRefresh([
+    { name: 'game-sale-offers', run: () => refreshGameSaleOffers({ inputPath, outputPath, now,
+      fetchImpl: async () => { throw new Error('network down'); } }) },
+    { name: 'matome', run: async () => {
+      laterStageRan = true;
+      await writeFile(join(directory, 'matome-threads.json'), JSON.stringify({ generatedAt: now.toISOString(), items: [] }));
+    } },
+  ], { dataDirectory: directory, now: () => now, logger: { log() {}, warn() {}, error() {} } });
+  const published = JSON.parse(await readFile(outputPath, 'utf8'));
+  assert.equal(report.stages[0].status, 'ok');
+  assert.equal(report.status, 'warning');
+  assert.equal(laterStageRan, true);
+  assert.equal(published.generatedAt, now.toISOString());
+  assert.equal(unavailableSources(published)[0].attemptedAt, NOW.toISOString());
+  assert.equal(errorSources(published)[0].attemptedAt, now.toISOString());
+  assert.ok(report.datasets['game-sale-offers.json'].issues.some((issue) => issue.code === 'source_failures'));
+  assert.equal((await articleSaleCards(published, now)).length, 0);
 });
 
 test('tampered cached offers cannot keep invalid amounts or non-official price origins', async () => {

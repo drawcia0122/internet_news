@@ -104,7 +104,7 @@ test('Classic list preparation restores cached and generated records without cha
 test('both Classic list entry points load the section helper before shared utilities', () => {
   for (const name of ['index.html', 'news.html']) {
     const html = fs.readFileSync(new URL(`../${name}`, import.meta.url), 'utf8');
-    assert.ok(html.indexOf('article-category-quality.js?v=3') < html.indexOf('shared-topic-utils.js?v=18'));
+    assert.ok(html.indexOf('article-category-quality.js?v=3') < html.indexOf('shared-topic-utils.js?v=19'));
     assert.ok(html.includes('article-category-quality.js?v=3'));
   }
 });

@@ -10,6 +10,8 @@ import { repairItemThumbnail, restoreArchivedThumbnails } from "./repair-thumbna
 
 const {
   articleIdentityKeys,
+  buildHeadlineInsight,
+  repairHeadlineInsight,
   canonicalArticleUrl: canonicalSummaryArticleUrl,
   hasSummaryTitleAlignment: hasArticleSummaryAlignment,
   isInvalidArticleSummary,
@@ -472,7 +474,7 @@ function normalizeStoredTopic(item, fallbackCapturedAt = null) {
     })),
     briefSummary: normalizeAlignedBriefSummary(item.briefSummary, item.title) || buildStoredBriefSummary(item),
     summary: normalizeAlignedSummary(item.summary, item.title),
-    whatHappened: normalizeSummaryText(item.whatHappened) || insights.whatHappened,
+    whatHappened: repairHeadlineInsight(item.title, normalizeSummaryText(item.whatHappened)) || insights.whatHappened,
     whyHot: normalizeSummaryText(item.whyHot) || insights.whyHot,
     importantPoint: normalizeSummaryText(item.importantPoint) || insights.importantPoint,
     futureOutlook: normalizeSummaryText(item.futureOutlook) || insights.futureOutlook,
@@ -1149,9 +1151,7 @@ function topicText(item) {
 }
 
 function buildWhatHappened(item) {
-  const title = String(item.title ?? "").replace(/^【[^】]+】\s*/u, "").trim();
-  if (!title) return "新しい動きが出ています。";
-  return trimInsightText(title.replace(/[。！？!?].*$/u, ""), 46) || "新しい動きが出ています。";
+  return buildHeadlineInsight(item.title);
 }
 
 function buildWhyHot(item) {

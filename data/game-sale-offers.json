@@ -1,217 +1,58 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T07:17:18.389Z",
+  "generatedAt": "2026-10-07T14:39:04.788Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
   "items": [
     {
-      "id": "steam:960910",
-      "appId": 960910,
-      "title": "Heavy Rain",
+      "id": "steam:648100",
+      "appId": 648100,
+      "title": "レイジングループ",
       "edition": "base-game",
       "store": "Steam",
       "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/960910/?cc=jp&l=japanese",
-      "regularPrice": 2300,
-      "salePrice": 115,
-      "discountPercent": 95,
+      "storeUrl": "https://store.steampowered.com/app/648100/?cc=jp&l=japanese",
+      "regularPrice": 3056,
+      "salePrice": 1222,
+      "discountPercent": 60,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
+      "checkedAt": "2026-10-07T14:39:04.788Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A960910%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/960910/?cc=jp&l=japanese",
-        "appId": 960910,
-        "packageId": 445494,
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A648100%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/648100/?cc=jp&l=japanese",
+        "appId": 648100,
+        "packageId": 182208,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 2300,
-        "salePrice": 115,
-        "discountPercent": 95,
+        "checkedAt": "2026-10-07T14:39:04.788Z",
+        "regularPrice": 3056,
+        "salePrice": 1222,
+        "discountPercent": 60,
         "currency": "JPY",
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
+      "freshUntil": "2026-10-07T20:39:04.788Z",
+      "priceValidUntil": "2026-10-08T14:39:04.788Z",
       "status": "verified",
       "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=960910&cc=jp&l=japanese",
+        "url": "https://store.steampowered.com/api/appdetails?appids=648100&cc=jp&l=japanese",
         "kind": "steam-appdetails"
       },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960910/header.jpg?t=1675271942",
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648100/header_japanese.jpg?t=1726532443",
       "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/2610062t"
+        "https://news.denfaminicogamer.jp/news/2610072y"
       ],
       "articles": [
         {
-          "url": "https://news.denfaminicogamer.jp/news/2610062t",
-          "title": "【115円】『ヘビーレイン』がSteamで95%オフとなるセール中。4人それぞれの視点から「折り紙殺人鬼」をめぐる事件を追うサスペンスゲームが安すぎる",
-          "publishedAt": "2026-10-06T09:25:50.000Z",
-          "topicId": "auto-games-115円-ヘビーレイン-がsteamで95-オフとなるセール中-4人それぞれの視点から-折り紙殺人鬼-をめぐる事件を追うサスペンスゲームが安すぎる-news.denfaminicogamer.jp/news/2610062t",
-          "gameTitle": "Heavy Rain"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 960910
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2020-06-18",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=960910&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 960910
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-4379139488519954534",
-          "date": "2020-07-23T08:38:46.000Z",
-          "title": "Heavy Rain update: improvement of Simplified Chinese",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:960910",
-            "url": "https://steamcommunity.com/ogg/960910/announcements/detail/4379139488519954534",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:1222140",
-      "appId": 1222140,
-      "title": "Detroit: Become Human",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/1222140/?cc=jp&l=japanese",
-      "regularPrice": 4500,
-      "salePrice": 450,
-      "discountPercent": 90,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1222140%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/1222140/?cc=jp&l=japanese",
-        "appId": 1222140,
-        "packageId": 423337,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 4500,
-        "salePrice": 450,
-        "discountPercent": 90,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1222140&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/header.jpg?t=1667468479",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/2610062t"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/2610062t",
-          "title": "【115円】『ヘビーレイン』がSteamで95%オフとなるセール中。4人それぞれの視点から「折り紙殺人鬼」をめぐる事件を追うサスペンスゲームが安すぎる",
-          "publishedAt": "2026-10-06T09:25:50.000Z",
-          "topicId": "auto-games-115円-ヘビーレイン-がsteamで95-オフとなるセール中-4人それぞれの視点から-折り紙殺人鬼-をめぐる事件を追うサスペンスゲームが安すぎる-news.denfaminicogamer.jp/news/2610062t",
-          "gameTitle": "デトロイト ビカム ヒューマン"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1222140
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2020-06-18",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=1222140&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:1304930",
-      "appId": 1304930,
-      "title": "The Outlast Trials",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/1304930/?cc=jp&l=japanese",
-      "regularPrice": 4500,
-      "salePrice": 450,
-      "discountPercent": 90,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1304930%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/1304930/?cc=jp&l=japanese",
-        "appId": 1304930,
-        "packageId": 984895,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 4500,
-        "salePrice": 450,
-        "discountPercent": 90,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1304930&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1304930/65fbdba4ad0f1a7ed7a362a086c87042fa40fadc/header_alt_assets_3.jpg?t=1784123708",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "The Outlast Trials"
+          "url": "https://news.denfaminicogamer.jp/news/2610072y",
+          "title": "【怪作】呪い、憑き神、因習、異能力、あらゆる要素のごった煮ノベルゲーム『デスマッチラブコメ！』Steamにて40％オフのセール開催中。3000円→「1800円」で購入できる",
+          "publishedAt": "2026-10-07T09:40:30.000Z",
+          "topicId": "auto-games-怪作-呪い-憑き神-因習-異能力-あらゆる要素のごった煮ノベルゲーム-デスマッチラブコメ-steamにて40-オフのセール開催中-3000円-1800円-で購入-news.denfaminicogamer.jp/news/2610072y",
+          "gameTitle": "デスマッチラブコメ！"
         }
       ],
       "featuredInArticle": true,
@@ -219,74 +60,69 @@
         {
           "identity": {
             "kind": "steam",
-            "appId": 1304930
+            "appId": 648100
           },
           "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2024-03-05",
+          "checkedAt": "2026-10-07T14:39:04.788Z",
+          "freshUntil": "2026-10-07T20:39:04.788Z",
+          "date": "2017-08-23",
           "status": "released",
           "source": {
             "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=1304930&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1304930
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-701027957162901761",
-          "date": "2026-09-17T16:02:48.000Z",
-          "title": "Hotfix Patch Notes | Chemical Leak - Sept. 17",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:1304930",
-            "url": "https://steamcommunity.com/ogg/1304930/announcements/detail/701027957162901761",
+            "url": "https://store.steampowered.com/api/appdetails?appids=648100&cc=jp&l=japanese",
             "verified": true
           }
         }
       ]
     },
     {
-      "id": "steam:1446780",
-      "appId": 1446780,
-      "title": "モンスターハンターライズ",
+      "id": "steam:281990",
+      "appId": 281990,
+      "title": "Stellaris",
       "edition": "base-game",
       "store": "Steam",
       "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/1446780/?cc=jp&l=japanese",
-      "regularPrice": 3990,
-      "salePrice": 399,
-      "discountPercent": 90,
+      "storeUrl": "https://store.steampowered.com/app/281990/?cc=jp&l=japanese",
+      "regularPrice": 6990,
+      "salePrice": 2097,
+      "discountPercent": 70,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": null,
-      "deadlineSource": null,
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
+      "checkedAt": "2026-10-07T14:39:04.788Z",
+      "endsAt": "2026-10-08T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A281990%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/281990/?cc=jp&l=japanese",
+        "appId": 281990,
+        "packageId": 38760,
+        "discountEndDate": 1791478800,
+        "checkedAt": "2026-10-07T14:39:04.788Z",
+        "regularPrice": 6990,
+        "salePrice": 2097,
+        "discountPercent": 70,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-07T20:39:04.788Z",
+      "priceValidUntil": "2026-10-08T14:39:04.788Z",
       "status": "verified",
       "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1446780&cc=jp&l=japanese",
+        "url": "https://store.steampowered.com/api/appdetails?appids=281990&cc=jp&l=japanese",
         "kind": "steam-appdetails"
       },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1446780/header.jpg?t=1768870444",
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/281990/cce5e529a4eb8f3eab9df07733e93511072d5f0e/header_alt_assets_14_japanese.jpg?t=1790873973",
       "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
+        "https://news.denfaminicogamer.jp/news/2610072h"
       ],
       "articles": [
         {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "モンスターハンターライズ"
+          "url": "https://news.denfaminicogamer.jp/news/2610072h",
+          "title": "宇宙のロマンを楽しみ尽くせる国家運営4Xゲーム『Stellaris』がSteamで70%オフ。DLC『BioGenesis』『Shadows of the Shroud』も過去最安値の40%オフに",
+          "publishedAt": "2026-10-07T08:50:06.000Z",
+          "topicId": "auto-games-宇宙のロマンを楽しみ尽くせる国家運営4xゲーム-stellaris-がsteamで70-オフ-dlc-biogenesis-shadows-of-the-shr-news.denfaminicogamer.jp/news/2610072h",
+          "gameTitle": "Stellaris"
         }
       ],
       "featuredInArticle": true,
@@ -294,1429 +130,105 @@
         {
           "identity": {
             "kind": "steam",
-            "appId": 1446780
+            "appId": 281990
           },
           "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2022-01-12",
+          "checkedAt": "2026-10-07T14:39:04.788Z",
+          "freshUntil": "2026-10-07T20:39:04.788Z",
+          "date": "2016-05-09",
           "status": "released",
           "source": {
             "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=1446780&cc=jp&l=japanese",
+            "url": "https://store.steampowered.com/api/appdetails?appids=281990&cc=jp&l=japanese",
             "verified": true
           }
         }
       ]
     },
     {
-      "id": "steam:240720",
-      "appId": 240720,
-      "title": "Getting Over It with Bennett Foddy",
+      "id": "steam:1817070",
+      "appId": 1817070,
+      "title": "Marvel’s Spider-Man Remastered",
       "edition": "base-game",
       "store": "Steam",
       "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/240720/?cc=jp&l=japanese",
-      "regularPrice": 820,
-      "salePrice": 123,
-      "discountPercent": 85,
+      "storeUrl": "https://store.steampowered.com/app/1817070/?cc=jp&l=japanese",
+      "regularPrice": 7590,
+      "salePrice": 3036,
+      "discountPercent": 60,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
+      "checkedAt": "2026-10-07T14:39:04.788Z",
       "endsAt": "2026-10-08T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A240720%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/240720/?cc=jp&l=japanese",
-        "appId": 240720,
-        "packageId": 201019,
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1817070%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1817070/?cc=jp&l=japanese",
+        "appId": 1817070,
+        "packageId": 653391,
         "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 820,
-        "salePrice": 123,
-        "discountPercent": 85,
+        "checkedAt": "2026-10-07T14:39:04.788Z",
+        "regularPrice": 7590,
+        "salePrice": 3036,
+        "discountPercent": 60,
         "currency": "JPY",
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
+      "freshUntil": "2026-10-07T20:39:04.788Z",
+      "priceValidUntil": "2026-10-08T14:39:04.788Z",
       "status": "verified",
       "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=240720&cc=jp&l=japanese",
+        "url": "https://store.steampowered.com/api/appdetails?appids=1817070&cc=jp&l=japanese",
         "kind": "steam-appdetails"
       },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/240720/header.jpg?t=1666987027",
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/header_japanese.jpg?t=1787838689",
       "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
+        "https://news.denfaminicogamer.jp/news/2610072f"
       ],
       "articles": [
         {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "Getting Over It with Bennett Foddy"
+          "url": "https://news.denfaminicogamer.jp/news/2610072f",
+          "title": "【60％オフ】『Marvel’s Spider-Man Remastered』がSteamにて「60％オフ」で購入できるセール開催中。「7590円→3036円」とお得に",
+          "publishedAt": "2026-10-07T07:44:25.000Z",
+          "topicId": "auto-games-60-オフ-marvel-s-spider-man-remastered-がsteamにて-60-オフ-で購入できるセール開催中-7590円-3036円-とお得-news.denfaminicogamer.jp/news/2610072f",
+          "gameTitle": "『スパイダーマン』"
         }
       ],
-      "featuredInArticle": true,
+      "featuredInArticle": false,
       "followObservations": [
         {
           "identity": {
             "kind": "steam",
-            "appId": 240720
+            "appId": 1817070
           },
           "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2017-12-06",
+          "checkedAt": "2026-10-07T14:39:04.788Z",
+          "freshUntil": "2026-10-07T20:39:04.788Z",
+          "date": "2022-08-12",
           "status": "released",
           "source": {
             "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=240720&cc=jp&l=japanese",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1817070&cc=jp&l=japanese",
             "verified": true
           }
         },
         {
           "identity": {
             "kind": "steam",
-            "appId": 240720
+            "appId": 1817070
           },
           "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-4330775883764720317",
-          "date": "2022-01-29T21:38:22.000Z",
-          "title": "Minor bugfix for M1 macs",
+          "checkedAt": "2026-10-07T14:39:04.788Z",
+          "freshUntil": "2026-10-07T20:39:04.788Z",
+          "eventId": "steam-announcement-685257749622168036",
+          "date": "2026-07-08T09:10:29.000Z",
+          "title": "Improved DualSense Edge support for Marvel's Spider-Man Remastered",
           "eventType": "release-notes",
           "source": {
             "kind": "official-game",
-            "gameKey": "steam:240720",
-            "url": "https://steamcommunity.com/ogg/240720/announcements/detail/4330775883764720317",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:543260",
-      "appId": 543260,
-      "title": "ワンダーボーイ：ドラゴンの罠",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/543260/?cc=jp&l=japanese",
-      "regularPrice": 1980,
-      "salePrice": 396,
-      "discountPercent": 80,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": null,
-      "deadlineSource": null,
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=543260&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/543260/header.jpg?t=1763716917",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "ワンダーボーイ：ドラゴンの罠"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 543260
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2017-06-08",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=543260&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 543260
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-1690437771463868196",
-          "date": "2018-12-21T11:57:08.000Z",
-          "title": "Now available Traditional Chinese! (Taiwan, Hong Kong)",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:543260",
-            "url": "https://steamcommunity.com/ogg/543260/announcements/detail/1690437771463868196",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:368340",
-      "appId": 368340,
-      "title": "CrossCode",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/368340/?cc=jp&l=japanese",
-      "regularPrice": 1980,
-      "salePrice": 396,
-      "discountPercent": 80,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A368340%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/368340/?cc=jp&l=japanese",
-        "appId": 368340,
-        "packageId": 66912,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 1980,
-        "salePrice": 396,
-        "discountPercent": 80,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=368340&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/368340/header.jpg?t=1788522282",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "CrossCode"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 368340
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2018-09-20",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=368340&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:1282730",
-      "appId": 1282730,
-      "title": "Loop Hero",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/1282730/?cc=jp&l=japanese",
-      "regularPrice": 1700,
-      "salePrice": 340,
-      "discountPercent": 80,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1282730%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/1282730/?cc=jp&l=japanese",
-        "appId": 1282730,
-        "packageId": 446993,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 1700,
-        "salePrice": 340,
-        "discountPercent": 80,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1282730&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1282730/header.jpg?t=1751489185",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "Loop Hero"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1282730
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2021-03-04",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=1282730&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1282730
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-3338869387046918890",
-          "date": "2022-06-06T16:36:15.000Z",
-          "title": "Small update v1.155",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:1282730",
-            "url": "https://steamcommunity.com/ogg/1282730/announcements/detail/3338869387046918890",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:1722020",
-      "appId": 1722020,
-      "title": "古銭プッシャーフレンズ",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/1722020/?cc=jp&l=japanese",
-      "regularPrice": 470,
-      "salePrice": 94,
-      "discountPercent": 80,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": null,
-      "deadlineSource": null,
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1722020&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1722020/header.jpg?t=1784738213",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "古銭プッシャーフレンズ"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1722020
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2021-10-07",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=1722020&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1722020
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-521977529734530772",
-          "date": "2025-10-04T10:19:52.000Z",
-          "title": "Applied Security Patch",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:1722020",
-            "url": "https://steamcommunity.com/ogg/1722020/announcements/detail/521977529734530772",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:555220",
-      "appId": 555220,
-      "title": "Detention",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/555220/?cc=jp&l=japanese",
-      "regularPrice": 1180,
-      "salePrice": 236,
-      "discountPercent": 80,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A555220%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/555220/?cc=jp&l=japanese",
-        "appId": 555220,
-        "packageId": 138475,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 1180,
-        "salePrice": 236,
-        "discountPercent": 80,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=555220&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/555220/header.jpg?t=1778126197",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "Detention"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 555220
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2017-01-12",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=555220&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 555220
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-1460716231301561223",
-          "date": "2017-10-27T04:57:50.000Z",
-          "title": "Japanese version released. Buy Detention now with 50% off!",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:555220",
-            "url": "https://steamcommunity.com/ogg/555220/announcements/detail/1460716231301561223",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:1939970",
-      "appId": 1939970,
-      "title": "Nobody Wants to Die",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/1939970/?cc=jp&l=japanese",
-      "regularPrice": 2989,
-      "salePrice": 298,
-      "discountPercent": 90,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1939970%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/1939970/?cc=jp&l=japanese",
-        "appId": 1939970,
-        "packageId": 698950,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 2989,
-        "salePrice": 298,
-        "discountPercent": 90,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1939970&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1939970/6190f0d2c8d27ccedf921e70b373a8a82c7a4ec8/header.jpg?t=1780926708",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "Nobody Wants to Die"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1939970
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2024-07-17",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=1939970&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:564230",
-      "appId": 564230,
-      "title": "Fire Pro Wrestling World",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/564230/?cc=jp&l=japanese",
-      "regularPrice": 3240,
-      "salePrice": 648,
-      "discountPercent": 80,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A564230%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/564230/?cc=jp&l=japanese",
-        "appId": 564230,
-        "packageId": 142039,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 3240,
-        "salePrice": 648,
-        "discountPercent": 80,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=564230&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/564230/header.jpg?t=1715700536",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "Fire Pro Wrestling World"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 564230
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2017-12-18",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=564230&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 564230
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-502835327731236881",
-          "date": "2025-09-03T06:57:45.000Z",
-          "title": "Steam - Ver.2.16.3",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:564230",
-            "url": "https://steamcommunity.com/ogg/564230/announcements/detail/502835327731236881",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:2304440",
-      "appId": 2304440,
-      "title": "Creatures of Ava",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/2304440/?cc=jp&l=japanese",
-      "regularPrice": 2800,
-      "salePrice": 560,
-      "discountPercent": 80,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A2304440%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/2304440/?cc=jp&l=japanese",
-        "appId": 2304440,
-        "packageId": 827212,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 2800,
-        "salePrice": 560,
-        "discountPercent": 80,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=2304440&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2304440/header.jpg?t=1777545686",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "Creatures of Ava"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 2304440
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2024-08-07",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=2304440&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 2304440
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-4681018807419399436",
-          "date": "2024-10-01T14:42:42.000Z",
-          "title": "Creatures of Ava | Free Collectibles Update",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:2304440",
-            "url": "https://steamcommunity.com/ogg/2304440/announcements/detail/4681018807419399436",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:990080",
-      "appId": 990080,
-      "title": "ホグワーツ・レガシー",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/990080/?cc=jp&l=japanese",
-      "regularPrice": 8778,
-      "salePrice": 877,
-      "discountPercent": 90,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A990080%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/990080/?cc=jp&l=japanese",
-        "appId": 990080,
-        "packageId": 822363,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 8778,
-        "salePrice": 877,
-        "discountPercent": 90,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=990080&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/be2971b1023bccb04f993887d70ef4d2060262cf/header.jpg?t=1790708992",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "ホグワーツ・レガシー"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 990080
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2023-02-10",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=990080&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:499180",
-      "appId": 499180,
-      "title": "Braid, Anniversary Edition",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/499180/?cc=jp&l=japanese",
-      "regularPrice": 2300,
-      "salePrice": 230,
-      "discountPercent": 90,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A499180%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/499180/?cc=jp&l=japanese",
-        "appId": 499180,
-        "packageId": 114223,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 2300,
-        "salePrice": 230,
-        "discountPercent": 90,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=499180&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/499180/header.jpg?t=1730925816",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "Braid, Anniversary Edition"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 499180
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2024-05-14",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=499180&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 499180
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-539969101030752748",
-          "date": "2025-01-15T21:35:47.000Z",
-          "title": "Fixed crash on macOS",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:499180",
-            "url": "https://steamcommunity.com/ogg/499180/announcements/detail/539969101030752748",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:233290",
-      "appId": 233290,
-      "title": "Murdered: Soul Suspect",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/233290/?cc=jp&l=japanese",
-      "regularPrice": 4985,
-      "salePrice": 498,
-      "discountPercent": 90,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": null,
-      "deadlineSource": null,
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=233290&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233290/header.jpg?t=1779983016",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "Murdered: Soul Suspect"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 233290
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2014-08-21",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=233290&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:210970",
-      "appId": 210970,
-      "title": "The Witness",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/210970/?cc=jp&l=japanese",
-      "regularPrice": 3980,
-      "salePrice": 398,
-      "discountPercent": 90,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A210970%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/210970/?cc=jp&l=japanese",
-        "appId": 210970,
-        "packageId": 88364,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 3980,
-        "salePrice": 398,
-        "discountPercent": 90,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=210970&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/210970/header.jpg?t=1720810823",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "The Witness"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 210970
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2016-01-26",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=210970&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 210970
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-3681175932887310904",
-          "date": "2023-06-01T19:11:51.000Z",
-          "title": "Another Update for the macOS version",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:210970",
-            "url": "https://steamcommunity.com/ogg/210970/announcements/detail/3681175932887310904",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:934700",
-      "appId": 934700,
-      "title": "Dead Island 2",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/934700/?cc=jp&l=japanese",
-      "regularPrice": 5889,
-      "salePrice": 588,
-      "discountPercent": 90,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-08T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A934700%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/934700/?cc=jp&l=japanese",
-        "appId": 934700,
-        "packageId": 303210,
-        "discountEndDate": 1791478800,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 5889,
-        "salePrice": 588,
-        "discountPercent": 90,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=934700&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/934700/header.jpg?t=1790170542",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "Dead Island 2"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 934700
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2024-04-22",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=934700&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:1488490",
-      "appId": 1488490,
-      "title": "Nivalis Nights",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/1488490/?cc=jp&l=japanese",
-      "regularPrice": 3150,
-      "salePrice": 2835,
-      "discountPercent": 10,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-13T17:00:49.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1488490%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/1488490/?cc=jp&l=japanese",
-        "appId": 1488490,
-        "packageId": 524630,
-        "discountEndDate": 1791910849,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 3150,
-        "salePrice": 2835,
-        "discountPercent": 10,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1488490&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1488490/28e511ff46672f9649744961fd6edbf19df75265/header.jpg?t=1790855080",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "Nivalis Nights"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1488490
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2026-09-29",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=1488490&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:3917700",
-      "appId": 3917700,
-      "title": "Dicevaders",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/3917700/?cc=jp&l=japanese",
-      "regularPrice": 1800,
-      "salePrice": 1620,
-      "discountPercent": 10,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-13T17:00:56.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A3917700%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/3917700/?cc=jp&l=japanese",
-        "appId": 3917700,
-        "packageId": 1376673,
-        "discountEndDate": 1791910856,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 1800,
-        "salePrice": 1620,
-        "discountPercent": 10,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=3917700&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3917700/c17c7fcf2494a8e006d4f51809914d4f1ffb09aa/header_alt_assets_2.jpg?t=1791215806",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "Dicevaders"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 3917700
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2026-09-29",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=3917700&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 3917700
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-678511227668791312",
-          "date": "2026-09-30T00:38:41.000Z",
-          "title": "1.0 Hotfix 1",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:3917700",
-            "url": "https://steamcommunity.com/ogg/3917700/announcements/detail/678511227668791312",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:2900640",
-      "appId": 2900640,
-      "title": "トーエム2",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/2900640/?cc=jp&l=japanese",
-      "regularPrice": 2300,
-      "salePrice": 1955,
-      "discountPercent": 15,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": null,
-      "deadlineSource": null,
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=2900640&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2900640/499ae31f4d74c4c41e61058259fca32ccd73c93c/header.jpg?t=1790697404",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "トーエム2"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 2900640
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2026-09-29",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=2900640&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 2900640
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "eventId": "steam-announcement-714540024688804649",
-          "date": "2026-10-01T20:32:14.000Z",
-          "title": "MacOS Hotfix",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:2900640",
-            "url": "https://steamcommunity.com/ogg/2900640/announcements/detail/714540024688804649",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:4229200",
-      "appId": 4229200,
-      "title": "むちむちポーク！＆ピンクスゥイーツ Boosted",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/4229200/?cc=jp&l=japanese",
-      "regularPrice": 5390,
-      "salePrice": 4851,
-      "discountPercent": 10,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "endsAt": "2026-10-15T17:00:11.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A4229200%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/4229200/?cc=jp&l=japanese",
-        "appId": 4229200,
-        "packageId": 1480664,
-        "discountEndDate": 1792083611,
-        "checkedAt": "2026-10-07T07:17:18.389Z",
-        "regularPrice": 5390,
-        "salePrice": 4851,
-        "discountPercent": 10,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-07T13:17:18.389Z",
-      "priceValidUntil": "2026-10-08T07:17:18.389Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=4229200&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4229200/e25a3e232ef0e72e61368dea29b623f20ac72968/header_japanese.jpg?t=1790859668",
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "articles": [
-        {
-          "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "title": "『モンスターハンターライズ』が90％オフの398円。『The Outlast Trials』も90％オフで450円。“壺おじ”こと『Getting Over It』はたった123円。今週の高割引率PCゲーム",
-          "publishedAt": "2026-10-04T08:55:58.000Z",
-          "topicId": "auto-games-モンスターハンターライズ-が90-オフの398円-the-outlast-trials-も90-オフで450円-壺おじ-こと-getting-over-it-は-automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-          "gameTitle": "むちむちポーク！＆ピンクスゥイーツ Boosted"
-        }
-      ],
-      "featuredInArticle": false,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 4229200
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-07T07:17:18.389Z",
-          "freshUntil": "2026-10-07T13:17:18.389Z",
-          "date": "2026-10-01",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=4229200&cc=jp&l=japanese",
+            "gameKey": "steam:1817070",
+            "url": "https://steamcommunity.com/ogg/1817070/announcements/detail/685257749622168036",
             "verified": true
           }
         }
@@ -1726,393 +238,78 @@
   "sources": [
     {
       "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/2610062t",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
+      "url": "https://news.denfaminicogamer.jp/news/2610072y",
+      "checkedAt": "2026-10-07T14:39:04.788Z",
       "status": "ok",
       "candidates": [
         {
-          "appId": 960910,
-          "articleGameTitle": "Heavy Rain"
-        },
-        {
-          "appId": 1222140,
-          "articleGameTitle": "デトロイト ビカム ヒューマン"
+          "appId": 648100,
+          "articleGameTitle": "デスマッチラブコメ！"
         }
       ]
     },
     {
       "kind": "article",
-      "url": "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
+      "url": "https://news.denfaminicogamer.jp/news/2610072h",
+      "checkedAt": "2026-10-07T14:39:04.788Z",
       "status": "ok",
       "candidates": [
         {
-          "appId": 1304930,
-          "articleGameTitle": "The Outlast Trials"
-        },
+          "appId": 281990,
+          "articleGameTitle": "Stellaris"
+        }
+      ]
+    },
+    {
+      "kind": "article",
+      "url": "https://news.denfaminicogamer.jp/news/2610072f",
+      "checkedAt": "2026-10-07T14:39:04.788Z",
+      "status": "ok",
+      "candidates": [
         {
-          "appId": 1446780,
-          "articleGameTitle": "モンスターハンターライズ"
-        },
-        {
-          "appId": 240720,
-          "articleGameTitle": "Getting Over It with Bennett Foddy"
-        },
-        {
-          "appId": 543260,
-          "articleGameTitle": "ワンダーボーイ：ドラゴンの罠"
-        },
-        {
-          "appId": 368340,
-          "articleGameTitle": "CrossCode"
-        },
-        {
-          "appId": 1282730,
-          "articleGameTitle": "Loop Hero"
-        },
-        {
-          "appId": 1722020,
-          "articleGameTitle": "古銭プッシャーフレンズ"
-        },
-        {
-          "appId": 555220,
-          "articleGameTitle": "Detention"
-        },
-        {
-          "appId": 1939970,
-          "articleGameTitle": "Nobody Wants to Die"
-        },
-        {
-          "appId": 564230,
-          "articleGameTitle": "Fire Pro Wrestling World"
-        },
-        {
-          "appId": 2304440,
-          "articleGameTitle": "Creatures of Ava"
-        },
-        {
-          "appId": 990080,
-          "articleGameTitle": "ホグワーツ・レガシー"
-        },
-        {
-          "appId": 499180,
-          "articleGameTitle": "Braid, Anniversary Edition"
-        },
-        {
-          "appId": 233290,
-          "articleGameTitle": "Murdered: Soul Suspect"
-        },
-        {
-          "appId": 210970,
-          "articleGameTitle": "The Witness"
-        },
-        {
-          "appId": 934700,
-          "articleGameTitle": "Dead Island 2"
-        },
-        {
-          "appId": 1488490,
-          "articleGameTitle": "Nivalis Nights"
-        },
-        {
-          "appId": 3917700,
-          "articleGameTitle": "Dicevaders"
-        },
-        {
-          "appId": 2900640,
-          "articleGameTitle": "トーエム2"
-        },
-        {
-          "appId": 4229200,
-          "articleGameTitle": "むちむちポーク！＆ピンクスゥイーツ Boosted"
+          "appId": 1817070,
+          "articleGameTitle": "『スパイダーマン』"
         }
       ]
     },
     {
       "kind": "steam",
-      "appId": 960910,
-      "url": "https://store.steampowered.com/api/appdetails?appids=960910&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
+      "appId": 648100,
+      "url": "https://store.steampowered.com/api/appdetails?appids=648100&cc=jp&l=japanese",
+      "checkedAt": "2026-10-07T14:39:04.788Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/2610062t"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 1222140,
-      "url": "https://store.steampowered.com/api/appdetails?appids=1222140&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/2610062t"
+        "https://news.denfaminicogamer.jp/news/2610072y"
       ],
       "deadlineStatus": "verified",
       "followUpdateStatus": "none"
     },
     {
       "kind": "steam",
-      "appId": 1304930,
-      "url": "https://store.steampowered.com/api/appdetails?appids=1304930&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
+      "appId": 281990,
+      "url": "https://store.steampowered.com/api/appdetails?appids=281990&cc=jp&l=japanese",
+      "checkedAt": "2026-10-07T14:39:04.788Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 1446780,
-      "url": "https://store.steampowered.com/api/appdetails?appids=1446780&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
-    },
-    {
-      "kind": "steam",
-      "appId": 240720,
-      "url": "https://store.steampowered.com/api/appdetails?appids=240720&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 543260,
-      "url": "https://store.steampowered.com/api/appdetails?appids=543260&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 368340,
-      "url": "https://store.steampowered.com/api/appdetails?appids=368340&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
+        "https://news.denfaminicogamer.jp/news/2610072h"
       ],
       "deadlineStatus": "verified",
       "followUpdateStatus": "none"
     },
     {
       "kind": "steam",
-      "appId": 1282730,
-      "url": "https://store.steampowered.com/api/appdetails?appids=1282730&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
+      "appId": 1817070,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1817070&cc=jp&l=japanese",
+      "checkedAt": "2026-10-07T14:39:04.788Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
+        "https://news.denfaminicogamer.jp/news/2610072f"
       ],
       "deadlineStatus": "verified",
       "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 1722020,
-      "url": "https://store.steampowered.com/api/appdetails?appids=1722020&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 555220,
-      "url": "https://store.steampowered.com/api/appdetails?appids=555220&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 1939970,
-      "url": "https://store.steampowered.com/api/appdetails?appids=1939970&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
-    },
-    {
-      "kind": "steam",
-      "appId": 564230,
-      "url": "https://store.steampowered.com/api/appdetails?appids=564230&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 2304440,
-      "url": "https://store.steampowered.com/api/appdetails?appids=2304440&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 990080,
-      "url": "https://store.steampowered.com/api/appdetails?appids=990080&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
-    },
-    {
-      "kind": "steam",
-      "appId": 499180,
-      "url": "https://store.steampowered.com/api/appdetails?appids=499180&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 233290,
-      "url": "https://store.steampowered.com/api/appdetails?appids=233290&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
-    },
-    {
-      "kind": "steam",
-      "appId": 210970,
-      "url": "https://store.steampowered.com/api/appdetails?appids=210970&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 934700,
-      "url": "https://store.steampowered.com/api/appdetails?appids=934700&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
-    },
-    {
-      "kind": "steam",
-      "appId": 1488490,
-      "url": "https://store.steampowered.com/api/appdetails?appids=1488490&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
-    },
-    {
-      "kind": "steam",
-      "appId": 3917700,
-      "url": "https://store.steampowered.com/api/appdetails?appids=3917700&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 2900640,
-      "url": "https://store.steampowered.com/api/appdetails?appids=2900640&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 4229200,
-      "url": "https://store.steampowered.com/api/appdetails?appids=4229200&cc=jp&l=japanese",
-      "checkedAt": "2026-10-07T07:17:18.389Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/steam-sale-20261004-471699"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
     }
   ]
 }

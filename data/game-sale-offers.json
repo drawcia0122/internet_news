@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T14:39:04.788Z",
+  "generatedAt": "2026-10-07T20:13:54.159Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
@@ -37,7 +37,7 @@
       },
       "freshUntil": "2026-10-07T20:39:04.788Z",
       "priceValidUntil": "2026-10-08T14:39:04.788Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=648100&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -107,7 +107,7 @@
       },
       "freshUntil": "2026-10-07T20:39:04.788Z",
       "priceValidUntil": "2026-10-08T14:39:04.788Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=281990&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -177,7 +177,7 @@
       },
       "freshUntil": "2026-10-07T20:39:04.788Z",
       "priceValidUntil": "2026-10-08T14:39:04.788Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1817070&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -221,8 +221,8 @@
           "kind": "update",
           "checkedAt": "2026-10-07T14:39:04.788Z",
           "freshUntil": "2026-10-07T20:39:04.788Z",
-          "eventId": "steam-announcement-685257749622168036",
           "date": "2026-07-08T09:10:29.000Z",
+          "eventId": "steam-announcement-685257749622168036",
           "title": "Improved DualSense Edge support for Marvel's Spider-Man Remastered",
           "eventType": "release-notes",
           "source": {
@@ -240,7 +240,7 @@
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/2610072y",
       "checkedAt": "2026-10-07T14:39:04.788Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": [
         {
           "appId": 648100,
@@ -252,7 +252,7 @@
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/2610072h",
       "checkedAt": "2026-10-07T14:39:04.788Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": [
         {
           "appId": 281990,
@@ -264,7 +264,7 @@
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/2610072f",
       "checkedAt": "2026-10-07T14:39:04.788Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": [
         {
           "appId": 1817070,
@@ -277,39 +277,21 @@
       "appId": 648100,
       "url": "https://store.steampowered.com/api/appdetails?appids=648100&cc=jp&l=japanese",
       "checkedAt": "2026-10-07T14:39:04.788Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/2610072y"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 281990,
       "url": "https://store.steampowered.com/api/appdetails?appids=281990&cc=jp&l=japanese",
       "checkedAt": "2026-10-07T14:39:04.788Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/2610072h"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1817070,
       "url": "https://store.steampowered.com/api/appdetails?appids=1817070&cc=jp&l=japanese",
       "checkedAt": "2026-10-07T14:39:04.788Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/2610072f"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     }
   ]
 }

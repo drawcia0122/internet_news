@@ -81,7 +81,7 @@
   function shortEventFromTitle(title = '') {
     const value = String(title ?? '').replace(/^【[^】]+】\s*/u, '').trim();
     if (!value) return '新しい動きが出ています。';
-    return value.replace(/[。！？!?].*$/u, '').slice(0, 42);
+    return (window.NewsSummaryIntegrity?.firstHeadlineSentence(value) ?? value.replace(/[。！？!?].*$/u, '')).slice(0, 42);
   }
 
   function decodeHtmlEntities(value) {

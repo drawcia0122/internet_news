@@ -262,6 +262,46 @@
     ].filter(Boolean);
   }
 
+  // Only punctuation outside matched quotes can end a headline sentence.
+  // Internal Latin-name punctuation (M!LK, Yahoo!ニュース) is not a boundary.
+  function firstHeadlineSentence(title = '') {
+    const text = String(title ?? '').replace(/^【[^】]+】\s*/u, '').trim();
+    const pairs = { '「': '」', '『': '』', '（': '）', '(': ')', '“': '”', '‘': '’', '"': '"', '【': '】' };
+    const stack = [];
+    for (let index = 0; index < text.length; index += 1) {
+      const char = text[index];
+      if (stack.length && char === stack[stack.length - 1]) {
+        stack.pop();
+        continue;
+      }
+      if (pairs[char] && text.indexOf(pairs[char], index + 1) !== -1) {
+        stack.push(pairs[char]);
+        continue;
+      }
+      if (stack.length || !/[。！？!?]/u.test(char)) continue;
+      if (char === '!' && /[A-Za-z]/u.test(text[index - 1] ?? '') &&
+          /[A-Za-z]/u.test(text[index + 1] ?? '')) continue;
+      if (char === '!' && /(?:^|[^A-Za-z])Yahoo$/iu.test(text.slice(0, index)) &&
+          /[\u3040-\u30ff\u4e00-\u9fff]/u.test(text[index + 1] ?? '')) continue;
+      return text.slice(0, index).trim();
+    }
+    return text;
+  }
+
+  function buildHeadlineInsight(title = '') {
+    const text = firstHeadlineSentence(title).replace(/\s+/gu, ' ').trim();
+    return (text.length > 46 ? `${text.slice(0, 46)}…` : text) || '新しい動きが出ています。';
+  }
+
+  function repairHeadlineInsight(title, value) {
+    if (typeof value !== 'string' || !value) return value;
+    const oldText = String(title ?? '').replace(/^【[^】]+】\s*/u, '').trim()
+      .replace(/[。！？!?].*$/u, '').replace(/\s+/gu, ' ').trim();
+    const oldInsight = (oldText.length > 46 ? `${oldText.slice(0, 46)}…` : oldText) || '新しい動きが出ています。';
+    // Preserve authored summaries; recover only the exact legacy generator output.
+    return value === oldInsight ? buildHeadlineInsight(title) : value;
+  }
+
   function sanitizeArticleSummaryFields(item = {}) {
     item = repairStoredArticleSummary(item);
     const contextTexts = summaryContextTexts(item);
@@ -281,6 +321,7 @@
 
     return {
       ...item,
+      ...(typeof item.whatHappened === 'string' ? { whatHappened: repairHeadlineInsight(item.title, item.whatHappened) } : {}),
       summary,
       briefSummary,
       sourceSignals,
@@ -315,6 +356,9 @@
 
   global.NewsSummaryIntegrity = Object.freeze({
     articleIdentityKeys,
+    firstHeadlineSentence,
+    buildHeadlineInsight,
+    repairHeadlineInsight,
     articlesShareIdentity,
     canonicalArticleUrl,
     hasSummaryTitleAlignment,

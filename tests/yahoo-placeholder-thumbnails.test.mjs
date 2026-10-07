@@ -71,7 +71,7 @@ test('refresh health does not count the Yahoo logo as usable coverage', () => {
 test('all existing shared thumbnail consumers receive the updated browser cache key', () => {
   for (const name of ['index.html', 'news.html', 'game.html', 'topic.html']) {
     const html = fs.readFileSync(new URL(`../${name}`, import.meta.url), 'utf8');
-    assert.match(html, /shared-topic-utils\.js\?v=18/);
+    assert.match(html, /shared-topic-utils\.js\?v=19/);
   }
 });
 

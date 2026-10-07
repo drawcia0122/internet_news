@@ -1,40 +1,93 @@
 {
-  "generatedAt": "2026-10-06T21:13:17.751Z",
+  "generatedAt": "2026-10-07T01:01:03.916Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-4",
-  "selectedTitle": "在沖縄米軍が7～9日業務停止　9日から30日間は午前０～５時の外出禁止　強殺事件受け",
+  "selectedClusterId": "today-cluster-7",
+  "selectedTitle": "シャウエッセン、6本から5本へ「時代に負けてたまるか」はなぜ炎上？　実質値上げの伝え方にあった問題点（篠原修司） - エキスパート",
   "candidates": [
     {
-      "clusterId": "today-cluster-4",
-      "title": "在沖縄米軍が7～9日業務停止　9日から30日間は午前０～５時の外出禁止　強殺事件受け",
-      "category": "crime",
+      "clusterId": "today-cluster-7",
+      "title": "シャウエッセン、6本から5本へ「時代に負けてたまるか」はなぜ炎上？　実質値上げの伝え方にあった問題点（篠原修司） - エキスパート",
+      "category": "sns",
       "categories": [
-        "crime",
         "sns",
-        "world",
+        "net-culture",
+        "general",
+        "tech"
+      ],
+      "buzzScore": 82.9,
+      "confidence": 0.54,
+      "articleCount": 4,
+      "sourceCount": 3,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "主要3媒体で同一話題を確認",
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 6.2,
+        "trend": 21.8,
+        "internetNativeBoost": 8,
+        "search": 6.4,
+        "social": 5.6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 99,
+        "internalSearchScore": 50.3,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-3",
+      "title": "“横スクロールの探偵ホラーゲーム”がレビュー高評価で海外にて注目集まる。新星『Silver Pines』がメタスコア「85/100」とハイスコアをマーク",
+      "category": "games",
+      "categories": [
+        "games",
+        "game-features",
         "net-culture",
         "general"
       ],
-      "buzzScore": 60.3,
-      "confidence": 0.4,
+      "buzzScore": 72.1,
+      "confidence": 0.44,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 6.5,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
+        "search": 5.8,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 4,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -47,9 +100,63 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 45.7,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-70",
+      "title": "【速報】独情報機関BND元長官をスパイ容疑で逮捕　共犯の“腹心”は春まで幹部　ロ・中とのパイプも",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 62.2,
+      "confidence": 0.41,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -59,7 +166,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1100",
+      "clusterId": "today-cluster-4",
+      "title": "ソニックの有田焼「Infinite Blue」が全世界50体限定で販売へ、価格は1体100万円。10月9日から池袋PARCOで開催されるイベントで5体を先行販売",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 60.4,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.8,
+        "internetNativeBoost": 8,
+        "search": 1.5,
+        "social": 5.3,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 0,
+        "repeatedAppearanceScore": 18,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 0,
+        "internalSearchScore": 11.7,
+        "internalSocialScore": 41.1
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1407",
       "title": "高市首相の「私の簗ちゃん」大失言...「もう代えちゃえばいいんじゃないですか」と立川志らく",
       "category": "politics",
       "categories": [
@@ -68,7 +227,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 58.3,
+      "buzzScore": 58.1,
       "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 2,
@@ -81,7 +240,7 @@
         "sourceDiversity": 3.8,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.9,
+        "search": 4.8,
         "social": 5.9,
         "velocity": 0,
         "freshness": 3.5,
@@ -98,166 +257,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 80,
         "archiveHeatScore": 100,
-        "internalSearchScore": 38.3,
-        "internalSocialScore": 46.3
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-449",
-      "title": "公式Xも思わず絶叫？サンソフト『レトロゲームセレクション2』レーティングが12才以上対象の「CERO B」に",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 57.5,
-      "confidence": 0.31,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 4.5,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 32.5,
-        "internalSocialScore": 34.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-133",
-      "title": "『ARC Raiders』が映画・ドラマ化へ。ネクソンがチェルニン・エンターテインメントと提携を発表。『THE FINALS』も同社とのパートナーシップで映像化へ",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general",
-        "business",
-        "net-culture"
-      ],
-      "buzzScore": 56.2,
-      "confidence": 0.42,
-      "articleCount": 4,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 4.7,
-        "trend": 16.1,
-        "internetNativeBoost": 0,
-        "search": 5,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 73,
-        "internalSearchScore": 39.2,
-        "internalSocialScore": 64.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1484",
-      "title": "「スイッチ2」お得な「選べるソフト セット」が11月12日発売！本体と“対象の3タイトル”から選んだ1本を安く購入可能",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 52.2,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 3.7,
-        "social": 3,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 29.2,
-        "internalSocialScore": 23.4
+        "internalSearchScore": 37.7,
+        "internalSocialScore": 45.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

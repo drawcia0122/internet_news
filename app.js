@@ -271,7 +271,7 @@ async function refreshLiveData({ silent = false } = {}) {
     return;
   }
 
-  showRefreshStatus('更新を確認: ' + new Date().toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit' }));
+  showRefreshStatus('更新を確認: ' + formatAbsoluteDate(new Date()));
 }
 
 async function loadTrendTopics() {
@@ -1362,9 +1362,7 @@ function updateLatestHomeGeneratedAt(...values) {
 }
 
 function formatAbsoluteDate(dateString) {
-  const date = new Date(dateString);
-  if (Number.isNaN(date.getTime())) return '不明';
-  return new Intl.DateTimeFormat('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(date);
+  return window.TopicClientUtils.formatDate(dateString);
 }
 
 function slugifyRoutePart(value) {

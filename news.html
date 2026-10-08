@@ -22,8 +22,9 @@
         <p class="topic-summary">トップと同じニュースを、期間・カテゴリ・キーワードで絞り込めます。同じ出来事と確認できた記事は1話題にまとめ、カードから各媒体の元記事を開けます。</p>
         <div class="topic-meta-bar">
           <span id="news-count">-- 話題</span>
-          <span id="news-updated">更新確認中</span>
+          <span id="news-updated" role="status" aria-live="polite">更新確認中</span>
         </div>
+        <button class="outline-button" id="news-retry" type="button" hidden>ニュースを再読み込み</button>
       </section>
       <p class="data-refresh-health" id="data-refresh-health" data-refresh-datasets="home-news.json" role="status" aria-live="polite" hidden></p>
       <section class="topic-layout news-layout">
@@ -78,7 +79,7 @@
     <script src="./news-summary-integrity.js?v=3"></script>
     <script src="./article-category-quality.js?v=3"></script>
     <script src="./shared-topic-utils.js?v=19"></script>
-    <script src="./news.js?v=30"></script>
+    <script src="./news.js?v=31"></script>
     <script>
       (function () {
         const backLink = document.getElementById('news-back-link');

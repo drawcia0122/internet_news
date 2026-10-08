@@ -29,6 +29,7 @@ const {
 const listElement = document.querySelector('#news-archive-list');
 const countElement = document.querySelector('#news-count');
 const updatedElement = document.querySelector('#news-updated');
+const retryElement = document.querySelector('#news-retry');
 const queryElement = document.querySelector('#news-query');
 const searchButtonElement = document.querySelector('.news-search-button');
 const paginationElement = document.querySelector('#trend-pagination');
@@ -47,6 +48,8 @@ const RANGE_CONFIG = {
   '7-14d': { minHours: 168, maxHours: 336, label: '7日〜14日', searchWindowDays: 14 },
 };
 
+let archiveLoading = false;
+let archiveLoadFailed = false;
 let trendItems = [];
 let dedupedTrendItems = [];
 let activeCategory = 'all';
@@ -64,17 +67,21 @@ document.addEventListener('error', handleCardImageError, true);
 init();
 
 async function init() {
-  const cachedTopics = readTopicCache();
+  if (archiveLoading) return;
+  archiveLoading = true;
+  archiveLoadFailed = false;
+  if (retryElement) retryElement.disabled = true;
+  const cachedTopics = trendItems.length ? trendItems : readTopicCache();
   if (cachedTopics.length) {
     trendItems = cachedTopics;
     rebuildDerivedItems();
     latestUpdatedLabel = 'キャッシュを表示中';
     updatedElement.textContent = latestUpdatedLabel;
-    void renderArchive();
   }
+  updatedElement.textContent = cachedTopics.length ? 'ニュースを再読み込み中・キャッシュを表示中' : 'ニュースを読み込み中…';
+  void renderArchive();
 
   try {
-    updatedElement.textContent = 'ニュースを読み込み中…';
     const archivePayload = await fetchJson(HOME_NEWS_ENDPOINT).catch(() => null);
     if (!archivePayload) throw new Error('Failed to fetch general news');
     const completeItems = await loadCompleteHomeNews(archivePayload);
@@ -87,12 +94,18 @@ async function init() {
     updatedElement.textContent = latestUpdatedLabel;
     saveTopicCache(trendItems, { scope: 'home' });
   } catch {
+    archiveLoadFailed = true;
     trendItems = cachedTopics;
     rebuildDerivedItems();
     latestUpdatedLabel = cachedTopics.length ? '読み込み失敗・キャッシュを表示中' : '読み込み失敗';
     updatedElement.textContent = latestUpdatedLabel;
   }
 
+  archiveLoading = false;
+  if (retryElement) {
+    retryElement.disabled = false;
+    retryElement.hidden = !archiveLoadFailed;
+  }
   updateRangeTabLabels();
   await renderArchive();
 }
@@ -120,7 +133,14 @@ async function renderArchive() {
   const pageItems = filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
 
   if (!filtered.length) {
-    listElement.innerHTML = '<div class="empty-tweets trend-empty"><strong>該当するニュースはありません</strong><p>期間・カテゴリ・キーワードを変えてもう一度探してみてください。</p></div>';
+    const unavailable = !dedupedTrendItems.length && (archiveLoading || archiveLoadFailed);
+    const title = unavailable
+      ? (archiveLoading ? 'ニュースを読み込み中…' : 'ニュースを読み込めませんでした')
+      : '該当するニュースはありません';
+    const message = unavailable
+      ? (archiveLoading ? '読み込みが終わるまでお待ちください。' : '通信状況を確認して「ニュースを再読み込み」を押してください。')
+      : '期間・カテゴリ・キーワードを変えてもう一度探してみてください。';
+    listElement.innerHTML = '<div class="empty-tweets trend-empty"><strong>' + title + '</strong><p>' + message + '</p></div>';
     renderPagination(0, filtered.length, pageItems.length);
     return;
   }
@@ -437,3 +457,5 @@ document.querySelector('#news-show-all')?.addEventListener('click', () => {
   });
   void renderArchive();
 });
+
+retryElement?.addEventListener('click', () => { void init(); });

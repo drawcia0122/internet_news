@@ -1,11 +1,115 @@
 {
-  "generatedAt": "2026-10-08T14:00:04.007Z",
+  "generatedAt": "2026-10-08T19:50:50.765Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-5",
-  "selectedTitle": "Steamで昨日まで「100%好評」だった縦STG『X-Force Under Attack』10月30日に販売終了へ。今だけ140円、販売終了に抵抗する悲しみの低評価1件",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "鎖で繋がれたまま地獄を登る協力ゲーム『Chained Together』に「会社」風の新マップが11月12日に無料追加",
   "candidates": [
     {
-      "clusterId": "today-cluster-5",
+      "clusterId": "today-cluster-1",
+      "title": "鎖で繋がれたまま地獄を登る協力ゲーム『Chained Together』に「会社」風の新マップが11月12日に無料追加",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 70.9,
+      "confidence": 0.44,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 5.6,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-4",
+      "title": "新世紀前夜で時が止まった町へ帰郷するサイコホラーゲーム『叫魂』が発表。住人たちの記憶や痕跡をたどり、町の終焉の秘密に迫る",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.8,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 5.5,
+        "social": 5.6,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-42",
       "title": "Steamで昨日まで「100%好評」だった縦STG『X-Force Under Attack』10月30日に販売終了へ。今だけ140円、販売終了に抵抗する悲しみの低評価1件",
       "category": "games",
       "categories": [
@@ -13,8 +117,8 @@
         "sns",
         "general"
       ],
-      "buzzScore": 67.5,
-      "confidence": 0.4,
+      "buzzScore": 64.7,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -24,9 +128,60 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 21.1,
         "internetNativeBoost": 8,
-        "search": 6.5,
+        "search": 6.1,
+        "social": 5.5,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 22.2,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 96,
+        "internalSearchScore": 48,
+        "internalSocialScore": 43
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-11",
+      "title": "『マシナリウム2』が発表！2009年に発売された、独特なタッチの名作ロボットアドベンチャーゲーム続編。「ジョセフ」と「ベルタ」のふたりの主人公を自由に切り替えパズルを突破していく",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 5.5,
         "social": 5.6,
         "velocity": 0,
         "freshness": 7,
@@ -45,8 +200,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -56,58 +211,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-9",
-      "title": "『勝利の女神：NIKKE』最新バージョン「LITTLE WITCH TRICK」が実装。新SSRニケ「ベロータ：パンプキンウィッチ（CV：ファイルーズあい）」が登場",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.3,
-      "confidence": 0.48,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "直近数時間で関連記事が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 13.4,
-        "internetNativeBoost": 0,
-        "search": 4.7,
-        "social": 5.6,
-        "velocity": 8,
-        "freshness": 8.5,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 61,
-        "internalSearchScore": 37,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-51",
+      "clusterId": "today-cluster-96",
       "title": "アニメ『電脳コイル』×GEEKS RULEコラボTシャツ発売　名台詞を背中にプリント",
       "category": "anime",
       "categories": [
@@ -117,8 +221,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.9,
-      "confidence": 0.36,
+      "buzzScore": 61.4,
+      "confidence": 0.34,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -129,12 +233,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 8.4,
+        "search": 5.4,
+        "social": 8.3,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -148,116 +252,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 21,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-16",
-      "title": "家庭科の『ドラゴンズドグマ』が降臨。おなじみ「家庭科のドラゴン」と『ドラゴンズドグマ 2：ダークアリズン』がまさかのコラボ、描き下ろしナップザックが40名に当たる",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 63,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-103",
-      "title": "高市首相、簗農相の予算削減発言「不適切で厳しく注意」　更迭は否定",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "business",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 62.2,
-      "confidence": 0.41,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 65.8
+        "archiveHeatScore": 81,
+        "internalSearchScore": 42,
+        "internalSocialScore": 64.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

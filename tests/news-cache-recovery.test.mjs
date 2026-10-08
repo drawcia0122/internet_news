@@ -166,3 +166,70 @@ test('a successful uncached load prepares the full collection only once', async 
   assert.equal(result.preparationCalls, 1);
   assert.equal(result.elements.get('#news-count').textContent, '1 話題');
 });
+
+test('a failed uncached load explains the retrieval error instead of an empty search', async () => {
+  const result = await startArchive({ cached: [] });
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /ニュースを読み込めませんでした/);
+  assert.doesNotMatch(result.elements.get('#news-archive-list').innerHTML, /該当するニュースはありません/);
+  assert.equal(result.elements.get('#news-retry').hidden, false);
+});
+
+test('retry recovers without clearing filters and repeated clicks share one load', async () => {
+  let calls = 0;
+  let release;
+  const result = await startArchive({ cached: [], fetchImpl: async () => {
+    calls += 1;
+    if (calls === 1) throw new Error('offline');
+    await new Promise((resolve) => { release = resolve; });
+    return { ok: true, json: async () => ({ items: [cachedArticle] }) };
+  } });
+  result.elements.get('#news-query').value = '保存済み';
+  await vm.runInContext("activeRange = '24h'; activeCategory = 'tech'; renderArchive()", result.context);
+  result.elements.get('#news-retry').listeners.click();
+  result.elements.get('#news-retry').listeners.click();
+  assert.equal(calls, 2);
+  assert.equal(result.elements.get('#news-retry').disabled, true);
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /ニュースを読み込み中/);
+  release();
+  await new Promise((resolve) => setImmediate(resolve));
+  assert.equal(result.elements.get('#news-retry').hidden, true);
+  assert.equal(result.elements.get('#news-retry').disabled, false);
+  assert.equal(result.elements.get('#news-query').value, '保存済み');
+  assert.equal(vm.runInContext('activeRange', result.context), '24h');
+  assert.equal(vm.runInContext('activeCategory', result.context), 'tech');
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /保存済みのニュース/);
+});
+
+test('a successful empty response remains a genuine empty result without retry', async () => {
+  const result = await startArchive({ cached: [], fetchImpl: async () => ({ ok: true, json: async () => ({ items: [] }) }) });
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /該当するニュースはありません/);
+  assert.equal(result.elements.get('#news-retry').hidden, true);
+});
+
+test('failed cached retries keep readable articles even when persistent storage disappears', async () => {
+  const result = await startArchive();
+  result.storage.clear();
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    result.elements.get('#news-retry').listeners.click();
+    await new Promise((resolve) => setImmediate(resolve));
+    assert.match(result.elements.get('#news-archive-list').innerHTML, /保存済みのニュース/);
+    assert.equal(result.elements.get('#news-retry').hidden, false);
+    assert.equal(result.elements.get('#news-retry').disabled, false);
+    assert.deepEqual(result.writes, []);
+  }
+});
+
+test('a retry continuation failure preserves the complete previous cache', async () => {
+  let retry = false;
+  const result = await startArchive({ fetchImpl: async (url) => {
+    if (!retry || url.includes('page-2')) throw new Error('offline');
+    return { ok: true, json: async () => ({ items: [{ ...cachedArticle, title: '未完成の新しい一覧' }], nextPage: 2 }) };
+  } });
+  retry = true;
+  result.elements.get('#news-retry').listeners.click();
+  await new Promise((resolve) => setImmediate(resolve));
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /保存済みのニュース/);
+  assert.doesNotMatch(result.elements.get('#news-archive-list').innerHTML, /未完成の新しい一覧/);
+  assert.equal(result.storage.get(CACHE_KEY), result.originalCache);
+  assert.equal(result.elements.get('#news-retry').hidden, false);
+});

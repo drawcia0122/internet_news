@@ -60,7 +60,7 @@ test('current published article survives generator normalization and home consum
   for (const file of ['index.html', 'news.html', 'game.html', 'topic.html']) {
     const html = await readFile(new URL(`../${file}`, import.meta.url), 'utf8');
     const integrity = html.indexOf('news-summary-integrity.js?v=3');
-    assert.ok(integrity >= 0 && integrity < html.indexOf('shared-topic-utils.js?v=19'), file);
+    assert.ok(integrity >= 0 && integrity < html.indexOf('shared-topic-utils.js?v=20'), file);
   }
   globalThis.window = globalThis;
   await import('../shared-topic-utils.js');

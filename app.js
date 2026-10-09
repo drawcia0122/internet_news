@@ -28,6 +28,7 @@ const {
   calculateClosingSoonScore,
   eventStatusLabel,
   formatEventPeriod,
+  formatEventLocation,
   getEventItemsForTab: getEventItemsForTabFromList,
   getTodayDate,
   isEventOngoing,
@@ -842,7 +843,7 @@ function renderEventCard(item, index) {
     '<p>' + escapeHtml(item.description) + '</p>' +
     '<dl class="event-fact-list">' +
       '<div><dt>開催期間</dt><dd>' + escapeHtml(formatEventPeriod(item)) + '</dd></div>' +
-      '<div><dt>開催場所</dt><dd>' + escapeHtml(item.venue) + ' / ' + escapeHtml(item.location) + '</dd></div>' +
+      '<div><dt>開催場所</dt><dd>' + escapeHtml(formatEventLocation(item)) + '</dd></div>' +
       renderEventAttendance(item) +
     '</dl>' +
     '<div class="priority-chip-row event-chip-row">' + cardTags.map((tag) => '<span>' + escapeHtml(tag) + '</span>').join('') + '</div>' +
@@ -856,8 +857,8 @@ function getEventItemsForTab(tabKey, categoryKey = activeEventCategory) {
 
 function renderEventAttendance(item) {
   const attendance = getEventAttendance(item);
-  const rows = [];
-  if (attendance?.feeText) rows.push(['参加費', attendance.feeText]);
+  const feeText = typeof attendance?.feeText === 'string' ? attendance.feeText.trim() : '';
+  const rows = [['参加費', feeText || '料金は詳細ページで確認']];
   if (attendance?.reservationRequired === true) rows.push(['予約・申込', attendance.reservationClosed === true ? '受付終了（公式を確認）' : '事前申込が必要']);
   if (attendance?.deadlineAt && Number.isFinite(Date.parse(attendance.deadlineAt))) {
     const deadline = new Intl.DateTimeFormat('ja-JP', { timeZone: 'Asia/Tokyo', year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(attendance.deadlineAt));

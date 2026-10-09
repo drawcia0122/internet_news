@@ -98,7 +98,7 @@ test('attendance rendering escapes source text, uses Japan time and omits unknow
   const code = app.slice(app.indexOf('function renderEventAttendance('), app.indexOf('function buildClosingSoonBadge('));
   const context = vm.createContext({ getEventAttendance: u.getEventAttendance, Intl, Date, escapeHtml: (x) => String(x).replaceAll('<', '&lt;').replaceAll('>', '&gt;') });
   vm.runInContext(code, context);
-  assert.equal(context.renderEventAttendance(event()), '');
+  assert.match(context.renderEventAttendance(event()), /<dt>参加費<\/dt><dd>料金は詳細ページで確認<\/dd>/);
   const rendered = context.renderEventAttendance(event({ sourceCheckedAt: '2026-10-02T05:29:45Z', attendance: { sourceUrl: 'https://official.example/event/1', feeText: '<script>', reservationRequired: true, deadlineAt: '2026-10-25T14:59:59Z' } }));
   assert.match(rendered, /&lt;script&gt;/);
   assert.match(rendered, /23:59/);

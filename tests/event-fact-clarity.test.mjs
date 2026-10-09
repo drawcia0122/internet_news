@@ -78,3 +78,15 @@ test('every card gets a fee row while unknown or unverified fees never imply fre
   const paid = event({ officialUrl: 'https://example.com/event', attendance: { sourceUrl: 'https://example.com/event', feeText: '一般 1,000円（別途入館料）' } });
   assert.match(context.renderEventAttendance(paid), /一般 1,000円（別途入館料）/);
 });
+
+
+test('missing location stays unknown through the production normalization path', async () => {
+  const app = await readFile(new URL('../app.js', import.meta.url), 'utf8');
+  const code = app.slice(app.indexOf('function normalizeEventItem('), app.indexOf('function renderTrends('));
+  const context = vm.createContext({ normalizeEventDateValue: u.normalizeEventDateValue, calculateEventScore: u.calculateEventScore, calculateClosingSoonScore: u.calculateClosingSoonScore, slugifyRoutePart: () => 'event' });
+  vm.runInContext(code, context);
+  const normalized = context.normalizeEventItem(event({ venue: null, location: null }));
+  assert.equal(u.formatEventLocation(normalized), '開催場所は詳細ページで確認');
+  assert.equal(u.matchesEventFilters(normalized, { region: 'nearby' }), false);
+  assert.equal(u.formatEventLocation(context.normalizeEventItem(event({ venue: '東京会場', location: null }))), '東京会場');
+});

@@ -334,8 +334,10 @@ export const RSS_FEEDS = [
   source({
     id: "netorabo",
     source: "ねとらぼ",
-    sourceName: "ねとらぼ",
-    url: "https://nlab.itmedia.co.jp/rss/index.rdf",
+    sourceName: "ねとらぼ / Yahoo!ニュース",
+    // The original feed is retired; use the publisher's current Yahoo syndication.
+    // Keep the stable source ID and show the distributor in attribution.
+    url: "https://news.yahoo.co.jp/rss/media/it_nlab/all.xml",
     categoryHints: ["sns", "net-culture", "entertainment"],
     priority: 84,
     sourceGroup: "net-culture",

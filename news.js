@@ -50,6 +50,7 @@ const RANGE_CONFIG = {
 
 let archiveLoading = false;
 let archiveLoadFailed = false;
+let archivePreview = false;
 let trendItems = [];
 let dedupedTrendItems = [];
 let activeCategory = 'all';
@@ -71,10 +72,11 @@ async function init() {
   archiveLoading = true;
   archiveLoadFailed = false;
   if (retryElement) retryElement.disabled = true;
-  const cachedTopics = trendItems.length ? trendItems : readTopicCache();
+  const cachedTopics = !archivePreview && trendItems.length ? trendItems : readTopicCache();
   if (cachedTopics.length) {
     trendItems = cachedTopics;
     rebuildDerivedItems();
+    archivePreview = false;
     latestUpdatedLabel = 'キャッシュを表示中';
     updatedElement.textContent = latestUpdatedLabel;
   }
@@ -83,10 +85,20 @@ async function init() {
 
   try {
     const archivePayload = await fetchJson(HOME_NEWS_ENDPOINT).catch(() => null);
-    if (!archivePayload) throw new Error('Failed to fetch general news');
+    if (!Array.isArray(archivePayload?.items)) throw new Error('Failed to fetch general news');
+    // A cold visit can show the small first payload immediately. Never replace
+    // a complete cache with this preview or present its counts as archive totals.
+    if (!cachedTopics.length && Number(archivePayload.nextPage) > 0) {
+      trendItems = preparePrimaryArchiveItems(archivePayload.items);
+      rebuildDerivedItems({ prepared: true });
+      archivePreview = true;
+      updatedElement.textContent = '先頭のニュースを表示中・全記事を読み込み中…';
+      void renderArchive();
+    }
     const completeItems = await loadCompleteHomeNews(archivePayload);
     const preparedArchive = preparePrimaryArchiveItems(completeItems);
     trendItems = preparedArchive;
+    archivePreview = false;
     rebuildDerivedItems({ prepared: true });
     latestUpdatedLabel = archivePayload?.generatedAt
       ? formatDate(archivePayload.generatedAt) + ' 更新'
@@ -95,9 +107,12 @@ async function init() {
     saveTopicCache(trendItems, { scope: 'home' });
   } catch {
     archiveLoadFailed = true;
-    trendItems = cachedTopics;
+    if (cachedTopics.length || !archivePreview) {
+      trendItems = cachedTopics;
+      archivePreview = false;
+    }
     rebuildDerivedItems();
-    latestUpdatedLabel = cachedTopics.length ? '読み込み失敗・キャッシュを表示中' : '読み込み失敗';
+    latestUpdatedLabel = archivePreview ? '一部のみ表示・全記事の読み込み失敗' : cachedTopics.length ? '読み込み失敗・キャッシュを表示中' : '読み込み失敗';
     updatedElement.textContent = latestUpdatedLabel;
   }
 
@@ -126,14 +141,14 @@ async function renderArchive() {
   const filtered = groupNewsStories(filteredArticles);
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   currentPage = Math.min(currentPage, totalPages);
-  countElement.textContent = formatNewsStoryCount(filtered);
+  countElement.textContent = formatNewsStoryCount(filtered) + (archivePreview || (archiveLoading && !dedupedTrendItems.length) ? (archiveLoading ? '（読み込み済み・全記事を読み込み中）' : '（一部のみ・読み込み未完了）') : '');
   updateRangeTabLabels();
   updateSearchButton();
 
   const pageItems = filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
 
   if (!filtered.length) {
-    const unavailable = !dedupedTrendItems.length && (archiveLoading || archiveLoadFailed);
+    const unavailable = archivePreview || (!dedupedTrendItems.length && (archiveLoading || archiveLoadFailed));
     const title = unavailable
       ? (archiveLoading ? 'ニュースを読み込み中…' : 'ニュースを読み込めませんでした')
       : '該当するニュースはありません';
@@ -157,16 +172,28 @@ function preparePrimaryArchiveItems(rawItems) {
 async function loadCompleteHomeNews(initialPayload) {
   const items = [...(Array.isArray(initialPayload?.items) ? initialPayload.items : [])];
   const visitedPages = new Set();
-  let nextPage = Number(initialPayload?.nextPage ?? 0) || 0;
+  let nextPage = getArchiveNextPage(initialPayload);
 
-  while (nextPage && !visitedPages.has(nextPage)) {
+  while (nextPage) {
+    if (visitedPages.has(nextPage)) {
+      throw new Error('Invalid archive continuation');
+    }
     visitedPages.add(nextPage);
     const pagePayload = await fetchJson(`./data/home-news-page-${nextPage}.json`);
-    if (Array.isArray(pagePayload?.items)) items.push(...pagePayload.items);
-    nextPage = Number(pagePayload?.nextPage ?? 0) || 0;
+    if (!Array.isArray(pagePayload?.items)) throw new Error('Invalid archive page');
+    items.push(...pagePayload.items);
+    nextPage = getArchiveNextPage(pagePayload);
   }
 
   return items;
+}
+
+function getArchiveNextPage(payload) {
+  const page = Number(payload?.nextPage ?? 0);
+  if (!Number.isSafeInteger(page) || page < 0 || page === 1 || page > 10000 || (payload?.hasMore === true && page === 0)) {
+    throw new Error('Invalid archive continuation');
+  }
+  return page;
 }
 
 async function renderArchivePageItems(items, passId) {
@@ -226,7 +253,7 @@ function updateRangeTabLabels() {
     const range = RANGE_CONFIG[button.dataset.range];
     if (!range) return;
     const count = getRangeDisplayCount(button.dataset.range);
-    button.textContent = range.label + ' (' + count + '話題)';
+    button.textContent = range.label + ' (' + count + '話題' + (archivePreview || (archiveLoading && !dedupedTrendItems.length) ? '・読み込み済み' : '') + ')';
   });
 }
 
@@ -304,6 +331,11 @@ function updateSearchButton() {
 
 function renderPagination(totalPages, totalItems, visibleCount = totalItems) {
   if (!paginationElement) return;
+  if (archivePreview) {
+    paginationElement.innerHTML = '';
+    if (archiveActionsElement) archiveActionsElement.innerHTML = '<span class="pagination-status">' + (archiveLoading ? '全記事を読み込み中…検索・期間・カテゴリは読み込み完了後に全記事へ適用されます' : '全記事の読み込みが完了していません。「ニュースを再読み込み」で再試行してください。') + '</span>';
+    return;
+  }
   if (!totalItems) {
     paginationElement.innerHTML = '';
     if (archiveActionsElement) archiveActionsElement.innerHTML = '';

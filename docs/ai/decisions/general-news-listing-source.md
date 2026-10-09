@@ -46,3 +46,9 @@ For the expanded population, fuzzy dedupe computes URL/title/category comparison
 ## 2026-10-02: display-only story grouping
 
 The general-list preparation detail above is superseded by [conservative news story groups](conservative-news-story-groups.md). General listings now dedupe only exact article URLs, retain original articles, filter before conservative grouping, and paginate/count story cards. Legacy `dedupeTopics()` remains unchanged for its other consumers.
+
+## 2026-10-09: cold archive preview
+
+An uncached all-news visit may display the first `home-news.json` payload while the remaining shared archive loads. Preview counts are explicitly partial, empty filtered previews are not definitive no-results, and pagination waits for complete grouping. Search/category/period/reset changes remain active and are reapplied to the completed collection. A failed continuation keeps the preview readable with an incomplete/retry status; only complete, valid page chains are persisted. An existing complete cache is never replaced by the preview.
+
+This improves time to first cards, not total archive transfer: the same full population is still downloaded for complete search and global counts. Avoid interpreting the initial payload's article `totalCount` as the final grouped story count.

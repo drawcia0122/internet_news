@@ -233,3 +233,121 @@ test('a retry continuation failure preserves the complete previous cache', async
   assert.equal(result.storage.get(CACHE_KEY), result.originalCache);
   assert.equal(result.elements.get('#news-retry').hidden, false);
 });
+
+function deferredPage() {
+  let resolve;
+  let reject;
+  const promise = new Promise((yes, no) => { resolve = yes; reject = no; });
+  return { promise, resolve, reject };
+}
+const response = (items, nextPage = 0) => ({ ok: true, json: async () => ({ items, nextPage }) });
+const settle = () => new Promise((resolve) => setImmediate(resolve));
+
+test('cold visits display first-payload cards before the archive finishes without claiming complete counts', async () => {
+  const pending = deferredPage();
+  const requests = [];
+  const first = { ...cachedArticle, title: '先頭の記事' };
+  const last = { ...cachedArticle, id: 'last', title: '最後の記事' };
+  const result = await startArchive({ cached: [], fetchImpl: async (url) => {
+    requests.push(url);
+    return url.includes('page-2') ? pending.promise : response([first], 2);
+  } });
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /先頭の記事/);
+  assert.match(result.elements.get('#news-count').textContent, /読み込み済み・全記事を読み込み中/);
+  assert.match(result.elements.get('#news-archive-actions').innerHTML, /読み込み完了後に全記事/);
+  assert.equal(result.elements.get('#trend-pagination').innerHTML, '');
+  assert.deepEqual(result.writes, []);
+  pending.resolve(response([last]));
+  await settle();
+  assert.equal(result.elements.get('#news-count').textContent, '2 話題');
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /先頭の記事/);
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /最後の記事/);
+  assert.equal((result.elements.get('#news-archive-list').innerHTML.match(/<article /g) ?? []).length, 2);
+  assert.equal(JSON.parse(result.storage.get(CACHE_KEY)).items.length, 2);
+  assert.equal(requests.length, 2);
+});
+
+test('filters changed during preview find later articles without a premature no-results message', async () => {
+  const pending = deferredPage();
+  const result = await startArchive({ cached: [], fetchImpl: async (url) => url.includes('page-2')
+    ? pending.promise : response([cachedArticle], 2) });
+  await vm.runInContext("activeCategory = 'tech'; activeRange = '7-14d'; queryElement.value = '後半'; renderArchive()", result.context);
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /ニュースを読み込み中/);
+  assert.doesNotMatch(result.elements.get('#news-archive-list').innerHTML, /該当するニュースはありません/);
+  assert.match(result.elements.get('#news-count').textContent, /0 話題（読み込み済み/);
+  pending.resolve(response([{ ...cachedArticle, id: 'later', title: '後半の記事', publishedAt: new Date(Date.now() - 10 * 86400000).toISOString() }]));
+  await settle();
+  assert.equal(result.elements.get('#news-count').textContent, '1 話題');
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /後半の記事/);
+  assert.equal(vm.runInContext('activeCategory', result.context), 'tech');
+  assert.equal(vm.runInContext('activeRange', result.context), '7-14d');
+});
+
+test('a complete cache is not downgraded to the first payload while remaining pages load', async () => {
+  const pending = deferredPage();
+  const result = await startArchive({ fetchImpl: async (url) => url.includes('page-2')
+    ? pending.promise : response([{ ...cachedArticle, title: '未完成の新一覧' }], 2) });
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /保存済みのニュース/);
+  assert.doesNotMatch(result.elements.get('#news-archive-list').innerHTML, /未完成の新一覧/);
+  assert.equal(result.elements.get('#news-count').textContent, '1 話題');
+  pending.reject(new Error('offline'));
+  await settle();
+  assert.equal(result.storage.get(CACHE_KEY), result.originalCache);
+});
+
+test('background failure retains uncached preview with explicit incomplete status and coalesced retry', async () => {
+  let attempts = 0;
+  let recovering = false;
+  const pending = deferredPage();
+  const result = await startArchive({ cached: [], fetchImpl: async (url) => {
+    attempts += 1;
+    if (!url.includes('page-2')) return response([cachedArticle], 2);
+    if (!recovering) throw new Error('offline');
+    return pending.promise;
+  } });
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /保存済みのニュース/);
+  assert.match(result.elements.get('#news-count').textContent, /一部のみ・読み込み未完了/);
+  assert.match(result.elements.get('#news-updated').textContent, /全記事の読み込み失敗/);
+  assert.equal(result.elements.get('#news-retry').hidden, false);
+  assert.deepEqual(result.writes, []);
+  recovering = true;
+  result.elements.get('#news-retry').listeners.click();
+  result.elements.get('#news-retry').listeners.click();
+  await settle();
+  assert.equal(attempts, 4);
+  assert.match(result.elements.get('#news-archive-list').innerHTML, /保存済みのニュース/);
+  pending.resolve(response([{ ...cachedArticle, id: 'second', title: '復旧後の記事' }]));
+  await settle();
+  assert.equal(result.elements.get('#news-count').textContent, '2 話題');
+  assert.equal(result.elements.get('#news-retry').hidden, true);
+  assert.equal(result.writes.length, 1);
+});
+
+test('new empty filter and show-all cancel stale preview render batches', async () => {
+  const frames = [];
+  const pending = deferredPage();
+  const items = Array.from({ length: 20 }, (_, index) => ({ ...cachedArticle, id: `preview-${index}`, title: `先頭記事 ${index}` }));
+  const result = await startArchive({ cached: [], requestAnimationFrameImpl: (callback) => frames.push(callback),
+    fetchImpl: async (url) => url.includes('page-2') ? pending.promise : response(items, 2) });
+  await vm.runInContext("queryElement.value = 'none'; renderArchive()", result.context);
+  result.elements.get('#news-show-all').listeners.click();
+  pending.resolve(response([{ ...cachedArticle, id: 'last', title: '最後の記事' }]));
+  await settle();
+  while (frames.length) { frames.shift()(); await settle(); }
+  const html = result.elements.get('#news-archive-list').innerHTML;
+  assert.equal((html.match(/<article /g) ?? []).length, 20);
+  assert.equal((html.match(/先頭記事 0</g) ?? []).length, 1);
+  assert.equal(result.elements.get('#news-count').textContent, '21 話題');
+  assert.match(result.elements.get('#trend-pagination').innerHTML, /2 ページ/);
+});
+
+for (const badPage of [{ items: null }, { items: [], nextPage: 2 }, { items: [], nextPage: -1 }, { items: [], nextPage: 'invalid' }, { items: [], hasMore: true, nextPage: 0 }]) {
+  test(`invalid continuation does not promote preview to a complete cached archive: ${JSON.stringify(badPage)}`, async () => {
+    const result = await startArchive({ cached: [], fetchImpl: async (url) => url.includes('page-2')
+      ? { ok: true, json: async () => badPage } : response([cachedArticle], 2) });
+    assert.match(result.elements.get('#news-count').textContent, /一部のみ・読み込み未完了/);
+    assert.equal(result.elements.get('#news-retry').hidden, false);
+    assert.match(result.elements.get('#news-archive-list').innerHTML, /保存済みのニュース/);
+    assert.deepEqual(result.writes, []);
+  });
+}

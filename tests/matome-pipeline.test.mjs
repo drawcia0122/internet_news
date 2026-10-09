@@ -195,6 +195,8 @@ test('scheduled refresh runs the collector and commits its generated JSON', asyn
   assert.match(refresh, /name: 'matome',[\s\S]*fetch-matome-threads\.mjs[\s\S]*refreshMatomeThreads/);
   assert.match(refresh, /await runGuardedRefresh/);
   assert.match(workflow, /npm run refresh/);
-  assert.match(workflow, /git add data/);
+  assert.match(workflow, /node scripts\/publish-refresh-data\.mjs/);
+  const publisher = await readFile(new URL('../scripts/publish-refresh-data.mjs', import.meta.url), 'utf8');
+  assert.match(publisher, /git\('add', '-A', '--', 'data'\)/);
   assert.match(workflow, /7,37 \* \* \* \*/);
 });

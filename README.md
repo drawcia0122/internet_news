@@ -53,4 +53,8 @@ npm run refresh:stale
 
 ## Auto refresh
 
-`.github/workflows/refresh-news.yml` で 30 分ごとに自動更新します。GitHub Actions の混雑しやすい毎時ちょうどを避けるため、実行時刻は `:07` と `:37` にしています。差分が出たときだけ JSON をコミットします。
+`.github/workflows/refresh-news.yml` は毎時 `:07` と `:37`（UTC）に更新を予約しています。GitHub Actions の schedule は混雑時に遅延・欠落することがあるため、30 分ごとの更新を保証するものではありません。差分が出たときだけ JSON をコミットします。
+
+公開時の main 更新競合は `scripts/publish-refresh-data.mjs` が最大 3 回まで非 force push で再試行します。上流変更が明示的に許可された文書・静的 HTML/CSS だけなら取り込み、生成処理・設定・依存関係・共有 JavaScript・data・未知のファイルを含む場合は古い生成物を公開せず停止します。その場合は最新 main から Refresh News Data を再実行してください。生成済み JSON の競合を自動解決しません。この保護は公開競合対策であり、schedule の遅延自体は解決しません。
+
+両公開 workflow は同じ `github-pages` concurrency group で直列実行し、実行中の更新をキャンセルしません。`queue: max`（GitHub 上限 100 件）で待機中の更新が後続の push に置き換えられるのを防ぎ、実行開始時の最新 main を checkout します。GitHub のキュー上限や schedule の欠落に対する保証はありません。外部サービスや追加の認証情報は不要です。設定変更前から実行中の workflow には遡及しないため、初回反映時は既存実行の終了後に最新 main の公開を確認してください。

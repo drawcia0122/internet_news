@@ -34,7 +34,8 @@
     const end = parseEventDate(item.endDate);
     if (start && today < start) return false;
     if (end && today > end) return false;
-    return Boolean(start) && (!end || end >= today);
+    // A start date alone cannot prove an event is still running.
+    return Boolean(start) && (Boolean(end) || isLongRunningEvent(item));
   }
 
   function isEventClosingSoon(item, today = getTodayDate()) {
@@ -134,28 +135,41 @@
     return [...new Set(reasons)].slice(0, 4);
   }
 
-  function eventStatusLabel(item) {
-    if (isEventClosingSoon(item, getTodayDate())) return '終了間近';
-    if (isEventOngoing(item, getTodayDate())) return '開催中';
+  function eventStatusLabel(item, today = getTodayDate()) {
     const start = parseEventDate(item.startDate);
-    if (!start) return '日程確認';
-    const now = getTodayDate();
-    const nextMonthStart = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+    const end = parseEventDate(item.endDate);
+    if (start && end && end < start) return '日程確認';
+    if (end && end < today) return '終了';
+    if (isEventClosingSoon(item, today)) return '終了間近';
+    if (isEventOngoing(item, today)) return '開催中';
+    if (!start || (!end && !isLongRunningEvent(item))) return '日程確認';
+    const nextMonthStart = new Date(today.getFullYear(), today.getMonth() + 1, 1);
+    const followingMonthStart = new Date(today.getFullYear(), today.getMonth() + 2, 1);
+    if (start >= followingMonthStart) return '開催予定';
     if (start >= nextMonthStart) return '来月';
     return '今月';
   }
 
-  function formatMonthDay(date) {
-    return new Intl.DateTimeFormat('ja-JP', { month: 'numeric', day: 'numeric' }).format(date);
+  function formatMonthDay(date, includeYear = false) {
+    return new Intl.DateTimeFormat('ja-JP', { ...(includeYear ? { year: 'numeric' } : {}), month: 'numeric', day: 'numeric' }).format(date);
   }
 
   function formatEventPeriod(item) {
     const start = parseEventDate(item.startDate);
     const end = parseEventDate(item.endDate);
-    if (!start && !end) return '開催日程は詳細ページで確認';
-    if (start && end) return `${formatMonthDay(start)}〜${formatMonthDay(end)}`;
-    if (start && !end) return isLongRunningEvent(item) ? `${formatMonthDay(start)}〜` : `${formatMonthDay(start)}〜日程確認`;
-    return `〜${formatMonthDay(end)}`;
+    if ((!start && !end) || (start && end && end < start)) return '開催日程は詳細ページで確認';
+    if (start && end) {
+      const includeYear = start.getFullYear() !== end.getFullYear();
+      if (start.getTime() === end.getTime()) return formatMonthDay(start);
+      return `${formatMonthDay(start, includeYear)}〜${formatMonthDay(end, includeYear)}`;
+    }
+    if (start && !end) return `${formatMonthDay(start)}〜（終了日未確認）`;
+    return `〜${formatMonthDay(end)}（開始日未確認）`;
+  }
+
+  function formatEventLocation(item) {
+    const parts = [item.venue, item.location].map((value) => String(value ?? '').trim()).filter(Boolean);
+    return [...new Set(parts)].join(' / ') || '開催場所は詳細ページで確認';
   }
 
   function eventSortScore(item, tabKey, today) {
@@ -281,6 +295,7 @@
     buildEventRecommendationReasons,
     eventStatusLabel,
     formatEventPeriod,
+    formatEventLocation,
     eventSortScore,
     isPreferredEventRegion,
     getEventCategories,

@@ -20,8 +20,11 @@ publisher feed is healthy.
 The stable `netorabo` ID, publisher `source`, editorial metadata and priority remain.
 `sourceName` explicitly includes Yahoo!ニュース. Articles link to their syndicated
 Yahoo pages because this RSS does not supply original publisher article URLs; do
-not invent those URLs. Existing article identity/deduplication, archive, summary and
-thumbnail safeguards remain unchanged. Yahoo proxy images are still rejected by the
+not invent those URLs. Yahoo article `source` tracking is ignored only for 40-character Yahoo article
+IDs, preventing RSS/clean URL variants from counting as two sources. Meaningful
+queries elsewhere remain intact. Distributor attribution does not grant Netorabo
+the Yahoo editorial authority bonus. Archive, summary and thumbnail safeguards
+remain unchanged. Yahoo proxy images are still rejected by the
 existing thumbnail policy and metadata enrichment remains responsible for approved
 image candidates.
 

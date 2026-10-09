@@ -66,3 +66,37 @@ test('an article shared by Yahoo topic and publisher feeds is not duplicated', a
   assert.equal(result.items.length, 1);
   assert.equal(result.items[0].sourceSignals.length, 1);
 });
+
+
+test('syndication attribution does not upgrade publisher authority or hot reasons', async () => {
+  const original = await collect(xml(), [{ ...feed, sourceName: 'ねとらぼ' }]);
+  const syndicated = await collect();
+  assert.equal(syndicated.items[0].hotScore, original.items[0].hotScore);
+  assert.deepEqual(syndicated.items[0].hotReasons, original.items[0].hotReasons);
+  assert.equal(syndicated.items[0].scoreSummary, original.items[0].scoreSummary);
+  const yahoo = await collect(xml(), [RSS_FEEDS.find(({ id }) => id === 'yahoo-top')]);
+  assert.ok(yahoo.items[0].hotScore > syndicated.items[0].hotScore);
+});
+
+test('clean and RSS-tracked Yahoo article URLs contribute only one source', async () => {
+  const yahoo = RSS_FEEDS.find(({ id }) => id === 'yahoo-top');
+  const result = await collectTrendTopics({
+    feeds: [feed, yahoo],
+    fetchImpl: async (url) => new Response(url === feed.url ? xml() : xml().replace('?source=rss', '')),
+    now: new Date('2026-10-09T01:30:00Z'), retryDelaysMs: [],
+  });
+  assert.equal(result.items.length, 1);
+  assert.equal(result.items[0].sourceSignals.length, 1);
+  assert.equal(result.items[0].posts, '1');
+});
+
+test('source query parameter remains meaningful outside Yahoo article URLs', async () => {
+  const result = await collectTrendTopics({
+    feeds: [feed, { ...feed, id: 'other', sourceName: '別の配信元', url: 'https://example.org/feed' }],
+    fetchImpl: async (url) => new Response(xml().replaceAll(article, 'https://publisher.example/story').replace('?source=rss', url === feed.url ? '?source=one' : '?source=two')),
+    now: new Date('2026-10-09T01:30:00Z'), retryDelaysMs: [],
+  });
+  const urls = result.items.flatMap((item) => item.sourceSignals.map((signal) => signal.url));
+  assert.equal(urls.length, 2);
+  assert.deepEqual(new Set(urls), new Set(['https://publisher.example/story?source=one', 'https://publisher.example/story?source=two']));
+});

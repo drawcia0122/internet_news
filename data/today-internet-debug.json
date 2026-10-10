@@ -1,93 +1,42 @@
 {
-  "generatedAt": "2026-10-09T23:31:24.472Z",
+  "generatedAt": "2026-10-10T02:44:07.195Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-209",
-  "selectedTitle": "知り合いの“ママ”の誕生日→5時間かけて作った料理は……　圧巻の食卓に「いや、大したもんだ」「お邪魔していいですか？」",
+  "selectedClusterId": "today-cluster-8",
+  "selectedTitle": "米軍の銃殺刑生配信計画に非難殺到「米国はそこまで落ちぶれていない」",
   "candidates": [
     {
-      "clusterId": "today-cluster-209",
-      "title": "知り合いの“ママ”の誕生日→5時間かけて作った料理は……　圧巻の食卓に「いや、大したもんだ」「お邪魔していいですか？」",
-      "category": "entertainment",
+      "clusterId": "today-cluster-8",
+      "title": "米軍の銃殺刑生配信計画に非難殺到「米国はそこまで落ちぶれていない」",
+      "category": "world",
       "categories": [
+        "world",
         "entertainment",
+        "politics",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 67.8,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 6,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-54",
-      "title": "【速報】AIで調べた判例実在せず書籍絶版",
-      "category": "books",
-      "categories": [
-        "books",
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.9,
-      "confidence": 0.36,
+      "buzzScore": 68.2,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.9,
+        "trend": 18.7,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 5.5,
+        "search": 5.8,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -99,11 +48,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
+        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 44.5,
-        "internalSocialScore": 65
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -112,8 +61,115 @@
       ]
     },
     {
-      "clusterId": "today-cluster-238",
-      "title": "庭をふと見ると「なんかいる！」→目を疑う“突然の訪問者”に騒然「塀が倒されますよ」「初めてみた」",
+      "clusterId": "today-cluster-7",
+      "title": "シュレーダー元独首相、プーチン氏の誕生会に出席 メルツ氏激怒「全く不道徳」",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 67.2,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 4,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-11",
+      "title": "衆院予算委で農相への追及必至、維新「国民の多くが納得できていない」…国会審議に影響なら続投方針変わるかもとの見方も",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.5,
+      "confidence": 0.45,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 20.7,
+        "internetNativeBoost": 8,
+        "search": 6.2,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 48.5,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-248",
+      "title": "約30年セルフカットのパパ、評判の理容師に任せたら……「映画俳優みたい」　妻と子どもたち感激の姿が700万再生「別人級」【海外】",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -121,7 +177,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.8,
+      "buzzScore": 63.7,
       "confidence": 0.35,
       "articleCount": 1,
       "sourceCount": 1,
@@ -133,9 +189,9 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 4.3,
+        "search": 4.1,
         "social": 6,
         "velocity": 2.7,
         "freshness": 8.5,
@@ -154,8 +210,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 32.3,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -165,34 +221,37 @@
       ]
     },
     {
-      "clusterId": "today-cluster-25",
-      "title": "Steamウォレットに追加したクレジット、実は“6か月以内”に使わないと消える。Valveが日本向け「Steam利用規約」をひっそり更新していた",
-      "category": "games",
+      "clusterId": "today-cluster-6",
+      "title": "ロシア政権寄りの軍事ブロガー、モンテネグロで拘束され国外退去命令　「ルイバリ」でウクライナ戦況を伝える",
+      "category": "politics",
       "categories": [
-        "games",
-        "sns",
+        "politics",
+        "world",
         "net-culture",
+        "sns",
         "general"
       ],
-      "buzzScore": 62.4,
-      "confidence": 0.36,
+      "buzzScore": 63.2,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 18.7,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 6.9,
-        "velocity": 0,
-        "freshness": 5.5,
+        "search": 5.8,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 4,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -204,63 +263,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 43.1,
-        "internalSocialScore": 54
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-40",
-      "title": "サイバー攻撃で個人情報などの流出が判明した企業・団体の一覧",
-      "category": "business",
-      "categories": [
-        "business",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 60.3,
-      "confidence": 0.41,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
-        "internalSocialScore": 54.8
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

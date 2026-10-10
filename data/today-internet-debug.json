@@ -1,22 +1,23 @@
 {
-  "generatedAt": "2026-10-10T09:46:37.844Z",
+  "generatedAt": "2026-10-10T15:54:06.246Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-3",
-  "selectedTitle": "ホロライブ謎の新プロジェクトに、世界屈指の人気TRPG番組「Critical Role」が参画か",
+  "selectedClusterId": "today-cluster-2",
+  "selectedTitle": "『Dr.STONE』新作アニメ『TERRAFORMING』の制作が決定！テレビアニメ最終回のその後を描く、千空たちの新たな科学冒険",
   "candidates": [
     {
-      "clusterId": "today-cluster-3",
-      "title": "ホロライブ謎の新プロジェクトに、世界屈指の人気TRPG番組「Critical Role」が参画か",
-      "category": "entertainment",
+      "clusterId": "today-cluster-2",
+      "title": "『Dr.STONE』新作アニメ『TERRAFORMING』の制作が決定！テレビアニメ最終回のその後を描く、千空たちの新たな科学冒険",
+      "category": "anime",
       "categories": [
+        "anime",
+        "games",
         "entertainment",
-        "sns",
         "net-culture",
-        "world",
+        "manga",
         "general"
       ],
-      "buzzScore": 71.4,
-      "confidence": 0.46,
+      "buzzScore": 73.7,
+      "confidence": 0.44,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -28,14 +29,14 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.6,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 5.6,
+        "search": 5.9,
         "social": 8.4,
-        "velocity": 8.3,
-        "freshness": 10,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -49,8 +50,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -60,34 +61,138 @@
       ]
     },
     {
-      "clusterId": "today-cluster-92",
-      "title": "Steamウォレットに追加したクレジット、実は“6か月以内”に使わないと消える。Valveが日本向け「Steam利用規約」をひっそり更新していた",
+      "clusterId": "today-cluster-4",
+      "title": "『戦刃アレスタ』家庭用版が2027年3月18日に発売！Switch／PS5向けパッケージ版の予約受付が開始",
       "category": "games",
       "categories": [
         "games",
-        "general",
-        "sns",
-        "net-culture"
+        "net-culture",
+        "general"
       ],
-      "buzzScore": 65.7,
-      "confidence": 0.37,
+      "buzzScore": 66.7,
+      "confidence": 0.39,
       "articleCount": 2,
-      "sourceCount": 2,
+      "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 3.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 5.6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-285",
+      "title": "人も猫も過ごしやすそう！　マンガ家の“図書館＆猫部屋”、無印やIKEAのアイテムで模様替えすると……　「猫愛を感じました」「機能的で美しい！」",
+      "category": "manga",
+      "categories": [
+        "manga",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 61.8,
+      "confidence": 0.32,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.5,
+        "internetNativeBoost": 8,
+        "search": 4.3,
+        "social": 7.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 33.3,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-31",
+      "title": "高市首相「抵抗勢力一掃」「衆院解散」にらむ大政局へ、簗農水相疑惑と定数削減　高橋洋一　日本の解き方",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 60.4,
+      "confidence": 0.41,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
         "trend": 18,
         "internetNativeBoost": 8,
         "search": 5.4,
         "social": 6.8,
         "velocity": 0,
-        "freshness": 3.5,
+        "freshness": 5.5,
         "authority": 2.5,
-        "categoryBias": 14,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -112,81 +217,30 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2",
-      "title": "『ドラゴンズドグマ 2：ダークアリズン』いきなりSteam同接“3万人”突破、評判も上々。12種類の新ダンジョンに新シナリオ、“ハクスラ”楽しめる新天地など追加要素てんこ盛り",
-      "category": "games",
+      "clusterId": "today-cluster-356",
+      "title": "ママ「自分が産んだとは思えない」→生後1カ月の赤ちゃんの姿に「産婦人科がざわつくレベル」「神々しい」",
+      "category": "entertainment",
       "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 65.5,
-      "confidence": 0.47,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 4.2,
-        "velocity": 8.3,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 32.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-10",
-      "title": "水槽から脱して冒険する“エビ”を飼育する水槽管理ゲーム『Indoor Shrimp Farming Simulator』の無料体験版が配信開始。なぜかエビがスケボーに乗り、お外を探検可能",
-      "category": "games",
-      "categories": [
-        "games",
         "entertainment",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.5,
-      "confidence": 0.37,
-      "articleCount": 2,
+      "buzzScore": 59.8,
+      "confidence": 0.31,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 19.1,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 7,
+        "search": 4.2,
+        "social": 6,
         "velocity": 0,
         "freshness": 7,
         "authority": 1.5,
@@ -200,65 +254,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 46.1,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-211",
-      "title": "週刊Steam広場 第174号：「Clive Barker's Hellraiser: Revival」や「スター・ウォーズ：ギャラクティック・レーサー」が発売に",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 61.5,
-      "confidence": 0.4,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 4.6,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 35.7
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 32.6,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

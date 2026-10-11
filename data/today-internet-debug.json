@@ -1,39 +1,36 @@
 {
-  "generatedAt": "2026-10-11T08:48:15.371Z",
+  "generatedAt": "2026-10-11T15:37:11.781Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-21",
-  "selectedTitle": "『NARUTO』「PROJECT RASENGAN」が発表。マンガ、アニメ、ゲーム、カードゲーム、すべてを巻き込む新プロジェクト",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "『ポートピア連続殺人事件』堀井雄二氏がAIを用いて制作した推理ゲーム『取調室の小宮』が無料公開。制作にかかった時間は“ほんの30分ほど”",
   "candidates": [
     {
-      "clusterId": "today-cluster-21",
-      "title": "『NARUTO』「PROJECT RASENGAN」が発表。マンガ、アニメ、ゲーム、カードゲーム、すべてを巻き込む新プロジェクト",
-      "category": "anime",
+      "clusterId": "today-cluster-1",
+      "title": "『ポートピア連続殺人事件』堀井雄二氏がAIを用いて制作した推理ゲーム『取調室の小宮』が無料公開。制作にかかった時間は“ほんの30分ほど”",
+      "category": "games",
       "categories": [
-        "anime",
         "games",
-        "manga",
-        "entertainment",
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.6,
-      "confidence": 0.36,
+      "buzzScore": 78.8,
+      "confidence": 0.5,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 5.5,
+        "search": 6.5,
+        "social": 5.6,
+        "velocity": 8.3,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -47,11 +44,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 44.2,
-        "internalSocialScore": 65
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -60,32 +57,197 @@
       ]
     },
     {
-      "clusterId": "today-cluster-31",
+      "clusterId": "today-cluster-41",
       "title": "新聞購読率、初めて5割下回る　内閣支持率は外交・物価高で評価二分　新聞通信調査会",
       "category": "business",
       "categories": [
         "business",
+        "sns",
+        "net-culture",
+        "entertainment",
         "world",
+        "general"
+      ],
+      "buzzScore": 72.4,
+      "confidence": 0.47,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 3,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 5.5,
+        "trend": 19.8,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 8.6,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 27,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 49.1,
+        "internalSocialScore": 67.2
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-3",
+      "title": "秘密を抱えた“人形職人”が主人公のホラーノベルゲーム『The Doll Shop』がSteamで明日10月12日発売。フランスのマンガ家コンビ、アトリエ・セントーによる手描きのグラフィックは雰囲気バツグン",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "manga",
+        "general"
+      ],
+      "buzzScore": 71.7,
+      "confidence": 0.5,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 15.6,
+        "internetNativeBoost": 0,
+        "search": 5.7,
+        "social": 7.4,
+        "velocity": 8,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 30,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 71,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 57.5
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-59",
+      "title": "『NARUTO』×『忍空』新作アニメが発表！桐山・岸本両先生監修による完全新作ストーリーが全4話で製作中",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "entertainment",
+        "net-culture",
+        "general",
+        "sns",
+        "manga"
+      ],
+      "buzzScore": 67.3,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 17.8,
+        "internetNativeBoost": 8,
+        "search": 5.6,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-27",
+      "title": "石破前首相 簗農相発言を批判“全国民の代表者との認識ない”",
+      "category": "politics",
+      "categories": [
+        "politics",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 63.9,
+      "buzzScore": 62.9,
       "confidence": 0.43,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
         "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 8.3,
+        "search": 6,
+        "social": 7,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 2.5,
@@ -101,170 +263,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 100,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
         "archiveHeatScore": 90,
-        "internalSearchScore": 45.2,
-        "internalSocialScore": 64.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-34",
-      "title": "『NARUTO』×『忍空』新作アニメが発表！桐山・岸本両先生監修による完全新作ストーリーが全4話で製作中",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 63.9,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 8.6,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 26.4,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 45.2,
-        "internalSocialScore": 66.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1",
-      "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 61,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 4.2,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 32.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-4",
-      "title": "『PUKEY GODDESS SHOT TRICK』は12月8日にとうとう発売。『デイヴ・ザ・ダイバー』「最終DLC」は『サブノーティカ2』コラボ。今週の見逃せないゲーム記事7選",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 60.7,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.5,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 4.2,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 45,
-        "internalSocialScore": 32.8
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

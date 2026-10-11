@@ -1,24 +1,1335 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T02:16:26.180Z",
+  "generatedAt": "2026-10-11T08:56:45.088Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
-  "items": [],
+  "items": [
+    {
+      "id": "steam:3061810",
+      "appId": 3061810,
+      "title": "龍が如く８外伝 Pirates in Hawaii",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/3061810/?cc=jp&l=japanese",
+      "regularPrice": 6930,
+      "salePrice": 1732,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": "2026-10-15T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A3061810%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/3061810/?cc=jp&l=japanese",
+        "appId": 3061810,
+        "packageId": 1088136,
+        "discountEndDate": 1792083600,
+        "checkedAt": "2026-10-11T08:56:45.088Z",
+        "regularPrice": 6930,
+        "salePrice": 1732,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3061810&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3061810/header_japanese.jpg?t=1781258528",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "龍が如く８外伝 Pirates in Hawaii"
+        }
+      ],
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 3061810
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2025-02-20",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=3061810&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:784150",
+      "appId": 784150,
+      "title": "Workers & Resources: Soviet Republic ワーカー&リソース：ソビエト リパブリック",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/784150/?cc=jp&l=japanese",
+      "regularPrice": 3980,
+      "salePrice": 995,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": "2026-10-22T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A784150%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/784150/?cc=jp&l=japanese",
+        "appId": 784150,
+        "packageId": 236607,
+        "discountEndDate": 1792688400,
+        "checkedAt": "2026-10-11T08:56:45.088Z",
+        "regularPrice": 3980,
+        "salePrice": 995,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=784150&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/784150/header_japanese.jpg?t=1791279380",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "Workers & Resources: Soviet Republic"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 784150
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2024-06-20",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=784150&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:582270",
+      "appId": 582270,
+      "title": "Everything",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/582270/?cc=jp&l=japanese",
+      "regularPrice": 1480,
+      "salePrice": 148,
+      "discountPercent": 90,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": "2026-10-23T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A582270%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/582270/?cc=jp&l=japanese",
+        "appId": 582270,
+        "packageId": 149446,
+        "discountEndDate": 1792774800,
+        "checkedAt": "2026-10-11T08:56:45.088Z",
+        "regularPrice": 1480,
+        "salePrice": 148,
+        "discountPercent": 90,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=582270&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582270/header.jpg?t=1674789705",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "Everything"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 582270
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2017-04-21",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=582270&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:390720",
+      "appId": 390720,
+      "title": "Anarcute",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/390720/?cc=jp&l=japanese",
+      "regularPrice": 1480,
+      "salePrice": 148,
+      "discountPercent": 90,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": "2026-10-12T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A390720%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/390720/?cc=jp&l=japanese",
+        "appId": 390720,
+        "packageId": 74547,
+        "discountEndDate": 1791824400,
+        "checkedAt": "2026-10-11T08:56:45.088Z",
+        "regularPrice": 1480,
+        "salePrice": 148,
+        "discountPercent": 90,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=390720&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/390720/header.jpg?t=1781884646",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "Anarcute"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 390720
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2016-07-12",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=390720&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:688420",
+      "appId": 688420,
+      "title": "Bad North: Jotunn Edition",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/688420/?cc=jp&l=japanese",
+      "regularPrice": 1700,
+      "salePrice": 340,
+      "discountPercent": 80,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=688420&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/688420/header.jpg?t=1788868456",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "Bad North: Jotunn Edition"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 688420
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2018-11-16",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=688420&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1812090",
+      "appId": 1812090,
+      "title": "Escape Academy",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1812090/?cc=jp&l=japanese",
+      "regularPrice": 2050,
+      "salePrice": 205,
+      "discountPercent": 90,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": "2026-10-16T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1812090%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1812090/?cc=jp&l=japanese",
+        "appId": 1812090,
+        "packageId": 651555,
+        "discountEndDate": 1792170000,
+        "checkedAt": "2026-10-11T08:56:45.088Z",
+        "regularPrice": 2050,
+        "salePrice": 205,
+        "discountPercent": 90,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1812090&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1812090/header.jpg?t=1747087130",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "Escape Academy"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1812090
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2022-07-13",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1812090&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1569200",
+      "appId": 1569200,
+      "title": "Brewmaster: Beer Brewing Simulator",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1569200/?cc=jp&l=japanese",
+      "regularPrice": 1840,
+      "salePrice": 276,
+      "discountPercent": 85,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": "2026-10-22T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1569200%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1569200/?cc=jp&l=japanese",
+        "appId": 1569200,
+        "packageId": 554439,
+        "discountEndDate": 1792688400,
+        "checkedAt": "2026-10-11T08:56:45.088Z",
+        "regularPrice": 1840,
+        "salePrice": 276,
+        "discountPercent": 85,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1569200&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1569200/header.jpg?t=1764353952",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "Brewmaster: Beer Brewing Simulator"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1569200
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2022-09-29",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1569200&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1138850",
+      "appId": 1138850,
+      "title": "Heavenly Bodies",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1138850/?cc=jp&l=japanese",
+      "regularPrice": 2300,
+      "salePrice": 575,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": "2026-10-22T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1138850%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1138850/?cc=jp&l=japanese",
+        "appId": 1138850,
+        "packageId": 387443,
+        "discountEndDate": 1792688400,
+        "checkedAt": "2026-10-11T08:56:45.088Z",
+        "regularPrice": 2300,
+        "salePrice": 575,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1138850&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1138850/header.jpg?t=1780480028",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "Heavenly Bodies"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1138850
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2021-12-07",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1138850&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1138850
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "eventId": "steam-announcement-3735229275443843558",
+          "date": "2023-09-26T04:13:42.000Z",
+          "title": "Update Notes For September 26",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1138850",
+            "url": "https://steamcommunity.com/ogg/1138850/announcements/detail/3735229275443843558",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:361420",
+      "appId": 361420,
+      "title": "ASTRONEER",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/361420/?cc=jp&l=japanese",
+      "regularPrice": 3500,
+      "salePrice": 875,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": "2026-10-15T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A361420%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/361420/?cc=jp&l=japanese",
+        "appId": 361420,
+        "packageId": 64704,
+        "discountEndDate": 1792083600,
+        "checkedAt": "2026-10-11T08:56:45.088Z",
+        "regularPrice": 3500,
+        "salePrice": 875,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=361420&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/361420/1c44099d86c824a6fd1098a4215097878d68664e/header.jpg?t=1770767049",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "ASTRONEER"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 361420
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2019-02-05",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=361420&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1316910",
+      "appId": 1316910,
+      "title": "たべごろ！スーパーモンキーボール 1＆2リメイク",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1316910/?cc=jp&l=japanese",
+      "regularPrice": 4389,
+      "salePrice": 1097,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": "2026-10-15T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1316910%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1316910/?cc=jp&l=japanese",
+        "appId": 1316910,
+        "packageId": 629830,
+        "discountEndDate": 1792083600,
+        "checkedAt": "2026-10-11T08:56:45.088Z",
+        "regularPrice": 4389,
+        "salePrice": 1097,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1316910&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1316910/header_japanese.jpg?t=1781263885",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "たべごろ！スーパーモンキーボール 1＆2リメイク"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1316910
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2021-10-04",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1316910&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1316910
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "eventId": "steam-announcement-553504715299620946",
+          "date": "2025-10-21T00:03:19.000Z",
+          "title": "Patch Update 10/20/2025 - Security Update",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1316910",
+            "url": "https://steamcommunity.com/ogg/1316910/announcements/detail/553504715299620946",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:4968640",
+      "appId": 4968640,
+      "title": "Japanese Ramen Simulator",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/4968640/?cc=jp&l=japanese",
+      "regularPrice": 1900,
+      "salePrice": 1615,
+      "discountPercent": 15,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": "2026-10-23T17:00:35.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A4968640%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/4968640/?cc=jp&l=japanese",
+        "appId": 4968640,
+        "packageId": 1724125,
+        "discountEndDate": 1792774835,
+        "checkedAt": "2026-10-11T08:56:45.088Z",
+        "regularPrice": 1900,
+        "salePrice": 1615,
+        "discountPercent": 15,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=4968640&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4968640/f271f45d7475a5270df309f6b7634d0a56a8055d/header.jpg?t=1791626249",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "Japanese Ramen Simulator"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4968640
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2026-10-09",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=4968640&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4968640
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "eventId": "steam-announcement-702155760121940972",
+          "date": "2026-10-10T09:35:47.000Z",
+          "title": "Update Notice (v0.1.50.17746)",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:4968640",
+            "url": "https://steamcommunity.com/ogg/4968640/announcements/detail/702155760121940972",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:3883570",
+      "appId": 3883570,
+      "title": "インボキア-呪いのダイスゲーム-",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/3883570/?cc=jp&l=japanese",
+      "regularPrice": 1200,
+      "salePrice": 900,
+      "discountPercent": 25,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3883570&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3883570/77442fe87da250d359fd54d1e76465bf80632da8/header_japanese.jpg?t=1791547174",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "インボキア-呪いのダイスゲーム-"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 3883570
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2026-10-08",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=3883570&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 3883570
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "eventId": "steam-announcement-693148560867199769",
+          "date": "2026-10-09T16:08:53.000Z",
+          "title": "Patch V0.44.9",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:3883570",
+            "url": "https://steamcommunity.com/ogg/3883570/announcements/detail/693148560867199769",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:2333000",
+      "appId": 2333000,
+      "title": "Silver Pines",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/2333000/?cc=jp&l=japanese",
+      "regularPrice": 2500,
+      "salePrice": 2250,
+      "discountPercent": 10,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": "2026-10-22T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A2333000%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/2333000/?cc=jp&l=japanese",
+        "appId": 2333000,
+        "packageId": 837925,
+        "discountEndDate": 1792688400,
+        "checkedAt": "2026-10-11T08:56:45.088Z",
+        "regularPrice": 2500,
+        "salePrice": 2250,
+        "discountPercent": 10,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2333000&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2333000/2ce661be5b6e60b8fcc92ecdf3f9dc2dca2a9037/header.jpg?t=1791483390",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "Silver Pines"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2333000
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2026-10-08",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=2333000&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:2254990",
+      "appId": 2254990,
+      "title": "Permafrost",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/2254990/?cc=jp&l=japanese",
+      "regularPrice": 2799,
+      "salePrice": 2239,
+      "discountPercent": 20,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "endsAt": "2026-10-23T17:00:37.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A2254990%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/2254990/?cc=jp&l=japanese",
+        "appId": 2254990,
+        "packageId": 809014,
+        "discountEndDate": 1792774837,
+        "checkedAt": "2026-10-11T08:56:45.088Z",
+        "regularPrice": 2799,
+        "salePrice": 2239,
+        "discountPercent": 20,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-11T14:56:45.088Z",
+      "priceValidUntil": "2026-10-12T08:56:45.088Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2254990&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2254990/693eff202c061aaecba330b44d76485a672bea97/header.jpg?t=1791608052",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+          "title": "『龍が如く８外伝 Pirates in Hawaii』は75％オフで1732円。『アストロニーア』も75％オフ、最安値級の875円。メタサスペンス『Pony Island』は10月13日までタダ。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-11T07:21:19.000Z",
+          "topicId": "auto-games-龍が如く-外伝-pirates-in-hawaii-は75-オフで1732円-アストロニーア-も75-オフ-最安値級の875円-メタサスペンス-pony-isl-automaton-media.com/articles/newsjp/20261011-473016",
+          "gameTitle": "Permafrost"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2254990
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "date": "2026-10-09",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=2254990&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2254990
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-11T08:56:45.088Z",
+          "freshUntil": "2026-10-11T14:56:45.088Z",
+          "eventId": "steam-announcement-703281660030880764",
+          "date": "2026-10-09T21:14:18.000Z",
+          "title": "Hotfix 2: Stability Fix for RTX 40 and 50 Series",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:2254990",
+            "url": "https://steamcommunity.com/ogg/2254990/announcements/detail/703281660030880764",
+            "verified": true
+          }
+        }
+      ]
+    }
+  ],
   "sources": [
     {
       "kind": "article",
+      "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "candidates": [
+        {
+          "appId": 3061810,
+          "articleGameTitle": "龍が如く８外伝 Pirates in Hawaii"
+        },
+        {
+          "appId": 405640,
+          "articleGameTitle": "Pony Island"
+        },
+        {
+          "appId": 784150,
+          "articleGameTitle": "Workers & Resources: Soviet Republic"
+        },
+        {
+          "appId": 582270,
+          "articleGameTitle": "Everything"
+        },
+        {
+          "appId": 390720,
+          "articleGameTitle": "Anarcute"
+        },
+        {
+          "appId": 688420,
+          "articleGameTitle": "Bad North: Jotunn Edition"
+        },
+        {
+          "appId": 1812090,
+          "articleGameTitle": "Escape Academy"
+        },
+        {
+          "appId": 1569200,
+          "articleGameTitle": "Brewmaster: Beer Brewing Simulator"
+        },
+        {
+          "appId": 1138850,
+          "articleGameTitle": "Heavenly Bodies"
+        },
+        {
+          "appId": 361420,
+          "articleGameTitle": "ASTRONEER"
+        },
+        {
+          "appId": 1316910,
+          "articleGameTitle": "たべごろ！スーパーモンキーボール 1＆2リメイク"
+        },
+        {
+          "appId": 4968640,
+          "articleGameTitle": "Japanese Ramen Simulator"
+        },
+        {
+          "appId": 3883570,
+          "articleGameTitle": "インボキア-呪いのダイスゲーム-"
+        },
+        {
+          "appId": 2333000,
+          "articleGameTitle": "Silver Pines"
+        },
+        {
+          "appId": 2254990,
+          "articleGameTitle": "Permafrost"
+        }
+      ]
+    },
+    {
+      "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/2610093d",
-      "checkedAt": "2026-10-10T23:34:49.595Z",
-      "status": "cached",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
       "candidates": []
     },
     {
       "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/20261009-472667",
-      "checkedAt": "2026-10-10T23:34:49.595Z",
-      "status": "cached",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
       "candidates": []
+    },
+    {
+      "kind": "steam",
+      "appId": 3061810,
+      "url": "https://store.steampowered.com/api/appdetails?appids=3061810&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 405640,
+      "url": "https://store.steampowered.com/api/appdetails?appids=405640&cc=jp&l=japanese",
+      "checkedAt": null,
+      "attemptedAt": "2026-10-11T08:56:45.088Z",
+      "status": "unavailable",
+      "error": "steam_invalid_price",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "retained": false
+    },
+    {
+      "kind": "steam",
+      "appId": 784150,
+      "url": "https://store.steampowered.com/api/appdetails?appids=784150&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 582270,
+      "url": "https://store.steampowered.com/api/appdetails?appids=582270&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 390720,
+      "url": "https://store.steampowered.com/api/appdetails?appids=390720&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 688420,
+      "url": "https://store.steampowered.com/api/appdetails?appids=688420&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1812090,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1812090&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1569200,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1569200&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1138850,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1138850&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 361420,
+      "url": "https://store.steampowered.com/api/appdetails?appids=361420&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1316910,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1316910&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 4968640,
+      "url": "https://store.steampowered.com/api/appdetails?appids=4968640&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 3883570,
+      "url": "https://store.steampowered.com/api/appdetails?appids=3883570&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 2333000,
+      "url": "https://store.steampowered.com/api/appdetails?appids=2333000&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 2254990,
+      "url": "https://store.steampowered.com/api/appdetails?appids=2254990&cc=jp&l=japanese",
+      "checkedAt": "2026-10-11T08:56:45.088Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261011-473016"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
     }
   ]
 }

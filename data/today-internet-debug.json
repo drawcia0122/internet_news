@@ -1,38 +1,37 @@
 {
-  "generatedAt": "2026-10-12T20:04:41.527Z",
+  "generatedAt": "2026-10-13T02:02:49.414Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1374",
-  "selectedTitle": "ガストで“1099円ハンバーガー”を注文→届いたのは……　「これは食べてみたい」驚きの光景に「絶対行こ」",
+  "selectedClusterId": "today-cluster-9",
+  "selectedTitle": "『PlayStation 5 デジタル・エディション ミッドナイト ブラック』日本語専用版が、希望小売価格5万5000円で11月19日より発売へ",
   "candidates": [
     {
-      "clusterId": "today-cluster-1374",
-      "title": "ガストで“1099円ハンバーガー”を注文→届いたのは……　「これは食べてみたい」驚きの光景に「絶対行こ」",
-      "category": "sns",
+      "clusterId": "today-cluster-9",
+      "title": "『PlayStation 5 デジタル・エディション ミッドナイト ブラック』日本語専用版が、希望小売価格5万5000円で11月19日より発売へ",
+      "category": "games",
       "categories": [
-        "sns",
+        "games",
         "net-culture",
-        "entertainment",
-        "matome",
         "general"
       ],
-      "buzzScore": 69.2,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 79.6,
+      "confidence": 0.65,
+      "articleCount": 5,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "主要3媒体で同一話題を確認",
+        "直近数時間で関連記事が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.1,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 7.2,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
+        "coverage": 9,
+        "sourceDiversity": 7,
+        "trend": 14.1,
+        "internetNativeBoost": 0,
+        "search": 4.9,
+        "social": 5.6,
+        "velocity": 14,
+        "freshness": 10,
+        "authority": 1,
         "categoryBias": 14,
         "penalty": 0
       },
@@ -43,13 +42,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 96,
-        "internalSearchScore": 35.6,
-        "internalSocialScore": 56.4
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 64,
+        "internalSearchScore": 38,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -58,35 +57,36 @@
       ]
     },
     {
-      "clusterId": "today-cluster-33",
-      "title": "【速報】共産委員長、野党共闘路線の転換方針表明",
-      "category": "politics",
+      "clusterId": "today-cluster-6",
+      "title": "映画『バイオハザード』主人公が“狩野英孝すぎる”と話題に。狩野さん本人、映画公式も反応、「バイオ実況を見ているような感覚」など感想相次ぐ",
+      "category": "games",
       "categories": [
-        "politics",
-        "sns",
+        "games",
+        "entertainment",
         "net-culture",
         "general"
       ],
-      "buzzScore": 64,
-      "confidence": 0.44,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 78.7,
+      "confidence": 0.49,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
         "trend": 20.7,
         "internetNativeBoost": 8,
         "search": 6.2,
         "social": 7,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -110,145 +110,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-57",
-      "title": "海外任天堂幹部、「物理メディアの廃止予定はない」と明言。その分コストはかかるけど、“愛好家たち”は確かに居るから",
-      "category": "games",
+      "clusterId": "today-cluster-39",
+      "title": "AI時代のサイバー攻撃、度重なる情報漏洩からの守りを固めるための政府への7つの提言私案｜安野貴博",
+      "category": "tech",
       "categories": [
-        "games",
-        "game-features",
+        "tech",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 63.8,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 19.8,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 45.2,
-        "internalSocialScore": 64.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-53",
-      "title": "【100円】『NINKU-忍空-』Kindleにて「100円」で購入できるセールが開催中！全巻を「1800円」で揃えられる。ジャンプを代表するもう一つの忍者絵巻",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "net-culture",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 61.9,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 42.7,
-        "internalSocialScore": 64.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-914",
-      "title": "バーナム英首相「EU離脱にロシア介入」　2016年の国民投票巡り",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "business",
-        "sns",
-        "net-culture",
-        "world",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 60.5,
-      "confidence": 0.35,
-      "articleCount": 2,
+      "buzzScore": 72.9,
+      "confidence": 0.43,
+      "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 18,
+        "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 3.9,
-        "social": 7.2,
+        "search": 6,
+        "social": 7,
         "velocity": 0,
-        "freshness": 3.5,
+        "freshness": 5.5,
         "authority": 2.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -258,13 +147,117 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 30.7,
-        "internalSocialScore": 56.4
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-12",
+      "title": "“巨大ロボット”で暴走族がタイマンバトルするアクションゲーム『横浜機動暴走族 ROCK’N ROLL SUICIDE』のSteamストアページが公開。実際に撮影された横浜の写真が背景に使用された気合い十分の作品",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 70.3,
+      "confidence": 0.5,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 16.3,
+        "internetNativeBoost": 0,
+        "search": 5.3,
+        "social": 5.6,
+        "velocity": 8,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 74,
+        "internalSearchScore": 41.5,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-13",
+      "title": "宇宙探索ゲーム『ノーマンズスカイ』iOS版が10月29日にリリース決定。なんと“過去10年分のアプデ”をすべて収録",
+      "category": "games",
+      "categories": [
+        "games",
+        "tech",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.1,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

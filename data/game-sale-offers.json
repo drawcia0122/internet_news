@@ -1,99 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T09:34:00.698Z",
+  "generatedAt": "2026-10-13T17:21:23.717Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
   "items": [
-    {
-      "id": "steam:2133760",
-      "appId": 2133760,
-      "title": "Tiny Bookshop",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/2133760/?cc=jp&l=japanese",
-      "regularPrice": 2499,
-      "salePrice": 1624,
-      "discountPercent": 35,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
-      "endsAt": "2026-10-15T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A2133760%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/2133760/?cc=jp&l=japanese",
-        "appId": 2133760,
-        "packageId": 763284,
-        "discountEndDate": 1792083600,
-        "checkedAt": "2026-10-13T09:34:00.698Z",
-        "regularPrice": 2499,
-        "salePrice": 1624,
-        "discountPercent": 35,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=2133760&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2133760/519031e524f64d61ea58b75df39dccfe31b68834/header.jpg?t=1790261589",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261012u"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/261012u",
-          "title": "【過去最安】自分だけの“移動式書店”を経営するゲーム『Tiny Bookshop』を35%オフの1624円で買えるセールがSteamで開催中。店に並べる本を選んだりお客に本をオススメしたり、書店員の気分を味わえる",
-          "publishedAt": "2026-10-12T14:31:13.000Z",
-          "topicId": "auto-games-過去最安-自分だけの-移動式書店-を経営するゲーム-tiny-bookshop-を35-オフの1624円で買えるセールがsteamで開催中-店に並べる本を選んだ-news.denfaminicogamer.jp/news/261012u",
-          "gameTitle": "『Tiny Bookshop』"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 2133760
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
-          "date": "2025-08-07",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=2133760&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 2133760
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
-          "eventId": "steam-announcement-666113010538907108",
-          "date": "2026-05-11T08:34:46.000Z",
-          "title": "Version 1.1.6",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:2133760",
-            "url": "https://steamcommunity.com/ogg/2133760/announcements/detail/666113010538907108",
-            "verified": true
-          }
-        }
-      ]
-    },
     {
       "id": "steam:3061810",
       "appId": 3061810,
@@ -107,7 +18,7 @@
       "discountPercent": 75,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": "2026-10-15T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -116,7 +27,7 @@
         "appId": 3061810,
         "packageId": 1088136,
         "discountEndDate": 1792083600,
-        "checkedAt": "2026-10-13T09:34:00.698Z",
+        "checkedAt": "2026-10-13T17:21:23.717Z",
         "regularPrice": 6930,
         "salePrice": 1732,
         "discountPercent": 75,
@@ -124,8 +35,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=3061810&cc=jp&l=japanese",
@@ -152,8 +63,8 @@
             "appId": 3061810
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2025-02-20",
           "status": "released",
           "source": {
@@ -177,11 +88,11 @@
       "discountPercent": 0,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": null,
       "deadlineSource": null,
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "ended",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=405640&cc=jp&l=japanese",
@@ -208,8 +119,8 @@
             "appId": 405640
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2016-01-04",
           "status": "released",
           "source": {
@@ -233,7 +144,7 @@
       "discountPercent": 75,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": "2026-10-22T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -242,7 +153,7 @@
         "appId": 784150,
         "packageId": 236607,
         "discountEndDate": 1792688400,
-        "checkedAt": "2026-10-13T09:34:00.698Z",
+        "checkedAt": "2026-10-13T17:21:23.717Z",
         "regularPrice": 3980,
         "salePrice": 995,
         "discountPercent": 75,
@@ -250,8 +161,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=784150&cc=jp&l=japanese",
@@ -278,8 +189,8 @@
             "appId": 784150
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2024-06-20",
           "status": "released",
           "source": {
@@ -303,7 +214,7 @@
       "discountPercent": 90,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": "2026-10-23T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -312,7 +223,7 @@
         "appId": 582270,
         "packageId": 149446,
         "discountEndDate": 1792774800,
-        "checkedAt": "2026-10-13T09:34:00.698Z",
+        "checkedAt": "2026-10-13T17:21:23.717Z",
         "regularPrice": 1480,
         "salePrice": 148,
         "discountPercent": 90,
@@ -320,8 +231,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=582270&cc=jp&l=japanese",
@@ -348,8 +259,8 @@
             "appId": 582270
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2017-04-21",
           "status": "released",
           "source": {
@@ -373,11 +284,11 @@
       "discountPercent": 0,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": null,
       "deadlineSource": null,
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "ended",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=390720&cc=jp&l=japanese",
@@ -404,8 +315,8 @@
             "appId": 390720
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2016-07-12",
           "status": "released",
           "source": {
@@ -429,11 +340,11 @@
       "discountPercent": 80,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": null,
       "deadlineSource": null,
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=688420&cc=jp&l=japanese",
@@ -460,8 +371,8 @@
             "appId": 688420
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2018-11-16",
           "status": "released",
           "source": {
@@ -485,7 +396,7 @@
       "discountPercent": 90,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": "2026-10-16T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -494,7 +405,7 @@
         "appId": 1812090,
         "packageId": 651555,
         "discountEndDate": 1792170000,
-        "checkedAt": "2026-10-13T09:34:00.698Z",
+        "checkedAt": "2026-10-13T17:21:23.717Z",
         "regularPrice": 2050,
         "salePrice": 205,
         "discountPercent": 90,
@@ -502,8 +413,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1812090&cc=jp&l=japanese",
@@ -530,8 +441,8 @@
             "appId": 1812090
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2022-07-13",
           "status": "released",
           "source": {
@@ -555,7 +466,7 @@
       "discountPercent": 85,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": "2026-10-22T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -564,7 +475,7 @@
         "appId": 1569200,
         "packageId": 554439,
         "discountEndDate": 1792688400,
-        "checkedAt": "2026-10-13T09:34:00.698Z",
+        "checkedAt": "2026-10-13T17:21:23.717Z",
         "regularPrice": 1840,
         "salePrice": 276,
         "discountPercent": 85,
@@ -572,8 +483,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1569200&cc=jp&l=japanese",
@@ -600,8 +511,8 @@
             "appId": 1569200
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2022-09-29",
           "status": "released",
           "source": {
@@ -625,7 +536,7 @@
       "discountPercent": 75,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": "2026-10-22T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -634,7 +545,7 @@
         "appId": 1138850,
         "packageId": 387443,
         "discountEndDate": 1792688400,
-        "checkedAt": "2026-10-13T09:34:00.698Z",
+        "checkedAt": "2026-10-13T17:21:23.717Z",
         "regularPrice": 2300,
         "salePrice": 575,
         "discountPercent": 75,
@@ -642,8 +553,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1138850&cc=jp&l=japanese",
@@ -670,8 +581,8 @@
             "appId": 1138850
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2021-12-07",
           "status": "released",
           "source": {
@@ -686,8 +597,8 @@
             "appId": 1138850
           },
           "kind": "update",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "eventId": "steam-announcement-3735229275443843558",
           "date": "2023-09-26T04:13:42.000Z",
           "title": "Update Notes For September 26",
@@ -714,7 +625,7 @@
       "discountPercent": 75,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": "2026-10-15T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -723,7 +634,7 @@
         "appId": 361420,
         "packageId": 64704,
         "discountEndDate": 1792083600,
-        "checkedAt": "2026-10-13T09:34:00.698Z",
+        "checkedAt": "2026-10-13T17:21:23.717Z",
         "regularPrice": 3500,
         "salePrice": 875,
         "discountPercent": 75,
@@ -731,8 +642,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=361420&cc=jp&l=japanese",
@@ -759,8 +670,8 @@
             "appId": 361420
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2019-02-05",
           "status": "released",
           "source": {
@@ -784,7 +695,7 @@
       "discountPercent": 75,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": "2026-10-15T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -793,7 +704,7 @@
         "appId": 1316910,
         "packageId": 629830,
         "discountEndDate": 1792083600,
-        "checkedAt": "2026-10-13T09:34:00.698Z",
+        "checkedAt": "2026-10-13T17:21:23.717Z",
         "regularPrice": 4389,
         "salePrice": 1097,
         "discountPercent": 75,
@@ -801,8 +712,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1316910&cc=jp&l=japanese",
@@ -829,8 +740,8 @@
             "appId": 1316910
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2021-10-04",
           "status": "released",
           "source": {
@@ -845,8 +756,8 @@
             "appId": 1316910
           },
           "kind": "update",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "eventId": "steam-announcement-553504715299620946",
           "date": "2025-10-21T00:03:19.000Z",
           "title": "Patch Update 10/20/2025 - Security Update",
@@ -873,7 +784,7 @@
       "discountPercent": 15,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": "2026-10-23T17:00:35.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -882,7 +793,7 @@
         "appId": 4968640,
         "packageId": 1724125,
         "discountEndDate": 1792774835,
-        "checkedAt": "2026-10-13T09:34:00.698Z",
+        "checkedAt": "2026-10-13T17:21:23.717Z",
         "regularPrice": 1900,
         "salePrice": 1615,
         "discountPercent": 15,
@@ -890,8 +801,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=4968640&cc=jp&l=japanese",
@@ -918,8 +829,8 @@
             "appId": 4968640
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2026-10-09",
           "status": "released",
           "source": {
@@ -934,8 +845,8 @@
             "appId": 4968640
           },
           "kind": "update",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "eventId": "steam-announcement-702155760121940972",
           "date": "2026-10-10T09:35:47.000Z",
           "title": "Update Notice (v0.1.50.17746)",
@@ -962,17 +873,17 @@
       "discountPercent": 25,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": null,
       "deadlineSource": null,
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=3883570&cc=jp&l=japanese",
         "kind": "steam-appdetails"
       },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3883570/77442fe87da250d359fd54d1e76465bf80632da8/header_japanese.jpg?t=1791547174",
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3883570/77442fe87da250d359fd54d1e76465bf80632da8/header_japanese.jpg?t=1791907648",
       "articleUrls": [
         "https://automaton-media.com/articles/newsjp/20261011-473016"
       ],
@@ -993,8 +904,8 @@
             "appId": 3883570
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2026-10-08",
           "status": "released",
           "source": {
@@ -1009,8 +920,8 @@
             "appId": 3883570
           },
           "kind": "update",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "eventId": "steam-announcement-693148560867200282",
           "date": "2026-10-12T15:42:23.000Z",
           "title": "Patch V0.44.10",
@@ -1037,7 +948,7 @@
       "discountPercent": 10,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": "2026-10-22T17:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -1046,7 +957,7 @@
         "appId": 2333000,
         "packageId": 837925,
         "discountEndDate": 1792688400,
-        "checkedAt": "2026-10-13T09:34:00.698Z",
+        "checkedAt": "2026-10-13T17:21:23.717Z",
         "regularPrice": 2500,
         "salePrice": 2250,
         "discountPercent": 10,
@@ -1054,14 +965,14 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2333000&cc=jp&l=japanese",
         "kind": "steam-appdetails"
       },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2333000/2ce661be5b6e60b8fcc92ecdf3f9dc2dca2a9037/header.jpg?t=1791483390",
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2333000/2ce661be5b6e60b8fcc92ecdf3f9dc2dca2a9037/header.jpg?t=1791897978",
       "articleUrls": [
         "https://automaton-media.com/articles/newsjp/20261011-473016"
       ],
@@ -1082,8 +993,8 @@
             "appId": 2333000
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2026-10-08",
           "status": "released",
           "source": {
@@ -1107,7 +1018,7 @@
       "discountPercent": 20,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "endsAt": "2026-10-23T17:00:37.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -1116,7 +1027,7 @@
         "appId": 2254990,
         "packageId": 809014,
         "discountEndDate": 1792774837,
-        "checkedAt": "2026-10-13T09:34:00.698Z",
+        "checkedAt": "2026-10-13T17:21:23.717Z",
         "regularPrice": 2799,
         "salePrice": 2239,
         "discountPercent": 20,
@@ -1124,8 +1035,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-13T15:34:00.698Z",
-      "priceValidUntil": "2026-10-14T09:34:00.698Z",
+      "freshUntil": "2026-10-13T23:21:23.717Z",
+      "priceValidUntil": "2026-10-14T17:21:23.717Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2254990&cc=jp&l=japanese",
@@ -1152,8 +1063,8 @@
             "appId": 2254990
           },
           "kind": "release",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "date": "2026-10-09",
           "status": "released",
           "source": {
@@ -1168,8 +1079,8 @@
             "appId": 2254990
           },
           "kind": "update",
-          "checkedAt": "2026-10-13T09:34:00.698Z",
-          "freshUntil": "2026-10-13T15:34:00.698Z",
+          "checkedAt": "2026-10-13T17:21:23.717Z",
+          "freshUntil": "2026-10-13T23:21:23.717Z",
           "eventId": "steam-announcement-703281660030880764",
           "date": "2026-10-09T21:14:18.000Z",
           "title": "Hotfix 2: Stability Fix for RTX 40 and 50 Series",
@@ -1188,26 +1099,14 @@
     {
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/2610132k",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "candidates": []
     },
     {
       "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/261012u",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
-      "status": "ok",
-      "candidates": [
-        {
-          "appId": 2133760,
-          "articleGameTitle": "『Tiny Bookshop』"
-        }
-      ]
-    },
-    {
-      "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "candidates": [
         {
@@ -1275,28 +1174,15 @@
     {
       "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/20261009-472667",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "candidates": []
     },
     {
       "kind": "steam",
-      "appId": 2133760,
-      "url": "https://store.steampowered.com/api/appdetails?appids=2133760&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261012u"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
       "appId": 3061810,
       "url": "https://store.steampowered.com/api/appdetails?appids=3061810&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -1309,7 +1195,7 @@
       "kind": "steam",
       "appId": 405640,
       "url": "https://store.steampowered.com/api/appdetails?appids=405640&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": false,
       "articleUrls": [
@@ -1322,7 +1208,7 @@
       "kind": "steam",
       "appId": 784150,
       "url": "https://store.steampowered.com/api/appdetails?appids=784150&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -1335,7 +1221,7 @@
       "kind": "steam",
       "appId": 582270,
       "url": "https://store.steampowered.com/api/appdetails?appids=582270&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -1348,7 +1234,7 @@
       "kind": "steam",
       "appId": 390720,
       "url": "https://store.steampowered.com/api/appdetails?appids=390720&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": false,
       "articleUrls": [
@@ -1361,7 +1247,7 @@
       "kind": "steam",
       "appId": 688420,
       "url": "https://store.steampowered.com/api/appdetails?appids=688420&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -1374,7 +1260,7 @@
       "kind": "steam",
       "appId": 1812090,
       "url": "https://store.steampowered.com/api/appdetails?appids=1812090&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -1387,7 +1273,7 @@
       "kind": "steam",
       "appId": 1569200,
       "url": "https://store.steampowered.com/api/appdetails?appids=1569200&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -1400,7 +1286,7 @@
       "kind": "steam",
       "appId": 1138850,
       "url": "https://store.steampowered.com/api/appdetails?appids=1138850&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -1413,7 +1299,7 @@
       "kind": "steam",
       "appId": 361420,
       "url": "https://store.steampowered.com/api/appdetails?appids=361420&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -1426,7 +1312,7 @@
       "kind": "steam",
       "appId": 1316910,
       "url": "https://store.steampowered.com/api/appdetails?appids=1316910&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -1439,7 +1325,7 @@
       "kind": "steam",
       "appId": 4968640,
       "url": "https://store.steampowered.com/api/appdetails?appids=4968640&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -1452,7 +1338,7 @@
       "kind": "steam",
       "appId": 3883570,
       "url": "https://store.steampowered.com/api/appdetails?appids=3883570&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -1465,7 +1351,7 @@
       "kind": "steam",
       "appId": 2333000,
       "url": "https://store.steampowered.com/api/appdetails?appids=2333000&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -1478,7 +1364,7 @@
       "kind": "steam",
       "appId": 2254990,
       "url": "https://store.steampowered.com/api/appdetails?appids=2254990&cc=jp&l=japanese",
-      "checkedAt": "2026-10-13T09:34:00.698Z",
+      "checkedAt": "2026-10-13T17:21:23.717Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T17:21:23.717Z",
+  "generatedAt": "2026-10-13T22:02:33.505Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
@@ -37,7 +37,7 @@
       },
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=3061810&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -163,7 +163,7 @@
       },
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=784150&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -233,7 +233,7 @@
       },
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=582270&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -345,7 +345,7 @@
       "deadlineSource": null,
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=688420&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -415,7 +415,7 @@
       },
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1812090&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -485,7 +485,7 @@
       },
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1569200&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -555,7 +555,7 @@
       },
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1138850&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -599,8 +599,8 @@
           "kind": "update",
           "checkedAt": "2026-10-13T17:21:23.717Z",
           "freshUntil": "2026-10-13T23:21:23.717Z",
-          "eventId": "steam-announcement-3735229275443843558",
           "date": "2023-09-26T04:13:42.000Z",
+          "eventId": "steam-announcement-3735229275443843558",
           "title": "Update Notes For September 26",
           "eventType": "release-notes",
           "source": {
@@ -644,7 +644,7 @@
       },
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=361420&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -714,7 +714,7 @@
       },
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1316910&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -758,8 +758,8 @@
           "kind": "update",
           "checkedAt": "2026-10-13T17:21:23.717Z",
           "freshUntil": "2026-10-13T23:21:23.717Z",
-          "eventId": "steam-announcement-553504715299620946",
           "date": "2025-10-21T00:03:19.000Z",
+          "eventId": "steam-announcement-553504715299620946",
           "title": "Patch Update 10/20/2025 - Security Update",
           "eventType": "release-notes",
           "source": {
@@ -803,7 +803,7 @@
       },
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=4968640&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -847,8 +847,8 @@
           "kind": "update",
           "checkedAt": "2026-10-13T17:21:23.717Z",
           "freshUntil": "2026-10-13T23:21:23.717Z",
-          "eventId": "steam-announcement-702155760121940972",
           "date": "2026-10-10T09:35:47.000Z",
+          "eventId": "steam-announcement-702155760121940972",
           "title": "Update Notice (v0.1.50.17746)",
           "eventType": "release-notes",
           "source": {
@@ -878,7 +878,7 @@
       "deadlineSource": null,
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=3883570&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -922,8 +922,8 @@
           "kind": "update",
           "checkedAt": "2026-10-13T17:21:23.717Z",
           "freshUntil": "2026-10-13T23:21:23.717Z",
-          "eventId": "steam-announcement-693148560867200282",
           "date": "2026-10-12T15:42:23.000Z",
+          "eventId": "steam-announcement-693148560867200282",
           "title": "Patch V0.44.10",
           "eventType": "release-notes",
           "source": {
@@ -967,7 +967,7 @@
       },
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2333000&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1037,7 +1037,7 @@
       },
       "freshUntil": "2026-10-13T23:21:23.717Z",
       "priceValidUntil": "2026-10-14T17:21:23.717Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2254990&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1081,8 +1081,8 @@
           "kind": "update",
           "checkedAt": "2026-10-13T17:21:23.717Z",
           "freshUntil": "2026-10-13T23:21:23.717Z",
-          "eventId": "steam-announcement-703281660030880764",
           "date": "2026-10-09T21:14:18.000Z",
+          "eventId": "steam-announcement-703281660030880764",
           "title": "Hotfix 2: Stability Fix for RTX 40 and 50 Series",
           "eventType": "release-notes",
           "source": {
@@ -1100,14 +1100,14 @@
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/2610132k",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": []
     },
     {
       "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": [
         {
           "appId": 3061810,
@@ -1175,7 +1175,7 @@
       "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/20261009-472667",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": []
     },
     {
@@ -1183,195 +1183,105 @@
       "appId": 3061810,
       "url": "https://store.steampowered.com/api/appdetails?appids=3061810&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 405640,
       "url": "https://store.steampowered.com/api/appdetails?appids=405640&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": false,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 784150,
       "url": "https://store.steampowered.com/api/appdetails?appids=784150&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 582270,
       "url": "https://store.steampowered.com/api/appdetails?appids=582270&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 390720,
       "url": "https://store.steampowered.com/api/appdetails?appids=390720&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": false,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 688420,
       "url": "https://store.steampowered.com/api/appdetails?appids=688420&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1812090,
       "url": "https://store.steampowered.com/api/appdetails?appids=1812090&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1569200,
       "url": "https://store.steampowered.com/api/appdetails?appids=1569200&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1138850,
       "url": "https://store.steampowered.com/api/appdetails?appids=1138850&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 361420,
       "url": "https://store.steampowered.com/api/appdetails?appids=361420&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1316910,
       "url": "https://store.steampowered.com/api/appdetails?appids=1316910&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 4968640,
       "url": "https://store.steampowered.com/api/appdetails?appids=4968640&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 3883570,
       "url": "https://store.steampowered.com/api/appdetails?appids=3883570&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 2333000,
       "url": "https://store.steampowered.com/api/appdetails?appids=2333000&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 2254990,
       "url": "https://store.steampowered.com/api/appdetails?appids=2254990&cc=jp&l=japanese",
       "checkedAt": "2026-10-13T17:21:23.717Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     }
   ]
 }

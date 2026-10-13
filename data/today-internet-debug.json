@@ -1,91 +1,41 @@
 {
-  "generatedAt": "2026-10-13T02:02:49.414Z",
+  "generatedAt": "2026-10-13T09:22:23.588Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-9",
-  "selectedTitle": "『PlayStation 5 デジタル・エディション ミッドナイト ブラック』日本語専用版が、希望小売価格5万5000円で11月19日より発売へ",
+  "selectedClusterId": "today-cluster-6",
+  "selectedTitle": "逮捕報道のYouTuberヴァンビ、太田プロダクションからの退所を発表",
   "candidates": [
     {
-      "clusterId": "today-cluster-9",
-      "title": "『PlayStation 5 デジタル・エディション ミッドナイト ブラック』日本語専用版が、希望小売価格5万5000円で11月19日より発売へ",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 79.6,
-      "confidence": 0.65,
-      "articleCount": 5,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "直近数時間で関連記事が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 9,
-        "sourceDiversity": 7,
-        "trend": 14.1,
-        "internetNativeBoost": 0,
-        "search": 4.9,
-        "social": 5.6,
-        "velocity": 14,
-        "freshness": 10,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 64,
-        "internalSearchScore": 38,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
       "clusterId": "today-cluster-6",
-      "title": "映画『バイオハザード』主人公が“狩野英孝すぎる”と話題に。狩野さん本人、映画公式も反応、「バイオ実況を見ているような感覚」など感想相次ぐ",
-      "category": "games",
+      "title": "逮捕報道のYouTuberヴァンビ、太田プロダクションからの退所を発表",
+      "category": "crime",
       "categories": [
-        "games",
+        "crime",
         "entertainment",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 78.7,
+      "buzzScore": 74.5,
       "confidence": 0.49,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 20.7,
+        "trend": 20.2,
         "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 7,
+        "search": 6.1,
+        "social": 8.4,
         "velocity": 8.3,
         "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -98,10 +48,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 48.5,
-        "internalSocialScore": 54.8
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 92,
+        "internalSearchScore": 47.8,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -110,82 +60,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-39",
-      "title": "AI時代のサイバー攻撃、度重なる情報漏洩からの守りを固めるための政府への7つの提言私案｜安野貴博",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 72.9,
-      "confidence": 0.43,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 19.8,
-        "internetNativeBoost": 8,
-        "search": 6,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 47.1,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-12",
-      "title": "“巨大ロボット”で暴走族がタイマンバトルするアクションゲーム『横浜機動暴走族 ROCK’N ROLL SUICIDE』のSteamストアページが公開。実際に撮影された横浜の写真が背景に使用された気合い十分の作品",
+      "clusterId": "today-cluster-9",
+      "title": "かわいいドット絵うさぎの“うんぴ”を集めるデスクトップアプリ『うさぎとぷーぷ』Steam版が2027年に配信へ。かわいすぎて作業どころではない",
       "category": "games",
       "categories": [
         "games",
+        "tech",
         "net-culture",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 70.3,
+      "buzzScore": 73.9,
       "confidence": 0.5,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加",
+        "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
         "trend": 16.3,
         "internetNativeBoost": 0,
-        "search": 5.3,
-        "social": 5.6,
+        "search": 5.8,
+        "social": 8.8,
         "velocity": 8,
         "freshness": 8.5,
         "authority": 2.5,
@@ -200,12 +102,12 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 30,
+        "crossCategoryScore": 100,
         "archiveHeatScore": 74,
-        "internalSearchScore": 41.5,
-        "internalSocialScore": 43.8
+        "internalSearchScore": 45.4,
+        "internalSocialScore": 68.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -214,30 +116,85 @@
       ]
     },
     {
-      "clusterId": "today-cluster-13",
-      "title": "宇宙探索ゲーム『ノーマンズスカイ』iOS版が10月29日にリリース決定。なんと“過去10年分のアプデ”をすべて収録",
-      "category": "games",
+      "clusterId": "today-cluster-157",
+      "title": "新垣結衣、“まさかの方法”で第一子誕生を発表→「あまりにガッキーっぽい」「かわいい」「気づかれないだろこれwwww」",
+      "category": "entertainment",
       "categories": [
-        "games",
-        "tech",
+        "entertainment",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.1,
+      "buzzScore": 69.4,
       "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20,
+        "internetNativeBoost": 8,
+        "search": 4.6,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 35.8,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-36",
+      "title": "VTuberとして2018年にタイムリープしてバズれ！ 育成ゲーム『過去でバズってVTuber』体験版公開",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "games",
+        "entertainment",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 67.4,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "trend": 19.6,
         "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 7,
+        "search": 6,
+        "social": 8.4,
         "velocity": 0,
         "freshness": 7,
         "authority": 1.5,
@@ -254,10 +211,63 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 89,
+        "internalSearchScore": 46.8,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-365",
+      "title": "カンニング竹山が紹介した人気ロケ弁→11年後……“うちのじゃない”社長が否定「なんだったんだ」「わろた」「時を超えて」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 66.9,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20.5,
+        "internetNativeBoost": 8,
+        "search": 4.7,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 49.6,
-        "internalSocialScore": 54.8
+        "archiveHeatScore": 93,
+        "internalSearchScore": 36.4,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

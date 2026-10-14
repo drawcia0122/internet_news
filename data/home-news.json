@@ -1,104 +1,170 @@
 {
-  "generatedAt": "2026-10-14T11:44:53.224Z",
-  "totalCount": 1427,
+  "generatedAt": "2026-10-14T17:03:31.570Z",
+  "totalCount": 1374,
   "categoryCounts": {
-    "all": 1427,
+    "all": 1374,
     "general": 60,
-    "tech": 251,
-    "business": 95,
-    "politics": 50,
-    "entertainment": 524,
-    "anime": 70,
-    "games": 455,
-    "game-features": 10,
+    "tech": 245,
+    "business": 87,
+    "politics": 44,
+    "entertainment": 494,
+    "anime": 63,
+    "games": 461,
+    "game-features": 12,
     "anime-features": 2,
-    "manga": 85,
+    "manga": 86,
     "books": 11,
     "sports": 51,
-    "sns": 681,
-    "net-culture": 776,
-    "matome": 3,
+    "sns": 633,
+    "net-culture": 733,
+    "matome": 2,
     "crime": 28,
-    "adult": 10,
-    "world": 76
+    "adult": 9,
+    "world": 66
   },
   "hasMore": true,
   "nextPage": 2,
   "items": [
     {
-      "id": "auto-general-元阪急投手の松本正志さん死去-news.yahoo.co.jp/pickup/6598776",
-      "title": "元阪急投手の松本正志さん死去",
-      "summary": "オリックスの元球団スタッフで、1軍用具担当として、長年チームを支えた松本正志（まつもと・しょうじ）さんが死去したことが14日、分かった。8日に67歳で亡くなったと球団が発表した。葬儀はすでに執り行わ",
-      "briefSummary": "オリックスの元球団スタッフで、1軍用具担当として、長年チームを支えた松本正志（まつもと・しょうじ）さんが死去したことが14日、分かった。8日に67歳で亡くなったと球団が発表した。葬儀はすでに執り行わ",
-      "category": "sports",
+      "id": "auto-games-zero-escape-極限脱出-シリーズなど手がけた打越鋼太郎氏が新会社-crash-keys-を設立-新たなオリジナルプロジェクトに向けて-news.denfaminicogamer.jp/news/261015v",
+      "title": "『Zero Escape（極限脱出）』シリーズなど手がけた打越鋼太郎氏が新会社「CRASH KEYS」を設立。新たなオリジナルプロジェクトに向けて",
+      "summary": "新会社CRASH KEYSでは、 「壊れた鍵でなければ開かない扉がある」 をキャッチコピーに、打越鋼太郎氏がこれまで培ってきた経験や発想を生かした“オリジナルプロジェクト”を今後展開する。事業内容はゲーム開発（企画・ディレクション・シナリオ）や映像アニメ等（構成・原案・脚本）と公表されている。",
+      "briefSummary": "新会社CRASH KEYSでは、 「壊れた鍵でなければ開かない扉がある」 をキャッチコピーに、打越鋼太郎氏がこれまで培ってきた経験や発想を生かした“オリジナルプロジェクト”を今後展開する。事業内容はゲーム開発（企画・ディレクション・シナリオ）や映像アニメ等（構成・原案・脚本）と公表されている。",
+      "category": "games",
       "categories": [
-        "sports",
+        "games",
+        "net-culture",
         "general"
       ],
-      "categoryLabel": "スポーツ",
+      "categoryLabel": "ゲーム",
       "categoryLabels": [
-        "スポーツ",
-        "その他"
+        "ゲーム",
+        "ネットカルチャー"
       ],
-      "score": 85,
+      "score": 94,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-14T11:43:44.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / スポーツ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598776?source=rss",
-      "hotReasons": [],
+      "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/uchikoshi.jpg",
+      "publishedAt": "2026-10-14T16:00:04.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "1時間前",
+      "sourceName": "電ファミニコゲーマー",
+      "sourceUrl": "https://news.denfaminicogamer.jp/news/261015v",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
       "sourceSignals": [
         {
-          "sourceId": "yahoo-sports",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / スポーツ",
-          "sourceGroup": "general-sports",
-          "sourcePriority": 58,
+          "sourceId": "denfami",
+          "source": "電ファミニコゲーマー",
+          "sourceName": "電ファミニコゲーマー",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
           "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "元阪急投手の松本正志さん死去",
-          "url": "https://news.yahoo.co.jp/pickup/6598776?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598776?source=rss",
-          "publishedAt": "2026-10-14T11:43:44.000Z",
-          "publishedLabel": "10/14 11:43",
-          "thumbnailUrl": null
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "net-culture",
+            "otaku"
+          ],
+          "title": "『Zero Escape（極限脱出）』シリーズなど手がけた打越鋼太郎氏が新会社「CRASH KEYS」を設立。新たなオリジナルプロジェクトに向けて",
+          "url": "https://news.denfaminicogamer.jp/news/261015v",
+          "canonicalUrl": "https://news.denfaminicogamer.jp/news/261015v",
+          "publishedAt": "2026-10-14T16:00:04.000Z",
+          "publishedLabel": "10/14 16:00",
+          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/uchikoshi.jpg"
         }
       ],
-      "whatHappened": "元阪急投手の松本正志さん死去",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
+      "whatHappened": "『Zero Escape（極限脱出）』シリーズなど手がけた打越鋼太郎氏が新会社「CRASH …",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ネット文化を追う人"
+      ]
     },
     {
-      "id": "auto-tech-歌マクロス-復活プロジェクト-支援総額1億3900万円を突破-50万文字超の-超時空シナリオブック-など追加リターンを発表-4gamer.net/games/039/g103947/20261014060",
-      "title": "「歌マクロス」復活プロジェクト，支援総額1億3900万円を突破。50万文字超の「超時空シナリオブック」など追加リターンを発表",
-      "summary": "AUGUSTは本日，リズムゲーム「歌マクロス」復活プロジェクトのクラウドファンディング支援総額が1億3900万円を突破したと発表した。1億3500万円のストレッチゴ…",
-      "briefSummary": "AUGUSTは本日，リズムゲーム「歌マクロス」復活プロジェクトのクラウドファンディング支援総額が1億3900万円を突破したと発表した。1億3500万円のストレッチゴール達成により，アートブックのページ増量が決まり，50万文字以上を収録予定の…",
-      "category": "tech",
+      "id": "auto-games-料理もバトルもパズルもリズムに乗って-no-straight-roads-開発元が贈る-ondeh-ondeh-カヤのうまみ大冒険-は-愉快でカラフルな大冒険--gamespark.jp/article/2026/10/15/173610.html",
+      "title": "料理もバトルもパズルもリズムに乗って！ 『NO STRAIGHT ROADS』開発元が贈る『Ondeh Ondeh カヤのうまみ大冒険』は、愉快でカラフルな大冒険【先行プレイレポ】",
+      "summary": "新作リズム＆パズルアクションアドベンチャー『Ondeh Ondeh カヤのうまみ大冒険』の先行プレイレポートをお届け！",
+      "briefSummary": "『Ondeh Ondeh カヤのうまみ大冒険（以下、オンデオンデ）』 は、 『NO STRAIGHT ROADS』 で知られるマレーシアのゲームスタジオ・Metronomikが手がけ、バンダイナムコエンターテインメントが販売を行うリズム＆パズルアクションアドベンチャーです。",
+      "category": "games",
       "categories": [
-        "tech",
         "games",
         "general"
       ],
-      "categoryLabel": "テック",
+      "categoryLabel": "ゲーム",
       "categoryLabels": [
-        "テック",
         "ゲーム"
       ],
-      "score": 96,
+      "score": 94,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/039/G103947/20261014060/SS/002.jpg",
-      "publishedAt": "2026-10-14T11:39:30.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1204016.jpg",
+      "publishedAt": "2026-10-14T16:00:03.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "1時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/10/15/173610.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "料理もバトルもパズルもリズムに乗って！ 『NO STRAIGHT ROADS』開発元が贈る『Ondeh Ondeh カヤのうまみ大冒険』は、愉快でカラフルな大冒険【先行プレイレポ】",
+          "url": "http://www.gamespark.jp/article/2026/10/15/173610.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/15/173610.html",
+          "publishedAt": "2026-10-14T16:00:03.000Z",
+          "publishedLabel": "10/14 16:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1204016.jpg"
+        }
+      ],
+      "whatHappened": "料理もバトルもパズルもリズムに乗って",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-打越鋼太郎氏-新会社-crash-keys-の設立を正式発表-zero-escape-シリーズをはじめ-数-の型破りなadvを手がけてきたゲームクリエイター-4gamer.net/games/999/g999901/20261014030",
+      "title": "打越鋼太郎氏，新会社「CRASH KEYS」の設立を正式発表。「Zero Escape」シリーズをはじめ，数々の型破りなADVを手がけてきたゲームクリエイター",
+      "summary": "打越鋼太郎氏は本日（2026年10月15日），自身が代表取締役を務める新会社「CRASHKEYS（クラッシュキーズ）」の設立を正式発表した。打越氏は，「ZeroEs…",
+      "briefSummary": "打越鋼太郎氏は本日（2026年10月15日），自身が代表取締役を務める新会社「CRASHKEYS（クラッシュキーズ）」の設立を正式発表した。打越氏は，「ZeroEscape（極限脱出）」「AI：ソムニウムファイル」シリーズなどを手掛けたゲー…",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 94,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/999/G999901/20261014030/SS/002.jpg",
+      "publishedAt": "2026-10-14T16:00:00.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "1時間前",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/039/G103947/20261014060/",
+      "sourceUrl": "https://www.4gamer.net/games/999/G999901/20261014030/",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -118,27 +184,28 @@
             "console",
             "steam"
           ],
-          "title": "「歌マクロス」復活プロジェクト，支援総額1億3900万円を突破。50万文字超の「超時空シナリオブック」など追加リターンを発表",
-          "url": "https://www.4gamer.net/games/039/G103947/20261014060/",
-          "canonicalUrl": "https://www.4gamer.net/games/039/G103947/20261014060/",
-          "publishedAt": "2026-10-14T11:39:30.000Z",
-          "publishedLabel": "10/14 11:39",
-          "thumbnailUrl": "https://www.4gamer.net/games/039/G103947/20261014060/SS/002.jpg"
+          "title": "打越鋼太郎氏，新会社「CRASH KEYS」の設立を正式発表。「Zero Escape」シリーズをはじめ，数々の型破りなADVを手がけてきたゲームクリエイター",
+          "url": "https://www.4gamer.net/games/999/G999901/20261014030/",
+          "canonicalUrl": "https://www.4gamer.net/games/999/G999901/20261014030/",
+          "publishedAt": "2026-10-14T16:00:00.000Z",
+          "publishedLabel": "10/14 16:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/999/G999901/20261014030/SS/002.jpg"
         }
       ],
-      "whatHappened": "「歌マクロス」復活プロジェクト，支援総額1億3900万円を突破",
+      "whatHappened": "打越鋼太郎氏，新会社「CRASH KEYS」の設立を正式発表",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー",
+        "AI利用者",
         "ガジェット好き"
       ]
     },
     {
-      "id": "auto-games-蘇ったナポレオン軍兵士として死者や異形と戦うソウルライクact-valor-mortis-本日リリース-4gamer.net/games/948/g094898/20261014057",
-      "title": "蘇ったナポレオン軍兵士として死者や異形と戦うソウルライクACT「Valor Mortis」，本日リリース",
-      "summary": "LyricalGamesは本日（2026年10月14日），OneMoreLevelが開発した新作タイトル「ValorMortis」をリリースした。本作は，19世紀初…",
-      "briefSummary": "LyricalGamesは本日（2026年10月14日），OneMoreLevelが開発した新作タイトル「ValorMortis」をリリースした。本作は，19世紀初頭のヨーロッパを舞台に，謎の疫病により不気味な死者や異形がうごめく世界が描か…",
+      "id": "auto-games-レトロ風fpsアクション-warhammer-40-000-boltgun-2-本日発売-ローンチトレイラーも公開に-4gamer.net/games/912/g091285/20261014056",
+      "title": "レトロ風FPSアクション「Warhammer 40,000: Boltgun 2」，本日発売。ローンチトレイラーも公開に",
+      "summary": "BigFanGamesは本日（2026年10月15日），レトロ風FPSアクション「Warhammer40,000:Boltgun2」を発売した。本作は，Auroch…",
+      "briefSummary": "BigFanGamesは本日（2026年10月15日），レトロ風FPSアクション「Warhammer40,000:Boltgun2」を発売した。本作は，AurochDigitalが手掛けた「Warhammer40,000:Boltgun」の…",
       "category": "games",
       "categories": [
         "games",
@@ -148,15 +215,15 @@
       "categoryLabels": [
         "ゲーム"
       ],
-      "score": 96,
+      "score": 94,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/948/G094898/20261014057/SS/007.jpg",
-      "publishedAt": "2026-10-14T11:32:45.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
+      "thumbnailUrl": "https://www.4gamer.net/games/912/G091285/20261014056/SS/001.jpg",
+      "publishedAt": "2026-10-14T16:00:00.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "1時間前",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/948/G094898/20261014057/",
+      "sourceUrl": "https://www.4gamer.net/games/912/G091285/20261014056/",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -176,15 +243,15 @@
             "console",
             "steam"
           ],
-          "title": "蘇ったナポレオン軍兵士として死者や異形と戦うソウルライクACT「Valor Mortis」，本日リリース",
-          "url": "https://www.4gamer.net/games/948/G094898/20261014057/",
-          "canonicalUrl": "https://www.4gamer.net/games/948/G094898/20261014057/",
-          "publishedAt": "2026-10-14T11:32:45.000Z",
-          "publishedLabel": "10/14 11:32",
-          "thumbnailUrl": "https://www.4gamer.net/games/948/G094898/20261014057/SS/007.jpg"
+          "title": "レトロ風FPSアクション「Warhammer 40,000: Boltgun 2」，本日発売。ローンチトレイラーも公開に",
+          "url": "https://www.4gamer.net/games/912/G091285/20261014056/",
+          "canonicalUrl": "https://www.4gamer.net/games/912/G091285/20261014056/",
+          "publishedAt": "2026-10-14T16:00:00.000Z",
+          "publishedLabel": "10/14 16:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/912/G091285/20261014056/SS/001.jpg"
         }
       ],
-      "whatHappened": "蘇ったナポレオン軍兵士として死者や異形と戦うソウルライクACT「Valor Mortis」，…",
+      "whatHappened": "レトロ風FPSアクション「Warhammer 40,000: Boltgun 2」，本日発売",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -193,10 +260,10 @@
       ]
     },
     {
-      "id": "auto-games-グラブル-闇深いビィ君が人気の公式4コマ-ぐらぶるっ-ネタ制作は-理詰めで作る-降りてくる-なぜ思いついたか覚えていない-の3パターンあるー制作秘話が公開-inside-games.jp/article/2026/10/14/189256.html",
-      "title": "『グラブル』闇深いビィ君が人気の公式4コマ「ぐらぶるっ！」、ネタ制作は「理詰めで作る」「降りてくる」「なぜ思いついたか覚えていない」の3パターンあるー制作秘話が公開",
-      "summary": "同企画内では『グランブルーファンタジー（以下、グラブル）』の人気公式漫画「ぐらぶるっ！」に関する制作秘話についても語られています。",
-      "briefSummary": "同企画内では『グランブルーファンタジー（以下、グラブル）』の人気公式漫画「ぐらぶるっ！」に関する制作秘話についても語られています。",
+      "id": "auto-games-精子候補が14万越え-生命誕生レースadv-become-ウィッシュリスト数が着実に増加-ライバルたちと-せいし-をかけて競い合う壮大な旅-gamespark.jp/article/2026/10/15/173609.html",
+      "title": "精子候補が14万越え！生命誕生レースADV『Become』ウィッシュリスト数が着実に増加―ライバルたちと“せいし”をかけて競い合う壮大な旅",
+      "summary": "Valentin Wirthは、PC（Steam）向け精子競争アドベンチャー『 Become 』のウィッシュリスト数が14万5,000を超えたことを 報告 しました。",
+      "briefSummary": "Valentin Wirthは、PC（Steam）向け精子競争アドベンチャー『 Become 』のウィッシュリスト数が14万5,000を超えたことを 報告 しました。",
       "category": "games",
       "categories": [
         "games",
@@ -206,239 +273,111 @@
       "categoryLabels": [
         "ゲーム"
       ],
-      "score": 96,
+      "score": 94,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1793871.png",
-      "publishedAt": "2026-10-14T11:30:03.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/10/14/189256.html",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206525.jpg",
+      "publishedAt": "2026-10-14T15:43:58.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "1時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/10/15/173609.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
           "sourceGroup": "games",
-          "sourcePriority": 90,
+          "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
-            "nintendo",
-            "switch"
+            "pc",
+            "console"
           ],
-          "title": "『グラブル』闇深いビィ君が人気の公式4コマ「ぐらぶるっ！」、ネタ制作は「理詰めで作る」「降りてくる」「なぜ思いついたか覚えていない」の3パターンあるー制作秘話が公開",
-          "url": "https://www.inside-games.jp/article/2026/10/14/189256.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/10/14/189256.html",
-          "publishedAt": "2026-10-14T11:30:03.000Z",
-          "publishedLabel": "10/14 11:30",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1793871.png"
+          "title": "精子候補が14万越え！生命誕生レースADV『Become』ウィッシュリスト数が着実に増加―ライバルたちと“せいし”をかけて競い合う壮大な旅",
+          "url": "http://www.gamespark.jp/article/2026/10/15/173609.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/15/173609.html",
+          "publishedAt": "2026-10-14T15:43:58.000Z",
+          "publishedLabel": "10/14 15:43",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206525.jpg"
         }
       ],
-      "whatHappened": "『グラブル』闇深いビィ君が人気の公式4コマ「ぐらぶるっ！」、ネタ制作は「理詰めで作る」「降り…",
+      "whatHappened": "精子候補が14万越え",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
-        "ゲームユーザー"
+        "ゲームユーザー",
+        "ガジェット好き"
       ]
     },
     {
-      "id": "auto-sns-冷蔵庫にあった紅白のかまぼこ-切って並べると-まさかの完成品に-狂気を感じる-つぎのお正月はこれで決まり-news.yahoo.co.jp/articles/ebef591c327f736d795fdf15e4f62c8d8c43ffdb",
-      "title": "冷蔵庫にあった紅白のかまぼこ→切って並べると……　まさかの完成品に「狂気を感じる」「つぎのお正月はこれで決まり」",
-      "summary": "赤と白のかまぼこがあったから……。まさかの変身を遂げたかまぼこの姿がX（Twitter）に投稿されました。記事執筆時点でこの投稿の表示数は138万回を突破し、“いい…",
-      "briefSummary": "赤と白のかまぼこがあったから……。まさかの変身を遂げたかまぼこの姿がX（Twitter）に投稿されました。記事執筆時点でこの投稿の表示数は138万回を突破し、“いいね”は2万7000件を超えています。",
-      "category": "sns",
+      "id": "auto-games-高速剣術対戦act-nidhogg-リリースから12年でロールバックネットコード実装-オンライン環境向上やcpu対戦-新トレモなども登場-gamespark.jp/article/2026/10/15/173608.html",
+      "title": "高速剣術対戦ACT『Nidhogg』リリースから12年でロールバックネットコード実装！オンライン環境向上やCPU対戦、新トレモなども登場",
+      "summary": "アメリカ・カリフォルニア州を拠点とするゲーム開発スタジオmesshofは、2014年にリリースされた対戦アクション『 Nidhogg 』に、 ロールバックネットコードを実装する 最新アップデートを配信 しました。",
+      "briefSummary": "アメリカ・カリフォルニア州を拠点とするゲーム開発スタジオmesshofは、2014年にリリースされた対戦アクション『 Nidhogg 』に、 ロールバックネットコードを実装する 最新アップデートを配信 しました。",
+      "category": "games",
       "categories": [
-        "sns",
-        "entertainment",
-        "net-culture",
+        "games",
         "general"
       ],
-      "categoryLabel": "SNS",
+      "categoryLabel": "ゲーム",
       "categoryLabels": [
-        "SNS",
-        "エンタメ",
-        "ネットカルチャー"
+        "ゲーム"
       ],
-      "score": 95,
+      "score": 94,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-14T11:30:00.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/ebef591c327f736d795fdf15e4f62c8d8c43ffdb?source=rss",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206521.jpg",
+      "publishedAt": "2026-10-14T15:30:03.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "1時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/10/15/173608.html",
       "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
+            "games",
+            "pc",
+            "console"
           ],
-          "title": "冷蔵庫にあった紅白のかまぼこ→切って並べると……　まさかの完成品に「狂気を感じる」「つぎのお正月はこれで決まり」",
-          "url": "https://news.yahoo.co.jp/articles/ebef591c327f736d795fdf15e4f62c8d8c43ffdb?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/ebef591c327f736d795fdf15e4f62c8d8c43ffdb?source=rss",
-          "publishedAt": "2026-10-14T11:30:00.000Z",
-          "publishedLabel": "10/14 11:30",
-          "thumbnailUrl": null
+          "title": "高速剣術対戦ACT『Nidhogg』リリースから12年でロールバックネットコード実装！オンライン環境向上やCPU対戦、新トレモなども登場",
+          "url": "http://www.gamespark.jp/article/2026/10/15/173608.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/15/173608.html",
+          "publishedAt": "2026-10-14T15:30:03.000Z",
+          "publishedLabel": "10/14 15:30",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206521.jpg"
         }
       ],
-      "whatHappened": "冷蔵庫にあった紅白のかまぼこ→切って並べると…… まさかの完成品に「狂気を感じる」「つぎのお…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "whatHappened": "高速剣術対戦ACT『Nidhogg』リリースから12年でロールバックネットコード実装",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
-        "ネット文化を追う人"
+        "ゲームユーザー",
+        "ガジェット好き"
       ]
     },
     {
-      "id": "auto-entertainment-58歳のパパ-若作り-と言われても-4歳息子のため努力を続け-驚きの姿に-自慢のパパ-俺も頑張ろ-news.yahoo.co.jp/articles/805d53d4342dcc090febf7c384d2cf168bb322f0",
-      "title": "58歳のパパ“若作り”と言われても→4歳息子のため努力を続け……　驚きの姿に「自慢のパパ！」「俺も頑張ろ！」",
-      "summary": "58歳の1児のパパの姿がInstagramで話題です。投稿は記事執筆時点で32万回以上再生され、1300件以上の“いいね”を獲得しています。【画像】驚きの姿 動画が…",
-      "briefSummary": "58歳の1児のパパの姿がInstagramで話題です。投稿は記事執筆時点で32万回以上再生され、1300件以上の“いいね”を獲得しています。【画像】驚きの姿 動画が投稿された「こーちゃん（57and4",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-14T11:30:00.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/805d53d4342dcc090febf7c384d2cf168bb322f0?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "58歳のパパ“若作り”と言われても→4歳息子のため努力を続け……　驚きの姿に「自慢のパパ！」「俺も頑張ろ！」",
-          "url": "https://news.yahoo.co.jp/articles/805d53d4342dcc090febf7c384d2cf168bb322f0?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/805d53d4342dcc090febf7c384d2cf168bb322f0?source=rss",
-          "publishedAt": "2026-10-14T11:30:00.000Z",
-          "publishedLabel": "10/14 11:30",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "58歳のパパ“若作り”と言われても→4歳息子のため努力を続け…… 驚きの姿に「自慢のパパ！」…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-夜間-自宅の防犯カメラに映った-幼い少女-ゾッとする立ち姿に-怖い怖い-本当に映っちゃったんだ-news.yahoo.co.jp/articles/cb9e22acf15e372da2a36db6d55a1e5a387b89c4",
-      "title": "夜間、自宅の防犯カメラに映った“幼い少女”　ゾッとする立ち姿に「怖い怖い！」「本当に映っちゃったんだ…」",
-      "summary": "自宅の防犯カメラに映っていた“幼い少女”とその正体が、Threadsで注目を集めています。この投稿は、記事執筆時点で600件以上の“いいね”を獲得しています。【画像…",
-      "briefSummary": "自宅の防犯カメラに映っていた“幼い少女”とその正体が、Threadsで注目を集めています。この投稿は、記事執筆時点で600件以上の“いいね”を獲得しています。【画像】映ってしまった“幼い女の子” 画像",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-14T11:30:00.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/cb9e22acf15e372da2a36db6d55a1e5a387b89c4?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "夜間、自宅の防犯カメラに映った“幼い少女”　ゾッとする立ち姿に「怖い怖い！」「本当に映っちゃったんだ…」",
-          "url": "https://news.yahoo.co.jp/articles/cb9e22acf15e372da2a36db6d55a1e5a387b89c4?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/cb9e22acf15e372da2a36db6d55a1e5a387b89c4?source=rss",
-          "publishedAt": "2026-10-14T11:30:00.000Z",
-          "publishedLabel": "10/14 11:30",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "夜間、自宅の防犯カメラに映った“幼い少女” ゾッとする立ち姿に「怖い怖い！」「本当に映っちゃ…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-games-友達と一緒に妖怪になり-キャンピングカーに乗って気ままな旅へ-最大4人で遊べるアドベンチャーゲーム-seikyu-let-s-go-最初のエリアを探索できる体験-4gamer.net/games/045/g104575/20261014059",
-      "title": "友達と一緒に妖怪になり，キャンピングカーに乗って気ままな旅へ。最大4人で遊べるアドベンチャーゲーム「Seikyu Let's Go!」，最初のエリアを探索できる体験版を配信",
-      "summary": "ACEEntertainmentは，最大4人でキャンピングカーの旅を楽しめる「SeikyuLet'sGo!」の体験版をSteamで配信開始した。想定プレイ時間は1〜…",
-      "briefSummary": "ACEEntertainmentは，最大4人でキャンピングカーの旅を楽しめる「SeikyuLet'sGo!」の体験版をSteamで配信開始した。想定プレイ時間は1〜2時間で，キャラメイクや協力パズル，野生動物の撮影，キャンプなどを体験できる…",
+      "id": "auto-games-グランツーリスモ-大型アプデ-spec-iv-第1弾10月15日15時配信-新コース-スポーツランドsugo-や新車種6台追加-30周年記念dualsenseも-gamespark.jp/article/2026/10/15/173607.html",
+      "title": "『グランツーリスモ７』大型アプデ「Spec IV」第1弾10月15日15時配信！新コース「スポーツランドSUGO」や新車種6台追加、30周年記念DualSenseも発売へ",
+      "summary": "新コース「スポーツランドSUGO」や新車種6台の追加に加え、旧車鑑賞「ビンテージ」や購入代行「カーコンシェルジュ」などの新機能が登場します。",
+      "briefSummary": "ソニー・インタラクティブエンタテインメントは、PS5/PS4向けリアルドライビングシミュレーター『 グランツーリスモ７ 』の大型アップデート「Spec IV」第1弾を、2026年10月15日15時より配信すると発表しました。",
       "category": "games",
       "categories": [
         "games",
@@ -450,15 +389,307 @@
         "ゲーム",
         "エンタメ"
       ],
-      "score": 95,
+      "score": 93,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/045/G104575/20261014059/SS/008.png",
-      "publishedAt": "2026-10-14T11:23:07.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206505.jpg",
+      "publishedAt": "2026-10-14T15:21:48.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "1時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/10/15/173607.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "『グランツーリスモ７』大型アプデ「Spec IV」第1弾10月15日15時配信！新コース「スポーツランドSUGO」や新車種6台追加、30周年記念DualSenseも発売へ",
+          "url": "http://www.gamespark.jp/article/2026/10/15/173607.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/15/173607.html",
+          "publishedAt": "2026-10-14T15:21:48.000Z",
+          "publishedLabel": "10/14 15:21",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206505.jpg"
+        }
+      ],
+      "whatHappened": "『グランツーリスモ７』大型アプデ「Spec IV」第1弾10月15日15時配信",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-general-万博未払い-アンゴラ異例対応の訳-news.yahoo.co.jp/pickup/6598795",
+      "title": "万博未払い アンゴラ異例対応の訳",
+      "summary": "【独自取材!万博工事費未払い問題】アンゴラが「1700万円」\"肩代わり\" 異例対応の裏側は…日本ができることは?協会副会長・吉村知事の見解は",
+      "briefSummary": "【独自取材!万博工事費未払い問題】アンゴラが「1700万円」\"肩代わり\" 異例対応の裏側は…日本ができることは?協会副会長・吉村知事の見解は",
+      "category": "business",
+      "categories": [
+        "business",
+        "general"
+      ],
+      "categoryLabel": "経済",
+      "categoryLabels": [
+        "経済",
+        "その他"
+      ],
+      "score": 90,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-14T15:20:27.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "1時間前",
+      "sourceName": "Yahoo!ニュース / 経済",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598795?source=rss",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-business",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 経済",
+          "sourceGroup": "important-news",
+          "sourcePriority": 78,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "万博未払い アンゴラ異例対応の訳",
+          "url": "https://news.yahoo.co.jp/pickup/6598795?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598795?source=rss",
+          "publishedAt": "2026-10-14T15:20:27.000Z",
+          "publishedLabel": "10/14 15:20",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "万博未払い アンゴラ異例対応の訳",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-tech-やめろ好きになってしまう第69話-無限暗夜への誘い-ヤンジャン-集英社公式・ジャンプ系青年マンガ誌アプリ-ynjn.jp/viewer/21346/322997",
+      "title": "やめろ好きになってしまう第69話 無限暗夜への誘い｜ヤンジャン＋集英社公式・ジャンプ系青年マンガ誌アプリ",
+      "summary": "",
+      "briefSummary": "",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "SNS",
+        "ネットカルチャー",
+        "漫画"
+      ],
+      "score": 88,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://public.ynjn.jp/episode/322997/thumb_81_yamesuki.jpg",
+      "publishedAt": "2026-10-14T15:04:11.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "1時間前",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://ynjn.jp/viewer/21346/322997",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "やめろ好きになってしまう第69話 無限暗夜への誘い｜ヤンジャン＋集英社公式・ジャンプ系青年マンガ誌アプリ",
+          "url": "https://ynjn.jp/viewer/21346/322997",
+          "canonicalUrl": "https://ynjn.jp/viewer/21346/322997",
+          "publishedAt": "2026-10-14T15:04:11.000Z",
+          "publishedLabel": "10/14 15:04",
+          "thumbnailUrl": "https://public.ynjn.jp/episode/322997/thumb_81_yamesuki.jpg"
+        }
+      ],
+      "whatHappened": "やめろ好きになってしまう第69話 無限暗夜への誘い｜ヤンジャン＋集英社公式・ジャンプ系青年マ…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-games-バイオ-の-レオン-が異世界に召喚-ドラゴンズドグマ-2-ダークアリズン-公式ポーン配信-gamespark.jp/article/2026/10/15/173606.html",
+      "title": "『バイオ』の「レオン」が異世界に召喚！？『ドラゴンズドグマ 2：ダークアリズン』公式ポーン配信",
+      "summary": "カプコンは、発売中のオープンワールド・アクション『 ドラゴンズドグマ 2：ダークアリズン 』向けに、“自社の他シリーズキャラクターをモデルにしたポーン”を配信しました。",
+      "briefSummary": "カプコンは、発売中のオープンワールド・アクション『 ドラゴンズドグマ 2：ダークアリズン 』向けに、“自社の他シリーズキャラクターをモデルにしたポーン”を配信しました。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 93,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206502.png",
+      "publishedAt": "2026-10-14T15:00:03.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "2時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/10/15/173606.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "『バイオ』の「レオン」が異世界に召喚！？『ドラゴンズドグマ 2：ダークアリズン』公式ポーン配信",
+          "url": "http://www.gamespark.jp/article/2026/10/15/173606.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/15/173606.html",
+          "publishedAt": "2026-10-14T15:00:03.000Z",
+          "publishedLabel": "10/14 15:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206502.png"
+        }
+      ],
+      "whatHappened": "『バイオ』の「レオン」が異世界に召喚",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-ratatan-ラタタン-本日より正式リリース-リズムコマンドでコブンを指揮するローグライトアクション-プレイレポ-4gamer.net/games/724/g072426/20261013029",
+      "title": "「Ratatan（ラタタン）」，本日より正式リリース。リズムコマンドでコブンを指揮するローグライトアクション［プレイレポ］",
+      "summary": "本日（2026年10月15日），ついに正式リリースとなる「Ratatan（ラタタン）」のプレイレポートをお届けする。楽しいリズムでキュートなコブンに指示を出す，ポッ…",
+      "briefSummary": "本日（2026年10月15日），ついに正式リリースとなる「Ratatan（ラタタン）」のプレイレポートをお届けする。楽しいリズムでキュートなコブンに指示を出す，ポップで明るいアクションゲームだ。ローグライト要素も強く，臨機応変にビルドを組ん…",
+      "category": "games",
+      "categories": [
+        "games",
+        "game-features",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "ゲーム特集"
+      ],
+      "score": 93,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/724/G072426/20261013029/SS/003.jpg",
+      "publishedAt": "2026-10-14T15:00:00.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "2時間前",
       "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/045/G104575/20261014059/",
+      "sourceUrl": "https://www.4gamer.net/games/724/G072426/20261013029/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "「Ratatan（ラタタン）」，本日より正式リリース。リズムコマンドでコブンを指揮するローグライトアクション［プレイレポ］",
+          "url": "https://www.4gamer.net/games/724/G072426/20261013029/",
+          "canonicalUrl": "https://www.4gamer.net/games/724/G072426/20261013029/",
+          "publishedAt": "2026-10-14T15:00:00.000Z",
+          "publishedLabel": "10/14 15:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/724/G072426/20261013029/SS/003.jpg"
+        }
+      ],
+      "whatHappened": "「Ratatan（ラタタン）」，本日より正式リリース",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-一人称視点パズル-thanks-light-pc-ps5向けに発売-懐中電灯を使い-オブジェクトを2dの影と3dの実体の間で切り替えよう-4gamer.net/games/820/g082059/20261014015",
+      "title": "一人称視点パズル「THANKS, LIGHT.」，PC/PS5向けに発売。懐中電灯を使い，オブジェクトを2Dの影と3Dの実体の間で切り替えよう",
+      "summary": "GameSourceEntertainmentは本日，PC/PS5向けタイトル「THANKS,LIGHT.」を発売した。本作は，影と実体の空間操作を核とした一人称視…",
+      "briefSummary": "GameSourceEntertainmentは本日，PC/PS5向けタイトル「THANKS,LIGHT.」を発売した。本作は，影と実体の空間操作を核とした一人称視点3Dパズルプラットフォームゲームだ。プレイヤーは懐中電灯を使い，オブジェク…",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 93,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/820/G082059/20261014015/SS/001.jpg",
+      "publishedAt": "2026-10-14T15:00:00.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "2時間前",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/820/G082059/20261014015/",
       "hotReasons": [
         "一般ユーザーの関心が集まりやすいテーマです。",
         "専門媒体や公式ソースが優先的に拾っています。"
@@ -479,15 +710,15 @@
             "console",
             "steam"
           ],
-          "title": "友達と一緒に妖怪になり，キャンピングカーに乗って気ままな旅へ。最大4人で遊べるアドベンチャーゲーム「Seikyu Let's Go!」，最初のエリアを探索できる体験版を配信",
-          "url": "https://www.4gamer.net/games/045/G104575/20261014059/",
-          "canonicalUrl": "https://www.4gamer.net/games/045/G104575/20261014059/",
-          "publishedAt": "2026-10-14T11:23:07.000Z",
-          "publishedLabel": "10/14 11:23",
-          "thumbnailUrl": "https://www.4gamer.net/games/045/G104575/20261014059/SS/008.png"
+          "title": "一人称視点パズル「THANKS, LIGHT.」，PC/PS5向けに発売。懐中電灯を使い，オブジェクトを2Dの影と3Dの実体の間で切り替えよう",
+          "url": "https://www.4gamer.net/games/820/G082059/20261014015/",
+          "canonicalUrl": "https://www.4gamer.net/games/820/G082059/20261014015/",
+          "publishedAt": "2026-10-14T15:00:00.000Z",
+          "publishedLabel": "10/14 15:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/820/G082059/20261014015/SS/001.jpg"
         }
       ],
-      "whatHappened": "友達と一緒に妖怪になり，キャンピングカーに乗って気ままな旅へ",
+      "whatHappened": "一人称視点パズル「THANKS, LIGHT.」，PC/PS5向けに発売",
       "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -496,59 +727,59 @@
       ]
     },
     {
-      "id": "auto-tech-がんでカツラ-1人で遺影撮った妻-news.yahoo.co.jp/pickup/6598775",
-      "title": "がんでカツラ 1人で遺影撮った妻",
-      "summary": "",
-      "briefSummary": "胃がんで入院中、妻はカツラをかぶって1人で写真館へ…遺影の撮影だった",
-      "category": "tech",
+      "id": "auto-general-日本ハム痛い逆転負け-凡ミス連発-news.yahoo.co.jp/pickup/6598792",
+      "title": "日本ハム痛い逆転負け 凡ミス連発",
+      "summary": "◇パ・リーグCSファイナルS 第1戦 日本ハム4―6ソフトバンク（2026年10月14日 みずほペイペイD） 日本ハム守備のミスが重なって逆転負け。ソフトバンクの2勝のアドバンテージを含めて0勝3敗",
+      "briefSummary": "◇パ・リーグCSファイナルS 第1戦 日本ハム4―6ソフトバンク（2026年10月14日 みずほペイペイD） 日本ハム守備のミスが重なって逆転負け。ソフトバンクの2勝のアドバンテージを含めて0勝3敗",
+      "category": "sports",
       "categories": [
-        "tech",
+        "sports",
         "general"
       ],
-      "categoryLabel": "テック",
+      "categoryLabel": "スポーツ",
       "categoryLabels": [
-        "テック",
+        "スポーツ",
         "その他"
       ],
-      "score": 85,
+      "score": 82,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-10-14T11:22:42.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / 科学",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598775?source=rss",
+      "publishedAt": "2026-10-14T14:51:58.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "2時間前",
+      "sourceName": "Yahoo!ニュース / スポーツ",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598792?source=rss",
       "hotReasons": [],
       "sourceSignals": [
         {
-          "sourceId": "yahoo-science",
+          "sourceId": "yahoo-sports",
           "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 科学",
-          "sourceGroup": "general-tech",
-          "sourcePriority": 60,
+          "sourceName": "Yahoo!ニュース / スポーツ",
+          "sourceGroup": "general-sports",
+          "sourcePriority": 58,
           "official": false,
           "specialist": false,
           "forPersonal": false,
           "sourceTags": [],
-          "title": "がんでカツラ 1人で遺影撮った妻",
-          "url": "https://news.yahoo.co.jp/pickup/6598775?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598775?source=rss",
-          "publishedAt": "2026-10-14T11:22:42.000Z",
-          "publishedLabel": "10/14 11:22",
+          "title": "日本ハム痛い逆転負け 凡ミス連発",
+          "url": "https://news.yahoo.co.jp/pickup/6598792?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598792?source=rss",
+          "publishedAt": "2026-10-14T14:51:58.000Z",
+          "publishedLabel": "10/14 14:51",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "がんでカツラ 1人で遺影撮った妻",
+      "whatHappened": "日本ハム痛い逆転負け 凡ミス連発",
       "whyHot": "直近の新しい話題として浮上しています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": []
     },
     {
-      "id": "auto-general-名前を変える大学が増加-背景は-news.yahoo.co.jp/pickup/6598774",
-      "title": "名前を変える大学が増加 背景は",
-      "summary": "大学の校名変更が増えています。2027年度も、いくつかの大学で校名変更が予定されています。その数は10校以上にのぼり、2000年度以降では、最も多い年になります。27年度に校名変更する大学とその背景",
-      "briefSummary": "大学の校名変更が増えています。2027年度も、いくつかの大学で校名変更が予定されています。その数は10校以上にのぼり、2000年度以降では、最も多い年になります。27年度に校名変更する大学とその背景",
+      "id": "auto-general-道新記者の拘束-日本政府に衝撃-news.yahoo.co.jp/pickup/6598791",
+      "title": "道新記者の拘束 日本政府に衝撃",
+      "summary": "北海道新聞記者がロシア当局に「スパイ容疑」で拘束されたことを受け、日本政府は14日、情報収集と対応に追われた。【地図で見る】ウクライナ戦況マップ ロシアのウクライナ侵攻から続く両国関係の悪化に拍車が",
+      "briefSummary": "北海道新聞記者がロシア当局に「スパイ容疑」で拘束されたことを受け、日本政府は14日、情報収集と対応に追われた。【地図で見る】ウクライナ戦況マップ ロシアのウクライナ侵攻から続く両国関係の悪化に拍車が",
       "category": "general",
       "categories": [
         "general"
@@ -557,15 +788,15 @@
       "categoryLabels": [
         "その他"
       ],
-      "score": 91,
+      "score": 88,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-10-14T11:20:40.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
+      "publishedAt": "2026-10-14T14:34:55.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "2時間前",
       "sourceName": "Yahoo!ニュース / 国内",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598774?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598791?source=rss",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -580,500 +811,24 @@
           "specialist": false,
           "forPersonal": false,
           "sourceTags": [],
-          "title": "名前を変える大学が増加 背景は",
-          "url": "https://news.yahoo.co.jp/pickup/6598774?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598774?source=rss",
-          "publishedAt": "2026-10-14T11:20:40.000Z",
-          "publishedLabel": "10/14 11:20",
+          "title": "道新記者の拘束 日本政府に衝撃",
+          "url": "https://news.yahoo.co.jp/pickup/6598791?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598791?source=rss",
+          "publishedAt": "2026-10-14T14:34:55.000Z",
+          "publishedLabel": "10/14 14:34",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "名前を変える大学が増加 背景は",
+      "whatHappened": "道新記者の拘束 日本政府に衝撃",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": []
     },
     {
-      "id": "auto-entertainment-豊崎由里絵アナ-第3子出産を報告-news.yahoo.co.jp/pickup/6598773",
-      "title": "豊崎由里絵アナ 第3子出産を報告",
-      "summary": "元MBSアナウンサーでフリーの豊崎由里絵アナウンサー(38)が14日、自身のインスタグラムを更新。第3子女児出産を報告した。【写真あり】豊崎由里絵アナ NYで“モテモテ”だったファッション披露 豊崎",
-      "briefSummary": "元MBSアナウンサーでフリーの豊崎由里絵アナウンサー(38)が14日、自身のインスタグラムを更新。第3子女児出産を報告した。【写真あり】豊崎由里絵アナ NYで“モテモテ”だったファッション披露 豊崎",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ"
-      ],
-      "score": 87,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-14T11:19:06.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / エンタメ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598773?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-entertainment",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / エンタメ",
-          "sourceGroup": "general-entertainment",
-          "sourcePriority": 66,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "豊崎由里絵アナ 第3子出産を報告",
-          "url": "https://news.yahoo.co.jp/pickup/6598773?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598773?source=rss",
-          "publishedAt": "2026-10-14T11:19:06.000Z",
-          "publishedLabel": "10/14 11:19",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "豊崎由里絵アナ 第3子出産を報告",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-entertainment-2足目を購入-ニコアンドの-ショートブーツ-が大好評-軽くて歩きやすいし-何にでも合う-足が痛くならない-news.yahoo.co.jp/articles/556251e1149a57099497d5e8c541071d10c2ff47",
-      "title": "「2足目を購入」　ニコアンドの“ショートブーツ”が大好評　「軽くて歩きやすいし、何にでも合う」「足が痛くならない」",
-      "summary": "ニコアンドから販売されている“ショートブーツ”が、「履き心地が良い」「どんなコーディネートにも合わせやすい」と高評価を集めています。【画像】ニコアンドの“ショートブ…",
-      "briefSummary": "ニコアンドから販売されている“ショートブーツ”が、「履き心地が良い」「どんなコーディネートにも合わせやすい」と高評価を集めています。【画像】ニコアンドの“ショートブーツ” 本記事では、「抗菌消臭 サイ",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-14T11:15:00.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/556251e1149a57099497d5e8c541071d10c2ff47?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「2足目を購入」　ニコアンドの“ショートブーツ”が大好評　「軽くて歩きやすいし、何にでも合う」「足が痛くならない」",
-          "url": "https://news.yahoo.co.jp/articles/556251e1149a57099497d5e8c541071d10c2ff47?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/556251e1149a57099497d5e8c541071d10c2ff47?source=rss",
-          "publishedAt": "2026-10-14T11:15:00.000Z",
-          "publishedLabel": "10/14 11:15",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「2足目を購入」 ニコアンドの“ショートブーツ”が大好評 「軽くて歩きやすいし、何にでも合う…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-元子役で偏差値40だった15歳ツインテール少女-7年後-驚きの現在に-とても意外ですね-強すぎる-news.yahoo.co.jp/articles/8af836b757790ba22dd4d5db51f640df24c32a6a",
-      "title": "元子役で偏差値40だった15歳ツインテール少女→7年後……　驚きの現在に「とても意外ですね」「強すぎる」",
-      "summary": "",
-      "briefSummary": "",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-14T11:15:00.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/8af836b757790ba22dd4d5db51f640df24c32a6a?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "元子役で偏差値40だった15歳ツインテール少女→7年後……　驚きの現在に「とても意外ですね」「強すぎる」",
-          "url": "https://news.yahoo.co.jp/articles/8af836b757790ba22dd4d5db51f640df24c32a6a?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/8af836b757790ba22dd4d5db51f640df24c32a6a?source=rss",
-          "publishedAt": "2026-10-14T11:15:00.000Z",
-          "publishedLabel": "10/14 11:15",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "元子役で偏差値40だった15歳ツインテール少女→7年後…… 驚きの現在に「とても意外ですね」…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-tech-itmedia-mobile-android-17の-xperia-1-viii-とiphoneでファイル共有可能に-quick-shareとairdropの連-itmedia.co.jp/mobile/articles/2610/14/news083.html",
-      "title": "[ITmedia Mobile] Android 17の「Xperia 1 VIII」とiPhoneでファイル共有可能に　Quick ShareとAirDropの連携で",
-      "summary": "ソニーは自社サイトでスマートフォンのハイエンドモデルであるXperia 1 VIIIがQuick ShareのAirDrop連携に対応したと案内した。Android…",
-      "briefSummary": "ソニーは自社サイトでスマートフォンのハイエンドモデルであるXperia 1 VIIIがQuick ShareのAirDrop連携に対応したと案内した。Android 17ソフトウェアアップデートにより実現している。Googleもファイル転送…",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 88,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://image.itmedia.co.jp/mobile/articles/2610/14/cover_news083.jpg",
-      "publishedAt": "2026-10-14T11:05:00.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "ITmedia",
-      "sourceUrl": "https://www.itmedia.co.jp/mobile/articles/2610/14/news083.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-all",
-          "source": "ITmedia",
-          "sourceName": "ITmedia",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 68,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "[ITmedia Mobile] Android 17の「Xperia 1 VIII」とiPhoneでファイル共有可能に　Quick ShareとAirDropの連携で",
-          "url": "https://www.itmedia.co.jp/mobile/articles/2610/14/news083.html",
-          "canonicalUrl": "https://www.itmedia.co.jp/mobile/articles/2610/14/news083.html",
-          "publishedAt": "2026-10-14T11:05:00.000Z",
-          "publishedLabel": "10/14 11:05",
-          "thumbnailUrl": "https://image.itmedia.co.jp/mobile/articles/2610/14/cover_news083.jpg"
-        }
-      ],
-      "whatHappened": "[ITmedia Mobile] Android 17の「Xperia 1 VIII」とiP…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ガジェット好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-games-neco氏が描く-重兵装型女子高生-をゲーム化した放置系rpg-jjk-重兵装型女子高生-ワードレスレコード-配信決定-事前登録開始-4gamer.net/games/050/g105032/20261014048",
-      "title": "neco氏が描く「重兵装型女子高生」をゲーム化した放置系RPG「JJK: 重兵装型女子高生 ワードレスレコード」，配信決定。事前登録開始",
-      "summary": "NextNinjaは本日，スマホゲーム「JJK:重兵装型女子高生ワードレスレコード」を配信すると発表し，事前登録受付を開始した。本作は，neco氏が描く「重兵装型女…",
-      "briefSummary": "NextNinjaは本日，スマホゲーム「JJK:重兵装型女子高生ワードレスレコード」を配信すると発表し，事前登録受付を開始した。本作は，neco氏が描く「重兵装型女子高生」をゲーム化した放置系RPGだ。",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/050/G105032/20261014048/SS/001.jpg",
-      "publishedAt": "2026-10-14T11:00:58.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/050/G105032/20261014048/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "neco氏が描く「重兵装型女子高生」をゲーム化した放置系RPG「JJK: 重兵装型女子高生 ワードレスレコード」，配信決定。事前登録開始",
-          "url": "https://www.4gamer.net/games/050/G105032/20261014048/",
-          "canonicalUrl": "https://www.4gamer.net/games/050/G105032/20261014048/",
-          "publishedAt": "2026-10-14T11:00:58.000Z",
-          "publishedLabel": "10/14 11:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/050/G105032/20261014048/SS/001.jpg"
-        }
-      ],
-      "whatHappened": "neco氏が描く「重兵装型女子高生」をゲーム化した放置系RPG「JJK: 重兵装型女子高生 …",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-コスプレ-黒ストッキングで魅せる美脚とぴょんと立つ耳が可愛すぎ-崩スタ-緋英の美女レイヤーはスタイルが引き立つポーズも魅力的-6枚-inside-games.jp/article/2026/10/14/189255.html",
-      "title": "【コスプレ】黒ストッキングで魅せる美脚とぴょんと立つ耳が可愛すぎ！『崩スタ』緋英の美女レイヤーはスタイルが引き立つポーズも魅力的【6枚】",
-      "summary": "2026年9月4～6日開催の「Ultra acosta!2026」参加の美麗レイヤーをピックアップお届けします。",
-      "briefSummary": "愛媛県出身。京都大学卒業後繊維関係の雑貨メーカーに就職。仕事でアニメ関連商品の企画、生産を行う傍、コスプレの撮影を開始。写真撮影の楽しさにハマり、コスプレだけでなくロリータファッションの撮影に幅を広げる。 現在はコスプレ記事のライター業をしながらロリータ衣装のレンタルサービスの代表を務める。",
-      "category": "games",
-      "categories": [
-        "games",
-        "adult",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "アダルト系"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1789290.jpg",
-      "publishedAt": "2026-10-14T11:00:03.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/10/14/189255.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "【コスプレ】黒ストッキングで魅せる美脚とぴょんと立つ耳が可愛すぎ！『崩スタ』緋英の美女レイヤーはスタイルが引き立つポーズも魅力的【6枚】",
-          "url": "https://www.inside-games.jp/article/2026/10/14/189255.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/10/14/189255.html",
-          "publishedAt": "2026-10-14T11:00:03.000Z",
-          "publishedLabel": "10/14 11:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1789290.jpg"
-        }
-      ],
-      "whatHappened": "黒ストッキングで魅せる美脚とぴょんと立つ耳が可愛すぎ",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-entertainment-甘鯛をさばいたら-ゴミ箱に捨てましたチクショウ-目を疑う中身に-高い魚なのに-わからず食べてしまいそう-と114万表示-news.yahoo.co.jp/articles/40b87ec0acf99f95454d322c4f9211ec72bbd444",
-      "title": "甘鯛をさばいたら……「ゴミ箱に捨てましたチクショウ」目を疑う中身に「高い魚なのに」「わからず食べてしまいそう」と114万表示",
-      "summary": "高級魚として知られる“甘鯛”をさばいたら……。目を疑う中身がThreadsで話題です。「初めて知った！」「勉強になります」と反響を呼び、記事執筆時点で113万回表示…",
-      "briefSummary": "高級魚として知られる“甘鯛”をさばいたら……。目を疑う中身がThreadsで話題です。「初めて知った！」「勉強になります」と反響を呼び、記事執筆時点で113万回表示を突破、1200件を超える“いいね”",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-14T11:00:00.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/40b87ec0acf99f95454d322c4f9211ec72bbd444?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "甘鯛をさばいたら……「ゴミ箱に捨てましたチクショウ」目を疑う中身に「高い魚なのに」「わからず食べてしまいそう」と114万表示",
-          "url": "https://news.yahoo.co.jp/articles/40b87ec0acf99f95454d322c4f9211ec72bbd444?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/40b87ec0acf99f95454d322c4f9211ec72bbd444?source=rss",
-          "publishedAt": "2026-10-14T11:00:00.000Z",
-          "publishedLabel": "10/14 11:00",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "甘鯛をさばいたら……「ゴミ箱に捨てましたチクショウ」目を疑う中身に「高い魚なのに」「わからず…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-花は毎日水を替える-生花店が検証した-長持ちのコツ-が110万再生-勉強になります-興味深い結果ですね-news.yahoo.co.jp/articles/ba1b860cb80583d3443dac252655ac11b3480453",
-      "title": "「花は毎日水を替える？」　生花店が検証した“長持ちのコツ”が110万再生「勉強になります！」「興味深い結果ですね」",
-      "summary": "花瓶に生けた切り花は、マメに世話をした方が長持ちするのか？ 生花店による検証結果がInstagramで話題です。3回に渡り投稿された動画は、合計で110万回以上再生…",
-      "briefSummary": "花瓶に生けた切り花は、マメに世話をした方が長持ちするのか？ 生花店による検証結果がInstagramで話題です。3回に渡り投稿された動画は、合計で110万回以上再生されています（記事執筆時点）。【画像",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-14T11:00:00.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/ba1b860cb80583d3443dac252655ac11b3480453?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「花は毎日水を替える？」　生花店が検証した“長持ちのコツ”が110万再生「勉強になります！」「興味深い結果ですね」",
-          "url": "https://news.yahoo.co.jp/articles/ba1b860cb80583d3443dac252655ac11b3480453?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/ba1b860cb80583d3443dac252655ac11b3480453?source=rss",
-          "publishedAt": "2026-10-14T11:00:00.000Z",
-          "publishedLabel": "10/14 11:00",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「花は毎日水を替える？」 生花店が検証した“長持ちのコツ”が110万再生「勉強になります！」…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-games-ngs-ver-2-新acスクラッチ-ナイトメアカーニバル-26-を追加-4gamer.net/games/521/g052100/20261014054",
-      "title": "「NGS ver.2」，新ACスクラッチ「ナイトメアカーニバル'26」を追加",
-      "summary": "",
-      "briefSummary": "",
+      "id": "auto-games-scum-開発のgamepiresがスタジオ規模縮小-レイオフ発表-開発メンバー削減も今後も開発は継続-gamespark.jp/article/2026/10/14/173605.html",
+      "title": "『SCUM』開発のGamepiresがスタジオ規模縮小&レイオフ発表―開発メンバー削減も今後も開発は継続",
+      "summary": "今回の規模縮小は市場環境への適応を目的としています。",
+      "briefSummary": "Gamepiresは2010年に設立されたスタジオで、2013年にリリースされた『Gas Guzzlers Extreme』なども高評価を得ています。『SCUM』は2018年8月30日にSteam早期アクセスをスタートし、およそ7年後の2025年6月17日に正式版となるアップデートを配信しています。",
       "category": "games",
       "categories": [
         "games",
@@ -1083,43 +838,42 @@
       "categoryLabels": [
         "ゲーム"
       ],
-      "score": 95,
+      "score": 92,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/521/G052100/20261014054/SS/004.jpg",
-      "publishedAt": "2026-10-14T10:59:04.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/521/G052100/20261014054/",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206497.jpg",
+      "publishedAt": "2026-10-14T14:27:19.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "2時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/10/14/173605.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
           "sourceGroup": "games",
-          "sourcePriority": 94,
+          "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
             "pc",
-            "console",
-            "steam"
+            "console"
           ],
-          "title": "「NGS ver.2」，新ACスクラッチ「ナイトメアカーニバル'26」を追加",
-          "url": "https://www.4gamer.net/games/521/G052100/20261014054/",
-          "canonicalUrl": "https://www.4gamer.net/games/521/G052100/20261014054/",
-          "publishedAt": "2026-10-14T10:59:04.000Z",
-          "publishedLabel": "10/14 10:59",
-          "thumbnailUrl": "https://www.4gamer.net/games/521/G052100/20261014054/SS/004.jpg"
+          "title": "『SCUM』開発のGamepiresがスタジオ規模縮小&レイオフ発表―開発メンバー削減も今後も開発は継続",
+          "url": "http://www.gamespark.jp/article/2026/10/14/173605.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/14/173605.html",
+          "publishedAt": "2026-10-14T14:27:19.000Z",
+          "publishedLabel": "10/14 14:27",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206497.jpg"
         }
       ],
-      "whatHappened": "「NGS ver.2」，新ACスクラッチ「ナイトメアカーニバル'26」を追加",
+      "whatHappened": "『SCUM』開発のGamepiresがスタジオ規模縮小&レイオフ発表―開発メンバー削減も今後…",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -1128,65 +882,281 @@
       ]
     },
     {
-      "id": "auto-crime-てんちむ-ナイトブラ巡る訴訟で賠償金約3-8億-0円報告-喜びの一方反省も-信頼を裏切ったことは事実-j-cast.com/2026/10/14518473.html",
-      "title": "てんちむ、ナイトブラ巡る訴訟で賠償金約3.8億→0円報告　喜びの一方反省も...「信頼を裏切ったことは事実」",
-      "summary": "人気YouTuberの「てんちむ」こと橋本甜歌さんが2026年10月14日にXで、プロデュースしたナイトブラをめぐりメーカー側と争っていた裁判について、控訴審判決で…",
-      "briefSummary": "人気YouTuberの「てんちむ」こと橋本甜歌さんが2026年10月14日にXで、プロデュースしたナイトブラをめぐりメーカー側と争っていた裁判について、控訴審判決で原判決が覆り、自身の主張が認められたと報告した。 続きは「J-CASTニュー…",
-      "category": "crime",
+      "id": "auto-games-スイッチ2版-ゼルダの伝説-時のオカリナ-紹介映像では-魔物の特徴を知ったり-強敵と再戦できたりする-万魔殿-がお披露目-gamespark.jp/article/2026/10/14/173604.html",
+      "title": "スイッチ2版『ゼルダの伝説 時のオカリナ』紹介映像では、魔物の特徴を知ったり、強敵と再戦できたりする「万魔殿」がお披露目",
+      "summary": "『ゼルダの伝説 時のオカリナ』の紹介映像にて、新要素「万魔殿」が公開！魔物たちの像が並び、魔物の特徴を知ったり、強敵との再戦に挑んだりできます。",
+      "briefSummary": "本作は、1998年にNINTENDO 64で発売された『ゼルダの伝説 時のオカリナ』のフルリメイク作品。グラフィックを一新し、遊びやすさも大きく向上。時を超えるリンクの冒険を新たに描きます。",
+      "category": "games",
       "categories": [
-        "crime",
-        "sns",
-        "net-culture",
+        "games",
         "general"
       ],
-      "categoryLabel": "犯罪・事件",
+      "categoryLabel": "ゲーム",
       "categoryLabels": [
-        "犯罪・事件",
-        "SNS",
-        "ネットカルチャー"
+        "ゲーム"
       ],
-      "score": 89,
+      "score": 92,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261014195150.jpg",
-      "publishedAt": "2026-10-14T10:55:35.000Z",
-      "capturedAt": "2026-10-14T11:44:53.224Z",
-      "time": "1時間以内",
-      "sourceName": "J-CASTニュース",
-      "sourceUrl": "https://www.j-cast.com/2026/10/14518473.html",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206484.jpg",
+      "publishedAt": "2026-10-14T14:15:02.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "2時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/10/14/173604.html",
       "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "jcast",
-          "source": "J-CASTニュース",
-          "sourceName": "J-CASTニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 72,
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz"
+            "games",
+            "pc",
+            "console"
           ],
-          "title": "てんちむ、ナイトブラ巡る訴訟で賠償金約3.8億→0円報告　喜びの一方反省も...「信頼を裏切ったことは事実」",
-          "url": "https://www.j-cast.com/2026/10/14518473.html",
-          "canonicalUrl": "https://www.j-cast.com/2026/10/14518473.html",
-          "publishedAt": "2026-10-14T10:55:35.000Z",
-          "publishedLabel": "10/14 10:55",
-          "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261014195150.jpg"
+          "title": "スイッチ2版『ゼルダの伝説 時のオカリナ』紹介映像では、魔物の特徴を知ったり、強敵と再戦できたりする「万魔殿」がお披露目",
+          "url": "http://www.gamespark.jp/article/2026/10/14/173604.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/14/173604.html",
+          "publishedAt": "2026-10-14T14:15:02.000Z",
+          "publishedLabel": "10/14 14:15",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206484.jpg"
         }
       ],
-      "whatHappened": "てんちむ、ナイトブラ巡る訴訟で賠償金約3.8億→0円報告 喜びの一方反省も...「信頼を裏切…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "whatHappened": "スイッチ2版『ゼルダの伝説 時のオカリナ』紹介映像では、魔物の特徴を知ったり、強敵と再戦でき…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
-        "ネット文化を追う人",
-        "時事ニュースを追う人"
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-general-農相辞表-内閣改造後わずか1カ月-news.yahoo.co.jp/pickup/6598790",
+      "title": "農相辞表 内閣改造後わずか1カ月",
+      "summary": "",
+      "briefSummary": "",
+      "category": "general",
+      "categories": [
+        "general"
+      ],
+      "categoryLabel": "その他",
+      "categoryLabels": [
+        "その他"
+      ],
+      "score": 88,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-14T14:12:54.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "2時間前",
+      "sourceName": "Yahoo!ニュース / 国内",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598790?source=rss",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-domestic",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 国内",
+          "sourceGroup": "important-news",
+          "sourcePriority": 76,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "農相辞表 内閣改造後わずか1カ月",
+          "url": "https://news.yahoo.co.jp/pickup/6598790?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598790?source=rss",
+          "publishedAt": "2026-10-14T14:12:54.000Z",
+          "publishedLabel": "10/14 14:12",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "農相辞表 内閣改造後わずか1カ月",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-general-札幌駅直結の施設で黒い煙-騒然-news.yahoo.co.jp/pickup/6598789",
+      "title": "札幌駅直結の施設で黒い煙 騒然",
+      "summary": "2026年10月14日、札幌市中央区北5条西2丁目のJR札幌駅が直結する商業施設「札幌ステラプレイス」で火事がありました。【映像】黒い煙がエスカレーターから…「札幌ステラプレイス」 客ら避難で騒然",
+      "briefSummary": "2026年10月14日、札幌市中央区北5条西2丁目のJR札幌駅が直結する商業施設「札幌ステラプレイス」で火事がありました。【映像】黒い煙がエスカレーターから…「札幌ステラプレイス」 客ら避難で騒然",
+      "category": "general",
+      "categories": [
+        "general"
+      ],
+      "categoryLabel": "その他",
+      "categoryLabels": [
+        "その他"
+      ],
+      "score": 77,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-14T14:01:00.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "3時間前",
+      "sourceName": "Yahoo!ニュース / 地域",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598789?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-local",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 地域",
+          "sourceGroup": "local-news",
+          "sourcePriority": 50,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "札幌駅直結の施設で黒い煙 騒然",
+          "url": "https://news.yahoo.co.jp/pickup/6598789?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598789?source=rss",
+          "publishedAt": "2026-10-14T14:01:00.000Z",
+          "publishedLabel": "10/14 14:01",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "札幌駅直結の施設で黒い煙 騒然",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-games-陽気な-パン屋の魔女-が可愛すぎるパリ舞台のアドベンチャーrpg-the-witch-s-bakery-がリリース-昼はパン屋-夕方はパリの探索-夜はアトリエで-news.denfaminicogamer.jp/news/2610143g",
+      "title": "陽気な「パン屋の魔女」が可愛すぎるパリ舞台のアドベンチャーRPG『The Witch’s Bakery』がリリース。昼はパン屋、夕方はパリの探索、夜はアトリエでゆったりとした時間を過ごす",
+      "summary": "10月14日、イギリスのパブリッシャーSilver Lining Interactiveは、フランスのインディー開発スタジオSunny Labが開発する『The W…",
+      "briefSummary": "10月14日、イギリスのパブリッシャーSilver Lining Interactiveは、フランスのインディー開発スタジオSunny Labが開発する『The Witch’s Bakery』をリリースした。 同作は、現代のパリでベーカリー…",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "ネットカルチャー",
+        "SNS"
+      ],
+      "score": 91,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/JP_001-1024x576.jpg",
+      "publishedAt": "2026-10-14T14:00:52.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "3時間前",
+      "sourceName": "電ファミニコゲーマー",
+      "sourceUrl": "https://news.denfaminicogamer.jp/news/2610143g",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "denfami",
+          "source": "電ファミニコゲーマー",
+          "sourceName": "電ファミニコゲーマー",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "net-culture",
+            "otaku"
+          ],
+          "title": "陽気な「パン屋の魔女」が可愛すぎるパリ舞台のアドベンチャーRPG『The Witch’s Bakery』がリリース。昼はパン屋、夕方はパリの探索、夜はアトリエでゆったりとした時間を過ごす",
+          "url": "https://news.denfaminicogamer.jp/news/2610143g",
+          "canonicalUrl": "https://news.denfaminicogamer.jp/news/2610143g",
+          "publishedAt": "2026-10-14T14:00:52.000Z",
+          "publishedLabel": "10/14 14:00",
+          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/JP_001-1024x576.jpg"
+        }
+      ],
+      "whatHappened": "陽気な「パン屋の魔女」が可愛すぎるパリ舞台のアドベンチャーRPG『The Witch’s B…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-games-game-sparkレビュー-enshrouded-霧の王国-たった1人から始まる王国復興-遊びごたえ抜群のサバクラ-arpg-gamespark.jp/article/2026/10/14/173603.html",
+      "title": "Game*Sparkレビュー：『Enshrouded~霧の王国~』たった1人から始まる王国復興！遊びごたえ抜群のサバクラ＆ARPG",
+      "summary": "ドイツを拠点とするKeen Gamesは、サバイバルアクションRPG『 Enshrouded~霧の王国~ 』について、2026年10月15日に早期アクセスから正式版へ移行するアップデート1.0を配信します。",
+      "briefSummary": "ドイツを拠点とするKeen Gamesは、サバイバルアクションRPG『 Enshrouded~霧の王国~ 』について、2026年10月15日に早期アクセスから正式版へ移行するアップデート1.0を配信します。",
+      "category": "games",
+      "categories": [
+        "games",
+        "game-features",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "ゲーム特集"
+      ],
+      "score": 91,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206097.png",
+      "publishedAt": "2026-10-14T14:00:03.000Z",
+      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "time": "3時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/10/14/173603.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "Game*Sparkレビュー：『Enshrouded~霧の王国~』たった1人から始まる王国復興！遊びごたえ抜群のサバクラ＆ARPG",
+          "url": "http://www.gamespark.jp/article/2026/10/14/173603.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/14/173603.html",
+          "publishedAt": "2026-10-14T14:00:03.000Z",
+          "publishedLabel": "10/14 14:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1206097.png"
+        }
+      ],
+      "whatHappened": "Game*Sparkレビュー：『Enshrouded~霧の王国~』たった1人から始まる王国復…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
       ]
     }
   ]

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-14T11:47:42.372Z",
+  "generatedAt": "2026-10-14T17:05:47.801Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-70",
+  "selectedClusterId": "today-cluster-107",
   "selectedTitle": "「ガンダムゲーム40周年記念生配信」が10月28日20時より実施！『バトオペ』『ローグオービット』など家庭用ゲーム最新情報をお届け",
   "candidates": [
     {
-      "clusterId": "today-cluster-70",
+      "clusterId": "today-cluster-107",
       "title": "「ガンダムゲーム40周年記念生配信」が10月28日20時より実施！『バトオペ』『ローグオービット』など家庭用ゲーム最新情報をお届け",
       "category": "games",
       "categories": [
@@ -14,8 +14,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 80.3,
-      "confidence": 0.54,
+      "buzzScore": 78.6,
+      "confidence": 0.53,
       "articleCount": 5,
       "sourceCount": 4,
       "uniqueDomainCount": 4,
@@ -28,10 +28,10 @@
         "sourceDiversity": 9.3,
         "trend": 20.2,
         "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 4.6,
+        "search": 4.5,
+        "social": 4.5,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 3.5,
         "categoryBias": 14,
         "penalty": 0
@@ -45,11 +45,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 60,
         "archiveHeatScore": 92,
-        "internalSearchScore": 36.1,
-        "internalSocialScore": 35.7
+        "internalSearchScore": 35.5,
+        "internalSocialScore": 35.3
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -58,18 +58,18 @@
       ]
     },
     {
-      "clusterId": "today-cluster-19",
-      "title": "ラッパーVERRY SMoL、アルバム『アンセム』発表　Chaki Zulu、STUTSら参加",
+      "clusterId": "today-cluster-1",
+      "title": "TVアニメ『魔法騎士レイアース』ノンクレジットエンディング映像「星灯」が公開。歌はKawaguchi Yurinaさんが担当",
       "category": "anime",
       "categories": [
         "anime",
+        "games",
         "entertainment",
-        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 72.1,
-      "confidence": 0.43,
+      "buzzScore": 74.5,
+      "confidence": 0.44,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -81,9 +81,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.8,
+        "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 5.6,
+        "search": 6,
         "social": 8.4,
         "velocity": 5.3,
         "freshness": 8.5,
@@ -102,8 +102,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 44,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -113,7 +113,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-21",
+      "clusterId": "today-cluster-115",
+      "title": "実際の手順どおりに「だし巻き卵」を焼くブラウザゲーム『だし巻き』がSNS上で話題に。「楽しすぎる」「一生やってしまう」とハマる人続出",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "games",
+        "general",
+        "sns"
+      ],
+      "buzzScore": 65.1,
+      "confidence": 0.48,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 14.3,
+        "internetNativeBoost": 0,
+        "search": 4.7,
+        "social": 5.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 65,
+        "internalSearchScore": 36.4,
+        "internalSocialScore": 42.5
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-52",
       "title": "いにしえの動画編集ソフト「Windowsムービーメーカー」の“使い方”を解説する動画に注目集まる。投稿されたのは2026年9月、視聴者からは「令和やぞ」「助かる」といったコメント",
       "category": "games",
       "categories": [
@@ -121,24 +174,23 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 69.9,
-      "confidence": 0.43,
+      "buzzScore": 60.2,
+      "confidence": 0.35,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.3,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "search": 5.4,
+        "social": 5.5,
+        "velocity": 0,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -152,11 +204,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 43.8
+        "archiveHeatScore": 79,
+        "internalSearchScore": 42.1,
+        "internalSocialScore": 43
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -165,88 +217,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-14",
-      "title": "椅子に座ったまま“帰宅”する過酷なゲーム『椅子のゲーム』Steamストアページ公開。小石につまずくと海まで転げ落ちる",
+      "clusterId": "today-cluster-174",
+      "title": "Steamより初回起動が速い！？Epic Gamesストアのランチャー刷新。再設計され見た目も変わった最新版のプレビュー配信スタート",
       "category": "games",
       "categories": [
         "games",
-        "net-culture",
+        "game-features",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 66.7,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 49.6,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1",
-      "title": "マンガ『氷菓』Kindle版が「38％オフ」となるクーポンセール開催中。既刊17巻が「5977円→3696円」とお得に購入できる",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "net-culture",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 66.4,
+      "buzzScore": 59.5,
       "confidence": 0.38,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 18.5,
         "internetNativeBoost": 8,
-        "search": 1.5,
-        "social": 8.1,
+        "search": 4.3,
+        "social": 6,
         "velocity": 4.2,
         "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 6,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -256,13 +255,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 0,
-        "repeatedAppearanceScore": 18,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 0,
-        "internalSearchScore": 11.7,
-        "internalSocialScore": 63.1
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 33.3,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

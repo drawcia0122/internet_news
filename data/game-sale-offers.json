@@ -1,590 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T11:59:34.479Z",
+  "generatedAt": "2026-10-14T17:13:21.293Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
   "items": [
-    {
-      "id": "steam:38400",
-      "appId": 38400,
-      "title": "Fallout: A Post Nuclear Role Playing Game",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/38400/?cc=jp&l=japanese",
-      "regularPrice": 980,
-      "salePrice": 245,
-      "discountPercent": 75,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "endsAt": null,
-      "deadlineSource": null,
-      "freshUntil": "2026-10-14T17:59:34.479Z",
-      "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=38400&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/38400/header.jpg?t=1572025441",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/261014d",
-          "title": "【最大80%オフ】『フォールアウト4』が「2246円→561円」に、『フォールアウト』シリーズがSteamでセールを開催中。初代から、最新作『フォールアウト76』まで",
-          "publishedAt": "2026-10-14T00:13:12.000Z",
-          "topicId": "auto-games-最大80-オフ-フォールアウト4-が-2246円-561円-に-フォールアウト-シリーズがsteamでセールを開催中-初代から-最新作-フォールアウト76-まで-news.denfaminicogamer.jp/news/261014d",
-          "gameTitle": "フォールアウト"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 38400
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-14T11:59:34.479Z",
-          "freshUntil": "2026-10-14T17:59:34.479Z",
-          "date": "2015-11-01",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=38400&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:38410",
-      "appId": 38410,
-      "title": "Fallout 2: A Post Nuclear Role Playing Game",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/38410/?cc=jp&l=japanese",
-      "regularPrice": 980,
-      "salePrice": 245,
-      "discountPercent": 75,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "endsAt": null,
-      "deadlineSource": null,
-      "freshUntil": "2026-10-14T17:59:34.479Z",
-      "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=38410&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/38410/header.jpg?t=1572025546",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/261014d",
-          "title": "【最大80%オフ】『フォールアウト4』が「2246円→561円」に、『フォールアウト』シリーズがSteamでセールを開催中。初代から、最新作『フォールアウト76』まで",
-          "publishedAt": "2026-10-14T00:13:12.000Z",
-          "topicId": "auto-games-最大80-オフ-フォールアウト4-が-2246円-561円-に-フォールアウト-シリーズがsteamでセールを開催中-初代から-最新作-フォールアウト76-まで-news.denfaminicogamer.jp/news/261014d",
-          "gameTitle": "フォールアウト2"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 38410
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-14T11:59:34.479Z",
-          "freshUntil": "2026-10-14T17:59:34.479Z",
-          "date": "2009-08-19",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=38410&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:38420",
-      "appId": 38420,
-      "title": "Fallout Tactics: Brotherhood of Steel",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/38420/?cc=jp&l=japanese",
-      "regularPrice": 980,
-      "salePrice": 245,
-      "discountPercent": 75,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "endsAt": null,
-      "deadlineSource": null,
-      "freshUntil": "2026-10-14T17:59:34.479Z",
-      "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=38420&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/38420/header.jpg?t=1572025647",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/261014d",
-          "title": "【最大80%オフ】『フォールアウト4』が「2246円→561円」に、『フォールアウト』シリーズがSteamでセールを開催中。初代から、最新作『フォールアウト76』まで",
-          "publishedAt": "2026-10-14T00:13:12.000Z",
-          "topicId": "auto-games-最大80-オフ-フォールアウト4-が-2246円-561円-に-フォールアウト-シリーズがsteamでセールを開催中-初代から-最新作-フォールアウト76-まで-news.denfaminicogamer.jp/news/261014d",
-          "gameTitle": "フォールアウト タクティクス: ブラザーフッド オブ スティール"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 38420
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-14T11:59:34.479Z",
-          "freshUntil": "2026-10-14T17:59:34.479Z",
-          "date": "2009-08-19",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=38420&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:22370",
-      "appId": 22370,
-      "title": "Fallout 3: Game of the Year Edition",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/22370/?cc=jp&l=japanese",
-      "regularPrice": 2199,
-      "salePrice": 549,
-      "discountPercent": 75,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "endsAt": null,
-      "deadlineSource": null,
-      "freshUntil": "2026-10-14T17:59:34.479Z",
-      "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=22370&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22370/header.jpg?t=1732208097",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/261014d",
-          "title": "【最大80%オフ】『フォールアウト4』が「2246円→561円」に、『フォールアウト』シリーズがSteamでセールを開催中。初代から、最新作『フォールアウト76』まで",
-          "publishedAt": "2026-10-14T00:13:12.000Z",
-          "topicId": "auto-games-最大80-オフ-フォールアウト4-が-2246円-561円-に-フォールアウト-シリーズがsteamでセールを開催中-初代から-最新作-フォールアウト76-まで-news.denfaminicogamer.jp/news/261014d",
-          "gameTitle": "フォールアウト3: ゲーム オブ ザ イヤー エディション"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 22370
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-14T11:59:34.479Z",
-          "freshUntil": "2026-10-14T17:59:34.479Z",
-          "date": "2009-12-17",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=22370&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 22370
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-14T11:59:34.479Z",
-          "freshUntil": "2026-10-14T17:59:34.479Z",
-          "eventId": "steam-announcement-4160842270244401931",
-          "date": "2024-06-04T16:26:30.000Z",
-          "title": "Fallout 3: Game of the Year - Launcher Update",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:22370",
-            "url": "https://steamcommunity.com/ogg/22370/announcements/detail/4160842270244401931",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:22380",
-      "appId": 22380,
-      "title": "Fallout: New Vegas",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/22380/?cc=jp&l=japanese",
-      "regularPrice": 1100,
-      "salePrice": 275,
-      "discountPercent": 75,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "endsAt": "2026-10-23T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A22380%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/22380/?cc=jp&l=japanese",
-        "appId": 22380,
-        "packageId": 6442,
-        "discountEndDate": 1792774800,
-        "checkedAt": "2026-10-14T11:59:34.479Z",
-        "regularPrice": 1100,
-        "salePrice": 275,
-        "discountPercent": 75,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-14T17:59:34.479Z",
-      "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=22380&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/header.jpg?t=1765992876",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/261014d",
-          "title": "【最大80%オフ】『フォールアウト4』が「2246円→561円」に、『フォールアウト』シリーズがSteamでセールを開催中。初代から、最新作『フォールアウト76』まで",
-          "publishedAt": "2026-10-14T00:13:12.000Z",
-          "topicId": "auto-games-最大80-オフ-フォールアウト4-が-2246円-561円-に-フォールアウト-シリーズがsteamでセールを開催中-初代から-最新作-フォールアウト76-まで-news.denfaminicogamer.jp/news/261014d",
-          "gameTitle": "フォールアウト: ニューベガス"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 22380
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-14T11:59:34.479Z",
-          "freshUntil": "2026-10-14T17:59:34.479Z",
-          "date": "2010-10-21",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=22380&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:377160",
-      "appId": 377160,
-      "title": "Fallout 4",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/377160/?cc=jp&l=japanese",
-      "regularPrice": 2246,
-      "salePrice": 561,
-      "discountPercent": 75,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "endsAt": "2026-10-23T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A377160%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/377160/?cc=jp&l=japanese",
-        "appId": 377160,
-        "packageId": 103387,
-        "discountEndDate": 1792774800,
-        "checkedAt": "2026-10-14T11:59:34.479Z",
-        "regularPrice": 2246,
-        "salePrice": 561,
-        "discountPercent": 75,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-14T17:59:34.479Z",
-      "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=377160&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/header.jpg?t=1786648137",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/261014d",
-          "title": "【最大80%オフ】『フォールアウト4』が「2246円→561円」に、『フォールアウト』シリーズがSteamでセールを開催中。初代から、最新作『フォールアウト76』まで",
-          "publishedAt": "2026-10-14T00:13:12.000Z",
-          "topicId": "auto-games-最大80-オフ-フォールアウト4-が-2246円-561円-に-フォールアウト-シリーズがsteamでセールを開催中-初代から-最新作-フォールアウト76-まで-news.denfaminicogamer.jp/news/261014d",
-          "gameTitle": "フォールアウト4"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 377160
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-14T11:59:34.479Z",
-          "freshUntil": "2026-10-14T17:59:34.479Z",
-          "date": "2015-11-09",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=377160&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 377160
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-14T11:59:34.479Z",
-          "freshUntil": "2026-10-14T17:59:34.479Z",
-          "eventId": "steam-announcement-681876878050461033",
-          "date": "2026-05-27T14:18:02.000Z",
-          "title": "Fallout 4 Update - May 27th",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:377160",
-            "url": "https://steamcommunity.com/ogg/377160/announcements/detail/681876878050461033",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:611660",
-      "appId": 611660,
-      "title": "Fallout 4 VR",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/611660/?cc=jp&l=japanese",
-      "regularPrice": 7980,
-      "salePrice": 1995,
-      "discountPercent": 75,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "endsAt": "2026-10-23T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A611660%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/611660/?cc=jp&l=japanese",
-        "appId": 611660,
-        "packageId": 163647,
-        "discountEndDate": 1792774800,
-        "checkedAt": "2026-10-14T11:59:34.479Z",
-        "regularPrice": 7980,
-        "salePrice": 1995,
-        "discountPercent": 75,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-14T17:59:34.479Z",
-      "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=611660&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/611660/header.jpg?t=1607445202",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/261014d",
-          "title": "【最大80%オフ】『フォールアウト4』が「2246円→561円」に、『フォールアウト』シリーズがSteamでセールを開催中。初代から、最新作『フォールアウト76』まで",
-          "publishedAt": "2026-10-14T00:13:12.000Z",
-          "topicId": "auto-games-最大80-オフ-フォールアウト4-が-2246円-561円-に-フォールアウト-シリーズがsteamでセールを開催中-初代から-最新作-フォールアウト76-まで-news.denfaminicogamer.jp/news/261014d",
-          "gameTitle": "フォールアウト4 VR"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 611660
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-14T11:59:34.479Z",
-          "freshUntil": "2026-10-14T17:59:34.479Z",
-          "date": "2017-12-11",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=611660&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 611660
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-14T11:59:34.479Z",
-          "freshUntil": "2026-10-14T17:59:34.479Z",
-          "eventId": "steam-announcement-1644246073982317083",
-          "date": "2018-01-30T15:23:12.000Z",
-          "title": "Fallout 4 VR | Update 1.1.31.0 [UPDATED]",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:611660",
-            "url": "https://steamcommunity.com/ogg/611660/announcements/detail/1644246073982317083",
-            "verified": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "steam:1151340",
-      "appId": 1151340,
-      "title": "Fallout 76",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/1151340/?cc=jp&l=japanese",
-      "regularPrice": 4800,
-      "salePrice": 960,
-      "discountPercent": 80,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "endsAt": "2026-10-23T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1151340%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/1151340/?cc=jp&l=japanese",
-        "appId": 1151340,
-        "packageId": 456623,
-        "discountEndDate": 1792774800,
-        "checkedAt": "2026-10-14T11:59:34.479Z",
-        "regularPrice": 4800,
-        "salePrice": 960,
-        "discountPercent": 80,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-14T17:59:34.479Z",
-      "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1151340&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1151340/f85dc32bab9fe57807cf588150579a8b2ab409f4/header.jpg?t=1791379859",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/261014d",
-          "title": "【最大80%オフ】『フォールアウト4』が「2246円→561円」に、『フォールアウト』シリーズがSteamでセールを開催中。初代から、最新作『フォールアウト76』まで",
-          "publishedAt": "2026-10-14T00:13:12.000Z",
-          "topicId": "auto-games-最大80-オフ-フォールアウト4-が-2246円-561円-に-フォールアウト-シリーズがsteamでセールを開催中-初代から-最新作-フォールアウト76-まで-news.denfaminicogamer.jp/news/261014d",
-          "gameTitle": "フォールアウト76"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1151340
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-14T11:59:34.479Z",
-          "freshUntil": "2026-10-14T17:59:34.479Z",
-          "date": "2020-04-14",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=1151340&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1151340
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-14T11:59:34.479Z",
-          "freshUntil": "2026-10-14T17:59:34.479Z",
-          "eventId": "steam-announcement-715665925076943390",
-          "date": "2026-10-01T16:16:16.000Z",
-          "title": "Fallout 76 Update Notes - October 1",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:1151340",
-            "url": "https://steamcommunity.com/ogg/1151340/announcements/detail/715665925076943390",
-            "verified": true
-          }
-        }
-      ]
-    },
     {
       "id": "steam:3061810",
       "appId": 3061810,
@@ -617,7 +37,7 @@
       },
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=3061810&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -743,7 +163,7 @@
       },
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=784150&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -813,7 +233,7 @@
       },
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=582270&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -925,7 +345,7 @@
       "deadlineSource": null,
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=688420&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -995,7 +415,7 @@
       },
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1812090&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1065,7 +485,7 @@
       },
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1569200&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1135,7 +555,7 @@
       },
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1138850&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1179,8 +599,8 @@
           "kind": "update",
           "checkedAt": "2026-10-14T11:59:34.479Z",
           "freshUntil": "2026-10-14T17:59:34.479Z",
-          "eventId": "steam-announcement-3735229275443843558",
           "date": "2023-09-26T04:13:42.000Z",
+          "eventId": "steam-announcement-3735229275443843558",
           "title": "Update Notes For September 26",
           "eventType": "release-notes",
           "source": {
@@ -1224,7 +644,7 @@
       },
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=361420&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1294,7 +714,7 @@
       },
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1316910&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1338,8 +758,8 @@
           "kind": "update",
           "checkedAt": "2026-10-14T11:59:34.479Z",
           "freshUntil": "2026-10-14T17:59:34.479Z",
-          "eventId": "steam-announcement-553504715299620946",
           "date": "2025-10-21T00:03:19.000Z",
+          "eventId": "steam-announcement-553504715299620946",
           "title": "Patch Update 10/20/2025 - Security Update",
           "eventType": "release-notes",
           "source": {
@@ -1383,7 +803,7 @@
       },
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=4968640&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1427,8 +847,8 @@
           "kind": "update",
           "checkedAt": "2026-10-14T11:59:34.479Z",
           "freshUntil": "2026-10-14T17:59:34.479Z",
-          "eventId": "steam-announcement-702155760121940972",
           "date": "2026-10-10T09:35:47.000Z",
+          "eventId": "steam-announcement-702155760121940972",
           "title": "Update Notice (v0.1.50.17746)",
           "eventType": "release-notes",
           "source": {
@@ -1458,7 +878,7 @@
       "deadlineSource": null,
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=3883570&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1502,8 +922,8 @@
           "kind": "update",
           "checkedAt": "2026-10-14T11:59:34.479Z",
           "freshUntil": "2026-10-14T17:59:34.479Z",
-          "eventId": "steam-announcement-693148560867200282",
           "date": "2026-10-12T15:42:23.000Z",
+          "eventId": "steam-announcement-693148560867200282",
           "title": "Patch V0.44.10",
           "eventType": "release-notes",
           "source": {
@@ -1547,7 +967,7 @@
       },
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2333000&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1617,7 +1037,7 @@
       },
       "freshUntil": "2026-10-14T17:59:34.479Z",
       "priceValidUntil": "2026-10-15T11:59:34.479Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2254990&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1661,8 +1081,8 @@
           "kind": "update",
           "checkedAt": "2026-10-14T11:59:34.479Z",
           "freshUntil": "2026-10-14T17:59:34.479Z",
-          "eventId": "steam-announcement-703281660030880764",
           "date": "2026-10-09T21:14:18.000Z",
+          "eventId": "steam-announcement-703281660030880764",
           "title": "Hotfix 2: Stability Fix for RTX 40 and 50 Series",
           "eventType": "release-notes",
           "source": {
@@ -1678,49 +1098,9 @@
   "sources": [
     {
       "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/261014d",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "candidates": [
-        {
-          "appId": 38400,
-          "articleGameTitle": "フォールアウト"
-        },
-        {
-          "appId": 38410,
-          "articleGameTitle": "フォールアウト2"
-        },
-        {
-          "appId": 38420,
-          "articleGameTitle": "フォールアウト タクティクス: ブラザーフッド オブ スティール"
-        },
-        {
-          "appId": 22370,
-          "articleGameTitle": "フォールアウト3: ゲーム オブ ザ イヤー エディション"
-        },
-        {
-          "appId": 22380,
-          "articleGameTitle": "フォールアウト: ニューベガス"
-        },
-        {
-          "appId": 377160,
-          "articleGameTitle": "フォールアウト4"
-        },
-        {
-          "appId": 611660,
-          "articleGameTitle": "フォールアウト4 VR"
-        },
-        {
-          "appId": 1151340,
-          "articleGameTitle": "フォールアウト76"
-        }
-      ]
-    },
-    {
-      "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/20261011-473016",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": [
         {
           "appId": 3061810,
@@ -1786,302 +1166,108 @@
     },
     {
       "kind": "steam",
-      "appId": 38400,
-      "url": "https://store.steampowered.com/api/appdetails?appids=38400&cc=jp&l=japanese",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
-    },
-    {
-      "kind": "steam",
-      "appId": 38410,
-      "url": "https://store.steampowered.com/api/appdetails?appids=38410&cc=jp&l=japanese",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
-    },
-    {
-      "kind": "steam",
-      "appId": 38420,
-      "url": "https://store.steampowered.com/api/appdetails?appids=38420&cc=jp&l=japanese",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
-    },
-    {
-      "kind": "steam",
-      "appId": 22370,
-      "url": "https://store.steampowered.com/api/appdetails?appids=22370&cc=jp&l=japanese",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 22380,
-      "url": "https://store.steampowered.com/api/appdetails?appids=22380&cc=jp&l=japanese",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
-    },
-    {
-      "kind": "steam",
-      "appId": 377160,
-      "url": "https://store.steampowered.com/api/appdetails?appids=377160&cc=jp&l=japanese",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 611660,
-      "url": "https://store.steampowered.com/api/appdetails?appids=611660&cc=jp&l=japanese",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 1151340,
-      "url": "https://store.steampowered.com/api/appdetails?appids=1151340&cc=jp&l=japanese",
-      "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261014d"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
       "appId": 3061810,
       "url": "https://store.steampowered.com/api/appdetails?appids=3061810&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 405640,
       "url": "https://store.steampowered.com/api/appdetails?appids=405640&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": false,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 784150,
       "url": "https://store.steampowered.com/api/appdetails?appids=784150&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 582270,
       "url": "https://store.steampowered.com/api/appdetails?appids=582270&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 390720,
       "url": "https://store.steampowered.com/api/appdetails?appids=390720&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": false,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 688420,
       "url": "https://store.steampowered.com/api/appdetails?appids=688420&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1812090,
       "url": "https://store.steampowered.com/api/appdetails?appids=1812090&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1569200,
       "url": "https://store.steampowered.com/api/appdetails?appids=1569200&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1138850,
       "url": "https://store.steampowered.com/api/appdetails?appids=1138850&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 361420,
       "url": "https://store.steampowered.com/api/appdetails?appids=361420&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1316910,
       "url": "https://store.steampowered.com/api/appdetails?appids=1316910&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 4968640,
       "url": "https://store.steampowered.com/api/appdetails?appids=4968640&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 3883570,
       "url": "https://store.steampowered.com/api/appdetails?appids=3883570&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 2333000,
       "url": "https://store.steampowered.com/api/appdetails?appids=2333000&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 2254990,
       "url": "https://store.steampowered.com/api/appdetails?appids=2254990&cc=jp&l=japanese",
       "checkedAt": "2026-10-14T11:59:34.479Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261011-473016"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     }
   ]
 }

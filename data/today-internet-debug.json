@@ -1,141 +1,38 @@
 {
-  "generatedAt": "2026-10-14T01:10:32.262Z",
+  "generatedAt": "2026-10-14T06:10:00.203Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-3",
-  "selectedTitle": "YouTube、コメント欄に「GIF画像」が投稿されはじめSNS上で話題に。新機能にユーザーざわつく",
+  "selectedClusterId": "today-cluster-16",
+  "selectedTitle": "「ガンダムゲーム40周年記念生配信」が10月28日20時より実施！『バトオペ』『ローグオービット』など家庭用ゲーム最新情報をお届け",
   "candidates": [
     {
-      "clusterId": "today-cluster-3",
-      "title": "YouTube、コメント欄に「GIF画像」が投稿されはじめSNS上で話題に。新機能にユーザーざわつく",
-      "category": "net-culture",
+      "clusterId": "today-cluster-16",
+      "title": "「ガンダムゲーム40周年記念生配信」が10月28日20時より実施！『バトオペ』『ローグオービット』など家庭用ゲーム最新情報をお届け",
+      "category": "games",
       "categories": [
-        "net-culture",
         "games",
-        "sns",
+        "entertainment",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 80.3,
-      "confidence": 0.5,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 85.5,
+      "confidence": 0.58,
+      "articleCount": 4,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
       "whyRanked": [
+        "主要3媒体で同一話題を確認",
         "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 22,
+        "coverage": 7.2,
+        "sourceDiversity": 7,
+        "trend": 18.5,
         "internetNativeBoost": 8,
-        "search": 6.5,
-        "social": 7,
-        "velocity": 8.3,
+        "search": 4.3,
+        "social": 4.6,
+        "velocity": 9.5,
         "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-51",
-      "title": "Nintendo Switch向け「ニコニコ」が2027年3月31日にサービス終了へ。Switch 2への対応予定はなし",
-      "category": "games",
-      "categories": [
-        "games",
-        "tech",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 72.1,
-      "confidence": 0.43,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 6.8,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 42.7,
-        "internalSocialScore": 53.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1586",
-      "title": "「気がついた？」星野源＆新垣結衣、第一子誕生発表の“直筆署名”にSNS注目　「字が似ててかわいくてニヤつく」「さすがです」",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "entertainment",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 68.3,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.6,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 14,
         "penalty": 0
@@ -149,11 +46,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 98,
-        "internalSearchScore": 36.3,
-        "internalSocialScore": 45.4
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 33.3,
+        "internalSocialScore": 35.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -162,18 +59,70 @@
       ]
     },
     {
-      "clusterId": "today-cluster-5",
-      "title": "AI、家電乗っ取り増殖の恐れ　アンソロピック「デジタル粘菌」と警告",
-      "category": "business",
+      "clusterId": "today-cluster-4",
+      "title": "生まれる場所を“選べない”人生シミュレーションゲーム『80億分の1』が話題。「死んだ時に泣いてしまった」「幸せってなんだろう」などの声が寄せられる",
+      "category": "games",
       "categories": [
-        "business",
-        "tech",
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 76.8,
+      "confidence": 0.56,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 16.7,
+        "internetNativeBoost": 0,
+        "search": 5.4,
+        "social": 5.6,
+        "velocity": 12.5,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 76,
+        "internalSearchScore": 42.2,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-10",
+      "title": "アニメ『超かぐや姫！』が年末フェス「COUNTDOWN JAPAN」出演決定　TAKU INOUEとタッグ",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.2,
-      "confidence": 0.43,
+      "buzzScore": 71.9,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -185,14 +134,14 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 5.6,
         "social": 8.4,
         "velocity": 5.3,
         "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -206,8 +155,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -217,33 +166,32 @@
       ]
     },
     {
-      "clusterId": "today-cluster-180",
-      "title": "ガンプラをポケモン風にアレンジすると……　完璧すぎる再現に「信じられない」「素晴らしいコンセプト」【海外】",
-      "category": "entertainment",
+      "clusterId": "today-cluster-41",
+      "title": "YouTube、コメント欄に「GIF画像」が投稿されはじめSNS上で話題に。新機能にユーザーざわつく",
+      "category": "net-culture",
       "categories": [
-        "entertainment",
-        "sns",
         "net-culture",
+        "games",
+        "sns",
         "general"
       ],
-      "buzzScore": 67.8,
-      "confidence": 0.38,
-      "articleCount": 1,
+      "buzzScore": 68.8,
+      "confidence": 0.4,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 6,
-        "velocity": 4.2,
-        "freshness": 10,
+        "search": 6.4,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -255,13 +203,68 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 23.1,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 46.7
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50,
+        "internalSocialScore": 54.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1",
+      "title": "「高騰するプロテインはセールで買う」Amazonプライム感謝祭でKAI-YOU社員が買ったおすすめ10選",
+      "category": "business",
+      "categories": [
+        "business",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 67.9,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 8.4,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -7
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

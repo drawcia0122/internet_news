@@ -1,30 +1,559 @@
 {
-  "generatedAt": "2026-10-14T17:03:31.570Z",
-  "totalCount": 1374,
+  "generatedAt": "2026-10-14T20:39:31.544Z",
+  "totalCount": 1287,
   "categoryCounts": {
-    "all": 1374,
-    "general": 60,
-    "tech": 245,
-    "business": 87,
+    "all": 1287,
+    "general": 53,
+    "tech": 235,
+    "business": 81,
     "politics": 44,
-    "entertainment": 494,
-    "anime": 63,
-    "games": 461,
-    "game-features": 12,
+    "entertainment": 453,
+    "anime": 61,
+    "games": 441,
+    "game-features": 10,
     "anime-features": 2,
-    "manga": 86,
-    "books": 11,
-    "sports": 51,
-    "sns": 633,
-    "net-culture": 733,
+    "manga": 70,
+    "books": 9,
+    "sports": 46,
+    "sns": 599,
+    "net-culture": 694,
     "matome": 2,
     "crime": 28,
-    "adult": 9,
-    "world": 66
+    "adult": 7,
+    "world": 62
   },
   "hasMore": true,
   "nextPage": 14,
   "items": [
+    {
+      "id": "auto-crime-米俳優-セルマ・ブレア容疑者逮捕-news.yahoo.co.jp/pickup/6598569",
+      "title": "米俳優 セルマ・ブレア容疑者逮捕",
+      "summary": "",
+      "briefSummary": "",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "world",
+        "general"
+      ],
+      "categoryLabel": "犯罪・事件",
+      "categoryLabels": [
+        "犯罪・事件",
+        "国際"
+      ],
+      "score": 59,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-12T21:56:46.000Z",
+      "capturedAt": "2026-10-13T21:50:46.545Z",
+      "time": "23時間前",
+      "sourceName": "Yahoo!ニュース / 国際",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598569?source=rss",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-world",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 国際",
+          "sourceGroup": "important-news",
+          "sourcePriority": 78,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "米俳優 セルマ・ブレア容疑者逮捕",
+          "url": "https://news.yahoo.co.jp/pickup/6598569?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598569?source=rss",
+          "publishedAt": "2026-10-12T21:56:46.000Z",
+          "publishedLabel": "10/12 21:56",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "米俳優 セルマ・ブレア容疑者逮捕",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [
+        "時事ニュースを追う人"
+      ]
+    },
+    {
+      "id": "auto-politics-簗農相の予算カット発言なぜダメ-憲法-国民を差別してはならない-朝日新聞-asahi.com/articles/asvbb7rslvbbulfa007m.html",
+      "title": "簗農相の予算カット発言なぜダメ？憲法｢国民を差別してはならない｣：朝日新聞",
+      "summary": "",
+      "briefSummary": "",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "政治",
+      "categoryLabels": [
+        "政治",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 84,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://imgopt.asahi.com/ogp/AS20261011000692_comm.jpg",
+      "publishedAt": "2026-10-12T21:38:15.000Z",
+      "capturedAt": "2026-10-13T02:00:12.075Z",
+      "time": "4時間前",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://www.asahi.com/articles/ASVBB7RSLVBBULFA007M.html",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "簗農相の予算カット発言なぜダメ？憲法｢国民を差別してはならない｣：朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBB7RSLVBBULFA007M.html",
+          "canonicalUrl": "https://www.asahi.com/articles/ASVBB7RSLVBBULFA007M.html",
+          "publishedAt": "2026-10-12T21:38:15.000Z",
+          "publishedLabel": "10/12 21:38",
+          "thumbnailUrl": "https://imgopt.asahi.com/ogp/AS20261011000692_comm.jpg"
+        }
+      ],
+      "whatHappened": "簗農相の予算カット発言なぜダメ",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [
+        "ネット文化を追う人",
+        "時事ニュースを追う人"
+      ]
+    },
+    {
+      "id": "auto-general-台風被害-流れたニシキゴイを救出-news.yahoo.co.jp/pickup/6598567",
+      "title": "台風被害 流れたニシキゴイを救出",
+      "summary": "",
+      "briefSummary": "",
+      "category": "general",
+      "categories": [
+        "general"
+      ],
+      "categoryLabel": "その他",
+      "categoryLabels": [
+        "その他"
+      ],
+      "score": 64,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-12T21:33:45.000Z",
+      "capturedAt": "2026-10-13T09:19:31.454Z",
+      "time": "11時間前",
+      "sourceName": "Yahoo!ニュース / 地域",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598567?source=rss",
+      "hotReasons": [],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-local",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 地域",
+          "sourceGroup": "local-news",
+          "sourcePriority": 50,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "台風被害 流れたニシキゴイを救出",
+          "url": "https://news.yahoo.co.jp/pickup/6598567?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598567?source=rss",
+          "publishedAt": "2026-10-12T21:33:45.000Z",
+          "publishedLabel": "10/12 21:33",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "台風被害 流れたニシキゴイを救出",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-crime-飲食店で男性刺される-男を逮捕-news.yahoo.co.jp/pickup/6598566",
+      "title": "飲食店で男性刺される 男を逮捕",
+      "summary": "",
+      "briefSummary": "",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "general"
+      ],
+      "categoryLabel": "犯罪・事件",
+      "categoryLabels": [
+        "犯罪・事件",
+        "その他"
+      ],
+      "score": 51,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-12T21:21:55.000Z",
+      "capturedAt": "2026-10-13T21:50:46.545Z",
+      "time": "1日前",
+      "sourceName": "Yahoo!ニュース / 地域",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598566?source=rss",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-local",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 地域",
+          "sourceGroup": "local-news",
+          "sourcePriority": 50,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "飲食店で男性刺される 男を逮捕",
+          "url": "https://news.yahoo.co.jp/pickup/6598566?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598566?source=rss",
+          "publishedAt": "2026-10-12T21:21:55.000Z",
+          "publishedLabel": "10/12 21:21",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "飲食店で男性刺される 男を逮捕",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [
+        "ガジェット好き",
+        "時事ニュースを追う人"
+      ]
+    },
+    {
+      "id": "auto-business-東京・港区タワマンに-違法民泊-の疑い-料金は3泊38万円-マンション不都合な真実-nikkei.com/telling/dgxzts00022200u6a820c2000000",
+      "title": "東京・港区タワマンに「違法民泊」の疑い　料金は3泊38万円 ―マンション不都合な真実―",
+      "summary": "東京と大阪の都心部に約300棟建つタワーマンション。一部は住居として利用されず、無届け営業の「違法民泊」の拠点となっている。1泊10万円超と高級ホテル並みの宿泊料金…",
+      "briefSummary": "東京と大阪の都心部に約300棟建つタワーマンション。一部は住居として利用されず、無届け営業の「違法民泊」の拠点となっている。1泊10万円超と高級ホテル並みの宿泊料金を請求するケースもある。近隣住民や自治体にも見えない違法民泊とは――。中国語…",
+      "category": "business",
+      "categories": [
+        "business",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "categoryLabel": "経済",
+      "categoryLabels": [
+        "経済",
+        "SNS",
+        "ネットカルチャー",
+        "国際"
+      ],
+      "score": 84,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3566411008092026000000-1.jpg?ixlib=js-2.3.2&auto=format&q=32&w=1600&s=0a17c59add0657dd77e594e02f68f6a5",
+      "publishedAt": "2026-10-12T21:11:31.000Z",
+      "capturedAt": "2026-10-13T02:00:12.075Z",
+      "time": "4時間前",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://www.nikkei.com/telling/DGXZTS00022200U6A820C2000000/",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "東京・港区タワマンに「違法民泊」の疑い　料金は3泊38万円 ―マンション不都合な真実―",
+          "url": "https://www.nikkei.com/telling/DGXZTS00022200U6A820C2000000/",
+          "canonicalUrl": "https://www.nikkei.com/telling/DGXZTS00022200U6A820C2000000/",
+          "publishedAt": "2026-10-12T21:11:31.000Z",
+          "publishedLabel": "10/12 21:11",
+          "thumbnailUrl": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3566411008092026000000-1.jpg?ixlib=js-2.3.2&auto=format&q=32&w=1600&s=0a17c59add0657dd77e594e02f68f6a5"
+        }
+      ],
+      "whatHappened": "東京・港区タワマンに「違法民泊」の疑い 料金は3泊38万円 ―マンション不都合な真実―",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [
+        "ネット文化を追う人",
+        "時事ニュースを追う人"
+      ]
+    },
+    {
+      "id": "auto-games-カオス釣りシム-how-to-fish-プレイヤー1-000万人突破-発売2か月足らずで-大型アプデとコンソール移植にも取り組むと発表-gamespark.jp/article/2026/10/13/173525.html",
+      "title": "カオス釣りシム『How to Fish』プレイヤー1,000万人突破―発売2か月足らずで！大型アプデとコンソール移植にも取り組むと発表",
+      "summary": "",
+      "briefSummary": "",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 62,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1205773.jpg",
+      "publishedAt": "2026-10-12T21:00:03.000Z",
+      "capturedAt": "2026-10-14T01:08:00.623Z",
+      "time": "1日前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/10/13/173525.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "カオス釣りシム『How to Fish』プレイヤー1,000万人突破―発売2か月足らずで！大型アプデとコンソール移植にも取り組むと発表",
+          "url": "http://www.gamespark.jp/article/2026/10/13/173525.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/13/173525.html",
+          "publishedAt": "2026-10-12T21:00:03.000Z",
+          "publishedLabel": "10/12 21:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1205773.jpg"
+        }
+      ],
+      "whatHappened": "カオス釣りシム『How to Fish』プレイヤー1,000万人突破―発売2か月足らずで",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-tech-itmedia-ビジネスオンライン-nvidiaフアンceo-倒産まであと30日-と言いながら週7日フル稼働-成功しても消えぬ-倒産の恐怖-itmedia.co.jp/business/articles/2610/13/news041.html",
+      "title": "[ITmedia ビジネスオンライン] NVIDIAフアンCEO「倒産まであと30日」と言いながら週7日フル稼働　成功しても消えぬ「倒産の恐怖」",
+      "summary": "NVIDIAのジェンスン・フアンCEOは、休日も含めて週7日働き続けている。同氏が語る、成功に欠かせない「苦しみ」とは何か。投資家のレイ・ダリオ氏らの考え方とともに…",
+      "briefSummary": "NVIDIAのジェンスン・フアンCEOは、休日も含めて週7日働き続けている。同氏が語る、成功に欠かせない「苦しみ」とは何か。投資家のレイ・ダリオ氏らの考え方とともに、その哲学を探る。",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "business",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "SNS",
+        "ネットカルチャー",
+        "経済"
+      ],
+      "score": 81,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://image.itmedia.co.jp/business/articles/2610/13/cover_news041.jpg",
+      "publishedAt": "2026-10-12T21:00:00.000Z",
+      "capturedAt": "2026-10-13T02:00:12.075Z",
+      "time": "5時間前",
+      "sourceName": "ITmedia",
+      "sourceUrl": "https://www.itmedia.co.jp/business/articles/2610/13/news041.html",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "itmedia-all",
+          "source": "ITmedia",
+          "sourceName": "ITmedia",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 68,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "tech"
+          ],
+          "title": "[ITmedia ビジネスオンライン] NVIDIAフアンCEO「倒産まであと30日」と言いながら週7日フル稼働　成功しても消えぬ「倒産の恐怖」",
+          "url": "https://www.itmedia.co.jp/business/articles/2610/13/news041.html",
+          "canonicalUrl": "https://www.itmedia.co.jp/business/articles/2610/13/news041.html",
+          "publishedAt": "2026-10-12T21:00:00.000Z",
+          "publishedLabel": "10/12 21:00",
+          "thumbnailUrl": "https://image.itmedia.co.jp/business/articles/2610/13/cover_news041.jpg"
+        }
+      ],
+      "whatHappened": "[ITmedia ビジネスオンライン] NVIDIAフアンCEO「倒産まであと30日」と言い…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [
+        "ガジェット好き",
+        "ネット文化を追う人",
+        "投資家"
+      ]
+    },
+    {
+      "id": "auto-tech-itmedia-ビジネスオンライン-管理職になんてなりたくない-って本当-そのワケと-なりたくなる組織-の作り方-itmedia.co.jp/business/articles/2610/13/news015.html",
+      "title": "[ITmedia ビジネスオンライン] 「管理職になんてなりたくない！」って本当？　そのワケと「なりたくなる組織」の作り方",
+      "summary": "管理職の約6割が「仕事を続けたい」と回答する一方、心身の疲弊を感じる管理職も少なくない。管理職を孤立させず、持続可能なマネジメントを実現するために、人事やメンバーは…",
+      "briefSummary": "管理職の約6割が「仕事を続けたい」と回答する一方、心身の疲弊を感じる管理職も少なくない。管理職を孤立させず、持続可能なマネジメントを実現するために、人事やメンバーは何ができるのか。",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 81,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-12T20:30:00.000Z",
+      "capturedAt": "2026-10-13T02:00:12.075Z",
+      "time": "5時間前",
+      "sourceName": "ITmedia",
+      "sourceUrl": "https://www.itmedia.co.jp/business/articles/2610/13/news015.html",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "itmedia-all",
+          "source": "ITmedia",
+          "sourceName": "ITmedia",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 68,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "tech"
+          ],
+          "title": "[ITmedia ビジネスオンライン] 「管理職になんてなりたくない！」って本当？　そのワケと「なりたくなる組織」の作り方",
+          "url": "https://www.itmedia.co.jp/business/articles/2610/13/news015.html",
+          "canonicalUrl": "https://www.itmedia.co.jp/business/articles/2610/13/news015.html",
+          "publishedAt": "2026-10-12T20:30:00.000Z",
+          "publishedLabel": "10/12 20:30",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "[ITmedia ビジネスオンライン] 「管理職になんてなりたくない！」って本当",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-manga-28-全員オタク-ギャルとギャルの百合-sunday-webry.com/episode/12207421984355309024",
+      "title": "#28 #全員オタク？ / #ギャルとギャルの百合",
+      "summary": "#ギャルとギャルの百合 イノウエ #ギャルの結愛 #ギャルの玲奈 #ふとした思いつきで #とりま１年付き合ってみることに #そしたら末永く続いちゃって #ギャルとギ…",
+      "briefSummary": "#ギャルとギャルの百合 イノウエ #ギャルの結愛 #ギャルの玲奈 #ふとした思いつきで #とりま１年付き合ってみることに #そしたら末永く続いちゃって #ギャルとギャルによる #カップル青春コメディー！！ #大反響の読切が連載化！ #「死神…",
+      "category": "manga",
+      "categories": [
+        "manga",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "漫画",
+      "categoryLabels": [
+        "漫画",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 76,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://www.sunday-webry.com/episode/12207421984355309024",
+      "publishedAt": "2026-10-12T16:13:56.000Z",
+      "capturedAt": "2026-10-13T02:00:12.075Z",
+      "time": "9時間前",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://www.sunday-webry.com/episode/12207421984355309024",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "#28 #全員オタク？ / #ギャルとギャルの百合",
+          "url": "https://www.sunday-webry.com/episode/12207421984355309024",
+          "canonicalUrl": "https://www.sunday-webry.com/episode/12207421984355309024",
+          "publishedAt": "2026-10-12T16:13:56.000Z",
+          "publishedLabel": "10/12 16:13",
+          "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://www.sunday-webry.com/episode/12207421984355309024"
+        }
+      ],
+      "whatHappened": "#28 #全員オタク",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き",
+        "ネット文化を追う人"
+      ]
+    },
     {
       "id": "auto-tech-ai時代のサイバー攻撃-度重なる情報漏洩からの守りを固めるための政府への7つの提言私案-安野貴博-note.com/takahiroanno/n/n27e77cc9bb80",
       "title": "AI時代のサイバー攻撃、度重なる情報漏洩からの守りを固めるための政府への7つの提言私案｜安野貴博",
@@ -1222,7 +1751,7 @@
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-12T13:34:29.000Z",
-      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "capturedAt": "2026-10-14T20:39:31.544Z",
       "time": "2日前",
       "sourceName": "Yahoo!ニュース / 科学",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6598556?source=rss",
@@ -4726,7 +5255,7 @@
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261012160346.jpg",
       "publishedAt": "2026-10-12T10:30:00.000Z",
-      "capturedAt": "2026-10-14T17:03:31.570Z",
+      "capturedAt": "2026-10-14T20:39:31.544Z",
       "time": "2日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/12518418.html",
@@ -5361,515 +5890,6 @@
       "targetAudience": [
         "ネット文化を追う人"
       ]
-    },
-    {
-      "id": "auto-entertainment-道端で保護された-モップみたいな犬-3時間かけてトリミングすると-別犬のような姿に-ああ-涙が出てくる-海外-news.yahoo.co.jp/articles/198e0e38248c2a428b8b29c89cf87b6a2060383d",
-      "title": "道端で保護された“モップみたいな犬”→3時間かけてトリミングすると……　別犬のような姿に「ああ！」「涙が出てくる」【海外】",
-      "summary": "1年前や5年前……。少し前にインターネット上で話題になった投稿や動画を振り返って紹介する企画「昔のインターネット発掘！」。今回は2025年4月にYouTubeで公開された、道端でさまよっていた“モッ",
-      "briefSummary": "1年前や5年前……。少し前にインターネット上で話題になった投稿や動画を振り返って紹介する企画「昔のインターネット発掘！」。今回は2025年4月にYouTubeで公開された、道端でさまよっていた“モップ",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 80,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-12T10:00:00.000Z",
-      "capturedAt": "2026-10-12T20:02:10.303Z",
-      "time": "10時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/198e0e38248c2a428b8b29c89cf87b6a2060383d?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "道端で保護された“モップみたいな犬”→3時間かけてトリミングすると……　別犬のような姿に「ああ！」「涙が出てくる」【海外】",
-          "url": "https://news.yahoo.co.jp/articles/198e0e38248c2a428b8b29c89cf87b6a2060383d?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/198e0e38248c2a428b8b29c89cf87b6a2060383d?source=rss",
-          "publishedAt": "2026-10-12T10:00:00.000Z",
-          "publishedLabel": "10/12 10:00",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "道端で保護された“モップみたいな犬”→3時間かけてトリミングすると…… 別犬のような姿に「あ…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-吉岡里帆-透け感ノースリドレス姿で美貌ダダ漏れ-スタイルいい-可愛くて綺麗-なんて美しいんだ-j-cast.com/2026/10/12518379.html",
-      "title": "吉岡里帆、透け感ノースリドレス姿で美貌ダダ漏れ　「スタイルいい」「可愛くて綺麗～」「なんて美しいんだ」",
-      "summary": "俳優の吉岡里帆さんのマネージャーのインスタグラムで2026年10月6日、吉岡さんの黒いノースリーブドレス姿の衣装ショットが公開された。 続きは「J-CASTニュース…",
-      "briefSummary": "俳優の吉岡里帆さんのマネージャーのインスタグラムで2026年10月6日、吉岡さんの黒いノースリーブドレス姿の衣装ショットが公開された。 続きは「J-CASTニュース」へ",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 56,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261008151854.jpg",
-      "publishedAt": "2026-10-12T10:00:00.000Z",
-      "capturedAt": "2026-10-14T17:03:31.570Z",
-      "time": "2日前",
-      "sourceName": "J-CASTニュース",
-      "sourceUrl": "https://www.j-cast.com/2026/10/12518379.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "jcast",
-          "source": "J-CASTニュース",
-          "sourceName": "J-CASTニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 72,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz"
-          ],
-          "title": "吉岡里帆、透け感ノースリドレス姿で美貌ダダ漏れ　「スタイルいい」「可愛くて綺麗～」「なんて美しいんだ」",
-          "url": "https://www.j-cast.com/2026/10/12518379.html",
-          "canonicalUrl": "https://www.j-cast.com/2026/10/12518379.html",
-          "publishedAt": "2026-10-12T10:00:00.000Z",
-          "publishedLabel": "10/12 10:00",
-          "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261008151854.jpg"
-        }
-      ],
-      "whatHappened": "吉岡里帆、透け感ノースリドレス姿で美貌ダダ漏れ 「スタイルいい」「可愛くて綺麗～」「なんて美…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-general-日ハム連勝-新庄監督がナイン称賛-news.yahoo.co.jp/pickup/6598533",
-      "title": "日ハム連勝 新庄監督がナイン称賛",
-      "summary": "",
-      "briefSummary": "",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "その他"
-      ],
-      "score": 84,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-12T09:59:39.000Z",
-      "capturedAt": "2026-10-12T10:39:29.631Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / スポーツ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598533?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-sports",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / スポーツ",
-          "sourceGroup": "general-sports",
-          "sourcePriority": 58,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "日ハム連勝 新庄監督がナイン称賛",
-          "url": "https://news.yahoo.co.jp/pickup/6598533?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598533?source=rss",
-          "publishedAt": "2026-10-12T09:59:39.000Z",
-          "publishedLabel": "10/12 09:59",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "日ハム連勝 新庄監督がナイン称賛",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-general-北ミサイル一部-変則飛行の可能性-news.yahoo.co.jp/pickup/6598534",
-      "title": "北ミサイル一部 変則飛行の可能性",
-      "summary": "防衛省は12日、北朝鮮が少なくとも2発の弾道ミサイルを、内陸部から北東や東方向に発射し、同国東岸付近や日本海に落下したと推定されると発表した。日本の排他的経済水域（EEZ）への飛来や被害情報などは確",
-      "briefSummary": "防衛省は12日、北朝鮮が少なくとも2発の弾道ミサイルを、内陸部から北東や東方向に発射し、同国東岸付近や日本海に落下したと推定されると発表した。日本の排他的経済水域（EEZ）への飛来や被害情報などは確",
-      "category": "world",
-      "categories": [
-        "world",
-        "general"
-      ],
-      "categoryLabel": "国際",
-      "categoryLabels": [
-        "国際",
-        "その他"
-      ],
-      "score": 78,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-12T09:54:17.000Z",
-      "capturedAt": "2026-10-12T20:02:10.303Z",
-      "time": "10時間前",
-      "sourceName": "Yahoo!ニュース / 国際",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598534?source=rss",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-world",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 国際",
-          "sourceGroup": "important-news",
-          "sourcePriority": 78,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "北ミサイル一部 変則飛行の可能性",
-          "url": "https://news.yahoo.co.jp/pickup/6598534?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598534?source=rss",
-          "publishedAt": "2026-10-12T09:54:17.000Z",
-          "publishedLabel": "10/12 09:54",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "北ミサイル一部 変則飛行の可能性",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-sns-超富裕層の金融資産は庶民の71倍-でも深刻なのは-格差-ではない-朝日新聞-asahi.com/articles/asvb62bv9vb6difi016m.html",
-      "title": "超富裕層の金融資産は庶民の71倍　でも深刻なのは「格差」ではない：朝日新聞",
-      "summary": "",
-      "briefSummary": "「日本は平等な社会」というイメージを持つ人は多いでしょう。ただ、数字を追うと、その姿は少し違って見えてきます。野村総合研究所の推計によれば、日本の世帯の約8割は「マス層」と呼ばれる金融資産3千万円未…",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "SNS",
-      "categoryLabels": [
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 76,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://imgopt.asahi.com/ogp/AS20261006002513_comm.jpg",
-      "publishedAt": "2026-10-12T09:53:34.000Z",
-      "capturedAt": "2026-10-12T20:02:10.303Z",
-      "time": "10時間前",
-      "sourceName": "はてなブックマーク人気",
-      "sourceUrl": "https://www.asahi.com/articles/ASVB62BV9VB6DIFI016M.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "hatena-hotentry",
-          "source": "はてなブックマーク",
-          "sourceName": "はてなブックマーク人気",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "trend",
-            "buzz"
-          ],
-          "title": "超富裕層の金融資産は庶民の71倍　でも深刻なのは「格差」ではない：朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVB62BV9VB6DIFI016M.html",
-          "canonicalUrl": "https://www.asahi.com/articles/ASVB62BV9VB6DIFI016M.html",
-          "publishedAt": "2026-10-12T09:53:34.000Z",
-          "publishedLabel": "10/12 09:53",
-          "thumbnailUrl": "https://imgopt.asahi.com/ogp/AS20261006002513_comm.jpg"
-        }
-      ],
-      "whatHappened": "超富裕層の金融資産は庶民の71倍 でも深刻なのは「格差」ではない：朝日新聞",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-business-3つ購入しました-無印良品の-竹でできた調理グッズ-が大好評-タイパの真髄-水洗いで良いのが最高-news.yahoo.co.jp/articles/22f5e441b4f078bd82f905ae51d3f229f6d223d7",
-      "title": "「3つ購入しました」　無印良品の“竹でできた調理グッズ”が大好評　「タイパの真髄」「水洗いで良いのが最高」",
-      "summary": "1980年に日本で生まれ、海外でも大きな成功を収めている「無印良品」。シンプルなデザインながら、日常生活で使いやすい機能的な商品をさまざまなカテゴリーで取りそろえて…",
-      "briefSummary": "1980年に日本で生まれ、海外でも大きな成功を収めている「無印良品」。シンプルなデザインながら、日常生活で使いやすい機能的な商品をさまざまなカテゴリーで取りそろえているのが特徴です。生産工程を合理化し",
-      "category": "business",
-      "categories": [
-        "business",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "経済",
-      "categoryLabels": [
-        "経済",
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 79,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-12T09:40:00.000Z",
-      "capturedAt": "2026-10-12T20:02:10.303Z",
-      "time": "10時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/22f5e441b4f078bd82f905ae51d3f229f6d223d7?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「3つ購入しました」　無印良品の“竹でできた調理グッズ”が大好評　「タイパの真髄」「水洗いで良いのが最高」",
-          "url": "https://news.yahoo.co.jp/articles/22f5e441b4f078bd82f905ae51d3f229f6d223d7?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/22f5e441b4f078bd82f905ae51d3f229f6d223d7?source=rss",
-          "publishedAt": "2026-10-12T09:40:00.000Z",
-          "publishedLabel": "10/12 09:40",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「3つ購入しました」 無印良品の“竹でできた調理グッズ”が大好評 「タイパの真髄」「水洗いで…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-sports-早大が出雲駅伝快勝-他校が危機感-news.yahoo.co.jp/pickup/6598532",
-      "title": "早大が出雲駅伝快勝 他校が危機感",
-      "summary": "「出雲全日本大学選抜駅伝」（１２日、出雲大社前～出雲ドーム前＝６区間４５・１キロ） 大学三大駅伝の開幕戦・出雲駅伝が行われ、早大が２時間５分５６秒の大会新記録で１６年ぶり３度目の優勝を飾った。２３年",
-      "briefSummary": "「出雲全日本大学選抜駅伝」（１２日、出雲大社前～出雲ドーム前＝６区間４５・１キロ） 大学三大駅伝の開幕戦・出雲駅伝が行われ、早大が２時間５分５６秒の大会新記録で１６年ぶり３度目の優勝を飾った。２３年",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "その他"
-      ],
-      "score": 83,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-12T09:36:43.000Z",
-      "capturedAt": "2026-10-12T10:39:29.631Z",
-      "time": "1時間前",
-      "sourceName": "Yahoo!ニュース / スポーツ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598532?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-sports",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / スポーツ",
-          "sourceGroup": "general-sports",
-          "sourcePriority": 58,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "早大が出雲駅伝快勝 他校が危機感",
-          "url": "https://news.yahoo.co.jp/pickup/6598532?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598532?source=rss",
-          "publishedAt": "2026-10-12T09:36:43.000Z",
-          "publishedLabel": "10/12 09:36",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "早大が出雲駅伝快勝 他校が危機感",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-entertainment-ポケモン-に-サンリオ-usj-キャラのケーキも-サーティワン-クリスマス商品が予約受付中-animeanime.jp/article/2026/10/12/103729.html",
-      "title": "「ポケモン」に「サンリオ」、「USJ」キャラのケーキも！「サーティワン」クリスマス商品が予約受付中",
-      "summary": "『ポケモン』や「ユニバーサル・スタジオ・ジャパン（USJ）」、「サンリオキャラクターズ」のアイスクリームケーキも選べる、B-Rサーティワン アイスクリームの「Happy ICE CREAM CHRISTMAS ハッピー アイスクリーム クリスマス」が2026年11月1日から12月25日にかけて実施さ…",
-      "briefSummary": "『ポケモン』や「ユニバーサル・スタジオ・ジャパン（USJ）」、「サンリオキャラクターズ」のアイスクリームケーキも選べる、B-Rサーティワン アイスクリーム「Happy ICE CREAM CHRISTMAS ハッピー アイスクリーム クリスマス」の詳細は特設サイトまで。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 62,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/941624.jpg",
-      "publishedAt": "2026-10-12T09:30:03.000Z",
-      "capturedAt": "2026-10-14T01:08:00.623Z",
-      "time": "1日前",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/10/12/103729.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "「ポケモン」に「サンリオ」、「USJ」キャラのケーキも！「サーティワン」クリスマス商品が予約受付中",
-          "url": "https://animeanime.jp/article/2026/10/12/103729.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/10/12/103729.html",
-          "publishedAt": "2026-10-12T09:30:03.000Z",
-          "publishedLabel": "10/12 09:30",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/941624.jpg"
-        }
-      ],
-      "whatHappened": "「ポケモン」に「サンリオ」、「USJ」キャラのケーキも",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-general-台所で女性死亡-顔に出血伴う傷-news.yahoo.co.jp/pickup/6598531",
-      "title": "台所で女性死亡 顔に出血伴う傷",
-      "summary": "12日朝、愛知県豊川市の住宅で女性が台所で倒れ死亡しているのが見つかりました。警察が女性が死亡した経緯を詳しく調べています。【写真を見る】台所で女性死亡 顔には出血を伴う傷 家の様子が普段と違い…長",
-      "briefSummary": "12日朝、愛知県豊川市の住宅で女性が台所で倒れ死亡しているのが見つかりました。警察が女性が死亡した経緯を詳しく調べています。【写真を見る】台所で女性死亡 顔には出血を伴う傷 家の様子が普段と違い…長",
-      "category": "general",
-      "categories": [
-        "general"
-      ],
-      "categoryLabel": "その他",
-      "categoryLabels": [
-        "その他"
-      ],
-      "score": 80,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-12T09:25:27.000Z",
-      "capturedAt": "2026-10-12T10:39:29.631Z",
-      "time": "1時間前",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6598531?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "台所で女性死亡 顔に出血伴う傷",
-          "url": "https://news.yahoo.co.jp/pickup/6598531?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6598531?source=rss",
-          "publishedAt": "2026-10-12T09:25:27.000Z",
-          "publishedLabel": "10/12 09:25",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "台所で女性死亡 顔に出血伴う傷",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
     }
   ]
 }

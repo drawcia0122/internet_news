@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-14T23:29:09.164Z",
+  "generatedAt": "2026-10-15T01:50:29.838Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-128",
+  "selectedClusterId": "today-cluster-136",
   "selectedTitle": "「ガンダムゲーム40周年記念生配信」が10月28日20時より実施！『バトオペ』『ローグオービット』など家庭用ゲーム最新情報をお届け",
   "candidates": [
     {
-      "clusterId": "today-cluster-128",
+      "clusterId": "today-cluster-136",
       "title": "「ガンダムゲーム40周年記念生配信」が10月28日20時より実施！『バトオペ』『ローグオービット』など家庭用ゲーム最新情報をお届け",
       "category": "games",
       "categories": [
@@ -14,7 +14,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 76.5,
+      "buzzScore": 76.4,
       "confidence": 0.52,
       "articleCount": 5,
       "sourceCount": 4,
@@ -28,8 +28,8 @@
         "sourceDiversity": 9.3,
         "trend": 20.2,
         "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 4.5,
+        "search": 4.4,
+        "social": 4.4,
         "velocity": 0,
         "freshness": 3.5,
         "authority": 3.5,
@@ -45,11 +45,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 60,
         "archiveHeatScore": 92,
-        "internalSearchScore": 34.9,
-        "internalSocialScore": 34.9
+        "internalSearchScore": 34.2,
+        "internalSocialScore": 34.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -58,18 +58,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-239",
-      "title": "台風の中、羽田→新千歳便に搭乗→車内モニターで見たのは……「良く飛びましたね」驚きの光景が150万表示「プロのお仕事ありがとう」",
-      "category": "sns",
+      "clusterId": "today-cluster-1",
+      "title": "『モンスターハンターワイルズ』Nintendo Switch 2向け体験版、10月20日配信へ。「ローカルマルチプレイ」もお試し可能、製品版にセーブデータ引き継ぎもできる",
+      "category": "games",
       "categories": [
-        "sns",
+        "games",
         "entertainment",
-        "net-culture",
         "general"
       ],
-      "buzzScore": 67.8,
-      "confidence": 0.38,
-      "articleCount": 1,
+      "buzzScore": 69,
+      "confidence": 0.49,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
@@ -77,176 +76,17 @@
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "trend": 20.5,
         "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 6,
-        "velocity": 4.2,
+        "search": 6.2,
+        "social": 5.6,
+        "velocity": 8.3,
         "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 6,
         "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-253",
-      "title": "34歳2児ママの「髪切った」投稿→信じられない姿に騒然「2児産んだプロポーションじゃない」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.8,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-111",
-      "title": "決算:サイゼリヤ最高益　27年8月期、ミラノ風ドリアは20円値上げ",
-      "category": "business",
-      "categories": [
-        "business",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 59.4,
-      "confidence": 0.41,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 18.9,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 6.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 43.8,
-        "internalSocialScore": 53.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-9",
-      "title": "みずほが数千人をAI開発者に転換　事務や営業、日本企業の働き方転機",
-      "category": "business",
-      "categories": [
-        "business",
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 59.1,
-      "confidence": 0.41,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 16.7,
-        "internetNativeBoost": 0,
-        "search": 5.4,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -258,10 +98,166 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 76,
-        "internalSearchScore": 42.2,
-        "internalSocialScore": 65.8
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 93,
+        "internalSearchScore": 48.2,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2",
+      "title": "Steam最大4人協力キャンピングカー自由旅ゲーム『Seikyu Let’s Go!』デモ版配信開始。迷路に観覧車と寄り道三昧、野獣に襲われたりもするけどそれも思い出",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 66.9,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 5.6,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-510",
+      "title": "台風の中、羽田→新千歳便に搭乗→車内モニターで見たのは……「良く飛びましたね」驚きの光景が150万表示「プロのお仕事ありがとう」",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 59.7,
+      "confidence": 0.31,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 4.1,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 32,
+        "internalSocialScore": 46.3
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-527",
+      "title": "34歳2児ママの「髪切った」投稿→信じられない姿に騒然「2児産んだプロポーションじゃない」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 59.7,
+      "confidence": 0.31,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 4.1,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 32,
+        "internalSocialScore": 46.3
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

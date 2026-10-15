@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-15T07:22:02.421Z",
+  "generatedAt": "2026-10-15T12:52:47.268Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-5",
-  "selectedTitle": "“本物の犬”が主役のゲーム『ゴールデンレトリバーと過ごす日々』2027年2月にリリースへ。かわいいお友達もいっぱい登場",
+  "selectedClusterId": "today-cluster-6",
+  "selectedTitle": "『サイバーパンク: エッジランナーズ2』監督の五十嵐海、新作でTVアニメ初挑戦　予告映像が解禁",
   "candidates": [
     {
-      "clusterId": "today-cluster-5",
-      "title": "“本物の犬”が主役のゲーム『ゴールデンレトリバーと過ごす日々』2027年2月にリリースへ。かわいいお友達もいっぱい登場",
-      "category": "games",
+      "clusterId": "today-cluster-6",
+      "title": "『サイバーパンク: エッジランナーズ2』監督の五十嵐海、新作でTVアニメ初挑戦　予告映像が解禁",
+      "category": "anime",
       "categories": [
-        "games",
-        "game-features",
-        "net-culture",
+        "anime",
         "entertainment",
+        "sns",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 74.5,
-      "confidence": 0.44,
+      "buzzScore": 77.4,
+      "confidence": 0.47,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -28,64 +28,11 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 19.8,
+        "trend": 18.5,
         "internetNativeBoost": 8,
-        "search": 6,
+        "search": 5.8,
         "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 47.1,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-244",
-      "title": "ドイツ 13歳未満のSNS利用禁止へ",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "tech",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 71,
-      "confidence": 0.4,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 6,
-        "velocity": 4.2,
+        "velocity": 8.3,
         "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
@@ -98,13 +45,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 46.7
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 45,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -113,38 +60,36 @@
       ]
     },
     {
-      "clusterId": "today-cluster-17",
-      "title": "“仕事をしながら”『CS2』を配信する猛者があらわれ海外で話題に。「彼はとても優秀な人材だ」「カメラの視点が素晴らしい」など反応集まる",
+      "clusterId": "today-cluster-12",
+      "title": "【最大4人】フードトラックで爆走しながら調理する協力型クッキングゲーム『Hot Meals Fast Wheels』無料プロローグがSteamで配信中。新たなトレーラーも公開",
       "category": "games",
       "categories": [
         "games",
         "entertainment",
         "net-culture",
-        "matome",
         "general"
       ],
-      "buzzScore": 68.7,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 71.7,
+      "confidence": 0.5,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 8.4,
-        "velocity": 5.3,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 16.3,
+        "internetNativeBoost": 0,
+        "search": 5.3,
+        "social": 7,
+        "velocity": 8,
         "freshness": 8.5,
-        "authority": 1.5,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -7
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -156,10 +101,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 44.7,
-        "internalSocialScore": 65.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 74,
+        "internalSearchScore": 41.5,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -168,61 +113,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-38",
-      "title": "PlayStation 5で27Bの生成AIが動作。脱獄の進展次第ではPS5もAI需要の餌食になる可能性",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 68.2,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.2,
-        "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 92,
-        "internalSearchScore": 47.8,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-2709",
+      "clusterId": "today-cluster-3446",
       "title": "「ガンダムゲーム40周年記念生配信」が10月28日20時より実施！『バトオペ』『ローグオービット』など家庭用ゲーム最新情報をお届け",
       "category": "games",
       "categories": [
@@ -231,7 +122,7 @@
         "general",
         "net-culture"
       ],
-      "buzzScore": 67.4,
+      "buzzScore": 67.2,
       "confidence": 0.42,
       "articleCount": 3,
       "sourceCount": 3,
@@ -245,8 +136,8 @@
         "sourceDiversity": 7,
         "trend": 20.2,
         "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 4.4,
+        "search": 4.3,
+        "social": 4.3,
         "velocity": 0,
         "freshness": 1.5,
         "authority": 2.5,
@@ -262,11 +153,118 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
+        "repeatedAppearanceScore": 1.8,
         "crossCategoryScore": 60,
         "archiveHeatScore": 92,
-        "internalSearchScore": 34.2,
-        "internalSocialScore": 34.4
+        "internalSearchScore": 33.4,
+        "internalSocialScore": 33.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-297",
+      "title": "「春麗ほど太ももが太くない」実写映画「ストリートファイター」の春麗役、ネット掲示板の書き込みに言及―努力で6.5cm太く",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 66.6,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20.2,
+        "internetNativeBoost": 8,
+        "search": 4.6,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 92,
+        "internalSearchScore": 36.1,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-102",
+      "title": "PlayStation 5で27Bの生成AIが動作。脱獄の進展次第ではPS5もAI需要の餌食になる可能性",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 63.8,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.5,
+        "social": 8.3,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 22.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 43.1,
+        "internalSocialScore": 65
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

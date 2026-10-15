@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T17:57:15.728Z",
+  "generatedAt": "2026-10-15T21:29:46.239Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
@@ -18,7 +18,7 @@
       "discountPercent": 20,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-15T13:01:32.068Z",
+      "checkedAt": "2026-10-15T21:29:46.239Z",
       "endsAt": "2026-10-28T17:00:36.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -27,7 +27,7 @@
         "appId": 2929250,
         "packageId": 1043396,
         "discountEndDate": 1793206836,
-        "checkedAt": "2026-10-15T13:01:32.068Z",
+        "checkedAt": "2026-10-15T21:29:46.239Z",
         "regularPrice": 3150,
         "salePrice": 2520,
         "discountPercent": 20,
@@ -35,9 +35,9 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-15T19:01:32.068Z",
-      "priceValidUntil": "2026-10-16T13:01:32.068Z",
-      "status": "cached",
+      "freshUntil": "2026-10-16T03:29:46.239Z",
+      "priceValidUntil": "2026-10-16T21:29:46.239Z",
+      "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2929250&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -63,8 +63,8 @@
             "appId": 2929250
           },
           "kind": "release",
-          "checkedAt": "2026-10-15T13:01:32.068Z",
-          "freshUntil": "2026-10-15T19:01:32.068Z",
+          "checkedAt": "2026-10-15T21:29:46.239Z",
+          "freshUntil": "2026-10-16T03:29:46.239Z",
           "date": "2026-10-14",
           "status": "released",
           "source": {
@@ -80,8 +80,8 @@
     {
       "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/over-the-hill-20261015-473665",
-      "checkedAt": "2026-10-15T13:01:32.068Z",
-      "status": "cached",
+      "checkedAt": "2026-10-15T21:29:46.239Z",
+      "status": "ok",
       "candidates": [
         {
           "appId": 2929250,
@@ -93,15 +93,21 @@
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/261015u",
       "checkedAt": "2026-10-15T17:57:15.728Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": []
     },
     {
       "kind": "steam",
       "appId": 2929250,
       "url": "https://store.steampowered.com/api/appdetails?appids=2929250&cc=jp&l=japanese",
-      "checkedAt": "2026-10-15T13:01:32.068Z",
-      "status": "cached"
+      "checkedAt": "2026-10-15T21:29:46.239Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/over-the-hill-20261015-473665"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T04:34:56.295Z",
+  "generatedAt": "2026-10-16T09:31:16.166Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
@@ -37,7 +37,7 @@
       },
       "freshUntil": "2026-10-16T10:34:56.295Z",
       "priceValidUntil": "2026-10-17T04:34:56.295Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2929250&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -81,7 +81,7 @@
       "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/over-the-hill-20261015-473665",
       "checkedAt": "2026-10-16T04:34:56.295Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": [
         {
           "appId": 2929250,
@@ -94,13 +94,7 @@
       "appId": 2929250,
       "url": "https://store.steampowered.com/api/appdetails?appids=2929250&cc=jp&l=japanese",
       "checkedAt": "2026-10-16T04:34:56.295Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/over-the-hill-20261015-473665"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     }
   ]
 }

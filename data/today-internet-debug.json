@@ -1,11 +1,121 @@
 {
-  "generatedAt": "2026-10-15T21:20:54.834Z",
+  "generatedAt": "2026-10-15T23:52:23.993Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-4",
-  "selectedTitle": "『バイオハザード RE』シリーズ3作品のSwitch 2向けダウンロード版が10月16日より発売。11月7日まで“各1000円オフ”に",
+  "selectedClusterId": "today-cluster-582",
+  "selectedTitle": "ドイツ 13歳未満のSNS利用禁止へ",
   "candidates": [
     {
-      "clusterId": "today-cluster-4",
+      "clusterId": "today-cluster-582",
+      "title": "ドイツ 13歳未満のSNS利用禁止へ",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "general",
+        "tech",
+        "politics",
+        "business"
+      ],
+      "buzzScore": 78.8,
+      "confidence": 0.61,
+      "articleCount": 12,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
+      "whyRanked": [
+        "主要3媒体で同一話題を確認",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 18,
+        "sourceDiversity": 7,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 3.8,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 30,
+        "internalSocialScore": 45.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1",
+      "title": "「最大4人」の協力登山ゲーム『PEAK』PS5、Xbox Series X|S、Nintendo Switch 2版が10月22日にリリース決定。クロスプレイにも対応し、全アップデート内容を収録",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 77.2,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-15",
       "title": "『バイオハザード RE』シリーズ3作品のSwitch 2向けダウンロード版が10月16日より発売。11月7日まで“各1000円オフ”に",
       "category": "games",
       "categories": [
@@ -13,7 +123,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 71.2,
+      "buzzScore": 71,
       "confidence": 0.43,
       "articleCount": 3,
       "sourceCount": 2,
@@ -27,8 +137,8 @@
         "sourceDiversity": 4.7,
         "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 5.8,
+        "search": 6.1,
+        "social": 5.7,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 2.5,
@@ -44,11 +154,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 27.3,
+        "repeatedAppearanceScore": 26.4,
         "crossCategoryScore": 60,
         "archiveHeatScore": 87,
-        "internalSearchScore": 48.2,
-        "internalSocialScore": 45.3
+        "internalSearchScore": 47.6,
+        "internalSocialScore": 44.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -57,188 +167,33 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1686",
-      "title": "PlayStation 5で27Bの生成AIが動作。脱獄の進展次第ではPS5もAI需要の餌食になる可能性",
-      "category": "tech",
+      "clusterId": "today-cluster-162",
+      "title": "築50年、60代女性が暮らす“元倉庫”→「ジブリに出てきそう」と言われる空間に「なんて素敵な」「築50年とは思えない」",
+      "category": "entertainment",
       "categories": [
-        "tech",
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.4,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 3.7,
-        "social": 7.2,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 29.2,
-        "internalSocialScore": 56.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1896",
-      "title": "今森茉耶、妊娠発言とLINE公開を謝罪　「すべての発信をやめて」SNS休止へ",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "sns",
         "entertainment",
-        "general"
-      ],
-      "buzzScore": 59.4,
-      "confidence": 0.32,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.9,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 35.2,
-        "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-551",
-      "title": "「CONTROL Resonant」，PS5/XBOX Series X向けパッケージ版が本日発売。SteelBookエディションも登場",
-      "category": "games",
-      "categories": [
-        "games",
         "sns",
-        "general"
-      ],
-      "buzzScore": 58.2,
-      "confidence": 0.32,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.4,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 4.5,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 88,
-        "internalSearchScore": 33.5,
-        "internalSocialScore": 34.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1887",
-      "title": "運動会で孫の写真投稿 炎上相次ぐ",
-      "category": "net-culture",
-      "categories": [
         "net-culture",
-        "tech",
-        "sns",
         "general"
       ],
-      "buzzScore": 58,
-      "confidence": 0.31,
+      "buzzScore": 67.8,
+      "confidence": 0.38,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 19.8,
+        "trend": 18.7,
         "internetNativeBoost": 8,
         "search": 4.3,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -252,11 +207,64 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 33.4,
-        "internalSocialScore": 45.4
+        "archiveHeatScore": 85,
+        "internalSearchScore": 33.7,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-222",
+      "title": "歯医者でもらった“乳歯ケース”がトトロみたい→11歳が絵を描いたら……　衝撃の仕上がりへ「天才」「未来のアーティスト」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 67.8,
+      "confidence": 0.38,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 4.3,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 33.7,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

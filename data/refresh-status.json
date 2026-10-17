@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-17T16:31:20.050Z",
+  "checkedAt": "2026-10-17T18:59:23.907Z",
   "status": "warning",
   "thresholds": {
     "staleHours": 3,
@@ -14,64 +14,64 @@
     {
       "name": "trend",
       "status": "ok",
-      "startedAt": "2026-10-17T16:20:24.525Z",
-      "completedAt": "2026-10-17T16:22:37.635Z"
+      "startedAt": "2026-10-17T18:48:06.631Z",
+      "completedAt": "2026-10-17T18:50:55.007Z"
     },
     {
       "name": "events",
       "status": "ok",
-      "startedAt": "2026-10-17T16:22:37.636Z",
-      "completedAt": "2026-10-17T16:22:41.133Z"
+      "startedAt": "2026-10-17T18:50:55.008Z",
+      "completedAt": "2026-10-17T18:51:08.535Z"
     },
     {
       "name": "adult",
       "status": "ok",
-      "startedAt": "2026-10-17T16:22:41.181Z",
-      "completedAt": "2026-10-17T16:22:54.792Z"
+      "startedAt": "2026-10-17T18:51:08.584Z",
+      "completedAt": "2026-10-17T18:51:21.995Z"
     },
     {
       "name": "today-internet",
       "status": "ok",
-      "startedAt": "2026-10-17T16:22:54.807Z",
-      "completedAt": "2026-10-17T16:27:52.630Z"
+      "startedAt": "2026-10-17T18:51:22.010Z",
+      "completedAt": "2026-10-17T18:55:57.745Z"
     },
     {
       "name": "thumbnail-repair",
       "status": "ok",
-      "startedAt": "2026-10-17T16:27:52.796Z",
-      "completedAt": "2026-10-17T16:31:17.523Z"
+      "startedAt": "2026-10-17T18:55:57.922Z",
+      "completedAt": "2026-10-17T18:59:21.691Z"
     },
     {
       "name": "game-sale-offers",
       "status": "ok",
-      "startedAt": "2026-10-17T16:31:17.524Z",
-      "completedAt": "2026-10-17T16:31:17.540Z"
+      "startedAt": "2026-10-17T18:59:21.691Z",
+      "completedAt": "2026-10-17T18:59:21.708Z"
     },
     {
       "name": "matome",
       "status": "ok",
-      "startedAt": "2026-10-17T16:31:17.541Z",
-      "completedAt": "2026-10-17T16:31:19.726Z"
+      "startedAt": "2026-10-17T18:59:21.709Z",
+      "completedAt": "2026-10-17T18:59:23.581Z"
     }
   ],
   "datasets": {
     "trend-topics.json": {
       "file": "trend-topics.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 180,
       "thumbnailCount": 177,
       "thumbnailCoverage": 0.9833333333333333,
       "activeItemCount": 180,
       "activeThumbnailCoverage": 0.9833333333333333,
-      "fetchedCount": 2407,
+      "fetchedCount": 2397,
       "stale": false,
       "issues": [
         {
           "code": "source_failures",
           "file": "trend-topics.json",
           "severity": "warning",
-          "message": "trend-topics.json: 6/51 RSS sources failed"
+          "message": "trend-topics.json: 7/51 RSS sources failed"
         }
       ],
       "retained": false
@@ -79,12 +79,12 @@
     "trend-topics-archive.json": {
       "file": "trend-topics-archive.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 5200,
-      "thumbnailCount": 787,
-      "thumbnailCoverage": 0.15134615384615385,
+      "thumbnailCount": 788,
+      "thumbnailCoverage": 0.15153846153846154,
       "activeItemCount": 5200,
-      "activeThumbnailCoverage": 0.15134615384615385,
+      "activeThumbnailCoverage": 0.15153846153846154,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -93,12 +93,12 @@
     "trend-topics-browse.json": {
       "file": "trend-topics-browse.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
-      "itemCount": 479,
-      "thumbnailCount": 389,
-      "thumbnailCoverage": 0.8121085594989561,
-      "activeItemCount": 479,
-      "activeThumbnailCoverage": 0.8121085594989561,
+      "generatedAt": "2026-10-17T18:48:06.677Z",
+      "itemCount": 504,
+      "thumbnailCount": 388,
+      "thumbnailCoverage": 0.7698412698412699,
+      "activeItemCount": 504,
+      "activeThumbnailCoverage": 0.7698412698412699,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -107,12 +107,12 @@
     "news-archive.json": {
       "file": "news-archive.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
-      "itemCount": 1300,
-      "thumbnailCount": 794,
-      "thumbnailCoverage": 0.6107692307692307,
-      "activeItemCount": 1300,
-      "activeThumbnailCoverage": 0.6107692307692307,
+      "generatedAt": "2026-10-17T18:48:06.677Z",
+      "itemCount": 1264,
+      "thumbnailCount": 771,
+      "thumbnailCoverage": 0.6099683544303798,
+      "activeItemCount": 1264,
+      "activeThumbnailCoverage": 0.6099683544303798,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -121,7 +121,7 @@
     "home-news.json": {
       "file": "home-news.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 20,
       "thumbnailCount": 1,
       "thumbnailCoverage": 0.05,
@@ -135,12 +135,12 @@
     "home-topics.json": {
       "file": "home-topics.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 30,
-      "thumbnailCount": 13,
-      "thumbnailCoverage": 0.43333333333333335,
+      "thumbnailCount": 14,
+      "thumbnailCoverage": 0.4666666666666667,
       "activeItemCount": 30,
-      "activeThumbnailCoverage": 0.43333333333333335,
+      "activeThumbnailCoverage": 0.4666666666666667,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -149,7 +149,7 @@
     "daily-brief.json": {
       "file": "daily-brief.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 10,
       "thumbnailCount": 0,
       "thumbnailCoverage": 0,
@@ -163,7 +163,7 @@
     "adult-news.json": {
       "file": "adult-news.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 0,
       "thumbnailCount": 0,
       "thumbnailCoverage": 0,
@@ -177,12 +177,12 @@
     "home-news-page-10.json": {
       "file": "home-news-page-10.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 100,
-      "thumbnailCount": 54,
-      "thumbnailCoverage": 0.54,
+      "thumbnailCount": 55,
+      "thumbnailCoverage": 0.55,
       "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.54,
+      "activeThumbnailCoverage": 0.55,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -191,7 +191,7 @@
     "home-news-page-11.json": {
       "file": "home-news-page-11.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 100,
       "thumbnailCount": 60,
       "thumbnailCoverage": 0.6,
@@ -205,12 +205,12 @@
     "home-news-page-12.json": {
       "file": "home-news-page-12.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 100,
-      "thumbnailCount": 53,
-      "thumbnailCoverage": 0.53,
+      "thumbnailCount": 54,
+      "thumbnailCoverage": 0.54,
       "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.53,
+      "activeThumbnailCoverage": 0.54,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -219,12 +219,12 @@
     "home-news-page-13.json": {
       "file": "home-news-page-13.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 100,
-      "thumbnailCount": 68,
-      "thumbnailCoverage": 0.68,
+      "thumbnailCount": 78,
+      "thumbnailCoverage": 0.78,
       "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.68,
+      "activeThumbnailCoverage": 0.78,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -233,11 +233,11 @@
     "home-news-page-14.json": {
       "file": "home-news-page-14.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
-      "itemCount": 51,
-      "thumbnailCount": 51,
+      "generatedAt": "2026-10-17T18:48:06.677Z",
+      "itemCount": 14,
+      "thumbnailCount": 14,
       "thumbnailCoverage": 1,
-      "activeItemCount": 51,
+      "activeItemCount": 14,
       "activeThumbnailCoverage": 1,
       "fetchedCount": null,
       "stale": false,
@@ -247,12 +247,12 @@
     "home-news-page-2.json": {
       "file": "home-news-page-2.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 100,
-      "thumbnailCount": 41,
-      "thumbnailCoverage": 0.41,
+      "thumbnailCount": 42,
+      "thumbnailCoverage": 0.42,
       "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.41,
+      "activeThumbnailCoverage": 0.42,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -261,12 +261,12 @@
     "home-news-page-3.json": {
       "file": "home-news-page-3.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 100,
-      "thumbnailCount": 50,
-      "thumbnailCoverage": 0.5,
+      "thumbnailCount": 49,
+      "thumbnailCoverage": 0.49,
       "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.5,
+      "activeThumbnailCoverage": 0.49,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -275,12 +275,12 @@
     "home-news-page-4.json": {
       "file": "home-news-page-4.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 100,
-      "thumbnailCount": 43,
-      "thumbnailCoverage": 0.43,
+      "thumbnailCount": 45,
+      "thumbnailCoverage": 0.45,
       "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.43,
+      "activeThumbnailCoverage": 0.45,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -289,7 +289,7 @@
     "home-news-page-5.json": {
       "file": "home-news-page-5.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 100,
       "thumbnailCount": 63,
       "thumbnailCoverage": 0.63,
@@ -303,7 +303,7 @@
     "home-news-page-6.json": {
       "file": "home-news-page-6.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 100,
       "thumbnailCount": 63,
       "thumbnailCoverage": 0.63,
@@ -317,7 +317,7 @@
     "home-news-page-7.json": {
       "file": "home-news-page-7.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 100,
       "thumbnailCount": 77,
       "thumbnailCoverage": 0.77,
@@ -331,12 +331,12 @@
     "home-news-page-8.json": {
       "file": "home-news-page-8.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 100,
-      "thumbnailCount": 72,
-      "thumbnailCoverage": 0.72,
+      "thumbnailCount": 70,
+      "thumbnailCoverage": 0.7,
       "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.72,
+      "activeThumbnailCoverage": 0.7,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -345,12 +345,12 @@
     "home-news-page-9.json": {
       "file": "home-news-page-9.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:20:24.570Z",
+      "generatedAt": "2026-10-17T18:48:06.677Z",
       "itemCount": 100,
-      "thumbnailCount": 82,
-      "thumbnailCoverage": 0.82,
+      "thumbnailCount": 83,
+      "thumbnailCoverage": 0.83,
       "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.82,
+      "activeThumbnailCoverage": 0.83,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -359,7 +359,7 @@
     "events.json": {
       "file": "events.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:22:37.639Z",
+      "generatedAt": "2026-10-17T18:50:55.011Z",
       "itemCount": 64,
       "thumbnailCount": 55,
       "thumbnailCoverage": 0.859375,
@@ -380,7 +380,7 @@
     "adult-trends.json": {
       "file": "adult-trends.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:22:41.184Z",
+      "generatedAt": "2026-10-17T18:51:08.587Z",
       "itemCount": 42,
       "thumbnailCount": 42,
       "thumbnailCoverage": 1,
@@ -394,11 +394,11 @@
     "adult-trends-archive.json": {
       "file": "adult-trends-archive.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:22:41.184Z",
-      "itemCount": 7757,
-      "thumbnailCount": 7757,
+      "generatedAt": "2026-10-17T18:51:08.587Z",
+      "itemCount": 7746,
+      "thumbnailCount": 7746,
       "thumbnailCoverage": 1,
-      "activeItemCount": 7757,
+      "activeItemCount": 7746,
       "activeThumbnailCoverage": 1,
       "fetchedCount": null,
       "stale": false,
@@ -408,7 +408,7 @@
     "adult-features.json": {
       "file": "adult-features.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:22:41.184Z",
+      "generatedAt": "2026-10-17T18:51:08.587Z",
       "itemCount": 3,
       "thumbnailCount": 3,
       "thumbnailCoverage": 1,
@@ -422,7 +422,7 @@
     "today-internet.json": {
       "file": "today-internet.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:22:55.012Z",
+      "generatedAt": "2026-10-17T18:51:22.214Z",
       "itemCount": 1,
       "thumbnailCount": 0,
       "thumbnailCoverage": 0,
@@ -436,7 +436,7 @@
     "game-sale-offers.json": {
       "file": "game-sale-offers.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:31:17.535Z",
+      "generatedAt": "2026-10-17T18:59:21.702Z",
       "itemCount": 1,
       "thumbnailCount": 1,
       "thumbnailCoverage": 1,
@@ -450,7 +450,7 @@
     "matome-threads.json": {
       "file": "matome-threads.json",
       "valid": true,
-      "generatedAt": "2026-10-17T16:31:17.544Z",
+      "generatedAt": "2026-10-17T18:59:21.712Z",
       "itemCount": 129,
       "thumbnailCount": 0,
       "thumbnailCoverage": 0,
@@ -467,13 +467,13 @@
       "code": "thumbnails_restored",
       "file": null,
       "severity": "warning",
-      "message": "trend: restored 329 usable thumbnail(s) for the exact same article"
+      "message": "trend: restored 351 usable thumbnail(s) for the exact same article"
     },
     {
       "code": "source_failures",
       "file": "trend-topics.json",
       "severity": "warning",
-      "message": "trend-topics.json: 6/51 RSS sources failed"
+      "message": "trend-topics.json: 7/51 RSS sources failed"
     },
     {
       "code": "source_failures",

@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-10-17T18:51:22.214Z",
+  "generatedAt": "2026-10-17T21:28:41.735Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-544",
-  "selectedTitle": "キングオブコント決勝 SNSの反応",
+  "selectedClusterId": "today-cluster-31",
+  "selectedTitle": "ドコモの緊急地震速報不配、原因は「形式が異なるデータ」を認識できなかったため。",
   "candidates": [
     {
-      "clusterId": "today-cluster-544",
-      "title": "キングオブコント決勝 SNSの反応",
-      "category": "net-culture",
+      "clusterId": "today-cluster-31",
+      "title": "ドコモの緊急地震速報不配、原因は「形式が異なるデータ」を認識できなかったため。",
+      "category": "entertainment",
       "categories": [
-        "net-culture",
         "entertainment",
         "sns",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 63,
-      "confidence": 0.34,
-      "articleCount": 1,
+      "buzzScore": 62.7,
+      "confidence": 0.36,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 4.9,
-        "social": 5.9,
+        "search": 5.7,
+        "social": 7,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 1.5,
@@ -42,13 +42,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
+        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.3,
-        "internalSocialScore": 46.3
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -57,7 +57,111 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1317",
+      "clusterId": "today-cluster-18",
+      "title": "同志社国際高・助成金削減　「権力の教育介入」と抗議　府民らデモ行進　／京都",
+      "category": "world",
+      "categories": [
+        "world",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62.3,
+      "confidence": 0.43,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 19.8,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 6.8,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 19.8,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 44.4,
+        "internalSocialScore": 52.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-634",
+      "title": "キングオブコント決勝 SNSの反応",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "entertainment",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 60.8,
+      "confidence": 0.33,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 37.7,
+        "internalSocialScore": 45.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1419",
       "title": "しまむらで見つけた1089円Tシャツ→購入すると……　「実質タダ」「次の休みにしまむら行く」と称賛の声　デザインとおまけがSNSで大注目",
       "category": "net-culture",
       "categories": [
@@ -109,112 +213,8 @@
       ]
     },
     {
-      "clusterId": "today-cluster-42",
-      "title": "“3Dモデリング”で変装するかくれんぼゲーム『Mimic Busters』Steamにて配信中！作って、塗って、芸術力が試される",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 60.5,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 6.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 42.7,
-        "internalSocialScore": 53.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1337",
+      "clusterId": "today-cluster-1441",
       "title": "小5息子「トトロの弁当作って」→ママが作ったのは……「これはめちゃくちゃ喜ぶ」予想外の中身に「そっちのトトロ！」「再現度すごいです！」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 55.9,
-      "confidence": 0.29,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 3.9,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 30.7,
-        "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1384",
-      "title": "シニアの柴犬にハスキーが突進→次の瞬間……　まさかの反応に「只者じゃないな」「さすが大御所」",
       "category": "entertainment",
       "categories": [
         "entertainment",

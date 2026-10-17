@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T00:04:16.377Z",
+  "generatedAt": "2026-10-17T04:24:59.710Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
@@ -18,7 +18,7 @@
       "discountPercent": 20,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-16T21:50:44.924Z",
+      "checkedAt": "2026-10-17T04:24:59.710Z",
       "endsAt": "2026-10-28T17:00:36.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -27,7 +27,7 @@
         "appId": 2929250,
         "packageId": 1043396,
         "discountEndDate": 1793206836,
-        "checkedAt": "2026-10-16T21:50:44.924Z",
+        "checkedAt": "2026-10-17T04:24:59.710Z",
         "regularPrice": 3150,
         "salePrice": 2520,
         "discountPercent": 20,
@@ -35,9 +35,9 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-10-17T03:50:44.924Z",
-      "priceValidUntil": "2026-10-17T21:50:44.924Z",
-      "status": "cached",
+      "freshUntil": "2026-10-17T10:24:59.710Z",
+      "priceValidUntil": "2026-10-18T04:24:59.710Z",
+      "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2929250&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -63,8 +63,8 @@
             "appId": 2929250
           },
           "kind": "release",
-          "checkedAt": "2026-10-16T21:50:44.924Z",
-          "freshUntil": "2026-10-17T03:50:44.924Z",
+          "checkedAt": "2026-10-17T04:24:59.710Z",
+          "freshUntil": "2026-10-17T10:24:59.710Z",
           "date": "2026-10-14",
           "status": "released",
           "source": {
@@ -80,8 +80,8 @@
     {
       "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/over-the-hill-20261015-473665",
-      "checkedAt": "2026-10-16T21:50:44.924Z",
-      "status": "cached",
+      "checkedAt": "2026-10-17T04:24:59.710Z",
+      "status": "ok",
       "candidates": [
         {
           "appId": 2929250,
@@ -93,8 +93,14 @@
       "kind": "steam",
       "appId": 2929250,
       "url": "https://store.steampowered.com/api/appdetails?appids=2929250&cc=jp&l=japanese",
-      "checkedAt": "2026-10-16T21:50:44.924Z",
-      "status": "cached"
+      "checkedAt": "2026-10-17T04:24:59.710Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/over-the-hill-20261015-473665"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
     }
   ]
 }

@@ -1,30 +1,569 @@
 {
-  "generatedAt": "2026-10-18T14:49:53.481Z",
-  "totalCount": 1293,
+  "generatedAt": "2026-10-18T18:02:07.805Z",
+  "totalCount": 1268,
   "categoryCounts": {
-    "all": 1293,
-    "general": 59,
-    "tech": 186,
-    "business": 73,
-    "politics": 46,
-    "entertainment": 502,
-    "anime": 43,
-    "games": 350,
-    "game-features": 14,
+    "all": 1268,
+    "general": 60,
+    "tech": 183,
+    "business": 69,
+    "politics": 45,
+    "entertainment": 492,
+    "anime": 42,
+    "games": 337,
+    "game-features": 13,
     "anime-features": 3,
-    "manga": 70,
-    "books": 15,
-    "sports": 55,
-    "sns": 651,
-    "net-culture": 694,
+    "manga": 73,
+    "books": 13,
+    "sports": 53,
+    "sns": 648,
+    "net-culture": 686,
     "matome": 4,
-    "crime": 17,
+    "crime": 16,
     "adult": 11,
-    "world": 70
+    "world": 67
   },
   "hasMore": true,
   "nextPage": 9,
   "items": [
+    {
+      "id": "auto-general-武蔵野学院大-箱根逃すも選手歓喜-news.yahoo.co.jp/pickup/6599082",
+      "title": "武蔵野学院大 箱根逃すも選手歓喜",
+      "summary": "",
+      "briefSummary": "",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "general"
+      ],
+      "categoryLabel": "スポーツ",
+      "categoryLabels": [
+        "スポーツ",
+        "その他"
+      ],
+      "score": 75,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-17T01:57:51.000Z",
+      "capturedAt": "2026-10-17T08:47:34.517Z",
+      "time": "6時間前",
+      "sourceName": "Yahoo!ニュース / スポーツ",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6599082?source=rss",
+      "hotReasons": [],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-sports",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / スポーツ",
+          "sourceGroup": "general-sports",
+          "sourcePriority": 58,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "武蔵野学院大 箱根逃すも選手歓喜",
+          "url": "https://news.yahoo.co.jp/pickup/6599082?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6599082?source=rss",
+          "publishedAt": "2026-10-17T01:57:51.000Z",
+          "publishedLabel": "10/17 01:57",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "武蔵野学院大 箱根逃すも選手歓喜",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-manga-息子が天才かもしれん-anond.hatelabo.jp/20261017104912",
+      "title": "息子が天才かもしれん",
+      "summary": "",
+      "briefSummary": "",
+      "category": "manga",
+      "categories": [
+        "manga",
+        "sns",
+        "net-culture",
+        "books",
+        "general"
+      ],
+      "categoryLabel": "漫画",
+      "categoryLabels": [
+        "漫画",
+        "SNS",
+        "ネットカルチャー",
+        "本"
+      ],
+      "score": 66,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://anond.hatelabo.jp/20261017104912",
+      "publishedAt": "2026-10-17T01:50:50.000Z",
+      "capturedAt": "2026-10-17T18:48:06.677Z",
+      "time": "16時間前",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://anond.hatelabo.jp/20261017104912",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "息子が天才かもしれん",
+          "url": "https://anond.hatelabo.jp/20261017104912",
+          "canonicalUrl": "https://anond.hatelabo.jp/20261017104912",
+          "publishedAt": "2026-10-17T01:50:50.000Z",
+          "publishedLabel": "10/17 01:50",
+          "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://anond.hatelabo.jp/20261017104912"
+        }
+      ],
+      "whatHappened": "息子が天才かもしれん",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-entertainment-ちょ-軽い-中川政七商店で買える-リンゴより軽いリュック-が好評-服装を選ばない優れもの-あちこちに連れ歩いています-の声-news.yahoo.co.jp/articles/103bb5ef2cfa85d33d9f3e116719775b6f6d9a80",
+      "title": "「ちょ〜軽い」　中川政七商店で買える“リンゴより軽いリュック”が好評　「服装を選ばない優れもの」「あちこちに連れ歩いています」の声",
+      "summary": "「TO＆FRO BACKPACK －STANDARD－」は、約290グラムの軽さが特徴のバックパックです。レビューでは、軽さや収納力、色のかわいさ、服装を選ばないシ…",
+      "briefSummary": "「TO＆FRO BACKPACK －STANDARD－」は、約290グラムの軽さが特徴のバックパックです。レビューでは、軽さや収納力、色のかわいさ、服装を選ばないシンプルなデザインが評価されています。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 85,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-17T01:50:00.000Z",
+      "capturedAt": "2026-10-17T08:47:34.517Z",
+      "time": "6時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/103bb5ef2cfa85d33d9f3e116719775b6f6d9a80?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "「ちょ〜軽い」　中川政七商店で買える“リンゴより軽いリュック”が好評　「服装を選ばない優れもの」「あちこちに連れ歩いています」の声",
+          "url": "https://news.yahoo.co.jp/articles/103bb5ef2cfa85d33d9f3e116719775b6f6d9a80?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/103bb5ef2cfa85d33d9f3e116719775b6f6d9a80?source=rss",
+          "publishedAt": "2026-10-17T01:50:00.000Z",
+          "publishedLabel": "10/17 01:50",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「ちょ〜軽い」 中川政七商店で買える“リンゴより軽いリュック”が好評 「服装を選ばない優れも…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-games-お正月にピッタリな-ちいかわ-ポチ袋-袴姿で新年をお祝い-五円玉になったうさぎ-も可愛い-inside-games.jp/article/2026/10/17/189408.html",
+      "title": "お正月にピッタリな「ちいかわ」ポチ袋！袴姿で新年をお祝い、“五円玉になったうさぎ”も可愛い",
+      "summary": "サンスター文具より、「ちいかわ」のポチ袋が2026年10月下旬より順次発売！",
+      "briefSummary": "サンスター文具の「ちいかわ」グッズは、ちいかわらんど、ちいかわマーケット、文具店、ファンシーショップ、スーパーマーケットなどで2026年10月下旬より順次発売予定です。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "その他"
+      ],
+      "score": 62,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1790377.jpg",
+      "publishedAt": "2026-10-17T01:45:03.000Z",
+      "capturedAt": "2026-10-18T06:33:20.197Z",
+      "time": "1日前",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/10/17/189408.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "お正月にピッタリな「ちいかわ」ポチ袋！袴姿で新年をお祝い、“五円玉になったうさぎ”も可愛い",
+          "url": "https://www.inside-games.jp/article/2026/10/17/189408.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/10/17/189408.html",
+          "publishedAt": "2026-10-17T01:45:03.000Z",
+          "publishedLabel": "10/17 01:45",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1790377.jpg"
+        }
+      ],
+      "whatHappened": "お正月にピッタリな「ちいかわ」ポチ袋",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-sns-置き配で商品を注文するも-たすけて-1300万表示の目を疑う不在票に-洒落にならぬ-ムズすぎんだろw-news.yahoo.co.jp/articles/c0df0e73475c54c5c50193ca2347845836337983",
+      "title": "置き配で商品を注文するも……「たすけて」　1300万表示の目を疑う不在票に「洒落にならぬ」「ムズすぎんだろw」",
+      "summary": "置き配指定で購入した商品が届き、宅配ボックスを開けようとしたら……。目を疑う不在票がX（Twitter）で話題です。投稿は記事執筆時点で1368万回以上表示され、2…",
+      "briefSummary": "置き配指定で購入した商品が届き、宅配ボックスを開けようとしたら……。目を疑う不在票がX（Twitter）で話題です。投稿は記事執筆時点で1368万回以上表示され、2万9000件を超える“いいね”を獲得",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "SNS",
+      "categoryLabels": [
+        "SNS",
+        "エンタメ",
+        "ネットカルチャー"
+      ],
+      "score": 84,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-17T01:45:00.000Z",
+      "capturedAt": "2026-10-17T08:47:34.517Z",
+      "time": "7時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/c0df0e73475c54c5c50193ca2347845836337983?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "置き配で商品を注文するも……「たすけて」　1300万表示の目を疑う不在票に「洒落にならぬ」「ムズすぎんだろw」",
+          "url": "https://news.yahoo.co.jp/articles/c0df0e73475c54c5c50193ca2347845836337983?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/c0df0e73475c54c5c50193ca2347845836337983?source=rss",
+          "publishedAt": "2026-10-17T01:45:00.000Z",
+          "publishedLabel": "10/17 01:45",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "置き配で商品を注文するも……「たすけて」 1300万表示の目を疑う不在票に「洒落にならぬ」「…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-crime-北海道で-撮り鉄-逮捕-人気観光列車ラストラン-撮影で邪魔な木を切り倒す-j-cast.com/2026/10/17518527.html",
+      "title": "北海道で「撮り鉄」逮捕...人気観光列車ラストラン、撮影で邪魔な木を切り倒す",
+      "summary": "北海道の人気観光列車「くしろ湿原ノロッコ号」のラストランを撮ろうとして、木を伐採したタクシー運転手が逮捕された。2026年10月16日放送の「大下容子ワイド！スクラ…",
+      "briefSummary": "北海道の人気観光列車「くしろ湿原ノロッコ号」のラストランを撮ろうとして、木を伐採したタクシー運転手が逮捕された。2026年10月16日放送の「大下容子ワイド！スクランブル」(テレビ朝日系）がとりあげたが、一部の鉄道ファンによる迷惑行為の対処…",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "犯罪・事件",
+      "categoryLabels": [
+        "犯罪・事件",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 56,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261016184102.jpg",
+      "publishedAt": "2026-10-17T01:45:00.000Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
+      "time": "1日前",
+      "sourceName": "J-CASTニュース",
+      "sourceUrl": "https://www.j-cast.com/2026/10/17518527.html",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "jcast",
+          "source": "J-CASTニュース",
+          "sourceName": "J-CASTニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 72,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz"
+          ],
+          "title": "北海道で「撮り鉄」逮捕...人気観光列車ラストラン、撮影で邪魔な木を切り倒す",
+          "url": "https://www.j-cast.com/2026/10/17518527.html",
+          "canonicalUrl": "https://www.j-cast.com/2026/10/17518527.html",
+          "publishedAt": "2026-10-17T01:45:00.000Z",
+          "publishedLabel": "10/17 01:45",
+          "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261016184102.jpg"
+        }
+      ],
+      "whatHappened": "北海道で「撮り鉄」逮捕...人気観光列車ラストラン、撮影で邪魔な木を切り倒す",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [
+        "ネット文化を追う人",
+        "時事ニュースを追う人"
+      ]
+    },
+    {
+      "id": "auto-tech-itmedia-news-skyticket-クレカ情報も流出-カード番号など最大6140人分-流出なし-の初報を訂正-itmedia.co.jp/news/article/2610/17/2000002350",
+      "title": "[ITmedia News] 「skyticket」クレカ情報も流出、カード番号など最大6140人分　「流出なし」の初報を訂正",
+      "summary": "9日の初報では「カード情報の流出はない」としていたが、その後の調査で流出を確認し、訂正した。",
+      "briefSummary": "9日の初報では「カード情報の流出はない」としていたが、その後の調査で流出を確認し、訂正した。",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 55,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/17/2000002350/10009684/2048",
+      "publishedAt": "2026-10-17T01:42:34.000Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
+      "time": "1日前",
+      "sourceName": "ITmedia",
+      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/17/2000002350/",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "itmedia-all",
+          "source": "ITmedia",
+          "sourceName": "ITmedia",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 68,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "tech"
+          ],
+          "title": "[ITmedia News] 「skyticket」クレカ情報も流出、カード番号など最大6140人分　「流出なし」の初報を訂正",
+          "url": "https://www.itmedia.co.jp/news/article/2610/17/2000002350/",
+          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/17/2000002350/",
+          "publishedAt": "2026-10-17T01:42:34.000Z",
+          "publishedLabel": "10/17 01:42",
+          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/17/2000002350/10009684/2048"
+        }
+      ],
+      "whatHappened": "[ITmedia News] 「skyticket」クレカ情報も流出、カード番号など最大61…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-entertainment-数十回リピートしています-プライム感謝祭セールで狙い目の-ミネラルウォーター-を紹介-自宅に届けてもらえて助かります-ラベルレスで処分も楽-news.yahoo.co.jp/articles/4572af5d8c773058e7fa3fd8d72f245a24893bd0",
+      "title": "「数十回リピートしています」　プライム感謝祭セールで狙い目の“ミネラルウォーター”を紹介！「自宅に届けてもらえて助かります」「ラベルレスで処分も楽」",
+      "summary": "毎日飲むものだからこそ、飲料は少しでもお得なタイミングでまとめて購入しておきたいですよね。Amazonのセールでは、定番のミネラルウォーターからお茶、ジュースまで…",
+      "briefSummary": "毎日飲むものだからこそ、飲料は少しでもお得なタイミングでまとめて購入しておきたいですよね。Amazonのセールでは、定番のミネラルウォーターからお茶、ジュースまで、ケース単位の商品も多数ラインアップさ",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 90,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-17T01:40:00.000Z",
+      "capturedAt": "2026-10-17T08:47:34.517Z",
+      "time": "7時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/4572af5d8c773058e7fa3fd8d72f245a24893bd0?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "「数十回リピートしています」　プライム感謝祭セールで狙い目の“ミネラルウォーター”を紹介！「自宅に届けてもらえて助かります」「ラベルレスで処分も楽」",
+          "url": "https://news.yahoo.co.jp/articles/4572af5d8c773058e7fa3fd8d72f245a24893bd0?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/4572af5d8c773058e7fa3fd8d72f245a24893bd0?source=rss",
+          "publishedAt": "2026-10-17T01:40:00.000Z",
+          "publishedLabel": "10/17 01:40",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「数十回リピートしています」 プライム感謝祭セールで狙い目の“ミネラルウォーター”を紹介",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "終了前の条件確認や購入判断に直結しやすい情報です。",
+      "targetAudience": [
+        "セール好き",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-entertainment-gu-peanuts-スヌーピーたちと冬のおうち時間を満喫-あったかルームウェアコレクションが新登場-animeanime.jp/article/2026/10/17/103898.html",
+      "title": "「GU×PEANUTS」スヌーピーたちと冬のおうち時間を満喫♪ あったかルームウェアコレクションが新登場",
+      "summary": "『PEANUTS』より、スヌーピーと仲間たちが集うパーティをテーマにしたルームウェアコレクションが登場。2026年12月28日より、GU店舗および公式オンラインストアにて販売される。",
+      "briefSummary": "『PEANUTS』より、スヌーピーと仲間たちが集うパーティをテーマにしたルームウェアコレクションが登場。2026年12月28日より、GU店舗および公式オンラインストアにて販売される。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 62,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/942683.png",
+      "publishedAt": "2026-10-17T01:30:03.000Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
+      "time": "1日前",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/10/17/103898.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「GU×PEANUTS」スヌーピーたちと冬のおうち時間を満喫♪ あったかルームウェアコレクションが新登場",
+          "url": "https://animeanime.jp/article/2026/10/17/103898.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/10/17/103898.html",
+          "publishedAt": "2026-10-17T01:30:03.000Z",
+          "publishedLabel": "10/17 01:30",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/942683.png"
+        }
+      ],
+      "whatHappened": "「GU×PEANUTS」スヌーピーたちと冬のおうち時間を満喫♪ あったかルームウェアコレクシ…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
     {
       "id": "auto-games-ウマ娘-アグネスタキオンのモノクルをイメージしたコラボ眼鏡2種がオシャレ-テンプルには衣装の袖にあるレース模様を刻印-inside-games.jp/article/2026/10/17/189407.html",
       "title": "『ウマ娘』アグネスタキオンのモノクルをイメージしたコラボ眼鏡2種がオシャレ！テンプルには衣装の袖にあるレース模様を刻印",
@@ -460,7 +999,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/16/2000002346/10009642/2048",
       "publishedAt": "2026-10-17T01:16:08.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/16/2000002346/",
@@ -627,7 +1166,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261017-474053-header.jpg",
       "publishedAt": "2026-10-17T01:13:42.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261017-474053/",
@@ -751,7 +1290,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/81V8JNGv8sL._SL1500_-717x1024.jpg",
       "publishedAt": "2026-10-17T01:03:31.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "電ファミニコゲーマー",
       "sourceUrl": "https://news.denfaminicogamer.jp/news/261017a",
@@ -864,7 +1403,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/942477.jpg",
       "publishedAt": "2026-10-17T01:00:04.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/17/103897.html",
@@ -1101,7 +1640,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/991/G999105/20261016035/SS/002.jpg",
       "publishedAt": "2026-10-17T01:00:00.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/991/G999105/20261016035/",
@@ -1162,7 +1701,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261013165359.jpg",
       "publishedAt": "2026-10-17T01:00:00.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/17518446.html",
@@ -1225,7 +1764,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://image.itmedia.co.jp/mobile/articles/2610/17/cover_news002.jpg",
       "publishedAt": "2026-10-17T01:00:00.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/mobile/articles/2610/17/news002.html",
@@ -1287,7 +1826,7 @@
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-17T01:00:00.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/mobile/articles/2610/17/news014.html",
@@ -2087,7 +2626,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/17/2000002349/10009678/2048",
       "publishedAt": "2026-10-17T00:32:41.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/17/2000002349/",
@@ -2210,7 +2749,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/the-blood-of-dawnwalker-20261017-474048-header.jpg",
       "publishedAt": "2026-10-17T00:27:35.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/the-blood-of-dawnwalker-20261017-474048/",
@@ -2988,7 +3527,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/039/G103907/20261016071/SS/002.jpg",
       "publishedAt": "2026-10-17T00:00:00.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/039/G103907/20261016071/",
@@ -3049,7 +3588,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/390/G039027/20261016032/SS/025.jpg",
       "publishedAt": "2026-10-17T00:00:00.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/390/G039027/20261016032/",
@@ -3111,7 +3650,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261009161152.jpg",
       "publishedAt": "2026-10-17T00:00:00.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/17518402.html",
@@ -3233,7 +3772,7 @@
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-16T23:58:11.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "Yahoo!ニュース / 科学",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6599068?source=rss",
@@ -3804,7 +4343,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1207711.png",
       "publishedAt": "2026-10-16T23:30:03.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/10/17/173731.html",
@@ -4409,7 +4948,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261017-474039-header.jpg",
       "publishedAt": "2026-10-16T23:04:02.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261017-474039/",
@@ -4520,7 +5059,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1207700.jpg",
       "publishedAt": "2026-10-16T23:00:03.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/10/17/173730.html",
@@ -4827,7 +5366,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261013164621.jpg",
       "publishedAt": "2026-10-16T23:00:00.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/17518444.html",
@@ -4890,7 +5429,7 @@
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-16T23:00:00.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/business/articles/2610/17/news012.html",
@@ -4955,7 +5494,7 @@
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-16T23:00:00.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
+      "capturedAt": "2026-10-18T18:02:07.805Z",
       "time": "1日前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/business/articles/2610/17/news013.html",
@@ -5388,507 +5927,6 @@
       "targetAudience": [
         "ネット文化を追う人"
       ]
-    },
-    {
-      "id": "auto-politics-米大統領報道官-わずか5日で解任-news.yahoo.co.jp/pickup/6599054",
-      "title": "米大統領報道官 わずか5日で解任",
-      "summary": "トランプ米政権は16日、ホワイトハウスのザカリア報道官を解任した。複数の米メディアが報じた。ザカリア氏は弁護士資格をもたないのに「法律家」と称していたことが批判されていた。12日の就任から5日目での",
-      "briefSummary": "",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "world",
-        "general"
-      ],
-      "categoryLabel": "政治",
-      "categoryLabels": [
-        "政治",
-        "国際"
-      ],
-      "score": 59,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-16T22:35:11.000Z",
-      "capturedAt": "2026-10-17T23:22:52.433Z",
-      "time": "1日前",
-      "sourceName": "Yahoo!ニュース / 国際",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6599054?source=rss",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-world",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 国際",
-          "sourceGroup": "important-news",
-          "sourcePriority": 78,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "米大統領報道官 わずか5日で解任",
-          "url": "https://news.yahoo.co.jp/pickup/6599054?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6599054?source=rss",
-          "publishedAt": "2026-10-16T22:35:11.000Z",
-          "publishedLabel": "10/16 22:35",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "米大統領報道官 わずか5日で解任",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-ちいかわ-たちがフッサフッサなパジャマ姿に-コーデュロイ生地を使ったマスコット3種が順次プライズ展開-inside-games.jp/article/2026/10/17/189401.html",
-      "title": "「ちいかわ」たちがフッサフッサなパジャマ姿に！コーデュロイ生地を使ったマスコット3種が順次プライズ展開",
-      "summary": "「ちいかわ フッサフッサでコーデュロイなパジャママスコット」がプライズとして2026年10月中旬より順次展開！",
-      "briefSummary": "「ちいかわ フッサフッサでコーデュロイなパジャママスコット」は、全国のアミューズメント施設にて2026年10月中旬より順次展開予定です。取り扱い店舗等の詳細は パレード公式サイト をご確認ください。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ"
-      ],
-      "score": 62,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1792670.jpg",
-      "publishedAt": "2026-10-16T22:30:03.000Z",
-      "capturedAt": "2026-10-18T06:33:20.197Z",
-      "time": "1日前",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/10/17/189401.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "「ちいかわ」たちがフッサフッサなパジャマ姿に！コーデュロイ生地を使ったマスコット3種が順次プライズ展開",
-          "url": "https://www.inside-games.jp/article/2026/10/17/189401.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/10/17/189401.html",
-          "publishedAt": "2026-10-16T22:30:03.000Z",
-          "publishedLabel": "10/16 22:30",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1792670.jpg"
-        }
-      ],
-      "whatHappened": "「ちいかわ」たちがフッサフッサなパジャマ姿に",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-戦闘要素一切なしのステルス・サバイバルホラー-sker-the-bleeding-veil-発表-gamespark.jp/article/2026/10/17/173729.html",
-      "title": "戦闘要素一切なしのステルス・サバイバルホラー『Sker: The Bleeding Veil』発表！",
-      "summary": "Stormind GamesおよびWales Interactiveは、2020年にリリースされた『Maid of Sker』、2024年にリリースされた『Sker Ritual』と同じ世界を舞台にした新作ゲーム『 Sker: The Bleeding Veil 』を発表しました。",
-      "briefSummary": "Stormind GamesおよびWales Interactiveは、2020年にリリースされた『Maid of Sker』、2024年にリリースされた『Sker Ritual』と同じ世界を舞台にした新作ゲーム『 Sker: The Bleeding Veil 』を発表しました。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 62,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1207702.jpg",
-      "publishedAt": "2026-10-16T22:30:03.000Z",
-      "capturedAt": "2026-10-18T14:49:53.481Z",
-      "time": "1日前",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/10/17/173729.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "戦闘要素一切なしのステルス・サバイバルホラー『Sker: The Bleeding Veil』発表！",
-          "url": "http://www.gamespark.jp/article/2026/10/17/173729.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/17/173729.html",
-          "publishedAt": "2026-10-16T22:30:03.000Z",
-          "publishedLabel": "10/16 22:30",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1207702.jpg"
-        }
-      ],
-      "whatHappened": "戦闘要素一切なしのステルス・サバイバルホラー『Sker: The Bleeding Veil…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-sports-20年以上お世話になった商品から乗り換え-ワークマンの-3300円ゴルフシューズ-に絶賛の声-しっかりした作りでコスパ最高-普段使いからゴルフまでok-news.yahoo.co.jp/articles/d8a87250c711fea50f2c8f28cfe25b0baec9c2d2",
-      "title": "「20年以上お世話になった商品から乗り換え」　ワークマンの“3300円ゴルフシューズ”に絶賛の声　「しっかりした作りでコスパ最高」「普段使いからゴルフまでOK」",
-      "summary": "暑さが落ち着き、秋はスポーツにぴったりの季節。休日にゴルフを楽しむ人も多いのではないでしょうか。ワークマンの“3300円ゴルフシューズ”は、安価ながらしっかりした作…",
-      "briefSummary": "暑さが落ち着き、秋はスポーツにぴったりの季節。休日にゴルフを楽しむ人も多いのではないでしょうか。ワークマンの“3300円ゴルフシューズ”は、安価ながらしっかりした作りで、ゴルフメーカーのものにも劣らな",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 93,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-16T22:30:00.000Z",
-      "capturedAt": "2026-10-16T23:53:45.673Z",
-      "time": "1時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/d8a87250c711fea50f2c8f28cfe25b0baec9c2d2?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「20年以上お世話になった商品から乗り換え」　ワークマンの“3300円ゴルフシューズ”に絶賛の声　「しっかりした作りでコスパ最高」「普段使いからゴルフまでOK」",
-          "url": "https://news.yahoo.co.jp/articles/d8a87250c711fea50f2c8f28cfe25b0baec9c2d2?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/d8a87250c711fea50f2c8f28cfe25b0baec9c2d2?source=rss",
-          "publishedAt": "2026-10-16T22:30:00.000Z",
-          "publishedLabel": "10/16 22:30",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「20年以上お世話になった商品から乗り換え」 ワークマンの“3300円ゴルフシューズ”に絶賛…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-セリアのカットクロス2枚を縫い合わせるだけで-思わず一目惚れする-便利アイテム-に-すばらしい完成度-作り甲斐があります-news.yahoo.co.jp/articles/4e2e1ed04a3044dd9f57e02535d52d887fa3c67d",
-      "title": "セリアのカットクロス2枚を縫い合わせるだけで……　思わず一目惚れする“便利アイテム”に「すばらしい完成度」「作り甲斐があります」",
-      "summary": "100円ショップ「セリア」で買った110円のカットクロス2枚で、おしゃれなバッグを作る方法がYouTubeで話題です。投稿は記事執筆時点で1万3000回以上再生され…",
-      "briefSummary": "100円ショップ「セリア」で買った110円のカットクロス2枚で、おしゃれなバッグを作る方法がYouTubeで話題です。投稿は記事執筆時点で1万3000回以上再生され、反響が寄せられています。【画像】便",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 93,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-16T22:30:00.000Z",
-      "capturedAt": "2026-10-16T23:53:45.673Z",
-      "time": "1時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/4e2e1ed04a3044dd9f57e02535d52d887fa3c67d?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "セリアのカットクロス2枚を縫い合わせるだけで……　思わず一目惚れする“便利アイテム”に「すばらしい完成度」「作り甲斐があります」",
-          "url": "https://news.yahoo.co.jp/articles/4e2e1ed04a3044dd9f57e02535d52d887fa3c67d?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/4e2e1ed04a3044dd9f57e02535d52d887fa3c67d?source=rss",
-          "publishedAt": "2026-10-16T22:30:00.000Z",
-          "publishedLabel": "10/16 22:30",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "セリアのカットクロス2枚を縫い合わせるだけで…… 思わず一目惚れする“便利アイテム”に「すば…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-広末涼子-俳優業を再開-緊張-news.yahoo.co.jp/pickup/6599050",
-      "title": "広末涼子 俳優業を再開「緊張」",
-      "summary": "女優の広末涼子が１６日、東京・丸の内のコットンクラブで朗読劇「ＡＣＴ／ＲＹＯＫＯ ＨＩＲＯＳＵＥ ｍｅｅｔｓ Ｔｈｅ Ｌｉｔｔｌｅ Ｐｒｉｎｃｅ」に出演し、２０２４年２月に所属事務所を独立して以来、",
-      "briefSummary": "女優の広末涼子が１６日、東京・丸の内のコットンクラブで朗読劇「ＡＣＴ／ＲＹＯＫＯ ＨＩＲＯＳＵＥ ｍｅｅｔｓ Ｔｈｅ Ｌｉｔｔｌｅ Ｐｒｉｎｃｅ」に出演し、２０２４年２月に所属事務所を独立して以来、",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ"
-      ],
-      "score": 72,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-16T22:25:55.000Z",
-      "capturedAt": "2026-10-17T08:47:34.517Z",
-      "time": "10時間前",
-      "sourceName": "Yahoo!ニュース / エンタメ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6599050?source=rss",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-entertainment",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / エンタメ",
-          "sourceGroup": "general-entertainment",
-          "sourcePriority": 66,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "広末涼子 俳優業を再開「緊張」",
-          "url": "https://news.yahoo.co.jp/pickup/6599050?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6599050?source=rss",
-          "publishedAt": "2026-10-16T22:25:55.000Z",
-          "publishedLabel": "10/16 22:25",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "広末涼子 俳優業を再開「緊張」",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-general-荷物用エレベーターに挟まれ死亡-news.yahoo.co.jp/pickup/6599053",
-      "title": "荷物用エレベーターに挟まれ死亡",
-      "summary": "16日午後、奈良県天理市で、男性が荷物用エレベーターに体を挟まれ死亡する事故がありました。 事故があったのは、奈良県天理市前栽町の建物で16日午後4時40分ごろ、建物の関係者から「60代の男性がエレ",
-      "briefSummary": "16日午後、奈良県天理市で、男性が荷物用エレベーターに体を挟まれ死亡する事故がありました。 事故があったのは、奈良県天理市前栽町の建物で16日午後4時40分ごろ、建物の関係者から「60代の男性がエレベーターに体を挟まれた」と119番通報があり、通報を受け駆けつけた救急隊員が、現場で男性の死亡を確認したということです。 消防によりますと、男性が挟まれたエレベー…",
-      "category": "general",
-      "categories": [
-        "general"
-      ],
-      "categoryLabel": "その他",
-      "categoryLabels": [
-        "その他"
-      ],
-      "score": 48,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-16T22:20:23.000Z",
-      "capturedAt": "2026-10-17T21:25:50.204Z",
-      "time": "23時間前",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6599053?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "荷物用エレベーターに挟まれ死亡",
-          "url": "https://news.yahoo.co.jp/pickup/6599053?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6599053?source=rss",
-          "publishedAt": "2026-10-16T22:20:23.000Z",
-          "publishedLabel": "10/16 22:20",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "荷物用エレベーターに挟まれ死亡",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-sns-ディズニーシーで休止中のアトラクションを見上げると-え-まさか-衝撃の光景が150万表示-恐怖しかない-よく気づきましたね-news.yahoo.co.jp/articles/61495321930a474e78bf5d5be12cf9d0ff5d0eec",
-      "title": "ディズニーシーで休止中のアトラクションを見上げると……　「え、まさか」衝撃の光景が150万表示「恐怖しかない」「よく気づきましたね」",
-      "summary": "東京ディズニーリゾート内で見かけた光景が、X（Twitter）で話題です。投稿は記事執筆時点で150万回以上表示され、2万2000件の“いいね”を獲得しています。【…",
-      "briefSummary": "東京ディズニーリゾート内で見かけた光景が、X（Twitter）で話題です。投稿は記事執筆時点で150万回以上表示され、2万2000件の“いいね”を獲得しています。【画像】衝撃の光景 動画を投稿したのは",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "SNS",
-      "categoryLabels": [
-        "SNS",
-        "エンタメ",
-        "ネットカルチャー"
-      ],
-      "score": 93,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-16T22:20:00.000Z",
-      "capturedAt": "2026-10-16T23:53:45.673Z",
-      "time": "1時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/61495321930a474e78bf5d5be12cf9d0ff5d0eec?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "ディズニーシーで休止中のアトラクションを見上げると……　「え、まさか」衝撃の光景が150万表示「恐怖しかない」「よく気づきましたね」",
-          "url": "https://news.yahoo.co.jp/articles/61495321930a474e78bf5d5be12cf9d0ff5d0eec?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/61495321930a474e78bf5d5be12cf9d0ff5d0eec?source=rss",
-          "publishedAt": "2026-10-16T22:20:00.000Z",
-          "publishedLabel": "10/16 22:20",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "ディズニーシーで休止中のアトラクションを見上げると…… 「え、まさか」衝撃の光景が150万表…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-general-中日-山崎武司氏をコーチに招へい-news.yahoo.co.jp/pickup/6599052",
-      "title": "中日 山崎武司氏をコーチに招へい",
-      "summary": "中日がＯＢの山崎武司氏（５７）を来季の打撃コーチとして招へいすることが１６日、分かった。工藤公康新監督（６３）は同じ地元・愛知出身で、愛工大名電の先輩にあたる。通算４０３本塁打のレジェンドに、課題で",
-      "briefSummary": "中日がＯＢの山崎武司氏（５７）を来季の打撃コーチとして招へいすることが１６日、分かった。工藤公康新監督（６３）は同じ地元・愛知出身で、愛工大名電の先輩にあたる。通算４０３本塁打のレジェンドに、課題で",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "その他"
-      ],
-      "score": 76,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-16T22:17:28.000Z",
-      "capturedAt": "2026-10-17T04:13:13.541Z",
-      "time": "5時間前",
-      "sourceName": "Yahoo!ニュース / スポーツ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6599052?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-sports",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / スポーツ",
-          "sourceGroup": "general-sports",
-          "sourcePriority": 58,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "中日 山崎武司氏をコーチに招へい",
-          "url": "https://news.yahoo.co.jp/pickup/6599052?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6599052?source=rss",
-          "publishedAt": "2026-10-16T22:17:28.000Z",
-          "publishedLabel": "10/16 22:17",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "中日 山崎武司氏をコーチに招へい",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
     }
   ]
 }

@@ -1,12 +1,68 @@
 {
-  "generatedAt": "2026-10-19T00:30:47.286Z",
+  "generatedAt": "2026-10-19T05:16:37.813Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-174",
-  "selectedTitle": "ユニクロの“夏ワンピ”→62歳女性が今、着たら……　驚きのコーデに「年中着るのも、アリなんですね」「ディナーに着ていこう！」",
+  "selectedClusterId": "today-cluster-33",
+  "selectedTitle": "ちいかわ「米国で売れすぎて売り場が空っぽ」……アメリカ人がハマるまっとうな理由",
   "candidates": [
     {
-      "clusterId": "today-cluster-174",
-      "title": "ユニクロの“夏ワンピ”→62歳女性が今、着たら……　驚きのコーデに「年中着るのも、アリなんですね」「ディナーに着ていこう！」",
+      "clusterId": "today-cluster-33",
+      "title": "ちいかわ「米国で売れすぎて売り場が空っぽ」……アメリカ人がハマるまっとうな理由",
+      "category": "world",
+      "categories": [
+        "world",
+        "anime",
+        "sns",
+        "net-culture",
+        "business",
+        "general"
+      ],
+      "buzzScore": 70.8,
+      "confidence": 0.49,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 18.5,
+        "internetNativeBoost": 8,
+        "search": 5.6,
+        "social": 8.3,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 22.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 43.8,
+        "internalSocialScore": 65
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-223",
+      "title": "「ソファを置けないので、こちらを買いました」　無印良品の“座いす”に絶賛の声　「洗濯できるのが最高」「お尻が痛くならない」「肌触りも◎」",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -14,7 +70,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.8,
+      "buzzScore": 63.7,
       "confidence": 0.35,
       "articleCount": 1,
       "sourceCount": 1,
@@ -26,9 +82,9 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 4.3,
+        "search": 4.1,
         "social": 6,
         "velocity": 2.7,
         "freshness": 8.5,
@@ -47,8 +103,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 32.3,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -58,35 +114,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-63",
-      "title": "「自分がゲーム内の存在と認識する少女」とプレイヤーは友人になれるのか？フィクションキャラと“友だちになる”ゲーム『For the GHOSTs』を今こそ遊んでみよう",
+      "clusterId": "today-cluster-2",
+      "title": "Steamで好評率99％『アリスと彼岸』、メルヘン世界で“物騒すぎるTRPG風冒険”が熱い人気に。「戦わずズルく勝てる」自由で不穏なおとぎ話",
       "category": "games",
       "categories": [
         "games",
-        "general",
-        "sns",
-        "net-culture"
+        "entertainment",
+        "general"
       ],
-      "buzzScore": 64.7,
-      "confidence": 0.36,
+      "buzzScore": 62.4,
+      "confidence": 0.43,
       "articleCount": 2,
-      "sourceCount": 2,
+      "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 3.8,
-        "trend": 17.2,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
         "internetNativeBoost": 8,
-        "search": 5.2,
-        "social": 6.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
+        "search": 5.8,
+        "social": 5.6,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -97,11 +153,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 40.9,
-        "internalSocialScore": 53.5
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -110,138 +166,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1614",
-      "title": "生後7カ月の娘、2週間ぶりにパパと再会→じっと顔を見た後……　リアクションに反響「ぇぇえええ！」「まじでかわいいな」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 55.9,
-      "confidence": 0.29,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 3.9,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 30.7,
-        "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1689",
-      "title": "初めて保育園に行った赤ちゃん、2時間後ママが迎えに行くと……　7700万再生の瞬間に「韓国ドラマのよう」「泣いた、でも笑えた」【海外】",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 55.9,
-      "confidence": 0.29,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 3.9,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 30.7,
-        "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-20",
-      "title": "【最大4人協力】仲間と“鎖につながれたまま”戦うローグライクアクション『Chained Beasts』がSteamで「非常に好評」スタート。「鎖という制約を攻撃に利用できるのが面白い」「仲間との連携が上手くいくと最高」など高評価",
+      "clusterId": "today-cluster-6",
+      "title": "「SteamはMMOなんだ」元Valve社員が語るゲイブの思想。ゲームをただ遊ぶ場所じゃない、“居場所”としてのコミュニティ",
       "category": "games",
       "categories": [
         "games",
-        "net-culture",
         "general"
       ],
-      "buzzScore": 52.9,
-      "confidence": 0.37,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 61,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "アーカイブ上でも近い話題が連続出現"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 13.9,
-        "internetNativeBoost": 0,
-        "search": 4.8,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 4.2,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -251,12 +203,64 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 1,
-        "archiveMatchCount": 2,
+        "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 63,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 43.8
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 32.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-786",
+      "title": "ユニクロの“夏ワンピ”→62歳女性が今、着たら……　驚きのコーデに「年中着るのも、アリなんですね」「ディナーに着ていこう！」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 59.7,
+      "confidence": 0.31,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 4.1,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 32,
+        "internalSocialScore": 46.3
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

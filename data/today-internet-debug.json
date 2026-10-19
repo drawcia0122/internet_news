@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-19T11:15:04.652Z",
+  "generatedAt": "2026-10-19T17:47:58.924Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-5",
+  "selectedClusterId": "today-cluster-30",
   "selectedTitle": "小島監督、アニメ「サイバーパンク: エッジランナーズ2」に出演。ゲームから引き続きブレインダンス監督ヒデヨシ・オオシマ役で",
   "candidates": [
     {
-      "clusterId": "today-cluster-5",
+      "clusterId": "today-cluster-30",
       "title": "小島監督、アニメ「サイバーパンク: エッジランナーズ2」に出演。ゲームから引き続きブレインダンス監督ヒデヨシ・オオシマ役で",
       "category": "anime",
       "categories": [
@@ -16,24 +16,24 @@
         "general",
         "games"
       ],
-      "buzzScore": 72.9,
-      "confidence": 0.51,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 61.2,
+      "confidence": 0.42,
+      "articleCount": 4,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
+        "主要3媒体で同一話題を確認",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
+        "coverage": 7.2,
+        "sourceDiversity": 7,
         "trend": 15.6,
         "internetNativeBoost": 0,
-        "search": 3.7,
-        "social": 6,
-        "velocity": 11,
-        "freshness": 10,
+        "search": 3.5,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 5.5,
         "authority": 2.5,
         "categoryBias": 14,
         "penalty": 0
@@ -47,11 +47,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 80,
         "archiveHeatScore": 71,
-        "internalSearchScore": 28.8,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 27.6,
+        "internalSocialScore": 45.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -60,36 +60,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-458",
-      "title": "「機動戦士ガンダムUC」ガンプラ「MGSD クシャトリヤ」が抽選販売実施！巨体を圧倒的なディテール表現と可動性能で再現",
-      "category": "games",
+      "clusterId": "today-cluster-365",
+      "title": "敗戦後の発言「炎上」天心が真意",
+      "category": "net-culture",
       "categories": [
-        "games",
-        "entertainment",
-        "manga",
+        "net-culture",
+        "sns",
+        "sports",
         "general"
       ],
-      "buzzScore": 68.1,
-      "confidence": 0.44,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 61.1,
+      "confidence": 0.34,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.3,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.8,
+        "search": 5,
         "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 12,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -102,8 +101,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -113,7 +112,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-24",
+      "clusterId": "today-cluster-1426",
       "title": "「200ドル相当を払わなければクローンゲームを先に公開する」―日本のインディーSRPG開発者にもAI模倣作を先に出すとちらつかせる脅迫メールが届く…",
       "category": "games",
       "categories": [
@@ -122,21 +121,73 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.6,
-      "confidence": 0.38,
-      "articleCount": 2,
+      "buzzScore": 59.1,
+      "confidence": 0.32,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
         "trend": 20.7,
         "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 6.9,
+        "search": 4.5,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 34.9,
+        "internalSocialScore": 45.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-401",
+      "title": "友だちの家でお泊まり会→小5娘が着ていったのは……「ジワるww」　“まさかの服”に「こんな子きたらテンションあがる」　投稿者に話を聞いた",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 57.3,
+      "confidence": 0.3,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 6,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 1.5,
@@ -150,13 +201,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 47.3,
-        "internalSocialScore": 54
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -165,16 +216,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2",
-      "title": "Steamのゲーム価格、メーカーによってどれだけ違う？筑波大の研究で“大手ほど独自路線”“インド・ブラジルは高め路線”など「値付けの4タイプ」くっきり",
+      "clusterId": "today-cluster-159",
+      "title": "「Surfpunk」，Steam Nextフェスに出展。鍛冶システムの刷新や新スキルの実装など，内容をアップデートした体験版が公開に",
       "category": "games",
       "categories": [
         "games",
         "general"
       ],
-      "buzzScore": 65.5,
-      "confidence": 0.47,
-      "articleCount": 2,
+      "buzzScore": 57,
+      "confidence": 0.38,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
@@ -182,13 +233,13 @@
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
         "trend": 18.7,
         "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 4.2,
-        "velocity": 8.3,
+        "search": 4.3,
+        "social": 3.2,
+        "velocity": 4.2,
         "freshness": 10,
         "authority": 1.5,
         "categoryBias": 6,
@@ -201,66 +252,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 32.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-259",
-      "title": "木村拓哉、“親子でパンツをシェア”→Cocomiの着用姿に驚きの声「仲良しすぎる」「サイズ一緒なの？！」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.2,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 32.9,
-        "internalSocialScore": 46.7
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 33.7,
+        "internalSocialScore": 24.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

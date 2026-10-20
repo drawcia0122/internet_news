@@ -1,11 +1,168 @@
 {
-  "generatedAt": "2026-10-19T22:19:52.243Z",
+  "generatedAt": "2026-10-20T01:17:19.670Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-2",
-  "selectedTitle": "サイバー攻撃受け情報漏えい、中国語のＡＩエージェント悪用か…国内８０社への攻撃巡り痕跡",
+  "selectedClusterId": "today-cluster-5",
+  "selectedTitle": "『ゴジラ怪獣大乱闘』リマスター版、Steamストアページに国内からもアクセス可能に。日本語対応の体験版も配信中",
   "candidates": [
     {
+      "clusterId": "today-cluster-5",
+      "title": "『ゴジラ怪獣大乱闘』リマスター版、Steamストアページに国内からもアクセス可能に。日本語対応の体験版も配信中",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 75.8,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-990",
+      "title": "敗戦後の発言「炎上」天心が真意",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "sns",
+        "sports",
+        "general"
+      ],
+      "buzzScore": 65,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 20.5,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 12,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 93,
+        "internalSearchScore": 34.5,
+        "internalSocialScore": 45.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
       "clusterId": "today-cluster-2",
+      "title": "協力対応アライグマ空き巣ゲーム『Dumpster Gang』日本語対応で12月4日配信へ。イタズラ・盗み・暴力、人間なめすぎ害獣マルチ",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 61.1,
+      "confidence": 0.42,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 5.6,
+        "social": 5.6,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-16",
       "title": "サイバー攻撃受け情報漏えい、中国語のＡＩエージェント悪用か…国内８０社への攻撃巡り痕跡",
       "category": "world",
       "categories": [
@@ -16,13 +173,12 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 67.4,
-      "confidence": 0.43,
+      "buzzScore": 60.4,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
@@ -31,10 +187,10 @@
         "sourceDiversity": 2.3,
         "trend": 18,
         "internetNativeBoost": 8,
-        "search": 5.7,
+        "search": 5.6,
         "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 9,
         "penalty": -3
@@ -48,11 +204,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 23.1,
         "crossCategoryScore": 100,
         "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 65.8
+        "internalSearchScore": 43.7,
+        "internalSocialScore": 65.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -61,59 +217,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1",
-      "title": "【無料】新作ゲームの体験版がたくさん遊べちゃう「Steam Nextフェス」2026年10月エディションが開催中！約600万本の干し草から1本の針を探すゲーム『Find The Needle』など注目タイトルが多数ラインナップ",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.5,
-      "confidence": 0.39,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.9,
-        "internetNativeBoost": 8,
-        "search": 1.5,
-        "social": 5.3,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 0,
-        "repeatedAppearanceScore": 18,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 0,
-        "internalSearchScore": 11.7,
-        "internalSocialScore": 41.1
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-36",
+      "clusterId": "today-cluster-56",
       "title": "小島監督、アニメ「サイバーパンク: エッジランナーズ2」に出演。ゲームから引き続きブレインダンス監督ヒデヨシ・オオシマ役で",
       "category": "anime",
       "categories": [
@@ -124,8 +228,8 @@
         "general",
         "games"
       ],
-      "buzzScore": 61.2,
-      "confidence": 0.42,
+      "buzzScore": 59.1,
+      "confidence": 0.41,
       "articleCount": 4,
       "sourceCount": 3,
       "uniqueDomainCount": 3,
@@ -138,10 +242,10 @@
         "sourceDiversity": 7,
         "trend": 15.6,
         "internetNativeBoost": 0,
-        "search": 3.5,
-        "social": 5.9,
+        "search": 3.4,
+        "social": 5.8,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 14,
         "penalty": 0
@@ -155,115 +259,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 71,
-        "internalSearchScore": 27.6,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1695",
-      "title": "「200ドル相当を払わなければクローンゲームを先に公開する」―日本のインディーSRPG開発者にもAI模倣作を先に出すとちらつかせる脅迫メールが届く…",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 59.1,
-      "confidence": 0.32,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
         "repeatedAppearanceScore": 3,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 34.9,
+        "archiveHeatScore": 71,
+        "internalSearchScore": 26.8,
         "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-621",
-      "title": "敗戦後の発言「炎上」天心が真意",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "sns",
-        "sports",
-        "general"
-      ],
-      "buzzScore": 59,
-      "confidence": 0.33,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 20.5,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 12,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 93,
-        "internalSearchScore": 35.3,
-        "internalSocialScore": 45.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

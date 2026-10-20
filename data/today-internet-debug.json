@@ -1,37 +1,38 @@
 {
-  "generatedAt": "2026-10-20T16:53:08.445Z",
+  "generatedAt": "2026-10-20T20:32:35.127Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-62",
+  "selectedClusterId": "today-cluster-79",
   "selectedTitle": "『カルドセプト ビギンズ』Steam版、10月28日配信へ。10年ぶりのシリーズ最新作、“新要素＆改善”無料アプデを盛り込みPCに来る",
   "candidates": [
     {
-      "clusterId": "today-cluster-62",
+      "clusterId": "today-cluster-79",
       "title": "『カルドセプト ビギンズ』Steam版、10月28日配信へ。10年ぶりのシリーズ最新作、“新要素＆改善”無料アプデを盛り込みPCに来る",
       "category": "games",
       "categories": [
         "games",
         "entertainment",
+        "general",
         "sns",
-        "net-culture",
-        "general"
+        "net-culture"
       ],
-      "buzzScore": 74.7,
-      "confidence": 0.43,
+      "buzzScore": 76,
+      "confidence": 0.46,
       "articleCount": 3,
-      "sourceCount": 2,
+      "sourceCount": 3,
       "uniqueDomainCount": 2,
       "whyRanked": [
+        "主要3媒体で同一話題を確認",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加",
         "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
         "coverage": 5.4,
-        "sourceDiversity": 4.7,
+        "sourceDiversity": 6.2,
         "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 8.6,
+        "search": 6.1,
+        "social": 8.5,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 2.5,
@@ -47,11 +48,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 26.4,
+        "repeatedAppearanceScore": 25.2,
         "crossCategoryScore": 100,
         "archiveHeatScore": 90,
-        "internalSearchScore": 48.7,
-        "internalSocialScore": 66.9
+        "internalSearchScore": 47.9,
+        "internalSocialScore": 66.3
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -60,60 +61,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-46",
-      "title": "サイバーパンク世界で自分だけの店を営むゲーム『Probably Stolen』体験版がSteamで配信中。すでに“圧倒的に好評”の注目作",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 70.5,
-      "confidence": 0.41,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 7.2,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 27.3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 45.4,
-        "internalSocialScore": 56.3
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-8",
+      "clusterId": "today-cluster-19",
       "title": "新作アクションMMORPG『ArcheAge Chronicles』が「Steam Nextフェス」向けに体験版を配信開始。PvPも初導入",
       "category": "games",
       "categories": [
@@ -122,8 +70,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 68,
-      "confidence": 0.39,
+      "buzzScore": 63.7,
+      "confidence": 0.37,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -133,12 +81,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 7,
+        "search": 5.7,
+        "social": 6.9,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -152,11 +100,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 23.1,
+        "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 49,
-        "internalSocialScore": 54.4
+        "archiveHeatScore": 87,
+        "internalSearchScore": 44.9,
+        "internalSocialScore": 54
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -165,70 +113,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-6",
-      "title": "“ジャンプなし”の山登りゲーム『Mount Lomyst』体験版が配信開始。フックショットと崖登りだけで頂上を目指す",
+      "clusterId": "today-cluster-129",
+      "title": "『ゴジラ怪獣大乱闘』リマスター版、Steamストアページに国内からもアクセス可能に。日本語対応の体験版も配信中",
       "category": "games",
       "categories": [
         "games",
         "entertainment",
-        "manga",
         "net-culture",
         "general"
       ],
-      "buzzScore": 66.9,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 46.1,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-18",
-      "title": "“ゴジラシューズ”手がけたブランド「ha｜za｜ma」が『ゴジラ-0.0』とコラボ　これは……キングギドラ?!",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 63.8,
+      "buzzScore": 62.6,
       "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
@@ -239,12 +133,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.8,
+        "trend": 20,
         "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 7,
+        "search": 5.8,
+        "social": 6.8,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 3.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -258,11 +152,116 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 23.1,
+        "repeatedAppearanceScore": 21,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 43.4,
-        "internalSocialScore": 54.4
+        "archiveHeatScore": 91,
+        "internalSearchScore": 45.5,
+        "internalSocialScore": 53.5
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-14",
+      "title": "「高市さんの政治は富国強兵。人々は幸せにならない」と石破茂前首相が痛烈批判",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62.5,
+      "confidence": 0.43,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 19.8,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 6.8,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 45.2,
+        "internalSocialScore": 53.5
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-51",
+      "title": "サイバーパンク世界で自分だけの店を営むゲーム『Probably Stolen』体験版がSteamで配信中。すでに“圧倒的に好評”の注目作",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 59.1,
+      "confidence": 0.39,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 16.5,
+        "internetNativeBoost": 0,
+        "search": 5.5,
+        "social": 7.1,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 25.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 75,
+        "internalSearchScore": 42.6,
+        "internalSocialScore": 55.3
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

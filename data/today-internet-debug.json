@@ -1,41 +1,93 @@
 {
-  "generatedAt": "2026-10-21T13:14:38.864Z",
+  "generatedAt": "2026-10-21T18:19:08.160Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-156",
-  "selectedTitle": "『カルドセプト ビギンズ』Steam版、10月28日配信へ。10年ぶりのシリーズ最新作、“新要素＆改善”無料アプデを盛り込みPCに来る",
+  "selectedClusterId": "today-cluster-52",
+  "selectedTitle": "選挙の偽情報対策、SNS事業者に収益化停止促す　総務省指針案",
   "candidates": [
     {
-      "clusterId": "today-cluster-156",
-      "title": "『カルドセプト ビギンズ』Steam版、10月28日配信へ。10年ぶりのシリーズ最新作、“新要素＆改善”無料アプデを盛り込みPCに来る",
-      "category": "games",
+      "clusterId": "today-cluster-52",
+      "title": "選挙の偽情報対策、SNS事業者に収益化停止促す　総務省指針案",
+      "category": "net-culture",
       "categories": [
-        "games",
-        "entertainment",
-        "general",
+        "net-culture",
+        "politics",
+        "business",
         "sns",
-        "net-culture"
+        "general"
       ],
-      "buzzScore": 71.5,
-      "confidence": 0.44,
+      "buzzScore": 64.3,
+      "confidence": 0.43,
       "articleCount": 3,
-      "sourceCount": 3,
+      "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "主要3媒体で同一話題を確認",
         "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加",
-        "アーカイブ上でも近い話題が連続出現"
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 5.4,
-        "sourceDiversity": 6.2,
+        "sourceDiversity": 4.7,
         "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 6,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-57",
+      "title": "忘れらんねえよ、アニメ『ヤニねこ』主題歌を「THE FIRST TAKE」でパフォーマンス",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62.6,
+      "confidence": 0.45,
+      "articleCount": 5,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 9,
+        "sourceDiversity": 4.7,
+        "trend": 15.2,
+        "internetNativeBoost": 0,
+        "search": 4.9,
         "social": 8.3,
         "velocity": 0,
-        "freshness": 1.5,
-        "authority": 2.5,
+        "freshness": 5.5,
+        "authority": 1,
         "categoryBias": 14,
         "penalty": 0
       },
@@ -47,12 +99,12 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 1,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 21.6,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 45.5,
-        "internalSocialScore": 64.7
+        "archiveHeatScore": 69,
+        "internalSearchScore": 38.6,
+        "internalSocialScore": 65
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -61,18 +113,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-395",
-      "title": "「知ってる野球場の姿ではない」　“見た目がかっこいい”球場1位に「商業施設みたい」「観戦がなくても楽しめる」「いるだけでワクワク」の声",
-      "category": "sports",
+      "clusterId": "today-cluster-697",
+      "title": "辻希美、朝食にホットケーキを焼いたら……　キッチンの“まさかの光景”で炎上の危機？「昨日の残りの……」",
+      "category": "net-culture",
       "categories": [
-        "sports",
-        "entertainment",
-        "sns",
         "net-culture",
+        "sns",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 67.9,
-      "confidence": 0.34,
+      "buzzScore": 61.8,
+      "confidence": 0.33,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -84,62 +135,10 @@
         "sourceDiversity": 2.3,
         "trend": 21.1,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 7.4,
+        "search": 4.6,
+        "social": 5.9,
         "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 17,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 96,
-        "internalSearchScore": 37.5,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-12",
-      "title": "1995年にセイブ開発から発売されたシューティングゲーム『雷電プロジェクト』が「コンアカ」で復刻。10月22日により配信開始",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 65.5,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -151,13 +150,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 46.1,
-        "internalSocialScore": 54.8
+        "archiveHeatScore": 96,
+        "internalSearchScore": 36.3,
+        "internalSocialScore": 45.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -166,19 +165,74 @@
       ]
     },
     {
-      "clusterId": "today-cluster-24",
-      "title": "忘れらんねえよ、アニメ『ヤニねこ』主題歌を「THE FIRST TAKE」でパフォーマンス",
-      "category": "anime",
+      "clusterId": "today-cluster-952",
+      "title": "中間選挙敗北の犯人さがしに怯えるトランプ氏の側近ら、「熾烈な」権力争いを展開",
+      "category": "politics",
       "categories": [
-        "anime",
-        "entertainment",
+        "politics",
         "sns",
         "net-culture",
+        "world",
         "general"
       ],
-      "buzzScore": 65.1,
-      "confidence": 0.44,
-      "articleCount": 4,
+      "buzzScore": 59.9,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 19.8,
+        "internetNativeBoost": 8,
+        "search": 4.5,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 34.8,
+        "internalSocialScore": 57.3
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-117",
+      "title": "時代は「曇らせ系」！　ラブコメライトノベルの最新トレンドを語る",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "anime-features",
+        "net-culture",
+        "game-features",
+        "manga",
+        "general",
+        "entertainment"
+      ],
+      "buzzScore": 59.3,
+      "confidence": 0.38,
+      "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
@@ -186,14 +240,14 @@
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 7.2,
+        "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 16.1,
+        "trend": 15.8,
         "internetNativeBoost": 0,
-        "search": 5.3,
-        "social": 8.4,
+        "search": 5.1,
+        "social": 8.3,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 14,
         "penalty": 0
@@ -207,63 +261,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 73,
-        "internalSearchScore": 41.2,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-6",
-      "title": "建物ぶち壊しFPS『THE FINALS』、新シーズン開幕で「Steam同接3万超え」の盛況。ぐにゃっと崩れる新破壊システムに「植木鉢に化ける」スキル登場、新戦略いろいろ",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 64.8,
-      "confidence": 0.45,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 48.5,
-        "internalSocialScore": 43.8
+        "archiveHeatScore": 72,
+        "internalSearchScore": 39.6,
+        "internalSocialScore": 65
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

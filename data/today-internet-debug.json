@@ -1,41 +1,38 @@
 {
-  "generatedAt": "2026-10-21T18:19:08.160Z",
+  "generatedAt": "2026-10-21T22:04:09.352Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-52",
-  "selectedTitle": "選挙の偽情報対策、SNS事業者に収益化停止促す　総務省指針案",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "EA傘下のスタジオ「BioWare」の閉鎖が発表、『Mass Effect』次期プロジェクトの開発も終了へ。『Dragon Age』『ANTHEM』など手掛ける",
   "candidates": [
     {
-      "clusterId": "today-cluster-52",
-      "title": "選挙の偽情報対策、SNS事業者に収益化停止促す　総務省指針案",
-      "category": "net-culture",
+      "clusterId": "today-cluster-1",
+      "title": "EA傘下のスタジオ「BioWare」の閉鎖が発表、『Mass Effect』次期プロジェクトの開発も終了へ。『Dragon Age』『ANTHEM』など手掛ける",
+      "category": "games",
       "categories": [
+        "games",
         "net-culture",
-        "politics",
-        "business",
-        "sns",
         "general"
       ],
-      "buzzScore": 64.3,
-      "confidence": 0.43,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 62,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 19.8,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 6,
-        "social": 8.4,
+        "search": 5.5,
+        "social": 5.6,
         "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -47,10 +44,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 47.1,
-        "internalSocialScore": 65.8
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -59,7 +56,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-57",
+      "clusterId": "today-cluster-70",
       "title": "忘れらんねえよ、アニメ『ヤニねこ』主題歌を「THE FIRST TAKE」でパフォーマンス",
       "category": "anime",
       "categories": [
@@ -69,8 +66,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.6,
-      "confidence": 0.45,
+      "buzzScore": 59.4,
+      "confidence": 0.43,
       "articleCount": 5,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -81,12 +78,12 @@
       "scoreBreakdown": {
         "coverage": 9,
         "sourceDiversity": 4.7,
-        "trend": 15.2,
+        "trend": 14.3,
         "internetNativeBoost": 0,
-        "search": 4.9,
+        "search": 4.7,
         "social": 8.3,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 1,
         "categoryBias": 14,
         "penalty": 0
@@ -100,11 +97,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
+        "repeatedAppearanceScore": 21,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 69,
-        "internalSearchScore": 38.6,
-        "internalSocialScore": 65
+        "archiveHeatScore": 65,
+        "internalSearchScore": 36.4,
+        "internalSocialScore": 64.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -113,112 +110,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-697",
-      "title": "辻希美、朝食にホットケーキを焼いたら……　キッチンの“まさかの光景”で炎上の危機？「昨日の残りの……」",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "sns",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 61.8,
-      "confidence": 0.33,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.1,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 96,
-        "internalSearchScore": 36.3,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-952",
-      "title": "中間選挙敗北の犯人さがしに怯えるトランプ氏の側近ら、「熾烈な」権力争いを展開",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "world",
-        "general"
-      ],
-      "buzzScore": 59.9,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.8,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 5.1,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 34.8,
-        "internalSocialScore": 57.3
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-117",
+      "clusterId": "today-cluster-130",
       "title": "時代は「曇らせ系」！　ラブコメライトノベルの最新トレンドを語る",
       "category": "sns",
       "categories": [
@@ -230,7 +122,7 @@
         "general",
         "entertainment"
       ],
-      "buzzScore": 59.3,
+      "buzzScore": 59.1,
       "confidence": 0.38,
       "articleCount": 3,
       "sourceCount": 2,
@@ -244,7 +136,7 @@
         "sourceDiversity": 4.7,
         "trend": 15.8,
         "internetNativeBoost": 0,
-        "search": 5.1,
+        "search": 5,
         "social": 8.3,
         "velocity": 0,
         "freshness": 3.5,
@@ -261,11 +153,115 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
+        "repeatedAppearanceScore": 21,
         "crossCategoryScore": 100,
         "archiveHeatScore": 72,
-        "internalSearchScore": 39.6,
-        "internalSocialScore": 65
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 64.5
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-919",
+      "title": "辻希美、朝食にホットケーキを焼いたら……　キッチンの“まさかの光景”で炎上の危機？「昨日の残りの……」",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "sns",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 58.6,
+      "confidence": 0.31,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20.2,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 92,
+        "internalSearchScore": 34.2,
+        "internalSocialScore": 45.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-128",
+      "title": "【高評価】『ファイナルファンタジー レゾナンス』海外レビューでメタクリ「85/100」（PS5）を獲得。初のHD-2Dで描かれた『FF』に称賛相次ぐ",
+      "category": "games",
+      "categories": [
+        "games",
+        "game-features",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 58,
+      "confidence": 0.39,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 16.1,
+        "internetNativeBoost": 0,
+        "search": 5,
+        "social": 6.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 73,
+        "internalSearchScore": 39.2,
+        "internalSocialScore": 53.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

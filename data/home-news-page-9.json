@@ -1,30 +1,743 @@
 {
-  "generatedAt": "2026-10-22T15:34:32.279Z",
-  "totalCount": 1339,
+  "generatedAt": "2026-10-22T19:25:51.671Z",
+  "totalCount": 1243,
   "categoryCounts": {
-    "all": 1339,
-    "general": 52,
-    "tech": 181,
-    "business": 98,
-    "politics": 52,
-    "entertainment": 479,
-    "anime": 48,
-    "games": 514,
+    "all": 1243,
+    "general": 48,
+    "tech": 172,
+    "business": 92,
+    "politics": 50,
+    "entertainment": 430,
+    "anime": 42,
+    "games": 471,
     "game-features": 17,
-    "anime-features": 3,
-    "manga": 62,
-    "books": 18,
-    "sports": 48,
-    "sns": 614,
-    "net-culture": 715,
+    "anime-features": 2,
+    "manga": 56,
+    "books": 19,
+    "sports": 43,
+    "sns": 584,
+    "net-culture": 676,
     "matome": 1,
-    "crime": 27,
-    "adult": 13,
-    "world": 40
+    "crime": 22,
+    "adult": 12,
+    "world": 36
   },
   "hasMore": true,
   "nextPage": 10,
   "items": [
+    {
+      "id": "auto-general-鷹cbo-織田翔希の指名可能性示唆-news.yahoo.co.jp/pickup/6599606",
+      "title": "鷹CBO 織田翔希の指名可能性示唆",
+      "summary": "ソフトバンクの城島健司チーフベースボールオフィサー（CBO）が21日、東京都内のホテルで取材に応じ、22日のドラフト会議での1位指名を非公表とした。 事前にドラフト1位を公表しないのは3年連続となっ",
+      "briefSummary": "ソフトバンクの城島健司チーフベースボールオフィサー（CBO）が21日、東京都内のホテルで取材に応じ、22日のドラフト会議での1位指名を非公表とした。 事前にドラフト1位を公表しないのは3年連続となっ",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "general"
+      ],
+      "categoryLabel": "スポーツ",
+      "categoryLabels": [
+        "スポーツ",
+        "その他"
+      ],
+      "score": 55,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-21T09:18:08.000Z",
+      "capturedAt": "2026-10-22T05:20:09.495Z",
+      "time": "20時間前",
+      "sourceName": "Yahoo!ニュース / スポーツ",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6599606?source=rss",
+      "hotReasons": [],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-sports",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / スポーツ",
+          "sourceGroup": "general-sports",
+          "sourcePriority": 58,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "鷹CBO 織田翔希の指名可能性示唆",
+          "url": "https://news.yahoo.co.jp/pickup/6599606?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6599606?source=rss",
+          "publishedAt": "2026-10-21T09:18:08.000Z",
+          "publishedLabel": "10/21 09:18",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "鷹CBO 織田翔希の指名可能性示唆",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-games-アイドルマスター-シンデレラガールズ-佐久間まゆ-イメージネックレスが予約受付開始-永遠-と-愛-をデザインの核に使用-inside-games.jp/article/2026/10/21/189600.html",
+      "title": "『アイドルマスター シンデレラガールズ』佐久間まゆ イメージネックレスが予約受付開始！「永遠」と「愛」をデザインの核に使用",
+      "summary": "佐久間まゆをモチーフにしたイメージネックレスが予約受付中！価格は25,850円（税込）。",
+      "briefSummary": "デザインの核となるのは「永遠」を象徴するサークルと、「愛」を象徴するハートという二つのモチーフ。この二つを決して離れることがないよう繋いでおり、プロデューサーへの深い愛情を示す佐久間まゆの想いを形として表現しています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 66,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1796575.jpg",
+      "publishedAt": "2026-10-21T09:15:03.000Z",
+      "capturedAt": "2026-10-22T05:20:09.495Z",
+      "time": "20時間前",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/10/21/189600.html",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "『アイドルマスター シンデレラガールズ』佐久間まゆ イメージネックレスが予約受付開始！「永遠」と「愛」をデザインの核に使用",
+          "url": "https://www.inside-games.jp/article/2026/10/21/189600.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/10/21/189600.html",
+          "publishedAt": "2026-10-21T09:15:03.000Z",
+          "publishedLabel": "10/21 09:15",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1796575.jpg"
+        }
+      ],
+      "whatHappened": "『アイドルマスター シンデレラガールズ』佐久間まゆ イメージネックレスが予約受付開始",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-entertainment-ストリートファイター-一番くじに会いに行く-リュウやキャミィのフィギュアだけじゃない-負け顔-再現マグネットなどファンも嬉しいラインナップ-animeanime.jp/article/2026/10/21/104058.html",
+      "title": "「ストリートファイター」一番くじに会いに行く！ リュウやキャミィのフィギュアだけじゃない、“負け顔”再現マグネットなどファンも嬉しいラインナップ",
+      "summary": "『ストリートファイター』シリーズより、ハズレなしのキャラクターくじ「一番くじ ストリートファイター ～俺より強い奴に会いに行く～」が登場。リュウやキャミィのフィギュアなどの全ラインナップが公開された。2026年11月11日より順次発売される。",
+      "briefSummary": "『ストリートファイター』シリーズより、ハズレなしのキャラクターくじ「一番くじ ストリートファイター ～俺より強い奴に会いに行く～」が登場。リュウやキャミィのフィギュアなどの全ラインナップが公開された。2026年11月11日より順次発売される。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画"
+      ],
+      "score": 62,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946096.webp",
+      "publishedAt": "2026-10-21T09:15:03.000Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
+      "time": "1日前",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/10/21/104058.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「ストリートファイター」一番くじに会いに行く！ リュウやキャミィのフィギュアだけじゃない、“負け顔”再現マグネットなどファンも嬉しいラインナップ",
+          "url": "https://animeanime.jp/article/2026/10/21/104058.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/10/21/104058.html",
+          "publishedAt": "2026-10-21T09:15:03.000Z",
+          "publishedLabel": "10/21 09:15",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946096.webp"
+        }
+      ],
+      "whatHappened": "「ストリートファイター」一番くじに会いに行く",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-こだま-たろちん-わからないまま母と生きる-刊行記念対談-ネット出身作家が語る-匿名でしか書けないこと-news.yahoo.co.jp/articles/c9fdb9282b4507326ef0aeeb1e766a807a228821",
+      "title": "こだま×たろちん『わからないまま母と生きる』刊行記念対談　ネット出身作家が語る“匿名でしか書けないこと”",
+      "summary": "2017年に『夫のちんぽが入らない』（扶桑社）で衝撃的なデビューを飾ったこだまさん。現在も家族に自分が作家であることを隠したまま活動している“覆面作家”です。【画像…",
+      "briefSummary": "2017年に『夫のちんぽが入らない』（扶桑社）で衝撃的なデビューを飾ったこだまさん。現在も家族に自分が作家であることを隠したまま活動している“覆面作家”です。【画像】インタビューカット 新刊『わからな",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "books",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "本",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 76,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-21T09:15:00.000Z",
+      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "time": "12時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/c9fdb9282b4507326ef0aeeb1e766a807a228821?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "こだま×たろちん『わからないまま母と生きる』刊行記念対談　ネット出身作家が語る“匿名でしか書けないこと”",
+          "url": "https://news.yahoo.co.jp/articles/c9fdb9282b4507326ef0aeeb1e766a807a228821?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/c9fdb9282b4507326ef0aeeb1e766a807a228821?source=rss",
+          "publishedAt": "2026-10-21T09:15:00.000Z",
+          "publishedLabel": "10/21 09:15",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "こだま×たろちん『わからないまま母と生きる』刊行記念対談 ネット出身作家が語る“匿名でしか書…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-tech-itmedia-mobile-teppay-導入記念-ビックカメラsuicaカード連携で最大35-還元-カード入会で1万1000円相当付与も-itmedia.co.jp/mobile/articles/2610/21/news068.html",
+      "title": "[ITmedia Mobile] 「teppay」導入記念、ビックカメラSuicaカード連携で最大35％還元　カード入会で1万1000円相当付与も",
+      "summary": "ビックカメラは、11月4日から「ビックカメラ Suica×teppay 決済キャンペーン」を実施。決済サービス「teppay」での支払いを「ビックカメラSuicaカ…",
+      "briefSummary": "ビックカメラは、11月4日から「ビックカメラ Suica×teppay 決済キャンペーン」を実施。決済サービス「teppay」での支払いを「ビックカメラSuicaカード」に連携などの条件を満たすと、最大35％のポイントが還元される。",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 72,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://image.itmedia.co.jp/mobile/articles/2610/21/l_asa_bicteppay_01.jpg",
+      "publishedAt": "2026-10-21T09:15:00.000Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
+      "time": "15時間前",
+      "sourceName": "ITmedia",
+      "sourceUrl": "https://www.itmedia.co.jp/mobile/articles/2610/21/news068.html",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "itmedia-all",
+          "source": "ITmedia",
+          "sourceName": "ITmedia",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 68,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "tech"
+          ],
+          "title": "[ITmedia Mobile] 「teppay」導入記念、ビックカメラSuicaカード連携で最大35％還元　カード入会で1万1000円相当付与も",
+          "url": "https://www.itmedia.co.jp/mobile/articles/2610/21/news068.html",
+          "canonicalUrl": "https://www.itmedia.co.jp/mobile/articles/2610/21/news068.html",
+          "publishedAt": "2026-10-21T09:15:00.000Z",
+          "publishedLabel": "10/21 09:15",
+          "thumbnailUrl": "https://image.itmedia.co.jp/mobile/articles/2610/21/l_asa_bicteppay_01.jpg"
+        }
+      ],
+      "whatHappened": "[ITmedia Mobile] 「teppay」導入記念、ビックカメラSuicaカード連携…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "終了前の条件確認や購入判断に直結しやすい情報です。",
+      "targetAudience": [
+        "セール好き",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-politics-東国原英夫氏-約束守れなければ1000万円-ひろゆき氏-泉房穂氏プロジェクトに違約金-僕は値切った-j-cast.com/2026/10/21518621.html",
+      "title": "東国原英夫氏「約束守れなければ1000万円」　ひろゆき氏＆泉房穂氏プロジェクトに違約金、「僕は値切った」",
+      "summary": "政治団体「ひろゆき＆いずみ新党（仮）」を設立した「ひろゆき」こと実業家の西村博之氏と前兵庫県明石市長の泉房穂参院議員は、2026年10月21日に会見を開き、政治支援…",
+      "briefSummary": "政治団体「ひろゆき＆いずみ新党（仮）」を設立した「ひろゆき」こと実業家の西村博之氏と前兵庫県明石市長の泉房穂参院議員は、2026年10月21日に会見を開き、政治支援プロジェクト「ひろゆき＆いずみプロジェクト」の立ち上げを発表した。元宮崎県知…",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "政治",
+      "categoryLabels": [
+        "政治",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 56,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261021175649.jpg",
+      "publishedAt": "2026-10-21T09:15:00.000Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
+      "time": "1日前",
+      "sourceName": "J-CASTニュース",
+      "sourceUrl": "https://www.j-cast.com/2026/10/21518621.html",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "jcast",
+          "source": "J-CASTニュース",
+          "sourceName": "J-CASTニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 72,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz"
+          ],
+          "title": "東国原英夫氏「約束守れなければ1000万円」　ひろゆき氏＆泉房穂氏プロジェクトに違約金、「僕は値切った」",
+          "url": "https://www.j-cast.com/2026/10/21518621.html",
+          "canonicalUrl": "https://www.j-cast.com/2026/10/21518621.html",
+          "publishedAt": "2026-10-21T09:15:00.000Z",
+          "publishedLabel": "10/21 09:15",
+          "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261021175649.jpg"
+        }
+      ],
+      "whatHappened": "東国原英夫氏「約束守れなければ1000万円」 ひろゆき氏＆泉房穂氏プロジェクトに違約金、「僕…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [
+        "ネット文化を追う人",
+        "時事ニュースを追う人"
+      ]
+    },
+    {
+      "id": "auto-general-台風30号-24日九州で警報級大雨か-news.yahoo.co.jp/pickup/6599604",
+      "title": "台風30号 24日九州で警報級大雨か",
+      "summary": "",
+      "briefSummary": "",
+      "category": "general",
+      "categories": [
+        "general"
+      ],
+      "categoryLabel": "その他",
+      "categoryLabels": [
+        "その他"
+      ],
+      "score": 73,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-21T09:12:02.000Z",
+      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "time": "12時間前",
+      "sourceName": "Yahoo!ニュース / 国内",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6599604?source=rss",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-domestic",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 国内",
+          "sourceGroup": "important-news",
+          "sourcePriority": 76,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "台風30号 24日九州で警報級大雨か",
+          "url": "https://news.yahoo.co.jp/pickup/6599604?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6599604?source=rss",
+          "publishedAt": "2026-10-21T09:12:02.000Z",
+          "publishedLabel": "10/21 09:12",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "台風30号 24日九州で警報級大雨か",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-net-culture-辻希美-朝食にホットケーキを焼いたら-キッチンの-まさかの光景-で炎上の危機-昨日の残りの-news.yahoo.co.jp/articles/82071219fa7910cf0150e2b574ed5ed90668b512",
+      "title": "辻希美、朝食にホットケーキを焼いたら……　キッチンの“まさかの光景”で炎上の危機？「昨日の残りの……」",
+      "summary": "タレントの辻希美さんが10月21日に自身のInstagramストーリーズを更新。朝食として用意したホットケーキと、前日の夕食の残り物という意外な組み合わせを公開し…",
+      "briefSummary": "タレントの辻希美さんが10月21日に自身のInstagramストーリーズを更新。朝食として用意したホットケーキと、前日の夕食の残り物という意外な組み合わせを公開し、「炎上案件?!」と自らツッコミを入れ",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "sns",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ネットカルチャー",
+      "categoryLabels": [
+        "ネットカルチャー",
+        "SNS",
+        "エンタメ"
+      ],
+      "score": 76,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-21T09:10:00.000Z",
+      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "time": "12時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/82071219fa7910cf0150e2b574ed5ed90668b512?source=rss",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "SNSやネット上で反応が広がりやすい話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "辻希美、朝食にホットケーキを焼いたら……　キッチンの“まさかの光景”で炎上の危機？「昨日の残りの……」",
+          "url": "https://news.yahoo.co.jp/articles/82071219fa7910cf0150e2b574ed5ed90668b512?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/82071219fa7910cf0150e2b574ed5ed90668b512?source=rss",
+          "publishedAt": "2026-10-21T09:10:00.000Z",
+          "publishedLabel": "10/21 09:10",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "辻希美、朝食にホットケーキを焼いたら…… キッチンの“まさかの光景”で炎上の危機",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-sns-不正アクセス-金融機関が狙われる段階に変わってきた可能性-news.web.nhk/newsweb/na/nd-20261021de62921",
+      "title": "不正アクセス“金融機関が狙われる段階に変わってきた可能性”",
+      "summary": "証券会社のシステムが不正アクセスを受けたことについて、サイバーセキュリティーに詳しい立命館大学の上原哲太郎教授は、金融機関が狙われる段階に変わってきた可能性があり…",
+      "briefSummary": "証券会社のシステムが不正アクセスを受けたことについて、サイバーセキュリティーに詳しい立命館大学の上原哲太郎教授は、金融機関が狙われる段階に変わってきた可能性があり、必要があればシステムの一時停止も含め…",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "SNS",
+      "categoryLabels": [
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 72,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://imgu.web.nhk/news/u/news/nd/kiji/20261021de62921/20261021de62921_E0000094782_1_l.jpg",
+      "publishedAt": "2026-10-21T09:08:57.000Z",
+      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "time": "12時間前",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://news.web.nhk/newsweb/na/nd-20261021de62921",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "不正アクセス“金融機関が狙われる段階に変わってきた可能性”",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261021de62921",
+          "canonicalUrl": "https://news.web.nhk/newsweb/na/nd-20261021de62921",
+          "publishedAt": "2026-10-21T09:08:57.000Z",
+          "publishedLabel": "10/21 09:08",
+          "thumbnailUrl": "https://imgu.web.nhk/news/u/news/nd/kiji/20261021de62921/20261021de62921_E0000094782_1_l.jpg"
+        }
+      ],
+      "whatHappened": "不正アクセス“金融機関が狙われる段階に変わってきた可能性”",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-entertainment-食事の質-若年層で最低-収入や生活習慣が関連-東京大-時事ドットコム-jiji.com/sp/article",
+      "title": "食事の質、若年層で最低　収入や生活習慣が関連―東京大：時事ドットコム",
+      "summary": "食事の質、若年層で最低 収入や生活習慣が関連―東京大 時事通信 編集局2026年10月21日14時58分配信 食事する若者たち（写真はイメージ） 日本人の食事の質は…",
+      "briefSummary": "食事の質、若年層で最低 収入や生活習慣が関連―東京大 時事通信 編集局2026年10月21日14時58分配信 食事する若者たち（写真はイメージ） 日本人の食事の質は、男女いずれも思春期から２０代前半にかけて最も低く、中高年層では比較的高いこ…",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 68,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.jiji.com/news2/kiji_photos/202610/20261021ds55_o.jpg",
+      "publishedAt": "2026-10-21T09:02:36.000Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
+      "time": "15時間前",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://www.jiji.com/sp/article?k=2026102100140&g=soc",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "食事の質、若年層で最低　収入や生活習慣が関連―東京大：時事ドットコム",
+          "url": "https://www.jiji.com/sp/article?k=2026102100140&g=soc",
+          "canonicalUrl": "https://www.jiji.com/sp/article?k=2026102100140&g=soc",
+          "publishedAt": "2026-10-21T09:02:36.000Z",
+          "publishedLabel": "10/21 09:02",
+          "thumbnailUrl": "https://www.jiji.com/news2/kiji_photos/202610/20261021ds55_o.jpg"
+        }
+      ],
+      "whatHappened": "食事の質、若年層で最低 収入や生活習慣が関連―東京大：時事ドットコム",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-tech-itmedia-mobile-ソフトバンクで約36-5万円の-iphone-air-1tb-mnpで2年間約7-2万円-スマホお得情報-itmedia.co.jp/mobile/articles/2610/21/news062.html",
+      "title": "[ITmedia Mobile] ソフトバンクで約36.5万円の「iPhone Air（1TB）」、MNPで2年間約7.2万円【スマホお得情報】",
+      "summary": "ソフトバンクが「iPhone Air（1TB）」を安価に販売。通常36万5040円のところMNPかつ「新トクするサポート＋」を利用して25カ月目に端末を返却すると実…",
+      "briefSummary": "ソフトバンクが「iPhone Air（1TB）」を安価に販売。通常36万5040円のところMNPかつ「新トクするサポート＋」を利用して25カ月目に端末を返却すると実質負担額が2年間7万2480円になる。",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 66,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-21T09:02:00.000Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
+      "time": "15時間前",
+      "sourceName": "ITmedia",
+      "sourceUrl": "https://www.itmedia.co.jp/mobile/articles/2610/21/news062.html",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "itmedia-all",
+          "source": "ITmedia",
+          "sourceName": "ITmedia",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 68,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "tech"
+          ],
+          "title": "[ITmedia Mobile] ソフトバンクで約36.5万円の「iPhone Air（1TB）」、MNPで2年間約7.2万円【スマホお得情報】",
+          "url": "https://www.itmedia.co.jp/mobile/articles/2610/21/news062.html",
+          "canonicalUrl": "https://www.itmedia.co.jp/mobile/articles/2610/21/news062.html",
+          "publishedAt": "2026-10-21T09:02:00.000Z",
+          "publishedLabel": "10/21 09:02",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "[ITmedia Mobile] ソフトバンクで約36.5万円の「iPhone Air（1T…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-games-大勢で遊ぶのにプレイヤーは1人だけ-1分ごとの交代で100万の部屋を攻略するゲーム-jono-がヤバすぎる-kai-you.net/article/96902",
+      "title": "大勢で遊ぶのにプレイヤーは1人だけ（!?）1分ごとの交代で100万の部屋を攻略するゲーム『Jono』がヤバすぎる",
+      "summary": "世界中で同時にゲームを操作できるのは、たった一人。ほかのプレイヤーは全員、順番待ち！そんな大胆すぎるルールの無料ゲーム『Jono』が、10月5日にSteamでリリー…",
+      "briefSummary": "世界中で同時にゲームを操作できるのは、たった一人。ほかのプレイヤーは全員、順番待ち！そんな大胆すぎるルールの無料ゲーム『Jono』が、10月5日にSteamでリリースされた。開発したのは、フィンランドのインディーゲームスタジオ・Part T…",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 62,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://img.kai-you.net/storage/2026/10/4b835771-1f4c-4c1a-bce0-f731062467d1/main/Jono_Screenshot_1.webp",
+      "publishedAt": "2026-10-21T09:01:00.000Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
+      "time": "1日前",
+      "sourceName": "KAI-YOU",
+      "sourceUrl": "https://kai-you.net/article/96902",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "kai-you",
+          "source": "KAI-YOU",
+          "sourceName": "KAI-YOU",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "meme",
+            "otaku"
+          ],
+          "title": "大勢で遊ぶのにプレイヤーは1人だけ（!?）1分ごとの交代で100万の部屋を攻略するゲーム『Jono』がヤバすぎる",
+          "url": "https://kai-you.net/article/96902",
+          "canonicalUrl": "https://kai-you.net/article/96902",
+          "publishedAt": "2026-10-21T09:01:00.000Z",
+          "publishedLabel": "10/21 09:01",
+          "thumbnailUrl": "https://img.kai-you.net/storage/2026/10/4b835771-1f4c-4c1a-bce0-f731062467d1/main/Jono_Screenshot_1.webp"
+        }
+      ],
+      "whatHappened": "大勢で遊ぶのにプレイヤーは1人だけ（!?）1分ごとの交代で100万の部屋を攻略するゲーム『J…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ネット文化を追う人"
+      ]
+    },
     {
       "id": "auto-games-nier-シリーズの2bとカイネがボークスドールシリーズ-ドルフィードリーム-に-各11万円で予約受付中-2027年秋にお届け予定-4gamer.net/games/353/g035315/20261021029",
       "title": "「NieR」シリーズの2Bとカイネがボークスドールシリーズ「ドルフィードリーム」に。各11万円で予約受付中，2027年秋にお届け予定",
@@ -44,7 +757,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/353/G035315/20261021029/SS/001.jpg",
       "publishedAt": "2026-10-21T09:00:39.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/353/G035315/20261021029/",
@@ -102,7 +815,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261021-474690-header.jpg",
       "publishedAt": "2026-10-21T09:00:14.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/special-column/20261021-474690/",
@@ -277,7 +990,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946036.jpg",
       "publishedAt": "2026-10-21T09:00:04.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/21/104057.html",
@@ -402,7 +1115,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://img.kai-you.net/storage/2026/10/0308b1a7-98b3-4031-89a0-2e74e8a623c9/main/wasureranneyo.webp",
       "publishedAt": "2026-10-21T09:00:00.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "KAI-YOU",
       "sourceUrl": "https://kai-you.net/article/96903",
@@ -465,7 +1178,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261021153304.jpg",
       "publishedAt": "2026-10-21T09:00:00.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/21518611.html",
@@ -643,7 +1356,7 @@
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-21T08:56:11.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "Yahoo!ニュース / 科学",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6599602?source=rss",
@@ -697,7 +1410,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/21/2000002472/10010067/2048",
       "publishedAt": "2026-10-21T08:47:19.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/21/2000002472/",
@@ -814,7 +1527,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946025.jpg",
       "publishedAt": "2026-10-21T08:45:03.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/21/104056.html",
@@ -875,7 +1588,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261021171635.jpg",
       "publishedAt": "2026-10-21T08:45:00.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/21518619.html",
@@ -1154,7 +1867,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946029.jpg",
       "publishedAt": "2026-10-21T08:30:03.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/21/104055.html",
@@ -1212,7 +1925,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/945886.jpg",
       "publishedAt": "2026-10-21T08:29:53.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/21/104054.html",
@@ -1332,7 +2045,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/945469.jpg",
       "publishedAt": "2026-10-21T08:28:24.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/21/104053.html",
@@ -1390,7 +2103,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/944674.jpg",
       "publishedAt": "2026-10-21T08:26:08.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/21/104052.html",
@@ -1795,7 +2508,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261021-474682-header.jpeg",
       "publishedAt": "2026-10-21T08:04:17.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261021-474682/",
@@ -2033,7 +2746,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/052/G105204/20261021020/SS/006.jpg",
       "publishedAt": "2026-10-21T08:00:00.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/052/G105204/20261021020/",
@@ -2153,7 +2866,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/945864.jpg",
       "publishedAt": "2026-10-21T07:55:00.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/21/104049.html",
@@ -2276,7 +2989,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/986/G098660/20261021025/SS/001.jpg",
       "publishedAt": "2026-10-21T07:48:31.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/986/G098660/20261021025/",
@@ -2393,7 +3106,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946003.jpg",
       "publishedAt": "2026-10-21T07:45:03.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/21/104048.html",
@@ -2456,7 +3169,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://img.kai-you.net/storage/2026/10/fba33275-5b64-4194-9e48-c46445a6f1c7/main/Scorsese.webp",
       "publishedAt": "2026-10-21T07:44:00.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "KAI-YOU",
       "sourceUrl": "https://kai-you.net/article/96900",
@@ -2762,7 +3475,7 @@
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-21T07:31:22.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "Yahoo!ニュース / 科学",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6599590?source=rss",
@@ -2877,7 +3590,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946037.jpg",
       "publishedAt": "2026-10-21T07:30:03.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/21/104047.html",
@@ -3111,7 +3824,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/21/2000002469/10010057/2048",
       "publishedAt": "2026-10-21T07:22:56.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/21/2000002469/",
@@ -3478,7 +4191,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/052/G105202/20261021011/SS/002.png",
       "publishedAt": "2026-10-21T07:14:27.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/052/G105202/20261021011/",
@@ -3537,7 +4250,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/945810.jpg",
       "publishedAt": "2026-10-21T07:14:13.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/21/104046.html",
@@ -3897,7 +4610,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/051/G105105/20261017006/SS/001.webp",
       "publishedAt": "2026-10-21T07:00:00.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/051/G105105/20261017006/",
@@ -3959,7 +4672,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261021155020.jpg",
       "publishedAt": "2026-10-21T07:00:00.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/21518612.html",
@@ -4140,7 +4853,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/045/G104590/20261021023/SS/002.jpg",
       "publishedAt": "2026-10-21T06:54:38.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/045/G104590/20261021023/",
@@ -5046,7 +5759,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/052/G105209/20261021022/SS/002.jpg",
       "publishedAt": "2026-10-21T06:04:30.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/052/G105209/20261021022/",
@@ -5104,7 +5817,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/209/G020915/20261021018/SS/001.jpg",
       "publishedAt": "2026-10-21T06:01:50.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
+      "capturedAt": "2026-10-22T19:25:51.671Z",
       "time": "1日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/209/G020915/20261021018/",
@@ -5260,714 +5973,6 @@
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-アクションの手触りを左右する0-1秒と-メトロイドヴァニア-の先にあるもの-chronoscript-the-endless-end-プレイレポ-インタビュー-4gamer.net/games/948/g094806/20261014026",
-      "title": "アクションの手触りを左右する0.1秒と，メトロイドヴァニア“＋”の先にあるもの。「Chronoscript: The Endless End」プレイレポ＆インタビュー",
-      "summary": "「RPGタイム！」のデスクワークスが手掛ける探索型アクション「Chronoscript:TheEndlessEnd」の新ステージ「大航海時代」を先行プレイ。独特の仕…",
-      "briefSummary": "「RPGタイム！」のデスクワークスが手掛ける探索型アクション「Chronoscript:TheEndlessEnd」の新ステージ「大航海時代」を先行プレイ。独特の仕掛けや手応えのある探索に触れ，その遊びを形作る工夫や試行錯誤について開発陣に…",
-      "category": "games",
-      "categories": [
-        "games",
-        "game-features",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "ゲーム特集"
-      ],
-      "score": 62,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/948/G094806/20261014026/SS/010.jpg",
-      "publishedAt": "2026-10-21T06:00:00.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
-      "time": "1日前",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/948/G094806/20261014026/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "アクションの手触りを左右する0.1秒と，メトロイドヴァニア“＋”の先にあるもの。「Chronoscript: The Endless End」プレイレポ＆インタビュー",
-          "url": "https://www.4gamer.net/games/948/G094806/20261014026/",
-          "canonicalUrl": "https://www.4gamer.net/games/948/G094806/20261014026/",
-          "publishedAt": "2026-10-21T06:00:00.000Z",
-          "publishedLabel": "10/21 06:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/948/G094806/20261014026/SS/010.jpg"
-        }
-      ],
-      "whatHappened": "アクションの手触りを左右する0.1秒と，メトロイドヴァニア“＋”の先にあるもの",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-tech-itmedia-mobile-huawei-watch-6-発表-9項目の健康データを60秒で測定-八角形のスポーツウォッチ-huawei-watch-gt-7-itmedia.co.jp/mobile/articles/2610/21/news010.html",
-      "title": "[ITmedia Mobile] 「HUAWEI WATCH 6」発表、9項目の健康データを60秒で測定　八角形のスポーツウォッチ「HUAWEI WATCH GT 7／GT 7 Pro」も",
-      "summary": "ファーウェイ・ジャパンが、スマートウォッチ「HUAWEI WATCH GT 7 Pro」「HUAWEI WATCH GT 7」「HUAWEI WATCH 6」を発表…",
-      "briefSummary": "ファーウェイ・ジャパンが、スマートウォッチ「HUAWEI WATCH GT 7 Pro」「HUAWEI WATCH GT 7」「HUAWEI WATCH 6」を発表した。GT 7シリーズは八角形のケースを採用し、屋内スキーの記録に対応する。…",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 61,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://image.itmedia.co.jp/mobile/articles/2610/21/cover_news010.jpg",
-      "publishedAt": "2026-10-21T06:00:00.000Z",
-      "capturedAt": "2026-10-22T00:37:43.616Z",
-      "time": "18時間前",
-      "sourceName": "ITmedia",
-      "sourceUrl": "https://www.itmedia.co.jp/mobile/articles/2610/21/news010.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-all",
-          "source": "ITmedia",
-          "sourceName": "ITmedia",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 68,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "[ITmedia Mobile] 「HUAWEI WATCH 6」発表、9項目の健康データを60秒で測定　八角形のスポーツウォッチ「HUAWEI WATCH GT 7／GT 7 Pro」も",
-          "url": "https://www.itmedia.co.jp/mobile/articles/2610/21/news010.html",
-          "canonicalUrl": "https://www.itmedia.co.jp/mobile/articles/2610/21/news010.html",
-          "publishedAt": "2026-10-21T06:00:00.000Z",
-          "publishedLabel": "10/21 06:00",
-          "thumbnailUrl": "https://image.itmedia.co.jp/mobile/articles/2610/21/cover_news010.jpg"
-        }
-      ],
-      "whatHappened": "[ITmedia Mobile] 「HUAWEI WATCH 6」発表、9項目の健康データを…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-tech-itmedia-pc-user-10万円弱のスマートウォッチ-amazfit-cheetah-2-ultra-トレイルを走らない人が-日常使い-して分かったこと-itmedia.co.jp/pcuser/articles/2610/21/news054.html",
-      "title": "[ITmedia PC USER] 10万円弱のスマートウォッチ「Amazfit Cheetah 2 Ultra」 トレイルを走らない人が“日常使い”して分かったこと",
-      "summary": "Zepp Healthのスマートウォッチブランド「Amazfit」から、過酷な環境での使用を想定したトレイルランナー向けの最上位モデル「Amazfit Cheeta…",
-      "briefSummary": "Zepp Healthのスマートウォッチブランド「Amazfit」から、過酷な環境での使用を想定したトレイルランナー向けの最上位モデル「Amazfit Cheetah 2 Ultra」が登場した。大画面の視認性や質感、そして驚異的なバッテリ…",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 61,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://image.itmedia.co.jp/pcuser/articles/2610/21/cover_news054.jpg",
-      "publishedAt": "2026-10-21T06:00:00.000Z",
-      "capturedAt": "2026-10-22T00:37:43.616Z",
-      "time": "18時間前",
-      "sourceName": "ITmedia",
-      "sourceUrl": "https://www.itmedia.co.jp/pcuser/articles/2610/21/news054.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-all",
-          "source": "ITmedia",
-          "sourceName": "ITmedia",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 68,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "[ITmedia PC USER] 10万円弱のスマートウォッチ「Amazfit Cheetah 2 Ultra」 トレイルを走らない人が“日常使い”して分かったこと",
-          "url": "https://www.itmedia.co.jp/pcuser/articles/2610/21/news054.html",
-          "canonicalUrl": "https://www.itmedia.co.jp/pcuser/articles/2610/21/news054.html",
-          "publishedAt": "2026-10-21T06:00:00.000Z",
-          "publishedLabel": "10/21 06:00",
-          "thumbnailUrl": "https://image.itmedia.co.jp/pcuser/articles/2610/21/cover_news054.jpg"
-        }
-      ],
-      "whatHappened": "[ITmedia PC USER] 10万円弱のスマートウォッチ「Amazfit Cheet…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ガジェット好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-tech-itmedia-mobile-huawei-freebuds-neo-発売-1万円台で-世界最高水準のノイキャン性能-をうたう-itmedia.co.jp/mobile/articles/2610/21/news055.html",
-      "title": "[ITmedia Mobile] 「HUAWEI FreeBuds Neo」発売　1万円台で“世界最高水準のノイキャン性能”をうたう",
-      "summary": "ファーウェイ・ジャパンが10月21日、ワイヤレスイヤフォンの新製品「HUAWEI FreeBuds Neo」を発表した。FreeBudsシリーズの中ではProに次ぐ…",
-      "briefSummary": "ファーウェイ・ジャパンが10月21日、ワイヤレスイヤフォンの新製品「HUAWEI FreeBuds Neo」を発表した。FreeBudsシリーズの中ではProに次ぐスペックを持つ高機能なワイヤレスイヤフォン。ノイズキャンセリングは300Hz…",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 61,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://image.itmedia.co.jp/mobile/articles/2610/21/cover_news055.jpg",
-      "publishedAt": "2026-10-21T06:00:00.000Z",
-      "capturedAt": "2026-10-22T00:37:43.616Z",
-      "time": "18時間前",
-      "sourceName": "ITmedia",
-      "sourceUrl": "https://www.itmedia.co.jp/mobile/articles/2610/21/news055.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-all",
-          "source": "ITmedia",
-          "sourceName": "ITmedia",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 68,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "[ITmedia Mobile] 「HUAWEI FreeBuds Neo」発売　1万円台で“世界最高水準のノイキャン性能”をうたう",
-          "url": "https://www.itmedia.co.jp/mobile/articles/2610/21/news055.html",
-          "canonicalUrl": "https://www.itmedia.co.jp/mobile/articles/2610/21/news055.html",
-          "publishedAt": "2026-10-21T06:00:00.000Z",
-          "publishedLabel": "10/21 06:00",
-          "thumbnailUrl": "https://image.itmedia.co.jp/mobile/articles/2610/21/cover_news055.jpg"
-        }
-      ],
-      "whatHappened": "[ITmedia Mobile] 「HUAWEI FreeBuds Neo」発売 1万円台で…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-tech-不正アクセス急増は-saas離れ-を招くか-露呈したもう1つの-saas-is-dead-リスク-itmedia.co.jp/news/article/2610/21/2000002451",
-      "title": "不正アクセス急増は“SaaS離れ”を招くか？　露呈したもう1つの「SaaS is Dead」リスク",
-      "summary": "不正アクセス急増に伴い再燃する「SaaS is Dead」を巡る議論。ただ、これまでとは少々事情が違うようだ。",
-      "briefSummary": "不正アクセス急増に伴い再燃する「SaaS is Dead」を巡る議論。ただ、これまでとは少々事情が違うようだ。",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 57,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/21/2000002451/10010017/2048",
-      "publishedAt": "2026-10-21T06:00:00.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
-      "time": "1日前",
-      "sourceName": "ITmedia NEWS",
-      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/21/2000002451/",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-news",
-          "source": "ITmedia",
-          "sourceName": "ITmedia NEWS",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "不正アクセス急増は“SaaS離れ”を招くか？　露呈したもう1つの「SaaS is Dead」リスク",
-          "url": "https://www.itmedia.co.jp/news/article/2610/21/2000002451/",
-          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/21/2000002451/",
-          "publishedAt": "2026-10-21T06:00:00.000Z",
-          "publishedLabel": "10/21 06:00",
-          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/21/2000002451/10010017/2048"
-        }
-      ],
-      "whatHappened": "不正アクセス急増は“SaaS離れ”を招くか",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-crime-元timelesz猪俣周杜氏-不起訴処分-news.yahoo.co.jp/pickup/6599585",
-      "title": "元timelesz猪俣周杜氏 不起訴処分",
-      "summary": "STARTO ENTERTAINMENTは、元契約タレント・猪俣周杜氏に関し、東京地方検察庁が同日付で不起訴処分（起訴猶予）としたと報告した。【写真】まだ初々しい…timelesz加入前・最終審査で",
-      "briefSummary": "STARTO ENTERTAINMENTは、元契約タレント・猪俣周杜氏に関し、東京地方検察庁が同日付で不起訴処分（起訴猶予）としたと報告した。【写真】まだ初々しい…timelesz加入前・最終審査で",
-      "category": "crime",
-      "categories": [
-        "crime",
-        "general"
-      ],
-      "categoryLabel": "犯罪・事件",
-      "categoryLabels": [
-        "犯罪・事件"
-      ],
-      "score": 80,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-21T05:54:04.000Z",
-      "capturedAt": "2026-10-21T07:29:14.979Z",
-      "time": "1時間前",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6599585?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "元timelesz猪俣周杜氏 不起訴処分",
-          "url": "https://news.yahoo.co.jp/pickup/6599585?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6599585?source=rss",
-          "publishedAt": "2026-10-21T05:54:04.000Z",
-          "publishedLabel": "10/21 05:54",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "元timelesz猪俣周杜氏 不起訴処分",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-business-米ネトフリ純利益44-増-7-9月期-news.yahoo.co.jp/pickup/6599584",
-      "title": "米ネトフリ純利益44%増 7～9月期",
-      "summary": "【ニューヨーク共同】米動画配信大手ネットフリックスが20日発表した2026年7～9月期決算は、純利益が前年同期比44％増の36億6392万ドル（約5800億円）、売上高は12％増の128億7417万",
-      "briefSummary": "ただ、同時に公表した10～12月期の売上高の伸び率は4四半期連続で減速する見込み。ロイター通信によると純利益見通しも市場予想を下回ったとして、成長鈍化への警戒感から同社の株価は時間外取引で一時7％近く急落した。 ネットフリックスはユーチューブや動画投稿アプリ「TikTok」などとの視聴時間を巡る競争に直面している。",
-      "category": "business",
-      "categories": [
-        "business",
-        "general"
-      ],
-      "categoryLabel": "経済",
-      "categoryLabels": [
-        "経済"
-      ],
-      "score": 65,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-21T05:50:45.000Z",
-      "capturedAt": "2026-10-22T00:37:43.616Z",
-      "time": "18時間前",
-      "sourceName": "Yahoo!ニュース / 経済",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6599584?source=rss",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-business",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 経済",
-          "sourceGroup": "important-news",
-          "sourcePriority": 78,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "米ネトフリ純利益44%増 7～9月期",
-          "url": "https://news.yahoo.co.jp/pickup/6599584?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6599584?source=rss",
-          "publishedAt": "2026-10-21T05:50:45.000Z",
-          "publishedLabel": "10/21 05:50",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "米ネトフリ純利益44%増 7～9月期",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "投資家"
-      ]
-    },
-    {
-      "id": "auto-entertainment-各サイズ買いました-ニトリの-199円エコバッグ-が大好評-サブバッグとして使いやすい-マチが広くて丈夫-肩で担げる-news.yahoo.co.jp/articles/a2d4c5ec0145fff725de6afd0b71a313316dd8d5",
-      "title": "「各サイズ買いました」　ニトリの“199円エコバッグ”が大好評　「サブバッグとして使いやすい」「マチが広くて丈夫」「肩で担げる」",
-      "summary": "ニトリの「デコホーム」で販売されている“エコバッグ”が、シンプルで使い勝手が良いと人気を集めています。199円で買えるコスパの良さも魅力の一つです。【画像】ニトリの…",
-      "briefSummary": "ニトリの「デコホーム」で販売されている“エコバッグ”が、シンプルで使い勝手が良いと人気を集めています。199円で買えるコスパの良さも魅力の一つです。【画像】ニトリの“199円エコバッグ” 本記事ではそ",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 71,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-21T05:50:00.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
-      "time": "16時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/a2d4c5ec0145fff725de6afd0b71a313316dd8d5?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「各サイズ買いました」　ニトリの“199円エコバッグ”が大好評　「サブバッグとして使いやすい」「マチが広くて丈夫」「肩で担げる」",
-          "url": "https://news.yahoo.co.jp/articles/a2d4c5ec0145fff725de6afd0b71a313316dd8d5?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/a2d4c5ec0145fff725de6afd0b71a313316dd8d5?source=rss",
-          "publishedAt": "2026-10-21T05:50:00.000Z",
-          "publishedLabel": "10/21 05:50",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「各サイズ買いました」 ニトリの“199円エコバッグ”が大好評 「サブバッグとして使いやすい…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-sns-honto-外部委託先への不正アクセスによるお客様情報漏えいの可能性について-honto.jp/info/detail_041000135344.html",
-      "title": "honto - 外部委託先への不正アクセスによるお客様情報漏えいの可能性について",
-      "summary": "",
-      "briefSummary": "",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "SNS",
-      "categoryLabels": [
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 80,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://honto.jp/library/img/pc/banner_info_og.png",
-      "publishedAt": "2026-10-21T05:48:13.000Z",
-      "capturedAt": "2026-10-21T13:11:47.066Z",
-      "time": "7時間前",
-      "sourceName": "はてなブックマーク人気",
-      "sourceUrl": "https://honto.jp/info/detail_041000135344.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "hatena-hotentry",
-          "source": "はてなブックマーク",
-          "sourceName": "はてなブックマーク人気",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "trend",
-            "buzz"
-          ],
-          "title": "honto - 外部委託先への不正アクセスによるお客様情報漏えいの可能性について",
-          "url": "https://honto.jp/info/detail_041000135344.html",
-          "canonicalUrl": "https://honto.jp/info/detail_041000135344.html",
-          "publishedAt": "2026-10-21T05:48:13.000Z",
-          "publishedLabel": "10/21 05:48",
-          "thumbnailUrl": "https://honto.jp/library/img/pc/banner_info_og.png"
-        }
-      ],
-      "whatHappened": "honto - 外部委託先への不正アクセスによるお客様情報漏えいの可能性について",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-games-nintendo-switch-2-switch向けセールに約380本どどんと追加-ユニコーンオーバーロード-が半額-超探偵事件簿-レインコード-は最安値更新--automaton-media.com/articles/newsjp/20261021-474645",
-      "title": "Nintendo Switch 2/Switch向けセールに約380本どどんと追加。『ユニコーンオーバーロード』が半額、『超探偵事件簿 レインコード』は最安値更新、軽トラねこ配達ゲームなど高評価インディーも安い",
-      "summary": "Nintendo Switch 2/Nintendo Switch向けタイトルの新たなセールが開始された。対象タイトルは約380本。本記事では、その中から注目タイト…",
-      "briefSummary": "Nintendo Switch 2/Nintendo Switch向けタイトルの新たなセールが開始された。対象タイトルは約380本。本記事では、その中から注目タイトルをいくつか紹介する。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 71,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261021-474645-header.jpg",
-      "publishedAt": "2026-10-21T05:46:57.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
-      "time": "1日前",
-      "sourceName": "AUTOMATON",
-      "sourceUrl": "https://automaton-media.com/articles/newsjp/20261021-474645/",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "automaton",
-          "source": "AUTOMATON",
-          "sourceName": "AUTOMATON",
-          "sourceGroup": "games",
-          "sourcePriority": 96,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "steam",
-            "switch",
-            "pc"
-          ],
-          "title": "Nintendo Switch 2/Switch向けセールに約380本どどんと追加。『ユニコーンオーバーロード』が半額、『超探偵事件簿 レインコード』は最安値更新、軽トラねこ配達ゲームなど高評価インディーも安い",
-          "url": "https://automaton-media.com/articles/newsjp/20261021-474645/",
-          "canonicalUrl": "https://automaton-media.com/articles/newsjp/20261021-474645/",
-          "publishedAt": "2026-10-21T05:46:57.000Z",
-          "publishedLabel": "10/21 05:46",
-          "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261021-474645-header.jpg"
-        }
-      ],
-      "whatHappened": "Nintendo Switch 2/Switch向けセールに約380本どどんと追加",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "終了前の条件確認や購入判断に直結しやすい情報です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き",
-        "セール好き",
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-sports-ソーラン節-が小学生発で再ブーム-tiktokで乃木坂46やcutie-streetへ波及-kai-you.net/article/96899",
-      "title": "「ソーラン節」が小学生発で再ブーム　TikTokで乃木坂46やCUTIE STREETへ波及",
-      "summary": "運動会でもおなじみの「ソーラン節」。令和の今、TikTokで新たなブームを生んでいる。主に使用されているのは、民謡歌手・伊藤多喜雄さんとTAKIO BANDによる楽…",
-      "briefSummary": "運動会でもおなじみの「ソーラン節」。令和の今、TikTokで新たなブームを生んでいる。主に使用されているのは、民謡歌手・伊藤多喜雄さんとTAKIO BANDによる楽曲「TAKIO'S SOHRAN 2」。小学生が投稿した「ソーラン節 自由形…",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 62,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://img.kai-you.net/storage/2026/10/f8a883b6-cd95-4286-bd9e-9343069bbdb8/main/soran.webp",
-      "publishedAt": "2026-10-21T05:46:00.000Z",
-      "capturedAt": "2026-10-22T15:34:32.279Z",
-      "time": "1日前",
-      "sourceName": "KAI-YOU",
-      "sourceUrl": "https://kai-you.net/article/96899",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "kai-you",
-          "source": "KAI-YOU",
-          "sourceName": "KAI-YOU",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "meme",
-            "otaku"
-          ],
-          "title": "「ソーラン節」が小学生発で再ブーム　TikTokで乃木坂46やCUTIE STREETへ波及",
-          "url": "https://kai-you.net/article/96899",
-          "canonicalUrl": "https://kai-you.net/article/96899",
-          "publishedAt": "2026-10-21T05:46:00.000Z",
-          "publishedLabel": "10/21 05:46",
-          "thumbnailUrl": "https://img.kai-you.net/storage/2026/10/f8a883b6-cd95-4286-bd9e-9343069bbdb8/main/soran.webp"
-        }
-      ],
-      "whatHappened": "「ソーラン節」が小学生発で再ブーム TikTokで乃木坂46やCUTIE STREETへ波及",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-games-社会から排除された感染者のスラム街で父親を探すステルスadv-rustown-最新トレイラー-発売日も決定-gamespark.jp/article/2026/10/21/173885.html",
-      "title": "社会から排除された感染者のスラム街で父親を探すステルスADV『RUSTOWN』最新トレイラー！ 発売日も決定",
-      "summary": "感染によって記憶と知能が低下する後遺症を抱えたまま行方不明となった父親からの手紙を受けた主人公ジアンは、社会から排除された感染者たちが集まってできたスラム街「ラスタウン」へ向かうこととなります。",
-      "briefSummary": "Plotrickは本日10月21日に開催された「ID@Xbox Showcase」において、開発を進めているステルスアドベンチャーゲーム『 RUSTOWN （ ラスタウン ）』の最新トレイラーを公開し、2027年6月30日に発売となることを明らかにしました。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 62,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1209253.jpg",
-      "publishedAt": "2026-10-21T05:45:02.000Z",
-      "capturedAt": "2026-10-22T05:20:09.495Z",
-      "time": "23時間前",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/10/21/173885.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "社会から排除された感染者のスラム街で父親を探すステルスADV『RUSTOWN』最新トレイラー！ 発売日も決定",
-          "url": "http://www.gamespark.jp/article/2026/10/21/173885.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/21/173885.html",
-          "publishedAt": "2026-10-21T05:45:02.000Z",
-          "publishedLabel": "10/21 05:45",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1209253.jpg"
-        }
-      ],
-      "whatHappened": "社会から排除された感染者のスラム街で父親を探すステルスADV『RUSTOWN』最新トレイラー",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
       ]
     }
   ]

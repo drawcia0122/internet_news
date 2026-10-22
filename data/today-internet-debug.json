@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-22T00:40:16.778Z",
+  "generatedAt": "2026-10-22T05:22:41.868Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-3",
-  "selectedTitle": "「阿部寛のホームページ」がXでトレンド入り。PHPの脆弱性対策のため緊急メンテナンスを実施",
+  "selectedClusterId": "today-cluster-4",
+  "selectedTitle": "配信者「つみみ」の活動に介入して失踪した“推し”の真相に迫るサイコホラーゲーム『つみみじかん ～狂オシイホド愛シテル～』Steamにて本日発売",
   "candidates": [
     {
-      "clusterId": "today-cluster-3",
-      "title": "「阿部寛のホームページ」がXでトレンド入り。PHPの脆弱性対策のため緊急メンテナンスを実施",
+      "clusterId": "today-cluster-4",
+      "title": "配信者「つみみ」の活動に介入して失踪した“推し”の真相に迫るサイコホラーゲーム『つみみじかん ～狂オシイホド愛シテル～』Steamにて本日発売",
       "category": "games",
       "categories": [
         "games",
         "net-culture",
-        "sns",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 71.5,
-      "confidence": 0.43,
+      "buzzScore": 76,
+      "confidence": 0.47,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -30,8 +30,8 @@
         "internetNativeBoost": 8,
         "search": 5.8,
         "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 8.3,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -58,18 +58,124 @@
       ]
     },
     {
-      "clusterId": "today-cluster-212",
-      "title": "小4息子のお泊まり会→ママが用意したのは……　圧巻の食卓に「次も行っちゃう」「いつかこーゆーのやってあげたい」",
-      "category": "entertainment",
+      "clusterId": "today-cluster-47",
+      "title": "柔道の元 日本代表選手を逮捕　詐欺グループの一員か　髙上智史容疑者　アジア大会の銀メダリスト",
+      "category": "crime",
       "categories": [
-        "entertainment",
+        "crime",
+        "sports",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 67.8,
-      "confidence": 0.38,
-      "articleCount": 1,
+      "buzzScore": 67.3,
+      "confidence": 0.43,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 18.9,
+        "internetNativeBoost": 8,
+        "search": 5.6,
+        "social": 8.3,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 7,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 43.8,
+        "internalSocialScore": 64.5
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-44",
+      "title": "G7テレビ会議「回線間に合わず」欠席　問われる首相の危機管理力　与野党に波紋",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 66.9,
+      "confidence": 0.45,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 20.7,
+        "internetNativeBoost": 8,
+        "search": 6.2,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 48.5,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1",
+      "title": "Nintendo Switch 2/Switch向けセール今日も大量約630本追加。人気ソウルライク『Lies of P』や『モンハンストーリーズ3』、ガソスタ経営シムなど最安値級",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 65.5,
+      "confidence": 0.47,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
@@ -77,16 +183,16 @@
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
         "trend": 18.7,
         "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 6,
-        "velocity": 4.2,
+        "search": 5.8,
+        "social": 4.2,
+        "velocity": 8.3,
         "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 6,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -96,13 +202,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 40,
         "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 32.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -111,122 +217,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-230",
-      "title": "5人姉妹のママ、三つ子を妊娠→性別が分かり……　驚きの結果に「ドキドキワクワク！」「元気で産まれてきますように！」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.2,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 32.9,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-190",
-      "title": "[ITmedia News] Tesla決算、営業益56％減　FSD契約は67％増の174万件　SpaceX合併は「昨日すべて話した」とマスク氏",
-      "category": "business",
-      "categories": [
-        "business",
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 62.6,
-      "confidence": 0.37,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.4,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-14",
-      "title": "EA傘下のスタジオ「BioWare」の閉鎖が発表、『Mass Effect』次期プロジェクトの開発も終了へ。『Dragon Age』『ANTHEM』など手掛ける",
+      "clusterId": "today-cluster-40",
+      "title": "「阿部寛のホームページ」がXでトレンド入り。PHPの脆弱性対策のため緊急メンテナンスを実施",
       "category": "games",
       "categories": [
         "games",
         "net-culture",
+        "sns",
         "general"
       ],
-      "buzzScore": 61.8,
+      "buzzScore": 63.8,
       "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
@@ -237,10 +237,10 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.4,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 5.6,
+        "search": 5.6,
+        "social": 7,
         "velocity": 0,
         "freshness": 7,
         "authority": 1.5,
@@ -257,10 +257,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 23.1,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 42.7,
-        "internalSocialScore": 43.4
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 43.4,
+        "internalSocialScore": 54.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

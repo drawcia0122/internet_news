@@ -1,66 +1,125 @@
 {
-  "generatedAt": "2026-10-21T22:01:57.996Z",
-  "totalCount": 1268,
+  "generatedAt": "2026-10-22T00:37:43.616Z",
+  "totalCount": 1249,
   "categoryCounts": {
-    "all": 1268,
-    "general": 50,
-    "tech": 179,
-    "business": 85,
-    "politics": 49,
-    "entertainment": 462,
-    "anime": 54,
-    "games": 459,
-    "game-features": 10,
+    "all": 1249,
+    "general": 51,
+    "tech": 181,
+    "business": 98,
+    "politics": 53,
+    "entertainment": 452,
+    "anime": 50,
+    "games": 439,
+    "game-features": 11,
     "anime-features": 3,
-    "manga": 59,
-    "books": 15,
+    "manga": 55,
+    "books": 13,
     "sports": 38,
-    "sns": 598,
-    "net-culture": 688,
+    "sns": 599,
+    "net-culture": 687,
     "matome": 0,
-    "crime": 28,
-    "adult": 8,
-    "world": 63
+    "crime": 25,
+    "adult": 7,
+    "world": 67
   },
   "hasMore": false,
   "nextPage": 0,
   "items": [
     {
-      "id": "auto-politics-2026年-横浜市長選挙の感想-goldhead.hatenablog.com/entry/2026/10/19/190418",
-      "title": "2026年　横浜市長選挙の感想",
-      "summary": "横浜市長選挙があった。山中竹春市長によるパワハラ事件とそれによる辞職、イレギュラーな選挙だった。 山中は「反カジノ」を掲げて、ハマのドンとかいうヤクザか何かわからな…",
-      "briefSummary": "横浜市長選挙があった。山中竹春市長によるパワハラ事件とそれによる辞職、イレギュラーな選挙だった。 山中は「反カジノ」を掲げて、ハマのドンとかいうヤクザか何かわからない港湾利権とともに最初の選挙を勝った。おれはカジノあり派（たぶん反対と賛成は…",
-      "category": "politics",
+      "id": "auto-games-steamのゲーム価格-メーカーによってどれだけ違う-筑波大の研究で-大手ほど独自路線-インド・ブラジルは高め路線-など-値付けの4タイプ-くっきり-automaton-media.com/articles/newsjp/20261019-474326",
+      "title": "Steamのゲーム価格、メーカーによってどれだけ違う？筑波大の研究で“大手ほど独自路線”“インド・ブラジルは高め路線”など「値付けの4タイプ」くっきり",
+      "summary": "筑波大学の研究によると、Steamにおける販売元の価格設定については、4つの特徴的なパターンが存在するという。",
+      "briefSummary": "筑波大学の研究によると、Steamにおける販売元の価格設定については、4つの特徴的なパターンが存在するという。",
+      "category": "games",
       "categories": [
-        "politics",
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 62,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261019-474326-header.jpg",
+      "publishedAt": "2026-10-19T10:52:10.000Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
+      "time": "2日前",
+      "sourceName": "AUTOMATON",
+      "sourceUrl": "https://automaton-media.com/articles/newsjp/20261019-474326/",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "automaton",
+          "source": "AUTOMATON",
+          "sourceName": "AUTOMATON",
+          "sourceGroup": "games",
+          "sourcePriority": 96,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "steam",
+            "switch",
+            "pc"
+          ],
+          "title": "Steamのゲーム価格、メーカーによってどれだけ違う？筑波大の研究で“大手ほど独自路線”“インド・ブラジルは高め路線”など「値付けの4タイプ」くっきり",
+          "url": "https://automaton-media.com/articles/newsjp/20261019-474326/",
+          "canonicalUrl": "https://automaton-media.com/articles/newsjp/20261019-474326/",
+          "publishedAt": "2026-10-19T10:52:10.000Z",
+          "publishedLabel": "10/19 10:52",
+          "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261019-474326-header.jpg"
+        }
+      ],
+      "whatHappened": "Steamのゲーム価格、メーカーによってどれだけ違う",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-tech-ニフティ-54万件超漏えいの可能性-光回線の申し込みシステムに不正アクセス-itmedia.co.jp/news/article/2610/19/2000002399",
+      "title": "ニフティ、54万件超漏えいの可能性　光回線の申し込みシステムに不正アクセス",
+      "summary": "ニフティが、同社の回線申し込みや受付管理に関するシステムが不正アクセスを受け、最大54万2513件の情報が漏えいした可能性があると発表した。",
+      "briefSummary": "ニフティが、同社の回線申し込みや受付管理に関するシステムが不正アクセスを受け、最大54万2513件の情報が漏えいした可能性があると発表した。",
+      "category": "tech",
+      "categories": [
+        "tech",
         "sns",
         "net-culture",
         "general"
       ],
-      "categoryLabel": "政治",
+      "categoryLabel": "テック",
       "categoryLabels": [
-        "政治",
+        "テック",
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 61,
+      "score": 57,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/31cf7fce578da16a12be139c659ac3500127631c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fg%2Fgoldhead%2F20261019%2F20261019182744.jpg",
-      "publishedAt": "2026-10-19T10:16:10.000Z",
-      "capturedAt": "2026-10-20T06:31:37.281Z",
-      "time": "20時間前",
-      "sourceName": "はてなブックマーク人気",
-      "sourceUrl": "https://goldhead.hatenablog.com/entry/2026/10/19/190418",
+      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002399/10009831/2048",
+      "publishedAt": "2026-10-19T10:34:36.000Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
+      "time": "2日前",
+      "sourceName": "ITmedia NEWS",
+      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002399/",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
+        "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "hatena-hotentry",
-          "source": "はてなブックマーク",
-          "sourceName": "はてなブックマーク人気",
+          "sourceId": "itmedia-news",
+          "source": "ITmedia",
+          "sourceName": "ITmedia NEWS",
           "sourceGroup": "net-culture",
           "sourcePriority": 74,
           "official": false,
@@ -69,251 +128,17 @@
           "sourceTags": [
             "net-culture",
             "sns",
-            "trend",
-            "buzz"
+            "tech"
           ],
-          "title": "2026年　横浜市長選挙の感想",
-          "url": "https://goldhead.hatenablog.com/entry/2026/10/19/190418",
-          "canonicalUrl": "https://goldhead.hatenablog.com/entry/2026/10/19/190418",
-          "publishedAt": "2026-10-19T10:16:10.000Z",
-          "publishedLabel": "10/19 10:16",
-          "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/31cf7fce578da16a12be139c659ac3500127631c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fg%2Fgoldhead%2F20261019%2F20261019182744.jpg"
+          "title": "ニフティ、54万件超漏えいの可能性　光回線の申し込みシステムに不正アクセス",
+          "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002399/",
+          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002399/",
+          "publishedAt": "2026-10-19T10:34:36.000Z",
+          "publishedLabel": "10/19 10:34",
+          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002399/10009831/2048"
         }
       ],
-      "whatHappened": "2026年 横浜市長選挙の感想",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "ネット文化を追う人",
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-games-麻枝准氏-咽頭がんを公表ー-体力を温存して創作活動に専念-今後の活動についても報告-inside-games.jp/article/2026/10/19/189507.html",
-      "title": "麻枝准氏、咽頭がんを公表ー「体力を温存して創作活動に専念」今後の活動についても報告",
-      "summary": "",
-      "briefSummary": "『CLANNAD』や『リトルバスターズ！』、『Angel Beats!』などを手掛けたことで知られるクリエイターの麻枝准が、咽頭がんの診断を受けたことを公表した。2026年10月19日、所属するビジュアルアーツ／Keyが発表したもので、今後の創作活動の見通しも伝えられた。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 66,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1795749.jpg",
-      "publishedAt": "2026-10-19T10:15:06.000Z",
-      "capturedAt": "2026-10-20T06:31:37.281Z",
-      "time": "20時間前",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/10/19/189507.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "麻枝准氏、咽頭がんを公表ー「体力を温存して創作活動に専念」今後の活動についても報告",
-          "url": "https://www.inside-games.jp/article/2026/10/19/189507.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/10/19/189507.html",
-          "publishedAt": "2026-10-19T10:15:06.000Z",
-          "publishedLabel": "10/19 10:15",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1795749.jpg"
-        }
-      ],
-      "whatHappened": "麻枝准氏、咽頭がんを公表ー「体力を温存して創作活動に専念」今後の活動についても報告",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-アベイル限定-ハローキティ-誕生日お祝いグッズが10月24日発売-日焼けアニマルアートなどさまざま-サンリオキャラクターズ-新作アイテムも-inside-games.jp/article/2026/10/19/189506.html",
-      "title": "アベイル限定「ハローキティ」誕生日お祝いグッズが10月24日発売！日焼けアニマルアートなどさまざま、「サンリオキャラクターズ」新作アイテムも",
-      "summary": "11月1日は「ハローキティ」の誕生日！アベイルにて「サンリオキャラクターズ」新作アイテムが10月24日発売。",
-      "briefSummary": "「サンリオキャラクターズ」新作アイテムは10月24日より全国アベイル店舗、同日12時よりしまむらパーク（オンラインストア）にて発売します。なお、松森店は対象外です。詳細は サンリオ公式サイト をご確認ください。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 74,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1795743.jpg",
-      "publishedAt": "2026-10-19T10:15:03.000Z",
-      "capturedAt": "2026-10-20T01:14:38.148Z",
-      "time": "14時間前",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/10/19/189506.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "アベイル限定「ハローキティ」誕生日お祝いグッズが10月24日発売！日焼けアニマルアートなどさまざま、「サンリオキャラクターズ」新作アイテムも",
-          "url": "https://www.inside-games.jp/article/2026/10/19/189506.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/10/19/189506.html",
-          "publishedAt": "2026-10-19T10:15:03.000Z",
-          "publishedLabel": "10/19 10:15",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1795743.jpg"
-        }
-      ],
-      "whatHappened": "アベイル限定「ハローキティ」誕生日お祝いグッズが10月24日発売",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-すごーい-夢グループの翻訳機で-doom-が動いちゃうんですか-さまざまな機器をハックする日本発youtubeチャンネルが話題に-gamespark.jp/article/2026/10/19/173799.html",
-      "title": "すごーい！夢グループの翻訳機で『DOOM』が動いちゃうんですか！？さまざまな機器をハックする日本発YouTubeチャンネルが話題に",
-      "summary": "",
-      "briefSummary": "お茶漬け★太郎氏は今回の翻訳機以外にもさまざまな電子機器で『DOOM』を動かす実験を行っているので、興味を持たれた方は 同氏のYouTubeチャンネル をご確認ください。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 66,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1208479.png",
-      "publishedAt": "2026-10-19T10:15:03.000Z",
-      "capturedAt": "2026-10-20T06:31:37.281Z",
-      "time": "20時間前",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/10/19/173799.html",
-      "hotReasons": [
-        "検索需要やトレンド化の兆しが強い話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "すごーい！夢グループの翻訳機で『DOOM』が動いちゃうんですか！？さまざまな機器をハックする日本発YouTubeチャンネルが話題に",
-          "url": "http://www.gamespark.jp/article/2026/10/19/173799.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/19/173799.html",
-          "publishedAt": "2026-10-19T10:15:03.000Z",
-          "publishedLabel": "10/19 10:15",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1208479.png"
-        }
-      ],
-      "whatHappened": "すごーい",
-      "whyHot": "検索需要やトレンド化の兆しが強い話題です。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-entertainment-長財布から乗り換えました-メンズ向け-ミニ財布-3選-ポケットに入る薄さ-結局コレ一択-小さいのに折りたたまずにお札が入る-news.yahoo.co.jp/articles/475b0267efb1eb128538b605f1d1f53ab19f6546",
-      "title": "「長財布から乗り換えました」　メンズ向け“ミニ財布”3選　「ポケットに入る薄さ」「結局コレ一択」「小さいのに折りたたまずにお札が入る」",
-      "summary": "近年はキャッシュレス決済の利用が広がり、現金をあまり持ち歩かないという人も多いでしょう。それに伴い、財布をコンパクトにする人も。ポケットに収まりやすい薄型や、小さく…",
-      "briefSummary": "近年はキャッシュレス決済の利用が広がり、現金をあまり持ち歩かないという人も多いでしょう。それに伴い、財布をコンパクトにする人も。ポケットに収まりやすい薄型や、小さくても紙幣を折らずに収納できるものなど",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 77,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-19T10:15:00.000Z",
-      "capturedAt": "2026-10-19T22:17:36.574Z",
-      "time": "12時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/475b0267efb1eb128538b605f1d1f53ab19f6546?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「長財布から乗り換えました」　メンズ向け“ミニ財布”3選　「ポケットに入る薄さ」「結局コレ一択」「小さいのに折りたたまずにお札が入る」",
-          "url": "https://news.yahoo.co.jp/articles/475b0267efb1eb128538b605f1d1f53ab19f6546?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/475b0267efb1eb128538b605f1d1f53ab19f6546?source=rss",
-          "publishedAt": "2026-10-19T10:15:00.000Z",
-          "publishedLabel": "10/19 10:15",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「長財布から乗り換えました」 メンズ向け“ミニ財布”3選 「ポケットに入る薄さ」「結局コレ一…",
+      "whatHappened": "ニフティ、54万件超漏えいの可能性 光回線の申し込みシステムに不正アクセス",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
@@ -321,55 +146,62 @@
       ]
     },
     {
-      "id": "auto-crime-農作業の死亡事故多発-鳥取で警報-news.yahoo.co.jp/pickup/6599380",
-      "title": "農作業の死亡事故多発 鳥取で警報",
-      "summary": "18日、鳥取市の田んぼで作業をしていた85歳の男性がトラクターのロータリーに巻き込まれ、死亡する事故がありました。農作業中の死亡事故は県内で今年度4件目です。【写真を見る】「農機具に顔面を挟まれて意",
-      "briefSummary": "「農機具に顔面を挟まれて意識がない」…動いているトラクターのロータリーに巻き込まれたか 農作業中の85歳の男性が死亡 県内で今年度4件目の農作業死亡事故",
-      "category": "crime",
+      "id": "auto-net-culture-タイムズカー-本人確認画像を10月末までに削除-被害確認に影響は-懸念の声にパーク24が説明-j-cast.com/2026/10/19518560.html",
+      "title": "タイムズカー、本人確認画像を10月末までに削除　被害確認に影響は？懸念の声にパーク24が説明",
+      "summary": "パーク24は2026年10月16日、同社が運営するカーシェアリングサービス「タイムズカー」をめぐり、本人確認書類の画像保有期間についてのルールを見直したこと、現在同…",
+      "briefSummary": "パーク24は2026年10月16日、同社が運営するカーシェアリングサービス「タイムズカー」をめぐり、本人確認書類の画像保有期間についてのルールを見直したこと、現在同社が保有している本人確認書類の画像は10月末日までに削除することを発表した。…",
+      "category": "net-culture",
       "categories": [
-        "crime",
+        "net-culture",
+        "sns",
         "general"
       ],
-      "categoryLabel": "犯罪・事件",
+      "categoryLabel": "ネットカルチャー",
       "categoryLabels": [
-        "犯罪・事件"
+        "ネットカルチャー",
+        "SNS"
       ],
-      "score": 64,
+      "score": 56,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-19T10:14:07.000Z",
-      "capturedAt": "2026-10-19T22:17:36.574Z",
-      "time": "12時間前",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6599380?source=rss",
+      "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019191415.jpg",
+      "publishedAt": "2026-10-19T10:26:50.000Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
+      "time": "2日前",
+      "sourceName": "J-CASTニュース",
+      "sourceUrl": "https://www.j-cast.com/2026/10/19518560.html",
       "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。"
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
+          "sourceId": "jcast",
+          "source": "J-CASTニュース",
+          "sourceName": "J-CASTニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 72,
           "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "農作業の死亡事故多発 鳥取で警報",
-          "url": "https://news.yahoo.co.jp/pickup/6599380?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6599380?source=rss",
-          "publishedAt": "2026-10-19T10:14:07.000Z",
-          "publishedLabel": "10/19 10:14",
-          "thumbnailUrl": null
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz"
+          ],
+          "title": "タイムズカー、本人確認画像を10月末までに削除　被害確認に影響は？懸念の声にパーク24が説明",
+          "url": "https://www.j-cast.com/2026/10/19518560.html",
+          "canonicalUrl": "https://www.j-cast.com/2026/10/19518560.html",
+          "publishedAt": "2026-10-19T10:26:50.000Z",
+          "publishedLabel": "10/19 10:26",
+          "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019191415.jpg"
         }
       ],
-      "whatHappened": "農作業の死亡事故多発 鳥取で警報",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "whatHappened": "タイムズカー、本人確認画像を10月末までに削除 被害確認に影響は",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
-        "時事ニュースを追う人"
+        "ネット文化を追う人"
       ]
     },
     {
@@ -393,7 +225,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261019-474308-header.jpg",
       "publishedAt": "2026-10-19T10:07:23.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/columnjp/20261019-474308/",
@@ -433,369 +265,6 @@
       ]
     },
     {
-      "id": "auto-entertainment-二代目です-なかなか他のが買えないです-ラシットの-上品ショルダーバッグ-に絶賛の声-見た目以上に入ります-雨の日に気軽に使える-肩が痛くならない-news.yahoo.co.jp/articles/52d0246cd6ad0d45b16841601896f8fdb795d9ad",
-      "title": "「二代目です」「なかなか他のが買えないです」ラシットの“上品ショルダーバッグ”に絶賛の声　「見た目以上に入ります」「雨の日に気軽に使える」「肩が痛くならない」",
-      "summary": "働く女性を中心に幅広い世代に支持されている、バッグ・小物ブランド「russet（ラシット）」。その上品なモノグラム柄と機能性を兼ね備えたショルダーバッグを紹介します…",
-      "briefSummary": "働く女性を中心に幅広い世代に支持されている、バッグ・小物ブランド「russet（ラシット）」。その上品なモノグラム柄と機能性を兼ね備えたショルダーバッグを紹介します。【画像】ラシットの“上品ショルダー",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 77,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-19T10:05:00.000Z",
-      "capturedAt": "2026-10-19T22:17:36.574Z",
-      "time": "12時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/52d0246cd6ad0d45b16841601896f8fdb795d9ad?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「二代目です」「なかなか他のが買えないです」ラシットの“上品ショルダーバッグ”に絶賛の声　「見た目以上に入ります」「雨の日に気軽に使える」「肩が痛くならない」",
-          "url": "https://news.yahoo.co.jp/articles/52d0246cd6ad0d45b16841601896f8fdb795d9ad?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/52d0246cd6ad0d45b16841601896f8fdb795d9ad?source=rss",
-          "publishedAt": "2026-10-19T10:05:00.000Z",
-          "publishedLabel": "10/19 10:05",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「二代目です」「なかなか他のが買えないです」ラシットの“上品ショルダーバッグ”に絶賛の声 「…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-games-花畑で微笑むティファ-エアリスが可愛い-ff-シリーズ40周年記念の2027年壁掛け-卓上カレンダーセットが登場-inside-games.jp/article/2026/10/19/189505.html",
-      "title": "花畑で微笑むティファ&エアリスが可愛い！『FF』シリーズ40周年記念の2027年壁掛け＆卓上カレンダーセットが登場",
-      "summary": "『ファイナルファンタジー』シリーズ40周年を記念した、2027年公式カレンダーセットが登場。",
-      "briefSummary": "スクウェア・エニックスは、 『ファイナルファンタジー』 シリーズ40周年を記念した 「2027年公式壁掛け＆卓上カレンダーセット」 を発売します。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 73,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1795717.jpg",
-      "publishedAt": "2026-10-19T10:00:03.000Z",
-      "capturedAt": "2026-10-20T01:14:38.148Z",
-      "time": "15時間前",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/10/19/189505.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "花畑で微笑むティファ&エアリスが可愛い！『FF』シリーズ40周年記念の2027年壁掛け＆卓上カレンダーセットが登場",
-          "url": "https://www.inside-games.jp/article/2026/10/19/189505.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/10/19/189505.html",
-          "publishedAt": "2026-10-19T10:00:03.000Z",
-          "publishedLabel": "10/19 10:00",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1795717.jpg"
-        }
-      ],
-      "whatHappened": "花畑で微笑むティファ&エアリスが可愛い",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-テイルズ-オブ-エターニア-リマスター-腕時計が発売決定-限定2-000点-裏蓋にはインフェリアとセレスティアのマップが刻印-gamespark.jp/article/2026/10/19/173798.html",
-      "title": "『テイルズ オブ エターニア リマスター』腕時計が発売決定！ 限定2,000点、裏蓋にはインフェリアとセレスティアのマップが刻印",
-      "summary": "東栄は、『テイルズ オブ エターニア リマスター』発売記念クロノグラフ腕時計を限定2,000点で発売！",
-      "briefSummary": "裏蓋には、オルバース界面を挟んで向かい合うインフェリアとセレスティアのマップを刻印。さらに、『テイルズ オブ エターニア』が発売された2000年にちなみ、特別限定生産2,000点のエディションナンバーを一点ずつ刻印しています。なお、エディションナンバーはランダムでのお届けとなり、指定はできません。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 65,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1208449.jpg",
-      "publishedAt": "2026-10-19T10:00:03.000Z",
-      "capturedAt": "2026-10-20T06:31:37.281Z",
-      "time": "20時間前",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/10/19/173798.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "『テイルズ オブ エターニア リマスター』腕時計が発売決定！ 限定2,000点、裏蓋にはインフェリアとセレスティアのマップが刻印",
-          "url": "http://www.gamespark.jp/article/2026/10/19/173798.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/19/173798.html",
-          "publishedAt": "2026-10-19T10:00:03.000Z",
-          "publishedLabel": "10/19 10:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1208449.jpg"
-        }
-      ],
-      "whatHappened": "『テイルズ オブ エターニア リマスター』腕時計が発売決定",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-entertainment-クリスピー・クリーム・ドーナツを箱買い-中身を見ると-驚きの光景に-さすが-ラッキー-news.yahoo.co.jp/articles/0b07fe6ab83d56b785ebf9e49a9785b566e313d4",
-      "title": "クリスピー・クリーム・ドーナツを箱買い→中身を見ると……　驚きの光景に「さすが」「ラッキー！」",
-      "summary": "アメリカのクリスピー・クリーム・ドーナツでオリジナル・グレーズドを6個注文したところ、箱の中に7個入っていた。偶然遭遇したラッキーな出来事がThreadsで話題です…",
-      "briefSummary": "アメリカのクリスピー・クリーム・ドーナツでオリジナル・グレーズドを6個注文したところ、箱の中に7個入っていた。偶然遭遇したラッキーな出来事がThreadsで話題です。投稿は記事執筆時点で5万9000回",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "world",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー",
-        "国際"
-      ],
-      "score": 77,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-19T10:00:00.000Z",
-      "capturedAt": "2026-10-19T22:17:36.574Z",
-      "time": "12時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/0b07fe6ab83d56b785ebf9e49a9785b566e313d4?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "クリスピー・クリーム・ドーナツを箱買い→中身を見ると……　驚きの光景に「さすが」「ラッキー！」",
-          "url": "https://news.yahoo.co.jp/articles/0b07fe6ab83d56b785ebf9e49a9785b566e313d4?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/0b07fe6ab83d56b785ebf9e49a9785b566e313d4?source=rss",
-          "publishedAt": "2026-10-19T10:00:00.000Z",
-          "publishedLabel": "10/19 10:00",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "クリスピー・クリーム・ドーナツを箱買い→中身を見ると…… 驚きの光景に「さすが」「ラッキー！…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "ネット文化を追う人",
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-sns-妹に-捨てていい-と聞かれたボロボロのバッグ-よく見ると-驚きの正体に-素敵だなぁ-姉思いで泣ける-news.yahoo.co.jp/articles/329d13799bba2a3a0f4081cb19edb48628223fa6",
-      "title": "妹に「捨てていい？」と聞かれたボロボロのバッグ→よく見ると……　驚きの正体に「素敵だなぁ」「姉思いで泣ける」",
-      "summary": "妹が「捨てていい？」と聞いてきたボロボロのバッグは……。姉妹の心温まるエピソードがX（Twitter）で話題です。投稿は記事執筆時点で24万回以上表示され、2400…",
-      "briefSummary": "妹が「捨てていい？」と聞いてきたボロボロのバッグは……。姉妹の心温まるエピソードがX（Twitter）で話題です。投稿は記事執筆時点で24万回以上表示され、2400件以上の“いいね”を獲得しています。",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "SNS",
-      "categoryLabels": [
-        "SNS",
-        "エンタメ",
-        "ネットカルチャー"
-      ],
-      "score": 77,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-19T10:00:00.000Z",
-      "capturedAt": "2026-10-19T22:17:36.574Z",
-      "time": "12時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/329d13799bba2a3a0f4081cb19edb48628223fa6?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "妹に「捨てていい？」と聞かれたボロボロのバッグ→よく見ると……　驚きの正体に「素敵だなぁ」「姉思いで泣ける」",
-          "url": "https://news.yahoo.co.jp/articles/329d13799bba2a3a0f4081cb19edb48628223fa6?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/329d13799bba2a3a0f4081cb19edb48628223fa6?source=rss",
-          "publishedAt": "2026-10-19T10:00:00.000Z",
-          "publishedLabel": "10/19 10:00",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "妹に「捨てていい？」と聞かれたボロボロのバッグ→よく見ると…… 驚きの正体に「素敵だなぁ」「…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-tech-itmedia-mobile-縦折りスマホ-motorola-razr-50-ultra-がiijmioにmnpで9万9800円に-11月4日まで-スマホお得情-itmedia.co.jp/mobile/articles/2610/19/news067.html",
-      "title": "[ITmedia Mobile] 縦折りスマホ「motorola razr 50 ultra」がIIJmioにMNPで9万9800円に　11月4日まで【スマホお得情報】",
-      "summary": "インターネットイニシアティブ（IIJ）は、個人向けSIMロックフリー端末の販売サービス「IIJmioサプライサービス」で「motorola razr 50 ultr…",
-      "briefSummary": "インターネットイニシアティブ（IIJ）は、個人向けSIMロックフリー端末の販売サービス「IIJmioサプライサービス」で「motorola razr 50 ultra」を値下げ。通常17万8800円のところ、11月4日21時59分まで一括9…",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 66,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://image.itmedia.co.jp/mobile/articles/2610/19/l_asa_sumaotoku_01.jpg",
-      "publishedAt": "2026-10-19T10:00:00.000Z",
-      "capturedAt": "2026-10-20T01:14:38.148Z",
-      "time": "15時間前",
-      "sourceName": "ITmedia",
-      "sourceUrl": "https://www.itmedia.co.jp/mobile/articles/2610/19/news067.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-all",
-          "source": "ITmedia",
-          "sourceName": "ITmedia",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 68,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "[ITmedia Mobile] 縦折りスマホ「motorola razr 50 ultra」がIIJmioにMNPで9万9800円に　11月4日まで【スマホお得情報】",
-          "url": "https://www.itmedia.co.jp/mobile/articles/2610/19/news067.html",
-          "canonicalUrl": "https://www.itmedia.co.jp/mobile/articles/2610/19/news067.html",
-          "publishedAt": "2026-10-19T10:00:00.000Z",
-          "publishedLabel": "10/19 10:00",
-          "thumbnailUrl": "https://image.itmedia.co.jp/mobile/articles/2610/19/l_asa_sumaotoku_01.jpg"
-        }
-      ],
-      "whatHappened": "[ITmedia Mobile] 縦折りスマホ「motorola razr 50 ultra…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ガジェット好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
       "id": "auto-sns-hkt48石橋颯-最後のコンサートで後輩に託した-未来-4年前は継承される側-同期サプライズ登場に涙-j-cast.com/2026/10/19518556.html",
       "title": "HKT48石橋颯、最後のコンサートで後輩に託した「未来」　4年前は継承される側...同期サプライズ登場に涙",
       "summary": "福岡市を拠点に活動するHKT48が2026年10月17日、名古屋市内でコンサートを開いた。全5都市を巡る15周年記念ツアーの一環で、今回の愛知公演が4都市目。地元を…",
@@ -817,7 +286,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019171907.jpg",
       "publishedAt": "2026-10-19T10:00:00.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/19518556.html",
@@ -856,66 +325,6 @@
       ]
     },
     {
-      "id": "auto-games-ff14-ファンフェスティバル-2026-に-葛葉-さんが出演決定-day2開催の-直樹の部屋-ゲストの1人として-吉田直樹氏や室内俊夫氏-豪華ゲストらとトーク-news.denfaminicogamer.jp/news/2610192l",
-      "title": "「FF14 ファンフェスティバル 2026」に「葛葉」さんが出演決定。DAY2開催の「直樹の部屋」ゲストの1人として、吉田直樹氏や室内俊夫氏、豪華ゲストらとトークを繰り広げる",
-      "summary": "ステージでは吉田直樹氏と室内俊夫氏が出演し、k4senさんや赤見かるびさんら豪華ゲストとさまざまなトークを繰り広げる",
-      "briefSummary": "ステージでは吉田直樹氏と室内俊夫氏が出演し、k4senさんや赤見かるびさんら豪華ゲストとさまざまなトークを繰り広げる",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "ネットカルチャー"
-      ],
-      "score": 65,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/HU-1rW5aYAAoMIb-1024x1024.png",
-      "publishedAt": "2026-10-19T09:59:51.000Z",
-      "capturedAt": "2026-10-20T06:31:37.281Z",
-      "time": "20時間前",
-      "sourceName": "電ファミニコゲーマー",
-      "sourceUrl": "https://news.denfaminicogamer.jp/news/2610192l",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "denfami",
-          "source": "電ファミニコゲーマー",
-          "sourceName": "電ファミニコゲーマー",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "net-culture",
-            "otaku"
-          ],
-          "title": "「FF14 ファンフェスティバル 2026」に「葛葉」さんが出演決定。DAY2開催の「直樹の部屋」ゲストの1人として、吉田直樹氏や室内俊夫氏、豪華ゲストらとトークを繰り広げる",
-          "url": "https://news.denfaminicogamer.jp/news/2610192l",
-          "canonicalUrl": "https://news.denfaminicogamer.jp/news/2610192l",
-          "publishedAt": "2026-10-19T09:59:51.000Z",
-          "publishedLabel": "10/19 09:59",
-          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/HU-1rW5aYAAoMIb-1024x1024.png"
-        }
-      ],
-      "whatHappened": "「FF14 ファンフェスティバル 2026」に「葛葉」さんが出演決定",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ネット文化を追う人"
-      ]
-    },
-    {
       "id": "auto-games-犯罪捜査乙女ゲーム-アストライアの罪咎-来年3月25日発売へ-石川界人さん-岡本信彦さんなど豪華声優陣による-クセあり男子-だらけサスペンス-mintlip-新-automaton-media.com/articles/newsjp/20261019-474317",
       "title": "犯罪捜査乙女ゲーム『アストライアの罪咎』来年3月25日発売へ。石川界人さん、岡本信彦さんなど豪華声優陣による“クセあり男子”だらけサスペンス、「MintLip+」新作",
       "summary": "MintLip+は10月19日、『アストライアの罪咎』を2027年3月25日にリリースすると発表した。",
@@ -936,7 +345,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261019-474317-header.jpg",
       "publishedAt": "2026-10-19T09:59:13.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261019-474317/",
@@ -1000,7 +409,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002397/10009822/2048",
       "publishedAt": "2026-10-19T09:58:47.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002397/",
@@ -1040,60 +449,6 @@
       ]
     },
     {
-      "id": "auto-crime-男児に花火当てた疑い-支援員逮捕-news.yahoo.co.jp/pickup/6599377",
-      "title": "男児に花火当てた疑い 支援員逮捕",
-      "summary": "ことし7月、三重県津市の小学校で打ち上げ花火を発射して、小学生の男の子の首に当てやけどを負わせたとして、放課後児童支援員の56歳の男が逮捕されました。【写真を見る】小学生の首に打ち上げ花火…ケガさせ",
-      "briefSummary": "ことし7月、三重県津市の小学校で打ち上げ花火を発射して、小学生の男の子の首に当てやけどを負わせたとして、放課後児童支援員の56歳の男が逮捕されました。【写真を見る】小学生の首に打ち上げ花火…ケガさせ",
-      "category": "crime",
-      "categories": [
-        "crime",
-        "general"
-      ],
-      "categoryLabel": "犯罪・事件",
-      "categoryLabels": [
-        "犯罪・事件"
-      ],
-      "score": 62,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-19T09:56:23.000Z",
-      "capturedAt": "2026-10-20T01:14:38.148Z",
-      "time": "15時間前",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6599377?source=rss",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "男児に花火当てた疑い 支援員逮捕",
-          "url": "https://news.yahoo.co.jp/pickup/6599377?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6599377?source=rss",
-          "publishedAt": "2026-10-19T09:56:23.000Z",
-          "publishedLabel": "10/19 09:56",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "男児に花火当てた疑い 支援員逮捕",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "ガジェット好き",
-        "時事ニュースを追う人"
-      ]
-    },
-    {
       "id": "auto-business-阪急阪神百貨店などの共通id-ほぼ全会員分漏えい-約126万件-予約サイトに不正アクセス-itmedia.co.jp/news/article/2610/19/2000002398",
       "title": "阪急阪神百貨店などの共通ID、ほぼ全会員分漏えい　約126万件　予約サイトに不正アクセス",
       "summary": "エイチ・ツー・オー リテイリングは10月19日、子会社の阪急阪神百貨店が運営する予約サイトなどが不正アクセスを受け、グループ企業の共通会員ID「H2O ID」に関す…",
@@ -1118,7 +473,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002398/10009825/2048",
       "publishedAt": "2026-10-19T09:53:08.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002398/",
@@ -1178,7 +533,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019181704.jpg",
       "publishedAt": "2026-10-19T09:45:00.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/19518558.html",
@@ -1239,7 +594,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019160344.jpg",
       "publishedAt": "2026-10-19T09:30:00.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/19518547.html",
@@ -1300,7 +655,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019173554.jpg",
       "publishedAt": "2026-10-19T09:15:00.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/19518557.html",
@@ -1360,7 +715,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019144651.jpg",
       "publishedAt": "2026-10-19T09:00:00.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/19518546.html",
@@ -1417,7 +772,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261019-474291-header2.jpg",
       "publishedAt": "2026-10-19T08:41:04.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261019-474291/",
@@ -1479,7 +834,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002392/10009804/2048",
       "publishedAt": "2026-10-19T08:08:39.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002392/",
@@ -1541,7 +896,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002391/10009807/2048",
       "publishedAt": "2026-10-19T07:54:24.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002391/",
@@ -1604,7 +959,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019163102.jpg",
       "publishedAt": "2026-10-19T07:45:54.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/19518550.html",
@@ -1662,7 +1017,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261019-474298-header.jpg",
       "publishedAt": "2026-10-19T07:43:20.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261019-474298/",
@@ -1702,69 +1057,6 @@
       ]
     },
     {
-      "id": "auto-business-情報漏えい-経験あり-は企業の16-2-発生したか分からない-の声も-帝国データバンク調査-itmedia.co.jp/news/article/2610/19/2000002390",
-      "title": "情報漏えい「経験あり」は企業の16.2％、「発生したか分からない」の声も──帝国データバンク調査",
-      "summary": "帝国データバンクは10月19日、情報漏えいの発生状況に関する企業アンケートの結果を発表した。漏えいやその可能性のある事案を経験した企業は16.2％で、大企業に限ると…",
-      "briefSummary": "帝国データバンクは10月19日、情報漏えいの発生状況に関する企業アンケートの結果を発表した。漏えいやその可能性のある事案を経験した企業は16.2％で、大企業に限ると3割に上った。",
-      "category": "business",
-      "categories": [
-        "business",
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "経済",
-      "categoryLabels": [
-        "経済",
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 57,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002390/10009798/2048",
-      "publishedAt": "2026-10-19T07:31:48.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
-      "time": "2日前",
-      "sourceName": "ITmedia NEWS",
-      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002390/",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-news",
-          "source": "ITmedia",
-          "sourceName": "ITmedia NEWS",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "情報漏えい「経験あり」は企業の16.2％、「発生したか分からない」の声も──帝国データバンク調査",
-          "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002390/",
-          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002390/",
-          "publishedAt": "2026-10-19T07:31:48.000Z",
-          "publishedLabel": "10/19 07:31",
-          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002390/10009798/2048"
-        }
-      ],
-      "whatHappened": "情報漏えい「経験あり」は企業の16.2％、「発生したか分からない」の声も──帝国データバンク…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
       "id": "auto-sns-亀田和毅は-可哀想すぎる-対戦相手の体調不良で世界戦中止-欠場の元王者は-負けたことにするべき-元日本王者持論-j-cast.com/2026/10/19518549.html",
       "title": "亀田和毅は「可哀想すぎる」、対戦相手の体調不良で世界戦中止...欠場の元王者は「負けたことにするべき」元日本王者持論",
       "summary": "プロボクシングの元日本スーパーライト級王者・細川バレンタイン氏（45）が、2026年10月18日にユーチューブを更新し、体調不良で世界タイトル戦を欠場した元WBAフ…",
@@ -1787,7 +1079,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019162334.jpg",
       "publishedAt": "2026-10-19T07:30:38.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/19518549.html",
@@ -1849,7 +1141,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261019-474284-header.jpg",
       "publishedAt": "2026-10-19T06:47:54.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261019-474284/",
@@ -1916,7 +1208,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019144251.png",
       "publishedAt": "2026-10-19T06:45:00.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/19518545.html",
@@ -1978,7 +1270,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261019-474275-header.jpg",
       "publishedAt": "2026-10-19T06:11:02.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261019-474275/",
@@ -2048,7 +1340,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019142148.png",
       "publishedAt": "2026-10-19T05:45:41.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/19518544.html",
@@ -2107,7 +1399,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261019-474269-header.jpg",
       "publishedAt": "2026-10-19T05:22:48.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261019-474269/",
@@ -2148,67 +1440,6 @@
       ]
     },
     {
-      "id": "auto-tech-renta-停止は-不正アクセスの可能性-のため-詳細は調査中-再開未定-itmedia.co.jp/news/article/2610/19/2000002379",
-      "title": "「Renta!」停止は「不正アクセスの可能性」のため　詳細は調査中、再開未定",
-      "summary": "「Renta!」が18日から一時サービス停止。「Renta!のサーバに対して外部からの不正なアクセスの可能性があることを把握したため」",
-      "briefSummary": "「Renta!」が18日から一時サービス停止。「Renta!のサーバに対して外部からの不正なアクセスの可能性があることを把握したため」",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 57,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002379/10009791/2048",
-      "publishedAt": "2026-10-19T04:53:22.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
-      "time": "2日前",
-      "sourceName": "ITmedia NEWS",
-      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002379/",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-news",
-          "source": "ITmedia",
-          "sourceName": "ITmedia NEWS",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "「Renta!」停止は「不正アクセスの可能性」のため　詳細は調査中、再開未定",
-          "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002379/",
-          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002379/",
-          "publishedAt": "2026-10-19T04:53:22.000Z",
-          "publishedLabel": "10/19 04:53",
-          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002379/10009791/2048"
-        }
-      ],
-      "whatHappened": "「Renta!」停止は「不正アクセスの可能性」のため 詳細は調査中、再開未定",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
       "id": "auto-sns-renta-で不正アクセスの可能性-サービス再開めど立たず-シーモア-に続き-電子漫画サービスで停止相次ぐ-j-cast.com/2026/10/19518543.html",
       "title": "「Renta!」で不正アクセスの可能性、サービス再開めど立たず　「シーモア」に続き...電子漫画サービスで停止相次ぐ",
       "summary": "パピレス（東京都千代田区）が運営する電子コミックレンタルサービス「Renta!」は2026年10月19日、同サービスのサーバーに対して外部からの不正なアクセスの可能…",
@@ -2231,7 +1462,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019134828.jpg",
       "publishedAt": "2026-10-19T04:51:07.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/19518543.html",
@@ -2271,129 +1502,6 @@
       ]
     },
     {
-      "id": "auto-sns-橋下徹氏-靖国参拝めぐり岩田温氏と応酬-とにかく総理と陛下に-政治的分祠を主張-j-cast.com/2026/10/19518542.html",
-      "title": "橋下徹氏、靖国参拝めぐり岩田温氏と応酬　「とにかく総理と陛下に」政治的分祠を主張",
-      "summary": "元大阪府知事の橋下徹氏が2026年10月18日、靖国神社参拝などをめぐって、政治学者の岩田温氏とのX上の応酬の中で持論を展開した。橋下氏は、首相や天皇陛下が戦没者に…",
-      "briefSummary": "元大阪府知事の橋下徹氏が2026年10月18日、靖国神社参拝などをめぐって、政治学者の岩田温氏とのX上の応酬の中で持論を展開した。橋下氏は、首相や天皇陛下が戦没者に直接手を合わせられるようにするには「政治的分祠しかない」と主張し、実現策を示…",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "politics",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "SNS",
-      "categoryLabels": [
-        "SNS",
-        "政治",
-        "ネットカルチャー"
-      ],
-      "score": 56,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019131930.jpg",
-      "publishedAt": "2026-10-19T04:30:48.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
-      "time": "2日前",
-      "sourceName": "J-CASTニュース",
-      "sourceUrl": "https://www.j-cast.com/2026/10/19518542.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "jcast",
-          "source": "J-CASTニュース",
-          "sourceName": "J-CASTニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 72,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz"
-          ],
-          "title": "橋下徹氏、靖国参拝めぐり岩田温氏と応酬　「とにかく総理と陛下に」政治的分祠を主張",
-          "url": "https://www.j-cast.com/2026/10/19518542.html",
-          "canonicalUrl": "https://www.j-cast.com/2026/10/19518542.html",
-          "publishedAt": "2026-10-19T04:30:48.000Z",
-          "publishedLabel": "10/19 04:30",
-          "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019131930.jpg"
-        }
-      ],
-      "whatHappened": "橋下徹氏、靖国参拝めぐり岩田温氏と応酬 「とにかく総理と陛下に」政治的分祠を主張",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "ネット文化を追う人",
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-sports-大谷翔平-地元メディアからまさかの-f-評価-mlb随一のスター-もps不振-j-cast.com/2026/10/19518541.html",
-      "title": "大谷翔平、地元メディアからまさかの「F」評価　「MLB随一のスター」もPS不振",
-      "summary": "米メディア「カリフォルニア・ポスト」（ウェブ版）が2026年10月18日、ロサンゼルス・ドジャースに所属する選手らの今季の採点を行い、大谷翔平選手（32）を最低ラン…",
-      "briefSummary": "米メディア「カリフォルニア・ポスト」（ウェブ版）が2026年10月18日、ロサンゼルス・ドジャースに所属する選手らの今季の採点を行い、大谷翔平選手（32）を最低ランクの「F」とした。 続きは「J-CASTニュース」へ",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 56,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019124303.jpg",
-      "publishedAt": "2026-10-19T04:10:00.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
-      "time": "2日前",
-      "sourceName": "J-CASTニュース",
-      "sourceUrl": "https://www.j-cast.com/2026/10/19518541.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "jcast",
-          "source": "J-CASTニュース",
-          "sourceName": "J-CASTニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 72,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz"
-          ],
-          "title": "大谷翔平、地元メディアからまさかの「F」評価　「MLB随一のスター」もPS不振",
-          "url": "https://www.j-cast.com/2026/10/19518541.html",
-          "canonicalUrl": "https://www.j-cast.com/2026/10/19518541.html",
-          "publishedAt": "2026-10-19T04:10:00.000Z",
-          "publishedLabel": "10/19 04:10",
-          "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261019124303.jpg"
-        }
-      ],
-      "whatHappened": "大谷翔平、地元メディアからまさかの「F」評価 「MLB随一のスター」もPS不振",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
       "id": "auto-games-steamで好評率99-アリスと彼岸-メルヘン世界で-物騒すぎるtrpg風冒険-が熱い人気に-戦わずズルく勝てる-自由で不穏なおとぎ話-automaton-media.com/articles/newsjp/20261019-474248",
       "title": "Steamで好評率99％『アリスと彼岸』、メルヘン世界で“物騒すぎるTRPG風冒険”が熱い人気に。「戦わずズルく勝てる」自由で不穏なおとぎ話",
       "summary": "2P Gamesは10月16日、Hanamiriroが手がける『アリスと彼岸』を配信開始した。さっそく好評率99％のまま高い評価を集めている。",
@@ -2414,7 +1522,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261019-474248-001.jpg",
       "publishedAt": "2026-10-19T03:50:32.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261019-474248/",
@@ -2455,67 +1563,6 @@
       ]
     },
     {
-      "id": "auto-tech-ソースネクスト-パスワードなぜ平文で流出-暗号化していたが-鍵にアクセスできるシステムに侵入された-itmedia.co.jp/news/article/2610/19/2000002372",
-      "title": "ソースネクスト、パスワードなぜ平文で流出　「暗号化していたが、鍵にアクセスできるシステムに侵入された」",
-      "summary": "「暗号化されたパスワードを復号するための鍵にアクセス可能なシステム（API）に対して、不正アクセスが行われた」「復号鍵そのものは流出していないが、パスワードが復号さ…",
-      "briefSummary": "「暗号化されたパスワードを復号するための鍵にアクセス可能なシステム（API）に対して、不正アクセスが行われた」「復号鍵そのものは流出していないが、パスワードが復号された状態で外部に流出したことを確認している」とソースネクスト。",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 57,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002372/10009776/2048",
-      "publishedAt": "2026-10-19T03:38:11.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
-      "time": "2日前",
-      "sourceName": "ITmedia NEWS",
-      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002372/",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-news",
-          "source": "ITmedia",
-          "sourceName": "ITmedia NEWS",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "ソースネクスト、パスワードなぜ平文で流出　「暗号化していたが、鍵にアクセスできるシステムに侵入された」",
-          "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002372/",
-          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002372/",
-          "publishedAt": "2026-10-19T03:38:11.000Z",
-          "publishedLabel": "10/19 03:38",
-          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002372/10009776/2048"
-        }
-      ],
-      "whatHappened": "ソースネクスト、パスワードなぜ平文で流出 「暗号化していたが、鍵にアクセスできるシステムに侵…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
       "id": "auto-games-steamはmmoなんだ-元valve社員が語るゲイブの思想-ゲームをただ遊ぶ場所じゃない-居場所-としてのコミュニティ-automaton-media.com/articles/newsjp/20261019-474238",
       "title": "「SteamはMMOなんだ」元Valve社員が語るゲイブの思想。ゲームをただ遊ぶ場所じゃない、“居場所”としてのコミュニティ",
       "summary": "元Valve社員のChet Faliszek氏が、Valveの創業者Gabe Newell氏が何度も「SteamはMMOなんだ」と語ったと証言している。",
@@ -2534,7 +1581,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261017-474077-header.jpg",
       "publishedAt": "2026-10-19T03:20:14.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261019-474238/",
@@ -2595,7 +1642,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/studioauknow_interview1_01.jpg",
       "publishedAt": "2026-10-19T03:03:04.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "2日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/hiring/sau-20261023-473813/",
@@ -2635,194 +1682,6 @@
       ]
     },
     {
-      "id": "auto-games-奈良県橿原市が-ストリートファイター-シリーズ活用-まちづくりを推進-歴史の街で進む-ストリートファイターストリート-構想-automaton-media.com/articles/newsjp/20261019-474227",
-      "title": "奈良県橿原市が“『ストリートファイター』シリーズ活用”まちづくりを推進。歴史の街で進む「ストリートファイターストリート」構想",
-      "summary": "奈良県橿原市は10月19日、カプコンの『ストリートファイター』シリーズを活用したまちづくりを推進していくと発表した。",
-      "briefSummary": "奈良県橿原市は10月19日、カプコンの『ストリートファイター』シリーズを活用したまちづくりを推進していくと発表した。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 62,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261019-474227-header.jpg",
-      "publishedAt": "2026-10-19T02:58:04.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
-      "time": "2日前",
-      "sourceName": "AUTOMATON",
-      "sourceUrl": "https://automaton-media.com/articles/newsjp/20261019-474227/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "automaton",
-          "source": "AUTOMATON",
-          "sourceName": "AUTOMATON",
-          "sourceGroup": "games",
-          "sourcePriority": 96,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "steam",
-            "switch",
-            "pc"
-          ],
-          "title": "奈良県橿原市が“『ストリートファイター』シリーズ活用”まちづくりを推進。歴史の街で進む「ストリートファイターストリート」構想",
-          "url": "https://automaton-media.com/articles/newsjp/20261019-474227/",
-          "canonicalUrl": "https://automaton-media.com/articles/newsjp/20261019-474227/",
-          "publishedAt": "2026-10-19T02:58:04.000Z",
-          "publishedLabel": "10/19 02:58",
-          "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261019-474227-header.jpg"
-        }
-      ],
-      "whatHappened": "奈良県橿原市が“『ストリートファイター』シリーズ活用”まちづくりを推進",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-tech-aiの台頭でwebサイトのアクセス向上策はseoからgeoにシフト-対応急務に-itmedia.co.jp/news/article/2610/19/2000002371",
-      "title": "AIの台頭でWebサイトのアクセス向上策はSEOからGEOにシフト　対応急務に",
-      "summary": "生成AIの普及で、ネット検索の主役が従来の検索エンジンからAIへと移りつつある。企業サイトやニュースサイトには、検索上位を狙うSEOに代わり、AIに引用されるようコ…",
-      "briefSummary": "生成AIの普及で、ネット検索の主役が従来の検索エンジンからAIへと移りつつある。企業サイトやニュースサイトには、検索上位を狙うSEOに代わり、AIに引用されるようコンテンツを最適化する「GEO」への対応が急務となりそうだ。",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "business",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー",
-        "経済"
-      ],
-      "score": 57,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002371/10009754/2048",
-      "publishedAt": "2026-10-19T02:36:10.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
-      "time": "2日前",
-      "sourceName": "ITmedia NEWS",
-      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002371/",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-news",
-          "source": "ITmedia",
-          "sourceName": "ITmedia NEWS",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "AIの台頭でWebサイトのアクセス向上策はSEOからGEOにシフト　対応急務に",
-          "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002371/",
-          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002371/",
-          "publishedAt": "2026-10-19T02:36:10.000Z",
-          "publishedLabel": "10/19 02:36",
-          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002371/10009754/2048"
-        }
-      ],
-      "whatHappened": "AIの台頭でWebサイトのアクセス向上策はSEOからGEOにシフト 対応急務に",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "仕事や制作環境、導入判断に影響する可能性があります。",
-      "targetAudience": [
-        "AI利用者",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-tech-renta-が臨時メンテナンスでサービス停止-再開時期示さず-itmedia.co.jp/news/article/2610/19/2000002367",
-      "title": "「Renta!」が臨時メンテナンスでサービス停止　再開時期示さず",
-      "summary": "電子書籍サービス「Renta!」を運営するパピレスは10月18日、臨時のサーバメンテナンスのため、サービスを一時停止していると発表した。19日午前10時時点でも、メ…",
-      "briefSummary": "電子書籍サービス「Renta!」を運営するパピレスは10月18日、臨時のサーバメンテナンスのため、サービスを一時停止していると発表した。19日午前10時時点でも、メンテナンスは続いている。",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "games",
-        "sns",
-        "net-culture",
-        "books",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "ゲーム",
-        "SNS",
-        "ネットカルチャー",
-        "本"
-      ],
-      "score": 57,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002367/10009748/2048",
-      "publishedAt": "2026-10-19T02:29:37.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
-      "time": "2日前",
-      "sourceName": "ITmedia NEWS",
-      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002367/",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-news",
-          "source": "ITmedia",
-          "sourceName": "ITmedia NEWS",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "「Renta!」が臨時メンテナンスでサービス停止　再開時期示さず",
-          "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002367/",
-          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/19/2000002367/",
-          "publishedAt": "2026-10-19T02:29:37.000Z",
-          "publishedLabel": "10/19 02:29",
-          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/19/2000002367/10009748/2048"
-        }
-      ],
-      "whatHappened": "「Renta!」が臨時メンテナンスでサービス停止 再開時期示さず",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ネット文化を追う人"
-      ]
-    },
-    {
       "id": "auto-entertainment-コメダ珈琲店-千房-お好み焼バーガー-登場-ふわふわお好み焼をバーガースタイルで-event-checker.info/komeda-bread",
       "title": "コメダ珈琲店×千房「お好み焼バーガー」登場！ふわふわお好み焼をバーガースタイルで",
       "summary": "コメダ珈琲店×千房「お好み焼バーガー」 2026年10月14日(水)からコメダ珈琲店で、お好み焼専門店「千房」 […]",
@@ -2842,7 +1701,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://event-checker.info/wp-content/uploads/2026/10/komeda-bread2610_01.jpg",
       "publishedAt": "2026-10-08T01:52:25.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "13日前",
       "sourceName": "Event Checker",
       "sourceUrl": "https://event-checker.info/komeda-bread/",
@@ -2898,7 +1757,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://event-checker.info/wp-content/uploads/2022/10/taiyo-tomato2210_01.jpg",
       "publishedAt": "2026-10-08T01:19:48.000Z",
-      "capturedAt": "2026-10-21T22:01:57.996Z",
+      "capturedAt": "2026-10-22T00:37:43.616Z",
       "time": "13日前",
       "sourceName": "Event Checker",
       "sourceUrl": "https://event-checker.info/taiyo-tomato/",

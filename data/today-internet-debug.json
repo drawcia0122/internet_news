@@ -1,22 +1,23 @@
 {
-  "generatedAt": "2026-10-22T19:28:01.133Z",
+  "generatedAt": "2026-10-22T22:45:40.790Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-41",
-  "selectedTitle": "「疑惑を晴らせないなら辞職すべき」芥川賞作家　高市首相の“言い訳”を痛烈批判「嘘の経歴」「あまりにも幼稚」苦言の数々",
+  "selectedClusterId": "today-cluster-63",
+  "selectedTitle": "中国政府関係のハッカー集団が大規模サイバー攻撃、ＡＩで世界数百の企業・組織に…米マイクロソフトが記録で確認",
   "candidates": [
     {
-      "clusterId": "today-cluster-41",
-      "title": "「疑惑を晴らせないなら辞職すべき」芥川賞作家　高市首相の“言い訳”を痛烈批判「嘘の経歴」「あまりにも幼稚」苦言の数々",
-      "category": "politics",
+      "clusterId": "today-cluster-63",
+      "title": "中国政府関係のハッカー集団が大規模サイバー攻撃、ＡＩで世界数百の企業・組織に…米マイクロソフトが記録で確認",
+      "category": "business",
       "categories": [
-        "politics",
-        "books",
+        "business",
+        "tech",
         "sns",
         "net-culture",
+        "world",
         "general"
       ],
-      "buzzScore": 63.9,
-      "confidence": 0.43,
+      "buzzScore": 66.3,
+      "confidence": 0.41,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -27,14 +28,14 @@
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 19.8,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 5.3,
         "social": 8.3,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 2.5,
-        "categoryBias": 4,
+        "categoryBias": 9,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -48,8 +49,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 21,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 45.2,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 41.7,
         "internalSocialScore": 64.5
       },
       "externalSignalErrors": [
@@ -59,7 +60,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1559",
+      "clusterId": "today-cluster-1797",
       "title": "「日本国旗の冒涜を容認しない」駐日パレスチナ代表部が声明　欠けた日の丸画像SNS拡散",
       "category": "net-culture",
       "categories": [
@@ -67,7 +68,7 @@
         "sns",
         "general"
       ],
-      "buzzScore": 62.6,
+      "buzzScore": 62.4,
       "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 2,
@@ -80,8 +81,8 @@
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 4.5,
+        "search": 4.7,
+        "social": 4.4,
         "velocity": 0,
         "freshness": 3.5,
         "authority": 2.5,
@@ -97,11 +98,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 60,
         "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 34.9
+        "internalSearchScore": 37,
+        "internalSocialScore": 34.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -110,34 +111,36 @@
       ]
     },
     {
-      "clusterId": "today-cluster-50",
-      "title": "ゲームフリーク社員と東大教授が「水表現を美しいまま軽くする新技術」発表。計算負荷だけごっそり削減、水シミュレーション高速化",
-      "category": "games",
+      "clusterId": "today-cluster-5",
+      "title": "中国政府系集団がAI攻撃　米マイクロソフト確認",
+      "category": "tech",
       "categories": [
-        "games",
+        "tech",
         "sns",
         "net-culture",
+        "world",
         "general"
       ],
-      "buzzScore": 61.9,
-      "confidence": 0.35,
+      "buzzScore": 60.6,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.6,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 5.4,
-        "social": 6.9,
+        "search": 5.7,
+        "social": 8.4,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 7,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -149,11 +152,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 42.4,
-        "internalSocialScore": 54
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -162,88 +165,36 @@
       ]
     },
     {
-      "clusterId": "today-cluster-55",
-      "title": "注目の新作アクション『Phantom Blade Zero』スタイリッシュな戦闘が超カッコいいローンチトレーラー公開。PS5向けパッケージ版が2027年に発売へ",
-      "category": "games",
+      "clusterId": "today-cluster-302",
+      "title": "[ITmedia Mobile] Apple初の折りたたみ「iPhone Duo」きょう発売　価格、特徴、誰向けか――5分で分かるまとめ",
+      "category": "tech",
       "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 61.6,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.4,
-        "social": 6.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 42.1,
-        "internalSocialScore": 54
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-661",
-      "title": "“こんなのレアで～す”「ちいかわ」シーサーだらけのオンラインくじ!? SNSで話題沸騰中の注目アイテムが登場！",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
+        "tech",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 61.3,
-      "confidence": 0.32,
+      "buzzScore": 59.2,
+      "confidence": 0.34,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 19.6,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 5.5,
+        "search": 4,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": -7
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -254,11 +205,64 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 33.9,
-        "internalSocialScore": 56.9
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1",
+      "title": "【50%還元】マンガ『ドラゴンクエスト4コママンガ劇場　ニセ勇者本』Kindle版が50%ポイント還元セール対象に。柴田亜美氏の90年代から令和の『ドラクエ』4コマを収録",
+      "category": "games",
+      "categories": [
+        "games",
+        "manga",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 58.4,
+      "confidence": 0.45,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 16.3,
+        "internetNativeBoost": 0,
+        "search": 5.3,
+        "social": 7,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -10
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 74,
+        "internalSearchScore": 41.5,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

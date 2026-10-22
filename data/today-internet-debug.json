@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-10-22T10:38:12.098Z",
+  "generatedAt": "2026-10-22T15:36:39.980Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-11",
-  "selectedTitle": "カイロソフトによる『ワンピース』の経営ゲーム『ONE PIECE 海のごちそうレストラン』がSwitch 2/Switchで本日発売",
+  "selectedClusterId": "today-cluster-35",
+  "selectedTitle": "ゲームフリーク社員と東大教授が「水表現を美しいまま軽くする新技術」発表。計算負荷だけごっそり削減、水シミュレーション高速化",
   "candidates": [
     {
-      "clusterId": "today-cluster-11",
-      "title": "カイロソフトによる『ワンピース』の経営ゲーム『ONE PIECE 海のごちそうレストラン』がSwitch 2/Switchで本日発売",
+      "clusterId": "today-cluster-35",
+      "title": "ゲームフリーク社員と東大教授が「水表現を美しいまま軽くする新技術」発表。計算負荷だけごっそり削減、水シミュレーション高速化",
       "category": "games",
       "categories": [
         "games",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 73.6,
-      "confidence": 0.46,
+      "buzzScore": 66.1,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 21.3,
+        "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "search": 6,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -44,11 +44,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 49.6,
-        "internalSocialScore": 43.8
+        "repeatedAppearanceScore": 23.1,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 46.5,
+        "internalSocialScore": 54.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-198",
+      "clusterId": "today-cluster-538",
       "title": "“こんなのレアで～す”「ちいかわ」シーサーだらけのオンラインくじ!? SNSで話題沸騰中の注目アイテムが登場！",
       "category": "entertainment",
       "categories": [
@@ -67,8 +67,60 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 73.2,
-      "confidence": 0.41,
+      "buzzScore": 65.6,
+      "confidence": 0.35,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.8,
+        "internetNativeBoost": 8,
+        "search": 4.9,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 5.1,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 99,
+        "internalSearchScore": 38,
+        "internalSocialScore": 57.3
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-272",
+      "title": "大雨の翌日、沼に“小さなエビっぽい群れ”が大集結→水面を覆い尽くすほどの光景に「不思議な世界」「面白かった」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64,
+      "confidence": 0.35,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -79,12 +131,12 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 7.4,
-        "velocity": 4.2,
-        "freshness": 10,
+        "search": 4.2,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -99,63 +151,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-16",
-      "title": "注目の新作アクション『Phantom Blade Zero』スタイリッシュな戦闘が超カッコいいローンチトレーラー公開。PS5向けパッケージ版が2027年に発売へ",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 72.1,
-      "confidence": 0.44,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.9,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 45.7,
-        "internalSocialScore": 54.8
+        "archiveHeatScore": 82,
+        "internalSearchScore": 32.6,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -164,60 +163,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-18",
-      "title": "韓国の新人VTuber「常乃メリ」の歌唱力が凄まじすぎる　女王蜂やAimerの楽曲をカバー",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 71.5,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.5,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 45,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-79",
+      "clusterId": "today-cluster-1435",
       "title": "「日本国旗の冒涜を容認しない」駐日パレスチナ代表部が声明　欠けた日の丸画像SNS拡散",
       "category": "net-culture",
       "categories": [
@@ -225,23 +171,23 @@
         "sns",
         "general"
       ],
-      "buzzScore": 69.1,
-      "confidence": 0.45,
-      "articleCount": 3,
+      "buzzScore": 62.7,
+      "confidence": 0.39,
+      "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
+        "coverage": 3.6,
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 6.5,
-        "social": 5.6,
+        "search": 4.9,
+        "social": 4.5,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 9,
         "penalty": 0
@@ -253,13 +199,65 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 5.1,
         "crossCategoryScore": 60,
         "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
-        "internalSocialScore": 43.8
+        "internalSearchScore": 38.3,
+        "internalSocialScore": 35.3
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-279",
+      "title": "農業や探索が楽しめる癒し系ADV「ルマ島」，PS5 / XBOX Series X|S版を12月2日に発売",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 61.8,
+      "confidence": 0.34,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.4,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 4.6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 35.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

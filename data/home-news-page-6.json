@@ -1,30 +1,525 @@
 {
-  "generatedAt": "2026-10-23T16:57:48.014Z",
-  "totalCount": 1339,
+  "generatedAt": "2026-10-23T20:22:54.864Z",
+  "totalCount": 1268,
   "categoryCounts": {
-    "all": 1339,
-    "general": 48,
-    "tech": 192,
-    "business": 109,
-    "politics": 45,
-    "entertainment": 458,
-    "anime": 66,
-    "games": 504,
+    "all": 1268,
+    "general": 44,
+    "tech": 189,
+    "business": 104,
+    "politics": 40,
+    "entertainment": 425,
+    "anime": 61,
+    "games": 470,
     "game-features": 15,
     "anime-features": 0,
-    "manga": 61,
-    "books": 31,
+    "manga": 60,
+    "books": 30,
     "sports": 57,
-    "sns": 625,
-    "net-culture": 719,
+    "sns": 601,
+    "net-culture": 693,
     "matome": 1,
-    "crime": 26,
+    "crime": 25,
     "adult": 17,
-    "world": 46
+    "world": 45
   },
   "hasMore": true,
   "nextPage": 7,
   "items": [
+    {
+      "id": "auto-tech-itmedia-news-あいまいな指示-を入力されたaiは安全なコーディングができない-香港科技大などが調査-itmedia.co.jp/news/article/2610/23/2000002513",
+      "title": "[ITmedia News] “あいまいな指示”を入力されたAIは安全なコーディングができない？　香港科技大などが調査",
+      "summary": "香港科技大学などに所属する研究者らが7月に発表した論文「Coding Agents Are Guessing: Measuring Action-Boundary…",
+      "briefSummary": "香港科技大学などに所属する研究者らが7月に発表した論文「Coding Agents Are Guessing: Measuring Action-Boundary Violations in Underspecified DevOps In…",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 63,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/23/2000002513/10010180/2048",
+      "publishedAt": "2026-10-23T03:00:00.000Z",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
+      "sourceName": "ITmedia",
+      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/23/2000002513/",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "itmedia-all",
+          "source": "ITmedia",
+          "sourceName": "ITmedia",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 68,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "tech"
+          ],
+          "title": "[ITmedia News] “あいまいな指示”を入力されたAIは安全なコーディングができない？　香港科技大などが調査",
+          "url": "https://www.itmedia.co.jp/news/article/2610/23/2000002513/",
+          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/23/2000002513/",
+          "publishedAt": "2026-10-23T03:00:00.000Z",
+          "publishedLabel": "10/23 03:00",
+          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/23/2000002513/10010180/2048"
+        }
+      ],
+      "whatHappened": "[ITmedia News] “あいまいな指示”を入力されたAIは安全なコーディングができな…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "仕事や制作環境、導入判断に影響する可能性があります。",
+      "targetAudience": [
+        "AI利用者",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-tech-itmedia-news-1000万のwebサイトで-生きたapiキー-が大量に-丸見え-状態-大手銀行やインフラの鍵も-米スタンフォード大などが調査-itmedia.co.jp/news/article/2610/23/2000002515",
+      "title": "[ITmedia News] 1000万のWebサイトで「生きたAPIキー」が大量に“丸見え”状態？　大手銀行やインフラの鍵も　米スタンフォード大などが調査",
+      "summary": "米スタンフォード大学などに所属する研究者らが発表した論文「Keys on Doormats: Exposed API Credentials on the Web」…",
+      "briefSummary": "米スタンフォード大学などに所属する研究者らが発表した論文「Keys on Doormats: Exposed API Credentials on the Web」は、Web上の1000万サイトを調査し、本来秘匿にすべき「APIキー」（AP…",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 63,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/23/2000002515/10010188/2048",
+      "publishedAt": "2026-10-23T03:00:00.000Z",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
+      "sourceName": "ITmedia",
+      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/23/2000002515/",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "itmedia-all",
+          "source": "ITmedia",
+          "sourceName": "ITmedia",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 68,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "tech"
+          ],
+          "title": "[ITmedia News] 1000万のWebサイトで「生きたAPIキー」が大量に“丸見え”状態？　大手銀行やインフラの鍵も　米スタンフォード大などが調査",
+          "url": "https://www.itmedia.co.jp/news/article/2610/23/2000002515/",
+          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/23/2000002515/",
+          "publishedAt": "2026-10-23T03:00:00.000Z",
+          "publishedLabel": "10/23 03:00",
+          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/23/2000002515/10010188/2048"
+        }
+      ],
+      "whatHappened": "[ITmedia News] 1000万のWebサイトで「生きたAPIキー」が大量に“丸見え…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-games-着せ恋-喜多川海夢を1-1スケールで立体化した等身大フィギュア-10月23日15時より予約スタート-着脱可能の制服を脱がすと水着姿に-価格は132万円-news.denfaminicogamer.jp/news/261023r",
+      "title": "『着せ恋』喜多川海夢を1/1スケールで立体化した等身大フィギュア、10月23日15時より予約スタート！着脱可能の制服を脱がすと水着姿に、価格は132万円",
+      "summary": "着脱可能の制服を脱がすと水着姿に。「着せ替え人形（ビスクドール）」をタイトルに冠し、コスプレを題材にした世界観をも表現 （※画像2枚目はWF2026Sのもの）",
+      "briefSummary": "着脱可能の制服を脱がすと水着姿に。「着せ替え人形（ビスクドール）」をタイトルに冠し、コスプレを題材にした世界観をも表現 （※画像2枚目はWF2026Sのもの）",
+      "category": "games",
+      "categories": [
+        "games",
+        "adult",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "アダルト系",
+        "ネットカルチャー"
+      ],
+      "score": 70,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/HVOgXR4awAAUOTo.png",
+      "publishedAt": "2026-10-23T02:58:11.000Z",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
+      "sourceName": "電ファミニコゲーマー",
+      "sourceUrl": "https://news.denfaminicogamer.jp/news/261023r",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "denfami",
+          "source": "電ファミニコゲーマー",
+          "sourceName": "電ファミニコゲーマー",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "net-culture",
+            "otaku"
+          ],
+          "title": "『着せ恋』喜多川海夢を1/1スケールで立体化した等身大フィギュア、10月23日15時より予約スタート！着脱可能の制服を脱がすと水着姿に、価格は132万円",
+          "url": "https://news.denfaminicogamer.jp/news/261023r",
+          "canonicalUrl": "https://news.denfaminicogamer.jp/news/261023r",
+          "publishedAt": "2026-10-23T02:58:11.000Z",
+          "publishedLabel": "10/23 02:58",
+          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/HVOgXR4awAAUOTo.png"
+        }
+      ],
+      "whatHappened": "『着せ恋』喜多川海夢を1/1スケールで立体化した等身大フィギュア、10月23日15時より予約…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-anime-アニメ-ジョジョの奇妙な冒険-とshokzのコラボレーションモデルイヤホンが発売-ジョナサンモデルの骨伝導イヤホン-openrun-pro-2-に-ディオモデル-news.denfaminicogamer.jp/news/261023q",
+      "title": "アニメ『ジョジョの奇妙な冒険』とShokzのコラボレーションモデルイヤホンが発売。ジョナサンモデルの骨伝導イヤホン「OpenRun Pro 2」に、ディオモデルのイヤーカフ型イヤホン「OpenDots 2」が登場",
+      "summary": "10月23日、Shokz Japan株式会社は、「OpenRun Pro 2 ジョナサン・ジョースターモデル」と「OpenDots 2 ディオ・ブランドーモデル」を…",
+      "briefSummary": "10月23日、Shokz Japan株式会社は、「OpenRun Pro 2 ジョナサン・ジョースターモデル」と「OpenDots 2 ディオ・ブランドーモデル」を、数量限定で発売した。 両製品は、アニメ『ジョジョの奇妙な冒険』との周年記念…",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "net-culture",
+        "business",
+        "general"
+      ],
+      "categoryLabel": "アニメ",
+      "categoryLabels": [
+        "アニメ",
+        "ゲーム",
+        "ネットカルチャー",
+        "経済"
+      ],
+      "score": 70,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/main-38-1024x439.png",
+      "publishedAt": "2026-10-23T02:56:54.000Z",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
+      "sourceName": "電ファミニコゲーマー",
+      "sourceUrl": "https://news.denfaminicogamer.jp/news/261023q",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "denfami",
+          "source": "電ファミニコゲーマー",
+          "sourceName": "電ファミニコゲーマー",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "net-culture",
+            "otaku"
+          ],
+          "title": "アニメ『ジョジョの奇妙な冒険』とShokzのコラボレーションモデルイヤホンが発売。ジョナサンモデルの骨伝導イヤホン「OpenRun Pro 2」に、ディオモデルのイヤーカフ型イヤホン「OpenDots 2」が登場",
+          "url": "https://news.denfaminicogamer.jp/news/261023q",
+          "canonicalUrl": "https://news.denfaminicogamer.jp/news/261023q",
+          "publishedAt": "2026-10-23T02:56:54.000Z",
+          "publishedLabel": "10/23 02:56",
+          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/main-38-1024x439.png"
+        }
+      ],
+      "whatHappened": "アニメ『ジョジョの奇妙な冒険』とShokzのコラボレーションモデルイヤホンが発売",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "漫画・アニメ好き",
+        "ネット文化を追う人",
+        "投資家"
+      ]
+    },
+    {
+      "id": "auto-manga-人類が問い続けてきた-神-と-人間-を壮大なスケールで描く-いまだからこそ響く少女マンガの伝説的名作-イティハーサ-おすすめマンガ手帖-animeanime.jp/article/2026/10/23/104101.html",
+      "title": "人類が問い続けてきた「神」と「人間」を壮大なスケールで描く、いまだからこそ響く少女マンガの伝説的名作『イティハーサ』【おすすめマンガ手帖】",
+      "summary": "約1万2000年前の日本を舞台に、神々と人間の戦いを描く水樹和佳子のSF大河ロマン『イティハーサ』。信仰、権力、救い、争いを通して「神とは何か」「人はなぜ神を求めるのか」を問いかける、いまこそ読みたい少女マンガの伝説的名作を紹介する。",
+      "briefSummary": "約1万2000年前の日本を舞台に、神々と人間の戦いを描く水樹和佳子のSF大河ロマン『イティハーサ』。信仰、権力、救い、争いを通して「神とは何か」「人はなぜ神を求めるのか」を問いかける、いまこそ読みたい少女マンガの伝説的名作を紹介する。",
+      "category": "manga",
+      "categories": [
+        "manga",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "漫画",
+      "categoryLabels": [
+        "漫画",
+        "エンタメ"
+      ],
+      "score": 70,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946589.jpg",
+      "publishedAt": "2026-10-23T02:55:02.000Z",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/10/23/104101.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "人類が問い続けてきた「神」と「人間」を壮大なスケールで描く、いまだからこそ響く少女マンガの伝説的名作『イティハーサ』【おすすめマンガ手帖】",
+          "url": "https://animeanime.jp/article/2026/10/23/104101.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/10/23/104101.html",
+          "publishedAt": "2026-10-23T02:55:02.000Z",
+          "publishedLabel": "10/23 02:55",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946589.jpg"
+        }
+      ],
+      "whatHappened": "人類が問い続けてきた「神」と「人間」を壮大なスケールで描く、いまだからこそ響く少女マンガの伝…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-sns-東京上空の-飛行機の航路-を可視化したら-これ知りたかった-驚きの光景に-これはかなりおもしろい-空が自由なようで自由じゃない-news.yahoo.co.jp/articles/7fca994638d56f65d9eb347248c37a87b7da3a63",
+      "title": "東京上空の“飛行機の航路”を可視化したら……「これ知りたかった」　驚きの光景に「これはかなりおもしろい」「空が自由なようで自由じゃない」",
+      "summary": "画像を投稿したのは、都市や地域に関するデータを図解して発信している個人プロジェクト「まちの計量舎」のXアカウント（@machi_measure）。今回話題を呼んだのは、首都圏上空の航空機の観測場所を地図上で可視化したデータです。 図では、観測回数が多い場所ほど濃い赤色で表示されています。羽田空港や成…",
+      "briefSummary": "画像を投稿したのは、都市や地域に関するデータを図解して発信している個人プロジェクト「まちの計量舎」のXアカウント（@machi_measure）。今回話題を呼んだのは、首都圏上空の航空機の観測場所を地図上で可視化したデータです。 図では、観測回数が多い場所ほど濃い赤色で表示されています。羽田空港や成田空港の周辺からは、さまざまな方向へ航空機の飛行経路が伸びて…",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "SNS",
+      "categoryLabels": [
+        "SNS",
+        "ネットカルチャー",
+        "エンタメ"
+      ],
+      "score": 90,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-23T02:55:00.000Z",
+      "capturedAt": "2026-10-23T06:28:36.646Z",
+      "time": "3時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/7fca994638d56f65d9eb347248c37a87b7da3a63?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "東京上空の“飛行機の航路”を可視化したら……「これ知りたかった」　驚きの光景に「これはかなりおもしろい」「空が自由なようで自由じゃない」",
+          "url": "https://news.yahoo.co.jp/articles/7fca994638d56f65d9eb347248c37a87b7da3a63?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/7fca994638d56f65d9eb347248c37a87b7da3a63?source=rss",
+          "publishedAt": "2026-10-23T02:55:00.000Z",
+          "publishedLabel": "10/23 02:55",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "東京上空の“飛行機の航路”を可視化したら……「これ知りたかった」 驚きの光景に「これはかなり…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-anime-日本のアニメ批評・ゲーム批評が死んだままだと-黒船-に持っていかれるよ-p-shirokuma.hatenadiary.com/entry/20261023/1792722086",
+      "title": "日本のアニメ批評・ゲーム批評が死んだままだと「黒船」に持っていかれるよ",
+      "summary": "おとといから昨日にかけて、前から気になっていたことを代弁してくれるようなツイートを相次いで見かけた。 日本で、アニメや漫画の「考察」と呼ばれているものは、えんえんと…",
+      "briefSummary": "おとといから昨日にかけて、前から気になっていたことを代弁してくれるようなツイートを相次いで見かけた。 日本で、アニメや漫画の「考察」と呼ばれているものは、えんえんと設定の話ばかりしていて、その作品の制作意図だとか、社会的影響だとか、そういう…",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "sns",
+        "net-culture",
+        "manga",
+        "general"
+      ],
+      "categoryLabel": "アニメ",
+      "categoryLabels": [
+        "アニメ",
+        "SNS",
+        "ネットカルチャー",
+        "漫画"
+      ],
+      "score": 65,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://p-shirokuma.hatenadiary.com/entry/20261023/1792722086",
+      "publishedAt": "2026-10-23T02:54:38.000Z",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://p-shirokuma.hatenadiary.com/entry/20261023/1792722086",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "日本のアニメ批評・ゲーム批評が死んだままだと「黒船」に持っていかれるよ",
+          "url": "https://p-shirokuma.hatenadiary.com/entry/20261023/1792722086",
+          "canonicalUrl": "https://p-shirokuma.hatenadiary.com/entry/20261023/1792722086",
+          "publishedAt": "2026-10-23T02:54:38.000Z",
+          "publishedLabel": "10/23 02:54",
+          "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://p-shirokuma.hatenadiary.com/entry/20261023/1792722086"
+        }
+      ],
+      "whatHappened": "日本のアニメ批評・ゲーム批評が死んだままだと「黒船」に持っていかれるよ",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "漫画・アニメ好き",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-anime-劇場版-薬屋のひとりごと-入プレ第1弾やムビチケ第2弾が決定-7つの最新情報が一挙お披露目-animeanime.jp/article/2026/10/23/104100.html",
+      "title": "「劇場版 薬屋のひとりごと」入プレ第1弾やムビチケ第2弾が決定！ 7つの最新情報が一挙お披露目",
+      "summary": "『劇場版 薬屋のひとりごと 亡妃の秘宝』が、2026年12月11日より公開される。このたび、入場者特典第1弾の配布やムビチケ第2弾の発売など、7つの豪華な最新情報が一挙にお披露目となった。さらに公開初日には金曜ロードショーにて、TVアニメ第２期２クール目のエピソードを中心とする特別編集版「『薬屋のひ…",
+      "briefSummary": "『劇場版 薬屋のひとりごと 亡妃の秘宝』が、2026年12月11日より公開される。このたび、入場者特典第1弾の配布やムビチケ第2弾の発売など、7つの豪華な最新情報が一挙にお披露目となった。さらに公開初日には金曜ロードショーにて、TVアニメ第２期２クール目のエピソードを中心とする特別編集版「『薬屋のひとりごと』スペシャルエディション」が放送されることも決定した…",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "アニメ",
+      "categoryLabels": [
+        "アニメ",
+        "エンタメ"
+      ],
+      "score": 70,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946827.jpg",
+      "publishedAt": "2026-10-23T02:51:16.000Z",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/10/23/104100.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「劇場版 薬屋のひとりごと」入プレ第1弾やムビチケ第2弾が決定！ 7つの最新情報が一挙お披露目",
+          "url": "https://animeanime.jp/article/2026/10/23/104100.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/10/23/104100.html",
+          "publishedAt": "2026-10-23T02:51:16.000Z",
+          "publishedLabel": "10/23 02:51",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946827.jpg"
+        }
+      ],
+      "whatHappened": "「劇場版 薬屋のひとりごと」入プレ第1弾やムビチケ第2弾が決定",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
     {
       "id": "auto-entertainment-任天堂の宮本茂さんに文化勲章-ゲーム分野初の受章-大衆音楽の都倉俊一さん・ノーベル賞の硤合憲三さんも-yomiuri.co.jp/culture/20261023-gyt1t00118",
       "title": "任天堂の宮本茂さんに文化勲章、ゲーム分野初の受章…大衆音楽の都倉俊一さん・ノーベル賞の硤合憲三さんも",
@@ -166,13 +661,13 @@
       "categoryLabels": [
         "ゲーム"
       ],
-      "score": 75,
+      "score": 70,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/964/G096434/20261023004/SS/002.jpg",
       "publishedAt": "2026-10-23T02:49:33.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/964/G096434/20261023004/",
       "hotReasons": [
@@ -258,7 +753,9 @@
       "whatHappened": "マリオ生みの親 宮本氏に文化勲章",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
     },
     {
       "id": "auto-business-ライフリ-イモータルジャスティスをコンパス以外の組織で運用したら-簡易生産機-cde仕様機-が-ガンダムseed-freedom-msv-で公開-inside-games.jp/article/2026/10/23/189679.html",
@@ -276,13 +773,13 @@
         "経済",
         "ゲーム"
       ],
-      "score": 75,
+      "score": 70,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1797640.jpg",
       "publishedAt": "2026-10-23T02:45:03.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
       "sourceName": "INSIDE",
       "sourceUrl": "https://www.inside-games.jp/article/2026/10/23/189679.html",
       "hotReasons": [
@@ -457,13 +954,13 @@
         "エンタメ",
         "漫画"
       ],
-      "score": 75,
+      "score": 69,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946396.jpg",
       "publishedAt": "2026-10-23T02:40:02.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/23/104099.html",
       "hotReasons": [
@@ -551,8 +1048,8 @@
     {
       "id": "auto-general-nyセントラルパークの馬車廃止へ-news.yahoo.co.jp/pickup/6599787",
       "title": "NYセントラルパークの馬車廃止へ",
-      "summary": "",
-      "briefSummary": "",
+      "summary": "アメリカ・ニューヨークの観光名所、セントラルパーク名物の馬車が廃止されることになりました。ニューヨーク市議会は22日、セントラルパークの馬車を2028年6月までに廃止する法案を賛成多数で可決しました",
+      "briefSummary": "アメリカ・ニューヨークの観光名所、セントラルパーク名物の馬車が廃止されることになりました。ニューヨーク市議会は22日、セントラルパークの馬車を2028年6月までに廃止する法案を賛成多数で可決しました",
       "category": "world",
       "categories": [
         "world",
@@ -563,13 +1060,13 @@
         "国際",
         "その他"
       ],
-      "score": 72,
+      "score": 66,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-23T02:39:24.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
       "sourceName": "Yahoo!ニュース / 国際",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6599787?source=rss",
       "hotReasons": [
@@ -673,13 +1170,13 @@
         "エンタメ",
         "漫画"
       ],
-      "score": 74,
+      "score": 69,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946636.jpg",
       "publishedAt": "2026-10-23T02:30:03.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/23/104098.html",
       "hotReasons": [
@@ -796,13 +1293,13 @@
         "テック",
         "エンタメ"
       ],
-      "score": 77,
+      "score": 72,
       "posts": 2,
       "metricLabel": "sources",
       "thumbnailUrl": "https://www.4gamer.net/games/999/G999903/20261022056/SS/002.jpg",
       "publishedAt": "2026-10-23T02:30:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/999/G999903/20261022056/",
       "hotReasons": [
@@ -860,13 +1357,13 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 68,
+      "score": 63,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261022155227.jpg",
       "publishedAt": "2026-10-23T02:30:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/23518645.html",
       "hotReasons": [
@@ -922,13 +1419,13 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 67,
+      "score": 62,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-23T02:30:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/enterprise/articles/2610/22/news077.html",
       "hotReasons": [
@@ -983,13 +1480,13 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 67,
+      "score": 62,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-23T02:29:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "17時間前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/mobile/articles/2610/23/news052.html",
       "hotReasons": [
@@ -1107,13 +1604,13 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 74,
+      "score": 69,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://img.kai-you.net/storage/2026/10/9aa80f07-f371-420d-9a4a-763e8896959b/main/raden.webp",
       "publishedAt": "2026-10-23T02:20:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "18時間前",
       "sourceName": "KAI-YOU",
       "sourceUrl": "https://kai-you.net/article/96922",
       "hotReasons": [
@@ -1167,13 +1664,13 @@
         "経済",
         "ゲーム"
       ],
-      "score": 74,
+      "score": 69,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1210059.jpg",
       "publishedAt": "2026-10-23T02:16:25.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "18時間前",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/10/23/173977.html",
       "hotReasons": [
@@ -1226,13 +1723,13 @@
         "エンタメ",
         "漫画"
       ],
-      "score": 74,
+      "score": 69,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/946811.jpg",
       "publishedAt": "2026-10-23T02:15:02.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "18時間前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/23/104097.html",
       "hotReasons": [
@@ -1285,13 +1782,13 @@
         "ネットカルチャー",
         "SNS"
       ],
-      "score": 68,
+      "score": 63,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261022221926.jpg",
       "publishedAt": "2026-10-23T02:15:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "18時間前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/23518656.html",
       "hotReasons": [
@@ -1331,8 +1828,8 @@
     {
       "id": "auto-general-松井秀喜氏-巨人の新監督に就任へ-news.yahoo.co.jp/pickup/6599785",
       "title": "松井秀喜氏 巨人の新監督に就任へ",
-      "summary": "",
-      "briefSummary": "",
+      "summary": "巨人の新監督に、OBの松井秀喜氏（52）が就任することが分かった。23日午後に会見を行う。1990～2000年代、4番に君臨し本塁打を量産。ヤンキースなどメジャーでも活躍し、日米通算507本塁打を放",
+      "briefSummary": "巨人の新監督に、OBの松井秀喜氏（52）が就任することが分かった。23日午後に会見を行う。1990～2000年代、4番に君臨し本塁打を量産。ヤンキースなどメジャーでも活躍し、日米通算507本塁打を放",
       "category": "sports",
       "categories": [
         "sports",
@@ -1459,13 +1956,13 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 74,
+      "score": 69,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://img.kai-you.net/storage/2026/10/8192c340-3434-45d5-9ee2-db7a4ca6bd12/main/pupa-MV.webp",
       "publishedAt": "2026-10-23T02:04:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "14時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "18時間前",
       "sourceName": "KAI-YOU",
       "sourceUrl": "https://kai-you.net/article/96919",
       "hotReasons": [
@@ -1816,13 +2313,13 @@
         "ゲーム",
         "エンタメ"
       ],
-      "score": 73,
+      "score": 68,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1207130.jpg",
       "publishedAt": "2026-10-23T01:45:02.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "15時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "18時間前",
       "sourceName": "Game*Spark",
       "sourceUrl": "http://www.gamespark.jp/article/2026/10/23/173975.html",
       "hotReasons": [
@@ -1937,13 +2434,13 @@
         "ゲーム",
         "エンタメ"
       ],
-      "score": 73,
+      "score": 68,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261023-475071-header.jpg",
       "publishedAt": "2026-10-23T01:42:39.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "15時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "18時間前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261023-475071/",
       "hotReasons": [
@@ -2417,13 +2914,13 @@
       "categoryLabels": [
         "その他"
       ],
-      "score": 59,
+      "score": 54,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-23T01:24:07.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "15時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "18時間前",
       "sourceName": "Yahoo!ニュース / 地域",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6599783?source=rss",
       "hotReasons": [],
@@ -2950,13 +3447,13 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 67,
+      "score": 62,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://s.tgstc.com/ogp3/9eac1147e085ebc45e87898e29f0ee23-1200x630.jpeg",
       "publishedAt": "2026-10-23T01:03:41.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "15時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "19時間前",
       "sourceName": "はてなブックマーク人気",
       "sourceUrl": "https://posfie.com/@petaritape/p/DLjeZI2",
       "hotReasons": [
@@ -3375,13 +3872,13 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 72,
+      "score": 67,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://img.kai-you.net/storage/2026/06/2b899842-a183-4de7-9108-1d381a54c16d/main/commander_eye.webp",
       "publishedAt": "2026-10-23T01:00:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "15時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "19時間前",
       "sourceName": "KAI-YOU",
       "sourceUrl": "https://kai-you.net/article/95541",
       "hotReasons": [
@@ -3438,13 +3935,13 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 65,
+      "score": 60,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-23T01:00:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "15時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "19時間前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/mobile/articles/2610/23/news037.html",
       "hotReasons": [
@@ -3558,13 +4055,13 @@
         "国際",
         "その他"
       ],
-      "score": 68,
+      "score": 63,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-23T00:35:28.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "16時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "19時間前",
       "sourceName": "Yahoo!ニュース / 国際",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6599779?source=rss",
       "hotReasons": [
@@ -3660,13 +4157,13 @@
       "categoryLabels": [
         "ゲーム"
       ],
-      "score": 71,
+      "score": 66,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261023-475064-header.jpg",
       "publishedAt": "2026-10-23T00:34:19.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "16時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "19時間前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261023-475064/",
       "hotReasons": [
@@ -3768,13 +4265,13 @@
       "categoryLabels": [
         "エンタメ"
       ],
-      "score": 63,
+      "score": 58,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-23T00:30:11.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "16時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "19時間前",
       "sourceName": "Yahoo!ニュース / エンタメ",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6599776?source=rss",
       "hotReasons": [],
@@ -3944,13 +4441,13 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 64,
+      "score": 59,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/23/2000002534/10010252/2048",
       "publishedAt": "2026-10-23T00:29:08.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "16時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "19時間前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/23/2000002534/",
       "hotReasons": [
@@ -4121,13 +4618,13 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 64,
+      "score": 59,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/23/2000002532/10010243/2048",
       "publishedAt": "2026-10-23T00:24:14.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "16時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "19時間前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/23/2000002532/",
       "hotReasons": [
@@ -4243,13 +4740,13 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 64,
+      "score": 59,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-23T00:20:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "16時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "20時間前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/enterprise/articles/2610/23/news014.html",
       "hotReasons": [
@@ -4410,6 +4907,59 @@
       ]
     },
     {
+      "id": "auto-general-チベットでm7-0の地震-16人死亡-news.yahoo.co.jp/pickup/6599773",
+      "title": "チベットでM7.0の地震 16人死亡",
+      "summary": "中国のチベット自治区で22日、強い地震があり、これまでに16人が死亡46人が負傷しました。中国国営テレビによりますと、チベット自治区で22日夜マグニチュード7.0の地震が発生しました。国営テレビは、",
+      "briefSummary": "中国のチベット自治区で22日、強い地震があり、これまでに16人が死亡46人が負傷しました。 中国国営テレビによりますと、チベット自治区で22日夜マグニチュード7.0の地震が発生しました。 国営テレビは、この地震でこれまでに16人が死亡、46人が負傷し、339棟の建物が被害を受けたと伝えています。 現場は隣接する青海省（せいかいしょう）との境界付近の海抜約48…",
+      "category": "world",
+      "categories": [
+        "world",
+        "general"
+      ],
+      "categoryLabel": "国際",
+      "categoryLabels": [
+        "国際",
+        "その他"
+      ],
+      "score": 63,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-23T00:07:35.000Z",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "20時間前",
+      "sourceName": "Yahoo!ニュース / 国際",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6599773?source=rss",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-world",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 国際",
+          "sourceGroup": "important-news",
+          "sourcePriority": 78,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "チベットでM7.0の地震 16人死亡",
+          "url": "https://news.yahoo.co.jp/pickup/6599773?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6599773?source=rss",
+          "publishedAt": "2026-10-23T00:07:35.000Z",
+          "publishedLabel": "10/23 00:07",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "チベットでM7.0の地震 16人死亡",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [
+        "時事ニュースを追う人"
+      ]
+    },
+    {
       "id": "auto-tech-itmedia-news-トランプ大統領-googleに-大西洋-の改名を打診-ピチャイceoが-大洋は勘弁を-と難色-itmedia.co.jp/news/article/2610/23/2000002533",
       "title": "[ITmedia News] トランプ大統領、Googleに「大西洋」の改名を打診　ピチャイCEOが「大洋は勘弁を」と難色",
       "summary": "トランプ大統領は中間選挙の集会で、大西洋の名称変更をGoogleに打診したものの、ピチャイCEOに断られたと明かした。メキシコ湾やオンタリオ湖の改称に続く構想だった…",
@@ -4431,13 +4981,13 @@
         "政治",
         "国際"
       ],
-      "score": 64,
+      "score": 58,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/23/2000002533/10010249/2048",
       "publishedAt": "2026-10-23T00:02:32.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "16時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "20時間前",
       "sourceName": "ITmedia",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/23/2000002533/",
       "hotReasons": [
@@ -4492,13 +5042,13 @@
         "エンタメ",
         "漫画"
       ],
-      "score": 71,
+      "score": 65,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/945004.jpg",
       "publishedAt": "2026-10-23T00:00:03.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "16時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "20時間前",
       "sourceName": "アニメ！アニメ！",
       "sourceUrl": "https://animeanime.jp/article/2026/10/23/104096.html",
       "hotReasons": [
@@ -5244,13 +5794,13 @@
         "政治",
         "国際"
       ],
-      "score": 67,
+      "score": 62,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
       "publishedAt": "2026-10-22T23:26:38.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "17時間前",
+      "capturedAt": "2026-10-23T20:22:54.864Z",
+      "time": "20時間前",
       "sourceName": "Yahoo!ニュース / 国際",
       "sourceUrl": "https://news.yahoo.co.jp/pickup/6599769?source=rss",
       "hotReasons": [
@@ -5398,552 +5948,6 @@
         }
       ],
       "whatHappened": "入社2年目で社用携帯を持ち帰らない人がいるけど、指摘することが「時間外の業務指示」扱いで問題…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-電車を降りた女性-ふと足元を見ると-思わず撮影した-まさかの光景-に-バンクシー現る-現代の雪舟-news.yahoo.co.jp/articles/3651d3f2d92c5565222928a8de8bcf29d5e6621a",
-      "title": "電車を降りた女性→ふと足元を見ると……　思わず撮影した“まさかの光景”に「バンクシー現る？」「現代の雪舟」",
-      "summary": "駅のホームで足元を見ると……。発見したまさかの光景が、Threadsで話題に。投稿は記事執筆時点で4万回以上表示され、2600件以上の“いいね”を獲得しています。【…",
-      "briefSummary": "駅のホームで足元を見ると……。発見したまさかの光景が、Threadsで話題に。投稿は記事執筆時点で4万回以上表示され、2600件以上の“いいね”を獲得しています。【画像】まさかの光景 画像を投稿したの",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 84,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-22T23:15:00.000Z",
-      "capturedAt": "2026-10-23T06:28:36.646Z",
-      "time": "7時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/3651d3f2d92c5565222928a8de8bcf29d5e6621a?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "電車を降りた女性→ふと足元を見ると……　思わず撮影した“まさかの光景”に「バンクシー現る？」「現代の雪舟」",
-          "url": "https://news.yahoo.co.jp/articles/3651d3f2d92c5565222928a8de8bcf29d5e6621a?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/3651d3f2d92c5565222928a8de8bcf29d5e6621a?source=rss",
-          "publishedAt": "2026-10-22T23:15:00.000Z",
-          "publishedLabel": "10/22 23:15",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "電車を降りた女性→ふと足元を見ると…… 思わず撮影した“まさかの光景”に「バンクシー現る？」…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-games-fallout-4-ヌカ・コーラの液体感-が凄くなるmod-dynamic-bottle-liquids-配信-ビンの泡や空気もリアルに表現-gamespark.jp/article/2026/10/23/173970.html",
-      "title": "『Fallout 4』“ヌカ・コーラの液体感”が凄くなるMod「Dynamic Bottle Liquids」配信―ビンの泡や空気もリアルに表現",
-      "summary": "『Half-Life: Alyx』にインスパイアされた液体感マシマシのMod登場",
-      "briefSummary": "「Dynamic Bottle Liquids」は『Fallout4』向けに Nexus Mods で公開中。前提Modを確認の上、導入に際しては自己責任でお願いします。",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "エンタメ"
-      ],
-      "score": 76,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1209898.webp",
-      "publishedAt": "2026-10-22T23:00:02.000Z",
-      "capturedAt": "2026-10-23T12:01:19.393Z",
-      "time": "13時間前",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/10/23/173970.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "『Fallout 4』“ヌカ・コーラの液体感”が凄くなるMod「Dynamic Bottle Liquids」配信―ビンの泡や空気もリアルに表現",
-          "url": "http://www.gamespark.jp/article/2026/10/23/173970.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/10/23/173970.html",
-          "publishedAt": "2026-10-22T23:00:02.000Z",
-          "publishedLabel": "10/22 23:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1209898.webp"
-        }
-      ],
-      "whatHappened": "『Fallout 4』“ヌカ・コーラの液体感”が凄くなるMod「Dynamic Bottle…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-sports-サッカー少年の15歳兄と1歳弟-9年後-やば-エモすぎ-現在の姿に-泣いちゃいます-親としたらほんと幸せ-news.yahoo.co.jp/articles/ad7982946b336cfc196ee8d18a3486591911ee3b",
-      "title": "サッカー少年の15歳兄と1歳弟→9年後……「やば　エモすぎ」　現在の姿に「泣いちゃいます」「親としたらほんと幸せ」",
-      "summary": "15歳兄のサッカーを見ていた1歳弟が、9年後……。思わず胸が熱くなる、成長した現在の姿がInstagramで話題です。投稿は記事執筆時点で12万回以上再生され、さま…",
-      "briefSummary": "15歳兄のサッカーを見ていた1歳弟が、9年後……。思わず胸が熱くなる、成長した現在の姿がInstagramで話題です。投稿は記事執筆時点で12万回以上再生され、さまざまな反響が寄せられています。【画像",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 84,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-22T23:00:00.000Z",
-      "capturedAt": "2026-10-23T06:28:36.646Z",
-      "time": "7時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/ad7982946b336cfc196ee8d18a3486591911ee3b?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "サッカー少年の15歳兄と1歳弟→9年後……「やば　エモすぎ」　現在の姿に「泣いちゃいます」「親としたらほんと幸せ」",
-          "url": "https://news.yahoo.co.jp/articles/ad7982946b336cfc196ee8d18a3486591911ee3b?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/ad7982946b336cfc196ee8d18a3486591911ee3b?source=rss",
-          "publishedAt": "2026-10-22T23:00:00.000Z",
-          "publishedLabel": "10/22 23:00",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "サッカー少年の15歳兄と1歳弟→9年後……「やば エモすぎ」 現在の姿に「泣いちゃいます」「…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-games-gears-of-war-e-day-の戦場では-決して1人じゃない-ルーキーが目の当たりにした仲間たちの筋肉-絆-そしてアツさ-プレイレポ-4gamer.net/games/968/g096869/20261022013",
-      "title": "「Gears of War: E-Day」の戦場では，決して1人じゃない。ルーキーが目の当たりにした仲間たちの筋肉，絆，そしてアツさ［プレイレポ］",
-      "summary": "2026年10月6日にリリースされた「GearsofWar:E-Day」は，地底からやってくる未知なる脅威との戦いを描くSFサバイバルTPSシリーズの最新作だ。シリ…",
-      "briefSummary": "2026年10月6日にリリースされた「GearsofWar:E-Day」は，地底からやってくる未知なる脅威との戦いを描くSFサバイバルTPSシリーズの最新作だ。シリーズ初体験のライターが，シングルプレイとオンライン協力プレイで，キャンペーン…",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 75,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/968/G096869/20261022013/SS/015.jpg",
-      "publishedAt": "2026-10-22T23:00:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "17時間前",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/968/G096869/20261022013/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "「Gears of War: E-Day」の戦場では，決して1人じゃない。ルーキーが目の当たりにした仲間たちの筋肉，絆，そしてアツさ［プレイレポ］",
-          "url": "https://www.4gamer.net/games/968/G096869/20261022013/",
-          "canonicalUrl": "https://www.4gamer.net/games/968/G096869/20261022013/",
-          "publishedAt": "2026-10-22T23:00:00.000Z",
-          "publishedLabel": "10/22 23:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/968/G096869/20261022013/SS/015.jpg"
-        }
-      ],
-      "whatHappened": "「Gears of War: E-Day」の戦場では，決して1人じゃない",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "終了前の条件確認や購入判断に直結しやすい情報です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き",
-        "セール好き"
-      ]
-    },
-    {
-      "id": "auto-games-嵐の迫る無人の町で失踪したミュージシャンを追う横スクロールホラー-silver-pines-4gamer.net/games/987/g098799/20261022002",
-      "title": "嵐の迫る無人の町で失踪したミュージシャンを追う横スクロールホラー「Silver Pines」",
-      "summary": "本日の「あかねのSteamPickUp！」では，嵐の迫る田舎町で消えたミュージシャンを追う横スクロールのサバイバルホラー「SilverPines」を紹介。私立探偵と…",
-      "briefSummary": "本日の「あかねのSteamPickUp！」では，嵐の迫る田舎町で消えたミュージシャンを追う横スクロールのサバイバルホラー「SilverPines」を紹介。私立探偵となって無人の町を探索し，金庫の暗号を解きながら行ける場所を広げていく。セーブ…",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 69,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/987/G098799/20261022002/SS/009.jpg",
-      "publishedAt": "2026-10-22T23:00:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "17時間前",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/987/G098799/20261022002/",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "嵐の迫る無人の町で失踪したミュージシャンを追う横スクロールホラー「Silver Pines」",
-          "url": "https://www.4gamer.net/games/987/G098799/20261022002/",
-          "canonicalUrl": "https://www.4gamer.net/games/987/G098799/20261022002/",
-          "publishedAt": "2026-10-22T23:00:00.000Z",
-          "publishedLabel": "10/22 23:00",
-          "thumbnailUrl": "https://www.4gamer.net/games/987/G098799/20261022002/SS/009.jpg"
-        }
-      ],
-      "whatHappened": "嵐の迫る無人の町で失踪したミュージシャンを追う横スクロールホラー「Silver Pines」",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-tech-itmedia-pc-user-折りたたみ型から薄型まで-スマホやタブレットで-本気-の文字入力に使える持ち運び用キーボードを選ぶコツ-itmedia.co.jp/pcuser/articles/2610/23/news039.html",
-      "title": "[ITmedia PC USER] 折りたたみ型から薄型まで！　スマホやタブレットで“本気”の文字入力に使える持ち運び用キーボードを選ぶコツ",
-      "summary": "出張や帰省先でスマートフォンやタブレットを使って文章を打ちたい人に向けて、持ち運び用キーボードを選ぶときに確認したい重さとサイズ、キー配列、接続と電源のポイントを解…",
-      "briefSummary": "出張や帰省先でスマートフォンやタブレットを使って文章を打ちたい人に向けて、持ち運び用キーボードを選ぶときに確認したい重さとサイズ、キー配列、接続と電源のポイントを解説し、タイプ別に製品を紹介する。",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 69,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-22T23:00:00.000Z",
-      "capturedAt": "2026-10-23T12:01:19.393Z",
-      "time": "13時間前",
-      "sourceName": "ITmedia",
-      "sourceUrl": "https://www.itmedia.co.jp/pcuser/articles/2610/23/news039.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-all",
-          "source": "ITmedia",
-          "sourceName": "ITmedia",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 68,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "[ITmedia PC USER] 折りたたみ型から薄型まで！　スマホやタブレットで“本気”の文字入力に使える持ち運び用キーボードを選ぶコツ",
-          "url": "https://www.itmedia.co.jp/pcuser/articles/2610/23/news039.html",
-          "canonicalUrl": "https://www.itmedia.co.jp/pcuser/articles/2610/23/news039.html",
-          "publishedAt": "2026-10-22T23:00:00.000Z",
-          "publishedLabel": "10/22 23:00",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "[ITmedia PC USER] 折りたたみ型から薄型まで",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ガジェット好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-sports-サッカー日本代表・上田綺世の妻-メガネ姿で愛娘と2ショット-可愛すぎてもう-j-cast.com/2026/10/23518640.html",
-      "title": "サッカー日本代表・上田綺世の妻、メガネ姿で愛娘と2ショット　「可愛すぎてもう」",
-      "summary": "サッカー日本代表FW上田綺世選手（リール）の妻で、モデルの由布菜月さん（28）が2026年10月19日、自身のインスタグラムを更新。娘を抱っこするショットを披露した…",
-      "briefSummary": "サッカー日本代表FW上田綺世選手（リール）の妻で、モデルの由布菜月さん（28）が2026年10月19日、自身のインスタグラムを更新。娘を抱っこするショットを披露した。 続きは「J-CASTニュース」へ",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 63,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261022151726.jpg",
-      "publishedAt": "2026-10-22T23:00:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "17時間前",
-      "sourceName": "J-CASTニュース",
-      "sourceUrl": "https://www.j-cast.com/2026/10/23518640.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "jcast",
-          "source": "J-CASTニュース",
-          "sourceName": "J-CASTニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 72,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz"
-          ],
-          "title": "サッカー日本代表・上田綺世の妻、メガネ姿で愛娘と2ショット　「可愛すぎてもう」",
-          "url": "https://www.j-cast.com/2026/10/23518640.html",
-          "canonicalUrl": "https://www.j-cast.com/2026/10/23518640.html",
-          "publishedAt": "2026-10-22T23:00:00.000Z",
-          "publishedLabel": "10/22 23:00",
-          "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261022151726.jpg"
-        }
-      ],
-      "whatHappened": "サッカー日本代表・上田綺世の妻、メガネ姿で愛娘と2ショット 「可愛すぎてもう」",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-tech-itmedia-エンタープライズ-なぜ-重要システムは-分割-すべきなのか-ai攻撃から守り切れない時代-it部門が考えるべき-備え-とは-itmedia.co.jp/enterprise/articles/2610/23/news010.html",
-      "title": "[ITmedia エンタープライズ] なぜ、重要システムは“分割”すべきなのか？　AI攻撃から守り切れない時代、IT部門が考えるべき「備え」とは",
-      "summary": "生成AIが東大の入試問題で合格者最高点を上回った今、その能力はサイバー攻撃でも威力を発揮している。攻撃からシステムを守り切れない前提に立つとき、その被害を最小化する…",
-      "briefSummary": "生成AIが東大の入試問題で合格者最高点を上回った今、その能力はサイバー攻撃でも威力を発揮している。攻撃からシステムを守り切れない前提に立つとき、その被害を最小化するためにどうすべきか。",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 62,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-22T23:00:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "17時間前",
-      "sourceName": "ITmedia",
-      "sourceUrl": "https://www.itmedia.co.jp/enterprise/articles/2610/23/news010.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-all",
-          "source": "ITmedia",
-          "sourceName": "ITmedia",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 68,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "[ITmedia エンタープライズ] なぜ、重要システムは“分割”すべきなのか？　AI攻撃から守り切れない時代、IT部門が考えるべき「備え」とは",
-          "url": "https://www.itmedia.co.jp/enterprise/articles/2610/23/news010.html",
-          "canonicalUrl": "https://www.itmedia.co.jp/enterprise/articles/2610/23/news010.html",
-          "publishedAt": "2026-10-22T23:00:00.000Z",
-          "publishedLabel": "10/22 23:00",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "[ITmedia エンタープライズ] なぜ、重要システムは“分割”すべきなのか",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "仕事や制作環境、導入判断に影響する可能性があります。",
-      "targetAudience": [
-        "AI利用者",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-tech-itmedia-エグゼクティブ-話を聞いてもらえない-のは-内容のせいとは限らない-伝わる人が押さえる第一印象-mag.executive.itmedia.co.jp/executive/article/2610/23/2000002378",
-      "title": "[ITmedia エグゼクティブ] 「話を聞いてもらえない」のは、内容のせいとは限らない――伝わる人が押さえる第一印象",
-      "summary": "仕事で「きちんと説明したのに伝わらない」と悩むビジネスパーソンへ。相手に話を聞いてもらうには、話の内容以上に「どう見えているか」という第一印象が重要である。本記事で…",
-      "briefSummary": "仕事で「きちんと説明したのに伝わらない」と悩むビジネスパーソンへ。相手に話を聞いてもらうには、話の内容以上に「どう見えているか」という第一印象が重要である。本記事では、相手が話を受け取りやすくなる「表情」「姿勢」「視線」の3つのポイントと、…",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 62,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://mag.executive.itmedia.co.jp/executive/article/ogp/2610/23/2000002378/10009779/2048",
-      "publishedAt": "2026-10-22T23:00:00.000Z",
-      "capturedAt": "2026-10-23T16:57:48.014Z",
-      "time": "17時間前",
-      "sourceName": "ITmedia",
-      "sourceUrl": "https://mag.executive.itmedia.co.jp/executive/article/2610/23/2000002378/",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-all",
-          "source": "ITmedia",
-          "sourceName": "ITmedia",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 68,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "[ITmedia エグゼクティブ] 「話を聞いてもらえない」のは、内容のせいとは限らない――伝わる人が押さえる第一印象",
-          "url": "https://mag.executive.itmedia.co.jp/executive/article/2610/23/2000002378/",
-          "canonicalUrl": "https://mag.executive.itmedia.co.jp/executive/article/2610/23/2000002378/",
-          "publishedAt": "2026-10-22T23:00:00.000Z",
-          "publishedLabel": "10/22 23:00",
-          "thumbnailUrl": "https://mag.executive.itmedia.co.jp/executive/article/ogp/2610/23/2000002378/10009779/2048"
-        }
-      ],
-      "whatHappened": "[ITmedia エグゼクティブ] 「話を聞いてもらえない」のは、内容のせいとは限らない――…",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [

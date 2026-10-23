@@ -1,36 +1,91 @@
 {
-  "generatedAt": "2026-10-23T06:31:18.049Z",
+  "generatedAt": "2026-10-23T12:04:00.185Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-44",
-  "selectedTitle": "任天堂・宮本茂氏の文化勲章受章が決定。『マリオ』『ゼルダ』『ピクミン』の生みの親。「“作る”とは何なのか。AIの発展でみんなが考える」。記者会見で語られた歩みと哲学",
+  "selectedClusterId": "today-cluster-343",
+  "selectedTitle": "「普通じゃない」ヒカル恋人の1歳息子に“サッカーファン”が騒然→「とんでもない」「ありえないww」親戚はプロサッカー選手",
   "candidates": [
     {
-      "clusterId": "today-cluster-44",
-      "title": "任天堂・宮本茂氏の文化勲章受章が決定。『マリオ』『ゼルダ』『ピクミン』の生みの親。「“作る”とは何なのか。AIの発展でみんなが考える」。記者会見で語られた歩みと哲学",
-      "category": "games",
+      "clusterId": "today-cluster-343",
+      "title": "「普通じゃない」ヒカル恋人の1歳息子に“サッカーファン”が騒然→「とんでもない」「ありえないww」親戚はプロサッカー選手",
+      "category": "sports",
       "categories": [
-        "games",
-        "sns",
+        "sports",
         "net-culture",
+        "entertainment",
+        "sns",
         "general"
       ],
-      "buzzScore": 68.9,
-      "confidence": 0.4,
+      "buzzScore": 72.4,
+      "confidence": 0.38,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 7.4,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 37.8,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-11",
+      "title": "『攻殻機動隊』新作アニメーションの制作が始動！TVアニメ『攻殻機動隊 THE GHOST IN THE SHELL』に引き続き、サイエンスSARUが制作を担当",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "anime",
+        "games",
+        "general"
+      ],
+      "buzzScore": 71.5,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 18.5,
         "internetNativeBoost": 8,
-        "search": 6.5,
+        "search": 5.8,
         "social": 7,
-        "velocity": 0,
-        "freshness": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -46,8 +101,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 45,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
@@ -57,31 +112,33 @@
       ]
     },
     {
-      "clusterId": "today-cluster-14",
-      "title": "Steamで無料“世界で同時に一人しかプレイできない”ゲームが注目集める。順番待ちは仲良く雑談、“後方腕組み観戦”もできる",
+      "clusterId": "today-cluster-12",
+      "title": "『超かぐや姫！』の“ブラックオニキス”が「anan AWARD 2026」授賞式に映像出演決定。“時代の顔”を表彰するアワード、11月14日にYouTubeで生配信",
       "category": "games",
       "categories": [
         "games",
-        "sns",
+        "entertainment",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 67.5,
-      "confidence": 0.4,
+      "buzzScore": 70.5,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 6.5,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
+        "search": 5.6,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -96,10 +153,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
-        "internalSocialScore": 43.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -108,68 +165,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1",
-      "title": "『FF』新作『ファイナルファンタジー レゾナンス』一日遅れのSteamでも“同接2万越”の大盛況。もしもが現実になった“ドット絵の『FF』”",
-      "category": "games",
+      "clusterId": "today-cluster-176",
+      "title": "「泣きそう」吉岡里帆、純白のドレス姿にネット騒然「どこのお姫様かと思った」「1億ぐらいするのかな？」",
+      "category": "entertainment",
       "categories": [
-        "games",
         "entertainment",
-        "general"
-      ],
-      "buzzScore": 66.9,
-      "confidence": 0.47,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 5.6,
-        "velocity": 8.3,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-340",
-      "title": "協力登山ゲーム「PEAK」，Switch2 / PS5 / XBOX Series X|S向けに発売。クロスプラットフォームに対応",
-      "category": "games",
-      "categories": [
-        "games",
+        "net-culture",
         "sns",
         "general"
       ],
-      "buzzScore": 66.8,
-      "confidence": 0.38,
+      "buzzScore": 66.7,
+      "confidence": 0.37,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -180,12 +186,12 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 21.6,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 4.9,
-        "social": 4.6,
-        "velocity": 2.7,
-        "freshness": 8.5,
+        "search": 4.1,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -200,10 +206,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 98,
-        "internalSearchScore": 38.2,
-        "internalSocialScore": 35.7
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 32.3,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -212,34 +218,38 @@
       ]
     },
     {
-      "clusterId": "today-cluster-57",
-      "title": "プロ野球 巨人の新監督に松井秀喜氏が就任へ",
-      "category": "sports",
+      "clusterId": "today-cluster-17",
+      "title": "判子のシヤチハタ、VTuber向け“音連動グッズ”をクラファン　配信の音に反応してペンライトが光る！",
+      "category": "entertainment",
       "categories": [
-        "sports",
+        "entertainment",
+        "tech",
         "sns",
         "net-culture",
+        "business",
         "general"
       ],
-      "buzzScore": 64,
-      "confidence": 0.38,
+      "buzzScore": 66.6,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 19.6,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 6,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 7,
+        "search": 5.5,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 12,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -252,10 +262,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 89,
-        "internalSearchScore": 46.8,
-        "internalSocialScore": 54.8
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

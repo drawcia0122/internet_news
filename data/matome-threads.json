@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T23:36:09.646Z",
-  "checkedAt": "2026-10-23T23:36:09.646Z",
-  "status": "ok",
+  "generatedAt": "2026-10-24T02:08:00.939Z",
+  "checkedAt": "2026-10-24T02:08:00.939Z",
+  "status": "partial",
   "sources": [
     {
       "id": "gamehard",
@@ -10,7 +10,7 @@
       "siteUrl": "https://aatyu.livedoor.blog/",
       "feedUrl": "https://aatyu.livedoor.blog/index.rdf",
       "status": "ok",
-      "lastSuccessAt": "2026-10-23T23:36:09.646Z",
+      "lastSuccessAt": "2026-10-24T02:08:00.939Z",
       "error": null,
       "itemCount": 20,
       "retainedCount": 42,
@@ -21,12 +21,11 @@
       "name": "ジャンプまとめ速報",
       "siteUrl": "https://jumpmatome2ch.biz/",
       "feedUrl": "https://jumpmatome2ch.biz/feed",
-      "status": "ok",
+      "status": "error",
       "lastSuccessAt": "2026-10-23T23:36:09.646Z",
-      "error": null,
-      "itemCount": 14,
-      "retainedCount": 60,
-      "entryCount": 15
+      "error": "timeout",
+      "itemCount": 0,
+      "retainedCount": 60
     },
     {
       "id": "nwknews",
@@ -34,7 +33,7 @@
       "siteUrl": "https://nwknews.jp/",
       "feedUrl": "https://nwknews.jp/index.rdf",
       "status": "ok",
-      "lastSuccessAt": "2026-10-23T23:36:09.646Z",
+      "lastSuccessAt": "2026-10-24T02:08:00.939Z",
       "error": null,
       "itemCount": 2,
       "retainedCount": 27,
@@ -58,7 +57,7 @@
       "publishedAt": "2026-10-23T23:05:40.000Z",
       "firstSeenAt": "2026-10-23T23:36:09.646Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-90bfa4386d96658c",
@@ -75,7 +74,7 @@
       ],
       "publishedAt": "2026-10-23T22:57:55.000Z",
       "firstSeenAt": "2026-10-23T23:36:09.646Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -93,7 +92,7 @@
       ],
       "publishedAt": "2026-10-23T22:35:50.000Z",
       "firstSeenAt": "2026-10-23T23:36:09.646Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -111,7 +110,7 @@
       ],
       "publishedAt": "2026-10-23T16:06:25.000Z",
       "firstSeenAt": "2026-10-23T17:08:32.896Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -130,7 +129,7 @@
       "publishedAt": "2026-10-23T15:58:06.000Z",
       "firstSeenAt": "2026-10-23T17:08:32.896Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-75dffd93d6a183e3",
@@ -149,7 +148,7 @@
       "publishedAt": "2026-10-23T15:25:44.000Z",
       "firstSeenAt": "2026-10-23T17:08:32.896Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-ed7263b35d8b8f70",
@@ -166,7 +165,7 @@
       ],
       "publishedAt": "2026-10-23T13:50:08.000Z",
       "firstSeenAt": "2026-10-23T17:08:32.896Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -185,7 +184,7 @@
       "publishedAt": "2026-10-23T13:45:28.000Z",
       "firstSeenAt": "2026-10-23T17:08:32.896Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-7cb48a89215e36d3",
@@ -204,7 +203,7 @@
       "publishedAt": "2026-10-23T13:23:21.000Z",
       "firstSeenAt": "2026-10-23T17:08:32.896Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-17e0f23285e00486",
@@ -221,7 +220,7 @@
       ],
       "publishedAt": "2026-10-23T11:41:33.000Z",
       "firstSeenAt": "2026-10-23T12:15:36.970Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -241,7 +240,7 @@
       "publishedAt": "2026-10-23T10:45:34.000Z",
       "firstSeenAt": "2026-10-23T12:15:36.970Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-970c3ca9aaae3f56",
@@ -258,7 +257,7 @@
       ],
       "publishedAt": "2026-10-23T09:47:41.000Z",
       "firstSeenAt": "2026-10-23T12:15:36.970Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -277,7 +276,7 @@
       "publishedAt": "2026-10-23T08:45:18.000Z",
       "firstSeenAt": "2026-10-23T12:15:36.970Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-b58fbae004253c8a",
@@ -294,7 +293,7 @@
       ],
       "publishedAt": "2026-10-23T07:40:56.000Z",
       "firstSeenAt": "2026-10-23T12:15:36.970Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -314,7 +313,7 @@
       "publishedAt": "2026-10-23T06:15:13.000Z",
       "firstSeenAt": "2026-10-23T06:41:52.809Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-903ad6983770dc7c",
@@ -333,7 +332,7 @@
       "publishedAt": "2026-10-23T03:25:12.000Z",
       "firstSeenAt": "2026-10-23T06:41:52.809Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-0e88484896075c54",
@@ -350,7 +349,7 @@
       ],
       "publishedAt": "2026-10-23T03:10:19.000Z",
       "firstSeenAt": "2026-10-23T06:41:52.809Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -370,7 +369,7 @@
       "publishedAt": "2026-10-23T03:05:16.000Z",
       "firstSeenAt": "2026-10-23T06:41:52.809Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-3dab5e277860815d",
@@ -407,7 +406,7 @@
       "publishedAt": "2026-10-23T02:05:18.000Z",
       "firstSeenAt": "2026-10-23T06:41:52.809Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-dca833304201c90e",
@@ -460,7 +459,7 @@
       ],
       "publishedAt": "2026-10-22T22:35:03.000Z",
       "firstSeenAt": "2026-10-22T22:53:27.022Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -479,7 +478,7 @@
       "publishedAt": "2026-10-22T22:04:42.000Z",
       "firstSeenAt": "2026-10-22T22:53:27.022Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-33cf70aaeb2b7924",
@@ -516,7 +515,7 @@
       "publishedAt": "2026-10-22T15:05:37.000Z",
       "firstSeenAt": "2026-10-22T15:43:34.364Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-1cdeef3806915848",
@@ -533,7 +532,7 @@
       ],
       "publishedAt": "2026-10-22T14:12:13.000Z",
       "firstSeenAt": "2026-10-22T15:43:34.364Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -553,7 +552,7 @@
       "publishedAt": "2026-10-22T13:05:05.000Z",
       "firstSeenAt": "2026-10-22T15:43:34.364Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-0e08394c1797488f",
@@ -570,7 +569,7 @@
       ],
       "publishedAt": "2026-10-22T11:48:01.000Z",
       "firstSeenAt": "2026-10-22T15:43:34.364Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -589,7 +588,7 @@
       ],
       "publishedAt": "2026-10-22T09:35:55.000Z",
       "firstSeenAt": "2026-10-22T10:48:34.467Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -608,7 +607,7 @@
       "publishedAt": "2026-10-22T08:54:37.000Z",
       "firstSeenAt": "2026-10-22T10:48:34.467Z",
       "fetchedAt": "2026-10-23T20:33:44.366Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-d6dd5f7db2557357",
@@ -625,7 +624,7 @@
       ],
       "publishedAt": "2026-10-22T07:43:29.000Z",
       "firstSeenAt": "2026-10-22T10:48:34.467Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -645,7 +644,7 @@
       "publishedAt": "2026-10-22T05:25:05.000Z",
       "firstSeenAt": "2026-10-22T05:33:10.108Z",
       "fetchedAt": "2026-10-23T12:15:36.970Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-9a6f7f4965a2fe17",
@@ -664,7 +663,7 @@
       "publishedAt": "2026-10-22T03:25:42.000Z",
       "firstSeenAt": "2026-10-22T05:33:10.108Z",
       "fetchedAt": "2026-10-23T12:15:36.970Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-4cbbeef35c911ff9",
@@ -681,7 +680,7 @@
       ],
       "publishedAt": "2026-10-22T03:10:28.000Z",
       "firstSeenAt": "2026-10-22T05:33:10.108Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -701,7 +700,7 @@
       "publishedAt": "2026-10-22T03:05:43.000Z",
       "firstSeenAt": "2026-10-22T05:33:10.108Z",
       "fetchedAt": "2026-10-23T12:15:36.970Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-ff3e1b8a12601805",
@@ -719,7 +718,7 @@
       "publishedAt": "2026-10-21T23:05:20.000Z",
       "firstSeenAt": "2026-10-22T00:48:46.938Z",
       "fetchedAt": "2026-10-23T06:41:52.809Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-65d5f0a8abf9179c",
@@ -736,7 +735,7 @@
       ],
       "publishedAt": "2026-10-21T22:35:23.000Z",
       "firstSeenAt": "2026-10-22T00:48:46.938Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -773,7 +772,7 @@
       "publishedAt": "2026-10-21T15:25:18.000Z",
       "firstSeenAt": "2026-10-21T18:28:02.801Z",
       "fetchedAt": "2026-10-23T06:41:52.809Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-aa2ed82c61495187",
@@ -792,7 +791,7 @@
       "publishedAt": "2026-10-21T14:21:06.000Z",
       "firstSeenAt": "2026-10-21T13:25:05.621Z",
       "fetchedAt": "2026-10-23T01:37:48.352Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-e44fc2f845c6103f",
@@ -809,7 +808,7 @@
       ],
       "publishedAt": "2026-10-21T13:45:37.000Z",
       "firstSeenAt": "2026-10-21T18:28:02.801Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -845,7 +844,7 @@
       ],
       "publishedAt": "2026-10-21T11:46:57.000Z",
       "firstSeenAt": "2026-10-21T13:25:05.621Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -865,7 +864,7 @@
       "publishedAt": "2026-10-21T11:45:09.000Z",
       "firstSeenAt": "2026-10-21T13:25:05.621Z",
       "fetchedAt": "2026-10-23T01:37:48.352Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-4d1a10ab96c34029",
@@ -883,7 +882,7 @@
       "publishedAt": "2026-10-21T10:24:05.000Z",
       "firstSeenAt": "2026-10-21T13:25:05.621Z",
       "fetchedAt": "2026-10-23T01:37:48.352Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-5be9fc5b65c14404",
@@ -900,7 +899,7 @@
       ],
       "publishedAt": "2026-10-21T10:17:42.000Z",
       "firstSeenAt": "2026-10-21T13:25:05.621Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -920,7 +919,7 @@
       "publishedAt": "2026-10-21T09:05:33.000Z",
       "firstSeenAt": "2026-10-21T13:25:05.621Z",
       "fetchedAt": "2026-10-23T01:37:48.352Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-666b45594fe214d8",
@@ -955,7 +954,7 @@
       ],
       "publishedAt": "2026-10-21T07:35:45.000Z",
       "firstSeenAt": "2026-10-21T07:40:33.052Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -974,7 +973,7 @@
       "publishedAt": "2026-10-21T05:45:38.000Z",
       "firstSeenAt": "2026-10-21T07:40:33.052Z",
       "fetchedAt": "2026-10-23T01:37:48.352Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-cb1d21b61f4e1b74",
@@ -993,7 +992,7 @@
       "publishedAt": "2026-10-21T03:45:34.000Z",
       "firstSeenAt": "2026-10-21T07:40:33.052Z",
       "fetchedAt": "2026-10-22T10:48:34.467Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-af61d9749e828a4f",
@@ -1010,7 +1009,7 @@
       ],
       "publishedAt": "2026-10-21T03:10:41.000Z",
       "firstSeenAt": "2026-10-21T07:40:33.052Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -1030,7 +1029,7 @@
       "publishedAt": "2026-10-21T03:05:56.000Z",
       "firstSeenAt": "2026-10-21T07:40:33.052Z",
       "fetchedAt": "2026-10-22T10:48:34.467Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-cb5218861ac5c579",
@@ -1048,7 +1047,7 @@
       "publishedAt": "2026-10-21T02:45:25.000Z",
       "firstSeenAt": "2026-10-21T07:40:33.052Z",
       "fetchedAt": "2026-10-22T05:33:10.108Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-46d95a8447c99621",
@@ -1066,7 +1065,7 @@
       "publishedAt": "2026-10-21T02:05:23.000Z",
       "firstSeenAt": "2026-10-21T02:07:59.049Z",
       "fetchedAt": "2026-10-22T00:48:46.938Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-99086c5ae49636b4",
@@ -1101,7 +1100,7 @@
       ],
       "publishedAt": "2026-10-20T22:35:14.000Z",
       "firstSeenAt": "2026-10-20T23:30:51.671Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -1139,7 +1138,7 @@
       "publishedAt": "2026-10-20T15:05:06.000Z",
       "firstSeenAt": "2026-10-20T17:02:44.503Z",
       "fetchedAt": "2026-10-22T00:48:46.938Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-62034c6bcd6b7613",
@@ -1156,7 +1155,7 @@
       ],
       "publishedAt": "2026-10-20T13:40:14.000Z",
       "firstSeenAt": "2026-10-20T17:02:44.503Z",
-      "fetchedAt": "2026-10-23T23:36:09.646Z",
+      "fetchedAt": "2026-10-24T02:08:00.939Z",
       "cached": false
     },
     {
@@ -1175,7 +1174,7 @@
       "publishedAt": "2026-10-20T12:45:00.000Z",
       "firstSeenAt": "2026-10-20T17:02:44.503Z",
       "fetchedAt": "2026-10-22T00:48:46.938Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-44c75252cbd2c33f",
@@ -1230,7 +1229,7 @@
       "publishedAt": "2026-10-20T10:05:49.000Z",
       "firstSeenAt": "2026-10-20T12:16:14.777Z",
       "fetchedAt": "2026-10-22T00:48:46.938Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-844e72b312b81d38",
@@ -1266,7 +1265,7 @@
       "publishedAt": "2026-10-20T08:45:30.000Z",
       "firstSeenAt": "2026-10-20T12:16:14.777Z",
       "fetchedAt": "2026-10-21T22:10:43.527Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-8b2f04d27a91e6f0",
@@ -1303,7 +1302,7 @@
       "publishedAt": "2026-10-20T05:05:16.000Z",
       "firstSeenAt": "2026-10-20T06:42:46.477Z",
       "fetchedAt": "2026-10-21T07:40:33.052Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-47976cfe56370eb8",
@@ -1321,7 +1320,7 @@
       "publishedAt": "2026-10-20T03:44:13.000Z",
       "firstSeenAt": "2026-10-20T06:42:46.477Z",
       "fetchedAt": "2026-10-21T07:40:33.052Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-8c6f6199d34e6d4a",
@@ -1340,7 +1339,7 @@
       "publishedAt": "2026-10-20T03:25:57.000Z",
       "firstSeenAt": "2026-10-20T06:42:46.477Z",
       "fetchedAt": "2026-10-21T07:40:33.052Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-4b71c271c98c2dae",
@@ -1377,7 +1376,7 @@
       "publishedAt": "2026-10-20T03:05:53.000Z",
       "firstSeenAt": "2026-10-20T06:42:46.477Z",
       "fetchedAt": "2026-10-21T02:07:59.049Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-7513ceee24d6d8ff",
@@ -1395,7 +1394,7 @@
       "publishedAt": "2026-10-20T02:45:15.000Z",
       "firstSeenAt": "2026-10-20T06:42:46.477Z",
       "fetchedAt": "2026-10-21T02:07:59.049Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-fb587377339a779d",
@@ -1414,7 +1413,7 @@
       "publishedAt": "2026-10-19T23:05:36.000Z",
       "firstSeenAt": "2026-10-20T01:27:02.191Z",
       "fetchedAt": "2026-10-21T02:07:59.049Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-002e8d8440117f37",
@@ -1487,7 +1486,7 @@
       "publishedAt": "2026-10-19T15:25:58.000Z",
       "firstSeenAt": "2026-10-19T17:57:40.496Z",
       "fetchedAt": "2026-10-21T02:07:59.049Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-b763635e2bd7f195",
@@ -1523,7 +1522,7 @@
       "publishedAt": "2026-10-19T13:38:12.000Z",
       "firstSeenAt": "2026-10-19T17:57:40.496Z",
       "fetchedAt": "2026-10-21T02:07:59.049Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-3a3ed453901bbc82",
@@ -1541,7 +1540,7 @@
       "publishedAt": "2026-10-19T12:45:00.000Z",
       "firstSeenAt": "2026-10-19T17:57:40.496Z",
       "fetchedAt": "2026-10-20T23:30:51.671Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-ddaf503bfaa0c37f",
@@ -1614,7 +1613,7 @@
       "publishedAt": "2026-10-19T09:05:21.000Z",
       "firstSeenAt": "2026-10-19T11:25:55.456Z",
       "fetchedAt": "2026-10-20T12:16:14.777Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-c371b10e28418bd5",
@@ -1632,7 +1631,7 @@
       "publishedAt": "2026-10-19T08:05:15.000Z",
       "firstSeenAt": "2026-10-19T11:25:55.456Z",
       "fetchedAt": "2026-10-20T12:16:14.777Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-7737bb3ee701881f",
@@ -1650,7 +1649,7 @@
       "publishedAt": "2026-10-19T06:05:28.000Z",
       "firstSeenAt": "2026-10-19T11:25:55.456Z",
       "fetchedAt": "2026-10-20T06:42:46.477Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-39159c30f177b7ca",
@@ -1669,7 +1668,7 @@
       "publishedAt": "2026-10-19T05:25:33.000Z",
       "firstSeenAt": "2026-10-19T05:26:13.360Z",
       "fetchedAt": "2026-10-20T06:42:46.477Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-83a279e4ff1cfce0",
@@ -1707,7 +1706,7 @@
       "publishedAt": "2026-10-19T03:25:37.000Z",
       "firstSeenAt": "2026-10-19T05:26:13.360Z",
       "fetchedAt": "2026-10-20T01:27:02.191Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-fceafd86c8a299ce",
@@ -1745,7 +1744,7 @@
       "publishedAt": "2026-10-19T03:05:24.000Z",
       "firstSeenAt": "2026-10-19T05:26:13.360Z",
       "fetchedAt": "2026-10-20T01:27:02.191Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-9358be3814334a9f",
@@ -1763,7 +1762,7 @@
       "publishedAt": "2026-10-19T02:25:20.000Z",
       "firstSeenAt": "2026-10-19T05:26:13.360Z",
       "fetchedAt": "2026-10-20T01:27:02.191Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-0a5f6d64f87d0de4",
@@ -1799,7 +1798,7 @@
       "publishedAt": "2026-10-18T23:27:11.000Z",
       "firstSeenAt": "2026-10-19T00:37:51.448Z",
       "fetchedAt": "2026-10-20T01:27:02.191Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-eb20d98ac307afcd",
@@ -1835,7 +1834,7 @@
       "publishedAt": "2026-10-18T22:04:54.000Z",
       "firstSeenAt": "2026-10-18T22:46:01.265Z",
       "fetchedAt": "2026-10-20T01:27:02.191Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-62c4310fbeab5320",
@@ -1853,7 +1852,7 @@
       "publishedAt": "2026-10-18T21:01:33.000Z",
       "firstSeenAt": "2026-10-18T22:46:01.265Z",
       "fetchedAt": "2026-10-20T01:27:02.191Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-8ef4b64b5546dc80",
@@ -1871,7 +1870,7 @@
       "publishedAt": "2026-10-18T21:00:07.000Z",
       "firstSeenAt": "2026-10-18T22:46:01.265Z",
       "fetchedAt": "2026-10-19T22:26:28.769Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-18ccf588b3871bb7",
@@ -1926,7 +1925,7 @@
       "publishedAt": "2026-10-18T15:05:25.000Z",
       "firstSeenAt": "2026-10-18T18:11:40.442Z",
       "fetchedAt": "2026-10-19T11:25:55.456Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-a47d5d84182529c1",
@@ -1980,7 +1979,7 @@
       "publishedAt": "2026-10-18T12:45:33.000Z",
       "firstSeenAt": "2026-10-18T14:58:49.420Z",
       "fetchedAt": "2026-10-19T05:26:13.360Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-8d7a0bbab8a21385",
@@ -2053,7 +2052,7 @@
       "publishedAt": "2026-10-18T09:05:49.000Z",
       "firstSeenAt": "2026-10-18T11:49:07.681Z",
       "fetchedAt": "2026-10-19T05:26:13.360Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-3a9d6a58a731ef34",
@@ -2126,7 +2125,7 @@
       "publishedAt": "2026-10-18T05:44:50.000Z",
       "firstSeenAt": "2026-10-18T06:44:32.465Z",
       "fetchedAt": "2026-10-19T05:26:13.360Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-267548833755cebc",
@@ -2163,7 +2162,7 @@
       "publishedAt": "2026-10-18T03:02:27.000Z",
       "firstSeenAt": "2026-10-18T06:44:32.465Z",
       "fetchedAt": "2026-10-19T00:37:51.448Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-656cf0611bcd989a",
@@ -2181,7 +2180,7 @@
       "publishedAt": "2026-10-18T00:05:27.000Z",
       "firstSeenAt": "2026-10-18T01:39:11.070Z",
       "fetchedAt": "2026-10-19T00:37:51.448Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-8276030f6a4a1b55",
@@ -2200,7 +2199,7 @@
       "publishedAt": "2026-10-17T23:21:16.000Z",
       "firstSeenAt": "2026-10-17T23:31:09.650Z",
       "fetchedAt": "2026-10-19T00:37:51.448Z",
-      "cached": false
+      "cached": true
     },
     {
       "id": "matome-32642fc551c59002",

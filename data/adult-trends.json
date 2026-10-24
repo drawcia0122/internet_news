@@ -42,35 +42,35 @@
     "discountRate": 25,
     "currency": "JPY",
     "saleEndDate": "2026-11-20T15:00:00.000Z",
-    "rank": 5,
-    "ranking": 5,
+    "rank": 4,
+    "ranking": 4,
     "rankingType": "daily",
-    "previousRank": 2,
-    "rankDelta": -3,
+    "previousRank": 5,
+    "rankDelta": 1,
     "adultTrendScore": 100,
-    "valueScore": 76,
+    "valueScore": 77,
     "trendReasons": [
+      "前回5位から4位へ上昇",
+      "ランキング+1上昇",
       "25%OFFセール対象",
       "DLsiteランキングに登場",
       "DLsite新着作品",
-      "新着人気候補",
-      "同人音声系",
-      "DLsiteデイリーランキング掲載"
+      "新着人気候補"
     ],
-    "rankLabel": "5位",
+    "rankLabel": "4位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
-        "rank": 5,
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
+        "rank": 4,
         "adultHotScore": null,
         "source": "DLsite",
         "rankingType": "daily"
       }
     ],
-    "rankChange": -3
+    "rankChange": 1
   },
   {
     "id": "adult-dlsite-maniax-ranking-day-adult-trend",
@@ -124,11 +124,11 @@
     ],
     "rankLabel": "1位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 1,
         "adultHotScore": null,
         "source": "DLsite",
@@ -187,11 +187,11 @@
     ],
     "rankLabel": "2位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 2,
         "adultHotScore": null,
         "source": "DLsite",
@@ -250,11 +250,11 @@
     ],
     "rankLabel": "3位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 3,
         "adultHotScore": null,
         "source": "DLsite",
@@ -262,69 +262,6 @@
       }
     ],
     "rankChange": -1
-  },
-  {
-    "id": "adult-dlsite-maniax-ranking-day-adult-trend",
-    "title": "【12周年企画】ゴーストスウィングトリップオーガズム",
-    "summary": "",
-    "sourceName": "DLsite",
-    "sourceKey": "dlsite-maniax-ranking-day",
-    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01688386.html",
-    "historyKey": "dlsite-RJ01688386",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01689000/RJ01688386_img_main.jpg",
-    "category": [
-      "同人"
-    ],
-    "categories": [
-      "doujin"
-    ],
-    "categoryLabels": [
-      "同人"
-    ],
-    "tags": [
-      "20%OFF",
-      "セール対象",
-      "同人",
-      "DLsiteデイリーランキング掲載",
-      "ランキング掲載"
-    ],
-    "maker": "",
-    "adultSourceGroup": "dlsite",
-    "adultDisplayType": "ranking",
-    "adultPrimaryGenre": "セール",
-    "adultHotScore": 92,
-    "price": 1320,
-    "originalPrice": 1650,
-    "discountRate": 20,
-    "currency": "JPY",
-    "saleEndDate": "2026-11-19T15:00:00.000Z",
-    "rank": 4,
-    "ranking": 4,
-    "rankingType": "daily",
-    "previousRank": 2,
-    "rankDelta": -2,
-    "adultTrendScore": 100,
-    "valueScore": 71,
-    "trendReasons": [
-      "20%OFFセール対象",
-      "DLsiteランキングに登場",
-      "DLsiteデイリーランキング掲載",
-      "ランキング掲載"
-    ],
-    "rankLabel": "4位",
-    "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
-    "history": [
-      {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
-        "rank": 4,
-        "adultHotScore": null,
-        "source": "DLsite",
-        "rankingType": "daily"
-      }
-    ],
-    "rankChange": -2
   },
   {
     "id": "adult-dlsite-books-ranking-day-adult-trend",
@@ -376,11 +313,11 @@
     ],
     "rankLabel": "1位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 1,
         "adultHotScore": null,
         "source": "DLsite",
@@ -390,7 +327,70 @@
     "rankChange": 1
   },
   {
-    "id": "adult-dlsite-books-ranking-day-瑠璃川椿ー-単行本-デジタル特装版-rank-2-2026-10-23t23-28-59-949z-dlsite",
+    "id": "adult-dlsite-maniax-ranking-day-adult-trend",
+    "title": "【12周年企画】ゴーストスウィングトリップオーガズム",
+    "summary": "",
+    "sourceName": "DLsite",
+    "sourceKey": "dlsite-maniax-ranking-day",
+    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01688386.html",
+    "historyKey": "dlsite-RJ01688386",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01689000/RJ01688386_img_main.jpg",
+    "category": [
+      "同人"
+    ],
+    "categories": [
+      "doujin"
+    ],
+    "categoryLabels": [
+      "同人"
+    ],
+    "tags": [
+      "20%OFF",
+      "セール対象",
+      "同人",
+      "DLsiteデイリーランキング掲載",
+      "ランキング掲載"
+    ],
+    "maker": "",
+    "adultSourceGroup": "dlsite",
+    "adultDisplayType": "ranking",
+    "adultPrimaryGenre": "セール",
+    "adultHotScore": 90,
+    "price": 1320,
+    "originalPrice": 1650,
+    "discountRate": 20,
+    "currency": "JPY",
+    "saleEndDate": "2026-11-19T15:00:00.000Z",
+    "rank": 5,
+    "ranking": 5,
+    "rankingType": "daily",
+    "previousRank": 4,
+    "rankDelta": -1,
+    "adultTrendScore": 100,
+    "valueScore": 70,
+    "trendReasons": [
+      "20%OFFセール対象",
+      "DLsiteランキングに登場",
+      "DLsiteデイリーランキング掲載",
+      "ランキング掲載"
+    ],
+    "rankLabel": "5位",
+    "trendType": "ranking",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
+    "history": [
+      {
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
+        "rank": 5,
+        "adultHotScore": null,
+        "source": "DLsite",
+        "rankingType": "daily"
+      }
+    ],
+    "rankChange": -1
+  },
+  {
+    "id": "adult-dlsite-books-ranking-day-瑠璃川椿ー-単行本-デジタル特装版-rank-2-2026-10-24t01-59-32-572z-dlsite",
     "title": "メイド教育。ー没落貴族 瑠璃川椿ー（単行本）【デジタル特装版】",
     "summary": "",
     "sourceName": "DLsite",
@@ -439,11 +439,11 @@
     ],
     "rankLabel": "2位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 2,
         "adultHotScore": null,
         "source": "DLsite",
@@ -453,14 +453,14 @@
     "rankChange": -1
   },
   {
-    "id": "adult-dlsite-maniax-ranking-day-リリア-人間界搾精日誌-rank-6-2026-10-23t23-28-59-949z-dlsite",
-    "title": "見習いサキュバス リリア〜人間界搾精日誌〜",
+    "id": "adult-dlsite-maniax-ranking-day-無表情アンドロイドお姉さんの徹底的乳首責めプログラム-乳首の快感でマゾ射精-rank-6-2026-10-24t01-59-32-572z-dlsite",
+    "title": "【乳首性感】 無表情アンドロイドお姉さんの徹底的乳首責めプログラム… 【乳首の快感でマゾ射精…♡】",
     "summary": "",
     "sourceName": "DLsite",
     "sourceKey": "dlsite-maniax-ranking-day",
-    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01724797.html",
-    "historyKey": "dlsite-RJ01724797",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01725000/RJ01724797_img_main.jpg",
+    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01741252.html",
+    "historyKey": "dlsite-RJ01741252",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01742000/RJ01741252_img_main.jpg",
     "category": [
       "同人"
     ],
@@ -471,9 +471,11 @@
       "同人"
     ],
     "tags": [
-      "20%OFF",
+      "35%OFF",
       "セール対象",
       "同人",
+      "DLsite新着作品",
+      "新着人気候補",
       "DLsiteデイリーランキング掲載",
       "ランキング掲載"
     ],
@@ -482,38 +484,40 @@
     "adultDisplayType": "ranking",
     "adultPrimaryGenre": "セール",
     "adultHotScore": 88,
-    "price": 2640,
-    "originalPrice": 3300,
-    "discountRate": 20,
+    "price": 1072,
+    "originalPrice": 1650,
+    "discountRate": 35,
     "currency": "JPY",
-    "saleEndDate": "2026-11-02T15:00:00.000Z",
+    "saleEndDate": "2026-11-20T15:00:00.000Z",
     "rank": 6,
     "ranking": 6,
     "rankingType": "daily",
-    "previousRank": 5,
-    "rankDelta": -1,
+    "previousRank": 1,
+    "rankDelta": -5,
     "adultTrendScore": 100,
-    "valueScore": 68,
+    "valueScore": 83,
     "trendReasons": [
-      "20%OFFセール対象",
+      "35%OFFセール対象",
       "DLsiteランキングに登場",
+      "DLsite新着作品",
+      "新着人気候補",
       "DLsiteデイリーランキング掲載",
       "ランキング掲載"
     ],
     "rankLabel": "6位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 6,
         "adultHotScore": null,
         "source": "DLsite",
         "rankingType": "daily"
       }
     ],
-    "rankChange": -1
+    "rankChange": -5
   },
   {
     "id": "adult-dlsite-books-ranking-day-adult-trend",
@@ -563,11 +567,11 @@
     ],
     "rankLabel": "3位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 3,
         "adultHotScore": null,
         "source": "DLsite",
@@ -577,14 +581,14 @@
     "rankChange": -1
   },
   {
-    "id": "adult-dlsite-maniax-new-無表情アンドロイドお姉さんの徹底的乳首責めプログラム-乳首の快感でマゾ射精-rank-1-2026-10-23t23-28-59-949z-dlsite",
-    "title": "【乳首性感】 無表情アンドロイドお姉さんの徹底的乳首責めプログラム… 【乳首の快感でマゾ射精…♡】",
+    "id": "adult-dlsite-maniax-ranking-day-総集編i-rank-7-2026-10-24t01-59-32-572z-dlsite",
+    "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
     "summary": "",
     "sourceName": "DLsite",
-    "sourceKey": "dlsite-maniax-new",
-    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01741252.html",
-    "historyKey": "dlsite-RJ01741252",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01742000/RJ01741252_img_main.jpg",
+    "sourceKey": "dlsite-maniax-ranking-day",
+    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01715118.html",
+    "historyKey": "dlsite-RJ01715118",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01716000/RJ01715118_img_main.jpg",
     "category": [
       "同人"
     ],
@@ -599,49 +603,47 @@
       "セール対象",
       "同人",
       "DLsiteデイリーランキング掲載",
-      "ランキング掲載",
-      "DLsite新着作品",
-      "新着人気候補"
+      "ランキング掲載"
     ],
     "maker": "",
     "adultSourceGroup": "dlsite",
-    "adultDisplayType": "sale",
+    "adultDisplayType": "ranking",
     "adultPrimaryGenre": "セール",
     "adultHotScore": 86,
-    "price": 1072,
-    "originalPrice": 1650,
+    "price": 2860,
+    "originalPrice": 4400,
     "discountRate": 35,
     "currency": "JPY",
-    "saleEndDate": "2026-11-20T15:00:00.000Z",
-    "rank": 1,
-    "ranking": 1,
-    "rankingType": "new",
-    "previousRank": null,
-    "rankDelta": 0,
-    "adultTrendScore": 14,
-    "valueScore": 100,
+    "saleEndDate": "2026-11-16T15:00:00.000Z",
+    "rank": 7,
+    "ranking": 7,
+    "rankingType": "daily",
+    "previousRank": 8,
+    "rankDelta": 1,
+    "adultTrendScore": 100,
+    "valueScore": 82,
     "trendReasons": [
+      "前回8位から7位へ上昇",
+      "ランキング+1上昇",
       "35%OFFセール対象",
       "DLsiteランキングに登場",
       "DLsiteデイリーランキング掲載",
-      "ランキング掲載",
-      "DLsite新着作品",
-      "新着人気候補"
+      "ランキング掲載"
     ],
-    "rankLabel": "1位",
-    "trendType": "new",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "rankLabel": "7位",
+    "trendType": "ranking",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
-        "rank": 1,
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
+        "rank": 7,
         "adultHotScore": null,
         "source": "DLsite",
-        "rankingType": "new"
+        "rankingType": "daily"
       }
     ],
-    "rankChange": 0
+    "rankChange": 1
   },
   {
     "id": "adult-dlsite-books-ranking-day-adult-trend",
@@ -693,11 +695,11 @@
     ],
     "rankLabel": "4位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 4,
         "adultHotScore": null,
         "source": "DLsite",
@@ -759,10 +761,10 @@
     "rankLabel": "1位",
     "trendType": "creator-update",
     "publishedAt": "2026-10-21",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 1,
         "adultHotScore": null,
         "source": "Ci-en",
@@ -772,14 +774,14 @@
     "rankChange": 9
   },
   {
-    "id": "adult-dlsite-maniax-ranking-day-総集編i-rank-8-2026-10-23t23-28-59-949z-dlsite",
-    "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
+    "id": "adult-dlsite-maniax-ranking-day-リリア-人間界搾精日誌-rank-8-2026-10-24t01-59-32-572z-dlsite",
+    "title": "見習いサキュバス リリア〜人間界搾精日誌〜",
     "summary": "",
     "sourceName": "DLsite",
     "sourceKey": "dlsite-maniax-ranking-day",
-    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01715118.html",
-    "historyKey": "dlsite-RJ01715118",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01716000/RJ01715118_img_main.jpg",
+    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01724797.html",
+    "historyKey": "dlsite-RJ01724797",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01725000/RJ01724797_img_main.jpg",
     "category": [
       "同人"
     ],
@@ -790,7 +792,7 @@
       "同人"
     ],
     "tags": [
-      "35%OFF",
+      "20%OFF",
       "セール対象",
       "同人",
       "DLsiteデイリーランキング掲載",
@@ -801,41 +803,41 @@
     "adultDisplayType": "ranking",
     "adultPrimaryGenre": "セール",
     "adultHotScore": 84,
-    "price": 2860,
-    "originalPrice": 4400,
-    "discountRate": 35,
+    "price": 2640,
+    "originalPrice": 3300,
+    "discountRate": 20,
     "currency": "JPY",
-    "saleEndDate": "2026-11-16T15:00:00.000Z",
+    "saleEndDate": "2026-11-02T15:00:00.000Z",
     "rank": 8,
     "ranking": 8,
     "rankingType": "daily",
-    "previousRank": 5,
-    "rankDelta": -3,
+    "previousRank": 6,
+    "rankDelta": -2,
     "adultTrendScore": 100,
-    "valueScore": 80,
+    "valueScore": 65,
     "trendReasons": [
-      "35%OFFセール対象",
+      "20%OFFセール対象",
       "DLsiteランキングに登場",
       "DLsiteデイリーランキング掲載",
       "ランキング掲載"
     ],
     "rankLabel": "8位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 8,
         "adultHotScore": null,
         "source": "DLsite",
         "rankingType": "daily"
       }
     ],
-    "rankChange": -3
+    "rankChange": -2
   },
   {
-    "id": "adult-dlsite-books-ranking-day-状態変化-肉体改造編-デジタル版vol-6-rank-5-2026-10-23t23-28-59-949z-dlsite",
+    "id": "adult-dlsite-books-ranking-day-状態変化-肉体改造編-デジタル版vol-6-rank-5-2026-10-24t01-59-32-572z-dlsite",
     "title": "別冊コミックアンリアル 状態変化&肉体改造編 デジタル版Vol.6",
     "summary": "",
     "sourceName": "DLsite",
@@ -884,11 +886,11 @@
     ],
     "rankLabel": "5位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 5,
         "adultHotScore": null,
         "source": "DLsite",
@@ -950,10 +952,10 @@
     "rankLabel": "2位",
     "trendType": "creator-update",
     "publishedAt": "2026-10-23",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 2,
         "adultHotScore": null,
         "source": "Ci-en",
@@ -1012,11 +1014,11 @@
     ],
     "rankLabel": "9位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 9,
         "adultHotScore": null,
         "source": "DLsite",
@@ -1047,6 +1049,8 @@
       "20%OFF",
       "セール対象",
       "同人",
+      "DLsiteデイリーランキング掲載",
+      "ランキング掲載",
       "DLsite新着作品",
       "新着人気候補"
     ],
@@ -1070,16 +1074,18 @@
     "trendReasons": [
       "20%OFFセール対象",
       "DLsiteランキングに登場",
+      "DLsiteデイリーランキング掲載",
+      "ランキング掲載",
       "DLsite新着作品",
       "新着人気候補"
     ],
     "rankLabel": "3位",
     "trendType": "new",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 3,
         "adultHotScore": null,
         "source": "DLsite",
@@ -1090,13 +1096,13 @@
   },
   {
     "id": "adult-dlsite-books-ranking-day-adult-trend",
-    "title": "こんぷれックス【デジタル版限定おまけ付き】",
+    "title": "社畜OLは調教を断れない〈アフター〉",
     "summary": "",
     "sourceName": "DLsite",
     "sourceKey": "dlsite-books-ranking-day",
-    "sourceUrl": "https://www.dlsite.com/books/work/=/product_id/BJ03023909.html",
-    "historyKey": "dlsite-BJ03023909",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ03024000/BJ03023909_img_main.jpg",
+    "sourceUrl": "https://www.dlsite.com/books/work/=/product_id/BJ03035723.html",
+    "historyKey": "dlsite-BJ03035723",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ03036000/BJ03035723_img_main.jpg",
     "category": [
       "エロ漫画"
     ],
@@ -1107,6 +1113,8 @@
       "エロ漫画"
     ],
     "tags": [
+      "30%OFF",
+      "セール対象",
       "エロ漫画",
       "DLsite漫画ランキング掲載",
       "ランキング掲載"
@@ -1114,40 +1122,42 @@
     "maker": "",
     "adultSourceGroup": "dlsite",
     "adultDisplayType": "ranking",
-    "adultPrimaryGenre": "エロ漫画",
+    "adultPrimaryGenre": "セール",
     "adultHotScore": 82,
-    "price": 1430,
-    "originalPrice": 1430,
-    "discountRate": null,
+    "price": 1100,
+    "originalPrice": 1579,
+    "discountRate": 30,
     "currency": "JPY",
-    "saleEndDate": null,
+    "saleEndDate": "2026-11-05T15:00:00.000Z",
     "rank": 6,
     "ranking": 6,
     "rankingType": "daily",
-    "previousRank": 4,
-    "rankDelta": -2,
+    "previousRank": 7,
+    "rankDelta": 1,
     "adultTrendScore": 100,
-    "valueScore": 47,
+    "valueScore": 77,
     "trendReasons": [
-      "エロ漫画カテゴリで上位",
+      "前回7位から6位へ上昇",
+      "ランキング+1上昇",
+      "30%OFFセール対象",
       "DLsiteランキングに登場",
       "DLsite漫画ランキング掲載",
       "ランキング掲載"
     ],
     "rankLabel": "6位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 6,
         "adultHotScore": null,
         "source": "DLsite",
         "rankingType": "daily"
       }
     ],
-    "rankChange": -2
+    "rankChange": 1
   },
   {
     "id": "adult-ci-en-adult-sitemap-9-rank-3-2026-10-23-ci-en",
@@ -1202,10 +1212,10 @@
     "rankLabel": "3位",
     "trendType": "creator-update",
     "publishedAt": "2026-10-23",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 3,
         "adultHotScore": null,
         "source": "Ci-en",
@@ -1215,7 +1225,7 @@
     "rankChange": 7
   },
   {
-    "id": "adult-dlsite-maniax-ranking-day-世界を救った後の-ボクの日常-性-活-rank-10-2026-10-23t23-28-59-949z-dlsite",
+    "id": "adult-dlsite-maniax-ranking-day-世界を救った後の-ボクの日常-性-活-rank-10-2026-10-24t01-59-32-572z-dlsite",
     "title": "ヤリステナイメスブター 世界を救った後の ボクの日常『性』活",
     "summary": "",
     "sourceName": "DLsite",
@@ -1264,11 +1274,11 @@
     ],
     "rankLabel": "10位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 10,
         "adultHotScore": null,
         "source": "DLsite",
@@ -1278,14 +1288,14 @@
     "rankChange": -1
   },
   {
-    "id": "adult-dlsite-maniax-new-一年鍛えたつよつよおまんこ-三発抜いても絶倫でかちんに完全敗北-rank-4-2026-10-23t23-28-59-949z-dlsite",
-    "title": "リベンジ・ナイトプール ～一年鍛えたつよつよおまんこ♡ 三発抜いても絶倫でかちんに完全敗北♡～",
+    "id": "adult-dlsite-maniax-new-adult-trend",
+    "title": "どちゃしこストリーム！",
     "summary": "",
     "sourceName": "DLsite",
     "sourceKey": "dlsite-maniax-new",
-    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01740646.html",
-    "historyKey": "dlsite-RJ01740646",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01741000/RJ01740646_img_main.jpg",
+    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01728692.html",
+    "historyKey": "dlsite-RJ01728692",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01729000/RJ01728692_img_main.jpg",
     "category": [
       "同人"
     ],
@@ -1296,7 +1306,7 @@
       "同人"
     ],
     "tags": [
-      "50%OFF",
+      "20%OFF",
       "セール対象",
       "同人",
       "DLsite新着作品",
@@ -1307,48 +1317,50 @@
     "adultDisplayType": "sale",
     "adultPrimaryGenre": "セール",
     "adultHotScore": 80,
-    "price": 825,
-    "originalPrice": 1650,
-    "discountRate": 50,
+    "price": 1584,
+    "originalPrice": 1980,
+    "discountRate": 20,
     "currency": "JPY",
     "saleEndDate": "2026-11-20T15:00:00.000Z",
     "rank": 4,
     "ranking": 4,
     "rankingType": "new",
-    "previousRank": null,
-    "rankDelta": 0,
-    "adultTrendScore": 21,
-    "valueScore": 100,
+    "previousRank": 7,
+    "rankDelta": 3,
+    "adultTrendScore": 100,
+    "valueScore": 82,
     "trendReasons": [
-      "50%OFFセール対象",
+      "前回7位から4位へ上昇",
+      "ランキング+3上昇",
+      "20%OFFセール対象",
       "DLsiteランキングに登場",
       "DLsite新着作品",
       "新着人気候補"
     ],
     "rankLabel": "4位",
     "trendType": "new",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 4,
         "adultHotScore": null,
         "source": "DLsite",
         "rankingType": "new"
       }
     ],
-    "rankChange": 0
+    "rankChange": 3
   },
   {
     "id": "adult-dlsite-books-ranking-day-adult-trend",
-    "title": "社畜OLは調教を断れない〈アフター〉",
+    "title": "こんぷれックス【デジタル版限定おまけ付き】",
     "summary": "",
     "sourceName": "DLsite",
     "sourceKey": "dlsite-books-ranking-day",
-    "sourceUrl": "https://www.dlsite.com/books/work/=/product_id/BJ03035723.html",
-    "historyKey": "dlsite-BJ03035723",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ03036000/BJ03035723_img_main.jpg",
+    "sourceUrl": "https://www.dlsite.com/books/work/=/product_id/BJ03023909.html",
+    "historyKey": "dlsite-BJ03023909",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ03024000/BJ03023909_img_main.jpg",
     "category": [
       "エロ漫画"
     ],
@@ -1359,8 +1371,6 @@
       "エロ漫画"
     ],
     "tags": [
-      "30%OFF",
-      "セール対象",
       "エロ漫画",
       "DLsite漫画ランキング掲載",
       "ランキング掲載"
@@ -1368,42 +1378,40 @@
     "maker": "",
     "adultSourceGroup": "dlsite",
     "adultDisplayType": "ranking",
-    "adultPrimaryGenre": "セール",
+    "adultPrimaryGenre": "エロ漫画",
     "adultHotScore": 80,
-    "price": 1100,
-    "originalPrice": 1579,
-    "discountRate": 30,
+    "price": 1430,
+    "originalPrice": 1430,
+    "discountRate": null,
     "currency": "JPY",
-    "saleEndDate": "2026-11-05T15:00:00.000Z",
+    "saleEndDate": null,
     "rank": 7,
     "ranking": 7,
     "rankingType": "daily",
-    "previousRank": 10,
-    "rankDelta": 3,
+    "previousRank": 6,
+    "rankDelta": -1,
     "adultTrendScore": 100,
-    "valueScore": 75,
+    "valueScore": 45,
     "trendReasons": [
-      "前回10位から7位へ上昇",
-      "ランキング+3上昇",
-      "30%OFFセール対象",
+      "エロ漫画カテゴリで上位",
       "DLsiteランキングに登場",
       "DLsite漫画ランキング掲載",
       "ランキング掲載"
     ],
     "rankLabel": "7位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 7,
         "adultHotScore": null,
         "source": "DLsite",
         "rankingType": "daily"
       }
     ],
-    "rankChange": 3
+    "rankChange": -1
   },
   {
     "id": "adult-ci-en-adult-sitemap-23-rank-4-2026-10-22-ci-en",
@@ -1458,10 +1466,10 @@
     "rankLabel": "4位",
     "trendType": "creator-update",
     "publishedAt": "2026-10-22",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 4,
         "adultHotScore": null,
         "source": "Ci-en",
@@ -1469,69 +1477,6 @@
       }
     ],
     "rankChange": 6
-  },
-  {
-    "id": "adult-dlsite-maniax-ranking-day-heart-ぎゅ-っと密着しながら添い寝エッチしてくれるゆる甘後輩ちゃん-rank-11-2026-10-23t23-28-59-949z-dlsite",
-    "title": "抱き枕カノジョ-Melty Heart-～ぎゅ～っと密着しながら添い寝エッチしてくれるゆる甘後輩ちゃん～",
-    "summary": "",
-    "sourceName": "DLsite",
-    "sourceKey": "dlsite-maniax-ranking-day",
-    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01660384.html",
-    "historyKey": "dlsite-RJ01660384",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01661000/RJ01660384_img_main.jpg",
-    "category": [
-      "同人"
-    ],
-    "categories": [
-      "doujin"
-    ],
-    "categoryLabels": [
-      "同人"
-    ],
-    "tags": [
-      "40%OFF",
-      "セール対象",
-      "同人",
-      "DLsiteデイリーランキング掲載",
-      "ランキング掲載"
-    ],
-    "maker": "",
-    "adultSourceGroup": "dlsite",
-    "adultDisplayType": "ranking",
-    "adultPrimaryGenre": "セール",
-    "adultHotScore": 78,
-    "price": 1188,
-    "originalPrice": 1980,
-    "discountRate": 40,
-    "currency": "JPY",
-    "saleEndDate": "2026-11-17T15:00:00.000Z",
-    "rank": 11,
-    "ranking": 11,
-    "rankingType": "daily",
-    "previousRank": 9,
-    "rankDelta": -2,
-    "adultTrendScore": 100,
-    "valueScore": 81,
-    "trendReasons": [
-      "40%OFFセール対象",
-      "DLsiteランキングに登場",
-      "DLsiteデイリーランキング掲載",
-      "ランキング掲載"
-    ],
-    "rankLabel": "11位",
-    "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
-    "history": [
-      {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
-        "rank": 11,
-        "adultHotScore": null,
-        "source": "DLsite",
-        "rankingType": "daily"
-      }
-    ],
-    "rankChange": -2
   },
   {
     "id": "adult-dlsite-maniax-new-adult-trend",
@@ -1585,11 +1530,11 @@
     ],
     "rankLabel": "5位",
     "trendType": "new",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 5,
         "adultHotScore": null,
         "source": "DLsite",
@@ -1646,11 +1591,11 @@
     ],
     "rankLabel": "8位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 8,
         "adultHotScore": null,
         "source": "DLsite",
@@ -1712,10 +1657,10 @@
     "rankLabel": "5位",
     "trendType": "creator-update",
     "publishedAt": "2026-10-21",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 5,
         "adultHotScore": null,
         "source": "Ci-en",
@@ -1725,77 +1670,14 @@
     "rankChange": 5
   },
   {
-    "id": "adult-dlsite-maniax-ranking-day-hな呪いで精液を求める身体になった魔法使い-rank-12-2026-10-23t23-28-59-949z-dlsite",
-    "title": "ポンコツ魔法使いセリスのHな冒険記 ～Hな呪いで精液を求める身体になった魔法使い～",
+    "id": "adult-dlsite-maniax-ranking-day-heart-ぎゅ-っと密着しながら添い寝エッチしてくれるゆる甘後輩ちゃん-rank-12-2026-10-24t01-59-32-572z-dlsite",
+    "title": "抱き枕カノジョ-Melty Heart-～ぎゅ～っと密着しながら添い寝エッチしてくれるゆる甘後輩ちゃん～",
     "summary": "",
     "sourceName": "DLsite",
     "sourceKey": "dlsite-maniax-ranking-day",
-    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01724124.html",
-    "historyKey": "dlsite-RJ01724124",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01725000/RJ01724124_img_main.jpg",
-    "category": [
-      "同人"
-    ],
-    "categories": [
-      "doujin"
-    ],
-    "categoryLabels": [
-      "同人"
-    ],
-    "tags": [
-      "10%OFF",
-      "セール対象",
-      "同人",
-      "DLsiteデイリーランキング掲載",
-      "ランキング掲載"
-    ],
-    "maker": "",
-    "adultSourceGroup": "dlsite",
-    "adultDisplayType": "ranking",
-    "adultPrimaryGenre": "セール",
-    "adultHotScore": 76,
-    "price": 2673,
-    "originalPrice": 2970,
-    "discountRate": 10,
-    "currency": "JPY",
-    "saleEndDate": "2026-10-29T15:00:00.000Z",
-    "rank": 12,
-    "ranking": 12,
-    "rankingType": "daily",
-    "previousRank": 11,
-    "rankDelta": -1,
-    "adultTrendScore": 100,
-    "valueScore": 49,
-    "trendReasons": [
-      "10%OFFセール対象",
-      "DLsiteランキングに登場",
-      "DLsiteデイリーランキング掲載",
-      "ランキング掲載"
-    ],
-    "rankLabel": "12位",
-    "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
-    "history": [
-      {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
-        "rank": 12,
-        "adultHotScore": null,
-        "source": "DLsite",
-        "rankingType": "daily"
-      }
-    ],
-    "rankChange": -1
-  },
-  {
-    "id": "adult-dlsite-maniax-new-adult-trend",
-    "title": "【エルフパラダイス】むっちり巨乳エロフお姉さんとの密着ぬくもり恋人生活♡～あなたのシたいこと、ぜ～んぶ叶えてあげる…♡～",
-    "summary": "",
-    "sourceName": "DLsite",
-    "sourceKey": "dlsite-maniax-new",
-    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01695272.html",
-    "historyKey": "dlsite-RJ01695272",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01696000/RJ01695272_img_main.jpg",
+    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01660384.html",
+    "historyKey": "dlsite-RJ01660384",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01661000/RJ01660384_img_main.jpg",
     "category": [
       "同人"
     ],
@@ -1809,6 +1691,69 @@
       "40%OFF",
       "セール対象",
       "同人",
+      "DLsiteデイリーランキング掲載",
+      "ランキング掲載"
+    ],
+    "maker": "",
+    "adultSourceGroup": "dlsite",
+    "adultDisplayType": "ranking",
+    "adultPrimaryGenre": "セール",
+    "adultHotScore": 76,
+    "price": 1188,
+    "originalPrice": 1980,
+    "discountRate": 40,
+    "currency": "JPY",
+    "saleEndDate": "2026-11-17T15:00:00.000Z",
+    "rank": 12,
+    "ranking": 12,
+    "rankingType": "daily",
+    "previousRank": 11,
+    "rankDelta": -1,
+    "adultTrendScore": 100,
+    "valueScore": 79,
+    "trendReasons": [
+      "40%OFFセール対象",
+      "DLsiteランキングに登場",
+      "DLsiteデイリーランキング掲載",
+      "ランキング掲載"
+    ],
+    "rankLabel": "12位",
+    "trendType": "ranking",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
+    "history": [
+      {
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
+        "rank": 12,
+        "adultHotScore": null,
+        "source": "DLsite",
+        "rankingType": "daily"
+      }
+    ],
+    "rankChange": -1
+  },
+  {
+    "id": "adult-dlsite-maniax-new-一年鍛えたつよつよおまんこ-三発抜いても絶倫でかちんに完全敗北-rank-6-2026-10-24t01-59-32-572z-dlsite",
+    "title": "リベンジ・ナイトプール ～一年鍛えたつよつよおまんこ♡ 三発抜いても絶倫でかちんに完全敗北♡～",
+    "summary": "",
+    "sourceName": "DLsite",
+    "sourceKey": "dlsite-maniax-new",
+    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01740646.html",
+    "historyKey": "dlsite-RJ01740646",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01741000/RJ01740646_img_main.jpg",
+    "category": [
+      "同人"
+    ],
+    "categories": [
+      "doujin"
+    ],
+    "categoryLabels": [
+      "同人"
+    ],
+    "tags": [
+      "50%OFF",
+      "セール対象",
+      "同人",
       "DLsite新着作品",
       "新着人気候補"
     ],
@@ -1817,41 +1762,41 @@
     "adultDisplayType": "sale",
     "adultPrimaryGenre": "セール",
     "adultHotScore": 76,
-    "price": 1188,
-    "originalPrice": 1980,
-    "discountRate": 40,
+    "price": 825,
+    "originalPrice": 1650,
+    "discountRate": 50,
     "currency": "JPY",
     "saleEndDate": "2026-11-20T15:00:00.000Z",
     "rank": 6,
     "ranking": 6,
     "rankingType": "new",
-    "previousRank": 5,
-    "rankDelta": -1,
+    "previousRank": 4,
+    "rankDelta": -2,
     "adultTrendScore": 100,
-    "valueScore": 99,
+    "valueScore": 100,
     "trendReasons": [
-      "40%OFFセール対象",
+      "50%OFFセール対象",
       "DLsiteランキングに登場",
       "DLsite新着作品",
       "新着人気候補"
     ],
     "rankLabel": "6位",
     "trendType": "new",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 6,
         "adultHotScore": null,
         "source": "DLsite",
         "rankingType": "new"
       }
     ],
-    "rankChange": -1
+    "rankChange": -2
   },
   {
-    "id": "adult-dlsite-books-ranking-day-淫れ散る三戦華-the-comic-電子書籍限定版-rank-9-2026-10-23t23-28-59-949z-dlsite",
+    "id": "adult-dlsite-books-ranking-day-淫れ散る三戦華-the-comic-電子書籍限定版-rank-9-2026-10-24t01-59-32-572z-dlsite",
     "title": "軍属麗奴ツバキ 淫れ散る三戦華 THE COMIC【電子書籍限定版】",
     "summary": "",
     "sourceName": "DLsite",
@@ -1900,11 +1845,11 @@
     ],
     "rankLabel": "9位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 9,
         "adultHotScore": null,
         "source": "DLsite",
@@ -1966,10 +1911,10 @@
     "rankLabel": "6位",
     "trendType": "creator-update",
     "publishedAt": "2026-10-23",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 6,
         "adultHotScore": null,
         "source": "Ci-en",
@@ -1980,13 +1925,13 @@
   },
   {
     "id": "adult-dlsite-maniax-new-adult-trend",
-    "title": "どちゃしこストリーム！",
+    "title": "ハルカと幸せのダンジョン",
     "summary": "",
     "sourceName": "DLsite",
     "sourceKey": "dlsite-maniax-new",
-    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01728692.html",
-    "historyKey": "dlsite-RJ01728692",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01729000/RJ01728692_img_main.jpg",
+    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01742018.html",
+    "historyKey": "dlsite-RJ01742018",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01743000/RJ01742018_img_main.jpg",
     "category": [
       "同人"
     ],
@@ -2008,21 +1953,21 @@
     "adultDisplayType": "sale",
     "adultPrimaryGenre": "セール",
     "adultHotScore": 74,
-    "price": 1584,
-    "originalPrice": 1980,
+    "price": 704,
+    "originalPrice": 880,
     "discountRate": 20,
     "currency": "JPY",
     "saleEndDate": "2026-11-20T15:00:00.000Z",
     "rank": 7,
     "ranking": 7,
     "rankingType": "new",
-    "previousRank": 9,
-    "rankDelta": 2,
+    "previousRank": 8,
+    "rankDelta": 1,
     "adultTrendScore": 100,
     "valueScore": 78,
     "trendReasons": [
-      "前回9位から7位へ上昇",
-      "ランキング+2上昇",
+      "前回8位から7位へ上昇",
+      "ランキング+1上昇",
       "20%OFFセール対象",
       "DLsiteランキングに登場",
       "DLsite新着作品",
@@ -2030,28 +1975,28 @@
     ],
     "rankLabel": "7位",
     "trendType": "new",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 7,
         "adultHotScore": null,
         "source": "DLsite",
         "rankingType": "new"
       }
     ],
-    "rankChange": 2
+    "rankChange": 1
   },
   {
     "id": "adult-dlsite-books-ranking-day-adult-trend",
-    "title": "不器用に愛して（未収録作品150ページ付き）【デジタル超特装版】",
+    "title": "夜ふかしドライブイン",
     "summary": "",
     "sourceName": "DLsite",
     "sourceKey": "dlsite-books-ranking-day",
-    "sourceUrl": "https://www.dlsite.com/books/work/=/product_id/BJ01834493.html",
-    "historyKey": "dlsite-BJ01834493",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ01835000/BJ01834493_img_main.jpg",
+    "sourceUrl": "https://www.dlsite.com/books/work/=/product_id/BJ03044884.html",
+    "historyKey": "dlsite-BJ03044884",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ03045000/BJ03044884_img_main.jpg",
     "category": [
       "エロ漫画"
     ],
@@ -2062,8 +2007,6 @@
       "エロ漫画"
     ],
     "tags": [
-      "50%OFF",
-      "セール対象",
       "エロ漫画",
       "DLsite漫画ランキング掲載",
       "ランキング掲載"
@@ -2071,40 +2014,40 @@
     "maker": "",
     "adultSourceGroup": "dlsite",
     "adultDisplayType": "ranking",
-    "adultPrimaryGenre": "セール",
+    "adultPrimaryGenre": "エロ漫画",
     "adultHotScore": 74,
-    "price": 1375,
-    "originalPrice": 2750,
-    "discountRate": 50,
+    "price": 440,
+    "originalPrice": 440,
+    "discountRate": null,
     "currency": "JPY",
-    "saleEndDate": "2026-10-29T15:00:00.000Z",
+    "saleEndDate": null,
     "rank": 10,
     "ranking": 10,
     "rankingType": "daily",
-    "previousRank": 7,
-    "rankDelta": -3,
+    "previousRank": 9,
+    "rankDelta": -1,
     "adultTrendScore": 100,
-    "valueScore": 91,
+    "valueScore": 41,
     "trendReasons": [
-      "50%OFFセール対象",
+      "エロ漫画カテゴリで上位",
       "DLsiteランキングに登場",
       "DLsite漫画ランキング掲載",
       "ランキング掲載"
     ],
     "rankLabel": "10位",
     "trendType": "ranking",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 10,
         "adultHotScore": null,
         "source": "DLsite",
         "rankingType": "daily"
       }
     ],
-    "rankChange": -3
+    "rankChange": -1
   },
   {
     "id": "adult-ci-en-adult-sitemap-38-rank-7-2026-10-17-ci-en",
@@ -2159,10 +2102,10 @@
     "rankLabel": "7位",
     "trendType": "creator-update",
     "publishedAt": "2026-10-17",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 7,
         "adultHotScore": null,
         "source": "Ci-en",
@@ -2173,13 +2116,13 @@
   },
   {
     "id": "adult-dlsite-maniax-new-adult-trend",
-    "title": "ハルカと幸せのダンジョン",
+    "title": "【エルフパラダイス】むっちり巨乳エロフお姉さんとの密着ぬくもり恋人生活♡～あなたのシたいこと、ぜ～んぶ叶えてあげる…♡～",
     "summary": "",
     "sourceName": "DLsite",
     "sourceKey": "dlsite-maniax-new",
-    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01742018.html",
-    "historyKey": "dlsite-RJ01742018",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01743000/RJ01742018_img_main.jpg",
+    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01695272.html",
+    "historyKey": "dlsite-RJ01695272",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01696000/RJ01695272_img_main.jpg",
     "category": [
       "同人"
     ],
@@ -2190,7 +2133,7 @@
       "同人"
     ],
     "tags": [
-      "20%OFF",
+      "40%OFF",
       "セール対象",
       "同人",
       "DLsite新着作品",
@@ -2201,38 +2144,38 @@
     "adultDisplayType": "sale",
     "adultPrimaryGenre": "セール",
     "adultHotScore": 72,
-    "price": 704,
-    "originalPrice": 880,
-    "discountRate": 20,
+    "price": 1188,
+    "originalPrice": 1980,
+    "discountRate": 40,
     "currency": "JPY",
     "saleEndDate": "2026-11-20T15:00:00.000Z",
     "rank": 8,
     "ranking": 8,
     "rankingType": "new",
-    "previousRank": null,
-    "rankDelta": 0,
-    "adultTrendScore": 6,
-    "valueScore": 76,
+    "previousRank": 6,
+    "rankDelta": -2,
+    "adultTrendScore": 100,
+    "valueScore": 96,
     "trendReasons": [
-      "20%OFFセール対象",
+      "40%OFFセール対象",
       "DLsiteランキングに登場",
       "DLsite新着作品",
       "新着人気候補"
     ],
     "rankLabel": "8位",
     "trendType": "new",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 8,
         "adultHotScore": null,
         "source": "DLsite",
         "rankingType": "new"
       }
     ],
-    "rankChange": 0
+    "rankChange": -2
   },
   {
     "id": "adult-ci-en-adult-sitemap-40-rank-8-2026-10-21-ci-en",
@@ -2287,10 +2230,10 @@
     "rankLabel": "8位",
     "trendType": "creator-update",
     "publishedAt": "2026-10-21",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 8,
         "adultHotScore": null,
         "source": "Ci-en",
@@ -2349,11 +2292,11 @@
     ],
     "rankLabel": "9位",
     "trendType": "new",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 9,
         "adultHotScore": null,
         "source": "DLsite",
@@ -2415,10 +2358,10 @@
     "rankLabel": "9位",
     "trendType": "creator-update",
     "publishedAt": "2026-10-19",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 9,
         "adultHotScore": null,
         "source": "Ci-en",
@@ -2428,7 +2371,7 @@
     "rankChange": 1
   },
   {
-    "id": "adult-dlsite-maniax-new-reina-敗北・変身解除・蹂躙-アダルト・ジュブナイル・シリーズ-no-1-battle-shine-angel-reina-rank-10-2026-10-23t23-28-5",
+    "id": "adult-dlsite-maniax-new-reina-敗北・変身解除・蹂躙-アダルト・ジュブナイル・シリーズ-no-1-battle-shine-angel-reina-rank-10-2026-10-24t01-59-3",
     "title": "戦闘天使 REINA 敗北・変身解除・蹂躙 アダルト・ジュブナイル・シリーズ No.1 BATTLE SHINE ANGEL REINA",
     "summary": "",
     "sourceName": "DLsite",
@@ -2477,11 +2420,11 @@
     ],
     "rankLabel": "10位",
     "trendType": "new",
-    "publishedAt": "2026-10-23T23:28:59.949Z",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "publishedAt": "2026-10-24T01:59:32.572Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 10,
         "adultHotScore": null,
         "source": "DLsite",
@@ -2543,10 +2486,10 @@
     "rankLabel": "10位",
     "trendType": "creator-update",
     "publishedAt": "2026-10-21",
-    "fetchedAt": "2026-10-23T23:28:59.949Z",
+    "fetchedAt": "2026-10-24T01:59:32.572Z",
     "history": [
       {
-        "fetchedAt": "2026-10-23T23:28:59.949Z",
+        "fetchedAt": "2026-10-24T01:59:32.572Z",
         "rank": 10,
         "adultHotScore": null,
         "source": "Ci-en",

@@ -1,29 +1,30 @@
 {
-  "generatedAt": "2026-10-24T19:01:13.296Z",
+  "generatedAt": "2026-10-24T21:35:04.420Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-275",
+  "selectedClusterId": "today-cluster-25",
   "selectedTitle": "不正アクセス受けたＧＭＯ、政府に「能動的サイバー防御」の適用を緊急要請",
   "candidates": [
     {
-      "clusterId": "today-cluster-275",
+      "clusterId": "today-cluster-25",
       "title": "不正アクセス受けたＧＭＯ、政府に「能動的サイバー防御」の適用を緊急要請",
       "category": "tech",
       "categories": [
         "tech",
-        "general",
         "sns",
-        "net-culture"
+        "net-culture",
+        "business",
+        "general"
       ],
-      "buzzScore": 65,
-      "confidence": 0.35,
-      "articleCount": 2,
+      "buzzScore": 63.6,
+      "confidence": 0.41,
+      "articleCount": 4,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 7.2,
         "sourceDiversity": 4.7,
         "trend": 17.2,
         "internetNativeBoost": 8,
@@ -32,7 +33,7 @@
         "velocity": 0,
         "freshness": 5.5,
         "authority": 2.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -57,60 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-711",
-      "title": "米中間選挙、共和党は下院での大敗回避に躍起　下院議長がトランプ氏に追加資金要請",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "world",
-        "general"
-      ],
-      "buzzScore": 60.3,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20.2,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 7.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 92,
-        "internalSearchScore": 34.9,
-        "internalSocialScore": 56.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-67",
+      "clusterId": "today-cluster-75",
       "title": "『攻殻機動隊』新作アニメ制作決定　制作はサイエンスSARUが続投",
       "category": "anime",
       "categories": [
@@ -165,35 +113,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-28",
-      "title": "『劇場版 怪獣8号』2027年公開決定！ アニメシリーズがついに完結へ。日比野カフカ／怪獣8号役・福西勝也さんも「愛するこの作品を全力で作り上げていきます」とコメント",
-      "category": "anime",
+      "clusterId": "today-cluster-870",
+      "title": "米中間選挙、共和党は下院での大敗回避に躍起　下院議長がトランプ氏に追加資金要請",
+      "category": "politics",
       "categories": [
-        "anime",
-        "games",
+        "politics",
+        "sns",
         "net-culture",
-        "general",
-        "entertainment"
+        "world",
+        "general"
       ],
-      "buzzScore": 58.9,
-      "confidence": 0.42,
-      "articleCount": 4,
+      "buzzScore": 58.3,
+      "confidence": 0.37,
+      "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 7.2,
+        "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 14.7,
-        "internetNativeBoost": 0,
-        "search": 4.9,
-        "social": 6.9,
+        "trend": 20.2,
+        "internetNativeBoost": 8,
+        "search": 4.5,
+        "social": 7.3,
         "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1,
-        "categoryBias": 14,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -203,13 +151,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 67,
-        "internalSearchScore": 37.9,
-        "internalSocialScore": 54
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 92,
+        "internalSearchScore": 34.9,
+        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -218,13 +166,66 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1333",
+      "clusterId": "today-cluster-1492",
       "title": "スカイツリーの展望デッキからiPhoneで撮影してみると……　目を疑う光景が150万再生「やばいな」「CMみたいだ！」",
       "category": "sns",
       "categories": [
         "sns",
         "tech",
         "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 57.3,
+      "confidence": 0.29,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 3.9,
+        "social": 7.2,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 30.7,
+        "internalSocialScore": 56.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1530",
+      "title": "5歳娘が書いた絵本→ページをめくると……　ママも驚きの一冊に56万回表示「これは才能の塊」「買います」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "books",
+        "sns",
         "net-culture",
         "general"
       ],

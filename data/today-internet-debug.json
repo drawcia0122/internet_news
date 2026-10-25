@@ -1,39 +1,40 @@
 {
-  "generatedAt": "2026-10-25T01:39:07.222Z",
+  "generatedAt": "2026-10-25T06:49:31.046Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-5",
-  "selectedTitle": "高市首相、官僚との面会は歴代首相より大幅に少ない傾向…資料熟読する「高市流」貫いた１年",
+  "selectedClusterId": "today-cluster-11",
+  "selectedTitle": "「AIを虐待すると復讐されるかも」マスク氏も警告…アンソロピックが“AIいじめ”対策でポリシー改定 識者が危惧するAIへの暴言のリスク",
   "candidates": [
     {
-      "clusterId": "today-cluster-5",
-      "title": "高市首相、官僚との面会は歴代首相より大幅に少ない傾向…資料熟読する「高市流」貫いた１年",
-      "category": "politics",
+      "clusterId": "today-cluster-11",
+      "title": "「AIを虐待すると復讐されるかも」マスク氏も警告…アンソロピックが“AIいじめ”対策でポリシー改定 識者が危惧するAIへの暴言のリスク",
+      "category": "tech",
       "categories": [
-        "politics",
+        "tech",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.9,
+      "buzzScore": 73.1,
       "confidence": 0.44,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 20.2,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 6.1,
+        "search": 6,
         "social": 7,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -46,8 +47,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 92,
-        "internalSearchScore": 47.8,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
@@ -57,7 +58,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-789",
+      "clusterId": "today-cluster-125",
+      "title": "死ぬことができない世界を舞台にしたアニメ調のアクションRPG『星溯』が発表！『魔神英雄伝ワタル』の放置ゲーも―日本未上陸の注目ゲーム3選【2026年10月25日】",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 63.8,
+      "confidence": 0.41,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1171",
       "title": "不正アクセス受けたＧＭＯ、政府に「能動的サイバー防御」の適用を緊急要請",
       "category": "tech",
       "categories": [
@@ -67,7 +121,7 @@
         "net-culture",
         "business"
       ],
-      "buzzScore": 59.8,
+      "buzzScore": 59.6,
       "confidence": 0.37,
       "articleCount": 3,
       "sourceCount": 2,
@@ -80,8 +134,8 @@
         "sourceDiversity": 4.7,
         "trend": 17.2,
         "internetNativeBoost": 8,
-        "search": 3.7,
-        "social": 5.8,
+        "search": 3.6,
+        "social": 5.7,
         "velocity": 0,
         "freshness": 3.5,
         "authority": 2.5,
@@ -97,11 +151,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
+        "repeatedAppearanceScore": 1.8,
         "crossCategoryScore": 80,
         "archiveHeatScore": 78,
-        "internalSearchScore": 29.2,
-        "internalSocialScore": 45.4
+        "internalSearchScore": 28.5,
+        "internalSocialScore": 44.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -110,7 +164,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1238",
+      "clusterId": "today-cluster-1632",
       "title": "米中間選挙、共和党は下院での大敗回避に躍起　下院議長がトランプ氏に追加資金要請",
       "category": "politics",
       "categories": [
@@ -163,7 +217,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-49",
+      "clusterId": "today-cluster-76",
       "title": "『劇場版 怪獣8号』2027年公開決定！ アニメシリーズがついに完結へ。日比野カフカ／怪獣8号役・福西勝也さんも「愛するこの作品を全力で作り上げていきます」とコメント",
       "category": "anime",
       "categories": [
@@ -173,16 +227,16 @@
         "general",
         "entertainment"
       ],
-      "buzzScore": 57.4,
-      "confidence": 0.42,
-      "articleCount": 5,
+      "buzzScore": 55.6,
+      "confidence": 0.4,
+      "articleCount": 4,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "複数の話題候補の中で最も総合スコアが高い"
       ],
       "scoreBreakdown": {
-        "coverage": 9,
+        "coverage": 7.2,
         "sourceDiversity": 4.7,
         "trend": 13.9,
         "internetNativeBoost": 0,
@@ -208,58 +262,6 @@
         "archiveHeatScore": 63,
         "internalSearchScore": 35.7,
         "internalSocialScore": 53.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-931",
-      "title": "ガンダムの一番くじで当たったBOX→開けてみると……「マジで何？」　入っていた“謎のアイテム”にファン困惑「これだけ分からん」",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 54.8,
-      "confidence": 0.29,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 3.7,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 29.2,
-        "internalSocialScore": 45.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

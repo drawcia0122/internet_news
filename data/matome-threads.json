@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T06:58:41.138Z",
-  "checkedAt": "2026-10-25T06:58:41.138Z",
-  "status": "partial",
+  "generatedAt": "2026-10-25T12:43:53.473Z",
+  "checkedAt": "2026-10-25T12:43:53.473Z",
+  "status": "ok",
   "sources": [
     {
       "id": "gamehard",
@@ -10,7 +10,7 @@
       "siteUrl": "https://aatyu.livedoor.blog/",
       "feedUrl": "https://aatyu.livedoor.blog/index.rdf",
       "status": "ok",
-      "lastSuccessAt": "2026-10-25T06:58:41.138Z",
+      "lastSuccessAt": "2026-10-25T12:43:53.473Z",
       "error": null,
       "itemCount": 20,
       "retainedCount": 41,
@@ -21,11 +21,12 @@
       "name": "ジャンプまとめ速報",
       "siteUrl": "https://jumpmatome2ch.biz/",
       "feedUrl": "https://jumpmatome2ch.biz/feed",
-      "status": "error",
-      "lastSuccessAt": "2026-10-25T01:46:21.565Z",
-      "error": "http_403",
-      "itemCount": 0,
-      "retainedCount": 60
+      "status": "ok",
+      "lastSuccessAt": "2026-10-25T12:43:53.473Z",
+      "error": null,
+      "itemCount": 13,
+      "retainedCount": 60,
+      "entryCount": 15
     },
     {
       "id": "nwknews",
@@ -33,14 +34,181 @@
       "siteUrl": "https://nwknews.jp/",
       "feedUrl": "https://nwknews.jp/index.rdf",
       "status": "ok",
-      "lastSuccessAt": "2026-10-25T06:58:41.138Z",
+      "lastSuccessAt": "2026-10-25T12:43:53.473Z",
       "error": null,
-      "itemCount": 4,
-      "retainedCount": 26,
+      "itemCount": 3,
+      "retainedCount": 23,
       "entryCount": 10
     }
   ],
   "items": [
+    {
+      "id": "matome-ca04035ff743ef06",
+      "title": "【急募】最近の「ワンピース」が突然叩かれ始めた理由！いったいなぜ…",
+      "url": "https://jumpmatome2ch.biz/archives/450970",
+      "sourceId": "jumpmatome",
+      "sourceName": "ジャンプまとめ速報",
+      "sourceUrl": "https://jumpmatome2ch.biz/",
+      "categories": [
+        "anime"
+      ],
+      "feedCategories": [
+        "ワンピース"
+      ],
+      "publishedAt": "2026-10-25T12:42:18.000Z",
+      "firstSeenAt": "2026-10-25T12:43:53.473Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
+    },
+    {
+      "id": "matome-5fa20ad60726af4e",
+      "title": "【速報】『ロードが長すぎるゲーム』←思い浮かべた作品、7割が一致ｗｗｗ",
+      "url": "https://aatyu.livedoor.blog/archives/2177314.html",
+      "sourceId": "gamehard",
+      "sourceName": "ゲーハー黙示録",
+      "sourceUrl": "https://aatyu.livedoor.blog/",
+      "categories": [
+        "game",
+        "neta"
+      ],
+      "feedCategories": [
+        "VIP"
+      ],
+      "publishedAt": "2026-10-25T11:35:41.000Z",
+      "firstSeenAt": "2026-10-25T12:43:53.473Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
+    },
+    {
+      "id": "matome-181453a6208444b3",
+      "title": "【悲報】人気漫画『スーパーの裏でヤニ吸うふたり』、レジスタのせいで女性に見つかり炎上",
+      "url": "https://jumpmatome2ch.biz/archives/450936",
+      "sourceId": "jumpmatome",
+      "sourceName": "ジャンプまとめ速報",
+      "sourceUrl": "https://jumpmatome2ch.biz/",
+      "categories": [
+        "anime"
+      ],
+      "feedCategories": [
+        "漫画総合"
+      ],
+      "publishedAt": "2026-10-25T11:05:31.000Z",
+      "firstSeenAt": "2026-10-25T12:43:53.473Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
+    },
+    {
+      "id": "matome-fc7cc80eb825db9a",
+      "title": "【謎】ドラえもん、なぜか住民たちから通報されないｗｗｗｗ",
+      "url": "https://jumpmatome2ch.biz/archives/450928",
+      "sourceId": "jumpmatome",
+      "sourceName": "ジャンプまとめ速報",
+      "sourceUrl": "https://jumpmatome2ch.biz/",
+      "categories": [
+        "anime",
+        "neta"
+      ],
+      "feedCategories": [
+        "漫画総合"
+      ],
+      "publishedAt": "2026-10-25T09:45:32.000Z",
+      "firstSeenAt": "2026-10-25T12:43:53.473Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
+    },
+    {
+      "id": "matome-eb80ddb72cb02ab9",
+      "title": "ニンテンドウ64「あのスーパーファミコンの後継機です！」←これが覇権取れなかった理由",
+      "url": "https://aatyu.livedoor.blog/archives/2177338.html",
+      "sourceId": "gamehard",
+      "sourceName": "ゲーハー黙示録",
+      "sourceUrl": "https://aatyu.livedoor.blog/",
+      "categories": [
+        "game"
+      ],
+      "feedCategories": [
+        "なんでも実況J"
+      ],
+      "publishedAt": "2026-10-25T09:35:28.000Z",
+      "firstSeenAt": "2026-10-25T12:43:53.473Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
+    },
+    {
+      "id": "matome-b51d38f85ff8471a",
+      "title": "【ドラゴンボール】クリリンが18号を破壊しなかった理由、やっぱりどう考えてもこれｗｗｗｗ",
+      "url": "https://jumpmatome2ch.biz/archives/450926",
+      "sourceId": "jumpmatome",
+      "sourceName": "ジャンプまとめ速報",
+      "sourceUrl": "https://jumpmatome2ch.biz/",
+      "categories": [
+        "anime",
+        "neta"
+      ],
+      "feedCategories": [
+        "ドラゴンボール"
+      ],
+      "publishedAt": "2026-10-25T09:04:25.000Z",
+      "firstSeenAt": "2026-10-25T12:43:53.473Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
+    },
+    {
+      "id": "matome-f4b459cbe3e8fd06",
+      "title": "【急募】ゲームで「このアイディアすげええええ！！」ってなったシステム",
+      "url": "https://aatyu.livedoor.blog/archives/2177334.html",
+      "sourceId": "gamehard",
+      "sourceName": "ゲーハー黙示録",
+      "sourceUrl": "https://aatyu.livedoor.blog/",
+      "categories": [
+        "game"
+      ],
+      "feedCategories": [
+        "なんでも実況J"
+      ],
+      "publishedAt": "2026-10-25T07:46:07.000Z",
+      "firstSeenAt": "2026-10-25T12:43:53.473Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
+    },
+    {
+      "id": "matome-3dc961f61cb637de",
+      "title": "【BLEACH】いくらなんでも卍解できるやつ少なすぎじゃない？",
+      "url": "https://jumpmatome2ch.biz/archives/450837",
+      "sourceId": "jumpmatome",
+      "sourceName": "ジャンプまとめ速報",
+      "sourceUrl": "https://jumpmatome2ch.biz/",
+      "categories": [
+        "anime"
+      ],
+      "feedCategories": [
+        "ブリーチ"
+      ],
+      "publishedAt": "2026-10-25T05:37:42.000Z",
+      "firstSeenAt": "2026-10-25T12:43:53.473Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
+    },
+    {
+      "id": "matome-79d6380b5e8d8cc5",
+      "title": "【悲報】日本の国民的アニメ、ソシャゲコラボで胸をデカくされるｗｗｗｗ",
+      "url": "https://jumpmatome2ch.biz/archives/450833",
+      "sourceId": "jumpmatome",
+      "sourceName": "ジャンプまとめ速報",
+      "sourceUrl": "https://jumpmatome2ch.biz/",
+      "categories": [
+        "game",
+        "anime",
+        "neta"
+      ],
+      "feedCategories": [
+        "アニメ総合"
+      ],
+      "publishedAt": "2026-10-25T04:05:17.000Z",
+      "firstSeenAt": "2026-10-25T12:43:53.473Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
+    },
     {
       "id": "matome-7f0fce6df95deb27",
       "title": "今の若者に言っても信じてもらえなさそうなレトロゲーの思い出ｗｗｗｗ",
@@ -57,7 +225,25 @@
       ],
       "publishedAt": "2026-10-25T03:10:49.000Z",
       "firstSeenAt": "2026-10-25T06:58:41.138Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
+    },
+    {
+      "id": "matome-6d0a3c17b6c17635",
+      "title": "【疑問】漫画の主人公って『天才型』と『努力型』、結局どっちが良いんだろう？",
+      "url": "https://jumpmatome2ch.biz/archives/450828",
+      "sourceId": "jumpmatome",
+      "sourceName": "ジャンプまとめ速報",
+      "sourceUrl": "https://jumpmatome2ch.biz/",
+      "categories": [
+        "anime"
+      ],
+      "feedCategories": [
+        "漫画総合"
+      ],
+      "publishedAt": "2026-10-25T03:05:32.000Z",
+      "firstSeenAt": "2026-10-25T12:43:53.473Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -75,7 +261,7 @@
       ],
       "publishedAt": "2026-10-25T01:17:36.000Z",
       "firstSeenAt": "2026-10-25T01:46:21.565Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -93,8 +279,8 @@
       ],
       "publishedAt": "2026-10-25T00:05:39.000Z",
       "firstSeenAt": "2026-10-25T01:46:21.565Z",
-      "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
     },
     {
       "id": "matome-e5e76ec8d271c4cb",
@@ -111,7 +297,7 @@
       ],
       "publishedAt": "2026-10-24T23:25:46.000Z",
       "firstSeenAt": "2026-10-24T23:46:03.310Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -129,7 +315,7 @@
       ],
       "publishedAt": "2026-10-24T22:35:52.000Z",
       "firstSeenAt": "2026-10-24T23:46:03.310Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -147,7 +333,7 @@
       ],
       "publishedAt": "2026-10-24T16:00:10.000Z",
       "firstSeenAt": "2026-10-24T16:25:23.785Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -166,8 +352,8 @@
       ],
       "publishedAt": "2026-10-24T15:24:09.000Z",
       "firstSeenAt": "2026-10-24T16:25:23.785Z",
-      "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
     },
     {
       "id": "matome-ef92425386eeec59",
@@ -203,7 +389,7 @@
       ],
       "publishedAt": "2026-10-24T13:40:43.000Z",
       "firstSeenAt": "2026-10-24T16:25:23.785Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -222,8 +408,8 @@
       ],
       "publishedAt": "2026-10-24T12:54:04.000Z",
       "firstSeenAt": "2026-10-24T16:25:23.785Z",
-      "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
     },
     {
       "id": "matome-e85aee98c997b7c7",
@@ -240,7 +426,7 @@
       ],
       "publishedAt": "2026-10-24T11:36:26.000Z",
       "firstSeenAt": "2026-10-24T12:21:27.929Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -259,8 +445,8 @@
       ],
       "publishedAt": "2026-10-24T11:25:27.000Z",
       "firstSeenAt": "2026-10-24T12:21:27.929Z",
-      "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
     },
     {
       "id": "matome-37e1e4722528d1eb",
@@ -278,8 +464,8 @@
       ],
       "publishedAt": "2026-10-24T09:42:12.000Z",
       "firstSeenAt": "2026-10-24T12:21:27.929Z",
-      "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
     },
     {
       "id": "matome-3c126fd2605b68de",
@@ -296,7 +482,7 @@
       ],
       "publishedAt": "2026-10-24T09:40:48.000Z",
       "firstSeenAt": "2026-10-24T12:21:27.929Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -315,8 +501,8 @@
       ],
       "publishedAt": "2026-10-24T05:45:41.000Z",
       "firstSeenAt": "2026-10-24T07:23:45.072Z",
-      "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
+      "cached": false
     },
     {
       "id": "matome-b5d406aae36e5097",
@@ -336,7 +522,7 @@
       "publishedAt": "2026-10-24T03:25:35.000Z",
       "firstSeenAt": "2026-10-24T07:23:45.072Z",
       "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-1a0716312c7d5494",
@@ -353,7 +539,7 @@
       ],
       "publishedAt": "2026-10-24T03:10:43.000Z",
       "firstSeenAt": "2026-10-24T07:23:45.072Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -372,7 +558,7 @@
       "publishedAt": "2026-10-24T01:45:42.000Z",
       "firstSeenAt": "2026-10-24T07:23:45.072Z",
       "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-ce084c129ca9ccb8",
@@ -390,7 +576,7 @@
       "publishedAt": "2026-10-23T23:05:40.000Z",
       "firstSeenAt": "2026-10-23T23:36:09.646Z",
       "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-90bfa4386d96658c",
@@ -425,7 +611,7 @@
       ],
       "publishedAt": "2026-10-23T22:35:50.000Z",
       "firstSeenAt": "2026-10-23T23:36:09.646Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -462,7 +648,7 @@
       "publishedAt": "2026-10-23T15:58:06.000Z",
       "firstSeenAt": "2026-10-23T17:08:32.896Z",
       "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-75dffd93d6a183e3",
@@ -481,7 +667,7 @@
       "publishedAt": "2026-10-23T15:25:44.000Z",
       "firstSeenAt": "2026-10-23T17:08:32.896Z",
       "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-ed7263b35d8b8f70",
@@ -498,7 +684,7 @@
       ],
       "publishedAt": "2026-10-23T13:50:08.000Z",
       "firstSeenAt": "2026-10-23T17:08:32.896Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -517,7 +703,7 @@
       "publishedAt": "2026-10-23T13:45:28.000Z",
       "firstSeenAt": "2026-10-23T17:08:32.896Z",
       "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-7cb48a89215e36d3",
@@ -536,7 +722,7 @@
       "publishedAt": "2026-10-23T13:23:21.000Z",
       "firstSeenAt": "2026-10-23T17:08:32.896Z",
       "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-17e0f23285e00486",
@@ -553,7 +739,7 @@
       ],
       "publishedAt": "2026-10-23T11:41:33.000Z",
       "firstSeenAt": "2026-10-23T12:15:36.970Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -573,7 +759,7 @@
       "publishedAt": "2026-10-23T10:45:34.000Z",
       "firstSeenAt": "2026-10-23T12:15:36.970Z",
       "fetchedAt": "2026-10-25T01:46:21.565Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-970c3ca9aaae3f56",
@@ -590,7 +776,7 @@
       ],
       "publishedAt": "2026-10-23T09:47:41.000Z",
       "firstSeenAt": "2026-10-23T12:15:36.970Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -609,7 +795,7 @@
       "publishedAt": "2026-10-23T08:45:18.000Z",
       "firstSeenAt": "2026-10-23T12:15:36.970Z",
       "fetchedAt": "2026-10-24T23:46:03.310Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-b58fbae004253c8a",
@@ -626,7 +812,7 @@
       ],
       "publishedAt": "2026-10-23T07:40:56.000Z",
       "firstSeenAt": "2026-10-23T12:15:36.970Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -646,7 +832,7 @@
       "publishedAt": "2026-10-23T06:15:13.000Z",
       "firstSeenAt": "2026-10-23T06:41:52.809Z",
       "fetchedAt": "2026-10-24T12:21:27.929Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-903ad6983770dc7c",
@@ -665,7 +851,7 @@
       "publishedAt": "2026-10-23T03:25:12.000Z",
       "firstSeenAt": "2026-10-23T06:41:52.809Z",
       "fetchedAt": "2026-10-24T07:23:45.072Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-0e88484896075c54",
@@ -682,7 +868,7 @@
       ],
       "publishedAt": "2026-10-23T03:10:19.000Z",
       "firstSeenAt": "2026-10-23T06:41:52.809Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -702,7 +888,7 @@
       "publishedAt": "2026-10-23T03:05:16.000Z",
       "firstSeenAt": "2026-10-23T06:41:52.809Z",
       "fetchedAt": "2026-10-24T07:23:45.072Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-3dab5e277860815d",
@@ -739,7 +925,7 @@
       "publishedAt": "2026-10-23T02:05:18.000Z",
       "firstSeenAt": "2026-10-23T06:41:52.809Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-dca833304201c90e",
@@ -792,7 +978,7 @@
       ],
       "publishedAt": "2026-10-22T22:35:03.000Z",
       "firstSeenAt": "2026-10-22T22:53:27.022Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -811,7 +997,7 @@
       "publishedAt": "2026-10-22T22:04:42.000Z",
       "firstSeenAt": "2026-10-22T22:53:27.022Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-33cf70aaeb2b7924",
@@ -848,7 +1034,7 @@
       "publishedAt": "2026-10-22T15:05:37.000Z",
       "firstSeenAt": "2026-10-22T15:43:34.364Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-1cdeef3806915848",
@@ -865,7 +1051,7 @@
       ],
       "publishedAt": "2026-10-22T14:12:13.000Z",
       "firstSeenAt": "2026-10-22T15:43:34.364Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -885,7 +1071,7 @@
       "publishedAt": "2026-10-22T13:05:05.000Z",
       "firstSeenAt": "2026-10-22T15:43:34.364Z",
       "fetchedAt": "2026-10-23T23:36:09.646Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-0e08394c1797488f",
@@ -902,7 +1088,7 @@
       ],
       "publishedAt": "2026-10-22T11:48:01.000Z",
       "firstSeenAt": "2026-10-22T15:43:34.364Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -921,7 +1107,7 @@
       ],
       "publishedAt": "2026-10-22T09:35:55.000Z",
       "firstSeenAt": "2026-10-22T10:48:34.467Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -940,7 +1126,7 @@
       "publishedAt": "2026-10-22T08:54:37.000Z",
       "firstSeenAt": "2026-10-22T10:48:34.467Z",
       "fetchedAt": "2026-10-23T20:33:44.366Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-d6dd5f7db2557357",
@@ -957,7 +1143,7 @@
       ],
       "publishedAt": "2026-10-22T07:43:29.000Z",
       "firstSeenAt": "2026-10-22T10:48:34.467Z",
-      "fetchedAt": "2026-10-25T06:58:41.138Z",
+      "fetchedAt": "2026-10-25T12:43:53.473Z",
       "cached": false
     },
     {
@@ -977,7 +1163,7 @@
       "publishedAt": "2026-10-22T05:25:05.000Z",
       "firstSeenAt": "2026-10-22T05:33:10.108Z",
       "fetchedAt": "2026-10-23T12:15:36.970Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-9a6f7f4965a2fe17",
@@ -996,7 +1182,7 @@
       "publishedAt": "2026-10-22T03:25:42.000Z",
       "firstSeenAt": "2026-10-22T05:33:10.108Z",
       "fetchedAt": "2026-10-23T12:15:36.970Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-4cbbeef35c911ff9",
@@ -1033,7 +1219,7 @@
       "publishedAt": "2026-10-22T03:05:43.000Z",
       "firstSeenAt": "2026-10-22T05:33:10.108Z",
       "fetchedAt": "2026-10-23T12:15:36.970Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-ff3e1b8a12601805",
@@ -1051,7 +1237,7 @@
       "publishedAt": "2026-10-21T23:05:20.000Z",
       "firstSeenAt": "2026-10-22T00:48:46.938Z",
       "fetchedAt": "2026-10-23T06:41:52.809Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-65d5f0a8abf9179c",
@@ -1105,7 +1291,7 @@
       "publishedAt": "2026-10-21T15:25:18.000Z",
       "firstSeenAt": "2026-10-21T18:28:02.801Z",
       "fetchedAt": "2026-10-23T06:41:52.809Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-aa2ed82c61495187",
@@ -1124,7 +1310,7 @@
       "publishedAt": "2026-10-21T14:21:06.000Z",
       "firstSeenAt": "2026-10-21T13:25:05.621Z",
       "fetchedAt": "2026-10-23T01:37:48.352Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-e44fc2f845c6103f",
@@ -1197,7 +1383,7 @@
       "publishedAt": "2026-10-21T11:45:09.000Z",
       "firstSeenAt": "2026-10-21T13:25:05.621Z",
       "fetchedAt": "2026-10-23T01:37:48.352Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-4d1a10ab96c34029",
@@ -1215,7 +1401,7 @@
       "publishedAt": "2026-10-21T10:24:05.000Z",
       "firstSeenAt": "2026-10-21T13:25:05.621Z",
       "fetchedAt": "2026-10-23T01:37:48.352Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-5be9fc5b65c14404",
@@ -1252,7 +1438,7 @@
       "publishedAt": "2026-10-21T09:05:33.000Z",
       "firstSeenAt": "2026-10-21T13:25:05.621Z",
       "fetchedAt": "2026-10-23T01:37:48.352Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-666b45594fe214d8",
@@ -1306,7 +1492,7 @@
       "publishedAt": "2026-10-21T05:45:38.000Z",
       "firstSeenAt": "2026-10-21T07:40:33.052Z",
       "fetchedAt": "2026-10-23T01:37:48.352Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-cb1d21b61f4e1b74",
@@ -1325,7 +1511,7 @@
       "publishedAt": "2026-10-21T03:45:34.000Z",
       "firstSeenAt": "2026-10-21T07:40:33.052Z",
       "fetchedAt": "2026-10-22T10:48:34.467Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-af61d9749e828a4f",
@@ -1362,7 +1548,7 @@
       "publishedAt": "2026-10-21T03:05:56.000Z",
       "firstSeenAt": "2026-10-21T07:40:33.052Z",
       "fetchedAt": "2026-10-22T10:48:34.467Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-cb5218861ac5c579",
@@ -1380,7 +1566,7 @@
       "publishedAt": "2026-10-21T02:45:25.000Z",
       "firstSeenAt": "2026-10-21T07:40:33.052Z",
       "fetchedAt": "2026-10-22T05:33:10.108Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-46d95a8447c99621",
@@ -1398,7 +1584,7 @@
       "publishedAt": "2026-10-21T02:05:23.000Z",
       "firstSeenAt": "2026-10-21T02:07:59.049Z",
       "fetchedAt": "2026-10-22T00:48:46.938Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-99086c5ae49636b4",
@@ -1471,7 +1657,7 @@
       "publishedAt": "2026-10-20T15:05:06.000Z",
       "firstSeenAt": "2026-10-20T17:02:44.503Z",
       "fetchedAt": "2026-10-22T00:48:46.938Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-62034c6bcd6b7613",
@@ -1507,7 +1693,7 @@
       "publishedAt": "2026-10-20T12:45:00.000Z",
       "firstSeenAt": "2026-10-20T17:02:44.503Z",
       "fetchedAt": "2026-10-22T00:48:46.938Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-44c75252cbd2c33f",
@@ -1562,7 +1748,7 @@
       "publishedAt": "2026-10-20T10:05:49.000Z",
       "firstSeenAt": "2026-10-20T12:16:14.777Z",
       "fetchedAt": "2026-10-22T00:48:46.938Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-844e72b312b81d38",
@@ -1598,7 +1784,7 @@
       "publishedAt": "2026-10-20T08:45:30.000Z",
       "firstSeenAt": "2026-10-20T12:16:14.777Z",
       "fetchedAt": "2026-10-21T22:10:43.527Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-8b2f04d27a91e6f0",
@@ -1635,7 +1821,7 @@
       "publishedAt": "2026-10-20T05:05:16.000Z",
       "firstSeenAt": "2026-10-20T06:42:46.477Z",
       "fetchedAt": "2026-10-21T07:40:33.052Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-47976cfe56370eb8",
@@ -1653,7 +1839,7 @@
       "publishedAt": "2026-10-20T03:44:13.000Z",
       "firstSeenAt": "2026-10-20T06:42:46.477Z",
       "fetchedAt": "2026-10-21T07:40:33.052Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-8c6f6199d34e6d4a",
@@ -1672,7 +1858,7 @@
       "publishedAt": "2026-10-20T03:25:57.000Z",
       "firstSeenAt": "2026-10-20T06:42:46.477Z",
       "fetchedAt": "2026-10-21T07:40:33.052Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-4b71c271c98c2dae",
@@ -1709,7 +1895,7 @@
       "publishedAt": "2026-10-20T03:05:53.000Z",
       "firstSeenAt": "2026-10-20T06:42:46.477Z",
       "fetchedAt": "2026-10-21T02:07:59.049Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-7513ceee24d6d8ff",
@@ -1727,7 +1913,7 @@
       "publishedAt": "2026-10-20T02:45:15.000Z",
       "firstSeenAt": "2026-10-20T06:42:46.477Z",
       "fetchedAt": "2026-10-21T02:07:59.049Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-fb587377339a779d",
@@ -1746,7 +1932,7 @@
       "publishedAt": "2026-10-19T23:05:36.000Z",
       "firstSeenAt": "2026-10-20T01:27:02.191Z",
       "fetchedAt": "2026-10-21T02:07:59.049Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-002e8d8440117f37",
@@ -1819,7 +2005,7 @@
       "publishedAt": "2026-10-19T15:25:58.000Z",
       "firstSeenAt": "2026-10-19T17:57:40.496Z",
       "fetchedAt": "2026-10-21T02:07:59.049Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-b763635e2bd7f195",
@@ -1855,7 +2041,7 @@
       "publishedAt": "2026-10-19T13:38:12.000Z",
       "firstSeenAt": "2026-10-19T17:57:40.496Z",
       "fetchedAt": "2026-10-21T02:07:59.049Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-3a3ed453901bbc82",
@@ -1873,7 +2059,7 @@
       "publishedAt": "2026-10-19T12:45:00.000Z",
       "firstSeenAt": "2026-10-19T17:57:40.496Z",
       "fetchedAt": "2026-10-20T23:30:51.671Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-ddaf503bfaa0c37f",
@@ -1946,7 +2132,7 @@
       "publishedAt": "2026-10-19T09:05:21.000Z",
       "firstSeenAt": "2026-10-19T11:25:55.456Z",
       "fetchedAt": "2026-10-20T12:16:14.777Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-c371b10e28418bd5",
@@ -1964,7 +2150,7 @@
       "publishedAt": "2026-10-19T08:05:15.000Z",
       "firstSeenAt": "2026-10-19T11:25:55.456Z",
       "fetchedAt": "2026-10-20T12:16:14.777Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-7737bb3ee701881f",
@@ -1982,26 +2168,7 @@
       "publishedAt": "2026-10-19T06:05:28.000Z",
       "firstSeenAt": "2026-10-19T11:25:55.456Z",
       "fetchedAt": "2026-10-20T06:42:46.477Z",
-      "cached": true
-    },
-    {
-      "id": "matome-39159c30f177b7ca",
-      "title": "ジャンプの「サカモトデイズ」最新話、いきなり怪獣映画が始まってしまうｗｗｗｗ",
-      "url": "https://jumpmatome2ch.biz/archives/449326",
-      "sourceId": "jumpmatome",
-      "sourceName": "ジャンプまとめ速報",
-      "sourceUrl": "https://jumpmatome2ch.biz/",
-      "categories": [
-        "anime",
-        "neta"
-      ],
-      "feedCategories": [
-        "SAKAMOTO DAYS"
-      ],
-      "publishedAt": "2026-10-19T05:25:33.000Z",
-      "firstSeenAt": "2026-10-19T05:26:13.360Z",
-      "fetchedAt": "2026-10-20T06:42:46.477Z",
-      "cached": true
+      "cached": false
     },
     {
       "id": "matome-83a279e4ff1cfce0",
@@ -2020,26 +2187,6 @@
       "firstSeenAt": "2026-10-19T05:26:13.360Z",
       "fetchedAt": "2026-10-19T22:26:28.769Z",
       "cached": false
-    },
-    {
-      "id": "matome-d45d21071773c201",
-      "title": "【悲報】フランスのデモ、日本のアニメや漫画のコスプレで溢れかえるｗｗｗｗ",
-      "url": "https://jumpmatome2ch.biz/archives/449321",
-      "sourceId": "jumpmatome",
-      "sourceName": "ジャンプまとめ速報",
-      "sourceUrl": "https://jumpmatome2ch.biz/",
-      "categories": [
-        "anime",
-        "neta"
-      ],
-      "feedCategories": [
-        "アニメ総合",
-        "漫画総合"
-      ],
-      "publishedAt": "2026-10-19T03:25:37.000Z",
-      "firstSeenAt": "2026-10-19T05:26:13.360Z",
-      "fetchedAt": "2026-10-20T01:27:02.191Z",
-      "cached": true
     },
     {
       "id": "matome-fceafd86c8a299ce",
@@ -2061,43 +2208,6 @@
       "cached": false
     },
     {
-      "id": "matome-ec4c14074cdb8a6e",
-      "title": "【画像】ワンピースの「覇気」、アラバスタ編から構成があった説が浮上するｗｗｗｗ",
-      "url": "https://jumpmatome2ch.biz/archives/449314",
-      "sourceId": "jumpmatome",
-      "sourceName": "ジャンプまとめ速報",
-      "sourceUrl": "https://jumpmatome2ch.biz/",
-      "categories": [
-        "anime",
-        "neta"
-      ],
-      "feedCategories": [
-        "ワンピース"
-      ],
-      "publishedAt": "2026-10-19T03:05:24.000Z",
-      "firstSeenAt": "2026-10-19T05:26:13.360Z",
-      "fetchedAt": "2026-10-20T01:27:02.191Z",
-      "cached": true
-    },
-    {
-      "id": "matome-9358be3814334a9f",
-      "title": "今週の「鵺の陰陽師」感想、再契約を結んだ学郎と鵺！学郎の光刃が火車を切断するが！？【165話】",
-      "url": "https://jumpmatome2ch.biz/archives/449309",
-      "sourceId": "jumpmatome",
-      "sourceName": "ジャンプまとめ速報",
-      "sourceUrl": "https://jumpmatome2ch.biz/",
-      "categories": [
-        "anime"
-      ],
-      "feedCategories": [
-        "鵺の陰陽師"
-      ],
-      "publishedAt": "2026-10-19T02:25:20.000Z",
-      "firstSeenAt": "2026-10-19T05:26:13.360Z",
-      "fetchedAt": "2026-10-20T01:27:02.191Z",
-      "cached": true
-    },
-    {
       "id": "matome-0a5f6d64f87d0de4",
       "title": "【悲報】昭和から続く「街の居酒屋」が次々消滅…わずか9カ月で167件倒産、過去最多に「値上げすれば客が離れ、据え置けば利益が消える」",
       "url": "https://nwknews.jp/archives/6263959.html",
@@ -2116,24 +2226,6 @@
       "cached": false
     },
     {
-      "id": "matome-fb72c5e9d1d9ab38",
-      "title": "今週の「カグラバチ」感想、ついに斉廷戦争が開戦！箕加星守護者の集結シーンかっこよすぎる！【135話】",
-      "url": "https://jumpmatome2ch.biz/archives/449277",
-      "sourceId": "jumpmatome",
-      "sourceName": "ジャンプまとめ速報",
-      "sourceUrl": "https://jumpmatome2ch.biz/",
-      "categories": [
-        "anime"
-      ],
-      "feedCategories": [
-        "カグラバチ"
-      ],
-      "publishedAt": "2026-10-18T23:27:11.000Z",
-      "firstSeenAt": "2026-10-19T00:37:51.448Z",
-      "fetchedAt": "2026-10-20T01:27:02.191Z",
-      "cached": true
-    },
-    {
       "id": "matome-eb20d98ac307afcd",
       "title": "『マイナーだけど面白かったRPG』といえば",
       "url": "https://aatyu.livedoor.blog/archives/2177132.html",
@@ -2150,42 +2242,6 @@
       "firstSeenAt": "2026-10-18T22:46:01.265Z",
       "fetchedAt": "2026-10-22T05:33:10.108Z",
       "cached": false
-    },
-    {
-      "id": "matome-cab4975bf7a72166",
-      "title": "今週の「ワンピース」感想、サンジの生き方を根底から揺さぶってくるイワンコフの言動！いよいよ覚醒なるか！？【1196話】",
-      "url": "https://jumpmatome2ch.biz/archives/449264",
-      "sourceId": "jumpmatome",
-      "sourceName": "ジャンプまとめ速報",
-      "sourceUrl": "https://jumpmatome2ch.biz/",
-      "categories": [
-        "anime"
-      ],
-      "feedCategories": [
-        "ワンピース"
-      ],
-      "publishedAt": "2026-10-18T22:04:54.000Z",
-      "firstSeenAt": "2026-10-18T22:46:01.265Z",
-      "fetchedAt": "2026-10-20T01:27:02.191Z",
-      "cached": true
-    },
-    {
-      "id": "matome-62c4310fbeab5320",
-      "title": "今週の少年ジャンプについて語ろう【47号】",
-      "url": "https://jumpmatome2ch.biz/archives/449191",
-      "sourceId": "jumpmatome",
-      "sourceName": "ジャンプまとめ速報",
-      "sourceUrl": "https://jumpmatome2ch.biz/",
-      "categories": [
-        "anime"
-      ],
-      "feedCategories": [
-        "今週のジャンプについて語ろう"
-      ],
-      "publishedAt": "2026-10-18T21:01:33.000Z",
-      "firstSeenAt": "2026-10-18T22:46:01.265Z",
-      "fetchedAt": "2026-10-20T01:27:02.191Z",
-      "cached": true
     },
     {
       "id": "matome-18ccf588b3871bb7",
@@ -2257,115 +2313,6 @@
       "publishedAt": "2026-10-18T13:43:22.000Z",
       "firstSeenAt": "2026-10-18T14:58:49.420Z",
       "fetchedAt": "2026-10-22T00:48:46.938Z",
-      "cached": false
-    },
-    {
-      "id": "matome-8d7a0bbab8a21385",
-      "title": "【宇宙の恐怖】人類が近づけば即終了…宇宙で最も危険な場所24選がヤバすぎる",
-      "url": "https://nwknews.jp/archives/6263899.html",
-      "sourceId": "nwknews",
-      "sourceName": "哲学ニュースnwk",
-      "sourceUrl": "https://nwknews.jp/",
-      "categories": [
-        "chat"
-      ],
-      "feedCategories": [
-        "科学・自然"
-      ],
-      "publishedAt": "2026-10-18T12:23:57.000Z",
-      "firstSeenAt": "2026-10-18T14:58:49.420Z",
-      "fetchedAt": "2026-10-19T05:26:13.360Z",
-      "cached": false
-    },
-    {
-      "id": "matome-535b5ea52920e0dc",
-      "title": "スパロボで「一体誰が使ってんだよこいつ」って機体",
-      "url": "https://aatyu.livedoor.blog/archives/2177126.html",
-      "sourceId": "gamehard",
-      "sourceName": "ゲーハー黙示録",
-      "sourceUrl": "https://aatyu.livedoor.blog/",
-      "categories": [
-        "game"
-      ],
-      "feedCategories": [
-        "なんでも実況J"
-      ],
-      "publishedAt": "2026-10-18T11:47:56.000Z",
-      "firstSeenAt": "2026-10-18T11:49:07.681Z",
-      "fetchedAt": "2026-10-21T22:10:43.527Z",
-      "cached": false
-    },
-    {
-      "id": "matome-09064211022b52dd",
-      "title": "【悲報】ゲームの『BGMアレンジ』の成功例が無い件…",
-      "url": "https://aatyu.livedoor.blog/archives/2177124.html",
-      "sourceId": "gamehard",
-      "sourceName": "ゲーハー黙示録",
-      "sourceUrl": "https://aatyu.livedoor.blog/",
-      "categories": [
-        "game"
-      ],
-      "feedCategories": [
-        "ハード・業界"
-      ],
-      "publishedAt": "2026-10-18T09:48:49.000Z",
-      "firstSeenAt": "2026-10-18T11:49:07.681Z",
-      "fetchedAt": "2026-10-21T13:25:05.621Z",
-      "cached": false
-    },
-    {
-      "id": "matome-3a9d6a58a731ef34",
-      "title": "【究極の議論】フィクション史上最強のキャラって結局誰なんだ？ 全創作作品を含めたら誰が頂点に立つ？",
-      "url": "https://nwknews.jp/archives/6263863.html",
-      "sourceId": "nwknews",
-      "sourceName": "哲学ニュースnwk",
-      "sourceUrl": "https://nwknews.jp/",
-      "categories": [
-        "anime"
-      ],
-      "feedCategories": [
-        "アニメ・漫画"
-      ],
-      "publishedAt": "2026-10-18T09:00:37.000Z",
-      "firstSeenAt": "2026-10-18T11:49:07.681Z",
-      "fetchedAt": "2026-10-19T00:37:51.448Z",
-      "cached": false
-    },
-    {
-      "id": "matome-174f661182209d2a",
-      "title": "『MOTHER2』とかいう神RPGｗｗｗｗｗ",
-      "url": "https://aatyu.livedoor.blog/archives/2177121.html",
-      "sourceId": "gamehard",
-      "sourceName": "ゲーハー黙示録",
-      "sourceUrl": "https://aatyu.livedoor.blog/",
-      "categories": [
-        "game",
-        "neta"
-      ],
-      "feedCategories": [
-        "なんでも実況J"
-      ],
-      "publishedAt": "2026-10-18T07:40:25.000Z",
-      "firstSeenAt": "2026-10-18T11:49:07.681Z",
-      "fetchedAt": "2026-10-21T07:40:33.052Z",
-      "cached": false
-    },
-    {
-      "id": "matome-483119cb75507577",
-      "title": "【絶望】地下洞窟で起きた事故が怖すぎる…狭い岩の隙間、出口のない暗闇、想像を絶する恐怖の実例",
-      "url": "https://nwknews.jp/archives/6263857.html",
-      "sourceId": "nwknews",
-      "sourceName": "哲学ニュースnwk",
-      "sourceUrl": "https://nwknews.jp/",
-      "categories": [
-        "chat"
-      ],
-      "feedCategories": [
-        "科学・自然"
-      ],
-      "publishedAt": "2026-10-18T07:29:21.000Z",
-      "firstSeenAt": "2026-10-18T11:49:07.681Z",
-      "fetchedAt": "2026-10-19T00:37:51.448Z",
       "cached": false
     }
   ]

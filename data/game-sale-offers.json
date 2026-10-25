@@ -1,9 +1,1429 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T06:58:41.128Z",
+  "generatedAt": "2026-10-25T12:43:49.600Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
-  "items": [],
-  "sources": []
+  "items": [
+    {
+      "id": "steam:219740",
+      "appId": 219740,
+      "title": "Don't Starve",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/219740/?cc=jp&l=japanese",
+      "regularPrice": 1010,
+      "salePrice": 252,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-05T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A219740%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/219740/?cc=jp&l=japanese",
+        "appId": 219740,
+        "packageId": 67579,
+        "discountEndDate": 1793901600,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 1010,
+        "salePrice": 252,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=219740&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/219740/88641e235d75934ea9f7ed4e947edfd9da682732/header.jpg?t=1790876891",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "Don’t Starve"
+        }
+      ],
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 219740
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2013-04-23",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=219740&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 219740
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "eventId": "steam-announcement-2919976911050115827",
+          "date": "2020-09-03T22:05:38.000Z",
+          "title": "[Game Update] Hamlet - 428605 to 429404",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:219740",
+            "url": "https://steamcommunity.com/ogg/219740/announcements/detail/2919976911050115827",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1730700",
+      "appId": 1730700,
+      "title": "みんな大好き塊魂アンコール＋王様プチメモリー",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1730700/?cc=jp&l=japanese",
+      "regularPrice": 3960,
+      "salePrice": 990,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1730700&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1730700/header_japanese.jpg?t=1706555303",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "みんな大好き塊魂アンコール＋王様プチメモリー"
+        }
+      ],
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1730700
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2023-06-01",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1730700&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1730700
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "eventId": "steam-announcement-523111043238463030",
+          "date": "2025-12-22T04:04:10.000Z",
+          "title": "Release Note for 2025/12/22",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1730700",
+            "url": "https://steamcommunity.com/ogg/1730700/announcements/detail/523111043238463030",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:492720",
+      "appId": 492720,
+      "title": "Tropico 6",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/492720/?cc=jp&l=japanese",
+      "regularPrice": 4998,
+      "salePrice": 1249,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-02T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A492720%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/492720/?cc=jp&l=japanese",
+        "appId": 492720,
+        "packageId": 309467,
+        "discountEndDate": 1793638800,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 4998,
+        "salePrice": 1249,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=492720&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/492720/header.jpg?t=1755702256",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "Tropico 6"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 492720
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2019-03-29",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=492720&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:979120",
+      "appId": 979120,
+      "title": "Autonauts",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/979120/?cc=jp&l=japanese",
+      "regularPrice": 2700,
+      "salePrice": 540,
+      "discountPercent": 80,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-02T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A979120%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/979120/?cc=jp&l=japanese",
+        "appId": 979120,
+        "packageId": 321812,
+        "discountEndDate": 1793642400,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 2700,
+        "salePrice": 540,
+        "discountPercent": 80,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=979120&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/979120/header.jpg?t=1791470037",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "Autonauts"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 979120
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2019-10-17",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=979120&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1063660",
+      "appId": 1063660,
+      "title": "Bendy and the Dark Revival",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1063660/?cc=jp&l=japanese",
+      "regularPrice": 2300,
+      "salePrice": 230,
+      "discountPercent": 90,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-02T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1063660%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1063660/?cc=jp&l=japanese",
+        "appId": 1063660,
+        "packageId": 355795,
+        "discountEndDate": 1793638800,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 2300,
+        "salePrice": 230,
+        "discountPercent": 90,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1063660&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1063660/header.jpg?t=1792430415",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "Bendy and the Dark Revival"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1063660
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2022-11-15",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1063660&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:750920",
+      "appId": 750920,
+      "title": "Shadow of the Tomb Raider: Definitive Edition",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/750920/?cc=jp&l=japanese",
+      "regularPrice": 5540,
+      "salePrice": 554,
+      "discountPercent": 90,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-06T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A750920%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/750920/?cc=jp&l=japanese",
+        "appId": 750920,
+        "packageId": 1484927,
+        "discountEndDate": 1793984400,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 5540,
+        "salePrice": 554,
+        "discountPercent": 90,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=750920&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/750920/86f9744a410121ff869cc19f63aa9e3dfcf54b8d/header_alt_assets_0.jpg?t=1792675045",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "Shadow of the Tomb Raider: Definitive Edition"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 750920
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2018-09-14",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=750920&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:3359900",
+      "appId": 3359900,
+      "title": "リアルバウト餓狼伝説2 ～THE NEWCOMERS～",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/3359900/?cc=jp&l=japanese",
+      "regularPrice": 2980,
+      "salePrice": 745,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-05T08:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A3359900%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/3359900/?cc=jp&l=japanese",
+        "appId": 3359900,
+        "packageId": 1189102,
+        "discountEndDate": 1793865600,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 2980,
+        "salePrice": 745,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3359900&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3359900/1b60f23f3d9df420e914a1c51959bd97649f48cb/header_japanese.jpg?t=1769414018",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "リアルバウト餓狼伝説2 ～THE NEWCOMERS～"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 3359900
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2025-09-27",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=3359900&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:559650",
+      "appId": 559650,
+      "title": "Witch It",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/559650/?cc=jp&l=japanese",
+      "regularPrice": 2800,
+      "salePrice": 420,
+      "discountPercent": 85,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-03T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A559650%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/559650/?cc=jp&l=japanese",
+        "appId": 559650,
+        "packageId": 140228,
+        "discountEndDate": 1793728800,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 2800,
+        "salePrice": 420,
+        "discountPercent": 85,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=559650&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/559650/header.jpg?t=1775747238",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "Witch It"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 559650
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2020-10-22",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=559650&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 559650
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "eventId": "steam-announcement-494969252845977614",
+          "date": "2026-02-18T09:05:59.000Z",
+          "title": "Hotfix 1.7.3.1",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:559650",
+            "url": "https://steamcommunity.com/ogg/559650/announcements/detail/494969252845977614",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:2050650",
+      "appId": 2050650,
+      "title": "BIOHAZARD RE:4",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/2050650/?cc=jp&l=japanese",
+      "regularPrice": 3990,
+      "salePrice": 997,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-03T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A2050650%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/2050650/?cc=jp&l=japanese",
+        "appId": 2050650,
+        "packageId": 794605,
+        "discountEndDate": 1793728800,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 3990,
+        "salePrice": 997,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2050650&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header_japanese.jpg?t=1772502922",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "BIOHAZARD RE:4"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2050650
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2023-03-23",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=2050650&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1277400",
+      "appId": 1277400,
+      "title": "モンスターハンターストーリーズ2　～破滅の翼～",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1277400/?cc=jp&l=japanese",
+      "regularPrice": 3990,
+      "salePrice": 997,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-03T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1277400%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1277400/?cc=jp&l=japanese",
+        "appId": 1277400,
+        "packageId": 444793,
+        "discountEndDate": 1793728800,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 3990,
+        "salePrice": 997,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1277400&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1277400/header_japanese.jpg?t=1768870791",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "モンスターハンターストーリーズ2 ～破滅の翼～"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1277400
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2021-07-08",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1277400&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1277400
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "eventId": "steam-announcement-633446704518005313",
+          "date": "2025-11-26T01:36:06.000Z",
+          "title": "Patch: Ver.1.6.1",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1277400",
+            "url": "https://steamcommunity.com/ogg/1277400/announcements/detail/633446704518005313",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1449690",
+      "appId": 1449690,
+      "title": "The Walking Dead: The Telltale Definitive Series",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1449690/?cc=jp&l=japanese",
+      "regularPrice": 5500,
+      "salePrice": 550,
+      "discountPercent": 90,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-05T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1449690%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1449690/?cc=jp&l=japanese",
+        "appId": 1449690,
+        "packageId": 510063,
+        "discountEndDate": 1793901600,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 5500,
+        "salePrice": 550,
+        "discountPercent": 90,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1449690&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449690/header.jpg?t=1760651835",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "The Walking Dead: The Telltale Definitive Series"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1449690
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2020-10-29",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1449690&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:4131220",
+      "appId": 4131220,
+      "title": "AKIBA LOST - アキバロスト",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/4131220/?cc=jp&l=japanese",
+      "regularPrice": 5500,
+      "salePrice": 4400,
+      "discountPercent": 20,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-03T17:00:15.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A4131220%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/4131220/?cc=jp&l=japanese",
+        "appId": 4131220,
+        "packageId": 1447569,
+        "discountEndDate": 1793725215,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 5500,
+        "salePrice": 4400,
+        "discountPercent": 20,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=4131220&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4131220/fd7c66f078eca6d2eba04cf046d1228874a3280f/header.jpg?t=1792759039",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "AKIBA LOST – アキバロスト"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4131220
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2026-10-20",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=4131220&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:4304900",
+      "appId": 4304900,
+      "title": "超大発掘",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/4304900/?cc=jp&l=japanese",
+      "regularPrice": 999,
+      "salePrice": 749,
+      "discountPercent": 25,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-02T17:00:05.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A4304900%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/4304900/?cc=jp&l=japanese",
+        "appId": 4304900,
+        "packageId": 1505422,
+        "discountEndDate": 1793638805,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 999,
+        "salePrice": 749,
+        "discountPercent": 25,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=4304900&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304900/10c16d8d50236f3e536d5bda2ffae6fc9c1b029f/header_japanese.jpg?t=1792598351",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "超大発掘"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4304900
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2026-10-19",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=4304900&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4304900
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "eventId": "steam-announcement-694275728822243924",
+          "date": "2026-10-22T20:45:46.000Z",
+          "title": "v1.2 Patch Notes",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:4304900",
+            "url": "https://steamcommunity.com/ogg/4304900/announcements/detail/694275728822243924",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:2939510",
+      "appId": 2939510,
+      "title": "アンダー・キャノピーズ",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/2939510/?cc=jp&l=japanese",
+      "regularPrice": 1500,
+      "salePrice": 1125,
+      "discountPercent": 25,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2939510&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2939510/f4b3dfa9c36cc12d8bc63ac38f5c83a0725bb694/header_alt_assets_2.jpg?t=1792782111",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "アンダー・キャノピーズ"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2939510
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2026-10-23",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=2939510&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2939510
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "eventId": "steam-announcement-683016729753818947",
+          "date": "2026-10-24T06:17:42.000Z",
+          "title": "Update 0.6.19: Smoother Exploration & Better Controls",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:2939510",
+            "url": "https://steamcommunity.com/ogg/2939510/announcements/detail/683016729753818947",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:4272020",
+      "appId": 4272020,
+      "title": "WOIM",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/4272020/?cc=jp&l=japanese",
+      "regularPrice": 1350,
+      "salePrice": 1147,
+      "discountPercent": 15,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "endsAt": "2026-11-04T17:00:02.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A4272020%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/4272020/?cc=jp&l=japanese",
+        "appId": 4272020,
+        "packageId": 1494793,
+        "discountEndDate": 1793811602,
+        "checkedAt": "2026-10-25T12:43:49.600Z",
+        "regularPrice": 1350,
+        "salePrice": 1147,
+        "discountPercent": 15,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-10-25T18:43:49.600Z",
+      "priceValidUntil": "2026-10-26T12:43:49.600Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=4272020&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4272020/0c70036e4b97e0b8177a3bdff85b9d2d133c8461/header.jpg?t=1792667748",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+          "title": "『バイオハザード RE:4』と『みんな大好き塊魂』が75％オフで1000円切り。人気サバイバル「ドンスタ」こと『Don’t Starve』も75％オフ、わずか252円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-10-25T08:05:12.000Z",
+          "topicId": "auto-games-バイオハザード-re-4-と-みんな大好き塊魂-が75-オフで1000円切り-人気サバイバル-ドンスタ-こと-don-t-starve-も75-オフ-わずか25-automaton-media.com/articles/newsjp/20261025-475463",
+          "gameTitle": "WOIM"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4272020
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "date": "2026-10-21",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=4272020&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4272020
+          },
+          "kind": "update",
+          "checkedAt": "2026-10-25T12:43:49.600Z",
+          "freshUntil": "2026-10-25T18:43:49.600Z",
+          "eventId": "steam-announcement-714541927145412337",
+          "date": "2026-10-23T10:22:05.000Z",
+          "title": "my worm is longer now",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:4272020",
+            "url": "https://steamcommunity.com/ogg/4272020/announcements/detail/714541927145412337",
+            "verified": true
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "kind": "article",
+      "url": "https://automaton-media.com/articles/newsjp/20261025-475463",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "candidates": [
+        {
+          "appId": 219740,
+          "articleGameTitle": "Don’t Starve"
+        },
+        {
+          "appId": 1730700,
+          "articleGameTitle": "みんな大好き塊魂アンコール＋王様プチメモリー"
+        },
+        {
+          "appId": 492720,
+          "articleGameTitle": "Tropico 6"
+        },
+        {
+          "appId": 979120,
+          "articleGameTitle": "Autonauts"
+        },
+        {
+          "appId": 1063660,
+          "articleGameTitle": "Bendy and the Dark Revival"
+        },
+        {
+          "appId": 750920,
+          "articleGameTitle": "Shadow of the Tomb Raider: Definitive Edition"
+        },
+        {
+          "appId": 3359900,
+          "articleGameTitle": "リアルバウト餓狼伝説2 ～THE NEWCOMERS～"
+        },
+        {
+          "appId": 559650,
+          "articleGameTitle": "Witch It"
+        },
+        {
+          "appId": 2050650,
+          "articleGameTitle": "BIOHAZARD RE:4"
+        },
+        {
+          "appId": 1277400,
+          "articleGameTitle": "モンスターハンターストーリーズ2 ～破滅の翼～"
+        },
+        {
+          "appId": 1449690,
+          "articleGameTitle": "The Walking Dead: The Telltale Definitive Series"
+        },
+        {
+          "appId": 4131220,
+          "articleGameTitle": "AKIBA LOST – アキバロスト"
+        },
+        {
+          "appId": 4304900,
+          "articleGameTitle": "超大発掘"
+        },
+        {
+          "appId": 2939510,
+          "articleGameTitle": "アンダー・キャノピーズ"
+        },
+        {
+          "appId": 4272020,
+          "articleGameTitle": "WOIM"
+        }
+      ]
+    },
+    {
+      "kind": "steam",
+      "appId": 219740,
+      "url": "https://store.steampowered.com/api/appdetails?appids=219740&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 1730700,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1730700&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 492720,
+      "url": "https://store.steampowered.com/api/appdetails?appids=492720&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 979120,
+      "url": "https://store.steampowered.com/api/appdetails?appids=979120&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1063660,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1063660&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 750920,
+      "url": "https://store.steampowered.com/api/appdetails?appids=750920&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 3359900,
+      "url": "https://store.steampowered.com/api/appdetails?appids=3359900&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 559650,
+      "url": "https://store.steampowered.com/api/appdetails?appids=559650&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 2050650,
+      "url": "https://store.steampowered.com/api/appdetails?appids=2050650&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1277400,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1277400&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 1449690,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1449690&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 4131220,
+      "url": "https://store.steampowered.com/api/appdetails?appids=4131220&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 4304900,
+      "url": "https://store.steampowered.com/api/appdetails?appids=4304900&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 2939510,
+      "url": "https://store.steampowered.com/api/appdetails?appids=2939510&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 4272020,
+      "url": "https://store.steampowered.com/api/appdetails?appids=4272020&cc=jp&l=japanese",
+      "checkedAt": "2026-10-25T12:43:49.600Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261025-475463"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    }
+  ]
 }

@@ -1,11 +1,65 @@
 {
-  "generatedAt": "2026-10-27T18:19:16.276Z",
+  "generatedAt": "2026-10-27T22:36:44.429Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1397",
-  "selectedTitle": "「非常識」ミセス×ガストコラボ“持ち去り被害”発生でSNS騒然→「厳にお控えいただきたい」運営元が注意喚起",
+  "selectedClusterId": "today-cluster-52",
+  "selectedTitle": "｢理解の浅さが露呈｣新曲『シンデレラ』炎上中のミセスが抱える表現の限界…｢コロンブス｣炎上に通ずる根本的問題とは",
   "candidates": [
     {
-      "clusterId": "today-cluster-1397",
+      "clusterId": "today-cluster-52",
+      "title": "｢理解の浅さが露呈｣新曲『シンデレラ』炎上中のミセスが抱える表現の限界…｢コロンブス｣炎上に通ずる根本的問題とは",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "sns",
+        "business",
+        "tech",
+        "general"
+      ],
+      "buzzScore": 70.4,
+      "confidence": 0.44,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 20.7,
+        "internetNativeBoost": 8,
+        "search": 6.2,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 48.5,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1726",
       "title": "「非常識」ミセス×ガストコラボ“持ち去り被害”発生でSNS騒然→「厳にお控えいただきたい」運営元が注意喚起",
       "category": "net-culture",
       "categories": [
@@ -58,41 +112,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-86",
-      "title": "大人気SF小説「三体」の公式ライセンスゲーム『三体　審判前夜』Steamでお披露目。人類存亡をかけた作戦前夜、問われる選択の連続",
-      "category": "tech",
+      "clusterId": "today-cluster-3",
+      "title": "PLAYTECH PEP-3 レビュー｜大反響のハムバッカーサイズP-90、その音質と実力を徹底検証",
+      "category": "sns",
       "categories": [
-        "tech",
-        "entertainment",
         "sns",
         "net-culture",
-        "games",
-        "books",
-        "world",
         "general"
       ],
-      "buzzScore": 69,
+      "buzzScore": 68.8,
       "confidence": 0.47,
-      "articleCount": 4,
-      "sourceCount": 3,
-      "uniqueDomainCount": 2,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 6.2,
-        "trend": 18.9,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 8.2,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
+        "search": 5.6,
+        "social": 5.6,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
         "categoryBias": 9,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -103,11 +151,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 19.8,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 43,
-        "internalSocialScore": 63.9
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 44,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -116,7 +164,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-4",
+      "clusterId": "today-cluster-16",
       "title": "任天堂によるインディーゲーム紹介番組「Indie World 2026.10.28」が10月28日23時より配信決定！配信時間は約25分",
       "category": "games",
       "categories": [
@@ -125,8 +173,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.9,
-      "confidence": 0.4,
+      "buzzScore": 65.9,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -136,12 +184,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 6.5,
-        "social": 7,
+        "search": 6.1,
+        "social": 6.9,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -155,11 +203,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
-        "internalSocialScore": 54.8
+        "archiveHeatScore": 95,
+        "internalSearchScore": 47.7,
+        "internalSocialScore": 54
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -168,59 +216,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-5",
-      "title": "「ガンダムベース」の会員サービスでメールアドレスなど34万6247件が漏えい。メール配信の委託先・ユミルリンクに不正アクセス",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 63.4,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-9",
+      "clusterId": "today-cluster-28",
       "title": "「犯人は○○。本当に、そうでしょうか？」堀井雄二氏が『続ポートピア連続殺人事件:忘却の埋葬』に意味深コメント。タイトルに「続」が付いた理由もプレイすれば納得できる",
       "category": "crime",
       "categories": [
@@ -230,8 +226,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 63.3,
-      "confidence": 0.39,
+      "buzzScore": 62.3,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -242,9 +238,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 21.8,
+        "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 6.3,
+        "search": 6.1,
         "social": 8.3,
         "velocity": 0,
         "freshness": 5.5,
@@ -263,8 +259,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 99,
-        "internalSearchScore": 49.1,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 47.7,
         "internalSocialScore": 65
       },
       "externalSignalErrors": [

@@ -1,111 +1,295 @@
 [
   {
-    "id": "adult-feature-dlsite-sale-20261027",
-    "title": "🔥 DLsite大型セール開催中",
-    "summary": "割引、キャンペーン、ポイント還元をまとめた特集です。関連作品 9 件を一度に追えます。",
-    "featureType": "sale",
+    "id": "adult-feature-dlsite-spotlight-20261027",
+    "title": "DLsite注目トレンド",
+    "summary": "同テーマの作品や更新をまとめた特集です。関連項目 12 件を確認できます。",
+    "featureType": "trend",
     "sourceGroup": "DLsite",
     "sourceGroupKey": "dlsite",
-    "importance": 91,
-    "whyHot": "DLsiteで割引・還元系の signal が重なっています。DLsiteランキングに登場・DLsite新着作品",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01239000/RJ01238115_img_main.jpg",
-    "primaryItemId": "adult-dlsite-maniax-new-番外編-rank-1-2026-10-27t06-14-33-014z-dlsite",
-    "primaryItemTitle": "ばとるふぁっか～ず -番外編-",
+    "importance": 98,
+    "whyHot": "妹はルームメイト！を中心に、DLsiteランキングに登場・ランキング掲載が重なっています。",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01753000/RJ01752389_img_main.jpg",
+    "primaryItemId": "adult-dlsite-maniax-ranking-day-adult-trend",
+    "primaryItemTitle": "妹はルームメイト！",
     "primaryGenre": "セール",
     "tags": [
       "セール",
       "同人",
       "20%OFF",
       "セール対象",
-      "DLsite新着作品",
-      "新着人気候補",
-      "50%OFF",
-      "同人音声"
+      "DLsiteデイリーランキング掲載",
+      "ランキング上位",
+      "30%OFF",
+      "10%OFF"
     ],
     "trendReasons": [
       "DLsiteランキングに登場",
-      "DLsite新着作品",
-      "新着人気候補",
-      "15%OFFセール対象",
-      "20%OFFセール対象"
+      "ランキング掲載",
+      "DLsiteデイリーランキング掲載",
+      "DLsite漫画ランキング掲載",
+      "ランキング+1上昇"
     ],
     "relatedItems": [
       {
-        "id": "adult-dlsite-maniax-new-番外編-rank-1-2026-10-27t06-14-33-014z-dlsite",
-        "title": "ばとるふぁっか～ず -番外編-",
-        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01239000/RJ01238115_img_main.jpg",
-        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01238115.html",
-        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-%E7%95%AA%E5%A4%96%E7%B7%A8-rank-1-2026-10-27t06-14-33-014z-dlsite",
+        "id": "adult-dlsite-maniax-ranking-day-adult-trend",
+        "title": "妹はルームメイト！",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01753000/RJ01752389_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01752389.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-ranking-day-adult-trend",
         "sourceName": "DLsite",
         "ranking": 1
       },
       {
-        "id": "adult-dlsite-maniax-new-adult-trend",
-        "title": "廃墟の街のおともだち",
-        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01747000/RJ01746593_img_main.jpg",
-        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01746593.html",
-        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-adult-trend",
+        "id": "adult-dlsite-maniax-ranking-day-adult-trend",
+        "title": "ようこそ!潮吹きエステへ",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01193000/RJ01192934_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01192934.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 2
+      },
+      {
+        "id": "adult-dlsite-maniax-ranking-day-adult-trend",
+        "title": "ガールズクラブ",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01661000/RJ01660877_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01660877.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 4
+      },
+      {
+        "id": "adult-dlsite-books-ranking-day-単行本版-1-rank-1-2026-10-27t12-41-17-128z-dlsite",
+        "title": "ヒプノステイ 単行本版 1",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ03043000/BJ03042743_img_main.jpg",
+        "url": "https://www.dlsite.com/books/work/=/product_id/BJ03042743.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-books-ranking-day-%E5%8D%98%E8%A1%8C%E6%9C%AC%E7%89%88-1-rank-1-2026-10-27t12-41-17-128z-dlsite",
+        "sourceName": "DLsite",
+        "ranking": 1
+      },
+      {
+        "id": "adult-dlsite-maniax-ranking-day-adult-trend",
+        "title": "このアタシが、たかがエロダンジョンで敗北マゾアクメなんかするわけないでしょ！！",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01584000/RJ01583227_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01583227.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 5
+      },
+      {
+        "id": "adult-dlsite-books-ranking-day-adult-trend",
+        "title": "社畜OLは調教を断れない〈アフター〉",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ03036000/BJ03035723_img_main.jpg",
+        "url": "https://www.dlsite.com/books/work/=/product_id/BJ03035723.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-books-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 2
+      },
+      {
+        "id": "adult-dlsite-maniax-ranking-day-無表情アンドロイドお姉さんの徹底的乳首責めプログラム-乳首の快感でマゾ射精-rank-9-2026-10-27t12-41-17-128z-dlsite",
+        "title": "【乳首性感】 無表情アンドロイドお姉さんの徹底的乳首責めプログラム… 【乳首の快感でマゾ射精…♡】",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01742000/RJ01741252_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01741252.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-ranking-day-%E7%84%A1%E8%A1%A8%E6%83%85%E3%82%A2%E3%83%B3%E3%83%89%E3%83%AD%E3%82%A4%E3%83%89%E3%81%8A%E5%A7%89%E3%81%95%E3%82%93%E3%81%AE%E5%BE%B9%E5%BA%95%E7%9A%84%E4%B9%B3%E9%A6%96%E8%B2%AC%E3%82%81%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0-%E4%B9%B3%E9%A6%96%E3%81%AE%E5%BF%AB%E6%84%9F%E3%81%A7%E3%83%9E%E3%82%BE%E5%B0%84%E7%B2%BE-rank-9-2026-10-27t12-41-17-128z-dlsite",
+        "sourceName": "DLsite",
+        "ranking": 9
+      },
+      {
+        "id": "adult-dlsite-books-ranking-day-瑠璃川椿ー-単行本-デジタル特装版-rank-6-2026-10-27t12-41-17-128z-dlsite",
+        "title": "メイド教育。ー没落貴族 瑠璃川椿ー（単行本）【デジタル特装版】",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ02301000/BJ02300884_img_main.jpg",
+        "url": "https://www.dlsite.com/books/work/=/product_id/BJ02300884.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-books-ranking-day-%E7%91%A0%E7%92%83%E5%B7%9D%E6%A4%BF%E3%83%BC-%E5%8D%98%E8%A1%8C%E6%9C%AC-%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E7%89%B9%E8%A3%85%E7%89%88-rank-6-2026-10-27t12-41-17-128z-dlsite",
+        "sourceName": "DLsite",
+        "ranking": 6
+      }
+    ],
+    "itemCount": 12,
+    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01752389.html",
+    "updatedAt": "2026-10-27T12:41:17.128Z"
+  },
+  {
+    "id": "adult-feature-dlsite-game-20261027",
+    "title": "🎮 DLsiteで今売れている同人ゲーム",
+    "summary": "RPG、ADV、体験版を含む同人ゲームの売れ筋特集です。ランキング上位 10 件を含みます。",
+    "featureType": "trend",
+    "sourceGroup": "DLsite",
+    "sourceGroupKey": "dlsite",
+    "importance": 93,
+    "whyHot": "同人ゲームの上位作が固まっており、今どの作品が強いかを一目で判断できます。",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01738000/RJ01737831_img_main.jpg",
+    "primaryItemId": "adult-dlsite-maniax-ranking-day-adult-trend",
+    "primaryItemTitle": "MoeLove2",
+    "primaryGenre": "同人ゲーム",
+    "tags": [
+      "同人ゲーム",
+      "同人",
+      "DLsiteデイリーランキング掲載",
+      "ランキング上位",
+      "ランキング掲載",
+      "DLsite新着作品",
+      "新着人気候補"
+    ],
+    "trendReasons": [
+      "DLsiteランキングに登場",
+      "同人ゲームカテゴリで上位",
+      "新規でランキング上位入り",
+      "DLsiteデイリーランキング掲載",
+      "DLsite新着作品"
+    ],
+    "relatedItems": [
+      {
+        "id": "adult-dlsite-maniax-ranking-day-adult-trend",
+        "title": "MoeLove2",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01738000/RJ01737831_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01737831.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 3
+      },
+      {
+        "id": "adult-dlsite-maniax-ranking-day-adult-trend",
+        "title": "ねこぐらし。3〜コンプリートセット〜",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ333000/RJ332920_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ332920.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 6
+      },
+      {
+        "id": "adult-dlsite-maniax-ranking-day-adult-trend",
+        "title": "新・ねこぐらし。〜コンプリートセット〜",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ417000/RJ416750_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ416750.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 7
+      },
+      {
+        "id": "adult-dlsite-maniax-ranking-day-adult-trend",
+        "title": "ねこぐらし。2〜コンプリートセット〜",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ316000/RJ315642_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ315642.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 8
+      },
+      {
+        "id": "adult-dlsite-maniax-new-ダンジョンにて失禁敗北-モンスター達の高速ピストンで悶絶絶頂-rank-2-2026-10-27t12-41-17-128z-dlsite",
+        "title": "ヒロイン敗北 -ダンジョンにて失禁敗北 モンスター達の高速ピストンで悶絶絶頂-",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01754000/RJ01753519_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01753519.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%AB%E3%81%A6%E5%A4%B1%E7%A6%81%E6%95%97%E5%8C%97-%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E9%81%94%E3%81%AE%E9%AB%98%E9%80%9F%E3%83%94%E3%82%B9%E3%83%88%E3%83%B3%E3%81%A7%E6%82%B6%E7%B5%B6%E7%B5%B6%E9%A0%82-rank-2-2026-10-27t12-41-17-128z-dlsite",
         "sourceName": "DLsite",
         "ranking": 2
       },
       {
         "id": "adult-dlsite-maniax-new-adult-trend",
-        "title": "【幼馴染ASMR】負けたら罰ゲーム?！絶対言うこと聞かせてやる！【くすぐり・耳ふー・寝息】",
-        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01752000/RJ01751465_img_main.jpg",
-        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01751465.html",
-        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-adult-trend",
-        "sourceName": "DLsite",
-        "ranking": 8
-      },
-      {
-        "id": "adult-dlsite-maniax-new-adult-trend",
-        "title": "【超密着×蒸れハメ】爆乳むちむち低音カノジョと布団の中で濃厚汗だくエッチに溺れる長期休暇。",
-        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01720000/RJ01719523_img_main.jpg",
-        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01719523.html",
-        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-adult-trend",
-        "sourceName": "DLsite",
-        "ranking": 3
-      },
-      {
-        "id": "adult-dlsite-maniax-new-adult-trend",
-        "title": "【3時間越え×Wヒロイン寝取られスワッピング】チートスキル「寝取られ勇者」を獲得しました。",
-        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01747000/RJ01746135_img_main.jpg",
-        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01746135.html",
+        "title": "この穴にクリ入れると1秒100円貰えるらしい",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01755000/RJ01754003_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01754003.html",
         "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-adult-trend",
         "sourceName": "DLsite",
         "ranking": 4
       },
       {
-        "id": "adult-dlsite-maniax-new-誘い受け-心情代弁-rank-5-2026-10-27t06-14-33-014z-dlsite",
-        "title": "【吐息まみれ♡】地方公務員。～真面目な地味巨乳ほど都合のいいオナホ～ ♯誘い受け ♯心情代弁",
-        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01750000/RJ01749209_img_main.jpg",
-        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01749209.html",
-        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-%E8%AA%98%E3%81%84%E5%8F%97%E3%81%91-%E5%BF%83%E6%83%85%E4%BB%A3%E5%BC%81-rank-5-2026-10-27t06-14-33-014z-dlsite",
+        "id": "adult-dlsite-maniax-new-adult-trend",
+        "title": "僕の叔母が夫に捨てられて無反応になった話",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01754000/RJ01753991_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01753991.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-adult-trend",
         "sourceName": "DLsite",
         "ranking": 5
       },
       {
-        "id": "adult-dlsite-maniax-new-寝取り寝取られの継承戦-rank-6-2026-10-27t06-14-33-014z-dlsite",
-        "title": "赤龍島の鬼族達 寝取り寝取られの継承戦",
-        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01606000/RJ01605217_img_main.jpg",
-        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01605217.html",
-        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-%E5%AF%9D%E5%8F%96%E3%82%8A%E5%AF%9D%E5%8F%96%E3%82%89%E3%82%8C%E3%81%AE%E7%B6%99%E6%89%BF%E6%88%A6-rank-6-2026-10-27t06-14-33-014z-dlsite",
+        "id": "adult-dlsite-maniax-ranking-day-コンプリートセット-rank-12-2026-10-27t12-41-17-128z-dlsite",
+        "title": "ねこぐらし。第壱回おもてなしロワイヤル ～コンプリートセット～",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01405000/RJ01404735_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01404735.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-ranking-day-%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AA%E3%83%BC%E3%83%88%E3%82%BB%E3%83%83%E3%83%88-rank-12-2026-10-27t12-41-17-128z-dlsite",
         "sourceName": "DLsite",
-        "ranking": 6
-      },
-      {
-        "id": "adult-dlsite-maniax-new-adult-trend",
-        "title": "私の身体が男に犯される",
-        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01754000/RJ01753485_img_main.jpg",
-        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01753485.html",
-        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-adult-trend",
-        "sourceName": "DLsite",
-        "ranking": 9
+        "ranking": 12
       }
     ],
-    "itemCount": 9,
-    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01238115.html",
-    "updatedAt": "2026-10-27T06:14:33.014Z"
+    "itemCount": 10,
+    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01737831.html",
+    "updatedAt": "2026-10-27T12:41:17.128Z"
+  },
+  {
+    "id": "adult-feature-dlsite-manga-20261027",
+    "title": "📚 DLsiteで売れているエロ漫画",
+    "summary": "売れ筋の成人向けコミックをまとめています。人気作品 5 件を確認できます。",
+    "featureType": "trend",
+    "sourceGroup": "DLsite",
+    "sourceGroupKey": "dlsite",
+    "importance": 92,
+    "whyHot": "漫画ランキング上位と話題作がまとまっており、今売れている作品を短く把握できます。",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ02869000/BJ02868913_img_main.jpg",
+    "primaryItemId": "adult-dlsite-books-ranking-day-adult-trend",
+    "primaryItemTitle": "蓮、至りて雌。",
+    "primaryGenre": "エロ漫画",
+    "tags": [
+      "エロ漫画",
+      "DLsite漫画ランキング掲載",
+      "ランキング上位",
+      "ランキング掲載"
+    ],
+    "trendReasons": [
+      "DLsiteランキングに登場",
+      "DLsite漫画ランキング掲載",
+      "エロ漫画カテゴリで上位",
+      "ランキング掲載",
+      "ランキング+1上昇"
+    ],
+    "relatedItems": [
+      {
+        "id": "adult-dlsite-books-ranking-day-adult-trend",
+        "title": "蓮、至りて雌。",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ02869000/BJ02868913_img_main.jpg",
+        "url": "https://www.dlsite.com/books/work/=/product_id/BJ02868913.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-books-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 3
+      },
+      {
+        "id": "adult-dlsite-books-ranking-day-adult-trend",
+        "title": "合同研修エクセプション",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ03036000/BJ03035479_img_main.jpg",
+        "url": "https://www.dlsite.com/books/work/=/product_id/BJ03035479.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-books-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 4
+      },
+      {
+        "id": "adult-dlsite-books-ranking-day-adult-trend",
+        "title": "ママがいっぱい！デカムチふーぞく店！！【デジタル特装版】",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ03052000/BJ03051036_img_main.jpg",
+        "url": "https://www.dlsite.com/books/work/=/product_id/BJ03051036.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-books-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 5
+      },
+      {
+        "id": "adult-dlsite-books-ranking-day-adult-trend",
+        "title": "ヤリこみファンタジア～異文化交配記～【デジタル版限定おまけ付き】",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ03028000/BJ03027255_img_main.jpg",
+        "url": "https://www.dlsite.com/books/work/=/product_id/BJ03027255.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-books-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 7
+      },
+      {
+        "id": "adult-dlsite-books-ranking-day-adult-trend",
+        "title": "こんぷれックス【デジタル版限定おまけ付き】",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/books/BJ03024000/BJ03023909_img_main.jpg",
+        "url": "https://www.dlsite.com/books/work/=/product_id/BJ03023909.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-books-ranking-day-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 10
+      }
+    ],
+    "itemCount": 5,
+    "sourceUrl": "https://www.dlsite.com/books/work/=/product_id/BJ02868913.html",
+    "updatedAt": "2026-10-27T12:41:17.128Z"
   },
   {
     "id": "adult-feature-cien-creator-update-20261027",
@@ -152,11 +336,11 @@
         "ranking": 2
       },
       {
-        "id": "adult-ci-en-adult-sitemap-9-rank-3-2026-10-26-ci-en",
+        "id": "adult-ci-en-adult-sitemap-9-rank-3-2026-10-27-ci-en",
         "title": "Ci-enクリエイター更新 #9",
         "thumbnailUrl": "https://media.ci-en.jp/public/cover/creator/00000009/0a4234381779d0b0d14317232cc52b1a162980968b8750ffdbf6f2193e5b61cf/image-990-c.jpg",
         "url": "https://ci-en.net/creator/9",
-        "detailUrl": "./adult-topic.html?id=adult-ci-en-adult-sitemap-9-rank-3-2026-10-26-ci-en",
+        "detailUrl": "./adult-topic.html?id=adult-ci-en-adult-sitemap-9-rank-3-2026-10-27-ci-en",
         "sourceName": "Ci-en",
         "ranking": 3
       },
@@ -208,47 +392,87 @@
     ],
     "itemCount": 10,
     "sourceUrl": "https://ci-en.net/creator/5",
-    "updatedAt": "2026-10-26T00:00:00.000Z"
+    "updatedAt": "2026-10-27T00:00:00.000Z"
   },
   {
-    "id": "adult-feature-dlsite-game-20261027",
-    "title": "🎮 DLsiteで今売れている同人ゲーム",
-    "summary": "RPG、ADV、体験版を含む同人ゲームの売れ筋特集です。ランキング上位 1 件を含みます。",
-    "featureType": "trend",
+    "id": "adult-feature-dlsite-sale-20261027",
+    "title": "🔥 DLsite大型セール開催中",
+    "summary": "割引、キャンペーン、ポイント還元をまとめた特集です。関連作品 5 件を一度に追えます。",
+    "featureType": "sale",
     "sourceGroup": "DLsite",
     "sourceGroupKey": "dlsite",
-    "importance": 76,
-    "whyHot": "同人ゲームの上位作が固まっており、今どの作品が強いかを一目で判断できます。",
-    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01754000/RJ01753471_img_main.jpg",
+    "importance": 88,
+    "whyHot": "DLsiteで割引・還元系の signal が重なっています。DLsiteランキングに登場・DLsite新着作品",
+    "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01752000/RJ01751507_img_main.jpg",
     "primaryItemId": "adult-dlsite-maniax-new-adult-trend",
-    "primaryItemTitle": "特別接待課ってなんですか?2～搾精パーティー編～",
-    "primaryGenre": "同人ゲーム",
+    "primaryItemTitle": "【指名獨佔】只屬於你的幸運兔兔～兔女郎Aoi的VIP包廂服務♪【Live2D動畫桌布/專屬鈴聲】",
+    "primaryGenre": "セール",
     "tags": [
-      "同人ゲーム",
+      "セール",
       "同人",
+      "30%OFF",
+      "セール対象",
       "DLsite新着作品",
-      "新着人気候補"
+      "新着人気候補",
+      "25%OFF",
+      "50%OFF"
     ],
     "trendReasons": [
       "DLsiteランキングに登場",
       "DLsite新着作品",
-      "ランキング+1上昇",
+      "新規でランキング上位入り",
       "新着人気候補",
-      "前回8位から7位へ上昇"
+      "30%OFFセール対象"
     ],
     "relatedItems": [
       {
         "id": "adult-dlsite-maniax-new-adult-trend",
-        "title": "特別接待課ってなんですか?2～搾精パーティー編～",
-        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01754000/RJ01753471_img_main.jpg",
-        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01753471.html",
+        "title": "【指名獨佔】只屬於你的幸運兔兔～兔女郎Aoi的VIP包廂服務♪【Live2D動畫桌布/專屬鈴聲】",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01752000/RJ01751507_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01751507.html",
         "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-adult-trend",
         "sourceName": "DLsite",
+        "ranking": 1
+      },
+      {
+        "id": "adult-dlsite-maniax-new-o-clock-ultra-violence-rank-3-2026-10-27t12-41-17-128z-dlsite",
+        "title": "Rubble O'clock Ultra Violence",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01754000/RJ01753394_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01753394.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-o-clock-ultra-violence-rank-3-2026-10-27t12-41-17-128z-dlsite",
+        "sourceName": "DLsite",
+        "ranking": 3
+      },
+      {
+        "id": "adult-dlsite-maniax-new-adult-trend",
+        "title": "恋するポンコツメイドはHなご奉仕を",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01580000/RJ01579702_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01579702.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 6
+      },
+      {
+        "id": "adult-dlsite-maniax-new-這って逃げるが-捕らわれ再中出し-rank-7-2026-10-27t12-41-17-128z-dlsite",
+        "title": "巨乳人妻・屈服中出し ～這って逃げるが、捕らわれ再中出し",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01665000/RJ01664662_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01664662.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-%E9%80%99%E3%81%A3%E3%81%A6%E9%80%83%E3%81%92%E3%82%8B%E3%81%8C-%E6%8D%95%E3%82%89%E3%82%8F%E3%82%8C%E5%86%8D%E4%B8%AD%E5%87%BA%E3%81%97-rank-7-2026-10-27t12-41-17-128z-dlsite",
+        "sourceName": "DLsite",
         "ranking": 7
+      },
+      {
+        "id": "adult-dlsite-maniax-new-adult-trend",
+        "title": "騎士さんはもう～…わたしのモノです☆",
+        "thumbnailUrl": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ01754000/RJ01753774_img_main.jpg",
+        "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01753774.html",
+        "detailUrl": "./adult-topic.html?id=adult-dlsite-maniax-new-adult-trend",
+        "sourceName": "DLsite",
+        "ranking": 8
       }
     ],
-    "itemCount": 1,
-    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01753471.html",
-    "updatedAt": "2026-10-27T06:14:33.014Z"
+    "itemCount": 5,
+    "sourceUrl": "https://www.dlsite.com/maniax/work/=/product_id/RJ01751507.html",
+    "updatedAt": "2026-10-27T12:41:17.128Z"
   }
 ]

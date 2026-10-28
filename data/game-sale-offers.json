@@ -1,139 +1,17 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T07:34:57.662Z",
+  "generatedAt": "2026-10-28T14:39:59.084Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
-  "items": [
-    {
-      "id": "steam:3339880",
-      "appId": 3339880,
-      "title": "OFF",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/3339880/?cc=jp&l=japanese",
-      "regularPrice": 1700,
-      "salePrice": 1122,
-      "discountPercent": 34,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-10-28T07:34:57.662Z",
-      "endsAt": "2026-11-10T17:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A3339880%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/3339880/?cc=jp&l=japanese",
-        "appId": 3339880,
-        "packageId": 1182276,
-        "discountEndDate": 1794330000,
-        "checkedAt": "2026-10-28T07:34:57.662Z",
-        "regularPrice": 1700,
-        "salePrice": 1122,
-        "discountPercent": 34,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-10-28T13:34:57.662Z",
-      "priceValidUntil": "2026-10-29T07:34:57.662Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=3339880&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3339880/header.jpg?t=1774452815",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261028b"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/261028b",
-          "title": "【1700円→1122円】トビー・フォックス氏に影響を与えたRPG『OFF』がSteamでセール中。家畜からメタルを抽出する農場など不気味な世界を旅する。同氏は作曲家・かめりあ氏との共作でBGMの一部を担当",
-          "publishedAt": "2026-10-27T22:28:51.000Z",
-          "topicId": "auto-games-1700円-1122円-トビー・フォックス氏に影響を与えたrpg-off-がsteamでセール中-家畜からメタルを抽出する農場など不気味な世界を旅する-同氏は作-news.denfaminicogamer.jp/news/261028b",
-          "gameTitle": "OFF"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 3339880
-          },
-          "kind": "release",
-          "checkedAt": "2026-10-28T07:34:57.662Z",
-          "freshUntil": "2026-10-28T13:34:57.662Z",
-          "date": "2025-08-15",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=3339880&cc=jp&l=japanese",
-            "verified": true
-          }
-        },
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 3339880
-          },
-          "kind": "update",
-          "checkedAt": "2026-10-28T07:34:57.662Z",
-          "freshUntil": "2026-10-28T13:34:57.662Z",
-          "eventId": "steam-announcement-524250360211048211",
-          "date": "2026-05-19T18:55:28.000Z",
-          "title": "OFF 1.2.1",
-          "eventType": "release-notes",
-          "source": {
-            "kind": "official-game",
-            "gameKey": "steam:3339880",
-            "url": "https://steamcommunity.com/ogg/3339880/announcements/detail/524250360211048211",
-            "verified": true
-          }
-        }
-      ]
-    }
-  ],
+  "items": [],
   "sources": [
     {
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/261028k",
-      "checkedAt": "2026-10-28T07:34:57.662Z",
+      "checkedAt": "2026-10-28T14:39:59.084Z",
       "status": "ok",
       "candidates": []
-    },
-    {
-      "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/261028d",
-      "checkedAt": "2026-10-28T01:51:15.466Z",
-      "status": "cached",
-      "candidates": []
-    },
-    {
-      "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/261028b",
-      "checkedAt": "2026-10-28T07:34:57.662Z",
-      "status": "ok",
-      "candidates": [
-        {
-          "appId": 3339880,
-          "articleGameTitle": "OFF"
-        }
-      ]
-    },
-    {
-      "kind": "steam",
-      "appId": 3339880,
-      "url": "https://store.steampowered.com/api/appdetails?appids=3339880&cc=jp&l=japanese",
-      "checkedAt": "2026-10-28T07:34:57.662Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261028b"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-30T09:00:01.289Z",
+  "generatedAt": "2026-10-30T15:53:07.677Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1375",
+  "selectedClusterId": "today-cluster-1928",
   "selectedTitle": "「さけるチーズ」のパッケージ→よく見ると……「裂けすぎ笑」　出現率6%の“レアデザイン”に「まじであるんですね」",
   "candidates": [
     {
-      "clusterId": "today-cluster-1375",
+      "clusterId": "today-cluster-1928",
       "title": "「さけるチーズ」のパッケージ→よく見ると……「裂けすぎ笑」　出現率6%の“レアデザイン”に「まじであるんですね」",
       "category": "sns",
       "categories": [
@@ -15,8 +15,8 @@
         "matome",
         "general"
       ],
-      "buzzScore": 71.3,
-      "confidence": 0.39,
+      "buzzScore": 69.2,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -29,9 +29,9 @@
         "trend": 21.1,
         "internetNativeBoost": 8,
         "search": 4.6,
-        "social": 7.3,
+        "social": 7.2,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 14,
         "penalty": 0
@@ -45,11 +45,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 100,
         "archiveHeatScore": 96,
-        "internalSearchScore": 36.3,
-        "internalSocialScore": 56.9
+        "internalSearchScore": 35.6,
+        "internalSocialScore": 56.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -58,90 +58,36 @@
       ]
     },
     {
-      "clusterId": "today-cluster-290",
-      "title": "累計100万本迫るSF心理ホラー『Mouthwashing』ソニー・ピクチャーズ傘下スタジオが映画化発表で激ヤバ！「フッテージ」監督が手掛ける―コンソール版もついに発売",
-      "category": "entertainment",
+      "clusterId": "today-cluster-36",
+      "title": "フェンダー×ポケモン、ドット絵仕様の30周年記念ギター発表　8-bitサウンド機能も搭載",
+      "category": "games",
       "categories": [
-        "entertainment",
-        "manga",
-        "general",
-        "games"
-      ],
-      "buzzScore": 68.3,
-      "confidence": 0.46,
-      "articleCount": 3,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 7,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 5.9,
-        "velocity": 1.5,
-        "freshness": 10,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 31.4,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-12",
-      "title": "ホロライブ、ファッションレーベル「holoSynQ」始動　FLOW GLOWのストリートウェアを展開",
-      "category": "business",
-      "categories": [
-        "business",
+        "games",
         "entertainment",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 66.9,
-      "confidence": 0.42,
+      "buzzScore": 64.9,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.6,
+        "trend": 18.7,
         "internetNativeBoost": 8,
-        "search": 5.6,
+        "search": 5.8,
         "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 5.5,
         "authority": 1.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -155,8 +101,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -166,31 +112,136 @@
       ]
     },
     {
-      "clusterId": "today-cluster-222",
-      "title": "『勝利の女神：NIKKE』4周年は“エモい”のに“人の心がない”!? 歓喜と悲鳴の交響曲を奏でる指揮官たち",
-      "category": "games",
+      "clusterId": "today-cluster-141",
+      "title": "あしなが街頭募金「半分はアフリカ支援へ」過去情報がSNSに出回り、寄付辞退１４件…Ｘ投稿者はのちに訂正も育英会は対応に追われる",
+      "category": "net-culture",
       "categories": [
-        "games",
+        "net-culture",
+        "sns",
         "general"
       ],
-      "buzzScore": 63.4,
-      "confidence": 0.43,
-      "articleCount": 2,
+      "buzzScore": 63.8,
+      "confidence": 0.42,
+      "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 17.6,
+        "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 3.8,
-        "social": 3,
-        "velocity": 4.2,
-        "freshness": 10,
+        "search": 5.6,
+        "social": 5.3,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 18.9,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 43.8,
+        "internalSocialScore": 41.5
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-664",
+      "title": "バズらなければ死！デスゲームADV『BUZZ or DIE』Steamでリリース―公開処刑と永遠の尊厳破壊が待ち受ける…相手をネタにショート動画で「いいね」を奪え",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 63.1,
+      "confidence": 0.34,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-812",
+      "title": "累計100万本迫るSF心理ホラー『Mouthwashing』ソニー・ピクチャーズ傘下スタジオが映画化発表で激ヤバ！「フッテージ」監督が手掛ける―コンソール版もついに発売",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "general",
+        "games"
+      ],
+      "buzzScore": 62.2,
+      "confidence": 0.42,
+      "articleCount": 3,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
+      "whyRanked": [
+        "主要3媒体で同一話題を確認",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 7,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 3.9,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 5.5,
         "authority": 2.5,
         "categoryBias": 6,
         "penalty": 0
@@ -205,64 +256,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 30,
-        "internalSocialScore": 23.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-61",
-      "title": "『デススト』新作アニメ「DEATH STRANDING ISOLATIONS」最新映像！2027年ディズニープラスで独占配信",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "games",
-        "net-culture",
-        "general",
-        "entertainment"
-      ],
-      "buzzScore": 62.7,
-      "confidence": 0.45,
-      "articleCount": 4,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "直近数時間で関連記事が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 7,
-        "trend": 13.4,
-        "internetNativeBoost": 0,
-        "search": 3.1,
-        "social": 5.9,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 61,
-        "internalSearchScore": 24.1,
-        "internalSocialScore": 45.9
+        "archiveHeatScore": 82,
+        "internalSearchScore": 30.7,
+        "internalSocialScore": 45.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

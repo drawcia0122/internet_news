@@ -1,91 +1,37 @@
 {
-  "generatedAt": "2026-10-30T20:45:13.117Z",
+  "generatedAt": "2026-10-31T00:44:59.665Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-2137",
-  "selectedTitle": "「さけるチーズ」のパッケージ→よく見ると……「裂けすぎ笑」　出現率6%の“レアデザイン”に「まじであるんですね」",
+  "selectedClusterId": "today-cluster-4",
+  "selectedTitle": "『Phantom Blade Zero』Steam版の同接数が「73万人」を突破。発売から2日で4万件以上レビューが集まり「非常に好評」を記録し、称賛相次ぐ",
   "candidates": [
     {
-      "clusterId": "today-cluster-2137",
-      "title": "「さけるチーズ」のパッケージ→よく見ると……「裂けすぎ笑」　出現率6%の“レアデザイン”に「まじであるんですね」",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "entertainment",
-        "matome",
-        "general"
-      ],
-      "buzzScore": 69.2,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 21.1,
-        "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 7.2,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 96,
-        "internalSearchScore": 35.6,
-        "internalSocialScore": 56.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-51",
-      "title": "フェンダー×ポケモン、ドット絵仕様の30周年記念ギター発表　8-bitサウンド機能も搭載",
+      "clusterId": "today-cluster-4",
+      "title": "『Phantom Blade Zero』Steam版の同接数が「73万人」を突破。発売から2日で4万件以上レビューが集まり「非常に好評」を記録し、称賛相次ぐ",
       "category": "games",
       "categories": [
         "games",
-        "entertainment",
-        "sns",
+        "game-features",
         "net-culture",
         "general"
       ],
-      "buzzScore": 64.6,
-      "confidence": 0.36,
+      "buzzScore": 71.5,
+      "confidence": 0.43,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "trend": 18.5,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 5.5,
+        "search": 5.8,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -99,11 +45,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 44.2,
-        "internalSocialScore": 65
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 45,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -112,31 +58,138 @@
       ]
     },
     {
-      "clusterId": "today-cluster-56",
-      "title": "旭川駐屯地の自衛隊員の男ら３人逮捕「トクリュウ」の可能性も視野に捜査 「特殊詐欺」で70代女性から約100万円だまし取ったか",
-      "category": "crime",
+      "clusterId": "today-cluster-6",
+      "title": "Hey! Say! JUMP、幾田りら提供の新曲「TRUE」発表　ファンとの歩みを描くラブソング",
+      "category": "entertainment",
       "categories": [
-        "crime",
+        "entertainment",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 63,
-      "confidence": 0.44,
-      "articleCount": 4,
+      "buzzScore": 71,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-349",
+      "title": "イルカショーを見ながら食べる“娘の遠足弁当”→ママが作ったら……　まさかの仕上がりに「お子さん喜んじゃう」「りんごすげえ!!!」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64,
+      "confidence": 0.35,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 4.2,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 32.6,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-46",
+      "title": "高市首相　独首相にEV優遇除外を直談判…識者もあきれるG7会合欠席が招いた失敗「首相は外交を分かっているのか」",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "world",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62.2,
+      "confidence": 0.41,
+      "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 7.2,
+        "coverage": 5.4,
         "sourceDiversity": 4.7,
         "trend": 18,
         "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 7.2,
+        "search": 5.7,
+        "social": 8.4,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 2.5,
@@ -151,12 +204,12 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 1,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 27,
-        "crossCategoryScore": 80,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
         "archiveHeatScore": 82,
-        "internalSearchScore": 46.3,
-        "internalSocialScore": 56.2
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -165,34 +218,36 @@
       ]
     },
     {
-      "clusterId": "today-cluster-851",
-      "title": "バズらなければ死！デスゲームADV『BUZZ or DIE』Steamでリリース―公開処刑と永遠の尊厳破壊が待ち受ける…相手をネタにショート動画で「いいね」を奪え",
+      "clusterId": "today-cluster-32",
+      "title": "親友を改造して戦場へ送り出すゲーム『がんばれ相棒』Steamにてお披露目。人の心がない話題作が、ついに来年製品版に",
       "category": "games",
       "categories": [
         "games",
+        "business",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.8,
-      "confidence": 0.34,
-      "articleCount": 1,
+      "buzzScore": 62,
+      "confidence": 0.38,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 20.7,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 5.9,
+        "search": 6.1,
+        "social": 8.3,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -202,66 +257,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1000",
-      "title": "累計100万本迫るSF心理ホラー『Mouthwashing』ソニー・ピクチャーズ傘下スタジオが映画化発表で激ヤバ！「フッテージ」監督が手掛ける―コンソール版もついに発売",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "general",
-        "games"
-      ],
-      "buzzScore": 60.2,
-      "confidence": 0.41,
-      "articleCount": 3,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 7,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 3.9,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 30.7,
-        "internalSocialScore": 45.4
+        "repeatedAppearanceScore": 22.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 47.3,
+        "internalSocialScore": 65
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

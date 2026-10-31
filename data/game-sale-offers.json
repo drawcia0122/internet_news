@@ -1,9 +1,92 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T07:08:55.041Z",
+  "generatedAt": "2026-10-31T13:48:33.136Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
-  "items": [],
-  "sources": []
+  "items": [
+    {
+      "id": "steam:1989270",
+      "appId": 1989270,
+      "title": "Slay the Princess — The Pristine Cut",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1989270/?cc=jp&l=japanese",
+      "regularPrice": 2100,
+      "salePrice": 840,
+      "discountPercent": 60,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-10-31T13:48:33.136Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-10-31T19:48:33.136Z",
+      "priceValidUntil": "2026-11-01T13:48:33.136Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1989270&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1989270/header_japanese.jpg?t=1791026492",
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/261031s"
+      ],
+      "articles": [
+        {
+          "url": "https://news.denfaminicogamer.jp/news/261031s",
+          "title": "【2100円→840円】世界を救うため“姫を殺す”高評価ノベルゲーム『Slay the Princess』の60%オフセールがSteamで開催中。姫を殺すのか否か、目的はシンプルながら選択の一つひとつがエンディングに影響する",
+          "publishedAt": "2026-10-31T13:28:34.000Z",
+          "topicId": "auto-games-2100円-840円-世界を救うため-姫を殺す-高評価ノベルゲーム-slay-the-princess-の60-オフセールがsteamで開催中-姫を殺すのか否か-news.denfaminicogamer.jp/news/261031s",
+          "gameTitle": "『Slay the Princess — The Pristine Cut』"
+        }
+      ],
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1989270
+          },
+          "kind": "release",
+          "checkedAt": "2026-10-31T13:48:33.136Z",
+          "freshUntil": "2026-10-31T19:48:33.136Z",
+          "date": "2023-10-23",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1989270&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "kind": "article",
+      "url": "https://news.denfaminicogamer.jp/news/261031s",
+      "checkedAt": "2026-10-31T13:48:33.136Z",
+      "status": "ok",
+      "candidates": [
+        {
+          "appId": 1989270,
+          "articleGameTitle": "『Slay the Princess — The Pristine Cut』"
+        }
+      ]
+    },
+    {
+      "kind": "steam",
+      "appId": 1989270,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1989270&cc=jp&l=japanese",
+      "checkedAt": "2026-10-31T13:48:33.136Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/261031s"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "none"
+    }
+  ]
 }

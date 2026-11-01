@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T21:35:39.639Z",
+  "generatedAt": "2026-11-01T00:32:11.022Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
@@ -23,7 +23,7 @@
       "deadlineSource": null,
       "freshUntil": "2026-11-01T03:35:39.639Z",
       "priceValidUntil": "2026-11-01T21:35:39.639Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1989270&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -67,7 +67,7 @@
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/261031s",
       "checkedAt": "2026-10-31T21:35:39.639Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": [
         {
           "appId": 1989270,
@@ -80,13 +80,7 @@
       "appId": 1989270,
       "url": "https://store.steampowered.com/api/appdetails?appids=1989270&cc=jp&l=japanese",
       "checkedAt": "2026-10-31T21:35:39.639Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261031s"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
+      "status": "cached"
     }
   ]
 }

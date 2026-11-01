@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-01T14:18:16.085Z",
+  "generatedAt": "2026-11-01T19:11:36.184Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-4",
+  "selectedClusterId": "today-cluster-12",
   "selectedTitle": "HoYoverse新作スローライフゲーム『プチプラネット』Nintendo Switch 2版が2027年にリリースへ！",
   "candidates": [
     {
-      "clusterId": "today-cluster-4",
+      "clusterId": "today-cluster-12",
       "title": "HoYoverse新作スローライフゲーム『プチプラネット』Nintendo Switch 2版が2027年にリリースへ！",
       "category": "games",
       "categories": [
@@ -13,24 +13,23 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 84.4,
-      "confidence": 0.55,
+      "buzzScore": 70.5,
+      "confidence": 0.43,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 21.3,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 5.6,
-        "velocity": 8,
-        "freshness": 8.5,
+        "search": 5.7,
+        "social": 5.5,
+        "velocity": 0,
+        "freshness": 5.5,
         "authority": 2.5,
         "categoryBias": 14,
         "penalty": 0
@@ -44,10 +43,114 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 22.2,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 44.9,
+        "internalSocialScore": 43
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1075",
+      "title": "11月1日は“ピクミンデー”に！「Pikmin Day Direct」公開。『ピクミン4 Nintendo Switch 2 Edition』体験版情報やショートムービーお披露目など",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 60.6,
+      "confidence": 0.42,
+      "articleCount": 3,
+      "sourceCount": 3,
+      "uniqueDomainCount": 3,
+      "whyRanked": [
+        "主要3媒体で同一話題を確認",
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 7,
+        "trend": 19.4,
+        "internetNativeBoost": 8,
+        "search": 4.3,
+        "social": 4.5,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 4.8,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 88,
+        "internalSearchScore": 33.9,
+        "internalSocialScore": 35.2
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-16",
+      "title": "10月30日の記者会見について｜辺野古ボート転覆事故遺族メモ",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 58.3,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.5,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 5.6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 49.6,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 45,
         "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
@@ -57,7 +160,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-65",
+      "clusterId": "today-cluster-80",
       "title": "デジタル庁のAIアプリで国会答弁案の作成支援、来年1月に本格提供へ",
       "category": "tech",
       "categories": [
@@ -67,27 +170,27 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.8,
-      "confidence": 0.41,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 57.7,
+      "confidence": 0.35,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
         "trend": 18.9,
         "internetNativeBoost": 8,
         "search": 5.6,
         "social": 8.3,
         "velocity": 0,
         "freshness": 3.5,
-        "authority": 2.5,
+        "authority": 1.5,
         "categoryBias": 9,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -111,35 +214,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-958",
-      "title": "11月1日は“ピクミンデー”に！「Pikmin Day Direct」公開。『ピクミン4 Nintendo Switch 2 Edition』体験版情報やショートムービーお披露目など",
-      "category": "games",
+      "clusterId": "today-cluster-1876",
+      "title": "高市氏、国会での答弁数が最少　5首相平均、SNSは突出し最多",
+      "category": "sns",
       "categories": [
-        "games",
-        "entertainment",
+        "sns",
+        "net-culture",
+        "politics",
         "general"
       ],
-      "buzzScore": 60.8,
-      "confidence": 0.42,
-      "articleCount": 3,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
+      "buzzScore": 57,
+      "confidence": 0.4,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "主要3媒体で同一話題を確認",
         "既存トレンド指標でも反応が強い",
         "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 7,
-        "trend": 19.4,
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 4.6,
+        "search": 4.3,
+        "social": 5.9,
         "velocity": 0,
-        "freshness": 3.5,
+        "freshness": 1.5,
         "authority": 2.5,
-        "categoryBias": 6,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -150,116 +253,12 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 88,
-        "internalSearchScore": 34.7,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-336",
-      "title": "ジブリパークに行く母→娘と一緒になりきるも……　予想外の姿に「3回目でやっと見付けたw」「気付かれないが大正解」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 59.8,
-      "confidence": 0.31,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "archiveMatchCount": 3,
+        "repeatedAppearanceScore": 5.4,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-122",
-      "title": "『原神』『ゼンゼロ』などのHoYoverse新作『プチプラネット』がニンテンドースイッチ2でも配信決定！自分だけの星を育てる基本無料のスローライフゲーム",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 58.5,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 4.6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
-        "internalSocialScore": 35.7
+        "archiveHeatScore": 86,
+        "internalSearchScore": 33.6,
+        "internalSocialScore": 46.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

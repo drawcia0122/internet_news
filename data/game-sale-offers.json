@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T00:32:11.022Z",
+  "generatedAt": "2026-11-01T06:55:57.715Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
@@ -18,12 +18,12 @@
       "discountPercent": 60,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-10-31T21:35:39.639Z",
+      "checkedAt": "2026-11-01T06:55:57.715Z",
       "endsAt": null,
       "deadlineSource": null,
-      "freshUntil": "2026-11-01T03:35:39.639Z",
-      "priceValidUntil": "2026-11-01T21:35:39.639Z",
-      "status": "cached",
+      "freshUntil": "2026-11-01T12:55:57.715Z",
+      "priceValidUntil": "2026-11-02T06:55:57.715Z",
+      "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1989270&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -49,8 +49,8 @@
             "appId": 1989270
           },
           "kind": "release",
-          "checkedAt": "2026-10-31T21:35:39.639Z",
-          "freshUntil": "2026-11-01T03:35:39.639Z",
+          "checkedAt": "2026-11-01T06:55:57.715Z",
+          "freshUntil": "2026-11-01T12:55:57.715Z",
           "date": "2023-10-23",
           "status": "released",
           "source": {
@@ -66,8 +66,8 @@
     {
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/261031s",
-      "checkedAt": "2026-10-31T21:35:39.639Z",
-      "status": "cached",
+      "checkedAt": "2026-11-01T06:55:57.715Z",
+      "status": "ok",
       "candidates": [
         {
           "appId": 1989270,
@@ -79,8 +79,14 @@
       "kind": "steam",
       "appId": 1989270,
       "url": "https://store.steampowered.com/api/appdetails?appids=1989270&cc=jp&l=japanese",
-      "checkedAt": "2026-10-31T21:35:39.639Z",
-      "status": "cached"
+      "checkedAt": "2026-11-01T06:55:57.715Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/261031s"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "none"
     }
   ]
 }

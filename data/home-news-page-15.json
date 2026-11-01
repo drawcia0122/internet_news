@@ -1,57 +1,116 @@
 {
-  "generatedAt": "2026-11-01T19:09:20.992Z",
-  "totalCount": 1384,
+  "generatedAt": "2026-11-01T22:47:48.795Z",
+  "totalCount": 1389,
   "categoryCounts": {
-    "all": 1384,
-    "general": 49,
-    "tech": 169,
-    "business": 89,
-    "politics": 40,
-    "entertainment": 538,
-    "anime": 47,
-    "games": 432,
+    "all": 1389,
+    "general": 48,
+    "tech": 173,
+    "business": 96,
+    "politics": 39,
+    "entertainment": 534,
+    "anime": 48,
+    "games": 428,
     "game-features": 17,
     "anime-features": 5,
-    "manga": 73,
+    "manga": 75,
     "books": 18,
     "sports": 55,
-    "sns": 678,
-    "net-culture": 749,
+    "sns": 686,
+    "net-culture": 756,
     "matome": 0,
-    "crime": 15,
-    "adult": 17,
-    "world": 64
+    "crime": 16,
+    "adult": 18,
+    "world": 67
   },
   "hasMore": false,
   "nextPage": 0,
   "items": [
     {
-      "id": "auto-games-pubg-実写ドラマシリーズ化が決定-企画・制作が-netflix-にて進行中-監督・脚本・製作総指揮・主演を務めるのはドナルド・グローヴァー氏-news.denfaminicogamer.jp/news/261030m",
-      "title": "『PUBG』実写ドラマシリーズ化が決定！企画・制作が「Netflix」にて進行中、監督・脚本・製作総指揮・主演を務めるのはドナルド・グローヴァー氏",
-      "summary": "スティーヴン・グローヴァー氏も脚本と製作総指揮で参加。7つのギネス世界記録を持つ世界的ゲームが、ついに実写化へ",
-      "briefSummary": "スティーヴン・グローヴァー氏も脚本と製作総指揮で参加。7つのギネス世界記録を持つ世界的ゲームが、ついに実写化へ",
+      "id": "auto-tech-ヤクルト本社-個人情報約4万件漏えい-公式サイトへの不正アクセスで-itmedia.co.jp/news/article/2610/30/2000002739",
+      "title": "ヤクルト本社、個人情報約4万件漏えい　公式サイトへの不正アクセスで",
+      "summary": "問い合わせフォームの利用者に加え、栄養士向けに給食レシピなどを紹介する会員制サイト「たのしい給食」会員の情報などが漏えいしたという。",
+      "briefSummary": "問い合わせフォームの利用者に加え、栄養士向けに給食レシピなどを紹介する会員制サイト「たのしい給食」会員の情報などが漏えいしたという。",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 57,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/30/2000002739/10010968/2048",
+      "publishedAt": "2026-10-30T01:27:47.000Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
+      "time": "2日前",
+      "sourceName": "ITmedia NEWS",
+      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/30/2000002739/",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "itmedia-news",
+          "source": "ITmedia",
+          "sourceName": "ITmedia NEWS",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "tech"
+          ],
+          "title": "ヤクルト本社、個人情報約4万件漏えい　公式サイトへの不正アクセスで",
+          "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002739/",
+          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/30/2000002739/",
+          "publishedAt": "2026-10-30T01:27:47.000Z",
+          "publishedLabel": "10/30 01:27",
+          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/30/2000002739/10010968/2048"
+        }
+      ],
+      "whatHappened": "ヤクルト本社、個人情報約4万件漏えい 公式サイトへの不正アクセスで",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-games-人気協力ホラーゲーム-r-e-p-o-最新アプデでついに-日本語-対応-炭鉱風の新マップ-新たな敵-ポニー-が実装-news.denfaminicogamer.jp/news/261030l",
+      "title": "人気協力ホラーゲーム『R.E.P.O.』最新アプデでついに「日本語」対応！炭鉱風の新マップ＆新たな敵「ポニー」が実装",
+      "summary": "既存の4マップにもそれぞれ4～5部屋が追加され、遊び慣れたマップでの探索もさらに広がる。リボルバー式の銃など新アイテムも登場",
+      "briefSummary": "既存の4マップにもそれぞれ4～5部屋が追加され、遊び慣れたマップでの探索もさらに広がる。リボルバー式の銃など新アイテムも登場",
       "category": "games",
       "categories": [
         "games",
-        "entertainment",
         "net-culture",
         "general"
       ],
       "categoryLabel": "ゲーム",
       "categoryLabels": [
         "ゲーム",
-        "エンタメ",
         "ネットカルチャー"
       ],
-      "score": 83,
+      "score": 67,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/PUBG-Netflix-1-1024x546.jpg",
-      "publishedAt": "2026-10-30T00:21:12.000Z",
-      "capturedAt": "2026-10-30T08:57:23.920Z",
-      "time": "8時間前",
+      "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/videoframe_65853-1024x576.png",
+      "publishedAt": "2026-10-30T01:21:48.000Z",
+      "capturedAt": "2026-10-30T20:42:44.617Z",
+      "time": "19時間前",
       "sourceName": "電ファミニコゲーマー",
-      "sourceUrl": "https://news.denfaminicogamer.jp/news/261030m",
+      "sourceUrl": "https://news.denfaminicogamer.jp/news/261030l",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
@@ -71,15 +130,15 @@
             "net-culture",
             "otaku"
           ],
-          "title": "『PUBG』実写ドラマシリーズ化が決定！企画・制作が「Netflix」にて進行中、監督・脚本・製作総指揮・主演を務めるのはドナルド・グローヴァー氏",
-          "url": "https://news.denfaminicogamer.jp/news/261030m",
-          "canonicalUrl": "https://news.denfaminicogamer.jp/news/261030m",
-          "publishedAt": "2026-10-30T00:21:12.000Z",
-          "publishedLabel": "10/30 00:21",
-          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/PUBG-Netflix-1-1024x546.jpg"
+          "title": "人気協力ホラーゲーム『R.E.P.O.』最新アプデでついに「日本語」対応！炭鉱風の新マップ＆新たな敵「ポニー」が実装",
+          "url": "https://news.denfaminicogamer.jp/news/261030l",
+          "canonicalUrl": "https://news.denfaminicogamer.jp/news/261030l",
+          "publishedAt": "2026-10-30T01:21:48.000Z",
+          "publishedLabel": "10/30 01:21",
+          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/videoframe_65853-1024x576.png"
         }
       ],
-      "whatHappened": "『PUBG』実写ドラマシリーズ化が決定",
+      "whatHappened": "人気協力ホラーゲーム『R.E.P.O.』最新アプデでついに「日本語」対応",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -88,67 +147,10 @@
       ]
     },
     {
-      "id": "auto-games-ガンダム00vより-hg-アドヴァンスドジンクス-デボラ機-が再販-真紅の機体カラーを再現-大型武装・プロトgnランスも付属-inside-games.jp/article/2026/10/30/190066.html",
-      "title": "ガンダム00Vより「HG アドヴァンスドジンクス（デボラ機）」が再販！真紅の機体カラーを再現、大型武装・プロトGNランスも付属",
-      "summary": "プレミアムバンダイにて、ガンプラ「HG 1/144 アドヴァンスドジンクス（デボラ機）」の再販予約が10月30日11時より実施！",
-      "briefSummary": "「HG 1/144 アドヴァンスドジンクス（デボラ機）」 の価格は2,420円（税込）。2027年2月発送予定。プレミアムバンダイにて10月30日11時より予約受付を開始します。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 83,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1801180.jpg",
-      "publishedAt": "2026-10-30T00:20:02.000Z",
-      "capturedAt": "2026-10-30T08:57:23.920Z",
-      "time": "8時間前",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/10/30/190066.html",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "ガンダム00Vより「HG アドヴァンスドジンクス（デボラ機）」が再販！真紅の機体カラーを再現、大型武装・プロトGNランスも付属",
-          "url": "https://www.inside-games.jp/article/2026/10/30/190066.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/10/30/190066.html",
-          "publishedAt": "2026-10-30T00:20:02.000Z",
-          "publishedLabel": "10/30 00:20",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1801180.jpg"
-        }
-      ],
-      "whatHappened": "ガンダム00Vより「HG アドヴァンスドジンクス（デボラ機）」が再販",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-entertainment-7歳孫が遠足へ-56歳じいじがキャラ弁当を作ったら-圧巻の中身に-人気者間違いなしですね-食べるのもったいない-news.yahoo.co.jp/articles/49f5ef9d98fdf63034e2f87bb5cbf951bf018dba",
-      "title": "7歳孫が遠足へ→56歳じいじがキャラ弁当を作ったら……　圧巻の中身に「人気者間違いなしですね」「食べるのもったいない」",
-      "summary": "56歳じいじが孫のために作った、とんでもなくハイクオリティーな“遠足弁当”がThreadsで話題です。小学生の孫が大喜びすること間違いなしな見た目に、反響が多数寄せ…",
-      "briefSummary": "56歳じいじが孫のために作った、とんでもなくハイクオリティーな“遠足弁当”がThreadsで話題です。小学生の孫が大喜びすること間違いなしな見た目に、反響が多数寄せられています。【画像】56歳じいじの",
+      "id": "auto-entertainment-75259634個食べられる-知っている人は選ぶ六花亭の-洋菓子-に-ホットミルクと合わせたら大優勝-北海道に来たら絶対に買うんだ-の声-news.yahoo.co.jp/articles/3b73028f3fad2447c466e4be62b408956e5a4649",
+      "title": "「75259634個食べられる」　知っている人は選ぶ六花亭の“洋菓子”に「ホットミルクと合わせたら大優勝」「北海道に来たら絶対に買うんだ！」の声",
+      "summary": "六花亭といえば「マルセイバターサンド」を思い浮かべる人も多いかもしれませんが、実は根強いファンが多いお菓子が「霜だたみ」です。六花亭好きの間では“知っている人は選ぶ…",
+      "briefSummary": "六花亭といえば「マルセイバターサンド」を思い浮かべる人も多いかもしれませんが、実は根強いファンが多いお菓子が「霜だたみ」です。六花亭好きの間では“知っている人は選ぶ”実力派として親しまれており、お土産",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -162,15 +164,77 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 82,
+      "score": 84,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-10-30T00:15:00.000Z",
+      "publishedAt": "2026-10-30T01:20:00.000Z",
       "capturedAt": "2026-10-30T08:57:23.920Z",
-      "time": "8時間前",
+      "time": "7時間前",
       "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/49f5ef9d98fdf63034e2f87bb5cbf951bf018dba?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/3b73028f3fad2447c466e4be62b408956e5a4649?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "「75259634個食べられる」　知っている人は選ぶ六花亭の“洋菓子”に「ホットミルクと合わせたら大優勝」「北海道に来たら絶対に買うんだ！」の声",
+          "url": "https://news.yahoo.co.jp/articles/3b73028f3fad2447c466e4be62b408956e5a4649?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/3b73028f3fad2447c466e4be62b408956e5a4649?source=rss",
+          "publishedAt": "2026-10-30T01:20:00.000Z",
+          "publishedLabel": "10/30 01:20",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「75259634個食べられる」 知っている人は選ぶ六花亭の“洋菓子”に「ホットミルクと合わ…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-entertainment-雨宿りする野良猫を保護して-4年後-これとこれが同じ猫なのにまだ納得いってない-驚きの現在に-オイ嘘だろ-何度もスライドした-news.yahoo.co.jp/articles/8f75db5ac8e39f767a27cba5b20f174b41dbea78",
+      "title": "雨宿りする野良猫を保護して、4年後……「これとこれが同じ猫なのにまだ納得いってない」　驚きの現在に「オイ嘘だろ」「何度もスライドした」",
+      "summary": "同じ猫だと言われても、思わず写真を何度も見比べてしまいそう。出会ったころから約4年、すっかり変わった猫の姿がTikTokで話題です。投稿は記事執筆時点で24万回以上…",
+      "briefSummary": "同じ猫だと言われても、思わず写真を何度も見比べてしまいそう。出会ったころから約4年、すっかり変わった猫の姿がTikTokで話題です。投稿は記事執筆時点で24万回以上閲覧され、約7400件の「いいね」を",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 84,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-30T01:20:00.000Z",
+      "capturedAt": "2026-10-30T08:57:23.920Z",
+      "time": "7時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/8f75db5ac8e39f767a27cba5b20f174b41dbea78?source=rss",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "検索需要やトレンド化の兆しが強い話題です。"
@@ -191,19 +255,554 @@
             "buzz",
             "otaku"
           ],
-          "title": "7歳孫が遠足へ→56歳じいじがキャラ弁当を作ったら……　圧巻の中身に「人気者間違いなしですね」「食べるのもったいない」",
-          "url": "https://news.yahoo.co.jp/articles/49f5ef9d98fdf63034e2f87bb5cbf951bf018dba?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/49f5ef9d98fdf63034e2f87bb5cbf951bf018dba?source=rss",
-          "publishedAt": "2026-10-30T00:15:00.000Z",
-          "publishedLabel": "10/30 00:15",
+          "title": "雨宿りする野良猫を保護して、4年後……「これとこれが同じ猫なのにまだ納得いってない」　驚きの現在に「オイ嘘だろ」「何度もスライドした」",
+          "url": "https://news.yahoo.co.jp/articles/8f75db5ac8e39f767a27cba5b20f174b41dbea78?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/8f75db5ac8e39f767a27cba5b20f174b41dbea78?source=rss",
+          "publishedAt": "2026-10-30T01:20:00.000Z",
+          "publishedLabel": "10/30 01:20",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "7歳孫が遠足へ→56歳じいじがキャラ弁当を作ったら…… 圧巻の中身に「人気者間違いなしですね…",
+      "whatHappened": "雨宿りする野良猫を保護して、4年後……「これとこれが同じ猫なのにまだ納得いってない」 驚きの…",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
         "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-games-最大4人-燃えるものなら何でも炉にぶち込んで-列車-を走らせ続けるゲーム-ship-or-burn-coop-express-12月4日に発売決定-荷物を積み込-news.denfaminicogamer.jp/news/261030n",
+      "title": "【最大4人】燃えるものなら何でも炉にぶち込んで「列車」を走らせ続けるゲーム『Ship or Burn! Coop express』12月4日に発売決定。荷物を積み込み、ゾンビの襲撃から守りながら次の駅へと運ぶ",
+      "summary": "Vitamindiは、Again Gamesが開発する『Ship or Burn! Coop express』について、発売日が12月4日に決定したことを発表した…",
+      "briefSummary": "Vitamindiは、Again Gamesが開発する『Ship or Burn! Coop express』について、発売日が12月4日に決定したことを発表した。 同作は、荷物を配達し、ゾンビを撃退し、列車を走らせ続けるために使えるものは…",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "ネットカルチャー"
+      ],
+      "score": 67,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/Ship-or-burn_screen_04-1024x576.png",
+      "publishedAt": "2026-10-30T01:17:49.000Z",
+      "capturedAt": "2026-10-30T20:42:44.617Z",
+      "time": "19時間前",
+      "sourceName": "電ファミニコゲーマー",
+      "sourceUrl": "https://news.denfaminicogamer.jp/news/261030n",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "denfami",
+          "source": "電ファミニコゲーマー",
+          "sourceName": "電ファミニコゲーマー",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "net-culture",
+            "otaku"
+          ],
+          "title": "【最大4人】燃えるものなら何でも炉にぶち込んで「列車」を走らせ続けるゲーム『Ship or Burn! Coop express』12月4日に発売決定。荷物を積み込み、ゾンビの襲撃から守りながら次の駅へと運ぶ",
+          "url": "https://news.denfaminicogamer.jp/news/261030n",
+          "canonicalUrl": "https://news.denfaminicogamer.jp/news/261030n",
+          "publishedAt": "2026-10-30T01:17:49.000Z",
+          "publishedLabel": "10/30 01:17",
+          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/10/Ship-or-burn_screen_04-1024x576.png"
+        }
+      ],
+      "whatHappened": "燃えるものなら何でも炉にぶち込んで「列車」を走らせ続けるゲーム『Ship or Burn! …",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-general-のぞみ1hで14本運行目指す-jr-news.yahoo.co.jp/pickup/6600657",
+      "title": "のぞみ1hで14本運行目指す JR",
+      "summary": "JR東海は、東海道新幹線「のぞみ」のピーク時の運行本数を増やす方針を明らかにしました。JR東海によりますと、「のぞみ」は現在、ピーク時に最大で1時間あたり13本運行されていますが、大型連休などの繁忙",
+      "briefSummary": "JR東海は、東海道新幹線「のぞみ」のピーク時の運行本数を増やす方針を明らかにしました。JR東海によりますと、「のぞみ」は現在、ピーク時に最大で1時間あたり13本運行されていますが、大型連休などの繁忙",
+      "category": "business",
+      "categories": [
+        "business",
+        "general"
+      ],
+      "categoryLabel": "経済",
+      "categoryLabels": [
+        "経済",
+        "その他"
+      ],
+      "score": 81,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-10-30T01:16:36.000Z",
+      "capturedAt": "2026-10-30T08:57:23.920Z",
+      "time": "7時間前",
+      "sourceName": "Yahoo!ニュース / 経済",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6600657?source=rss",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-business",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 経済",
+          "sourceGroup": "important-news",
+          "sourcePriority": 78,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "のぞみ1hで14本運行目指す JR",
+          "url": "https://news.yahoo.co.jp/pickup/6600657?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6600657?source=rss",
+          "publishedAt": "2026-10-30T01:16:36.000Z",
+          "publishedLabel": "10/30 01:16",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "のぞみ1hで14本運行目指す JR",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-games-ワンピース-新世界突入時の-ナミ-がアクションフィギュア化-豊かな表情パーツに加えて-魔法の天候棒や雷エフェクトなどが付属-inside-games.jp/article/2026/10/30/190070.html",
+      "title": "「ワンピース」新世界突入時の「ナミ」がアクションフィギュア化！豊かな表情パーツに加えて、魔法の天候棒や雷エフェクトなどが付属",
+      "summary": "「S.H.Figuarts ナミ -新世界-」が11月2日より一般店頭にて予約開始！",
+      "briefSummary": "「S.H.Figuarts ナミ -新世界-」の価格は7,700円（税込）で、11月2日より一般店頭にて予約開始。発売は2027年5月予定です。詳細は 魂ネイションズ商品ページ をご確認ください。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 84,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1801214.jpg",
+      "publishedAt": "2026-10-30T01:15:03.000Z",
+      "capturedAt": "2026-10-30T08:57:23.920Z",
+      "time": "7時間前",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/10/30/190070.html",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "「ワンピース」新世界突入時の「ナミ」がアクションフィギュア化！豊かな表情パーツに加えて、魔法の天候棒や雷エフェクトなどが付属",
+          "url": "https://www.inside-games.jp/article/2026/10/30/190070.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/10/30/190070.html",
+          "publishedAt": "2026-10-30T01:15:03.000Z",
+          "publishedLabel": "10/30 01:15",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1801214.jpg"
+        }
+      ],
+      "whatHappened": "「ワンピース」新世界突入時の「ナミ」がアクションフィギュア化",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-games-根強い人気を誇る銃撃rpg-エンド-オブ-エタニティ-リマスター版のリマスター-ps5-steamで配信開始-フレームレート120fps対応-倍速モード搭載の快-automaton-media.com/articles/newsjp/20261030-476585",
+      "title": "根強い人気を誇る銃撃RPG『エンド オブ エタニティ』“リマスター版のリマスター”PS5/Steamで配信開始。フレームレート120fps対応、倍速モード搭載の快適版",
+      "summary": "トライエースは10月30日、『エンド オブ エタニティ ENHANCED REMASTER』の配信を開始した。対応プラットフォームはPS5。",
+      "briefSummary": "トライエースは10月30日、『エンド オブ エタニティ ENHANCED REMASTER』の配信を開始した。対応プラットフォームはPS5。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 62,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261030-476585-header.jpg",
+      "publishedAt": "2026-10-30T01:14:33.000Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
+      "time": "2日前",
+      "sourceName": "AUTOMATON",
+      "sourceUrl": "https://automaton-media.com/articles/newsjp/20261030-476585/",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "automaton",
+          "source": "AUTOMATON",
+          "sourceName": "AUTOMATON",
+          "sourceGroup": "games",
+          "sourcePriority": 96,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "steam",
+            "switch",
+            "pc"
+          ],
+          "title": "根強い人気を誇る銃撃RPG『エンド オブ エタニティ』“リマスター版のリマスター”PS5/Steamで配信開始。フレームレート120fps対応、倍速モード搭載の快適版",
+          "url": "https://automaton-media.com/articles/newsjp/20261030-476585/",
+          "canonicalUrl": "https://automaton-media.com/articles/newsjp/20261030-476585/",
+          "publishedAt": "2026-10-30T01:14:33.000Z",
+          "publishedLabel": "10/30 01:14",
+          "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261030-476585-header.jpg"
+        }
+      ],
+      "whatHappened": "根強い人気を誇る銃撃RPG『エンド オブ エタニティ』“リマスター版のリマスター”PS5/S…",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-anime-グランド・セフト・オートvi-gta-6-の新映像-なぜかアニメ-サウスパーク-内でぬるりと公開-aaa級犬うんち-映る-automaton-media.com/articles/newsjp/20261030-476577",
+      "title": "『グランド・セフト・オートVI（GTA 6）』の新映像、なぜかアニメ「サウスパーク」内でぬるりと公開。AAA級犬うんち、映る",
+      "summary": "アメリカの人気TVアニメ「サウスパーク」にて、『グランド・セフト・オートVI（GTA 6）』のプレイ映像が突如公開された。",
+      "briefSummary": "アメリカの人気TVアニメ「サウスパーク」にて、『グランド・セフト・オートVI（GTA 6）』のプレイ映像が突如公開された。",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "world",
+        "general"
+      ],
+      "categoryLabel": "アニメ",
+      "categoryLabels": [
+        "アニメ",
+        "ゲーム",
+        "国際"
+      ],
+      "score": 62,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261030-476577-header.jpg",
+      "publishedAt": "2026-10-30T01:01:18.000Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
+      "time": "2日前",
+      "sourceName": "AUTOMATON",
+      "sourceUrl": "https://automaton-media.com/articles/newsjp/20261030-476577/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "automaton",
+          "source": "AUTOMATON",
+          "sourceName": "AUTOMATON",
+          "sourceGroup": "games",
+          "sourcePriority": 96,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "steam",
+            "switch",
+            "pc"
+          ],
+          "title": "『グランド・セフト・オートVI（GTA 6）』の新映像、なぜかアニメ「サウスパーク」内でぬるりと公開。AAA級犬うんち、映る",
+          "url": "https://automaton-media.com/articles/newsjp/20261030-476577/",
+          "canonicalUrl": "https://automaton-media.com/articles/newsjp/20261030-476577/",
+          "publishedAt": "2026-10-30T01:01:18.000Z",
+          "publishedLabel": "10/30 01:01",
+          "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261030-476577-header.jpg"
+        }
+      ],
+      "whatHappened": "『グランド・セフト・オートVI（GTA 6）』の新映像、なぜかアニメ「サウスパーク」内でぬる…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き",
+        "漫画・アニメ好き",
+        "時事ニュースを追う人"
+      ]
+    },
+    {
+      "id": "auto-anime-features-すべてはアニメという-聖典-があってこそ-進撃の巨人-では-エレンたちの先輩という視点から-進撃の巨人-の世界を深掘りする-インタビュー-4gamer.net/games/013/g101375/20261020051",
+      "title": "すべてはアニメという“聖典”があってこそ。「進撃の巨人３」では，エレンたちの先輩という視点から「進撃の巨人」の世界を深掘りする［インタビュー］",
+      "summary": "コーエーテクモゲームスは2026年12月10日に「進撃の巨人３」を発売する。本作では，オリジナルキャラを作り，「進撃の巨人」のストーリーを最初から最後まで追体験でき…",
+      "briefSummary": "コーエーテクモゲームスは2026年12月10日に「進撃の巨人３」を発売する。本作では，オリジナルキャラを作り，「進撃の巨人」のストーリーを最初から最後まで追体験できるという。キャラクターとの交流はどのようなものになるのか，新たなアクションと…",
+      "category": "anime-features",
+      "categories": [
+        "anime-features",
+        "games",
+        "game-features",
+        "general"
+      ],
+      "categoryLabel": "アニメ特集",
+      "categoryLabels": [
+        "アニメ特集",
+        "ゲーム",
+        "ゲーム特集"
+      ],
+      "score": 62,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/013/G101375/20261020051/SS/010.jpg",
+      "publishedAt": "2026-10-30T01:00:00.000Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
+      "time": "2日前",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/013/G101375/20261020051/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "すべてはアニメという“聖典”があってこそ。「進撃の巨人３」では，エレンたちの先輩という視点から「進撃の巨人」の世界を深掘りする［インタビュー］",
+          "url": "https://www.4gamer.net/games/013/G101375/20261020051/",
+          "canonicalUrl": "https://www.4gamer.net/games/013/G101375/20261020051/",
+          "publishedAt": "2026-10-30T01:00:00.000Z",
+          "publishedLabel": "10/30 01:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/013/G101375/20261020051/SS/010.jpg"
+        }
+      ],
+      "whatHappened": "すべてはアニメという“聖典”があってこそ",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-主人公レトラの魅力がバクハツする-ローグライト3dアクション-夢幻桜楼閣-電猫遊戯のほーせんか氏が語る-本作に込めた思いとは-プレイレポ-4gamer.net/games/914/g091464/20261029005",
+      "title": "主人公レトラの魅力がバクハツする，ローグライト3Dアクション「夢幻桜楼閣」。電猫遊戯のほーせんか氏が語る，本作に込めた思いとは［プレイレポ］",
+      "summary": "2026年11月5日に発売予定のローグライト3Dアクション「夢幻桜楼閣」の先行プレイレポートをお届けする。3Dアクションとローグライトをかけ合わせた新感覚のプレイフ…",
+      "briefSummary": "2026年11月5日に発売予定のローグライト3Dアクション「夢幻桜楼閣」の先行プレイレポートをお届けする。3Dアクションとローグライトをかけ合わせた新感覚のプレイフィールが特徴的な本作だが，そこにはどんな思いが込められているのか。開発者であ…",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 62,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/914/G091464/20261029005/SS/017.webp",
+      "publishedAt": "2026-10-30T01:00:00.000Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
+      "time": "2日前",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/914/G091464/20261029005/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "主人公レトラの魅力がバクハツする，ローグライト3Dアクション「夢幻桜楼閣」。電猫遊戯のほーせんか氏が語る，本作に込めた思いとは［プレイレポ］",
+          "url": "https://www.4gamer.net/games/914/G091464/20261029005/",
+          "canonicalUrl": "https://www.4gamer.net/games/914/G091464/20261029005/",
+          "publishedAt": "2026-10-30T01:00:00.000Z",
+          "publishedLabel": "10/30 01:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/914/G091464/20261029005/SS/017.webp"
+        }
+      ],
+      "whatHappened": "主人公レトラの魅力がバクハツする，ローグライト3Dアクション「夢幻桜楼閣」",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-tech-アイリスオーヤマの通販サイトに不正アクセス-情報漏えいは-調査中-itmedia.co.jp/news/article/2610/30/2000002737",
+      "title": "アイリスオーヤマの通販サイトに不正アクセス　情報漏えいは「調査中」",
+      "summary": "現時点の調査では、クレジットカード情報の漏えいは確認していない。その他の情報については引き続き調べる。",
+      "briefSummary": "現時点の調査では、クレジットカード情報の漏えいは確認していない。その他の情報については引き続き調べる。",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 57,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/30/2000002737/10010964/2048",
+      "publishedAt": "2026-10-30T00:43:10.000Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
+      "time": "2日前",
+      "sourceName": "ITmedia NEWS",
+      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/30/2000002737/",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "itmedia-news",
+          "source": "ITmedia",
+          "sourceName": "ITmedia NEWS",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "tech"
+          ],
+          "title": "アイリスオーヤマの通販サイトに不正アクセス　情報漏えいは「調査中」",
+          "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002737/",
+          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/30/2000002737/",
+          "publishedAt": "2026-10-30T00:43:10.000Z",
+          "publishedLabel": "10/30 00:43",
+          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/30/2000002737/10010964/2048"
+        }
+      ],
+      "whatHappened": "アイリスオーヤマの通販サイトに不正アクセス 情報漏えいは「調査中」",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-games-人気バトロワ-pubg-battlegrounds-が-netflix実写ドラマ化-決定-監督・主演は-チャイルディッシュ・ガンビーノ-ことドナルド・グローヴァ-automaton-media.com/articles/newsjp/20261030-476568",
+      "title": "人気バトロワ『PUBG: BATTLEGROUNDS』が「Netflix実写ドラマ化」決定。監督・主演は“チャイルディッシュ・ガンビーノ”ことドナルド・グローヴァー氏",
+      "summary": "KRAFTONは10月30日、『PUBG: BATTLEGROUNDS』の実写ドラマシリーズ化を発表した。Netflixにて配信予定。",
+      "briefSummary": "KRAFTONは10月30日、『PUBG: BATTLEGROUNDS』の実写ドラマシリーズ化を発表した。Netflixにて配信予定。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 62,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261030-476568-header.jpg",
+      "publishedAt": "2026-10-30T00:42:07.000Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
+      "time": "2日前",
+      "sourceName": "AUTOMATON",
+      "sourceUrl": "https://automaton-media.com/articles/newsjp/20261030-476568/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "automaton",
+          "source": "AUTOMATON",
+          "sourceName": "AUTOMATON",
+          "sourceGroup": "games",
+          "sourcePriority": 96,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "steam",
+            "switch",
+            "pc"
+          ],
+          "title": "人気バトロワ『PUBG: BATTLEGROUNDS』が「Netflix実写ドラマ化」決定。監督・主演は“チャイルディッシュ・ガンビーノ”ことドナルド・グローヴァー氏",
+          "url": "https://automaton-media.com/articles/newsjp/20261030-476568/",
+          "canonicalUrl": "https://automaton-media.com/articles/newsjp/20261030-476568/",
+          "publishedAt": "2026-10-30T00:42:07.000Z",
+          "publishedLabel": "10/30 00:42",
+          "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261030-476568-header.jpg"
+        }
+      ],
+      "whatHappened": "人気バトロワ『PUBG: BATTLEGROUNDS』が「Netflix実写ドラマ化」決定",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
       ]
     },
     {
@@ -231,7 +830,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/30/2000002736/10010960/2048",
       "publishedAt": "2026-10-30T00:14:48.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "2日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/30/2000002736/",
@@ -271,178 +870,6 @@
       ]
     },
     {
-      "id": "auto-entertainment-この冬-3枚目の購入です-ニトリの-ボリューム着る毛布-が大好評-これなしじゃ冬越せません-温かさを求めるならこれが最強です-news.yahoo.co.jp/articles/47a6e118fa50f0d69fa1e64f4e581da8bdea540d",
-      "title": "「この冬、3枚目の購入です」　ニトリの“ボリューム着る毛布”が大好評　「これなしじゃ冬越せません」「温かさを求めるならこれが最強です」",
-      "summary": "ニトリの“ボリューム着る毛布”が、暖房いらずと思えるほどあたたかいと好評です。断熱効果のある新素材エアロゲル入りの着る毛布で、足元まで包めるロング丈。使わないときは…",
-      "briefSummary": "ニトリの“ボリューム着る毛布”が、暖房いらずと思えるほどあたたかいと好評です。断熱効果のある新素材エアロゲル入りの着る毛布で、足元まで包めるロング丈。使わないときはコンパクトに収納できます。本記事では",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 82,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-30T00:10:00.000Z",
-      "capturedAt": "2026-10-30T08:57:23.920Z",
-      "time": "8時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/47a6e118fa50f0d69fa1e64f4e581da8bdea540d?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「この冬、3枚目の購入です」　ニトリの“ボリューム着る毛布”が大好評　「これなしじゃ冬越せません」「温かさを求めるならこれが最強です」",
-          "url": "https://news.yahoo.co.jp/articles/47a6e118fa50f0d69fa1e64f4e581da8bdea540d?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/47a6e118fa50f0d69fa1e64f4e581da8bdea540d?source=rss",
-          "publishedAt": "2026-10-30T00:10:00.000Z",
-          "publishedLabel": "10/30 00:10",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「この冬、3枚目の購入です」 ニトリの“ボリューム着る毛布”が大好評 「これなしじゃ冬越せま…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-tech-富士山の初冠雪を確認-気象庁発表-news.yahoo.co.jp/pickup/6600649",
-      "title": "富士山の初冠雪を確認 気象庁発表",
-      "summary": "気象庁は10月30日、富士山の初冠雪が確認されたと発表しました。富士山の初冠雪は、1894年の統計開始以来、甲府地方気象台により「目視」で観測されてきましたが、気象庁は、今季から、アメダスや雨雲レー",
-      "briefSummary": "気象庁は10月30日、富士山の初冠雪が確認されたと発表しました。富士山の初冠雪は、1894年の統計開始以来、甲府地方気象台により「目視」で観測されてきましたが、気象庁は、今季から、アメダスや雨雲レー",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック"
-      ],
-      "score": 52,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-30T00:05:52.000Z",
-      "capturedAt": "2026-11-01T06:46:23.067Z",
-      "time": "2日前",
-      "sourceName": "Yahoo!ニュース / 科学",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6600649?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-science",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 科学",
-          "sourceGroup": "general-tech",
-          "sourcePriority": 60,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "富士山の初冠雪を確認 気象庁発表",
-          "url": "https://news.yahoo.co.jp/pickup/6600649?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6600649?source=rss",
-          "publishedAt": "2026-10-30T00:05:52.000Z",
-          "publishedLabel": "10/30 00:05",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "富士山の初冠雪を確認 気象庁発表",
-      "whyHot": "関連分野の流れを追ううえで押さえておきたい話題です。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-entertainment-大きくなった庭木-適当にザクザク切らないで-自然に仕上げるコツに-初心者にも分かりやすい-奥が深い-news.yahoo.co.jp/articles/76a0ba1e3029256829dbb64309de9d301d30ca2c",
-      "title": "大きくなった庭木、適当にザクザク切らないで！　自然に仕上げるコツに「初心者にも分かりやすい」「奥が深い」",
-      "summary": "庭木を大きくしない剪定（せんてい）方法を実践解説した動画が「重要な情報、ありがとうございます」「奥が深いですね」とYouTubeで話題です。動画は記事執筆時点で7万…",
-      "briefSummary": "庭木を大きくしない剪定（せんてい）方法を実践解説した動画が「重要な情報、ありがとうございます」「奥が深いですね」とYouTubeで話題です。動画は記事執筆時点で7万1000回以上再生されています。【画",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 82,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-10-30T00:05:00.000Z",
-      "capturedAt": "2026-10-30T08:57:23.920Z",
-      "time": "8時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/76a0ba1e3029256829dbb64309de9d301d30ca2c?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "大きくなった庭木、適当にザクザク切らないで！　自然に仕上げるコツに「初心者にも分かりやすい」「奥が深い」",
-          "url": "https://news.yahoo.co.jp/articles/76a0ba1e3029256829dbb64309de9d301d30ca2c?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/76a0ba1e3029256829dbb64309de9d301d30ca2c?source=rss",
-          "publishedAt": "2026-10-30T00:05:00.000Z",
-          "publishedLabel": "10/30 00:05",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "大きくなった庭木、適当にザクザク切らないで",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
       "id": "auto-tech-openai-aiの行動指針-model-spec-を改定-記憶-の使い方や人間による監督を明記-itmedia.co.jp/news/article/2610/30/2000002735",
       "title": "OpenAI、AIの行動指針「Model Spec」を改定　“記憶”の使い方や人間による監督を明記",
       "summary": "OpenAIは、AIの振る舞い指針「Model Spec」の改定版を公開した。全体を5つの価値観に沿って再構成し、メモリや会話履歴の適切な扱い、エージェント自律動作…",
@@ -465,7 +892,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/30/2000002735/10010955/2048",
       "publishedAt": "2026-10-29T23:24:32.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "2日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/30/2000002735/",
@@ -525,7 +952,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261030-476558-header.jpeg",
       "publishedAt": "2026-10-29T23:13:28.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "2日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261030-476558/",
@@ -589,7 +1016,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/30/2000002734/10010952/2048",
       "publishedAt": "2026-10-29T23:02:40.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "2日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/30/2000002734/",
@@ -648,7 +1075,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/025/G102544/20261029006/SS/001.jpg",
       "publishedAt": "2026-10-29T23:00:00.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "2日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/025/G102544/20261029006/",
@@ -710,7 +1137,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261027184104.jpg",
       "publishedAt": "2026-10-29T23:00:00.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "2日前",
       "sourceName": "J-CASTニュース",
       "sourceUrl": "https://www.j-cast.com/2026/10/30518737.html",
@@ -749,67 +1176,6 @@
       ]
     },
     {
-      "id": "auto-sports-狩野舞子-ブラトップ-ショーパン姿-で引き締まったお腹を披露-クールな表情に神スタイル-腹筋凄い-j-cast.com/2026/10/30518790.html",
-      "title": "狩野舞子「ブラトップ×ショーパン姿」で引き締まったお腹を披露　クールな表情に神スタイル「腹筋凄い」",
-      "summary": "元バレーボール日本女子代表の狩野舞子さん（38）が2026年10月26日、自身のインスタグラムを更新。美腹筋が際立つブラトップ姿を披露した。 続きは「J-CASTニ…",
-      "briefSummary": "元バレーボール日本女子代表の狩野舞子さん（38）が2026年10月26日、自身のインスタグラムを更新。美腹筋が際立つブラトップ姿を披露した。 続きは「J-CASTニュース」へ",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 56,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261029145523.jpg",
-      "publishedAt": "2026-10-29T22:00:00.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
-      "time": "2日前",
-      "sourceName": "J-CASTニュース",
-      "sourceUrl": "https://www.j-cast.com/2026/10/30518790.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "jcast",
-          "source": "J-CASTニュース",
-          "sourceName": "J-CASTニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 72,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz"
-          ],
-          "title": "狩野舞子「ブラトップ×ショーパン姿」で引き締まったお腹を披露　クールな表情に神スタイル「腹筋凄い」",
-          "url": "https://www.j-cast.com/2026/10/30518790.html",
-          "canonicalUrl": "https://www.j-cast.com/2026/10/30518790.html",
-          "publishedAt": "2026-10-29T22:00:00.000Z",
-          "publishedLabel": "10/29 22:00",
-          "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/10/news_20261029145523.jpg"
-        }
-      ],
-      "whatHappened": "狩野舞子「ブラトップ×ショーパン姿」で引き締まったお腹を披露 クールな表情に神スタイル「腹筋…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
       "id": "auto-games-人気協力ホラー-r-e-p-o-大型アプデでついに日本語対応-不気味な-馬-が這いまわる炭鉱風の新ステージに加えて-既存ステージもいろいろ拡張-automaton-media.com/articles/newsjp/20261030-476545",
       "title": "人気協力ホラー『R.E.P.O.』大型アプデでついに日本語対応。不気味な“馬”が這いまわる炭鉱風の新ステージに加えて、既存ステージもいろいろ拡張",
       "summary": "semiworkは10月29日、協力型ホラーゲーム『R.E.P.O.』に向けて無料大型アップデートv0.5.0「The Sunstone Update」を配信開始し…",
@@ -830,7 +1196,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261030-476545-header.jpg",
       "publishedAt": "2026-10-29T15:03:18.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261030-476545/",
@@ -888,7 +1254,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/930/G093069/20261028017/SS/001.jpg",
       "publishedAt": "2026-10-29T15:00:00.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/930/G093069/20261028017/",
@@ -947,7 +1313,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/449/G044914/20261029049/SS/004.jpg",
       "publishedAt": "2026-10-29T15:00:00.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/449/G044914/20261029049/",
@@ -1005,7 +1371,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/039/G103946/20261029068/SS/001.jpg",
       "publishedAt": "2026-10-29T14:50:22.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/039/G103946/20261029068/",
@@ -1065,7 +1431,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/897/G089770/20261029067/SS/001.jpg",
       "publishedAt": "2026-10-29T14:20:38.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/897/G089770/20261029067/",
@@ -1126,7 +1492,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261029-476538-header.jpg",
       "publishedAt": "2026-10-29T14:08:56.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261029-476538/",
@@ -1184,7 +1550,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/054/G105434/20261029065/SS/001.jpg",
       "publishedAt": "2026-10-29T12:54:13.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/054/G105434/20261029065/",
@@ -1242,7 +1608,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261029-476529-header.jpg",
       "publishedAt": "2026-10-29T12:50:14.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261029-476529/",
@@ -1302,7 +1668,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/548/G054848/20261029064/SS/001.jpg",
       "publishedAt": "2026-10-29T12:30:55.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/548/G054848/20261029064/",
@@ -1360,7 +1726,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/054/G105431/20261029061/SS/001.jpg",
       "publishedAt": "2026-10-29T12:19:49.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/054/G105431/20261029061/",
@@ -1421,7 +1787,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/010/G101096/20261029024/SS/005.jpg",
       "publishedAt": "2026-10-29T12:00:00.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/010/G101096/20261029024/",
@@ -1479,7 +1845,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/982/G098246/20261029060/SS/004.jpg",
       "publishedAt": "2026-10-29T11:52:54.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/982/G098246/20261029060/",
@@ -1538,7 +1904,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261029-476514-header.jpg",
       "publishedAt": "2026-10-29T11:43:55.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261029-476514/",
@@ -1596,7 +1962,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/612/G061218/20261029058/SS/001.png",
       "publishedAt": "2026-10-29T11:39:27.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/612/G061218/20261029058/",
@@ -1654,7 +2020,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/529/G052958/20261029043/SS/001.jpg",
       "publishedAt": "2026-10-29T11:30:00.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/529/G052958/20261029043/",
@@ -1714,7 +2080,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261029-476504-header-1.jpg",
       "publishedAt": "2026-10-29T11:25:57.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261029-476504/",
@@ -1776,7 +2142,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/860/G086099/20261029052/SS/004.jpg",
       "publishedAt": "2026-10-29T11:16:31.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/860/G086099/20261029052/",
@@ -1834,7 +2200,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/999/G999903/20261029053/SS/001.jpg",
       "publishedAt": "2026-10-29T11:14:50.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/999/G999903/20261029053/",
@@ -1893,7 +2259,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.4gamer.net/games/038/G103877/20261029054/SS/001.jpg",
       "publishedAt": "2026-10-29T11:11:37.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "4Gamer",
       "sourceUrl": "https://www.4gamer.net/games/038/G103877/20261029054/",
@@ -1954,7 +2320,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261029-476496-header.jpg",
       "publishedAt": "2026-10-29T10:56:25.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261029-476496/",
@@ -2012,7 +2378,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261029-476489-header.jpg",
       "publishedAt": "2026-10-29T10:33:36.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261029-476489/",
@@ -2075,7 +2441,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002708/10010874/2048",
       "publishedAt": "2026-10-29T10:28:06.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002708/",
@@ -2137,7 +2503,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002730/10010933/2048",
       "publishedAt": "2026-10-29T10:18:19.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002730/",
@@ -2198,7 +2564,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002729/10010930/2048",
       "publishedAt": "2026-10-29T09:57:37.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002729/",
@@ -2257,7 +2623,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/europa-universalis-v-20261029-476451-header.jpg",
       "publishedAt": "2026-10-29T09:15:22.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/europa-universalis-v-20261029-476451/",
@@ -2318,7 +2684,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261029-476400-header.jpeg",
       "publishedAt": "2026-10-29T08:59:01.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261029-476400/",
@@ -2380,7 +2746,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002716/10010873/2048",
       "publishedAt": "2026-10-29T08:52:38.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002716/",
@@ -2439,7 +2805,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://automaton-media.com/wp-content/uploads/2026/10/20261029-476457-header.jpg",
       "publishedAt": "2026-10-29T08:41:51.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "AUTOMATON",
       "sourceUrl": "https://automaton-media.com/articles/newsjp/20261029-476457/",
@@ -2501,7 +2867,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002727/10010923/2048",
       "publishedAt": "2026-10-29T08:14:22.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002727/",
@@ -2562,7 +2928,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002723/10010920/2048",
       "publishedAt": "2026-10-29T07:58:02.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002723/",
@@ -2624,7 +2990,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002722/10010907/2048",
       "publishedAt": "2026-10-29T07:37:03.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002722/",
@@ -2685,7 +3051,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002717/10010876/2048",
       "publishedAt": "2026-10-29T06:21:40.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002717/",
@@ -2746,7 +3112,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002714/10010864/2048",
       "publishedAt": "2026-10-29T06:08:11.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002714/",
@@ -2809,7 +3175,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002647/10010779/2048",
       "publishedAt": "2026-10-29T06:00:00.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002647/",
@@ -2871,7 +3237,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002711/10010857/2048",
       "publishedAt": "2026-10-29T04:41:18.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002711/",
@@ -2932,7 +3298,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002707/10010842/2048",
       "publishedAt": "2026-10-29T03:40:20.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002707/",
@@ -2993,7 +3359,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002705/10010836/2048",
       "publishedAt": "2026-10-29T03:29:29.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002705/",
@@ -3055,7 +3421,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002679/10010739/2048",
       "publishedAt": "2026-10-29T03:00:00.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002679/",
@@ -3117,7 +3483,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002697/10010822/2048",
       "publishedAt": "2026-10-29T01:40:10.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002697/",
@@ -3178,7 +3544,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002696/10010818/2048",
       "publishedAt": "2026-10-29T01:31:38.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002696/",
@@ -3239,7 +3605,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002674/10010708/2048",
       "publishedAt": "2026-10-29T01:30:00.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002674/",
@@ -3300,7 +3666,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002677/10010726/2048",
       "publishedAt": "2026-10-29T01:14:41.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002677/",
@@ -3361,7 +3727,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/28/2000002681/10010747/2048",
       "publishedAt": "2026-10-29T01:12:13.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/28/2000002681/",
@@ -3423,7 +3789,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002694/10010813/2048",
       "publishedAt": "2026-10-29T01:05:11.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002694/",
@@ -3486,7 +3852,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002693/10010804/2048",
       "publishedAt": "2026-10-29T00:42:56.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002693/",
@@ -3550,7 +3916,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002692/10010800/2048",
       "publishedAt": "2026-10-28T23:56:59.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002692/",
@@ -3613,7 +3979,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002691/10010796/2048",
       "publishedAt": "2026-10-28T23:19:34.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "3日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002691/",
@@ -3676,8 +4042,8 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002690/10010791/2048",
       "publishedAt": "2026-10-28T22:13:47.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
-      "time": "3日前",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
+      "time": "4日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002690/",
       "hotReasons": [
@@ -3739,8 +4105,8 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/29/2000002689/10010786/2048",
       "publishedAt": "2026-10-28T21:32:01.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
-      "time": "3日前",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
+      "time": "4日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/29/2000002689/",
       "hotReasons": [
@@ -3801,7 +4167,7 @@
       "metricLabel": "source",
       "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/28/2000002687/10010766/2048",
       "publishedAt": "2026-10-28T11:52:00.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
+      "capturedAt": "2026-11-01T22:47:48.795Z",
       "time": "4日前",
       "sourceName": "ITmedia NEWS",
       "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/28/2000002687/",
@@ -3836,68 +4202,6 @@
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-tech-対策を後回しにしたサーバが軒並み狙われている-相次ぐ不正アクセスにラックctoが警鐘-itmedia.co.jp/news/article/2610/28/2000002675",
-      "title": "「対策を後回しにしたサーバが軒並み狙われている」　相次ぐ不正アクセスにラックCTOが警鐘",
-      "summary": "不正アクセスが相次ぐ中、ラックの倉持浩明CTOは「KDDI SUMMIT 2026」に登壇。被害対応の現場の実態として、脆弱性診断などを後回しにしたシステムが狙われ…",
-      "briefSummary": "不正アクセスが相次ぐ中、ラックの倉持浩明CTOは「KDDI SUMMIT 2026」に登壇。被害対応の現場の実態として、脆弱性診断などを後回しにしたシステムが狙われていると指摘した。AIで攻撃が高速化する今、自社の都合ではなく攻撃者の視点で…",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 57,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/28/2000002675/10010713/2048",
-      "publishedAt": "2026-10-28T08:19:23.000Z",
-      "capturedAt": "2026-11-01T19:09:20.992Z",
-      "time": "4日前",
-      "sourceName": "ITmedia NEWS",
-      "sourceUrl": "https://www.itmedia.co.jp/news/article/2610/28/2000002675/",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-news",
-          "source": "ITmedia",
-          "sourceName": "ITmedia NEWS",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "「対策を後回しにしたサーバが軒並み狙われている」　相次ぐ不正アクセスにラックCTOが警鐘",
-          "url": "https://www.itmedia.co.jp/news/article/2610/28/2000002675/",
-          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2610/28/2000002675/",
-          "publishedAt": "2026-10-28T08:19:23.000Z",
-          "publishedLabel": "10/28 08:19",
-          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2610/28/2000002675/10010713/2048"
-        }
-      ],
-      "whatHappened": "「対策を後回しにしたサーバが軒並み狙われている」 相次ぐ不正アクセスにラックCTOが警鐘",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "仕事や制作環境、導入判断に影響する可能性があります。",
-      "targetAudience": [
-        "AI利用者",
         "ネット文化を追う人"
       ]
     }

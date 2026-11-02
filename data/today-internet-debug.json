@@ -1,39 +1,40 @@
 {
-  "generatedAt": "2026-11-01T22:50:50.301Z",
+  "generatedAt": "2026-11-02T02:24:38.958Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-8",
-  "selectedTitle": "GitHub、「Copilot Fusion」正式リリース。タスクに応じて最適なAIモデル選択で高性能かつ低コストに。GitHub Universe 2026",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "VTuber天神子兎音、2025年末に卒業していた事実が判明──新キャストを迎えて再始動を予定",
   "candidates": [
     {
-      "clusterId": "today-cluster-8",
-      "title": "GitHub、「Copilot Fusion」正式リリース。タスクに応じて最適なAIモデル選択で高性能かつ低コストに。GitHub Universe 2026",
-      "category": "tech",
+      "clusterId": "today-cluster-1",
+      "title": "VTuber天神子兎音、2025年末に卒業していた事実が判明──新キャストを迎えて再始動を予定",
+      "category": "sns",
       "categories": [
-        "tech",
         "sns",
         "net-culture",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 72.8,
-      "confidence": 0.43,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 75,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 18.5,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 5.6,
         "social": 7,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -46,8 +47,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 45,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
@@ -57,7 +58,60 @@
       ]
     },
     {
-      "clusterId": "today-cluster-19",
+      "clusterId": "today-cluster-7",
+      "title": "VTuber・青鬼、初のゲーム配信で強烈な「台パン」をかまし話題に。「なんかかわいい」「面白すぎる」ファンの心をがっしり掴む",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 70.7,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.8,
+        "internetNativeBoost": 8,
+        "search": 5.6,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 44,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-40",
       "title": "HoYoverse新作スローライフゲーム『プチプラネット』Nintendo Switch 2版が2027年にリリースへ！",
       "category": "games",
       "categories": [
@@ -65,8 +119,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.5,
-      "confidence": 0.43,
+      "buzzScore": 67.2,
+      "confidence": 0.41,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -76,12 +130,12 @@
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 19.1,
+        "trend": 18.3,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 5.5,
+        "search": 5.5,
+        "social": 5.4,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 2.5,
         "categoryBias": 14,
         "penalty": 0
@@ -95,11 +149,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
+        "repeatedAppearanceScore": 21,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 44.9,
-        "internalSocialScore": 43
+        "archiveHeatScore": 83,
+        "internalSearchScore": 42.7,
+        "internalSocialScore": 42.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -108,121 +162,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1397",
-      "title": "11月1日は“ピクミンデー”に！「Pikmin Day Direct」公開。『ピクミン4 Nintendo Switch 2 Edition』体験版情報やショートムービーお披露目など",
-      "category": "games",
+      "clusterId": "today-cluster-140",
+      "title": "白石麻衣、超愛用924円コスメに「19本目です」「本当におすすめ」　スタッフからも「すごい、愛用しすぎ」と驚きの声",
+      "category": "entertainment",
       "categories": [
-        "games",
         "entertainment",
-        "general"
-      ],
-      "buzzScore": 60.6,
-      "confidence": 0.42,
-      "articleCount": 3,
-      "sourceCount": 3,
-      "uniqueDomainCount": 3,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 7,
-        "trend": 19.4,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 4.5,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 6,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 4.8,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 88,
-        "internalSearchScore": 33.9,
-        "internalSocialScore": 35.2
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-39",
-      "title": "ＧＭＯ系、企業向けＩＤ管理サービスで４万５０３０人の氏名など流出…設定ミス原因・外部から取得できる状態に",
-      "category": "business",
-      "categories": [
-        "business",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 60,
-      "confidence": 0.41,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.4,
-        "social": 6.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 42.4,
-        "internalSocialScore": 54
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-100",
-      "title": "2027年4月放送「ガンダムRG XARX-ZERO」よりガンダムZEROが立体化！ 劇中再現を可能とする可動域を追及♪",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 58.1,
-      "confidence": 0.38,
+      "buzzScore": 66.2,
+      "confidence": 0.37,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -233,14 +183,14 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18.5,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 4.6,
+        "search": 4,
+        "social": 6,
         "velocity": 4.2,
         "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 6,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -253,10 +203,63 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 33.3,
-        "internalSocialScore": 35.7
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 31.6,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-9",
+      "title": "ビジネスジェット機が幹線道路付近に墜落し炎上、9人死亡　米フロリダ州",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "sns",
+        "world",
+        "general"
+      ],
+      "buzzScore": 65.8,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 4,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

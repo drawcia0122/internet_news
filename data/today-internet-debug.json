@@ -1,22 +1,23 @@
 {
-  "generatedAt": "2026-11-03T02:41:04.307Z",
+  "generatedAt": "2026-11-03T10:04:27.828Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1306",
-  "selectedTitle": "「え…？」ミセス大森元貴、“SNSの一部変更”にファン心配　「まじか」「何かあったのか」",
+  "selectedClusterId": "today-cluster-978",
+  "selectedTitle": "トランプ氏「口約束」連発　中間選挙前に焦り：時事ドットコム",
   "candidates": [
     {
-      "clusterId": "today-cluster-1306",
-      "title": "「え…？」ミセス大森元貴、“SNSの一部変更”にファン心配　「まじか」「何かあったのか」",
-      "category": "net-culture",
+      "clusterId": "today-cluster-978",
+      "title": "トランプ氏「口約束」連発　中間選挙前に焦り：時事ドットコム",
+      "category": "politics",
       "categories": [
-        "net-culture",
+        "politics",
         "sns",
-        "tech",
+        "net-culture",
+        "world",
         "entertainment",
         "general"
       ],
-      "buzzScore": 66.5,
-      "confidence": 0.36,
+      "buzzScore": 67.4,
+      "confidence": 0.4,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -26,10 +27,165 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 18.9,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 7.2,
+        "search": 4.8,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 37.7,
+        "internalSocialScore": 56.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-143",
+      "title": "大作・話題作が3,000円前後に！『サイバーパンク2077』2,948円、『Fate/SR』3,217円、『スターオーシャン 2ndR』は3,286円【eショップ・PS Storeのお薦めセール】",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 67,
+      "confidence": 0.45,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 20.2,
+        "internetNativeBoost": 8,
+        "search": 4.6,
+        "social": 3.2,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 92,
+        "internalSearchScore": 36.1,
+        "internalSocialScore": 24.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-97",
+      "title": "Nintendo Switch 2『ゼルダの伝説』40周年記念モデル、高額転売に“空振り”続出か。予約困難から一転、普通に買える",
+      "category": "games",
+      "categories": [
+        "games",
+        "general",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 64.7,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 5.2,
+        "social": 6.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 40.9,
+        "internalSocialScore": 53.5
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1429",
+      "title": "開発者に訊きました : ゼルダの伝説 時のオカリナ｜任天堂",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 63,
+      "confidence": 0.35,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 3.7,
+        "social": 5.8,
         "velocity": 0,
         "freshness": 3.5,
         "authority": 2.5,
@@ -46,10 +202,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 32.1,
-        "internalSocialScore": 56.4
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 29.2,
+        "internalSocialScore": 45.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -58,37 +214,37 @@
       ]
     },
     {
-      "clusterId": "today-cluster-15",
-      "title": "神山健治監督：「社会と個人」を描いた「攻殻機動隊S.A.C.」　AI時代にアニメで未来を描く意味",
-      "category": "anime",
+      "clusterId": "today-cluster-57",
+      "title": "トランプ政権に「共感」日本国内で23.1％ 「日本にもトランプ氏のような強い政治家が必要」は52.6％ アメリカ中間選挙直前に日本国内でインターネット調査 【TBS NEWS DIG】",
+      "category": "politics",
       "categories": [
-        "anime",
-        "entertainment",
+        "politics",
         "sns",
         "net-culture",
+        "world",
         "general"
       ],
-      "buzzScore": 65.6,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 62.2,
+      "confidence": 0.41,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
         "trend": 18,
         "internetNativeBoost": 8,
         "search": 5.7,
         "social": 8.4,
         "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -104,166 +260,6 @@
         "archiveHeatScore": 82,
         "internalSearchScore": 44.3,
         "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-16",
-      "title": "トランプ氏「口約束」連発　中間選挙前に焦り：時事ドットコム",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "world",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 65.3,
-      "confidence": 0.4,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.5,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-230",
-      "title": "ブックオフの“500円ワンピース”→大胆にリメイクしたら……　高級感あふれる仕上がりに「玄人の方ですか？」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.8,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1012",
-      "title": "GMO社長 自身のSNS休止に言及",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "tech",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 64.7,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 18.5,
-        "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 32.1,
-        "internalSocialScore": 45.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

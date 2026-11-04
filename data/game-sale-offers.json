@@ -1,10 +1,99 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T23:26:54.748Z",
+  "generatedAt": "2026-11-04T03:20:14.120Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
   "items": [
+    {
+      "id": "steam:2487390",
+      "appId": 2487390,
+      "title": "For the GHOSTs",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/2487390/?cc=jp&l=japanese",
+      "regularPrice": 980,
+      "salePrice": 490,
+      "discountPercent": 50,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-04T03:20:14.120Z",
+      "endsAt": "2026-11-10T15:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A2487390%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/2487390/?cc=jp&l=japanese",
+        "appId": 2487390,
+        "packageId": 895194,
+        "discountEndDate": 1794322800,
+        "checkedAt": "2026-11-04T03:20:14.120Z",
+        "regularPrice": 980,
+        "salePrice": 490,
+        "discountPercent": 50,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-04T09:20:14.120Z",
+      "priceValidUntil": "2026-11-05T03:20:14.120Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2487390&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2487390/header_japanese.jpg?t=1772122321",
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/261104o"
+      ],
+      "articles": [
+        {
+          "url": "https://news.denfaminicogamer.jp/news/261104o",
+          "title": "【490円】フィクションのキャラと友だちになるビジュアルノベルゲーム『For the GHOSTs』がSteamにて50%オフのセール中。販売数1万本のお祝いとして",
+          "publishedAt": "2026-11-04T02:34:48.000Z",
+          "topicId": "auto-games-490円-フィクションのキャラと友だちになるビジュアルノベルゲーム-for-the-ghosts-がsteamにて50-オフのセール中-販売数1万本のお祝いとし-news.denfaminicogamer.jp/news/261104o",
+          "gameTitle": "『For the GHOSTs』"
+        }
+      ],
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2487390
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-04T03:20:14.120Z",
+          "freshUntil": "2026-11-04T09:20:14.120Z",
+          "date": "2024-01-07",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=2487390&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2487390
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-04T03:20:14.120Z",
+          "freshUntil": "2026-11-04T09:20:14.120Z",
+          "eventId": "steam-announcement-4202497395515358741",
+          "date": "2024-04-26T13:54:05.000Z",
+          "title": "Functional Updates",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:2487390",
+            "url": "https://steamcommunity.com/ogg/2487390/announcements/detail/4202497395515358741",
+            "verified": true
+          }
+        }
+      ]
+    },
     {
       "id": "steam:115800",
       "appId": 115800,
@@ -37,7 +126,7 @@
       },
       "freshUntil": "2026-11-04T05:26:54.748Z",
       "priceValidUntil": "2026-11-04T23:26:54.748Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=115800&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -107,7 +196,7 @@
       },
       "freshUntil": "2026-11-04T05:26:54.748Z",
       "priceValidUntil": "2026-11-04T23:26:54.748Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=744050&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -177,7 +266,7 @@
       },
       "freshUntil": "2026-11-04T05:26:54.748Z",
       "priceValidUntil": "2026-11-04T23:26:54.748Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1062830&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -221,8 +310,8 @@
           "kind": "update",
           "checkedAt": "2026-11-03T23:26:54.748Z",
           "freshUntil": "2026-11-04T05:26:54.748Z",
-          "eventId": "steam-announcement-533236528800859570",
           "date": "2025-10-03T18:55:54.000Z",
+          "eventId": "steam-announcement-533236528800859570",
           "title": "Build 139a",
           "eventType": "release-notes",
           "source": {
@@ -252,7 +341,7 @@
       "deadlineSource": null,
       "freshUntil": "2026-11-04T05:26:54.748Z",
       "priceValidUntil": "2026-11-04T23:26:54.748Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=837880&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -322,7 +411,7 @@
       },
       "freshUntil": "2026-11-04T05:26:54.748Z",
       "priceValidUntil": "2026-11-04T23:26:54.748Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1339000&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -392,7 +481,7 @@
       },
       "freshUntil": "2026-11-04T05:26:54.748Z",
       "priceValidUntil": "2026-11-04T23:26:54.748Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=752590&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -518,7 +607,7 @@
       },
       "freshUntil": "2026-11-04T05:26:54.748Z",
       "priceValidUntil": "2026-11-04T23:26:54.748Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=814370&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -562,8 +651,8 @@
           "kind": "update",
           "checkedAt": "2026-11-03T23:26:54.748Z",
           "freshUntil": "2026-11-04T05:26:54.748Z",
-          "eventId": "steam-announcement-680756051157450814",
           "date": "2026-07-16T13:05:25.000Z",
+          "eventId": "steam-announcement-680756051157450814",
           "title": "Monster Sanctuary Update 2.2 out now",
           "eventType": "release-notes",
           "source": {
@@ -593,7 +682,7 @@
       "deadlineSource": null,
       "freshUntil": "2026-11-04T05:26:54.748Z",
       "priceValidUntil": "2026-11-04T23:26:54.748Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=534380&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -775,7 +864,7 @@
       },
       "freshUntil": "2026-11-04T05:26:54.748Z",
       "priceValidUntil": "2026-11-04T23:26:54.748Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=3322630&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -831,7 +920,7 @@
       "deadlineSource": null,
       "freshUntil": "2026-11-04T05:26:54.748Z",
       "priceValidUntil": "2026-11-04T23:26:54.748Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=4096830&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -875,8 +964,8 @@
           "kind": "update",
           "checkedAt": "2026-11-03T23:26:54.748Z",
           "freshUntil": "2026-11-04T05:26:54.748Z",
-          "eventId": "steam-announcement-705535362075723919",
           "date": "2026-10-31T10:41:58.000Z",
+          "eventId": "steam-announcement-705535362075723919",
           "title": "Changelog 1.0.3.0.",
           "eventType": "release-notes",
           "source": {
@@ -906,7 +995,7 @@
       "deadlineSource": null,
       "freshUntil": "2026-11-04T05:26:54.748Z",
       "priceValidUntil": "2026-11-04T23:26:54.748Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1742440&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -950,8 +1039,8 @@
           "kind": "update",
           "checkedAt": "2026-11-03T23:26:54.748Z",
           "freshUntil": "2026-11-04T05:26:54.748Z",
-          "eventId": "steam-announcement-717917092255368231",
           "date": "2026-09-23T18:04:14.000Z",
+          "eventId": "steam-announcement-717917092255368231",
           "title": "September 23 - Demo update v0.98c5",
           "eventType": "release-notes",
           "source": {
@@ -995,7 +1084,7 @@
       },
       "freshUntil": "2026-11-04T05:26:54.748Z",
       "priceValidUntil": "2026-11-04T23:26:54.748Z",
-      "status": "verified",
+      "status": "cached",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=3107530&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -1039,8 +1128,8 @@
           "kind": "update",
           "checkedAt": "2026-11-03T23:26:54.748Z",
           "freshUntil": "2026-11-04T05:26:54.748Z",
-          "eventId": "steam-announcement-695398457627639973",
           "date": "2026-09-17T07:17:35.000Z",
+          "eventId": "steam-announcement-695398457627639973",
           "title": "Upcoming Demo Changes",
           "eventType": "release-notes",
           "source": {
@@ -1056,9 +1145,21 @@
   "sources": [
     {
       "kind": "article",
+      "url": "https://news.denfaminicogamer.jp/news/261104o",
+      "checkedAt": "2026-11-04T03:20:14.120Z",
+      "status": "ok",
+      "candidates": [
+        {
+          "appId": 2487390,
+          "articleGameTitle": "『For the GHOSTs』"
+        }
+      ]
+    },
+    {
+      "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/261103a",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": [
         {
           "appId": 115800,
@@ -1070,7 +1171,7 @@
       "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/20261101-477026",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": [
         {
           "appId": 744050,
@@ -1132,198 +1233,121 @@
     },
     {
       "kind": "steam",
-      "appId": 115800,
-      "url": "https://store.steampowered.com/api/appdetails?appids=115800&cc=jp&l=japanese",
-      "checkedAt": "2026-11-03T23:26:54.748Z",
+      "appId": 2487390,
+      "url": "https://store.steampowered.com/api/appdetails?appids=2487390&cc=jp&l=japanese",
+      "checkedAt": "2026-11-04T03:20:14.120Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261103a"
+        "https://news.denfaminicogamer.jp/news/261104o"
       ],
       "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 115800,
+      "url": "https://store.steampowered.com/api/appdetails?appids=115800&cc=jp&l=japanese",
+      "checkedAt": "2026-11-03T23:26:54.748Z",
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 744050,
       "url": "https://store.steampowered.com/api/appdetails?appids=744050&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1062830,
       "url": "https://store.steampowered.com/api/appdetails?appids=1062830&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 837880,
       "url": "https://store.steampowered.com/api/appdetails?appids=837880&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1339000,
       "url": "https://store.steampowered.com/api/appdetails?appids=1339000&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 752590,
       "url": "https://store.steampowered.com/api/appdetails?appids=752590&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1310410,
       "url": "https://store.steampowered.com/api/appdetails?appids=1310410&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": false,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 814370,
       "url": "https://store.steampowered.com/api/appdetails?appids=814370&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 534380,
       "url": "https://store.steampowered.com/api/appdetails?appids=534380&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1293160,
       "url": "https://store.steampowered.com/api/appdetails?appids=1293160&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": false,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 2073250,
       "url": "https://store.steampowered.com/api/appdetails?appids=2073250&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": false,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 3322630,
       "url": "https://store.steampowered.com/api/appdetails?appids=3322630&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 4096830,
       "url": "https://store.steampowered.com/api/appdetails?appids=4096830&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 1742440,
       "url": "https://store.steampowered.com/api/appdetails?appids=1742440&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "unknown",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     },
     {
       "kind": "steam",
       "appId": 3107530,
       "url": "https://store.steampowered.com/api/appdetails?appids=3107530&cc=jp&l=japanese",
       "checkedAt": "2026-11-03T23:26:54.748Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://automaton-media.com/articles/newsjp/20261101-477026"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "verified"
+      "status": "cached"
     }
   ]
 }

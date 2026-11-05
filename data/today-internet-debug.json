@@ -1,11 +1,65 @@
 {
-  "generatedAt": "2026-11-04T18:54:38.718Z",
+  "generatedAt": "2026-11-05T00:23:13.688Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-65",
-  "selectedTitle": "『ファイナルファンタジーVII リメイク』『リバース』どっちも「986円」でセール中、ぶっちぎりの過去最安値に。最終作に備えるチャンス",
+  "selectedClusterId": "today-cluster-176",
+  "selectedTitle": "声優の母が用意した朝ご飯→添えられたメモを見ると……「なんて??」　目を疑う光景に「脳みそがバグる」「その発想はなかった」",
   "candidates": [
     {
-      "clusterId": "today-cluster-65",
+      "clusterId": "today-cluster-176",
+      "title": "声優の母が用意した朝ご飯→添えられたメモを見ると……「なんて??」　目を疑う光景に「脳みそがバグる」「その発想はなかった」",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "anime",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.7,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.3,
+        "internetNativeBoost": 8,
+        "search": 4.2,
+        "social": 7.4,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 32.9,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-106",
       "title": "『ファイナルファンタジーVII リメイク』『リバース』どっちも「986円」でセール中、ぶっちぎりの過去最安値に。最終作に備えるチャンス",
       "category": "games",
       "categories": [
@@ -57,31 +111,33 @@
       ]
     },
     {
-      "clusterId": "today-cluster-32",
-      "title": "もこもこヒツジの毛を刈るゲーム『Shear It!』Steamストアページが公開中。“巨大なヒツジ”にも会える",
-      "category": "games",
+      "clusterId": "today-cluster-337",
+      "title": "10歳息子「『鬼滅の刃』の善逸になりたい」→母も着物に着替えたら……　「再現度やばっ」「親子でカッコイイ」「完璧です」",
+      "category": "entertainment",
       "categories": [
-        "games",
+        "entertainment",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.3,
-      "confidence": 0.37,
-      "articleCount": 2,
+      "buzzScore": 64.2,
+      "confidence": 0.35,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 19.1,
+        "trend": 18.3,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 5.5,
-        "velocity": 0,
-        "freshness": 5.5,
+        "search": 4.2,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -93,13 +149,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 44.9,
-        "internalSocialScore": 43
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 32.9,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -108,35 +164,37 @@
       ]
     },
     {
-      "clusterId": "today-cluster-67",
-      "title": "【速報】高市首相、温暖化会議のCOP31欠席へ",
-      "category": "politics",
+      "clusterId": "today-cluster-29",
+      "title": "GitHubで最も使われている言語は2年連続TypeScript、プルリクの増加率はRust。急成長したOSSはCC Switch、Omarchyなど。GitHub Octoverse 2026",
+      "category": "games",
       "categories": [
-        "politics",
+        "games",
         "sns",
         "net-culture",
+        "world",
         "general"
       ],
-      "buzzScore": 62,
-      "confidence": 0.43,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 61.2,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 18,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 6.9,
+        "search": 6,
+        "social": 8.4,
         "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -147,11 +205,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 43.1,
-        "internalSocialScore": 54
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -160,7 +218,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-83",
+      "clusterId": "today-cluster-99",
       "title": "ガラクタからメカを組み立てるゲーム『Gutter Scrap』Steamストアページ公開。解体用の鉄球や葬儀用の鐘も武器にして戦う",
       "category": "games",
       "categories": [
@@ -204,57 +262,6 @@
         "archiveHeatScore": 83,
         "internalSearchScore": 42.7,
         "internalSocialScore": 53.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-53",
-      "title": "親友を何度も「改造」して戦場に送り出すゲーム『がんばれ相棒』Steam版が2027年に発売へ。親友が死なないよう、壊れないように改造を繰り返すフリーゲームの製品版",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 60.2,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.4,
-        "internetNativeBoost": 8,
-        "search": 5.4,
-        "social": 5.5,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 42.1,
-        "internalSocialScore": 43
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

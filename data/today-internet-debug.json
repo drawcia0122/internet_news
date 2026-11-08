@@ -1,93 +1,39 @@
 {
-  "generatedAt": "2026-11-08T13:17:13.854Z",
+  "generatedAt": "2026-11-08T18:32:07.407Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-2",
-  "selectedTitle": "【速報】「RIZIN55」全試合結果レポート　トニー・ララミーがフライ級王座戴冠、青木真也の引退試合も発表",
+  "selectedClusterId": "today-cluster-329",
+  "selectedTitle": "商品に個体差「不揃い」バズる訳",
   "candidates": [
     {
-      "clusterId": "today-cluster-2",
-      "title": "【速報】「RIZIN55」全試合結果レポート　トニー・ララミーがフライ級王座戴冠、青木真也の引退試合も発表",
-      "category": "entertainment",
+      "clusterId": "today-cluster-329",
+      "title": "商品に個体差「不揃い」バズる訳",
+      "category": "net-culture",
       "categories": [
-        "entertainment",
-        "sns",
         "net-culture",
+        "sns",
+        "business",
         "general"
       ],
-      "buzzScore": 69.9,
-      "confidence": 0.42,
+      "buzzScore": 62.7,
+      "confidence": 0.41,
       "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 42.9,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-162",
-      "title": "「VIVANT」最終回 SNSの反応",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "entertainment",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 68.8,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
+        "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
         "search": 5,
         "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -111,7 +57,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-17",
+      "clusterId": "today-cluster-31",
       "title": "「ALL․Net」「Aime」メンテナンスについての続報が発表。『太鼓の達人』や『ガンダムEXVS.2』などバンダイナムコの対象タイトルが試験的に稼働を再開",
       "category": "games",
       "categories": [
@@ -119,7 +65,7 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.6,
+      "buzzScore": 62.3,
       "confidence": 0.37,
       "articleCount": 2,
       "sourceCount": 1,
@@ -132,8 +78,8 @@
         "sourceDiversity": 2.3,
         "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 5.6,
+        "search": 5.7,
+        "social": 5.5,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 1.5,
@@ -149,11 +95,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 60,
         "archiveHeatScore": 87,
-        "internalSearchScore": 46.1,
-        "internalSocialScore": 43.8
+        "internalSearchScore": 44.9,
+        "internalSocialScore": 43
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -162,70 +108,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-27",
-      "title": "桜壱バーゲン＆沖田×華が明かす漫画家夫婦秘話「『透明なゆりかご』の大ヒットも精神的に追い詰められ」「夫が教えてくれた新しい色」",
-      "category": "manga",
+      "clusterId": "today-cluster-415",
+      "title": "「VIVANT」最終回 SNSの反応",
+      "category": "net-culture",
       "categories": [
-        "manga",
+        "net-culture",
         "entertainment",
         "sns",
-        "net-culture",
         "general"
       ],
-      "buzzScore": 61.6,
-      "confidence": 0.39,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 15.8,
-        "internetNativeBoost": 0,
-        "search": 5.2,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 72,
-        "internalSearchScore": 40.8,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-938",
-      "title": "「機動新世紀ガンダムX」ガンダムカードゲームプレミアムグッズセットが抽選販売中！「ガンダムDX」新規イラストカードなど同梱",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 61.4,
-      "confidence": 0.34,
+      "buzzScore": 61.5,
+      "confidence": 0.33,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -235,10 +128,10 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 4.5,
+        "search": 4.6,
+        "social": 5.9,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 1.5,
@@ -255,10 +148,114 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 36,
+        "internalSocialScore": 45.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1336",
+      "title": "「トイ・ストーリー」ウッディ、ジェシー、バズたちの名シーンを再現☆ ラストワン賞はエイリアン貯金箱！ 思い出がつまった「一番くじ」が登場",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 60.8,
+      "confidence": 0.32,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20.9,
+        "internetNativeBoost": 8,
+        "search": 4.5,
+        "social": 7.2,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 35.2,
+        "internalSocialScore": 56.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-3",
+      "title": "【最大4人マルチ】バラバラのブロックから1つの作品を作るゲーム『Brick Buddies』が本日11月9日にSteamで発売。落ち着く雰囲気の家や宇宙船、懐かしのゲーム機まで多彩なテーマの作品が登場",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 60,
+      "confidence": 0.4,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 15.6,
+        "internetNativeBoost": 0,
+        "search": 5.2,
+        "social": 5.6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 34.9
+        "archiveHeatScore": 71,
+        "internalSearchScore": 40.5,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

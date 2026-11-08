@@ -1,17 +1,1328 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T06:00:50.193Z",
+  "generatedAt": "2026-11-08T13:25:49.124Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
-  "items": [],
+  "items": [
+    {
+      "id": "steam:323190",
+      "appId": 323190,
+      "title": "フロストパンク",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/323190/?cc=jp&l=japanese",
+      "regularPrice": 3400,
+      "salePrice": 340,
+      "discountPercent": 90,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=323190&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323190/abcd2bf3c275092d637d7dd98e0061dbdd2fd2da/header.jpg?t=1793633192",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "フロストパンク"
+        }
+      ],
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 323190
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2018-04-24",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=323190&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1232460",
+      "appId": 1232460,
+      "title": "お姉チャンバラORIGIN",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1232460/?cc=jp&l=japanese",
+      "regularPrice": 7980,
+      "salePrice": 1995,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1232460&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1232460/header_japanese.jpg?t=1782117184",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "お姉チャンバラORIGIN"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1232460
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2020-10-14",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1232460&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1000010",
+      "appId": 1000010,
+      "title": "Crown Trick / 不思议的皇冠",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1000010/?cc=jp&l=japanese",
+      "regularPrice": 2050,
+      "salePrice": 512,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1000010&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1000010/header.jpg?t=1780479685",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "Crown Trick"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1000010
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2020-10-16",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1000010&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:527230",
+      "appId": 527230,
+      "title": "For The King",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/527230/?cc=jp&l=japanese",
+      "regularPrice": 2050,
+      "salePrice": 205,
+      "discountPercent": 90,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": "2026-11-19T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A527230%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/527230/?cc=jp&l=japanese",
+        "appId": 527230,
+        "packageId": 126353,
+        "discountEndDate": 1795111200,
+        "checkedAt": "2026-11-08T13:25:49.124Z",
+        "regularPrice": 2050,
+        "salePrice": 205,
+        "discountPercent": 90,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=527230&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/527230/header.jpg?t=1793907567",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "For The King"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 527230
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2018-04-19",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=527230&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:869690",
+      "appId": 869690,
+      "title": "Cat Lady - The Card Game",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/869690/?cc=jp&l=japanese",
+      "regularPrice": 470,
+      "salePrice": 94,
+      "discountPercent": 80,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": "2026-11-15T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A869690%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/869690/?cc=jp&l=japanese",
+        "appId": 869690,
+        "packageId": 274531,
+        "discountEndDate": 1794765600,
+        "checkedAt": "2026-11-08T13:25:49.124Z",
+        "regularPrice": 470,
+        "salePrice": 94,
+        "discountPercent": 80,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=869690&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/869690/header.jpg?t=1760518835",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "Cat Lady – The Card Game"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 869690
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2019-12-12",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=869690&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:985890",
+      "appId": 985890,
+      "title": "ベア・ナックル4",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/985890/?cc=jp&l=japanese",
+      "regularPrice": 2570,
+      "salePrice": 642,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=985890&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/985890/header.jpg?t=1763718423",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "ベア・ナックル4"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 985890
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2020-04-30",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=985890&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 985890
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "eventId": "steam-announcement-3124932640680136498",
+          "date": "2021-12-13T15:18:04.000Z",
+          "title": "STREETS OF RAGE 4 - GAME STABILITY PATCH",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:985890",
+            "url": "https://steamcommunity.com/ogg/985890/announcements/detail/3124932640680136498",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1332720",
+      "appId": 1332720,
+      "title": "Thief Simulator 2",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1332720/?cc=jp&l=japanese",
+      "regularPrice": 2300,
+      "salePrice": 437,
+      "discountPercent": 81,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": "2026-11-14T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1332720%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1332720/?cc=jp&l=japanese",
+        "appId": 1332720,
+        "packageId": 465689,
+        "discountEndDate": 1794675600,
+        "checkedAt": "2026-11-08T13:25:49.124Z",
+        "regularPrice": 2300,
+        "salePrice": 437,
+        "discountPercent": 81,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1332720&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332720/header.jpg?t=1793732267",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "Thief Simulator 2"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1332720
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2023-10-04",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1332720&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:456670",
+      "appId": 456670,
+      "title": "Hand of Fate 2",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/456670/?cc=jp&l=japanese",
+      "regularPrice": 3090,
+      "salePrice": 618,
+      "discountPercent": 80,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": "2026-11-09T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A456670%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/456670/?cc=jp&l=japanese",
+        "appId": 456670,
+        "packageId": 98984,
+        "discountEndDate": 1794247200,
+        "checkedAt": "2026-11-08T13:25:49.124Z",
+        "regularPrice": 3090,
+        "salePrice": 618,
+        "discountPercent": 80,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=456670&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/456670/header.jpg?t=1768889222",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "Hand of Fate 2"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 456670
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2017-11-07",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=456670&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:729040",
+      "appId": 729040,
+      "title": "Borderlands Game of the Year Enhanced",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/729040/?cc=jp&l=japanese",
+      "regularPrice": 3780,
+      "salePrice": 378,
+      "discountPercent": 90,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=729040&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/729040/header.jpg?t=1750080828",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "Borderlands Game of the Year Enhanced"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 729040
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2023-08-31",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=729040&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1045620",
+      "appId": 1045620,
+      "title": "ルルアのアトリエ ～アーランドの錬金術士４～",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1045620/?cc=jp&l=japanese",
+      "regularPrice": 8580,
+      "salePrice": 2145,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": "2026-11-17T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1045620%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1045620/?cc=jp&l=japanese",
+        "appId": 1045620,
+        "packageId": 348456,
+        "discountEndDate": 1794938400,
+        "checkedAt": "2026-11-08T13:25:49.124Z",
+        "regularPrice": 8580,
+        "salePrice": 2145,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1045620&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1045620/header.jpg?t=1793771259",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "ルルアのアトリエ ～アーランドの錬金術士４～"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1045620
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2019-05-20",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1045620&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1045620
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "eventId": "steam-announcement-1591382041190374452",
+          "date": "2019-09-04T01:15:22.000Z",
+          "title": "Update Information Ver 1.04 (09.04.2019)",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1045620",
+            "url": "https://steamcommunity.com/ogg/1045620/announcements/detail/1591382041190374452",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:48190",
+      "appId": 48190,
+      "title": "Assassin’s Creed® Brotherhood",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/48190/?cc=jp&l=japanese",
+      "regularPrice": 1944,
+      "salePrice": 486,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=48190&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/48190/header.jpg?t=1786611524",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "Assassin’s Creed Brotherhood"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 48190
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2011-03-17",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=48190&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1372110",
+      "appId": 1372110,
+      "title": "ジョジョの奇妙な冒険 オールスターバトル R",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1372110/?cc=jp&l=japanese",
+      "regularPrice": 7678,
+      "salePrice": 1535,
+      "discountPercent": 80,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": "2026-11-10T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1372110%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1372110/?cc=jp&l=japanese",
+        "appId": 1372110,
+        "packageId": 481301,
+        "discountEndDate": 1794333600,
+        "checkedAt": "2026-11-08T13:25:49.124Z",
+        "regularPrice": 7678,
+        "salePrice": 1535,
+        "discountPercent": 80,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1372110&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1372110/header_japanese.jpg?t=1720409046",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "ジョジョの奇妙な冒険 オールスターバトル R"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1372110
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2022-09-01",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1372110&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1372110
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "eventId": "steam-announcement-4013338768768850786",
+          "date": "2024-02-09T03:34:11.000Z",
+          "title": "Update Patch Version 2.3.3 Details",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1372110",
+            "url": "https://steamcommunity.com/ogg/1372110/announcements/detail/4013338768768850786",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1460810",
+      "appId": 1460810,
+      "title": "Dungeon Munchies 2 餐癮地城：貳度救業",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1460810/?cc=jp&l=japanese",
+      "regularPrice": 1500,
+      "salePrice": 1350,
+      "discountPercent": 10,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1460810&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1460810/3635f5bbc2900f318df56dc4209c325a012d87bd/header.jpg?t=1793977283",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "Dungeon Munchies 2"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1460810
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2026-11-05",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1460810&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1460810
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "eventId": "steam-announcement-688647770090766428",
+          "date": "2026-11-08T04:06:25.000Z",
+          "title": "0.1.41 updates",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1460810",
+            "url": "https://steamcommunity.com/ogg/1460810/announcements/detail/688647770090766428",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:2448570",
+      "appId": 2448570,
+      "title": "ロードラッシュ™: 30th Anniversary Edition",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/2448570/?cc=jp&l=japanese",
+      "regularPrice": 1400,
+      "salePrice": 700,
+      "discountPercent": 50,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": "2026-11-19T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A2448570%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/2448570/?cc=jp&l=japanese",
+        "appId": 2448570,
+        "packageId": 1475540,
+        "discountEndDate": 1795111200,
+        "checkedAt": "2026-11-08T13:25:49.124Z",
+        "regularPrice": 1400,
+        "salePrice": 700,
+        "discountPercent": 50,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2448570&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2448570/a12ed683c51938590f28400c89cd8c8204e1e8db/header.jpg?t=1793986604",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "ロードラッシュ: 30th Anniversary Edition"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2448570
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2026-11-05",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=2448570&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:4621810",
+      "appId": 4621810,
+      "title": "Livin' the Cream: Ice Cream Simulator",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/4621810/?cc=jp&l=japanese",
+      "regularPrice": 1280,
+      "salePrice": 1024,
+      "discountPercent": 20,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "endsAt": "2026-11-17T18:00:56.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A4621810%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/4621810/?cc=jp&l=japanese",
+        "appId": 4621810,
+        "packageId": 1610007,
+        "discountEndDate": 1794938456,
+        "checkedAt": "2026-11-08T13:25:49.124Z",
+        "regularPrice": 1280,
+        "salePrice": 1024,
+        "discountPercent": 20,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-08T19:25:49.124Z",
+      "priceValidUntil": "2026-11-09T13:25:49.124Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=4621810&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4621810/e2bd2d18e20cbe2b09a6bcd94c7e92846a6100f6/header_alt_assets_0_japanese.jpg?t=1793982874",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+          "title": "『ボーダーランズ』決定版が90％オフでわずか378円。『フロストパンク』も90％オフ、こちらはたった340円。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-08T08:02:37.000Z",
+          "topicId": "auto-games-ボーダーランズ-決定版が90-オフでわずか378円-フロストパンク-も90-オフ-こちらはたった340円-今週の高割引率pcゲーム-automaton-media.com/articles/newsjp/20261108-478140",
+          "gameTitle": "Livin’ the Cream: Ice Cream Simulator"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4621810
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "date": "2026-11-03",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=4621810&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4621810
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-08T13:25:49.124Z",
+          "freshUntil": "2026-11-08T19:25:49.124Z",
+          "eventId": "steam-announcement-697654969087557725",
+          "date": "2026-11-07T20:42:25.000Z",
+          "title": "Update Notes for Nov 7 (Patch 4)",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:4621810",
+            "url": "https://steamcommunity.com/ogg/4621810/announcements/detail/697654969087557725",
+            "verified": true
+          }
+        }
+      ]
+    }
+  ],
   "sources": [
     {
       "kind": "article",
+      "url": "https://automaton-media.com/articles/newsjp/20261108-478140",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "candidates": [
+        {
+          "appId": 323190,
+          "articleGameTitle": "フロストパンク"
+        },
+        {
+          "appId": 1232460,
+          "articleGameTitle": "お姉チャンバラORIGIN"
+        },
+        {
+          "appId": 1000010,
+          "articleGameTitle": "Crown Trick"
+        },
+        {
+          "appId": 527230,
+          "articleGameTitle": "For The King"
+        },
+        {
+          "appId": 869690,
+          "articleGameTitle": "Cat Lady – The Card Game"
+        },
+        {
+          "appId": 985890,
+          "articleGameTitle": "ベア・ナックル4"
+        },
+        {
+          "appId": 1332720,
+          "articleGameTitle": "Thief Simulator 2"
+        },
+        {
+          "appId": 456670,
+          "articleGameTitle": "Hand of Fate 2"
+        },
+        {
+          "appId": 729040,
+          "articleGameTitle": "Borderlands Game of the Year Enhanced"
+        },
+        {
+          "appId": 1045620,
+          "articleGameTitle": "ルルアのアトリエ ～アーランドの錬金術士４～"
+        },
+        {
+          "appId": 48190,
+          "articleGameTitle": "Assassin’s Creed Brotherhood"
+        },
+        {
+          "appId": 1372110,
+          "articleGameTitle": "ジョジョの奇妙な冒険 オールスターバトル R"
+        },
+        {
+          "appId": 1460810,
+          "articleGameTitle": "Dungeon Munchies 2"
+        },
+        {
+          "appId": 2448570,
+          "articleGameTitle": "ロードラッシュ: 30th Anniversary Edition"
+        },
+        {
+          "appId": 4621810,
+          "articleGameTitle": "Livin’ the Cream: Ice Cream Simulator"
+        }
+      ]
+    },
+    {
+      "kind": "article",
       "url": "https://automaton-media.com/articles/newsjp/20261104-477612",
-      "checkedAt": "2026-11-08T00:02:10.235Z",
-      "status": "cached",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
       "candidates": []
+    },
+    {
+      "kind": "steam",
+      "appId": 323190,
+      "url": "https://store.steampowered.com/api/appdetails?appids=323190&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1232460,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1232460&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1000010,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1000010&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 527230,
+      "url": "https://store.steampowered.com/api/appdetails?appids=527230&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 869690,
+      "url": "https://store.steampowered.com/api/appdetails?appids=869690&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 985890,
+      "url": "https://store.steampowered.com/api/appdetails?appids=985890&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 1332720,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1332720&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 456670,
+      "url": "https://store.steampowered.com/api/appdetails?appids=456670&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 729040,
+      "url": "https://store.steampowered.com/api/appdetails?appids=729040&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1045620,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1045620&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 48190,
+      "url": "https://store.steampowered.com/api/appdetails?appids=48190&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1372110,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1372110&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 1460810,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1460810&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 2448570,
+      "url": "https://store.steampowered.com/api/appdetails?appids=2448570&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 4621810,
+      "url": "https://store.steampowered.com/api/appdetails?appids=4621810&cc=jp&l=japanese",
+      "checkedAt": "2026-11-08T13:25:49.124Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261108-478140"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
     }
   ]
 }

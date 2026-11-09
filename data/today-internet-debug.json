@@ -1,76 +1,22 @@
 {
-  "generatedAt": "2026-11-09T01:59:29.129Z",
+  "generatedAt": "2026-11-09T09:41:44.221Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-17",
-  "selectedTitle": "コード非公開のWebサイト・アプリ・ゲームを解析し、AIが類似版を生成する無料ツール「Craft Anything」",
+  "selectedClusterId": "today-cluster-8",
+  "selectedTitle": "VTuberやタレントのライブ配信をAIが監視──不適切発言などを事務所に通知するサービス登場",
   "candidates": [
     {
-      "clusterId": "today-cluster-17",
-      "title": "コード非公開のWebサイト・アプリ・ゲームを解析し、AIが類似版を生成する無料ツール「Craft Anything」",
-      "category": "tech",
+      "clusterId": "today-cluster-8",
+      "title": "VTuberやタレントのライブ配信をAIが監視──不適切発言などを事務所に通知するサービス登場",
+      "category": "entertainment",
       "categories": [
-        "tech",
-        "games",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 73.7,
-      "confidence": 0.42,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-11",
-      "title": "星野源、“古巣”阿佐ヶ谷が舞台のアニメ『ひらやすみ』のOP主題歌を担当　現地を訪れて制作",
-      "category": "anime",
-      "categories": [
-        "anime",
         "entertainment",
+        "business",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 71.6,
-      "confidence": 0.42,
+      "buzzScore": 76.7,
+      "confidence": 0.5,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -82,14 +28,14 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.4,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5.5,
+        "search": 6.5,
         "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 8.3,
+        "freshness": 10,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -103,8 +49,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -114,60 +60,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-15",
-      "title": "AIが「最安」を選び続ける世界は幸せなのか? Museと節約・買い物自動化の光と影【西田宗千佳のイマトミライ】",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 71,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1206",
+      "clusterId": "today-cluster-2059",
       "title": "「VIVANT」最終回 SNSの反応",
       "category": "net-culture",
       "categories": [
@@ -219,32 +112,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-25",
-      "title": "交番侵入し「ショウリンジ」絶叫・警官挑発し「ポリ鬼」、中高生の迷惑行為横行・動画拡散で拍車…逮捕者も",
+      "clusterId": "today-cluster-79",
+      "title": "【速報】いわゆる“ニセ基地局”を摘発 東京・銀座の路上でスマートフォンの通信を妨害か 中国籍の男（31）を電波法違反の疑いで逮捕　相談相次ぐ 警視庁",
       "category": "crime",
       "categories": [
         "crime",
         "sns",
         "net-culture",
+        "world",
         "general"
       ],
-      "buzzScore": 66.9,
-      "confidence": 0.46,
+      "buzzScore": 67,
+      "confidence": 0.45,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 6.4,
-        "social": 7,
+        "search": 6.5,
+        "social": 8.4,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 2.5,
         "categoryBias": 4,
         "penalty": 0
@@ -258,11 +153,117 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 23.1,
-        "crossCategoryScore": 80,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
         "archiveHeatScore": 100,
-        "internalSearchScore": 50,
-        "internalSocialScore": 54.4
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-312",
+      "title": "「VIVANT」が集合写真公開→「これ嵐に見える……」と話題「確かにw」「既視感って思ったらそれだ！」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 66.4,
+      "confidence": 0.37,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20,
+        "internetNativeBoost": 8,
+        "search": 4.6,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 35.8,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-516",
+      "title": "「何なんだよこれ！！」VIVANT映画予告の“最後のシーン”に困惑の声続々「意味深」「違和感しかない…」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.6,
+      "confidence": 0.36,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 19.4,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 88,
+        "internalSearchScore": 34.7,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

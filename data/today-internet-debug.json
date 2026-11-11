@@ -1,91 +1,41 @@
 {
-  "generatedAt": "2026-11-10T23:46:23.345Z",
+  "generatedAt": "2026-11-11T06:01:21.917Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-607",
-  "selectedTitle": "『GTA 6』がPS Store/Microsoft Store史上最多予約数を記録！PS5/XBOX Series X|S版ともプリロード開始",
+  "selectedClusterId": "today-cluster-24",
+  "selectedTitle": "『DELTARUNE』「プルーイ」と「クイーン」の“投票イベント”が突如開始。次回のニュースレターでの「チャプター6」先行公開動画が決まる？",
   "candidates": [
     {
-      "clusterId": "today-cluster-607",
-      "title": "『GTA 6』がPS Store/Microsoft Store史上最多予約数を記録！PS5/XBOX Series X|S版ともプリロード開始",
-      "category": "games",
+      "clusterId": "today-cluster-24",
+      "title": "『DELTARUNE』「プルーイ」と「クイーン」の“投票イベント”が突如開始。次回のニュースレターでの「チャプター6」先行公開動画が決まる？",
+      "category": "politics",
       "categories": [
+        "politics",
         "games",
-        "tech",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 67.5,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 33.2,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-157",
-      "title": "「M!LK好きなんでしょ、あげるよ」　3年ぶりに会ったイトコがくれたのは……驚がくのグッズに「伝説の！」「えぇ!?凄すぎます」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
         "net-culture",
+        "sns",
         "general"
       ],
-      "buzzScore": 67.2,
-      "confidence": 0.37,
-      "articleCount": 1,
+      "buzzScore": 67.1,
+      "confidence": 0.43,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.3,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 6,
-        "velocity": 4.2,
-        "freshness": 10,
+        "search": 5.6,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -95,13 +45,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 32.9,
-        "internalSocialScore": 46.7
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 44,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -110,8 +60,8 @@
       ]
     },
     {
-      "clusterId": "today-cluster-121",
-      "title": "Steamストアで「ゲームの平均フレームレート」を確認できるように、まずはSteam Deck向けに。だいたい何fps出るか、買う前にわかる",
+      "clusterId": "today-cluster-93",
+      "title": "ゲーム日本語化ツール「PCOT」次のアプデで開発終了へ。AIの進化で“セルフ直接日本語化”の未来が見えたため",
       "category": "games",
       "categories": [
         "games",
@@ -119,8 +69,8 @@
         "sns",
         "net-culture"
       ],
-      "buzzScore": 66.8,
-      "confidence": 0.37,
+      "buzzScore": 65.2,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 1,
@@ -130,9 +80,9 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 3.8,
-        "trend": 18.9,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 5.6,
+        "search": 5.3,
         "social": 6.8,
         "velocity": 0,
         "freshness": 3.5,
@@ -151,8 +101,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 21,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 43.8,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 41.7,
         "internalSocialScore": 53.5
       },
       "externalSignalErrors": [
@@ -162,36 +112,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-283",
-      "title": "アマゾンで“新種のサル”2種が見つかる――　85年ぶりの新発見も、研究者は絶滅の危険性も危惧【海外】",
-      "category": "entertainment",
+      "clusterId": "today-cluster-1359",
+      "title": "『GTA 6』がPS Store/Microsoft Store史上最多予約数を記録！PS5/XBOX Series X|S版ともプリロード開始",
+      "category": "games",
       "categories": [
-        "entertainment",
+        "games",
+        "tech",
         "sns",
-        "net-culture",
         "general"
       ],
-      "buzzScore": 65.3,
-      "confidence": 0.36,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 64.3,
+      "confidence": 0.35,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.1,
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 18.3,
         "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
+        "search": 4,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -202,11 +151,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 3,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
-        "internalSocialScore": 46.7
+        "archiveHeatScore": 83,
+        "internalSearchScore": 31,
+        "internalSocialScore": 45.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -215,18 +164,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-320",
-      "title": "コスモス畑かと思ったら……“気付いた”人だけ叫ぶ光景が36万表示「3度見した投稿ってあんまない」「声が出ました」",
-      "category": "entertainment",
+      "clusterId": "today-cluster-5",
+      "title": "PS5、売上「1億台」突破。『グランド・セフト・オートVI（GTA6）』発売目前での大台達成",
+      "category": "games",
       "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
+        "games",
         "general"
       ],
-      "buzzScore": 64.8,
-      "confidence": 0.35,
-      "articleCount": 1,
+      "buzzScore": 63.1,
+      "confidence": 0.45,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
@@ -234,16 +181,16 @@
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "trend": 20.5,
         "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 6,
-        "velocity": 2.7,
+        "search": 6.2,
+        "social": 4.2,
+        "velocity": 5.3,
         "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 6,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -253,13 +200,65 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 46.7
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 93,
+        "internalSearchScore": 48.2,
+        "internalSocialScore": 32.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-12",
+      "title": "汚部屋お掃除ゲーム『リーナのお掃除物語』Steamで「好評率93％」の熱烈人気。ゴミを捨てるほど見える人間ドラマ、汚い部屋に人生あり",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 61.6,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 5.6,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

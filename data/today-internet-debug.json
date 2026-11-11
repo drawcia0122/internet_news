@@ -1,41 +1,38 @@
 {
-  "generatedAt": "2026-11-11T06:01:21.917Z",
+  "generatedAt": "2026-11-11T14:06:50.436Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-24",
-  "selectedTitle": "『DELTARUNE』「プルーイ」と「クイーン」の“投票イベント”が突如開始。次回のニュースレターでの「チャプター6」先行公開動画が決まる？",
+  "selectedClusterId": "today-cluster-40",
+  "selectedTitle": "【速報】政府、AI開発事業者に罰則検討",
   "candidates": [
     {
-      "clusterId": "today-cluster-24",
-      "title": "『DELTARUNE』「プルーイ」と「クイーン」の“投票イベント”が突如開始。次回のニュースレターでの「チャプター6」先行公開動画が決まる？",
-      "category": "politics",
+      "clusterId": "today-cluster-40",
+      "title": "【速報】政府、AI開発事業者に罰則検討",
+      "category": "tech",
       "categories": [
-        "politics",
-        "games",
-        "net-culture",
+        "tech",
         "sns",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 67.1,
-      "confidence": 0.43,
+      "buzzScore": 68.9,
+      "confidence": 0.4,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.8,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "search": 6.5,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -48,9 +45,63 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-88",
+      "title": "立花孝志党首、逮捕から1年も勾留続く…SNSでは「いくら何でも長すぎる」の声　弁護士が解説",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "net-culture",
+        "sns",
+        "politics",
+        "general"
+      ],
+      "buzzScore": 67,
+      "confidence": 0.45,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 6.5,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 44,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -60,7 +111,58 @@
       ]
     },
     {
-      "clusterId": "today-cluster-93",
+      "clusterId": "today-cluster-13",
+      "title": "死者の記憶を辿って“罪”を立証するゲーム『レテの河』Steamにて無料体験版が公開中。モノクロの手描きイラストがよすぎる",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 66.7,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 5.6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-148",
       "title": "ゲーム日本語化ツール「PCOT」次のアプデで開発終了へ。AIの進化で“セルフ直接日本語化”の未来が見えたため",
       "category": "games",
       "categories": [
@@ -112,35 +214,36 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1359",
-      "title": "『GTA 6』がPS Store/Microsoft Store史上最多予約数を記録！PS5/XBOX Series X|S版ともプリロード開始",
-      "category": "games",
+      "clusterId": "today-cluster-364",
+      "title": "6年の不妊治療を乗り越え、娘を出産→「まひが出る可能性が……」　7年後の“現在の姿”に反響「涙が出ちゃう」「いいね2万回押したい」投稿者に話を聞いた",
+      "category": "sns",
       "categories": [
-        "games",
-        "tech",
         "sns",
+        "net-culture",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 64.3,
+      "buzzScore": 64,
       "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 18.3,
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 4,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
+        "search": 4.2,
+        "social": 6,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -151,114 +254,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 31,
-        "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-5",
-      "title": "PS5、売上「1億台」突破。『グランド・セフト・オートVI（GTA6）』発売目前での大台達成",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "buzzScore": 63.1,
-      "confidence": 0.45,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.5,
-        "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 4.2,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 93,
-        "internalSearchScore": 48.2,
-        "internalSocialScore": 32.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-12",
-      "title": "汚部屋お掃除ゲーム『リーナのお掃除物語』Steamで「好評率93％」の熱烈人気。ゴミを捨てるほど見える人間ドラマ、汚い部屋に人生あり",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 61.6,
-      "confidence": 0.43,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
         "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 43.8
+        "internalSearchScore": 32.6,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

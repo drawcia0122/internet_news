@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-11T14:06:50.436Z",
+  "generatedAt": "2026-11-11T21:20:37.340Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-40",
+  "selectedClusterId": "today-cluster-66",
   "selectedTitle": "【速報】政府、AI開発事業者に罰則検討",
   "candidates": [
     {
-      "clusterId": "today-cluster-40",
+      "clusterId": "today-cluster-66",
       "title": "【速報】政府、AI開発事業者に罰則検討",
       "category": "tech",
       "categories": [
@@ -14,26 +14,26 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.9,
-      "confidence": 0.4,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 79.4,
+      "confidence": 0.53,
+      "articleCount": 6,
+      "sourceCount": 2,
+      "uniqueDomainCount": 3,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 22,
+        "coverage": 10.8,
+        "sourceDiversity": 5.5,
+        "trend": 20.2,
         "internetNativeBoost": 8,
-        "search": 6.5,
-        "social": 7,
+        "search": 6,
+        "social": 6.9,
         "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
+        "freshness": 5.5,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -44,11 +44,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
-        "internalSocialScore": 54.8
+        "archiveHeatScore": 92,
+        "internalSearchScore": 46.6,
+        "internalSocialScore": 54
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -57,18 +57,19 @@
       ]
     },
     {
-      "clusterId": "today-cluster-88",
-      "title": "立花孝志党首、逮捕から1年も勾留続く…SNSでは「いくら何でも長すぎる」の声　弁護士が解説",
-      "category": "crime",
+      "clusterId": "today-cluster-48",
+      "title": "Z世代がAIブームから一斉に「ログアウト」し始めた深刻な理由　米国",
+      "category": "world",
       "categories": [
-        "crime",
-        "net-culture",
+        "world",
+        "tech",
         "sns",
-        "politics",
+        "net-culture",
+        "business",
         "general"
       ],
-      "buzzScore": 67,
-      "confidence": 0.45,
+      "buzzScore": 66.7,
+      "confidence": 0.41,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -79,14 +80,14 @@
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 22,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 6.5,
+        "search": 5.6,
         "social": 8.4,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 2.5,
-        "categoryBias": 4,
+        "categoryBias": 9,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -100,8 +101,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -111,136 +112,33 @@
       ]
     },
     {
-      "clusterId": "today-cluster-13",
-      "title": "死者の記憶を辿って“罪”を立証するゲーム『レテの河』Steamにて無料体験版が公開中。モノクロの手描きイラストがよすぎる",
+      "clusterId": "today-cluster-689",
+      "title": "クレーンゲームにまさかの……「何これ」「まって、おもろすぎ」思わず取った“景品“に「鍋も一緒にほしいww」",
       "category": "games",
       "categories": [
         "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66.7,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 49.6,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-148",
-      "title": "ゲーム日本語化ツール「PCOT」次のアプデで開発終了へ。AIの進化で“セルフ直接日本語化”の未来が見えたため",
-      "category": "games",
-      "categories": [
-        "games",
-        "general",
-        "sns",
-        "net-culture"
-      ],
-      "buzzScore": 65.2,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 3.8,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 5.3,
-        "social": 6.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 41.7,
-        "internalSocialScore": 53.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-364",
-      "title": "6年の不妊治療を乗り越え、娘を出産→「まひが出る可能性が……」　7年後の“現在の姿”に反響「涙が出ちゃう」「いいね2万回押したい」投稿者に話を聞いた",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
         "entertainment",
+        "sns",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 64,
-      "confidence": 0.35,
+      "buzzScore": 60.5,
+      "confidence": 0.31,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 18.9,
         "internetNativeBoost": 8,
         "search": 4.2,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -254,11 +152,115 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 46.7
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 32.8,
+        "internalSocialScore": 56.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1323",
+      "title": "立花孝志党首、逮捕から1年も勾留続く…SNSでは「いくら何でも長すぎる」の声　弁護士が解説",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "net-culture",
+        "sns",
+        "politics",
+        "general"
+      ],
+      "buzzScore": 60.4,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 37.7,
+        "internalSocialScore": 56.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1867",
+      "title": "【PS Plusゲームカタログ】『デススト2』登場！HD-2D版『ドラクエ3』や『龍が如く8外伝』も配信される2026年11月度ラインナップが豪華で遊びきれない",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 57.8,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 20.7,
+        "internetNativeBoost": 8,
+        "search": 4.5,
+        "social": 4.4,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 6,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 34.9,
+        "internalSocialScore": 34.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

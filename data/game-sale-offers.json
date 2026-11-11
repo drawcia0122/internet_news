@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T14:17:11.079Z",
+  "generatedAt": "2026-11-11T21:29:05.427Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
@@ -18,7 +18,7 @@
       "discountPercent": 55,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-11-11T14:17:11.079Z",
+      "checkedAt": "2026-11-11T21:29:05.427Z",
       "endsAt": "2026-11-24T18:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -27,7 +27,7 @@
         "appId": 1308700,
         "packageId": 456769,
         "discountEndDate": 1795543200,
-        "checkedAt": "2026-11-11T14:17:11.079Z",
+        "checkedAt": "2026-11-11T21:29:05.427Z",
         "regularPrice": 3980,
         "salePrice": 1791,
         "discountPercent": 55,
@@ -35,8 +35,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-11-11T20:17:11.079Z",
-      "priceValidUntil": "2026-11-12T14:17:11.079Z",
+      "freshUntil": "2026-11-12T03:29:05.427Z",
+      "priceValidUntil": "2026-11-12T21:29:05.427Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1308700&cc=jp&l=japanese",
@@ -63,8 +63,8 @@
             "appId": 1308700
           },
           "kind": "release",
-          "checkedAt": "2026-11-11T14:17:11.079Z",
-          "freshUntil": "2026-11-11T20:17:11.079Z",
+          "checkedAt": "2026-11-11T21:29:05.427Z",
+          "freshUntil": "2026-11-12T03:29:05.427Z",
           "date": "2023-10-26",
           "status": "released",
           "source": {
@@ -80,14 +80,14 @@
     {
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/261111w",
-      "checkedAt": "2026-11-11T14:17:11.079Z",
+      "checkedAt": "2026-11-11T21:29:05.427Z",
       "status": "ok",
       "candidates": []
     },
     {
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/261111h",
-      "checkedAt": "2026-11-11T14:17:11.079Z",
+      "checkedAt": "2026-11-11T21:29:05.427Z",
       "status": "ok",
       "candidates": [
         {
@@ -104,7 +104,7 @@
       "kind": "steam",
       "appId": 1308700,
       "url": "https://store.steampowered.com/api/appdetails?appids=1308700&cc=jp&l=japanese",
-      "checkedAt": "2026-11-11T14:17:11.079Z",
+      "checkedAt": "2026-11-11T21:29:05.427Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -118,7 +118,7 @@
       "appId": 5539840,
       "url": "https://store.steampowered.com/api/appdetails?appids=5539840&cc=jp&l=japanese",
       "checkedAt": null,
-      "attemptedAt": "2026-11-11T14:17:11.079Z",
+      "attemptedAt": "2026-11-11T21:29:05.427Z",
       "status": "unavailable",
       "error": "steam_identity_or_edition",
       "articleUrls": [

@@ -1,37 +1,38 @@
 {
-  "generatedAt": "2026-11-12T10:16:18.980Z",
+  "generatedAt": "2026-11-12T18:38:22.154Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-294",
-  "selectedTitle": "44歳・倉木麻衣、2026年のライブ映像公開→近影に驚きの声「えええええ？」「まじか……」「どうなってるの？」",
+  "selectedClusterId": "today-cluster-68",
+  "selectedTitle": "「Steam審査が終わらない」多数のゲームで発売延期続出。待っている間にAIクローン発生、Steam上の露出機会も減少リスク",
   "candidates": [
     {
-      "clusterId": "today-cluster-294",
-      "title": "44歳・倉木麻衣、2026年のライブ映像公開→近影に驚きの声「えええええ？」「まじか……」「どうなってるの？」",
-      "category": "entertainment",
+      "clusterId": "today-cluster-68",
+      "title": "「Steam審査が終わらない」多数のゲームで発売延期続出。待っている間にAIクローン発生、Steam上の露出機会も減少リスク",
+      "category": "games",
       "categories": [
-        "entertainment",
+        "games",
+        "game-features",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 63.2,
-      "confidence": 0.34,
-      "articleCount": 1,
+      "buzzScore": 63.8,
+      "confidence": 0.36,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.4,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 4,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
+        "search": 5.5,
+        "social": 8.3,
+        "velocity": 0,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -43,13 +44,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 46.7
+        "repeatedAppearanceScore": 22.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 43.1,
+        "internalSocialScore": 65
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -58,7 +59,59 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2128",
+      "clusterId": "today-cluster-58",
+      "title": "経営する宿泊施設の客室をマジックミラーで盗撮か 代表逮捕",
+      "category": "crime",
+      "categories": [
+        "crime",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62.9,
+      "confidence": 0.43,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 19.8,
+        "internetNativeBoost": 8,
+        "search": 6,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-2639",
       "title": "【速報】政府、AI開発事業者に罰則検討",
       "category": "sns",
       "categories": [
@@ -67,8 +120,8 @@
         "general",
         "tech"
       ],
-      "buzzScore": 62.8,
-      "confidence": 0.38,
+      "buzzScore": 60.8,
+      "confidence": 0.37,
       "articleCount": 3,
       "sourceCount": 1,
       "uniqueDomainCount": 2,
@@ -83,7 +136,7 @@
         "search": 4.3,
         "social": 5.7,
         "velocity": 0,
-        "freshness": 3.5,
+        "freshness": 1.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -110,60 +163,8 @@
       ]
     },
     {
-      "clusterId": "today-cluster-264",
-      "title": "「公式サイトで説明なしって...」NTTドコモ、34万人の情報無断提供で行政指導　通信障害も相次ぎ信頼揺らぐ",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 62.2,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 19.4,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 4.6,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 88,
-        "internalSearchScore": 34.7,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-2114",
-      "title": "クレーンゲームにまさかの……「何これ」「まって、おもろすぎ」思わず取った“景品“に「鍋も一緒にほしいww」",
+      "clusterId": "today-cluster-35",
+      "title": "26万作品収録のゲームデータベース「GAMES NEVER DIE！」公開　Webメディア「電ファミニコゲーマー」が制作",
       "category": "games",
       "categories": [
         "games",
@@ -172,26 +173,27 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 58.4,
-      "confidence": 0.3,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 58.5,
+      "confidence": 0.39,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.9,
-        "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 7.2,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 14.7,
+        "internetNativeBoost": 0,
+        "search": 4.9,
+        "social": 8.3,
         "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
+        "freshness": 5.5,
+        "authority": 1,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -200,13 +202,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
+        "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 32.1,
-        "internalSocialScore": 56.4
+        "archiveHeatScore": 67,
+        "internalSearchScore": 37.9,
+        "internalSocialScore": 65
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -215,16 +217,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1329",
-      "title": "小6男子が祖母の家にお泊り→買ってもらったのは……「最高ですw」　“まさかの洋服”に衝撃「腹痛い爆笑」「気づいてないなら良しw」投稿者に話を聞いた",
-      "category": "sns",
+      "clusterId": "today-cluster-507",
+      "title": "破けてボロボロになったワンピース→青い布を縫い付け……　「JRのCMかと思った」驚きの完成品に「男だけど欲しい」",
+      "category": "entertainment",
       "categories": [
+        "entertainment",
         "sns",
         "net-culture",
-        "entertainment",
         "general"
       ],
-      "buzzScore": 58.1,
+      "buzzScore": 57.3,
       "confidence": 0.3,
       "articleCount": 1,
       "sourceCount": 1,
@@ -235,10 +237,10 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 17.2,
         "internetNativeBoost": 8,
         "search": 4,
-        "social": 5.9,
+        "social": 6,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 1.5,
@@ -254,11 +256,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 31.4,
-        "internalSocialScore": 45.9
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

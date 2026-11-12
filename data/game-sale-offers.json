@@ -1,130 +1,17 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T21:29:05.427Z",
+  "generatedAt": "2026-11-12T02:42:17.685Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
-  "items": [
-    {
-      "id": "steam:1308700",
-      "appId": 1308700,
-      "title": "Wizardry外伝 五つの試練",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/1308700/?cc=jp&l=japanese",
-      "regularPrice": 3980,
-      "salePrice": 1791,
-      "discountPercent": 55,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-11-11T21:29:05.427Z",
-      "endsAt": "2026-11-24T18:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1308700%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/1308700/?cc=jp&l=japanese",
-        "appId": 1308700,
-        "packageId": 456769,
-        "discountEndDate": 1795543200,
-        "checkedAt": "2026-11-11T21:29:05.427Z",
-        "regularPrice": 3980,
-        "salePrice": 1791,
-        "discountPercent": 55,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-11-12T03:29:05.427Z",
-      "priceValidUntil": "2026-11-12T21:29:05.427Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1308700&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1308700/header.jpg?t=1794335368",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261111h"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/261111h",
-          "title": "『溶鉄のマルフーシャ』の少女たちが『ウィザードリィ外伝五つの試練』の冒険者になる、描き下ろしのコラボポートレートDLCが配信。『五つの試練』のSteam版とNintendo Switch版は11月25日まで55%オフ",
-          "publishedAt": "2026-11-11T03:00:47.000Z",
-          "topicId": "auto-games-溶鉄のマルフーシャ-の少女たちが-ウィザードリィ外伝五つの試練-の冒険者になる-描き下ろしのコラボポートレートdlcが配信-五つの試練-のsteam版とnint-news.denfaminicogamer.jp/news/261111h",
-          "gameTitle": "『ウィザードリィ外伝五つの試練』"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 1308700
-          },
-          "kind": "release",
-          "checkedAt": "2026-11-11T21:29:05.427Z",
-          "freshUntil": "2026-11-12T03:29:05.427Z",
-          "date": "2023-10-26",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=1308700&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
-    }
-  ],
+  "items": [],
   "sources": [
     {
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/261111w",
       "checkedAt": "2026-11-11T21:29:05.427Z",
-      "status": "ok",
+      "status": "cached",
       "candidates": []
-    },
-    {
-      "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/261111h",
-      "checkedAt": "2026-11-11T21:29:05.427Z",
-      "status": "ok",
-      "candidates": [
-        {
-          "appId": 1308700,
-          "articleGameTitle": "『ウィザードリィ外伝五つの試練』"
-        },
-        {
-          "appId": 5539840,
-          "articleGameTitle": "溶鉄のマルフーシャ"
-        }
-      ]
-    },
-    {
-      "kind": "steam",
-      "appId": 1308700,
-      "url": "https://store.steampowered.com/api/appdetails?appids=1308700&cc=jp&l=japanese",
-      "checkedAt": "2026-11-11T21:29:05.427Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261111h"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
-    },
-    {
-      "kind": "steam",
-      "appId": 5539840,
-      "url": "https://store.steampowered.com/api/appdetails?appids=5539840&cc=jp&l=japanese",
-      "checkedAt": null,
-      "attemptedAt": "2026-11-11T21:29:05.427Z",
-      "status": "unavailable",
-      "error": "steam_identity_or_edition",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/261111h"
-      ],
-      "retained": false
     }
   ]
 }

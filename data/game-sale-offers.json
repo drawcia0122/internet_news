@@ -1,10 +1,99 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T00:03:03.471Z",
+  "generatedAt": "2026-11-13T06:39:50.742Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
   "items": [
+    {
+      "id": "steam:2670630",
+      "appId": 2670630,
+      "title": "Supermarket Simulator",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/2670630/?cc=jp&l=japanese",
+      "regularPrice": 2300,
+      "salePrice": 1380,
+      "discountPercent": 40,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-13T06:39:50.742Z",
+      "endsAt": "2026-11-26T16:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A2670630%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/2670630/?cc=jp&l=japanese",
+        "appId": 2670630,
+        "packageId": 956858,
+        "discountEndDate": 1795708800,
+        "checkedAt": "2026-11-13T06:39:50.742Z",
+        "regularPrice": 2300,
+        "salePrice": 1380,
+        "discountPercent": 40,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-13T12:39:50.742Z",
+      "priceValidUntil": "2026-11-14T06:39:50.742Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2670630&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2670630/267eef055b0e5d45cb1c874f816a31dded4bb88e/header.jpg?t=1787758631",
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/261113i"
+      ],
+      "articles": [
+        {
+          "url": "https://news.denfaminicogamer.jp/news/261113i",
+          "title": "【40%オフ】自分のスーパーマーケットを経営するゲーム『Supermarket Simulator』がSteamで「2300円→1380円」に。最大4人の協力プレイにも対応している人気作",
+          "publishedAt": "2026-11-13T00:16:07.000Z",
+          "topicId": "auto-games-40-オフ-自分のスーパーマーケットを経営するゲーム-supermarket-simulator-がsteamで-2300円-1380円-に-最大4人の協力プレ-news.denfaminicogamer.jp/news/261113i",
+          "gameTitle": "『Supermarket Simulator』"
+        }
+      ],
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2670630
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-13T06:39:50.742Z",
+          "freshUntil": "2026-11-13T12:39:50.742Z",
+          "date": "2025-06-19",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=2670630&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2670630
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-13T06:39:50.742Z",
+          "freshUntil": "2026-11-13T12:39:50.742Z",
+          "eventId": "steam-announcement-694273194214820130",
+          "date": "2026-09-29T13:12:56.000Z",
+          "title": "Patch 1.7.1",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:2670630",
+            "url": "https://steamcommunity.com/ogg/2670630/announcements/detail/694273194214820130",
+            "verified": true
+          }
+        }
+      ]
+    },
     {
       "id": "steam:774861",
       "appId": 774861,
@@ -18,7 +107,7 @@
       "discountPercent": 80,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-11-12T18:47:40.149Z",
+      "checkedAt": "2026-11-13T06:39:50.742Z",
       "endsAt": "2026-11-24T18:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -27,7 +116,7 @@
         "appId": 774861,
         "packageId": 232507,
         "discountEndDate": 1795543200,
-        "checkedAt": "2026-11-12T18:47:40.149Z",
+        "checkedAt": "2026-11-13T06:39:50.742Z",
         "regularPrice": 1010,
         "salePrice": 202,
         "discountPercent": 80,
@@ -35,9 +124,9 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-11-13T00:47:40.149Z",
-      "priceValidUntil": "2026-11-13T18:47:40.149Z",
-      "status": "cached",
+      "freshUntil": "2026-11-13T12:39:50.742Z",
+      "priceValidUntil": "2026-11-14T06:39:50.742Z",
+      "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=774861&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -63,8 +152,8 @@
             "appId": 774861
           },
           "kind": "release",
-          "checkedAt": "2026-11-12T18:47:40.149Z",
-          "freshUntil": "2026-11-13T00:47:40.149Z",
+          "checkedAt": "2026-11-13T06:39:50.742Z",
+          "freshUntil": "2026-11-13T12:39:50.742Z",
           "date": "2019-05-23",
           "status": "released",
           "source": {
@@ -79,9 +168,21 @@
   "sources": [
     {
       "kind": "article",
+      "url": "https://news.denfaminicogamer.jp/news/261113i",
+      "checkedAt": "2026-11-13T06:39:50.742Z",
+      "status": "ok",
+      "candidates": [
+        {
+          "appId": 2670630,
+          "articleGameTitle": "『Supermarket Simulator』"
+        }
+      ]
+    },
+    {
+      "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/2611123t",
-      "checkedAt": "2026-11-12T18:47:40.149Z",
-      "status": "cached",
+      "checkedAt": "2026-11-13T06:39:50.742Z",
+      "status": "ok",
       "candidates": [
         {
           "appId": 774861,
@@ -91,10 +192,29 @@
     },
     {
       "kind": "steam",
+      "appId": 2670630,
+      "url": "https://store.steampowered.com/api/appdetails?appids=2670630&cc=jp&l=japanese",
+      "checkedAt": "2026-11-13T06:39:50.742Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/261113i"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
       "appId": 774861,
       "url": "https://store.steampowered.com/api/appdetails?appids=774861&cc=jp&l=japanese",
-      "checkedAt": "2026-11-12T18:47:40.149Z",
-      "status": "cached"
+      "checkedAt": "2026-11-13T06:39:50.742Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/2611123t"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
     }
   ]
 }

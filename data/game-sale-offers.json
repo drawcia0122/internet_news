@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T06:39:50.742Z",
+  "generatedAt": "2026-11-13T15:04:47.671Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
@@ -18,7 +18,7 @@
       "discountPercent": 40,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-11-13T06:39:50.742Z",
+      "checkedAt": "2026-11-13T15:04:47.671Z",
       "endsAt": "2026-11-26T16:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -27,7 +27,7 @@
         "appId": 2670630,
         "packageId": 956858,
         "discountEndDate": 1795708800,
-        "checkedAt": "2026-11-13T06:39:50.742Z",
+        "checkedAt": "2026-11-13T15:04:47.671Z",
         "regularPrice": 2300,
         "salePrice": 1380,
         "discountPercent": 40,
@@ -35,8 +35,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-11-13T12:39:50.742Z",
-      "priceValidUntil": "2026-11-14T06:39:50.742Z",
+      "freshUntil": "2026-11-13T21:04:47.671Z",
+      "priceValidUntil": "2026-11-14T15:04:47.671Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2670630&cc=jp&l=japanese",
@@ -63,8 +63,8 @@
             "appId": 2670630
           },
           "kind": "release",
-          "checkedAt": "2026-11-13T06:39:50.742Z",
-          "freshUntil": "2026-11-13T12:39:50.742Z",
+          "checkedAt": "2026-11-13T15:04:47.671Z",
+          "freshUntil": "2026-11-13T21:04:47.671Z",
           "date": "2025-06-19",
           "status": "released",
           "source": {
@@ -79,8 +79,8 @@
             "appId": 2670630
           },
           "kind": "update",
-          "checkedAt": "2026-11-13T06:39:50.742Z",
-          "freshUntil": "2026-11-13T12:39:50.742Z",
+          "checkedAt": "2026-11-13T15:04:47.671Z",
+          "freshUntil": "2026-11-13T21:04:47.671Z",
           "eventId": "steam-announcement-694273194214820130",
           "date": "2026-09-29T13:12:56.000Z",
           "title": "Patch 1.7.1",
@@ -93,83 +93,13 @@
           }
         }
       ]
-    },
-    {
-      "id": "steam:774861",
-      "appId": 774861,
-      "title": "Project Winter",
-      "edition": "base-game",
-      "store": "Steam",
-      "platform": "PC",
-      "storeUrl": "https://store.steampowered.com/app/774861/?cc=jp&l=japanese",
-      "regularPrice": 1010,
-      "salePrice": 202,
-      "discountPercent": 80,
-      "currency": "JPY",
-      "country": "JP",
-      "checkedAt": "2026-11-13T06:39:50.742Z",
-      "endsAt": "2026-11-24T18:00:00.000Z",
-      "deadlineSource": {
-        "kind": "steam-storebrowse",
-        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A774861%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
-        "storeUrl": "https://store.steampowered.com/app/774861/?cc=jp&l=japanese",
-        "appId": 774861,
-        "packageId": 232507,
-        "discountEndDate": 1795543200,
-        "checkedAt": "2026-11-13T06:39:50.742Z",
-        "regularPrice": 1010,
-        "salePrice": 202,
-        "discountPercent": 80,
-        "currency": "JPY",
-        "country": "JP",
-        "edition": "base-game"
-      },
-      "freshUntil": "2026-11-13T12:39:50.742Z",
-      "priceValidUntil": "2026-11-14T06:39:50.742Z",
-      "status": "verified",
-      "priceSource": {
-        "url": "https://store.steampowered.com/api/appdetails?appids=774861&cc=jp&l=japanese",
-        "kind": "steam-appdetails"
-      },
-      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774861/6f25285a73c7aa9c652ee701f8080dca790c1961/header.jpg?t=1759330361",
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/2611123t"
-      ],
-      "articles": [
-        {
-          "url": "https://news.denfaminicogamer.jp/news/2611123t",
-          "title": "【202円】「雪山人狼」こと『Project Winter』がSteamで80％オフのお得なセール中。最大8人で雪山からの脱出を目指す中に裏切り者が紛れ込む、ボイスチャットで騙し合うサバイバル人狼系ゲーム",
-          "publishedAt": "2026-11-12T14:56:07.000Z",
-          "topicId": "auto-games-202円-雪山人狼-こと-project-winter-がsteamで80-オフのお得なセール中-最大8人で雪山からの脱出を目指す中に裏切り者が紛れ込む-ボイス-news.denfaminicogamer.jp/news/2611123t",
-          "gameTitle": "Project Winter"
-        }
-      ],
-      "featuredInArticle": true,
-      "followObservations": [
-        {
-          "identity": {
-            "kind": "steam",
-            "appId": 774861
-          },
-          "kind": "release",
-          "checkedAt": "2026-11-13T06:39:50.742Z",
-          "freshUntil": "2026-11-13T12:39:50.742Z",
-          "date": "2019-05-23",
-          "status": "released",
-          "source": {
-            "kind": "steam-appdetails",
-            "url": "https://store.steampowered.com/api/appdetails?appids=774861&cc=jp&l=japanese",
-            "verified": true
-          }
-        }
-      ]
     }
   ],
   "sources": [
     {
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/261113i",
-      "checkedAt": "2026-11-13T06:39:50.742Z",
+      "checkedAt": "2026-11-13T15:04:47.671Z",
       "status": "ok",
       "candidates": [
         {
@@ -179,22 +109,10 @@
       ]
     },
     {
-      "kind": "article",
-      "url": "https://news.denfaminicogamer.jp/news/2611123t",
-      "checkedAt": "2026-11-13T06:39:50.742Z",
-      "status": "ok",
-      "candidates": [
-        {
-          "appId": 774861,
-          "articleGameTitle": "Project Winter"
-        }
-      ]
-    },
-    {
       "kind": "steam",
       "appId": 2670630,
       "url": "https://store.steampowered.com/api/appdetails?appids=2670630&cc=jp&l=japanese",
-      "checkedAt": "2026-11-13T06:39:50.742Z",
+      "checkedAt": "2026-11-13T15:04:47.671Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [
@@ -202,19 +120,6 @@
       ],
       "deadlineStatus": "verified",
       "followUpdateStatus": "verified"
-    },
-    {
-      "kind": "steam",
-      "appId": 774861,
-      "url": "https://store.steampowered.com/api/appdetails?appids=774861&cc=jp&l=japanese",
-      "checkedAt": "2026-11-13T06:39:50.742Z",
-      "status": "ok",
-      "discounted": true,
-      "articleUrls": [
-        "https://news.denfaminicogamer.jp/news/2611123t"
-      ],
-      "deadlineStatus": "verified",
-      "followUpdateStatus": "none"
     }
   ]
 }

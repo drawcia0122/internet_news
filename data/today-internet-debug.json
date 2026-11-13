@@ -1,24 +1,78 @@
 {
-  "generatedAt": "2026-11-12T18:38:22.154Z",
+  "generatedAt": "2026-11-12T23:55:07.550Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-68",
-  "selectedTitle": "「Steam審査が終わらない」多数のゲームで発売延期続出。待っている間にAIクローン発生、Steam上の露出機会も減少リスク",
+  "selectedClusterId": "today-cluster-348",
+  "selectedTitle": "飼い主「AIに見えて仕方ないwww」　愛猫が数秒後……　意外な姿が900万回再生「本当にねこですか？」「ねこの着ぐるみを着たカワウソ」",
   "candidates": [
     {
-      "clusterId": "today-cluster-68",
-      "title": "「Steam審査が終わらない」多数のゲームで発売延期続出。待っている間にAIクローン発生、Steam上の露出機会も減少リスク",
-      "category": "games",
+      "clusterId": "today-cluster-348",
+      "title": "飼い主「AIに見えて仕方ないwww」　愛猫が数秒後……　意外な姿が900万回再生「本当にねこですか？」「ねこの着ぐるみを着たカワウソ」",
+      "category": "tech",
       "categories": [
-        "games",
-        "game-features",
+        "tech",
+        "entertainment",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 63.8,
-      "confidence": 0.36,
-      "articleCount": 2,
+      "buzzScore": 69.9,
+      "confidence": 0.38,
+      "articleCount": 1,
       "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.8,
+        "internetNativeBoost": 8,
+        "search": 4.9,
+        "social": 7.4,
+        "velocity": 2.7,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 99,
+        "internalSearchScore": 38.6,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-82",
+      "title": "「Steam審査が終わらない」多数のゲームで発売延期続出。待っている間にAIクローン発生、Steam上の露出機会も減少リスク",
+      "category": "games",
+      "categories": [
+        "games",
+        "general",
+        "game-features",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 67.2,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 2,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
@@ -26,16 +80,71 @@
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
+        "sourceDiversity": 3.8,
         "trend": 18,
         "internetNativeBoost": 8,
-        "search": 5.5,
+        "search": 5.4,
+        "social": 8.3,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 42.4,
+        "internalSocialScore": 64.5
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-37",
+      "title": "NVIDIA、ジェンスン・ファンCEO辞任　暫定トップにクレスCFO",
+      "category": "business",
+      "categories": [
+        "business",
+        "tech",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 66.4,
+      "confidence": 0.41,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 5.4,
         "social": 8.3,
         "velocity": 0,
         "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
+        "authority": 2.5,
+        "categoryBias": 9,
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -48,8 +157,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 22.2,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 43.1,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 42.4,
         "internalSocialScore": 65
       },
       "externalSignalErrors": [
@@ -59,8 +168,61 @@
       ]
     },
     {
-      "clusterId": "today-cluster-58",
-      "title": "経営する宿泊施設の客室をマジックミラーで盗撮か 代表逮捕",
+      "clusterId": "today-cluster-8",
+      "title": "マイクロソフト、「365」世界で大規模障害　メール送れずビジネスに影響",
+      "category": "business",
+      "categories": [
+        "business",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 61,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 4,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-51",
+      "title": "勤務先から21億円超横領か　元経理担当の43歳逮捕　さいたま地検",
       "category": "crime",
       "categories": [
         "crime",
@@ -68,8 +230,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.9,
-      "confidence": 0.43,
+      "buzzScore": 60.8,
+      "confidence": 0.41,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -79,9 +241,9 @@
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 19.8,
+        "trend": 18,
         "internetNativeBoost": 8,
-        "search": 6,
+        "search": 5.7,
         "social": 7,
         "velocity": 0,
         "freshness": 5.5,
@@ -100,167 +262,9 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 47.1,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
         "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-2639",
-      "title": "【速報】政府、AI開発事業者に罰則検討",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "general",
-        "tech"
-      ],
-      "buzzScore": 60.8,
-      "confidence": 0.37,
-      "articleCount": 3,
-      "sourceCount": 1,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 3.2,
-        "trend": 20.2,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 5.7,
-        "velocity": 0,
-        "freshness": 1.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 1.8,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 92,
-        "internalSearchScore": 33.4,
-        "internalSocialScore": 44.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-35",
-      "title": "26万作品収録のゲームデータベース「GAMES NEVER DIE！」公開　Webメディア「電ファミニコゲーマー」が制作",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 58.5,
-      "confidence": 0.39,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 14.7,
-        "internetNativeBoost": 0,
-        "search": 4.9,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 67,
-        "internalSearchScore": 37.9,
-        "internalSocialScore": 65
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-507",
-      "title": "破けてボロボロになったワンピース→青い布を縫い付け……　「JRのCMかと思った」驚きの完成品に「男だけど欲しい」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 57.3,
-      "confidence": 0.3,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 31.2,
-        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

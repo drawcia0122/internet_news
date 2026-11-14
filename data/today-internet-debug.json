@@ -1,39 +1,40 @@
 {
-  "generatedAt": "2026-11-14T08:58:06.681Z",
+  "generatedAt": "2026-11-14T15:49:45.958Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-49",
-  "selectedTitle": "「ガルパン」の麻雀ゲーム『ガールズ＆パンツァー 白熱！麻雀タッグバトルです！』発表。戦いの舞台はなぜか麻雀、“味方持ち点平均化”“有効牌率アップ”など「特殊技」を駆使してタッグ打ち",
+  "selectedClusterId": "today-cluster-42",
+  "selectedTitle": "政府の安保広報にSNS反発拡大　「軍拡プロパガンダ」野党疑問視",
   "candidates": [
     {
-      "clusterId": "today-cluster-49",
-      "title": "「ガルパン」の麻雀ゲーム『ガールズ＆パンツァー 白熱！麻雀タッグバトルです！』発表。戦いの舞台はなぜか麻雀、“味方持ち点平均化”“有効牌率アップ”など「特殊技」を駆使してタッグ打ち",
-      "category": "games",
+      "clusterId": "today-cluster-42",
+      "title": "政府の安保広報にSNS反発拡大　「軍拡プロパガンダ」野党疑問視",
+      "category": "politics",
       "categories": [
-        "games",
-        "anime",
-        "general",
-        "net-culture"
+        "politics",
+        "net-culture",
+        "sns",
+        "general"
       ],
-      "buzzScore": 74,
+      "buzzScore": 69.4,
       "confidence": 0.5,
-      "articleCount": 5,
+      "articleCount": 4,
       "sourceCount": 3,
-      "uniqueDomainCount": 3,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "主要3媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
-        "coverage": 9,
-        "sourceDiversity": 7,
-        "trend": 17.2,
+        "coverage": 7.2,
+        "sourceDiversity": 6.2,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5.3,
-        "social": 5.5,
+        "search": 6.8,
+        "social": 7.3,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 2.5,
-        "categoryBias": 14,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -44,116 +45,12 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 41.7,
-        "internalSocialScore": 43
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1914",
-      "title": "「ナガノ先生は元看護師？」ちいかわ新グッズにSNS騒然→まさかの内容に「医療従事者以外わからないネタww」「解像度高い」",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "entertainment",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 66.7,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20.2,
-        "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 92,
-        "internalSearchScore": 34.2,
-        "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-847",
-      "title": "「お風呂掃除のハードルが下がる」　SNSでバズり中の“お風呂掃除ブラシ”に「隙間や角、細かく洗えるのですごく良い」「思わず2つ購入」の声",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "sns",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 62.8,
-      "confidence": 0.34,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 28.2,
         "crossCategoryScore": 80,
         "archiveHeatScore": 100,
-        "internalSearchScore": 37.7,
-        "internalSocialScore": 45.9
+        "internalSearchScore": 53.3,
+        "internalSocialScore": 56.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -162,89 +59,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-894",
-      "title": "「こんな1歳4カ月いるんかい」衝撃姿が42万表示の大反響　「従業員1000人は抱えてる」「吹いたwww」　投稿者に話を聞いた",
-      "category": "entertainment",
+      "clusterId": "today-cluster-16",
+      "title": "悪名高い高難度2Dアクションゲーム『Super Meat Boy』が生まれ変わる。グラフィックや音楽を刷新する『Again+』が発表",
+      "category": "games",
       "categories": [
+        "games",
         "entertainment",
-        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 58.1,
-      "confidence": 0.3,
-      "articleCount": 1,
+      "buzzScore": 66.1,
+      "confidence": 0.38,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 4,
-        "social": 5.9,
+        "search": 6.3,
+        "social": 7,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 31.4,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-31",
-      "title": "高市首相「会議に出たくない」ムーブ被害者たちの困惑国際。国際会議を欠席しまくる総理の言い逃れ乱舞、実は昔から？...",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "world",
-        "sns",
-        "net-culture",
-        "business",
-        "general"
-      ],
-      "buzzScore": 58,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 4,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -257,10 +99,168 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 48.9,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-101",
+      "title": "「ガルパン」の麻雀ゲーム『ガールズ＆パンツァー 白熱！麻雀タッグバトルです！』発表。戦いの舞台はなぜか麻雀、“味方持ち点平均化”“有効牌率アップ”など「特殊技」を駆使してタッグ打ち",
+      "category": "games",
+      "categories": [
+        "games",
+        "anime",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64.8,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 20.7,
+        "internetNativeBoost": 8,
+        "search": 6,
+        "social": 8.3,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 49.6,
-        "internalSocialScore": 65.8
+        "archiveHeatScore": 94,
+        "internalSearchScore": 46.6,
+        "internalSocialScore": 64.5
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1252",
+      "title": "「お風呂掃除のハードルが下がる」　SNSでバズり中の“お風呂掃除ブラシ”に「隙間や角、細かく洗えるのですごく良い」「思わず2つ購入」の声",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "sns",
+        "entertainment",
+        "general"
+      ],
+      "buzzScore": 60.7,
+      "confidence": 0.33,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 4.7,
+        "social": 5.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 3,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 37,
+        "internalSocialScore": 45.4
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-100",
+      "title": "ゲーム開発者による「木の後ろにキャラがいるとき、どう見せるか」談義が白熱。“木スケスケ技法”か“キャラシルエット化”か、隠れた難題",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 59.7,
+      "confidence": 0.34,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 5.3,
+        "social": 6.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 41.7,
+        "internalSocialScore": 53.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

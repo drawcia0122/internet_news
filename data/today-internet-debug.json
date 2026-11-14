@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-14T15:49:45.958Z",
+  "generatedAt": "2026-11-14T20:40:37.417Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-42",
+  "selectedClusterId": "today-cluster-52",
   "selectedTitle": "政府の安保広報にSNS反発拡大　「軍拡プロパガンダ」野党疑問視",
   "candidates": [
     {
-      "clusterId": "today-cluster-42",
+      "clusterId": "today-cluster-52",
       "title": "政府の安保広報にSNS反発拡大　「軍拡プロパガンダ」野党疑問視",
       "category": "politics",
       "categories": [
@@ -14,23 +14,22 @@
         "sns",
         "general"
       ],
-      "buzzScore": 69.4,
-      "confidence": 0.5,
-      "articleCount": 4,
-      "sourceCount": 3,
+      "buzzScore": 65.7,
+      "confidence": 0.45,
+      "articleCount": 3,
+      "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "主要3媒体で同一話題を確認",
         "既存トレンド指標でも反応が強い",
         "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 6.2,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 6.8,
-        "social": 7.3,
+        "search": 6.6,
+        "social": 7.1,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 2.5,
@@ -46,11 +45,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 28.2,
+        "repeatedAppearanceScore": 25.2,
         "crossCategoryScore": 80,
         "archiveHeatScore": 100,
-        "internalSearchScore": 53.3,
-        "internalSocialScore": 56.7
+        "internalSearchScore": 51.4,
+        "internalSocialScore": 55.3
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -59,59 +58,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-16",
-      "title": "悪名高い高難度2Dアクションゲーム『Super Meat Boy』が生まれ変わる。グラフィックや音楽を刷新する『Again+』が発表",
-      "category": "games",
-      "categories": [
-        "games",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 66.1,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.9,
-        "internetNativeBoost": 8,
-        "search": 6.3,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 48.9,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-101",
+      "clusterId": "today-cluster-112",
       "title": "「ガルパン」の麻雀ゲーム『ガールズ＆パンツァー 白熱！麻雀タッグバトルです！』発表。戦いの舞台はなぜか麻雀、“味方持ち点平均化”“有効牌率アップ”など「特殊技」を駆使してタッグ打ち",
       "category": "games",
       "categories": [
@@ -165,7 +112,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1252",
+      "clusterId": "today-cluster-1483",
       "title": "「お風呂掃除のハードルが下がる」　SNSでバズり中の“お風呂掃除ブラシ”に「隙間や角、細かく洗えるのですごく良い」「思わず2つ購入」の声",
       "category": "net-culture",
       "categories": [
@@ -217,35 +164,87 @@
       ]
     },
     {
-      "clusterId": "today-cluster-100",
-      "title": "ゲーム開発者による「木の後ろにキャラがいるとき、どう見せるか」談義が白熱。“木スケスケ技法”か“キャラシルエット化”か、隠れた難題",
-      "category": "games",
+      "clusterId": "today-cluster-2582",
+      "title": "「ナガノ先生は元看護師？」ちいかわ新グッズにSNS騒然→まさかの内容に「医療従事者以外わからないネタww」「解像度高い」",
+      "category": "net-culture",
       "categories": [
-        "games",
-        "sns",
         "net-culture",
+        "entertainment",
+        "sns",
         "general"
       ],
-      "buzzScore": 59.7,
-      "confidence": 0.34,
+      "buzzScore": 58.5,
+      "confidence": 0.36,
       "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.6,
+        "sourceDiversity": 4.7,
+        "trend": 20.2,
         "internetNativeBoost": 8,
-        "search": 5.3,
-        "social": 6.8,
+        "search": 4.3,
+        "social": 5.7,
+        "velocity": 0,
+        "freshness": 1.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": -6
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 1.8,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 92,
+        "internalSearchScore": 33.4,
+        "internalSocialScore": 44.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-116",
+      "title": "『ガルパン』の麻雀ゲーム『ガールズ＆パンツァー 白熱！麻雀タッグバトルです！』発表。大洗女子学園の30名が特性を生かして麻雀で競い合う。2027年にSwitch 2とPS5に向けて発売予定",
+      "category": "games",
+      "categories": [
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 56.5,
+      "confidence": 0.39,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 15.6,
+        "internetNativeBoost": 0,
+        "search": 5.2,
+        "social": 5.6,
         "velocity": 0,
         "freshness": 3.5,
-        "authority": 1.5,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -255,12 +254,12 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 41.7,
-        "internalSocialScore": 53.5
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 71,
+        "internalSearchScore": 40.5,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

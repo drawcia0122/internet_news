@@ -1,10 +1,1212 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T07:17:00.512Z",
+  "generatedAt": "2026-11-15T14:53:02.290Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
   "items": [
+    {
+      "id": "steam:774861",
+      "appId": 774861,
+      "title": "Project Winter",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/774861/?cc=jp&l=japanese",
+      "regularPrice": 1010,
+      "salePrice": 202,
+      "discountPercent": 80,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": "2026-11-24T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A774861%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/774861/?cc=jp&l=japanese",
+        "appId": 774861,
+        "packageId": 232507,
+        "discountEndDate": 1795543200,
+        "checkedAt": "2026-11-15T14:53:02.290Z",
+        "regularPrice": 1010,
+        "salePrice": 202,
+        "discountPercent": 80,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=774861&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774861/6f25285a73c7aa9c652ee701f8080dca790c1961/header.jpg?t=1759330361",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "Project Winter"
+        }
+      ],
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 774861
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2019-05-23",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=774861&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:413410",
+      "appId": 413410,
+      "title": "ダンガンロンパ 希望の学園と絶望の高校生",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/413410/?cc=jp&l=japanese",
+      "regularPrice": 2138,
+      "salePrice": 213,
+      "discountPercent": 90,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=413410&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413410/header_japanese.jpg?t=1781085607",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "ダンガンロンパ 希望の学園と絶望の高校生"
+        }
+      ],
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 413410
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2016-02-18",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=413410&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:2132890",
+      "appId": 2132890,
+      "title": "Possessor(s)",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/2132890/?cc=jp&l=japanese",
+      "regularPrice": 1350,
+      "salePrice": 202,
+      "discountPercent": 85,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": "2026-11-18T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A2132890%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/2132890/?cc=jp&l=japanese",
+        "appId": 2132890,
+        "packageId": 762928,
+        "discountEndDate": 1795024800,
+        "checkedAt": "2026-11-15T14:53:02.290Z",
+        "regularPrice": 1350,
+        "salePrice": 202,
+        "discountPercent": 85,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2132890&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2132890/c7ddd2e16c0c389dfb0f8e14cf00769dd835b761/header.jpg?t=1766931447",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "Possessor(s)"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2132890
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2025-11-11",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=2132890&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2132890
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "eventId": "steam-announcement-520857340524626121",
+          "date": "2025-11-27T20:27:09.000Z",
+          "title": "Patch Notes - Nov 27 2025 - \"Post Release Patch 4\"",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:2132890",
+            "url": "https://steamcommunity.com/ogg/2132890/announcements/detail/520857340524626121",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:860890",
+      "appId": 860890,
+      "title": "Factory Town",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/860890/?cc=jp&l=japanese",
+      "regularPrice": 2300,
+      "salePrice": 575,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": "2026-11-19T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A860890%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/860890/?cc=jp&l=japanese",
+        "appId": 860890,
+        "packageId": 271092,
+        "discountEndDate": 1795111200,
+        "checkedAt": "2026-11-15T14:53:02.290Z",
+        "regularPrice": 2300,
+        "salePrice": 575,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=860890&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/860890/header.jpg?t=1789310709",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "Factory Town"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 860890
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2021-11-17",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=860890&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1388870",
+      "appId": 1388870,
+      "title": "Arcade Paradise",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1388870/?cc=jp&l=japanese",
+      "regularPrice": 2050,
+      "salePrice": 451,
+      "discountPercent": 78,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": "2026-11-17T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1388870%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1388870/?cc=jp&l=japanese",
+        "appId": 1388870,
+        "packageId": 487372,
+        "discountEndDate": 1794938400,
+        "checkedAt": "2026-11-15T14:53:02.290Z",
+        "regularPrice": 2050,
+        "salePrice": 451,
+        "discountPercent": 78,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1388870&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1388870/15945334a6ff4d8a2e2057d76c392b4a36f12c22/header.jpg?t=1794591495",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "Arcade Paradise"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1388870
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2022-08-11",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1388870&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:629440",
+      "appId": 629440,
+      "title": "Graze Counter",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/629440/?cc=jp&l=japanese",
+      "regularPrice": 980,
+      "salePrice": 98,
+      "discountPercent": 90,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": "2026-11-22T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A629440%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/629440/?cc=jp&l=japanese",
+        "appId": 629440,
+        "packageId": 171145,
+        "discountEndDate": 1795366800,
+        "checkedAt": "2026-11-15T14:53:02.290Z",
+        "regularPrice": 980,
+        "salePrice": 98,
+        "discountPercent": 90,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=629440&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629440/header.jpg?t=1792297151",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "Graze Counter"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 629440
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2017-07-28",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=629440&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 629440
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "eventId": "steam-announcement-1712991918281120171",
+          "date": "2020-01-26T09:03:43.000Z",
+          "title": "[Patch note:Ver1.12] Game capacity reduction and bug fixes",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:629440",
+            "url": "https://steamcommunity.com/ogg/629440/announcements/detail/1712991918281120171",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:948740",
+      "appId": 948740,
+      "title": "AI: ソムニウム ファイル",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/948740/?cc=jp&l=japanese",
+      "regularPrice": 2200,
+      "salePrice": 440,
+      "discountPercent": 80,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=948740&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/948740/header.jpg?t=1750221445",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "AI: ソムニウム ファイル"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 948740
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2019-09-17",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=948740&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1581040",
+      "appId": 1581040,
+      "title": "El Shaddai ASCENSION OF THE METATRON HD Remaster",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1581040/?cc=jp&l=japanese",
+      "regularPrice": 3980,
+      "salePrice": 995,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": "2026-11-15T18:00:48.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1581040%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1581040/?cc=jp&l=japanese",
+        "appId": 1581040,
+        "packageId": 559354,
+        "discountEndDate": 1794765648,
+        "checkedAt": "2026-11-15T14:53:02.290Z",
+        "regularPrice": 3980,
+        "salePrice": 995,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1581040&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1581040/header.jpg?t=1775443461",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "El Shaddai ASCENSION OF THE METATRON HD Remaster"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1581040
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2021-09-01",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1581040&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1321680",
+      "appId": 1321680,
+      "title": "Hello Neighbor 2",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1321680/?cc=jp&l=japanese",
+      "regularPrice": 4500,
+      "salePrice": 1125,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": "2026-11-16T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1321680%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1321680/?cc=jp&l=japanese",
+        "appId": 1321680,
+        "packageId": 461441,
+        "discountEndDate": 1794852000,
+        "checkedAt": "2026-11-15T14:53:02.290Z",
+        "regularPrice": 4500,
+        "salePrice": 1125,
+        "discountPercent": 75,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1321680&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1321680/header.jpg?t=1784143360",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "Hello Neighbor 2"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1321680
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2022-12-06",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1321680&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1321680
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "eventId": "steam-announcement-3901868807299757265",
+          "date": "2023-11-30T13:26:38.000Z",
+          "title": "Patch Notes - v1.3.0.19",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1321680",
+            "url": "https://steamcommunity.com/ogg/1321680/announcements/detail/3901868807299757265",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:2492040",
+      "appId": 2492040,
+      "title": "餓狼伝説 City of the Wolves",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/2492040/?cc=jp&l=japanese",
+      "regularPrice": 2980,
+      "salePrice": 745,
+      "discountPercent": 75,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2492040&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2492040/20f8f1e03649d45e095315cc4a99104dda0364ab/header.jpg?t=1792688653",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "餓狼伝説 City of the Wolves"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 2492040
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2026-01-22",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=2492040&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1324340",
+      "appId": 1324340,
+      "title": "メイドインアビス 闇を目指した連星",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1324340/?cc=jp&l=japanese",
+      "regularPrice": 7920,
+      "salePrice": 1188,
+      "discountPercent": 85,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": "2026-11-24T17:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A1324340%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/1324340/?cc=jp&l=japanese",
+        "appId": 1324340,
+        "packageId": 462435,
+        "discountEndDate": 1795539600,
+        "checkedAt": "2026-11-15T14:53:02.290Z",
+        "regularPrice": 7920,
+        "salePrice": 1188,
+        "discountPercent": 85,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1324340&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1324340/header_japanese.jpg?t=1715700940",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "メイドインアビス 闇を目指した連星"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1324340
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2022-09-02",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1324340&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1324340
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "eventId": "steam-announcement-3600095923221862697",
+          "date": "2022-12-16T01:14:56.000Z",
+          "title": "Made in Abyss: Binary Star Falling into Darkness Steam Version Patch 1.0.3",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1324340",
+            "url": "https://steamcommunity.com/ogg/1324340/announcements/detail/3600095923221862697",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:1178790",
+      "appId": 1178790,
+      "title": "不思議のダンジョン 風来のシレン5plus  フォーチュンタワーと運命のダイス",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/1178790/?cc=jp&l=japanese",
+      "regularPrice": 2980,
+      "salePrice": 596,
+      "discountPercent": 80,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1178790&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1178790/header_japanese.jpg?t=1715703235",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "不思議のダンジョン 風来のシレン5plus フォーチュンタワーと運命のダイス"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1178790
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2020-12-02",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=1178790&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 1178790
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "eventId": "steam-announcement-5627805600581674969",
+          "date": "2021-11-16T05:22:58.000Z",
+          "title": "[2021/11/15]Patch Ver1.0.4 Release",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:1178790",
+            "url": "https://steamcommunity.com/ogg/1178790/announcements/detail/5627805600581674969",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:4463520",
+      "appId": 4463520,
+      "title": "ムーミン：ムーミン谷の夏まつり",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/4463520/?cc=jp&l=japanese",
+      "regularPrice": 2300,
+      "salePrice": 2070,
+      "discountPercent": 10,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": "2026-11-25T18:00:45.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A4463520%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/4463520/?cc=jp&l=japanese",
+        "appId": 4463520,
+        "packageId": 1558038,
+        "discountEndDate": 1795629645,
+        "checkedAt": "2026-11-15T14:53:02.290Z",
+        "regularPrice": 2300,
+        "salePrice": 2070,
+        "discountPercent": 10,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=4463520&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4463520/e654706e84ff597926c1595c0f48dcfd88fcd7fb/header_japanese.jpg?t=1794470267",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "ムーミン：ムーミン谷の夏まつり"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4463520
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2026-11-11",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=4463520&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:3218570",
+      "appId": 3218570,
+      "title": "TANUKI: Pon's Summer  - タヌキ： ポンの夏",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/3218570/?cc=jp&l=japanese",
+      "regularPrice": 2550,
+      "salePrice": 2167,
+      "discountPercent": 15,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": null,
+      "deadlineSource": null,
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3218570&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3218570/dd63c0c32bb9e6dfb680e29c1d194aba0409daa4/header_japanese.jpg?t=1794602704",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "TANUKI: Pon’s Summer – タヌキ： ポンの夏"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 3218570
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2026-11-10",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=3218570&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 3218570
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "eventId": "steam-announcement-706662533824512029",
+          "date": "2026-11-11T07:35:41.000Z",
+          "title": "Release (1.0.2.ccc94e3aa6x00) - Nov 11, 2026",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:3218570",
+            "url": "https://steamcommunity.com/ogg/3218570/announcements/detail/706662533824512029",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:4559930",
+      "appId": 4559930,
+      "title": "Oboro no Ichi",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/4559930/?cc=jp&l=japanese",
+      "regularPrice": 1850,
+      "salePrice": 1572,
+      "discountPercent": 15,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": "2026-11-16T18:00:41.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A4559930%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/4559930/?cc=jp&l=japanese",
+        "appId": 4559930,
+        "packageId": 1589785,
+        "discountEndDate": 1794852041,
+        "checkedAt": "2026-11-15T14:53:02.290Z",
+        "regularPrice": 1850,
+        "salePrice": 1572,
+        "discountPercent": 15,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=4559930&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4559930/f0fbf6e5b3c0cca4d8df11cddac36eed839afcd5/header.jpg?t=1794236590",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "Oboro no Ichi"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4559930
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2026-11-09",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=4559930&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 4559930
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "eventId": "steam-announcement-668381936995009131",
+          "date": "2026-11-13T07:03:38.000Z",
+          "title": "Patch #02 — Flying Fish, New Decorations & Performance Improvements!",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:4559930",
+            "url": "https://steamcommunity.com/ogg/4559930/announcements/detail/668381936995009131",
+            "verified": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam:3936340",
+      "appId": 3936340,
+      "title": "Hell Wait",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/3936340/?cc=jp&l=japanese",
+      "regularPrice": 1900,
+      "salePrice": 1615,
+      "discountPercent": 15,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "endsAt": "2026-11-16T18:00:29.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A3936340%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/3936340/?cc=jp&l=japanese",
+        "appId": 3936340,
+        "packageId": 1382836,
+        "discountEndDate": 1794852029,
+        "checkedAt": "2026-11-15T14:53:02.290Z",
+        "regularPrice": 1900,
+        "salePrice": 1615,
+        "discountPercent": 15,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3936340&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3936340/a429813374132309ee2a54bfd32c99ad5d1a2d68/header.jpg?t=1794686654",
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "articles": [
+        {
+          "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+          "title": "『エルシャダイ』リマスター版が75％オフで1000円切り。『ダンガンロンパ』が90％オフでわずか213円。“雪山人狼” 『Project Winter』は80％オフで202円とかなりお手頃。今週の高割引率PCゲーム",
+          "publishedAt": "2026-11-15T07:38:10.000Z",
+          "topicId": "auto-games-エルシャダイ-リマスター版が75-オフで1000円切り-ダンガンロンパ-が90-オフでわずか213円-雪山人狼-project-winter-は80-オフで20-automaton-media.com/articles/newsjp/20261115-479352",
+          "gameTitle": "Hell Wait"
+        }
+      ],
+      "featuredInArticle": false,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 3936340
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "date": "2026-11-09",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=3936340&cc=jp&l=japanese",
+            "verified": true
+          }
+        },
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 3936340
+          },
+          "kind": "update",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
+          "eventId": "steam-announcement-684144535690806178",
+          "date": "2026-11-13T15:53:59.000Z",
+          "title": "1.01 (2026/11/13)",
+          "eventType": "release-notes",
+          "source": {
+            "kind": "official-game",
+            "gameKey": "steam:3936340",
+            "url": "https://steamcommunity.com/ogg/3936340/announcements/detail/684144535690806178",
+            "verified": true
+          }
+        }
+      ]
+    },
     {
       "id": "steam:1525700",
       "appId": 1525700,
@@ -18,7 +1220,7 @@
       "discountPercent": 87,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-11-15T07:17:00.512Z",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
       "endsAt": "2026-11-28T18:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -27,7 +1229,7 @@
         "appId": 1525700,
         "packageId": 538293,
         "discountEndDate": 1795888800,
-        "checkedAt": "2026-11-15T07:17:00.512Z",
+        "checkedAt": "2026-11-15T14:53:02.290Z",
         "regularPrice": 1520,
         "salePrice": 197,
         "discountPercent": 87,
@@ -35,8 +1237,8 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-11-15T13:17:00.512Z",
-      "priceValidUntil": "2026-11-16T07:17:00.512Z",
+      "freshUntil": "2026-11-15T20:53:02.290Z",
+      "priceValidUntil": "2026-11-16T14:53:02.290Z",
       "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=1525700&cc=jp&l=japanese",
@@ -63,8 +1265,8 @@
             "appId": 1525700
           },
           "kind": "release",
-          "checkedAt": "2026-11-15T07:17:00.512Z",
-          "freshUntil": "2026-11-15T13:17:00.512Z",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
           "date": "2021-11-16",
           "status": "released",
           "source": {
@@ -79,8 +1281,8 @@
             "appId": 1525700
           },
           "kind": "update",
-          "checkedAt": "2026-11-15T07:17:00.512Z",
-          "freshUntil": "2026-11-15T13:17:00.512Z",
+          "checkedAt": "2026-11-15T14:53:02.290Z",
+          "freshUntil": "2026-11-15T20:53:02.290Z",
           "eventId": "steam-announcement-820329049655084233",
           "date": "2025-05-20T11:29:42.000Z",
           "title": "Update notes for May 20th",
@@ -98,8 +1300,80 @@
   "sources": [
     {
       "kind": "article",
+      "url": "https://automaton-media.com/articles/newsjp/20261115-479352",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "candidates": [
+        {
+          "appId": 774861,
+          "articleGameTitle": "Project Winter"
+        },
+        {
+          "appId": 413410,
+          "articleGameTitle": "ダンガンロンパ 希望の学園と絶望の高校生"
+        },
+        {
+          "appId": 2132890,
+          "articleGameTitle": "Possessor(s)"
+        },
+        {
+          "appId": 860890,
+          "articleGameTitle": "Factory Town"
+        },
+        {
+          "appId": 1388870,
+          "articleGameTitle": "Arcade Paradise"
+        },
+        {
+          "appId": 629440,
+          "articleGameTitle": "Graze Counter"
+        },
+        {
+          "appId": 948740,
+          "articleGameTitle": "AI: ソムニウム ファイル"
+        },
+        {
+          "appId": 1581040,
+          "articleGameTitle": "El Shaddai ASCENSION OF THE METATRON HD Remaster"
+        },
+        {
+          "appId": 1321680,
+          "articleGameTitle": "Hello Neighbor 2"
+        },
+        {
+          "appId": 2492040,
+          "articleGameTitle": "餓狼伝説 City of the Wolves"
+        },
+        {
+          "appId": 1324340,
+          "articleGameTitle": "メイドインアビス 闇を目指した連星"
+        },
+        {
+          "appId": 1178790,
+          "articleGameTitle": "不思議のダンジョン 風来のシレン5plus フォーチュンタワーと運命のダイス"
+        },
+        {
+          "appId": 4463520,
+          "articleGameTitle": "ムーミン：ムーミン谷の夏まつり"
+        },
+        {
+          "appId": 3218570,
+          "articleGameTitle": "TANUKI: Pon’s Summer – タヌキ： ポンの夏"
+        },
+        {
+          "appId": 4559930,
+          "articleGameTitle": "Oboro no Ichi"
+        },
+        {
+          "appId": 3936340,
+          "articleGameTitle": "Hell Wait"
+        }
+      ]
+    },
+    {
+      "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/261115k",
-      "checkedAt": "2026-11-15T07:17:00.512Z",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
       "status": "ok",
       "candidates": [
         {
@@ -110,9 +1384,217 @@
     },
     {
       "kind": "steam",
+      "appId": 774861,
+      "url": "https://store.steampowered.com/api/appdetails?appids=774861&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 413410,
+      "url": "https://store.steampowered.com/api/appdetails?appids=413410&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 2132890,
+      "url": "https://store.steampowered.com/api/appdetails?appids=2132890&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 860890,
+      "url": "https://store.steampowered.com/api/appdetails?appids=860890&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1388870,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1388870&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 629440,
+      "url": "https://store.steampowered.com/api/appdetails?appids=629440&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 948740,
+      "url": "https://store.steampowered.com/api/appdetails?appids=948740&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1581040,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1581040&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1321680,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1321680&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 2492040,
+      "url": "https://store.steampowered.com/api/appdetails?appids=2492040&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 1324340,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1324340&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 1178790,
+      "url": "https://store.steampowered.com/api/appdetails?appids=1178790&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 4463520,
+      "url": "https://store.steampowered.com/api/appdetails?appids=4463520&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
+      "appId": 3218570,
+      "url": "https://store.steampowered.com/api/appdetails?appids=3218570&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "unknown",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 4559930,
+      "url": "https://store.steampowered.com/api/appdetails?appids=4559930&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
+      "appId": 3936340,
+      "url": "https://store.steampowered.com/api/appdetails?appids=3936340&cc=jp&l=japanese",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://automaton-media.com/articles/newsjp/20261115-479352"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "verified"
+    },
+    {
+      "kind": "steam",
       "appId": 1525700,
       "url": "https://store.steampowered.com/api/appdetails?appids=1525700&cc=jp&l=japanese",
-      "checkedAt": "2026-11-15T07:17:00.512Z",
+      "checkedAt": "2026-11-15T14:53:02.290Z",
       "status": "ok",
       "discounted": true,
       "articleUrls": [

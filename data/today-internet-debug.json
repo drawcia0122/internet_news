@@ -1,74 +1,21 @@
 {
-  "generatedAt": "2026-11-15T00:17:02.820Z",
+  "generatedAt": "2026-11-15T07:09:00.196Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-134",
-  "selectedTitle": "「ガルパン」の麻雀ゲーム『ガールズ＆パンツァー 白熱！麻雀タッグバトルです！』発表。戦いの舞台はなぜか麻雀、“味方持ち点平均化”“有効牌率アップ”など「特殊技」を駆使してタッグ打ち",
+  "selectedClusterId": "today-cluster-3",
+  "selectedTitle": "悪意が渦巻くネットの向こうに、善性を見つけられるか。SNSのリアルな人間模様を描く推理ADV『ミカクテイ事件の観測者-Demons’Timeline-』をもう遊んだか",
   "candidates": [
     {
-      "clusterId": "today-cluster-134",
-      "title": "「ガルパン」の麻雀ゲーム『ガールズ＆パンツァー 白熱！麻雀タッグバトルです！』発表。戦いの舞台はなぜか麻雀、“味方持ち点平均化”“有効牌率アップ”など「特殊技」を駆使してタッグ打ち",
-      "category": "anime",
+      "clusterId": "today-cluster-3",
+      "title": "悪意が渦巻くネットの向こうに、善性を見つけられるか。SNSのリアルな人間模様を描く推理ADV『ミカクテイ事件の観測者-Demons’Timeline-』をもう遊んだか",
+      "category": "net-culture",
       "categories": [
-        "anime",
-        "games",
-        "general",
-        "sns",
-        "net-culture"
-      ],
-      "buzzScore": 70.3,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 3.8,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 6,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 46.6,
-        "internalSocialScore": 64.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-11",
-      "title": "『LoL』の超大規模アップデート『League of Legends New Dawn』が発表！新クライアントをリリースし、サモナーズリフトのビジュアルは大刷新",
-      "category": "games",
-      "categories": [
-        "games",
         "net-culture",
+        "games",
+        "sns",
         "general"
       ],
-      "buzzScore": 69.3,
-      "confidence": 0.43,
+      "buzzScore": 75.8,
+      "confidence": 0.46,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -79,10 +26,10 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.8,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 5.6,
+        "search": 6.5,
+        "social": 7,
         "velocity": 5.3,
         "freshness": 8.5,
         "authority": 1.5,
@@ -99,10 +46,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 44,
-        "internalSocialScore": 43.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -111,72 +58,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-13",
-      "title": "米国、NATO加盟と引き換えに領土割譲を提案 ゼレンスキー氏",
-      "category": "world",
-      "categories": [
-        "world",
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 67.7,
-      "confidence": 0.47,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 8.4,
-        "velocity": 8.3,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 4,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-12",
-      "title": "『ブレードランナー』の「AAA級ゲーム」が制作協議中と海外報道。権利元のCEOが海外メディアに明かす",
+      "clusterId": "today-cluster-21",
+      "title": "『オンゲキ』『頭文字D THE ARCADE』などセガの一部アーケードゲームが試験的に稼働再開。「ALL․Net」および「Aime」メンテナンス続報、一部機能が復旧",
       "category": "games",
       "categories": [
         "games",
-        "entertainment",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.5,
-      "confidence": 0.37,
+      "buzzScore": 67.3,
+      "confidence": 0.4,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -186,10 +77,10 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 19.1,
+        "trend": 21.8,
         "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 7,
+        "search": 6.4,
+        "social": 5.6,
         "velocity": 0,
         "freshness": 7,
         "authority": 1.5,
@@ -206,10 +97,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 46.1,
-        "internalSocialScore": 54.8
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 99,
+        "internalSearchScore": 50.3,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -218,36 +109,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-981",
-      "title": "政府の安保広報にSNS反発拡大　「軍拡プロパガンダ」野党疑問視",
-      "category": "politics",
+      "clusterId": "today-cluster-5",
+      "title": "“ドラクエ新作”スマホ向けゲーム『ドラゴンクエストRPG　魔界樹と導かれし島』発表。『メダロット』初期8作品入りコレクションがSteam向けに発表。今週の見逃せないゲーム記事7選",
+      "category": "games",
       "categories": [
-        "politics",
-        "net-culture",
-        "sns",
+        "games",
         "general"
       ],
-      "buzzScore": 62.8,
-      "confidence": 0.43,
-      "articleCount": 4,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 64.9,
+      "confidence": 0.46,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 4.7,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
+        "search": 6.5,
+        "social": 4.2,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -256,13 +145,121 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 40,
         "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 50.6,
+        "internalSocialScore": 32.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-23",
+      "title": "「人工知能学会」で「おじさん構文」の研究発表、問われる「若者に絵文字を使っていいのか」問題…ＡＩとの関係は",
+      "category": "business",
+      "categories": [
+        "business",
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 62.7,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.8,
+        "internetNativeBoost": 8,
+        "search": 6,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-133",
+      "title": "「ガルパン」の麻雀ゲーム『ガールズ＆パンツァー 白熱！麻雀タッグバトルです！』発表。戦いの舞台はなぜか麻雀、“味方持ち点平均化”“有効牌率アップ”など「特殊技」を駆使してタッグ打ち",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "general",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 62.2,
+      "confidence": 0.38,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 20.7,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 8.2,
+        "velocity": 0,
+        "freshness": 1.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": -6
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 19.8,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 45.8,
+        "internalSocialScore": 63.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

@@ -1,77 +1,24 @@
 {
-  "generatedAt": "2026-11-14T20:40:37.417Z",
+  "generatedAt": "2026-11-15T00:17:02.820Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-52",
-  "selectedTitle": "政府の安保広報にSNS反発拡大　「軍拡プロパガンダ」野党疑問視",
+  "selectedClusterId": "today-cluster-134",
+  "selectedTitle": "「ガルパン」の麻雀ゲーム『ガールズ＆パンツァー 白熱！麻雀タッグバトルです！』発表。戦いの舞台はなぜか麻雀、“味方持ち点平均化”“有効牌率アップ”など「特殊技」を駆使してタッグ打ち",
   "candidates": [
     {
-      "clusterId": "today-cluster-52",
-      "title": "政府の安保広報にSNS反発拡大　「軍拡プロパガンダ」野党疑問視",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 65.7,
-      "confidence": 0.45,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.6,
-        "social": 7.1,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 25.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 51.4,
-        "internalSocialScore": 55.3
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-112",
+      "clusterId": "today-cluster-134",
       "title": "「ガルパン」の麻雀ゲーム『ガールズ＆パンツァー 白熱！麻雀タッグバトルです！』発表。戦いの舞台はなぜか麻雀、“味方持ち点平均化”“有効牌率アップ”など「特殊技」を駆使してタッグ打ち",
-      "category": "games",
+      "category": "anime",
       "categories": [
-        "games",
         "anime",
+        "games",
+        "general",
         "sns",
-        "net-culture",
-        "general"
+        "net-culture"
       ],
-      "buzzScore": 64.8,
-      "confidence": 0.37,
+      "buzzScore": 70.3,
+      "confidence": 0.39,
       "articleCount": 2,
-      "sourceCount": 1,
+      "sourceCount": 2,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
@@ -79,16 +26,16 @@
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 2.3,
+        "sourceDiversity": 3.8,
         "trend": 20.7,
         "internetNativeBoost": 8,
         "search": 6,
         "social": 8.3,
         "velocity": 0,
         "freshness": 3.5,
-        "authority": 1.5,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -112,32 +59,32 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1483",
-      "title": "「お風呂掃除のハードルが下がる」　SNSでバズり中の“お風呂掃除ブラシ”に「隙間や角、細かく洗えるのですごく良い」「思わず2つ購入」の声",
-      "category": "net-culture",
+      "clusterId": "today-cluster-11",
+      "title": "『LoL』の超大規模アップデート『League of Legends New Dawn』が発表！新クライアントをリリースし、サモナーズリフトのビジュアルは大刷新",
+      "category": "games",
       "categories": [
+        "games",
         "net-culture",
-        "sns",
-        "entertainment",
         "general"
       ],
-      "buzzScore": 60.7,
-      "confidence": 0.33,
-      "articleCount": 1,
+      "buzzScore": 69.3,
+      "confidence": 0.43,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
+        "search": 5.6,
+        "social": 5.6,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -149,13 +96,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37,
-        "internalSocialScore": 45.4
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 44,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -164,87 +111,38 @@
       ]
     },
     {
-      "clusterId": "today-cluster-2582",
-      "title": "「ナガノ先生は元看護師？」ちいかわ新グッズにSNS騒然→まさかの内容に「医療従事者以外わからないネタww」「解像度高い」",
-      "category": "net-culture",
+      "clusterId": "today-cluster-13",
+      "title": "米国、NATO加盟と引き換えに領土割譲を提案 ゼレンスキー氏",
+      "category": "world",
       "categories": [
-        "net-culture",
-        "entertainment",
+        "world",
+        "politics",
         "sns",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 58.5,
-      "confidence": 0.36,
+      "buzzScore": 67.7,
+      "confidence": 0.47,
       "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20.2,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
         "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 5.7,
-        "velocity": 0,
-        "freshness": 1.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": -6
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 1.8,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 92,
-        "internalSearchScore": 33.4,
-        "internalSocialScore": 44.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-116",
-      "title": "『ガルパン』の麻雀ゲーム『ガールズ＆パンツァー 白熱！麻雀タッグバトルです！』発表。大洗女子学園の30名が特性を生かして麻雀で競い合う。2027年にSwitch 2とPS5に向けて発売予定",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 56.5,
-      "confidence": 0.39,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 15.6,
-        "internetNativeBoost": 0,
-        "search": 5.2,
-        "social": 5.6,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
+        "search": 5.8,
+        "social": 8.4,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 4,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -254,12 +152,117 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 1,
-        "archiveMatchCount": 2,
+        "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 71,
-        "internalSearchScore": 40.5,
-        "internalSocialScore": 43.8
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-12",
+      "title": "『ブレードランナー』の「AAA級ゲーム」が制作協議中と海外報道。権利元のCEOが海外メディアに明かす",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 65.5,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-981",
+      "title": "政府の安保広報にSNS反発拡大　「軍拡プロパガンダ」野党疑問視",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 62.8,
+      "confidence": 0.43,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 4,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

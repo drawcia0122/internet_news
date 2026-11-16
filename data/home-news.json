@@ -1,98 +1,460 @@
 {
-  "generatedAt": "2026-11-15T20:20:11.591Z",
-  "totalCount": 1361,
+  "generatedAt": "2026-11-16T00:20:14.615Z",
+  "totalCount": 1387,
   "categoryCounts": {
-    "all": 1361,
+    "all": 1387,
     "general": 49,
-    "tech": 153,
-    "business": 81,
-    "politics": 35,
-    "entertainment": 621,
-    "anime": 90,
-    "games": 364,
+    "tech": 161,
+    "business": 90,
+    "politics": 39,
+    "entertainment": 633,
+    "anime": 83,
+    "games": 353,
     "game-features": 12,
     "anime-features": 7,
-    "manga": 171,
+    "manga": 173,
     "books": 31,
-    "sports": 60,
-    "sns": 633,
-    "net-culture": 674,
-    "matome": 3,
+    "sports": 62,
+    "sns": 665,
+    "net-culture": 702,
+    "matome": 2,
     "crime": 16,
-    "adult": 11,
-    "world": 66
+    "adult": 13,
+    "world": 65
   },
   "hasMore": true,
   "nextPage": 2,
   "items": [
     {
-      "id": "auto-manga-第52話-つまんない-ふたりバス-sunday-webry.com/episode/12207421984516998997",
-      "title": "第52話 つまんない / ふたりバス",
-      "summary": "ふたりバス 豊林サカネ 町全体で人口約3000人のど田舎に暮らす春平。 同級生で唯一、私立中学に進んだ 高屋川あんちゃんと同じバスで通学しています。 小学校以来会話…",
-      "briefSummary": "ふたりバス 豊林サカネ 町全体で人口約3000人のど田舎に暮らす春平。 同級生で唯一、私立中学に進んだ 高屋川あんちゃんと同じバスで通学しています。 小学校以来会話がなくなっていた二人ですが、 ある日久々に話すきっかけが生まれ……？ ふたり…",
-      "category": "manga",
+      "id": "auto-general-エボラ-アフリカ中部で今なお猛威-news.yahoo.co.jp/pickup/6602757",
+      "title": "エボラ アフリカ中部で今なお猛威",
+      "summary": "世界保健機関（ＷＨＯ）が５月にアフリカ中部でのエボラ出血熱の流行に対する緊急事態宣言を発出してから、１７日で半年となる。感染拡大は止まらず累計感染者は１万人、死者数は５０００人を超えた。現地の政情不",
+      "briefSummary": "アフリカ中部コンゴ民主共和国で５月以降に急速に感染が広がり、これまでにウガンダやケニア、ナイジェリアでも感染者が確認された。今月７日時点で累計感染者は１万９５１人に上り、ＷＨＯなどが６月の報告で予測した半年間の推計感染者数３６００人を大きく上回った。",
+      "category": "world",
       "categories": [
-        "manga",
+        "world",
+        "general"
+      ],
+      "categoryLabel": "国際",
+      "categoryLabels": [
+        "国際",
+        "その他"
+      ],
+      "score": 93,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-16T00:17:16.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "Yahoo!ニュース / 国際",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602757?source=rss",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-world",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 国際",
+          "sourceGroup": "important-news",
+          "sourcePriority": 78,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "エボラ アフリカ中部で今なお猛威",
+          "url": "https://news.yahoo.co.jp/pickup/6602757?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602757?source=rss",
+          "publishedAt": "2026-11-16T00:17:16.000Z",
+          "publishedLabel": "11/16 00:17",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "エボラ アフリカ中部で今なお猛威",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [
+        "時事ニュースを追う人"
+      ]
+    },
+    {
+      "id": "auto-sns-ハードオフで1万9800円のps2に遭遇-死ぬほど欲しかった-ド派手な姿-に-なんだこれすげぇ-懐かしい-news.yahoo.co.jp/articles/51b2cf7058191a13bc7150815c13129c20ec5625",
+      "title": "ハードオフで1万9800円のPS2に遭遇→「死ぬほど欲しかった」“ド派手な姿”に「なんだこれすげぇ」「懐かしい」",
+      "summary": "子どものころにずっと欲しがっていたプレイステーション 2（PS2）と“再会”した際の写真が、X（Twitter）に投稿されました。ポストの表示数は記事執筆時点で39…",
+      "briefSummary": "子どものころにずっと欲しがっていたプレイステーション 2（PS2）と“再会”した際の写真が、X（Twitter）に投稿されました。ポストの表示数は記事執筆時点で39万回を超えており、5000件以上の「",
+      "category": "sns",
+      "categories": [
         "sns",
+        "entertainment",
         "net-culture",
         "general"
       ],
-      "categoryLabel": "漫画",
+      "categoryLabel": "SNS",
       "categoryLabels": [
-        "漫画",
         "SNS",
+        "エンタメ",
         "ネットカルチャー"
       ],
-      "score": 83,
+      "score": 95,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://www.sunday-webry.com/episode/12207421984516998997",
-      "publishedAt": "2026-11-15T15:05:37.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "5時間前",
-      "sourceName": "はてなブックマーク人気",
-      "sourceUrl": "https://www.sunday-webry.com/episode/12207421984516998997",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-16T00:15:00.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/51b2cf7058191a13bc7150815c13129c20ec5625?source=rss",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "hatena-hotentry",
-          "source": "はてなブックマーク",
-          "sourceName": "はてなブックマーク人気",
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
           "sourceGroup": "net-culture",
-          "sourcePriority": 74,
+          "sourcePriority": 84,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "net-culture",
             "sns",
-            "trend",
-            "buzz"
+            "buzz",
+            "otaku"
           ],
-          "title": "第52話 つまんない / ふたりバス",
-          "url": "https://www.sunday-webry.com/episode/12207421984516998997",
-          "canonicalUrl": "https://www.sunday-webry.com/episode/12207421984516998997",
-          "publishedAt": "2026-11-15T15:05:37.000Z",
-          "publishedLabel": "11/15 15:05",
-          "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://www.sunday-webry.com/episode/12207421984516998997"
+          "title": "ハードオフで1万9800円のPS2に遭遇→「死ぬほど欲しかった」“ド派手な姿”に「なんだこれすげぇ」「懐かしい」",
+          "url": "https://news.yahoo.co.jp/articles/51b2cf7058191a13bc7150815c13129c20ec5625?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/51b2cf7058191a13bc7150815c13129c20ec5625?source=rss",
+          "publishedAt": "2026-11-16T00:15:00.000Z",
+          "publishedLabel": "11/16 00:15",
+          "thumbnailUrl": null
         }
       ],
-      "whatHappened": "第52話 つまんない / ふたりバス",
+      "whatHappened": "ハードオフで1万9800円のPS2に遭遇→「死ぬほど欲しかった」“ド派手な姿”に「なんだこれ…",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
-        "漫画・アニメ好き",
         "ネット文化を追う人"
       ]
     },
     {
-      "id": "auto-entertainment-駒木結衣-人気お天気キャスターが爽やかシャツコーデ-思い出のスタジオでカレンダー撮影-超かわいい-の声-mantan-web.jp/article/20261115dog00m200033000a.html",
-      "title": "駒木結衣：人気お天気キャスターが爽やかシャツコーデ　思い出のスタジオでカレンダー撮影　「超かわいい」の声",
-      "summary": "",
-      "briefSummary": "",
+      "id": "auto-entertainment-ママの帰りを寂しそうに待つ犬-赤ちゃんと帰宅したら-すっかり子守モード-愛情を感じます-news.yahoo.co.jp/articles/cf35ad408f62241799c8404e0184807ae6771f97",
+      "title": "ママの帰りを寂しそうに待つ犬→赤ちゃんと帰宅したら……　「すっかり子守モード」「愛情を感じます」",
+      "summary": "赤ちゃんとワンコの初対面がYouTubeに投稿され「こちらまで幸せを分けてもらいました」と話題を呼んでいます。動画は記事執筆時点で25万回再生を超え、1600件以上…",
+      "briefSummary": "赤ちゃんとワンコの初対面がYouTubeに投稿され「こちらまで幸せを分けてもらいました」と話題を呼んでいます。動画は記事執筆時点で25万回再生を超え、1600件以上の高評価を獲得しています。【画像】犬",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 95,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-16T00:05:00.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/cf35ad408f62241799c8404e0184807ae6771f97?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "ママの帰りを寂しそうに待つ犬→赤ちゃんと帰宅したら……　「すっかり子守モード」「愛情を感じます」",
+          "url": "https://news.yahoo.co.jp/articles/cf35ad408f62241799c8404e0184807ae6771f97?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/cf35ad408f62241799c8404e0184807ae6771f97?source=rss",
+          "publishedAt": "2026-11-16T00:05:00.000Z",
+          "publishedLabel": "11/16 00:05",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "ママの帰りを寂しそうに待つ犬→赤ちゃんと帰宅したら…… 「すっかり子守モード」「愛情を感じま…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-sns-振袖を9枚持つ女性-運命感じた-京友禅の振袖-が121万表示-リムジンで披露した華やかな姿に-ひゃー-豪華絢爛とはこのことか-news.yahoo.co.jp/articles/c67287f8c307f8a4914d64088e596c3b223db1f5",
+      "title": "振袖を9枚持つ女性→運命感じた“京友禅の振袖“が121万表示　リムジンで披露した華やかな姿に「ひゃー」「豪華絢爛とはこのことか」",
+      "summary": "10月の終わり頃、SNSで振袖にまつわる思い出話が流行る中、X（Twitter）へ投稿された京友禅の振袖が話題です。投稿は記事執筆時点で121万回以上表示され、63…",
+      "briefSummary": "10月の終わり頃、SNSで振袖にまつわる思い出話が流行る中、X（Twitter）へ投稿された京友禅の振袖が話題です。投稿は記事執筆時点で121万回以上表示され、6300件以上の“いいね”を獲得していま",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "SNS",
+      "categoryLabels": [
+        "SNS",
+        "ネットカルチャー",
+        "エンタメ"
+      ],
+      "score": 94,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-16T00:00:00.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/c67287f8c307f8a4914d64088e596c3b223db1f5?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "振袖を9枚持つ女性→運命感じた“京友禅の振袖“が121万表示　リムジンで披露した華やかな姿に「ひゃー」「豪華絢爛とはこのことか」",
+          "url": "https://news.yahoo.co.jp/articles/c67287f8c307f8a4914d64088e596c3b223db1f5?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/c67287f8c307f8a4914d64088e596c3b223db1f5?source=rss",
+          "publishedAt": "2026-11-16T00:00:00.000Z",
+          "publishedLabel": "11/16 00:00",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "振袖を9枚持つ女性→運命感じた“京友禅の振袖“が121万表示 リムジンで披露した華やかな姿に…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-entertainment-学校行事などで活躍間違いなし-キタムラの-きれいめサブバッグ-が大人気-a4の書類を持ち運ぶのにぴったり-雨にも強い-news.yahoo.co.jp/articles/e01bc6d9cfdddb76592236e07c47c513e1298de9",
+      "title": "「学校行事などで活躍間違いなし」　キタムラの“きれいめサブバッグ”が大人気　「A4の書類を持ち運ぶのにぴったり」「雨にも強い」",
+      "summary": "荷物が多い日や必要なものをすぐに取り出したいときなどに便利な「サブバッグ」。なかでもキタムラの“きれいめサブバッグ”は、、幅広いシーンで使いやすい上品なデザインが人…",
+      "briefSummary": "荷物が多い日や必要なものをすぐに取り出したいときなどに便利な「サブバッグ」。なかでもキタムラの“きれいめサブバッグ”は、、幅広いシーンで使いやすい上品なデザインが人気です。【画像】キタムラの“きれいめ",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 94,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-15T23:50:00.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/e01bc6d9cfdddb76592236e07c47c513e1298de9?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "「学校行事などで活躍間違いなし」　キタムラの“きれいめサブバッグ”が大人気　「A4の書類を持ち運ぶのにぴったり」「雨にも強い」",
+          "url": "https://news.yahoo.co.jp/articles/e01bc6d9cfdddb76592236e07c47c513e1298de9?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/e01bc6d9cfdddb76592236e07c47c513e1298de9?source=rss",
+          "publishedAt": "2026-11-15T23:50:00.000Z",
+          "publishedLabel": "11/15 23:50",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「学校行事などで活躍間違いなし」 キタムラの“きれいめサブバッグ”が大人気 「A4の書類を持…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-entertainment-エコー検査中-ずっと顔を隠していた赤ちゃん-生まれてくると-笑った-ママ納得の光景に-そういうことだったのか-すごい-海外-news.yahoo.co.jp/articles/75852dcd465d3d699656bbd6acc520e4672f31e8",
+      "title": "エコー検査中、ずっと顔を隠していた赤ちゃん→生まれてくると……「笑ったｗ」　ママ納得の光景に「そういうことだったのか」「すごい」【海外】",
+      "summary": "妊娠中のエコー検査では、おなかの中にいるわが子のしぐさを見るのを楽しみにしているママも多いでしょう。検査中にずっと顔を隠すような姿を見せた赤ちゃんの、生まれてからの…",
+      "briefSummary": "妊娠中のエコー検査では、おなかの中にいるわが子のしぐさを見るのを楽しみにしているママも多いでしょう。検査中にずっと顔を隠すような姿を見せた赤ちゃんの、生まれてからのしぐさに思わず納得する動画がInst",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 94,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-15T23:45:10.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/75852dcd465d3d699656bbd6acc520e4672f31e8?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "エコー検査中、ずっと顔を隠していた赤ちゃん→生まれてくると……「笑ったｗ」　ママ納得の光景に「そういうことだったのか」「すごい」【海外】",
+          "url": "https://news.yahoo.co.jp/articles/75852dcd465d3d699656bbd6acc520e4672f31e8?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/75852dcd465d3d699656bbd6acc520e4672f31e8?source=rss",
+          "publishedAt": "2026-11-15T23:45:10.000Z",
+          "publishedLabel": "11/15 23:45",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "エコー検査中、ずっと顔を隠していた赤ちゃん→生まれてくると……「笑ったｗ」 ママ納得の光景に…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-entertainment-おしりふきダンボールと-セリア1000円分の材料-で-高見えアイテムが122万表示-手作り感ほとんどない-真似します-news.yahoo.co.jp/articles/7e025b9746868f714d72d30552dc4db694d11532",
+      "title": "おしりふきダンボールと“セリア1000円分の材料”で……　高見えアイテムが122万表示「手作り感ほとんどない」「真似します！！」",
+      "summary": "おしりふきのダンボールとセリアで1000円分の材料を買って作った子ども用の高見えおもちゃが、Threadsで話題です。クオリティの高さに「すごい！」「まねさせていた…",
+      "briefSummary": "おしりふきのダンボールとセリアで1000円分の材料を買って作った子ども用の高見えおもちゃが、Threadsで話題です。クオリティの高さに「すごい！」「まねさせていただきます！」と驚きの声が続出。投稿は",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 94,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-15T23:45:00.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/7e025b9746868f714d72d30552dc4db694d11532?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "おしりふきダンボールと“セリア1000円分の材料”で……　高見えアイテムが122万表示「手作り感ほとんどない」「真似します！！」",
+          "url": "https://news.yahoo.co.jp/articles/7e025b9746868f714d72d30552dc4db694d11532?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/7e025b9746868f714d72d30552dc4db694d11532?source=rss",
+          "publishedAt": "2026-11-15T23:45:00.000Z",
+          "publishedLabel": "11/15 23:45",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "おしりふきダンボールと“セリア1000円分の材料”で…… 高見えアイテムが122万表示「手作…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-entertainment-to-loveる-ダークネス-ヤミやララ-モモたち9人が香水に-矢吹健太朗描き下ろしイラストのアクスタや雑貨も-animeanime.jp/article/2026/11/16/104804.html",
+      "title": "「To LOVEる ダークネス」ヤミやララ、モモたち9人が香水に♪ 矢吹健太朗描き下ろしイラストのアクスタや雑貨も",
+      "summary": "『To LOVEる -とらぶる- ダークネス』のキャラクターをイメージした香水とオリジナルグッズが登場。11月13日より、オンラインストア「DREAMING PRINCESS」ほかにて販売中だ。",
+      "briefSummary": "『To LOVEる -とらぶる- ダークネス』のキャラクターをイメージした香水とオリジナルグッズが登場。11月13日より、オンラインストア「DREAMING PRINCESS」ほかにて販売中だ。",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -104,635 +466,118 @@
         "エンタメ",
         "漫画"
       ],
-      "score": 87,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-15T15:05:00.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "5時間前",
-      "sourceName": "MANTANWEB",
-      "sourceUrl": "https://mantan-web.jp/article/20261115dog00m200033000a.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "mantanweb",
-          "source": "MANTANWEB",
-          "sourceName": "MANTANWEB",
-          "sourceGroup": "anime",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "entertainment"
-          ],
-          "title": "駒木結衣：人気お天気キャスターが爽やかシャツコーデ　思い出のスタジオでカレンダー撮影　「超かわいい」の声",
-          "url": "https://mantan-web.jp/article/20261115dog00m200033000a.html",
-          "canonicalUrl": "https://mantan-web.jp/article/20261115dog00m200033000a.html",
-          "publishedAt": "2026-11-15T15:05:00.000Z",
-          "publishedLabel": "11/15 15:05",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "駒木結衣：人気お天気キャスターが爽やかシャツコーデ 思い出のスタジオでカレンダー撮影 「超か…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-net-culture-第19話-打ち切られ漫画家と同人女-shonenjumpplus.com/episode/9253191257982513621",
-      "title": "[第19話]打ち切られ漫画家と同人女",
-      "summary": "打ち切られ漫画家と同人女 澄ヒビト 売れない漫画家・RO傍先生こと行来はついに連載打ち切りに…失意の中、SNSを開くと、なんと自分の作品に萌えまくってるアカウントが…",
-      "briefSummary": "打ち切られ漫画家と同人女 澄ヒビト 売れない漫画家・RO傍先生こと行来はついに連載打ち切りに…失意の中、SNSを開くと、なんと自分の作品に萌えまくってるアカウントが！行来の作品で同人誌をイベントで頒布すると知って、少しでも自分の作品を好きだ…",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "manga",
-        "sns",
-        "general"
-      ],
-      "categoryLabel": "ネットカルチャー",
-      "categoryLabels": [
-        "ネットカルチャー",
-        "漫画",
-        "SNS"
-      ],
-      "score": 83,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://shonenjumpplus.com/episode/9253191257982513621",
-      "publishedAt": "2026-11-15T15:00:41.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "5時間前",
-      "sourceName": "はてなブックマーク人気",
-      "sourceUrl": "https://shonenjumpplus.com/episode/9253191257982513621",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "hatena-hotentry",
-          "source": "はてなブックマーク",
-          "sourceName": "はてなブックマーク人気",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "trend",
-            "buzz"
-          ],
-          "title": "[第19話]打ち切られ漫画家と同人女",
-          "url": "https://shonenjumpplus.com/episode/9253191257982513621",
-          "canonicalUrl": "https://shonenjumpplus.com/episode/9253191257982513621",
-          "publishedAt": "2026-11-15T15:00:41.000Z",
-          "publishedLabel": "11/15 15:00",
-          "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://shonenjumpplus.com/episode/9253191257982513621"
-        }
-      ],
-      "whatHappened": "[第19話]打ち切られ漫画家と同人女",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-manga-108話-ケントゥリア-shonenjumpplus.com/episode/9253191257982513571",
-      "title": "[108話]ケントゥリア",
-      "summary": "ケントゥリア 暗森透 奴隷船に密航者として、潜り込んだユリアンは、奴隷100人と大陸に向かい、自由を切望するのだが――……!?新時代ダークファンタジーバトル連載!!…",
-      "briefSummary": "ケントゥリア 暗森透 奴隷船に密航者として、潜り込んだユリアンは、奴隷100人と大陸に向かい、自由を切望するのだが――……!?新時代ダークファンタジーバトル連載!! [JC11巻1/4発売予定]",
-      "category": "manga",
-      "categories": [
-        "manga",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "漫画",
-      "categoryLabels": [
-        "漫画",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 83,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://shonenjumpplus.com/episode/9253191257982513571",
-      "publishedAt": "2026-11-15T15:00:30.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "5時間前",
-      "sourceName": "はてなブックマーク人気",
-      "sourceUrl": "https://shonenjumpplus.com/episode/9253191257982513571",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "hatena-hotentry",
-          "source": "はてなブックマーク",
-          "sourceName": "はてなブックマーク人気",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "trend",
-            "buzz"
-          ],
-          "title": "[108話]ケントゥリア",
-          "url": "https://shonenjumpplus.com/episode/9253191257982513571",
-          "canonicalUrl": "https://shonenjumpplus.com/episode/9253191257982513571",
-          "publishedAt": "2026-11-15T15:00:30.000Z",
-          "publishedLabel": "11/15 15:00",
-          "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://shonenjumpplus.com/episode/9253191257982513571"
-        }
-      ],
-      "whatHappened": "[108話]ケントゥリア",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "漫画・アニメ好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-manga-ウィッチウォッチ-5年半の連載に幕-篠原健太の-ジャンプ-人気作-テレビアニメ第2期が2027年放送-声優陣のコメントも-mantan-web.jp/article/20261113dog00m200057000a.html",
-      "title": "ウィッチウォッチ：5年半の連載に幕　篠原健太の「ジャンプ」人気作　テレビアニメ第2期が2027年放送　声優陣のコメントも",
-      "summary": "「SKET DANCE」「彼方のアストラ」で知られる篠原健太さんの人気マンガ「ウィッチウォッチ」が、11月16日発売の連載誌「週刊少年ジャンプ」（集英社）51号で最…",
-      "briefSummary": "「SKET DANCE」「彼方のアストラ」で知られる篠原健太さんの人気マンガ「ウィッチウォッチ」が、11月16日発売の連載誌「週刊少年ジャンプ」（集英社）51号で最終回を迎え、約5…",
-      "category": "manga",
-      "categories": [
-        "manga",
-        "anime",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "漫画",
-      "categoryLabels": [
-        "漫画",
-        "アニメ",
-        "エンタメ"
-      ],
-      "score": 87,
+      "score": 97,
       "posts": 2,
       "metricLabel": "sources",
-      "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/13/20261113dog00m200057000a/001.jpg",
-      "publishedAt": "2026-11-15T15:00:00.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "5時間前",
-      "sourceName": "MANTANWEB",
-      "sourceUrl": "https://mantan-web.jp/article/20261113dog00m200057000a.html",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/955985.jpg",
+      "publishedAt": "2026-11-15T23:30:03.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/11/16/104804.html",
       "hotReasons": [
         "複数ソースで同じ話題が確認されています。",
         "直近数時間で関連記事が増えています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "mantanweb",
-          "source": "MANTANWEB",
-          "sourceName": "MANTANWEB",
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
           "sourceGroup": "anime",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "entertainment"
-          ],
-          "title": "ウィッチウォッチ：5年半の連載に幕　篠原健太の「ジャンプ」人気作　テレビアニメ第2期が2027年放送　声優陣のコメントも",
-          "url": "https://mantan-web.jp/article/20261113dog00m200057000a.html",
-          "canonicalUrl": "https://mantan-web.jp/article/20261113dog00m200057000a.html",
-          "publishedAt": "2026-11-15T15:00:00.000Z",
-          "publishedLabel": "11/15 15:00",
-          "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/13/20261113dog00m200057000a/001.jpg"
-        }
-      ],
-      "whatHappened": "ウィッチウォッチ：5年半の連載に幕 篠原健太の「ジャンプ」人気作 テレビアニメ第2期が202…",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ガジェット好き",
-        "漫画・アニメ好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-manga-ドラゴンボール超-ビルス-第6話-神と神-絶体絶命の悟空-超サイヤ人ゴッドと破壊神の限界バトル-mantan-web.jp/article/20261115dog00m200040000a.html",
-      "title": "ドラゴンボール超 ビルス：第6話「神と神」　絶体絶命の悟空　超サイヤ人ゴッドと破壊神の限界バトル",
-      "summary": "故・鳥山明さんの人気マンガが原作のアニメ「ドラゴンボール」シリーズのテレビアニメ「ドラゴンボール超（スーパー）ビルス」の第6話「神と神」がフジテレビ系で11月15日…",
-      "briefSummary": "故・鳥山明さんの人気マンガが原作のアニメ「ドラゴンボール」シリーズのテレビアニメ「ドラゴンボール超（スーパー）ビルス」の第6話「神と神」がフジテレビ系で11月15日に放送された。 …",
-      "category": "manga",
-      "categories": [
-        "manga",
-        "anime",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "漫画",
-      "categoryLabels": [
-        "漫画",
-        "アニメ",
-        "エンタメ"
-      ],
-      "score": 87,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/15/20261115dog00m200040000a/001.jpg",
-      "publishedAt": "2026-11-15T14:53:00.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "5時間前",
-      "sourceName": "MANTANWEB",
-      "sourceUrl": "https://mantan-web.jp/article/20261115dog00m200040000a.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "mantanweb",
-          "source": "MANTANWEB",
-          "sourceName": "MANTANWEB",
-          "sourceGroup": "anime",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "entertainment"
-          ],
-          "title": "ドラゴンボール超 ビルス：第6話「神と神」　絶体絶命の悟空　超サイヤ人ゴッドと破壊神の限界バトル",
-          "url": "https://mantan-web.jp/article/20261115dog00m200040000a.html",
-          "canonicalUrl": "https://mantan-web.jp/article/20261115dog00m200040000a.html",
-          "publishedAt": "2026-11-15T14:53:00.000Z",
-          "publishedLabel": "11/15 14:53",
-          "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/15/20261115dog00m200040000a/001.jpg"
-        }
-      ],
-      "whatHappened": "ドラゴンボール超 ビルス：第6話「神と神」 絶体絶命の悟空 超サイヤ人ゴッドと破壊神の限界バ…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-sns-15年間恋人からdvを受けたが-もうダメかもしれない-anond.hatelabo.jp/20261115234106",
-      "title": "15年間恋人からDVを受けたが、もうダメかもしれない",
-      "summary": "当方35歳男性。大学1年生の18歳の頃から同棲して、結婚までした恋人からDVを受けていた。殴る蹴るはもちろん、モラハラ、自殺教唆など。共依存になっていた。 経緯は省…",
-      "briefSummary": "当方35歳男性。大学1年生の18歳の頃から同棲して、結婚までした恋人からDVを受けていた。殴る蹴るはもちろん、モラハラ、自殺教唆など。共依存になっていた。 経緯は省くけど、結婚生活は破綻して離婚。別居して離れることができた（幸い子どもはいな…",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "SNS",
-      "categoryLabels": [
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 83,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://anond.hatelabo.jp/20261115234106",
-      "publishedAt": "2026-11-15T14:46:08.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "5時間前",
-      "sourceName": "はてなブックマーク人気",
-      "sourceUrl": "https://anond.hatelabo.jp/20261115234106",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "hatena-hotentry",
-          "source": "はてなブックマーク",
-          "sourceName": "はてなブックマーク人気",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "trend",
-            "buzz"
-          ],
-          "title": "15年間恋人からDVを受けたが、もうダメかもしれない",
-          "url": "https://anond.hatelabo.jp/20261115234106",
-          "canonicalUrl": "https://anond.hatelabo.jp/20261115234106",
-          "publishedAt": "2026-11-15T14:46:08.000Z",
-          "publishedLabel": "11/15 14:46",
-          "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://anond.hatelabo.jp/20261115234106"
-        }
-      ],
-      "whatHappened": "15年間恋人からDVを受けたが、もうダメかもしれない",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-politics-福岡市長選挙-稲富氏やや優勢も4分の1獲得が焦点-news.web.nhk/newsweb/na/nd-20261115de76099",
-      "title": "福岡市長選挙 稲富氏やや優勢も4分の1獲得が焦点",
-      "summary": "新人13人の争いとなった福岡市長選挙は15日投票が行われ、元衆議院議員の稲富修二氏がやや優勢です。ただ、当選に必要な有効投票数の4分の1に達しなかった場合は公職選挙…",
-      "briefSummary": "新人13人の争いとなった福岡市長選挙は15日投票が行われ、元衆議院議員の稲富修二氏がやや優勢です。ただ、当選に必要な有効投票数の4分の1に達しなかった場合は公職選挙法に基づいて再選挙となるため、4分の…",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "政治",
-      "categoryLabels": [
-        "政治",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 82,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://imgu.web.nhk/news/u/news/nd/kiji/20261115de76099/20261115de76099_E0000163666_1_l.jpg",
-      "publishedAt": "2026-11-15T14:37:45.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "5時間前",
-      "sourceName": "はてなブックマーク人気",
-      "sourceUrl": "https://news.web.nhk/newsweb/na/nd-20261115de76099",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "hatena-hotentry",
-          "source": "はてなブックマーク",
-          "sourceName": "はてなブックマーク人気",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 74,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "trend",
-            "buzz"
-          ],
-          "title": "福岡市長選挙 稲富氏やや優勢も4分の1獲得が焦点",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261115de76099",
-          "canonicalUrl": "https://news.web.nhk/newsweb/na/nd-20261115de76099",
-          "publishedAt": "2026-11-15T14:37:45.000Z",
-          "publishedLabel": "11/15 14:37",
-          "thumbnailUrl": "https://imgu.web.nhk/news/u/news/nd/kiji/20261115de76099/20261115de76099_E0000163666_1_l.jpg"
-        }
-      ],
-      "whatHappened": "福岡市長選挙 稲富氏やや優勢も4分の1獲得が焦点",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "ネット文化を追う人",
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-general-原潜の保有-反対-52-読売調査-news.yahoo.co.jp/pickup/6602735",
-      "title": "原潜の保有「反対」52% 読売調査",
-      "summary": "読売新聞社が１３～１５日に実施した全国世論調査で、日本が原子力潜水艦を持つことに「反対」５２％が「賛成」３７％を上回った。与党内で原潜の導入を求める意見がある。",
-      "briefSummary": "読売新聞社が１３～１５日に実施した全国世論調査で、日本が原子力潜水艦を持つことに「反対」５２％が「賛成」３７％を上回った。与党内で原潜の導入を求める意見がある。",
-      "category": "general",
-      "categories": [
-        "general"
-      ],
-      "categoryLabel": "その他",
-      "categoryLabels": [
-        "その他"
-      ],
-      "score": 83,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-15T14:36:13.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "5時間前",
-      "sourceName": "Yahoo!ニュース / 国内",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602735?source=rss",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-domestic",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 国内",
-          "sourceGroup": "important-news",
-          "sourcePriority": 76,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "原潜の保有「反対」52% 読売調査",
-          "url": "https://news.yahoo.co.jp/pickup/6602735?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602735?source=rss",
-          "publishedAt": "2026-11-15T14:36:13.000Z",
-          "publishedLabel": "11/15 14:36",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "原潜の保有「反対」52% 読売調査",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-general-侍j宗山塁が大会mvp-正木苦笑い-news.yahoo.co.jp/pickup/6602733",
-      "title": "侍J宗山塁が大会MVP 正木苦笑い",
-      "summary": "野球日本代表「侍ジャパン」は15日、東京ドームで行われた「ラグザス アジアプロ野球チャンピオンシップ2026」の決勝・韓国戦に勝利し、大会3連覇を達成した。大会MVPには宗山塁内野手が選ばれ、賞金3",
-      "briefSummary": "",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "その他"
-      ],
-      "score": 77,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-15T13:56:37.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "6時間前",
-      "sourceName": "Yahoo!ニュース / スポーツ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602733?source=rss",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "主要ニュースソースや公式発表ベースで確認されています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-sports",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / スポーツ",
-          "sourceGroup": "general-sports",
-          "sourcePriority": 58,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "侍J宗山塁が大会MVP 正木苦笑い",
-          "url": "https://news.yahoo.co.jp/pickup/6602733?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602733?source=rss",
-          "publishedAt": "2026-11-15T13:56:37.000Z",
-          "publishedLabel": "11/15 13:56",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "侍J宗山塁が大会MVP 正木苦笑い",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-general-走行中の車から転落-女性が重傷-news.yahoo.co.jp/pickup/6602732",
-      "title": "走行中の車から転落 女性が重傷",
-      "summary": "15日午後3時ごろ、水戸市鯉淵町の県道で、走行していた笠間市、無職、女性(52)の軽乗用車から、後部座席に同乗の長女(21)が転落、頭の骨を折るなど重傷を負った。県警水戸署で事故原因を調べている。",
-      "briefSummary": "15日午後3時ごろ、水戸市鯉淵町の県道で、走行していた笠間市、無職、女性(52)の軽乗用車から、後部座席に同乗の長女(21)が転落、頭の骨を折るなど重傷を負った。県警水戸署で事故原因を調べている。",
-      "category": "general",
-      "categories": [
-        "general"
-      ],
-      "categoryLabel": "その他",
-      "categoryLabels": [
-        "その他"
-      ],
-      "score": 72,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-15T13:56:05.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "6時間前",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602732?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "走行中の車から転落 女性が重傷",
-          "url": "https://news.yahoo.co.jp/pickup/6602732?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602732?source=rss",
-          "publishedAt": "2026-11-15T13:56:05.000Z",
-          "publishedLabel": "11/15 13:56",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "走行中の車から転落 女性が重傷",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-games-ジョジョ-ジョニィ・ジョースター-が-ラストサバイバー-に12月2日参戦ッ-バトロワゲーにまさかの-ほふく前進-がデフォのキャラが登場-馬-と-爪の回転-で機動-news.denfaminicogamer.jp/news/261115s",
-      "title": "『ジョジョ』「ジョニィ・ジョースター」が『ラストサバイバー』に12月2日参戦ッ！バトロワゲーにまさかの“ほふく前進”がデフォのキャラが登場、「馬」と「爪の回転」で機動力をカバー",
-      "summary": "愛馬「スローダンサー」への騎乗や「爪の回転」を利用することで機動力をカバー。スタンド「牙」での射撃は溜めることで障害物を貫通",
-      "briefSummary": "愛馬「スローダンサー」への騎乗や「爪の回転」を利用することで機動力をカバー。スタンド「牙」での射撃は溜めることで障害物を貫通",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム",
-        "ネットカルチャー"
-      ],
-      "score": 86,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/11/b4396f46f93be0a1d7df03e37ebf4333-1024x576.jpg",
-      "publishedAt": "2026-11-15T13:51:54.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "6時間前",
-      "sourceName": "電ファミニコゲーマー",
-      "sourceUrl": "https://news.denfaminicogamer.jp/news/261115s",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "denfami",
-          "source": "電ファミニコゲーマー",
-          "sourceName": "電ファミニコゲーマー",
-          "sourceGroup": "games",
           "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "games",
-            "net-culture",
-            "otaku"
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
           ],
-          "title": "『ジョジョ』「ジョニィ・ジョースター」が『ラストサバイバー』に12月2日参戦ッ！バトロワゲーにまさかの“ほふく前進”がデフォのキャラが登場、「馬」と「爪の回転」で機動力をカバー",
-          "url": "https://news.denfaminicogamer.jp/news/261115s",
-          "canonicalUrl": "https://news.denfaminicogamer.jp/news/261115s",
-          "publishedAt": "2026-11-15T13:51:54.000Z",
-          "publishedLabel": "11/15 13:51",
-          "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/11/b4396f46f93be0a1d7df03e37ebf4333-1024x576.jpg"
+          "title": "「To LOVEる ダークネス」ヤミやララ、モモたち9人が香水に♪ 矢吹健太朗描き下ろしイラストのアクスタや雑貨も",
+          "url": "https://animeanime.jp/article/2026/11/16/104804.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/11/16/104804.html",
+          "publishedAt": "2026-11-15T23:30:03.000Z",
+          "publishedLabel": "11/15 23:30",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/955985.jpg"
         }
       ],
-      "whatHappened": "『ジョジョ』「ジョニィ・ジョースター」が『ラストサバイバー』に12月2日参戦ッ",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "whatHappened": "「To LOVEる ダークネス」ヤミやララ、モモたち9人が香水に♪ 矢吹健太朗描き下ろしイラ…",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": [
-        "ゲームユーザー",
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-sns-息子のハーフバースデー-パパが買ってきたケーキ-ママが号泣したワケは-朝から泣ける-俺もこれ絶対やるって決めた-サプライズに感動-投稿者に話を聞いた-news.yahoo.co.jp/articles/62a6060756cca522393d01b42a319719fde4d12b",
+      "title": "息子のハーフバースデー、パパが買ってきたケーキ→ママが号泣したワケは……　「朝から泣ける」「俺もこれ絶対やるって決めた」サプライズに感動　投稿者に話を聞いた",
+      "summary": "SNS上で注目を集めた投稿について、その背景をあらためて取材する「バズ投稿のウラ話」。今回は2025年11月にTikTokで話題を呼んだ「息子のハーフバースデーで号…",
+      "briefSummary": "SNS上で注目を集めた投稿について、その背景をあらためて取材する「バズ投稿のウラ話」。今回は2025年11月にTikTokで話題を呼んだ「息子のハーフバースデーで号泣したママ」のエピソードについて、マ",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "SNS",
+      "categoryLabels": [
+        "SNS",
+        "ネットカルチャー",
+        "エンタメ"
+      ],
+      "score": 94,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-15T23:30:00.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/62a6060756cca522393d01b42a319719fde4d12b?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "息子のハーフバースデー、パパが買ってきたケーキ→ママが号泣したワケは……　「朝から泣ける」「俺もこれ絶対やるって決めた」サプライズに感動　投稿者に話を聞いた",
+          "url": "https://news.yahoo.co.jp/articles/62a6060756cca522393d01b42a319719fde4d12b?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/62a6060756cca522393d01b42a319719fde4d12b?source=rss",
+          "publishedAt": "2026-11-15T23:30:00.000Z",
+          "publishedLabel": "11/15 23:30",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "息子のハーフバースデー、パパが買ってきたケーキ→ママが号泣したワケは…… 「朝から泣ける」「…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
         "ネット文化を追う人"
       ]
     },
     {
-      "id": "auto-entertainment-もっと買えばよかった-ikeaの-249円収納ボックス-に絶賛の声-家中の収納で使っています-取手つきなので便利-冷凍庫の区分けにピッタリ-news.yahoo.co.jp/articles/aadd361c85c50178946e1c8002d3b0cce5572868",
-      "title": "「もっと買えばよかった」IKEAの“249円収納ボックス”に絶賛の声　「家中の収納で使っています」「取手つきなので便利」「冷凍庫の区分けにピッタリ」",
-      "summary": "IKEAの“249円収納ボックス”が、こまごましたものをすっきりまとめられ、必要な場所へ持ち運びやすいアイテムとして好評です。キッチンや洗面所、デスクまわりなど、さ…",
-      "briefSummary": "IKEAの“249円収納ボックス”が、こまごましたものをすっきりまとめられ、必要な場所へ持ち運びやすいアイテムとして好評です。キッチンや洗面所、デスクまわりなど、さまざまな場所で使えます。【画像】IK",
+      "id": "auto-entertainment-すごいよ断熱効果-かなりの節約になる-ダイソーの-220円断冷カーテン-が人気-部屋の温度が3度高い-家中につけた-news.yahoo.co.jp/articles/310d8952b335bbad4500d42c63c1bf251f616a90",
+      "title": "「すごいよ断熱効果。かなりの節約になる」ダイソーの“220円断冷カーテン”が人気　「部屋の温度が3度高い」「家中につけた」",
+      "summary": "暖房をつけていても、窓際に座るとひんやり。冬の部屋で、そんな冷えが気になることはありませんか。大掛かりな対策は難しくても、身近なアイテムで窓の防寒対策を始めたいところ。今回は、ダイソーの「断冷クリア",
+      "briefSummary": "暖房をつけていても、窓際に座るとひんやり。冬の部屋で、そんな冷えが気になることはありませんか。大掛かりな対策は難しくても、身近なアイテムで窓の防寒対策を始めたいところ。今回は、ダイソーの「断冷クリアカ",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -746,15 +591,15 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 85,
+      "score": 94,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-15T13:50:00.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "6時間前",
+      "publishedAt": "2026-11-15T23:30:00.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
       "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/aadd361c85c50178946e1c8002d3b0cce5572868?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/310d8952b335bbad4500d42c63c1bf251f616a90?source=rss",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
@@ -775,15 +620,15 @@
             "buzz",
             "otaku"
           ],
-          "title": "「もっと買えばよかった」IKEAの“249円収納ボックス”に絶賛の声　「家中の収納で使っています」「取手つきなので便利」「冷凍庫の区分けにピッタリ」",
-          "url": "https://news.yahoo.co.jp/articles/aadd361c85c50178946e1c8002d3b0cce5572868?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/aadd361c85c50178946e1c8002d3b0cce5572868?source=rss",
-          "publishedAt": "2026-11-15T13:50:00.000Z",
-          "publishedLabel": "11/15 13:50",
+          "title": "「すごいよ断熱効果。かなりの節約になる」ダイソーの“220円断冷カーテン”が人気　「部屋の温度が3度高い」「家中につけた」",
+          "url": "https://news.yahoo.co.jp/articles/310d8952b335bbad4500d42c63c1bf251f616a90?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/310d8952b335bbad4500d42c63c1bf251f616a90?source=rss",
+          "publishedAt": "2026-11-15T23:30:00.000Z",
+          "publishedLabel": "11/15 23:30",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "「もっと買えばよかった」IKEAの“249円収納ボックス”に絶賛の声 「家中の収納で使ってい…",
+      "whatHappened": "「すごいよ断熱効果。かなりの節約になる」ダイソーの“220円断冷カーテン”が人気 「部屋の温…",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
@@ -791,10 +636,356 @@
       ]
     },
     {
-      "id": "auto-sns-デザインハーネスという虚像-blog.takanorip.com/posts/2026-11-15",
-      "title": "デザインハーネスという虚像",
-      "summary": "デザインハーネスは虚像だ。 デザインハーネスについてまじめにやっている人のことを非難したいわけではない。これが必要だと思う人はやれば良いと思う。だけど僕を巻き込まな…",
-      "briefSummary": "デザインハーネスは虚像だ。 デザインハーネスについてまじめにやっている人のことを非難したいわけではない。これが必要だと思う人はやれば良いと思う。だけど僕を巻き込まないでほしい。過度な宣伝をして「デザインハーネスをやらなければ」という流れをつ…",
+      "id": "auto-sns-息子がバイト代で買った8800円の服-パパ-うん-いいと思うよ-困惑のデザインに-ヒィwww-着る-んですよね-news.yahoo.co.jp/articles/cdf7b3d88374040d16128fcad6b697c8ebb8f531",
+      "title": "息子がバイト代で買った8800円の服→パパ「うん……いいと思うよ……」　困惑のデザインに「ヒィwww」「着る…んですよね？」",
+      "summary": "お父さんを戸惑わせた、子どもの思い切った買い物がX（Twitter）で話題です。投稿は記事執筆時点で87万回以上表示され、3万3000件以上の“いいね”を獲得しています。【画像】困惑のデザイン 投稿",
+      "briefSummary": "今回注目を集めたのは、息子さんがバイト代で買った、8800円のカーディガンです。少々高価ながら自分の稼ぎで買ったもの。親として何も言うことはないわけですが、「うん、いいと思うよ。自分でアルバイトしたお金だからね。うん……いいと思うよ……」と、投稿文はちょっと奥歯に物が挟まったような物言いです。 ぼっちさんをそうさせたのは、息子さんのチョイス。泥に潜む平べった…",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "SNS",
+      "categoryLabels": [
+        "SNS",
+        "エンタメ",
+        "ネットカルチャー"
+      ],
+      "score": 94,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-15T23:30:00.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/cdf7b3d88374040d16128fcad6b697c8ebb8f531?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "息子がバイト代で買った8800円の服→パパ「うん……いいと思うよ……」　困惑のデザインに「ヒィwww」「着る…んですよね？」",
+          "url": "https://news.yahoo.co.jp/articles/cdf7b3d88374040d16128fcad6b697c8ebb8f531?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/cdf7b3d88374040d16128fcad6b697c8ebb8f531?source=rss",
+          "publishedAt": "2026-11-15T23:30:00.000Z",
+          "publishedLabel": "11/15 23:30",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "息子がバイト代で買った8800円の服→パパ「うん……いいと思うよ……」 困惑のデザインに「ヒ…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-entertainment-69歳おばあちゃん-いざ孫の運動会へ-着て行ったのは-絶対チラチラ見ちゃう-うちの運動会にも来ていただけますか-news.yahoo.co.jp/articles/ab6e8ac42f3abb12b636e7b9e8160d0bef36b9a5",
+      "title": "69歳おばあちゃん「いざ孫の運動会へ」→着て行ったのは……「絶対チラチラ見ちゃう」「うちの運動会にも来ていただけますか？」",
+      "summary": "孫の運動会におばあちゃんが着て行ったのは……。まさかの服装がThreadsで話題です。「かっこよすぎ」「クラス中に自慢する」と反響を呼び、記事執筆時点で52万回表示…",
+      "briefSummary": "孫の運動会におばあちゃんが着て行ったのは……。まさかの服装がThreadsで話題です。「かっこよすぎ」「クラス中に自慢する」と反響を呼び、記事執筆時点で52万回表示を突破、2万5000件を超える“いい",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 94,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-15T23:30:00.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/ab6e8ac42f3abb12b636e7b9e8160d0bef36b9a5?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "69歳おばあちゃん「いざ孫の運動会へ」→着て行ったのは……「絶対チラチラ見ちゃう」「うちの運動会にも来ていただけますか？」",
+          "url": "https://news.yahoo.co.jp/articles/ab6e8ac42f3abb12b636e7b9e8160d0bef36b9a5?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/ab6e8ac42f3abb12b636e7b9e8160d0bef36b9a5?source=rss",
+          "publishedAt": "2026-11-15T23:30:00.000Z",
+          "publishedLabel": "11/15 23:30",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "69歳おばあちゃん「いざ孫の運動会へ」→着て行ったのは……「絶対チラチラ見ちゃう」「うちの運…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-general-i-m-so-happy-中井亜美gp連勝-news.yahoo.co.jp/pickup/6602754",
+      "title": "「I'm so happy」中井亜美GP連勝",
+      "summary": "GPシリーズ第4戦スケートアメリカ フィギュアスケートのグランプリ（GP）シリーズ第4戦・スケートアメリカは15日（日本時間16日）、米ワシントン州エバレットで行われた。女子フリーで中井亜美（TOK",
+      "briefSummary": "GPシリーズ第4戦スケートアメリカ フィギュアスケートのグランプリ（GP）シリーズ第4戦・スケートアメリカは15日（日本時間16日）、米ワシントン州エバレットで行われた。女子フリーで中井亜美（TOK",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "general"
+      ],
+      "categoryLabel": "スポーツ",
+      "categoryLabels": [
+        "スポーツ",
+        "その他"
+      ],
+      "score": 84,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-15T23:26:08.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "Yahoo!ニュース / スポーツ",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602754?source=rss",
+      "hotReasons": [],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-sports",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / スポーツ",
+          "sourceGroup": "general-sports",
+          "sourcePriority": 58,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "「I'm so happy」中井亜美GP連勝",
+          "url": "https://news.yahoo.co.jp/pickup/6602754?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602754?source=rss",
+          "publishedAt": "2026-11-15T23:26:08.000Z",
+          "publishedLabel": "11/15 23:26",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「I'm so happy」中井亜美GP連勝",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-tech-itmedia-news-京成-公式サイト-システム不具合-で閲覧できない状態に-復旧未定-itmedia.co.jp/news/article/2611/16/2000003210",
+      "title": "[ITmedia News] 京成、公式サイト「システム不具合」で閲覧できない状態に　復旧未定",
+      "summary": "「京成スカイライナー」の予約システムが不正アクセスを受け、最大約337万件の個人情報が流出した可能性があると13日に発表していた。その後、公式サイトが閲覧できなくな…",
+      "briefSummary": "「京成スカイライナー」の予約システムが不正アクセスを受け、最大約337万件の個人情報が流出した可能性があると13日に発表していた。その後、公式サイトが閲覧できなくなったが、両者の関係は不明。",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 88,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2611/16/2000003210/10012171/2048",
+      "publishedAt": "2026-11-15T23:24:20.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "ITmedia",
+      "sourceUrl": "https://www.itmedia.co.jp/news/article/2611/16/2000003210/",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "itmedia-all",
+          "source": "ITmedia",
+          "sourceName": "ITmedia",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 68,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "tech"
+          ],
+          "title": "[ITmedia News] 京成、公式サイト「システム不具合」で閲覧できない状態に　復旧未定",
+          "url": "https://www.itmedia.co.jp/news/article/2611/16/2000003210/",
+          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2611/16/2000003210/",
+          "publishedAt": "2026-11-15T23:24:20.000Z",
+          "publishedLabel": "11/15 23:24",
+          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2611/16/2000003210/10012171/2048"
+        }
+      ],
+      "whatHappened": "[ITmedia News] 京成、公式サイト「システム不具合」で閲覧できない状態に 復旧未…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-tech-aiに思考丸投げ-16歳-今後怖い-news.yahoo.co.jp/pickup/6602749",
+      "title": "AIに思考丸投げ 16歳「今後怖い」",
+      "summary": "",
+      "briefSummary": "",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "その他"
+      ],
+      "score": 86,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-15T23:22:11.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間以内",
+      "sourceName": "Yahoo!ニュース / IT",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602749?source=rss",
+      "hotReasons": [],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-it",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / IT",
+          "sourceGroup": "general-tech",
+          "sourcePriority": 62,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "AIに思考丸投げ 16歳「今後怖い」",
+          "url": "https://news.yahoo.co.jp/pickup/6602749?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602749?source=rss",
+          "publishedAt": "2026-11-15T23:22:11.000Z",
+          "publishedLabel": "11/15 23:22",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "AIに思考丸投げ 16歳「今後怖い」",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "仕事や制作環境、導入判断に影響する可能性があります。",
+      "targetAudience": [
+        "AI利用者"
+      ]
+    },
+    {
+      "id": "auto-entertainment-雪道を散歩中-愛犬が大絶叫-視線の先には-大きな怪獣がいる-驚きの光景に-めっちゃ怖いのねww-news.yahoo.co.jp/articles/a0a721f2efd732a5a0173ab812860890aeda2456",
+      "title": "雪道を散歩中、愛犬が大絶叫→視線の先には……　「大きな怪獣がいる！！！」驚きの光景に「めっちゃ怖いのねww」",
+      "summary": "1年前や5年前……。少し前にインターネット上で話題になった投稿や動画を振り返って紹介する企画「昔のインターネット発掘！」。今回は2024年1月、Instagramに投稿された、雪道を散歩する柴犬の動",
+      "briefSummary": "1年前や5年前……。少し前にインターネット上で話題になった投稿や動画を振り返って紹介する企画「昔のインターネット発掘！」。今回は2024年1月、Instagramに投稿された、雪道を散歩する柴犬の動画",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 93,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-15T23:15:00.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/a0a721f2efd732a5a0173ab812860890aeda2456?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "雪道を散歩中、愛犬が大絶叫→視線の先には……　「大きな怪獣がいる！！！」驚きの光景に「めっちゃ怖いのねww」",
+          "url": "https://news.yahoo.co.jp/articles/a0a721f2efd732a5a0173ab812860890aeda2456?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/a0a721f2efd732a5a0173ab812860890aeda2456?source=rss",
+          "publishedAt": "2026-11-15T23:15:00.000Z",
+          "publishedLabel": "11/15 23:15",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "雪道を散歩中、愛犬が大絶叫→視線の先には…… 「大きな怪獣がいる！！！」驚きの光景に「めっち…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-sns-キャンプ飯はこれで十分だったのか-楽すぎる-映えるキャンプ飯なんかいらなかったんや-場所補正がかかって神の味に-togetter.com/li/2770939",
+      "title": "キャンプ飯はこれで十分だったのか…楽すぎる「映えるキャンプ飯なんかいらなかったんや！」「場所補正がかかって神の味に」",
+      "summary": "あおい @bImlGTX9eJ82qRK @bupponkotsu わかる気がします笑 キャンプ始めた当初はいろいろ具材買って行ってたくさん作ってましたが、だんだん…",
+      "briefSummary": "あおい @bImlGTX9eJ82qRK @bupponkotsu わかる気がします笑 キャンプ始めた当初はいろいろ具材買って行ってたくさん作ってましたが、だんだんその工程何面倒人なったりしますもんね 2026-11-15 16:48:43",
       "category": "sns",
       "categories": [
         "sns",
@@ -806,15 +997,15 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 81,
+      "score": 89,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://blog.takanorip.com/img/og-image-blog.png",
-      "publishedAt": "2026-11-15T13:45:36.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "6時間前",
+      "thumbnailUrl": "https://s.tgstc.com/ogp3/cd10c02d7ccd03e67d9879ada614ab27-1200x630.jpeg",
+      "publishedAt": "2026-11-15T23:06:29.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間前",
       "sourceName": "はてなブックマーク人気",
-      "sourceUrl": "https://blog.takanorip.com/posts/2026-11-15/",
+      "sourceUrl": "https://togetter.com/li/2770939",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
@@ -835,15 +1026,15 @@
             "trend",
             "buzz"
           ],
-          "title": "デザインハーネスという虚像",
-          "url": "https://blog.takanorip.com/posts/2026-11-15/",
-          "canonicalUrl": "https://blog.takanorip.com/posts/2026-11-15/",
-          "publishedAt": "2026-11-15T13:45:36.000Z",
-          "publishedLabel": "11/15 13:45",
-          "thumbnailUrl": "https://blog.takanorip.com/img/og-image-blog.png"
+          "title": "キャンプ飯はこれで十分だったのか…楽すぎる「映えるキャンプ飯なんかいらなかったんや！」「場所補正がかかって神の味に」",
+          "url": "https://togetter.com/li/2770939",
+          "canonicalUrl": "https://togetter.com/li/2770939",
+          "publishedAt": "2026-11-15T23:06:29.000Z",
+          "publishedLabel": "11/15 23:06",
+          "thumbnailUrl": "https://s.tgstc.com/ogp3/cd10c02d7ccd03e67d9879ada614ab27-1200x630.jpeg"
         }
       ],
-      "whatHappened": "デザインハーネスという虚像",
+      "whatHappened": "キャンプ飯はこれで十分だったのか…楽すぎる「映えるキャンプ飯なんかいらなかったんや！」「場所…",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
@@ -851,111 +1042,72 @@
       ]
     },
     {
-      "id": "auto-general-熊本市長選-現職大西一史氏が4選-news.yahoo.co.jp/pickup/6602731",
-      "title": "熊本市長選 現職大西一史氏が4選",
-      "summary": "熊本市長選は１５日、投開票され、現職の大西一史氏（５８）（無所属）が新人４人を破って４選を果たした。投票率は３９・４０％（前回２８・２６％）だった。",
-      "briefSummary": "熊本市長選は１５日、投開票され、現職の大西一史氏（５８）（無所属）が新人４人を破って４選を果たした。投票率は３９・４０％（前回２８・２６％）だった。",
-      "category": "general",
+      "id": "auto-tech-itmedia-news-金曜に起きた-outlook使えない-問題-土曜午後に復旧-microsoft-365-障害-約36時間続く-itmedia.co.jp/news/article/2611/16/2000003209",
+      "title": "[ITmedia News] 金曜に起きた「Outlook使えない」問題、土曜午後に復旧……「Microsoft 365」障害、約36時間続く",
+      "summary": "障害発生中は、Outlookでメール送受信ができなかったり、Copilotが使えないなどの問題が起き、日本の政府や企業にも大きな影響が出た。",
+      "briefSummary": "障害発生中は、Outlookでメール送受信ができなかったり、Copilotが使えないなどの問題が起き、日本の政府や企業にも大きな影響が出た。",
+      "category": "tech",
       "categories": [
+        "tech",
+        "sns",
+        "net-culture",
+        "business",
         "general"
       ],
-      "categoryLabel": "その他",
+      "categoryLabel": "テック",
       "categoryLabels": [
-        "その他"
+        "テック",
+        "SNS",
+        "ネットカルチャー",
+        "経済"
       ],
-      "score": 72,
+      "score": 87,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-15T13:43:18.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "6時間前",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602731?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "熊本市長選 現職大西一史氏が4選",
-          "url": "https://news.yahoo.co.jp/pickup/6602731?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602731?source=rss",
-          "publishedAt": "2026-11-15T13:43:18.000Z",
-          "publishedLabel": "11/15 13:43",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "熊本市長選 現職大西一史氏が4選",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-general-侍j-正宗コンビ-軸に大会12hr-news.yahoo.co.jp/pickup/6602730",
-      "title": "侍J「正宗コンビ」軸に大会12HR",
-      "summary": "",
-      "briefSummary": "",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "その他"
-      ],
-      "score": 77,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-15T13:33:10.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "6時間前",
-      "sourceName": "Yahoo!ニュース / スポーツ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602730?source=rss",
+      "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2611/16/2000003209/10012168/2048",
+      "publishedAt": "2026-11-15T23:05:13.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間前",
+      "sourceName": "ITmedia",
+      "sourceUrl": "https://www.itmedia.co.jp/news/article/2611/16/2000003209/",
       "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "主要ニュースソースや公式発表ベースで確認されています。"
+        "SNSやネット上で反応が広がりやすい話題です。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "yahoo-sports",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / スポーツ",
-          "sourceGroup": "general-sports",
-          "sourcePriority": 58,
+          "sourceId": "itmedia-all",
+          "source": "ITmedia",
+          "sourceName": "ITmedia",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 68,
           "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "侍J「正宗コンビ」軸に大会12HR",
-          "url": "https://news.yahoo.co.jp/pickup/6602730?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602730?source=rss",
-          "publishedAt": "2026-11-15T13:33:10.000Z",
-          "publishedLabel": "11/15 13:33",
-          "thumbnailUrl": null
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "tech"
+          ],
+          "title": "[ITmedia News] 金曜に起きた「Outlook使えない」問題、土曜午後に復旧……「Microsoft 365」障害、約36時間続く",
+          "url": "https://www.itmedia.co.jp/news/article/2611/16/2000003209/",
+          "canonicalUrl": "https://www.itmedia.co.jp/news/article/2611/16/2000003209/",
+          "publishedAt": "2026-11-15T23:05:13.000Z",
+          "publishedLabel": "11/15 23:05",
+          "thumbnailUrl": "https://www.itmedia.co.jp/news/article/ogp/2611/16/2000003209/10012168/2048"
         }
       ],
-      "whatHappened": "侍J「正宗コンビ」軸に大会12HR",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "whatHappened": "[ITmedia News] 金曜に起きた「Outlook使えない」問題、土曜午後に復旧………",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
       "targetAudience": [
-        "ガジェット好き"
+        "ネット文化を追う人"
       ]
     },
     {
-      "id": "auto-entertainment-全色買っちゃいました-ワークマンの-2900円防風コート-が高評価-風が一切入ってきません-軽くてスタイリッシュ-しかも暖かい-news.yahoo.co.jp/articles/97f4342aa5a6da8c954d376220108e3eb00b6c0c",
-      "title": "「全色買っちゃいました！」　ワークマンの“2900円防風コート”が高評価　「風が一切入ってきません」「軽くてスタイリッシュ、しかも暖かい」",
-      "summary": "肌寒さが増す11月、日常で羽織るアウターは軽くて動きやすいだけでなく、冷たい風や急な雨を防げると心強いものです。そんな時におすすめなのが、ワークマンから販売されてい…",
-      "briefSummary": "肌寒さが増す11月、日常で羽織るアウターは軽くて動きやすいだけでなく、冷たい風や急な雨を防げると心強いものです。そんな時におすすめなのが、ワークマンから販売されている“2900円の防風コート”です。【",
+      "id": "auto-entertainment-朝6時-息子を起こしに行ったら-えええ-背筋が凍る光景に-どういうこと-5度見くらいした-news.yahoo.co.jp/articles/38b7ac5dc330ef41f1ef1ec169b4fa09475894c3",
+      "title": "朝6時、息子を起こしに行ったら……「えええ!?」　背筋が凍る光景に「どういうこと？」「5度見くらいした」",
+      "summary": "朝早く息子を起こしに行ったら、そばに……!? 一瞬ぎょっとするようなエピソードがThreadsで話題です。投稿は記事執筆時点で120万回以上表示され、5万件以上の“…",
+      "briefSummary": "朝早く息子を起こしに行ったら、そばに……!? 一瞬ぎょっとするようなエピソードがThreadsで話題です。投稿は記事執筆時点で120万回以上表示され、5万件以上の“いいね”を獲得しています。【画像】背",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -969,15 +1121,77 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 84,
+      "score": 93,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-15T13:20:00.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "7時間前",
+      "publishedAt": "2026-11-15T23:00:00.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間前",
       "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/97f4342aa5a6da8c954d376220108e3eb00b6c0c?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/38b7ac5dc330ef41f1ef1ec169b4fa09475894c3?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "朝6時、息子を起こしに行ったら……「えええ!?」　背筋が凍る光景に「どういうこと？」「5度見くらいした」",
+          "url": "https://news.yahoo.co.jp/articles/38b7ac5dc330ef41f1ef1ec169b4fa09475894c3?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/38b7ac5dc330ef41f1ef1ec169b4fa09475894c3?source=rss",
+          "publishedAt": "2026-11-15T23:00:00.000Z",
+          "publishedLabel": "11/15 23:00",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "朝6時、息子を起こしに行ったら……「えええ!?」 背筋が凍る光景に「どういうこと？」「5度見…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-entertainment-着やせして見える-guの-パーカー-が2990円-1990円に-秋冬に大活躍間違いなし-シンプルだけどおしゃれ-着心地が最高です-news.yahoo.co.jp/articles/b6a0936feaeb0e75430a1a6087a7d9b4747f3c4a",
+      "title": "「着やせして見える」　GUの“パーカー”が2990円→1990円に　「秋冬に大活躍間違いなし」「シンプルだけどおしゃれ」「着心地が最高です」",
+      "summary": "GUの「スムーススウェットパーカ」が、シンプルなデザインで着まわしやすく、着心地も良いと人気を集めています。【画像】GUの“1990円パーカー” 本記事では、そんな…",
+      "briefSummary": "GUの「スムーススウェットパーカ」が、シンプルなデザインで着まわしやすく、着心地も良いと人気を集めています。【画像】GUの“1990円パーカー” 本記事では、そんな「スムーススウェットパーカ」について",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 93,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-15T23:00:00.000Z",
+      "capturedAt": "2026-11-16T00:20:14.615Z",
+      "time": "1時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/b6a0936feaeb0e75430a1a6087a7d9b4747f3c4a?source=rss",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
@@ -998,173 +1212,20 @@
             "buzz",
             "otaku"
           ],
-          "title": "「全色買っちゃいました！」　ワークマンの“2900円防風コート”が高評価　「風が一切入ってきません」「軽くてスタイリッシュ、しかも暖かい」",
-          "url": "https://news.yahoo.co.jp/articles/97f4342aa5a6da8c954d376220108e3eb00b6c0c?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/97f4342aa5a6da8c954d376220108e3eb00b6c0c?source=rss",
-          "publishedAt": "2026-11-15T13:20:00.000Z",
-          "publishedLabel": "11/15 13:20",
+          "title": "「着やせして見える」　GUの“パーカー”が2990円→1990円に　「秋冬に大活躍間違いなし」「シンプルだけどおしゃれ」「着心地が最高です」",
+          "url": "https://news.yahoo.co.jp/articles/b6a0936feaeb0e75430a1a6087a7d9b4747f3c4a?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/b6a0936feaeb0e75430a1a6087a7d9b4747f3c4a?source=rss",
+          "publishedAt": "2026-11-15T23:00:00.000Z",
+          "publishedLabel": "11/15 23:00",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "「全色買っちゃいました！」 ワークマンの“2900円防風コート”が高評価 「風が一切入ってき…",
+      "whatHappened": "「着やせして見える」 GUの“パーカー”が2990円→1990円に 「秋冬に大活躍間違いなし…",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
         "ネット文化を追う人"
       ]
-    },
-    {
-      "id": "auto-general-アジアcs-侍jが韓国破り3連覇-news.yahoo.co.jp/pickup/6602727",
-      "title": "アジアCS 侍Jが韓国破り3連覇",
-      "summary": "西川が1号先制ソロ、宗山も適時打 野球日本代表「侍ジャパン」は15日、東京ドームで行われた「ラグザス アジアプロ野球チャンピオンシップ2026」で韓国代表との決勝戦に臨み、5-1で勝利し優勝を飾った",
-      "briefSummary": "西川が1号先制ソロ、宗山も適時打 野球日本代表「侍ジャパン」は15日、東京ドームで行われた「ラグザス アジアプロ野球チャンピオンシップ2026」で韓国代表との決勝戦に臨み、5-1で勝利し優勝を飾った",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "その他"
-      ],
-      "score": 74,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-15T13:15:38.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "7時間前",
-      "sourceName": "Yahoo!ニュース / スポーツ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602727?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-sports",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / スポーツ",
-          "sourceGroup": "general-sports",
-          "sourcePriority": 58,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "アジアCS 侍Jが韓国破り3連覇",
-          "url": "https://news.yahoo.co.jp/pickup/6602727?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602727?source=rss",
-          "publishedAt": "2026-11-15T13:15:38.000Z",
-          "publishedLabel": "11/15 13:15",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "アジアCS 侍Jが韓国破り3連覇",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-games-ワンピース-シャムロック聖や軍子も収録-ゴムゴムの実-型入浴剤からマスコットが飛び出す-びっくらたまご-エルバフ編-発売-inside-games.jp/article/2026/11/15/191000.html",
-      "title": "「ワンピース」シャムロック聖や軍子も収録！“ゴムゴムの実”型入浴剤からマスコットが飛び出す「びっくらたまご エルバフ編」発売",
-      "summary": "「びっくらたまご ONE PIECE ～エルバフ編～」が2026年11月16日に発売！",
-      "briefSummary": "「びっくらたまご ONE PIECE ～エルバフ編～」 の価格は715円（税込）。2026年11月16日発売予定です。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 85,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1778211.jpg",
-      "publishedAt": "2026-11-15T13:15:02.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "7時間前",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/15/191000.html",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "「ワンピース」シャムロック聖や軍子も収録！“ゴムゴムの実”型入浴剤からマスコットが飛び出す「びっくらたまご エルバフ編」発売",
-          "url": "https://www.inside-games.jp/article/2026/11/15/191000.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/15/191000.html",
-          "publishedAt": "2026-11-15T13:15:02.000Z",
-          "publishedLabel": "11/15 13:15",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1778211.jpg"
-        }
-      ],
-      "whatHappened": "「ワンピース」シャムロック聖や軍子も収録",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-general-特急と衝突し車火災-1人安否不明-news.yahoo.co.jp/pickup/6602725",
-      "title": "特急と衝突し車火災 1人安否不明",
-      "summary": "",
-      "briefSummary": "【速報】JR山陰線で特急列車「スーパーおき」と踏切内にいた軽乗用車が衝突する事故 「列車と車がぶつかって火が出ている」と通報…ブレーキ間に合わず衝突し、約350m引きずり停車→車両火災発生 車の運転手の安否不明 島根県出雲市",
-      "category": "general",
-      "categories": [
-        "general"
-      ],
-      "categoryLabel": "その他",
-      "categoryLabels": [
-        "その他"
-      ],
-      "score": 71,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-15T13:10:15.000Z",
-      "capturedAt": "2026-11-15T20:20:11.591Z",
-      "time": "7時間前",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602725?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "特急と衝突し車火災 1人安否不明",
-          "url": "https://news.yahoo.co.jp/pickup/6602725?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602725?source=rss",
-          "publishedAt": "2026-11-15T13:10:15.000Z",
-          "publishedLabel": "11/15 13:10",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "特急と衝突し車火災 1人安否不明",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
     }
   ]
 }

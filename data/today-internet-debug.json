@@ -1,25 +1,81 @@
 {
-  "generatedAt": "2026-11-16T07:16:24.525Z",
+  "generatedAt": "2026-11-16T17:25:35.608Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-404",
-  "selectedTitle": "ファミリーマートが『ドラクエ』コラボを示唆！公式Xで、“ファミマのロゴから飛び出すスライム”の画像が投稿",
+  "selectedClusterId": "today-cluster-3",
+  "selectedTitle": "『ダイヤモンドの功罪』TVアニメ化が決定！制作は「正反対な君と僕」「小市民シリーズ」のラパントラックが担当",
   "candidates": [
     {
-      "clusterId": "today-cluster-404",
-      "title": "ファミリーマートが『ドラクエ』コラボを示唆！公式Xで、“ファミマのロゴから飛び出すスライム”の画像が投稿",
-      "category": "games",
+      "clusterId": "today-cluster-3",
+      "title": "『ダイヤモンドの功罪』TVアニメ化が決定！制作は「正反対な君と僕」「小市民シリーズ」のラパントラックが担当",
+      "category": "sports",
       "categories": [
+        "sports",
+        "anime",
         "games",
-        "sns",
+        "entertainment",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 67.3,
-      "confidence": 0.38,
-      "articleCount": 1,
+      "buzzScore": 76.7,
+      "confidence": 0.44,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 5.9,
+        "social": 8.4,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 17,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-288",
+      "title": "卵サンドつかむ客動画炎上 店説明",
+      "category": "net-culture",
+      "categories": [
+        "net-culture",
+        "tech",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 64.6,
+      "confidence": 0.35,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
@@ -28,9 +84,9 @@
         "trend": 22,
         "internetNativeBoost": 8,
         "search": 5,
-        "social": 4.6,
-        "velocity": 2.7,
-        "freshness": 8.5,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -45,62 +101,9 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 60,
+        "crossCategoryScore": 80,
         "archiveHeatScore": 100,
         "internalSearchScore": 38.9,
-        "internalSocialScore": 35.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-224",
-      "title": "「高橋和希原画展」の遊戯王グッズ全ラインナップ公開！特典付チケットは「オシリス」「オベリスク」「ラー」のオリジナルカードセット",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "anime",
-        "games",
-        "general"
-      ],
-      "buzzScore": 63,
-      "confidence": 0.4,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 21.3,
-        "internetNativeBoost": 8,
-        "search": 4.8,
-        "social": 6,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 97,
-        "internalSearchScore": 37.8,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -110,84 +113,30 @@
       ]
     },
     {
-      "clusterId": "today-cluster-3",
-      "title": "自作ゲームが勝手に「鍵屋」で売られていた開発者、自腹で買って“横流しの犯人”を突き止める。業界向けキー配布ツールから永久追放",
+      "clusterId": "today-cluster-8",
+      "title": "Unity、ゲーム開発者に「5万ドル」を助成する新プログラムを発表。専門家のサポートや業界とのコネクション、PRまで手厚く支援",
       "category": "games",
       "categories": [
         "games",
         "business",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 61.9,
-      "confidence": 0.47,
+      "buzzScore": 62.6,
+      "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "trend": 20.9,
         "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 5.6,
-        "velocity": 8.3,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 1,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-57",
-      "title": "OpenAIもAnthropicも勧めるのになぜ流行らない？「AIへの指示は99%音声入力」のPdMに聞く活用術",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "business",
-        "general"
-      ],
-      "buzzScore": 60.6,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 8.4,
+        "search": 6.3,
+        "social": 7,
         "velocity": 0,
         "freshness": 7,
         "authority": 1.5,
@@ -204,10 +153,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 65.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 95,
+        "internalSearchScore": 48.9,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -216,16 +165,15 @@
       ]
     },
     {
-      "clusterId": "today-cluster-762",
-      "title": "「ありそうでなかった」【シャトレーゼ】季節限定“540円ショートケーキ”に称賛の嵐「あっという間に完食」「レギュラー化してほしい」",
-      "category": "net-culture",
+      "clusterId": "today-cluster-1058",
+      "title": "ファミリーマートが『ドラクエ』コラボを示唆！公式Xで、“ファミマのロゴから飛び出すスライム”の画像が投稿",
+      "category": "games",
       "categories": [
-        "net-culture",
-        "entertainment",
+        "games",
         "sns",
         "general"
       ],
-      "buzzScore": 59.8,
+      "buzzScore": 58,
       "confidence": 0.31,
       "articleCount": 1,
       "sourceCount": 1,
@@ -236,12 +184,12 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 19.1,
         "internetNativeBoost": 8,
         "search": 4.2,
-        "social": 6,
+        "social": 4.5,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -255,11 +203,64 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 33.2,
+        "internalSocialScore": 34.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-165",
+      "title": "TVアニメ『ウィッチウォッチ』第2期が2027年に放送決定！指でハートを作るニコがかわいいティザービジュアルが解禁",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "games",
+        "net-culture",
+        "general",
+        "entertainment"
+      ],
+      "buzzScore": 56.4,
+      "confidence": 0.4,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "複数の話題候補の中で最も総合スコアが高い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
+        "trend": 13,
+        "internetNativeBoost": 0,
+        "search": 4.3,
+        "social": 6.8,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 19.8,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 46.7
+        "archiveHeatScore": 59,
+        "internalSearchScore": 33.5,
+        "internalSocialScore": 52.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

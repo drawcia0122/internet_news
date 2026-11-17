@@ -1,144 +1,207 @@
 {
-  "generatedAt": "2026-11-17T01:02:18.251Z",
-  "totalCount": 1471,
+  "generatedAt": "2026-11-17T09:03:31.840Z",
+  "totalCount": 1472,
   "categoryCounts": {
-    "all": 1471,
-    "general": 52,
-    "tech": 172,
-    "business": 100,
-    "politics": 49,
-    "entertainment": 664,
-    "anime": 77,
-    "games": 367,
-    "game-features": 8,
-    "anime-features": 8,
-    "manga": 204,
-    "books": 37,
-    "sports": 64,
-    "sns": 688,
-    "net-culture": 728,
+    "all": 1472,
+    "general": 49,
+    "tech": 168,
+    "business": 106,
+    "politics": 52,
+    "entertainment": 653,
+    "anime": 79,
+    "games": 381,
+    "game-features": 7,
+    "anime-features": 6,
+    "manga": 215,
+    "books": 43,
+    "sports": 68,
+    "sns": 659,
+    "net-culture": 724,
     "matome": 1,
-    "crime": 28,
+    "crime": 27,
     "adult": 16,
-    "world": 61
+    "world": 67
   },
   "hasMore": true,
   "nextPage": 2,
   "items": [
     {
-      "id": "auto-entertainment-3歳娘の七五三-ママが前夜まで縫っていたのは-圧巻の手作り-衣装-に-かわいすぎて震えがきそう-華やか-news.yahoo.co.jp/articles/94944e0226c9399e5b55b2d11c89ec44a5d8ca8f",
-      "title": "3歳娘の七五三→ママが前夜まで縫っていたのは……　圧巻の手作り“衣装“に「かわいすぎて震えがきそう」「華やか！」",
-      "summary": "幼い娘のためにお母さんが縫い上げた、手作りの品がThreadsで話題です。投稿は記事執筆時点で3万回以上表示され、830件以上の“いいね”を獲得しています。【画像】圧巻の手作り“衣装”",
-      "briefSummary": "幼い娘のためにお母さんが縫い上げた、手作りの品がThreadsで話題です。投稿は記事執筆時点で3万回以上表示され、830件以上の“いいね”を獲得しています。【画像】圧巻の手作り“衣装”",
-      "category": "entertainment",
+      "id": "auto-general-鳥の生食-宮崎・鹿児島で聞いた声-news.yahoo.co.jp/pickup/6602925",
+      "title": "鳥の生食 宮崎・鹿児島で聞いた声",
+      "summary": "",
+      "briefSummary": "",
+      "category": "business",
       "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
+        "business",
         "general"
       ],
-      "categoryLabel": "エンタメ",
+      "categoryLabel": "経済",
       "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
+        "経済",
+        "その他"
+      ],
+      "score": 93,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-17T09:01:49.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "Yahoo!ニュース / 経済",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602925?source=rss",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-business",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 経済",
+          "sourceGroup": "important-news",
+          "sourcePriority": 78,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "鳥の生食 宮崎・鹿児島で聞いた声",
+          "url": "https://news.yahoo.co.jp/pickup/6602925?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602925?source=rss",
+          "publishedAt": "2026-11-17T09:01:49.000Z",
+          "publishedLabel": "11/17 09:01",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "鳥の生食 宮崎・鹿児島で聞いた声",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-games-steamへのリリース手数料-25倍の約40万円にすべき-aiゲームの大量投稿と審査遅延に解決策はあるのか-インディー業界の2人が言及-gamespark.jp/article/2026/11/17/174971.html",
+      "title": "Steamへのリリース手数料、25倍の約40万円にすべき？AIゲームの大量投稿と審査遅延に解決策はあるのか…インディー業界の2人が言及",
+      "summary": "インディーゲームパブリッシャーNo More Robotsの創業者Mike Rose氏と、インディースタジオVlambeerの共同創業者Rami Ismail氏は11月16日、YouTubeチャンネル 「Mike ＆ Rami Are Still Here」 でSteamでのゲーム申請・登録手数料を…",
+      "briefSummary": "この状況はValveにとっても深刻な問題であるとするRose氏。Game*Sparkでも過去に何度か触れてきましたが、Steamに新作ゲームをリリースするためにはValveの事前審査が必須であり、問題点があれば差し戻しと再審査も行われます。",
+      "category": "games",
+      "categories": [
+        "games",
+        "business",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "経済"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220306.png",
+      "publishedAt": "2026-11-17T09:00:03.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/17/174971.html",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "Steamへのリリース手数料、25倍の約40万円にすべき？AIゲームの大量投稿と審査遅延に解決策はあるのか…インディー業界の2人が言及",
+          "url": "http://www.gamespark.jp/article/2026/11/17/174971.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/17/174971.html",
+          "publishedAt": "2026-11-17T09:00:03.000Z",
+          "publishedLabel": "11/17 09:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220306.png"
+        }
+      ],
+      "whatHappened": "Steamへのリリース手数料、25倍の約40万円にすべき",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "AI利用者",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-manga-カナン様はあくまでチョロい-テレビアニメ第2期-2027年放送-追加キャストに松岡美里-伊藤美来-富田美憂-lynn-mantan-web.jp/article/20261117dog00m200075000a.html",
+      "title": "カナン様はあくまでチョロい：テレビアニメ第2期　2027年放送　追加キャストに松岡美里、伊藤美来、富田美憂、Lynn",
+      "summary": "「週刊少年マガジン」（講談社）で連載中のnoncoさんのラブコメディーマンガが原作のテレビアニメ「カナン様はあくまでチョロい」の第2期「カナン様はあくまでチョロい…",
+      "briefSummary": "「週刊少年マガジン」（講談社）で連載中のnoncoさんのラブコメディーマンガが原作のテレビアニメ「カナン様はあくまでチョロい」の第2期「カナン様はあくまでチョロい 2 EASY」が…",
+      "category": "manga",
+      "categories": [
+        "manga",
+        "anime",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "漫画",
+      "categoryLabels": [
+        "漫画",
+        "アニメ",
+        "エンタメ"
       ],
       "score": 95,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T01:00:00.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
+      "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/17/20261117dog00m200075000a/001.jpg",
+      "publishedAt": "2026-11-17T09:00:00.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
       "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/94944e0226c9399e5b55b2d11c89ec44a5d8ca8f?source=rss",
+      "sourceName": "MANTANWEB",
+      "sourceUrl": "https://mantan-web.jp/article/20261117dog00m200075000a.html",
       "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
+        "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
+          "sourceId": "mantanweb",
+          "source": "MANTANWEB",
+          "sourceName": "MANTANWEB",
+          "sourceGroup": "anime",
           "sourcePriority": 84,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
+            "anime",
+            "manga",
+            "entertainment"
           ],
-          "title": "3歳娘の七五三→ママが前夜まで縫っていたのは……　圧巻の手作り“衣装“に「かわいすぎて震えがきそう」「華やか！」",
-          "url": "https://news.yahoo.co.jp/articles/94944e0226c9399e5b55b2d11c89ec44a5d8ca8f?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/94944e0226c9399e5b55b2d11c89ec44a5d8ca8f?source=rss",
-          "publishedAt": "2026-11-17T01:00:00.000Z",
-          "publishedLabel": "11/17 01:00",
-          "thumbnailUrl": null
+          "title": "カナン様はあくまでチョロい：テレビアニメ第2期　2027年放送　追加キャストに松岡美里、伊藤美来、富田美憂、Lynn",
+          "url": "https://mantan-web.jp/article/20261117dog00m200075000a.html",
+          "canonicalUrl": "https://mantan-web.jp/article/20261117dog00m200075000a.html",
+          "publishedAt": "2026-11-17T09:00:00.000Z",
+          "publishedLabel": "11/17 09:00",
+          "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/17/20261117dog00m200075000a/001.jpg"
         }
       ],
-      "whatHappened": "3歳娘の七五三→ママが前夜まで縫っていたのは…… 圧巻の手作り“衣装“に「かわいすぎて震えが…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "whatHappened": "カナン様はあくまでチョロい：テレビアニメ第2期 2027年放送 追加キャストに松岡美里、伊藤…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": [
-        "ネット文化を追う人"
+        "漫画・アニメ好き"
       ]
     },
     {
-      "id": "auto-general-前橋市の住宅街にクマ-男性がけが-news.yahoo.co.jp/pickup/6602873",
-      "title": "前橋市の住宅街にクマ 男性がけが",
-      "summary": "群馬・前橋市の住宅街にクマの親子とみられる2頭が出没し、男性がけがをしました。17日午前6時ごろ、前橋市天川大島町で「クマに車を引っかかれた」と警察署に届け出があり、その後も通報が相次ぎました。警察",
-      "briefSummary": "群馬・前橋市の住宅街にクマの親子とみられる2頭が出没し、男性がけがをしました。17日午前6時ごろ、前橋市天川大島町で「クマに車を引っかかれた」と警察署に届け出があり、その後も通報が相次ぎました。警察",
-      "category": "general",
-      "categories": [
-        "general"
-      ],
-      "categoryLabel": "その他",
-      "categoryLabels": [
-        "その他"
-      ],
-      "score": 82,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T00:56:27.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602873?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "前橋市の住宅街にクマ 男性がけが",
-          "url": "https://news.yahoo.co.jp/pickup/6602873?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602873?source=rss",
-          "publishedAt": "2026-11-17T00:56:27.000Z",
-          "publishedLabel": "11/17 00:56",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "前橋市の住宅街にクマ 男性がけが",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-games-宮本茂氏が30年近い歴史あるアワードで新設-レジェンド賞-の初受賞者に-10年に一度の-世代を代表する栄誉-第30回-d-i-c-e-awards-にて-gamespark.jp/article/2026/11/17/174948.html",
-      "title": "宮本茂氏が30年近い歴史あるアワードで新設「レジェンド賞」の初受賞者に！10年に一度の“世代を代表する栄誉”―第30回「D.I.C.E. Awards」にて",
-      "summary": "「Hall of Fame」初代受賞者が、レジェンド賞でも初代受賞者に。",
-      "briefSummary": "Academy of Interactive Arts & Sciences（AIAS）は、任天堂・代表取締役フェローの 宮本茂氏 が、第30回「D.I.C.E. Awards」で新設された「Legend Award（レジェンド賞）」の初受賞者に選ばれたと発表しました。",
+      "id": "auto-games-ドラクエ-40周年を記念した-お祝いセット-が発売-めいげんポストカード-が40枚同梱-ボールペンはスライムマスコット付き-inside-games.jp/article/2026/11/17/191113.html",
+      "title": "『ドラクエ』40周年を記念した「お祝いセット」が発売！ “めいげんポストカード”が40枚同梱、ボールペンはスライムマスコット付き",
+      "summary": "『ドラゴンクエスト』シリーズ40周年を記念したグッズセットが発売中。価格は13,200円（税込）。エコバッグ付きは14,960円（税込）。",
+      "briefSummary": "さらに、シリーズの歴史を彩る名言を集めた「めいげんポストカード（40枚セット）」が入っています。",
       "category": "games",
       "categories": [
         "games",
@@ -151,12 +214,185 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220121.png",
-      "publishedAt": "2026-11-17T00:49:50.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808753.jpg",
+      "publishedAt": "2026-11-17T08:55:03.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/11/17/191113.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "『ドラクエ』40周年を記念した「お祝いセット」が発売！ “めいげんポストカード”が40枚同梱、ボールペンはスライムマスコット付き",
+          "url": "https://www.inside-games.jp/article/2026/11/17/191113.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/17/191113.html",
+          "publishedAt": "2026-11-17T08:55:03.000Z",
+          "publishedLabel": "11/17 08:55",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808753.jpg"
+        }
+      ],
+      "whatHappened": "『ドラクエ』40周年を記念した「お祝いセット」が発売",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-entertainment-サンリオ-や-ミッフィー-トイ・ストーリー-デザインも-しまむらグループに新作サステナブル商品が登場-animeanime.jp/article/2026/11/17/104859.html",
+      "title": "「サンリオ」や「ミッフィー」、「トイ・ストーリー」デザインも♪ しまむらグループに新作サステナブル商品が登場",
+      "summary": "「サンリオキャラクターズ」や「ミッフィー」、『トイ・ストーリー』シリーズのアパレルアイテムが登場。「ファッションセンターしまむら」やカジュアル＆シューズの「アベイル」、ベビー・子供用品の「バースデイ」などのしまむらグループによる「サステナブル商品」の新作として、2026年11月18日より発売されるこ…",
+      "briefSummary": "「サンリオキャラクターズ」や「ミッフィー」、『トイ・ストーリー』シリーズのアパレルアイテムが登場。「ファッションセンターしまむら」やカジュアル＆シューズの「アベイル」、ベビー・子供用品の「バースデイ」などのしまむらグループによる「サステナブル商品」の新作として、2026年11月18日より発売されることがわかった。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "anime",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "アニメ"
+      ],
+      "score": 98,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/957139.jpg",
+      "publishedAt": "2026-11-17T08:45:03.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/11/17/104859.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "直近数時間で関連記事が増えています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「サンリオ」や「ミッフィー」、「トイ・ストーリー」デザインも♪ しまむらグループに新作サステナブル商品が登場",
+          "url": "https://animeanime.jp/article/2026/11/17/104859.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/11/17/104859.html",
+          "publishedAt": "2026-11-17T08:45:03.000Z",
+          "publishedLabel": "11/17 08:45",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/957139.jpg"
+        }
+      ],
+      "whatHappened": "「サンリオ」や「ミッフィー」、「トイ・ストーリー」デザインも♪ しまむらグループに新作サステ…",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-ドラクエ-の魔王が-日清ラ王とコラボ-オンライン限定セットの予約受付は11月18日12時から-inside-games.jp/article/2026/11/17/191111.html",
+      "title": "『ドラクエ』の魔王が、日清ラ王とコラボ！オンライン限定セットの予約受付は11月18日12時から",
+      "summary": "『ドラゴンクエスト』とコラボレーションした「日清マ王 大魔王味噌」が11月23日に全国で発売！",
+      "briefSummary": "日清食品は、 『ドラゴンクエスト（ドラクエ）』 とコラボレーションした「日清マ王 大魔王味噌」を11月23日に全国で発売します。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808105.jpg",
+      "publishedAt": "2026-11-17T08:45:02.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/11/17/191111.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "『ドラクエ』の魔王が、日清ラ王とコラボ！オンライン限定セットの予約受付は11月18日12時から",
+          "url": "https://www.inside-games.jp/article/2026/11/17/191111.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/17/191111.html",
+          "publishedAt": "2026-11-17T08:45:02.000Z",
+          "publishedLabel": "11/17 08:45",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808105.jpg"
+        }
+      ],
+      "whatHappened": "『ドラクエ』の魔王が、日清ラ王とコラボ",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-games-ソニック-のメカニズムと世界観を-pico-park-のカオスとうまく融合させた-海外レビューハイスコア-sonic-pico-park-gamespark.jp/article/2026/11/17/174970.html",
+      "title": "「『ソニック』のメカニズムと世界観を『PICO PARK』のカオスとうまく融合させた」海外レビューハイスコア『SONIC PICO PARK』",
+      "summary": "2026年11月12日発売『SONIC PICO PARK』の海外レビューをお届けします。",
+      "briefSummary": "9件 本作『 SONIC PICO PARK 』は、2026年11月12日に発売された協力型アクションパズルです。プレイヤーは全員で協力して右端にあるゴールプレートの通過を目指します。『ソニック』らしさと『PICO PARK』らしさを兼ね備えた渾身の自信作を謳っています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220238.jpg",
+      "publishedAt": "2026-11-17T08:45:02.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
       "time": "1時間以内",
       "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/11/17/174948.html",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/17/174970.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -175,15 +411,15 @@
             "pc",
             "console"
           ],
-          "title": "宮本茂氏が30年近い歴史あるアワードで新設「レジェンド賞」の初受賞者に！10年に一度の“世代を代表する栄誉”―第30回「D.I.C.E. Awards」にて",
-          "url": "http://www.gamespark.jp/article/2026/11/17/174948.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/17/174948.html",
-          "publishedAt": "2026-11-17T00:49:50.000Z",
-          "publishedLabel": "11/17 00:49",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220121.png"
+          "title": "「『ソニック』のメカニズムと世界観を『PICO PARK』のカオスとうまく融合させた」海外レビューハイスコア『SONIC PICO PARK』",
+          "url": "http://www.gamespark.jp/article/2026/11/17/174970.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/17/174970.html",
+          "publishedAt": "2026-11-17T08:45:02.000Z",
+          "publishedLabel": "11/17 08:45",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220238.jpg"
         }
       ],
-      "whatHappened": "宮本茂氏が30年近い歴史あるアワードで新設「レジェンド賞」の初受賞者に",
+      "whatHappened": "「『ソニック』のメカニズムと世界観を『PICO PARK』のカオスとうまく融合させた」海外レ…",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -192,27 +428,199 @@
       ]
     },
     {
-      "id": "auto-general-千葉豪雨-今も断水続くマンション-news.yahoo.co.jp/pickup/6602870",
-      "title": "千葉豪雨 今も断水続くマンション",
-      "summary": "",
-      "briefSummary": "",
-      "category": "general",
+      "id": "auto-general-高速の深夜割引-年度内に見直し-news.yahoo.co.jp/pickup/6602923",
+      "title": "高速の深夜割引 年度内に見直し",
+      "summary": "NEXCO3社は2026年11月17日、高速道路の深夜割引の見直しについて、2026年度中に行うと発表しました。【使いづらい!!】これがシン「深夜割引」です！（画像で見る） 深夜帯に高速道路を利用す",
+      "briefSummary": "NEXCO3社は2026年11月17日、高速道路の深夜割引の見直しについて、2026年度中に行うと発表しました。【使いづらい!!】これがシン「深夜割引」です！（画像で見る） 深夜帯に高速道路を利用す",
+      "category": "business",
       "categories": [
+        "business",
         "general"
       ],
-      "categoryLabel": "その他",
+      "categoryLabel": "経済",
       "categoryLabels": [
+        "経済",
         "その他"
       ],
-      "score": 82,
+      "score": 99,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T00:46:37.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
+      "publishedAt": "2026-11-17T08:44:10.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "Yahoo!ニュース / 経済",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602923?source=rss",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-business",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 経済",
+          "sourceGroup": "important-news",
+          "sourcePriority": 78,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "高速の深夜割引 年度内に見直し",
+          "url": "https://news.yahoo.co.jp/pickup/6602923?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602923?source=rss",
+          "publishedAt": "2026-11-17T08:44:10.000Z",
+          "publishedLabel": "11/17 08:44",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "高速の深夜割引 年度内に見直し",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "終了前の条件確認や購入判断に直結しやすい情報です。",
+      "targetAudience": [
+        "セール好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-vivant-映画になることすら知りませんでした-悪役たちの告白にsns衝撃-不憫すぎるシンシー-mantan-web.jp/article/20261116dog00m200083000a.html",
+      "title": "VIVANT：「映画になることすら知りませんでした」　悪役たちの告白にSNS衝撃　「不憫すぎるシンシー」",
+      "summary": "俳優の堺雅人さん主演のTBS系日曜劇場「VIVANT（ヴィヴァン）」。悪役たちが登場する「VIVANT 悪役会議室」（日曜午後11時）の第17回が11月15日に配信…",
+      "briefSummary": "俳優の堺雅人さん主演のTBS系日曜劇場「VIVANT（ヴィヴァン）」。悪役たちが登場する「VIVANT 悪役会議室」（日曜午後11時）の第17回が11月15日に配信された。 「悪役…",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画",
+        "ネットカルチャー"
+      ],
+      "score": 94,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/16/20261116dog00m200083000a/001.jpg",
+      "publishedAt": "2026-11-17T08:41:00.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "MANTANWEB",
+      "sourceUrl": "https://mantan-web.jp/article/20261116dog00m200083000a.html",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "mantanweb",
+          "source": "MANTANWEB",
+          "sourceName": "MANTANWEB",
+          "sourceGroup": "anime",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "entertainment"
+          ],
+          "title": "VIVANT：「映画になることすら知りませんでした」　悪役たちの告白にSNS衝撃　「不憫すぎるシンシー」",
+          "url": "https://mantan-web.jp/article/20261116dog00m200083000a.html",
+          "canonicalUrl": "https://mantan-web.jp/article/20261116dog00m200083000a.html",
+          "publishedAt": "2026-11-17T08:41:00.000Z",
+          "publishedLabel": "11/17 08:41",
+          "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/16/20261116dog00m200083000a/001.jpg"
+        }
+      ],
+      "whatHappened": "VIVANT：「映画になることすら知りませんでした」 悪役たちの告白にSNS衝撃 「不憫すぎ…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き",
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-games-ジョジョ-の歴代-宿敵-たちが-新作一番くじに集結-石仮面を持った-ディオ-フィギュアなど圧倒的存在感-inside-games.jp/article/2026/11/17/191110.html",
+      "title": "「ジョジョ」の歴代“宿敵”たちが、新作一番くじに集結！石仮面を持った「ディオ」フィギュアなど圧倒的存在感",
+      "summary": "【フィギュア】中国杯での千葉百音へのブーイング、国際連盟のキム会長が謝罪の電話 表彰式で妨害の声、日本連盟は要望書を提出 千葉には精神的サポートも実施",
+      "briefSummary": "本商品は、「ジョジョの奇妙な冒険」シリーズの“宿敵”をテーマにしたハズレなしグッズくじです。A～F賞では、1部の「ディオ・ブランドー」から6部の「エンリコ・P」まで歴代宿敵がフィギュアになって登場します。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 95,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1801347.webp",
+      "publishedAt": "2026-11-17T08:40:03.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/11/17/191110.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "「ジョジョ」の歴代“宿敵”たちが、新作一番くじに集結！石仮面を持った「ディオ」フィギュアなど圧倒的存在感",
+          "url": "https://www.inside-games.jp/article/2026/11/17/191110.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/17/191110.html",
+          "publishedAt": "2026-11-17T08:40:03.000Z",
+          "publishedLabel": "11/17 08:40",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1801347.webp"
+        }
+      ],
+      "whatHappened": "「ジョジョ」の歴代“宿敵”たちが、新作一番くじに集結",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-world-閉山中に中国人遭難-懸賞金に指摘-news.yahoo.co.jp/pickup/6602924",
+      "title": "閉山中に中国人遭難 懸賞金に指摘",
+      "summary": "富士山で20代の中国人の男性が遭難し、現在も見つかっていません。男性の親族は男性を捜索し救助した人に最大1200万円の懸賞金を支払う予定だと中国のメディアが報じ、波紋が広がっています。",
+      "briefSummary": "富士山で20代の中国人の男性が遭難し、現在も見つかっていません。男性の親族は男性を捜索し救助した人に最大1200万円の懸賞金を支払う予定だと中国のメディアが報じ、波紋が広がっています。",
+      "category": "world",
+      "categories": [
+        "world",
+        "general"
+      ],
+      "categoryLabel": "国際",
+      "categoryLabels": [
+        "国際"
+      ],
+      "score": 81,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-17T08:37:06.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
       "time": "1時間以内",
       "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602870?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602924?source=rss",
       "hotReasons": [],
       "sourceSignals": [
         {
@@ -225,24 +633,500 @@
           "specialist": false,
           "forPersonal": false,
           "sourceTags": [],
-          "title": "千葉豪雨 今も断水続くマンション",
-          "url": "https://news.yahoo.co.jp/pickup/6602870?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602870?source=rss",
-          "publishedAt": "2026-11-17T00:46:37.000Z",
-          "publishedLabel": "11/17 00:46",
+          "title": "閉山中に中国人遭難 懸賞金に指摘",
+          "url": "https://news.yahoo.co.jp/pickup/6602924?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602924?source=rss",
+          "publishedAt": "2026-11-17T08:37:06.000Z",
+          "publishedLabel": "11/17 08:37",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "千葉豪雨 今も断水続くマンション",
+      "whatHappened": "閉山中に中国人遭難 懸賞金に指摘",
       "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [
+        "時事ニュースを追う人"
+      ]
     },
     {
-      "id": "auto-entertainment-ミッキー-ミニーが-maison-de-fleur-と特別コラボ-フェイスモチーフのバッグやポーチなど全8型が登場-animeanime.jp/article/2026/11/17/104838.html",
-      "title": "ミッキー＆ミニーが「Maison de FLEUR」と特別コラボ♡ フェイスモチーフのバッグやポーチなど全8型が登場！",
-      "summary": "ファッションブランド「Maison de FLEUR（メゾン ド フルール）」のDisney Collectionから、ミッキーマウスとミニーマウスの特別なコレクションが登場。ふたりの誕生日に合わせ、2026年11月17日20時より先行予約が開始される。",
-      "briefSummary": "ファッションブランド「Maison de FLEUR（メゾン ド フルール）」のDisney Collectionから、ミッキーマウスとミニーマウスの特別なコレクションが登場。ふたりの誕生日に合わせ、2026年11月17日20時より先行予約が開始される。",
+      "id": "auto-games-太もものリボンにドキッ-ホロライブ・輪堂千速の-hololive-meet-2026-2ndビジュアルグッズが可愛いーアクスタ-缶バッジなどが予約受付中-inside-games.jp/article/2026/11/17/191109.html",
+      "title": "太もものリボンにドキッ！ ホロライブ・輪堂千速の「hololive Meet 2026」2ndビジュアルグッズが可愛いーアクスタ、缶バッジなどが予約受付中",
+      "summary": "ホロライブ Meet 2026の輪堂千速2ndビジュアルグッズが予約受付中、2wayアクリルスタンドほか缶バッジ・マグネット等。",
+      "briefSummary": "「hololive Meet 2026」2ndビジュアルグッズ各種は11月22日まで予約受付中。発送は2027年1月予定です。詳しくは、各商品ページをご確認ください。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 95,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808632.webp",
+      "publishedAt": "2026-11-17T08:35:03.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/11/17/191109.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "太もものリボンにドキッ！ ホロライブ・輪堂千速の「hololive Meet 2026」2ndビジュアルグッズが可愛いーアクスタ、缶バッジなどが予約受付中",
+          "url": "https://www.inside-games.jp/article/2026/11/17/191109.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/17/191109.html",
+          "publishedAt": "2026-11-17T08:35:03.000Z",
+          "publishedLabel": "11/17 08:35",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808632.webp"
+        }
+      ],
+      "whatHappened": "太もものリボンにドキッ",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-entertainment-ひよっこ-戦後20年-何が残ったのか-宮本信子-鈴子-が吐露した言葉-視聴者も-胸が苦しく-昼の再放送で-mantan-web.jp/article/20261117dog00m200059000a.html",
+      "title": "ひよっこ：戦後20年「何が残ったのか」宮本信子“鈴子”が吐露した言葉　視聴者も「胸が苦しく」　昼の再放送で",
+      "summary": "俳優の有村架純さんが主演を務めた2017年度前期のNHKの連続テレビ小説（朝ドラ）「ひよっこ」の平日昼の再放送（総合、月～金曜午後0時半）。11月17日の第72回で…",
+      "briefSummary": "俳優の有村架純さんが主演を務めた2017年度前期のNHKの連続テレビ小説（朝ドラ）「ひよっこ」の平日昼の再放送（総合、月～金曜午後0時半）。11月17日の第72回では、鈴子（宮本信…",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "manga",
+        "books",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "漫画",
+        "本"
+      ],
+      "score": 94,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/17/20261117dog00m200059000a/001.jpg",
+      "publishedAt": "2026-11-17T08:35:00.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "MANTANWEB",
+      "sourceUrl": "https://mantan-web.jp/article/20261117dog00m200059000a.html",
+      "hotReasons": [
+        "一般ユーザーの関心が集まりやすいテーマです。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "mantanweb",
+          "source": "MANTANWEB",
+          "sourceName": "MANTANWEB",
+          "sourceGroup": "anime",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "entertainment"
+          ],
+          "title": "ひよっこ：戦後20年「何が残ったのか」宮本信子“鈴子”が吐露した言葉　視聴者も「胸が苦しく」　昼の再放送で",
+          "url": "https://mantan-web.jp/article/20261117dog00m200059000a.html",
+          "canonicalUrl": "https://mantan-web.jp/article/20261117dog00m200059000a.html",
+          "publishedAt": "2026-11-17T08:35:00.000Z",
+          "publishedLabel": "11/17 08:35",
+          "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/17/20261117dog00m200059000a/001.jpg"
+        }
+      ],
+      "whatHappened": "ひよっこ：戦後20年「何が残ったのか」宮本信子“鈴子”が吐露した言葉 視聴者も「胸が苦しく」…",
+      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-アセンドトゥゼロ-初の着替えdlc-sweet-kiss-をリリース-4gamer.net/games/890/g089012/20261117036",
+      "title": "「アセンドトゥゼロ」，初の着替えDLC「Sweet Kiss」をリリース",
+      "summary": "Ascend to ZERO Ascend to Zero 配信元 KRAFTON 配信日 2026/11/17 KRAFTON、 『アセンドトゥゼロ』 初の着替えDLC「Sweet Ki…",
+      "briefSummary": "Ascend to ZERO Ascend to Zero 配信元 KRAFTON 配信日 2026/11/17 KRAFTON、 『アセンドトゥゼロ』 初の着替えDLC「Sweet Ki…",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 95,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/890/G089012/20261117036/SS/001.jpg",
+      "publishedAt": "2026-11-17T08:34:01.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/890/G089012/20261117036/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "「アセンドトゥゼロ」，初の着替えDLC「Sweet Kiss」をリリース",
+          "url": "https://www.4gamer.net/games/890/G089012/20261117036/",
+          "canonicalUrl": "https://www.4gamer.net/games/890/G089012/20261117036/",
+          "publishedAt": "2026-11-17T08:34:01.000Z",
+          "publishedLabel": "11/17 08:34",
+          "thumbnailUrl": "https://www.4gamer.net/games/890/G089012/20261117036/SS/001.jpg"
+        }
+      ],
+      "whatHappened": "「アセンドトゥゼロ」，初の着替えDLC「Sweet Kiss」をリリース",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-tech-ダライアス外伝-メインプログラマーの倉林-晶氏が逝去-4gamer.net/games/999/g999905/20261117034",
+      "title": "「ダライアス外伝」メインプログラマーの倉林 晶氏が逝去",
+      "summary": "アリカは本日（2026年11月17日），同社の取締役兼開発ソフトウェア部部長を務めていた倉林晶氏が，心不全のため急逝したことを発表した。同氏は，「ダライアス外伝」「…",
+      "briefSummary": "アリカは本日（2026年11月17日），同社の取締役兼開発ソフトウェア部部長を務めていた倉林晶氏が，心不全のため急逝したことを発表した。同氏は，「ダライアス外伝」「ファイターズインパクト」「ヴァーテクサー」などの作品でメインプログラマーを務…",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "games",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "ゲーム"
+      ],
+      "score": 95,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/999/G999905/20261117034/TN/003.jpg",
+      "publishedAt": "2026-11-17T08:31:41.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/999/G999905/20261117034/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "「ダライアス外伝」メインプログラマーの倉林 晶氏が逝去",
+          "url": "https://www.4gamer.net/games/999/G999905/20261117034/",
+          "canonicalUrl": "https://www.4gamer.net/games/999/G999905/20261117034/",
+          "publishedAt": "2026-11-17T08:31:41.000Z",
+          "publishedLabel": "11/17 08:31",
+          "thumbnailUrl": "https://www.4gamer.net/games/999/G999905/20261117034/TN/003.jpg"
+        }
+      ],
+      "whatHappened": "「ダライアス外伝」メインプログラマーの倉林 晶氏が逝去",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-agf2026をフォトレポート-フラガリアメモリーズ-原宿ヒメゴトハウス-アイカツ-など-注目ブースを巡ってみた-前編-animeanime.jp/article/2026/11/17/104858.html",
+      "title": "AGF2026をフォトレポート！「フラガリアメモリーズ」「原宿ヒメゴトハウス」「アイカツ！」など、注目ブースを巡ってみた【前編】",
+      "summary": "2026年11月7日・8日の2日間、東京・池袋で「アニメイトガールズフェスティバル2026（AGF2026）」が開催されました。 前編では、音楽やライブ、ゲームへと世界を広げる「フラガリアメモリーズ」、AGFの会場でプロジェクトが発表された「原宿ヒメゴトハウス」、“平成女児”世代のファンが続々と足を…",
+      "briefSummary": "レポート前編では、音楽やライブ、ゲームへと世界を広げる『フラガリアメモリーズ』、AGFの会場でプロジェクトが発表された『原宿ヒメゴトハウス』、“平成女児”世代のファンが続々と足を運んだ『アイカツ！』など、注目ブースを巡っていきます。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "その他"
+      ],
+      "score": 97,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/956729.jpg",
+      "publishedAt": "2026-11-17T08:30:04.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/11/17/104858.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "直近数時間で関連記事が増えています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "AGF2026をフォトレポート！「フラガリアメモリーズ」「原宿ヒメゴトハウス」「アイカツ！」など、注目ブースを巡ってみた【前編】",
+          "url": "https://animeanime.jp/article/2026/11/17/104858.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/11/17/104858.html",
+          "publishedAt": "2026-11-17T08:30:04.000Z",
+          "publishedLabel": "11/17 08:30",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/956729.jpg"
+        }
+      ],
+      "whatHappened": "AGF2026をフォトレポート",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-ちいかわ-グッズ作成サービスに-古本屋-デザインが追加-牢屋に入っていたり-へちゃっとしたりな全7種ー本を支えてくれるブックエンドも-inside-games.jp/article/2026/11/17/191108.html",
+      "title": "「ちいかわ」グッズ作成サービスに「古本屋」デザインが追加！牢屋に入っていたり、へちゃっとしたりな全7種ー本を支えてくれるブックエンドも",
+      "summary": "「Talking ODM」に「ちいかわ 古本屋デザイン」が追加！",
+      "briefSummary": "好きなデザインとプリントしたい商品を選んで購入できるサービス「Talking ODM」より「ちいかわ 古本屋デザイン」が追加。牢屋に入っていたり、へちゃっとしていたり、いろんな姿の古本屋全7種がラインナップしています。。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ"
+      ],
+      "score": 95,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808536.webp",
+      "publishedAt": "2026-11-17T08:30:03.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/11/17/191108.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "「ちいかわ」グッズ作成サービスに「古本屋」デザインが追加！牢屋に入っていたり、へちゃっとしたりな全7種ー本を支えてくれるブックエンドも",
+          "url": "https://www.inside-games.jp/article/2026/11/17/191108.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/17/191108.html",
+          "publishedAt": "2026-11-17T08:30:03.000Z",
+          "publishedLabel": "11/17 08:30",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808536.webp"
+        }
+      ],
+      "whatHappened": "「ちいかわ」グッズ作成サービスに「古本屋」デザインが追加",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-games-unity買収報道に幹部がコメント-好調な決算の後に憶測が出るのはよくあること-噂よりもインディーゲーム開発者への支援に注力したい-gamespark.jp/article/2026/11/17/174969.html",
+      "title": "Unity買収報道に幹部がコメント、「好調な決算の後に憶測が出るのはよくあること」―噂よりもインディーゲーム開発者への支援に注力したい",
+      "summary": "ゲームエンジン「Unity」を手掛ける Unity Software社 の買収報道について、プロダクト担当シニア・バイス・プレジデントであるAdam Smith氏が言及しました。",
+      "briefSummary": "サウジアラビアの政府系ファンドなどによるUnity社の完全買収と、非公開化に向けた協議が行われているとロイターが報じたのは11月6日のこと。以前のエレクトロニック・アーツ（EA）買収ほどの巨額ではないものの、史上最大級のLBO（レバレッジド・バイアウト）になる可能性があるとして、注目を集めています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "business",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "経済"
+      ],
+      "score": 95,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220178.jpg",
+      "publishedAt": "2026-11-17T08:30:03.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/17/174969.html",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "Unity買収報道に幹部がコメント、「好調な決算の後に憶測が出るのはよくあること」―噂よりもインディーゲーム開発者への支援に注力したい",
+          "url": "http://www.gamespark.jp/article/2026/11/17/174969.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/17/174969.html",
+          "publishedAt": "2026-11-17T08:30:03.000Z",
+          "publishedLabel": "11/17 08:30",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220178.jpg"
+        }
+      ],
+      "whatHappened": "Unity買収報道に幹部がコメント、「好調な決算の後に憶測が出るのはよくあること」―噂よりも…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き",
+        "ネット文化を追う人",
+        "投資家"
+      ]
+    },
+    {
+      "id": "auto-anime-アニメ-エイティシックス-の配信はどこで見れる-2期や無料で見る方法も調査-animeanime.jp/article/2026/11/17/104857.html",
+      "title": "アニメ「８６―エイティシックス―」の配信はどこで見れる？2期や無料で見る方法も調査",
+      "summary": "アニメ『８６―エイティシックス―』は、DMM TVやU-NEXT、dアニメストア、Hulu、Leminoなどで見放題配信中です。DMM TVがおすすめの理由や無料で見る方法、2期の見方、Amazonでの見方、声優もまとめました。",
+      "briefSummary": "アニメ『８６―エイティシックス―』は、DMM TVやU-NEXT、dアニメストア、Hulu、Leminoなどで見放題配信中です。DMM TVがおすすめの理由や無料で見る方法、2期の見方、Amazonでの見方、声優もまとめました。",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "アニメ",
+      "categoryLabels": [
+        "アニメ",
+        "エンタメ"
+      ],
+      "score": 97,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/957007.jpg",
+      "publishedAt": "2026-11-17T08:28:57.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "time": "1時間以内",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/11/17/104857.html",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "直近数時間で関連記事が増えています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "アニメ「８６―エイティシックス―」の配信はどこで見れる？2期や無料で見る方法も調査",
+          "url": "https://animeanime.jp/article/2026/11/17/104857.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/11/17/104857.html",
+          "publishedAt": "2026-11-17T08:28:57.000Z",
+          "publishedLabel": "11/17 08:28",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/957007.jpg"
+        }
+      ],
+      "whatHappened": "アニメ「８６―エイティシックス―」の配信はどこで見れる",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-ディズニープラスの料金はいくら-月額・年額とスタンダード・プレミアムの違い-animeanime.jp/article/2026/11/17/104856.html",
+      "title": "ディズニープラスの料金はいくら？月額・年額とスタンダード・プレミアムの違い",
+      "summary": "ディズニープラスの料金は、スタンダードが月額1,250円・年額12,500円、プレミアムが月額1,670円・年額16,700円です。2つのプランの違いや年額プランでお得になる金額、追加メンバー、支払い方法、ドコモ経由の割引まで解説します。",
+      "briefSummary": "家族3～4人が同じ時間帯に見る家庭や、4K対応テレビで見たい人はプレミアム、1～2人で見るならスタンダードで十分です。ディズニープラスには無料期間がないため、始める前に ディズニープラスをお得に始める方法 も確認しておくと安心です。",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -254,15 +1138,15 @@
         "エンタメ",
         "漫画"
       ],
-      "score": 96,
+      "score": 95,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/956725.jpg",
-      "publishedAt": "2026-11-17T00:45:02.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/956732.jpg",
+      "publishedAt": "2026-11-17T08:27:44.000Z",
+      "capturedAt": "2026-11-17T09:03:31.840Z",
       "time": "1時間以内",
       "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/11/17/104838.html",
+      "sourceUrl": "https://animeanime.jp/article/2026/11/17/104856.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -282,894 +1166,20 @@
             "voice-actor",
             "movie"
           ],
-          "title": "ミッキー＆ミニーが「Maison de FLEUR」と特別コラボ♡ フェイスモチーフのバッグやポーチなど全8型が登場！",
-          "url": "https://animeanime.jp/article/2026/11/17/104838.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/11/17/104838.html",
-          "publishedAt": "2026-11-17T00:45:02.000Z",
-          "publishedLabel": "11/17 00:45",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/956725.jpg"
+          "title": "ディズニープラスの料金はいくら？月額・年額とスタンダード・プレミアムの違い",
+          "url": "https://animeanime.jp/article/2026/11/17/104856.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/11/17/104856.html",
+          "publishedAt": "2026-11-17T08:27:44.000Z",
+          "publishedLabel": "11/17 08:27",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/956732.jpg"
         }
       ],
-      "whatHappened": "ミッキー＆ミニーが「Maison de FLEUR」と特別コラボ♡ フェイスモチーフのバッグ…",
+      "whatHappened": "ディズニープラスの料金はいくら",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": [
         "漫画・アニメ好き"
       ]
-    },
-    {
-      "id": "auto-entertainment-洗面所に100均のブックエンドを置くと-じゃない使い方-が目からウロコ-めっちゃ役に立ちそう-news.yahoo.co.jp/articles/80675aef98c9b68952333dff21d890bea5b5bd41",
-      "title": "洗面所に100均のブックエンドを置くと……　“じゃない使い方”が目からウロコ「めっちゃ役に立ちそう！」",
-      "summary": "ブックエンドの活用法を紹介する動画が、Instagramで話題です。投稿は記事執筆時点で29万4000回以上表示され、2000件以上の“いいね”を獲得しています。【…",
-      "briefSummary": "ブックエンドの活用法を紹介する動画が、Instagramで話題です。投稿は記事執筆時点で29万4000回以上表示され、2000件以上の“いいね”を獲得しています。【画像】じゃない使い方 動画を投稿した",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T00:45:00.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/80675aef98c9b68952333dff21d890bea5b5bd41?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "洗面所に100均のブックエンドを置くと……　“じゃない使い方”が目からウロコ「めっちゃ役に立ちそう！」",
-          "url": "https://news.yahoo.co.jp/articles/80675aef98c9b68952333dff21d890bea5b5bd41?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/80675aef98c9b68952333dff21d890bea5b5bd41?source=rss",
-          "publishedAt": "2026-11-17T00:45:00.000Z",
-          "publishedLabel": "11/17 00:45",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "洗面所に100均のブックエンドを置くと…… “じゃない使い方”が目からウロコ「めっちゃ役に立…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-games-刃牙道-より-範馬勇次郎-がぬーストフィギュアに-インパクト抜群の開脚ポーズを立体化-2027年6月展開予定-inside-games.jp/article/2026/11/17/191074.html",
-      "title": "「刃牙道」より「範馬勇次郎」がぬーストフィギュアに！インパクト抜群の開脚ポーズを立体化、2027年6月展開予定",
-      "summary": "",
-      "briefSummary": "",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808364.jpg",
-      "publishedAt": "2026-11-17T00:40:02.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/17/191074.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "「刃牙道」より「範馬勇次郎」がぬーストフィギュアに！インパクト抜群の開脚ポーズを立体化、2027年6月展開予定",
-          "url": "https://www.inside-games.jp/article/2026/11/17/191074.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/17/191074.html",
-          "publishedAt": "2026-11-17T00:40:02.000Z",
-          "publishedLabel": "11/17 00:40",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808364.jpg"
-        }
-      ],
-      "whatHappened": "「刃牙道」より「範馬勇次郎」がぬーストフィギュアに",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-プレバンでガンプラ4商品が再販-ガンダムmk-iii-8号機-をはじめ-レッド・ゼータ-など3つのzガンダム派生機も-inside-games.jp/article/2026/11/17/191073.html",
-      "title": "プレバンでガンプラ4商品が再販！「ガンダムMk-III 8号機」をはじめ、「レッド・ゼータ」など3つのZガンダム派生機も",
-      "summary": "プレミアムバンダイにて、「RE/100 1/100 ガンダムMk-III 8号機」や「MG 1/100 ゼータガンダム3号機B型 グレイ・ゼータ」など4商品が11月17日11時より再販！",
-      "briefSummary": "プレミアムバンダイにて、「RE/100 1/100 ガンダムMk-III 8号機」や「MG 1/100 ゼータガンダム3号機B型 グレイ・ゼータ」など4商品が11月17日11時より再販！",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808343.jpg",
-      "publishedAt": "2026-11-17T00:30:03.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/17/191073.html",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "プレバンでガンプラ4商品が再販！「ガンダムMk-III 8号機」をはじめ、「レッド・ゼータ」など3つのZガンダム派生機も",
-          "url": "https://www.inside-games.jp/article/2026/11/17/191073.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/17/191073.html",
-          "publishedAt": "2026-11-17T00:30:03.000Z",
-          "publishedLabel": "11/17 00:30",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808343.jpg"
-        }
-      ],
-      "whatHappened": "プレバンでガンプラ4商品が再販",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-entertainment-おばあちゃんが大型犬に-巨大ドームベッド-をプレゼントしたら-笑いました-やることが人間-最高ですね-news.yahoo.co.jp/articles/a4efc48f791974fadf8ab3e77042c0e6d99efc86",
-      "title": "おばあちゃんが大型犬に“巨大ドームベッド”をプレゼントしたら……　「笑いました」「やることが人間」「最高ですね」",
-      "summary": "大きなドームベッドをプレゼントされたジャーマンシェパードの反応が、YouTubeで笑顔を呼んでいます。動画は記事執筆時点で25万7000回以上再生され、1300件を…",
-      "briefSummary": "大きなドームベッドをプレゼントされたジャーマンシェパードの反応が、YouTubeで笑顔を呼んでいます。動画は記事執筆時点で25万7000回以上再生され、1300件を超える“高評価”を獲得しています。【",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T00:30:00.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/a4efc48f791974fadf8ab3e77042c0e6d99efc86?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "おばあちゃんが大型犬に“巨大ドームベッド”をプレゼントしたら……　「笑いました」「やることが人間」「最高ですね」",
-          "url": "https://news.yahoo.co.jp/articles/a4efc48f791974fadf8ab3e77042c0e6d99efc86?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/a4efc48f791974fadf8ab3e77042c0e6d99efc86?source=rss",
-          "publishedAt": "2026-11-17T00:30:00.000Z",
-          "publishedLabel": "11/17 00:30",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "おばあちゃんが大型犬に“巨大ドームベッド”をプレゼントしたら…… 「笑いました」「やることが…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-general-町内会入らずゴミ捨て場利用-賛否-news.yahoo.co.jp/pickup/6602868",
-      "title": "町内会入らずゴミ捨て場利用 賛否",
-      "summary": "町内会の未加入者によるゴミ捨て場の利用をめぐり、SNS上で「町内会に入らないとゴミ出しすらできないのはおかしい」「入らないのに利用したいというのは虫がよすぎる」などと賛否が巻き起こっています。",
-      "briefSummary": "町内会の未加入者によるゴミ捨て場の利用をめぐり、SNS上で「町内会に入らないとゴミ出しすらできないのはおかしい」「入らないのに利用したいというのは虫がよすぎる」などと賛否が巻き起こっています。",
-      "category": "general",
-      "categories": [
-        "general"
-      ],
-      "categoryLabel": "その他",
-      "categoryLabels": [
-        "その他"
-      ],
-      "score": 81,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T00:26:18.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602868?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "町内会入らずゴミ捨て場利用 賛否",
-          "url": "https://news.yahoo.co.jp/pickup/6602868?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602868?source=rss",
-          "publishedAt": "2026-11-17T00:26:18.000Z",
-          "publishedLabel": "11/17 00:26",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "町内会入らずゴミ捨て場利用 賛否",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-net-culture-二宮和也-突然プライベート感あふれる-忘年会ショット-4枚投稿しsns騒然-これはガチのやつ-泣かせるなよおお-news.yahoo.co.jp/articles/a722872fcd8f46496dae254d0a13b9f15a7df36f",
-      "title": "二宮和也、突然プライベート感あふれる“忘年会ショット”4枚投稿しSNS騒然「これはガチのやつ？？」「泣かせるなよおお」",
-      "summary": "元「嵐」のメンバーで俳優の二宮和也さんが11月17日に公式X（旧Twitter）を更新。あるメンバーたちとのプライベート感あふれる忘年会中の様子を投稿しました。【画…",
-      "briefSummary": "元「嵐」のメンバーで俳優の二宮和也さんが11月17日に公式X（旧Twitter）を更新。あるメンバーたちとのプライベート感あふれる忘年会中の様子を投稿しました。【画像】驚きの忘年会ショット 二宮さんは",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "sns",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "ネットカルチャー",
-      "categoryLabels": [
-        "ネットカルチャー",
-        "SNS",
-        "エンタメ"
-      ],
-      "score": 94,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T00:25:56.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/a722872fcd8f46496dae254d0a13b9f15a7df36f?source=rss",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "直近数時間で関連記事が増えています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "二宮和也、突然プライベート感あふれる“忘年会ショット”4枚投稿しSNS騒然「これはガチのやつ？？」「泣かせるなよおお」",
-          "url": "https://news.yahoo.co.jp/articles/a722872fcd8f46496dae254d0a13b9f15a7df36f?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/a722872fcd8f46496dae254d0a13b9f15a7df36f?source=rss",
-          "publishedAt": "2026-11-17T00:25:56.000Z",
-          "publishedLabel": "11/17 00:25",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "二宮和也、突然プライベート感あふれる“忘年会ショット”4枚投稿しSNS騒然「これはガチのやつ…",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ガジェット好き",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-おめでとうございます-高石あかりの-報告-ドレス姿にネットくぎ付け-え-やばい-おトキさん-news.yahoo.co.jp/articles/8a874b0297ce751eb9c904a89722807f7179cbb9",
-      "title": "「おめでとうございます！」高石あかりの“報告”→ドレス姿にネットくぎ付け「え、やばい」「おトキさん!?」",
-      "summary": "俳優の高石あかり（高ははしごだか）さんが11月14日、自身のX（@takaishi__akari）とInstagram（@a_akari1219）を更新。雰囲気ガラ…",
-      "briefSummary": "俳優の高石あかり（高ははしごだか）さんが11月14日、自身のX（@takaishi__akari）とInstagram（@a_akari1219）を更新。雰囲気ガラリなドレス姿を披露し、SNS上で「す",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T00:20:00.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/8a874b0297ce751eb9c904a89722807f7179cbb9?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「おめでとうございます！」高石あかりの“報告”→ドレス姿にネットくぎ付け「え、やばい」「おトキさん!?」",
-          "url": "https://news.yahoo.co.jp/articles/8a874b0297ce751eb9c904a89722807f7179cbb9?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/8a874b0297ce751eb9c904a89722807f7179cbb9?source=rss",
-          "publishedAt": "2026-11-17T00:20:00.000Z",
-          "publishedLabel": "11/17 00:20",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「おめでとうございます！」高石あかりの“報告”→ドレス姿にネットくぎ付け「え、やばい」「おト…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-sns-駅の改札を通ろうとしたら-なんだこれは-目がバグる光景に-スマートに通れない-日本独特-news.yahoo.co.jp/articles/309abb71b48c3c3eb55bae44ddf8cc9280fc79d2",
-      "title": "駅の改札を通ろうとしたら……「なんだこれは」　目がバグる光景に「スマートに通れない」「日本独特」",
-      "summary": "",
-      "briefSummary": "",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "SNS",
-      "categoryLabels": [
-        "SNS",
-        "エンタメ",
-        "ネットカルチャー"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T00:15:00.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/309abb71b48c3c3eb55bae44ddf8cc9280fc79d2?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "駅の改札を通ろうとしたら……「なんだこれは」　目がバグる光景に「スマートに通れない」「日本独特」",
-          "url": "https://news.yahoo.co.jp/articles/309abb71b48c3c3eb55bae44ddf8cc9280fc79d2?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/309abb71b48c3c3eb55bae44ddf8cc9280fc79d2?source=rss",
-          "publishedAt": "2026-11-17T00:15:00.000Z",
-          "publishedLabel": "11/17 00:15",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "駅の改札を通ろうとしたら……「なんだこれは」 目がバグる光景に「スマートに通れない」「日本独…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-politics-米大統領-金正恩氏と会談の可能性-news.yahoo.co.jp/pickup/6602867",
-      "title": "米大統領 金正恩氏と会談の可能性",
-      "summary": "[ワシントン １６日 ロイター] - トランプ米大統領は１６日、今週の‌アジア歴訪中に北朝鮮の金⁠正恩朝鮮労働党総書記と会談する可能性があると​の認識を示した。実現すれば、大統領の歴訪日程‌が大きく変更",
-      "briefSummary": "[ワシントン １６日 ロイター] - トランプ米大統領は１６日、今週の‌アジア歴訪中に北朝鮮の金⁠正恩朝鮮労働党総書記と会談する可能性があると​の認識を示した。実現すれば、大統領の歴訪日程‌が大きく変更される可能性もある。 トランプ大統領は、フ‌ィリピンと中‌国に向かうためホワイ​トハウスを出発する前、記者団‌に対し、中国の習近平国家主席が「１カ月前‌にここ…",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "world",
-        "general"
-      ],
-      "categoryLabel": "政治",
-      "categoryLabels": [
-        "政治",
-        "国際"
-      ],
-      "score": 92,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T00:09:18.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / 国際",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602867?source=rss",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-world",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 国際",
-          "sourceGroup": "important-news",
-          "sourcePriority": 78,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "米大統領 金正恩氏と会談の可能性",
-          "url": "https://news.yahoo.co.jp/pickup/6602867?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602867?source=rss",
-          "publishedAt": "2026-11-17T00:09:18.000Z",
-          "publishedLabel": "11/17 00:09",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "米大統領 金正恩氏と会談の可能性",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-ダイソーのワイヤーネット2枚-つなぎあわせると-発想力すご-目からウロコの-便利アイテム-に-私も作ってみたい-100均に見えない-news.yahoo.co.jp/articles/9ead40b83d2f650e154d1ea57618fe67655df777",
-      "title": "ダイソーのワイヤーネット2枚→つなぎあわせると……「発想力すご」　目からウロコの“便利アイテム“に「私も作ってみたい」「100均に見えない！」",
-      "summary": "100均のワイヤーネットを組み合わせて“オシャレな収納”を作るアイデアが、Instagramで話題です。投稿は「ほんまに天才」「なんてかわいいの」と反響を呼び、記事…",
-      "briefSummary": "100均のワイヤーネットを組み合わせて“オシャレな収納”を作るアイデアが、Instagramで話題です。投稿は「ほんまに天才」「なんてかわいいの」と反響を呼び、記事執筆時点で4万9000回以上再生され",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 93,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T00:00:00.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/9ead40b83d2f650e154d1ea57618fe67655df777?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "ダイソーのワイヤーネット2枚→つなぎあわせると……「発想力すご」　目からウロコの“便利アイテム“に「私も作ってみたい」「100均に見えない！」",
-          "url": "https://news.yahoo.co.jp/articles/9ead40b83d2f650e154d1ea57618fe67655df777?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/9ead40b83d2f650e154d1ea57618fe67655df777?source=rss",
-          "publishedAt": "2026-11-17T00:00:00.000Z",
-          "publishedLabel": "11/17 00:00",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "ダイソーのワイヤーネット2枚→つなぎあわせると……「発想力すご」 目からウロコの“便利アイテ…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-general-ネパールに-ガチ中華-急増-なぜ-news.yahoo.co.jp/pickup/6602865",
-      "title": "ネパールに「ガチ中華」急増 なぜ",
-      "summary": "東京・池袋をはじめ、日本各地でエスニック料理のひとつとして市民権を得つつある本場の中華料理「ガチ中華」。インドなど南アジア地域ではマサラなどでアレンジした独自の「インド中華」が有名ですが、実はインド",
-      "briefSummary": "東京・池袋をはじめ、日本各地でエスニック料理のひとつとして市民権を得つつある本場の中華料理「ガチ中華」。インドなど南アジア地域ではマサラなどでアレンジした独自の「インド中華」が有名ですが、実はインド",
-      "category": "world",
-      "categories": [
-        "world",
-        "general"
-      ],
-      "categoryLabel": "国際",
-      "categoryLabels": [
-        "国際",
-        "その他"
-      ],
-      "score": 91,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-16T23:58:55.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間前",
-      "sourceName": "Yahoo!ニュース / 国際",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602865?source=rss",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-world",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 国際",
-          "sourceGroup": "important-news",
-          "sourcePriority": 78,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "ネパールに「ガチ中華」急増 なぜ",
-          "url": "https://news.yahoo.co.jp/pickup/6602865?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602865?source=rss",
-          "publishedAt": "2026-11-16T23:58:55.000Z",
-          "publishedLabel": "11/16 23:58",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "ネパールに「ガチ中華」急増 なぜ",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-tech-itmedia-エグゼクティブ-nttの島田明社長-宇宙光通信構想を発表-月面インフラや宇宙データセンターの整備も-mag.executive.itmedia.co.jp/executive/article/2611/17/2000003247",
-      "title": "[ITmedia エグゼクティブ] NTTの島田明社長、宇宙光通信構想を発表　月面インフラや宇宙データセンターの整備も",
-      "summary": "NTTの島田明社長は16日、都内で講演し、宇宙で光通信網を構築する構想を明らかにした。人工衛星同士や地上の通信施設を光信号でつなぎ、高速通信を実現する。宇宙データセ…",
-      "briefSummary": "NTTの島田明社長は16日、都内で講演し、宇宙で光通信網を構築する構想を明らかにした。人工衛星同士や地上の通信施設を光信号でつなぎ、高速通信を実現する。宇宙データセンターや月の発電インフラの整備にも乗り出す。",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 87,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://mag.executive.itmedia.co.jp/executive/article/ogp/2611/17/2000003247/10012280/2048",
-      "publishedAt": "2026-11-16T23:57:45.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間前",
-      "sourceName": "ITmedia",
-      "sourceUrl": "https://mag.executive.itmedia.co.jp/executive/article/2611/17/2000003247/",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "itmedia-all",
-          "source": "ITmedia",
-          "sourceName": "ITmedia",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 68,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "tech"
-          ],
-          "title": "[ITmedia エグゼクティブ] NTTの島田明社長、宇宙光通信構想を発表　月面インフラや宇宙データセンターの整備も",
-          "url": "https://mag.executive.itmedia.co.jp/executive/article/2611/17/2000003247/",
-          "canonicalUrl": "https://mag.executive.itmedia.co.jp/executive/article/2611/17/2000003247/",
-          "publishedAt": "2026-11-16T23:57:45.000Z",
-          "publishedLabel": "11/16 23:57",
-          "thumbnailUrl": "https://mag.executive.itmedia.co.jp/executive/article/ogp/2611/17/2000003247/10012280/2048"
-        }
-      ],
-      "whatHappened": "[ITmedia エグゼクティブ] NTTの島田明社長、宇宙光通信構想を発表 月面インフラや…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-40代でもいける-guの-あったかカーディガン-が1990円に-高級感がある-友達-家族に褒められました-の声-news.yahoo.co.jp/articles/09c7aa2b35021f6aaf233a6726c0f471b2c3efcf",
-      "title": "「40代でもいける」　GUの“あったかカーディガン”が1990円に　「高級感がある」「友達、家族に褒められました」の声",
-      "summary": "肌寒い日の羽織りとして重宝する「カーディガン」。今回紹介するGUのカーディガンは、上品なデザインとしっかりした生地の厚みが魅力で、軽めのアウターとしても使いやすいア…",
-      "briefSummary": "肌寒い日の羽織りとして重宝する「カーディガン」。今回紹介するGUのカーディガンは、上品なデザインとしっかりした生地の厚みが魅力で、軽めのアウターとしても使いやすいアイテムです。【画像】GUの“あったか",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 93,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-16T23:50:00.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/09c7aa2b35021f6aaf233a6726c0f471b2c3efcf?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「40代でもいける」　GUの“あったかカーディガン”が1990円に　「高級感がある」「友達、家族に褒められました」の声",
-          "url": "https://news.yahoo.co.jp/articles/09c7aa2b35021f6aaf233a6726c0f471b2c3efcf?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/09c7aa2b35021f6aaf233a6726c0f471b2c3efcf?source=rss",
-          "publishedAt": "2026-11-16T23:50:00.000Z",
-          "publishedLabel": "11/16 23:50",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「40代でもいける」 GUの“あったかカーディガン”が1990円に 「高級感がある」「友達、…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-entertainment-小1息子-ポケモン-と遠足弁当リクエスト-ママが作ったお弁当に-めちゃくちゃすごい-きっと喜びますね-news.yahoo.co.jp/articles/2b48cfe124417af1438538ed686da54221367124",
-      "title": "小1息子「ポケモン！」と遠足弁当リクエスト→ママが作ったお弁当に「めちゃくちゃすごい！」「きっと喜びますね」",
-      "summary": "小学1年生の息子のお弁当リクエストは……。ママが全力で応えた完成品の写真がThreadsに投稿され「めちゃくちゃすごい！」「きっと喜びますね」といった声が寄せられて…",
-      "briefSummary": "小学1年生の息子のお弁当リクエストは……。ママが全力で応えた完成品の写真がThreadsに投稿され「めちゃくちゃすごい！」「きっと喜びますね」といった声が寄せられています。【画像】完成したお弁当 画像",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 93,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-16T23:45:00.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/2b48cfe124417af1438538ed686da54221367124?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "小1息子「ポケモン！」と遠足弁当リクエスト→ママが作ったお弁当に「めちゃくちゃすごい！」「きっと喜びますね」",
-          "url": "https://news.yahoo.co.jp/articles/2b48cfe124417af1438538ed686da54221367124?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/2b48cfe124417af1438538ed686da54221367124?source=rss",
-          "publishedAt": "2026-11-16T23:45:00.000Z",
-          "publishedLabel": "11/16 23:45",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "小1息子「ポケモン！」と遠足弁当リクエスト→ママが作ったお弁当に「めちゃくちゃすごい！」「き…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ポケモンユーザー",
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-general-日米豪印の共同文書案-概要が判明-news.yahoo.co.jp/pickup/6602863",
-      "title": "日米豪印の共同文書案 概要が判明",
-      "summary": "フィリピンのマニラで１７日に開かれる日本、米国、オーストラリア、インド４か国の枠組み「クアッド」首脳会合でまとめる共同文書案の概要が判明した。日本主導の「自由で開かれたインド太平洋（ＦＯＩＰ）」構想",
-      "briefSummary": "フィリピンのマニラで１７日に開かれる日本、米国、オーストラリア、インド４か国の枠組み「クアッド」首脳会合でまとめる共同文書案の概要が判明した。日本主導の「自由で開かれたインド太平洋（ＦＯＩＰ）」構想",
-      "category": "general",
-      "categories": [
-        "general"
-      ],
-      "categoryLabel": "その他",
-      "categoryLabels": [
-        "その他"
-      ],
-      "score": 90,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-16T23:33:25.000Z",
-      "capturedAt": "2026-11-17T01:02:18.251Z",
-      "time": "1時間前",
-      "sourceName": "Yahoo!ニュース / 国内",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602863?source=rss",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-domestic",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 国内",
-          "sourceGroup": "important-news",
-          "sourcePriority": 76,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "日米豪印の共同文書案 概要が判明",
-          "url": "https://news.yahoo.co.jp/pickup/6602863?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602863?source=rss",
-          "publishedAt": "2026-11-16T23:33:25.000Z",
-          "publishedLabel": "11/16 23:33",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "日米豪印の共同文書案 概要が判明",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
     }
   ]
 }

@@ -1,380 +1,98 @@
 {
-  "generatedAt": "2026-11-17T09:03:31.840Z",
-  "totalCount": 1472,
+  "generatedAt": "2026-11-17T18:28:04.056Z",
+  "totalCount": 1474,
   "categoryCounts": {
-    "all": 1472,
-    "general": 49,
-    "tech": 168,
-    "business": 106,
-    "politics": 52,
-    "entertainment": 653,
-    "anime": 79,
-    "games": 381,
-    "game-features": 7,
-    "anime-features": 6,
-    "manga": 215,
-    "books": 43,
-    "sports": 68,
-    "sns": 659,
-    "net-culture": 724,
+    "all": 1474,
+    "general": 46,
+    "tech": 171,
+    "business": 101,
+    "politics": 48,
+    "entertainment": 655,
+    "anime": 78,
+    "games": 410,
+    "game-features": 6,
+    "anime-features": 3,
+    "manga": 224,
+    "books": 42,
+    "sports": 60,
+    "sns": 640,
+    "net-culture": 705,
     "matome": 1,
-    "crime": 27,
-    "adult": 16,
-    "world": 67
+    "crime": 24,
+    "adult": 17,
+    "world": 69
   },
   "hasMore": true,
   "nextPage": 2,
   "items": [
     {
-      "id": "auto-general-鳥の生食-宮崎・鹿児島で聞いた声-news.yahoo.co.jp/pickup/6602925",
-      "title": "鳥の生食 宮崎・鹿児島で聞いた声",
-      "summary": "",
-      "briefSummary": "",
-      "category": "business",
+      "id": "auto-tech-ジェンスン・フアン氏-ceo復帰の意思があると表明-nvidia騒動後初めてxに投稿-gamespark.jp/article/2026/11/18/174998.html",
+      "title": "ジェンスン・フアン氏、CEO復帰の意思があると表明。NVIDIA騒動後初めてXに投稿",
+      "summary": "NVIDIA前CEOのジェンスン・フアン氏は、自身のXにてCEOに復帰する意思があることを表明しました。",
+      "briefSummary": "ジェンスン・フアン氏は、中国スパイ疑惑がある女性との関係が報じられ、11月12日に社長、CEOおよび取締役を辞任したことが発表されています。その後、業界やユーザーからフアン氏の復帰を求める声も上がる事態となっていました。",
+      "category": "tech",
       "categories": [
-        "business",
-        "general"
-      ],
-      "categoryLabel": "経済",
-      "categoryLabels": [
-        "経済",
-        "その他"
-      ],
-      "score": 93,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T09:01:49.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / 経済",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602925?source=rss",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-business",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 経済",
-          "sourceGroup": "important-news",
-          "sourcePriority": 78,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "鳥の生食 宮崎・鹿児島で聞いた声",
-          "url": "https://news.yahoo.co.jp/pickup/6602925?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602925?source=rss",
-          "publishedAt": "2026-11-17T09:01:49.000Z",
-          "publishedLabel": "11/17 09:01",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "鳥の生食 宮崎・鹿児島で聞いた声",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": []
-    },
-    {
-      "id": "auto-games-steamへのリリース手数料-25倍の約40万円にすべき-aiゲームの大量投稿と審査遅延に解決策はあるのか-インディー業界の2人が言及-gamespark.jp/article/2026/11/17/174971.html",
-      "title": "Steamへのリリース手数料、25倍の約40万円にすべき？AIゲームの大量投稿と審査遅延に解決策はあるのか…インディー業界の2人が言及",
-      "summary": "インディーゲームパブリッシャーNo More Robotsの創業者Mike Rose氏と、インディースタジオVlambeerの共同創業者Rami Ismail氏は11月16日、YouTubeチャンネル 「Mike ＆ Rami Are Still Here」 でSteamでのゲーム申請・登録手数料を…",
-      "briefSummary": "この状況はValveにとっても深刻な問題であるとするRose氏。Game*Sparkでも過去に何度か触れてきましたが、Steamに新作ゲームをリリースするためにはValveの事前審査が必須であり、問題点があれば差し戻しと再審査も行われます。",
-      "category": "games",
-      "categories": [
+        "tech",
         "games",
-        "business",
+        "sns",
         "general"
       ],
-      "categoryLabel": "ゲーム",
+      "categoryLabel": "テック",
       "categoryLabels": [
+        "テック",
         "ゲーム",
-        "経済"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220306.png",
-      "publishedAt": "2026-11-17T09:00:03.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/11/17/174971.html",
-      "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "Steamへのリリース手数料、25倍の約40万円にすべき？AIゲームの大量投稿と審査遅延に解決策はあるのか…インディー業界の2人が言及",
-          "url": "http://www.gamespark.jp/article/2026/11/17/174971.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/17/174971.html",
-          "publishedAt": "2026-11-17T09:00:03.000Z",
-          "publishedLabel": "11/17 09:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220306.png"
-        }
-      ],
-      "whatHappened": "Steamへのリリース手数料、25倍の約40万円にすべき",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "AI利用者",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-manga-カナン様はあくまでチョロい-テレビアニメ第2期-2027年放送-追加キャストに松岡美里-伊藤美来-富田美憂-lynn-mantan-web.jp/article/20261117dog00m200075000a.html",
-      "title": "カナン様はあくまでチョロい：テレビアニメ第2期　2027年放送　追加キャストに松岡美里、伊藤美来、富田美憂、Lynn",
-      "summary": "「週刊少年マガジン」（講談社）で連載中のnoncoさんのラブコメディーマンガが原作のテレビアニメ「カナン様はあくまでチョロい」の第2期「カナン様はあくまでチョロい…",
-      "briefSummary": "「週刊少年マガジン」（講談社）で連載中のnoncoさんのラブコメディーマンガが原作のテレビアニメ「カナン様はあくまでチョロい」の第2期「カナン様はあくまでチョロい 2 EASY」が…",
-      "category": "manga",
-      "categories": [
-        "manga",
-        "anime",
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "漫画",
-      "categoryLabels": [
-        "漫画",
-        "アニメ",
-        "エンタメ"
+        "SNS"
       ],
       "score": 95,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/17/20261117dog00m200075000a/001.jpg",
-      "publishedAt": "2026-11-17T09:00:00.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220549.jpg",
+      "publishedAt": "2026-11-17T17:34:18.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
       "time": "1時間以内",
-      "sourceName": "MANTANWEB",
-      "sourceUrl": "https://mantan-web.jp/article/20261117dog00m200075000a.html",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/18/174998.html",
       "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "mantanweb",
-          "source": "MANTANWEB",
-          "sourceName": "MANTANWEB",
-          "sourceGroup": "anime",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "entertainment"
-          ],
-          "title": "カナン様はあくまでチョロい：テレビアニメ第2期　2027年放送　追加キャストに松岡美里、伊藤美来、富田美憂、Lynn",
-          "url": "https://mantan-web.jp/article/20261117dog00m200075000a.html",
-          "canonicalUrl": "https://mantan-web.jp/article/20261117dog00m200075000a.html",
-          "publishedAt": "2026-11-17T09:00:00.000Z",
-          "publishedLabel": "11/17 09:00",
-          "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/17/20261117dog00m200075000a/001.jpg"
-        }
-      ],
-      "whatHappened": "カナン様はあくまでチョロい：テレビアニメ第2期 2027年放送 追加キャストに松岡美里、伊藤…",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-games-ドラクエ-40周年を記念した-お祝いセット-が発売-めいげんポストカード-が40枚同梱-ボールペンはスライムマスコット付き-inside-games.jp/article/2026/11/17/191113.html",
-      "title": "『ドラクエ』40周年を記念した「お祝いセット」が発売！ “めいげんポストカード”が40枚同梱、ボールペンはスライムマスコット付き",
-      "summary": "『ドラゴンクエスト』シリーズ40周年を記念したグッズセットが発売中。価格は13,200円（税込）。エコバッグ付きは14,960円（税込）。",
-      "briefSummary": "さらに、シリーズの歴史を彩る名言を集めた「めいげんポストカード（40枚セット）」が入っています。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808753.jpg",
-      "publishedAt": "2026-11-17T08:55:03.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/17/191113.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
           "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "『ドラクエ』40周年を記念した「お祝いセット」が発売！ “めいげんポストカード”が40枚同梱、ボールペンはスライムマスコット付き",
-          "url": "https://www.inside-games.jp/article/2026/11/17/191113.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/17/191113.html",
-          "publishedAt": "2026-11-17T08:55:03.000Z",
-          "publishedLabel": "11/17 08:55",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808753.jpg"
-        }
-      ],
-      "whatHappened": "『ドラクエ』40周年を記念した「お祝いセット」が発売",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-entertainment-サンリオ-や-ミッフィー-トイ・ストーリー-デザインも-しまむらグループに新作サステナブル商品が登場-animeanime.jp/article/2026/11/17/104859.html",
-      "title": "「サンリオ」や「ミッフィー」、「トイ・ストーリー」デザインも♪ しまむらグループに新作サステナブル商品が登場",
-      "summary": "「サンリオキャラクターズ」や「ミッフィー」、『トイ・ストーリー』シリーズのアパレルアイテムが登場。「ファッションセンターしまむら」やカジュアル＆シューズの「アベイル」、ベビー・子供用品の「バースデイ」などのしまむらグループによる「サステナブル商品」の新作として、2026年11月18日より発売されるこ…",
-      "briefSummary": "「サンリオキャラクターズ」や「ミッフィー」、『トイ・ストーリー』シリーズのアパレルアイテムが登場。「ファッションセンターしまむら」やカジュアル＆シューズの「アベイル」、ベビー・子供用品の「バースデイ」などのしまむらグループによる「サステナブル商品」の新作として、2026年11月18日より発売されることがわかった。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "anime",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "アニメ"
-      ],
-      "score": 98,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/957139.jpg",
-      "publishedAt": "2026-11-17T08:45:03.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/11/17/104859.html",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "直近数時間で関連記事が増えています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
           "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
-          ],
-          "title": "「サンリオ」や「ミッフィー」、「トイ・ストーリー」デザインも♪ しまむらグループに新作サステナブル商品が登場",
-          "url": "https://animeanime.jp/article/2026/11/17/104859.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/11/17/104859.html",
-          "publishedAt": "2026-11-17T08:45:03.000Z",
-          "publishedLabel": "11/17 08:45",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/957139.jpg"
-        }
-      ],
-      "whatHappened": "「サンリオ」や「ミッフィー」、「トイ・ストーリー」デザインも♪ しまむらグループに新作サステ…",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "ガジェット好き",
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-games-ドラクエ-の魔王が-日清ラ王とコラボ-オンライン限定セットの予約受付は11月18日12時から-inside-games.jp/article/2026/11/17/191111.html",
-      "title": "『ドラクエ』の魔王が、日清ラ王とコラボ！オンライン限定セットの予約受付は11月18日12時から",
-      "summary": "『ドラゴンクエスト』とコラボレーションした「日清マ王 大魔王味噌」が11月23日に全国で発売！",
-      "briefSummary": "日清食品は、 『ドラゴンクエスト（ドラクエ）』 とコラボレーションした「日清マ王 大魔王味噌」を11月23日に全国で発売します。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 96,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808105.jpg",
-      "publishedAt": "2026-11-17T08:45:02.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/17/191111.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
             "games",
-            "nintendo",
-            "switch"
+            "pc",
+            "console"
           ],
-          "title": "『ドラクエ』の魔王が、日清ラ王とコラボ！オンライン限定セットの予約受付は11月18日12時から",
-          "url": "https://www.inside-games.jp/article/2026/11/17/191111.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/17/191111.html",
-          "publishedAt": "2026-11-17T08:45:02.000Z",
-          "publishedLabel": "11/17 08:45",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808105.jpg"
+          "title": "ジェンスン・フアン氏、CEO復帰の意思があると表明。NVIDIA騒動後初めてXに投稿",
+          "url": "http://www.gamespark.jp/article/2026/11/18/174998.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/18/174998.html",
+          "publishedAt": "2026-11-17T17:34:18.000Z",
+          "publishedLabel": "11/17 17:34",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220549.jpg"
         }
       ],
-      "whatHappened": "『ドラクエ』の魔王が、日清ラ王とコラボ",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "whatHappened": "ジェンスン・フアン氏、CEO復帰の意思があると表明",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
-        "ゲームユーザー"
+        "ゲームユーザー",
+        "ガジェット好き",
+        "ネット文化を追う人"
       ]
     },
     {
-      "id": "auto-games-ソニック-のメカニズムと世界観を-pico-park-のカオスとうまく融合させた-海外レビューハイスコア-sonic-pico-park-gamespark.jp/article/2026/11/17/174970.html",
-      "title": "「『ソニック』のメカニズムと世界観を『PICO PARK』のカオスとうまく融合させた」海外レビューハイスコア『SONIC PICO PARK』",
-      "summary": "2026年11月12日発売『SONIC PICO PARK』の海外レビューをお届けします。",
-      "briefSummary": "9件 本作『 SONIC PICO PARK 』は、2026年11月12日に発売された協力型アクションパズルです。プレイヤーは全員で協力して右端にあるゴールプレートの通過を目指します。『ソニック』らしさと『PICO PARK』らしさを兼ね備えた渾身の自信作を謳っています。",
+      "id": "auto-games-goty候補に-gta6-も-the-game-awards-2026-ノミネート作発表-gamespark.jp/article/2026/11/18/174997.html",
+      "title": "GOTY候補に『GTA6』も！「The Game Awards 2026」ノミネート作発表",
+      "summary": "2026年11月19日発売の『GTA6』もGOTY候補！",
+      "briefSummary": "2026年のGame of the Yearには、まだ現時点では発売されていない『 グランド・セフト・オートVI （GTA6）』もノミネートされました。その他、『007 First Light』『Control Resonant』『Phantom Blade Zero』『バイオハザード レクイエム』『ゼルダの伝説 時のオカリナ』がノミネートされています。",
       "category": "games",
       "categories": [
         "games",
@@ -384,15 +102,15 @@
       "categoryLabels": [
         "ゲーム"
       ],
-      "score": 96,
+      "score": 94,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220238.jpg",
-      "publishedAt": "2026-11-17T08:45:02.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220545.png",
+      "publishedAt": "2026-11-17T17:24:10.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "1時間前",
       "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/11/17/174970.html",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/18/174997.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
@@ -411,15 +129,15 @@
             "pc",
             "console"
           ],
-          "title": "「『ソニック』のメカニズムと世界観を『PICO PARK』のカオスとうまく融合させた」海外レビューハイスコア『SONIC PICO PARK』",
-          "url": "http://www.gamespark.jp/article/2026/11/17/174970.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/17/174970.html",
-          "publishedAt": "2026-11-17T08:45:02.000Z",
-          "publishedLabel": "11/17 08:45",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220238.jpg"
+          "title": "GOTY候補に『GTA6』も！「The Game Awards 2026」ノミネート作発表",
+          "url": "http://www.gamespark.jp/article/2026/11/18/174997.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/18/174997.html",
+          "publishedAt": "2026-11-17T17:24:10.000Z",
+          "publishedLabel": "11/17 17:24",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220545.png"
         }
       ],
-      "whatHappened": "「『ソニック』のメカニズムと世界観を『PICO PARK』のカオスとうまく融合させた」海外レ…",
+      "whatHappened": "GOTY候補に『GTA6』も",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -428,113 +146,342 @@
       ]
     },
     {
-      "id": "auto-general-高速の深夜割引-年度内に見直し-news.yahoo.co.jp/pickup/6602923",
-      "title": "高速の深夜割引 年度内に見直し",
-      "summary": "NEXCO3社は2026年11月17日、高速道路の深夜割引の見直しについて、2026年度中に行うと発表しました。【使いづらい!!】これがシン「深夜割引」です！（画像で見る） 深夜帯に高速道路を利用す",
-      "briefSummary": "NEXCO3社は2026年11月17日、高速道路の深夜割引の見直しについて、2026年度中に行うと発表しました。【使いづらい!!】これがシン「深夜割引」です！（画像で見る） 深夜帯に高速道路を利用す",
-      "category": "business",
+      "id": "auto-games-ソニー-playstation-store価格めぐる約4-160億円の英国での集団訴訟に勝訴-裁判所は訴えを全面棄却-gamespark.jp/article/2026/11/18/174996.html",
+      "title": "ソニー、PlayStation Store価格めぐる約4,160億円の英国での集団訴訟に勝訴―裁判所は訴えを全面棄却",
+      "summary": "ソニーが、PlayStation Storeにおけるゲーム価格をめぐる大規模な集団訴訟で勝訴したことが明らかになりました。",
+      "briefSummary": "また、サードパーティストアの存在がPlayStation Storeの価格を引き下げるという証拠がないとし、ユーザーはデジタル版の代わりに物理ディスク版のゲームを購入することもできると述べました。さらに裁判所は、PlayStationにサードパーティストアを許可することは費用がかかり複雑で、セキュリティにも影響する可能性があると指摘。競争法の下で、ソニーにそ…",
+      "category": "games",
       "categories": [
-        "business",
+        "games",
         "general"
       ],
-      "categoryLabel": "経済",
+      "categoryLabel": "ゲーム",
       "categoryLabels": [
-        "経済",
-        "その他"
+        "ゲーム"
       ],
-      "score": 99,
+      "score": 94,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T08:44:10.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / 経済",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602923?source=rss",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220543.jpg",
+      "publishedAt": "2026-11-17T17:03:00.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "1時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/18/174996.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "yahoo-business",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "ソニー、PlayStation Store価格めぐる約4,160億円の英国での集団訴訟に勝訴―裁判所は訴えを全面棄却",
+          "url": "http://www.gamespark.jp/article/2026/11/18/174996.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/18/174996.html",
+          "publishedAt": "2026-11-17T17:03:00.000Z",
+          "publishedLabel": "11/17 17:03",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220543.jpg"
+        }
+      ],
+      "whatHappened": "ソニー、PlayStation Store価格めぐる約4,160億円の英国での集団訴訟に勝訴…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き",
+        "時事ニュースを追う人"
+      ]
+    },
+    {
+      "id": "auto-games-gta6-を-見た目だけ-でも滑らかに-30fpsの限界を改造なしで突破する有志pcツール登場-gamespark.jp/article/2026/11/18/174995.html",
+      "title": "『GTA6』を“見た目だけ”でも滑らかに！30fpsの限界を改造なしで突破する有志PCツール登場",
+      "summary": "“映像だけ”なので遅延には要注意―既存ツールを使ったプレイの考案も",
+      "briefSummary": "2026年11月19日の発売まで3日を切った『 グランド・セフト・オートVI（GTA6） 』。現行コンソール向けとして“30fps目標”とアナウンスされた本作ですが、“見た目だけでも滑らかに”する有志PCツール「SmoovPlay」がGitHubにて リリース されました。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 92,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220517.png",
+      "publishedAt": "2026-11-17T15:30:03.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "2時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/18/174995.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "『GTA6』を“見た目だけ”でも滑らかに！30fpsの限界を改造なしで突破する有志PCツール登場",
+          "url": "http://www.gamespark.jp/article/2026/11/18/174995.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/18/174995.html",
+          "publishedAt": "2026-11-17T15:30:03.000Z",
+          "publishedLabel": "11/17 15:30",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220517.png"
+        }
+      ],
+      "whatHappened": "『GTA6』を“見た目だけ”でも滑らかに",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-general-森保j-ラストマッチで敗れる-news.yahoo.co.jp/pickup/6602974",
+      "title": "森保J ラストマッチで敗れる",
+      "summary": "",
+      "briefSummary": "",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "general"
+      ],
+      "categoryLabel": "スポーツ",
+      "categoryLabels": [
+        "スポーツ",
+        "その他"
+      ],
+      "score": 80,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-17T15:20:48.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "3時間前",
+      "sourceName": "Yahoo!ニュース / スポーツ",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602974?source=rss",
+      "hotReasons": [],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-sports",
           "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 経済",
-          "sourceGroup": "important-news",
-          "sourcePriority": 78,
+          "sourceName": "Yahoo!ニュース / スポーツ",
+          "sourceGroup": "general-sports",
+          "sourcePriority": 58,
           "official": false,
           "specialist": false,
           "forPersonal": false,
           "sourceTags": [],
-          "title": "高速の深夜割引 年度内に見直し",
-          "url": "https://news.yahoo.co.jp/pickup/6602923?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602923?source=rss",
-          "publishedAt": "2026-11-17T08:44:10.000Z",
-          "publishedLabel": "11/17 08:44",
+          "title": "森保J ラストマッチで敗れる",
+          "url": "https://news.yahoo.co.jp/pickup/6602974?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602974?source=rss",
+          "publishedAt": "2026-11-17T15:20:48.000Z",
+          "publishedLabel": "11/17 15:20",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "高速の深夜割引 年度内に見直し",
+      "whatHappened": "森保J ラストマッチで敗れる",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-games-マウスだけで遊べる牛乳を届ける配達adv-milki-delivery-ミルキィの牛乳屋さん-リリース-お金を稼ぎ-資源を集めて商売発展-gamespark.jp/article/2026/11/18/174994.html",
+      "title": "マウスだけで遊べる牛乳を届ける配達ADV『Milki Delivery：ミルキィの牛乳屋さん』リリース。お金を稼ぎ、資源を集めて商売発展",
+      "summary": "パブリッシャーWholesome Gamesは、『 おいでませ、みなみ通りへ！ 』を手掛けたデベロッパーBlibloopおよびDoot開発の新作アドベンチャー『 Milki Delivery：ミルキィの牛乳屋さん 』をリリースしました。",
+      "briefSummary": "『Milki Delivery：ミルキィの牛乳屋さん』は、PCを対象とし Steam にて発売中。12月2日まで20%オフとなっています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 91,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1184324.jpg",
+      "publishedAt": "2026-11-17T15:20:08.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "3時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/18/174994.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "マウスだけで遊べる牛乳を届ける配達ADV『Milki Delivery：ミルキィの牛乳屋さん』リリース。お金を稼ぎ、資源を集めて商売発展",
+          "url": "http://www.gamespark.jp/article/2026/11/18/174994.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/18/174994.html",
+          "publishedAt": "2026-11-17T15:20:08.000Z",
+          "publishedLabel": "11/17 15:20",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1184324.jpg"
+        }
+      ],
+      "whatHappened": "マウスだけで遊べる牛乳を届ける配達ADV『Milki Delivery：ミルキィの牛乳屋さん…",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "終了前の条件確認や購入判断に直結しやすい情報です。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
-        "セール好き"
+        "ゲームユーザー",
+        "ガジェット好き"
       ]
     },
     {
-      "id": "auto-entertainment-vivant-映画になることすら知りませんでした-悪役たちの告白にsns衝撃-不憫すぎるシンシー-mantan-web.jp/article/20261116dog00m200083000a.html",
-      "title": "VIVANT：「映画になることすら知りませんでした」　悪役たちの告白にSNS衝撃　「不憫すぎるシンシー」",
-      "summary": "俳優の堺雅人さん主演のTBS系日曜劇場「VIVANT（ヴィヴァン）」。悪役たちが登場する「VIVANT 悪役会議室」（日曜午後11時）の第17回が11月15日に配信…",
-      "briefSummary": "俳優の堺雅人さん主演のTBS系日曜劇場「VIVANT（ヴィヴァン）」。悪役たちが登場する「VIVANT 悪役会議室」（日曜午後11時）の第17回が11月15日に配信された。 「悪役…",
+      "id": "auto-games-しまむらで-モンチッチ-ポムポムプリン-グッズが発売-大きめイラストや刺繍が可愛いプルオーバー-バッグに寝具類など豊富なデザイン-inside-games.jp/article/2026/11/18/191138.html",
+      "title": "しまむらで「モンチッチ×ポムポムプリン」グッズが発売！大きめイラストや刺繍が可愛いプルオーバー、バッグに寝具類など豊富なデザイン",
+      "summary": "全国のしまむら店舗にて、「モンチッチ×ポムポムプリン」のグッズが2026年11月18日より発売！同日15時よりオンラインストアでも取り扱われます。",
+      "briefSummary": "全国のしまむら店舗にて、「モンチッチ×ポムポムプリン」のグッズが2026年11月18日より発売！同日15時よりオンラインストアでも取り扱われます。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 91,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808114.jpg",
+      "publishedAt": "2026-11-17T15:10:03.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "3時間前",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/11/18/191138.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "しまむらで「モンチッチ×ポムポムプリン」グッズが発売！大きめイラストや刺繍が可愛いプルオーバー、バッグに寝具類など豊富なデザイン",
+          "url": "https://www.inside-games.jp/article/2026/11/18/191138.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/18/191138.html",
+          "publishedAt": "2026-11-17T15:10:03.000Z",
+          "publishedLabel": "11/17 15:10",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808114.jpg"
+        }
+      ],
+      "whatHappened": "しまむらで「モンチッチ×ポムポムプリン」グッズが発売",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-entertainment-ノー・マンズ・サテライト-shonenjumpplus.com/episode/9253191257982513815",
+      "title": "ノー・マンズ・サテライト",
+      "summary": "",
+      "briefSummary": "",
       "category": "entertainment",
       "categories": [
         "entertainment",
-        "manga",
+        "sns",
         "net-culture",
+        "manga",
+        "books",
         "general"
       ],
       "categoryLabel": "エンタメ",
       "categoryLabels": [
         "エンタメ",
+        "SNS",
+        "ネットカルチャー",
         "漫画",
-        "ネットカルチャー"
+        "本"
       ],
-      "score": 94,
+      "score": 86,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/16/20261116dog00m200083000a/001.jpg",
-      "publishedAt": "2026-11-17T08:41:00.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "MANTANWEB",
-      "sourceUrl": "https://mantan-web.jp/article/20261116dog00m200083000a.html",
+      "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://shonenjumpplus.com/episode/9253191257982513815",
+      "publishedAt": "2026-11-17T15:07:03.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "3時間前",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://shonenjumpplus.com/episode/9253191257982513815",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
+        "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "mantanweb",
-          "source": "MANTANWEB",
-          "sourceName": "MANTANWEB",
-          "sourceGroup": "anime",
-          "sourcePriority": 84,
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "anime",
-            "manga",
-            "entertainment"
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
           ],
-          "title": "VIVANT：「映画になることすら知りませんでした」　悪役たちの告白にSNS衝撃　「不憫すぎるシンシー」",
-          "url": "https://mantan-web.jp/article/20261116dog00m200083000a.html",
-          "canonicalUrl": "https://mantan-web.jp/article/20261116dog00m200083000a.html",
-          "publishedAt": "2026-11-17T08:41:00.000Z",
-          "publishedLabel": "11/17 08:41",
-          "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/16/20261116dog00m200083000a/001.jpg"
+          "title": "ノー・マンズ・サテライト",
+          "url": "https://shonenjumpplus.com/episode/9253191257982513815",
+          "canonicalUrl": "https://shonenjumpplus.com/episode/9253191257982513815",
+          "publishedAt": "2026-11-17T15:07:03.000Z",
+          "publishedLabel": "11/17 15:07",
+          "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://shonenjumpplus.com/episode/9253191257982513815"
         }
       ],
-      "whatHappened": "VIVANT：「映画になることすら知りませんでした」 悪役たちの告白にSNS衝撃 「不憫すぎ…",
+      "whatHappened": "ノー・マンズ・サテライト",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
@@ -543,84 +490,90 @@
       ]
     },
     {
-      "id": "auto-games-ジョジョ-の歴代-宿敵-たちが-新作一番くじに集結-石仮面を持った-ディオ-フィギュアなど圧倒的存在感-inside-games.jp/article/2026/11/17/191110.html",
-      "title": "「ジョジョ」の歴代“宿敵”たちが、新作一番くじに集結！石仮面を持った「ディオ」フィギュアなど圧倒的存在感",
-      "summary": "【フィギュア】中国杯での千葉百音へのブーイング、国際連盟のキム会長が謝罪の電話 表彰式で妨害の声、日本連盟は要望書を提出 千葉には精神的サポートも実施",
-      "briefSummary": "本商品は、「ジョジョの奇妙な冒険」シリーズの“宿敵”をテーマにしたハズレなしグッズくじです。A～F賞では、1部の「ディオ・ブランドー」から6部の「エンリコ・P」まで歴代宿敵がフィギュアになって登場します。",
-      "category": "games",
+      "id": "auto-manga-第83話-王都の戦い3-ロードマギアの弟子-sunday-webry.com/episode/12207421984535973165",
+      "title": "第83話 王都の戦い3 / ロードマギアの弟子",
+      "summary": "ロードマギアの弟子 FLIPFLOPs 幼い頃、魔術師に命を救われた傭兵の少年・ガルは魔器を盗んだ魔術師を討伐する騎士団への従軍の仕事を請け負う。しかし魔術師の元へ…",
+      "briefSummary": "ロードマギアの弟子 FLIPFLOPs 幼い頃、魔術師に命を救われた傭兵の少年・ガルは魔器を盗んだ魔術師を討伐する騎士団への従軍の仕事を請け負う。しかし魔術師の元へ向かう途中で騎士団は魔術師に見つかり戦闘となる。圧倒的な力を持つ魔術師を前に…",
+      "category": "manga",
       "categories": [
-        "games",
+        "manga",
+        "sns",
+        "net-culture",
         "general"
       ],
-      "categoryLabel": "ゲーム",
+      "categoryLabel": "漫画",
       "categoryLabels": [
-        "ゲーム"
+        "漫画",
+        "SNS",
+        "ネットカルチャー"
       ],
-      "score": 95,
+      "score": 86,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1801347.webp",
-      "publishedAt": "2026-11-17T08:40:03.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/17/191110.html",
+      "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://www.sunday-webry.com/episode/12207421984535973165",
+      "publishedAt": "2026-11-17T15:04:43.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "3時間前",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://www.sunday-webry.com/episode/12207421984535973165",
       "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
           ],
-          "title": "「ジョジョ」の歴代“宿敵”たちが、新作一番くじに集結！石仮面を持った「ディオ」フィギュアなど圧倒的存在感",
-          "url": "https://www.inside-games.jp/article/2026/11/17/191110.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/17/191110.html",
-          "publishedAt": "2026-11-17T08:40:03.000Z",
-          "publishedLabel": "11/17 08:40",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1801347.webp"
+          "title": "第83話 王都の戦い3 / ロードマギアの弟子",
+          "url": "https://www.sunday-webry.com/episode/12207421984535973165",
+          "canonicalUrl": "https://www.sunday-webry.com/episode/12207421984535973165",
+          "publishedAt": "2026-11-17T15:04:43.000Z",
+          "publishedLabel": "11/17 15:04",
+          "thumbnailUrl": "https://b.hatena.ne.jp/entry/image/https://www.sunday-webry.com/episode/12207421984535973165"
         }
       ],
-      "whatHappened": "「ジョジョ」の歴代“宿敵”たちが、新作一番くじに集結",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "whatHappened": "第83話 王都の戦い3 / ロードマギアの弟子",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
-        "ゲームユーザー"
+        "漫画・アニメ好き",
+        "ネット文化を追う人"
       ]
     },
     {
-      "id": "auto-world-閉山中に中国人遭難-懸賞金に指摘-news.yahoo.co.jp/pickup/6602924",
-      "title": "閉山中に中国人遭難 懸賞金に指摘",
-      "summary": "富士山で20代の中国人の男性が遭難し、現在も見つかっていません。男性の親族は男性を捜索し救助した人に最大1200万円の懸賞金を支払う予定だと中国のメディアが報じ、波紋が広がっています。",
-      "briefSummary": "富士山で20代の中国人の男性が遭難し、現在も見つかっていません。男性の親族は男性を捜索し救助した人に最大1200万円の懸賞金を支払う予定だと中国のメディアが報じ、波紋が広がっています。",
-      "category": "world",
+      "id": "auto-general-山の神祭-準備中に白イノシシ-news.yahoo.co.jp/pickup/6602972",
+      "title": "「山の神祭」準備中に白イノシシ",
+      "summary": "RKK熊本放送のスクープ投稿に、珍しい「白い動物」の映像が寄せられました。発見された場所から「神の使いのようだ」と、撮影した住民は語ります。【写真を見る】祭りの準備中に現れた「白い動物」■「あれ、何",
+      "briefSummary": "RKK熊本放送のスクープ投稿に、珍しい「白い動物」の映像が寄せられました。発見された場所から「神の使いのようだ」と、撮影した住民は語ります。【写真を見る】祭りの準備中に現れた「白い動物」■「あれ、何",
+      "category": "general",
       "categories": [
-        "world",
         "general"
       ],
-      "categoryLabel": "国際",
+      "categoryLabel": "その他",
       "categoryLabels": [
-        "国際"
+        "その他"
       ],
-      "score": 81,
+      "score": 77,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-17T08:37:06.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
+      "publishedAt": "2026-11-17T15:01:40.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "3時間前",
       "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602924?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602972?source=rss",
       "hotReasons": [],
       "sourceSignals": [
         {
@@ -633,106 +586,46 @@
           "specialist": false,
           "forPersonal": false,
           "sourceTags": [],
-          "title": "閉山中に中国人遭難 懸賞金に指摘",
-          "url": "https://news.yahoo.co.jp/pickup/6602924?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602924?source=rss",
-          "publishedAt": "2026-11-17T08:37:06.000Z",
-          "publishedLabel": "11/17 08:37",
+          "title": "「山の神祭」準備中に白イノシシ",
+          "url": "https://news.yahoo.co.jp/pickup/6602972?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602972?source=rss",
+          "publishedAt": "2026-11-17T15:01:40.000Z",
+          "publishedLabel": "11/17 15:01",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "閉山中に中国人遭難 懸賞金に指摘",
+      "whatHappened": "「山の神祭」準備中に白イノシシ",
       "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "時事ニュースを追う人"
-      ]
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": []
     },
     {
-      "id": "auto-games-太もものリボンにドキッ-ホロライブ・輪堂千速の-hololive-meet-2026-2ndビジュアルグッズが可愛いーアクスタ-缶バッジなどが予約受付中-inside-games.jp/article/2026/11/17/191109.html",
-      "title": "太もものリボンにドキッ！ ホロライブ・輪堂千速の「hololive Meet 2026」2ndビジュアルグッズが可愛いーアクスタ、缶バッジなどが予約受付中",
-      "summary": "ホロライブ Meet 2026の輪堂千速2ndビジュアルグッズが予約受付中、2wayアクリルスタンドほか缶バッジ・マグネット等。",
-      "briefSummary": "「hololive Meet 2026」2ndビジュアルグッズ各種は11月22日まで予約受付中。発送は2027年1月予定です。詳しくは、各商品ページをご確認ください。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808632.webp",
-      "publishedAt": "2026-11-17T08:35:03.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/17/191109.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "太もものリボンにドキッ！ ホロライブ・輪堂千速の「hololive Meet 2026」2ndビジュアルグッズが可愛いーアクスタ、缶バッジなどが予約受付中",
-          "url": "https://www.inside-games.jp/article/2026/11/17/191109.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/17/191109.html",
-          "publishedAt": "2026-11-17T08:35:03.000Z",
-          "publishedLabel": "11/17 08:35",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808632.webp"
-        }
-      ],
-      "whatHappened": "太もものリボンにドキッ",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-entertainment-ひよっこ-戦後20年-何が残ったのか-宮本信子-鈴子-が吐露した言葉-視聴者も-胸が苦しく-昼の再放送で-mantan-web.jp/article/20261117dog00m200059000a.html",
-      "title": "ひよっこ：戦後20年「何が残ったのか」宮本信子“鈴子”が吐露した言葉　視聴者も「胸が苦しく」　昼の再放送で",
-      "summary": "俳優の有村架純さんが主演を務めた2017年度前期のNHKの連続テレビ小説（朝ドラ）「ひよっこ」の平日昼の再放送（総合、月～金曜午後0時半）。11月17日の第72回で…",
-      "briefSummary": "俳優の有村架純さんが主演を務めた2017年度前期のNHKの連続テレビ小説（朝ドラ）「ひよっこ」の平日昼の再放送（総合、月～金曜午後0時半）。11月17日の第72回では、鈴子（宮本信…",
+      "id": "auto-entertainment-めるる-ミニスカ-青シャツで秋らしく-ウインクも披露-可愛いコーデ-と話題に-mantan-web.jp/article/20261117dog00m200081000a.html",
+      "title": "めるる：ミニスカ×青シャツで秋らしく　ウインクも披露　「可愛いコーデ」と話題に",
+      "summary": "",
+      "briefSummary": "",
       "category": "entertainment",
       "categories": [
         "entertainment",
         "manga",
-        "books",
         "general"
       ],
       "categoryLabel": "エンタメ",
       "categoryLabels": [
         "エンタメ",
-        "漫画",
-        "本"
+        "漫画"
       ],
-      "score": 94,
+      "score": 90,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/17/20261117dog00m200059000a/001.jpg",
-      "publishedAt": "2026-11-17T08:35:00.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-17T15:00:00.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "3時間前",
       "sourceName": "MANTANWEB",
-      "sourceUrl": "https://mantan-web.jp/article/20261117dog00m200059000a.html",
+      "sourceUrl": "https://mantan-web.jp/article/20261117dog00m200081000a.html",
       "hotReasons": [
-        "一般ユーザーの関心が集まりやすいテーマです。",
+        "検索需要やトレンド化の兆しが強い話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
@@ -750,283 +643,105 @@
             "manga",
             "entertainment"
           ],
-          "title": "ひよっこ：戦後20年「何が残ったのか」宮本信子“鈴子”が吐露した言葉　視聴者も「胸が苦しく」　昼の再放送で",
-          "url": "https://mantan-web.jp/article/20261117dog00m200059000a.html",
-          "canonicalUrl": "https://mantan-web.jp/article/20261117dog00m200059000a.html",
-          "publishedAt": "2026-11-17T08:35:00.000Z",
-          "publishedLabel": "11/17 08:35",
-          "thumbnailUrl": "https://storage.mantan-web.jp/w=1280,h=720,icr=0:0.1:1:1,a=2,g=2,f=webp:auto/images/2026/11/17/20261117dog00m200059000a/001.jpg"
+          "title": "めるる：ミニスカ×青シャツで秋らしく　ウインクも披露　「可愛いコーデ」と話題に",
+          "url": "https://mantan-web.jp/article/20261117dog00m200081000a.html",
+          "canonicalUrl": "https://mantan-web.jp/article/20261117dog00m200081000a.html",
+          "publishedAt": "2026-11-17T15:00:00.000Z",
+          "publishedLabel": "11/17 15:00",
+          "thumbnailUrl": null
         }
       ],
-      "whatHappened": "ひよっこ：戦後20年「何が残ったのか」宮本信子“鈴子”が吐露した言葉 視聴者も「胸が苦しく」…",
-      "whyHot": "一般ユーザーの関心が集まりやすいテーマです。",
+      "whatHappened": "めるる：ミニスカ×青シャツで秋らしく ウインクも披露 「可愛いコーデ」と話題に",
+      "whyHot": "検索需要やトレンド化の兆しが強い話題です。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": [
         "漫画・アニメ好き"
       ]
     },
     {
-      "id": "auto-games-アセンドトゥゼロ-初の着替えdlc-sweet-kiss-をリリース-4gamer.net/games/890/g089012/20261117036",
-      "title": "「アセンドトゥゼロ」，初の着替えDLC「Sweet Kiss」をリリース",
-      "summary": "Ascend to ZERO Ascend to Zero 配信元 KRAFTON 配信日 2026/11/17 KRAFTON、 『アセンドトゥゼロ』 初の着替えDLC「Sweet Ki…",
-      "briefSummary": "Ascend to ZERO Ascend to Zero 配信元 KRAFTON 配信日 2026/11/17 KRAFTON、 『アセンドトゥゼロ』 初の着替えDLC「Sweet Ki…",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/890/G089012/20261117036/SS/001.jpg",
-      "publishedAt": "2026-11-17T08:34:01.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/890/G089012/20261117036/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "「アセンドトゥゼロ」，初の着替えDLC「Sweet Kiss」をリリース",
-          "url": "https://www.4gamer.net/games/890/G089012/20261117036/",
-          "canonicalUrl": "https://www.4gamer.net/games/890/G089012/20261117036/",
-          "publishedAt": "2026-11-17T08:34:01.000Z",
-          "publishedLabel": "11/17 08:34",
-          "thumbnailUrl": "https://www.4gamer.net/games/890/G089012/20261117036/SS/001.jpg"
-        }
-      ],
-      "whatHappened": "「アセンドトゥゼロ」，初の着替えDLC「Sweet Kiss」をリリース",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-tech-ダライアス外伝-メインプログラマーの倉林-晶氏が逝去-4gamer.net/games/999/g999905/20261117034",
-      "title": "「ダライアス外伝」メインプログラマーの倉林 晶氏が逝去",
-      "summary": "アリカは本日（2026年11月17日），同社の取締役兼開発ソフトウェア部部長を務めていた倉林晶氏が，心不全のため急逝したことを発表した。同氏は，「ダライアス外伝」「…",
-      "briefSummary": "アリカは本日（2026年11月17日），同社の取締役兼開発ソフトウェア部部長を務めていた倉林晶氏が，心不全のため急逝したことを発表した。同氏は，「ダライアス外伝」「ファイターズインパクト」「ヴァーテクサー」などの作品でメインプログラマーを務…",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "games",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "ゲーム"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.4gamer.net/games/999/G999905/20261117034/TN/003.jpg",
-      "publishedAt": "2026-11-17T08:31:41.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "4Gamer",
-      "sourceUrl": "https://www.4gamer.net/games/999/G999905/20261117034/",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "4gamer",
-          "source": "4Gamer",
-          "sourceName": "4Gamer",
-          "sourceGroup": "games",
-          "sourcePriority": 94,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console",
-            "steam"
-          ],
-          "title": "「ダライアス外伝」メインプログラマーの倉林 晶氏が逝去",
-          "url": "https://www.4gamer.net/games/999/G999905/20261117034/",
-          "canonicalUrl": "https://www.4gamer.net/games/999/G999905/20261117034/",
-          "publishedAt": "2026-11-17T08:31:41.000Z",
-          "publishedLabel": "11/17 08:31",
-          "thumbnailUrl": "https://www.4gamer.net/games/999/G999905/20261117034/TN/003.jpg"
-        }
-      ],
-      "whatHappened": "「ダライアス外伝」メインプログラマーの倉林 晶氏が逝去",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-entertainment-agf2026をフォトレポート-フラガリアメモリーズ-原宿ヒメゴトハウス-アイカツ-など-注目ブースを巡ってみた-前編-animeanime.jp/article/2026/11/17/104858.html",
-      "title": "AGF2026をフォトレポート！「フラガリアメモリーズ」「原宿ヒメゴトハウス」「アイカツ！」など、注目ブースを巡ってみた【前編】",
-      "summary": "2026年11月7日・8日の2日間、東京・池袋で「アニメイトガールズフェスティバル2026（AGF2026）」が開催されました。 前編では、音楽やライブ、ゲームへと世界を広げる「フラガリアメモリーズ」、AGFの会場でプロジェクトが発表された「原宿ヒメゴトハウス」、“平成女児”世代のファンが続々と足を…",
-      "briefSummary": "レポート前編では、音楽やライブ、ゲームへと世界を広げる『フラガリアメモリーズ』、AGFの会場でプロジェクトが発表された『原宿ヒメゴトハウス』、“平成女児”世代のファンが続々と足を運んだ『アイカツ！』など、注目ブースを巡っていきます。",
+      "id": "auto-entertainment-横澤夏子-3姉妹の母-七五三できた-とニッコリ-ママ頑張った-えらすぎます-と話題に-mantan-web.jp/article/20261117dog00m200074000a.html",
+      "title": "横澤夏子：3姉妹の母　「七五三できた！」とニッコリ　「ママ頑張った」「えらすぎます！」と話題に",
+      "summary": "",
+      "briefSummary": "",
       "category": "entertainment",
       "categories": [
         "entertainment",
+        "manga",
         "general"
       ],
       "categoryLabel": "エンタメ",
       "categoryLabels": [
         "エンタメ",
-        "その他"
+        "漫画"
       ],
-      "score": 97,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/956729.jpg",
-      "publishedAt": "2026-11-17T08:30:04.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/11/17/104858.html",
+      "score": 90,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-17T15:00:00.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "3時間前",
+      "sourceName": "MANTANWEB",
+      "sourceUrl": "https://mantan-web.jp/article/20261117dog00m200074000a.html",
       "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "直近数時間で関連記事が増えています。"
+        "検索需要やトレンド化の兆しが強い話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
+          "sourceId": "mantanweb",
+          "source": "MANTANWEB",
+          "sourceName": "MANTANWEB",
           "sourceGroup": "anime",
-          "sourcePriority": 92,
+          "sourcePriority": 84,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "anime",
             "manga",
-            "voice-actor",
-            "movie"
+            "entertainment"
           ],
-          "title": "AGF2026をフォトレポート！「フラガリアメモリーズ」「原宿ヒメゴトハウス」「アイカツ！」など、注目ブースを巡ってみた【前編】",
-          "url": "https://animeanime.jp/article/2026/11/17/104858.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/11/17/104858.html",
-          "publishedAt": "2026-11-17T08:30:04.000Z",
-          "publishedLabel": "11/17 08:30",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/956729.jpg"
+          "title": "横澤夏子：3姉妹の母　「七五三できた！」とニッコリ　「ママ頑張った」「えらすぎます！」と話題に",
+          "url": "https://mantan-web.jp/article/20261117dog00m200074000a.html",
+          "canonicalUrl": "https://mantan-web.jp/article/20261117dog00m200074000a.html",
+          "publishedAt": "2026-11-17T15:00:00.000Z",
+          "publishedLabel": "11/17 15:00",
+          "thumbnailUrl": null
         }
       ],
-      "whatHappened": "AGF2026をフォトレポート",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "whatHappened": "横澤夏子：3姉妹の母 「七五三できた！」とニッコリ 「ママ頑張った」「えらすぎます！」と話題…",
+      "whyHot": "検索需要やトレンド化の兆しが強い話題です。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": [
-        "ガジェット好き",
         "漫画・アニメ好き"
       ]
     },
     {
-      "id": "auto-entertainment-ちいかわ-グッズ作成サービスに-古本屋-デザインが追加-牢屋に入っていたり-へちゃっとしたりな全7種ー本を支えてくれるブックエンドも-inside-games.jp/article/2026/11/17/191108.html",
-      "title": "「ちいかわ」グッズ作成サービスに「古本屋」デザインが追加！牢屋に入っていたり、へちゃっとしたりな全7種ー本を支えてくれるブックエンドも",
-      "summary": "「Talking ODM」に「ちいかわ 古本屋デザイン」が追加！",
-      "briefSummary": "好きなデザインとプリントしたい商品を選んで購入できるサービス「Talking ODM」より「ちいかわ 古本屋デザイン」が追加。牢屋に入っていたり、へちゃっとしていたり、いろんな姿の古本屋全7種がラインナップしています。。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808536.webp",
-      "publishedAt": "2026-11-17T08:30:03.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/17/191108.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "「ちいかわ」グッズ作成サービスに「古本屋」デザインが追加！牢屋に入っていたり、へちゃっとしたりな全7種ー本を支えてくれるブックエンドも",
-          "url": "https://www.inside-games.jp/article/2026/11/17/191108.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/17/191108.html",
-          "publishedAt": "2026-11-17T08:30:03.000Z",
-          "publishedLabel": "11/17 08:30",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808536.webp"
-        }
-      ],
-      "whatHappened": "「ちいかわ」グッズ作成サービスに「古本屋」デザインが追加",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-unity買収報道に幹部がコメント-好調な決算の後に憶測が出るのはよくあること-噂よりもインディーゲーム開発者への支援に注力したい-gamespark.jp/article/2026/11/17/174969.html",
-      "title": "Unity買収報道に幹部がコメント、「好調な決算の後に憶測が出るのはよくあること」―噂よりもインディーゲーム開発者への支援に注力したい",
-      "summary": "ゲームエンジン「Unity」を手掛ける Unity Software社 の買収報道について、プロダクト担当シニア・バイス・プレジデントであるAdam Smith氏が言及しました。",
-      "briefSummary": "サウジアラビアの政府系ファンドなどによるUnity社の完全買収と、非公開化に向けた協議が行われているとロイターが報じたのは11月6日のこと。以前のエレクトロニック・アーツ（EA）買収ほどの巨額ではないものの、史上最大級のLBO（レバレッジド・バイアウト）になる可能性があるとして、注目を集めています。",
+      "id": "auto-games-ピカチュウがいっぱい-約3-000種の女性コレクター記録がギネス認定-gamespark.jp/article/2026/11/17/174993.html",
+      "title": "ピカチュウがいっぱい！約3,000種の女性コレクター記録がギネス認定",
+      "summary": "ギネス世界記録は、“ 世界最大の「ピカチュウ」グッズコレクション（The largest collection of Pikachu memorabilia） ”として、2,882個の記録が登録されたことを 報告 しました。",
+      "briefSummary": "ちなみに、『ポケモン』グッズにまつわる記録として、2025年には「ゲンガー」グッズを1,200種類集めたファンのコレクションがギネス世界記録に登録。同じく香港に拠点を置くコレクターによる記録となっています。",
       "category": "games",
       "categories": [
         "games",
-        "business",
         "general"
       ],
       "categoryLabel": "ゲーム",
       "categoryLabels": [
-        "ゲーム",
-        "経済"
+        "ゲーム"
       ],
-      "score": 95,
+      "score": 90,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220178.jpg",
-      "publishedAt": "2026-11-17T08:30:03.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220511.jpg",
+      "publishedAt": "2026-11-17T14:30:03.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "3時間前",
       "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/11/17/174969.html",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/17/174993.html",
       "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
+        "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
@@ -1043,142 +758,403 @@
             "pc",
             "console"
           ],
-          "title": "Unity買収報道に幹部がコメント、「好調な決算の後に憶測が出るのはよくあること」―噂よりもインディーゲーム開発者への支援に注力したい",
-          "url": "http://www.gamespark.jp/article/2026/11/17/174969.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/17/174969.html",
-          "publishedAt": "2026-11-17T08:30:03.000Z",
-          "publishedLabel": "11/17 08:30",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220178.jpg"
+          "title": "ピカチュウがいっぱい！約3,000種の女性コレクター記録がギネス認定",
+          "url": "http://www.gamespark.jp/article/2026/11/17/174993.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/17/174993.html",
+          "publishedAt": "2026-11-17T14:30:03.000Z",
+          "publishedLabel": "11/17 14:30",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220511.jpg"
         }
       ],
-      "whatHappened": "Unity買収報道に幹部がコメント、「好調な決算の後に憶測が出るのはよくあること」―噂よりも…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "whatHappened": "ピカチュウがいっぱい",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー",
-        "ガジェット好き",
-        "ネット文化を追う人",
-        "投資家"
+        "ガジェット好き"
       ]
     },
     {
-      "id": "auto-anime-アニメ-エイティシックス-の配信はどこで見れる-2期や無料で見る方法も調査-animeanime.jp/article/2026/11/17/104857.html",
-      "title": "アニメ「８６―エイティシックス―」の配信はどこで見れる？2期や無料で見る方法も調査",
-      "summary": "アニメ『８６―エイティシックス―』は、DMM TVやU-NEXT、dアニメストア、Hulu、Leminoなどで見放題配信中です。DMM TVがおすすめの理由や無料で見る方法、2期の見方、Amazonでの見方、声優もまとめました。",
-      "briefSummary": "アニメ『８６―エイティシックス―』は、DMM TVやU-NEXT、dアニメストア、Hulu、Leminoなどで見放題配信中です。DMM TVがおすすめの理由や無料で見る方法、2期の見方、Amazonでの見方、声優もまとめました。",
-      "category": "anime",
+      "id": "auto-general-広島戦力外3選手が要請書-狙いは-news.yahoo.co.jp/pickup/6602967",
+      "title": "広島戦力外3選手が要請書 狙いは",
+      "summary": "",
+      "briefSummary": "要請書は、「選手らは、いずれも真面目に野球に励んできた者たちであり、刑事処分も受けていません」と指摘した。 そのうえで「信頼関係構築が難しい」などとする球団側の説明をめぐり、「選手らの人格に関わる決定的かつ消し難い負の印象を社会に与え、選手らが将来にわたり社会人としての適格性を欠く人物であるかのような評価として定着しかねない」とうったえている。 そもそもプロ…",
+      "category": "sports",
       "categories": [
-        "anime",
+        "sports",
+        "general"
+      ],
+      "categoryLabel": "スポーツ",
+      "categoryLabels": [
+        "スポーツ",
+        "その他"
+      ],
+      "score": 79,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-17T14:28:06.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "3時間前",
+      "sourceName": "Yahoo!ニュース / スポーツ",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602967?source=rss",
+      "hotReasons": [],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-sports",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / スポーツ",
+          "sourceGroup": "general-sports",
+          "sourcePriority": 58,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "広島戦力外3選手が要請書 狙いは",
+          "url": "https://news.yahoo.co.jp/pickup/6602967?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602967?source=rss",
+          "publishedAt": "2026-11-17T14:28:06.000Z",
+          "publishedLabel": "11/17 14:28",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "広島戦力外3選手が要請書 狙いは",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-games-発売初週で60万本突破-鬼教師vsイタズラ生徒の対戦パーティ-worst-class-ever-初の大型アプデで新マップ-修学旅行バス-が追加-gamespark.jp/article/2026/11/17/174992.html",
+      "title": "発売初週で60万本突破！鬼教師vsイタズラ生徒の対戦パーティ『Worst Class Ever』初の大型アプデで新マップ「修学旅行バス」が追加",
+      "summary": "2P Gamesは、Funcore Gamesが手掛ける非対称型対戦パーティーゲーム『 Worst Class Ever 』の販売本数が発売初週で60万本を突破したことを発表し、初の大型アップデートを配信しました。",
+      "briefSummary": "『 Worst Class Ever 』は、PC（ Steam ）向けに発売中。11月24日まで35%オフとなっています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 90,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220508.jpg",
+      "publishedAt": "2026-11-17T14:21:04.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "4時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/17/174992.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console"
+          ],
+          "title": "発売初週で60万本突破！鬼教師vsイタズラ生徒の対戦パーティ『Worst Class Ever』初の大型アプデで新マップ「修学旅行バス」が追加",
+          "url": "http://www.gamespark.jp/article/2026/11/17/174992.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/17/174992.html",
+          "publishedAt": "2026-11-17T14:21:04.000Z",
+          "publishedLabel": "11/17 14:21",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220508.jpg"
+        }
+      ],
+      "whatHappened": "発売初週で60万本突破",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-救命病棟24時なぜ人気-3つの要素-news.yahoo.co.jp/pickup/6602966",
+      "title": "救命病棟24時なぜ人気 3つの要素",
+      "summary": "『救命病棟24時』は1999年に始まったドラマシリーズで、いまは第6シーズンである。近年、フジのドラマは1990年代の黄金期のリメイクが目立ち「過去の栄光にすがっている」という反応も多いなか、この『救",
+      "briefSummary": "そこには独特の「構造の妙」が見出される。 ココがポイント エキスパートの補足・見解 『救命病棟』の都立第三病院は救急車の要請をまず、断らない。",
+      "category": "entertainment",
+      "categories": [
         "entertainment",
         "general"
       ],
-      "categoryLabel": "アニメ",
+      "categoryLabel": "エンタメ",
       "categoryLabels": [
-        "アニメ",
         "エンタメ"
       ],
+      "score": 81,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-17T14:06:44.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "4時間前",
+      "sourceName": "Yahoo!ニュース / エンタメ",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602966?source=rss",
+      "hotReasons": [],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-entertainment",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / エンタメ",
+          "sourceGroup": "general-entertainment",
+          "sourcePriority": 66,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "救命病棟24時なぜ人気 3つの要素",
+          "url": "https://news.yahoo.co.jp/pickup/6602966?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602966?source=rss",
+          "publishedAt": "2026-11-17T14:06:44.000Z",
+          "publishedLabel": "11/17 14:06",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "救命病棟24時なぜ人気 3つの要素",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-world-日米豪印が共同文書-中国念頭-news.yahoo.co.jp/pickup/6602965",
+      "title": "日米豪印が共同文書 中国念頭",
+      "summary": "日米豪印の4カ国による協力枠組み「クアッド」の首脳会議が17日、フィリピンの首都マニラで開かれた。重要鉱物などで中国への依存を減らすため、供給網（サプライチェーン）強化で協力することで一致。中国を念",
+      "briefSummary": "日米豪印の4カ国による協力枠組み「クアッド」の首脳会議が17日、フィリピンの首都マニラで開かれた。重要鉱物などで中国への依存を減らすため、供給網（サプライチェーン）強化で協力することで一致。中国を念",
+      "category": "world",
+      "categories": [
+        "world",
+        "general"
+      ],
+      "categoryLabel": "国際",
+      "categoryLabels": [
+        "国際"
+      ],
+      "score": 86,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-17T14:00:52.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "4時間前",
+      "sourceName": "Yahoo!ニュース / 国際",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6602965?source=rss",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-world",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 国際",
+          "sourceGroup": "important-news",
+          "sourcePriority": 78,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "日米豪印が共同文書 中国念頭",
+          "url": "https://news.yahoo.co.jp/pickup/6602965?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6602965?source=rss",
+          "publishedAt": "2026-11-17T14:00:52.000Z",
+          "publishedLabel": "11/17 14:00",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "日米豪印が共同文書 中国念頭",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [
+        "時事ニュースを追う人"
+      ]
+    },
+    {
+      "id": "auto-games-原神-と日本マクドナルドが初コラボ-ヴァレサ-エスコフィエの限定パッケージや-風の翼-などゲーム内アイテムを提供-gamespark.jp/article/2026/11/17/174991.html",
+      "title": "『原神』と日本マクドナルドが初コラボ！ヴァレサ＆エスコフィエの限定パッケージや、「風の翼」などゲーム内アイテムを提供",
+      "summary": "「Myマクドナルド リワード」では、対象セット購入と300ポイントの交換で風の翼「余暇の翼」などゲーム内アイテム3点セットが手に入ります。",
+      "briefSummary": "日本マクドナルドと『原神』の初コラボが決定。“食”にゆかりのあるキャラクター「ヴァレサ」と「エスコフィエ」が登場し、特別デザインのパッケージやゲーム内アイテムセットが展開されます。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
       "score": 97,
-      "posts": 2,
+      "posts": 3,
       "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/957007.jpg",
-      "publishedAt": "2026-11-17T08:28:57.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/11/17/104857.html",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220462.jpg",
+      "publishedAt": "2026-11-17T14:00:03.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "4時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/17/174991.html",
       "hotReasons": [
         "複数ソースで同じ話題が確認されています。",
         "直近数時間で関連記事が増えています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
           "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
+            "games",
+            "pc",
+            "console"
           ],
-          "title": "アニメ「８６―エイティシックス―」の配信はどこで見れる？2期や無料で見る方法も調査",
-          "url": "https://animeanime.jp/article/2026/11/17/104857.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/11/17/104857.html",
-          "publishedAt": "2026-11-17T08:28:57.000Z",
-          "publishedLabel": "11/17 08:28",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/957007.jpg"
+          "title": "『原神』と日本マクドナルドが初コラボ！ヴァレサ＆エスコフィエの限定パッケージや、「風の翼」などゲーム内アイテムを提供",
+          "url": "http://www.gamespark.jp/article/2026/11/17/174991.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/17/174991.html",
+          "publishedAt": "2026-11-17T14:00:03.000Z",
+          "publishedLabel": "11/17 14:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220462.jpg"
         }
       ],
-      "whatHappened": "アニメ「８６―エイティシックス―」の配信はどこで見れる",
+      "whatHappened": "『原神』と日本マクドナルドが初コラボ",
       "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
-        "ガジェット好き",
-        "漫画・アニメ好き"
+        "ゲームユーザー",
+        "ガジェット好き"
       ]
     },
     {
-      "id": "auto-entertainment-ディズニープラスの料金はいくら-月額・年額とスタンダード・プレミアムの違い-animeanime.jp/article/2026/11/17/104856.html",
-      "title": "ディズニープラスの料金はいくら？月額・年額とスタンダード・プレミアムの違い",
-      "summary": "ディズニープラスの料金は、スタンダードが月額1,250円・年額12,500円、プレミアムが月額1,670円・年額16,700円です。2つのプランの違いや年額プランでお得になる金額、追加メンバー、支払い方法、ドコモ経由の割引まで解説します。",
-      "briefSummary": "家族3～4人が同じ時間帯に見る家庭や、4K対応テレビで見たい人はプレミアム、1～2人で見るならスタンダードで十分です。ディズニープラスには無料期間がないため、始める前に ディズニープラスをお得に始める方法 も確認しておくと安心です。",
+      "id": "auto-entertainment-薄いのに暖かい-ミズノの-吸湿発熱ジャケット-が好評-軽くてとても動きやすい-着心地最高です-news.yahoo.co.jp/articles/ca169f61c8487e343a26e35dfb64dafab64be526",
+      "title": "「薄いのに暖かい」　ミズノの“吸湿発熱ジャケット”が好評　「軽くてとても動きやすい」「着心地最高です」",
+      "summary": "冷え込みが厳しくなるこれからの季節、ウォーキングやジョギングなど外での運動を続けるなら、軽くて動きやすい防寒ウエアがあると心強いです。本記事では、ミズノの「ブレスサ…",
+      "briefSummary": "冷え込みが厳しくなるこれからの季節、ウォーキングやジョギングなど外での運動を続けるなら、軽くて動きやすい防寒ウエアがあると心強いです。本記事では、ミズノの「ブレスサーモ ウォーマー ジャケット」を紹介",
       "category": "entertainment",
       "categories": [
         "entertainment",
-        "manga",
+        "sns",
+        "net-culture",
         "general"
       ],
       "categoryLabel": "エンタメ",
       "categoryLabels": [
         "エンタメ",
-        "漫画"
+        "SNS",
+        "ネットカルチャー"
       ],
-      "score": 95,
+      "score": 88,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/956732.jpg",
-      "publishedAt": "2026-11-17T08:27:44.000Z",
-      "capturedAt": "2026-11-17T09:03:31.840Z",
-      "time": "1時間以内",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/11/17/104856.html",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-17T14:00:00.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "4時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/ca169f61c8487e343a26e35dfb64dafab64be526?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "「薄いのに暖かい」　ミズノの“吸湿発熱ジャケット”が好評　「軽くてとても動きやすい」「着心地最高です」",
+          "url": "https://news.yahoo.co.jp/articles/ca169f61c8487e343a26e35dfb64dafab64be526?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/ca169f61c8487e343a26e35dfb64dafab64be526?source=rss",
+          "publishedAt": "2026-11-17T14:00:00.000Z",
+          "publishedLabel": "11/17 14:00",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「薄いのに暖かい」 ミズノの“吸湿発熱ジャケット”が好評 「軽くてとても動きやすい」「着心地…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ]
+    },
+    {
+      "id": "auto-games-圧倒的に好評-高湿度・激重感情rpg-勇者パーティはぜんめつしました-1週間で販売5万本到達-gamespark.jp/article/2026/11/17/174990.html",
+      "title": "“圧倒的に好評”高湿度・激重感情RPG『勇者パーティはぜんめつしました。』1週間で販売5万本到達！",
+      "summary": "Flashlight Gamesは、デス組合が手掛けたRPG『 勇者パーティはぜんめつしました。 』の販売本数が約1週間で5万本に到達したと発表しました。あわせてレビュー“圧倒的に好評”と販売本数3万本の記念イラストが公開されています。",
+      "briefSummary": "Flashlight Gamesは、デス組合が手掛けたRPG『 勇者パーティはぜんめつしました。 』の販売本数が約1週間で5万本に到達したと発表しました。あわせてレビュー“圧倒的に好評”と販売本数3万本の記念イラストが公開されています。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 89,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220490.jpg",
+      "publishedAt": "2026-11-17T13:50:27.000Z",
+      "capturedAt": "2026-11-17T18:28:04.056Z",
+      "time": "4時間前",
+      "sourceName": "Game*Spark",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/17/174990.html",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
-          "sourceGroup": "anime",
+          "sourceId": "gamespark",
+          "source": "Game*Spark",
+          "sourceName": "Game*Spark",
+          "sourceGroup": "games",
           "sourcePriority": 92,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "anime",
-            "manga",
-            "voice-actor",
-            "movie"
+            "games",
+            "pc",
+            "console"
           ],
-          "title": "ディズニープラスの料金はいくら？月額・年額とスタンダード・プレミアムの違い",
-          "url": "https://animeanime.jp/article/2026/11/17/104856.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/11/17/104856.html",
-          "publishedAt": "2026-11-17T08:27:44.000Z",
-          "publishedLabel": "11/17 08:27",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/956732.jpg"
+          "title": "“圧倒的に好評”高湿度・激重感情RPG『勇者パーティはぜんめつしました。』1週間で販売5万本到達！",
+          "url": "http://www.gamespark.jp/article/2026/11/17/174990.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/17/174990.html",
+          "publishedAt": "2026-11-17T13:50:27.000Z",
+          "publishedLabel": "11/17 13:50",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220490.jpg"
         }
       ],
-      "whatHappened": "ディズニープラスの料金はいくら",
+      "whatHappened": "“圧倒的に好評”高湿度・激重感情RPG『勇者パーティはぜんめつしました。』1週間で販売5万本…",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
-        "漫画・アニメ好き"
+        "ゲームユーザー",
+        "ガジェット好き"
       ]
     }
   ]

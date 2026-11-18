@@ -1,22 +1,21 @@
 {
-  "generatedAt": "2026-11-18T01:18:04.487Z",
+  "generatedAt": "2026-11-18T09:06:23.490Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-238",
-  "selectedTitle": "3年前に白髪染めをやめた40歳女性→驚きの現在に「えっ？とっても素敵ー！」「憧れる」称賛の嵐",
+  "selectedClusterId": "today-cluster-6",
+  "selectedTitle": "『学マス』氷渡香名江（CV：安倍彩野夏）のソロ曲「メタモルフォーゼ」MVが早くも100万再生突破！YouTubeの急上昇チャートではなんと3位にランクイン",
   "candidates": [
     {
-      "clusterId": "today-cluster-238",
-      "title": "3年前に白髪染めをやめた40歳女性→驚きの現在に「えっ？とっても素敵ー！」「憧れる」称賛の嵐",
-      "category": "entertainment",
+      "clusterId": "today-cluster-6",
+      "title": "『学マス』氷渡香名江（CV：安倍彩野夏）のソロ曲「メタモルフォーゼ」MVが早くも100万再生突破！YouTubeの急上昇チャートではなんと3位にランクイン",
+      "category": "games",
       "categories": [
-        "entertainment",
-        "sns",
+        "games",
         "net-culture",
         "general"
       ],
-      "buzzScore": 67.8,
-      "confidence": 0.38,
-      "articleCount": 1,
+      "buzzScore": 77.3,
+      "confidence": 0.49,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
@@ -24,13 +23,13 @@
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.7,
+        "trend": 20.7,
         "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 6,
-        "velocity": 4.2,
+        "search": 6.2,
+        "social": 5.6,
+        "velocity": 8.3,
         "freshness": 10,
         "authority": 1.5,
         "categoryBias": 14,
@@ -43,13 +42,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 46.7
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 94,
+        "internalSearchScore": 48.5,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -58,34 +57,89 @@
       ]
     },
     {
-      "clusterId": "today-cluster-325",
-      "title": "まるでジブリの世界のよう　刺しゅう作家の暮らすステキな家に「理想のおうち」「憧れます！」",
-      "category": "entertainment",
+      "clusterId": "today-cluster-11",
+      "title": "ホロライブの音ゲー『ホロドリ』Google Play年間ベストゲーム受賞　カバー決算でも好調",
+      "category": "tech",
       "categories": [
+        "tech",
         "entertainment",
         "sns",
         "net-culture",
-        "books",
+        "business",
+        "games",
         "general"
       ],
-      "buzzScore": 64.9,
-      "confidence": 0.34,
-      "articleCount": 1,
+      "buzzScore": 71.9,
+      "confidence": 0.47,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 8.4,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 9,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 44.3,
+        "internalSocialScore": 65.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-38",
+      "title": "【要注意】PS5版『GTA6』のプレイには「最新システムソフトウェアのアプデ」必須。米SIEが注意喚起",
+      "category": "games",
+      "categories": [
+        "games",
+        "tech",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 68.1,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.6,
+        "trend": 21.3,
         "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 7.4,
-        "velocity": 2.7,
-        "freshness": 8.5,
+        "search": 6.3,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -97,13 +151,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 31.9,
-        "internalSocialScore": 57.7
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -112,33 +166,83 @@
       ]
     },
     {
-      "clusterId": "today-cluster-70",
-      "title": "「付き合えなかったら殺して死のうと」　東京・中野女性刺殺事件　逮捕の男が供述",
-      "category": "crime",
+      "clusterId": "today-cluster-37",
+      "title": "“3072個”のポートにケーブルを繋げるゲーム『Cable Management Simulator』が本日11月18日にSteamで発売。時間やプレッシャーに追われずもくもくと作業し、自分だけのサーバールームを作り上げよう",
+      "category": "games",
       "categories": [
-        "crime",
         "games",
-        "sns",
         "net-culture",
-        "manga",
         "general"
       ],
-      "buzzScore": 64.1,
-      "confidence": 0.4,
-      "articleCount": 3,
+      "buzzScore": 66.7,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.3,
+        "internetNativeBoost": 8,
+        "search": 6.3,
+        "social": 5.6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 97,
+        "internalSearchScore": 49.6,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-142",
+      "title": "年末GOTYが決まる「The Game Awards 2026」ノミネート作品発表。『GTA6』が8部門で最多、『バイオレクイエム』『ゼルダの伝説 時のオカリナ』など話題作ずらり",
+      "category": "games",
+      "categories": [
+        "games",
+        "world",
+        "general",
+        "sns",
+        "net-culture"
+      ],
+      "buzzScore": 65.9,
+      "confidence": 0.39,
+      "articleCount": 2,
       "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "uniqueDomainCount": 1,
       "whyRanked": [
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 17.2,
+        "coverage": 3.6,
+        "sourceDiversity": 3.8,
+        "trend": 21.1,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 8.4,
+        "search": 6,
+        "social": 8.3,
         "velocity": 0,
         "freshness": 3.5,
         "authority": 2.5,
@@ -154,121 +258,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 42.9,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-32",
-      "title": "年末GOTYが決まる「The Game Awards 2026」ノミネート作品発表。『GTA6』が8部門で最多、『バイオレクイエム』『ゼルダの伝説 時のオカリナ』など話題作ずらり",
-      "category": "games",
-      "categories": [
-        "games",
-        "sns",
-        "net-culture",
-        "world",
-        "general"
-      ],
-      "buzzScore": 64.1,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 21.1,
-        "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 23.1,
+        "repeatedAppearanceScore": 21,
         "crossCategoryScore": 100,
         "archiveHeatScore": 96,
-        "internalSearchScore": 48.6,
-        "internalSocialScore": 65.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-45",
-      "title": "「AIで。（顔写真は）イメージです」物議醸した兵庫・尼崎市議補欠選挙のポスター　直撃取材にキーパーソンが認める　選管は「表現の自由あり指摘できない」　専門家「技術の発展と公選法のいたちごっこ続く」",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 60.7,
-      "confidence": 0.45,
-      "articleCount": 4,
-      "sourceCount": 3,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "主要3媒体で同一話題を確認",
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 6.2,
-        "trend": 16.7,
-        "internetNativeBoost": 0,
-        "search": 5.3,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 22.8,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 76,
-        "internalSearchScore": 41.4,
-        "internalSocialScore": 65.3
+        "internalSearchScore": 47.2,
+        "internalSocialScore": 64.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

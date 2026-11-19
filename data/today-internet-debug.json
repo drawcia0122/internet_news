@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-11-19T17:20:42.289Z",
+  "generatedAt": "2026-11-19T23:49:54.222Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-81",
-  "selectedTitle": "「ほぼ全人類が永久に失業する」Anthropic研究者がAIの未来を予測",
+  "selectedClusterId": "today-cluster-1",
+  "selectedTitle": "バーガーキング、ゲームに着想を得た「超大型バーガー」をベルギーで発表。元ネタは『GTA』シリーズかと海外報道",
   "candidates": [
     {
-      "clusterId": "today-cluster-81",
-      "title": "「ほぼ全人類が永久に失業する」Anthropic研究者がAIの未来を予測",
-      "category": "tech",
+      "clusterId": "today-cluster-1",
+      "title": "バーガーキング、ゲームに着想を得た「超大型バーガー」をベルギーで発表。元ネタは『GTA』シリーズかと海外報道",
+      "category": "games",
       "categories": [
-        "tech",
-        "sns",
+        "games",
         "net-culture",
         "general"
       ],
-      "buzzScore": 71.3,
-      "confidence": 0.42,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "buzzScore": 78.3,
+      "confidence": 0.5,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 18.5,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 21.6,
         "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 7,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 2.5,
+        "search": 6.4,
+        "social": 5.6,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -45,10 +45,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 45,
-        "internalSocialScore": 54.8
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 98,
+        "internalSearchScore": 49.9,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -57,18 +57,18 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1",
-      "title": "『機動戦士ガンダムSEED FREEDOM』ニコニコ動画で見放題配信スタート！すでに付いている5万件以上のコメントとともに振り返れるほか、11月28日夜はニコ生もプレミアム会員向けに実施予定",
-      "category": "games",
+      "clusterId": "today-cluster-192",
+      "title": "会社で「家で着る用にしなよ」と言われたセーター→大胆なデザインに「コレの良さわからんとは！」「それは1軍です」",
+      "category": "entertainment",
       "categories": [
-        "games",
         "entertainment",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 70.7,
-      "confidence": 0.43,
-      "articleCount": 2,
+      "buzzScore": 67.8,
+      "confidence": 0.38,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
@@ -76,13 +76,66 @@
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
+        "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 17.8,
+        "trend": 18.7,
         "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 7,
-        "velocity": 5.3,
+        "search": 4.3,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 33.7,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-321",
+      "title": "長年、ゴールド免許の男性→急に警察署に呼ばれて渡された“豪華な品”に驚き「どんな基準で選ばれてるんだろう？」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 64.8,
+      "confidence": 0.35,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 4.3,
+        "social": 6,
+        "velocity": 2.7,
         "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
@@ -95,13 +148,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 44,
-        "internalSocialScore": 54.8
+        "archiveHeatScore": 85,
+        "internalSearchScore": 33.7,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -110,129 +163,22 @@
       ]
     },
     {
-      "clusterId": "today-cluster-39",
-      "title": "いろはの恋は時代をかける：“生琉”向井康二のぎこちない“頭ポン”　「メロすぎる」とSNS沸かす",
-      "category": "net-culture",
+      "clusterId": "today-cluster-13",
+      "title": "NYダウ1100ドル安、5万ドル割れ　アンソロピック上場で換金売り",
+      "category": "business",
       "categories": [
-        "net-culture",
-        "entertainment",
-        "manga",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 67.2,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 48.5,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-31",
-      "title": "ホロライブさくらみこ『GTA6』を堪能　海外ファンとの出会いを生んだ“原点“を振り返る",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "game-features",
+        "business",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.3,
-      "confidence": 0.36,
+      "buzzScore": 60.2,
+      "confidence": 0.42,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 17.8,
-        "internetNativeBoost": 8,
-        "search": 5.6,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 81,
-        "internalSearchScore": 44,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-24",
-      "title": "『トリッカル』スピッキー（メイド）実装記念に「かぼちゃシチュー」を配布。かぼちゃを“友達”として好きなｽﾋﾟｷｦｲｼﾞﾒﾇﾝﾃﾞ……",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "matome",
-        "general"
-      ],
-      "buzzScore": 63.4,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
@@ -242,10 +188,10 @@
         "internetNativeBoost": 8,
         "search": 5.5,
         "social": 7,
-        "velocity": 0,
-        "freshness": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 4,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -262,6 +208,57 @@
         "archiveHeatScore": 79,
         "internalSearchScore": 43.3,
         "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-162",
+      "title": "『グランド・セフト・オートVI（GTA6）』開発元いわく、60fps実現には“PS5 Proですら力不足”。アプデでの対応も難しそう",
+      "category": "games",
+      "categories": [
+        "games",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 59.4,
+      "confidence": 0.35,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.5,
+        "internetNativeBoost": 8,
+        "search": 5.5,
+        "social": 5.4,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 84,
+        "internalSearchScore": 43.1,
+        "internalSocialScore": 42.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

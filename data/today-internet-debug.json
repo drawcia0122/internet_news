@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-18T18:02:04.141Z",
+  "generatedAt": "2026-11-19T00:18:25.564Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-12",
+  "selectedClusterId": "today-cluster-42",
   "selectedTitle": "プロトタイプが「YouTube200万再生」でバズったゲーム開発者、初動売上500本弱でちゃんと反省。ホットなうちに“売る準備”すべし",
   "candidates": [
     {
-      "clusterId": "today-cluster-12",
+      "clusterId": "today-cluster-42",
       "title": "プロトタイプが「YouTube200万再生」でバズったゲーム開発者、初動売上500本弱でちゃんと反省。ホットなうちに“売る準備”すべし",
       "category": "games",
       "categories": [
@@ -14,8 +14,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 67.4,
-      "confidence": 0.39,
+      "buzzScore": 65,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -27,10 +27,10 @@
         "sourceDiversity": 2.3,
         "trend": 22,
         "internetNativeBoost": 8,
-        "search": 6.5,
-        "social": 7,
+        "search": 6.2,
+        "social": 6.8,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -44,11 +44,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
+        "repeatedAppearanceScore": 21,
         "crossCategoryScore": 80,
         "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
-        "internalSocialScore": 54.8
+        "internalSearchScore": 48.7,
+        "internalSocialScore": 53.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -57,71 +57,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-42",
-      "title": "【速報】中国の習主席が、高市首相と握手した：時事ドットコム",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "sns",
-        "net-culture",
-        "world",
-        "entertainment",
-        "general"
-      ],
-      "buzzScore": 63.3,
-      "confidence": 0.39,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 21.6,
-        "internetNativeBoost": 8,
-        "search": 6.4,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 98,
-        "internalSearchScore": 49.9,
-        "internalSocialScore": 65.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-74",
-      "title": "『学マス』氷渡香名江（CV：安倍彩野夏）のソロ曲「メタモルフォーゼ」MVが早くも100万再生突破！YouTubeの急上昇チャートではなんと3位にランクイン",
+      "clusterId": "today-cluster-166",
+      "title": "『ドルアーガの塔』の正統続編『ドルアーガの迷宮』がNintendo Switchで11月19日に復刻決定。フィーチャーフォンで2011年に発売された作品",
       "category": "games",
       "categories": [
         "games",
+        "entertainment",
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.3,
-      "confidence": 0.37,
+      "buzzScore": 60.5,
+      "confidence": 0.35,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -131,12 +77,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 19.1,
+        "trend": 18.3,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 5.5,
+        "search": 5.5,
+        "social": 6.8,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -150,11 +96,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 44.9,
-        "internalSocialScore": 43
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 42.7,
+        "internalSocialScore": 53.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -163,7 +109,7 @@
       ]
     },
     {
-      "clusterId": "today-cluster-691",
+      "clusterId": "today-cluster-1155",
       "title": "日本地図に“人気のあるプロ野球チーム”で色を塗ったら……　「巨人強すぎやろ」「悲しいな」「大阪は阪神やろなぁ」",
       "category": "sports",
       "categories": [
@@ -173,8 +119,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.2,
-      "confidence": 0.3,
+      "buzzScore": 59.9,
+      "confidence": 0.29,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -186,10 +132,10 @@
         "sourceDiversity": 2.3,
         "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 7.4,
+        "search": 3.9,
+        "social": 7.3,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 1.5,
         "categoryBias": 17,
         "penalty": -3
@@ -203,11 +149,11 @@
       "internalSignalStats": {
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
+        "repeatedAppearanceScore": 4.2,
         "crossCategoryScore": 100,
         "archiveHeatScore": 80,
-        "internalSearchScore": 31.9,
-        "internalSocialScore": 57.7
+        "internalSearchScore": 30.7,
+        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -216,16 +162,70 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1201",
-      "title": "Suica新キャラクターはB案「紫のうさぎ」に決定。得票率51.7％、原案者・世戸ヒロアキ「SNSのファンアートがうれしい」",
-      "category": "net-culture",
+      "clusterId": "today-cluster-109",
+      "title": "『学マス』氷渡香名江（CV：安倍彩野夏）のソロ曲「メタモルフォーゼ」MVが早くも100万再生突破！YouTubeの急上昇チャートではなんと3位にランクイン",
+      "category": "games",
       "categories": [
+        "games",
         "net-culture",
-        "sns",
         "general"
       ],
-      "buzzScore": 61,
-      "confidence": 0.38,
+      "buzzScore": 59.1,
+      "confidence": 0.35,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.3,
+        "internetNativeBoost": 8,
+        "search": 5.5,
+        "social": 5.4,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 42.7,
+        "internalSocialScore": 42.5
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1047",
+      "title": "「最低限の礼儀もなく、本当に失礼」　高市首相の待遇に「格差」",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "business",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 57.7,
+      "confidence": 0.37,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -235,14 +235,14 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 20.7,
+        "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 4.6,
-        "social": 4.5,
+        "search": 4.4,
+        "social": 7.3,
         "velocity": 0,
         "freshness": 3.5,
         "authority": 2.5,
-        "categoryBias": 9,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -255,10 +255,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 35.6,
-        "internalSocialScore": 34.9
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 34.2,
+        "internalSocialScore": 56.9
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

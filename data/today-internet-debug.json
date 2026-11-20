@@ -1,39 +1,41 @@
 {
-  "generatedAt": "2026-11-19T23:49:54.222Z",
+  "generatedAt": "2026-11-20T07:02:49.228Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1",
-  "selectedTitle": "バーガーキング、ゲームに着想を得た「超大型バーガー」をベルギーで発表。元ネタは『GTA』シリーズかと海外報道",
+  "selectedClusterId": "today-cluster-23",
+  "selectedTitle": "犯罪ゲーム『GTA6』の人気に世界の警察が反応 「犯罪はゲームの中で」と呼びかける",
   "candidates": [
     {
-      "clusterId": "today-cluster-1",
-      "title": "バーガーキング、ゲームに着想を得た「超大型バーガー」をベルギーで発表。元ネタは『GTA』シリーズかと海外報道",
-      "category": "games",
+      "clusterId": "today-cluster-23",
+      "title": "犯罪ゲーム『GTA6』の人気に世界の警察が反応 「犯罪はゲームの中で」と呼びかける",
+      "category": "net-culture",
       "categories": [
-        "games",
         "net-culture",
+        "games",
+        "entertainment",
+        "sns",
         "general"
       ],
-      "buzzScore": 78.3,
-      "confidence": 0.5,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 75,
+      "confidence": 0.44,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 21.6,
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 6.4,
-        "social": 5.6,
-        "velocity": 8.3,
-        "freshness": 10,
-        "authority": 1.5,
+        "search": 5.9,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -45,10 +47,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 98,
-        "internalSearchScore": 49.9,
-        "internalSocialScore": 43.8
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -57,128 +59,21 @@
       ]
     },
     {
-      "clusterId": "today-cluster-192",
-      "title": "会社で「家で着る用にしなよ」と言われたセーター→大胆なデザインに「コレの良さわからんとは！」「それは1軍です」",
-      "category": "entertainment",
+      "clusterId": "today-cluster-24",
+      "title": "「魔王城の隣」で村づくりするアクションRPG『ワロタ、俺の家のとなり魔王城www』早期アクセス版が配信中。Steamにて「非常に好評」を獲得",
+      "category": "games",
       "categories": [
+        "games",
         "entertainment",
-        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 67.8,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 6,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-321",
-      "title": "長年、ゴールド免許の男性→急に警察署に呼ばれて渡された“豪華な品”に驚き「どんな基準で選ばれてるんだろう？」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.8,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 4.3,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 33.7,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-13",
-      "title": "NYダウ1100ドル安、5万ドル割れ　アンソロピック上場で換金売り",
-      "category": "business",
-      "categories": [
-        "business",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 60.2,
-      "confidence": 0.42,
+      "buzzScore": 63.4,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
@@ -188,10 +83,10 @@
         "internetNativeBoost": 8,
         "search": 5.5,
         "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
-        "categoryBias": 4,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -216,15 +111,16 @@
       ]
     },
     {
-      "clusterId": "today-cluster-162",
-      "title": "『グランド・セフト・オートVI（GTA6）』開発元いわく、60fps実現には“PS5 Proですら力不足”。アプデでの対応も難しそう",
-      "category": "games",
+      "clusterId": "today-cluster-65",
+      "title": "東京大学が皮膚に装着する「ナノメッシュ皮膚センサ」を開発、「日本の未来がサイバーパンク」とSNSで話題に。『真・女神転生Ⅲ』人修羅や『鬼滅の刃』猗窩座を彷彿させるという声も相次ぐ",
+      "category": "net-culture",
       "categories": [
+        "net-culture",
         "games",
         "sns",
         "general"
       ],
-      "buzzScore": 59.4,
+      "buzzScore": 61.9,
       "confidence": 0.35,
       "articleCount": 2,
       "sourceCount": 1,
@@ -235,12 +131,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18.5,
+        "trend": 17.4,
         "internetNativeBoost": 8,
         "search": 5.5,
-        "social": 5.4,
+        "social": 7,
         "velocity": 0,
-        "freshness": 3.5,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -254,11 +150,115 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 84,
-        "internalSearchScore": 43.1,
-        "internalSocialScore": 42.5
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1038",
+      "title": "長年、ゴールド免許の男性→急に警察署に呼ばれて渡された“豪華な品”に驚き「どんな基準で選ばれてるんだろう？」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 58.9,
+      "confidence": 0.31,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 4.2,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 32.5,
+        "internalSocialScore": 45.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-753",
+      "title": "「ドキッとした」「スケスケ」のん、攻め攻め衣装に騒然「やばいやばい」「たまらんわ」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 58.8,
+      "confidence": 0.3,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

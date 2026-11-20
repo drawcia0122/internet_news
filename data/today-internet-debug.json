@@ -1,22 +1,125 @@
 {
-  "generatedAt": "2026-11-20T07:02:49.228Z",
+  "generatedAt": "2026-11-20T16:08:34.958Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-23",
-  "selectedTitle": "犯罪ゲーム『GTA6』の人気に世界の警察が反応 「犯罪はゲームの中で」と呼びかける",
+  "selectedClusterId": "today-cluster-29",
+  "selectedTitle": "『GTA6』水上バイクに乗る“犬”が話題に。海難事故に遭ったプレイヤーのもとへ、「ワン、ワン」と吠えながら颯爽と救助に駆けつける",
   "candidates": [
     {
-      "clusterId": "today-cluster-23",
-      "title": "犯罪ゲーム『GTA6』の人気に世界の警察が反応 「犯罪はゲームの中で」と呼びかける",
+      "clusterId": "today-cluster-29",
+      "title": "『GTA6』水上バイクに乗る“犬”が話題に。海難事故に遭ったプレイヤーのもとへ、「ワン、ワン」と吠えながら颯爽と救助に駆けつける",
       "category": "net-culture",
       "categories": [
         "net-culture",
         "games",
-        "entertainment",
-        "sns",
         "general"
       ],
-      "buzzScore": 75,
-      "confidence": 0.44,
+      "buzzScore": 63,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.3,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 5.6,
+        "velocity": 0,
+        "freshness": 7,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 44.7,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-123",
+      "title": "東京大学が皮膚に装着する「ナノメッシュ皮膚センサ」を開発、「日本の未来がサイバーパンク」とSNSで話題に。『真・女神転生Ⅲ』人修羅や『鬼滅の刃』猗窩座を彷彿させるという声も相次ぐ",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "games",
+        "general"
+      ],
+      "buzzScore": 62.4,
+      "confidence": 0.36,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18,
+        "internetNativeBoost": 8,
+        "search": 5.5,
+        "social": 6.9,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 22.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 82,
+        "internalSearchScore": 43.1,
+        "internalSocialScore": 54
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-80",
+      "title": "蚊帳の外の高市外交　「米国頼み」限界浮き彫り、習氏とは会談できず",
+      "category": "world",
+      "categories": [
+        "world",
+        "business",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 61.7,
+      "confidence": 0.41,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -27,14 +130,14 @@
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 19.1,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 5.9,
+        "search": 5.6,
         "social": 8.4,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 2.5,
-        "categoryBias": 14,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -48,8 +151,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 46.1,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -59,17 +162,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-24",
-      "title": "「魔王城の隣」で村づくりするアクションRPG『ワロタ、俺の家のとなり魔王城www』早期アクセス版が配信中。Steamにて「非常に好評」を獲得",
+      "clusterId": "today-cluster-22",
+      "title": "Nintendo Switch 2『テーブルゲームワールド CCFOLIA』、希望者に払い戻し実施へ。“誤解を与えかねない表現”などで混乱招いたアナログゲーム用ツール",
       "category": "games",
       "categories": [
         "games",
-        "entertainment",
-        "net-culture",
+        "business",
+        "sns",
         "general"
       ],
-      "buzzScore": 63.4,
-      "confidence": 0.36,
+      "buzzScore": 61.4,
+      "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -79,14 +182,14 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 17.4,
+        "trend": 21.1,
         "internetNativeBoost": 8,
-        "search": 5.5,
+        "search": 6.3,
         "social": 7,
         "velocity": 0,
-        "freshness": 7,
+        "freshness": 5.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -100,8 +203,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
+        "archiveHeatScore": 96,
+        "internalSearchScore": 49.2,
         "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
@@ -111,32 +214,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-65",
-      "title": "東京大学が皮膚に装着する「ナノメッシュ皮膚センサ」を開発、「日本の未来がサイバーパンク」とSNSで話題に。『真・女神転生Ⅲ』人修羅や『鬼滅の刃』猗窩座を彷彿させるという声も相次ぐ",
+      "clusterId": "today-cluster-104",
+      "title": "犯罪ゲーム『GTA6』の人気に世界各国の警察が反応 「犯罪はゲームの中で」と呼びかける",
       "category": "net-culture",
       "categories": [
         "net-culture",
         "games",
+        "entertainment",
         "sns",
         "general"
       ],
-      "buzzScore": 61.9,
-      "confidence": 0.35,
+      "buzzScore": 60.9,
+      "confidence": 0.34,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
         "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.5,
-        "social": 7,
+        "search": 5.3,
+        "social": 8.3,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -150,115 +255,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 100,
         "archiveHeatScore": 79,
-        "internalSearchScore": 43.3,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1038",
-      "title": "長年、ゴールド免許の男性→急に警察署に呼ばれて渡された“豪華な品”に驚き「どんな基準で選ばれてるんだろう？」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 58.9,
-      "confidence": 0.31,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 5.9,
-        "velocity": 0,
-        "freshness": 5.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 32.5,
-        "internalSocialScore": 45.9
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-753",
-      "title": "「ドキッとした」「スケスケ」のん、攻め攻め衣装に騒然「やばいやばい」「たまらんわ」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 58.8,
-      "confidence": 0.3,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 17.2,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 31.2,
-        "internalSocialScore": 46.7
+        "internalSearchScore": 41.3,
+        "internalSocialScore": 64.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

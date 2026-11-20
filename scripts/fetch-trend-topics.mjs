@@ -5,6 +5,7 @@ import { repairStoredArticleSource, recoverRetainedSourceArticles } from "../lib
 import { buildDailyBrief } from "../lib/daily-brief.mjs";
 import { logThumbnailCoverage, resolveThumbnail, sanitizeThumbnailUrl, absolutizeUrl, readImageTagAttributes, hasSuspiciousThumbnailMismatch, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
 import { collectTrendTopics, repairStoredTopicCategories } from "../lib/trend-aggregator.mjs";
+import { readPublisherHtml } from "../lib/publisher-html.mjs";
 import "../news-summary-integrity.js";
 import { repairItemThumbnail, restoreArchivedThumbnails } from "./repair-thumbnails.mjs";
 
@@ -1632,7 +1633,7 @@ async function fetchPageMetadata(url, title = "", depth = 0, visited = new Set()
     redirect: "follow",
   });
   if (!response.ok) return null;
-  const html = await response.text();
+  const html = await readPublisherHtml(response);
   const responseUrl = normalizeFetchUrl(response.url) ?? normalizedUrl;
   const thumbnailMeta = await resolveThumbnail({
     pageHtml: html,

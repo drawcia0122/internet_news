@@ -301,8 +301,12 @@
   function handleCardImageError(event) {
     const image = event.target;
     if (!(image instanceof HTMLImageElement) || !image.classList.contains('trend-thumb')) return;
-    // Ignore duplicate/stale errors while the replacement is loading or after success.
-    if (image.isConnected === false || !image.complete || image.naturalWidth > 0) return;
+    // Some expired thumbnails decode successfully as a transparent 1×1 pixel.
+    // Treat that successful load like an error without rejecting valid images.
+    const invalid = event.type === 'load'
+      ? image.naturalWidth === 1 && image.naturalHeight === 1
+      : image.naturalWidth === 0;
+    if (image.isConnected === false || !image.complete || !invalid) return;
     if (image.currentSrc && image.currentSrc !== image.src) return;
     const wrapper = image.closest('.trend-thumb-wrap');
     if (!wrapper) return;

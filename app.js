@@ -192,6 +192,7 @@ const eventCacheStore = createStorageArrayCache({
   normalize: normalizeEventItem,
 });
 document.addEventListener('error', handleCardImageError, true);
+document.addEventListener('load', handleCardImageError, true);
 const archivePager = window.HomeReaderLoading.createSharedArchivePager({
   getCursor: () => archiveHasMorePages ? archiveNextPage : null,
   fetchPage: fetchHomeNewsPagePayload,
@@ -640,7 +641,7 @@ function renderTrends(filter = 'all', { preserveCount = false } = {}) {
     const source = getNewsArticleSource(trend);
     const sourceUrl = source?.url ?? '';
     const sourceLabel = source?.label ?? '元記事';
-    const thumb = trend.thumbnailUrl ? buildTrendCardThumb(trend, renderHelperDeps) : '';
+    const thumb = buildTrendCardThumb(trend, renderHelperDeps);
     const hasThumbnail = Boolean(thumb);
     const scoreSummary = trend.scoreSummary ? '<div class="trend-score-summary">' + escapeHtml(trend.scoreSummary) + '</div>' : '';
     const summaryHtml = hasVisibleSummary(trend.summary) ? '<p>' + escapeHtml(trend.summary ?? '') + '</p>' : '';

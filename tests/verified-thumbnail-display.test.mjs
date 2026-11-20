@@ -52,7 +52,16 @@ test('live Classic entry points load the proof checker before versioned shared u
   for (const file of ['index.html', 'news.html']) {
     const s = await readFile(new URL('../' + file, import.meta.url), 'utf8');
     assert.match(s, /verified-article-thumbnail\.js\?v=1/);
-    assert.match(s, /shared-topic-utils\.js\?v=21/);
+    assert.match(s, /shared-topic-utils\.js\?v=22/);
     assert.ok(s.indexOf('verified-article-thumbnail.js') < s.indexOf('shared-topic-utils.js'), file);
   }
+});
+
+test('ordinary home cards call the shared proof-aware builder without a raw image gate', async () => {
+  const app = await readFile(new URL('../app.js', import.meta.url), 'utf8');
+  const block = app.slice(app.indexOf('function renderTrends('), app.indexOf('function renderDiscoverySections('));
+  assert.match(block, /const thumb = buildTrendCardThumb\(trend, renderHelperDeps\);/);
+  const item = { ...direct, thumbnailUrl: null };
+  assert.match(h.buildTrendCardThumb(item, deps), /trend-thumb-wrap/);
+  assert.match(h.buildTrendCardThumb(item, deps), /newsatcl-pctr/);
 });

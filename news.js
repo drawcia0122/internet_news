@@ -64,6 +64,7 @@ const rangeDisplayCountCache = new Map();
 const normalizedTopicCache = new Map();
 
 document.addEventListener('error', handleCardImageError, true);
+document.addEventListener('load', handleCardImageError, true);
 
 init();
 

@@ -1,6 +1,6 @@
 (function attachHomeRenderUtils(global) {
   function buildTrendCardThumb(item, { buildCardThumbnail } = {}) {
-    return buildCardThumbnail(item);
+    return typeof buildCardThumbnail === 'function' ? buildCardThumbnail(item) : '';
   }
 
   function renderTrendReasonList(trend, { escapeHtml, shortEventFromTitle, buildWhyHotLabel } = {}) {
@@ -244,7 +244,7 @@
     const sourceUrl = getPrimarySourceUrl(topic);
     const sourceLabel = getPrimarySourceLabel(topic);
     const representativeSource = selectRepresentativeSource(topic, { getPrimarySourceUrl, getPrimarySourceLabel });
-    const thumbnail = topic.thumbnailUrl ? buildTrendCardThumb(topic, deps) : '';
+    const thumbnail = buildTrendCardThumb(topic, deps);
     const summary = buildTopicCardSummary(topic, { shortEventFromTitle, trimMetaText });
     const reasonRows = buildTopicCardReasonRows({
       summary,
@@ -321,7 +321,7 @@
 
   function renderBriefCard(item, index, options = {}, deps = {}) {
     const { buildArticleTitleLink, escapeHtml, formatBriefTimelineTime, sanitizeBriefSummaryText } = deps;
-    const thumbnail = item.thumbnailUrl ? buildTrendCardThumb(item, deps) : '';
+    const thumbnail = buildTrendCardThumb(item, deps);
     const sourceUrl = item.primaryLink?.url ?? '';
     const sourceLabel = item.primaryLink?.label ?? item.categoryLabel ?? '元記事';
     const summary = sanitizeBriefSummaryText(item.thirtySecondSummary ?? item.watchpoints ?? '重要ニュースを整理中です。');

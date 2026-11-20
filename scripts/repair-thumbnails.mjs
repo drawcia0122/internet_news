@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 import { resolveThumbnail, sanitizeThumbnailUrl, readImageTagAttributes, isWeakThumbnailUrl, hasSuspiciousThumbnailMismatch, isAggregatorThumbnailUrl, isLowResolutionThumbnailUrl } from "../lib/thumbnail-utils.mjs";
 
+import { readPublisherHtml } from "../lib/publisher-html.mjs";
 import "../news-summary-integrity.js";
 const { canonicalArticleUrl, titlesReferToSameArticle } = globalThis.NewsSummaryIntegrity;
 
@@ -224,7 +225,7 @@ async function fetchPageHtml(url) {
     if (!response.ok) return "";
     const contentType = response.headers.get("content-type") || "";
     if (contentType && !/text\/html|application\/xhtml\+xml/i.test(contentType)) return "";
-    return await response.text();
+    return await readPublisherHtml(response);
   } catch {
     return "";
   } finally {

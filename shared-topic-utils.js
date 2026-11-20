@@ -198,6 +198,14 @@
   }
 
   function pickCardImageUrl(item) {
+    return pickRegularCardImageUrl(item) ?? verifiedArticleImage(item);
+  }
+
+  function verifiedArticleImage(item) {
+    return window.VerifiedArticleThumbnail?.getArticleThumbnail(item)?.imageUrl ?? null;
+  }
+
+  function pickRegularCardImageUrl(item) {
     const candidates = [
       ...cardImageValues(item),
       ...(Array.isArray(item?.sourceSignals) ? item.sourceSignals.flatMap(cardImageValues) : []),
@@ -250,8 +258,11 @@
 
   function getCardImageCandidates(item) {
     // Preserve the existing primary selection, then stay within its article.
-    const primary = pickCardImageUrl(item);
-    if (!primary) return [];
+    const primary = pickRegularCardImageUrl(item);
+    if (!primary) {
+      const verified = verifiedArticleImage(item);
+      return verified ? [verified] : [];
+    }
     const signals = Array.isArray(item?.sourceSignals) ? item.sourceSignals : [];
     const ownsPrimary = (value) => cardImageValues(value).some((url) => sanitizeCardImageUrl(url) === primary);
     const owner = ownsPrimary(item) ? item : signals.find(ownsPrimary);

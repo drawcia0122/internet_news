@@ -770,6 +770,7 @@ function buildTodayNewsFallbackItems(topics) {
       publishedAt: topic.sourceSignals?.[0]?.publishedAt ?? topic.publishedAt ?? topic.capturedAt ?? '',
       publishedLabel: topic.time ?? '',
       thumbnailUrl: topic.thumbnailUrl ?? '',
+      articleThumbnail: topic.articleThumbnail,
       sourceSignals: topic.sourceSignals ?? [],
       thirtySecondSummary: topic.summary ?? topic.whatHappened ?? '',
       watchpoints: topic.importantPoint ?? '',

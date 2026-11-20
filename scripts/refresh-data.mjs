@@ -1,6 +1,7 @@
 import { fileURLToPath } from 'node:url';
 import { repairSummarySnapshots } from './repair-summary-snapshots.mjs';
 import { repairThumbnails } from './repair-thumbnails.mjs';
+import { collectPriorYahooPhotos, repairYahooArticleThumbnails } from './repair-yahoo-article-thumbnails.mjs';
 import { runGuardedRefresh } from '../lib/refresh-health.mjs';
 
 const DEFAULT_REPAIR_TARGETS = [
@@ -11,7 +12,12 @@ const DEFAULT_REPAIR_TARGETS = [
 
 // Repair retained snapshots before the health guard captures fallback data, so
 // a source outage cannot restore a known mismatched/HTML-tainted summary.
-await repairSummarySnapshots(fileURLToPath(new URL('../data/', import.meta.url)));
+const dataDirectory = fileURLToPath(new URL('../data/', import.meta.url));
+await repairSummarySnapshots(dataDirectory);
+const previousYahooPhotos = await collectPriorYahooPhotos(dataDirectory).catch((error) => {
+  console.warn('[thumbnail:yahoo] previous image snapshot unavailable:', error.message);
+  return new Map();
+});
 
 // Keep dependent stages sequential, including thumbnail consumer synchronization.
 await runGuardedRefresh([
@@ -19,7 +25,10 @@ await runGuardedRefresh([
   { name: 'events', run: () => import('./fetch-events.mjs') },
   { name: 'adult', run: () => import('./fetch-adult-trends.mjs') },
   { name: 'today-internet', run: () => import('./build-today-internet.mjs') },
-  { name: 'thumbnail-repair', run: () => repairThumbnails(process.env.REPAIR_THUMBNAILS === '1' ? [] : DEFAULT_REPAIR_TARGETS) },
+  { name: 'thumbnail-repair', run: async () => {
+    await repairThumbnails(process.env.REPAIR_THUMBNAILS === '1' ? [] : DEFAULT_REPAIR_TARGETS);
+    await repairYahooArticleThumbnails({ directory: dataDirectory, previous: previousYahooPhotos });
+  } },
   { name: 'game-sale-offers', run: async () => (await import('./fetch-game-sale-offers.mjs')).refreshGameSaleOffers() },
   { name: 'matome', run: async () => (await import('./fetch-matome-threads.mjs')).refreshMatomeThreads() },
 ]);

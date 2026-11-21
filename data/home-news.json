@@ -1,97 +1,164 @@
 {
-  "generatedAt": "2026-11-20T22:37:39.796Z",
-  "totalCount": 1470,
+  "generatedAt": "2026-11-21T03:27:43.656Z",
+  "totalCount": 1471,
   "categoryCounts": {
-    "all": 1470,
-    "general": 42,
-    "tech": 190,
-    "business": 95,
-    "politics": 52,
-    "entertainment": 600,
-    "anime": 75,
-    "games": 485,
-    "game-features": 6,
+    "all": 1471,
+    "general": 45,
+    "tech": 188,
+    "business": 96,
+    "politics": 61,
+    "entertainment": 605,
+    "anime": 80,
+    "games": 457,
+    "game-features": 7,
     "anime-features": 1,
-    "manga": 202,
-    "books": 37,
-    "sports": 47,
-    "sns": 614,
-    "net-culture": 695,
+    "manga": 197,
+    "books": 33,
+    "sports": 46,
+    "sns": 632,
+    "net-culture": 701,
     "matome": 2,
-    "crime": 17,
+    "crime": 19,
     "adult": 11,
-    "world": 86
+    "world": 98
   },
   "hasMore": true,
   "nextPage": 2,
   "items": [
     {
-      "id": "auto-business-米株式市場急落-ナスダック5-安-news.yahoo.co.jp/pickup/6603352",
-      "title": "米株式市場急落 ナスダック5%安",
-      "summary": "［ニューヨーク ２０日 ロイター］ - 米国株式市場では売りが加速し、前日に続き主要３指数が軒並み急落して取引を終えた。人工知能（ＡＩ）開発企業アンソロピックの大型上場が市場の期待を支え‌るには至らず",
-      "briefSummary": "［ニューヨーク ２０日 ロイター］ - 米国株式市場では売りが加速し、前日に続き主要３指数が軒並み急落して取引を終えた。人工知能（ＡＩ）開発企業アンソロピックの大型上場が市場の期待を支え‌るには至らず",
-      "category": "business",
+      "id": "auto-tech-硫黄島沖に新陸地-国土増えるのか-news.yahoo.co.jp/pickup/6603389",
+      "title": "硫黄島沖に新陸地 国土増えるのか",
+      "summary": "東京都小笠原村の硫黄島南岸沖で火山が噴火し、新たな陸地が形成されている。海上保安庁は、陸地が硫黄島本体と接続していると確認した。新たな陸地が定着すれば、日本の国土面積がわずかに増える可能性がある。た",
+      "briefSummary": "東京都小笠原村の硫黄島南岸沖で火山が噴火し、新たな陸地が形成されている。海上保安庁は、陸地が硫黄島本体と接続していると確認した。新たな陸地が定着すれば、日本の国土面積がわずかに増える可能性がある。た",
+      "category": "tech",
       "categories": [
-        "business",
+        "tech",
         "general"
       ],
-      "categoryLabel": "経済",
+      "categoryLabel": "テック",
       "categoryLabels": [
-        "経済"
+        "テック"
       ],
-      "score": 93,
+      "score": 86,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-20T22:30:18.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
+      "publishedAt": "2026-11-21T03:21:06.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
       "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / 経済",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603352?source=rss",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
+      "sourceName": "Yahoo!ニュース / 科学",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603389?source=rss",
+      "hotReasons": [],
       "sourceSignals": [
         {
-          "sourceId": "yahoo-business",
+          "sourceId": "yahoo-science",
           "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 経済",
-          "sourceGroup": "important-news",
-          "sourcePriority": 78,
+          "sourceName": "Yahoo!ニュース / 科学",
+          "sourceGroup": "general-tech",
+          "sourcePriority": 60,
           "official": false,
           "specialist": false,
           "forPersonal": false,
           "sourceTags": [],
-          "title": "米株式市場急落 ナスダック5%安",
-          "url": "https://news.yahoo.co.jp/pickup/6603352?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603352?source=rss",
-          "publishedAt": "2026-11-20T22:30:18.000Z",
-          "publishedLabel": "11/20 22:30",
+          "title": "硫黄島沖に新陸地 国土増えるのか",
+          "url": "https://news.yahoo.co.jp/pickup/6603389?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603389?source=rss",
+          "publishedAt": "2026-11-21T03:21:06.000Z",
+          "publishedLabel": "11/21 03:21",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "米株式市場急落 ナスダック5%安",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "投資家"
-      ],
+      "whatHappened": "硫黄島沖に新陸地 国土増えるのか",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [],
       "articleThumbnail": {
         "kind": "yahoo-main-article-og",
-        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603352",
-        "pickupTitle": "米株式市場急落 ナスダック5%安",
-        "articleUrl": "https://news.yahoo.co.jp/articles/de53933a55f86421fe467f8be01d1b31f1aa550a",
-        "articleTitle": "米国株式市場＝ナスダック5％安、ＡＩ懸念強まり　Ｓ＆Ｐ・ダウ調整局面",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-00000032-reut-000-3-view.jpg?exp=10800",
-        "width": 2200,
-        "height": 1466
+        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603389",
+        "pickupTitle": "硫黄島沖に新陸地 国土増えるのか",
+        "articleUrl": "https://news.yahoo.co.jp/articles/339a895017e041fb7973e7c6392b836be7dcf387",
+        "articleTitle": "硫黄島沖に新たな陸地、本島と接続　国土面積は増えるのか　火山活動続き地図更新は未定",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-00000069-san-000-1-view.jpg?exp=10800",
+        "width": 1200,
+        "height": 800
       }
     },
     {
-      "id": "auto-games-g-star-2026-天井まで伸びる海賊酒場に巨大クラーケン-シーオブレムナンツ-ブースに潜入-gamespark.jp/article/2026/11/21/175152.html",
-      "title": "【G-STAR 2026】天井まで伸びる海賊酒場に巨大クラーケン！『シーオブレムナンツ』ブースに潜入",
-      "summary": "韓国・釜山のBEXCOで11月19日から開催されているゲームイベント「 G-STAR 2026 」。会場でひときわ目を引いたのが、NetEase Gamesがパブリッシングする基本プレイ無料のオープンワールドRPG『 シーオブレムナンツ （Sea of Remnants）』のブースでした。",
-      "briefSummary": "韓国・釜山のBEXCOで11月19日から開催されているゲームイベント「 G-STAR 2026 」。会場でひときわ目を引いたのが、NetEase Gamesがパブリッシングする基本プレイ無料のオープンワールドRPG『 シーオブレムナンツ （Sea of Remnants）』のブースでした。",
+      "id": "auto-entertainment-主人がとても喜んでました-ニトリの-1290円ステーキ皿-が好評-乗せるだけで一瞬でファミレスクオリティ-食べ終わるまで熱-news.yahoo.co.jp/articles/9273e95a38e4e63e3a6979a84862ea55a52c6f21",
+      "title": "「主人がとても喜んでました」ニトリの“1290円ステーキ皿”が好評　「乗せるだけで一瞬でファミレスクオリティ」「食べ終わるまで熱々」",
+      "summary": "ニトリの「木台・ハンドル付き ステーキ皿」は、できたての料理をそのまま食卓で楽しめるアイテム。購入者からは、ステーキだけでなくパスタやハンバーグにも活用しているとい…",
+      "briefSummary": "ニトリの「木台・ハンドル付き ステーキ皿」は、できたての料理をそのまま食卓で楽しめるアイテム。購入者からは、ステーキだけでなくパスタやハンバーグにも活用しているという声が寄せられています。【画像】ニト",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 95,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-21T03:20:00.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/9273e95a38e4e63e3a6979a84862ea55a52c6f21?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "「主人がとても喜んでました」ニトリの“1290円ステーキ皿”が好評　「乗せるだけで一瞬でファミレスクオリティ」「食べ終わるまで熱々」",
+          "url": "https://news.yahoo.co.jp/articles/9273e95a38e4e63e3a6979a84862ea55a52c6f21?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/9273e95a38e4e63e3a6979a84862ea55a52c6f21?source=rss",
+          "publishedAt": "2026-11-21T03:20:00.000Z",
+          "publishedLabel": "11/21 03:20",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「主人がとても喜んでました」ニトリの“1290円ステーキ皿”が好評 「乗せるだけで一瞬でファ…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ],
+      "articleThumbnail": {
+        "kind": "yahoo-direct-article-og",
+        "ownerTitle": "「主人がとても喜んでました」ニトリの“1290円ステーキ皿”が好評 「乗せるだけで一瞬でファミレスクオリティ」「食べ終わるまで熱々」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/9273e95a38e4e63e3a6979a84862ea55a52c6f21",
+        "articleTitle": "「主人がとても喜んでました」ニトリの“1290円ステーキ皿”が好評 「乗せるだけで一瞬でファミレスクオリティ」「食べ終わるまで熱々」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10177951-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 2200,
+        "height": 1650
+      }
+    },
+    {
+      "id": "auto-games-ストレージに大量のデータを書き込み続ける不具合を修正した-geforce-hotfix-driver-621-35-をリリース-4gamer.net/games/022/g002210/20261121009",
+      "title": "ストレージに大量のデータを書き込み続ける不具合を修正した「GeForce Hotfix Driver 621.35」をリリース",
+      "summary": "米国時間2026年11月20日，NVIDIAは，WHQL（Windows Hardware Quality Labs）非通過のHotfix版ドライバ「GeForce Hotfix Driver 62…",
+      "briefSummary": "米国時間2026年11月20日，NVIDIAは，WHQL（Windows Hardware Quality Labs）非通過のHotfix版ドライバ「GeForce Hotfix Driver 62…",
       "category": "games",
       "categories": [
         "games",
@@ -104,13 +171,192 @@
       "score": 96,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1222029.png",
-      "publishedAt": "2026-11-20T22:30:03.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
+      "thumbnailUrl": "https://www.4gamer.net/games/022/G002210/20261121009/SS/002.jpg",
+      "publishedAt": "2026-11-21T03:18:11.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
+      "time": "1時間以内",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/022/G002210/20261121009/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "ストレージに大量のデータを書き込み続ける不具合を修正した「GeForce Hotfix Driver 621.35」をリリース",
+          "url": "https://www.4gamer.net/games/022/G002210/20261121009/",
+          "canonicalUrl": "https://www.4gamer.net/games/022/G002210/20261121009/",
+          "publishedAt": "2026-11-21T03:18:11.000Z",
+          "publishedLabel": "11/21 03:18",
+          "thumbnailUrl": "https://www.4gamer.net/games/022/G002210/20261121009/SS/002.jpg"
+        }
+      ],
+      "whatHappened": "ストレージに大量のデータを書き込み続ける不具合を修正した「GeForce Hotfix Dr…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-entertainment-ミッフィー-が小さなフィギュア付きスマホストラップに-クリスマスアイテムやぬいぐるみポーチも-animeanime.jp/article/2026/11/21/104981.html",
+      "title": "「ミッフィー」が小さなフィギュア付きスマホストラップに♪ クリスマスアイテムやぬいぐるみポーチも",
+      "summary": "「ミッフィー」より、小さな立体フィギュアが揺れるスマホストラップが登場。通常6種とシークレット1種の全7種類をブラインドボックスで展開し、Pinkoi内のVIPO HK公式ショップにて販売を開始した。",
+      "briefSummary": "「ミッフィー」より、小さな立体フィギュアが揺れるスマホストラップが登場。通常6種とシークレット1種の全7種類をブラインドボックスで展開し、Pinkoi内のVIPO HK公式ショップにて販売を開始した。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "tech",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "テック"
+      ],
+      "score": 96,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/958382.jpg",
+      "publishedAt": "2026-11-21T03:15:03.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
+      "time": "1時間以内",
+      "sourceName": "アニメ！アニメ！",
+      "sourceUrl": "https://animeanime.jp/article/2026/11/21/104981.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "animeanime",
+          "source": "アニメ！アニメ！",
+          "sourceName": "アニメ！アニメ！",
+          "sourceGroup": "anime",
+          "sourcePriority": 92,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "anime",
+            "manga",
+            "voice-actor",
+            "movie"
+          ],
+          "title": "「ミッフィー」が小さなフィギュア付きスマホストラップに♪ クリスマスアイテムやぬいぐるみポーチも",
+          "url": "https://animeanime.jp/article/2026/11/21/104981.html",
+          "canonicalUrl": "https://animeanime.jp/article/2026/11/21/104981.html",
+          "publishedAt": "2026-11-21T03:15:03.000Z",
+          "publishedLabel": "11/21 03:15",
+          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/958382.jpg"
+        }
+      ],
+      "whatHappened": "「ミッフィー」が小さなフィギュア付きスマホストラップに♪ クリスマスアイテムやぬいぐるみポー…",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "漫画・アニメ好き"
+      ]
+    },
+    {
+      "id": "auto-games-コスプレ-白い柔肌-漆黒のゴスロリ衣装が艶やか-needy-girl-overdose-あめちゃんが見せる誘惑にドキドキ-写真8枚-inside-games.jp/article/2026/11/21/191369.html",
+      "title": "【コスプレ】白い柔肌×漆黒のゴスロリ衣装が艶やか！『NEEDY GIRL OVERDOSE』あめちゃんが見せる誘惑にドキドキ【写真8枚】",
+      "summary": "9月22、23日に東京・池袋サンシャインシティでコスプレイベント「 acosta!@池袋サンシャインシティ 」が開催されました。",
+      "briefSummary": "本稿では『 NEEDY GIRL OVERDOSE 』あめちゃんのコスプレでイベントに参加した Shiki（X：@Shikiswift0227） さんの撮り下ろしフォトレポートをお届けします。漆黒のゴスロリ悪魔衣装に白い柔肌が艶っぽいコントラストを見せる美女レイヤーの、悩ましげな表情の誘惑にドキドキです。",
+      "category": "games",
+      "categories": [
+        "games",
+        "adult",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "アダルト系"
+      ],
+      "score": 95,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1798401.jpg",
+      "publishedAt": "2026-11-21T03:00:03.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
+      "time": "1時間以内",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/11/21/191369.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "【コスプレ】白い柔肌×漆黒のゴスロリ衣装が艶やか！『NEEDY GIRL OVERDOSE』あめちゃんが見せる誘惑にドキドキ【写真8枚】",
+          "url": "https://www.inside-games.jp/article/2026/11/21/191369.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/21/191369.html",
+          "publishedAt": "2026-11-21T03:00:03.000Z",
+          "publishedLabel": "11/21 03:00",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1798401.jpg"
+        }
+      ],
+      "whatHappened": "白い柔肌×漆黒のゴスロリ衣装が艶やか",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-games-重厚感のあるバズーカでufoもゾンビもサメも吹き飛ばせ-巨大隕石まで襲来するb級映画感満載のガンシュー-crash-bazooka-仮-試遊レポ-アミューズメン-gamespark.jp/article/2026/11/21/175155.html",
+      "title": "重厚感のあるバズーカでUFOもゾンビもサメも吹き飛ばせ！巨大隕石まで襲来するB級映画感満載のガンシュー『CRASH BAZOOKA（仮）』試遊レポ【アミューズメント エキスポ2026】",
+      "summary": "ゲームセンターでバズーカを担ぐ日が来たらいいな…！",
+      "briefSummary": "ゲームが開始されると、すぐさまUFOが襲来。狙いをつけて撃ち落とします。バズーカ後部にはスピーカーが用意されており、トリガーを引くと発射音がドッカンドッカン鳴るのが最高。",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム",
+        "エンタメ"
+      ],
+      "score": 95,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1222062.jpg",
+      "publishedAt": "2026-11-21T03:00:02.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
       "time": "1時間以内",
       "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/11/21/175152.html",
+      "sourceUrl": "http://www.gamespark.jp/article/2026/11/21/175155.html",
       "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
@@ -128,228 +374,28 @@
             "pc",
             "console"
           ],
-          "title": "【G-STAR 2026】天井まで伸びる海賊酒場に巨大クラーケン！『シーオブレムナンツ』ブースに潜入",
-          "url": "http://www.gamespark.jp/article/2026/11/21/175152.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/21/175152.html",
-          "publishedAt": "2026-11-20T22:30:03.000Z",
-          "publishedLabel": "11/20 22:30",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1222029.png"
+          "title": "重厚感のあるバズーカでUFOもゾンビもサメも吹き飛ばせ！巨大隕石まで襲来するB級映画感満載のガンシュー『CRASH BAZOOKA（仮）』試遊レポ【アミューズメント エキスポ2026】",
+          "url": "http://www.gamespark.jp/article/2026/11/21/175155.html",
+          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/21/175155.html",
+          "publishedAt": "2026-11-21T03:00:02.000Z",
+          "publishedLabel": "11/21 03:00",
+          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1222062.jpg"
         }
       ],
-      "whatHappened": "天井まで伸びる海賊酒場に巨大クラーケン",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "whatHappened": "重厚感のあるバズーカでUFOもゾンビもサメも吹き飛ばせ",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
         "ゲームユーザー",
-        "ガジェット好き"
+        "ガジェット好き",
+        "ネット文化を追う人"
       ]
     },
     {
-      "id": "auto-entertainment-愛犬を撮影しながら-かわいい-を連呼すると-時-こういう顔をします-注目の表情に-私もうちの子にやってみよッ-news.yahoo.co.jp/articles/32ddb9704693cdc454e3f40c92acd8647179b6f4",
-      "title": "愛犬を撮影しながら「かわいい」を連呼すると……「時々こういう顔をします」　注目の表情に「私もうちの子にやってみよッ」",
-      "summary": "写真撮影の際に「かわいい」と褒めまくっていたら……。あるワンちゃんの“表情”がThreadsで話題です。投稿は記事執筆時点で1万1000件以上の“いいね”を獲得して…",
-      "briefSummary": "写真撮影の際に「かわいい」と褒めまくっていたら……。あるワンちゃんの“表情”がThreadsで話題です。投稿は記事執筆時点で1万1000件以上の“いいね”を獲得しています。【画像】愛犬の表情 画像を投",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-20T22:30:00.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/32ddb9704693cdc454e3f40c92acd8647179b6f4?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "愛犬を撮影しながら「かわいい」を連呼すると……「時々こういう顔をします」　注目の表情に「私もうちの子にやってみよッ」",
-          "url": "https://news.yahoo.co.jp/articles/32ddb9704693cdc454e3f40c92acd8647179b6f4?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/32ddb9704693cdc454e3f40c92acd8647179b6f4?source=rss",
-          "publishedAt": "2026-11-20T22:30:00.000Z",
-          "publishedLabel": "11/20 22:30",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "愛犬を撮影しながら「かわいい」を連呼すると……「時々こういう顔をします」 注目の表情に「私も…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ],
-      "articleThumbnail": {
-        "kind": "yahoo-direct-article-og",
-        "ownerTitle": "愛犬を撮影しながら「かわいい」を連呼すると......「時々こういう顔をします」 注目の表情に「私もうちの子にやってみよッ」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/32ddb9704693cdc454e3f40c92acd8647179b6f4",
-        "articleTitle": "愛犬を撮影しながら「かわいい」を連呼すると......「時々こういう顔をします」 注目の表情に「私もうちの子にやってみよッ」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10177749-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 1200,
-        "height": 675
-      }
-    },
-    {
-      "id": "auto-entertainment-若者からシニアまで使える渋いチプカシ-カシオの-8800円レトロ腕時計-が好評-シンプルだけど個性的-80年代に戻ったような見た目が-news.yahoo.co.jp/articles/e629a76fb982bfddeca66c84acbb78c808ace7ca",
-      "title": "「若者からシニアまで使える渋いチプカシ」　カシオの“8800円レトロ腕時計”が好評　「シンプルだけど個性的」「80年代に戻ったような見た目が◎」",
-      "summary": "普段使いの腕時計は、時刻の見やすさや機能性だけでなく、ファッションに取り入れやすいデザインにもこだわりたいもの。レトロな雰囲気のデジタル腕時計なら、カジュアルな装い…",
-      "briefSummary": "普段使いの腕時計は、時刻の見やすさや機能性だけでなく、ファッションに取り入れやすいデザインにもこだわりたいもの。レトロな雰囲気のデジタル腕時計なら、カジュアルな装いのアクセントとしても活躍しそうです。",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-20T22:30:00.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/e629a76fb982bfddeca66c84acbb78c808ace7ca?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「若者からシニアまで使える渋いチプカシ」　カシオの“8800円レトロ腕時計”が好評　「シンプルだけど個性的」「80年代に戻ったような見た目が◎」",
-          "url": "https://news.yahoo.co.jp/articles/e629a76fb982bfddeca66c84acbb78c808ace7ca?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/e629a76fb982bfddeca66c84acbb78c808ace7ca?source=rss",
-          "publishedAt": "2026-11-20T22:30:00.000Z",
-          "publishedLabel": "11/20 22:30",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「若者からシニアまで使える渋いチプカシ」 カシオの“8800円レトロ腕時計”が好評 「シンプ…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ],
-      "articleThumbnail": {
-        "kind": "yahoo-direct-article-og",
-        "ownerTitle": "「若者からシニアまで使える渋いチプカシ」 カシオの“8800円レトロ腕時計”が好評 「シンプルだけど個性的」「80年代に戻ったような見た目が◎」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/e629a76fb982bfddeca66c84acbb78c808ace7ca",
-        "articleTitle": "「若者からシニアまで使える渋いチプカシ」 カシオの“8800円レトロ腕時計”が好評 「シンプルだけど個性的」「80年代に戻ったような見た目が◎」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10178041-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 1833,
-        "height": 1375
-      }
-    },
-    {
-      "id": "auto-general-オリックス宗佑磨-dena入り決断-news.yahoo.co.jp/pickup/6603351",
-      "title": "オリックス宗佑磨 DeNA入り決断",
-      "summary": "オリックスから国内フリーエージェント（ＦＡ）宣言した宗佑磨内野手（３０）が、ＤｅＮＡ入りを決断したことが２０日、分かった。宣言残留を容認するオリックスを含め、複数球団から獲得のオファーを受けていた中",
-      "briefSummary": "オリックスから国内フリーエージェント（ＦＡ）宣言した宗佑磨内野手（３０）が、ＤｅＮＡ入りを決断したことが２０日、分かった。宣言残留を容認するオリックスを含め、複数球団から獲得のオファーを受けていた中",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "その他"
-      ],
-      "score": 85,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-20T22:20:13.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / スポーツ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603351?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-sports",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / スポーツ",
-          "sourceGroup": "general-sports",
-          "sourcePriority": 58,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "オリックス宗佑磨 DeNA入り決断",
-          "url": "https://news.yahoo.co.jp/pickup/6603351?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603351?source=rss",
-          "publishedAt": "2026-11-20T22:20:13.000Z",
-          "publishedLabel": "11/20 22:20",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "オリックス宗佑磨 DeNA入り決断",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [],
-      "articleThumbnail": {
-        "kind": "yahoo-main-article-og",
-        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603351",
-        "pickupTitle": "オリックス宗佑磨 DeNA入り決断",
-        "articleUrl": "https://news.yahoo.co.jp/articles/641bedafc66bc3e1fae5541095f2832ff5b08f11",
-        "articleTitle": "オリックス・宗佑磨がＤｅＮＡ入りを決断！４年総額８億円「心が熱くなる方へ」複数球団からオファーも地元・横浜選んだ　近日中に正式表明",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-11201363-sph-000-2-view.jpg?exp=10800",
-        "width": 1088,
-        "height": 1088
-      }
-    },
-    {
-      "id": "auto-games-しまむらで-ディズニー-デザインのソックス各種が発売-ズートピア-や-トイ・ストーリー-などに加えて-ホカロン-コラボも-inside-games.jp/article/2026/11/21/191352.html",
-      "title": "しまむらで「ディズニー」デザインのソックス各種が発売！「ズートピア」や「トイ・ストーリー」などに加えて、「ホカロン」コラボも",
-      "summary": "「ディズニー」デザインのアイテムが11月21日発売！「ホカロン」コラボアイテムも。",
-      "briefSummary": "「ディズニー」作品より「ズートピア」や「トイ・ストーリー」「ベイマックス」などデザインのソックスが、しまむらにて販売。「ホカロン」コラボアイテムも用意されています。また、指開きソックスや着圧ハイソックスもラインナップしています。",
+      "id": "auto-games-ムダ毛-焼いてますか-意外と現代の脱毛事情を抉ってくる-ワンオペ地獄から悪徳経営まで味わえる-脱毛サロンシミュレーター-レビュー-4gamer.net/games/978/g097898/20261120003",
+      "title": "ムダ毛，焼いてますか？　意外と現代の脱毛事情を抉ってくる，ワンオペ地獄から悪徳経営まで味わえる「脱毛サロンシミュレーター」［レビュー］",
+      "summary": "シェーバーにレーザー，そして火炎放射器（!?）。いろいろな機器を駆使してお客様のムダ毛を処理しよう。一見出オチっぽい経営シム「脱毛サロンシミュレーター」だけど，その…",
+      "briefSummary": "シェーバーにレーザー，そして火炎放射器（!?）。いろいろな機器を駆使してお客様のムダ毛を処理しよう。一見出オチっぽい経営シム「脱毛サロンシミュレーター」だけど，その笑いの先には……。",
       "category": "games",
       "categories": [
         "games",
@@ -359,242 +405,43 @@
       "categoryLabels": [
         "ゲーム"
       ],
-      "score": 96,
+      "score": 95,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1809381.jpg",
-      "publishedAt": "2026-11-20T22:20:02.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
+      "thumbnailUrl": "https://www.4gamer.net/games/978/G097898/20261120003/SS/019.jpg",
+      "publishedAt": "2026-11-21T03:00:00.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
       "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/21/191352.html",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/978/G097898/20261120003/",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
           "sourceGroup": "games",
-          "sourcePriority": 90,
+          "sourcePriority": 94,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "games",
-            "nintendo",
-            "switch"
+            "pc",
+            "console",
+            "steam"
           ],
-          "title": "しまむらで「ディズニー」デザインのソックス各種が発売！「ズートピア」や「トイ・ストーリー」などに加えて、「ホカロン」コラボも",
-          "url": "https://www.inside-games.jp/article/2026/11/21/191352.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/21/191352.html",
-          "publishedAt": "2026-11-20T22:20:02.000Z",
-          "publishedLabel": "11/20 22:20",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1809381.jpg"
+          "title": "ムダ毛，焼いてますか？　意外と現代の脱毛事情を抉ってくる，ワンオペ地獄から悪徳経営まで味わえる「脱毛サロンシミュレーター」［レビュー］",
+          "url": "https://www.4gamer.net/games/978/G097898/20261120003/",
+          "canonicalUrl": "https://www.4gamer.net/games/978/G097898/20261120003/",
+          "publishedAt": "2026-11-21T03:00:00.000Z",
+          "publishedLabel": "11/21 03:00",
+          "thumbnailUrl": "https://www.4gamer.net/games/978/G097898/20261120003/SS/019.jpg"
         }
       ],
-      "whatHappened": "しまむらで「ディズニー」デザインのソックス各種が発売",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-entertainment-通勤用にリピート-ビームスの-a4対応トートバッグ-が高評価-上品さがあります-何といっても軽い-シンプルでおしゃれ-news.yahoo.co.jp/articles/fdd5b94f12f48d8178fb31b8f4ef77b1c05a843d",
-      "title": "「通勤用にリピート」　ビームスの“A4対応トートバッグ”が高評価　「上品さがあります」「何といっても軽い！」「シンプルでおしゃれ」",
-      "summary": "BEAMS（ビームス）のオリジナルレーベル・BEAMS HEART（ビームス ハート）の「ポリエステル 杢素材 コンビ トートバッグ」が、A4ファイルやノートパソコ…",
-      "briefSummary": "BEAMS（ビームス）のオリジナルレーベル・BEAMS HEART（ビームス ハート）の「ポリエステル 杢素材 コンビ トートバッグ」が、A4ファイルやノートパソコンが入る大容量でありながら、遊び心の",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-20T22:20:00.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/fdd5b94f12f48d8178fb31b8f4ef77b1c05a843d?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「通勤用にリピート」　ビームスの“A4対応トートバッグ”が高評価　「上品さがあります」「何といっても軽い！」「シンプルでおしゃれ」",
-          "url": "https://news.yahoo.co.jp/articles/fdd5b94f12f48d8178fb31b8f4ef77b1c05a843d?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/fdd5b94f12f48d8178fb31b8f4ef77b1c05a843d?source=rss",
-          "publishedAt": "2026-11-20T22:20:00.000Z",
-          "publishedLabel": "11/20 22:20",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「通勤用にリピート」 ビームスの“A4対応トートバッグ”が高評価 「上品さがあります」「何と…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ],
-      "articleThumbnail": {
-        "kind": "yahoo-direct-article-og",
-        "ownerTitle": "「通勤用にリピート」 ビームスの“A4対応トートバッグ”が高評価 「上品さがあります」「何といっても軽い!」「シンプルでおしゃれ」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/fdd5b94f12f48d8178fb31b8f4ef77b1c05a843d",
-        "articleTitle": "「通勤用にリピート」 ビームスの“A4対応トートバッグ”が高評価 「上品さがあります」「何といっても軽い!」「シンプルでおしゃれ」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10178422-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 2048,
-        "height": 1536
-      }
-    },
-    {
-      "id": "auto-entertainment-ダサいと言われようが洗面台は廊下が正解-驚きの-神間取り-に-一番後悔しない-超便利-news.yahoo.co.jp/articles/4e74fb3550c67d963110b81c191694ecdb6d4c4f",
-      "title": "「ダサいと言われようが洗面台は廊下が正解！」驚きの“神間取り”に「一番後悔しない」「超便利」",
-      "summary": "すてきなマイホームの斬新な間取りを紹介する動画が、Instagramで話題です。投稿は記事執筆時点で10万回以上再生され、200件の“いいね”を獲得しています。【画像】注目が集まった洗面台の間取り",
-      "briefSummary": "すてきなマイホームの斬新な間取りを紹介する動画が、Instagramで話題です。投稿は記事執筆時点で10万回以上再生され、200件の“いいね”を獲得しています。【画像】注目が集まった洗面台の間取り 動",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-20T22:20:00.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/4e74fb3550c67d963110b81c191694ecdb6d4c4f?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「ダサいと言われようが洗面台は廊下が正解！」驚きの“神間取り”に「一番後悔しない」「超便利」",
-          "url": "https://news.yahoo.co.jp/articles/4e74fb3550c67d963110b81c191694ecdb6d4c4f?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/4e74fb3550c67d963110b81c191694ecdb6d4c4f?source=rss",
-          "publishedAt": "2026-11-20T22:20:00.000Z",
-          "publishedLabel": "11/20 22:20",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「ダサいと言われようが洗面台は廊下が正解！」驚きの“神間取り”に「一番後悔しない」「超便利」",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ],
-      "articleThumbnail": {
-        "kind": "yahoo-direct-article-og",
-        "ownerTitle": "「ダサいと言われようが洗面台は廊下が正解!」驚きの“神間取り”に「一番後悔しない」「超便利」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/4e74fb3550c67d963110b81c191694ecdb6d4c4f",
-        "articleTitle": "「ダサいと言われようが洗面台は廊下が正解!」驚きの“神間取り”に「一番後悔しない」「超便利」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10178057-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 1200,
-        "height": 1200
-      }
-    },
-    {
-      "id": "auto-tech-suicaのペンギン-新作グッズが先行販売-そのままフォルムのスマホショルダーなど全4アイテム-inside-games.jp/article/2026/11/21/191351.html",
-      "title": "「Suicaのペンギン」新作グッズが先行販売！そのままフォルムのスマホショルダーなど全4アイテム",
-      "summary": "「Suicaのペンギン」と「キタムラ」のコラボ新作レザーグッズが11月21日より先行販売！一般販売は12月2日よりECサイト等で開始。",
-      "briefSummary": "「Suicaのペンギン」と「キタムラ」のコラボ新作レザーグッズが11月21日より先行販売！一般販売は12月2日よりECサイト等で開始。",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "games",
-        "general"
-      ],
-      "categoryLabel": "テック",
-      "categoryLabels": [
-        "テック",
-        "ゲーム"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1809212.jpg",
-      "publishedAt": "2026-11-20T22:15:03.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
-      "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/21/191351.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "「Suicaのペンギン」新作グッズが先行販売！そのままフォルムのスマホショルダーなど全4アイテム",
-          "url": "https://www.inside-games.jp/article/2026/11/21/191351.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/21/191351.html",
-          "publishedAt": "2026-11-20T22:15:03.000Z",
-          "publishedLabel": "11/20 22:15",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1809212.jpg"
-        }
-      ],
-      "whatHappened": "「Suicaのペンギン」新作グッズが先行販売",
+      "whatHappened": "ムダ毛，焼いてますか",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
       "targetAudience": [
@@ -603,10 +450,10 @@
       ]
     },
     {
-      "id": "auto-entertainment-コメダで-1040円分のドリンク-を注文-店員-お一人様ですよね-出てきたのは-えっ-驚がくの光景に-ぜんぜん食べられる量-news.yahoo.co.jp/articles/66322210750d212b687016589f0a537ee7e990f5",
-      "title": "コメダで“1040円分のドリンク”を注文→店員「お一人様ですよね？」出てきたのは……「えっ」　驚がくの光景に「ぜんぜん食べられる量」",
-      "summary": "コメダ珈琲店で店員さんに「お一人様ですよね？」と言われた光景が、Threadsで話題です。投稿は記事執筆時点で4万回表示され、約500件の“いいね”を獲得しています…",
-      "briefSummary": "コメダ珈琲店で店員さんに「お一人様ですよね？」と言われた光景が、Threadsで話題です。投稿は記事執筆時点で4万回表示され、約500件の“いいね”を獲得しています。【画像】驚がくの光景 画像を投稿し",
+      "id": "auto-entertainment-5合の炊飯器で炊こうとして-2児ママ-ねえ私疲れてるwww-まさかの光景に-本当だーwww-落ち着け-news.yahoo.co.jp/articles/6048778f7efba388a96721fa7b35695913a0304c",
+      "title": "5合の炊飯器で炊こうとして……2児ママ「ねえ私疲れてるwww」　まさかの光景に「本当だーwww」「落ち着け！」",
+      "summary": "仕事と家事に追われて疲れた2児のママが、ご飯を炊こうとしたら……。本人も思わず笑ってしまう、まさかの光景がThreadsで話題です。【画像】まさかの光景 画像を投稿…",
+      "briefSummary": "仕事と家事に追われて疲れた2児のママが、ご飯を炊こうとしたら……。本人も思わず笑ってしまう、まさかの光景がThreadsで話題です。【画像】まさかの光景 画像を投稿したのは、8歳と6歳の子どもたちを育",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -624,11 +471,11 @@
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-20T22:10:00.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
+      "publishedAt": "2026-11-21T03:00:00.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
       "time": "1時間以内",
       "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/66322210750d212b687016589f0a537ee7e990f5?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/6048778f7efba388a96721fa7b35695913a0304c?source=rss",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "検索需要やトレンド化の兆しが強い話題です。"
@@ -649,15 +496,15 @@
             "buzz",
             "otaku"
           ],
-          "title": "コメダで“1040円分のドリンク”を注文→店員「お一人様ですよね？」出てきたのは……「えっ」　驚がくの光景に「ぜんぜん食べられる量」",
-          "url": "https://news.yahoo.co.jp/articles/66322210750d212b687016589f0a537ee7e990f5?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/66322210750d212b687016589f0a537ee7e990f5?source=rss",
-          "publishedAt": "2026-11-20T22:10:00.000Z",
-          "publishedLabel": "11/20 22:10",
+          "title": "5合の炊飯器で炊こうとして……2児ママ「ねえ私疲れてるwww」　まさかの光景に「本当だーwww」「落ち着け！」",
+          "url": "https://news.yahoo.co.jp/articles/6048778f7efba388a96721fa7b35695913a0304c?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/6048778f7efba388a96721fa7b35695913a0304c?source=rss",
+          "publishedAt": "2026-11-21T03:00:00.000Z",
+          "publishedLabel": "11/21 03:00",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "コメダで“1040円分のドリンク”を注文→店員「お一人様ですよね？」出てきたのは……「えっ」…",
+      "whatHappened": "5合の炊飯器で炊こうとして……2児ママ「ねえ私疲れてるwww」 まさかの光景に「本当だーww…",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
@@ -665,19 +512,529 @@
       ],
       "articleThumbnail": {
         "kind": "yahoo-direct-article-og",
-        "ownerTitle": "コメダで“1040円分のドリンク”を注文→店員「お一人様ですよね?」出てきたのは......「えっ」 驚がくの光景に「ぜんぜん食べられる量」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/66322210750d212b687016589f0a537ee7e990f5",
-        "articleTitle": "コメダで“1040円分のドリンク”を注文→店員「お一人様ですよね?」出てきたのは......「えっ」 驚がくの光景に「ぜんぜん食べられる量」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10177992-it_nlab-000-1-view.jpg?exp=10800",
+        "ownerTitle": "5合の炊飯器で炊こうとして......2児ママ「ねえ私疲れてるwww」 まさかの光景に「本当だーwww」「落ち着け!」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/6048778f7efba388a96721fa7b35695913a0304c",
+        "articleTitle": "5合の炊飯器で炊こうとして......2児ママ「ねえ私疲れてるwww」 まさかの光景に「本当だーwww」「落ち着け!」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10177879-it_nlab-000-1-view.jpg?exp=10800",
         "width": 1200,
         "height": 630
       }
     },
     {
-      "id": "auto-sns-新幹線で食べようと買った福井の-1782円駅弁-開けたら-衝撃的-これは何度もリピートしたくなるやつ-news.yahoo.co.jp/articles/116447ef6411856e326e968660d96e9e7526df1a",
-      "title": "新幹線で食べようと買った福井の“1782円駅弁”→開けたら……　「衝撃的」「これは何度もリピートしたくなるやつ」",
-      "summary": "何度もリピートしたくなると言わしめた逸品とは……？ 新幹線で購入した福井の名物駅弁がX（Twitter）で話題になり、記事執筆時点で19万7000回以上表示され、1…",
-      "briefSummary": "何度もリピートしたくなると言わしめた逸品とは……？ 新幹線で購入した福井の名物駅弁がX（Twitter）で話題になり、記事執筆時点で19万7000回以上表示され、1300件以上の“いいね”を集めていま",
+      "id": "auto-sports-野球の子たち泊まりにきたー-13人分用意したのは-圧巻の食卓に-寮母さん-みんな坊主にしてここに集合な-news.yahoo.co.jp/articles/b5454a2626927a1889fffe243b1845763ee4af8c",
+      "title": "「野球の子たち泊まりにきたー！」→13人分用意したのは…… 圧巻の食卓に「寮母さん!?」「みんな坊主にしてここに集合な！」",
+      "summary": "野球少年のママがお泊まり会で作ったのは……。とんでもない“おもてなし料理”がThreadsへ投稿されました。なおこちらは、記事執筆時点で20万回表示を突破、1500…",
+      "briefSummary": "野球少年のママがお泊まり会で作ったのは……。とんでもない“おもてなし料理”がThreadsへ投稿されました。なおこちらは、記事執筆時点で20万回表示を突破、1500件を超える“いいね”を獲得しています",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "スポーツ",
+      "categoryLabels": [
+        "スポーツ",
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 94,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-21T03:00:00.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/b5454a2626927a1889fffe243b1845763ee4af8c?source=rss",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "直近数時間で関連記事が増えています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "「野球の子たち泊まりにきたー！」→13人分用意したのは…… 圧巻の食卓に「寮母さん!?」「みんな坊主にしてここに集合な！」",
+          "url": "https://news.yahoo.co.jp/articles/b5454a2626927a1889fffe243b1845763ee4af8c?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/b5454a2626927a1889fffe243b1845763ee4af8c?source=rss",
+          "publishedAt": "2026-11-21T03:00:00.000Z",
+          "publishedLabel": "11/21 03:00",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「野球の子たち泊まりにきたー！」→13人分用意したのは…… 圧巻の食卓に「寮母さん!?」「み…",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "ネット文化を追う人"
+      ],
+      "articleThumbnail": {
+        "kind": "yahoo-direct-article-og",
+        "ownerTitle": "「野球の子たち泊まりにきたー!」→13人分用意したのは...... 圧巻の食卓に「寮母さん!?」「みんな坊主にしてここに集合な!」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/b5454a2626927a1889fffe243b1845763ee4af8c",
+        "articleTitle": "「野球の子たち泊まりにきたー!」→13人分用意したのは...... 圧巻の食卓に「寮母さん!?」「みんな坊主にしてここに集合な!」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10177568-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 1200,
+        "height": 1200
+      }
+    },
+    {
+      "id": "auto-politics-高市首相が冷遇された-は騒ぎすぎ-習近平さんが大阪のg20に来た時の接遇は-識者が指摘-j-cast.com/2026/11/21519334.html",
+      "title": "「高市首相が冷遇された」は騒ぎすぎ？　「習近平さんが大阪のG20に来た時の接遇は...」識者が指摘",
+      "summary": "",
+      "briefSummary": "これについて星さんは、「日本のメディアもそういうのが好きで、高市さんが冷遇されたとかいうんですけど」と前置きしながら、「実は2019年に習近平さんが大阪のG20に来た時の接遇は、当時の知事だとか外務省の幹部なので、そういう点では、今回、G20で習近平さんが受けた時と同じランクの人で迎えたということも、中国側のロジックなんですね。この辺については、あまり事実関…",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "categoryLabel": "政治",
+      "categoryLabels": [
+        "政治",
+        "SNS",
+        "ネットカルチャー",
+        "国際"
+      ],
+      "score": 89,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/11/news_20261120180751.jpg",
+      "publishedAt": "2026-11-21T03:00:00.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
+      "time": "1時間以内",
+      "sourceName": "J-CASTニュース",
+      "sourceUrl": "https://www.j-cast.com/2026/11/21519334.html",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "一般ユーザーの関心が集まりやすいテーマです。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "jcast",
+          "source": "J-CASTニュース",
+          "sourceName": "J-CASTニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 72,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz"
+          ],
+          "title": "「高市首相が冷遇された」は騒ぎすぎ？　「習近平さんが大阪のG20に来た時の接遇は...」識者が指摘",
+          "url": "https://www.j-cast.com/2026/11/21519334.html",
+          "canonicalUrl": "https://www.j-cast.com/2026/11/21519334.html",
+          "publishedAt": "2026-11-21T03:00:00.000Z",
+          "publishedLabel": "11/21 03:00",
+          "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/11/news_20261120180751.jpg"
+        }
+      ],
+      "whatHappened": "「高市首相が冷遇された」は騒ぎすぎ",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [
+        "ネット文化を追う人",
+        "時事ニュースを追う人"
+      ]
+    },
+    {
+      "id": "auto-general-特急と立ち往生の車が衝突-東武-news.yahoo.co.jp/pickup/6603388",
+      "title": "特急と立ち往生の車が衝突 東武",
+      "summary": "東武日光線の特急列車が、踏切内で立ち往生していた乗用車と接触する事故がありました。鹿児島県の“危険な踏切” 車「出られず」列車と衝突相次ぐ",
+      "briefSummary": "スタック車両〝ほぼ全て〟ノーマルタイヤか…国道142号の最大2㎞立ち往生 約4時間半で解消【長野 長和町・下諏訪町】",
+      "category": "general",
+      "categories": [
+        "general"
+      ],
+      "categoryLabel": "その他",
+      "categoryLabels": [
+        "その他"
+      ],
+      "score": 81,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-21T02:57:12.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
+      "time": "1時間以内",
+      "sourceName": "Yahoo!ニュース / 地域",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603388?source=rss",
+      "hotReasons": [],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-local",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 地域",
+          "sourceGroup": "local-news",
+          "sourcePriority": 50,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "特急と立ち往生の車が衝突 東武",
+          "url": "https://news.yahoo.co.jp/pickup/6603388?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603388?source=rss",
+          "publishedAt": "2026-11-21T02:57:12.000Z",
+          "publishedLabel": "11/21 02:57",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "特急と立ち往生の車が衝突 東武",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [],
+      "articleThumbnail": {
+        "kind": "yahoo-main-article-og",
+        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603388",
+        "pickupTitle": "特急と立ち往生の車が衝突 東武",
+        "articleUrl": "https://news.yahoo.co.jp/articles/2ab3b4e02445aff391f96cdf14a21bc269819237",
+        "articleTitle": "東武日光線の特急列車が、踏切内で立ち往生していた乗用車と接触　車の男性と列車の乗客と乗務員約300人にけがなし",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-00010001-annd-000-5-thumb.jpg?exp=10800",
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    {
+      "id": "auto-entertainment-スーパーで買った-127円のシャインマスカット-袋を開けると-驚きの中身に-最高すぎ-めっちゃいい-news.yahoo.co.jp/articles/505b856cb3fa4cb0b4ff62ea94ca592734897f00",
+      "title": "スーパーで買った“127円のシャインマスカット“→袋を開けると……　驚きの中身に「最高すぎ」「めっちゃいい」",
+      "summary": "スーパーで127円で購入したシャインマスカットの“驚きの中身”が、Threadsで話題を呼んでいます。投稿は記事執筆時点で1万8000回以上表示され、470件以上の…",
+      "briefSummary": "スーパーで127円で購入したシャインマスカットの“驚きの中身”が、Threadsで話題を呼んでいます。投稿は記事執筆時点で1万8000回以上表示され、470件以上の“いいね”を獲得しています。【画像】",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 94,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-21T02:55:00.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/505b856cb3fa4cb0b4ff62ea94ca592734897f00?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "検索需要やトレンド化の兆しが強い話題です。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "スーパーで買った“127円のシャインマスカット“→袋を開けると……　驚きの中身に「最高すぎ」「めっちゃいい」",
+          "url": "https://news.yahoo.co.jp/articles/505b856cb3fa4cb0b4ff62ea94ca592734897f00?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/505b856cb3fa4cb0b4ff62ea94ca592734897f00?source=rss",
+          "publishedAt": "2026-11-21T02:55:00.000Z",
+          "publishedLabel": "11/21 02:55",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "スーパーで買った“127円のシャインマスカット“→袋を開けると…… 驚きの中身に「最高すぎ」…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ],
+      "articleThumbnail": {
+        "kind": "yahoo-direct-article-og",
+        "ownerTitle": "スーパーで買った“127円のシャインマスカット“→袋を開けると...... 驚きの中身に「最高すぎ」「めっちゃいい」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/505b856cb3fa4cb0b4ff62ea94ca592734897f00",
+        "articleTitle": "スーパーで買った“127円のシャインマスカット“→袋を開けると...... 驚きの中身に「最高すぎ」「めっちゃいい」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10177051-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 1200,
+        "height": 726
+      }
+    },
+    {
+      "id": "auto-general-dena-宗佑磨の獲得を正式発表-news.yahoo.co.jp/pickup/6603387",
+      "title": "DeNA 宗佑磨の獲得を正式発表",
+      "summary": "DeNAは21日、オリックスから国内FA権を行使した宗佑磨内野手（30）と入団に合意したと発表した。今オフにFA宣言した10選手の中で移籍第1号となった。背番号は後日行う会見で発表する。",
+      "briefSummary": "DeNAは21日、オリックスから国内FA権を行使した宗佑磨内野手（30）と入団に合意したと発表した。今オフにFA宣言した10選手の中で移籍第1号となった。背番号は後日行う会見で発表する。",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "general"
+      ],
+      "categoryLabel": "スポーツ",
+      "categoryLabels": [
+        "スポーツ",
+        "その他"
+      ],
+      "score": 84,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-21T02:52:41.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
+      "time": "1時間以内",
+      "sourceName": "Yahoo!ニュース / スポーツ",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603387?source=rss",
+      "hotReasons": [],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-sports",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / スポーツ",
+          "sourceGroup": "general-sports",
+          "sourcePriority": 58,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "DeNA 宗佑磨の獲得を正式発表",
+          "url": "https://news.yahoo.co.jp/pickup/6603387?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603387?source=rss",
+          "publishedAt": "2026-11-21T02:52:41.000Z",
+          "publishedLabel": "11/21 02:52",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "DeNA 宗佑磨の獲得を正式発表",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [],
+      "articleThumbnail": {
+        "kind": "yahoo-main-article-og",
+        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603387",
+        "pickupTitle": "DeNA 宗佑磨の獲得を正式発表",
+        "articleUrl": "https://news.yahoo.co.jp/articles/d8dd541147831ffc4bbf3a0284f0abdc11a41b4d",
+        "articleTitle": "DeNAがオリックスからFA宣言した宗佑磨の獲得を正式発表！複数球団による争奪戦制して補強に成功",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-00000158-spnannex-000-13-view.jpg?exp=10800",
+        "width": 1200,
+        "height": 1170
+      }
+    },
+    {
+      "id": "auto-entertainment-一目惚れで購入-ディーンアンドデルーカの-ぽってりマグカップ-が大人気-家族みんなでお気に入り-マグの形がとても可愛い-量もちょうどいい-news.yahoo.co.jp/articles/34a08e438e8e2e9d2d7c1708a1c79409cf02b7a6",
+      "title": "「一目惚れで購入」ディーンアンドデルーカの“ぽってりマグカップ”が大人気　「家族みんなでお気に入り」「マグの形がとても可愛い」「量もちょうどいい」",
+      "summary": "世界各国から選りすぐった食材・お酒・キッチン雑貨といったさまざまな商品を扱う食のセレクトショップ「DEAN＆DELUCA（ディーンアンドデルーカ）」。なかでも、ブラ…",
+      "briefSummary": "世界各国から選りすぐった食材・お酒・キッチン雑貨といったさまざまな商品を扱う食のセレクトショップ「DEAN＆DELUCA（ディーンアンドデルーカ）」。なかでも、ブランドロゴがデザインされたテーブルウエ",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 94,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-21T02:50:00.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
+      "time": "1時間以内",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/34a08e438e8e2e9d2d7c1708a1c79409cf02b7a6?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "「一目惚れで購入」ディーンアンドデルーカの“ぽってりマグカップ”が大人気　「家族みんなでお気に入り」「マグの形がとても可愛い」「量もちょうどいい」",
+          "url": "https://news.yahoo.co.jp/articles/34a08e438e8e2e9d2d7c1708a1c79409cf02b7a6?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/34a08e438e8e2e9d2d7c1708a1c79409cf02b7a6?source=rss",
+          "publishedAt": "2026-11-21T02:50:00.000Z",
+          "publishedLabel": "11/21 02:50",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「一目惚れで購入」ディーンアンドデルーカの“ぽってりマグカップ”が大人気 「家族みんなでお気…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ],
+      "articleThumbnail": {
+        "kind": "yahoo-direct-article-og",
+        "ownerTitle": "「一目惚れで購入」ディーンアンドデルーカの“ぽってりマグカップ”が大人気 「家族みんなでお気に入り」「マグの形がとても可愛い」「量もちょうどいい」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/34a08e438e8e2e9d2d7c1708a1c79409cf02b7a6",
+        "articleTitle": "「一目惚れで購入」ディーンアンドデルーカの“ぽってりマグカップ”が大人気 「家族みんなでお気に入り」「マグの形がとても可愛い」「量もちょうどいい」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10178333-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 1866,
+        "height": 1400
+      }
+    },
+    {
+      "id": "auto-games-4人のほうが難しい-協力型sfサバイバルホラーfps-code-exit-は-前半の恐怖感と-後半の無双感が楽しい-g-star-2026-4gamer.net/games/001/g100149/20261121006",
+      "title": "4人のほうが難しい。協力型SFサバイバルホラーFPS「CODE EXIT」は，前半の恐怖感と，後半の無双感が楽しい［G-STAR 2026］",
+      "summary": "「G-STAR2026」で協力型SFサバイバルホラーFPS「CODEEXIT」をプレイした。逃げるしかない前半と，銃で敵をなぎ倒す後半の緩急が気持ちいい作品だ。ソロ…",
+      "briefSummary": "「G-STAR2026」で協力型SFサバイバルホラーFPS「CODEEXIT」をプレイした。逃げるしかない前半と，銃で敵をなぎ倒す後半の緩急が気持ちいい作品だ。ソロより4人のほうが難しい理由などを開発者に聞いた。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 95,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.4gamer.net/games/001/G100149/20261121006/SS/003.jpg",
+      "publishedAt": "2026-11-21T02:45:47.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
+      "time": "1時間以内",
+      "sourceName": "4Gamer",
+      "sourceUrl": "https://www.4gamer.net/games/001/G100149/20261121006/",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "4gamer",
+          "source": "4Gamer",
+          "sourceName": "4Gamer",
+          "sourceGroup": "games",
+          "sourcePriority": 94,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "pc",
+            "console",
+            "steam"
+          ],
+          "title": "4人のほうが難しい。協力型SFサバイバルホラーFPS「CODE EXIT」は，前半の恐怖感と，後半の無双感が楽しい［G-STAR 2026］",
+          "url": "https://www.4gamer.net/games/001/G100149/20261121006/",
+          "canonicalUrl": "https://www.4gamer.net/games/001/G100149/20261121006/",
+          "publishedAt": "2026-11-21T02:45:47.000Z",
+          "publishedLabel": "11/21 02:45",
+          "thumbnailUrl": "https://www.4gamer.net/games/001/G100149/20261121006/SS/003.jpg"
+        }
+      ],
+      "whatHappened": "4人のほうが難しい",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー",
+        "ガジェット好き"
+      ]
+    },
+    {
+      "id": "auto-games-東方project-から-博麗霊夢-霧雨魔理沙-が並び立つ-衣装や表情なども魅力的-inside-games.jp/article/2026/11/21/191368.html",
+      "title": "『東方Project』から「博麗霊夢」「霧雨魔理沙」が並び立つ！衣装や表情なども魅力的",
+      "summary": "「博麗霊夢」と「霧雨魔理沙」がプライズ展開！",
+      "briefSummary": "フリュープライズは、『東方Project』から「ムチュートフィギュアー博麗霊夢ー」「ムチュートフィギュアー霧雨魔理沙ー」の2アイテムを発表しました。",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "categoryLabel": "ゲーム",
+      "categoryLabels": [
+        "ゲーム"
+      ],
+      "score": 95,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1804827.webp",
+      "publishedAt": "2026-11-21T02:45:02.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
+      "time": "1時間以内",
+      "sourceName": "INSIDE",
+      "sourceUrl": "https://www.inside-games.jp/article/2026/11/21/191368.html",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "inside",
+          "source": "INSIDE",
+          "sourceName": "INSIDE",
+          "sourceGroup": "games",
+          "sourcePriority": 90,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "games",
+            "nintendo",
+            "switch"
+          ],
+          "title": "『東方Project』から「博麗霊夢」「霧雨魔理沙」が並び立つ！衣装や表情なども魅力的",
+          "url": "https://www.inside-games.jp/article/2026/11/21/191368.html",
+          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/21/191368.html",
+          "publishedAt": "2026-11-21T02:45:02.000Z",
+          "publishedLabel": "11/21 02:45",
+          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1804827.webp"
+        }
+      ],
+      "whatHappened": "『東方Project』から「博麗霊夢」「霧雨魔理沙」が並び立つ",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "targetAudience": [
+        "ゲームユーザー"
+      ]
+    },
+    {
+      "id": "auto-sns-団地で1人暮らしを始めた男性-4カ月後-驚きの空間-に-めっちゃいい-刺さります-news.yahoo.co.jp/articles/8dea90980e10b9f3a5c84618555f896ba0b4db69",
+      "title": "団地で1人暮らしを始めた男性→4カ月後……　“驚きの空間”に「めっちゃいい」「刺さります！」",
+      "summary": "",
+      "briefSummary": "",
       "category": "sns",
       "categories": [
         "sns",
@@ -695,11 +1052,11 @@
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-20T22:00:00.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
+      "publishedAt": "2026-11-21T02:45:00.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
       "time": "1時間以内",
       "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/116447ef6411856e326e968660d96e9e7526df1a?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/8dea90980e10b9f3a5c84618555f896ba0b4db69?source=rss",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "検索需要やトレンド化の兆しが強い話題です。"
@@ -720,15 +1077,15 @@
             "buzz",
             "otaku"
           ],
-          "title": "新幹線で食べようと買った福井の“1782円駅弁”→開けたら……　「衝撃的」「これは何度もリピートしたくなるやつ」",
-          "url": "https://news.yahoo.co.jp/articles/116447ef6411856e326e968660d96e9e7526df1a?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/116447ef6411856e326e968660d96e9e7526df1a?source=rss",
-          "publishedAt": "2026-11-20T22:00:00.000Z",
-          "publishedLabel": "11/20 22:00",
+          "title": "団地で1人暮らしを始めた男性→4カ月後……　“驚きの空間”に「めっちゃいい」「刺さります！」",
+          "url": "https://news.yahoo.co.jp/articles/8dea90980e10b9f3a5c84618555f896ba0b4db69?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/8dea90980e10b9f3a5c84618555f896ba0b4db69?source=rss",
+          "publishedAt": "2026-11-21T02:45:00.000Z",
+          "publishedLabel": "11/21 02:45",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "新幹線で食べようと買った福井の“1782円駅弁”→開けたら…… 「衝撃的」「これは何度もリピ…",
+      "whatHappened": "団地で1人暮らしを始めた男性→4カ月後…… “驚きの空間”に「めっちゃいい」「刺さります！」",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
@@ -736,19 +1093,19 @@
       ],
       "articleThumbnail": {
         "kind": "yahoo-direct-article-og",
-        "ownerTitle": "新幹線で食べようと買った福井の“1782円駅弁”→開けたら...... 「衝撃的」「これは何度もリピートしたくなるやつ」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/116447ef6411856e326e968660d96e9e7526df1a",
-        "articleTitle": "新幹線で食べようと買った福井の“1782円駅弁”→開けたら...... 「衝撃的」「これは何度もリピートしたくなるやつ」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10177498-it_nlab-000-1-view.jpg?exp=10800",
+        "ownerTitle": "団地で1人暮らしを始めた男性→4カ月後...... “驚きの空間”に「めっちゃいい」「刺さります!」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/8dea90980e10b9f3a5c84618555f896ba0b4db69",
+        "articleTitle": "団地で1人暮らしを始めた男性→4カ月後...... “驚きの空間”に「めっちゃいい」「刺さります!」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10177428-it_nlab-000-1-view.jpg?exp=10800",
         "width": 1200,
-        "height": 630
+        "height": 985
       }
     },
     {
-      "id": "auto-entertainment-旅行で1万歩ぐらい歩いても疲れない-ミズノの-通勤でも履けるウォーキングシューズ-が人気-スーツでも違和感なく履けます-とても歩きやすい-在庫有る内に買い占めた-news.yahoo.co.jp/articles/2d3eb3692b0464767c41d90dd2e7794eac5cffec",
-      "title": "「旅行で1万歩ぐらい歩いても疲れない」　ミズノの“通勤でも履けるウォーキングシューズ”が人気　「スーツでも違和感なく履けます」「とても歩きやすい」「在庫有る内に買い占めたい！」",
-      "summary": "ミズノの“通勤でも履けるウォーキングシューズ”が、軽くて歩きやすい、疲れにくいと好評を得ています。今回はそんな、ミズノのウォーキングシューズ「LD SL」を紹介しま…",
-      "briefSummary": "ミズノの“通勤でも履けるウォーキングシューズ”が、軽くて歩きやすい、疲れにくいと好評を得ています。今回はそんな、ミズノのウォーキングシューズ「LD SL」を紹介します。【画像】ミズノの“通勤でも履ける",
+      "id": "auto-entertainment-買い物袋が要らなくなった-ワークマンの-1900円ショルダーバッグ-が好評-これでもかというくらい収納を設けているのはさすが-予備に買い増ししたい-news.yahoo.co.jp/articles/d17ca5ab2f9f7c4988a07db8ff8c3f265434ddb0",
+      "title": "「買い物袋が要らなくなった」　ワークマンの“1900円ショルダーバッグ”が好評！　「これでもかというくらい収納を設けているのはさすが」「予備に買い増ししたい」",
+      "summary": "ワークマンから販売されている「アーバンマルチストレージショルダー」が、A4サイズの書類やノートパソコンまで入るサイズながら、体に沿う形状で使いやすいと高評価を集めて…",
+      "briefSummary": "ワークマンの「アーバンマルチストレージショルダー」は、見た目以上の収納力を備えた、機能性に優れたショルダーバッグ。お出かけや買い物など幅広いシーンで使いやすく、飽きのこないシンプルなデザインでさまざまなコーディネートになじみます。大きく開く設計に加え、オープンマルチポケット付きで、荷物をスムーズに出し入れできるのも魅力。開口部はファスナー仕様のため、中身の飛…",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -766,11 +1123,11 @@
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-20T22:00:00.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
+      "publishedAt": "2026-11-21T02:40:00.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
       "time": "1時間以内",
       "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/2d3eb3692b0464767c41d90dd2e7794eac5cffec?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/d17ca5ab2f9f7c4988a07db8ff8c3f265434ddb0?source=rss",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
@@ -791,15 +1148,15 @@
             "buzz",
             "otaku"
           ],
-          "title": "「旅行で1万歩ぐらい歩いても疲れない」　ミズノの“通勤でも履けるウォーキングシューズ”が人気　「スーツでも違和感なく履けます」「とても歩きやすい」「在庫有る内に買い占めたい！」",
-          "url": "https://news.yahoo.co.jp/articles/2d3eb3692b0464767c41d90dd2e7794eac5cffec?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/2d3eb3692b0464767c41d90dd2e7794eac5cffec?source=rss",
-          "publishedAt": "2026-11-20T22:00:00.000Z",
-          "publishedLabel": "11/20 22:00",
+          "title": "「買い物袋が要らなくなった」　ワークマンの“1900円ショルダーバッグ”が好評！　「これでもかというくらい収納を設けているのはさすが」「予備に買い増ししたい」",
+          "url": "https://news.yahoo.co.jp/articles/d17ca5ab2f9f7c4988a07db8ff8c3f265434ddb0?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/d17ca5ab2f9f7c4988a07db8ff8c3f265434ddb0?source=rss",
+          "publishedAt": "2026-11-21T02:40:00.000Z",
+          "publishedLabel": "11/21 02:40",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "「旅行で1万歩ぐらい歩いても疲れない」 ミズノの“通勤でも履けるウォーキングシューズ”が人気…",
+      "whatHappened": "「買い物袋が要らなくなった」 ワークマンの“1900円ショルダーバッグ”が好評",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
@@ -807,485 +1164,129 @@
       ],
       "articleThumbnail": {
         "kind": "yahoo-direct-article-og",
-        "ownerTitle": "「旅行で1万歩ぐらい歩いても疲れない」 ミズノの“通勤でも履けるウォーキングシューズ”が人気 「スーツでも違和感なく履けます」「とても歩きやすい」「在庫有る内に買い占めたい!」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/2d3eb3692b0464767c41d90dd2e7794eac5cffec",
-        "articleTitle": "「旅行で1万歩ぐらい歩いても疲れない」 ミズノの“通勤でも履けるウォーキングシューズ”が人気 「スーツでも違和感なく履けます」「とても歩きやすい」「在庫有る内に買い占めたい!」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10177544-it_nlab-000-1-view.jpg?exp=10800",
+        "ownerTitle": "「買い物袋が要らなくなった」 ワークマンの“1900円ショルダーバッグ”が好評! 「これでもかというくらい収納を設けているのはさすが」「予備に買い増ししたい」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/d17ca5ab2f9f7c4988a07db8ff8c3f265434ddb0",
+        "articleTitle": "「買い物袋が要らなくなった」 ワークマンの“1900円ショルダーバッグ”が好評! 「これでもかというくらい収納を設けているのはさすが」「予備に買い増ししたい」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10178175-it_nlab-000-1-view.jpg?exp=10800",
         "width": 2200,
-        "height": 1549
+        "height": 1650
       }
     },
     {
-      "id": "auto-entertainment-輪切りしたリンゴ-パイシートを巻いて-オーブンへ入れると-驚きの完成品に-試してみます-news.yahoo.co.jp/articles/dd2fd92eae3467634a02fe9ac294d864c0e09430",
-      "title": "輪切りしたリンゴ→パイシートを巻いて、オーブンへ入れると……　　驚きの完成品に「試してみます」",
-      "summary": "驚きのアップルパイ作りが、Instagramで話題です。投稿は、記事執筆時点で440万回以上再生され、8万4000件以上の“いいね”を集めています。【画像】驚きの完…",
-      "briefSummary": "驚きのアップルパイ作りが、Instagramで話題です。投稿は、記事執筆時点で440万回以上再生され、8万4000件以上の“いいね”を集めています。【画像】驚きの完成品",
-      "category": "entertainment",
+      "id": "auto-general-根津神社で踊る動画-大使館も謝罪-news.yahoo.co.jp/pickup/6603386",
+      "title": "根津神社で踊る動画 大使館も謝罪",
+      "summary": "日本の神社で披露したダンスに批判が殺到し、駐日大使館が謝罪する事態となった。スロバキアのダンスグループが東京・文京区の根津神社で踊る動画がSNSで拡散され、物議を醸している。騒動を受け、11月20日",
+      "briefSummary": "日本の神社で披露したダンスに批判が殺到し、駐日大使館が謝罪する事態となった。スロバキアのダンスグループが東京・文京区の根津神社で踊る動画がSNSで拡散され、物議を醸している。騒動を受け、11月20日",
+      "category": "general",
       "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
         "general"
       ],
-      "categoryLabel": "エンタメ",
+      "categoryLabel": "その他",
       "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
+        "その他"
       ],
-      "score": 94,
+      "score": 81,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-20T22:00:00.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
+      "publishedAt": "2026-11-21T02:39:57.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
       "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/dd2fd92eae3467634a02fe9ac294d864c0e09430?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "検索需要やトレンド化の兆しが強い話題です。"
-      ],
+      "sourceName": "Yahoo!ニュース / 地域",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603386?source=rss",
+      "hotReasons": [],
       "sourceSignals": [
         {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
+          "sourceId": "yahoo-local",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 地域",
+          "sourceGroup": "local-news",
+          "sourcePriority": 50,
           "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "輪切りしたリンゴ→パイシートを巻いて、オーブンへ入れると……　　驚きの完成品に「試してみます」",
-          "url": "https://news.yahoo.co.jp/articles/dd2fd92eae3467634a02fe9ac294d864c0e09430?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/dd2fd92eae3467634a02fe9ac294d864c0e09430?source=rss",
-          "publishedAt": "2026-11-20T22:00:00.000Z",
-          "publishedLabel": "11/20 22:00",
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "根津神社で踊る動画 大使館も謝罪",
+          "url": "https://news.yahoo.co.jp/pickup/6603386?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603386?source=rss",
+          "publishedAt": "2026-11-21T02:39:57.000Z",
+          "publishedLabel": "11/21 02:39",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "輪切りしたリンゴ→パイシートを巻いて、オーブンへ入れると…… 驚きの完成品に「試してみます」",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ],
+      "whatHappened": "根津神社で踊る動画 大使館も謝罪",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [],
       "articleThumbnail": {
-        "kind": "yahoo-direct-article-og",
-        "ownerTitle": "輪切りしたリンゴ→パイシートを巻いて、オーブンへ入れると......  驚きの完成品に「試してみます」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/dd2fd92eae3467634a02fe9ac294d864c0e09430",
-        "articleTitle": "輪切りしたリンゴ→パイシートを巻いて、オーブンへ入れると......  驚きの完成品に「試してみます」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-10177904-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 1200,
-        "height": 630
+        "kind": "yahoo-main-article-og",
+        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603386",
+        "pickupTitle": "根津神社で踊る動画 大使館も謝罪",
+        "articleUrl": "https://news.yahoo.co.jp/articles/14c895e6845cbfae198fb05d005d8dd1fad96ae4",
+        "articleTitle": "〈神社でダンスして大炎上〉「神社はパフォーマンスの舞台ではない」スロバキアのダンス集団が根津神社で踊り批判殺到…駐日大使館も謝罪する異例の事態に",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-00259325-shueisha-000-7-view.jpg?exp=10800",
+        "width": 822,
+        "height": 822
       }
     },
     {
-      "id": "auto-sports-優勝の中井亜美-ピカチュウのぬいぐるみと-激カワ-ショット-神です-女神降臨-亜美ちゃんしか勝たん-j-cast.com/2026/11/21519291.html",
-      "title": "優勝の中井亜美、ピカチュウのぬいぐるみと「激カワ」ショット　「神です。女神降臨」「亜美ちゃんしか勝たん」",
-      "summary": "ミラノ・コルティナ冬季五輪のフィギュアスケート女子シングルで銅メダルの中井亜美選手が2026年11月16日、フィギュアスケートのグランプリ（GP）シリーズ第4戦スケ…",
-      "briefSummary": "ミラノ・コルティナ冬季五輪のフィギュアスケート女子シングルで銅メダルの中井亜美選手が2026年11月16日、フィギュアスケートのグランプリ（GP）シリーズ第4戦スケートアメリカで優勝。今季世界最高得点で、自己ベストの合計236.81点をマー…",
-      "category": "sports",
+      "id": "auto-general-愛子さま-マーライオンと記念撮影-news.yahoo.co.jp/pickup/6603385",
+      "title": "愛子さま マーライオンと記念撮影",
+      "summary": "シンガポールを訪問中の天皇、皇后両陛下の長女愛子さまは21日午前、マーライオン公園を訪れ、代表的な観光シンボルである「マーライオン像」を背景に記念撮影をした。昨年5月に大阪・関西万博のシンガポール館",
+      "briefSummary": "シンガポールを訪問中の天皇、皇后両陛下の長女愛子さまは21日午前、マーライオン公園を訪れ、代表的な観光シンボルである「マーライオン像」を背景に記念撮影をした。昨年5月に大阪・関西万博のシンガポール館",
+      "category": "general",
       "categories": [
-        "sports",
-        "sns",
-        "net-culture",
-        "world",
         "general"
       ],
-      "categoryLabel": "スポーツ",
+      "categoryLabel": "その他",
       "categoryLabels": [
-        "スポーツ",
-        "SNS",
-        "ネットカルチャー",
-        "国際"
+        "その他"
       ],
-      "score": 89,
+      "score": 91,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/11/news_20261119144438.jpg",
-      "publishedAt": "2026-11-20T22:00:00.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-21T02:35:24.000Z",
+      "capturedAt": "2026-11-21T03:27:43.656Z",
       "time": "1時間以内",
-      "sourceName": "J-CASTニュース",
-      "sourceUrl": "https://www.j-cast.com/2026/11/21519291.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "jcast",
-          "source": "J-CASTニュース",
-          "sourceName": "J-CASTニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 72,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz"
-          ],
-          "title": "優勝の中井亜美、ピカチュウのぬいぐるみと「激カワ」ショット　「神です。女神降臨」「亜美ちゃんしか勝たん」",
-          "url": "https://www.j-cast.com/2026/11/21519291.html",
-          "canonicalUrl": "https://www.j-cast.com/2026/11/21519291.html",
-          "publishedAt": "2026-11-20T22:00:00.000Z",
-          "publishedLabel": "11/20 22:00",
-          "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/11/news_20261119144438.jpg"
-        }
-      ],
-      "whatHappened": "優勝の中井亜美、ピカチュウのぬいぐるみと「激カワ」ショット 「神です。女神降臨」「亜美ちゃん…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
-      "targetAudience": [
-        "ネット文化を追う人",
-        "時事ニュースを追う人"
-      ]
-    },
-    {
-      "id": "auto-games-しまむらで-サク山チョコ次郎-グッズが発売-チョコジローのハッピーバッグやもちもちルームカバーがクセになる可愛さ-inside-games.jp/article/2026/11/21/191350.html",
-      "title": "しまむらで「サク山チョコ次郎」グッズが発売！チョコジローのハッピーバッグやもちもちルームカバーがクセになる可愛さ",
-      "summary": "サク山チョコ次郎のハッピーバッグがしまむらで発売！",
-      "briefSummary": "全国のしまむらにて、 「 サク山チョコ次郎 」 グッズが11月21日より発売されます。同日15時よりしまむらパーク（オンラインストア）でも取り扱われます。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808424.jpg",
-      "publishedAt": "2026-11-20T21:50:02.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
-      "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/21/191350.html",
+      "sourceName": "Yahoo!ニュース / 国内",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603385?source=rss",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
+          "sourceId": "yahoo-domestic",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 国内",
+          "sourceGroup": "important-news",
+          "sourcePriority": 76,
           "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "しまむらで「サク山チョコ次郎」グッズが発売！チョコジローのハッピーバッグやもちもちルームカバーがクセになる可愛さ",
-          "url": "https://www.inside-games.jp/article/2026/11/21/191350.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/21/191350.html",
-          "publishedAt": "2026-11-20T21:50:02.000Z",
-          "publishedLabel": "11/20 21:50",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1808424.jpg"
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "愛子さま マーライオンと記念撮影",
+          "url": "https://news.yahoo.co.jp/pickup/6603385?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603385?source=rss",
+          "publishedAt": "2026-11-21T02:35:24.000Z",
+          "publishedLabel": "11/21 02:35",
+          "thumbnailUrl": null
         }
       ],
-      "whatHappened": "しまむらで「サク山チョコ次郎」グッズが発売",
+      "whatHappened": "愛子さま マーライオンと記念撮影",
       "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-しまむらで-スヌーピー-グッズが発売-耳が付いたレッグウォーマーや裏ボアソックスなど-あったか足元アイテムがずらり-inside-games.jp/article/2026/11/21/191349.html",
-      "title": "しまむらで「スヌーピー」グッズが発売！耳が付いたレッグウォーマーや裏ボアソックスなど、あったか足元アイテムがずらり",
-      "summary": "全国のしまむら店舗にて、「スヌーピー（PEANUTS）」のグッズが2026年11月21日より発売！同日15時よりオンラインストアでも取り扱われます。",
-      "briefSummary": "全国のしまむら店舗にて、「スヌーピー（PEANUTS）」のグッズが2026年11月21日より発売！同日15時よりオンラインストアでも取り扱われます。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 95,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1809279.jpg",
-      "publishedAt": "2026-11-20T21:45:03.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
-      "time": "1時間以内",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/21/191349.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "しまむらで「スヌーピー」グッズが発売！耳が付いたレッグウォーマーや裏ボアソックスなど、あったか足元アイテムがずらり",
-          "url": "https://www.inside-games.jp/article/2026/11/21/191349.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/21/191349.html",
-          "publishedAt": "2026-11-20T21:45:03.000Z",
-          "publishedLabel": "11/20 21:45",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1809279.jpg"
-        }
-      ],
-      "whatHappened": "しまむらで「スヌーピー」グッズが発売",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-エヴァ-1-4スケールで拝む-イイオンナ-約12万円の超高級-マリ-フィギュアが圧倒的存在感-inside-games.jp/article/2026/11/21/191348.html",
-      "title": "「エヴァ」1/4スケールで拝む、“イイオンナ”！約12万円の超高級「マリ」フィギュアが圧倒的存在感",
-      "summary": "ボークスは、レジン製組み立てフィギュアキット「絶対領域」シリーズ最新作として、人気アニメ『ヱヴァンゲリヲン新劇場版』より「真希波・マリ・イラストリアス」を発売します。",
-      "briefSummary": "ボークスは、レジン製組み立てフィギュアキット「絶対領域」シリーズ最新作として、人気アニメ『ヱヴァンゲリヲン新劇場版』より「真希波・マリ・イラストリアス」を発売します。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1791887.webp",
-      "publishedAt": "2026-11-20T21:30:03.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
-      "time": "1時間前",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/21/191348.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "「エヴァ」1/4スケールで拝む、“イイオンナ”！約12万円の超高級「マリ」フィギュアが圧倒的存在感",
-          "url": "https://www.inside-games.jp/article/2026/11/21/191348.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/21/191348.html",
-          "publishedAt": "2026-11-20T21:30:03.000Z",
-          "publishedLabel": "11/20 21:30",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1791887.webp"
-        }
-      ],
-      "whatHappened": "「エヴァ」1/4スケールで拝む、“イイオンナ”",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-サイキック少女が異形と戦う-psycho-dead-2027年4月15日に発売決定-バイオハザード-akira-に影響受けたサバイバルホラー-gamespark.jp/article/2026/11/21/175150.html",
-      "title": "サイキック少女が異形と戦う『PSYCHO DEAD』2027年4月15日に発売決定！『バイオハザード』「AKIRA」に影響受けたサバイバルホラー",
-      "summary": "『バイオハザード』やアニメ「AKIRA」などに影響を受けたSFサバイバルホラーで、約7～10時間のシングルプレイキャンペーンを収録しています。",
-      "briefSummary": "『バイオハザード』やアニメ「AKIRA」などに影響を受けたSFサバイバルホラーで、約7～10時間のシングルプレイキャンペーンを収録しています。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220608.png",
-      "publishedAt": "2026-11-20T21:30:03.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
-      "time": "1時間前",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/11/21/175150.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "pc",
-            "console"
-          ],
-          "title": "サイキック少女が異形と戦う『PSYCHO DEAD』2027年4月15日に発売決定！『バイオハザード』「AKIRA」に影響受けたサバイバルホラー",
-          "url": "http://www.gamespark.jp/article/2026/11/21/175150.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/21/175150.html",
-          "publishedAt": "2026-11-20T21:30:03.000Z",
-          "publishedLabel": "11/20 21:30",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1220608.png"
-        }
-      ],
-      "whatHappened": "サイキック少女が異形と戦う『PSYCHO DEAD』2027年4月15日に発売決定",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
-    },
-    {
-      "id": "auto-games-しまむらに-リラックマ-ホカロン-コラボのあったかアイテムがズラリ-レギンスやソックス各種-レッグウォーマーなど-inside-games.jp/article/2026/11/21/191347.html",
-      "title": "しまむらに「リラックマ」×「ホカロン」コラボのあったかアイテムがズラリ！レギンスやソックス各種、レッグウォーマーなど",
-      "summary": "しまむらで「リラックマ」と「ホカロン」のコラボ商品が11月21日発売！",
-      "briefSummary": "「リラックマ」と「ホカロン」のコラボ商品は11月21日より全国しまむら店舗、同日15時よりしまむらパーク（オンラインストア）にて発売。詳細は しまむら公式X（旧Twitter） をご確認ください。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1809357.jpg",
-      "publishedAt": "2026-11-20T21:25:02.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
-      "time": "1時間前",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/21/191347.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "しまむらに「リラックマ」×「ホカロン」コラボのあったかアイテムがズラリ！レギンスやソックス各種、レッグウォーマーなど",
-          "url": "https://www.inside-games.jp/article/2026/11/21/191347.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/21/191347.html",
-          "publishedAt": "2026-11-20T21:25:02.000Z",
-          "publishedLabel": "11/20 21:25",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1809357.jpg"
-        }
-      ],
-      "whatHappened": "しまむらに「リラックマ」×「ホカロン」コラボのあったかアイテムがズラリ",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
-    },
-    {
-      "id": "auto-games-たまごっち-新作一番くじ-いよいよ発売-12星座をモチーフにした豪華ラインナップ-inside-games.jp/article/2026/11/21/191346.html",
-      "title": "「たまごっち」新作一番くじ、いよいよ発売！12星座をモチーフにした豪華ラインナップ",
-      "summary": "「一番くじ Tamagotchi ～夜空で発見！？12星座とたまごっち～」の全ラインナップが公開！2026年11月21日より発売。",
-      "briefSummary": "「 一番くじ Tamagotchi ～夜空で発見！？12星座とたまごっち～ 」は2026年11月21日よりセブン―イレブン店舗、イトーヨーカドー店舗、ゆめタウン店舗、たまごっち ふぁくとり～！などにて発売予定。価格は1回781円（税込）です。",
-      "category": "games",
-      "categories": [
-        "games",
-        "general"
-      ],
-      "categoryLabel": "ゲーム",
-      "categoryLabels": [
-        "ゲーム"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1805329.jpg",
-      "publishedAt": "2026-11-20T21:20:02.000Z",
-      "capturedAt": "2026-11-20T22:37:39.796Z",
-      "time": "1時間前",
-      "sourceName": "INSIDE",
-      "sourceUrl": "https://www.inside-games.jp/article/2026/11/21/191346.html",
-      "hotReasons": [
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "inside",
-          "source": "INSIDE",
-          "sourceName": "INSIDE",
-          "sourceGroup": "games",
-          "sourcePriority": 90,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "games",
-            "nintendo",
-            "switch"
-          ],
-          "title": "「たまごっち」新作一番くじ、いよいよ発売！12星座をモチーフにした豪華ラインナップ",
-          "url": "https://www.inside-games.jp/article/2026/11/21/191346.html",
-          "canonicalUrl": "https://www.inside-games.jp/article/2026/11/21/191346.html",
-          "publishedAt": "2026-11-20T21:20:02.000Z",
-          "publishedLabel": "11/20 21:20",
-          "thumbnailUrl": "https://www.inside-games.jp/imgs/ogp_f/1805329.jpg"
-        }
-      ],
-      "whatHappened": "「たまごっち」新作一番くじ、いよいよ発売",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
-      "targetAudience": [
-        "ゲームユーザー"
-      ]
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [],
+      "articleThumbnail": {
+        "kind": "yahoo-main-article-og",
+        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603385",
+        "pickupTitle": "愛子さま マーライオンと記念撮影",
+        "articleUrl": "https://news.yahoo.co.jp/articles/fd55d902bccba7a43097e2064feec8b28f846f38",
+        "articleTitle": "愛子さま、マーライオンと記念撮影　シンガポールでの日程終え帰国へ",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261121-00000048-asahi-000-6-view.jpg?exp=10800",
+        "width": 640,
+        "height": 426
+      }
     }
   ]
 }

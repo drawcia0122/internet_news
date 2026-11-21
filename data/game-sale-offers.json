@@ -1,10 +1,80 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T03:36:01.029Z",
+  "generatedAt": "2026-11-21T11:50:41.274Z",
   "country": "JP",
   "currency": "JPY",
   "status": "ok",
   "items": [
+    {
+      "id": "steam:3010850",
+      "appId": 3010850,
+      "title": "Gears of War: E-Day",
+      "edition": "base-game",
+      "store": "Steam",
+      "platform": "PC",
+      "storeUrl": "https://store.steampowered.com/app/3010850/?cc=jp&l=japanese",
+      "regularPrice": 9800,
+      "salePrice": 6860,
+      "discountPercent": 30,
+      "currency": "JPY",
+      "country": "JP",
+      "checkedAt": "2026-11-21T11:50:41.274Z",
+      "endsAt": "2026-12-02T18:00:00.000Z",
+      "deadlineSource": {
+        "kind": "steam-storebrowse",
+        "url": "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=%7B%22ids%22%3A%5B%7B%22appid%22%3A3010850%7D%5D%2C%22context%22%3A%7B%22language%22%3A%22japanese%22%2C%22country_code%22%3A%22JP%22%7D%2C%22data_request%22%3A%7B%22include_all_purchase_options%22%3Atrue%7D%7D",
+        "storeUrl": "https://store.steampowered.com/app/3010850/?cc=jp&l=japanese",
+        "appId": 3010850,
+        "packageId": 1070943,
+        "discountEndDate": 1796234400,
+        "checkedAt": "2026-11-21T11:50:41.274Z",
+        "regularPrice": 9800,
+        "salePrice": 6860,
+        "discountPercent": 30,
+        "currency": "JPY",
+        "country": "JP",
+        "edition": "base-game"
+      },
+      "freshUntil": "2026-11-21T17:50:41.274Z",
+      "priceValidUntil": "2026-11-22T11:50:41.274Z",
+      "status": "verified",
+      "priceSource": {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3010850&cc=jp&l=japanese",
+        "kind": "steam-appdetails"
+      },
+      "thumbnailUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1794241534",
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/261121l"
+      ],
+      "articles": [
+        {
+          "url": "https://news.denfaminicogamer.jp/news/261121l",
+          "title": "世界の存亡をかけた血みどろTPS『Gears of War: E-Day』がSteamとXboxで30％オフの6860円に。地底から現れた「ローカスト」が人類を襲った最初の日を描く、セールは12月3日まで",
+          "publishedAt": "2026-11-21T06:57:17.000Z",
+          "topicId": "auto-games-世界の存亡をかけた血みどろtps-gears-of-war-e-day-がsteamとxboxで30-オフの6860円に-地底から現れた-ローカスト-が人類を襲-news.denfaminicogamer.jp/news/261121l",
+          "gameTitle": "Steam"
+        }
+      ],
+      "featuredInArticle": true,
+      "followObservations": [
+        {
+          "identity": {
+            "kind": "steam",
+            "appId": 3010850
+          },
+          "kind": "release",
+          "checkedAt": "2026-11-21T11:50:41.274Z",
+          "freshUntil": "2026-11-21T17:50:41.274Z",
+          "date": "2026-10-06",
+          "status": "released",
+          "source": {
+            "kind": "steam-appdetails",
+            "url": "https://store.steampowered.com/api/appdetails?appids=3010850&cc=jp&l=japanese",
+            "verified": true
+          }
+        }
+      ]
+    },
     {
       "id": "steam:2416450",
       "appId": 2416450,
@@ -18,7 +88,7 @@
       "discountPercent": 34,
       "currency": "JPY",
       "country": "JP",
-      "checkedAt": "2026-11-20T22:46:34.181Z",
+      "checkedAt": "2026-11-21T11:50:41.274Z",
       "endsAt": "2026-11-26T18:00:00.000Z",
       "deadlineSource": {
         "kind": "steam-storebrowse",
@@ -27,7 +97,7 @@
         "appId": 2416450,
         "packageId": 869715,
         "discountEndDate": 1795716000,
-        "checkedAt": "2026-11-20T22:46:34.181Z",
+        "checkedAt": "2026-11-21T11:50:41.274Z",
         "regularPrice": 3400,
         "salePrice": 2244,
         "discountPercent": 34,
@@ -35,9 +105,9 @@
         "country": "JP",
         "edition": "base-game"
       },
-      "freshUntil": "2026-11-21T04:46:34.181Z",
-      "priceValidUntil": "2026-11-21T22:46:34.181Z",
-      "status": "cached",
+      "freshUntil": "2026-11-21T17:50:41.274Z",
+      "priceValidUntil": "2026-11-22T11:50:41.274Z",
+      "status": "verified",
       "priceSource": {
         "url": "https://store.steampowered.com/api/appdetails?appids=2416450&cc=jp&l=japanese",
         "kind": "steam-appdetails"
@@ -63,8 +133,8 @@
             "appId": 2416450
           },
           "kind": "release",
-          "checkedAt": "2026-11-20T22:46:34.181Z",
-          "freshUntil": "2026-11-21T04:46:34.181Z",
+          "checkedAt": "2026-11-21T11:50:41.274Z",
+          "freshUntil": "2026-11-21T17:50:41.274Z",
           "date": "2026-04-16",
           "status": "released",
           "source": {
@@ -79,16 +149,28 @@
   "sources": [
     {
       "kind": "article",
+      "url": "https://news.denfaminicogamer.jp/news/261121l",
+      "checkedAt": "2026-11-21T11:50:41.274Z",
+      "status": "ok",
+      "candidates": [
+        {
+          "appId": 3010850,
+          "articleGameTitle": "Steam"
+        }
+      ]
+    },
+    {
+      "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/261121z",
-      "checkedAt": "2026-11-21T03:36:01.029Z",
+      "checkedAt": "2026-11-21T11:50:41.274Z",
       "status": "ok",
       "candidates": []
     },
     {
       "kind": "article",
       "url": "https://news.denfaminicogamer.jp/news/2611203a",
-      "checkedAt": "2026-11-20T22:46:34.181Z",
-      "status": "cached",
+      "checkedAt": "2026-11-21T11:50:41.274Z",
+      "status": "ok",
       "candidates": [
         {
           "appId": 2416450,
@@ -98,10 +180,29 @@
     },
     {
       "kind": "steam",
+      "appId": 3010850,
+      "url": "https://store.steampowered.com/api/appdetails?appids=3010850&cc=jp&l=japanese",
+      "checkedAt": "2026-11-21T11:50:41.274Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/261121l"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
+    },
+    {
+      "kind": "steam",
       "appId": 2416450,
       "url": "https://store.steampowered.com/api/appdetails?appids=2416450&cc=jp&l=japanese",
-      "checkedAt": "2026-11-20T22:46:34.181Z",
-      "status": "cached"
+      "checkedAt": "2026-11-21T11:50:41.274Z",
+      "status": "ok",
+      "discounted": true,
+      "articleUrls": [
+        "https://news.denfaminicogamer.jp/news/2611203a"
+      ],
+      "deadlineStatus": "verified",
+      "followUpdateStatus": "none"
     }
   ]
 }

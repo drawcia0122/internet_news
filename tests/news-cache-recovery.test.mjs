@@ -39,7 +39,7 @@ async function startArchive({ cached = [cachedArticle], fetchImpl, requestAnimat
     formatDate: (value) => value, formatTopicDisplayTime: () => '',
     getPrimarySourceLabel: () => '出典', hasVisibleSummary: () => false,
     matchesNewsCategory: () => true, normalizeTopic: (item) => item,
-    pickCardImageUrl: () => null, prepareNewsListItems: (items) => { preparationCalls += 1; return items; },
+    buildCardThumbnail: () => '', prepareNewsListItems: (items) => { preparationCalls += 1; return items; },
     sanitizeArticleSummaryCollection: (items) => items, shortEventFromTitle: () => '',
   };
   const context = vm.createContext({

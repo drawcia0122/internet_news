@@ -16,7 +16,6 @@ const {
   handleCardImageError,
   matchesNewsCategory,
   normalizeTopic,
-  pickCardImageUrl,
   prepareNewsListItems,
   getNewsArticleSource,
   groupNewsStories,
@@ -64,6 +63,7 @@ const rangeDisplayCountCache = new Map();
 const normalizedTopicCache = new Map();
 
 document.addEventListener('error', handleCardImageError, true);
+document.addEventListener('load', handleCardImageError, true);
 
 init();
 
@@ -221,8 +221,7 @@ function waitForNextPaint() {
 }
 
 function renderArchiveCard(item) {
-  const thumbnailUrl = getArchiveThumbnailUrl(item);
-  const thumb = thumbnailUrl ? buildCardThumbnail(item) : '';
+  const thumb = buildCardThumbnail(item, { placeholder: true });
   const hasThumbnail = Boolean(thumb);
   const sourceUrl = getArchiveSourceUrl(item);
   const sourceLabel = getArchiveSourceLabel(item);
@@ -404,10 +403,6 @@ function readTopicCache() {
   } catch {
     return [];
   }
-}
-
-function getArchiveThumbnailUrl(item) {
-  return pickCardImageUrl(item);
 }
 
 function getArchiveSourceUrl(item) {

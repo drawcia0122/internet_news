@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { readFile } from 'node:fs/promises';
 
 globalThis.window = globalThis;
 await import('../shared-topic-utils.js');
@@ -39,7 +40,14 @@ class FakeImage {
   removeAttribute(name) { this.attributes.delete(name); }
   closest(selector) { return selector === '.trend-thumb-wrap' && this.isConnected ? this.wrapper : null; }
   fail() { this.complete = true; this.currentSrc = this.src; this.naturalWidth = 0; handleCardImageError({ target: this }); }
-  succeed() { this.complete = true; this.currentSrc = this.src; this.naturalWidth = 600; }
+  loaded(width, height) {
+    this.complete = true;
+    this.currentSrc = this.src;
+    this.naturalWidth = width;
+    this.naturalHeight = height;
+    handleCardImageError({ target: this, type: 'load' });
+  }
+  succeed() { this.loaded(600, 300); }
 }
 globalThis.HTMLImageElement = FakeImage;
 
@@ -145,4 +153,70 @@ test('home renderer retains lazy loading and safely encodes fallback attributes'
 
 test('legacy underscored favicon thumbnails are rejected in card rendering', () => {
   assert.equal(globalThis.TopicClientUtils.buildCardThumbnail({ thumbnailUrl: 'https://www.youtube.com/s/desktop/2b888666/img/favicon_32x32.png' }), '');
+});
+
+test('a cached already-complete 1×1 load tries the next candidate and retains a real image', () => {
+  const image = new FakeImage();
+  image.loaded(1, 1);
+  assert.deepEqual(image.requested, [first, second]);
+  handleCardImageError({ target: image, type: 'load' }); // earlier load while replacement pending
+  image.complete = true; // stale load whose currentSrc is still the old URL
+  handleCardImageError({ target: image, type: 'load' });
+  assert.deepEqual(image.requested, [first, second]);
+  image.loaded(640, 480);
+  assert.equal(image.wrapper.removed, 0);
+  assert.equal(image.card.classList.contains('has-thumb'), true);
+});
+
+test('1×1 loads and failed replacements share the same bounded fallback and no-image layout', () => {
+  const image = new FakeImage({ fallbacks: [second, third] });
+  image.loaded(1, 1);
+  image.fail();
+  image.loaded(1, 1);
+  assert.deepEqual(image.requested, [first, second, third]);
+  assert.equal(image.wrapper.removed, 1);
+  assert.equal(image.card.classList.contains('trend-card-no-thumb'), true);
+  const unrelated = new FakeImage();
+  unrelated.classList = classes('event-thumb');
+  unrelated.loaded(1, 1);
+  assert.deepEqual(unrelated.requested, [first]);
+});
+
+test('both news entry points capture load and error before appending image markup', async () => {
+  for (const file of ['app.js', 'news.js']) {
+    const s = await readFile(new URL('../' + file, import.meta.url), 'utf8');
+    assert.match(s, /document\.addEventListener\('error', handleCardImageError, true\);/);
+    assert.match(s, /document\.addEventListener\('load', handleCardImageError, true\);/);
+  }
+});
+
+test('opted-in missing photos render an explicitly labelled non-image tile', () => {
+  const item = { categoryLabel: '<スポーツ>', thumbnailUrl: 'https://example.com/site-logo.png' };
+  const html = buildCardThumbnail(item, { placeholder: true });
+  assert.match(html, /trend-thumb-placeholder/);
+  assert.match(html, /&lt;スポーツ&gt;/);
+  assert.match(html, /記事画像なし/);
+  assert.doesNotMatch(html, /<img/);
+  assert.equal(buildCardThumbnail(item), '');
+  assert.match(buildCardThumbnail({}, { placeholder: true }), /<strong>ニュース<\/strong>/);
+  assert.match(buildCardThumbnail({ thumbnailUrl: first, categoryLabel: 'スポーツ' }, { placeholder: true }), /data-thumbnail-placeholder="スポーツ".*<img/);
+});
+
+test('1×1 then exhausted candidates replace the image with its labelled tile', (t) => {
+  const prev = globalThis.document;
+  globalThis.document = {
+    createElement: (tag) => ({ tag, append(...children) { this.children = children; } }),
+  };
+  t.after(() => { globalThis.document = prev; });
+  const image = new FakeImage();
+  image.wrapper.getAttribute = (name) => name === 'data-thumbnail-placeholder' ? '経済' : null;
+  image.wrapper.replaceChildren = (tile) => { image.wrapper.tile = tile; image.isConnected = false; };
+  image.loaded(1, 1);
+  assert.equal(image.wrapper.tile, undefined);
+  image.fail();
+  assert.deepEqual(image.requested, [first, second]);
+  assert.equal(image.wrapper.removed, 0);
+  assert.equal(image.wrapper.tile.className, 'trend-thumb-placeholder');
+  assert.deepEqual(image.wrapper.tile.children.map((el) => el.textContent), ['経済', '記事画像なし']);
+  assert.equal(image.card.classList.contains('has-thumb'), true);
 });

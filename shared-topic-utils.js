@@ -272,14 +272,25 @@
     return uniqueCardImageUrls([primary, ...cardImageValues(owner), ...matchingSignals.flatMap(cardImageValues)]);
   }
 
-  function buildCardThumbnail(item) {
+  const escapeThumbAttribute = (value) => String(value).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+  function thumbnailPlaceholderLabel(item) {
+    return [item?.categoryLabel, item?.categoryLabels?.[0], item?.primaryLink?.label, item?.sourceName]
+      .find((value) => typeof value === 'string' && value.trim())?.trim().slice(0, 36) || 'ニュース';
+  }
+
+  function buildCardThumbnail(item, { placeholder = false } = {}) {
     const candidates = getCardImageCandidates(typeof item === 'string' ? { thumbnailUrl: item } : item);
-    if (!candidates.length) return '';
-    const escapeAttribute = (value) => String(value).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    const fallbacks = candidates.length > 1
-      ? ' data-thumbnail-fallbacks="' + escapeAttribute(JSON.stringify(candidates.slice(1))) + '"'
+    const label = placeholder ? thumbnailPlaceholderLabel(item) : '';
+    if (!candidates.length) return label
+      ? '<div class="trend-thumb-wrap"><span class="trend-thumb-placeholder"><strong>' + escapeThumbAttribute(label)
+        + '</strong><small>記事画像なし</small></span></div>'
       : '';
-    return '<div class="trend-thumb-wrap"><img class="trend-thumb" src="' + escapeAttribute(candidates[0]) + '"' + fallbacks + ' alt="" loading="lazy" referrerpolicy="no-referrer" /></div>';
+    const fallbacks = candidates.length > 1
+      ? ' data-thumbnail-fallbacks="' + escapeThumbAttribute(JSON.stringify(candidates.slice(1))) + '"'
+      : '';
+    const placeholderAttr = label ? ' data-thumbnail-placeholder="' + escapeThumbAttribute(label) + '"' : '';
+    return '<div class="trend-thumb-wrap"' + placeholderAttr + '><img class="trend-thumb" src="' + escapeThumbAttribute(candidates[0]) + '"' + fallbacks + ' alt="" loading="lazy" referrerpolicy="no-referrer" /></div>';
   }
 
   function buildArticleTitleLink(title, sourceUrl) {
@@ -301,8 +312,12 @@
   function handleCardImageError(event) {
     const image = event.target;
     if (!(image instanceof HTMLImageElement) || !image.classList.contains('trend-thumb')) return;
-    // Ignore duplicate/stale errors while the replacement is loading or after success.
-    if (image.isConnected === false || !image.complete || image.naturalWidth > 0) return;
+    // Some expired thumbnails decode successfully as a transparent 1×1 pixel.
+    // Treat that successful load like an error without rejecting valid images.
+    const invalid = event.type === 'load'
+      ? image.naturalWidth === 1 && image.naturalHeight === 1
+      : image.naturalWidth === 0;
+    if (image.isConnected === false || !image.complete || !invalid) return;
     if (image.currentSrc && image.currentSrc !== image.src) return;
     const wrapper = image.closest('.trend-thumb-wrap');
     if (!wrapper) return;
@@ -325,6 +340,18 @@
       return;
     }
     state.finished = true;
+    const label = wrapper.getAttribute?.('data-thumbnail-placeholder');
+    if (label) {
+      const placeholder = document.createElement('span');
+      const category = document.createElement('strong');
+      const notice = document.createElement('small');
+      placeholder.className = 'trend-thumb-placeholder';
+      category.textContent = label;
+      notice.textContent = '記事画像なし';
+      placeholder.append(category, notice);
+      wrapper.replaceChildren(placeholder);
+      return;
+    }
     const card = wrapper.closest('.trend-card, .topic-cluster-card, .priority-card, .must-read-card-shell');
     if (card) {
       card.classList.remove('has-thumb');

@@ -160,7 +160,7 @@ const perfMetrics = {
   fetches: [],
 };
 const renderHelperDeps = {
-  buildCardThumbnail,
+  buildCardThumbnail: (item) => buildCardThumbnail(item, { placeholder: true }),
   buildArticleTitleLink,
   escapeHtml,
   isWeakThumbnailUrl,

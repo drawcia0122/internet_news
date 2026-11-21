@@ -52,7 +52,7 @@ test('live Classic entry points load the proof checker before versioned shared u
   for (const file of ['index.html', 'news.html']) {
     const s = await readFile(new URL('../' + file, import.meta.url), 'utf8');
     assert.match(s, /verified-article-thumbnail\.js\?v=1/);
-    assert.match(s, /shared-topic-utils\.js\?v=22/);
+    assert.match(s, /shared-topic-utils\.js\?v=23/);
     assert.ok(s.indexOf('verified-article-thumbnail.js') < s.indexOf('shared-topic-utils.js'), file);
   }
 });
@@ -64,4 +64,22 @@ test('ordinary home cards call the shared proof-aware builder without a raw imag
   const item = { ...direct, thumbnailUrl: null };
   assert.match(h.buildTrendCardThumb(item, deps), /trend-thumb-wrap/);
   assert.match(h.buildTrendCardThumb(item, deps), /newsatcl-pctr/);
+});
+
+test('three homepage sections and the news archive opt into labelled placeholders', async () => {
+  const app = await readFile(new URL('../app.js', import.meta.url), 'utf8');
+  const news = await readFile(new URL('../news.js', import.meta.url), 'utf8');
+  assert.match(app, /buildCardThumbnail: \(item\) => buildCardThumbnail\(item, \{ placeholder: true \}\)/);
+  assert.match(news, /const thumb = buildCardThumbnail\(item, \{ placeholder: true \}\);/);
+  const homepageDeps = { ...deps, buildCardThumbnail: (item) => u.buildCardThumbnail(item, { placeholder: true }) };
+  const noPhoto = { title: '記事', categoryLabel: '国内', sourceSignals: [] };
+  for (const markup of [
+    h.renderBriefCard(noPhoto, 0, {}, homepageDeps),
+    h.renderTopicClusterCard(noPhoto, { featured: true, scoreMode: 'buzz' }, homepageDeps),
+    h.buildTrendCardThumb(noPhoto, homepageDeps),
+  ]) {
+    assert.match(markup, /trend-thumb-placeholder/);
+    assert.match(markup, /記事画像なし/);
+    assert.doesNotMatch(markup, /<img/);
+  }
 });

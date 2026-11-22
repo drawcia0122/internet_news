@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-22T15:01:29.440Z",
+  "checkedAt": "2026-11-22T21:10:56.669Z",
   "status": "warning",
   "thresholds": {
     "staleHours": 3,
@@ -14,57 +14,57 @@
     {
       "name": "trend",
       "status": "ok",
-      "startedAt": "2026-11-22T14:51:40.298Z",
-      "completedAt": "2026-11-22T14:53:37.717Z"
+      "startedAt": "2026-11-22T21:02:27.541Z",
+      "completedAt": "2026-11-22T21:04:23.897Z"
     },
     {
       "name": "events",
       "status": "ok",
-      "startedAt": "2026-11-22T14:53:37.718Z",
-      "completedAt": "2026-11-22T14:53:41.967Z"
+      "startedAt": "2026-11-22T21:04:23.898Z",
+      "completedAt": "2026-11-22T21:04:28.430Z"
     },
     {
       "name": "adult",
-      "status": "ok",
-      "startedAt": "2026-11-22T14:53:41.987Z",
-      "completedAt": "2026-11-22T14:53:58.965Z"
+      "status": "retained",
+      "startedAt": "2026-11-22T21:04:28.456Z",
+      "completedAt": "2026-11-22T21:04:41.341Z"
     },
     {
       "name": "today-internet",
       "status": "ok",
-      "startedAt": "2026-11-22T14:53:58.978Z",
-      "completedAt": "2026-11-22T14:56:22.089Z"
+      "startedAt": "2026-11-22T21:04:41.356Z",
+      "completedAt": "2026-11-22T21:07:22.644Z"
     },
     {
       "name": "thumbnail-repair",
       "status": "ok",
-      "startedAt": "2026-11-22T14:56:22.227Z",
-      "completedAt": "2026-11-22T15:01:19.882Z"
+      "startedAt": "2026-11-22T21:07:22.798Z",
+      "completedAt": "2026-11-22T21:10:48.522Z"
     },
     {
       "name": "game-sale-offers",
       "status": "ok",
-      "startedAt": "2026-11-22T15:01:19.883Z",
-      "completedAt": "2026-11-22T15:01:26.177Z"
+      "startedAt": "2026-11-22T21:10:48.523Z",
+      "completedAt": "2026-11-22T21:10:54.399Z"
     },
     {
       "name": "matome",
       "status": "ok",
-      "startedAt": "2026-11-22T15:01:26.178Z",
-      "completedAt": "2026-11-22T15:01:29.151Z"
+      "startedAt": "2026-11-22T21:10:54.400Z",
+      "completedAt": "2026-11-22T21:10:56.310Z"
     }
   ],
   "datasets": {
     "trend-topics.json": {
       "file": "trend-topics.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
+      "generatedAt": "2026-11-22T21:02:27.581Z",
       "itemCount": 180,
       "thumbnailCount": 177,
       "thumbnailCoverage": 0.9833333333333333,
       "activeItemCount": 180,
       "activeThumbnailCoverage": 0.9833333333333333,
-      "fetchedCount": 2385,
+      "fetchedCount": 2341,
       "stale": false,
       "issues": [
         {
@@ -79,12 +79,12 @@
     "trend-topics-archive.json": {
       "file": "trend-topics-archive.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
+      "generatedAt": "2026-11-22T21:02:27.581Z",
       "itemCount": 5200,
-      "thumbnailCount": 933,
-      "thumbnailCoverage": 0.17942307692307694,
+      "thumbnailCount": 942,
+      "thumbnailCoverage": 0.18115384615384617,
       "activeItemCount": 5200,
-      "activeThumbnailCoverage": 0.17942307692307694,
+      "activeThumbnailCoverage": 0.18115384615384617,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -93,12 +93,12 @@
     "trend-topics-browse.json": {
       "file": "trend-topics-browse.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
-      "itemCount": 490,
-      "thumbnailCount": 464,
-      "thumbnailCoverage": 0.9469387755102041,
-      "activeItemCount": 490,
-      "activeThumbnailCoverage": 0.9469387755102041,
+      "generatedAt": "2026-11-22T21:02:27.581Z",
+      "itemCount": 492,
+      "thumbnailCount": 453,
+      "thumbnailCoverage": 0.9207317073170732,
+      "activeItemCount": 492,
+      "activeThumbnailCoverage": 0.9207317073170732,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -107,12 +107,12 @@
     "news-archive.json": {
       "file": "news-archive.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
+      "generatedAt": "2026-11-22T21:02:27.581Z",
       "itemCount": 1500,
-      "thumbnailCount": 915,
-      "thumbnailCoverage": 0.61,
+      "thumbnailCount": 937,
+      "thumbnailCoverage": 0.6246666666666667,
       "activeItemCount": 1500,
-      "activeThumbnailCoverage": 0.61,
+      "activeThumbnailCoverage": 0.6246666666666667,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -121,12 +121,12 @@
     "home-news.json": {
       "file": "home-news.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
+      "generatedAt": "2026-11-22T21:02:27.581Z",
       "itemCount": 20,
-      "thumbnailCount": 18,
-      "thumbnailCoverage": 0.9,
+      "thumbnailCount": 19,
+      "thumbnailCoverage": 0.95,
       "activeItemCount": 20,
-      "activeThumbnailCoverage": 0.9,
+      "activeThumbnailCoverage": 0.95,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -135,7 +135,7 @@
     "home-topics.json": {
       "file": "home-topics.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
+      "generatedAt": "2026-11-22T21:02:27.581Z",
       "itemCount": 30,
       "thumbnailCount": 15,
       "thumbnailCoverage": 0.5,
@@ -149,12 +149,12 @@
     "daily-brief.json": {
       "file": "daily-brief.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
+      "generatedAt": "2026-11-22T21:02:27.581Z",
       "itemCount": 10,
-      "thumbnailCount": 8,
-      "thumbnailCoverage": 0.8,
+      "thumbnailCount": 9,
+      "thumbnailCoverage": 0.9,
       "activeItemCount": 10,
-      "activeThumbnailCoverage": 0.8,
+      "activeThumbnailCoverage": 0.9,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -163,7 +163,7 @@
     "adult-news.json": {
       "file": "adult-news.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
+      "generatedAt": "2026-11-22T21:02:27.581Z",
       "itemCount": 0,
       "thumbnailCount": 0,
       "thumbnailCoverage": 0,
@@ -177,63 +177,7 @@
     "home-news-page-10.json": {
       "file": "home-news-page-10.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
-      "itemCount": 100,
-      "thumbnailCount": 77,
-      "thumbnailCoverage": 0.77,
-      "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.77,
-      "fetchedCount": null,
-      "stale": false,
-      "issues": [],
-      "retained": false
-    },
-    "home-news-page-11.json": {
-      "file": "home-news-page-11.json",
-      "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
-      "itemCount": 100,
-      "thumbnailCount": 69,
-      "thumbnailCoverage": 0.69,
-      "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.69,
-      "fetchedCount": null,
-      "stale": false,
-      "issues": [],
-      "retained": false
-    },
-    "home-news-page-12.json": {
-      "file": "home-news-page-12.json",
-      "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
-      "itemCount": 100,
-      "thumbnailCount": 99,
-      "thumbnailCoverage": 0.99,
-      "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.99,
-      "fetchedCount": null,
-      "stale": false,
-      "issues": [],
-      "retained": false
-    },
-    "home-news-page-13.json": {
-      "file": "home-news-page-13.json",
-      "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
-      "itemCount": 100,
-      "thumbnailCount": 97,
-      "thumbnailCoverage": 0.97,
-      "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.97,
-      "fetchedCount": null,
-      "stale": false,
-      "issues": [],
-      "retained": false
-    },
-    "home-news-page-14.json": {
-      "file": "home-news-page-14.json",
-      "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
+      "generatedAt": "2026-11-22T21:02:27.581Z",
       "itemCount": 100,
       "thumbnailCount": 98,
       "thumbnailCoverage": 0.98,
@@ -244,10 +188,150 @@
       "issues": [],
       "retained": false
     },
+    "home-news-page-11.json": {
+      "file": "home-news-page-11.json",
+      "valid": true,
+      "generatedAt": "2026-11-22T21:02:27.581Z",
+      "itemCount": 100,
+      "thumbnailCount": 96,
+      "thumbnailCoverage": 0.96,
+      "activeItemCount": 100,
+      "activeThumbnailCoverage": 0.96,
+      "fetchedCount": null,
+      "stale": false,
+      "issues": [],
+      "retained": false
+    },
+    "home-news-page-12.json": {
+      "file": "home-news-page-12.json",
+      "valid": true,
+      "generatedAt": "2026-11-22T21:02:27.581Z",
+      "itemCount": 100,
+      "thumbnailCount": 96,
+      "thumbnailCoverage": 0.96,
+      "activeItemCount": 100,
+      "activeThumbnailCoverage": 0.96,
+      "fetchedCount": null,
+      "stale": false,
+      "issues": [],
+      "retained": false
+    },
+    "home-news-page-13.json": {
+      "file": "home-news-page-13.json",
+      "valid": true,
+      "generatedAt": "2026-11-22T21:02:27.581Z",
+      "itemCount": 100,
+      "thumbnailCount": 98,
+      "thumbnailCoverage": 0.98,
+      "activeItemCount": 100,
+      "activeThumbnailCoverage": 0.98,
+      "fetchedCount": null,
+      "stale": false,
+      "issues": [],
+      "retained": false
+    },
+    "home-news-page-14.json": {
+      "file": "home-news-page-14.json",
+      "valid": true,
+      "generatedAt": "2026-11-22T21:02:27.581Z",
+      "itemCount": 100,
+      "thumbnailCount": 97,
+      "thumbnailCoverage": 0.97,
+      "activeItemCount": 100,
+      "activeThumbnailCoverage": 0.97,
+      "fetchedCount": null,
+      "stale": false,
+      "issues": [],
+      "retained": false
+    },
     "home-news-page-15.json": {
       "file": "home-news-page-15.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
+      "generatedAt": "2026-11-22T21:02:27.581Z",
+      "itemCount": 100,
+      "thumbnailCount": 70,
+      "thumbnailCoverage": 0.7,
+      "activeItemCount": 100,
+      "activeThumbnailCoverage": 0.7,
+      "fetchedCount": null,
+      "stale": false,
+      "issues": [],
+      "retained": false
+    },
+    "home-news-page-16.json": {
+      "file": "home-news-page-16.json",
+      "valid": true,
+      "generatedAt": "2026-11-22T21:02:27.581Z",
+      "itemCount": 56,
+      "thumbnailCount": 56,
+      "thumbnailCoverage": 1,
+      "activeItemCount": 56,
+      "activeThumbnailCoverage": 1,
+      "fetchedCount": null,
+      "stale": false,
+      "issues": [],
+      "retained": false
+    },
+    "home-news-page-2.json": {
+      "file": "home-news-page-2.json",
+      "valid": true,
+      "generatedAt": "2026-11-22T21:02:27.581Z",
+      "itemCount": 100,
+      "thumbnailCount": 61,
+      "thumbnailCoverage": 0.61,
+      "activeItemCount": 100,
+      "activeThumbnailCoverage": 0.61,
+      "fetchedCount": null,
+      "stale": false,
+      "issues": [],
+      "retained": false
+    },
+    "home-news-page-3.json": {
+      "file": "home-news-page-3.json",
+      "valid": true,
+      "generatedAt": "2026-11-22T21:02:27.581Z",
+      "itemCount": 100,
+      "thumbnailCount": 81,
+      "thumbnailCoverage": 0.81,
+      "activeItemCount": 100,
+      "activeThumbnailCoverage": 0.81,
+      "fetchedCount": null,
+      "stale": false,
+      "issues": [],
+      "retained": false
+    },
+    "home-news-page-4.json": {
+      "file": "home-news-page-4.json",
+      "valid": true,
+      "generatedAt": "2026-11-22T21:02:27.581Z",
+      "itemCount": 100,
+      "thumbnailCount": 69,
+      "thumbnailCoverage": 0.69,
+      "activeItemCount": 100,
+      "activeThumbnailCoverage": 0.69,
+      "fetchedCount": null,
+      "stale": false,
+      "issues": [],
+      "retained": false
+    },
+    "home-news-page-5.json": {
+      "file": "home-news-page-5.json",
+      "valid": true,
+      "generatedAt": "2026-11-22T21:02:27.581Z",
+      "itemCount": 100,
+      "thumbnailCount": 78,
+      "thumbnailCoverage": 0.78,
+      "activeItemCount": 100,
+      "activeThumbnailCoverage": 0.78,
+      "fetchedCount": null,
+      "stale": false,
+      "issues": [],
+      "retained": false
+    },
+    "home-news-page-6.json": {
+      "file": "home-news-page-6.json",
+      "valid": true,
+      "generatedAt": "2026-11-22T21:02:27.581Z",
       "itemCount": 100,
       "thumbnailCount": 68,
       "thumbnailCoverage": 0.68,
@@ -258,99 +342,15 @@
       "issues": [],
       "retained": false
     },
-    "home-news-page-16.json": {
-      "file": "home-news-page-16.json",
-      "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
-      "itemCount": 52,
-      "thumbnailCount": 48,
-      "thumbnailCoverage": 0.9230769230769231,
-      "activeItemCount": 52,
-      "activeThumbnailCoverage": 0.9230769230769231,
-      "fetchedCount": null,
-      "stale": false,
-      "issues": [],
-      "retained": false
-    },
-    "home-news-page-2.json": {
-      "file": "home-news-page-2.json",
-      "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
-      "itemCount": 100,
-      "thumbnailCount": 48,
-      "thumbnailCoverage": 0.48,
-      "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.48,
-      "fetchedCount": null,
-      "stale": false,
-      "issues": [],
-      "retained": false
-    },
-    "home-news-page-3.json": {
-      "file": "home-news-page-3.json",
-      "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
-      "itemCount": 100,
-      "thumbnailCount": 93,
-      "thumbnailCoverage": 0.93,
-      "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.93,
-      "fetchedCount": null,
-      "stale": false,
-      "issues": [],
-      "retained": false
-    },
-    "home-news-page-4.json": {
-      "file": "home-news-page-4.json",
-      "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
-      "itemCount": 100,
-      "thumbnailCount": 65,
-      "thumbnailCoverage": 0.65,
-      "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.65,
-      "fetchedCount": null,
-      "stale": false,
-      "issues": [],
-      "retained": false
-    },
-    "home-news-page-5.json": {
-      "file": "home-news-page-5.json",
-      "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
-      "itemCount": 100,
-      "thumbnailCount": 67,
-      "thumbnailCoverage": 0.67,
-      "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.67,
-      "fetchedCount": null,
-      "stale": false,
-      "issues": [],
-      "retained": false
-    },
-    "home-news-page-6.json": {
-      "file": "home-news-page-6.json",
-      "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
-      "itemCount": 100,
-      "thumbnailCount": 71,
-      "thumbnailCoverage": 0.71,
-      "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.71,
-      "fetchedCount": null,
-      "stale": false,
-      "issues": [],
-      "retained": false
-    },
     "home-news-page-7.json": {
       "file": "home-news-page-7.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
+      "generatedAt": "2026-11-22T21:02:27.581Z",
       "itemCount": 100,
-      "thumbnailCount": 71,
-      "thumbnailCoverage": 0.71,
+      "thumbnailCount": 59,
+      "thumbnailCoverage": 0.59,
       "activeItemCount": 100,
-      "activeThumbnailCoverage": 0.71,
+      "activeThumbnailCoverage": 0.59,
       "fetchedCount": null,
       "stale": false,
       "issues": [],
@@ -359,7 +359,7 @@
     "home-news-page-8.json": {
       "file": "home-news-page-8.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
+      "generatedAt": "2026-11-22T21:02:27.581Z",
       "itemCount": 100,
       "thumbnailCount": 95,
       "thumbnailCoverage": 0.95,
@@ -373,7 +373,7 @@
     "home-news-page-9.json": {
       "file": "home-news-page-9.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:51:40.332Z",
+      "generatedAt": "2026-11-22T21:02:27.581Z",
       "itemCount": 100,
       "thumbnailCount": 99,
       "thumbnailCoverage": 0.99,
@@ -387,7 +387,7 @@
     "events.json": {
       "file": "events.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:53:37.720Z",
+      "generatedAt": "2026-11-22T21:04:23.901Z",
       "itemCount": 64,
       "thumbnailCount": 54,
       "thumbnailCoverage": 0.84375,
@@ -415,9 +415,9 @@
       "activeItemCount": 42,
       "activeThumbnailCoverage": 1,
       "fetchedCount": null,
-      "stale": false,
+      "stale": true,
       "issues": [],
-      "retained": false
+      "retained": true
     },
     "adult-trends-archive.json": {
       "file": "adult-trends-archive.json",
@@ -429,9 +429,9 @@
       "activeItemCount": 4644,
       "activeThumbnailCoverage": 1,
       "fetchedCount": null,
-      "stale": false,
+      "stale": true,
       "issues": [],
-      "retained": false
+      "retained": true
     },
     "adult-features.json": {
       "file": "adult-features.json",
@@ -443,14 +443,21 @@
       "activeItemCount": 3,
       "activeThumbnailCoverage": 1,
       "fetchedCount": null,
-      "stale": false,
-      "issues": [],
-      "retained": false
+      "stale": true,
+      "issues": [
+        {
+          "code": "invalid_timestamp",
+          "file": "adult-features.json",
+          "severity": "error",
+          "message": "adult-features.json: missing, invalid or future generation timestamp"
+        }
+      ],
+      "retained": true
     },
     "today-internet.json": {
       "file": "today-internet.json",
       "valid": true,
-      "generatedAt": "2026-11-22T14:53:59.116Z",
+      "generatedAt": "2026-11-22T21:04:41.551Z",
       "itemCount": 1,
       "thumbnailCount": 1,
       "thumbnailCoverage": 1,
@@ -464,7 +471,7 @@
     "game-sale-offers.json": {
       "file": "game-sale-offers.json",
       "valid": true,
-      "generatedAt": "2026-11-22T15:01:19.891Z",
+      "generatedAt": "2026-11-22T21:10:48.533Z",
       "itemCount": 19,
       "thumbnailCount": 19,
       "thumbnailCoverage": 1,
@@ -478,11 +485,11 @@
     "matome-threads.json": {
       "file": "matome-threads.json",
       "valid": true,
-      "generatedAt": "2026-11-22T15:01:26.180Z",
-      "itemCount": 130,
+      "generatedAt": "2026-11-22T21:10:54.402Z",
+      "itemCount": 129,
       "thumbnailCount": 0,
       "thumbnailCoverage": 0,
-      "activeItemCount": 130,
+      "activeItemCount": 129,
       "activeThumbnailCoverage": 0,
       "fetchedCount": null,
       "stale": false,
@@ -495,7 +502,7 @@
       "code": "thumbnails_restored",
       "file": null,
       "severity": "warning",
-      "message": "trend: restored 311 usable thumbnail(s) for the exact same article"
+      "message": "trend: restored 386 usable thumbnail(s) for the exact same article"
     },
     {
       "code": "source_failures",
@@ -504,16 +511,22 @@
       "message": "trend-topics.json: 6/51 RSS sources failed"
     },
     {
-      "code": "thumbnail_loss",
-      "file": "home-news.json",
-      "severity": "warning",
-      "message": "home-news.json: usable thumbnail coverage fell 90% -> 5%"
-    },
-    {
       "code": "source_failures",
       "file": "events.json",
       "severity": "warning",
       "message": "events.json: 2 source(s) failed; source-level fallback may be in use"
+    },
+    {
+      "code": "invalid_timestamp",
+      "file": "adult-features.json",
+      "severity": "error",
+      "message": "adult-features.json: missing, invalid or future generation timestamp"
+    },
+    {
+      "code": "previous_data_retained",
+      "file": null,
+      "severity": "warning",
+      "message": "adult: previous usable data preserved; original timestamps retained"
     }
   ]
 }

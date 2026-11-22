@@ -1,92 +1,103 @@
 {
-  "generatedAt": "2026-11-22T06:31:34.577Z",
-  "totalCount": 1470,
+  "generatedAt": "2026-11-22T14:51:40.332Z",
+  "totalCount": 1472,
   "categoryCounts": {
-    "all": 1470,
-    "general": 61,
-    "tech": 149,
-    "business": 83,
-    "politics": 63,
-    "entertainment": 658,
-    "anime": 87,
-    "games": 396,
+    "all": 1472,
+    "general": 68,
+    "tech": 152,
+    "business": 72,
+    "politics": 60,
+    "entertainment": 677,
+    "anime": 94,
+    "games": 364,
     "game-features": 10,
-    "anime-features": 2,
-    "manga": 200,
-    "books": 34,
-    "sports": 60,
-    "sns": 652,
-    "net-culture": 705,
-    "matome": 4,
-    "crime": 12,
-    "adult": 14,
-    "world": 95
+    "anime-features": 3,
+    "manga": 208,
+    "books": 37,
+    "sports": 61,
+    "sns": 656,
+    "net-culture": 700,
+    "matome": 3,
+    "crime": 15,
+    "adult": 13,
+    "world": 91
   },
   "hasMore": true,
   "nextPage": 2,
   "items": [
     {
-      "id": "auto-general-首里城正殿-完成祝うテープカット-news.yahoo.co.jp/pickup/6603553",
-      "title": "首里城正殿 完成祝うテープカット",
-      "summary": "2019年に焼失した首里城公園の9施設のうち、正殿の復元完成を祝う国主催の式典が22日午後1時から、首里城の御庭（うなー）で開催された。【写真】首里城の色、小さな疑問から復元 中学生「地域の川、なぜ",
-      "briefSummary": "2019年に焼失した首里城公園の9施設のうち、正殿の復元完成を祝う国主催の式典が22日午後1時から、首里城の御庭（うなー）で開催された。",
-      "category": "general",
+      "id": "auto-sports-ゴルフ佐久間朱莉がsnsに謝罪文-news.yahoo.co.jp/pickup/6603613",
+      "title": "ゴルフ佐久間朱莉がSNSに謝罪文",
+      "summary": "女子ゴルフの佐久間朱莉が２２日、自身のインスタグラムのストーリーズに投稿。「今回のエリエールレディスでの件について」として「まず、私自身のルール確認が不足していたこと、そして競技委員の方への発言につ",
+      "briefSummary": "女子ゴルフの佐久間朱莉が２２日、自身のインスタグラムのストーリーズに投稿。「今回のエリエールレディスでの件について」として「まず、私自身のルール確認が不足していたこと、そして競技委員の方への発言につ",
+      "category": "sports",
       "categories": [
+        "sports",
+        "net-culture",
+        "sns",
         "general"
       ],
-      "categoryLabel": "その他",
+      "categoryLabel": "スポーツ",
       "categoryLabels": [
-        "その他"
+        "スポーツ",
+        "ネットカルチャー",
+        "SNS"
       ],
-      "score": 82,
-      "posts": 1,
-      "metricLabel": "source",
+      "score": 87,
+      "posts": 2,
+      "metricLabel": "sources",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T06:29:31.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
+      "publishedAt": "2026-11-22T14:30:41.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
       "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603553?source=rss",
-      "hotReasons": [],
+      "sourceName": "Yahoo!ニュース / スポーツ",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603613?source=rss",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "直近数時間で関連記事が増えています。"
+      ],
       "sourceSignals": [
         {
-          "sourceId": "yahoo-local",
+          "sourceId": "yahoo-sports",
           "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
+          "sourceName": "Yahoo!ニュース / スポーツ",
+          "sourceGroup": "general-sports",
+          "sourcePriority": 58,
           "official": false,
           "specialist": false,
           "forPersonal": false,
           "sourceTags": [],
-          "title": "首里城正殿 完成祝うテープカット",
-          "url": "https://news.yahoo.co.jp/pickup/6603553?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603553?source=rss",
-          "publishedAt": "2026-11-22T06:29:31.000Z",
-          "publishedLabel": "11/22 06:29",
+          "title": "ゴルフ佐久間朱莉がSNSに謝罪文",
+          "url": "https://news.yahoo.co.jp/pickup/6603613?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603613?source=rss",
+          "publishedAt": "2026-11-22T14:30:41.000Z",
+          "publishedLabel": "11/22 14:30",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "首里城正殿 完成祝うテープカット",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [],
+      "whatHappened": "ゴルフ佐久間朱莉がSNSに謝罪文",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ガジェット好き",
+        "ネット文化を追う人"
+      ],
       "articleThumbnail": {
         "kind": "yahoo-main-article-og",
-        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603553",
-        "pickupTitle": "首里城正殿 完成祝うテープカット",
-        "articleUrl": "https://news.yahoo.co.jp/articles/72479c4f7d887c9d0b3efbd929218f28f75deafb",
-        "articleTitle": "【速報】青空の下テープカット　朱の城、鮮やかに　首里城正殿で国主催の完成式典　未来へつなぐ決意新たに",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-00000010-ryu-000-2-view.jpg?exp=10800",
-        "width": 2200,
-        "height": 1466
+        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603613",
+        "pickupTitle": "ゴルフ佐久間朱莉がSNSに謝罪文",
+        "articleUrl": "https://news.yahoo.co.jp/articles/ae2f07abb4cd7413409fdf1c03c8714ff6498eb3",
+        "articleTitle": "女子ゴルフ　佐久間朱莉がＳＮＳに謝罪文「競技委員の方への発言について、反省しています」　大会初日に３罰打　「今後はどんな状況でも冷静に対応できるよう」と誓う【全文】",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-00000144-dal-000-16-view.jpg?exp=10800",
+        "width": 1200,
+        "height": 866
       }
     },
     {
-      "id": "auto-entertainment-一目惚れでした-ユニクロの-ボアカーディガン-に高評価続出-とても暖かくて一冬ずっと着てました-肌触りが柔らかく見栄えもする-news.yahoo.co.jp/articles/5fb4a094fc00ad0d4c8e71fcf58c075fa5d6aafb",
-      "title": "「一目惚れでした」ユニクロの“ボアカーディガン“に高評価続出！「とても暖かくて一冬ずっと着てました」「肌触りが柔らかく見栄えもする」",
-      "summary": "暖かく柔らかなフリース素材を使用した、ユニクロの「ボアフリースリラックスカーディガン」。幅広いシーンで使いやすく、家庭の洗濯機で洗える優れものです。【画像】ユニクロ…",
-      "briefSummary": "暖かく柔らかなフリース素材を使用した、ユニクロの「ボアフリースリラックスカーディガン」。幅広いシーンで使いやすく、家庭の洗濯機で洗える優れものです。【画像】ユニクロの“ボアカーディガン“",
+      "id": "auto-entertainment-黒いカスや臭いがなくなりました-パナソニックの-洗濯槽クリーナー-に絶賛の声-1度でスッキリ-糸くず取りの中まで綺麗に-news.yahoo.co.jp/articles/09874aec429c9d6fb7939e59eb906693a265e479",
+      "title": "「黒いカスや臭いがなくなりました」パナソニックの“洗濯槽クリーナー”に絶賛の声　「1度でスッキリ」「糸くず取りの中まで綺麗に」",
+      "summary": "洗濯物に付く黒いカスや、洗濯槽の臭いが気になったときにチェックしたいのが、パナソニックの「洗濯槽クリーナー N-W1A」。槽の裏側に付いた黒カビや汚れを分解する、液…",
+      "briefSummary": "洗濯物に付く黒いカスや、洗濯槽の臭いが気になったときにチェックしたいのが、パナソニックの「洗濯槽クリーナー N-W1A」。槽の裏側に付いた黒カビや汚れを分解する、液体タイプの塩素系クリーナーです。【画",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -100,15 +111,15 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 94,
+      "score": 93,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T06:10:00.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
+      "publishedAt": "2026-11-22T13:50:00.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "1時間前",
       "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/5fb4a094fc00ad0d4c8e71fcf58c075fa5d6aafb?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/09874aec429c9d6fb7939e59eb906693a265e479?source=rss",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
@@ -129,15 +140,15 @@
             "buzz",
             "otaku"
           ],
-          "title": "「一目惚れでした」ユニクロの“ボアカーディガン“に高評価続出！「とても暖かくて一冬ずっと着てました」「肌触りが柔らかく見栄えもする」",
-          "url": "https://news.yahoo.co.jp/articles/5fb4a094fc00ad0d4c8e71fcf58c075fa5d6aafb?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/5fb4a094fc00ad0d4c8e71fcf58c075fa5d6aafb?source=rss",
-          "publishedAt": "2026-11-22T06:10:00.000Z",
-          "publishedLabel": "11/22 06:10",
+          "title": "「黒いカスや臭いがなくなりました」パナソニックの“洗濯槽クリーナー”に絶賛の声　「1度でスッキリ」「糸くず取りの中まで綺麗に」",
+          "url": "https://news.yahoo.co.jp/articles/09874aec429c9d6fb7939e59eb906693a265e479?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/09874aec429c9d6fb7939e59eb906693a265e479?source=rss",
+          "publishedAt": "2026-11-22T13:50:00.000Z",
+          "publishedLabel": "11/22 13:50",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "「一目惚れでした」ユニクロの“ボアカーディガン“に高評価続出",
+      "whatHappened": "「黒いカスや臭いがなくなりました」パナソニックの“洗濯槽クリーナー”に絶賛の声 「1度でスッ…",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
@@ -145,19 +156,19 @@
       ],
       "articleThumbnail": {
         "kind": "yahoo-direct-article-og",
-        "ownerTitle": "「一目惚れでした」ユニクロの“ボアカーディガン“に高評価続出!「とても暖かくて一冬ずっと着てました」「肌触りが柔らかく見栄えもする」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/5fb4a094fc00ad0d4c8e71fcf58c075fa5d6aafb",
-        "articleTitle": "「一目惚れでした」ユニクロの“ボアカーディガン“に高評価続出!「とても暖かくて一冬ずっと着てました」「肌触りが柔らかく見栄えもする」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177672-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 2200,
-        "height": 1564
+        "ownerTitle": "「黒いカスや臭いがなくなりました」パナソニックの“洗濯槽クリーナー”に絶賛の声 「1度でスッキリ」「糸くず取りの中まで綺麗に」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/09874aec429c9d6fb7939e59eb906693a265e479",
+        "articleTitle": "「黒いカスや臭いがなくなりました」パナソニックの“洗濯槽クリーナー”に絶賛の声 「1度でスッキリ」「糸くず取りの中まで綺麗に」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177957-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 1200,
+        "height": 900
       }
     },
     {
-      "id": "auto-entertainment-ザケル-一番くじに-金色のガッシュ-が登場-清麿やキャンチョメをフィギュア化-ガッシュからの手紙もある-animeanime.jp/article/2026/11/22/105006.html",
-      "title": "ザケル！  一番くじに「金色のガッシュ！！」が登場♪  清麿やキャンチョメをフィギュア化！ガッシュからの手紙もある!?",
-      "summary": "25周年を迎えるマンガ『金色のガッシュ！！』がハズレなしのキャラクターくじ「一番くじ」に登場だ。ガッシュ・ベルや高嶺清麿のフィギュア、ガッシュからの手紙など豪華賞品に注目！",
-      "briefSummary": "東映アニメーションの制作により、2003年4月から2006年3月にかけて、『金色のガッシュベル！！』のタイトルでTVアニメ化された、映画化やゲーム化も果たしている。マンガは2022年3月より続編『金色のガッシュ！！2』の配信が行われている。",
+      "id": "auto-entertainment-vivant-ドラム編で-マルフォイ過ぎる-キャラが話題に-mantan-web.jp/article/20261122dog00m200041000a.html",
+      "title": "VIVANT：ドラム編で「マルフォイ過ぎる」キャラが話題に",
+      "summary": "俳優の堺雅人さん主演のTBS系日曜劇場「VIVANT（ヴィヴァン）」に登場するドラム（富栄ドラムさん）の過去を描いた「VIVANT ―THE ORIGIN STORY―」ドラム編…",
+      "briefSummary": "俳優の堺雅人さん主演のTBS系日曜劇場「VIVANT（ヴィヴァン）」に登場するドラム（富栄ドラムさん）の過去を描いた「VIVANT ―THE ORIGIN STORY―」ドラム編…",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -169,113 +180,310 @@
         "エンタメ",
         "漫画"
       ],
-      "score": 97,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/958808.webp",
-      "publishedAt": "2026-11-22T06:00:03.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
-      "sourceName": "アニメ！アニメ！",
-      "sourceUrl": "https://animeanime.jp/article/2026/11/22/105006.html",
+      "score": 93,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-22T13:49:23.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "1時間前",
+      "sourceName": "MANTANWEB",
+      "sourceUrl": "https://mantan-web.jp/article/20261122dog00m200041000a.html",
       "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "直近数時間で関連記事が増えています。"
+        "検索需要やトレンド化の兆しが強い話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "animeanime",
-          "source": "アニメ！アニメ！",
-          "sourceName": "アニメ！アニメ！",
+          "sourceId": "mantanweb",
+          "source": "MANTANWEB",
+          "sourceName": "MANTANWEB",
           "sourceGroup": "anime",
-          "sourcePriority": 92,
+          "sourcePriority": 84,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
             "anime",
             "manga",
-            "voice-actor",
-            "movie"
+            "entertainment"
           ],
-          "title": "ザケル！  一番くじに「金色のガッシュ！！」が登場♪  清麿やキャンチョメをフィギュア化！ガッシュからの手紙もある!?",
-          "url": "https://animeanime.jp/article/2026/11/22/105006.html",
-          "canonicalUrl": "https://animeanime.jp/article/2026/11/22/105006.html",
-          "publishedAt": "2026-11-22T06:00:03.000Z",
-          "publishedLabel": "11/22 06:00",
-          "thumbnailUrl": "https://animeanime.jp/imgs/ogp_f/958808.webp"
+          "title": "VIVANT：ドラム編で「マルフォイ過ぎる」キャラが話題に",
+          "url": "https://mantan-web.jp/article/20261122dog00m200041000a.html",
+          "canonicalUrl": "https://mantan-web.jp/article/20261122dog00m200041000a.html",
+          "publishedAt": "2026-11-22T13:49:23.000Z",
+          "publishedLabel": "11/22 13:49",
+          "thumbnailUrl": null
         }
       ],
-      "whatHappened": "ザケル",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "whatHappened": "VIVANT：ドラム編で「マルフォイ過ぎる」キャラが話題に",
+      "whyHot": "検索需要やトレンド化の兆しが強い話題です。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": [
-        "ガジェット好き",
         "漫画・アニメ好き"
       ]
     },
     {
-      "id": "auto-games-スライムになって美少女を-捕食-するローグライトrpg-スキルイーター-が面白そう-ひたすら食べて強くなるスキル強奪系ゲーム-今週のインディー3選-gamespark.jp/article/2026/11/22/175178.html",
-      "title": "スライムになって美少女を“捕食”するローグライトRPG『スキルイーター』が面白そう。ひたすら食べて強くなるスキル強奪系ゲーム【今週のインディー3選】",
-      "summary": "Game*Spark編集部がオススメする11月第2週の特選インディーゲームをお届け！",
-      "briefSummary": "今週は、広大な土地を開拓し、村と村を繋げて発展させていく領地づくりシム『 カウンティ・オブ・フォーチュン 』、スライムになって女の子を捕食するスキル強奪ローグライト『 スキルイーター 』、等身大美少女フィギュアを並べて博物館を作る整理整頓シム『 Waifu Curator 』の3本です。",
-      "category": "games",
+      "id": "auto-business-アンソロピックipo巡り銀行に制約-news.yahoo.co.jp/pickup/6603609",
+      "title": "アンソロピックIPO巡り銀行に制約",
+      "summary": "Echo Wang Milana Vinn［ニューヨーク ２２日 ロイター］ - 過去最大規模となった米人工知能（ＡＩ）企業アンソロピックの新規株式公開（ＩＰＯ）。引き受け銀行は巨額の報酬を得たが、",
+      "briefSummary": "Echo Wang Milana Vinn［ニューヨーク ２２日 ロイター］ - 過去最大規模となった米人工知能（ＡＩ）企業アンソロピックの新規株式公開（ＩＰＯ）。引き受け銀行は巨額の報酬を得たが、",
+      "category": "business",
       "categories": [
-        "games",
+        "business",
         "general"
       ],
-      "categoryLabel": "ゲーム",
+      "categoryLabel": "経済",
       "categoryLabels": [
-        "ゲーム"
+        "経済"
       ],
-      "score": 95,
+      "score": 91,
       "posts": 1,
       "metricLabel": "source",
-      "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1222050.jpg",
-      "publishedAt": "2026-11-22T06:00:03.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
-      "sourceName": "Game*Spark",
-      "sourceUrl": "http://www.gamespark.jp/article/2026/11/22/175178.html",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-22T13:45:03.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "1時間前",
+      "sourceName": "Yahoo!ニュース / 経済",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603609?source=rss",
       "hotReasons": [
         "専門媒体や公式ソースが優先的に拾っています。"
       ],
       "sourceSignals": [
         {
-          "sourceId": "gamespark",
-          "source": "Game*Spark",
-          "sourceName": "Game*Spark",
-          "sourceGroup": "games",
-          "sourcePriority": 92,
+          "sourceId": "yahoo-business",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / 経済",
+          "sourceGroup": "important-news",
+          "sourcePriority": 78,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "アンソロピックIPO巡り銀行に制約",
+          "url": "https://news.yahoo.co.jp/pickup/6603609?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603609?source=rss",
+          "publishedAt": "2026-11-22T13:45:03.000Z",
+          "publishedLabel": "11/22 13:45",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "アンソロピックIPO巡り銀行に制約",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
+      "importantPoint": "生活や社会の判断材料として優先度が高い話題です。",
+      "targetAudience": [],
+      "articleThumbnail": {
+        "kind": "yahoo-main-article-og",
+        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603609",
+        "pickupTitle": "アンソロピックIPO巡り銀行に制約",
+        "articleUrl": "https://news.yahoo.co.jp/articles/aeac459fb848df70adf860170d51872f4c822b6a",
+        "articleTitle": "アンソロピックＩＰＯ、銀行に異例の制約　競合担当禁止や人数制限",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-00000016-reut-000-1-view.jpg?exp=10800",
+        "width": 2200,
+        "height": 1467
+      }
+    },
+    {
+      "id": "auto-general-田中希実らの失格撤回-大会側説明-news.yahoo.co.jp/pickup/6603607",
+      "title": "田中希実らの失格撤回 大会側説明",
+      "summary": "",
+      "briefSummary": "",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "general"
+      ],
+      "categoryLabel": "スポーツ",
+      "categoryLabels": [
+        "スポーツ",
+        "その他"
+      ],
+      "score": 85,
+      "posts": 2,
+      "metricLabel": "sources",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-22T13:30:32.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "1時間前",
+      "sourceName": "Yahoo!ニュース / スポーツ",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603607?source=rss",
+      "hotReasons": [
+        "複数ソースで同じ話題が確認されています。",
+        "直近数時間で関連記事が増えています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-sports",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / スポーツ",
+          "sourceGroup": "general-sports",
+          "sourcePriority": 58,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "田中希実らの失格撤回 大会側説明",
+          "url": "https://news.yahoo.co.jp/pickup/6603607?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603607?source=rss",
+          "publishedAt": "2026-11-22T13:30:32.000Z",
+          "publishedLabel": "11/22 13:30",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "田中希実らの失格撤回 大会側説明",
+      "whyHot": "複数ソースで同じ話題が確認されています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [
+        "ガジェット好き"
+      ],
+      "articleThumbnail": {
+        "kind": "yahoo-main-article-og",
+        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603607",
+        "pickupTitle": "田中希実らの失格撤回 大会側説明",
+        "articleUrl": "https://news.yahoo.co.jp/articles/f36af5886fcfebea5be6aa4ed1a5784817f63b04",
+        "articleTitle": "【クイーンズ駅伝】まさかのハプニング　田中希実ら一度は失格も取り消し「故意とは認めるには足りない」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-00410757-tospoweb-000-3-view.jpg?exp=10800",
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "id": "auto-sports-4本も買いました-ワークマンの-2500円ゴルフパンツ-が大好評-仕事でも活躍している-軽くて動きやすく-着ていてストレスがない-news.yahoo.co.jp/articles/2133e1ec0a9fddfdd388f22b37b040d654c8b8bd",
+      "title": "「4本も買いました」　ワークマンの“2500円ゴルフパンツ”が大好評　「仕事でも活躍している」「軽くて動きやすく、着ていてストレスがない」",
+      "summary": "ワークマンで販売されている“2500円ゴルフパンツ”が人気を集めています。履き心地が良くて動きやすく、仕事でも使えると好評のようです。【画像】ワークマンの“2500…",
+      "briefSummary": "ワークマンで販売されている“2500円ゴルフパンツ”が人気を集めています。履き心地が良くて動きやすく、仕事でも使えると好評のようです。【画像】ワークマンの“2500円ゴルフパンツ” 今回は、そんな「動",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "スポーツ",
+      "categoryLabels": [
+        "スポーツ",
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 93,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-22T13:30:00.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "1時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/2133e1ec0a9fddfdd388f22b37b040d654c8b8bd?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
           "official": false,
           "specialist": true,
           "forPersonal": true,
           "sourceTags": [
-            "games",
-            "pc",
-            "console"
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
           ],
-          "title": "スライムになって美少女を“捕食”するローグライトRPG『スキルイーター』が面白そう。ひたすら食べて強くなるスキル強奪系ゲーム【今週のインディー3選】",
-          "url": "http://www.gamespark.jp/article/2026/11/22/175178.html",
-          "canonicalUrl": "http://www.gamespark.jp/article/2026/11/22/175178.html",
-          "publishedAt": "2026-11-22T06:00:03.000Z",
-          "publishedLabel": "11/22 06:00",
-          "thumbnailUrl": "https://www.gamespark.jp/imgs/ogp_f/1222050.jpg"
+          "title": "「4本も買いました」　ワークマンの“2500円ゴルフパンツ”が大好評　「仕事でも活躍している」「軽くて動きやすく、着ていてストレスがない」",
+          "url": "https://news.yahoo.co.jp/articles/2133e1ec0a9fddfdd388f22b37b040d654c8b8bd?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/2133e1ec0a9fddfdd388f22b37b040d654c8b8bd?source=rss",
+          "publishedAt": "2026-11-22T13:30:00.000Z",
+          "publishedLabel": "11/22 13:30",
+          "thumbnailUrl": null
         }
       ],
-      "whatHappened": "スライムになって美少女を“捕食”するローグライトRPG『スキルイーター』が面白そう",
-      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
-      "importantPoint": "購入、予約、抽選、プレイ予定の判断に影響しやすい話題です。",
+      "whatHappened": "「4本も買いました」 ワークマンの“2500円ゴルフパンツ”が大好評 「仕事でも活躍している…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
-        "ゲームユーザー",
-        "ガジェット好き"
-      ]
+        "ネット文化を追う人"
+      ],
+      "articleThumbnail": {
+        "kind": "yahoo-direct-article-og",
+        "ownerTitle": "「4本も買いました」 ワークマンの“2500円ゴルフパンツ”が大好評 「仕事でも活躍している」「軽くて動きやすく、着ていてストレスがない」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/2133e1ec0a9fddfdd388f22b37b040d654c8b8bd",
+        "articleTitle": "「4本も買いました」 ワークマンの“2500円ゴルフパンツ”が大好評 「仕事でも活躍している」「軽くて動きやすく、着ていてストレスがない」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177723-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 2200,
+        "height": 1479
+      }
     },
     {
-      "id": "auto-entertainment-財布はこれでいい-ダイソーの-上品ミニミニケース-が財布代わりにぴったり-どこで買ったか聞かれた-薄マチでかさばらない-使用レビュー-news.yahoo.co.jp/articles/57aee6759259e265331378e300d7884f68fa2841",
-      "title": "「財布はこれでいい」　ダイソーの“上品ミニミニケース”が財布代わりにぴったり！　「どこで買ったか聞かれた」「薄マチでかさばらない」【使用レビュー】",
-      "summary": "キャッシュレス化が進み、コンパクトな財布を選ぶ人も増えています。100円ショップでも財布代わりに使えるアイテムがたびたび話題に。今回はダイソーで見つけた“上品ミニミ…",
-      "briefSummary": "キャッシュレス化が進み、コンパクトな財布を選ぶ人も増えています。100円ショップでも財布代わりに使えるアイテムがたびたび話題に。今回はダイソーで見つけた“上品ミニミニケース”を財布として使ってみた感想",
+      "id": "auto-entertainment-ジュノンボーイgpの高3-12kg減量-news.yahoo.co.jp/pickup/6603605",
+      "title": "ジュノンボーイGPの高3 12kg減量",
+      "summary": "中3で単身上京して芸能界を目指す 月刊誌『JUNON』主催のボーイズオーディション『第39回ジュノン・スーパーボーイ・コンテスト』最終選考会が22日、都内で行われ、グランプリを獲得した兵庫県出身（神",
+      "briefSummary": "中3で単身上京して芸能界を目指す 月刊誌『JUNON』主催のボーイズオーディション『第39回ジュノン・スーパーボーイ・コンテスト』最終選考会が22日、都内で行われ、グランプリを獲得した兵庫県出身（神",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "その他"
+      ],
+      "score": 86,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-22T13:25:15.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "1時間前",
+      "sourceName": "Yahoo!ニュース / エンタメ",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603605?source=rss",
+      "hotReasons": [],
+      "sourceSignals": [
+        {
+          "sourceId": "yahoo-entertainment",
+          "source": "Yahoo!ニュース",
+          "sourceName": "Yahoo!ニュース / エンタメ",
+          "sourceGroup": "general-entertainment",
+          "sourcePriority": 66,
+          "official": false,
+          "specialist": false,
+          "forPersonal": false,
+          "sourceTags": [],
+          "title": "ジュノンボーイGPの高3 12kg減量",
+          "url": "https://news.yahoo.co.jp/pickup/6603605?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603605?source=rss",
+          "publishedAt": "2026-11-22T13:25:15.000Z",
+          "publishedLabel": "11/22 13:25",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "ジュノンボーイGPの高3 12kg減量",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": [],
+      "articleThumbnail": {
+        "kind": "yahoo-main-article-og",
+        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603605",
+        "pickupTitle": "ジュノンボーイGPの高3 12kg減量",
+        "articleUrl": "https://news.yahoo.co.jp/articles/a9997b9eb6074d64c1d7b08780bfc6a30e5ad0a8",
+        "articleTitle": "『ジュノンボーイ』GPは兵庫出身の高校3年生・野田一希さん　12kg減量して挑戦…憧れの俳優は仲野太賀",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-01103088-encount-000-4-view.jpg?exp=10800",
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "id": "auto-entertainment-エコバッグやめました-モンベルの-薄型49グラムバッグ-が大好評-丸ごとのキャベツやスイカも余裕で入る-凄まじい強度とコンパクトさ-news.yahoo.co.jp/articles/523a64c542f38dc6cf4984416b49fd45f9508d45",
+      "title": "「エコバッグやめました」　モンベルの“薄型49グラムバッグ”が大好評　「丸ごとのキャベツやスイカも余裕で入る」「凄まじい強度とコンパクトさ」",
+      "summary": "mont-bell（モンベル）の“49グラムバッグ”が、非常に軽量で薄型ながら荷物がたくさん入り、旅行や買い物などで活躍すると人気を集めています。たたむと手のひらサ…",
+      "briefSummary": "mont-bell（モンベル）の“49グラムバッグ”が、非常に軽量で薄型ながら荷物がたくさん入り、旅行や買い物などで活躍すると人気を集めています。たたむと手のひらサイズになるほどコンパクトなのも大きな",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -289,15 +497,230 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 94,
+      "score": 93,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T06:00:00.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
+      "publishedAt": "2026-11-22T13:20:00.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "1時間前",
       "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/57aee6759259e265331378e300d7884f68fa2841?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/523a64c542f38dc6cf4984416b49fd45f9508d45?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "「エコバッグやめました」　モンベルの“薄型49グラムバッグ”が大好評　「丸ごとのキャベツやスイカも余裕で入る」「凄まじい強度とコンパクトさ」",
+          "url": "https://news.yahoo.co.jp/articles/523a64c542f38dc6cf4984416b49fd45f9508d45?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/523a64c542f38dc6cf4984416b49fd45f9508d45?source=rss",
+          "publishedAt": "2026-11-22T13:20:00.000Z",
+          "publishedLabel": "11/22 13:20",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「エコバッグやめました」 モンベルの“薄型49グラムバッグ”が大好評 「丸ごとのキャベツやス…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ],
+      "articleThumbnail": {
+        "kind": "yahoo-direct-article-og",
+        "ownerTitle": "「エコバッグやめました」 モンベルの“薄型49グラムバッグ”が大好評 「丸ごとのキャベツやスイカも余裕で入る」「凄まじい強度とコンパクトさ」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/523a64c542f38dc6cf4984416b49fd45f9508d45",
+        "articleTitle": "「エコバッグやめました」 モンベルの“薄型49グラムバッグ”が大好評 「丸ごとのキャベツやスイカも余裕で入る」「凄まじい強度とコンパクトさ」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177560-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 2200,
+        "height": 1650
+      }
+    },
+    {
+      "id": "auto-tech-ヒートテックやら色-試してゴール-mont-bell-モンベル-の-保温インナー-が大好評-仕事着にプライベートに4着目です-蒸れ感なく暖かい-news.yahoo.co.jp/articles/8bd3fcc11d7ba6529fa40748166117c8f46de431",
+      "title": "「ヒートテックやら色々試してゴール」　mont-bell（モンベル）の“保温インナー”が大好評　「仕事着にプライベートに4着目です」「蒸れ感なく暖かい」",
+      "summary": "mont-bell（モンベル）から販売されている「ジオライン M.W.ラウンドネックシャツ」が、保温性と吸水拡散性を備えており、冬の寒さ対策やアクティビティ時の汗対…",
+      "briefSummary": "mont-bell（モンベル）から販売されている「ジオライン M.W.ラウンドネックシャツ」が、保温性と吸水拡散性を備えており、冬の寒さ対策やアクティビティ時の汗対策にもなると高評価を集めています。【",
+      "category": "tech",
+      "categories": [
+        "tech",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "テック",
+      "categoryLabels": [
+        "テック",
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 92,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-22T13:10:00.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "1時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/8bd3fcc11d7ba6529fa40748166117c8f46de431?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "「ヒートテックやら色々試してゴール」　mont-bell（モンベル）の“保温インナー”が大好評　「仕事着にプライベートに4着目です」「蒸れ感なく暖かい」",
+          "url": "https://news.yahoo.co.jp/articles/8bd3fcc11d7ba6529fa40748166117c8f46de431?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/8bd3fcc11d7ba6529fa40748166117c8f46de431?source=rss",
+          "publishedAt": "2026-11-22T13:10:00.000Z",
+          "publishedLabel": "11/22 13:10",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「ヒートテックやら色々試してゴール」 mont-bell（モンベル）の“保温インナー”が大好…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ],
+      "articleThumbnail": {
+        "kind": "yahoo-direct-article-og",
+        "ownerTitle": "「ヒートテックやら色々試してゴール」 mont-bell(モンベル)の“保温インナー”が大好評 「仕事着にプライベートに4着目です」「蒸れ感なく暖かい」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/8bd3fcc11d7ba6529fa40748166117c8f46de431",
+        "articleTitle": "「ヒートテックやら色々試してゴール」 mont-bell(モンベル)の“保温インナー”が大好評 「仕事着にプライベートに4着目です」「蒸れ感なく暖かい」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177684-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 2048,
+        "height": 1536
+      }
+    },
+    {
+      "id": "auto-entertainment-ダイソーの工作ボードにハギレを貼る-予想を超える完成品に-とっても素敵-私でも出来るかも-news.yahoo.co.jp/articles/42b62d1d16ec1c60f355aa1ef273a9b1cafb2b68",
+      "title": "ダイソーの工作ボードにハギレを貼る→予想を超える完成品に「とっても素敵」「私でも出来るかも」",
+      "summary": "ミシン不要で簡単！ ダイソーのアイテムを使った、インテリアアイテムの作り方がInstagramに投稿されました。捨てられないハギレの活用法が反響を呼び、動画は記事執…",
+      "briefSummary": "ミシン不要で簡単！ ダイソーのアイテムを使った、インテリアアイテムの作り方がInstagramに投稿されました。捨てられないハギレの活用法が反響を呼び、動画は記事執筆時点で7万回以上再生されています。",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 92,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-22T13:10:00.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "1時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/42b62d1d16ec1c60f355aa1ef273a9b1cafb2b68?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "ダイソーの工作ボードにハギレを貼る→予想を超える完成品に「とっても素敵」「私でも出来るかも」",
+          "url": "https://news.yahoo.co.jp/articles/42b62d1d16ec1c60f355aa1ef273a9b1cafb2b68?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/42b62d1d16ec1c60f355aa1ef273a9b1cafb2b68?source=rss",
+          "publishedAt": "2026-11-22T13:10:00.000Z",
+          "publishedLabel": "11/22 13:10",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "ダイソーの工作ボードにハギレを貼る→予想を超える完成品に「とっても素敵」「私でも出来るかも」",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ],
+      "articleThumbnail": {
+        "kind": "yahoo-direct-article-og",
+        "ownerTitle": "ダイソーの工作ボードにハギレを貼る→予想を超える完成品に「とっても素敵」「私でも出来るかも」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/42b62d1d16ec1c60f355aa1ef273a9b1cafb2b68",
+        "articleTitle": "ダイソーの工作ボードにハギレを貼る→予想を超える完成品に「とっても素敵」「私でも出来るかも」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177629-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 1200,
+        "height": 1230
+      }
+    },
+    {
+      "id": "auto-sns-山奥に住む人が-配達員用-に差し入れしたら-まさかの方法-でお礼-ほっこりする-こういうのいいね-と反響-news.yahoo.co.jp/articles/2937eeda669be466d1a14c22abe7afac989dcdb3",
+      "title": "山奥に住む人が“配達員用”に差し入れしたら…… “まさかの方法”でお礼「ほっこりする」「こういうのいいね」と反響",
+      "summary": "配達員さんとの心温まるやりとりが、X（Twitter）で「ほっこりする」「こういうのいいね」などと注目を集めています。投稿は記事執筆時点で177万回以上表示され、5…",
+      "briefSummary": "配達員さんとの心温まるやりとりが、X（Twitter）で「ほっこりする」「こういうのいいね」などと注目を集めています。投稿は記事執筆時点で177万回以上表示され、5800件を超える“いいね！”を集める",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "SNS",
+      "categoryLabels": [
+        "SNS",
+        "エンタメ",
+        "ネットカルチャー"
+      ],
+      "score": 92,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-22T13:05:00.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "1時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/2937eeda669be466d1a14c22abe7afac989dcdb3?source=rss",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "検索需要やトレンド化の兆しが強い話題です。"
@@ -318,15 +741,15 @@
             "buzz",
             "otaku"
           ],
-          "title": "「財布はこれでいい」　ダイソーの“上品ミニミニケース”が財布代わりにぴったり！　「どこで買ったか聞かれた」「薄マチでかさばらない」【使用レビュー】",
-          "url": "https://news.yahoo.co.jp/articles/57aee6759259e265331378e300d7884f68fa2841?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/57aee6759259e265331378e300d7884f68fa2841?source=rss",
-          "publishedAt": "2026-11-22T06:00:00.000Z",
-          "publishedLabel": "11/22 06:00",
+          "title": "山奥に住む人が“配達員用”に差し入れしたら…… “まさかの方法”でお礼「ほっこりする」「こういうのいいね」と反響",
+          "url": "https://news.yahoo.co.jp/articles/2937eeda669be466d1a14c22abe7afac989dcdb3?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/2937eeda669be466d1a14c22abe7afac989dcdb3?source=rss",
+          "publishedAt": "2026-11-22T13:05:00.000Z",
+          "publishedLabel": "11/22 13:05",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "「財布はこれでいい」 ダイソーの“上品ミニミニケース”が財布代わりにぴったり",
+      "whatHappened": "山奥に住む人が“配達員用”に差し入れしたら…… “まさかの方法”でお礼「ほっこりする」「こう…",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
@@ -334,19 +757,19 @@
       ],
       "articleThumbnail": {
         "kind": "yahoo-direct-article-og",
-        "ownerTitle": "「財布はこれでいい」 ダイソーの“上品ミニミニケース”が財布代わりにぴったり! 「どこで買ったか聞かれた」「薄マチでかさばらない」【使用レビュー】",
-        "articleUrl": "https://news.yahoo.co.jp/articles/57aee6759259e265331378e300d7884f68fa2841",
-        "articleTitle": "「財布はこれでいい」 ダイソーの“上品ミニミニケース”が財布代わりにぴったり! 「どこで買ったか聞かれた」「薄マチでかさばらない」【使用レビュー】",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10178423-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 2000,
-        "height": 1333
+        "ownerTitle": "山奥に住む人が“配達員用”に差し入れしたら...... “まさかの方法”でお礼「ほっこりする」「こういうのいいね」と反響",
+        "articleUrl": "https://news.yahoo.co.jp/articles/2937eeda669be466d1a14c22abe7afac989dcdb3",
+        "articleTitle": "山奥に住む人が“配達員用”に差し入れしたら...... “まさかの方法”でお礼「ほっこりする」「こういうのいいね」と反響",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10178401-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 1159,
+        "height": 616
       }
     },
     {
-      "id": "auto-entertainment-土屋太鳳の姉・炎伽-超ミニスカ-ヘソ出しユニ姿でチアリーディング-笑顔が爽やか-綺麗すぎ-j-cast.com/2026/11/22519275.html",
-      "title": "土屋太鳳の姉・炎伽、超ミニスカ＆ヘソ出しユニ姿でチアリーディング　「笑顔が爽やか」「綺麗すぎ」",
-      "summary": "俳優・土屋太鳳さんの姉で、「2019ミス・ジャパン」グランプリに輝いた土屋炎伽（ほのか）さんが2026年11月14日、自身のインスタグラムを更新。ダンスパフォーマン…",
-      "briefSummary": "俳優・土屋太鳳さんの姉で、「2019ミス・ジャパン」グランプリに輝いた土屋炎伽（ほのか）さんが2026年11月14日、自身のインスタグラムを更新。ダンスパフォーマンスを披露した。 続きは「J-CASTニュース」へ",
+      "id": "auto-entertainment-探し回ってたどり着きました-天馬のコンテナ-が大人気-床下収納に最高-500mlペットボトルが20本入ります-車内になじむ-想像以上に頑丈-の声-news.yahoo.co.jp/articles/add689ea7c8055c3fa56e4f31dae9f5cdbb3b604",
+      "title": "「探し回ってたどり着きました！」　“天馬のコンテナ”が大人気！　「床下収納に最高」「500mlペットボトルが20本入ります」「車内になじむ」「想像以上に頑丈」の声",
+      "summary": "Amazonのレビューには、「いろいろ探し回ってたどり着きました！」「3つ購入しました」「2個買いました。とても使いやすい」「3段重ねでスッキリ片付けられるので、重宝しています」「天馬のコンテナ大好き」「床下収納には最高です」「今年の買って良かった商品入りです」「これは最高。深さもあり便利」「サイズ…",
+      "briefSummary": "Amazonのレビューには、「いろいろ探し回ってたどり着きました！」「3つ購入しました」「2個買いました。とても使いやすい」「3段重ねでスッキリ片付けられるので、重宝しています」「天馬のコンテナ大好き」「床下収納には最高です」「今年の買って良かった商品入りです」「これは最高。深さもあり便利」「サイズちょうど良く折りたたみもできる」「しっかりしていてお値段以上…",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -360,140 +783,15 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 89,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/11/news_20261118190444.jpg",
-      "publishedAt": "2026-11-22T06:00:00.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
-      "sourceName": "J-CASTニュース",
-      "sourceUrl": "https://www.j-cast.com/2026/11/22519275.html",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "一般ユーザーの関心が集まりやすいテーマです。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "jcast",
-          "source": "J-CASTニュース",
-          "sourceName": "J-CASTニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 72,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz"
-          ],
-          "title": "土屋太鳳の姉・炎伽、超ミニスカ＆ヘソ出しユニ姿でチアリーディング　「笑顔が爽やか」「綺麗すぎ」",
-          "url": "https://www.j-cast.com/2026/11/22519275.html",
-          "canonicalUrl": "https://www.j-cast.com/2026/11/22519275.html",
-          "publishedAt": "2026-11-22T06:00:00.000Z",
-          "publishedLabel": "11/22 06:00",
-          "thumbnailUrl": "https://www.j-cast.com/images/origin/2026/11/news_20261118190444.jpg"
-        }
-      ],
-      "whatHappened": "土屋太鳳の姉・炎伽、超ミニスカ＆ヘソ出しユニ姿でチアリーディング 「笑顔が爽やか」「綺麗すぎ…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ]
-    },
-    {
-      "id": "auto-general-中田翔氏-ob戦で衝撃の1試合2発-news.yahoo.co.jp/pickup/6603549",
-      "title": "中田翔氏 OB戦で衝撃の1試合2発",
-      "summary": "「日本ハムＯＢ戦 ファイターズ・レジェンズゲーム」（２２日、エスコンフィールド） ２００６年チームと２０１６年チームが対戦し、２０１６年チームの４番・中田翔氏が衝撃の２本塁打を放った。",
-      "briefSummary": "「日本ハムＯＢ戦 ファイターズ・レジェンズゲーム」（２２日、エスコンフィールド） ２００６年チームと２０１６年チームが対戦し、２０１６年チームの４番・中田翔氏が衝撃の２本塁打を放った。",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "general"
-      ],
-      "categoryLabel": "スポーツ",
-      "categoryLabels": [
-        "スポーツ",
-        "その他"
-      ],
-      "score": 86,
-      "posts": 2,
-      "metricLabel": "sources",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:57:57.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / スポーツ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603549?source=rss",
-      "hotReasons": [
-        "複数ソースで同じ話題が確認されています。",
-        "直近数時間で関連記事が増えています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-sports",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / スポーツ",
-          "sourceGroup": "general-sports",
-          "sourcePriority": 58,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "中田翔氏 OB戦で衝撃の1試合2発",
-          "url": "https://news.yahoo.co.jp/pickup/6603549?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603549?source=rss",
-          "publishedAt": "2026-11-22T05:57:57.000Z",
-          "publishedLabel": "11/22 05:57",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "中田翔氏 OB戦で衝撃の1試合2発",
-      "whyHot": "複数ソースで同じ話題が確認されています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "ガジェット好き"
-      ],
-      "articleThumbnail": {
-        "kind": "yahoo-main-article-og",
-        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603549",
-        "pickupTitle": "中田翔氏 OB戦で衝撃の1試合2発",
-        "articleUrl": "https://news.yahoo.co.jp/articles/476a46f4bcc3139836cda249568c9756078cfb32",
-        "articleTitle": "衝撃！日本ハムＯＢ戦で中田翔氏が特大弾２発！圧巻パワーにスタンド騒然　ＳＮＳも沸く「現役でいけそう」「えぐい」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-00000086-dal-000-17-view.jpg?exp=10800",
-        "width": 1650,
-        "height": 1661
-      }
-    },
-    {
-      "id": "auto-entertainment-どこのバッグ-と聞かれたのは-ユニクロの三日月ショルダー-この質感でこの軽さはすごい-大人世代でも使いやすい-全色購入-の声も-news.yahoo.co.jp/articles/a5591576fad641de8dd5647867cdf8ce48b67c8c",
-      "title": "「どこのバッグ？」と聞かれたのは“ユニクロの三日月ショルダー”　「この質感でこの軽さはすごい」「大人世代でも使いやすい」「全色購入」の声も",
-      "summary": "ユニクロの「コーテッドコットンショルダーバッグ」は、ほのかな光沢と使うほどに深まる風合いが特徴のショルダーバッグです。表面には特殊なコーティングを施したコットンツイ…",
-      "briefSummary": "ユニクロの「コーテッドコットンショルダーバッグ」は、ほのかな光沢と使うほどに深まる風合いが特徴のショルダーバッグです。表面には特殊なコーティングを施したコットンツイルを採用したUniqlo Uのバッグ",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 94,
+      "score": 92,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:50:00.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
+      "publishedAt": "2026-11-22T13:00:00.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "1時間前",
       "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/a5591576fad641de8dd5647867cdf8ce48b67c8c?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/add689ea7c8055c3fa56e4f31dae9f5cdbb3b604?source=rss",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
@@ -514,15 +812,15 @@
             "buzz",
             "otaku"
           ],
-          "title": "「どこのバッグ？」と聞かれたのは“ユニクロの三日月ショルダー”　「この質感でこの軽さはすごい」「大人世代でも使いやすい」「全色購入」の声も",
-          "url": "https://news.yahoo.co.jp/articles/a5591576fad641de8dd5647867cdf8ce48b67c8c?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/a5591576fad641de8dd5647867cdf8ce48b67c8c?source=rss",
-          "publishedAt": "2026-11-22T05:50:00.000Z",
-          "publishedLabel": "11/22 05:50",
+          "title": "「探し回ってたどり着きました！」　“天馬のコンテナ”が大人気！　「床下収納に最高」「500mlペットボトルが20本入ります」「車内になじむ」「想像以上に頑丈」の声",
+          "url": "https://news.yahoo.co.jp/articles/add689ea7c8055c3fa56e4f31dae9f5cdbb3b604?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/add689ea7c8055c3fa56e4f31dae9f5cdbb3b604?source=rss",
+          "publishedAt": "2026-11-22T13:00:00.000Z",
+          "publishedLabel": "11/22 13:00",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "「どこのバッグ？」と聞かれたのは“ユニクロの三日月ショルダー” 「この質感でこの軽さはすごい…",
+      "whatHappened": "「探し回ってたどり着きました！」 “天馬のコンテナ”が大人気",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
@@ -530,138 +828,22 @@
       ],
       "articleThumbnail": {
         "kind": "yahoo-direct-article-og",
-        "ownerTitle": "「どこのバッグ?」と聞かれたのは“ユニクロの三日月ショルダー” 「この質感でこの軽さはすごい」「大人世代でも使いやすい」「全色購入」の声も",
-        "articleUrl": "https://news.yahoo.co.jp/articles/a5591576fad641de8dd5647867cdf8ce48b67c8c",
-        "articleTitle": "「どこのバッグ?」と聞かれたのは“ユニクロの三日月ショルダー” 「この質感でこの軽さはすごい」「大人世代でも使いやすい」「全色購入」の声も",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177908-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 2200,
-        "height": 1564
+        "ownerTitle": "「探し回ってたどり着きました!」 “天馬のコンテナ”が大人気! 「床下収納に最高」「500mlペットボトルが20本入ります」「車内になじむ」「想像以上に頑丈」の声",
+        "articleUrl": "https://news.yahoo.co.jp/articles/add689ea7c8055c3fa56e4f31dae9f5cdbb3b604",
+        "articleTitle": "「探し回ってたどり着きました!」 “天馬のコンテナ”が大人気! 「床下収納に最高」「500mlペットボトルが20本入ります」「車内になじむ」「想像以上に頑丈」の声",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177543-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 1200,
+        "height": 630
       }
     },
     {
-      "id": "auto-general-原発敷地でガラスの下敷きに-重体-news.yahoo.co.jp/pickup/6603547",
-      "title": "原発敷地でガラスの下敷きに 重体",
-      "summary": "新潟県にある東京電力・柏崎刈羽原発の敷地内で22日作業事故があり、会社員の男性が意識不明の重体となっています。【写真を見る】東京電力・柏崎刈羽原発で作業事故 ガラス十数枚の下敷きになり38歳男性が意",
-      "briefSummary": "新潟県にある東京電力・柏崎刈羽原発の敷地内で22日作業事故があり、会社員の男性が意識不明の重体となっています。【写真を見る】東京電力・柏崎刈羽原発で作業事故 ガラス十数枚の下敷きになり38歳男性が意",
-      "category": "general",
-      "categories": [
-        "general"
-      ],
-      "categoryLabel": "その他",
-      "categoryLabels": [
-        "その他"
-      ],
-      "score": 81,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:46:39.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603547?source=rss",
-      "hotReasons": [],
-      "sourceSignals": [
-        {
-          "sourceId": "yahoo-local",
-          "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
-          "official": false,
-          "specialist": false,
-          "forPersonal": false,
-          "sourceTags": [],
-          "title": "原発敷地でガラスの下敷きに 重体",
-          "url": "https://news.yahoo.co.jp/pickup/6603547?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603547?source=rss",
-          "publishedAt": "2026-11-22T05:46:39.000Z",
-          "publishedLabel": "11/22 05:46",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "原発敷地でガラスの下敷きに 重体",
-      "whyHot": "直近の新しい話題として浮上しています。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [],
-      "articleThumbnail": {
-        "kind": "yahoo-main-article-og",
-        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603547",
-        "pickupTitle": "原発敷地でガラスの下敷きに 重体",
-        "articleUrl": "https://news.yahoo.co.jp/articles/3f6692187129d30de8ae4f73d620e30a2a7fe008",
-        "articleTitle": "東京電力・柏崎刈羽原発で作業事故　ガラス十数枚の下敷きになり38歳男性が意識不明の重体に",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-23104011-ohbsn-000-6-view.jpg?exp=10800",
-        "width": 1440,
-        "height": 810
-      }
-    },
-    {
-      "id": "auto-entertainment-北野瑠華-今年3月結婚-10月第1子出産の元ske48-お母さんの顔してますね-お宮参り写真が話題に-mantan-web.jp/article/20261122dog00m200022000a.html",
-      "title": "北野瑠華：今年3月結婚→10月第1子出産の元SKE48　「お母さんの顔してますね」お宮参り写真が話題に",
+      "id": "auto-entertainment-2カ月温め続けた卵-生まれてきたのは-凄い-驚きの-13匹-に-おメメぱっちり可愛い-どんな風に育っていくのか楽しみ-news.yahoo.co.jp/articles/d7eebf9d2d0e76cea40cc17a39922867a3bfab00",
+      "title": "2カ月温め続けた卵→生まれてきたのは……　「凄い」驚きの“13匹”に「おメメぱっちり可愛い」「どんな風に育っていくのか楽しみ」",
       "summary": "",
       "briefSummary": "",
       "category": "entertainment",
       "categories": [
         "entertainment",
-        "manga",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "漫画"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:45:00.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
-      "sourceName": "MANTANWEB",
-      "sourceUrl": "https://mantan-web.jp/article/20261122dog00m200022000a.html",
-      "hotReasons": [
-        "検索需要やトレンド化の兆しが強い話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "mantanweb",
-          "source": "MANTANWEB",
-          "sourceName": "MANTANWEB",
-          "sourceGroup": "anime",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "anime",
-            "manga",
-            "entertainment"
-          ],
-          "title": "北野瑠華：今年3月結婚→10月第1子出産の元SKE48　「お母さんの顔してますね」お宮参り写真が話題に",
-          "url": "https://mantan-web.jp/article/20261122dog00m200022000a.html",
-          "canonicalUrl": "https://mantan-web.jp/article/20261122dog00m200022000a.html",
-          "publishedAt": "2026-11-22T05:45:00.000Z",
-          "publishedLabel": "11/22 05:45",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "北野瑠華：今年3月結婚→10月第1子出産の元SKE48 「お母さんの顔してますね」お宮参り写…",
-      "whyHot": "検索需要やトレンド化の兆しが強い話題です。",
-      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": [
-        "漫画・アニメ好き"
-      ]
-    },
-    {
-      "id": "auto-entertainment-3枚目になります-ikeaの-499円ブランケット-が好評-何枚あっても困りません-年中使えます-news.yahoo.co.jp/articles/1c6a2429fea7d90963ca6238ee41b8a633c128d2",
-      "title": "「3枚目になります」　IKEAの“499円ブランケット”が好評　「何枚あっても困りません」「年中使えます」",
-      "summary": "IKEAの“VITMOSSA ヴィートモッサ ブランケット”が、手頃な価格で使い勝手がいいと好評です。柔らかな肌ざわりのフリース素材で、120×160センチの大判サ…",
-      "briefSummary": "IKEAの“VITMOSSA ヴィートモッサ ブランケット”が、手頃な価格で使い勝手がいいと好評です。柔らかな肌ざわりのフリース素材で、120×160センチの大判サイズ。ひざ掛けとして使うのはもちろん",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
         "sns",
         "net-culture",
         "general"
@@ -672,15 +854,15 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 94,
+      "score": 92,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:45:00.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
+      "publishedAt": "2026-11-22T13:00:00.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "1時間前",
       "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/1c6a2429fea7d90963ca6238ee41b8a633c128d2?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/d7eebf9d2d0e76cea40cc17a39922867a3bfab00?source=rss",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
@@ -701,15 +883,15 @@
             "buzz",
             "otaku"
           ],
-          "title": "「3枚目になります」　IKEAの“499円ブランケット”が好評　「何枚あっても困りません」「年中使えます」",
-          "url": "https://news.yahoo.co.jp/articles/1c6a2429fea7d90963ca6238ee41b8a633c128d2?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/1c6a2429fea7d90963ca6238ee41b8a633c128d2?source=rss",
-          "publishedAt": "2026-11-22T05:45:00.000Z",
-          "publishedLabel": "11/22 05:45",
+          "title": "2カ月温め続けた卵→生まれてきたのは……　「凄い」驚きの“13匹”に「おメメぱっちり可愛い」「どんな風に育っていくのか楽しみ」",
+          "url": "https://news.yahoo.co.jp/articles/d7eebf9d2d0e76cea40cc17a39922867a3bfab00?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/d7eebf9d2d0e76cea40cc17a39922867a3bfab00?source=rss",
+          "publishedAt": "2026-11-22T13:00:00.000Z",
+          "publishedLabel": "11/22 13:00",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "「3枚目になります」 IKEAの“499円ブランケット”が好評 「何枚あっても困りません」「…",
+      "whatHappened": "2カ月温め続けた卵→生まれてきたのは…… 「凄い」驚きの“13匹”に「おメメぱっちり可愛い」…",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
@@ -717,232 +899,161 @@
       ],
       "articleThumbnail": {
         "kind": "yahoo-direct-article-og",
-        "ownerTitle": "「3枚目になります」 IKEAの“499円ブランケット”が好評 「何枚あっても困りません」「年中使えます」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/1c6a2429fea7d90963ca6238ee41b8a633c128d2",
-        "articleTitle": "「3枚目になります」 IKEAの“499円ブランケット”が好評 「何枚あっても困りません」「年中使えます」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10178388-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 2200,
-        "height": 1647
-      }
-    },
-    {
-      "id": "auto-entertainment-セリアの厚紙に毛糸を通していくと-クリスマスにぴったりな完成品に-かわいい-うちにあるもので作りました-news.yahoo.co.jp/articles/4bb0a7cee0f842f6507bc09415e8822d5c684e2e",
-      "title": "セリアの厚紙に毛糸を通していくと……　クリスマスにぴったりな完成品に「かわいい」「うちにあるもので作りました」",
-      "summary": "100均の厚紙と毛糸を使って、“クリスマスにぴったりなアイテム”を作る様子がInstagramに投稿されました。「かわいい」「素敵です」「うちにあるもので作りました…",
-      "briefSummary": "100均の厚紙と毛糸を使って、“クリスマスにぴったりなアイテム”を作る様子がInstagramに投稿されました。「かわいい」「素敵です」「うちにあるもので作りました」と反響を呼び、動画は記事執筆時点で",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:45:00.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/4bb0a7cee0f842f6507bc09415e8822d5c684e2e?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "セリアの厚紙に毛糸を通していくと……　クリスマスにぴったりな完成品に「かわいい」「うちにあるもので作りました」",
-          "url": "https://news.yahoo.co.jp/articles/4bb0a7cee0f842f6507bc09415e8822d5c684e2e?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/4bb0a7cee0f842f6507bc09415e8822d5c684e2e?source=rss",
-          "publishedAt": "2026-11-22T05:45:00.000Z",
-          "publishedLabel": "11/22 05:45",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "セリアの厚紙に毛糸を通していくと…… クリスマスにぴったりな完成品に「かわいい」「うちにある…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ],
-      "articleThumbnail": {
-        "kind": "yahoo-direct-article-og",
-        "ownerTitle": "セリアの厚紙に毛糸を通していくと...... クリスマスにぴったりな完成品に「かわいい」「うちにあるもので作りました」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/4bb0a7cee0f842f6507bc09415e8822d5c684e2e",
-        "articleTitle": "セリアの厚紙に毛糸を通していくと...... クリスマスにぴったりな完成品に「かわいい」「うちにあるもので作りました」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177755-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 1492,
-        "height": 803
-      }
-    },
-    {
-      "id": "auto-entertainment-長財布も余裕で入ります-スタバの-小さめトートバッグ-が大好評-思っていたよりたくさん入る-バッグの中で水筒が倒れない-news.yahoo.co.jp/articles/016ad893c168bcd58a28cdb1f47445a8ee264f2c",
-      "title": "「長財布も余裕で入ります」スタバの“小さめトートバッグ”が大好評　「思っていたよりたくさん入る」「バッグの中で水筒が倒れない」",
-      "summary": "スターバックスから販売されている“小さめトートバッグ”が、シンプルなデザインで使いやすく、ボトルを立てて収納できるのが便利だと人気を集めています。【画像】スタバの“…",
-      "briefSummary": "スターバックスから販売されている“小さめトートバッグ”が、シンプルなデザインで使いやすく、ボトルを立てて収納できるのが便利だと人気を集めています。【画像】スタバの“小さめトートバッグ” スターバックス",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:40:00.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/016ad893c168bcd58a28cdb1f47445a8ee264f2c?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「長財布も余裕で入ります」スタバの“小さめトートバッグ”が大好評　「思っていたよりたくさん入る」「バッグの中で水筒が倒れない」",
-          "url": "https://news.yahoo.co.jp/articles/016ad893c168bcd58a28cdb1f47445a8ee264f2c?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/016ad893c168bcd58a28cdb1f47445a8ee264f2c?source=rss",
-          "publishedAt": "2026-11-22T05:40:00.000Z",
-          "publishedLabel": "11/22 05:40",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「長財布も余裕で入ります」スタバの“小さめトートバッグ”が大好評 「思っていたよりたくさん入…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ],
-      "articleThumbnail": {
-        "kind": "yahoo-direct-article-og",
-        "ownerTitle": "「長財布も余裕で入ります」スタバの“小さめトートバッグ”が大好評 「思っていたよりたくさん入る」「バッグの中で水筒が倒れない」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/016ad893c168bcd58a28cdb1f47445a8ee264f2c",
-        "articleTitle": "「長財布も余裕で入ります」スタバの“小さめトートバッグ”が大好評 「思っていたよりたくさん入る」「バッグの中で水筒が倒れない」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177956-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 2200,
-        "height": 1826
-      }
-    },
-    {
-      "id": "auto-entertainment-色違いで3本購入-ワークマンの-1900円パンツ-が大人気-あたたかくて履き心地も抜群-仕事でもプライベートでも重宝します-news.yahoo.co.jp/articles/e5f04d2784ea7d3a09aee4ad249f41aeb7f0604f",
-      "title": "「色違いで3本購入」　ワークマンの“1900円パンツ”が大人気　「あたたかくて履き心地も抜群」「仕事でもプライベートでも重宝します」",
-      "summary": "ワークマンから販売されている“1900円パンツ”が、あたたかさとストレッチ性を備えた秋冬向けのボトムスとして人気を集めています。スッキリ見えるシルエットに、実用的な…",
-      "briefSummary": "ワークマンから販売されている“1900円パンツ”が、あたたかさとストレッチ性を備えた秋冬向けのボトムスとして人気を集めています。スッキリ見えるシルエットに、実用的な5ポケットを採用しており、ちょっとし",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 94,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:35:00.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/e5f04d2784ea7d3a09aee4ad249f41aeb7f0604f?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「色違いで3本購入」　ワークマンの“1900円パンツ”が大人気　「あたたかくて履き心地も抜群」「仕事でもプライベートでも重宝します」",
-          "url": "https://news.yahoo.co.jp/articles/e5f04d2784ea7d3a09aee4ad249f41aeb7f0604f?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/e5f04d2784ea7d3a09aee4ad249f41aeb7f0604f?source=rss",
-          "publishedAt": "2026-11-22T05:35:00.000Z",
-          "publishedLabel": "11/22 05:35",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「色違いで3本購入」 ワークマンの“1900円パンツ”が大人気 「あたたかくて履き心地も抜群…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ],
-      "articleThumbnail": {
-        "kind": "yahoo-direct-article-og",
-        "ownerTitle": "「色違いで3本購入」 ワークマンの“1900円パンツ”が大人気 「あたたかくて履き心地も抜群」「仕事でもプライベートでも重宝します」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/e5f04d2784ea7d3a09aee4ad249f41aeb7f0604f",
-        "articleTitle": "「色違いで3本購入」 ワークマンの“1900円パンツ”が大人気 「あたたかくて履き心地も抜群」「仕事でもプライベートでも重宝します」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10178168-it_nlab-000-1-view.jpg?exp=10800",
+        "ownerTitle": "2カ月温め続けた卵→生まれてきたのは...... 「凄い」驚きの“13匹”に「おメメぱっちり可愛い」「どんな風に育っていくのか楽しみ」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/d7eebf9d2d0e76cea40cc17a39922867a3bfab00",
+        "articleTitle": "2カ月温め続けた卵→生まれてきたのは...... 「凄い」驚きの“13匹”に「おメメぱっちり可愛い」「どんな風に育っていくのか楽しみ」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177399-it_nlab-000-1-view.jpg?exp=10800",
         "width": 1200,
-        "height": 900
+        "height": 694
       }
     },
     {
-      "id": "auto-general-12歳男子中学生が行方不明-郡山市-news.yahoo.co.jp/pickup/6603546",
-      "title": "12歳男子中学生が行方不明 郡山市",
-      "summary": "郡山市に住む12歳の男子中学生の行方が20日夜から分からなくなっていて、警察が捜索しています。行方が分からなくなっているのは、郡山市の中学１年の男子生徒（12）です。郡山警察署によりますと、男子生徒",
-      "briefSummary": "郡山市に住む12歳の男子中学生の行方が20日夜から分からなくなっていて、警察が捜索しています。",
+      "id": "auto-entertainment-これがない冬は想像できない-ユニクロの-フリースジャケット-が1990円-ネックウォーマーもいらないです-コスパがかなり高いと思う-news.yahoo.co.jp/articles/f59836a0b2fd0e5613d41e48ef0e95743c3fc2a8",
+      "title": "「これがない冬は想像できない」　ユニクロの“フリースジャケット”が1990円！　「ネックウォーマーもいらないです」「コスパがかなり高いと思う」",
+      "summary": "ユニクロでは、2026年11月20日から感謝祭がスタート。冬に活躍するさまざまなアイテムが、感謝祭価格で販売されています。【画像】ユニクロの“1990円フリースジャ…",
+      "briefSummary": "ユニクロでは、2026年11月20日から感謝祭がスタート。冬に活躍するさまざまなアイテムが、感謝祭価格で販売されています。【画像】ユニクロの“1990円フリースジャケット” そこで本記事では、感謝祭価",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 92,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-22T12:50:00.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "2時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/f59836a0b2fd0e5613d41e48ef0e95743c3fc2a8?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "「これがない冬は想像できない」　ユニクロの“フリースジャケット”が1990円！　「ネックウォーマーもいらないです」「コスパがかなり高いと思う」",
+          "url": "https://news.yahoo.co.jp/articles/f59836a0b2fd0e5613d41e48ef0e95743c3fc2a8?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/f59836a0b2fd0e5613d41e48ef0e95743c3fc2a8?source=rss",
+          "publishedAt": "2026-11-22T12:50:00.000Z",
+          "publishedLabel": "11/22 12:50",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「これがない冬は想像できない」 ユニクロの“フリースジャケット”が1990円",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ],
+      "articleThumbnail": {
+        "kind": "yahoo-direct-article-og",
+        "ownerTitle": "「これがない冬は想像できない」 ユニクロの“フリースジャケット”が1990円! 「ネックウォーマーもいらないです」「コスパがかなり高いと思う」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/f59836a0b2fd0e5613d41e48ef0e95743c3fc2a8",
+        "articleTitle": "「これがない冬は想像できない」 ユニクロの“フリースジャケット”が1990円! 「ネックウォーマーもいらないです」「コスパがかなり高いと思う」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10178405-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 1200,
+        "height": 888
+      }
+    },
+    {
+      "id": "auto-entertainment-2時間かけて買いに行きました-ワークマンの-2900円ジャケット-が大好評-着ていて疲れない-冬場のジョギングにも使える-高級感があって良い-news.yahoo.co.jp/articles/19d927db8b4891a234b6227d34832c204ea40c23",
+      "title": "「2時間かけて買いに行きました」　ワークマンの“2900円ジャケット”が大好評　「着ていて疲れない」「冬場のジョギングにも使える」「高級感があって良い」",
+      "summary": "ワークマンから販売されている“2900円ジャケット”が、着心地もデザインも良く、動きやすくてコスパも抜群だと人気を集めています。【画像】ワークマンの“2900円ジャ…",
+      "briefSummary": "ワークマンから販売されている“2900円ジャケット”が、着心地もデザインも良く、動きやすくてコスパも抜群だと人気を集めています。【画像】ワークマンの“2900円ジャケット” 本記事では、そんな「ゼロス",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "エンタメ",
+      "categoryLabels": [
+        "エンタメ",
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 92,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": null,
+      "publishedAt": "2026-11-22T12:40:00.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "2時間前",
+      "sourceName": "ねとらぼ / Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/19d927db8b4891a234b6227d34832c204ea40c23?source=rss",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "netorabo",
+          "source": "ねとらぼ",
+          "sourceName": "ねとらぼ / Yahoo!ニュース",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 84,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "buzz",
+            "otaku"
+          ],
+          "title": "「2時間かけて買いに行きました」　ワークマンの“2900円ジャケット”が大好評　「着ていて疲れない」「冬場のジョギングにも使える」「高級感があって良い」",
+          "url": "https://news.yahoo.co.jp/articles/19d927db8b4891a234b6227d34832c204ea40c23?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/19d927db8b4891a234b6227d34832c204ea40c23?source=rss",
+          "publishedAt": "2026-11-22T12:40:00.000Z",
+          "publishedLabel": "11/22 12:40",
+          "thumbnailUrl": null
+        }
+      ],
+      "whatHappened": "「2時間かけて買いに行きました」 ワークマンの“2900円ジャケット”が大好評 「着ていて疲…",
+      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
+      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
+      "targetAudience": [
+        "ネット文化を追う人"
+      ],
+      "articleThumbnail": {
+        "kind": "yahoo-direct-article-og",
+        "ownerTitle": "「2時間かけて買いに行きました」 ワークマンの“2900円ジャケット”が大好評 「着ていて疲れない」「冬場のジョギングにも使える」「高級感があって良い」",
+        "articleUrl": "https://news.yahoo.co.jp/articles/19d927db8b4891a234b6227d34832c204ea40c23",
+        "articleTitle": "「2時間かけて買いに行きました」 ワークマンの“2900円ジャケット”が大好評 「着ていて疲れない」「冬場のジョギングにも使える」「高級感があって良い」",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177552-it_nlab-000-1-view.jpg?exp=10800",
+        "width": 2200,
+        "height": 1479
+      }
+    },
+    {
+      "id": "auto-general-文科相の-交代示唆-木原氏否定-news.yahoo.co.jp/pickup/6603601",
+      "title": "文科相の「交代示唆」木原氏否定",
+      "summary": "",
+      "briefSummary": "",
       "category": "general",
       "categories": [
         "general"
@@ -951,197 +1062,57 @@
       "categoryLabels": [
         "その他"
       ],
-      "score": 81,
+      "score": 89,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:33:04.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間以内",
-      "sourceName": "Yahoo!ニュース / 地域",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603546?source=rss",
-      "hotReasons": [],
+      "publishedAt": "2026-11-22T12:39:35.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "2時間前",
+      "sourceName": "Yahoo!ニュース / 国内",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603601?source=rss",
+      "hotReasons": [
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
       "sourceSignals": [
         {
-          "sourceId": "yahoo-local",
+          "sourceId": "yahoo-domestic",
           "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / 地域",
-          "sourceGroup": "local-news",
-          "sourcePriority": 50,
+          "sourceName": "Yahoo!ニュース / 国内",
+          "sourceGroup": "important-news",
+          "sourcePriority": 76,
           "official": false,
           "specialist": false,
           "forPersonal": false,
           "sourceTags": [],
-          "title": "12歳男子中学生が行方不明 郡山市",
-          "url": "https://news.yahoo.co.jp/pickup/6603546?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603546?source=rss",
-          "publishedAt": "2026-11-22T05:33:04.000Z",
-          "publishedLabel": "11/22 05:33",
+          "title": "文科相の「交代示唆」木原氏否定",
+          "url": "https://news.yahoo.co.jp/pickup/6603601?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603601?source=rss",
+          "publishedAt": "2026-11-22T12:39:35.000Z",
+          "publishedLabel": "11/22 12:39",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "12歳男子中学生が行方不明 郡山市",
-      "whyHot": "直近の新しい話題として浮上しています。",
+      "whatHappened": "文科相の「交代示唆」木原氏否定",
+      "whyHot": "専門媒体や公式ソースが優先的に拾っています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
       "targetAudience": [],
       "articleThumbnail": {
         "kind": "yahoo-main-article-og",
-        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603546",
-        "pickupTitle": "12歳男子中学生が行方不明 郡山市",
-        "articleUrl": "https://news.yahoo.co.jp/articles/2dbff3d01e18b9332bf18f685ee79437e5b7e227",
-        "articleTitle": "郡山市で12歳男子中学生が行方不明　身長約157cm・黒色短髪　警察が商業施設などを捜索",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-11810906-kfb-000-1-view.jpg?exp=10800",
-        "width": 640,
-        "height": 360
-      }
-    },
-    {
-      "id": "auto-entertainment-ブランド長財布から乗り換えた-スタンダードプロダクツの-330円ミニ財布-が高評価-小銭・札・カード複数入る-乱暴に出し入れしても気にならない-news.yahoo.co.jp/articles/9e33ce9c29989150c69497bec8026cbb4c406d5e",
-      "title": "「ブランド長財布から乗り換えた」　スタンダードプロダクツの“330円ミニ財布”が高評価　「小銭・札・カード複数入る」「乱暴に出し入れしても気にならない」",
-      "summary": "小さめのバッグで出かける日も、よく使うカードと少しの現金は持ち歩きたいもの。そんなときにぴったりなのが、ダイソーの姉妹ブランド「スタンダードプロダクツ」の二つ折り財…",
-      "briefSummary": "小さめのバッグで出かける日も、よく使うカードと少しの現金は持ち歩きたいもの。そんなときにぴったりなのが、ダイソーの姉妹ブランド「スタンダードプロダクツ」の二つ折り財布です。厚さはわずか1センチ。さっそ",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "エンタメ",
-      "categoryLabels": [
-        "エンタメ",
-        "SNS",
-        "ネットカルチャー"
-      ],
-      "score": 93,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:30:00.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/9e33ce9c29989150c69497bec8026cbb4c406d5e?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "「ブランド長財布から乗り換えた」　スタンダードプロダクツの“330円ミニ財布”が高評価　「小銭・札・カード複数入る」「乱暴に出し入れしても気にならない」",
-          "url": "https://news.yahoo.co.jp/articles/9e33ce9c29989150c69497bec8026cbb4c406d5e?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/9e33ce9c29989150c69497bec8026cbb4c406d5e?source=rss",
-          "publishedAt": "2026-11-22T05:30:00.000Z",
-          "publishedLabel": "11/22 05:30",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "「ブランド長財布から乗り換えた」 スタンダードプロダクツの“330円ミニ財布”が高評価 「小…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ],
-      "articleThumbnail": {
-        "kind": "yahoo-direct-article-og",
-        "ownerTitle": "「ブランド長財布から乗り換えた」 スタンダードプロダクツの“330円ミニ財布”が高評価 「小銭・札・カード複数入る」「乱暴に出し入れしても気にならない」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/9e33ce9c29989150c69497bec8026cbb4c406d5e",
-        "articleTitle": "「ブランド長財布から乗り換えた」 スタンダードプロダクツの“330円ミニ財布”が高評価 「小銭・札・カード複数入る」「乱暴に出し入れしても気にならない」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10178152-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 2200,
-        "height": 1550
-      }
-    },
-    {
-      "id": "auto-sns-スーパーで買った180円のメロンパン-袋から出したら-衝撃の姿に-嫌なことあった-シェフの気まぐれ恐すぎるよ-news.yahoo.co.jp/articles/42137a63e416cc12a3f5eacef8a4b808ccde9a1c",
-      "title": "スーパーで買った180円のメロンパン→袋から出したら…… 衝撃の姿に「嫌なことあった？」「シェフの気まぐれ恐すぎるよ」",
-      "summary": "スーパーで買った“とんでもないメロンパン”がX（Twitter）に投稿されました。驚きのビジュアルと商品名が反響を呼び、記事執筆時点で56万回以上表示され、4万30…",
-      "briefSummary": "スーパーで買った“とんでもないメロンパン”がX（Twitter）に投稿されました。驚きのビジュアルと商品名が反響を呼び、記事執筆時点で56万回以上表示され、4万3000件以上の「いいね」を集めています",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "entertainment",
-        "net-culture",
-        "general"
-      ],
-      "categoryLabel": "SNS",
-      "categoryLabels": [
-        "SNS",
-        "エンタメ",
-        "ネットカルチャー"
-      ],
-      "score": 93,
-      "posts": 1,
-      "metricLabel": "source",
-      "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:30:00.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間前",
-      "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/42137a63e416cc12a3f5eacef8a4b808ccde9a1c?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。",
-        "専門媒体や公式ソースが優先的に拾っています。"
-      ],
-      "sourceSignals": [
-        {
-          "sourceId": "netorabo",
-          "source": "ねとらぼ",
-          "sourceName": "ねとらぼ / Yahoo!ニュース",
-          "sourceGroup": "net-culture",
-          "sourcePriority": 84,
-          "official": false,
-          "specialist": true,
-          "forPersonal": true,
-          "sourceTags": [
-            "net-culture",
-            "sns",
-            "buzz",
-            "otaku"
-          ],
-          "title": "スーパーで買った180円のメロンパン→袋から出したら…… 衝撃の姿に「嫌なことあった？」「シェフの気まぐれ恐すぎるよ」",
-          "url": "https://news.yahoo.co.jp/articles/42137a63e416cc12a3f5eacef8a4b808ccde9a1c?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/42137a63e416cc12a3f5eacef8a4b808ccde9a1c?source=rss",
-          "publishedAt": "2026-11-22T05:30:00.000Z",
-          "publishedLabel": "11/22 05:30",
-          "thumbnailUrl": null
-        }
-      ],
-      "whatHappened": "スーパーで買った180円のメロンパン→袋から出したら…… 衝撃の姿に「嫌なことあった？」「シ…",
-      "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
-      "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
-      "targetAudience": [
-        "ネット文化を追う人"
-      ],
-      "articleThumbnail": {
-        "kind": "yahoo-direct-article-og",
-        "ownerTitle": "スーパーで買った180円のメロンパン→袋から出したら...... 衝撃の姿に「嫌なことあった?」「シェフの気まぐれ恐すぎるよ」",
-        "articleUrl": "https://news.yahoo.co.jp/articles/42137a63e416cc12a3f5eacef8a4b808ccde9a1c",
-        "articleTitle": "スーパーで買った180円のメロンパン→袋から出したら...... 衝撃の姿に「嫌なことあった?」「シェフの気まぐれ恐すぎるよ」",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10177993-it_nlab-000-1-view.jpg?exp=10800",
-        "width": 1200,
+        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603601",
+        "pickupTitle": "文科相の「交代示唆」木原氏否定",
+        "articleUrl": "https://news.yahoo.co.jp/articles/9a5e8085af1a8d7d152225258f0a5c9f9a644cf1",
+        "articleTitle": "木原官房長官、関文科相に説明求める　「交代示唆」否定",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-00000121-jij-000-11-view.jpg?exp=10800",
+        "width": 866,
         "height": 1200
       }
     },
     {
-      "id": "auto-entertainment-実力派敗退-m-1準-決勝の過酷さ-news.yahoo.co.jp/pickup/6603544",
-      "title": "実力派敗退 M-1準々決勝の過酷さ",
-      "summary": "漫才日本一を決める「M-1グランプリ2026」の準決勝進出者30組が発表された。昨年のファイナリストである真空ジェシカ、ヤーレンズ、ママタルトらが順当に勝ち上がる一方、昨年準優勝のドンデコルテ、3位のエバースが準々決勝で敗退するという波乱もあった。",
-      "briefSummary": "漫才日本一を決める「M-1グランプリ2026」の準決勝進出者30組が発表された。昨年のファイナリストである真空ジェシカ、ヤーレンズ、ママタルトらが順当に勝ち上がる一方、昨年準優勝のドンデコルテ、3位のエバースが準々決勝で敗退するという波乱もあった。",
+      "id": "auto-entertainment-三山ひろしの紅白選外-長女は涙-news.yahoo.co.jp/pickup/6603602",
+      "title": "三山ひろしの紅白選外 長女は涙",
+      "summary": "歌手の松前ひろ子と三山ひろしが２２日、東京・港区の東京プリンスホテルで「いい夫婦の日」ディナーショーを開催した。本番前には報道陣の取材に対応。昨年まで１１年連続１１回にわたって「ＮＨＫ紅白歌合戦」に",
+      "briefSummary": "歌手の松前ひろ子と三山ひろしが２２日、東京・港区の東京プリンスホテルで「いい夫婦の日」ディナーショーを開催した。本番前には報道陣の取材に対応。昨年まで１１年連続１１回にわたって「ＮＨＫ紅白歌合戦」に",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -1151,15 +1122,15 @@
       "categoryLabels": [
         "エンタメ"
       ],
-      "score": 86,
+      "score": 85,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:25:04.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間前",
+      "publishedAt": "2026-11-22T12:36:11.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "2時間前",
       "sourceName": "Yahoo!ニュース / エンタメ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603544?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603602?source=rss",
       "hotReasons": [],
       "sourceSignals": [
         {
@@ -1172,24 +1143,34 @@
           "specialist": false,
           "forPersonal": false,
           "sourceTags": [],
-          "title": "実力派敗退 M-1準々決勝の過酷さ",
-          "url": "https://news.yahoo.co.jp/pickup/6603544?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603544?source=rss",
-          "publishedAt": "2026-11-22T05:25:04.000Z",
-          "publishedLabel": "11/22 05:25",
+          "title": "三山ひろしの紅白選外 長女は涙",
+          "url": "https://news.yahoo.co.jp/pickup/6603602?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603602?source=rss",
+          "publishedAt": "2026-11-22T12:36:11.000Z",
+          "publishedLabel": "11/22 12:36",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "実力派敗退 M-1準々決勝の過酷さ",
+      "whatHappened": "三山ひろしの紅白選外 長女は涙",
       "whyHot": "直近の新しい話題として浮上しています。",
       "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
-      "targetAudience": []
+      "targetAudience": [],
+      "articleThumbnail": {
+        "kind": "yahoo-main-article-og",
+        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603602",
+        "pickupTitle": "三山ひろしの紅白選外 長女は涙",
+        "articleUrl": "https://news.yahoo.co.jp/articles/d80c152b42116aff980c99454261472856016d1c",
+        "articleTitle": "三山ひろしの紅白選外　長女は涙「『パパ落ちちゃったの？』とワーッと泣いた」師匠・松前ひろ子が明かす",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-11221285-sph-000-10-view.jpg?exp=10800",
+        "width": 1036,
+        "height": 1200
+      }
     },
     {
-      "id": "auto-entertainment-どこに行くにも持って行きたい-ワークマンの-3990円おしゃれリュック-が好評-軽くて持ちやすい-サイズも通勤にちょうど良い-の声-news.yahoo.co.jp/articles/6aed705aca6683383f5f7f61e27e47d0be125918",
-      "title": "「どこに行くにも持って行きたい」　ワークマンの“3990円おしゃれリュック”が好評　「軽くて持ちやすい」「サイズも通勤にちょうど良い」の声",
-      "summary": "ワークマンの「しごできカバン機動力重視のスエードコンビリュック」は、収納力と使いやすさを兼ね備えた多機能リュックです。落ち着いたデザインで普段の服装にも合わせやすく…",
-      "briefSummary": "ワークマンの「しごできカバン機動力重視のスエードコンビリュック」は、収納力と使いやすさを兼ね備えた多機能リュックです。落ち着いたデザインで普段の服装にも合わせやすく、通勤やお出かけ、旅行まで幅広く活躍",
+      "id": "auto-entertainment-想像をはるかに超える快適商品-ニトリの-包まれクッション-が人気-電気いらずのコタツって感じ-家族分欲しい-アウトドアにも-の声-news.yahoo.co.jp/articles/91a1913cc73e5ab1a856e476b21978cd6f6bded0",
+      "title": "「想像をはるかに超える快適商品！」　ニトリの“包まれクッション”が人気　「電気いらずのコタツって感じ」「家族分欲しい」「アウトドアにも◎」の声",
+      "summary": "おうち時間は、ふんわりとしたクッションがあると、より快適に過ごせるもの。なかでもニトリの“包まれクッション”は、中に入って暖まったり、ごろ寝のときに敷いたりと、さま…",
+      "briefSummary": "おうち時間は、ふんわりとしたクッションがあると、より快適に過ごせるもの。なかでもニトリの“包まれクッション”は、中に入って暖まったり、ごろ寝のときに敷いたりと、さまざまな使い方ができるアイテムです。肌",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -1203,15 +1184,15 @@
         "SNS",
         "ネットカルチャー"
       ],
-      "score": 93,
+      "score": 91,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:25:00.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間前",
+      "publishedAt": "2026-11-22T12:30:00.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "2時間前",
       "sourceName": "ねとらぼ / Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp/articles/6aed705aca6683383f5f7f61e27e47d0be125918?source=rss",
+      "sourceUrl": "https://news.yahoo.co.jp/articles/91a1913cc73e5ab1a856e476b21978cd6f6bded0?source=rss",
       "hotReasons": [
         "SNSやネット上で反応が広がりやすい話題です。",
         "専門媒体や公式ソースが優先的に拾っています。"
@@ -1232,15 +1213,15 @@
             "buzz",
             "otaku"
           ],
-          "title": "「どこに行くにも持って行きたい」　ワークマンの“3990円おしゃれリュック”が好評　「軽くて持ちやすい」「サイズも通勤にちょうど良い」の声",
-          "url": "https://news.yahoo.co.jp/articles/6aed705aca6683383f5f7f61e27e47d0be125918?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/articles/6aed705aca6683383f5f7f61e27e47d0be125918?source=rss",
-          "publishedAt": "2026-11-22T05:25:00.000Z",
-          "publishedLabel": "11/22 05:25",
+          "title": "「想像をはるかに超える快適商品！」　ニトリの“包まれクッション”が人気　「電気いらずのコタツって感じ」「家族分欲しい」「アウトドアにも◎」の声",
+          "url": "https://news.yahoo.co.jp/articles/91a1913cc73e5ab1a856e476b21978cd6f6bded0?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/articles/91a1913cc73e5ab1a856e476b21978cd6f6bded0?source=rss",
+          "publishedAt": "2026-11-22T12:30:00.000Z",
+          "publishedLabel": "11/22 12:30",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "「どこに行くにも持って行きたい」 ワークマンの“3990円おしゃれリュック”が好評 「軽くて…",
+      "whatHappened": "「想像をはるかに超える快適商品！」 ニトリの“包まれクッション”が人気 「電気いらずのコタツ…",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
@@ -1248,76 +1229,120 @@
       ],
       "articleThumbnail": {
         "kind": "yahoo-direct-article-og",
-        "ownerTitle": "「どこに行くにも持って行きたい」 ワークマンの“3990円おしゃれリュック”が好評 「軽くて持ちやすい」「サイズも通勤にちょうど良い」の声",
-        "articleUrl": "https://news.yahoo.co.jp/articles/6aed705aca6683383f5f7f61e27e47d0be125918",
-        "articleTitle": "「どこに行くにも持って行きたい」 ワークマンの“3990円おしゃれリュック”が好評 「軽くて持ちやすい」「サイズも通勤にちょうど良い」の声",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10178428-it_nlab-000-1-view.jpg?exp=10800",
+        "ownerTitle": "「想像をはるかに超える快適商品!」 ニトリの“包まれクッション”が人気 「電気いらずのコタツって感じ」「家族分欲しい」「アウトドアにも◎」の声",
+        "articleUrl": "https://news.yahoo.co.jp/articles/91a1913cc73e5ab1a856e476b21978cd6f6bded0",
+        "articleTitle": "「想像をはるかに超える快適商品!」 ニトリの“包まれクッション”が人気 「電気いらずのコタツって感じ」「家族分欲しい」「アウトドアにも◎」の声",
+        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-10178430-it_nlab-000-1-view.jpg?exp=10800",
         "width": 2200,
         "height": 1650
       }
     },
     {
-      "id": "auto-general-桑田真澄氏58歳が118キロ球-騒然-news.yahoo.co.jp/pickup/6603545",
-      "title": "桑田真澄氏58歳が118キロ球 騒然",
-      "summary": "「ホームメイト presents 中日ドラゴンズ×読売ジャイアンツ LEGENDS MATCH2026」 巨人OBの桑田真澄氏が22日、バンテリンドームで行われた「ホームメイト presents 中",
-      "briefSummary": "「ホームメイト presents 中日ドラゴンズ×読売ジャイアンツ LEGENDS MATCH2026」 巨人OBの桑田真澄氏が22日、バンテリンドームで行われた「ホームメイト presents 中",
-      "category": "sports",
+      "id": "auto-general-踏切内に電動車いすの79歳-死亡-news.yahoo.co.jp/pickup/6603599",
+      "title": "踏切内に電動車いすの79歳 死亡",
+      "summary": "22日午前10時50分ごろ、奈良県大和高田市有井の近鉄大阪線築山―大和高田間の踏切で、電動車いすに乗っていた市内の男性（79）が大阪上本町行きの区間急行（6両）にはねられ、外傷性ショックで死亡した。",
+      "briefSummary": "22日午前10時50分ごろ、奈良県大和高田市有井の近鉄大阪線築山―大和高田間の踏切で、電動車いすに乗っていた市内の男性（79）が大阪上本町行きの区間急行（6両）にはねられ、外傷性ショックで死亡した。",
+      "category": "general",
       "categories": [
-        "sports",
         "general"
       ],
-      "categoryLabel": "スポーツ",
+      "categoryLabel": "その他",
       "categoryLabels": [
-        "スポーツ",
         "その他"
       ],
-      "score": 83,
+      "score": 78,
       "posts": 1,
       "metricLabel": "source",
       "thumbnailUrl": null,
-      "publishedAt": "2026-11-22T05:22:21.000Z",
-      "capturedAt": "2026-11-22T06:31:34.577Z",
-      "time": "1時間前",
-      "sourceName": "Yahoo!ニュース / スポーツ",
-      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603545?source=rss",
-      "hotReasons": [
-        "SNSやネット上で反応が広がりやすい話題です。"
-      ],
+      "publishedAt": "2026-11-22T12:22:48.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "2時間前",
+      "sourceName": "Yahoo!ニュース / 地域",
+      "sourceUrl": "https://news.yahoo.co.jp/pickup/6603599?source=rss",
+      "hotReasons": [],
       "sourceSignals": [
         {
-          "sourceId": "yahoo-sports",
+          "sourceId": "yahoo-local",
           "source": "Yahoo!ニュース",
-          "sourceName": "Yahoo!ニュース / スポーツ",
-          "sourceGroup": "general-sports",
-          "sourcePriority": 58,
+          "sourceName": "Yahoo!ニュース / 地域",
+          "sourceGroup": "local-news",
+          "sourcePriority": 50,
           "official": false,
           "specialist": false,
           "forPersonal": false,
           "sourceTags": [],
-          "title": "桑田真澄氏58歳が118キロ球 騒然",
-          "url": "https://news.yahoo.co.jp/pickup/6603545?source=rss",
-          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603545?source=rss",
-          "publishedAt": "2026-11-22T05:22:21.000Z",
-          "publishedLabel": "11/22 05:22",
+          "title": "踏切内に電動車いすの79歳 死亡",
+          "url": "https://news.yahoo.co.jp/pickup/6603599?source=rss",
+          "canonicalUrl": "https://news.yahoo.co.jp/pickup/6603599?source=rss",
+          "publishedAt": "2026-11-22T12:22:48.000Z",
+          "publishedLabel": "11/22 12:22",
           "thumbnailUrl": null
         }
       ],
-      "whatHappened": "桑田真澄氏58歳が118キロ球 騒然",
+      "whatHappened": "踏切内に電動車いすの79歳 死亡",
+      "whyHot": "直近の新しい話題として浮上しています。",
+      "importantPoint": "後で追うべきかを短時間で判断する材料になります。",
+      "targetAudience": []
+    },
+    {
+      "id": "auto-sns-家賃の値上がり-53-700円以下の物件が見つからない-都内で住む生活保護受給者に地方への移住を勧める声が集まるが-そう単純な話ではなかった-togetter.com/li/2773747",
+      "title": "家賃の値上がり、53,700円以下の物件が見つからない……都内で住む生活保護受給者に地方への移住を勧める声が集まるが、そう単純な話ではなかった",
+      "summary": "",
+      "briefSummary": "",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "categoryLabel": "SNS",
+      "categoryLabels": [
+        "SNS",
+        "ネットカルチャー"
+      ],
+      "score": 87,
+      "posts": 1,
+      "metricLabel": "source",
+      "thumbnailUrl": "https://s.tgstc.com/ogp3/216219c3fc9bae8b288d5a84d809b70b-1200x630.jpeg",
+      "publishedAt": "2026-11-22T12:20:41.000Z",
+      "capturedAt": "2026-11-22T14:51:40.332Z",
+      "time": "2時間前",
+      "sourceName": "はてなブックマーク人気",
+      "sourceUrl": "https://togetter.com/li/2773747",
+      "hotReasons": [
+        "SNSやネット上で反応が広がりやすい話題です。",
+        "専門媒体や公式ソースが優先的に拾っています。"
+      ],
+      "sourceSignals": [
+        {
+          "sourceId": "hatena-hotentry",
+          "source": "はてなブックマーク",
+          "sourceName": "はてなブックマーク人気",
+          "sourceGroup": "net-culture",
+          "sourcePriority": 74,
+          "official": false,
+          "specialist": true,
+          "forPersonal": true,
+          "sourceTags": [
+            "net-culture",
+            "sns",
+            "trend",
+            "buzz"
+          ],
+          "title": "家賃の値上がり、53,700円以下の物件が見つからない……都内で住む生活保護受給者に地方への移住を勧める声が集まるが、そう単純な話ではなかった",
+          "url": "https://togetter.com/li/2773747",
+          "canonicalUrl": "https://togetter.com/li/2773747",
+          "publishedAt": "2026-11-22T12:20:41.000Z",
+          "publishedLabel": "11/22 12:20",
+          "thumbnailUrl": "https://s.tgstc.com/ogp3/216219c3fc9bae8b288d5a84d809b70b-1200x630.jpeg"
+        }
+      ],
+      "whatHappened": "家賃の値上がり、53,700円以下の物件が見つからない……都内で住む生活保護受給者に地方への…",
       "whyHot": "SNSやネット上で反応が広がりやすい話題です。",
       "importantPoint": "ネット上の空気や評判の変化を早めに掴む材料になります。",
       "targetAudience": [
         "ネット文化を追う人"
-      ],
-      "articleThumbnail": {
-        "kind": "yahoo-main-article-og",
-        "pickupUrl": "https://news.yahoo.co.jp/pickup/6603545",
-        "pickupTitle": "桑田真澄氏58歳が118キロ球 騒然",
-        "articleUrl": "https://news.yahoo.co.jp/articles/698b9e091b0e31ed713fb3eac38142dfabda6781",
-        "articleTitle": "58歳・桑田真澄氏の118キロに騒然　現役思い出すフォーム…伝家の宝刀カーブも披露　“後輩”に滅多打ち",
-        "imageUrl": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-02048605-fullcount-000-7-view.jpg?exp=10800",
-        "width": 900,
-        "height": 600
-      }
+      ]
     }
   ]
 }

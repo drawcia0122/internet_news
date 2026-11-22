@@ -1,37 +1,40 @@
 {
-  "generatedAt": "2026-11-22T06:33:50.160Z",
+  "generatedAt": "2026-11-22T14:53:59.116Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-1",
-  "selectedTitle": "『龍が如く８』は80％オフで1936円。『ファイナルファンタジーVII リバース』は85％オフで986円。『バトルフィールド 1 』は95％オフでたったの215円。今週の高割引率PCゲーム",
+  "selectedClusterId": "today-cluster-18",
+  "selectedTitle": "TYPE-MOONのビジュアルノベル『魔法使いの夜』、Steamでの発売から「3年目」にして過去最高に売れている模様。劇場アニメ公開が追い風、半額で買える",
   "candidates": [
     {
-      "clusterId": "today-cluster-1",
-      "title": "『龍が如く８』は80％オフで1936円。『ファイナルファンタジーVII リバース』は85％オフで986円。『バトルフィールド 1 』は95％オフでたったの215円。今週の高割引率PCゲーム",
+      "clusterId": "today-cluster-18",
+      "title": "TYPE-MOONのビジュアルノベル『魔法使いの夜』、Steamでの発売から「3年目」にして過去最高に売れている模様。劇場アニメ公開が追い風、半額で買える",
       "category": "games",
       "categories": [
         "games",
+        "anime",
+        "sns",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 60.2,
-      "confidence": 0.43,
+      "buzzScore": 69.8,
+      "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 21.6,
         "internetNativeBoost": 8,
-        "search": 5.7,
-        "social": 4.2,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "search": 6.4,
+        "social": 8.4,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
-        "categoryBias": 6,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -44,10 +47,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 40,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 44.3,
-        "internalSocialScore": 32.8
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 98,
+        "internalSearchScore": 49.9,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -56,8 +59,61 @@
       ]
     },
     {
-      "clusterId": "today-cluster-539",
-      "title": "新幹線が大好きな息子の七五三→ママが作った着物を着たら……　まさかの姿に「凄い工夫!!」「ステキすぎます」",
+      "clusterId": "today-cluster-119",
+      "title": "ゴルフ佐久間朱莉がSNSに謝罪文",
+      "category": "sports",
+      "categories": [
+        "sports",
+        "net-culture",
+        "sns",
+        "general"
+      ],
+      "buzzScore": 68.7,
+      "confidence": 0.4,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 21.1,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 6,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 12,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 96,
+        "internalSearchScore": 37.5,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-286",
+      "title": "ダイソーのごみ箱→中を見ると……　「発想が素晴らしい」感動の“中身“に「コレは展示会で映えますね」",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -65,8 +121,8 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 59.8,
-      "confidence": 0.31,
+      "buzzScore": 63.5,
+      "confidence": 0.34,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -76,9 +132,9 @@
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 21.1,
         "internetNativeBoost": 8,
-        "search": 4.2,
+        "search": 4.8,
         "social": 6,
         "velocity": 0,
         "freshness": 7,
@@ -97,8 +153,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
+        "archiveHeatScore": 96,
+        "internalSearchScore": 37.5,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
@@ -108,30 +164,32 @@
       ]
     },
     {
-      "clusterId": "today-cluster-738",
-      "title": "「絶対に許さない」会社で発生した“重大事件”　緊急役員会議の結果に「これは重罪」「いいなぁこの会社」",
-      "category": "entertainment",
+      "clusterId": "today-cluster-5",
+      "title": "マンガ『ゴーストアンドレディ』Kindle版の50%ポイント還元セールが開催中。上下巻購入で1936円→968ポイントが還元",
+      "category": "manga",
       "categories": [
+        "manga",
+        "games",
         "entertainment",
-        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 59.4,
-      "confidence": 0.31,
+      "buzzScore": 58.8,
+      "confidence": 0.32,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
         "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 5.9,
+        "search": 1.5,
+        "social": 8.1,
         "velocity": 0,
         "freshness": 5.5,
         "authority": 1.5,
@@ -145,13 +203,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 4.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 33.2,
-        "internalSocialScore": 45.9
+        "browseMatchCount": 1,
+        "archiveMatchCount": 0,
+        "repeatedAppearanceScore": 18,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 0,
+        "internalSearchScore": 11.7,
+        "internalSocialScore": 63.1
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -160,18 +218,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1738",
-      "title": "「野球の子たち泊まりにきたー！」→13人分用意したのは…… 圧巻の食卓に「寮母さん!?」「みんな坊主にしてここに集合な！」",
-      "category": "sports",
+      "clusterId": "today-cluster-1228",
+      "title": "「絶対に許さない」会社で発生した“重大事件”　緊急役員会議の結果に「これは重罪」「いいなぁこの会社」",
+      "category": "entertainment",
       "categories": [
-        "sports",
         "entertainment",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 53.5,
-      "confidence": 0.29,
+      "buzzScore": 57.2,
+      "confidence": 0.3,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -183,64 +240,13 @@
         "sourceDiversity": 2.3,
         "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.1,
+        "search": 4.1,
+        "social": 5.8,
         "velocity": 0,
-        "freshness": 1.5,
+        "freshness": 3.5,
         "authority": 1.5,
-        "categoryBias": 17,
-        "penalty": -9
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 1.8,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 31.6,
-        "internalSocialScore": 55.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1759",
-      "title": "〈神社でダンスして大炎上〉「神社はパフォーマンスの舞台ではない」スロバキアのダンス集団が根津神社で踊り批判殺到…駐日大使館も謝罪する異例の事態に",
-      "category": "net-culture",
-      "categories": [
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 52.8,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 20.7,
-        "internetNativeBoost": 8,
-        "search": 4.5,
-        "social": 4.4,
-        "velocity": 0,
-        "freshness": 1.5,
-        "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": -6
+        "categoryBias": 14,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -252,10 +258,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 34.9,
-        "internalSocialScore": 34.4
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 32.4,
+        "internalSocialScore": 45.4
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

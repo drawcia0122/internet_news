@@ -1,39 +1,92 @@
 {
-  "generatedAt": "2026-11-23T09:46:44.542Z",
+  "generatedAt": "2026-11-23T22:05:33.936Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-4",
-  "selectedTitle": "『スイカゲーム』に迷い込んだ『龍が如く』真島吾朗の投稿がSNSで話題。「兄さん」の圧力でフルーツたちも“ガチガチ”の表情に",
+  "selectedClusterId": "today-cluster-202",
+  "selectedTitle": "ドンキに「AI社員」が入社　売り場でいったい何をする？　「近藤あい」の名前には、実は“先輩”が隠れていた",
   "candidates": [
     {
-      "clusterId": "today-cluster-4",
-      "title": "『スイカゲーム』に迷い込んだ『龍が如く』真島吾朗の投稿がSNSで話題。「兄さん」の圧力でフルーツたちも“ガチガチ”の表情に",
-      "category": "net-culture",
+      "clusterId": "today-cluster-202",
+      "title": "ドンキに「AI社員」が入社　売り場でいったい何をする？　「近藤あい」の名前には、実は“先輩”が隠れていた",
+      "category": "tech",
       "categories": [
-        "net-culture",
+        "tech",
+        "entertainment",
         "sns",
-        "games",
-        "business",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 72.2,
-      "confidence": 0.46,
-      "articleCount": 2,
+      "buzzScore": 69.7,
+      "confidence": 0.38,
+      "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 7.4,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 34.4,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-20",
+      "title": "中国で縦型ショートドラマを作成する制作陣のドキュメンタリーがNHKスペシャルで放映、監督の濃いキャラクターと熱い展開が話題に",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "world",
+        "general"
+      ],
+      "buzzScore": 61.6,
+      "confidence": 0.37,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 6.5,
+        "search": 5.8,
         "social": 8.4,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 7,
         "authority": 1.5,
         "categoryBias": 9,
         "penalty": -3
@@ -49,8 +102,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 50.6,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 45.7,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -60,71 +113,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-11",
-      "title": "【すごい】テスラの新機能が「まるでゲーム画面」と話題に。AIが周囲の状況をリアルタイムで映像化、イーロン・マスク氏も「GTAみたいだ」とコメント",
-      "category": "games",
+      "clusterId": "today-cluster-1436",
+      "title": "リビア停泊中のロシア船が爆発・炎上、ドローン攻撃の疑いと当局",
+      "category": "net-culture",
       "categories": [
-        "games",
-        "sns",
         "net-culture",
+        "sns",
+        "world",
         "general"
       ],
-      "buzzScore": 72.1,
-      "confidence": 0.44,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.9,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 7,
-        "velocity": 5.3,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 45.7,
-        "internalSocialScore": 54.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1506",
-      "title": "ダイソーのごみ箱→中を見ると……　「発想が素晴らしい」感動の“中身“に「コレは展示会で映えますね」",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "entertainment",
-        "matome",
-        "general"
-      ],
-      "buzzScore": 66.5,
-      "confidence": 0.36,
+      "buzzScore": 58.8,
+      "confidence": 0.39,
       "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -134,66 +133,14 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 18.9,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 4.1,
-        "social": 7.2,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 32.1,
-        "internalSocialScore": 56.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1310",
-      "title": "ゴルフ佐久間朱莉がSNSに謝罪文",
-      "category": "sports",
-      "categories": [
-        "sports",
-        "net-culture",
-        "sns",
-        "general"
-      ],
-      "buzzScore": 62.3,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 4,
+        "search": 4.7,
         "social": 5.8,
         "velocity": 0,
         "freshness": 3.5,
         "authority": 2.5,
-        "categoryBias": 12,
+        "categoryBias": 4,
         "penalty": 0
       },
       "externalSignalStats": {
@@ -207,8 +154,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 3,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 83,
-        "internalSearchScore": 31,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 37,
         "internalSocialScore": 45.4
       },
       "externalSignalErrors": [
@@ -218,32 +165,31 @@
       ]
     },
     {
-      "clusterId": "today-cluster-109",
-      "title": "TYPE-MOONのビジュアルノベル『魔法使いの夜』、Steamでの発売から「3年目」にして過去最高に売れている模様。劇場アニメ公開が追い風、半額で買える",
-      "category": "games",
+      "clusterId": "today-cluster-2090",
+      "title": "ダイソーのごみ箱→中を見ると……　「発想が素晴らしい」感動の“中身“に「コレは展示会で映えますね」",
+      "category": "sns",
       "categories": [
-        "games",
-        "anime",
-        "general",
         "sns",
-        "net-culture"
+        "net-culture",
+        "entertainment",
+        "matome",
+        "general"
       ],
-      "buzzScore": 62.2,
-      "confidence": 0.38,
+      "buzzScore": 58.3,
+      "confidence": 0.35,
       "articleCount": 2,
       "sourceCount": 2,
-      "uniqueDomainCount": 1,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 3.8,
-        "trend": 20.7,
+        "sourceDiversity": 4.7,
+        "trend": 18.9,
         "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 8.2,
+        "search": 4,
+        "social": 7.1,
         "velocity": 0,
         "freshness": 1.5,
         "authority": 2.5,
@@ -257,13 +203,65 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 1,
+        "browseMatchCount": 0,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 19.8,
+        "repeatedAppearanceScore": 1.8,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 94,
-        "internalSearchScore": 45.8,
-        "internalSocialScore": 63.9
+        "archiveHeatScore": 86,
+        "internalSearchScore": 31.3,
+        "internalSocialScore": 55.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-531",
+      "title": "ダイソーで「逃すまい！」と買ったガジュマル→驚きの姿に「奇跡的な樹形」「羨ましい」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 57.3,
+      "confidence": 0.3,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 17.2,
+        "internetNativeBoost": 8,
+        "search": 4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 78,
+        "internalSearchScore": 31.2,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

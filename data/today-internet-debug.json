@@ -1,41 +1,39 @@
 {
-  "generatedAt": "2026-11-23T22:05:33.936Z",
+  "generatedAt": "2026-11-24T05:58:55.923Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-202",
-  "selectedTitle": "ドンキに「AI社員」が入社　売り場でいったい何をする？　「近藤あい」の名前には、実は“先輩”が隠れていた",
+  "selectedClusterId": "today-cluster-39",
+  "selectedTitle": "『ウェーブレース ブルーストーム』が「ニンテンドー ゲームキューブ Nintendo Classics」に追加！おだやかな晴天から高波押し寄せる嵐の中まで、天候によってリアルに変化する水上を駆け抜けろ",
   "candidates": [
     {
-      "clusterId": "today-cluster-202",
-      "title": "ドンキに「AI社員」が入社　売り場でいったい何をする？　「近藤あい」の名前には、実は“先輩”が隠れていた",
-      "category": "tech",
+      "clusterId": "today-cluster-39",
+      "title": "『ウェーブレース ブルーストーム』が「ニンテンドー ゲームキューブ Nintendo Classics」に追加！おだやかな晴天から高波押し寄せる嵐の中まで、天候によってリアルに変化する水上を駆け抜けろ",
+      "category": "games",
       "categories": [
-        "tech",
-        "entertainment",
-        "sns",
+        "games",
         "net-culture",
         "general"
       ],
-      "buzzScore": 69.7,
-      "confidence": 0.38,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 76.4,
+      "confidence": 0.47,
+      "articleCount": 4,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "アーカイブ上でも近い話題が連続出現"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
+        "coverage": 7.2,
+        "sourceDiversity": 4.7,
         "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 4.4,
-        "social": 7.4,
-        "velocity": 4.2,
-        "freshness": 10,
-        "authority": 1.5,
+        "search": 6.4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 8.5,
+        "authority": 2.5,
         "categoryBias": 14,
-        "penalty": -3
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -44,13 +42,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
+        "browseMatchCount": 1,
+        "archiveMatchCount": 2,
+        "repeatedAppearanceScore": 30,
+        "crossCategoryScore": 60,
         "archiveHeatScore": 87,
-        "internalSearchScore": 34.4,
-        "internalSocialScore": 57.7
+        "internalSearchScore": 50,
+        "internalSocialScore": 46.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -59,37 +57,40 @@
       ]
     },
     {
-      "clusterId": "today-cluster-20",
-      "title": "中国で縦型ショートドラマを作成する制作陣のドキュメンタリーがNHKスペシャルで放映、監督の濃いキャラクターと熱い展開が話題に",
-      "category": "entertainment",
+      "clusterId": "today-cluster-89",
+      "title": "マンガ・アニメ投稿、ＡＩ検知の８割超が著作権侵害…文化庁が対海賊版システム推進へ",
+      "category": "anime",
       "categories": [
+        "anime",
+        "manga",
+        "tech",
         "entertainment",
         "sns",
         "net-culture",
-        "world",
         "general"
       ],
-      "buzzScore": 61.6,
-      "confidence": 0.37,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
+      "buzzScore": 75,
+      "confidence": 0.46,
+      "articleCount": 4,
+      "sourceCount": 3,
+      "uniqueDomainCount": 2,
       "whyRanked": [
+        "主要3媒体で同一話題を確認",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.9,
+        "coverage": 7.2,
+        "sourceDiversity": 6.2,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 5.8,
+        "search": 5.6,
         "social": 8.4,
         "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 9,
-        "penalty": -3
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -102,8 +103,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 45.7,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 43.6,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -113,88 +114,35 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1436",
-      "title": "リビア停泊中のロシア船が爆発・炎上、ドローン攻撃の疑いと当局",
-      "category": "net-culture",
+      "clusterId": "today-cluster-11",
+      "title": "あなたが思う、2026年の推しゲームは？読者投票で決める 「推したいゲーム大賞2026」アンケートを実施します！",
+      "category": "games",
       "categories": [
+        "games",
         "net-culture",
-        "sns",
-        "world",
         "general"
       ],
-      "buzzScore": 58.8,
-      "confidence": 0.39,
+      "buzzScore": 70.9,
+      "confidence": 0.44,
       "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 22,
+        "sourceDiversity": 2.3,
+        "trend": 19.1,
         "internetNativeBoost": 8,
-        "search": 4.7,
-        "social": 5.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 2.5,
-        "categoryBias": 4,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 37,
-        "internalSocialScore": 45.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-2090",
-      "title": "ダイソーのごみ箱→中を見ると……　「発想が素晴らしい」感動の“中身“に「コレは展示会で映えますね」",
-      "category": "sns",
-      "categories": [
-        "sns",
-        "net-culture",
-        "entertainment",
-        "matome",
-        "general"
-      ],
-      "buzzScore": 58.3,
-      "confidence": 0.35,
-      "articleCount": 2,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 4.7,
-        "trend": 18.9,
-        "internetNativeBoost": 8,
-        "search": 4,
-        "social": 7.1,
-        "velocity": 0,
-        "freshness": 1.5,
-        "authority": 2.5,
+        "search": 5.9,
+        "social": 5.6,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": -6
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -203,13 +151,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 1.8,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 86,
-        "internalSearchScore": 31.3,
-        "internalSocialScore": 55.8
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 87,
+        "internalSearchScore": 46.1,
+        "internalSocialScore": 43.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -218,34 +166,89 @@
       ]
     },
     {
-      "clusterId": "today-cluster-531",
-      "title": "ダイソーで「逃すまい！」と買ったガジュマル→驚きの姿に「奇跡的な樹形」「羨ましい」",
-      "category": "entertainment",
+      "clusterId": "today-cluster-1",
+      "title": "高評価Steam終末村ホラー『Leviathan: Rhino』に“日本語改善アプデ”到来。巨大なリヴァイアサンが迫る村に残り、最期を待つ老人の6日間",
+      "category": "games",
       "categories": [
+        "games",
         "entertainment",
-        "sns",
-        "net-culture",
         "general"
       ],
-      "buzzScore": 57.3,
-      "confidence": 0.3,
+      "buzzScore": 66.9,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.7,
+        "internetNativeBoost": 8,
+        "search": 5.8,
+        "social": 5.6,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 85,
+        "internalSearchScore": 45.3,
+        "internalSocialScore": 43.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-395",
+      "title": "関芳弘文科相を庇う高市早苗首相に...膳場貴子キャスター「倫理観高くいてほしいなと切に切に思います」",
+      "category": "politics",
+      "categories": [
+        "politics",
+        "business",
+        "sns",
+        "net-culture",
+        "manga",
+        "general"
+      ],
+      "buzzScore": 64.9,
+      "confidence": 0.38,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 17.2,
+        "trend": 21.8,
         "internetNativeBoost": 8,
-        "search": 4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 5.5,
+        "search": 4.9,
+        "social": 7.4,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 1.5,
-        "categoryBias": 14,
+        "categoryBias": 9,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -258,10 +261,10 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 78,
-        "internalSearchScore": 31.2,
-        "internalSocialScore": 46.7
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 99,
+        "internalSearchScore": 38.6,
+        "internalSocialScore": 57.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

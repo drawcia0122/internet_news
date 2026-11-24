@@ -1,96 +1,42 @@
 {
-  "generatedAt": "2026-11-24T05:58:55.923Z",
+  "generatedAt": "2026-11-24T17:34:44.017Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-39",
-  "selectedTitle": "『ウェーブレース ブルーストーム』が「ニンテンドー ゲームキューブ Nintendo Classics」に追加！おだやかな晴天から高波押し寄せる嵐の中まで、天候によってリアルに変化する水上を駆け抜けろ",
+  "selectedClusterId": "today-cluster-26",
+  "selectedTitle": "ブラッサム：“小山牛丸”イッセー尾形が再登場　“不倫炎上”の珠を激励　視聴者「胸に刺さった」「空気が変わるねぇ」",
   "candidates": [
     {
-      "clusterId": "today-cluster-39",
-      "title": "『ウェーブレース ブルーストーム』が「ニンテンドー ゲームキューブ Nintendo Classics」に追加！おだやかな晴天から高波押し寄せる嵐の中まで、天候によってリアルに変化する水上を駆け抜けろ",
-      "category": "games",
+      "clusterId": "today-cluster-26",
+      "title": "ブラッサム：“小山牛丸”イッセー尾形が再登場　“不倫炎上”の珠を激励　視聴者「胸に刺さった」「空気が変わるねぇ」",
+      "category": "net-culture",
       "categories": [
-        "games",
         "net-culture",
-        "general"
-      ],
-      "buzzScore": 76.4,
-      "confidence": 0.47,
-      "articleCount": 4,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "アーカイブ上でも近い話題が連続出現"
-      ],
-      "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 4.7,
-        "trend": 19.1,
-        "internetNativeBoost": 8,
-        "search": 6.4,
-        "social": 6,
-        "velocity": 0,
-        "freshness": 8.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 2,
-        "repeatedAppearanceScore": 30,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 50,
-        "internalSocialScore": 46.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-89",
-      "title": "マンガ・アニメ投稿、ＡＩ検知の８割超が著作権侵害…文化庁が対海賊版システム推進へ",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "manga",
-        "tech",
         "entertainment",
+        "manga",
         "sns",
-        "net-culture",
+        "books",
         "general"
       ],
-      "buzzScore": 75,
-      "confidence": 0.46,
-      "articleCount": 4,
-      "sourceCount": 3,
-      "uniqueDomainCount": 2,
+      "buzzScore": 68.8,
+      "confidence": 0.39,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
       "whyRanked": [
-        "主要3媒体で同一話題を確認",
         "既存トレンド指標でも反応が強い",
         "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 7.2,
-        "sourceDiversity": 6.2,
-        "trend": 17.6,
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 5.6,
+        "search": 6.5,
         "social": 8.4,
         "velocity": 0,
         "freshness": 5.5,
-        "authority": 2.5,
+        "authority": 1.5,
         "categoryBias": 14,
-        "penalty": 0
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -103,8 +49,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 50.6,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -114,32 +60,87 @@
       ]
     },
     {
-      "clusterId": "today-cluster-11",
-      "title": "あなたが思う、2026年の推しゲームは？読者投票で決める 「推したいゲーム大賞2026」アンケートを実施します！",
+      "clusterId": "today-cluster-1640",
+      "title": "マンガ・アニメ投稿、ＡＩ検知の８割超が著作権侵害…文化庁が対海賊版システム推進へ",
+      "category": "anime",
+      "categories": [
+        "anime",
+        "manga",
+        "tech",
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 66.9,
+      "confidence": 0.37,
+      "articleCount": 3,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 5.4,
+        "sourceDiversity": 4.7,
+        "trend": 17.6,
+        "internetNativeBoost": 8,
+        "search": 3.9,
+        "social": 7.3,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 30.7,
+        "internalSocialScore": 56.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-94",
+      "title": "『スイカゲーム』フルーツたちの“相関図”が公開され話題に。「相関図とかいう概念あったんだ…」「擬人化されそう」など反応相次ぐ",
       "category": "games",
       "categories": [
         "games",
         "net-culture",
+        "matome",
         "general"
       ],
-      "buzzScore": 70.9,
-      "confidence": 0.44,
+      "buzzScore": 61.9,
+      "confidence": 0.35,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 19.1,
+        "trend": 17.4,
         "internetNativeBoost": 8,
-        "search": 5.9,
-        "social": 5.6,
-        "velocity": 5.3,
-        "freshness": 8.5,
+        "search": 5.5,
+        "social": 7,
+        "velocity": 0,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -154,10 +155,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 87,
-        "internalSearchScore": 46.1,
-        "internalSocialScore": 43.8
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 79,
+        "internalSearchScore": 43.3,
+        "internalSocialScore": 54.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -166,89 +167,34 @@
       ]
     },
     {
-      "clusterId": "today-cluster-1",
-      "title": "高評価Steam終末村ホラー『Leviathan: Rhino』に“日本語改善アプデ”到来。巨大なリヴァイアサンが迫る村に残り、最期を待つ老人の6日間",
-      "category": "games",
+      "clusterId": "today-cluster-522",
+      "title": "ちいかわクリスマスマーケット、グッズ予約販売へ　最終入場前に当日分グッズ完売→SNSで不満や落胆の声も",
+      "category": "net-culture",
       "categories": [
-        "games",
+        "net-culture",
+        "sns",
         "entertainment",
         "general"
       ],
-      "buzzScore": 66.9,
-      "confidence": 0.47,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 18.7,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 5.6,
-        "velocity": 8.3,
-        "freshness": 10,
-        "authority": 1.5,
-        "categoryBias": 6,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 85,
-        "internalSearchScore": 45.3,
-        "internalSocialScore": 43.8
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-395",
-      "title": "関芳弘文科相を庇う高市早苗首相に...膳場貴子キャスター「倫理観高くいてほしいなと切に切に思います」",
-      "category": "politics",
-      "categories": [
-        "politics",
-        "business",
-        "sns",
-        "net-culture",
-        "manga",
-        "general"
-      ],
-      "buzzScore": 64.9,
-      "confidence": 0.38,
+      "buzzScore": 60.7,
+      "confidence": 0.32,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 21.8,
+        "trend": 20,
         "internetNativeBoost": 8,
-        "search": 4.9,
-        "social": 7.4,
-        "velocity": 2.7,
-        "freshness": 8.5,
+        "search": 4.6,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 5.5,
         "authority": 1.5,
-        "categoryBias": 9,
+        "categoryBias": 14,
         "penalty": -3
       },
       "externalSignalStats": {
@@ -261,10 +207,62 @@
         "browseMatchCount": 0,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 99,
-        "internalSearchScore": 38.6,
-        "internalSocialScore": 57.7
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 35.8,
+        "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-616",
+      "title": "「安いから購入したわけじゃない！」　GUの“ロングコート”が7990円→5990円に　「毎日着ています」「軽くて即決でした笑」「最高にかわいい！！」",
+      "category": "entertainment",
+      "categories": [
+        "entertainment",
+        "sns",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 59.4,
+      "confidence": 0.31,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.9,
+        "internetNativeBoost": 8,
+        "search": 4.4,
+        "social": 6,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 86,
+        "internalSearchScore": 34,
+        "internalSocialScore": 46.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

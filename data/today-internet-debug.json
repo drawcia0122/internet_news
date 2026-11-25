@@ -1,36 +1,38 @@
 {
-  "generatedAt": "2026-11-25T01:36:02.535Z",
+  "generatedAt": "2026-11-25T10:28:08.414Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-325",
-  "selectedTitle": "ラウール、突然“ハイヒールおじさん”を再現か　「笑い転げてる」「だれがラウールのハイヒールおじさん見れると予想できた？」SNS騒然",
+  "selectedClusterId": "today-cluster-32",
+  "selectedTitle": "男子小学生の間で流行ったもの1位は「Roblox」 2位は「スクイーズ」 3位は「ベイブレードX」",
   "candidates": [
     {
-      "clusterId": "today-cluster-325",
-      "title": "ラウール、突然“ハイヒールおじさん”を再現か　「笑い転げてる」「だれがラウールのハイヒールおじさん見れると予想できた？」SNS騒然",
+      "clusterId": "today-cluster-32",
+      "title": "男子小学生の間で流行ったもの1位は「Roblox」 2位は「スクイーズ」 3位は「ベイブレードX」",
       "category": "sns",
       "categories": [
         "sns",
-        "net-culture",
         "entertainment",
+        "manga",
+        "net-culture",
         "general"
       ],
-      "buzzScore": 68.8,
-      "confidence": 0.38,
-      "articleCount": 1,
+      "buzzScore": 72.1,
+      "confidence": 0.43,
+      "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
         "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
+        "既存トレンド指標でも反応が強い",
+        "海外SNSでも関連投稿が増加"
       ],
       "scoreBreakdown": {
-        "coverage": 1.8,
+        "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 22,
+        "trend": 17.8,
         "internetNativeBoost": 8,
-        "search": 5,
-        "social": 6,
-        "velocity": 2.7,
+        "search": 5.6,
+        "social": 8.4,
+        "velocity": 5.3,
         "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
@@ -43,13 +45,13 @@
         "socialAvailable": false
       },
       "internalSignalStats": {
-        "browseMatchCount": 0,
+        "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 38.9,
-        "internalSocialScore": 46.7
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 81,
+        "internalSearchScore": 44,
+        "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -58,18 +60,176 @@
       ]
     },
     {
-      "clusterId": "today-cluster-173",
-      "title": "結婚する友人「ドレス作って！」→アイドル衣装作家が本気を出したら……　完成した1着に「すげー!!!こりゃいい!!!」「うれしいすぎる」",
-      "category": "entertainment",
+      "clusterId": "today-cluster-36",
+      "title": "『GTA6』の「タトゥーが楽しい」と国内外で話題。なかでも恍惚とした表情を見せる「アニメガール」が注目の的に",
+      "category": "anime",
       "categories": [
+        "anime",
+        "games",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 71.3,
+      "confidence": 0.43,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.3,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 7,
+        "velocity": 5.3,
+        "freshness": 8.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 24,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 44.7,
+        "internalSocialScore": 54.8
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1195",
+      "title": "ラウール、突然“ハイヒールおじさん”を再現か　「笑い転げてる」「だれがラウールのハイヒールおじさん見れると予想できた？」SNS騒然",
+      "category": "sns",
+      "categories": [
+        "sns",
+        "net-culture",
         "entertainment",
-        "books",
+        "general"
+      ],
+      "buzzScore": 71,
+      "confidence": 0.4,
+      "articleCount": 2,
+      "sourceCount": 2,
+      "uniqueDomainCount": 2,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 4.7,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 4.8,
+        "social": 5.9,
+        "velocity": 0,
+        "freshness": 5.5,
+        "authority": 2.5,
+        "categoryBias": 14,
+        "penalty": 0
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 4.2,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 37.7,
+        "internalSocialScore": 45.9
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-4",
+      "title": "“謎を解かないと帰れない”カフェ「はてな珈琲店」が12月1日に名古屋にオープンへ。予約なしでも当日ふらっと立ち寄れる",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 66.8,
+      "confidence": 0.4,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 19.8,
+        "internetNativeBoost": 8,
+        "search": 1.5,
+        "social": 6.7,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 0,
+        "repeatedAppearanceScore": 18,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 0,
+        "internalSearchScore": 11.7,
+        "internalSocialScore": 52.1
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-335",
+      "title": "さまざまなシナリオで「ロスサントス」を水没させてみたら――　科学者が『GTA V』で気候変動の影響をシミュレーションしたら、想像以上にリアルな結果に【海外】",
+      "category": "games",
+      "categories": [
+        "games",
+        "entertainment",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 68.7,
-      "confidence": 0.37,
+      "buzzScore": 65.7,
+      "confidence": 0.35,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -84,8 +244,8 @@
         "internetNativeBoost": 8,
         "search": 4.2,
         "social": 7.4,
-        "velocity": 4.2,
-        "freshness": 10,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -104,168 +264,6 @@
         "archiveHeatScore": 83,
         "internalSearchScore": 32.9,
         "internalSocialScore": 57.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-2238",
-      "title": "マンガ・アニメ投稿、ＡＩ検知の８割超が著作権侵害…文化庁が対海賊版システム推進へ",
-      "category": "anime",
-      "categories": [
-        "anime",
-        "manga",
-        "tech",
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64.7,
-      "confidence": 0.36,
-      "articleCount": 3,
-      "sourceCount": 2,
-      "uniqueDomainCount": 2,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 5.4,
-        "sourceDiversity": 4.7,
-        "trend": 17.6,
-        "internetNativeBoost": 8,
-        "search": 3.8,
-        "social": 7.2,
-        "velocity": 0,
-        "freshness": 1.5,
-        "authority": 2.5,
-        "categoryBias": 14,
-        "penalty": 0
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 3,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 30,
-        "internalSocialScore": 56.4
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-393",
-      "title": "タイガーの炊飯器を購入→開けたら……「粋なことするね」　付いてきた“まさかのアイテム”に「え！次タイガーにしたい」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-73",
-      "title": "ブラッサム：“小山牛丸”イッセー尾形が再登場　“不倫炎上”の珠を激励　視聴者「胸に刺さった」「空気が変わるねぇ」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "manga",
-        "books",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 63.8,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 19.8,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 8.3,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 45.2,
-        "internalSocialScore": 64.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",

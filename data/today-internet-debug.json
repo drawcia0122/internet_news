@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-11-26T12:18:07.327Z",
+  "generatedAt": "2026-11-26T21:57:59.482Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-152",
-  "selectedTitle": "ニート寸前の女子大生→“ChatGPTを使い倒して”未経験で100日連続アプリ開発→国際学会で発表…年収2000万円・25歳経営者の“生成AIで激変した人生”",
+  "selectedClusterId": "today-cluster-77",
+  "selectedTitle": "定数削減、衆院委で採決先送り　「６０日ルール」与党断念：時事ドットコム",
   "candidates": [
     {
-      "clusterId": "today-cluster-152",
-      "title": "ニート寸前の女子大生→“ChatGPTを使い倒して”未経験で100日連続アプリ開発→国際学会で発表…年収2000万円・25歳経営者の“生成AIで激変した人生”",
-      "category": "tech",
+      "clusterId": "today-cluster-77",
+      "title": "定数削減、衆院委で採決先送り　「６０日ルール」与党断念：時事ドットコム",
+      "category": "politics",
       "categories": [
-        "tech",
+        "politics",
         "sns",
         "net-culture",
-        "world",
+        "entertainment",
         "general"
       ],
-      "buzzScore": 66.7,
-      "confidence": 0.41,
+      "buzzScore": 69.3,
+      "confidence": 0.43,
       "articleCount": 3,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
@@ -27,9 +27,9 @@
       "scoreBreakdown": {
         "coverage": 5.4,
         "sourceDiversity": 4.7,
-        "trend": 17.6,
+        "trend": 19.8,
         "internetNativeBoost": 8,
-        "search": 5.6,
+        "search": 6,
         "social": 8.4,
         "velocity": 0,
         "freshness": 5.5,
@@ -48,8 +48,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
         "crossCategoryScore": 100,
-        "archiveHeatScore": 80,
-        "internalSearchScore": 43.6,
+        "archiveHeatScore": 90,
+        "internalSearchScore": 47.1,
         "internalSocialScore": 65.8
       },
       "externalSignalErrors": [
@@ -59,16 +59,15 @@
       ]
     },
     {
-      "clusterId": "today-cluster-137",
-      "title": "たった3秒の「伯方の塩」カラオケ年間ランキング2位に　3位のVaundy「怪獣の花唄」を上回る快挙",
-      "category": "entertainment",
+      "clusterId": "today-cluster-51",
+      "title": "任天堂・宮本茂氏に“文化勲章”が伝達。11月3日の親授式を欠席していたことを受け、改めて伊藤学司文化庁長官より伝達された形",
+      "category": "games",
       "categories": [
-        "entertainment",
-        "sns",
+        "games",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.9,
+      "buzzScore": 63.6,
       "confidence": 0.38,
       "articleCount": 2,
       "sourceCount": 1,
@@ -79,12 +78,12 @@
       "scoreBreakdown": {
         "coverage": 3.6,
         "sourceDiversity": 2.3,
-        "trend": 20.9,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 6.9,
+        "search": 6.2,
+        "social": 5.4,
         "velocity": 0,
-        "freshness": 5.5,
+        "freshness": 3.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -98,11 +97,11 @@
       "internalSignalStats": {
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 22.2,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 95,
-        "internalSearchScore": 47.7,
-        "internalSocialScore": 54
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 60,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 48.7,
+        "internalSocialScore": 42.5
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -111,16 +110,17 @@
       ]
     },
     {
-      "clusterId": "today-cluster-21",
-      "title": "任天堂・宮本茂氏に“文化勲章”が伝達。11月3日の親授式を欠席していたことを受け、改めて伊藤学司文化庁長官より伝達された形",
-      "category": "games",
+      "clusterId": "today-cluster-174",
+      "title": "たった3秒の「伯方の塩」カラオケ年間ランキング2位に　3位のVaundy「怪獣の花唄」を上回る快挙",
+      "category": "entertainment",
       "categories": [
-        "games",
+        "entertainment",
+        "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 65.1,
-      "confidence": 0.38,
+      "buzzScore": 62.6,
+      "confidence": 0.36,
       "articleCount": 2,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
@@ -132,8 +132,60 @@
         "sourceDiversity": 2.3,
         "trend": 20,
         "internetNativeBoost": 8,
-        "search": 6.1,
-        "social": 5.6,
+        "search": 5.8,
+        "social": 6.8,
+        "velocity": 0,
+        "freshness": 3.5,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 1,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 21,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 45.5,
+        "internalSocialScore": 53.5
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-1",
+      "title": "【50％オフ】マンガ『空挺ドラゴンズ』『税金で買った本』などのKindle版がクーポン利用で“半額”になる週末限定セール開催中！11月29日23時59分まで",
+      "category": "games",
+      "categories": [
+        "games",
+        "manga",
+        "net-culture",
+        "general"
+      ],
+      "buzzScore": 58.1,
+      "confidence": 0.32,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 18.3,
+        "internetNativeBoost": 8,
+        "search": 1.5,
+        "social": 6.7,
         "velocity": 0,
         "freshness": 7,
         "authority": 1.5,
@@ -148,12 +200,12 @@
       },
       "internalSignalStats": {
         "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 47.5,
-        "internalSocialScore": 43.8
+        "archiveMatchCount": 0,
+        "repeatedAppearanceScore": 18,
+        "crossCategoryScore": 80,
+        "archiveHeatScore": 0,
+        "internalSearchScore": 11.7,
+        "internalSocialScore": 52.1
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -162,33 +214,32 @@
       ]
     },
     {
-      "clusterId": "today-cluster-362",
-      "title": "30年前に母が着た振袖で成人式へ「見事な総絞りの本振袖」が圧巻！と大反響　“当日の話”を聞いてみた",
-      "category": "entertainment",
+      "clusterId": "today-cluster-559",
+      "title": "[ITmedia Mobile] 「Amazonブラックフライデー」11月27日から先行セール　iPhone AirやAirPods Pro 3が“今年最安値”で登場",
+      "category": "tech",
       "categories": [
-        "entertainment",
+        "tech",
         "sns",
         "net-culture",
         "general"
       ],
-      "buzzScore": 64,
-      "confidence": 0.35,
+      "buzzScore": 57.8,
+      "confidence": 0.3,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
         "coverage": 1.8,
         "sourceDiversity": 2.3,
-        "trend": 18,
+        "trend": 17.6,
         "internetNativeBoost": 8,
-        "search": 4.2,
+        "search": 4.1,
         "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
+        "velocity": 0,
+        "freshness": 5.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -204,61 +255,8 @@
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 6,
         "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
-        "internalSocialScore": 46.7
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-405",
-      "title": "ごはんのお残しがバレた犬　思わず吹き出す表情に「目泳ぎすぎww」「顔最高」「かわいい」",
-      "category": "entertainment",
-      "categories": [
-        "entertainment",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 64,
-      "confidence": 0.35,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "直近数時間で関連記事が増加",
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18,
-        "internetNativeBoost": 8,
-        "search": 4.2,
-        "social": 6,
-        "velocity": 2.7,
-        "freshness": 8.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 0,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 6,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 82,
-        "internalSearchScore": 32.6,
+        "archiveHeatScore": 80,
+        "internalSearchScore": 31.9,
         "internalSocialScore": 46.7
       },
       "externalSignalErrors": [

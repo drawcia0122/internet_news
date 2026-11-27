@@ -1,41 +1,143 @@
 {
-  "generatedAt": "2026-11-26T21:57:59.482Z",
+  "generatedAt": "2026-11-27T04:09:31.103Z",
   "fallbackUsed": false,
-  "selectedClusterId": "today-cluster-77",
-  "selectedTitle": "定数削減、衆院委で採決先送り　「６０日ルール」与党断念：時事ドットコム",
+  "selectedClusterId": "today-cluster-229",
+  "selectedTitle": "2026年NHK紅白歌合戦で楽しみな「白組出場歌手」ランキング！　2位は「Mrs. GREEN APPLE」、1位は？【2026年11月24日時点の投票結果】",
   "candidates": [
     {
-      "clusterId": "today-cluster-77",
-      "title": "定数削減、衆院委で採決先送り　「６０日ルール」与党断念：時事ドットコム",
-      "category": "politics",
+      "clusterId": "today-cluster-229",
+      "title": "2026年NHK紅白歌合戦で楽しみな「白組出場歌手」ランキング！　2位は「Mrs. GREEN APPLE」、1位は？【2026年11月24日時点の投票結果】",
+      "category": "entertainment",
       "categories": [
-        "politics",
+        "entertainment",
+        "tech",
         "sns",
         "net-culture",
-        "entertainment",
         "general"
       ],
-      "buzzScore": 69.3,
-      "confidence": 0.43,
-      "articleCount": 3,
+      "buzzScore": 70.8,
+      "confidence": 0.39,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 20,
+        "internetNativeBoost": 8,
+        "search": 4.6,
+        "social": 7.4,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 14,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 100,
+        "archiveHeatScore": 91,
+        "internalSearchScore": 35.8,
+        "internalSocialScore": 57.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-259",
+      "title": "「Amazonブラックフライデー」先行セール開始！スイッチ2本体＋DL版ソフトセットやダウンロード版ソフト2本まとめ買いが対象に",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 67.7,
+      "confidence": 0.49,
+      "articleCount": 2,
       "sourceCount": 2,
       "uniqueDomainCount": 2,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い",
-        "海外SNSでも関連投稿が増加"
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
-        "coverage": 5.4,
+        "coverage": 3.6,
         "sourceDiversity": 4.7,
-        "trend": 19.8,
+        "trend": 22,
         "internetNativeBoost": 8,
-        "search": 6,
-        "social": 8.4,
-        "velocity": 0,
-        "freshness": 5.5,
+        "search": 5,
+        "social": 3.2,
+        "velocity": 6.8,
+        "freshness": 10,
         "authority": 2.5,
-        "categoryBias": 9,
-        "penalty": 0
+        "categoryBias": 6,
+        "penalty": -4
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 24.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-3",
+      "title": "EAスケボーゲーム『skate.』、次回アプデから「シーズン制廃止」へ。今後は開発中コンテンツをすばやく導入、フィードバックをどしどし収集予定",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 64.9,
+      "confidence": 0.47,
+      "articleCount": 2,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 3.6,
+        "sourceDiversity": 2.3,
+        "trend": 18.3,
+        "internetNativeBoost": 8,
+        "search": 5.7,
+        "social": 4.2,
+        "velocity": 8.3,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
       },
       "externalSignalStats": {
         "searchScore": 0,
@@ -47,10 +149,10 @@
         "browseMatchCount": 1,
         "archiveMatchCount": 1,
         "repeatedAppearanceScore": 24,
-        "crossCategoryScore": 100,
-        "archiveHeatScore": 90,
-        "internalSearchScore": 47.1,
-        "internalSocialScore": 65.8
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 83,
+        "internalSearchScore": 44.7,
+        "internalSocialScore": 32.8
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
@@ -59,59 +161,8 @@
       ]
     },
     {
-      "clusterId": "today-cluster-51",
-      "title": "任天堂・宮本茂氏に“文化勲章”が伝達。11月3日の親授式を欠席していたことを受け、改めて伊藤学司文化庁長官より伝達された形",
-      "category": "games",
-      "categories": [
-        "games",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 63.6,
-      "confidence": 0.38,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 22,
-        "internetNativeBoost": 8,
-        "search": 6.2,
-        "social": 5.4,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 60,
-        "archiveHeatScore": 100,
-        "internalSearchScore": 48.7,
-        "internalSocialScore": 42.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-174",
-      "title": "たった3秒の「伯方の塩」カラオケ年間ランキング2位に　3位のVaundy「怪獣の花唄」を上回る快挙",
+      "clusterId": "today-cluster-503",
+      "title": "「おめでとうございます！」田中みな実、最新姿に驚き「姉妹に見える」「見惚れてしまいます」",
       "category": "entertainment",
       "categories": [
         "entertainment",
@@ -119,116 +170,13 @@
         "net-culture",
         "general"
       ],
-      "buzzScore": 62.6,
-      "confidence": 0.36,
-      "articleCount": 2,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 3.6,
-        "sourceDiversity": 2.3,
-        "trend": 20,
-        "internetNativeBoost": 8,
-        "search": 5.8,
-        "social": 6.8,
-        "velocity": 0,
-        "freshness": 3.5,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 1,
-        "repeatedAppearanceScore": 21,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 91,
-        "internalSearchScore": 45.5,
-        "internalSocialScore": 53.5
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-1",
-      "title": "【50％オフ】マンガ『空挺ドラゴンズ』『税金で買った本』などのKindle版がクーポン利用で“半額”になる週末限定セール開催中！11月29日23時59分まで",
-      "category": "games",
-      "categories": [
-        "games",
-        "manga",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 58.1,
-      "confidence": 0.32,
+      "buzzScore": 63.5,
+      "confidence": 0.34,
       "articleCount": 1,
       "sourceCount": 1,
       "uniqueDomainCount": 1,
       "whyRanked": [
-        "既存トレンド指標でも反応が強い"
-      ],
-      "scoreBreakdown": {
-        "coverage": 1.8,
-        "sourceDiversity": 2.3,
-        "trend": 18.3,
-        "internetNativeBoost": 8,
-        "search": 1.5,
-        "social": 6.7,
-        "velocity": 0,
-        "freshness": 7,
-        "authority": 1.5,
-        "categoryBias": 14,
-        "penalty": -3
-      },
-      "externalSignalStats": {
-        "searchScore": 0,
-        "socialScore": 0,
-        "searchAvailable": false,
-        "socialAvailable": false
-      },
-      "internalSignalStats": {
-        "browseMatchCount": 1,
-        "archiveMatchCount": 0,
-        "repeatedAppearanceScore": 18,
-        "crossCategoryScore": 80,
-        "archiveHeatScore": 0,
-        "internalSearchScore": 11.7,
-        "internalSocialScore": 52.1
-      },
-      "externalSignalErrors": [
-        "search:http 429 Too Many Requests",
-        "reddit:http 403 Blocked",
-        "bluesky:http 403 Forbidden"
-      ]
-    },
-    {
-      "clusterId": "today-cluster-559",
-      "title": "[ITmedia Mobile] 「Amazonブラックフライデー」11月27日から先行セール　iPhone AirやAirPods Pro 3が“今年最安値”で登場",
-      "category": "tech",
-      "categories": [
-        "tech",
-        "sns",
-        "net-culture",
-        "general"
-      ],
-      "buzzScore": 57.8,
-      "confidence": 0.3,
-      "articleCount": 1,
-      "sourceCount": 1,
-      "uniqueDomainCount": 1,
-      "whyRanked": [
+        "直近数時間で関連記事が増加",
         "既存トレンド指標でも反応が強い"
       ],
       "scoreBreakdown": {
@@ -238,8 +186,8 @@
         "internetNativeBoost": 8,
         "search": 4.1,
         "social": 6,
-        "velocity": 0,
-        "freshness": 5.5,
+        "velocity": 2.7,
+        "freshness": 8.5,
         "authority": 1.5,
         "categoryBias": 14,
         "penalty": -3
@@ -258,6 +206,57 @@
         "archiveHeatScore": 80,
         "internalSearchScore": 31.9,
         "internalSocialScore": 46.7
+      },
+      "externalSignalErrors": [
+        "search:http 429 Too Many Requests",
+        "reddit:http 403 Blocked",
+        "bluesky:http 403 Forbidden"
+      ]
+    },
+    {
+      "clusterId": "today-cluster-228",
+      "title": "「Amazonブラックフライデー」先行セールでPS5がお得に！本体＋人気ソフト・ヘッドセットセットやPSストアチケットが1100円オフ",
+      "category": "games",
+      "categories": [
+        "games",
+        "general"
+      ],
+      "buzzScore": 60.9,
+      "confidence": 0.41,
+      "articleCount": 1,
+      "sourceCount": 1,
+      "uniqueDomainCount": 1,
+      "whyRanked": [
+        "直近数時間で関連記事が増加",
+        "既存トレンド指標でも反応が強い"
+      ],
+      "scoreBreakdown": {
+        "coverage": 1.8,
+        "sourceDiversity": 2.3,
+        "trend": 22,
+        "internetNativeBoost": 8,
+        "search": 5,
+        "social": 3.2,
+        "velocity": 4.2,
+        "freshness": 10,
+        "authority": 1.5,
+        "categoryBias": 6,
+        "penalty": -3
+      },
+      "externalSignalStats": {
+        "searchScore": 0,
+        "socialScore": 0,
+        "searchAvailable": false,
+        "socialAvailable": false
+      },
+      "internalSignalStats": {
+        "browseMatchCount": 0,
+        "archiveMatchCount": 1,
+        "repeatedAppearanceScore": 6,
+        "crossCategoryScore": 40,
+        "archiveHeatScore": 100,
+        "internalSearchScore": 38.9,
+        "internalSocialScore": 24.7
       },
       "externalSignalErrors": [
         "search:http 429 Too Many Requests",
